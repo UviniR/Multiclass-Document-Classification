@@ -1,0 +1,1536 @@
+PERSPECTIVE
+published: 08 January 2020
+doi: 10.3389/fbloc.2019.00027
+Frontiers in Blockchain | www.frontiersin.org 1 January 2020 | Volume 2 | Article 27Editedby:
+JaneThomason,
+UniversityofQueensland,Australia
+Reviewedby:
+CarlosSantiso,
+Inter-AmericanDevelopmentBank,
+UnitedStates
+BethKewell,
+UniversityofExeter,UnitedKingdom
+*Correspondence:
+RaúlZambrano
+raul@ictdegov.org
+Specialtysection:
+Thisarticlewassubmittedto
+BlockchainforGood,
+asectionofthejournal
+FrontiersinBlockchain
+Received: 23May2019
+Accepted: 09December2019
+Published: 08January2020
+Citation:
+ZambranoR(2020)TamingtheBeast:
+HarnessingBlockchainsinDeveloping
+CountryGovernments.
+Front.Blockchain2:27.
+doi:10.3389/fbloc.2019.00027Taming the Beast: Harnessing
+Blockchains in Developing Country
+Governments
+RaúlZambrano *
+IndependentResearcher,InternationalDevelopmentExpert, NewYork,NY,UnitedStates
+Amidpressingdemandstoachievecriticalsustainabledeve lopmentgoals,governments
+in developing countries face the additional complex task of embracing new
+digital technologies such as blockchains. This paper devel ops a framework
+interlinkingdevelopment,technology,andgovernmentins titutionsthatpolicymakersand
+development practitioners could use to address such a conun drum. State capacity and
+democraticgovernanceareintroducedasdriversintheover allanalysis.Withthisinhand,
+blockchain technology is revisited from the perspective of governments in the Global
+South, identifying in the process key traits and proposing a new typology. An overview
+of the status of blockchain deployments in the Global South f ollows, complemented
+by a closer look at country examples to distill trends, patte rns and risks. The paper
+closes with a discussion of the ﬁndings, highlighting both c hallenges and opportunities
+forgovernments.Italsoprovidesbasicguidancetodevelop mentpractitionersinterested
+in enhancing current programming using blockchains as an en abler.
+Keywords: blockchains, developing countries, public good s, sustainable development, digital government, state
+capacity, democratic governance, ICTD
+INTRODUCTION
+Thelast30yearshavewitnessedalongwaveofalmostunstoppab ledigitalinnovation.TheInternet
+led the way rapidly giving birth to the World Wide Web that prove d to be a game-changer on a
+globalscale.AwidevarietyofInternet-basedapplicationss uchase-commerceande-government,
+to name a few, saw the light soon thereafter. By the end of the ﬁ rst decade of this century, mobile
+technologies and social media were already an integral part o f the digital landscape. Artiﬁcial
+Intelligence and Machine Learning underwent a somewhat une xpected renaissance while Bitcoin
+anditsunderlyingtechnology,blockchain,wereloudlywel comedasthenewkidsontheblock.
+With few exceptions, developing countries have been recipient s of the latest technological
+innovations—designed and produced for the most part by indust rialized countries. Adopting
+and adapting the latest digital incarnations have been under taken by both private and public
+initiativesintheGlobalSouth( CozzensandThakur,2014 ).Almostinparallel,globaldevelopment
+agendassuchasthe2000MilleniumDevelopmentGoals(MDGs)and, since2015,theSustainable
+Development Goals (SDGs) established a series of targets tha t all UN member states agreed to
+achieve by 2030. Juggling these two seemingly independent age ndas has been challenging for
+developing countries, especially for those where socio-econ omic and political gaps are the largest
+andﬁscalandotherkeyresourcesarerelativelyscarce.
+Countries in the Global South are by now familiar with the inc essant demands for change
+propelled by the various so-called “digital revolutions.” Ma ny national and even regionalZambrano Blockchains in Developing Countries
+governments have taken action in one way or another to
+harness the potential beneﬁts of new digital technologies. W hile
+pilots and on the ground digital initiatives pushed by the
+private sector and international donors have proliferated sin ce
+the late 1990s, governments in many countries, reacting at a
+slow pace, focused mostly on policy and strategy development.
+Initially, countries designed and endorsed national Infor mation
+and Communication Technologies (ICTs) for Development
+strategies ( Rahman, 2001 ). By the beginning of this century,
+complementary or standalone e-Government strategies gaine d
+traction and provided the public sector with a roadmap
+to modernize the state sector, improve its eﬃciency and
+responsiveness, and scale-up the provision of public goods and
+basicservices( Ndou,2004 ).
+While a few industrialized nations are already working on
+this, today not one single developing country has developed a
+national blockchain strategy. In contrast, several countr ies from
+the Global South have already completed Artiﬁcial Intelligen ce
+strategies ( Dutton, 2018 ). Nevertheless, developing countries
+became the preferred test-beds for many of the ﬁrst Bitcoin an d
+blockchaintechnologypilots,startingin2015( Zambrano,2017 ).
+History is thus seemingly repeating itself by following the us ual
+cycle of innovation diﬀusion in developing contexts ( Zanello et
+al.,2016).Here,blockchaintechnologyhasnotmadeadiﬀerence
+whencomparedtoprevious“digitalrevolutions.”
+Within this context, this paper develops a conceptual
+framework to explore how governments and the public sector
+in developing countries1can eﬀectively harness blockchain
+technologytotacklekeydevelopmentchallenges.Thepaperﬁrs t
+presentsananalyticalframeworkthatbringstogethertechn ology,
+development and state capacity. It then presents an overview
+of blockchain technology from that perspective and delimits it s
+scope accordingly. The third section reviews the current sta tus
+of research on blockchains and development and blockchains i n
+governments, complemented by an examination of relevant on
+thegroundexamples.Thepaperthenpresentsadiscussionofthe
+proposedframeworkandresearchﬁndings.
+The focus of this paper is on blockchain technology as
+a generic platform that could help achieve international and
+national development goals endorsed by governments. The
+monetary and ﬁnancial implications of the technology are thu s
+notpartoftheanalysis.
+CONCEPTUAL FRAMEWORK
+While the links between development and ICTs have been vastly
+explored as shown below, introducing state capacity into the
+equationaddsanewdimensionthatdelimitstheroleofthepub lic
+sector and showcases the relevance of democratic governanc e in
+theoveralldevelopmentalprocess.
+1For the purposes of this paper, developing countries are not assumed to b e a
+monolith. Instead, the concept includes nation-states that are a t various stages
+of development as measured for example by the World Bank country income
+or lending categories, or the UNDP human development index, among oth ers.
+Furthermore, development is a moving target as countries can and should travel
+across the various development categories in the medium-term, with some even
+transferringintotheindustrialized-countryteam,eventually.Sustainable Development
+While much older than ICT for Development (ICTD), the
+development ﬁeld has changed dramatically in the last 30 years .
+Economic growth, usually equated with economic development ,
+ruled unchallenged in the early years and used standard metri cs
+such as GDP to gauge progress. While some metrics are
+still widely used today, challenges to the traditional econ omic
+development approach started to emerge ﬁrst in the 1970s when
+environmental considerations and impact were brought to the
+forefront( Meadowsetal.,1972 ).
+By the end of the 1980s, the concept of sustainable
+developmentwascoinedbytheBrundtlandCommissionrunning
+under the auspices of the United Nations ( World Commission
+and on Environment Development., 1987 ). This led to the 1992
+United Nations Earth Summit in Rio de Janeiro, where member
+states agreed to the implementation of Agenda 21 ( United
+Nations,1994 ).UNmeetingstotakestockontheimplementation
+oftheagendatookplaceevery5yearsafteritsapproval.
+The 2000 Millennium Declaration and ensuing MDGs
+complemented Agenda 21 but focused primarily on poverty
+reduction, gender equality, and health pandemics ( United
+Nations, 2000 ). Finally, the SDGs brought together Agenda 21
+and MDGs under one single umbrella. Unlike its predecessor,
+the SDGs are universal and thus suited for all countries, bot h
+developed and developing ( United Nations, 2015b ). However,
+the number of goals, targets, and indicators grew almost
+exponentially. The SDGs comprise 17 goals, 169 targets,
+and232indicators2.
+Many of the goals and targets set by the MDGs were not
+reached in many developing countries ( United Nations, 2015a ).
+Moreover, they included a set of targets and indicators calli ng
+for increased ICT access and diﬀusion. The SDGs, on the other
+hand, mainstreamed technology into several of the many targ ets
+established ( Janowski, 2016 ) while largely avoiding using the
+ICT acronym in the ﬁnal list of goals, targets, and indicators
+(UnitedNations,2015c ).
+Sustainable development is deﬁned as the intersection of
+three core pillars: economic growth, social inclusion, and
+environmental protection. The concept is usually represented
+usingaVenndiagram,wherethevariousintersectionsarela beled
+with unique names. Conspicuously absent here is governance ,
+which is also a cross-cutting pillar that interacts with the o ther
+three. Nevertheless, the SDGs directly highlight its import ance
+via Goal 17 which explicitly addresses core governance issue s
+such as institutional building, the rule of law, participation ,
+transparency,andaccountability.
+Given recent claims that blockchain is an “institutional
+technology”( Davidsonetal.,2017 ),governancemustbeplacedat
+thecoreforassessingthepotentialimpactofdigitaltechnol ogies
+suchasblockchainsonsustainabledevelopmenteﬀorts.
+State Capacity
+Asgovernmentsarethemainfocusofthispaper,introducingth e
+issueofstatecapacityisfundamental.
+2Nine indicators are used more than once for diﬀerent targets thus increasing the
+overalltotalto241.
+Frontiers in Blockchain | www.frontiersin.org 2 January 2020 | Volume 2 | Article 27Zambrano Blockchains in Developing Countries
+Recent research shows that state capacity played a key
+role in the achievement of the MDGs targeting poverty
+reduction ( Asadullah and Savoia, 2018 ). Countries with
+low state capacity were less successful than those that
+were better equipped with capable institutions to support
+the provision of public goods. Moreover, a higher state
+capacity also helped sustain the gains made in the medium-
+term, whereas those with weaker capacity were prone to
+short-termreversals.
+Thefactthatthereisnouniversalconsensusonadeﬁnitiono f
+statecapacityisjustareﬂectionofitsmultidimensionalch aracter
+and complexity (e.g., Hau, 2012 ). For the purposes of this paper,
+however, state capacity is deﬁned by the following traits (bas ed
+onSavoiaandSen,2015 ):
+1.Institutional capacity : Capacity to design and implement
+development policies and programs, including the provision
+of public goods, as well as the legal capacity to sustain the
+rule of law in the long run. A professional and qualiﬁed civil
+service, along with “rules of the game” for public institutio ns
+foreﬃcientandtransparentrunningarepartoftheequation.
+2.Fiscal capacity : Capacity to capture ﬁnancial resources in a
+sustained fashion via taxation and other sources including
+externalones.
+3.Infrastructuralcapacity: Abilitytocarryoutinstitutionaland
+ﬁscalresponsibilitiesinalltheterritoriesundertheirco ntrolof
+the state. Includes Weber’s well-known state monopoly over
+themeansofviolenceormilitarycapacity.
+From a governance perspective, three issues are pertinent.
+First, distinguishing between state capacity and political r egimes
+is essential. Strong states are frequently seen as a proxy
+for authoritarian or non-democratic regimes. However, mos t
+Westerndemocracieshavestateswithhighcapacity,whilema ny
+non-democratic regimes operate with little to no institutio nal
+development ( Tilly, 2007a ) thus having to use force and
+repressiontosupportexistingregimes.
+Second,democraticgovernanceregimescanonlybesustaine d
+over the long haul if a high capacity state is in place. Indeed,
+“democracy is a verb” ( Tilly, 2007b ), which is saying that such
+a political regime is not stationary but rather the locus of
+dynamic contention among diﬀerent sets of actors and groups.
+De-democratizationprocessescanindeedtakeplaceashasinf act
+occurred in the last 20 years throughout the world. The rise of
+populism, nationalism and some forms of proto-fascism in this
+periodprovidesthenecessaryevidence.
+Finally, states also need to have the necessary capabilities
+to harness new technologies, especially new ones such as
+blockchains and Artiﬁcial Intelligence that have a relativ ely high
+degree of complexity. This capacity, however, is not limited
+to technical knowledge, which is important, but also demands
+institutional capacity to develop successful policies and su pport
+on the ground initiatives, directly or indirectly via third parties,
+includingtheprivatesector.
+However, the same technologies that help provide basic
+public goods to vulnerable and excluded populations can also
+be used to support de-democratization processes. This is theconundrum that developing countries must address as they
+deploydigitaltechnologies.
+All in all, state capacity is both a means to achieve
+development goals and a development goal in itself, particularl y
+if resilient and long-term democratic regimes are part of the
+coregoals.Nevertheless,statecapacityhasrarelybeenconsi dered
+when studying the links between ICTs, development, and
+governments(e.g., EstevezandJanowski,2013 ).
+ICTs and Development
+ICT for Development
+The ﬁeld of ICT for development (ICTD) has been around for
+almost40years( Walsham,2017 )andcontinuestoevolve.While
+several competing theories and schools of thought have alrea dy
+emerged ( Zheng, 2015 ), the ﬁeld still faces three critical and
+interconnected challenges. First and perhaps most obvious, i s
+the link between ICT and development which boils down to
+the question of how exactly do ICTs foster development ( Heeks,
+2010; Zheng et al., 2018 ). It is regularly assumed that digital
+technologiesautomaticallyaccomplishthis,regardlessof howthe
+latterisdeﬁned.
+Thesecondandcloselyrelatedtotheformeristhelackofsol id
+evidenceontheactualimpactofICTsindevelopmentalprocesse s
+(Foster and Heeks, 2014; Brown and Skelly, 2019 ). Estonia and
+South Korea are cited as examples of success but they are more
+the exception than the rule. Finally, the ﬁeld has a bias towar d
+technology and infrastructure ( Gomez, 2013 ). This is perhaps
+best reﬂected by the marked emphasis placed on the “digital
+divide”combinedwithconcurrentglobalcallsforconnectin gthe
+nextbillionusers( Andreasson,2015 ).
+From a practitioners perspective, these three core challenges
+are closely related. Access to digital technologies automa tically
+empowerspeoplewhocanthentakemattersintotheirownhands
+andpropelhumanandsustainabledevelopmentinthemedium-
+term. Measuring impact is thus based on metrics centered on
+accesstoanduseofthenewtechnologies( ITU,2016 ).
+Any resemblance with a trickle-down theory of digital
+development is not coincidental. Furthermore, current evid ence
+does not provide support for such a theory. In eﬀect, the rapid
+evolution of digital technologies such as the Internet and s ocial
+media,haveyetmakeadentondevelopmentaccordingtorecent
+research ( Comin and Mestieri, 2018 ). The same goes for mobile
+technologiesthathavespreadgloballyatanunprecedentedpace3.
+For the purposes of this paper, ICTs are instead deemed to
+beenablersof development processes ( Zambrano and Eymann,
+2014). ICTs have the potential to amplify existing programs
+and initiatives, bring new solutions to old problems and fost er
+democraticgovernanceandinstitutions.Suchpotentialsho uldbe
+harnessed by local actors and institutions who acting in con cert
+canbringpositivechangeforward.Ontheﬂipside,newICTsal so
+generatenewchallengesthatmightdemandattention.
+3It is essential to distinguish here between ICTD and the ICT se ctor. The latter
+has grown exponentially since the late 1990s and propelled economic growt h in
+industrialized countries ( McKinsey, 2011 ). Countries such as India, South Korea,
+Taiwan and China have also been able to successfully develop relativ ely large
+ICTsectors.
+Frontiers in Blockchain | www.frontiersin.org 3 January 2020 | Volume 2 | Article 27Zambrano Blockchains in Developing Countries
+Blockchain technology squarely falls into this framework b ut
+also goes beyond the digital divide and connectivity approach es.
+Blockchains work as long as people are connected but, unlike
+otherdigitaltechnologies,arenotdestinedtopromoteincr eased
+accesstotheInternetandclosethedigitaldivide.
+ICTs in Government
+The implementation of development agendas at all levels is in
+itself a challenge for developing countries where state capac ity
+is incipient. Adding new technologies to the equation might
+complicatemattersmore.
+On the other hand, developing country governments should
+not attempt to drive development agendas on their own. Here,
+the distinction between private and public goods is crucial4. In
+the case of private goods and services , the private sector, big and
+small, should take the lead. Governments should have adequa te
+institutional, legal, and infrastructural capacity to ensu re this is
+possible and, if market failures are pervasive, create incent ive
+mechanismstoattracttherequiredcapitalandhumanresourc es.
+Nevertheless, governments should take the helm to guide the
+modernization of the public sector and the universal provisio n
+of public goods. The former is the entry point to increase state
+capacity, in a sustained manner5. The latter, which depends to a
+largeextentonstatecapacity,ﬁllsdevelopmentgapsthatfall right
+into the purview of government. Governance provides a third
+pillar. State modernization and public goods service provisio n
+should be designed and implemented within a democratic
+governance framework where the rule of law, participation,
+transparency, and accountability are core drivers that perme ate
+allofsociety.
+Digital Government
+Developing countries are no strangers to the deployment and
+use of digital technologies within governments. Over 20 yea rs
+ago, E-government appeared in the scene and rapidly spread to
+mostcountries.Asmentionedabove,manydevelopingcountri es
+ended up designing e-government strategies. Despite repeate d
+failures(Heeks,2005 ),initiativesdidnotﬁzzleout.Furthermore,
+the concept has evolved since, from e-Government to e-
+Governance, Transformational Government, Lean Governmen t,
+Open Government, Smart Government, Digital Government,
+and Intelligent Governments, among others ( Janssen and
+Estevez,2013;Millard,2018 ).
+This paper uses digital government broadly deﬁned as public
+investments on ICTs to modernize the public sector, increase
+state capacity, and scale-up the provision of public goods.
+For developing countries where democratic regimes prevail,
+bringing into the equation the democratic governance approac h
+mentioned above is critical. In this context, the net outcom e of
+successful ICT investments in public institutions should no t be
+limited to access, eﬃciency and eﬀectiveness. More relevant a re
+the strengthening of democratic institutions where transpa rency
+and accountability shine the most and citizen and stakehold er
+engagementbecomespartofdailylife.
+4Asdiscussedin Zambrano(2017) .
+5Butnotnecessarilyanincreaseinstatesize.Figure1presents the three pillars of digital government and
+itsinterconnections.
+For developing country democracies, the key entry point is
+engagement with stakeholders to deﬁne policy agendas, ident ify
+keychallenges,andprioritizeinterventions.Governments should
+then be able to identify the public entities that need to
+be involved according to existing legal mandates. Allocatio n
+of public resources is then ﬁnalized and changes in the
+provision of selected public goods should eventually improve.
+Stakeholders can then provide feedback and demand changes
+andimprovements.
+Sequencingbetweenthesepillarsisalsoessential.Forexample ,
+governments cannot start implementing e-service delivery if
+they have not ﬁrst developed adequate internal ICT and human
+capacity,andupdatedormodernizedexistingbusinessprocesse s.
+However, nothing is preventing governments from starting
+with service delivery or ignore the co-creation phase and the
+engagementwithstakeholders.
+While the diagram emphasizes the “e” aspect of each pillar,
+thecyclecanalsotakeplacewithouthavingICTsineachofthe m.
+This is especially true for the participation and service deliv ery
+pillars. Instead, a multichannel approach is most suited in many
+cases,particularlyincountrieswhereICTpenetrationislow and
+povertyisstillpervasive.
+This is a critical caveat as, in principle, where binding
+consultation is institutionally required, governance inst ances
+should be in place for stakeholder participation to have any
+meaningful impact on policies and agenda setting, regardless of
+thesizeofthe“digitaldivide.”
+CHARACTERIZING BLOCKCHAIN
+TECHNOLOGY FOR THE PUBLIC SECTOR
+The truth machine ( Casey and Vigna, 2018 ). The trust machine
+(The Economist, 2015 ). The Internet of value ( Tapscott and
+Tapscott,2016 ).Thesearesomeofthenamescoinedbydiﬀerent
+authors, academic and pundits to capture the complexity of
+the technology in one phrase. While catchy, they fall short
+from elucidating the beneﬁts of the technology from a public
+sectorperspective.
+Almost 10 years after its birth, publication after publicatio n
+continues to explore ways to explain the inner workings of
+the technology to the average person (e.g., Williams, 2019 ).
+Technologydiﬀusiondoesnotdependontheleveloftechnology
+comprehensionbythepublic( Kapooretal.,2014 ).
+In this section, blockchain technology is characterized fr om
+theperspectiveofthepublicsectorindevelopingcountries,usi ng
+the conceptual framework presented in the previous section as
+aguide.
+Revisiting Blockchain, Again
+Ablockchainisa digitalledger supportedbythesmartintegration
+of three existing technologies: peer-to-peer (distributed)
+networks; cryptography; and consensus algorithms. Blockchai n
+technology complexity stems in part from the fact that its
+Frontiers in Blockchain | www.frontiersin.org 4 January 2020 | Volume 2 | Article 27Zambrano Blockchains in Developing Countries
+FIGURE 1 | The pillars of digital government.
+supporting technologies have been hanging out at the fringes o f
+theglobalnetwork.
+While the concept of digital raises little doubt, the same
+cannotbesaidabouttheledgernatureofblockchains.Despit ethe
+increasing popularity of spreadsheets, accountants are perhaps
+the group most familiar with ledgers as they continuously us e
+them for business purposes. In that world, ledgers are analog or
+digital books where a series of transactions, mostly credit s and
+debits, are sequentially recorded. Not surprisingly, some h ave
+suggestedthatblockchainsareindeedaformoftripleaccoun ting
+(Simoyama et al., 2017; Taylor, 2017 ). Being that as it may, the
+key point here is that blockchains are not part of the relationa l
+databasetechnologyfamily.Blockchainsarethusnotdesig nedto
+storebigdata,forexample.
+Moreover, and unlike traditional accounting ledgers,
+blockchain technology provides an open avenue for
+skilled users to write native computer code. Developing
+applications that operate within the platform or interact
+with external sources and resources is thus a key feature.
+Usually presented under the umbrella of smart contracts,
+programming in blockchains is not limited to them, as
+discussedbelow.
+The underlying peer-to-peer or distributed network should
+not be confused with a decentralized one. Although the terms
+are used as synonyms in much of the literature, the latter all ows
+for local centralization. That is, a group of nodes close tog ether
+depend on central local one which in turn provides the link to
+other node clusters operating under similar arrangements. I n a
+trulydistributednetworklikeblockchain,allnodesareeq ualand
+liveindependently.
+One and two-way encryption tools are extensively used in
+blockchains. The ﬁrst is known as hashing and creates an
+irreversible and unique digital signature for every transa ction,
+a group of transactions, and blocks added to the existing cha in.Thesecondisasymmetricpublickeycryptographythatgenerate s
+publicandprivatekeysforendusers.Userssharetheirpublicke ys
+whilekeepingtheirprivatekeysinasafespace,digitaloranal og.
+Mostofthedatarecordedonablockchainarethuscomprisedof
+hashesandpublickeys.
+Two types of consensus take place in blockchain technology
+(Beyer, 2019 ). The ﬁrst one occurs when the specialized nodes
+working on adding a new block of transactions to the chain, th e
+so-calledminers,agreeonwhichtransactionsshouldbeinc luded
+insuchblock.ThisisknownasNakamotoconsensus.Thesecond
+happens when the new block of transactions is actually added to
+the chain. Here, any node or network user can validate such a
+blockandagreetoappendittotheexistingchain6.
+Insum,ablockchainisaprogrammabledigitallayeroperating
+within a distributed network, requiring cryptographic tools
+for access and transaction management, and using consensus
+algorithms for adding or appending new blocks of transactions
+totheledger.
+Key Traits
+A vast literature on the key traits of blockchain technology
+already exists. This section presents key blockchain traits based
+onthecontributionthateachofitsthreeunderlyingtechno logies
+furnishes.Twodiﬀerentsetsoftraitsemerge.Onestemsfrom the
+unique contribution of each of the base technologies. The ot her
+istheresultoftheintegrationandinteractionamongthem.
+Table1summarizesthekeytraitsaccordingly.
+Traits in the matrix diagonal represent standalone
+contributions. All other boxes are the result of the integra tion of
+thethreetechnologies.
+6Validation is almost instantaneous as all it requires is the multiplica tion of the
+unique hash identifying the previous block by the nonce(number used once)
+providedbythenode(miner)requestingtheadditionofthenewbloc k.
+Frontiers in Blockchain | www.frontiersin.org 5 January 2020 | Volume 2 | Article 27Zambrano Blockchains in Developing Countries
+TABLE 1 | Blockchain technology core traits.
+P2P network Cryptography Consensus
+algorithms
+P2P network Resilience Consensus/
+TransparencyConsensus/
+Transparency
+Cryptography Consensus/
+TransparencyPseudonymity Security
+Consensus
+algorithmsConsensus/
+TransparencySecurity Immutability/
+Incentives
+Standalonetraitsinclude:
+Resilience : In a distributed network, multiple independent
+copiesoftheblockchaincanco-exist.Thereisthusnocentra l
+pointoffailure.
+Pseudonymity : Cryptographic tools enable users to interact
+with others without having to reveal their real identities
+or providing any personal data. A relatively high degree of
+privacy thus exists. The same however does not apply to
+transactions that in principle can be viewed by anyone in
+thenetwork.
+Immutability : Blocks of transactions in the chain are time-
+stamped and mathematically linked in sequential order.
+Changingoneblockthusrequireschangingallotherblocks.
+Incentives :Processingtransactionsandaddingnewblocksto
+thechainbringsﬁnancialbeneﬁtstonodesinvolved(miners ).
+Transaction fees and cryptocurrency rewards are the most
+commonformsofincome.
+Traits stemming from the integration of the
+technologiesinclude:
+Consensus : Transaction processing and block addition are
+validated by network nodes in all cases. This is algorithmic
+consensus that should not be confused with human-
+basedconsensus.
+Transparency :Userinteractionsandtheresultingdatacanbe
+viewed by any network member. Conﬁdential information or
+datahasnoplacehere.
+Security: Resilience, immutability, and consensus
+substantially increase the level of internal blockchain
+security.Whilestillpossible,hackingandnetworkattacks are
+stillpossible.
+Typology
+Diﬀerenttypesofblockchainshaveemergedsincethetechnolo gy
+ﬁrst saw the light of day wearing a large Bitcoin/cryptocurre ncy
+hat. The standard way of classifying blockchains relies
+on the distinction between private and public, alongside
+permission levels. In this perspective, three diﬀerent blockch ain
+types emerge public, private, and consortium blockchains
+(e.g.,Thompson, 2018 ). While relevant for the private
+sector, such diﬀerentiation might not be as eﬀective from
+a public sector perspective. Furthermore, one potential
+issue with such typology is the lack of clear diﬀerentiation
+between the link/network and the application layers of
+thetechnology.The distinction between private and consortium blockchains
+hinges in part on how many entities control access to the
+application layer. From the viewpoint of governments, having a
+so-called “private blockchain” in the public sector might not be
+the best way to promote the technology, given current demands
+forincreasedtransparencyandaccountability.Government scan
+also have multiple institutions involved in the deployment of
+one blockchain platform—as could be the case for government
+interoperability,isoneofthemainstaplesofdigitalgovern ment.
+Calling such an arrangement a consortium does not add any
+valuefromthepublicsectorperspective.
+The best way to avoid such potential pitfalls is to go back
+to the three core blockchain technologies described in sect ion
+RevisitingBlockchain,Againandsuggestanalternativetypo logy
+that caters to the speciﬁc idiosyncrasies of the public sector. For
+starters,peer-to-peernetworksoperateatthelink/networkl ayers
+andcanbeeitheropenorclosed.Userseitherﬁndthedooropen
+andwalkrightinormustﬁrstringthedoorbelltobeabletoent er.
+Cryptographic tools and consensus algorithms operate at the
+application layer. Nodes or users accessing such layers are ﬁrs t
+authenticated and then furnished an authorization to perfor m
+speciﬁc actions—such as creating a smart contract, mining th e
+blockchainnetworkordevelopingaDapp,forexample.
+Table2depicts the matrix of options by separating the
+diﬀerentlayers.
+Note that blockchains require all users to be authenticated,
+regardlessofaccesstype.Thediﬀerencebetweenopenandclosed
+network access depends on how users are authenticated. In the
+case of open access, users self-authenticate by creating pair s of
+public/private keys and digital signatures that uniquely ide ntify
+them. In the case of closed access, a third-party (one or more
+entities)issuestheauthenticationcredentialsusingcrypt ographic
+tools. Note that open access authentication does not fulﬁll
+know-your-customer (KYC) or anti-money-laundering (AML)
+regulationsandthusmightbelessattractivetobothgovern ments
+andbusinessesboundbythem7.
+Once authenticated, nodes will be able to access the
+applicationlayer.Inthecaseofclassicblockchainnetworkss uch
+asBitcoinandEthereum,authenticationalonegrantsimmed iate
+access to the application layer. Authorization does not exist a s a
+separate instance and thus, no central authority is required . In
+thiscase,accesstotheapplicationlayerisfullydecentrali zed.But
+open access blockchain platforms can also limit access to such
+layer. Typically, this happens when the platform wants to limit
+thenumberofnodesthatcanminetransactionsand/oraddane w
+block. A hybrid open blockchain decentralizes the link/netw ork
+laterbutcentralizesaccesstosomepartoftheapplicationlaye r.
+For closed access networks, both authentication and
+authorization are managed by a central outﬁt—one single ent ity
+(private, in the traditional scheme) or many working togethe r
+(consortium). Access to the link/network and application laye rs
+is thus fully centralized. However, it is also possible that a clo sed
+blockchain platform provides all authenticated nodes full ac cess
+7In the cryptocurrency realm, KYC/AML services are provided in a centraliz ed
+fashion by either coin exchanges or other specialized busines ses associated.
+Governmentshowevercannotoutsourcesuchfunctionssoeasily .
+Frontiers in Blockchain | www.frontiersin.org 6 January 2020 | Volume 2 | Article 27Zambrano Blockchains in Developing Countries
+TABLE 2 | Blockchains typology for the public sector.
+Authentication Authorization
+Network
+AccessYes No
+Open Autonomous Hybridopen
+Selected nodes,
+one or more
+parties in charge
+(Sovrin, EOS)Decentralized
+Open to all by
+default
+(Bitcoin, Ethereum)
+Closed Granted Centralized
+Selected nodes,
+one or more
+parties in charge
+(Hyperledger, R3)Hybridclosed
+Open to all
+authenticated
+nodes (“Govchains”)
+to the application layer. This might be relevant to public secto r
+initiativeswhereallactorswithinasingleministryorinm ultiple
+ministries or public entities work together in a cross-secto ral
+initiative. The concept of “GovChains” might prove useful her e.
+A GovChain is similar to a government dedicated network
+with secure links to external clients. A GovChain runs on suc h
+networkbutaddfunctionalityattheapplicationlayer.
+Finally, this typology highlights the similarities between
+hybrid open and closed centralized blockchains. In both, the
+levels of authorization to the application layer are provided b y
+a central outﬁt. However, since hybrid open networks do not
+control authentication, all nodes and users still have read access
+to the full blockchain. This is not the case in closed blockch ain
+networks. The latter can also introduce more sophisticated
+access control schemes to assign diﬀerent roles of nodes in th e
+applicationlayer.
+Smart Contracts
+Undoubtedly, smart contracts are one of the most touted
+blockchain features. While the idea itself dates from the en d of
+last century ( Szabo, 1997 ), blockchains created the platform for
+theactualimplementationoftheidea.
+For example, Ethereum provides the software (Solidity)8and
+platform (Ethereum Virtual Machine)9to program and execute
+contracts10. In this fashion, transactions envisaged on a given
+agreementcanbetriggeredatapre-establisheddateorbyact ion
+takenbyoneofthepartiesinvolved.Contractualtransactio nsare
+automaticallyexecutedand,sincethepartieshavedirectac cessto
+digitalcurrency,paymentsoccursmoothly.
+8https://solidity.readthedocs.io/en/v0.5.7/
+9https://solidity.readthedocs.io/en/develop/introduction-t o-smart-contracts.
+html#index-6. Ethereum smart contracts have their own blockchain a ccounts
+whichfunctionindistinctfashionvis-a-visuseraccounts .
+10According to Ethereum, “‘Contracts” in Ethereum should not be seen as
+something that should be “fulﬁlled” or “complied with”; rather, they a re more
+like“autonomousagents”thatliveinsideoftheEthereumexecut ionenvironment,
+alwaysexecutingaspeciﬁcpieceofcodewhen“poked”byamessageo rtransaction,
+and having direct control over their own ether balance and their own key/value
+store to store their permanent state’. https://ethereum-homestead. readthedocs.io/
+en/latest/contracts-and-transactions/account-types-gas- and-transactions.htmlSmart contracts also come in diﬀerent ﬂavors ( OSTechNix,
+2019). The ﬁrst one mirrors traditional legal contracts which
+can now be executed on a blockchain platform. Not limited to
+ﬁnancial agreements ( Murphy, 2018 ), these type of contracts
+have attracted most of the attention of both practitioners an d
+academics (e.g., Macrinici et al., 2018 ). DAOs or Decentralized
+Autonomous Organizations come in second. Here, a given
+community agrees to speciﬁc governance arrangements which
+are then coded into a binding smart contract. DAOs suﬀered a
+devastatingsetbackthankstothewell-known2016hack( Falkon,
+2017)butarestillbeingexploredbypractitionersandacademics
+(e.g.,Dialloetal.,2018 ).
+Finally, Application Layer Contracts (ALCs) provide an
+interface between the blockchains and applications such as
+Dapps and the Internet of Things. Less well-known than the
+others, ALCs handle multiple smart contracts. Here, the line
+betweencontractsandregularcomputingprogrammingstartst o
+blur. ALCs resemble well-known software gateways that allo w
+communication across diﬀerent platforms at the application
+layer. Coding seems to become now a “contract” which in turn
+recalls“codeislaw”arguments( Dwyer,2017;Yeung,2019 ).
+As with most nascent technologies, smart contracts have
+limitations. On the technology side, they are prone to coding
+errors and bugs as the DAO hack shows. This is exacerbated
+by the fact that programmers must translate legal contracts i nto
+code. Complex contracts might thus yield additional coding
+errors and bugs. As all nodes have to run and validate the code
+insmartcontracts,codesizeislimitedandthusrunningcom plex
+applications is not possible ( O’Connell, 2019 ). Again, complex
+contractsmightnotbesuitableforblockchainexecution.
+While smart contracts reduce transaction costs, which are
+now executed automatically, costs related to contract breac hes,
+dispute resolution, and redress are much higher ( Szczerbowski,
+2018).Smartcontractsarealsoimmutableandactasautonomous
+agents. In this light, researchers recommend using a hybrid
+approach where both regular and smart contracts act in sync
+(LeviandLipton,2018 ).
+The question on the legality of the ﬁrst type of contracts
+has received plenty of attention ( Frankenreiter, 2019; Waltl et
+al., 2019) Authors have argued that some smart contracts are
+compatiblewithcurrentlegislation,atleastinafewindustr ialized
+countries( DeFilippiandWright,2018 ).Moregenerally,itseems
+thatlawsandregulationswillneedtobechangedorupdated.
+Indevelopingcountrieswithweakstatecapacityandincipient
+ruleoflawinstitutions,thismightbecomeamajorchalleng e.
+Blockchains Are Not a Monolith
+Since its inception, dynamic innovation, backed by top human
+talentwithaccesstosubstantialﬁnancialresources,hasb eenpart
+of the blockchain ecosystem. The community has thus been abl e
+not only to tackle the initial limitations of the technology but
+alsotoenhanceitscorefunctionality.Asseenabove,block chains
+come in many diﬀerent formats and more are popping up by
+the day. This is a critical consideration for both academics a nd
+policymakers. Blockchain technology is not a monolith. On th e
+contrary,blockchainsareamovingtarget.
+Frontiers in Blockchain | www.frontiersin.org 7 January 2020 | Volume 2 | Article 27Zambrano Blockchains in Developing Countries
+Here, the distinction between blockchains and distributed
+ledger technologies (DLTs) is important ( Dexter, 2018 ).
+Blockchains are a subset of DLTs. A blockchain is a DLT that
+mathematically links blocks of data in sequential fashion u sing
+cryptographic tools. A DLT is a digital ledger that runs on a
+distributed network and does not require the use of consensu s
+algorithmsforitsfulloperation11.
+BLOCKCHAIN-ING GOVERNMENTS
+Blockchains, Development, and
+Governments
+Just like its digital technology predecessors such as the Inte rnet,
+both for-proﬁt and non-proﬁt innovators and practitioners
+continuously showcase the relevance of the new technology t o
+tacklesocio-economic,political,andenvironmentalissue s.Here,
+diﬀerentlayersanddiﬀerentlabelsappearinthescene.
+The ﬁrst layer, which in turn is the most generic, links
+blockchains to existing and emerging issues without necess arily
+referencing development or the SDGs—albeit the latter being
+universal. Labels used to describe this link include blockchain
+for social good (Podder and Venkat, 2018; BreakerMag, 2019 ),
+blockchain for social impact (Fernando, 2018 ), andblockchain
+for social change (Verlhust and Young, 2018 ), the latter being
+a research project. For example, the Blockchain for Social
+ImpactCoalition(BSIC),spearheadedbyaNY-basedblockchai n
+company, was launched in 2017. Comprised of close to 50
+entities, BSIC mentions the SDGs but has set its own agenda12
+Forthemostpart,blockchainstartupsworkingundertheselab els
+take the initiative on their own and venture into the ﬁeld to
+experimentwiththenascenttechnology.
+PaceKewell13,akeyissuewiththissetofinitiativesisthelack
+ofarigorousdeﬁnitionoftheconceptsbeingputforward.Soci al
+good might have diﬀerent meanings for diﬀerent communities,
+moresoiftheworkisundertakenonaglobalscale.Furthermo re,
+social change and social impact can also be negative. That is,
+on the ground projects can also generate change and impact
+by exacerbating existing gaps despite the best eﬀorts of those
+doing the implementation. Indicators and metrics to assess a nd
+measurechangearemissinginmostoftheseeﬀorts.
+The second layer includes entities directly supporting the
+achievementoftheSDGs.Threegroupscomprisethislayer.The
+ﬁrst works on a global scale and have advocacy and awareness-
+raising role. The Blockchain Commission, a partnership of th ree
+non-proﬁt entities launched at the United Nations in 2017, is a
+typicalexample.
+A second group includes UN agencies and development
+organizations that work in developing countries. UNDP and
+UNICEF,amongmanyothers,aregoodexamples.Theseentities
+work on the ground and disburse their own resources as
+11To be more precise, both blockchains and DLTs are part of the broader con cept
+ofdistributedsystemswhereconsensusonhoweventsarerecordedi sfundamental
+toensuresystemconsistencyandstability( Lamport,1978 ).
+12https://blockchainforsocialimpact.com/about/
+13Kewell et al. (2017) explored the links between blockchains and sustainable
+development using an aﬀordances perspective, coining the term “bloc kchain for
+good”intheprocess.grants to ﬁnance projects. UNICEF has launched an innovation
+fund which has over 15 million dollars to ﬁnance innovative
+blockchain projects in developing countries ( Harry, 2017;
+UNICEF, 2018 ). UNDP allocates small grants from existing
+resources and ﬁnances pilots, usually in partnership with
+blockchain startups ( UNDP, 2018 ). Note that these grants go
+to local innovators and entrepreneurs in developing and not to
+governments. Most entities working in the SDG realm select th e
+goals and targets that reﬂect their own internal mandates. Re ach
+andscalealsoplayaroleascovering18goalsandover200targ ets
+does require considerable human and ﬁnancial resources tha t
+mostdonothave.
+Last but not least are the organizations working in the
+humanitarian space. This group also includes UN agencies as
+well as reputed organizations that have carried out this line of
+workformanyyears.WhileUNagenciessuchastheWorldFood
+Programme(WFP)14operateindevelopingcountries,thisisnot
+the case for many others. Perhaps surprisingly, one of the most
+well-knownexamplesofapparentblockchainsuccessoccurredi n
+this space thanks to WFP refugee program in Jordan ( Juskalian,
+2018; WFP, 2018 ), which is now expanding to other regions and
+thematic areas ( Baydakova, 2018 ). A recent report details the
+various initiatives in this space while highlighting some les sons
+learnedsofar( Coppi,2019 ).
+While governments in developing countries are not one of
+the main overall targets of these groups, very few take a more
+comprehensiveandstrategicapproach,orexplicitlyconsiderth e
+provision of public goods by governments as is the case, for
+example, of the blockchain for social change research project
+(VerlhustandYoung,2018 ).
+Development organizations such as the Center for Global
+Development, USAID, the International Development Research
+Center and the Institute for Development Studies generated
+reports aimed at understanding the potential development
+impact of blockchains ( Hernandez, 2017; Pisa and Judden,
+2017; Zambrano, 2017; Nelson, 2018; Pisa, 2018 ). These authors
+attempted to delimit the speciﬁc application of the emerging
+technology in the Global South while pushing back on the
+ongoing hype. The Asian Development Bank produced a report
+targeting Asia and provided recommendations based on the
+analysis of ﬁve use cases ( Ferrarini et al., 2017 ), including digital
+identity,project-aidmonitoring,andsmartenergy,allrel evantto
+mostdevelopingcountries.
+Morerecently,anoverallblockchainresearchreviewinclude d
+an analysis of the relevance of the technology in the
+implementation of the SDGs ( Hughes et al., 2019 ). The authors
+highlight the goals and targets where blockchains technolo gy
+could have the most impact while providing a couple of use
+cases based on selected current development challenges Indi a is
+facingtoday.
+The current approach to deploy blockchains in support of
+development is centered on the elaboration of relevant use
+cases,whichmightbeopenlylinkedtodevelopmentgoals.Once
+completed,theyarethenpitchedtosocialventures,developmen t
+14WFPdoesbothhumanitariananddevelopmentwork.
+Frontiers in Blockchain | www.frontiersin.org 8 January 2020 | Volume 2 | Article 27Zambrano Blockchains in Developing Countries
+organizationsorevengovernmentsintheGlobalSouthtosec ure
+eitherfundingorsupport-orboth—forsmallpilots.
+Given the deluge of publications (and academic research)
+on the technology, the above examples show a giant gap
+when it comes to deploying blockchains in developing country
+governments. Furthermore, only a few of these directly link
+such deployments to digital government policies, strategies ,
+and implementation agendas which, as reported by the United
+Nations ( UNDESA, 2018 ), is ongoing in most countries,
+includingdevelopingnations.
+Therelationshipbetweenblockchainsanddigitalgovernme nt
+has thus attracted little attention and real case studies ar e
+for the most part missing in action15. Three distinct patterns
+can however be identiﬁed. First, blockchains are positioned
+assupport infrastructure for ongoing e-government platforms
+and initiatives. Here, the emphasis is on the technology and
+innovation part of the equation, and not on the institutional
+beneﬁts, thus drastically reducing its transformational po tential
+Second, blockchains are seen as a threat, sometimes lethal, to
+public institutions as they seem to demand dramatic changes
+in the way they are run—to the point that might put their
+existenceintoquestion.Andthird,onthegroundevidencef rom
+blockchaindeploymentswithingovernmentsisincipientatbe st.
+Country Examples
+While many blockchain pilots and projects are taking place in
+developingcountries,someeveninvolvingthepublicsector, only
+afewareactuallyledbygovernments.Thissubsectionhighl ights
+someofthesecases,bearinginmindthatkeepingtrackofalls uch
+initiativesisacomplextask.
+Estonia is often cited as a best practice for blockchain
+deployment ( Sullivan and Burger, 2017; Guarda, 2018 ) and an
+example to follow. The country has managed to graduate to
+the developed country team in <30 years. Estonia gained its
+independencein1991andrapidlygainedalegitimatereputatio n
+of a country able to harness ICTs to promote overall human
+development. E-governance became its main staple. Nowadays,
+thecountryprovidesassistanceinthisareatomanyothersal most
+onaglobalscale.
+The 2007 cyber-attacks on Estonia’s overall infostructure
+opened the door for further innovation in the area of security .
+That same year a company called Guardtime was launched,
+oﬀering government a solution called KSI (Keyless Service
+Infrastructure), which allowed for the decentralized veri ﬁcation
+of public records, data, and access points without having to
+use a digital signature. Instead, KSI uses one-way hashing
+and a decentralized ledger. Deployed in 2008, KSI does
+resembleblockchaintechnologysansoneofitscorecomponen ts:
+consensusalgorithms.
+Beingthatasitmay,thekeypointoftheEstoniaexampleisthe
+role KSI played in supporting existing e-governance platforms
+15Academic research, reviewed by the author, has the same gaps. For e xample,
+the latest literature review on the subject published last Summer was on ly able
+to identify twenty one relevant papers ( Batubara et al., 2018 ). Only six were
+published in academic journals. Moreover, most of these papers take a s ectoral
+approachfocusingontopicssuchaselectoralprocesses,healthcare,a ndeducation,
+tomentonafew.and services. It furnished a new solution to a major digital
+challenge that could perhaps not be solved otherwise. While th e
+company claims it beat Nakamoto by a couple of years16, KSI is
+notinthesameballparkasBitcoinorEthereum17.Technological
+replication of the Estonia case using a diﬀerent platform might
+thusbemorecomplexthanexpected.
+While not a country, Dubaiis certainly larger in population
+thanEstoniaandhostsover200nationalities.TheDubaiEmi rate
+alsooperatesalmostlikeacity-stateandhasitsownpoliciesa nd
+institutions in addition to federal ones. Back in 2016, the P rime
+MinisteroftheEmirateannouncedthelaunchingofablockcha in
+strategy planned to be fully implemented by 2020 ( Gulf News,
+2016). Spearheaded by Smart Dubai, a local entity that oversees
+the strategic deployment of new technologies and innovation in
+close collaboration with the private sector, the strategy se t three
+core goals: foster government eﬃciency; create new busines s
+opportunities and startups; and assume a leadership position on
+blockchaintechnologies( Bishr,2018 ).
+Intermsofeﬃciency,twokeyprioritieshavebeenidentiﬁed: a
+paperless government and a blockchain-based payments system
+(Jones, 2018 ). Note that both themes were already part of the
+overall policy agenda of Smart Dubai, which also happens to
+hosttheSmartDubaiGovernmentinitiative18.Thesecondtheme
+focusing on startups is also part of the Smart Dubai agenda.
+More recently, Smart Dubai launched a decentralized open data
+initiative, yet another local priority previously identiﬁed , in
+partnershipwithablockchaincompany( Andrikopoulos,2019 ).
+While getting updated information on the evolution of these
+projects is cumbersome, the core lesson from Dubai is similar to
+that of Estonia: blockchains are brought in to support existing
+digital government issues and priorities and are eﬀectively
+deployed to address related challenges. But in the case of Dub ai,
+theEmiratehasdevelopedastrategyandcreatedaninternati onal
+multi-stakeholderboardtooverseeitsimplementation( Berryhill
+etal.,2018 ).
+Kenyaseems to be following these same steps. Early last year
+the government announced the creation of a blockchain task
+force under the leadership of the Ministry of ICT. The task
+force prepared a report which was submitted to the Minister
+lastNovember.Whilethereportisapparentlynotpublicly,press
+reports suggest that its contents are fully aligned with Keny a’s
+development priorities ( Kenyan Wallstreet, 2018; Tanui, 2018 ).
+Perhapscoincidentally,thegovernmentannouncedaprogramt o
+provideaﬀordablehousingamonthbefore( Alexandre,2018 ).
+CountriessuchasGeorgiaandPeruhavetakenamoresectoral
+approach. Georgiaisoneoftheleadersintheuseofblockchains
+for land title registration which has already been the subjec t
+of critical academic research ( Lemieux, 2017; Thomas, 2017 ).
+Recently, Peruannounced a new government procurement
+system based on blockchain technology in partnership with a
+local blockchain startup and the Inter American Development
+Bank (IADB). Public procurement is one of the main sources of
+16https://guardtime.com/technology
+17KSIcanbestationedwithintheDLTrubric.
+18Smart Dubai also spearheads the local Artiﬁcial Intelligence strateg y among
+others.
+Frontiers in Blockchain | www.frontiersin.org 9 January 2020 | Volume 2 | Article 27Zambrano Blockchains in Developing Countries
+corruptionandatraditionalpriorityofe-governmentinitia tives.
+IADB has launched a hemispheric initiative called LAC-Chain
+withtheideaofsupportingthedeploymentofthetechnologyon
+itsclientcountries( IDB,2018 ).
+In any event, neither of these two countries have an overall
+blockchain strategy. In principle then, the results and outco mes
+of ongoing sectoral initiatives can provide fertile ground f or
+suchdevelopment.
+A counterexample for the developed world can also oﬀer
+additional insights. Illinois became the ﬁrst US state to emb race
+blockchaintechnology.Launchedattheendof2016,theinit iative
+was part of the broader Smarter State initiative sponsored by
+the Department of Innovation and Technology. The blockchain
+project has three overall targets: increase government eﬃci ency
+byintegratingservices;developalocalecosystem;andmod ernize
+governancetohandleadistributedeconomy( IllinoisBlockchain
+Initiative, 2017 ). Pilots on land titles and self-sovereign identity
+werelaunchedafewmonthslater.
+However, by the beginning of 2018, the project seems to have
+ﬁzzled. The ﬁnal report published February last year highligh ts
+thelimitationsofthetechnology,includingthelackofsuc cessful
+pilots, scalability, interoperability, and lack of privacy ( Van
+Wagenen, 2018 ).So whileIllinoisfollows thesame pathassome
+countries discussed above, technical limitations seem to h ave
+prevented success. In addition, the fact that the project was
+requestingspeciﬁclegislativechangesatthestatelevelmi ghthave
+alsoruﬄedsomefeathers.
+DISCUSSION
+Overview
+The intersections between development, ICTs and developing
+country governments provide the fodder for the conceptual
+framework developed in this paper. Figure2 below depicts
+such interconnections. Governments play various roles when
+it comes to sustainable development and ICTs, and are not
+limitedtothedigitalgovernmentsphere perse.Butgovernments
+should lead to promote digital government within a sustainab le
+developmentcontext.
+On the ﬂip side, the traditional approach to e-government
+centersontherelationbetweenthepublicsectorandtechnol ogy
+while assuming development outcomes are either the natural
+FIGURE 2 | Digital government in a development context.and automatic. For example, the standard e-government
+transactional approach that emphasizes G2B, G2C, and G2G
+interactions—depicted in Figure2 by the intersection between
+government and ICTs, has limited scope for targeting speciﬁc
+development gaps as the onus is on interactions among key
+sectorsandstakeholders.
+Having governments as part and parcel of the overall
+equation also demands serious consideration of the relation ship
+between state capacity and both development and digital
+technologies.Thedynamicsbetweenthesethreecanbecomple x,
+bearinginmindthatsustainabledevelopmentitselfencompass es
+four pillars (governance included) while digital government
+comprises three, as discussed in section Conceptual Framewor k
+above. Nevertheless, the essential point is that state capaci ty is
+both a means to promote digital government and sustainable
+developmentandagoalinitself,asclearlyestablishedbytheUN
+SDGagenda.
+Taming the Beast: Taking Stock
+For starters, and like most digital technologies, blockcha ins are
+exogenous to the national ecosystems of developing countries .
+Governments thus continuously play catch-up with such
+technologies. A core issue here is the lack of local capacity t o
+eﬀectively harness the new entrant, even if the platform is Open
+Source and thus has no per-user licensing costs. Such capacity
+is not merely technical but also scientiﬁc and managerial as
+governments and partners should fully comprehend the inner
+workings of the technology to, for example, launch public
+bidding processes calling for the adoption of blockchains to
+support speciﬁc digital government priorities or gaps. In this
+regard, blockchains are not at all diﬀerent from previous digi tal
+technologiesmigratingintodevelopingnations.
+While the complexity of blockchains might add additional
+entry barriers, governments are probably better oﬀ focusing
+on both the three underlying technologies that support it and
+the diﬀerent types of blockchains, DLTs included, that are
+available. Regarding the former, many countries in the Globa l
+South lack adequate cryptographic expertise, have weak public
+key infrastructures (PKIs) in place, and are not very familia r
+with consensus algorithms. Furthermore, while peer-to-peer
+networkingisreadilyavailable,limitedInternetaccesswi llsurely
+poseconstraintstowidespreadutilization.
+As described in section Characterizing Blockchain
+Technology for the Public Sector above, developing country
+governments can choose among diﬀerent types of blockchains
+and DLTs. However, the ﬁrst question they need to ask is if
+blockchain technology is the most optimal solution for the is sue
+at stake. Several models for making such a decision have alread y
+been developed ( Rustum, 2019 ) and should be further reﬁned to
+ﬁt developing country contexts. Selecting the adequate platfo rm
+will mostly depend on the type of digital government priority
+under the radar screen. It is however possible to conclude
+that, in general, governments should opt for private or closed
+blockchains ( Atzori, 2015 ), hybrids included. KYC/AML issues
+are relevant here, particularly for the provision of public good s
+such as education, health, and justice which consume scarce
+public resources that should be optimally allocated. On the
+Frontiers in Blockchain | www.frontiersin.org 10 January 2020 | Volume 2 | Article 27Zambrano Blockchains in Developing Countries
+other hand, in terms of the dissemination of public documents ,
+information, and data, public or open blockchains can provide
+the right vehicle as they guarantee immutability, integrit y, and
+transparency while ensuring pseudonymous access—or access
+basedonself-sovereignidentity,ifavailable.
+The cases discussed in the country examples subsection
+yielded essential insights for deploying blockchains withi n
+governments. The evidence compiled so far, which is still
+incipient,suggeststhatthetechnologycandeliverwhenexpli citly
+linked to both digital government institutional instances and
+digital government priorities and gaps. For the most part,
+successful blockchain implementation in emerging countrie s
+haveeithercomplementedexistingdigitalgovernmentplatfo rms
+and initiatives or provided a new solution to vexing issues th at
+couldnotbesolvedotherwise.
+Inbothcases,thetechnologywasnotdeployedinastandalone
+fashion. Integrationwith otherdigital technologies wasa lsopart
+of the process. This is perhaps a crucial point as blockchains
+seem to add real value when brought in as a new member of an
+existing technology team. In this light, it is possible to sugg est
+thatsmartcontractscouldbecomereallyintelligentifthe ycould
+eﬀectivelyinteractwithDeepLearningalgorithmsandplatfo rms,
+forexample( Salahetal.,2019 ).
+Whilenothavingahappyending,theIllinoisexperiencesheds
+lightontherisksofdeployingblockchains.Technicallimit ations
+of the blockchain platforms selected for the various pilots
+helped stall the project. The initiative also attempted to addr ess
+its governance implications. Consequently, speciﬁc legislat ive
+changes were requested to the local assembly, including
+biometric-based notarization, self-notarization of docu ments
+andseveralothermeasurestoimprovethemanagementofpublic
+land records ( State of Illinois, 2018 ). While having potential
+for increasing state capacity, demands for institutional ch ange,
+grounded mostly on technological grounds, might not take oﬀ
+if local decision-makers have not been involved in the proces s
+from the start. Surely, this is not unique to blockchains. Bu t
+the fact that the technology is also touted as governance and
+institutional changer (e.g., Reijers et al., 2016 ), from centralized
+to distributed mechanisms, might end up strengthening loca l
+resistancetochange.
+Harnessing Blockchains: Challenges and
+Opportunities
+As discussed in subsection Blockchains, Development and
+Governments, blockchain deployment in developing country
+governments is still in its infancy. Hype, complexity, lack
+of successful implementation, and an overemphasis on
+cryptocurrencies and new ﬁnancial markets are factors that
+mighthelpexplainthisstateofaﬀairs—nottoforgetthefact that
+blockchaintechnologyisstillmaturing.
+Theconceptualframeworkpresentedinthispapertargetsthis
+gap by providing governments and development practitioners
+with potential entry points to explore the eﬀective deployment
+of blockchain technology systematically. If governments a re the
+main target of blockchain technology initiatives, then dig ital
+governmentandstatecapacitymusttakecenterstage.Earlyevidencesuggeststhatblockchainscanmakeadiﬀerence
+when aligned with existing digital government institution s,
+strategies, priorities, and platforms. This, in turn, indica tes that
+a more nuanced approach to the interplay between blockchains
+andkeydigitalgovernmentcomponentsisrequired.
+For starters, governments in the Global South should
+capitalizeonexistingSouth-SouthandNorth-Southcooperat ion
+agreements and networks to extract more information
+on ongoing blockchain deployments in the public sector.
+Collaboration across government peers on a global scale could
+add more value than published reports and thus help avoid
+pitfallsthatpioneersinthesectorhaveunexpectedlyfaced.
+Looking at the way blockchains can tackle core digital
+government themes and bottlenecks will be as important,
+if not more. For example, government interoperability has
+traditionally been one of such issues. More often than not,
+public entities happen to run their own technology platforms
+that almost never talk to each other. On the other hand,
+citizensandstakeholderswillsurelybeneﬁtfromhavingon e-stop
+shops to undertake all the business they do with government.
+To reach this point, government platforms must be able to
+converse among themselves. Governments have thus developed
+government interoperability frameworks that promote public
+sector integration. This is accomplished by the development
+of digital gateways that mediate the conversations across
+diﬀerent public platforms. Having a blockchain platform to
+support and enhance interoperability by ensuring the integrit y
+and transparency of the public sector certainly has enormous
+potential ( El-dosuky and El-adl, 2019 ). The same goes for many
+oftheothercoreareasoftraditionale-government.
+Blockchains can also have potential in enhancing
+state capacity. Many developing countries have designed
+decentralization or devolution strategies where both
+policymaking and ﬁscal management shifts from central
+governments to those in regions, states, and municipalities .
+Implementation of such policies has however been challenging,
+particularly in low-income countries. Lack of overall capaci ty
+has been one of the main challenges local governments face
+accompanied by a potential decrease in ﬁscal resources.
+Enter blockchains. For example, governments could set up
+one blockchain platform, a GovChain, to cater to all local
+governments. Financial resources could thus ﬂow within the
+Gov-chan vis smart contacts, while local government oﬃces ca n
+use the platform to support other government activities such as
+public information disclosure. This is an area that might hav e
+greatpotentialbutremainslargelyunexplored( DeSantis,2019 ).
+Along the same lines, it is possible to make a case
+fordistributed policymaking. Many developing countries are
+characterized by socio-economic, cultural and geographica l
+diversity that comprehensive national policies tend to ignor e for
+the sake of universality. At the same time, many countries al so
+have national, regional, and local development plans that, for
+the most part, are not necessarily in sync. Finding a middle of
+the road approach where local diversity shines but, at the same
+time,fallswithinbroaderdevelopmentpoliciessetathigher levels
+of government is feasible. Again, a GovChain could make a key
+diﬀerencehere.
+Frontiers in Blockchain | www.frontiersin.org 11 January 2020 | Volume 2 | Article 27Zambrano Blockchains in Developing Countries
+Whilecomplex,thechallengesforadoptingblockchainsinthe
+public sector of developing countries are not insurmountable .
+On the other hand, the opportunities are just starting to pop-
+up and could be harnessed in the short-term if the links
+between technology, sustainability and government instit utions
+arebroughttothefore.
+CONCLUSION
+Developing countries are, for the most part, playing catch-up
+when attempting to harness the latest digital technologies s uch
+as blockchains, among many others. This set of countries has
+also endorsed internationally-agreed development goals wh ile
+devising their own national and subnational development plan s.
+Whilejugglingsuchagendasisnotsimple,governmentscanpla y
+animportantroleinpromotingthelinkbetweentechnologyand
+development while enticing all other actors and sectors to ac t in
+concert. Undoubtedly, governments should lead when it comes
+to the modernization of public institutions, the deployment o f
+digitalgovernmentandtheprovisionofpublicgoods.
+This paper develops a conceptual framework aimed at
+grasping the dynamics between sustainable development,
+governments in the Global South and ICTs, introducing state
+capacity as both a means and an end. State capacity is required
+to achieve the various development goals and harness ICTs
+eﬀectively. Building state capacity is also a goal that will ens ure
+development gains can be sustained in the long haul. The
+framework is then used to assess the relevance of blockchain
+technologiesinsuchdynamics19.
+While still technologically evolving, blockchains oﬀer
+unique traits and beneﬁts that could make a diﬀerence if
+deployed strategically within governments in developing
+countries. Unfortunately, on the ground evidence of blockch ain
+implementation is still emerging while a closer examination of
+its relationship with digital government is almost absent. Use
+cases still dominate the scene and the core assumption is that
+blockchainswillprevailastheoveralldisruptorwithnopartn ers
+insight.
+19The conceptual framework suggested by the paper can also be used to st udy
+the introduction of other digital technologies such as Artiﬁci al Intelligence in the
+publicsectorofdevelopingcountries.However, early evidence suggests that blockchains can add
+value when deployed as part of a team of digital technologies
+working in sync. Early implementations also indicate that
+adequate institutional support and endorsement are critical ,
+especiallyfromthepublicentitiespromotingdigitalgovernm ent
+that had already identiﬁed a range of priorities as key target s.
+Nevertheless, risks still abound, stemming from the limita tions
+of the technology itself and its complexity, and calls for rapi d
+institutionalchangewhichcouldpushbackexistingpoliticalw ill.
+In addition, issues related to implementation costs and actua l
+projectmanagementneedfurtherexploration.
+The distributed nature of blockchain technology and
+its implications for governance systems has also upstaged
+digital government concerns. Indeed, blockchains have bee n
+touted as an “institutional technology” that could bring
+dramatic changes within governments (and all other sectors ),
+propelling new governance mechanisms mostly based on smart
+contracts. While linked to ongoing discussions on algorith mic
+governance concerning Artiﬁcial Intelligence and all its c ousins,
+a blockchain-based perspective connecting these dots is miss ing
+inaction.
+Developing countries with low capacity states and nascent
+capitalist development might ﬁnd such new governance options
+less palatable given pressing sustainable development demands
+and calls to sustain democratic governance regimes. If it is a
+real institutional technology, then blockchaintechnolog y should
+be a critical enabler for innovative institutional developm ent.
+Blockchains could also deliver the goods within existing
+institutional settings, thus making institutional change a matter
+of human agency, not technology. And that would undoubtedly
+be a critical achievement that could contribute to resilient long-
+termsustainabledevelopment.
+DATA AVAILABILITY STATEMENT
+Publicly available datasets were analyzed in this study. Thi s data
+can be found here: https://publicadministration.un.org/eg ovkb/
+en-us/Reports/UN-E-Government-Survey-2018.
+AUTHOR CONTRIBUTIONS
+Theauthorhascreatedallthecontentonthispaper.
+REFERENCES
+Alexandre, A. (2018). Kenyan gov’t to use blockchain in new aﬀord able housing
+project.Cointelegraph . Available online at: https://cointelegraph.com/news/
+kenyan-govt-to-use-blockchain-in-new-aﬀordable-housing -project (accessed
+October16,2018).
+Andreasson, K. J. (ed.). (2015). Digital Divides: The New Challenges and
+Opportunities of e-Inclusion. Boca Raton, FL: CRC Press, Taylor & Francis
+Group.doi:10.1201/b17986
+Andrikopoulos, V. (2019). “Decentralised and open data turns Dubai into a
+smart city | outlier ventures,” in Outlier Ventures | Investing in Blockchain.
+AI & IoT Tech (blog). Available online at: https://outlierventures .io/research/
+decentralised-and-open-data-turns-dubai-into-a-smart-city / (accessed May
+6,2019).Asadullah, M. N., and Savoia, A. (2018). Poverty reduction during
+1990–2013: did millennium development goals adoption and state
+capacity matter? World Dev. 105, 70–82. doi: 10.1016/j.worlddev.2017.
+12.010
+Atzori, M. (2015). Blockchain Technology and Decentralized Governance:
+Is the State Still Necessary? SSRN Scholarly Paper ID 2709713.
+Rochester, NY: Social Science Research Network. Available onli ne
+at: https://papers.ssrn.com/abstract=2709713. doi: 10.2139/s srn.27
+09713
+Batubara, F. R., Ubacht, J., and Janssen, M. (2018). “Challenge s of blockchain
+technology adoption for e-government: a systematic literature revie w.”
+inProceedings of the 19th Annual International Conference on Dig ital
+Government Research: Governance in the Data Age (New York, NY: ACM).
+doi:10.1145/3209281.3209317
+Frontiers in Blockchain | www.frontiersin.org 12 January 2020 | Volume 2 | Article 27Zambrano Blockchains in Developing Countries
+Baydakova, A. (2018). UN food program to expand blockchain testing to african
+supplychain. CoinDesk (blog).Availableonlineat:https://www.coindesk.com/
+un-food-program-to-expand-blockchain-testing-to-african-su pply-chain
+(accessedSeptember26,2018).
+Berryhill, J., Bourgery, T., and Hanson, A. (2018). Blockchains Unchained . OECD
+WorkingPapersonPublicGovernance,no.28,1–52.doi:10.1787/ 3c32c429-en
+Beyer, S. (2019). Proof-of-Work Is Not a Consensus Protocol: Understanding
+the Basics of Blockchain Consensus . Medium. Available online at: https://
+medium.com/cryptronics/proof-of-work-is-not-a-consensus-protoc ol-
+understanding-the-basics-of-blockchain-consensus-30a ac7e845c8 (accessed
+April1,2019).
+Bishr, A. B. (2018). Dubai: a city powered by blockchain. Innovations 12, 4–8.
+doi:10.1162/inov_a_00271
+BreakerMag(2019).73blockchainsocialgoodorganizationsth atareactuallydoing
+something. BREAKERMAG (blog). Available online at: https://breakermag.
+com/73-blockchain-social-good-organizations-that-are-ac tually-doing-
+something/(accessedFebruary1,2019).
+Brown,A.N.,andSkelly,H.J.(2019).Howmuchevidenceistherereally? Mapping
+theevidencebaseforICT4Dinterventions. Inform.Technol.Int.Dev. 15:18.
+Casey,M.,andVigna,P.(2018). TheTruthMachine:TheBlockchainandtheFuture
+ofEverything ,1stEdn.NewYork,NY:St.Martin’sPress.
+Comin,D.,andMestieri,M.(2018).Iftechnologyhasarrivedevery where,whyhas
+incomediverged? Am.Econ.J. 10,137–78.doi:10.1257/mac.20150175
+Coppi, G. (2019). Blockchain and Distributed Ledger Technologies in the
+Humanitarian Sector . ODI. Available online at: https://www.odi.org/
+publications/11284-blockchain-and-distributed-ledger-tec hnologies-
+humanitarian-sector(accessedFebruary1,2019).
+Cozzens, S., and Thakur, D. (2014). Innovation and Inequality: Emerging
+TechnologiesinanUnequalWorld .Cheltenham,UK:EdwardElgarPub.
+Davidson, S., De Filippi, P., and Potts, J. (2017). Blockchains and the Economic
+Institutions of Capitalism . SSRN Scholarly Paper ID 3221527. Rochester, NY:
+Social Science Research Network. Available online at: https://pa pers.ssrn.com/
+abstract=3221527.
+De Filippi, P., and Wright, A. (2018). Blockchain and the Law: The Rule of Code.
+Cambridge,MA:HarvardUniversityPress.
+De Santis, R. (2019). Is There a Future for Blockchain in Local Government?
+Available online at: https://icma.org/blog-posts/there-future-b lockchain-
+local-government(accessedFebruary19,2019).
+Dexter, S. (2018). Blockchain vs DLT (Distributed Ledger Technology). Mango
+Research (blog). Available online at: https://www.mangoresearch .co/
+blockchain-vs-distributed-ledger-technology-dlt/ (accesse d February 20,
+2018).
+Diallo, N., Shi, W., Xu, L., Gao, Z., Chen, L., Lu, Y., et al. (2018) . “EGov-
+DAO: a better government using blockchain based decentralized au tonomous
+organization,” in 2018 International Conference on EDemocracy EGovernment
+(ICEDEG) ,(Houston,TX),166–71.doi:10.1109/ICEDEG.2018.8372356
+Dutton, T. (2018). An Overview of National AI Strategies. Politics+AI (Blog).
+Available online at: https://medium.com/politics-ai/an-overview -of-national-
+ai-strategies-2a70ec6edfd
+Dwyer, R. (2017). Code !=Law: Explorations of the Blockchain as a Mode of
+Algorithmic Governance . Available online at: https://www.academia.edu/
+34734732/Code_Law_Explorations_of_the_Blockchain_as_a_M ode_of_
+Algorithmic_Governance
+El-dosuky, M. A., and El-adl, G. H. (2019). GIZAChain: e-governmen t
+interoperability zone alignment, based on blockchain technology. PeerJ
+Preprints 7:e27477v1.doi:10.7287/peerj.preprints.27477v1
+Estevez, E., and Janowski, T. (2013). Electronic governance fo r sustainable
+development — conceptual framework and state of research. Govern. Inform.
+Q.30,S94–109.doi:10.1016/j.giq.2012.11.001
+Falkon, S. (2017). The story of the DAO — its history and conseque nces.
+Medium (blog). Available online at: https://medium.com/swlh/the-story-
+of-the-dao-its-history-and-consequences-71e6a8a551ee (accessed December
+24,2017).
+Fernando,A.(2018).Interestedblockchainforsocialimpact?Here aretheprojects
+you should know. Medium(blog). Available online at: https://medium.com/
+@00AaronFernando/interested-blockchain-for-social-impact-h ere-are-the-
+projects-you-should-know-8c14926e4f88(accessedMay29,20 18).Ferrarini, B., Maupin, J., and Hinojales, M. (2017). Distributed Ledger
+Technologies for Developing Asia. Manila: Asian Development Bank.
+doi:10.22617/WPS179184-2
+Foster,C.,andHeeks,R.(2014).WhyeﬀortstospreadnovelICTso ftenfail.Appr.
+Technol.41,59–61.
+Frankenreiter, J. (2019). The limits of smart contracts. J. Inst. Theor. Econ. 175,
+149–162.doi:10.1628/jite-2019-0021
+Gomez, R. (2013). The changing ﬁeld of ICTD: growth and maturation
+of the ﬁeld, 2000–2010. Electron J. Inform. Syst. Dev. Count. 58, 1–21.
+doi:10.1002/j.1681-4835.2013.tb00408.x
+Guarda, D. (2018). How Governments in Sweden, Denmark and Estonia Are
+Adopting Blockchain and AI . Available online at: https://www.intelligenthq.
+com/innovation-management/how-governments-are-adopting-bloc kchain-
+and-ai-in-advanced-economies-part-2/(accessedDecember14 ,2018).
+Gulf News (2016). Dubai Launches Blockchain Strategy to Become Paperless
+by 2020. Available online at: https://gulfnews.com/uae/government/duba i-
+launches-blockchain-strategy-to-become-paperless-by-2020-1. 1907790
+(accessedOctober5,2016).
+Harry(2017).Blockchaincommission&blockchainforimpactlaunched atUNto
+advance the sustainable development goals. CultHub (blog). Available online
+at: https://www.culthub.com/pr/blockchain-commission-blockcha in-for-
+impact-launched-at-un-to-advance-the-sustainable-developme nt-goals/9176
+(accessedSeptember26,2017).
+Hau,M.V.(2012).“Statecapacityandinclusivedevelopment:new challengesand
+directions,” in Global Development Institute Working Paper Series . esid-002-12
+(GDI, The University of Manchester). Available online at: https:/ /ideas.repec.
+org/p/bwp/bwppap/esid-002-12.html
+Heeks, R. (2005). E-government as a carrier of context. J. Public Policy 25, 51–74.
+doi:10.1017/S0143814X05000206
+Heeks, R. (2010). Do information and communication technologies ( ICTs)
+contributetodevelopment? J.Int.Dev. 22,625–40.doi:10.1002/jid.1716
+Hernandez, K. (2017). Blockchain for Development – Hope or Hype ? Available
+onlineat:https://opendocs.ids.ac.uk/opendocs/handle/1234 56789/12945
+Hughes, L., Dwivedi, Y. K., Misra, S. K., Rana, N. P., Raghavan, V., and Akella,
+V. (2019). Blockchain research, practice and policy: applications, b eneﬁts,
+limitations, emerging research themes and research agenda. Int. J. Inform.
+Manag.49,114–29.doi:10.1016/j.ijinfomgt.2019.02.005
+IDB (2018). Global Alliance to Promote the Use of Blockchain in Latin Ame rica
+and the Caribbean | IADB. Available online at: https://www.iadb.org/en/
+news/global-alliance-promote-use-blockchain-latin-america-and- caribbean
+(accessedOctober30,2018).
+IllinoisBlockchainInitiative(2017). IllinoisBlockchainInitiative:Insights,Progress
+& Horizon Scanning . The Illinois Blockchain Initiative. Available online
+at: https://illinoisblockchain.tech/illinois-blockchain-ini tiative-insights-
+progress-horizon-scanning-61e25a51e345(accessedMarch24, 2017).
+ITU (2016). Core List of Indicators. Available online at: https://www.itu.int/en/
+ITU-D/Statistics/Pages/coreindicators/default.aspx(acce ssedMarch25,2019).
+Janowski, T. (2016). Implementing sustainable development goals wit h digital
+government – aspiration-capacity gap. Govern. Inform. Q. 33, 603–13.
+doi:10.1016/j.giq.2016.12.001
+Janssen, M., and Estevez, E. (2013). Lean government and platform-
+based governance—doing more with less. Govern. Inform. Q. 30, S1–8.
+doi:10.1016/j.giq.2012.11.003
+Jones, M. (2018). Smart dubai launches blockchain-based payments
+for government. The Block (blog). Available online at: https://www.
+blockchaintechnology-news.com/2018/09/24/smart-dubai-laun ches-
+blockchain-based-payments-for-government/ (accessed Septembe r 24,
+2018).
+Juskalian,R.(2018). InsidetheJordanRefugeeCampThatRunsonBlockchain .MIT
+TechnologyReview.Availableonlineat:https://www.technology review.com/s/
+610806/inside-the-jordan-refugee-camp-that-runs-on-blockc hain/ (accessed
+April12,2018).
+Kapoor, K. K., Dwivedi, Y. K., and Williams, M. D. (2014). Rogers’ innovation
+adoption attributes: a systematic review and synthesis of exist ing research.
+Inform.Syst.Manag. 31,74–91.doi:10.1080/10580530.2014.854103
+Kenyan Wallstreet (2018). Kenya govt sets up blockchain & artiﬁci al
+intelligence taskforce!. Kenyan Wallstreet (blog). Available online at: https://
+Frontiers in Blockchain | www.frontiersin.org 13 January 2020 | Volume 2 | Article 27Zambrano Blockchains in Developing Countries
+kenyanwallstreet.com/kenya-govt-sets-blockchain-artiﬁcial- intelligence-
+taskforce/(accessedJanuary16,2018).
+Kewell,B.,Adams,R.,andParry,G.(2017).Blockchainforgood? Strat.Change 26,
+429–37.doi:10.1002/jsc.2143
+Lamport, L. (1978). Time, clocks, and the ordering of events in a dist ributed
+system.Commun.ACM 21,558–565.doi:10.1145/359545.359563
+Lemieux, V. L. (2017). Evaluating the use of blockchain in land tra nsactions:
+an archival science perspective. Eur. Prop. Law J. 6, 392–440.
+doi:10.1515/eplj-2017-0019
+Levi, S. D., and Lipton, A. B. (2018). An Introduction to Smart Contracts and
+Their Potential and Inherent Limitations . Available online at: https://corpgov.
+law.harvard.edu/2018/05/26/an-introduction-to-smart-cont racts-and-their-
+potential-and-inherent-limitations/(accessedMay26,2018).
+Macrinici, D., Cartofeanu, C., and Gao, S. (2018). Smart contract applications
+within blockchain technology: a systematic mapping study. Telemat. Inform.
+35,2337–54.doi:10.1016/j.tele.2018.10.004
+McKinsey (2011). Internet Matters: The Net’s Sweeping Impact on Growth, Jobs ,
+and Prosperity | McKinsey. Available online at: https://www.mckinsey.com/
+industries/high-tech/our-insights/internet-matters(acc essedMarch26,2019).
+Meadows,D.,Meadows,D.,Randers,J.,andBehrens,W.W.III. (eds.).(1972). The
+LimitstoGrowth:AReportfortheClubofRome’sProjectonthe Predicamentof
+Mankind. NewYork,NY:UniverseBooks.doi:10.1349/ddlp.1
+Millard, J. (2018). Open governance systems: doing more with more.
+Govern. Inform. Q. 35 (4 Suppl.), S77–87. doi: 10.1016/j.giq.2015.
+08.003
+Murphy, J. (2018). Five Non-Financial Blockchain Use Cases Marketers
+Need To Understand . Forbes. Available online at: https://www.forbes.
+com/sites/forbescommunicationscouncil/2018/03/27/ﬁve-no n-ﬁnancial-
+blockchain-use-cases-marketers-need-to-understand/ (acc essed March
+27,2018).
+Ndou, V. (2004). E-government for developing countries: opportunit ies
+and challenges. Electron. J. Inform. Syst. Dev. Count. 18, 1–24.
+doi:10.1002/j.1681-4835.2004.tb00117.x
+Nelson, P. (2018). Primer on Blockchain - How to Assess the Relevance of
+Distributed Ledger Technology to International Developme nt.Available online
+at: https://www.usaid.gov/digital-development/digital-ﬁnan ce/Blockchain-
+primer(accessedApril15,2019).
+O’Connell,J.(2019). AmbisafeCo-founderontheLimitstoCodingSmartContracts.
+Available online at: http://cryptographicasset.com/ambisafe-co-f ounder-on-
+the-limits-to-coding-smart-contracts/(accessedApril19,2019 ).
+OSTechNix (2019). Blockchain 2.0 - explaining smart contracts and its types
+[Part 5]. OSTechNix (blog). Available online at: https://www.ostechnix.com/
+blockchain-2-0-explaining-smart-contracts-and-its-types/ (a ccessed March
+28,2019).
+Pisa, M. (2018). Reassessing Expectations for Blockchain and Development .
+Center For Global Development. Available online at: https://www.cg dev.
+org/publication/reassessing-expectations-blockchain-and- development-cost-
+complexity(accessedMay17,2018).
+Pisa, M., and Judden, M. (2017). Blockchain and Economic Development: Hype
+vs. Reality . Center For Global Development. Available online at: https://www.
+cgdev.org/publication/blockchain-and-economic-development- hype-vs-
+reality(accessedJuly20,2017).
+Podder, S., and Venkat, S. (2018). Blockchain: A Powerful Tool for Social Good .
+HuﬀPost. Available online at: https://www.huﬀpost.com/entry/bloc kchain-
+a-powerful-tool-for-social-good_b_5a4e7f8ae4b0f9b24bf31 5a0 (accessed
+January4,2018).
+Rahman, H. (2001). Developing Successful ICT Strategies: Competitive Advanta ges
+in a Global Knowledge-Driven Society . IGI Global. Available online at: https://
+www.igi-global.com/book/developing-successful-ict-strategi es/260
+Reijers, W., O’Brolcháin, F., and Haynes, P. (2016). Governanc e in
+blockchain technologies & social contract theories. Ledger1, 134–151.
+doi:10.5195/LEDGER.2016.62
+Rustum, A. (2019). DLT access control comparison. B9lab Blog . Available online
+at: https://blog.b9lab.com/dlt-access-control-comparison-b1e8c 69b953d
+(accessedFebruary5,2019).
+Salah, K., Rehman, M. H. U., Nizamuddin, N., and Al-Fuqaha, A. (2019 ).
+Blockchain for AI: review and open research challenges. IEEE Access 7,
+10127–10149.doi:10.1109/ACCESS.2018.2890507Savoia, A., and Sen, K. (2015). Measurement, evolution, determin ants, and
+consequences of state capacity: a review of recent research. J. Econ. Surv. 29,
+441–58.doi:10.1111/joes.12065
+Simoyama,F.D.O.,Grigg,I.,LuizPereiraBueno,R.,andCavarzereD eOliveiraL.
+(2017).Tripleentryledgerswithblockchainforauditing. Int.J.Audit.Technol.
+3,163–83.doi:10.1504/IJAUDIT.2017.086741
+State of Illinois (2018). House Joint Resolutiom 25 - Illinois Blockchain and
+Distributed Ledger Task Force: Final Report to the General A ssembly.
+Available online at: https://www2.illinois.gov/sites/doit/St rategy/Documents/
+BlockchainTaskForceFinalReport020518.pdf(accessedMarch08 ,2019).
+Sullivan, C., and Burger, E. (2017). E-residency and blockchain .Comp. Law Sec.
+Rev.33,470–81.doi:10.1016/j.clsr.2017.03.016
+Szabo,N.(1997).Formalizingandsecuringrelationshipsonpublicne tworks.First
+Monday2.doi:10.5210/fm.v2i9.548
+Szczerbowski, J. J. (2018). Transaction Costs of Blockchain S mart Contracts. Law
+ForensicSci. 16.
+Tanui, C. (2018). The Kenya blockchain taskforce concludes it s report. Kenyan
+Wallstreet (blog).Availableonlineat:https://kenyanwallstreet.com/the-ke nya-
+blockchain-taskforce-concludes-report-on-blockchain-techn ology/ (accessed
+November19,2018).
+Tapscott, D., and Tapscott, A. (2016). Blockchain Revolution: How the Technology
+behind Bitcoin Is Changing Money, Business, and the World . New York,
+NY:Portfolio/Penguin.
+Taylor, B. (2017) Triple-Entry Accounting And Blockchain: A Common
+Misconception . Forbes. Available online at: https://www.forbes.com/sites/
+forbesﬁnancecouncil/2017/11/28/triple-entry-accounting-a nd-blockchain-a-
+common-misconception/(accessedApril3,2019).
+The Economist (2015). The Trust Machine . Available online at: https://www.
+economist.com/leaders/2015/10/31/the-trust-machine (acces sed October 31,
+2015).
+Thomas, R. (2017). Blockchain’s incompatibility for use as a land re gistry:
+issues of deﬁnition, feasibility and risk. Eur. Prop. Law J. 6, 361–90.
+doi:10.1515/eplj-2017-0021
+Thompson, C. (2018). The diﬀerence between a private, public & conso rtium
+blockchain. Blockchain Daily News . Available online at: https://www.linkedin.
+com/pulse/diﬀerence-between-private-public-consortium-collin-th ompson
+(accessedMay14,2018).
+Tilly, C. (2007a). Democracy . Cambridge; New York, NY: Cambridge
+UniversityPress.
+Tilly,C.(2007b). GrudgingConsent .Washington,DC:TheAmericanInterest.
+UNDESA (2018). UN E-Government Survey 2018. Available online at: https://
+publicadministration.un.org/egovkb/en-us/Reports/UN-E-Gove rnment-
+Survey-2018
+UNDP (2018). The-Future-Is-Decentralised . UNDP. Available online at: https://
+www.undp.org/content/undp/en/home/librarypage/corporate/the-f uture-is-
+decentralised.html
+UNICEF(2018). UNICEF’sInnovationFundAnnouncesFirstCohortofBlockcha in
+Investments in Emerging Markets. Available online at: https://www.unicef.org/
+press-releases/unicefs-innovation-fund-announces-ﬁrst-c ohort-blockchain-
+investments-emerging(accessedDecember10,2018).
+United Nations (ed.). (1994). Agenda 21: Programme of Action for Sustainable
+Development; Rio Declaration on Environment and Developme nt; Statement of
+Forest Principles; the Final Text of Agreements Negotiated by Governments at
+the United Nations Conference on Environment and Development (UNCED),
+3 - 14 June 1992, Rio de Janeiro, Brazil . New York, NY: Department of
+PublicInformation.
+United Nations (2000). United Nations Millennium Declaration . Available online
+at:https://www.un.org/en/development/devagenda/millennium.s html
+United Nations (2015a). Millennium Development Goals Report 2015 . Statistical
+material.Availableonlineat:mdg-report-2015.html(accessedJuly6,2 015).
+United Nations (2015b). Transforming Our World: The 2030 Agenda for
+Sustainable Development . Available online at: https://www.un.org/ga/search/
+view_doc.asp?symbol=A/RES/70/1&Lang=E
+United Nations (2015c). Report of the Inter-Agency and Expert Group on
+Sustainable Development Goal Indicators . Available online at: https://unstats.
+un.org/unsd/statcom/47th-session/documents/2016-2-IAE G-SDGs-E.pdf
+Van Wagenen, J. (2018). Illinois’ First Blockchain Report Highlights Challenges
+and Opportunities of Adopting Tech . Technology Solutions That Drive
+Frontiers in Blockchain | www.frontiersin.org 14 January 2020 | Volume 2 | Article 27Zambrano Blockchains in Developing Countries
+Government. Available online at: https://statetechmagazine.com/ article/2018/
+02/illinois-ﬁrst-blockchain-report-highlights-challenges-and -opportunities-
+of-adopting-tech(accessedFebruary21,2018).
+Verlhust,S.,andYoung,A.(2018). FieldReport:OntheEmergentUseofDistributed
+LedgerTechnologiesforIdentityManagement .Blockchange.Availableonlineat:
+https://blockchan.ge/ﬁeldreport.html(accessedApril14,2019).
+Walsham, G. (2017). ICT4D research: reﬂections on history and fut ure agenda.
+Inform.Technol.Dev. 23,18–41.doi:10.1080/02681102.2016.1246406
+Waltl, B., Sillaber, C., Gallersdörfer, U., and Matthes, F. (2019). “Blockchains and
+smart contracts: a threat for the legal industry?” in Business Transformation
+Through Blockchain, Vol. II, eds H. Treiblmaier and R. Beck (Cham: Springer
+InternationalPublishing),287–315.doi:10.1007/978-3-31 9-99058-3_11
+WFP (2018). Blockchain for Zero Hunger | WFP Innovation. Available online at:
+https://innovation.wfp.org/project/building-blocks(access edMarch12,2018).
+Williams,S.P.(2019).Blockchain:TheNextEverything.NewYork, NY:Scribner.
+Available online at: https://www.simonandschuster.com/books/B lockchain-
+The-Next-Everything/Stephen-P-Williams/9781982116828
+WorldCommissiononEnvironmentandDevelopment(ed.)(1987). OurCommon
+Future.OxfordPaperbacks.Oxford;NewYork,NY:OxfordUniversityPress.
+Yeung, K. (2019). Regulation by blockchain: the emerging battle for supremacy
+between the code of law and code as law. Modern Law Rev. 82, 207–39.
+doi:10.1111/1468-2230.12399
+Zambrano,R.(2017). UnpackingtheDisruptivePotentialofBlockchainTechnolog y
+for Human Development. Available online at: https://www.idrc.ca/en/stories/
+blockchainZambrano,R.,andEymann,S.(2014).“Crowdsourcingandhumandev elopment:
+the role of governments,” in Proceedings of the 8th International Conference on
+Theory and Practice of Electronic Governance , ICEGOV ’14 (New York, NY:
+ACM),170–177.doi:10.1145/2691195.2691223
+Zanello, G., Fu, X., Mohnen, P., and Ventresca, M. (2016). The crea tion and
+diﬀusion of innovation in developing countries: a systematic lit erature review.
+J.Econ.Surveys 30,884–912.doi:10.1111/joes.12126
+Zheng, Y. (2015). “ICT4D, overview of theories in,” in The International
+EncyclopediaofDigitalCommunicationandSociety (JohnWileyandSons,Ltd.),
+1–10.doi:10.1002/9781118767771.wbiedcs153
+Zheng, Y., Hatakka, M., Sahay, S., and Andersson, A. (2018). Conceptualizing
+development in information and communication technology for developme nt
+(ICT4D). Inform.Technol.Dev. 24,1–14.doi:10.1080/02681102.2017.1396020
+Conﬂict of Interest: The author declares that the research was conducted in the
+absence of any commercial or ﬁnancial relationships that could be c onstrued as a
+potentialconﬂictofinterest.
+Copyright © 2020 Zambrano. This is an open-access article distri buted under the
+terms of the Creative Commons Attribution License (CC BY). T he use, distribution
+or reproduction in other forums is permitted, provided the or iginal author(s) and
+the copyright owner(s) are credited and that the original pub lication in this journal
+is cited, in accordance with accepted academic practice. No use, distribution or
+reproductionispermittedwhichdoesnotcomplywiththeset erms.
+Frontiers in Blockchain | www.frontiersin.org 15 January 2020 | Volume 2 | Article 27

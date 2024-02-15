@@ -1,0 +1,1002 @@
+Original Paper
+Oper ability , Acceptability , and Usefulness of a Mobile App to Track
+Routine Immunization Performance in Rural Pakistan: Interview
+Study Among Vaccinators and Key Informants
+Shehla Zaidi1,2, MBBS, MSc, PhD; Saqib Ali Shaikh3, MBBS, MSc; Saleem Sayani4, BA, MSc; Abdul Momin Kazi1,
+MBBS, MPH; Adeel Khoja5, MBBS, MSc; Syed Shahzad Hussain1, BSN, MSc; Rabia Najmi6, BDS, MSc
+1Division of Woman and Child Health, Aga Khan University , Karachi, Pakistan
+2Department of Community Health Sciences, Karachi, Pakistan
+3Department of Health, Government of Sindh, Karachi, Pakistan
+4E-Health Resource Centre, Aga Khan Development Netw ork, Karachi, Pakistan
+5Department of Medicine, Aga Khan University , Karachi, Pakistan
+6Department of Community Health Sciences, Aga Khan University , Karachi, Pakistan
+Corr esponding Author:
+Shehla Zaidi, MBBS, MSc, PhD
+Department of Community Health Sciences
+Aga Khan University
+National Stadium Road
+Karachi
+Pakistan
+Phone: 92 2134864852
+Email: shehla.zaidi@aku.edu
+Abstr act
+Backgr ound: There has been a recent spate of mobile health (mHealth) app use for immunizations and other public health
+concerns in low- and middle-income countries. However, recent evidence has largely focused on app development or
+before-and-after effects on awareness or service coverage. There is little evidence on the factors that facilitate adoption of mHealth
+programs, which is critical to effectively embed digital technology into mainstream health systems.
+Objecti ve: This study aimed to provide the qualitati ve experiences of frontline health staff and district managers while engaging
+with real-time digital technology to impro ve the coverage of routine childhood immunization in an underserv ed rural district in
+Pakistan.
+Methods: An Android-based app was iterati vely developed and used for a 2-year period in 11 union councils of the Tando
+Muhammad Khan district, an underserv ed rural district with poor immunization coverage in Pakistan. We used iterati ve methods
+to examine the (1) acceptability and operability of the app, (2) validity of the collected data, and (3) use of the collected data. In
+addition, we collected the barriers and enablers for uptak e of the mHealth app. Each of these topics was further explored related
+to changes in work as well as the enabling factors for and barriers to app use. In-depth intervie ws were conducted with the 26
+vaccinators posted in the 11 union councils and 7 purposi vely selected key informants (government district managers) involved
+with the Expanded Program for Immunization. Findings were triangulated in line with the three broad research areas.
+Results: Digital immunization tracking was considered acceptable by vaccinators and district managers. Real-time immunization
+data were used to monitor vaccination volume, track children with incomplete vaccinations, develop outreach visit plans, correct
+existing microplans, and disburse a fuel allowance for outreach sessions. The validity of the app data was percei ved to be superior
+to that of data from manual records. Ease of operability , satisf action with data, personal recognition, links to field support, and
+a sense of empo werment served as powerful enablers. Taking twice the time to complete both manual and digital entries and
+outdated phones over time were considered constraints. An unintended knock-on effect was impro ved coordination and strengthening
+of Expanded Program for Immunization review platforms across district stakeholders through digitalized data.
+Conclusions: Embedding digital technology into mainstream health systems relies on use by both end users and district
+stakeholders. Ease of operability , satisf action with data reliability , personal recognition, links to field support, and empo werment
+are powerful enablers, whereas impro ved coordination as a result of easy, transparent data access can be an important by-product
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 1 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXof digitalization. Findings are relevant not only for wide-scale implementation of immunization tracking apps in Pakistan but
+also for informing the use of digital technology for results-based delivery by frontline health workers.
+(JMIR Mhealth Uhealth 2020;8(2):e16081) doi: 10.2196/16081
+KEYW ORDS
+mHealth; immunization; digital technology; experience; health workers
+Introduction
+There has been a recent spate of mobile phone–led programs,
+known as mobile health (mHealth) [1], to tackle health care
+issues such as immunization, tuberculosis (TB), and malaria in
+low- and middle-income countries (LMICs). Mobile phones are
+used by 97 per 1000 people in LMICs [2], reaching remote
+communities that previously had little interaction with public
+authorities or private companies [3]. In rural Tanzania, mobile
+technology has been used to provide the current inventory of
+anti-malarial medicine to impro ve access to drugs and other
+medical supplies [4]. In rural Uganda, an app called TB Detect
+enables health care providers to access TB-related educational
+material [5]. Another area where mHealth is being increasingly
+applied is routine immunization services in LMICs. SMS
+reminders about immunization and the use of electronic
+registries to trace cases who missed vaccination are being trialed
+in an increasing number of LMICs in Latin America and
+Sub-Saharan Africa [6-16]. There is some evidence that these
+programs impro ve vaccination completion rates [6,8-16].
+However, many have not progressed beyond the pilot phase,
+and evidence for the effectiveness of digital solutions is limited
+[17].
+Despite the proliferation of mHealth apps, not all digital health
+programs perform as intended, and assessments of the
+technology , health systems, and behavioral factors need careful
+consideration [18]. In particular , mHealth programs that rely
+on the performance of health workers would benef it from
+qualitati ve research to understand the extent to which end users
+and decision makers are prepared to engage with mHealth
+technology [19,20]. Experience from high-income settings
+emphasizes a user-centric approach to the development of digital
+technology [21]. This is also an important consideration to assess
+the implementation of these technologies within LMICs.
+Technological factors such as internet access, data volume, and
+app usability can affect implementation [22]. In addition, other
+factors such as personal motivations for data use, work culture,
+and health system support should be reviewed when adopting
+mHealth programs.
+In Pakistan, 66% of children are completely immunized; this is
+much lower than the country target of 90% set by the Global
+Vaccine Action Plan [23]. Routine childhood vaccinations are
+provided by a dedicated cadre of government-emplo yed
+vaccinators at static health centers and during outreach visits
+to villages >5 km from the health center . Poor vaccinator
+performance, which is exacerbated by poor district supervision,
+has been a chronic issue for Pakistan’ s vaccine delivery system.
+A minimum of 1 vaccinator is allocated to each union council
+(UC), which is the smallest district administrati ve tier with a
+population of 10,000-20,000 people. Vaccinators are responsiblefor registering eligible children, providing vaccinations, updating
+Expanded Program on Immunization (EPI) cards, maintaining
+EPI records, and counseling parents for routine immunization
+awareness. The vaccinators are supplied with a motorbik e, fuel
+support, and vaccines for routine immunization by the EPI
+program. UC–based EPI activities are administrati vely
+supervised by the district health office. However, paper records
+are poorly maintained and have questionable data. In addition,
+evidence suggests that vaccinators make too few outreach visits,
+provide little routine immunization education for parents, and
+maintain poor records [19]. Anecdotal evidence also suggests
+that vaccinators are resistant to supervision and often enjoy
+political patronage from local legislators protecting them from
+accountability on work performance [24]. In 2014, an app to
+track vaccinator movements through GPS was introduced across
+the populous Punjab province to ensure vaccinators made a
+sufficient number of outreach visits. Called e-Vaccs, it was
+designed, championed, and implemented by the government
+with provincially driven vertical accountability . Since then,
+polic y commitment for digital immunization monitoring has
+also increased in other provinces, with the aim of effectively
+mobilizing the vaccinator workforce and moving away from
+relying on questionable paper -based records. However, a lack
+of the required systems support has stalled the roll-out process
+[20].
+In this paper , we report the end-user experiences with a mobile
+app (Teeko, Aga Khan University Pediatrics Department,
+Pakistan) to track the delivery of routine childhood
+immunizations as well as the enablers and barriers for
+implementation in local health systems. Teeko is a mobile app
+that tracks vaccinators’ routine immunization performance. It
+was co-designed with the sub-national government as part of a
+larger health system strengthening research program for routine
+childhood immunization and piloted in a rural district of Sindh,
+Pakistan in 2015-2017. The app generates quality real-time data,
+and its key features include GPS tracking of vaccinator outreach
+visits, digital records of the immunization volume at the static
+health center and during outreach visits, creation of the next
+scheduled immunization encounter , and identif ication of children
+who missed vaccination. We drew on the experiences of Teeko
+usage by vaccinators and district managers, including
+acceptability of the app, use of the digitalized data, perceptions
+of the data validity , and enabling factors and barriers for its
+adoption. We aim to inform how digital technology can be
+embedded within district health systems in LMICS.
+Methods
+Overview
+Our study explored the experiences with an Android-based
+immunization app to impro ve vaccination coverage in a rural,
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 2 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXdisadv antaged district of Pakistan. The overall objecti ve was
+to evaluate the experiences of vaccinators and district managers
+during their use of the app to track routine immunization
+encounters. The specif ic objecti ves were to determine the
+acceptance and operability of the app as a tool for tracking
+vaccine encounters within the district health system, assess the
+data validity and data-related concerns of stakeholders, and
+understand how the technology is being used within the vaccine
+delivery system.
+Setting
+The mHealth initiati ve was part of a larger implementation
+research program to strengthen the health system and routine
+childhood immunization conducted by the Aga Khan University
+(AKU) in collaboration with the provincial EPI in the Tando
+Muhammad Khan (TMK) district in Sindh Province in
+2015-2017 (Figure 1). This district had poor vaccinationperformance, with a Penta coverage rate of only 23% and PCV
+coverage of only 11% at the start of the study . A package of
+integrated interv entions including a digital app was implemented
+based on formati ve research to identify interv entions that was
+conducted at the start of the study . In addition to the mHealth
+interv ention, other complementary interv entions included
+facilitation of a district EPI review platform, microplanning
+training, fuel support routed through the district health office
+for outreach activities, and co-financing of EPI motorbik es for
+UCs lacking functional bikes for outreach sessions. Interv entions
+were implemented in 2 district sub-di visions (Talukas)
+comprised of 11 UCs. The Teeko interv ention was implemented
+over 24 months, after which vaccinator and district stakeholder
+intervie ws were conducted. The immunization program resulted
+in a signif icantly higher number of completed vaccinations at
+the interv ention sites than at the control sites, as measured in
+terms of PENT A3 and PCV3 coverage (Table 1).
+Figur e 1. Map of the Tando Muhammad Khan (TMK) district in Sindh province, Pakistan, including locations of union councils (UCs) and Expanded
+Program on Immunization (EPI) centers.
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 3 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXTable 1. Impro vement in the vaccine coverage rate from 2014 to 2017 during the Health Systems Strengthening (HSS) immunization pilot study [19].
+Pvalue Difference, % Control, % Interv ention, % Vaccine
+PCV3
+.001 20 19 11 2014
+— — 32 44 2017  
+PENT A3
+.001 20 31 23 2014
+— — 32 44 2017  
+mHealth Inter vention
+Vaccinators and their sub-district and district EPI supervisors
+were provided with smartphones to track the immunization
+encounters. The app contained a list of UCs, villages, and health
+facilities assigned to each vaccinator . Vaccinators could access
+the app via unique access numbers to enter immunization datafor the villages listed in their UCs (Figure 2). The app track ed
+vaccinator visits, vaccination volume at the static health center
+and outreach points, identif ied children that had missed a
+vaccination, track ed vaccine availability , and provided
+communication features for parents. The app had two
+components: data entry and a Web portal for data visualization.
+Figur e 2. Vaccinator using the Teeko app.
+The immunization app was developed over a 6-month field
+testing period in 2014-2015 and was implemented in 2015-2017.
+The principal investigator (SZ) conducted a baseline assessment
+of routine immunization delivery in the district and identif ied
+the reporting of incomplete, questionable immunization EPI
+data and poor use in the TMK district [19]. During the
+assessment, management information system records were
+reviewed, and EPI officials, vaccinators, health workers, and
+health facility managers were intervie wed. Further follow-upmeetings were held with EPI provincial staff, the district health
+team, and vaccinators by the principal investig ator (SZ) and a
+research specialist (SH) to identify interv ention points within
+the EPI record flow that could be supported with an
+immunization tracking app, the support required for vaccinators
+and district health officers to use the app, and the health system
+interv entions required to facilitate decision making. An in-house
+technology firm (Aga Khan Development e-Resource Centre)
+was contracted for digital programming. App design and
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 4 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXdevelopment were overseen by a steering committee chaired
+by the Provincial Director General of Health and comprised of
+the study principal investig ator (SZ), a research specialist (SH),
+UNICEF , WHO, the EPI focal person for the TMK district, the
+District Health Officer for TMK, and a representati ve from the
+technology firm (SS). Using a participatory process, the
+following app features were identif ied: compulsory photo
+identif ication; defaulter (children who missed a vaccination)
+status using traffic light colors; alignment with EPI’s
+management information system; client data to include the
+parents’ national ID card numbers, household number , and
+village details; and adjustment for community migration.
+Meetings were held during the design phase and continued into
+the app roll-out, with recorded minutes. Iterations included the
+addition of new vaccines, identif ication of areas of misreporting,
+adjustment for vaccinations recei ved outside the study area, and
+adjustment for household migration. To impro ve the
+technological features, the study team and technology partner
+field-tested different versions of the app with vaccinators and
+the district EPI focal person. Due to poor internet connecti vity,
+the ability to upload data offline was added after the field testing.
+SMS messaging was poorly recei ved and replaced with a roboticcall. The study team randomly check ed the photo entries and
+uploaded data for errors.
+Finally , the app features included registration, immunization
+encounter record, offline data mode, vaccine stock management,
+awareness content, text messaging, a central database, and a
+Web portal.
+Registration
+The vaccinator registered the child at the first encounter ,
+entering the child’ s father’ s name, child’ s date of birth,
+household phone number , village name, and UC (Figure 2).
+This created an individual profile for the child. The child
+registration form was the same as the manually completed EPI
+child registration form. The data for the registered child was
+synced with the central database, in which all data were stored.
+Immunization Encounter Record
+The vaccinator then vaccinated the child and uploaded a
+mandatory photo of the vaccination or updated EPI card (Figure
+3) as proof of vaccination. A GPS-based location was generated
+for the vaccination site. The app sent the immunization record
+data to the central server in real time.
+Figur e 3. Examples of registration, an immunization record, and the image capture view on the Teeko app.
+Offline Data Mode
+The app’s offline feature allowed vaccination data to be recorded
+when internet connecti vity was not available. The records were
+stored locally in the app and uploaded once an internet
+connection was restored during the outreach visit or at the health
+facility . Vaccinations could occur within the health facility or
+during an outreach visit.Vaccine Inventory Management
+To track inventory and ensure timely pick up of required supply ,
+vaccinators could enter the amount of vaccine they had with
+them as well as the inventory at their respecti ve health facilities.
+Awareness Content
+The app had certain communication features. A 60-second
+awareness video on routine immunization could be played by
+the vaccinator to educate the parents during a vaccination
+encounter .
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 5 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXText Messaging
+Following the vaccination, robotic calls and SMS messages
+about the routine immunization schedule and next visit were
+sent to the caregivers of each registered child.
+Central Database
+The central system (Figure 4) allowed the administrator to
+register all users (vaccinators, lady health workers, and viewers).In addition to during the vaccination encounters, the app
+occasionally sent the GPS coordinates of the vaccinators to the
+central database (Figure 5). If internet connecti vity was not
+available, the coordinates were stored in the local database and
+later uploaded to the central database. The vaccinator directory
+listed the UC assigned to each vaccinator .
+Figur e 4. Flow of data through the Teeko app and Web portal.
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 6 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXFigur e 5. Vaccinator tracking screen in the Teeko Web portal.
+Web Portal
+Through the Web portal, the management and supervisory staff
+remotely monitored vaccinators’ activities and movements in
+real time (Figure 5). The SMS Panel allowed the administrator
+to send an SMS to the vaccinators and lady health workers about
+meetings, schedules, and data corrections. The portal also
+generated district and UC reports on routine immunization
+coverage, defaulters, and individual vaccinator performance.These reports were generated based on formats already in use
+by the EPI Program.
+Data Collection
+We conducted semi-structured intervie ws with vaccinators and
+key informants (district managers) involved with EPI delivery
+(See Table 2). Data were collected and analyzed by trained
+researchers.
+Table 2. Themes and tools used to explore the user experiences with digitalized immunization tracking and the key enabling factors
+Tools Themes
+Key-informant intervie ws with district stakeholders In-depth intervie ws with vaccinators
+Acceptability of the app within the district health system,
+enabling factors, and constraining factorsUse of key app features and app operability Acceptability and operability of
+the app
+Perceptions of and concerns with the data validity Perceptions of and concerns with the data validity Validity of the app data
+Engaging with the app data, enabling factors, and con-
+straining factorsEngaging with the app data, enabling factors, and con-
+straining factorsUse of the app data
+Vaccinator Interviews
+Semi-structured intervie ws were conducted covering the
+following topics: frequenc y of use of the app features;
+operability of and issues using the digital app; perceptions of
+the data validity and comparison with that of manually collected
+data; engagement with the app; and enabling factors and barriersfor data use. Intervie ws were conducted with all 26 vaccinators
+working in the 11 UCs in which the digital app was
+implemented. All the vaccinators used the immunization app
+for at least 24 months. Individual intervie ws were conducted
+with each vaccinator in the local language and the privacy of a
+separate room.
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 7 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXDistrict Stakeholder Interviews
+In-depth intervie ws with key informants (district stakeholders)
+included the following topics: acceptability of the app to track
+immunizations conducted by the district heath team, perception
+of the data validity , and use of the information by district health
+management. For each topic, we also asked about how their
+work had changed after using the app and the enabling factors
+and barriers for app use. The topic guide was written in English
+and translated into the local Sindhi language. Intervie ws lasted
+45 to 60 minutes and were conducted in the local language.
+Stakeholders from the district administration and district health
+office were purposi vely selected based on their key roles in EPI
+oversight or delivery. A total of 7 district stakeholders were
+intervie wed, including the Deputy Commissioner (administrati ve
+head of the district and chair of the Polio-EPI district
+committee), Assistant Deputy Commissioner , District Health
+Officer, Assistant District Health Officer, District EPI Focal
+Person, District Superintendent of Vaccination, and Coordinator
+of the Lady Health Worker Program (rural community-based
+female health workers that assist with the awareness provision
+for routine immunization and mobilization of households for
+routine immunization sessions provided by vaccinators).
+Ethical Considerations
+Ethical appro val for the study was obtained from the Ethical
+Review Committee of Aga Khan University Karachi, Pakistan
+(ERC number: 2818-Ped-ERC-13). Informed consent was
+obtained from all participants. Intervie ws were conducted on a
+voluntary basis. Each participant was ensured of the
+confidentiality of personal information. Personal information
+was anon ymized for analyses and reporting through a coded
+intervie wee number . The recorded data were kept in locked
+drawers and encrypted laptops to ensure data confidentiality .
+Data Analysis
+The intervie w information was transcribed in Sindhi and
+translated back into English. These were then check ed for errors
+and manually analyzed. Three a priori themes were identif ied
+in line with the research objecti ves and used as the basis for
+inducti ve analysis: acceptability and operability of the app, data
+validity , and use of the app data (Table 2). Content analysis of
+the transcripts was undertak en, developing main codes in line
+with the a priori themes and further detailed coding based on
+grounded findings emer ging from the narrati ve.
+Results
+Intervie w guides were used to report the results from the
+in-depth intervie ws. Textbox es 1and 2highlight the important
+findings from the vaccinator and district management intervie ws,
+respecti vely.
+Vaccinators’ End-User Experience
+Table 3lists specif ic responses provided by vaccinators during
+their intervie ws.Acceptability of the App
+Use of App Featur es
+All 26 vaccinators used the app to record their vaccination
+encounters. Nearly all vaccinators (n=24) took post-v accination
+photos of the children. Although some parents initially refused
+the photos, they eventually agreed after the vaccinators
+explained that the photo would be used for immunization
+verification and recording. Only two vaccinators reported that
+parents would not allow a photo under any circumstances, in
+which case a photo of the vaccination card was uploaded instead.
+These vaccinators were assigned to UCs that had pock ets of the
+population with reports of prior vaccine refusal.
+All the app features for routine immunization awareness
+including the awareness video, SMS alerts, and robotic calls
+were used by 18 vaccinators. Only the awareness videos were
+used by 6 vaccinators, and 2 vaccinators used only the SMS
+alert and robotic call features.
+Operability
+Of the 26 vaccinators, 25 reported that the app was easy to use
+and they could operate it without difficulty (Table 3). One
+vaccinator , who had a strok e-induced disability , needed his
+son’s help to enter the data in the app. However, he also required
+assistance to manually complete data entry . Real-time data
+display in the format of the government EPI report was
+considered helpful for reading and relating to the data.
+Vaccinators reported no instances of data loss from the app.
+Internet connecti vity issues often occurred in the more remote
+villages, but the app allowed offline data entry . Then,
+vaccinators uploaded the data after they returned to the facility .
+The offline feature was particularly appreciated for its ability
+to prevent data loss (see Figure 4).
+However, a few vaccinators reported being uncomfortable using
+the offline option and would have preferred real-time
+information uploads to the central database. Their reported
+concern was they might forget to upload pending data or be
+unable to upload pending data if the phone was damaged or
+stolen. However, there were no reports of phone damage or loss
+during the study .
+Another reported issue was that, as the phones aged over the
+24-month period, the phones would hang or freeze while using
+the app, making it difficult to enter data. Often, the phone had
+to be restarted, and there was a concern that unsaved data would
+be lost. The vaccinators wanted a replacement phone at least
+every 2 years to continue using the app.
+Validity of the App Data
+Most of the vaccinators (n=23) reported a high likelihood of
+error with manual documentation of outreach vaccination
+encounters. In practice, the data were entered based on recall
+in the EPI registers at the health care facilities rather than on
+site. Vaccinators recounted poorly recorded field data during
+prior measles outbreaks (before the Teeko app was available),
+resulting in an inability to target defaulters. They percei ved that
+instant data entry through a mobile app generated a more
+accurate defaulter list.
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 8 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXTextbox 1. Important findings from the vaccinator intervie ws.
+Acceptability of the App: Use of App Featur es
+• All vaccinators used the app for vaccination encounters.
+• Photos of the immunized child were uploaded more frequently than photos of the vaccination card.
+• Most vaccinators used the videos, SMS, and robotic calls for immunization awareness education and routine follow-ups.
+• Some vaccinators used only the videos for immunization awareness education.
+Acceptability of the App: Operability
+• Vaccinators considered it easy to operate.
+• They could upload the data in villages without waiting for internet connecti vity.
+• The vaccinators preferred using the app over manual data entry .
+• Issues included hanging of the phones after 2 years.
+Validity of the App Data: Perceptions of Data Validity
+• The vaccinators belie ved the accurac y of child registration and vaccination status was better than that of manual records.
+• The photo verification was considered a key feature for accurac y.
+• The vaccinators felt as if they were more likely to follow the monthly plan for visits because their supervisors monitored them via GPS tracking.
+Validity of the App Data: Engagement With the Data
+• Vaccinators could proacti vely identify and track defaulters.
+• They could develop a monthly visit plan that could particularly target defaulters.
+• Their performance could be track ed accurately by their supervisors using GPS tracking.
+Use of the App Data: Enabling Factors
+• Reporting of individual performance resulted in supervisory recognition and personal gratif ication in reaching targets.
+Use of the App Data: Barriers
+• Data entry via both the app and manual methods resulted in double the amount of work.
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 9 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXTextbox 2. Important findings from the key informant intervie ws with district management.
+Acceptability of the App: Acceptability Within the District Health System
+• The vaccinators were comfortable using the app.
+• The Expanded Program for Immunization (EPI) supervisors found it easy to retrie ve the data to monitor vaccinators and identify defaulters.
+• The key informants requested to continue using the app and expand its use to other districts.
+• The district was able to act as an example for other districts.
+Acceptability of the App: Enabling Factors
+• The district managers were interested in the app and expressed ownership of it.
+• Data-dri ven accountability led to coordination across health programs and with the district administration.
+• Data-dri ven accountability resulted in a demand for work recognition as well as fear of exposure.
+Acceptability of the App: Barriers
+• Additional effort to increase awareness of routine immunization was needed in high-def aulter areas.
+Validity of the App Data: Perceptions of Data Validity
+• GPS location of vaccinators provided reliable information, while previously checks were onerous.
+• Vaccination volume and child details were very accurate and could be quickly verified.
+Validity of the App Data: Engagement With the Data
+• Real-time data was used to inform EPI monthly review meetings about the increasing vaccination volume and reduced number of defaulters.
+• The monthly recognition of high-performing vaccinators and naming the poorly performing vaccinators encouraged sharing of experiences.
+Use of the App Data: Enabling Factors
+• The data enabled coordination across the district stakeholders.
+• The individualized public recognition was considered the biggest motivator.
+• The data encouraged competition among the vaccinators as well as sharing of lessons learned.
+• The app data were used to release mobility support.
+Use of the App Data: Barriers
+• Political patronage is still an issue but better managed due to transparenc y of accountability and monitoring of the vaccinators in the target setting.
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 10 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXTable 3. Specif ic responses from the vaccinator intervie ws, organized by theme.
+Examples of vaccinator responses Theme
+“It is very easy to use, just like my own phone that I use, typing information on the phone is easy too... and we already
+knew how to take a picture and upload it...”Acceptability of the app:
+Operability
+“I never lose any of the data now, as the data is entered then and there in the outreach, ...first we used to write it on a
+piece of paper and bring it home and then enter it the next day at the health facility ...there was a huge chance of error ...
+“Teeko” data is very reliable data”
+“The application can save my data until I get internet signals but still, to avoid error due to this in future, a better con-
+necti vity in remote areas is needed... ”
+“It’s been two years now, mobiles phones should be replaced with new ones, ... they hang and shut down at times...
+Taking more time to make an entry in the field or transfer the data... ”
+“It is easy for me to find children who are overdue for their vaccination, I can see the due date for the next vaccination
+and reach the child”Validity of the app data
+“The district administration has become more watchful and alert now... they can catch us not being in the field through
+their mobiles. now I belie ve that I am performing my duty with more honestly than I used to previously ...”Use of the app data
+“During the last award ceremon y, I was awarded first position by district-AKU team; my data recorded on “Teeko”
+application in the field also completely matched the manual data...I was overwhelmed”
+“I have been working for the last 35 years as a vaccinator and I feel that these two years were the ones where I performed
+my best. I feel very proud of myself”
+“Very easy application, but with manual (entry of records), it doubles my work; we have to make entries in both EPI
+(paper) registers and “Teeko”; this takes a lot of time”
+The post-v accination photograph was considered key to ensuring
+reliable data. Compared with the prior practice of checking the
+EPI records, the advantage of the photo feature was child
+verification. Vaccinators also reported that the GPS tracking of
+outreach visits resulted in greater vaccinator vigilance in
+conducting outreach sessions and impro ved the reliability of
+vaccination encounter reports. Vaccinators reported calls from
+their supervisors to check their location when the supervisors
+did not observ e any field activity.
+Use of the App Data
+All vaccinators reported they mainly used the digital data to
+identify children overdue for their vaccinations. Vaccinators
+expressed ownership of the data and a feeling of empo werment
+when using the data to plan their monthly vaccination rounds.
+They also reported using the data to set target vaccination
+volumes.
+All vaccinators also mentioned the use of the GPS feature by
+the district health office and deputy commissioner for vaccinator
+supervision. Vaccinators reported being questioned by the
+district supervisors if they turned off their mobile location or
+could not be seen moving in the field.
+The vaccinators reported that the overriding motivator to use
+the app was the reporting of the performance level of each
+vaccinator . The vaccinators reported feeling gratif ied when the
+best performing vaccinators were publicly recognized during
+the review of individual performance levels in the monthly EPI
+meetings. All the vaccinators found it very satisfying to be
+noticed and praised by superior EPI officials and district officers.Most of the vaccinators reported that this motivated them to do
+their best. Others reported this was the first time they took their
+work seriously and found it a novel but satisfying experience
+to work toward targets rather than working to identify loopholes
+to avoid work.
+A few vaccinators reported that the app increased their workload
+because they were also expected to manually document the EPI
+records in addition to documenting via the app.
+Migration to digital records from manual recording was
+preferred by 23 of the 26 vaccinators, while 3 vaccinators
+wanted both manual and digital record keeping. All 26
+vaccinators were willing to continue using the app in the future.
+The vaccinators also mentioned the conditional fuel support
+provided by the district health office based on the number of
+monthly visits reported by the app. The vaccinators reported
+that the lack of fuel support made it difficult to conduct outreach
+sessions.
+District Stak eholder Experiences
+Findings from the key informant intervie ws with district
+stakeholders were categorized into the following thematic areas:
+acceptability of the app for routine immunization supervision
+by the district heath team, perception of data validity , and use
+of the app information by the district health management. Within
+each thematic area, the narrati ve reports were analyzed for
+changes in work after using the app, experiences with
+implementing the app, and the enabling factors for and barriers
+to app use. Table 4lists specif ic responses provided by the
+district stakeholders during their intervie ws.
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 11 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXTable 4. Specif ic responses from the district stakeholder intervie ws, organized by theme.
+Examples of district stakeholder responses Theme
+“Good coordination between the Health and District Administration is seen, District Health Office helped AKU to pilot
+and develop “Teeko” while the Deputy Commissioner Office supported in making their planning work, also did field
+monitoring and addressing administrati ve issues”Acceptability of the app
+“Commissioner (district) requested to start the same project in his district, we were called to give a briefing on “Teeko”
+he was very impressed... ”
+“Under the Health Department, EPI Provincial Program should adopt “Teeko” immediately ...at least in the districts
+which are not performing up to mark”
+“At first we used to follow vaccinators schedule, get hold of someone who knew the area, then try to find him in the
+field, now we see his location in “Teeko” application and reach him...it really saves a lot of time”Validity of the app data
+“On looking at the data I send direction to vaccinators through “Teeko” (ap-plication) to correct it...the y reply after
+getting it done”
+“If we took any disciplinary action against irregular or poor performing vaccinators, we faced political pressure at times
+and are threatened too, we then become helpless... ”Use of the app data
+“Political involvement has always been an issue, but with sincere working, like with this “Teeko” project, we can
+overcome it.”
+“At the office of Deputy Commissioner , in a formal ceremon y with heads from the Teeko project and District Health
+Officer the best performing vaccinators were appreciated, they were given certif icates, shields and gifts...e veryone
+wanted to do more to earn this honor and respect...some of the vaccinators were so motivated that they even worked
+on Sundays to meet their target”
+“The vaccinator’ s data is assessed in the EPI meeting for future decisions & micro planning. ”
+“The vaccinators were offered motorc ycles, they had to pay 50% while the project paid another 50%, it not only solved
+mobility issue, they owned a motorc ycle as well...e very month they (Vaccinators) get POL from District Health Of-
+fice...the accountability made possible regular POL supply to vaccinators, which previously was not provided. ”
+“With mobility support and real monitoring, the routine immunization has impro ved in the outreach”
+Acceptability of the App
+Key informants from district management commonly reported
+that the vaccinators were comfortable using the app. District
+officials found it easy to retrie ve routine immunization volume
+from their cell phones and computers, and the officials used the
+app to keep track of children who missed immunizations. The
+intervie wees recounted poor vaccinator performance prior to
+using the app and attrib uted this to poor work attitudes,
+insuf ficient supervision from the supervisors, and a lack of fuel
+support and functional motorbik es for supervisory visits.
+The stakeholders reported that the app led to increased
+coordination between the EPI and Lady Health Worker
+Program—the two important community outreach resources
+within the district heath system—and closer interaction
+regarding routine immunization between the District Health
+Office and the Deputy Commissioner’ s Office.
+The health officials expressed an eagerness to continue the
+tracking initiati ve and anxiety that routine immunization
+coverage would decline again after closure of the project. The
+stakeholders also requested that the project be expanded to the
+other sub-di visions within the district. The district leadership
+reported feeling as if they could serve as an example for other
+districts in the province and were gratif ied that other districts
+requested demonstrations and sharing of lessons learned.
+Validity of the App Data
+Key informants reported that tracking a vaccinator in the field
+was challenging in routine practice. Immunization work plansprovided by the vaccinators were not always accurate; they
+could make changes to the plans without prior notice to the
+district health office. Moreo ver, even when EPI supervisors
+verified the vaccinators’ locations in the field, they needed
+assistance from local villagers familiar with the area. It was still
+possible that they would not successfully find the vaccinator .
+The district stakeholders appreciated that the app facilitated
+vaccinator tracking through its GPS feature. They were able to
+locate and reach vaccinators without delay .
+The EPI district supervisors reported that they relied on the app
+data to provide supervisory instructions for the vaccinators
+related to routine immunization coverage and defaulter reports.
+The app data were considered superior in quality to manually
+collected data and were particularly used for correcti ve actions.
+Use of the App Data
+The key informants commonly reported that the main uses of
+the app data were impro ving the number of routine
+immunization encounters and locating defaulting children. In
+the past, it was challenging to hold the vaccinator cadre
+accountable for routine immunization performance, making it
+difficult to impro ve vaccination volume. Furthermore,
+disciplinary actions such as a “notice of explanation, ” for which
+emplo yees must provide an explanation for an allegation of
+violation of compan y policies, rules, and procedures; “show
+cause letter ,” which asks the emplo yee to provide a reason why
+they should not face a disciplinary action for a conduct or
+capacity issue in the workplace; and termination of irregular ,
+ghosting, or nonperforming vaccinators were not effective due
+to the political patronage of vaccinators by local legislators.
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 12 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXThe key informants mentioned that regular EPI review meetings
+were convened at the district health office, and the meetings
+used the real-time app data. These meetings were often attended
+by the district health commissioner and assistant commissioner .
+During these meetings, vaccinator performance was reviewed,
+including that of poor performers. Vaccinators with high
+performance were also recognized separately in quarterly public
+ceremonies attended by district legislators. The stakeholders
+reported that the public recognition was instrumental for
+increasing motivation. They added that the review meetings
+provided a platform for vaccinators to learn from each other’ s
+experiences and promote health y competition.
+District stakeholders also expressed a sense of empo werment
+from using the app to make operational decisions to impro ve
+routine immunization in the district. They used the data to direct
+activities to areas with incomplete vaccination coverage.
+Real-time immunization data were also used to provide support
+for vaccinator mobility based on GPS-v erified outreach visits.
+Additionally , EPI motorbik es were provided by the district
+health office to the better performing vaccinators; these were
+co-financed by the project and the vaccinator . Both activities
+were undertak en during the monthly district EPI review
+meetings that were chaired by the District Health Officer.
+Discussion
+In LMICS, mHealth apps are increasingly used for
+immunizations and other public health concerns; however, recent
+evidence has largely focused on app development, dashboards,
+or the before-and-after effects on awareness or coverage
+[6,7,10,12,21-25]. Less evidence is available regarding end
+users’ and decision makers’acceptance of and engagement with
+digital health technology . Bridging this evidence gap is critical
+to embed digital technology into mainstream health systems.
+In this paper , we report the qualitati ve experiences of frontline
+health staff and district managers in engaging with real-time,
+digital technology to impro ve the coverage of routine childhood
+immunization in an underserv ed rural district in Pakistan.
+Using an iterati ve approach, we gathered information about the
+acceptability of the app for data collection and tracking vaccine
+delivery, perceptions about data validity , the extent that app
+data were used, and the engagement of care. We also identif ied
+the key factors for frontline staff to engage with digital
+technology . The app was commonly accepted by vaccinators
+and district supervisors to track vaccination encounters;
+however, the app features aimed at increasing parents’
+vaccination awareness were less commonly used. Lack of
+parental agreement for photograph verification of their children
+was not a major issue. Vaccinators found the app easy to operate,
+the fields were similar to those of EPI records, and the offline
+data recording feature was helpful in remote access areas.
+Double entry of both manual and digital records was considered
+time consuming, and aging phone technology created systems
+issues. District supervisors found the app data easy to access
+for quick verification of immunization activity and to provide
+supervisory direction. The ability for real-time tracking of both
+individual vaccinators and the entire team through the Web
+portal considerably reduced the time spent tracking vaccinatorsduring outreach visits. This helped to not only accurately track
+the vaccinator but also identify vaccination coverage according
+to the geographical location. This drastically reduced the
+monitoring and tracking time during outreach. The increased
+availability of supervision time was then utilized for other
+monitoring and evaluation activities. In addition, the
+app-generated maps helped to finalize microplans and identify
+missed locations. The validity of the app data was considered
+superior to that of data from manual records by both the
+vaccinators and district supervisors; this perception was
+attrib uted to photo verification of the encounters. Opinions
+differed regarding what contrib uted to the impro ved data. The
+EPI supervisors attrib uted it to the transparenc y of vaccinator
+movements, while vaccinators felt that the ability to record
+immunization entries during the visits was better than using
+recall to manually record data later at the health facilities.
+Real-time immunization data were mainly used to monitor
+vaccination volume, track children with incomplete vaccinations,
+develop outreach visit plans, alter existing microplans, and
+provide a results-based fuel allowance. A signif icant outcome
+was the initiation of regular monthly EPI review meetings by
+the district leadership. During these meetings, real-time data
+were used to review immunization progress. Data were also
+used to recognize both good and poor immunization
+performance per individual and across UCs and vaccinators.
+These findings are supported by those from a study in Nigeria
+that used GPS and geospatial data to track vaccinators [26,27].
+They reported impro vements in microplanning, monitoring, and
+immunization coverage, which were attrib uted to the
+technology-based support for performance monitoring that
+reduced erroneous entries and data fabrication by vaccinators.
+They also used GPS data to provide feedback to the outreach
+team and target missed geographical areas.
+Our study also identif ied enablers that facilitated the use of
+digital immunization tracking. Recognition of individual
+performance, empo werment, and results linked to fuel support
+emer ged as powerful motivators for the vaccinators to work
+towards target delivery rather than avoiding workload, as they
+had previously . For district management, key enablers included
+a sense of empo werment for reviewing and planning EPI
+delivery and enhanced transparenc y to counteract political
+patronage of vaccinators. A knock-on effect of the real-time
+verification data was impro ved coordination across different
+components of the district health systems.
+Reviews of digital technology use in other settings have drawn
+on mixed methods including intervie ws, focus group discussions,
+and systems analysis of the app data. The evidence indicates
+that instant data availability for monitoring purposes, as
+observ ed with neglected tropical diseases [28], and ease of use
+and digital literac y of end users, as observ ed with oral cholera
+vaccinations [29], are important parameters for the successful
+trialing of digital apps. Poorly designed devices and inadequate
+cellular infrastructure have been noted as barriers for integrating
+apps into health systems [30]. Lessons learned from
+immunization registries in Latin American and Caribbean
+countries indicate that digitalization must be useful to
+vaccinators for the data to be of good quality . Evidence on
+non-technological factors for health provider apps is still
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 13 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXemer ging. A study of a client data app for community health
+nurses in Ghana resulted in reasonably good acceptability due
+to the app’s capacity to facilitate client follow-up and data
+reporting; however, the feasibility and usability of the app were
+hindered by high client volumes, staff shortages, and softw are
+and device challenges [31]. A study on an mHealth app for
+midwi ves in Ghana found low levels of user acceptance and a
+softw are design that did not match the end‐user needs or work
+environment [32]. Another study that introduced an app for
+community health volunteers in Kenya found that acceptability
+impro ved after a period of initial anxiety; however, there were
+feasibility challenges related to battery drainage and difficulty
+keeping the phone charged [33]. Yet another study in South
+Africa with an app for mHealth workers to electronically track
+patients with multi-drug resistant TB found a high intent for
+use but low actual usage resulting from forgetfulness and low
+levels of responsibility for such work [34].
+Our study provides timely evidence on the successful integration
+of an immunization tracking app to be used by vaccinators as
+Pakistan prepares to upscale digitalized immunization tracking.
+It also provides lessons for LMICS on technological and
+non-technological factors that require attention to conte xtualize
+health provider apps within the local health system. We contend
+that immunization performance tracking through digital
+technology needs essential acceptance by frontline health force,
+and mere vertical enforcement is not enough. Technological
+ease of operability , personal recognition, results-oriented
+mobility support, and empo werment to impro vise microplanning
+are powerful individual-le vel factors, whereas data transparenc y
+and empo werment for district planning are key
+organizational-le vel enablers to embed digital tracking in
+vaccine delivery systems. While there is a proliferation of digital
+technologies in countries such as Pakistan, dedicated investment
+in e-governance for continuous, independent, rigorous evaluation
+is required to assess actual use in the field and validity of the
+data.Strengths and Limitations
+This study used iterati ve qualitati ve research methods for
+in-depth exploration of the digital technology interf ace with
+end users and decision makers within the health system. This
+iterati ve approach helped identify themes in an unexplored area
+and identif ied details that would have been missed in a more
+prescripti ve quantitati ve study . Triangulation of the findings
+across vaccinators, supervisors, and district managers
+strengthened the analysis and helped draw out common
+convincing narrati ves. To limit bias, researchers who were not
+part of the interv ention team undertook tool development and
+data collection.
+A limitation of this study is the lack of quantitati ve assessment
+of the data generated by the app. A household vaccination
+coverage survey conducted as part of the larger health system
+strengthening immunization study found a signif icant difference
+in vaccination completion rates between the baseline and end
+timepoints across study control and interv ention areas [35].
+However, the app’s impact cannot be separately quantif ied from
+the other components of the larger health systems interv ention
+package. While several of the findings are specif ic to the study
+conte xt, the study provides the key parameters for consideration
+during the current rollout of digital immunization interv entions
+in Pakistan as well as lessons for the introduction of a health
+provider app in LMICS. Digital technology investments must
+be accompanied by independent rigorous evaluation for
+relevance to health systems.
+Conclusions
+Embedding digital technology into mainstream health systems
+relies on acceptance by both end users and district stakeholders.
+Ease of operability , satisf action with reliable data, personal
+recognition, results-based field support, and empo werment are
+powerful enablers. An important by-product of digitalization
+can be impro ved coordination as a result of transparent, easy
+data access. The findings are relevant to not only the current
+upscaling of digital technology to track immunization in
+Pakistan but also the application of digital technology for
+results-based delivery by frontline health workers.
+Ackno wledgments
+We thank Dr Hassan Murad Shah Director General Health Sindh; Zahoor Baloch, EPI Programme Sindh; Dr Nazir Baloch,
+Department of Health Sindh,; Dr Hafeez, Pasha District Health Office, Tando Muhammad Khan; Agha Abdul Rahim, DCO,
+Tando Muhammad Khan; Abdul Muqeet; and Tehniat Sheikh, Aga Khan Development Netw ork E-Health Resource Centre. This
+work was supported by GAVI-The Vaccine Alliance (PP33961213A1).
+Conflicts of Inter est
+None declared.
+Refer ences
+1. World Health Organization. Decade of Vaccines―Global Vaccine Action Plan 2011-2020 URL: https://www .who.int/
+immunization/global_v accine_action_plan/DoV_GV AP_2012_2020/en/ [accessed 2020-01-10]
+2. USAID. 2003 Oct. Immunization Essentials: A Practical Field Guide URL: http://pdf.usaid.go v/pdf_docs/Pnacu960.pdf
+[accessed 2020-01-10]
+3. Stansf ield SK, Walsh J, Prata N, Evans T. Chapter 54: Information to Impro ve Decision Making for Health. In: Jamison
+DT, Breman JG, Measham AR, Alleyne G, Claeson M, Evans DB, editors. Disease control priorities in developing countries.
+New York, NY: The World Bank and Oxford University Press; 2006:1022.
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 14 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderX4. Barrington J, Wereko-Brobby O, Ward P, Mwafongo W, Kungul we S. SMS for Life: a pilot project to impro ve anti-malarial
+drug supply management in rural Tanzania using standard technology . Malar J 2010 Oct 27;9:298 [FREE Full text] [doi:
+10.1186/1475-2875-9-298 ] [Medline: 20979633 ]
+5. Labrique AB, Vasude van L, Kochi E, Fabricant R, Mehl G. mHealth innovations as health system strengthening tools: 12
+common applications and a visual frame work. Glob Health Sci Pract 2013 Aug;1(2):160-171 [FREE Full text] [doi:
+10.9745/GHSP-D-13-00031 ] [Medline: 25276529 ]
+6. Bangure D, Chirundu D, Gombe N, Marufu T, Mandozana G, Tshimang a M, et al. Effectiveness of short message services
+reminder on childhood immunization programme in Kadoma, Zimbabwe - a randomized controlled trial, 2013. BMC Public
+Health 2015 Feb 12;15:137 [FREE Full text] [doi: 10.1186/s12889-015-1470-6 ] [Medline: 25885862 ]
+7. Domek GJ, Contreras-Roldan IL, O'Leary ST, Bull S, Furniss A, Kempe A, et al. SMS text message reminders to impro ve
+infant vaccination coverage in Guatemala: A pilot randomized controlled trial. Vaccine 2016 May 5;34(21):2437-2443
+[FREE Full text] [doi: 10.1016/j.v accine.2016.03.065 ] [Medline: 27026145 ]
+8. Haji A, Lowther S, Ngan'ga Z, Gura Z, Tabu C, Sandhu H, et al. Reducing routine vaccination dropout rates: evaluating
+two interv entions in three Kenyan districts, 2014. BMC Public Health 2016 Feb 16;16:152 [FREE Full text] [doi:
+10.1186/s12889-016-2823-5 ] [Medline: 26880141 ]
+9. Kaewkungw al J, Singhasi vanon P, Khamsiriw atchara A, Sawang S, Meankae w P, Wechsart A. Application of smart phone
+in "Better Border Healthcare Program": a module for mother and child care. BMC Med Inform Decis Mak 2010 Nov
+03;10:69 [FREE Full text] [doi: 10.1186/1472-6947-10-69 ] [Medline: 21047412 ]
+10. Kazi A, Murtaza A, Kazi A, Khurram Z, Hussain K. Effect of mobile phone text messages reminders on uptak e of routine
+immunization among children in Pakistan-study protocol for a randomized clinical trial. J Vaccines Vaccin 2016;7(333):2.
+[Medline: 29514773 ]
+11. Kazi AM, Ali M, Zubair K, Kalimuddin H, Kazi AN, Iqbal SP, et al. Effect of Mobile Phone Text Message Reminders on
+Routine Immunization Uptak e in Pakistan: Randomized Controlled Trial. JMIR Public Health Surveill 2018 Mar 07;4(1):e20
+[FREE Full text] [doi: 10.2196/publichealth.7026 ] [Medline: 29514773 ]
+12. Lund S, Nielsen BB, Hemed M, Boas IM, Said A, Said K, et al. Mobile phones impro ve antenatal care attendance in
+Zanzibar: a cluster randomized controlled trial. BMC Pregnanc y Childbirth 2014 Jan 17;14:29 [FREE Full text] [doi:
+10.1186/1471-2393-14-29 ] [Medline: 24438517 ]
+13. Nguyen NT, Vu HM, Dao SD, Tran HT, Nguyen TXC. Digital immunization registry: evidence for the impact of mHealth
+on enhancing the immunization system and impro ving immunization coverage for children under one year old in Vietnam.
+Mhealth 2017;3:26 [FREE Full text] [doi: 10.21037/mhealth.2017.06.03 ] [Medline: 28828373 ]
+14. Schlumber ger M, Bamok o A, Yaméogo TM, Rouv et F, Ouedraogo R, Traoré B, et al. [Positi ve impact on the Expanded
+Program on Immunization when sending call-back SMS through a Computerized Immunization Register , Bobo Dioulasso
+(Burkina Faso)]. Bull Soc Pathol Exot 2015 Dec;108(5):349-354. [doi: 10.1007/s13149-015-0455-4 ] [Medline: 26498331 ]
+15. Uddin MJ, Shamsuzzaman M, Horng L, Labrique A, Vasude van L, Zeller K, et al. Use of mobile phones for impro ving
+vaccination coverage among children living in rural hard-to-reach areas and urban streets of Bangladesh. Vaccine 2016
+Jan 4;34(2):276-283. [doi: 10.1016/j.v accine.2015.11.024 ] [Medline: 26647290 ]
+16. Wakadha H, Chandir S, Were EV, Rubin A, Obor D, Levine OS, et al. The feasibility of using mobile-phone based SMS
+reminders and conditional cash transfers to impro ve timely immunization in rural Kenya. Vaccine 2013 Jan 30;31(6):987-993
+[FREE Full text] [doi: 10.1016/j.v accine.2012.11.093 ] [Medline: 23246258 ]
+17. Fadda M, Galimberti E, Fiordelli M, Romanò L, Zanetti A, Schulz PJ. Effectiveness of a smartphone app to increase parents'
+knowledge and empo werment in the MMR vaccination decision: A randomized controlled trial. Hum Vaccin Immunother
+2017 Nov 02;13(11):2512-2521. [doi: 10.1080/21645515.2017.1360456 ] [Medline: 29125783 ]
+18. LeFe vre AE, Mohan D, Hutchful D, Jennings L, Mehl G, Labrique A, et al. Mobile Technology for Community Health in
+Ghana: what happens when technical functionality threatens the effectiveness of digital health programs? BMC Med Inform
+Decis Mak 2017 Dec 14;17(1):27. [doi: 10.1186/s12911-017-0421-9 ] [Medline: 28292288 ]
+19. Zaidi S, Riaz A, Hussain SS, Omer SB, Ali A. Applying a governance barometer to vaccine delivery systems: Lessons
+from a rural district of Pakistan. Vaccine 2020 Jan;38(3):627-634. [doi: 10.1016/j.v accine.2019.10.052 ]
+20. Punjab Information Technology Board (PITB). Tracking Vaccinators (E-VACCS): Government of Punjab URL: https:/
+/www .pitb.gov.pk/tracking_e vaccs
+21. Ebile Akoh W, Ateudjieu J, Nouetchognou JS, Yakum MN, Djouma Nembot F, Nafack Sonk eng S, et al. The expanded
+program on immunization service delivery in the Dschang health district, west region of Cameroon: a cross sectional survey.
+BMC Public Health 2016 Aug 17;16(1):801 [FREE Full text] [doi: 10.1186/s12889-016-3429-7 ] [Medline: 27530488 ]
+22. Braun R, Catalani C, Wimbush J, Israelski D. Community health workers and mobile technology: a systematic review of
+the literature. PLoS One 2013;8(6):e65772 [FREE Full text] [doi: 10.1371/journal.pone.0065772 ] [Medline: 23776544 ]
+23. Calderón TA, Martin H, Volpicelli K, Frasso R, Díaz Arro yo EC, Gozzer E, et al. Understanding potential uptak e of a
+proposed mHealth program to support caregiver home management of childhood illness in a resource-poor setting: a
+qualitati ve evaluation. Mhealth 2017;3:19 [FREE Full text] [doi: 10.21037/mhealth.2017.04.03 ] [Medline: 28607905 ]
+24. JSI. Africa Routine Immunization System Essential. Impro ving the performance of routine immunization systems in Africa
+? A case of the drivers of routine immunization system performance in Cameroon URL: https:/
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 15 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderX/3qvw4sd8qlr2o7003493odw1-wpengine.netdna-ssl.com/wp-content/uploads/2012/11/Arise_CameroonReport_f inal5081.
+pdf
+25. JSI. 2018. Strengthening Immunization for the Urban Poor: Experiences and Lessons Learned from Five Country Studies
+URL: https://www .jsi.com/JSIInternet/Resources/publication/display .
+cfm?txtGeoArea=INTL&id=22079&thisSection=Resources [accessed 2020-01-10]
+26. Barau I, Zubairu M, Mwanza MN, Seaman VY. Impro ving polio vaccination coverage in Nigeria through the use of
+geographic information system technology . J Infect Dis 2014 Nov 01;210 Suppl 1:S102-S110. [doi: 10.1093/infdis/jiu010 ]
+[Medline: 25316823 ]
+27. Gammino VM, Nuhu A, Cheno weth P, Manneh F, Young RR, Sugerman DE, et al. Using geographic information systems
+to track polio vaccination team performance: pilot project report. J Infect Dis 2014 Nov 01;210 Suppl 1:S98-101. [doi:
+10.1093/infdis/jit285 ] [Medline: 25316882 ]
+28. Stanton M, Molineux A, Mack enzie C, Kelly-Hope L. Mobile Technology for Empo wering Health Workers in Underserv ed
+Communities: New Approaches to Facilitate the Elimination of Neglected Tropical Diseases. JMIR Public Health Surveill
+2016;2(1):e2 [FREE Full text] [doi: 10.2196/publichealth.5064 ] [Medline: 27227155 ]
+29. Teng JE, Thomson DR, Lascher JS, Raymond M, Ivers LC. Using Mobile Health (mHealth) and Geospatial Mapping
+Technology in a Mass Campaign for Reacti ve Oral Cholera Vaccination in Rural Haiti. PLoS Negl Trop Dis 2014 Jul
+31;8(7):e3050. [doi: 10.1371/journal.pntd.0003050 ]
+30. Wallis L, Blessing P, Dalwai M, Shin SD. Integrating mHealth at point of care in low- and middle-income settings: the
+system perspecti ve. Glob Health Action 2017 Jun;10(sup3):1327686 [FREE Full text] [doi: 10.1080/16549716.2017.1327686 ]
+[Medline: 28838302 ]
+31. Rothstein JD, Jennings L, Moorth y A, Yang F, Gee L, Romano K, et al. Qualitati ve Assessment of the Feasibility , Usability ,
+and Acceptability of a Mobile Client Data App for Community-Based Maternal, Neonatal, and Child Care in Rural Ghana.
+Int J Telemed Appl 2016;2016:2515420-2515414 [FREE Full text] [doi: 10.1155/2016/2515420 ] [Medline: 28070186 ]
+32. Vélez O, Okyere PB, Kanter AS, Bakk en S. A usability study of a mobile health application for rural Ghanaian midwi ves.
+J Midwifery Womens Health 2014 Jan 08;59(2):184-191 [FREE Full text] [doi: 10.1111/jmwh.12071 ] [Medline: 24400748 ]
+33. van Heerden A, Sen D, Desmond C, Louw J, Richter L. App-Supported Promotion of Child Growth and Development by
+Community Health Workers in Kenya: Feasibility and Acceptability Study . JMIR Mhealth Uhealth 2017 Dec 05;5(12):e182
+[FREE Full text] [doi: 10.2196/mhealth.6911 ] [Medline: 29208588 ]
+34. Chaiyachati KH, Loveday M, Lorenz S, Lesh N, Larkan L, Cinti S, et al. A pilot study of an mHealth application for
+healthcare workers: poor uptak e despite high reported acceptability at a rural South African community-based MDR-TB
+treatment program. PLoS One 2013 May 28;8(5):e64662 [FREE Full text] [doi: 10.1371/journal.pone.0064662 ] [Medline:
+23724075 ]
+35. Gavi-The Vaccine Alliance. Annual Progress Report 2018 URL: https://www .gavi.org/results/g avi-progress-reports/
+Abbreviations
+EPI: Expanded Program on Immunization
+LMIC: low- and middle-income country
+mHealth: mobile health
+TB: tuberculosis
+TMK: Tando Muhammad Khan
+UC: union council
+Edited by G Eysenbac h; submitted 18.09.19; peer-reviewed by M Fiordelli, N Jarour, D Felt, J Boegner; comments to author 26.10.19;
+revised version received 31.10.19; accepted 16.12.19; published 13.02.20
+Please cite as:
+Zaidi S, Shaikh SA, Sayani S, Kazi AM, Khoja A, Hussain SS, Najmi R
+Oper ability , Acceptability , and Usefulness of a Mobile App to Track Routine Immunization Performance in Rural Pakistan: Intervie w
+Study Among Vaccinator s and Key Informants
+JMIR Mhealth Uhealth 2020;8(2):e16081
+URL: https://mhealth.jmir .org/2020/2/e16081
+doi: 10.2196/16081
+PMID: 32053115
+©Shehla Zaidi, Saqib Ali Shaikh, Saleem Sayani, Abdul Momin Kazi, Adeel Khoja, Syed Shahzad Hussain, Rabia Najmi.
+Originally published in JMIR mHealth and uHealth (http://mhealth.jmir .org), 13.02.2020. This is an open-access article distrib uted
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 16 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXunder the terms of the Creati ve Commons Attrib ution License (https://creati vecommons.or g/licenses/by/4.0/), which permits
+unrestricted use, distrib ution, and reproduction in any medium, provided the original work, first published in JMIR mHealth and
+uHealth, is properly cited. The complete bibliographic information, a link to the original publication on http://mhealth.jmir .org/,
+as well as this copyright and license information must be included.
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 2 | e16081 | p. 17 https://mhealth.jmir .org/2020/2/e16081
+(page number not for citation purposes)Zaidi et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderX

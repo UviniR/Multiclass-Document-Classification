@@ -1,0 +1,1129 @@
+1
+USING DIGITAL TOOLS TO  
+EXPAND ACCESS TO
+AGRICULTURAL INSURANCEACKNOWLEDGEMENTS
+This guide was written under the Mobile Solutions T echnical Assistance and Research (mSTAR) project, United States Agency for International Development Cooperative 
+Agreement No. AID-OAA-A-12-0073. The content and views expressed in this guide do not necessarily reflect the views of the United States Agency for International Development or the United States Government.
+1  
+Special thanks are extended to Chrissy Martin of the US Global Development Lab, Jennifer Cisse and Patrick Starr of the USAID Bureau for Food Security, and Tara Chiu of the Feed the Future Innovation Lab for Assets and Market Access (AMA Innovation Lab) at the University of California, Davis for their thoughtful insight and guidance throughout the development of the guide. This guide benefited from the technical expertise of many USAID staff including Thomas Koutsky, Lena Heron, Kyle Novak, and Aubra Anthony. Nathan Jensen and Iddo Dror from ILRI/IBLI also generously shared their knowledge and experience, and Emilio Hernandez of CGAP provided helpful suggestions to the draft. Last but not least, Carrie Nichols, Nina Getachew, and the Design T eam at FHI 360 have ably steered the evolution of this document from conception to final publication.
+1 Prepared by Nhu-An Tran, Technical Writing Consultant to the USAID mSTAR Project.JANUARY 2018 
+• •
+• •1
+EXECUTIVE SUMMARY
+Risk is an inherent feature of agriculture around the globe. The ever-present 
+uncertainties in weather, yields, prices, government policies, global markets, and other factors can cause high volatility in farm income. In developing countries, smallholder farmers (and other small enterprises within the value chain) often do not have access to risk management products such as insurance to protect themselves from shock. Key barriers to the development of insurance markets in developing countries include: (i) lack of awareness and understanding about insurance among households, (ii) high overhead costs associated with data collection and claims processing, and (iii) the limited availability of insurance products that meet the needs of poor and low-income farmers. 
+The use of digital tools in agricultural insurance has the potential to facilitate client 
+uptake, reduce transaction costs, improve efficiency of the insurance process, and increase household resilience to respond to external shocks while ensuring stability, growth, and sustainability of agricultural value chains. 
+T echnology has its shortcomings, and the use of digital tools alone will not be 
+sufficient to increase access to affordable, quality agricultural insurance for smallholder farmers. However, when strategically and thoughtfully inserted into existing Feed the Future programs, technology has the potential to accelerate and amplify USAID investments in sustainable agriculture and food security.• Between 2014 and 2015, the number of mobile insurance policies issued worldwide increased by 68 percent, to a total of  31 million policies.
+• Only 7 percent  of these new policies are in agricultural insurance, so there 
+is tremendous opportunity in the sector.
+• Advances in remote sensing technologies have produced several 30-year time series of rainfall data, enabling government and private insurers to develop and calibrate more accurate predictive models for risk coverage and pricing.
+•  In Uganda, the USAID Commodity Production and Marketing (CPM) Activity 
+used mobile technology to collect biographical information on smallholder farmers and connect them to a range of digital financial services, bundling crop insurance and production loans to increase client value.
+• In India, the use of radio frequency identification devices (RFID) comprising a microchip inserted into livestock resulted in fewer fraudulent claims and faster claims processing.
+• The use of a mobile-based loyalty model to offer insurance—where coverage is based on parameters such as increased use of airtime, mobile money transactions, or savings in mobile wallets—has achieved significant scale in certain countries. For example, EcoLife Zimbabwe reached 20 percent of Zimbabwean adults within 7 months.
+• •
+• •2
+BACKGROUND
+Smallholder farmers have the potential to play an ever-increasing role in feeding the 
+world through the sustainable supply of key agricultural commodities. However, most smallholder farmers lack the ability to properly manage risk, which limits the amount that they are willing to invest in their farms. Agricultural insurance is one way to manage risk; however, as with most financial services, insurance has historically been out of reach for those in rural areas. Few insurance products are accessible to rural communities due to lack of distribution networks and high premium costs. The rapid growth of digital financial services (specifically, mobile money) and the growing availability of new technologies to collect and analyze data, provide new ways to design and deliver appropriate, low-cost risk management and insurance products to smallholder farmers globally.
+This Guide on Using Digital T ools to Expand Access to Agricultural Insurance aims 
+to help USAID and its development partners effectively leverage these new tools to expand access to and use of agricultural insurance. As the U.S. Government Global Food Security Strategy
+2 points out, digital tools, “have redefined economic growth 
+models, empowered poor people with new, powerful communications tools, and facilitated more productive interactions and financial transactions among actors across agricultural value chains.” This guide contributes to the body of knowledge intended to help food security practitioners fully leverage this new reality.
+The guide is put forth through a collaboration between the U.S. Global Development 
+Lab and the Bureau for Food Security called Digital Development for Feed the Future (D2FTF). D2FTF aims to increase the effective integration of digital technologies across USAID’s food security and nutrition programming. D2FTF focuses on four broad categories of digital tools: precision agriculture, digital financial services, data-driven agriculture, and mobile-enabled extension information delivery. All four of these categories are relevant to agricultural insurance.
+Feed the Future’s commitment to harnessing the potential of small-scale agricultural 
+producers to deliver large-scale results reaffirms the importance of agricultural insurance as a risk management tool for farmers. In addition, the GFSS recognizes that digital infrastructure and tools are expanding access to affordable and relevant financial services, such as insurance, to rural areas for the first time. Yet, guidance on insurance products, especially how to use newly available digital tools to increase reach and adoption, remains limited.
+Therefore, this guide aims to support integration of digital tools and interventions 
+that promote access to agricultural insurance to develop an inclusive insurance market that meets the needs of households and enterprises at all income levels.  This outcome will help achieve the following key objectives stated in the GFSS  
+results framework:  
+Objective 1: Inclusive and Sustainable Agriculture-Led  
+Economic Growth IR 4: Increased sustainable productivity, particularly through  
+ climate-smart approaches
+Objective 2: Strengthened Resilience Among People and Systems IR 5: Improve proactive risk reduction, mitigation, and management
+ IR 6: Improve adaptation to and recovery from shocks and stresses
+Cross-Cutting IR 2: Improved climate risk, land, marine, and other 
+natural resource management
+2 The 2017-2021 U.S. Government Global Food Security Strategy can be accessed at https://www.feedthefuture.gov/sites/default/files/resource/files/USG_Global_Food_Security_Strategy_FY2017-21_0.pdf .
+• •
+• •3
+INTRODUCTION
+Risk is an inherent feature of agriculture around the globe. The ever-present 
+uncertainties in weather, yields, prices, government policies, global markets, and other factors can cause high volatility in farm income. In developing countries, smallholder farmers (and other small enterprises within the value chain) often do not have access to risk management products such as insurance to protect themselves from shock. Insurance can also “crowd-in” credit, encouraging financial services providers to lend to smallholder farmers since households with asset or income insurance are perceived as lower risk.
+3 In some cases, insurance along with expected production  
+or animals can be used as collateral when the production/livestock itself would not be sufficient.
+In lieu of appropriate, accessible insurance products, agricultural households tend to 
+rely on low-risk/low-yield production techniques as a risk mitigation strategy, which can have negative livelihood consequences in the long run.
+4 Furthermore, when 
+shocks such as drought occur, households use harmful coping strategies such as selling off productive assets, skipping meals, and withdrawing children from school.
+5 
+Key barriers to the development of insurance markets in developing countries include: (i) lack of awareness and understanding about insurance among households; (ii) high overhead costs associated with the collection of actuarial data, monitoring for moral hazard, and the validation and payment of claims; and (iii) the limited availability of insurance products that meet the needs of poor and low-income farmers. The use of digital tools in agricultural insurance has the potential to facilitate client uptake, reduce transaction costs, improve efficiency of the insurance process from registration to premium payment to claims processing, and increase household resilience to respond to external shocks while ensuring stability, growth, and sustainability of agricultural value chains.Is Mobile Insurance the Frontier  
+Financial Product?
+A 2015 report by the GSMA stated that the mobile insurance 
+industry counted 120 live services in 33 emerging markets, predominantly in Sub-Saharan Africa (58% of live services), South Asia (19%), and East Asia & Pacific (18%). Between 2014 and 2015, the number  of mobile insurance policies issued  increased by 68% to a total of  
+31 million policies.
+While the product offerings remain dominated by life insurance (51% of new 
+services), there is increasing insurance product diversification including health (22%), accident (13%), agriculture (7%), and other (7%).
+Eighty-four percent (84%) of customers can subscribe to mobile insurance 
+services directly from their mobile phone. The predominant method for paying insurance premiums is through airtime deduction (63%), while 48% of customers can pay their premiums via mobile money. Less than half (48%) of services use mobile money as the method for payout.
+Source: 2015 Mobile Insurance, Savings & Credit report,  
+www.gsma.com/mobilemoney
+3 Carter M. R., Galarza F., Boucher S., 2007. Underwriting Area-Based Yield Insurance to Crowd-In Credit 
+Supply and Demand. Savings and Development. http://ageconsearch.umn.edu bistream/190918/2/WP07-003.pdf .
+4 Morduch J. 1995. Income Smoothing and Consumption Smoothing. Journal of Economic Perspectives. https://www.aeaweb.org/articles?id=10.1257/jep.9.3.103 .
+5 Janzen S. A., Carter M.R.. 2013. After the Drought: The Impact of Microinsurance on Consumption Smoothing and Asset Protection. NBER Working Paper No. 19702. http://econpapers.repec.org/paper/nbrnberwo/19702.htm .
+• •
+• •4
+OBJECTIVES
+The main purpose of this guide is to provide an analytical framework to help USAID 
+staff and implementing partners determine approaches for the appropriate use of digital tools to further expand access to agricultural insurance.
+6 The guide provides 
+highlights of current industry practices and shares examples of digital initiatives and models from USAID and other donor-funded investments around the world. T emplates and illustrative examples are included to assist USAID mission staff and implementing partners in determining the appropriate type and level of intervention. As each context is different and digital tools are constantly evolving, it is necessary to gather additional market-specific information for any project or activity design.
+It should be noted that while digital tools can have significant impact on lowering 
+barriers to accessing agricultural insurance, they should not be considered as a panacea. They should be integrated in a way that results in the strengthening of the existing insurance sector, leveraging existing resources and partnering with public and private sector partners where possible to extend coverage to underserved populations and to deepen the impact of USAID investments. 
+Users of this guide should consider insurance as one of many tools to manage 
+agricultural risks. Financial services do not only include credit, but a range of 
+ 
+products including savings and payments. Agricultural insurance may not be the most effective intervention, and not all farmers will want or need insurance even if when it is available and affordable. On the other hand, agricultural insurance can often be more effective when bundled with other financial and non-financial services to address the spectrum of risks faced by smallholder farmers and other actors within the value chain.This guide is an extension of the Guide to the Use of Digital Financial Services 
+in Agriculture and a supplement to the forthcoming toolkit titled “Determining Whether Index Insurance Is Right for Local Agriculture.”
+7 
+TARGETED USERS
+This guide aims to improve the knowledge base of USAID staff, implementing partners, and other agricultural development professionals who are interested in learning more about the potential of digital tools to expand access to agricultural insurance for improved risk management and enhanced agricultural productivity. While some basic knowledge of insurance concepts—such as risk pooling, risk transfer, moral hazard, and adverse selection—is useful, readers are not expected to be insurance experts to use this resource. A list of key terms at the end of this guide, and linked resources provided throughout, will provide deeper and more nuanced information about issues related to risk management and agricultural insurance.
+LIMITATIONS
+The content of the guide is based on a desk review of existing research, pilot initiatives, project activities, and other business models that have integrated digital tools into their agricultural insurance offerings. While all efforts were made to be comprehensive, the examples provided in this guide are meant to be informative and illustrative, rather than best practices. It should also be recognized that technological innovations occur at a rapid pace. As such, this guide provides a snapshot of tools that have been implemented as of late 2017. 
+The guide is intended to be a diagnostic tool that will help users assess where 
+and how digital tools can help address challenges faced in expanding agricultural insurance. It should not be used as the sole resource in creating a comprehensive action plan. Users are encouraged to refer to linked resources provided throughout 
+this guide for more in-depth discussion and guidance.
+6 Along with agricultural insurance, other insurance products that farmers value are life, health, accident, funeral, etc. This guide focuses on agricultural insurance given its direct influence on agricultural productivity and income.
+7  The toolkit is being developed by the Feed the Future Innovation Lab for Assets and Market Access at UC Davis (AMA Innovation Lab) 
+• •
+• •5
+ANALYTICAL FRAMEWORK
+This analytical framework provides USAID missions and implementing partners 
+with a systematic process and a set of tools for determining whether agricultural insurance is an appropriate intervention, identifying obstacles where digital tools provide a feasible solution for increasing access to agricultural insurance, and identifying opportunities for donor investments in this space. The framework includes six phases of analysis to help missions and implementing partners design and target their investments in a way that feeds into their country development cooperation strategy.  These six phases are: 
+1Assess agricultural risks within a value chain
+2Assess existing risk management tools
+3Assess existing insurance markets
+4Assess feasibility of digital agricultural insurance
+5Assess regulatory and policy environment
+6Assess and identify intervention
+ Because the focus of this guide is digitization as a means to expand access to agricultural insurance, the discussion of the first three phases is meant to provide a general overview only. Users are encouraged to consult the linked technical resources for more in-depth guidance.
+PHOTO BY RICCARDO GANGALE, USAID
+• •
+• •6
+Assess agricultural  
+risks within  
+value chainAssess existing risk 
+management toolsAssess existing  
+insurance marketsAssess feasibility  
+of digital agricultural insuranceAssess regulatory and policy  
+environmentAssess and  
+identify interventionPHASEASSESS AGRICULTURAL  
+RISKS WITHIN  
+A VALUE CHAIN1
+NEXT BACK
+• •
+• •7
+Smallholder farmers and households participating in agricultural value chains face 
+specific risks associated with these activities. While each actor within the value chain faces their own idiosyncratic risks,
+8 there are also covariate risks—e.g., natural 
+disaster, weather, pest and disease outbreak—that affect the entire value chain. Agricultural risks are one of the principal causes for food insecurity, and the inability to manage and mitigate these risks is a key factor in pushing rural populations into poverty. As the following table illustrates, each actor in the value chain is affected by various risks at differing levels of impact, with producers usually assuming the full impact of these risks without the means to respond effectively.
+Table 1. Potential Risks Faced in Agricultural Value Chain
+Potential Risks Intensity of Loss
+Household/ Producer Input Supplier Processor Broker/ Aggregator Buyer
+Production risk
+Pest and livestock disease High Low Low Medium Medium
+Weather and climate: flood, 
+drought, erratic rainfallHigh Low Medium Medium Medium
+Financial risk
+Rising interest rate High Medium Medium Low Low
+Low availability of credit High Medium Medium Low Low
+Market risk
+Price volatility: input price 
+rises, output price fallsHigh Medium Low Medium High
+Institutional/regulatory risk
+Price controls: import 
+export restrictionsMedium Medium Low High High
+Source: compilation based on World Bank and USDA  risk frameworks.
+8 Certain human risks, such as health risks due to illnesses or personal injuries due to accidents or workplace injuries, can have a negative impact on household wealth and productivity but minimal impact at the value chain and sectoral levels, and thus are not considered in this guide.
+• •
+• •8
+Assessment Tool 1 provides a template to help missions and their 
+implementing partners
+1. Identify  the risks facing a particular agricultural value chain
+2. Identify  the value chain actors most affected by these risks
+3. Estimate  the potential level of loss (both at the farmer and sectoral levels) 
+4. Estimate  the probability of risk events using available research and  
+historical data
+5. Estimate the frequency of the risks using available research and  
+historical data
+An illustrative example of a completed template is included in T ool 1 . For more  
+in-depth guidance, please refer to the World Bank Agricultural Sector Risk 
+Assessment Methodological Guidance .
+PHOTO BY FINTRAC INC.
+• •
+• •9
+Assess agricultural  
+risks within  
+value chainAssess existing risk 
+management toolsAssess existing  
+insurance marketsAssess feasibility  
+of digital agricultural insuranceAssess regulatory and policy  
+environmentAssess and  
+identify interventionPHASEASSESS EXISTING RISK 
+MANAGEMENT TOOLS2
+• •
+• •10
+Once the key risks of a value chain have been identified and prioritized, the next 
+step is to determine how actors in the value chain manage these risks. Many tools exist to address agricultural risks, from the individual farmer level to national policies enacted by governments.
+9 Generally, risk management tools can be classified into 
+four categories:10 
+1. RISK MITIGATION. There are several measures that can be taken prior to a risk event to prevent and/or minimize potential losses. For example, farmers can change production techniques, use different seeds, and improve pest prevention procedures. Aggregators, processors, and buyers can invest in improved storage to reduce potential damage or loss. Governments can invest in rural infrastructure and roads. At the regulatory level, government policies can reduce price volatility and market risk by improving the enabling environment for private sector value chain actors.
+2. RISK TRANSFER/SHARING.  At the farmer level, insurance is the primary tool 
+for risk sharing, and can take the form of credit insurance (to cover loan default), crop insurance, livestock insurance, weather insurance, property insurance (to cover theft or fire), etc. These insurance products can be provided through commercial insurers, input providers, credit cooperatives, farmers associations, or by governments. Governments can also develop partnerships with the private sector for risk sharing, such as loan guarantees to financial services providers to cover part or all defaults on agricultural loans. For covariate risks such as natural disasters, public private partnerships are often established to ensure broader coverage to more vulnerable populations not served by traditional commercial insurers. It is recommended that missions and implementing partners refer to the Determining Whether Index Insurance Is Right for Local Agriculture T oolkit (forthcoming from AMA Innovation Lab) when deciding whether or not to intervene in the insurance sector.
+3. RISK COPING. After a risk event, and after real losses have occurred, 
+smallholder farmers use a variety of risk coping measures to smooth income and prevent disruption in production. These include credit to restart production or short-term emergency loans to maintain cash flow. Often, smallholder farmers resort to negative risk coping actions—such as selling productive assets and livestock, spending down their savings, or foregoing household expenses for education and health—to meet short-term cash flow needs.
+4. RISK RESERVES. Savings are the primary vehicle used by smallholder  farmers for asset building, as savings can be used either as a safety net or investment capital. Savings can be amassed informally or formally, individually or through a village saving groups, and in small increments at regular intervals or larger sums periodically. 
+9 Readers are encouraged to consult the following sites for more comprehensive resources on risk management: (i) The Platform for Agricultural Risk Management (PARM), http://p4arm.org/ , and (ii) the Forum for Agricultural Risk 
+Management in Development, http://www.agriskmanagementforum.org/.
+10 Adapted from the R4 Rural Resilience Initiative launched by the World Food Programme and Oxfam America. For more information, visit www.wfp.org/r4  or www.oxfamamerica.org/r4 .
+• •
+• •11
+  
+Does agricultural insurance fit into the project’s 
+theory of change (and/or results framework)? 
+Would agricultural insurance contribute to value 
+chain resiliency and productivity and increase the project’s development impact?
+Are there identifiable project interventions into 
+which agricultural insurance can be introduced and integrated?It is important to note that no individual risk management tool can fully cover the impact of a risk event, nor can it cover every single risk. Often, a combination of tools is needed to provide an adequate risk cushion for smallholder farmers and to mitigate the risks incurred by other actors within the value chain. Research has shown that farmers are less likely to pay for inputs (such as fertilizers or new crop seeds), adopt new technologies, or invest in new equipment for fear of losing their investments. Such decisions ultimately lead to lower yields and lower productivity, which in turn further lessen a farmer’s ability to cope with shocks. Having a risk management system in place—either through insurance or a combination of savings, credit, and insurance—protects against loss after a risk event and also encourages farmers to take more risks and invest more beforehand.
+11 
+ 
+USE THE ASSESSMENT TOOL 2 TEMPLATE TO IDENTIFY 
+I. UTILIZATION – Which risk management tools are being used by which actor(s) in the value chain?
+II. CONSTRAINTS – What are the factors hampering the use of and/or access to risk management tools? For example, low client awareness, lack of trust, value proposition, cost, limited supply, limited rural outreach, time-consuming administrative processes, lack of information. 
+III. GAPS AND OPPORTUNITIES – What are the gaps and potential opportunities that could benefit from donor investments and support? For example, marketing and distribution, product development, partnership development, rural outreach. Using the completed template (see illustrated example of T ool 2), examine where 
+risk management tools are either nonexistent or limited, and highlight potential opportunities that should be further explored. At this phase, agricultural insurance may be one of several opportunities and should be analyzed within the  following context:  
+If the answer is yes for at least one of the above questions, proceed to the next phase of analysis.
+1 1 Dercon, Stefan; Christiaensen, Luc. 2007. Consumption Risk, Technology Adoption, and Poverty Traps: Evidence from Ethiopia. Policy Research Working Paper No. 4257. World Bank, Washington, DC. https://openknowledge.
+worldbank.org/handle/10986/7417 . Also see Barrett C. B., Carter M.R.. 2013. The Economics of Poverty Traps and Persistent Poverty: Empirical and Policy Implications. Journal of Development Studies. 49 7: 976–990.
+• •
+• •12
+Assess agricultural  
+risks within  
+value chainAssess existing risk 
+management toolsAssess existing  
+insurance marketsAssess feasibility  
+of digital agricultural insuranceAssess regulatory and policy  
+environmentAssess and  
+identify interventionPHASEASSESS EXISTING  
+INSURANCE MARKETS 
+FOR AGRICULTURE3
+• •
+• •13
+Assuming that the previous phases of analysis point toward agricultural insurance 
+as a potential opportunity for USAID intervention, the next phase involves an examination of existing insurance markets to determine whether there are specific barriers to accessing insurance that would require external interventions from the mission and its implementing partners. Keep in mind that intervention(s) in agricultural insurance should support an inclusive insurance sector that meets the needs of households and enterprises at all income levels. Even if this goal is not clearly stated in a project’s results framework, it is critical to ensuring sustainability of the intervention and to supporting long-term development impact.
+T o understand the general landscape of a particular country’s insurance market, 
+there are five areas of analysis to consider (Table 2).
+12  An illustrative example of this 
+analysis is available in Assessment T ool 3. Characteristics of an Inclusive Insurance Market 
+Access for all insurable people
+ Multiple and diverse types of providers
+Financially sound providers and intermediariesAccess at reasonable costDiversity of productsEffective consumer protection
+Adapted from Klein, Brigitte, and Martina Weidmaier-Pfister (2007).
+12 For more in-depth guidance on assessing insurance markets, see USAID’s Guidelines for Market Research on the Demand for Microinsurance and the OECD’s Analytical T ools for the Insurance Market and Macro-Prudential 
+Surveillance . The International Monetary Fund offers insurance industry data under the Financial Access Survey via its eLibrary, www.elibrary.imf.org. The data cover mainly the number of insurance institutions, number of policies, 
+and technical provisions by market, life and non-life.  
+• •
+• •14
+Table 2. Insurance Market Analysis 
+ 
+Area of Analysis Key Information Needed Constraints Opportunities
+Insurance Penetration
+Purpose:  to understand the current 
+state of insurance development 
+(emerging, growing, mature) and gauge the current and future potential of the insurance market• Number of policyholders
+• Number of insurance providers—
+informal and formal, commercial and community-based
+• T otal premium collected as a percentage of GDP
+13
+•  Increase in annual number of policies 
+and/or policyholders
+• Increase in number of  
+insurance providers
+•  Potential market size (based on 
+commodity pricing, number of  
+growers, etc.)• Is the range of insurance providers diverse or limited? Is the market dominated by one type of company or fairly distributed?
+• Is there a big informal market and is there a clear preference by clients for community-based informal schemes?  
+If yes, why? 
+• What is the level of client uptake?
+• Is growth hindered by policy restrictions, low demand, few product options, and low competition?• How can the market be expanded? Through policy and regulation? Through stimulation of demand? Through partnerships? Through product development?
+Products, risk coverage,  
+and benefits
+Purpose:  to understand the current 
+offerings, outreach to agricultural 
+value chain actors, and adequacy of risks coverage • Types of insurance currently being 
+offered in the country—microinsurance, crop insurance, livestock insurance, weather insurance, indemnity vs.  index insurance
+• Targeted clients and users
+• Extent of risk coverage and benefits—linked to credit, to a particular growing cycle, or multi-perils• Are products relevant to smallholders and other VC actors?
+• Are products well-designed? Do they provide value to farmers?
+• Do clients have a good understanding about insurance and the products  
+being offered?
+•  Is the risk coverage sufficient? •  How can current product offerings be 
+improved in terms of design and value add to farmers?
+• Are there ways to improve client awareness and understanding  
+of insurance?
+• How can risk coverage be improved?
+13 This is a standard insurance statistic that should be collected by most countries’ insurance regulatory authority, though the accuracy and completeness of data available may vary. The Organization for Economic Cooperation and 
+Development (OECD) maintains a global database of insurance statistics for OECD and selected non-OECD countries at https://stats.oecd.org/Index.aspx?DataSetCode=INSIND .
+• •
+• •15
+Table 2. Insurance Market Analysis cont.  
+ 
+Area of Analysis Key Information Needed Constraints Opportunities
+Premiums and claims ratio
+Purpose:  to determine affordability 
+of existing products and client 
+value14 (product relevance, easy claim process, customer  
+experience, etc.)• Average annual premiums
+• T otal claims paid as a percentage of 
+total premiums paid. High claims ratios reflect a thorough understanding of the insurance and high client value. This data should be collected over multiple years or growing seasons• Are premiums affordable?
+• Are administrative procedures for registration and claims processing easy  
+and efficient?•  How can administrative procedures 
+be streamlined to increase client satisfaction, lower transaction costs, and make products more affordable?
+Sales, distribution, and  
+service delivery
+Purpose:  to identify current delivery 
+channels, business models, and 
+partnerships • Direct sales through agents
+•  Distribution through mass channels like 
+mobile network operators
+•  Distribution through credit suppliers 
+like banks, credit unions, microfinance institutions and input suppliers
+•  Partnership with member organizations 
+like farmers associations, village savings groups, etc• Are existing delivery channels  
+cost-effective?
+• Are delivery channels reaching rural, remote, and vulnerable populations?
+• Are delivery channels achieving sufficient scale? Are they commercially viable?  Are current incentives sufficient and  
+well-aligned?•  Are there ways to deepen rural outreach while maintaining lower transaction costs?
+• What are prerequisites and conditions for an effective and impactful partnership for risk coverage?
+• How can existing channels and partnerships be replicated or  
+scaled up?
+Macro-level considerations:
+• Are there any other donor initiatives promoting agricultural insurance? 
+• If so, what are the key features of the program, and who are the key players?
+• Are there regulatory and policy issues that are hindering insurance access and innovation?
+Source:  Author’s compilation.
+14 The Impact Insurance Facility’s PACE framework helps organizations examine their products from the client’s perspective by comparing the insurance offering with other formal and informal risk management tools. PACE 
+evaluates the value of products and related processes across four dimensions: product, access, cost, and experience. A handbook is available at http://www.impactinsurance.org/tools/PACE.
+• •
+• •16
+Assess agricultural  
+risks within  
+value chainAssess existing risk 
+management toolsAssess existing  
+insurance marketsAssess feasibility  
+of digital agricultural insuranceAssess regulatory and policy  
+environmentAssess and  
+identify interventionPHASEASSESS FEASIBILITY  
+OF DIGITAL  
+AGRICULTURAL  
+INSURANCE4
+• •
+• •17
+Once the key constraints and opportunities in the agricultural insurance market 
+have been identified, it is necessary to determine which of these constraints can be addressed by integrating digital tools.  The digitization of insurance, and agricultural insurance in particular, is a relatively recent phenomenon. Similar to digital financial services and mobile-enabled agriculture, pilot projects abound around the globe, and new business models have emerged to disrupt and innovate standard practices.  The emergence of InsurT ech, a category of tech start-ups that deploy specific tech-led innovation within the insurance value chain, is significant as it signals the growth of new companies that could disrupt traditional insurers and intermediaries.
+15  
+Nevertheless, one should be mindful that the use of technology is not a panacea,  and insurance products, markets, and regulations need to be robust for digital solutions to support expanded reach and access.  As a general rule, missions and implementing partners should follow the Principles for Digital Development when assessing whether, when, where, and how technology will be applied within  
+their programming.
+16
+Experiences to date in developing countries show that the digitization of agricultural insurance has addressed several key obstacles in expanding access to rural and agricultural households.
+ THE PRINCIPLES FOR DIGITAL DEVELOPMENT 
+Design with the user
+Understand the ecosystemDesign for scaleBuild for sustainabilityBe data drivenUse open data, open standards, open sourceReuse and improveAddress privacy and security Be collaborative
+15 Swiss Re Institute, “Technology and insurance: themes and challenges.” June 2017, http://institute.swissre.
+com/research/overview/expertise_publication/technology_and_insurance_themes_and_challenges.html .
+16 The Principles for Digital Development are “living” guidelines that can help development practitioners integrate established best practices into technology-enabled programs. They are written by and for international development donors, multilateral organizations, and implementing partners. This initiative has been endorsed by a range of organizations including USAID, World Bank, and the Bill & Melinda Gates Foundation. For more information, visit http://digitalprinciples.org/ . 
+• •
+• •18
+Table 3. Examples of Digital Tools in Agricultural Insurance  
+ 
+Obstacle Potential Digital Tool(s) Purpose/Use in Insurance Benefits Challenges/Drawbacks
+High administrative costs 
+for claims verification leads to higher premiums. Indemnity-based insurance requires individual certification to minimize fraudulent claims but results in delayed payouts and low customer satisfactionDrones/Unmanned aerial vehicles (UAVs)
+17Provide high-resolution imagery of soil condition, crop quality, presence of pests• Provide “below the clouds” images that 
+are more detailed than those taken  by satellites
+• Expedite process of assessing damage and loss post-peril• Lack of or unclear government regulations regarding the use of drones by civilians
+Ground, aerial,  
+aquatic sensorsVerify at a localized level the type of crop(s) planted, detect change in soil moisture, detect presence of pests• Expedite process of assessing damage 
+and loss post-peril
+• Prevent fraud by confirming that crop was planted in the area where the farmer has submitted a claim• Tampering with sensors
+• Requires connectivity
+Satellite imagery
+18Map land use, identify field 
+boundaries between irrigated versus non-irrigated agriculture, and identify cultivated versus natural vegetation• Remote verification of damage reduces 
+need for on-the-ground verification, expediting claims processing and reducing transaction cost•  Not effective in regions with 
+micro-climates where loss and damage are localized  and variable
+•  Image resolution at a village 
+level can be hard to obtain
+RFID chips, quick  
+response (QR) codesProvide a secure and painless way to tag insured livestock to mitigate risk of fraud• Fewer false claims result in faster 
+claims processing, higher client value, and reduced transaction costs
+• Store useful data about the animal, such as vaccination and illness history• Requires spot audits and individual claim verification and processing
+Complex application 
+procedures and high transaction costs related to premium payment and claims payout can discourage client uptakeMobile-enabled payment, mobile app to streamline application and  
+claims reportingLeverage existing mobile networks and prevalence of mobile money accounts to make payment of insurance premiums and claims• Simplified procedures can encourage 
+higher client uptake
+• Enables bundling of financial  
+product (credit and insurance,  savings and insurance) for improved value proposition• Require mobile subscription and connectivity
+17 Refer to Determining Whether Index Insurance Is Right for Local Agriculture T oolkit for more detailed information.
+18 Ibid.
+• •
+• •19
+Table 3. Examples of Digital Tools in Agricultural Insurance cont.  
+ 
+Obstacle Potential Digital Tool(s) Purpose/Use in Insurance Benefits Challenges/Drawbacks
+Low client awareness 
+and knowledge about insurancemLearning, digital videos Use mobile technology to disseminate product information•  Short, easily digestible lessons that 
+can be accessed by users on their own time
+•  Lessons include assessment questions 
+and quizzes to track comprehension• Requires time and resources to design an interface that is engaging, user-friendly, and appropriate for the type of device being used
+• Does not completely replace in-person and classroom based training 
+SMS nudges/tips Send periodic reminders to pay 
+premiums, disseminate information on production tips and weather forecast • Help to improve financial planning and 
+risk mitigation• Require mobile subscription and connectivity
+Lack of longitudinal  
+data (on climate, 
+market, user) impedes more precise actuarial calculations and product pricing by insurerSatellite imagery, weather stationsCapture weather, vegetation, and soil quality data over time• Enable trend analysis and predictive 
+models which (i) allow farmers to adjust planting methods, diversify crop diversification, etc., and (ii) allow insurers to underwrite risk and accurately price the insurance product• Need continuous flow of data, which can be difficult with low-resolution satellite imagery systems
+• Data quality can be affected by clouds or haze
+Digital farmer profile Collect relevant data on farmers 
+(such as profit, loss, GPS, and hyper-local climate information) to help insurers assess risk of a particular farmer or farmer group•  User-friendly and regularly updated
+• Support data-driven decision making 
+and data sharing among insurers, input providers, and financial services providers
+• Can be linked to a national ID and/or national credit bureau, if available• Interoperability of platforms
+• Consumer protection and safeguarding of financial information
+• Mobile connectivity
+Source: Author’s compilation
+• •
+• •20
+There are several technologies being explored for insurance that are not included 
+in this guide, as they are still nascent. However, it is worth watching for future application of the following technologies in a developing country context:
+• BLOCKCHAIN. A blockchain is a continuously growing list of records, called 
+blocks, which are linked and secured using cryptography. Because blockchains are secure by design—i.e., changes in one block will affect the other linked blocks—it serves as an effective ledger for recording transactions in a verifiable and permanent way. For this reason, the technology has significant potential for record management and transaction processing. In the insurance sector, blockchain can facilitate underwriting and claims processing. Another disruptive use of blockchain is parametric insurance, where insurers would agree to pay a certain amount upon the occurrence of triggers within pre-set smart contracts. For additional information about blockchain, there are many resources online, such as this Step-
+by-Step Guide for Beginners . For potential blockchain applications in insurance, 
+see this Mindtree blog  and this T echcrunch article . •  PEER-TO-PEER INSURANCE. This model uses social technology to assemble a circle of people to pool their money in the form of premiums. The pool then builds up and can be tapped into if someone in the circle were to file a claim. If no one in the “social pool” files a claim, part of the money is returned to the circle participants as a dividend. Examples include Lemonade  in the United 
+States, Friendsurance in Germany, and T ongJuBao  in China. For more information, 
+see the Wikipedia page on peer-to-peer insurance .
+• MACHINE LEARNING. Machine learning can be used by insurance companies to run more complex risk models that result in higher predictive accuracy. Another meaningful use is to apply machine learning techniques to the claims audit to determine which claims are fraudulent and which are valid. For more information, see this blog by Hortonworks  and this article by Business  
+News Daily .
+ 
+PHOTO BY FINTRAC INC.
+• •
+• •21
+Satellite Technology and Index Insurance
+Index-based Insurance (IBI) is used to protect against covariate risks (i.e., shared 
+rather than individual risk) such as weather fluctuations, disease outbreaks, crop failure, or price loss. Unlike traditional insurance, which assesses loses on a case-by-case basis and makes payouts based on verified individual loss, IBI offers policy holders a payout based on an external indicator, e.g., rainfall, which triggers a payment to all insured clients within a geographically defined space. 
+The absence of comprehensive rainfall and crop data remains one of the key 
+constraints for scaling up IBI projects. Data are a critical element for index design and determining payouts. Indexes built on a historical dataset of 20 years of data would lead to a more accurate predictive model than indexes built on 5 years of historical data. Unfortunately, rain gauges provide data for localized areas and often do not provide historical weather records of at least 20 years. Satellites have many advantages for IBI, such as reducing moral hazard and tampering, and providing an independent data source and excellent spatial coverage. While remote sensing technologies are principally used to measure rainfall and vegetation, advances in satellite technology are being made to measure temperature, soil moisture, and evapo-transpiration.
+• REMOTE SENSING OF RAINFALL. Satellite rainfall estimates work by 
+taking images of clouds and inferring rainfall amounts from them. One way 
+to do this is to use infrared images, which work effectively as a ‘heat camera’, inferring information about cloud top temperatures (and their height). In terms of satellite rainfall estimation, there are now several time-series of rainfall (e.g., ARC2–African Rainfall Climatology Version 2 and CHIRPS–Climate Hazards Group IR Precipitation Stations) capturing over 30 years of weather data in tropical countries at a resolution of 4 to 10 kms.• REMOTE SENSING OF VEGETATION. Remote sensing of vegetation occurs with many sensors, but most commonly through the use of vegetation indices such as the normalized difference vegetation index (NDVI) or the enhanced vegetation index, which measure the proportional difference between infrared and visible red reflectance, indicating a measure of chlorophyll density, i.e., where vegetation growth is present.
+• REMOTE SENSING OF SOIL MOISTURE, ALSO KNOWN  
+AS EVAPORATIVE STRESS INDEX (ESI). ESI can robustly  
+measure vegetative stress before vegetation turns brown and can identify the point in the crop cycle when this occurs. Agricultural extension agents will then have the opportunity to collect information from the field that can improve the model’s performance in the region of interest.
+Despite advances in technology, satellite sensors do have shortcomings. Satellite spatial resolution is a challenge, as it is not possible to measure rainfall at a more localized level (i.e., a specific field or village). The ideal approach is to use multiple datasets concurrently with ground observations to bolster certainty that a weather event was significant enough to cause a payout. It is important that the type of tool selected have enough predictive power to provide high value to the insured client. Ultimately, large-scale index insurance projects still require a ground network of clients, experts, site visits, and partners for continuous verification and improvement of products, and to cross-check satellite data. 
+Source: Bristol Mann, Tufa Dinku, Helen Greatrex, International Research Institute 
+on Climate and Society, “Data for index insurance.” Global Index Insurance Facility Knowledge Notes, October 2014.
+• •
+• •22
+The aim of Phase 4 is to determine the feasibility of integrating digital tools in an 
+existing program. T o do this, start from the constraint identified in the previous phase. This ensures that we choose the right tool for the right context. For each of the identified constraints, identify the potential solutions, determine whether there is potential for integrating digital tools, and decide on potential applications (See illustrative example in Assessment T ool 4). 
+Next, for constraints where digital tools can be integrated, analyze whether the existing market conditions exist and whether they are amenable to successful implementation.
+19 Key issues to consider are: 
+1. Availability and affordability of digital infrastructure 
+Because most Feed the Future populations tend to be in rural or remote areas where connectivity is limited, carefully consider scalability, cost, and sustainability of digital tools. 
+Network coverage. Depending on the sophistication of the product and the data 
+collection and verification needs, a minimum level of mobile voice and data service 
+is necessary for a digital insurance product to be effective in a targeted geographical area (see Table 4). Table 4. Applications and Needed Service Levels20
+Applications Technology Bandwidth
+Voice, SMS, Interactive 
+Voice Response (IVR), digital money transactions2G (GSM, GPRS, EDGE) 9–384 kbps
+Many basic apps 3G (UMTS, HSPA, HSPA+) 385 kbps–3 Mbps
+Video, large file transfers, data-intensive apps4G (LTE) 3–10 Mbps, peak
+Before undertaking an intervention in a specific geography, particularly one that 
+requires 3G or 4G connectivity, undertake a field assessment and testing. T o obtain a snapshot, network coverage tools like NetRadar  can be loaded onto field team 
+devices to perform regular network speed and quality tests during the  
+assessment phase. 
+Affordability of services. In addition to network coverage, mobile voice 
+and data service must be affordable for beneficiaries to use them for digital insurance projects. The International T elecommunications Union’s (ITU) Broadband Commission established a monthly affordability benchmark—less than 5 percent of monthly gross national income (GNI) per capita. The Alliance for Affordable Internet (A4AI) set a target price for 1 GB of mobile data service at a cost of no more than 2 percent of monthly GNI per capita.
+21 This can impact both product and marketing 
+tactics. For example, if the cost of mobile data packages is high in a country, the potential to deliver a service through mobile digital video will be limited.
+19 For digital payments, please refer to the analytical framework in the Guide to the Use of Digital Financial Services in Agriculture .
+20 Network coverage information and maps can frequently be obtained from USAID, the national regulator, and GSMA, the international trade association of mobile network operators. 
+21 Numerous sources are available for understanding the cost of mobile voice and data service bundles in a country. The Alliance for Affordable Internet Affordability Report annually reports progress on its benchmark (http://a4ai.
+org/affordability-report/data/?_year=2017&indicator=INDEX). Research ICT Africa ( http://www.researchictafrica.net/pricing/ramp.php ) regularly publishes the results and costs of common mobile voice and data bundles for all 
+of sub-Saharan Africa. USAID staff also maintains a tool that mission staff can use to assess affordability of services.
+• •
+• •23
+In assessing pricing, it is important to understand the competitive dynamic in a 
+country. Most countries license more than one mobile provider; however, many providers may make their service available only in large cities, while rural areas may have only one or two providers. Consequently, in assessing the market for mobile voice and data connectivity, one should try to understand the pricing dynamic of service provider prevalent in the region of concern. 
+Interventions can be designed to reduce or even eliminate the cost on the end user 
+for mobile data service. For example, sponsored data plans would allow the insurance company to pay the service provider for data used by its application. Facilitating this transaction between the insurance company and a mobile  
+network operator (MNO) could improve uptake of a digital insurance program. Generally speaking, network coverage and affordability can be evaluated using the following criteria:
+Poor non-existent to sporadic (20% of population or less) coverage at 
+the service level needed, frequent interruption in services (often have to travel to another location for services), only one provider in market, prices more than 3 times the A4AI and ITU  
+affordability benchmarks
+Fair moderate (less than 60%) coverage at the service level needed, periodic interruption in services, more than one provider in market, prices still above A4AI and ITU affordability benchmarks but below 3 times benchmark
+Good good coverage (between 60–85%) at the service level needed, few interruptions in services, multiple providers with significant overlap in service footprints, prices generally in line with A4AI and ITU affordability benchmarks
+Very Goodexcellent coverage (over 85%), no appreciable interruption in services, multiple providers with significant overlap in service footprints, prices below A4AI and ITU affordability benchmarks
+An illustrative example of a completed analysis is provided in Assessment T ool 4.2. Availability and affordability of hardware/devices
+In addition to availability and affordability of mobile services, devices that use those 
+services must also be available to the beneficiaries at an affordable cost. In particular, more sophisticated applications that some digital insurance products use might require the use of a smartphone, rather than the basic and feature phones that may be more prevalent in the market. Programs should assess the level of basic, feature, and smartphone ownership and use in the market before deciding upon a specific intervention that might require more sophisticated devices.
+Programs should also understand potential differences in adoption rates and use of 
+mobile devices and services by women.  There is a significant gender gap between men and women in mobile and information and communication technology (ICT) usage in developing countries, generally for cultural, social, economic and education reasons. The USAID Global Development Lab has designed the Gender 
+and Information Communication T echnology (ICT) Survey T oolkit for missions and implementing partners to study and assess this gender gap with modules specific to agriculture and financial services.
+A high prevalence of mobile devices within a country or targeted region indicates 
+that targeted populations are connected to the digital ecosystem and are familiar, if not always comfortable, with the use of mobile technology.  This could help with customer adoption of new mobile-based applications, though end-user capabilities need to be assessed (see point 4 below). It also means that there is great potential and cost-efficiency opportunities in harnessing the existing ecosystem to expand the type of products and services being offered. Higher availability and ownership of devices might also suggest that affordability may not be an issue, and that devices are offered at a range of price points in the market.
+• •
+• •24
+High-tech Does not Mean High-cost
+The Muonde Trust is a community-based organization dedicated to fostering 
+locally driven development in the Mazvihwa and neighboring areas of south central Zimbabwe (Zvishavane District). In Mazvihwa, subsistence farmers live off the grid. There is no running water, electricity comes from solar panels, and communications occur mainly through cell phones. Transport and Internet  
+access are extremely limited, isolating the community from cities and the rest  of the world. 
+Having on-site weather data is essential for agriculture, as it provides information 
+needed to decide on seeding and harvesting dates. In the Mazvihwa area, rainfall data is scarce, as there are only a handful of weather centers spread over a large area. Moreover, the Meteorological Office was converted from a free-access center to a fee-for-service model, making weather data even more difficult for community members to access.
+With the support of an international environmental scientist, the Trust installed 
+low-cost, 5-in-1 weather stations in three homesteads. These stations were designed for home use, cost less than USD 100, are easy to install and maintain, and are battery operated. The stations measure air temperature, barometric pressure, relative humidity, wind direction, wind speed, and rainfall.  A designated operator was assigned for each of the three stations and is responsible for keeping and maintaining the weather station.  The stations came with an indoor display unit that can both display and temporarily store data.  A fourth Trust member was responsible for downloading data from the display units, which can keep data for up to 10 days. Information from these weather stations became an invaluable resource to the homesteads where the stations were installed and to the surrounding communities. For example, once the rainfall reached 50mm, agricultural extension officers would spread the word to farmers to  
+start planting.
+Access to data and information was a key driver in behavior change. Farmers 
+started to use weather data to make knowledge-based decisions on agricultural practices, increasing food security. Community members changed daily practices based on weather forecasts, increasing personal security. In the future, after sufficient weather data accumulates, seasonal trends can be investigated, and the effects of climate change can be assessed.  This information can be used to choose the most appropriate crop types and varieties that will be adaptable to climate change in the region.
+The experience with Muonde Trust demonstrated that the most sophisticated 
+technology is not always required to generate significant impact. With inexpensive and simple equipment, farmers and community members increased their knowledge about local weather patterns.  After two years of installation, the villages have accumulated sufficient weather data to better understand and evaluate predictions for temperature and precipitation changes.
+Source: How Weather Stations Became Radio Stations, https://agrilinks.org/blog/how-
+weather-stations-became-radio-stations  
+• •
+• •25
+3. Existence of private sector partners and intermediaries
+Successful implementation of digital agricultural insurance requires partnerships 
+with the technology provider and, even more importantly, with individuals and organizations that can facilitate marketing, distribution, payment collection, claims processing, and customer engagement. In certain cases, one organization can take on multiple functions while in other cases, the functions are distributed among multiple entities. In terms of partnership selection, it is useful to make a distinction between linkage partners with the right type of products or business models that can be offered off the shelf, and innovation partners who are willing to work with the project to create appropriate products.
+22 Partners with proximity to clients are 
+critical to client uptake of agricultural insurance; programs can build on the trust that these organizations already have with the community, and they can offer basic client support and information.
+Ultimately, one should strive to work with the entire ecosystem to have a seamless 
+integration of technology for agricultural insurance. It is also important to note that while technology can be an enabler, clients still want the in-person interaction, so a network of field agents is a key factor in the selection of a partner organization. See the text box on Digitizing the Insurance Value Chain: Two Models, Two Approaches for an 
+example of innovative partnering.  
+4. End-user skills, needs, and capabilities
+The process by which digital insurance products are designed can have a significant 
+influence on customer adoption. Using a human-centered design approach
+23 ensures 
+that digital insurance tools reflect end-user capabilities and that technology is used to enhance the overall consumer experience. As such, digital agricultural insurance solutions should take into consideration: (i) users’ comfort with a mobile or other digital device, (ii) the level of literacy and numeracy required to engage with the software platform, (iii) the quality of the user interface, and (iv) the level of user support available (virtual and/or in-person). Product design must also account for the fact that these four factors will vary among users, based on gender, age, culture, and other considerations. Human-centered design can help to segment customers to understand and account for the most relevant differences. 
+The Gender and ICT T oolkit’s modules on agriculture and financial services can be 
+used to support the collection of disaggregated data on ICT usage and assess the level of digital skills and ability to use applications in a community or population (generally, not just as it relates to gender).
+SEE ASSESSMENT TOOL 4 FOR AN EXAMPLE  
+OF THE COMPLETED ANALYSIS.
+22 FHI 360 and iDE Bangladesh, Firm to Finance T oolkit, September 2014, available at https://www.microlinks.
+org/sites/default/files/resource/files/Firm_to_Farm_Finance_T oolkit.pdf . The T oolkit also contains a useful 
+tool for assessing potential partners’ offerings along four areas of effectiveness: 1) scalability, 2) sustainability, 
+3) Inclusiveness, and 4) Return on Investment.
+23 A good place to start is IDEO’s free online Field Guide to Human-Centered Design, available at http://
+www.designkit.org/resources/ . If you decide to take this approach, there are several human-centered design 
+firms that can be hired to help with research, product design, and testing. 
+• •
+• •26
+Digitizing the Insurance Value Chain:  
+Two Models, Two Approaches
+EcoLife is a partnership between Trustco Group Holdings, a Namibia-based company that specializes in microfinance and microinsurance services, Econet Wireless, a mobile network operator in Zimbabwe, and insurance company First Mutual Life.
+MiLife is a partnership between Hollard Insurance, MTN Ghana, MFS Africa, and 
+MicroEnsure. MFS Africa Hub connects mobile money systems to each other and to money transfer organizations, banks and other financial institutions, enabling money remittances to and from mobile money accounts. MicroEnsure is a technical service provider who works with MNOs on product design  
+and processing.In the EcoLife approach, the MNO Econet provides the platform through which payment is made and also drives market discovery and handles customer relations. The insurer (First Mutual) takes on the underwriting and back-end claims processing. In the MiLife approach, MTN plays the same role as EcoNet, but the product design and claims processing are handled by a technical services provider (MicroEnsure), with UT Life and Hollard Insurance handling the underwriting only. 
+Source: Jeremy Leach, Tyler Tappendorf, and Sandisiwe Ncube. Can the digitalization of 
+microinsurance make all the difference? Bankable Frontier Associates, March 2015.
+Table 5. Digitizing the Insurance Value Chain: Two Current Models 
+Product Design & 
+UnderwritingSales Marketing Customer Sign-up Premium Collection Claims Processing Customer Recourse
+Model 1: EcoLife Zimbabwe
+First Mutual Life (with 
+Trustco Mobile – product design)Econet via mobile platform Econet in partnership with First Mutual LifeEconet – send SMS with name and ID of main member and beneficiaryEconet – premium to First Mutual Life. Royalty of $1.20 per client per month to Trustco.First Mutual Life 1. Econet call center 
+2. First Mutual Life 
+offices 
+Model 2: MiLife Ghana
+UT Life, Hollard 
+Insurance (reinsurer)MTN MTN Mobile Money MTN Mobile Money – agents, mobile, outbound. MFS Africa support menu and integration into walletMTN Mobile Money – MFS Africa creates ‘debit order‘ off Visa’s Fundamo platformMicroEnsure 1. MTN call center 
+2. UT Life 3. MFS Africa (IT) 
+• •
+• •27
+Assess agricultural  
+risks within  
+value chainAssess existing risk 
+management toolsAssess existing  
+insurance marketsAssess feasibility  
+of digital agricultural insuranceAssess regulatory and policy  
+environmentAssess and  
+identify interventionPHASEASSESS CURRENT LEGAL 
+AND REGULATORY POLICY ENVIRONMENT FOR DIGITAL AGRICULTURAL INSURANCE5
+• •
+• •28
+An enabling legal and regulatory environment is important to ensure that the 
+sale and management of insurance products are fair to both buyers and sellers. On the buyer side, there should be rules and policies in place for consumer protection—complaints and grievance process, data privacy and client confidentiality, and systems for legal recourse in case of fraud. On the seller side, the legal and regulatory framework should allow for an inclusive market that allows for a wide range of insurance providers—private for profit and non-profit, commercial, and community-based. Likewise, the framework should allow space for the entrance of non-traditional players, such as MNOs, into the insurance market while continuing to maintain the stability and robustness of the overall financial system. 
+For digital agricultural insurance, it is important to understand how digital insurance 
+products might blend with existing risk management policies and how these policies impact the way these products are designed, distributed, and priced, as well as what types of entities are legally allowed to operate in this space. For example, what are MNOs allowed or not allowed to do?
+At a global level, extreme weather events can cause sustained and significant 
+damage. In these cases, public-private partnerships are needed to address the risks faced by all parties—smallholder farmer, the insurance industry, and government. In catastrophic events such as flood, drought, or natural disasters, it is important to layer risk using a mix of public and commercial coverage because commercial insurers cannot bear the full scale of the loss and remain commercially viable. Similarly, putting in place a re-insurance facility (i.e., insurance for insurers or stop-loss insurance) also allows commercial insurers to transfer a portion of their risk portfolio to others and reduce their obligation for a large payout. 
+24As index insurance25 is more widely adopted by governments and donor projects 
+worldwide, it will become vital to set up infrastructure for the collection and sharing of satellite data to develop a robust historical database of climate and soil information and enhance predictive models for more precise risk underwriting. Moving forward, the role of government in supporting the collection of yield data at low levels of aggregation is important for index design in insurance and also for enabling more evidence-based food security and rural development interventions. 
+Often, policy interventions require collaboration and coordination among different 
+government agencies and regulatory bodies—e.g., Ministry of Agriculture, Ministry of Finance, Central Bank. Potential policy interventions should take into account collaboration with diverse ministries and at multiple levels of government—village/district, municipal, and national.
+The analysis in this phase does not require an extensive review of the regulatory and 
+policy environment that is currently in place; that is beyond the scope of this guide. Rather, missions and implementing partners, through their regular interaction and consultation with relevant policymakers, funding partners, and other stakeholders, can identify barriers to accessing insurance and make a determination whether governments are interested in and committed to supporting digital agricultural insurance, and work in concert with other stakeholders to ensure that the regulatory framework reflects this support.
+ 
+24 For more information on insurance and re-insurance in catastrophes and natural disasters, see Cummins, J. David; Mahul, Olivier. 2009. Catastrophe Risk Financing in Developing Countries: Principles for Public Intervention. 
+Washington, DC: World Bank. https://openknowledge.worldbank.org/handle/10986/6289 .
+25 For more information on index insurance, please refer to Determining Whether Index Insurance Is Right for Local Agriculture T oolkit from AMA Innovation Lab.
+• •
+• •29
+Leveraging Public Private Partnership and 
+Technology to Expand Social Protection
+In 2016, Kenya’s Ministry of Agriculture, Livestock 
+and Fisheries developed the Kenya Livestock Insurance Program (KLIP) with technical assistance from the International Livestock Research Institute (ILRI), the World Bank Group, and Financial Sector Development Kenya. KLIP is now part of Kenya’s national strategy to end drought emergencies. The insurance program is a public-private partnership between the government and a consortium of eight insurance companies: UAP , CIC, Jubilee, Heritage, Amaco, and Kenya Orient, under the leadership of APA Insurance, reinsured by Swiss Re.
+Under KLIP , the government purchased drought 
+insurance from private insurance companies on behalf of vulnerable pastoralists. Satellite technology is used to measure the color of the land at both visible and infrared frequencies to determine the available vegetation for livestock. If the data show a lack of “green food” for livestock, the insurance is triggered and payment is made to farmers to purchase feed, medicines, and water trucks to mitigate the impact of the drought.In 2016, Kenya suffered its worst drought in 16 years. Through KLIP , the government made two payouts in 2017—the first round of payout of USD 2 million went to 12,000 pastoral households. The second payout of USD 2 million was disbursed to over 11,000 pastoralists across six counties. Payments were made directly to farmers via their bank account or mPesa mobile money account and averaged USD 170 per household.  The funds were reported to help save 70,000 tropical livestock units—primarily cows, goats, and camels—that sustain approximately 100,000 people.
+KLIP demonstrates that harnessing financial and 
+technological innovations and blending market mechanisms and private sector engagement with fiscal funding helped the government of Kenya provide timely and needed social protection to smallholder farmers at risk of losing their livelihoods.
+Sources: https://news.ilri.org/2017/02/21/record-payouts-
+being-made-by-kenya-government-and-insurers-to-protect-herders-facing-historic-drought/ and http://www.nation.co.ke/business/Insurers-to-shell-out-Sh319m-for-livestock/996-4068618-xk18kbz/index.html
+PHOTO BY MD. RAFIQUL ISLAM,  
+WINROCK INTERNATIONAL
+• •
+• •30
+Assess agricultural  
+risks within  
+value chainAssess existing risk 
+management toolsAssess existing  
+insurance marketsAssess feasibility  
+of digital agricultural insuranceAssess regulatory and policy  
+environmentAssess and  
+identify interventionPHASEASSESS AND IDENTIFY 
+INTERVENTION6
+• •
+• •31
+T o increase smallholder farmers’ access to agricultural insurance through digital channels, there are four possible points of entry for interventions: smallholder farmers (client), 
+aggregators, service providers, and government. Interventions can be implemented at one or multiple levels, depending on the constraints and digital opportunities identified in the previous phases of analysis.
+Table 6. Levels and Types of Intervention  
+Level of Intervention Partners/Beneficiaries of Intervention Type of Intervention Relevant Digital Tools
+Smallholder Farmers Households and smallholder farmers •  Support client sensitization to increase 
+insurance uptake
+•  Lower transaction costs through digital payments•  mLearning, gamification, digital videos, 
+SMS nudges/tips/stories, Internet radio, chatbots 
+• Digital financial services
+Aggregators Input suppliers and processors, 
+farmers cooperatives, funeral societies, Village Savings Groups • Lower transaction costs through product bundling 
+(credit & insurance)
+• Partner with village-level groups to act as agent• Digital financial services
+• mLearning to scale up agent training
+• Digital client profile
+Service providers Insurers, financial service providers, 
+MNOs, technical services providers, non-governmental organizations (NGOs), community-based organizations• Support product design, pilot testing
+• Replicate and scale up existing pilot 
+• Support enhanced and continuous data collection, 
+improved data quality
+• Support increased data processing capacity• Mobile insurance
+• Livestock insurance using RFID
+• Index-based insurance using remote sensing
+• Sensors such as drones/UAVs, satellites, weather stations
+• Cloud-based information system, blockchain, machine learning
+Government Local and national governments, 
+policy makers, donors•  Rules and regulations – MNOs’ role and business 
+models for insurance, use of UAVs for data collection
+•  Consumer protection – ensuring fair pricing, data 
+confidentiality and privacy, legal recourse in case of fraud
+• Resource pooling – co-investing and sharing satellite and weather station data for improved accuracy and cost-efficiency• Digital infrastructure
+• Drones/UAVs
+• Satellite information
+• •
+• •32
+This final phase is where the information from the previous analyses are consolidated 
+to lay out a logical framework for identifying the intervention(s). In this phase of analysis, it is important to identify what can be done to address the constraint and understand the why and how. In other words, distinguish between the constraint and the underlying cause(s) of that constraint to design an intervention that can address the problem at its root. In that sense, the digital aspect of the intervention would not be standalone, but would be integrated and aligned with the project’s other (non-digital) interventions. 
+It should be clear from the onset what the intended outcome(s) of the intervention 
+will be so that the relevant indicators can be identified to measure progress. Because no standard key indicators have yet been identified that could be used by missions and implementing partners in the digital insurance space, some suggested indicators are included in this guide as a reference (see T ool 5). Missions and implementing 
+partners are encouraged to tailor indicators according to their project’s monitoring, evaluation, and learning needs.
+Start with the constraints identified in Phase 4  and use the information already 
+gathered to develop a roadmap toward the design of an intervention.Once the interventions have been identified, rank the interventions according to the 
+following criteria:
+• Degree of impact on the target community
+• Impact on implementing other interventions
+• Availability of project resources and capabilities to deliver the intervention
+• Cost of delivering the intervention versus benefit to the community
+REFER TO ASSESSMENT TOOL 5 FOR A COMPLETED  
+EXAMPLE OF THIS PHASE’S ANALYSIS. 
+PHOTO BY FINTRAC INC.
+• •
+• •33
+Project NameUSAID Feed the Future Uganda Commodity 
+Production and Marketing Activity (CPM)
+Implementing Organization(s)Chemonics and Akorion Company Limited
+Location Uganda, Lwengo district
+Level of Intervention Client
+Type of InterventionClient sensitization, data collection,  product bundling 
+Digital Tool(s) Used Digital financial services, digital farmer profile
+Key AchievementsEnhanced farmer profiles encourage  
+financial service providers to expand access  
+to credit and insurance for farmers due to  
+reduced risk.CURRENT INITIATIVES IN DIGITAL 
+TOOLS FOR AGRICULTURE INSURANCE 
+CPM uses a market facilitation approach and works with and through market actors 
+like traders, producer organizations, and exporters to improve the quantity and quality of coffee, maize, and beans produced and marketed by smallholder farmers. Access to finance is one of the biggest challenges experienced by smallholder farmers because most financial institutions perceive agriculture as a risky business. T o encourage risk-averse financial institutions to extend credit to these smallholder farmers, the activity sought to reduce risk of agricultural lending through crop insurance with local insurance providers covering 80 percent of crop loss in return for a 5 percent premium. This encourages smallholder farmers to purchase crop insurance as a cover against loss due to pests, disease, or unpredictable weather changes and minimizes credit default for banks. However, these benefits are not widely known among smallholder farmers, and even for those who are aware of the benefits, the cost of the insurance premium remains a barrier.
+T o address this challenge, Chemonics partnered with Akorion Company Ltd, a 
+Ugandan firm led by youth entrepreneurs, to provide innovative solutions for agricultural ICT.  Akorion developed an integrated digital platform that uses mobile technology that collects biographical information on smallholder farmers and connects them to a range of digital financial services, including crop insurance and production loans.
+Since the start of the intervention,  Akorion has equipped a network of 400 village 
+agents with smartphones and profiled more than 40,000 farmers through its mobile application. The application captures information on the farmers’ biodata, land size, crop type, and expected production value.  Akorion’s network of village agents also serves as a built-in sales force for traders and field monitors for insurance providers. Akorion has also sponsored training of 120 village agents as licensed crop insurance agents to market insurance products, assess and document risks, and inspect crops during the harvest period to track production and substantiate any subsequent claims made by smallholders against their insurance policy.
+For more information, go to: https://www.chemonics.com/smallholder-salvation-
+promoting-crop-insurance-among-smallholder-farmers-in-uganda/ .
+• •
+• •34
+More than three million pastoralists live in the arid and semi-arid lands of northern 
+Kenya and southern Ethiopia, which routinely suffer from crippling droughts.  These pastoralists faced four major droughts in the last 10 years alone.  T o help mitigate the impacts of drought, ILRI
+26 developed the IBLI product, which insures pastoralists 
+against the risk of losing their primary asset, livestock, during drought.  The index is constructed from the NDVI, which is remotely sensed from satellites and is an indicator of the level of photosynthetic activity in a given location. Because livestock in pastoralist systems depend entirely on available forage for nutrition, the premise is that NDVI would be a strong indicator of the vegetation available for livestock to consume, and consequently of livestock mortality. IBLI products were first sold by a single insurance company in January of 2010 in the Kenyan county of Marsabit. Since then, it has scaled to six additional counties in Kenya and two regions in Ethiopia and is sold by multiple insurance companies. It also being employed by Kenya’s State Department of Livestock and the World Food Program in Ethiopia to support vulnerable pastoralists.    
+The IBLI product is marketed through private sector insurance agencies who employ 
+and train their own field agents to generate sales. Cost-effective marketing and client outreach continues to be one of the challenges that faced by IBLI. Extensive outreach and marketing are necessary to encourage the purchase of policies, yet pastoralists are spread over wide geographic areas with limited infrastructure, have low financial literacy, and do not understand or trust satellite data. Continuous outreach and education of clients would be more effective than a one-time information session because it helps to reinforce the knowledge gained, and also reduces the risk of misinformation about the product. However, it would necessitate recruiting more agents and more travel into the field, which increases costs.
+Since the launch of IBLI, the ILRI team has worked with insurance companies to 
+identify the most cost-effective sales agent structures and training curriculum. In 2015, IBLI collaborated with academics at UCSD to develop a simple mLearning training program consisting of micro-lessons that could be conveniently read by ILRI agents.  The platform was launched before the August–September 2015 sales window with the installation of the mLearning app—the Pocket IBLT—on the agents’ phone as a test trial.  All sales agents involved in the trial were issued the same smart phone—Alcatel pop C1 4009D—by the participating agency, as different screen resolutions and mobile operating systems could pose issues for mLearning providers. T o assess agent comprehension and motivate participation, each mLearning micro-lesson includes a simple quiz connected to a central server. 
+26 ILRI is an international research institute with its headquarters in Kenya and is co-hosted by the Government of Ethiopia in Addis Ababa. It works through a network of regional and country offices and projects in East, South 
+and Southeast Asia; Central, East, Southern and West Africa; and in Central America.Project Name Index-Based Livestock Insurance (IBLI)
+Implementing Organization(s)International Livestock Research Institute (ILRI) & University of California San Diego (UCSD)
+Location Kenya and Ethiopia
+Level of Intervention Client, service provider
+Type of Intervention Support product marketing
+Digital Tool(s) Used mLearning, gamification
+Key AchievementsmLearning combined with financial incentives helped to improve insurance uptake by clients
+• •
+• •35
+IBLI and UCSD were interested to explore whether mLearning and financial 
+incentives would have an effect on sales volume. T o test this hypothesis, the team designed a randomized control trial comprising three treatment groups:
+• BASIC TREATMENT: this group received the micro-lessons and quizzes, but no 
+extrinsic incentives to complete the training or the quizzes.
+• FINANCIAL INCENTIVE TREATMENT: this group was offered mobile phone 
+credit for passing the quizzes.
+• COMPETITION TREATMENT: this group were told how their quiz score 
+compared to others and received digital badges for performing well.
+The results of the trial revealed that access to training increased the sales premiums collected by close to KSH 14,000 (USD 137) per agent, about a 75 percent increase in sales per agent. The financial incentive treatment group showed a greater increase in premiums per agent than the basic treatment group, about KSH 26,000 (USD 255) for the former compared to KSH 10,000 (USD 98) for the latter. Moreover, providing financial incentives led to increased sales outcomes; providing competition-based incentives did not.
+Currently, IBLI is working with a multi-disciplinary team comprising researchers, 
+instructional design /adult learning specialists, insurance experts, and software engineers, to build on the gamification and storytelling elements of the mobile learning application to create what is known as a “serious game” to serve as a type of refresher training. In addition, IBLI is developing a more attractive and functional user interface that can deliver “just-in-time” information to sales agents, which will include job aide tools such as FAQs and a glossary of technical terms. The objective of the current research is to see how well mLearning works and how effective it can be as a supplement/complement to traditional training—in short, adopting a blended learning method rather than relying solely on either physical training or digital training. While in-person classroom training is costly, it remains an effective way to impart knowledge, especially if trainees can apply what they learned right after the training. In addition, the personal interactions helped to build an “esprit de corps,” build brand loyalty, and reduce agent turnover. 
+For more information about IBLI, go to https://ibli.ilri.org/ . 
+ 
+PHOTO BY USAID/AGRIFUTURO
+• •
+• •36
+IFFCO-TOKIO is a joint venture in India between the Indian Farmers Fertilizer 
+Cooperative Ltd (IFFCO) and T okio Marine and Nichido Fire Inc. of Japan. IFFCO consists of 40,000 farmers cooperatives and is the world’s largest cooperative manufacturer of fertilizer and the world’s largest cooperative. T o expand its rural portfolio, the company was interested in recruiting rural cooperative banks as distribution partners. However, to attract these banks as partners, IFFCO needed to offer products that covered all assets for which banks provided loans. The problem was that cooperative banks’ portfolios were filled with cattle loans, and IFFCO did not offer any livestock insurance.In India, approximately 100 million people rely on livestock as their primary or secondary source of income, yet only seven percent of livestock are insured.  Key challenges faced by insurers offering livestock insurance in India  
+(and elsewhere) include:
+• ABSENCE OF ACTUARIAL PRICING DATA—mortality risk data are limited 
+or nonexistent, making it difficult to set pricing.
+• DIFFICULTY IN VALUATION—the value of a head of cattle is correlated  with its age, health, and production capacity. Cattle also need to be assessed individually, as prices vary by geographical areas and limited market price information is available.
+•  IDENTIFICATION OF ANIMALS—accuracy is a challenge, increasing the risk of moral hazard and fraudulent practices.
+• MONITORING AND VERIFICATION—to combat fraudulent claims, insurers need to monitor tagging, valuation, and risk calculation. Insurers might need to appoint their own veterinarians or agents to properly monitor these processes.
+• HIGH OPERATIONAL COST—operational processes related to enrollment and claims settlement can be labor intensive and expensive.
+T o address the identification issue, IFFCO decided to test the use of RFID. The RFID technology consisted of a microchip within a capsule. The capsule is inserted beneath the hide of the cattle behind the auricular (ear) area with the help of a syringe. Each chip is identifiable through a unique number readable using an RFID reader. Because the RFID capsule is inserted beneath the skin of the animal, the risk of it falling off or being removed is mitigated. Traditional plastic tags tend to be more painful to the animal and can be tampered with or lost—increasing the risk of fraud. With RFID technology, fewer false claims result in faster claims processing, higher client value, Project Name IFFCO-TOKIO
+Implementing 
+Organization(s)International Labour Organization (ILO’s)  Impact Insurance Facility
+Location India
+Level of InterventionClient, service provider
+Type of Intervention Small grant to pilot new livestock insurance product
+Digital Tool(s) Used RFID
+Key AchievementsUse of RFID technology minimized fraud, improved control, and lowered transaction costs
+• •
+• •37
+and reduced transaction costs. Moreover, RFID chips store useful data about the 
+animal, such as vaccinations and illness history. 
+In 2009, the ILO’s Impact Insurance Facility provided a small grant to IFFCO  
+to test the concept and help make a business case inside the insurance company.  
+The ILO grant provided the external support and international recognition needed to help IFFCO-TOKIO’s rural team convince underwriters of the feasibility of  livestock insurance. 
+After a 27-month testing period, IFFCO was able to:•  Insure 28,136 cattle with a gross written premium of USD 496,000
+• Educate farmers about the benefits of the RFID technology and use it as a 
+marketing advantage
+• Monitor its processes to reduce fraud and control claims  (claims ratio of 35 percent)
+•  Improve the business viability of the product (combined ratio of 118 percent)
+• Improve the client value proposition through product and process changes such as 
+on-site enrollment and claims services and faster claims processing
+• Use the livestock product as a strategic advantage to attract new distribution partners and expand to new areas
+For more information, go to http://www.impactinsurance.org/projects/lessons/cattle-
+insurance-through-electronic-identification-chip . 
+ 
+HTTP://GEOVINMORALES.COM
+• •
+• •38
+Kilimo Salama (“Safe Agriculture”) is an insurance designed for maize and wheat 
+farmers so they may insure their farm inputs against drought and excess rain. The product was initially introduced to five regions across Kenya. The project  has become a registered company called ACRE Africa, with the Grameen Crédit Agricole Foundation as one of the shareholders. Products are underwritten by UAP Insurance Kenya, CIC Insurance Group Limited, APA Insurance, UAP Insurance Tanzania and SORAS Insurance Rwanda.  At the end of 2016, cumulatively, more than a million farmers in East Africa were insured by products designed by ACRE. Kilimo Salama follows a “pay as you go” insurance model where a grower can choose how many acres or how many kilograms of crops to insure depending on available cash flow.  As the grower becomes more accustomed to having insurance, and benefits from a payout, he or she becomes more willing to expand coverage, invest more in the farm, and increase productivity.
+The product is distributed through local agro-vets, small trading businesses that sell 
+inputs and often offer advice on farm management, spraying services, and credit. These agro-vets register new clients digitally using a tailored software that can give instant confirmation of the policy to farmers. They also collect premiums and send them to the insurer through bundled payments. By leveraging the existing value chain and using paperless transactions, Kilimo Salama greatly reduced the administrative cost to less than the price of a SMS.
+Kilimo Salama uses automated weather stations to monitor rainfall. Weather data are 
+transmitted every 15 minutes from the stations, using a GPRS connection operating on an A5-sized solar panel. Having these fully automated weather stations means that both the insurer and international reinsurers can feel comfortable with the measurements being taken and can have the assurance that the data are available in time. Based on the stations’ measurements and a predefined formula of crop rainfall needs, payouts are made. This method enables farmers as small as one acre to be insured. If the weather stations’ measurement and related rainfall formula shows that there is a payout required, these are sent to individual farmers digitally using mPesa or other MNOs.
+For more information, go to https://acreafrica.com/ .  Project Name Kilimo Salama
+Implementing 
+Organization(s)Syngenta Foundation, UAP Insurance, Safaricom, the Kenya Meteorological Department, and the NGO CNFA/AGMARK
+Location Kenya (pilot), Tanzania, Rwanda
+Level of Intervention Client, service provider
+Type of InterventionProduct development – bundling of input, credit, and insurance
+Digital Tool(s) Used Mobile technology, weather station
+Key AchievementsLeveraging the existing value chain and using paperless transactions reduced the administrative cost of offering insurance.
+• •
+• •39
+EMERGING MODELS FOR  
+MOBILE INSURANCE
+At the end of 2015, the mobile insurance industry reported 120 live services, a 
+9 percent increase from 2014. Mobile insurance is now available in 33 emerging markets, predominantly in Sub-Saharan Africa (58 percent of live services), South Asia (19 percent of live services) and East Asia & Pacific (18 percent of live services).
+27 By June 2015, 31 million policies were issued by these services, an 
+increase of 68 percent over the previous 12-month period. Life insurance remains the dominant offering, representing 51 percent of all policies, but there are signs of growing diversification, with health insurance at 22 percent and accident insurance at 13 percent. Agricultural insurance remains modest at 7 percent.
+A report on digital microinsurance by Bankable Frontier Associates
+28 classified 
+existing mobile-based insurance into two categories: • Strategic digitization—where the MNO actively drives digitization as a strategic 
+imperative to meet financial and non-financial benefits. The MNO invests their own resources across the value chain from marketing, client acquisition, premium payments, etc.
+• Transactional digitization—where the MNO is primarily focused on using the mobile channel as an interface to increase efficiencies in payments, with limited investment in product support or marketing. 
+Under the strategic digitization initiatives, there are currently three business models in the market: loyalty, voluntary paid, and freemium. LOYALTY-BASED MODEL
+Under this model, subscribers receive insurance at no direct cost to the consumer. The cover is underwritten by a registered insurer, with cover levels linked to a behavior that the distributor wishes to achieve, such as increased use of airtime, mobile money transactions, or savings in mobile wallets. In such cases, clients are notified via a text message about how much cover they have qualified for each month. There are a number of examples, which include Econet Zimbabwe, T elenor Pakistan, Airtel Zambia, and Tigo Ghana and Tanzania, as well as the first versions of Tigo Bima Tanzania and Vodacom Faraja Bima Tanzania. In many of these instances, loyalty-based digital microinsurance products have achieved significant scale.  For example, Ecolife Zimbabwe reached 20 percent of Zimbabwean adults  
+within 7 months.
+PAID MODELS
+•  AIRTIME DEDUCTION MODEL: The airtime deduction model is provided to 
+the subscriber on a standalone voluntary basis. Premium payment is made through 
+the subscriber’s airtime balance, which allows the MNO to reach their whole subscriber base. For instance, Tigo uses an automatic, pre-approved deduction of a client’s airtime balance to cover the premium cost. Other examples include Zong in Pakistan, MTN in Zambia and Nigeria, Airtel in Nigeria, and Tigo Bima Tanzania.
+• MOBILE MONEY MODEL: This is a standalone voluntary service provided to the mobile money subscriber, where clients pay their premium through their mobile wallets. Examples include MTN and Hollard’s Mi-Life product in Ghana and Vodacom’s new Faraja Bima Tanzania. MTN Mi-Life was the first of the mobile money products, launched in 2010, and has struggled to scale, largely due to the slow growth of mobile money in Ghana. Growth could follow if backers continue to invest in marketing and sales campaigns for mobile money.
+27 GSMA Mobile Money Programme, 2015 Mobile Insurance, Savings & Credit Report.
+28 Jeremy Leach, Tyler Tappendorf, Sandisiwe Ncube, “Can the digitalization of micro-insurance make all the difference?”, Bankable Frontier Associates: March 2015.
+• •
+• •40
+•  OVER-THE-COUNTER MODEL: This approach uses funds outside of the 
+mobile device to pay for insurance premiums. Some examples of payment 
+collection include cash paid through MNO agents, scratch cards sold at retailers, and mobile apps linked to bank debits. Examples include MobiSure Kenya, Zong Pakistan, Cover2go South Africa, and BIMA/Dialog Sri Lanka.
+• DEBIT ORDER MODEL: Banks debit the premiums from the client’s bank account. This has mainly been seen in South Africa, with some other examples such as Equity Bank in Kenya which offers debit orders on the back of its new mobile virtual network operator license, Equitel.
+HYBRID FREEMIUM MODELS
+Under this model, the clients can upgrade their loyalty product to a higher value paid product (hence the term freemium). In the example of TIGO Ghana, the Consultative Group to Assist the Poor reported that nearly 90 percent of their membership have converted to a paid product. In this approach, the loyalty models mentioned above are used as the “market maker” to drive market discovery by the clients so they get a taste of insurance. The MNO then upsells a voluntary paid product, which allows members to increase their coverage. Examples include  
+Tigo Family Care Ghana, Tigo Bima Senegal, Tigo Bima Tanzania, and Vodacom Faraja Bima Tanzania.
+PHOTO BY FINTRAC INC.
+• •
+• •41
+Actuary A person who calculates insurance and annuity premiums, reserves, and dividends.
+Adverse selection The tendency of persons who present a poorer-than-average risk to apply for, or continue, insurance. If not controlled by underwriting, it may result in 
+higher than expected loss levels.
+Claim A request for payment under the terms of an insurance contract when an insured event occurs.
+Claims processing The system and procedures that link the occurrence of an insured event with a payout.
+Claims ratio The actual claims divided by the risk premium. Insurers generally prefer for the claims ratio to be less than 100 percent, that is, actual claims be less than expected claims. However, a claims value that is less than 30 percent may also indicate that the product has low client value or clients are not fully realizing the full benefits of the product.
+Covariate risk A peril that affects a large number of the policyholders at the same time—e.g., a natural disaster such as drought—or several risks that consistently occur together.
+Delivery channel Entity used to deliver insurance policies and services to clients. Insurers often have multiple delivery channels depending on the market segment.
+Digital financial servicesA broad category that encompasses mobile financial services and all branchless banking services that are enabled via electronic channels. Services can be accessed using a variety of electronic instruments, including mobile phones, point-of-sale devices, electronic cards (credit, debit, smart card, key fobs),  
+and computers.
+Digital insurance Insurance using digital applications and mechanisms for improving outreach and delivery.
+Index-based insuranceA strategy for dealing with high-loss covariate risks, such as crop failure, by insuring against an index that correlates the source of risk (such as drought or flooding) with predicted outcomes (such as herd mortality or lost yields) rather than to physically verify individual economic losses. Payments are linked to an objective and independent index and do not require the certification of actual losses for each individual claimant. LIST OF KEY TERMS
+• •
+• •42
+Insurance A system under which individuals, businesses, and other entities, in exchange for a monetary payment (or premium), are guaranteed compensation for 
+losses resulting from certain perils under specified conditions.
+Mobile network operatorA company that has a government-issued license to provide telecommunications services through mobile devices. In digital insurance, MNOs plays  
+a critical role in providing the mobile platform that facilitates access to the client base and supports premium payment. Depending on the nature  of the partnership, the MNO’s role may go beyond facilitating premium payment to include client registration, addressing queries, and supporting  claims payments.
+Moral hazard A risk that occurs when insurance protection creates incentives for individuals to cause the insured event; or a behavior that increases the likelihood that the event will occur. For example, not vaccinating your livestock in the case of agricultural insurance.
+Reinsurance A form of insurance that insurance companies buy for their own protection.
+Risk equalization fund A fund that compensates insurers according to the expected coverage costs of their enrollees, aiming to cover the difference between the standard premium and the full expected costs of coverage for a highly vulnerable individual. This fund pays out insurers based on the ex-ante probability of incurring high costs given the enrollee profile, and removes the disincentive for insurers to recruit high-risk enrollees.
+Stop-loss policy An agreement from a reinsurer to cover total claims over a certain agreed-upon value of an aggregate pool of policies.
+Technical service providerAn intermediary linking the client, MNO, and insurer by providing the necessary technology platform, expertise, and advice. Depending on country regulations, the technical service provider may be licensed as an administrator, corporate agent, broker, or surveyor, or may not even be licensed at all.
+Underwriting Process of selecting risks for insurance and determining in what amounts and on what terms the insurance company will accept the risk.
+Verification The process by which claims are determined as being valid. For example, life insurance requiring a death certificate and/or attending the funeral  
+of the deceased.LIST OF KEY TERMS CONT.
+• •
+• •43
+ASSESSMENT TOOLS
+• •
+• •44
+Assessment Tool 1. Identify and prioritize agricultural risks – illustrative example
+ 
+Identified Risk Who Suffers Most Intensity of Loss (to Farmer)Intensity of Loss  
+(to Overall VC)Probability of Event Frequency of Event
+Production
+• Pests and disease Farmers, ginners High High Medium Medium
+• Weather Farmers, ginners High Medium High High
+• Loss of soil fertility Farmers Medium Medium Low Low
+Financial
+• Ginners credit default FSPs Low Medium Medium Low
+• Farmers credit default FSPs, ginners High Low Medium Low
+Market
+• Price volatility Farmers, ginners High High High High
+Institutional/Regulatory
+• Import tax on fertilizer Farmers, input providers Medium Low Medium Low
+Source: Adapted from Mozambique Cotton Supply Chain Rapid Risk Assessment, World Bank, November 2010. http://siteresources.worldbank.org/INTCOMRISMAN/Resources/MZ_
+CottonRiskReport_FINAL(Nov2010).pdf .
+• •
+• •45
+Once the template has been completed, the table can be color-coded to prioritize those risks that have the potential to cause a high intensity of losses and/or have a high 
+probability of occurring. Red  represents high priority, yellow  represents medium priority, and green  represents low priority.
+ 
+Identified Risk Who Suffers Most Intensity of Loss (to Farmer)Intensity of Loss  
+(to Overall VC)Probability of Event Frequency of Event
+Production
+• Pests and disease Farmers, ginners High High Medium Medium
+• Weather Farmers, ginners High Medium High High
+• Loss of soil fertility Farmers Medium Medium Low Low
+Financial
+• Ginners credit default FSPs Low Medium Medium Low
+• Farmers credit default FSPs, ginners High Low Medium Low
+Market
+• Price volatility Farmers, ginners High High High High
+Institutional/Regulatory
+• Import tax on fertilizer Farmers, input providers Medium Low Medium Low
+Source: Adapted from Mozambique Cotton Supply Chain Rapid Risk Assessment, World Bank, November 2010. http://siteresources.worldbank.org/INTCOMRISMAN/Resources/MZ_
+CottonRiskReport_FINAL(Nov2010).pdf .
+• •
+• •46
+Assessment Tool 2. Assess existing risk management tools – illustrative example
+ 
+Risk Management Mechanism Utilization Currently Used? Constraints Opportunities
+Risk mitigation
+• Use pest-resistant seed • Producers No • Do not see value of investment
+• Lack of financing• Improve client awareness
+• Provide input credit
+• Monitor weather data • Producers
+• ProcessorsLimited • Weather station provides limited information • Use of satellite data for weather
+Risk transfer
+• Insurance • Producers
+• Input suppliers
+• ProcessorsLimited • Premium not affordable
+• Cumbersome procedures• Pilot index-based weather 
+insurance to lower transaction costs and simplify payout
+• Government guarantee …
+Risk coping
+• Input credit …
+Risk reserves
+• Savings … …
+• •
+• •47
+Assessment Tool 3. Assess existing insurance markets for agriculture - illustrative example
+ 
+Area of Analysis Key Findings Constraints Opportunities
+Insurance 
+penetration•  20 commercial insurers, 10 cooperative insurers, 
+3 MNOs are active in digital payments and looking to enter insurance market
+•  40% overall penetration, with only 20% penetration in 
+rural areas
+• The sector has experienced a high growth rate in the past 5 years, especially among cooperative insurers• Limited rules and regulations concerning the entrance of non-traditional insurers
+• Limited outreach to rural areas and to smallholder farmers
+• Growth is hampered by low uptake among smallholder farmers• Explore partnership with non-traditional players such as MNOs, FinT ech, InsurT ech, to expand outreach
+• Invest in client sensitization and financial education to stimulate demand
+Products, risk 
+coverage and benefits•  Basic indemnity insurance for crops and livestock
+• Government-funded scheme for natural disasters and 
+weather-related peril•  Indemnity insurance is costly to implement. 
+Requires on the ground individual verification, so payout takes a long time to process. Clients are hesitant to renew policy because of delays.
+• Government scheme is not sufficiently funded• Explore index-based insurance to  
+lower transaction costs and shorten payout time
+Premiums and 
+claims ratio• Average annual premium is about 40% of  
+household income
+• Claims ratio is less than 20%• Use digital tools to lower transaction 
+costs and premiums
+•  Increase client understanding about 
+insurance to improve claims and payout
+• Initiate dialogue with policymakers to clarify rules about licensed agents, distributors, insurers in the market
+•  Pilot the use of mobile payment for 
+premium payment and claims payout
+Sales, 
+distribution, and service delivery•  Primary channel is through member-based 
+farmers associations.
+• Some direct sales through agricultural extension agents
+• Distribution through MNOs is being explored•  Delivery channels are fragmented and do not 
+generate sufficient volume
+• Lack of policy clarity as to role of MNOs serving as insurance agents
+Other: • WFP and World Bank have active programs with the government to design a national level insurance fund for catastrophic events
+• •
+• •48
+Assessment Tool 4. Assess feasibility of digitalizing agricultural value chain – illustrative example
+Step 1. For each constraint identified in previous phase, identify the potential solutions, whether there is potential for integrating digital tools, and if so which specific tools.  
+Constraint Potential Solutions/OpportunitiesIs There Potential to 
+Integrate Digital Tools 
+(Y/N)?If Yes, What Are Some Potential Applications?
+Limited outreach to rural areas 
+and to smallholder farmers•  Explore new delivery channels to lower transaction costs 
+and premiums• Yes• Digital payments to reduce the cost of collecting premiums and issuing payouts
+• Satellite and/or drone imagery to support remote damage assessment
+Growth is hampered by low 
+uptake among smallholder farmers• Invest in client sensitization and financial education to 
+stimulate demand• Yes • mLearning: financial education mini-lessons via mobile devices
+• SMS nudges to encourage savings for  insurance premiums
+Limited rules and regulations 
+concerning the entrance of non-traditional insurers• Initiate dialogue with policymakers to clarify rules about 
+licensed agents, distributors, insurers in the market• No
+Potential Digital ApplicationExisting Digital Infrastructure
+Mobile Internet Power Affordability of Services
+Digital payments • Good • Fair • Fair • Good
+Satellite imagery • Good • Fair • Fair • Fair
+MLEARNING • Good • Fair • Fair • FairStep 2. For each specific digital tool identified, analyze whether market conditions exist and are amenable for successful implementation.
+Affordability of 
+DevicesExistence of Partners  
+and IntermediariesEnd-user  
+Capabilities
+• Very Good • Good • Fair
+• Fair • Fair • Poor
+• Good • Fair • Poor
+• •
+• •49
+Assessment Tool 5. Assess and identify intervention – illustrative example
+Step 1. Road mapping the intervention design: from constraint to root cause to solution  
+Constraint Underlying Cause(s) Potential Solution(s)Potential Digital 
+ApplicationsIntended Outcome(s) Intervention(s) Indicators
+List the constraint 
+identified in Phase 4Why are insurance services not operating well or reaching the targeted population?List the solutions/ opportunities identified in Phase 4.List the digital applications identified in Phase 4. If not applicable, list none.How would digital tools address the constraints?List intervention(s) that would help to achieve the intended outcomes.List tailored indicators based on project’s MEL needs.
+• Limited outreach to 
+rural areas and to smallholder farmers• High operational costs
+• Lack of data for underwriting and risk pricing • Explore new delivery channels to lower transaction costs
+• Support more market research and data collection • Digital payments to reduce the cost of collecting premiums and issuing payouts
+• Satellite and/or drone imagery to support remote damage assessment
+• Digital farmer profile
+• Low cost mobile voice/data service targeted to farmers/regions• Gains in cost-efficiency of insurance delivery will result in expanded access for smallholder farmers
+• Improved market and client information will result in better underwriting and better product design
+• Lower the cost of access and use of mobile devices for financial services• Partner with MNOs for digital payments
+• Develop bundling of credit and insurance with credit cooperatives or input providers
+• Recruit community-based organizations to act as insurance agents/brokers
+• Negotiate low-cost or sponsored data mobile service for program beneficiaries• % increase in number of insurance policies sold in target regions
+• % increase in total claims processed
+• •
+• •50
+Assessment Tool 5. Assess and identify intervention – illustrative example
+ 
+Constraint Underlying Cause(s) Potential Solution(s)Potential Digital 
+ApplicationsIntended Outcome(s) Intervention(s) Indicators
+List the constraint 
+identified in Phase 4Why are insurance services not operating well or reaching the targeted population?List the solutions/ opportunities identified in Phase 4.List the digital applications identified in Phase 4. If not applicable, list none.How would digital tools address the constraints?List intervention(s) that would help to achieve the intended outcomes.List tailored indicators based on project’s MEL needs.
+• Growth is hampered 
+by low uptake among smallholder farmers• Insurance is seen as an expense rather than an investment or risk management tool
+• Insurance process is seen as confusing and cumbersome• Promote client education and sensitization about insurance
+• Streamline application and claims process• mLearning and gamification 
+• SMS nudges to encourage savings for insurance premium• Improved client knowledge about insurance and simplified processes result in increased insurance coverage• Support development of mLearning modules for agents and end clients
+• Support digital platform for mobile sign-up, payment, and claims request• # of clients trained
+• # of agents trained
+• % increase in number of insurance policies sold in target regions
+• Limited rules and regulations concerning the entrance of non-traditional insurers• Limited knowledge among regulators regarding enabling environment for inclusive insurance• Initiate dialogue with policymakers to clarify rules about licensed agents, distributors, insurers in the market• None • Increased knowledge sharing, exposure, and dialogue will result in the entry of new players into the insurance market• Quarterly policy forum with key stakeholders in the insurance sector  Study trip to learn from other countries’ experience• % increase in licensed insurance agents and brokers
+• •
+• •51
+Intervention Level of InterventionPriority Ranking (From 1 to 5, 1=Low and 5=High)
+Degree 
+of Impact 
+on Target 
+CommunityImpact on 
+Implementing other 
+InterventionsAvailability of 
+Project Resources 
+and CapabilitiesCost of Intervention Relative to 
+Community Benefit
+•  Partner with MNOs for digital 
+paymentsService provider 5 3 3 2
+• Develop bundling of credit and insurance with credit cooperatives or input providersService provider 5 4 3 3Step 2. Prioritizing the interventions
+• •
+• •52
+ANALYTICAL  
+TEMPLATES
+• •
+• •53
+Template for Assessment Tool 1. Identify and Prioritize Agricultural Risks
+Identified Risk Who Suffers Most Intensity of Loss (to Farmer)Intensity of Loss  
+(to Overall VC)Probability of Event Frequency of Event
+Indicate VC actor(s) Indicate High, Medium, or Low
+Production
+•  
+•  
+•  
+Financial
+•  
+•  
+Market
+•  
+•  
+Institutional/Regulatory
+•   
+•  
+Once the template has been completed, color-code the table to prioritize those risks that have the potential to cause a high intensity of losses and/or have a high probability of 
+occurring. Use Red to represent high priority, yellow  for medium priority, and green  for low priority.
+• •
+• •54
+Template for Assessment Tool 2. Assess existing risk management tools
+Risk Management Mechanism Utilization Currently Used? Constraints Opportunities
+List the potential risk management 
+tools for the high priority risks identified in Tool 1Indicate VC actor(s) that would benefit from this risk management toolIndicate Yes, No, or LimitedList the factors hindering utilization of the risk management toolList the potential opportunities for improved risk management that can benefit from donor investments and support
+Risk mitigation
+•  •  •  •  
+•  •  •  •  
+Risk transfer
+•  •  •  •  
+•  •  •  •  
+Risk coping
+•  •  •  •  
+•  •  •  •  
+Risk reserves•  •  •  •  
+•  •  •  •  
+• •
+• •55
+Template for Assessment Tool 3 . Assess existing insurance markets for agriculture
+Area of Analysis Key Findings Constraints Opportunities
+Insurance penetration  
+Assess the current state 
+of insurance development (emerging, growing, mature), and gauge the current and future potential of the 
+insurance market.
+Products, risk coverage and 
+benefits 
+Assess the current offerings, 
+outreach to agricultural VC actors, and adequacy of risks coverage.
+Premiums and claims ratio  
+Determine affordability of existing products, client value (product relevance, customer experience, etc.)
+Sales, distribution, and 
+service delivery 
+Identify current delivery 
+channels, business models, and partnerships
+Macro-level considerations  
+Regulatory and policy issues, existence of other donor and/or government initiatives
+• •
+• •56
+Template for Assessment Tool 4 . Assess feasibility of digitalizing agricultural value chain
+Step 1. For each constraint identified in previous phase, identify the potential solutions, whether there is potential for integrating digital tools, and if so which specific tools.
+Constraint Potential Solutions/OpportunitiesIs There Potential to 
+Integrate Digital Tools 
+(Y/N)?If Yes, What Are Some Potential Applications?
+• • • 
+• • • 
+• • • 
+• • • 
+• •
+• •57
+Step 2. For each specific digital tool identified, analyze whether market conditions exist and are amenable for successful implementation.
+Potential Digital ApplicationExisting Digital Infrastructure
+Mobile Internet Power Affordability of Services
+Indicate Poor, Fair, Good, Very Good
+•  •  •  •  
+•  •  •  •  
+•  •  •  •  
+ Affordability of 
+DevicesExistence of Partners  
+and IntermediariesEnd-user  
+Capabilities
+•  •  •  
+•  •  •   
+•  •  •  
+• •
+• •58
+Template for Assessment Tool 5 . Assess and identify intervention – Illustrative example
+Step 1. Road mapping the intervention design: from constraint to root cause to solution
+Constraint Underlying Cause(s) Potential Solution(s)Potential Digital 
+ApplicationsIntended Outcome(s) Intervention(s) Indicators
+List the constraint 
+identified in Phase 4Why are insurance services not operating well or reaching the targeted population?List the solutions/ opportunities identified in Phase 4.List the digital applications identified in Phase 4. If not applicable, list none.How would digital tools address the constraints?List intervention(s) that would help to achieve the intended outcomes.List tailored indicators based on project’s MEL needs.
+Step 2. Prioritizing the interventions
+Intervention Level of InterventionPriority Ranking (From 1 to 5, 1=Low and 5=High)
+Degree 
+of Impact 
+on Target 
+CommunityImpact on 
+Implementing other 
+InterventionsAvailability of 
+Project Resources 
+and CapabilitiesCost of Intervention Relative to 
+Community Benefit
+•  
+•  
+•  
+• •
+• •

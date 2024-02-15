@@ -1,0 +1,519 @@
+Development of a Mobile,
+Self-Sovereign Identity Approach forFacility Birth Registration in Kenya
+Maria Freytsis1*, Iain Barclay2, Swapna Krishnakumar Radha3, Adam Czajka4,
+Geoffery H. Siwo3,5, Ian Taylor2,3and Sherri Bucher5,6*
+1NeoInnovate Collaborative Consortium, New York, NY, United States,2School of Computer Science and Informatics, Cardiff
+University, Cardiff, United Kingdom,3Center for Research Computing, University of Notre Dame, Notre Dame, IN, Unitde States,
+4Department of Computer Science and Engineering, University of Notre Dame, Notre Dame, IN, United States,5Eck Institute for
+Global Health, University of Notre Dame, Notre Dame, IN, United States,6Indiana University School of Medicine, Department of
+Pediatrics, NeoInnovate Collaborative Consortium, Indianapolis, IN, United States
+Birth registration is a critical element of newborn care. Increasing the coverage of birth
+registration is an essential part of the strategy to improve newborn survival globally, and iscentral to achieving greater health, social, and economic equity as de ﬁned under the
+United Nations Sustainable Development Goals. Parts of Eastern and Southern Africa havesome of the lowest birth registration rates in the world. Mobile technologies have beenused successfully with mothers and health workers in Africa to increase coverage ofessential newborn care, including birth registration. However, mounting concerns aboutdata ownership and data protection in the digital age are driving the search for scalable,user-centered, privacy protecting identity solutions. There is increasing interest inunderstanding if a self-sovereign identity (SSI) approach can help lower the barriers tobirth registration by empowering families with a smartphone based process while providinghigh levels of data privacy and security in populations where birth registration rates are low.The process of birth registration and the barriers experienced by stakeholders are highlycontextual. There is currently a gap in the literature with regard to modeling birthregistration using SSI technology. This paper describes the development of asmartphone-based prototype system that allows interaction between families andhealth workers to carry out the initial steps of birth registration and linkage of mothers-baby pairs in an urban Kenyan setting using veri ﬁable credentials, decentralized identi ﬁers,
+and the emerging standards for their implementation in identity systems. The goal of theproject was to develop a high ﬁdelity prototype that could be used to obtain end-user
+feedback related to the feasibility and acceptability of an SSI approach in a particularKenyan healthcare context. This paper will focus on how this technology was adapted forthe speci ﬁc context and implications for future research.
+Keywords: self-sovereign identity, decentralized identi ﬁers (DIDs), blockchain, birth registration, newborn health,
+mobile phones, KenyaEdited by:
+Kaliya Young,
+Merritt College, United States
+Reviewed by:
+Ilene Speizer,
+University of North Carolina at Chapel
+Hill, United States
+Paula Braitstein,
+University of Toronto, Canada
+*Correspondence:
+Maria Freytsis
+mhealthmidwife@gmail.com
+Sherri Bucher
+shbucher@iu.edu
+Specialty section:
+This article was submitted to
+Blockchain for Good,
+a section of the journal
+Frontiers in Blockchain
+Received: 19 November 2020
+Accepted: 08 January 2021
+Published: 15 February 2021
+Citation:
+Freytsis M, Barclay I, Radha SK,
+Czajka A, Siwo GH, Taylor I and
+Bucher S (2021) Development of a
+Mobile, Self-Sovereign Identity
+Approach for Facility Birth Registration
+in Kenya.
+Front. Blockchain 4:631341.
+doi: 10.3389/fbloc.2021.631341
+Frontiers in Blockchain | www.frontiersin.org February 2021 | Volume 4 | Article 631341 1COMMUNITY CASE STUDY
+published: 15 February 2021
+doi: 10.3389/fbloc.2021.6313411 INTRODUCTION
+The Sustainable Development Goals agenda ( UN General
+Assembly, 2015 ), launched by the United Nations in 2015,
+spurred renewed focus on the high rates of neonatal mortalityand low rates of birth registration in low and middle-incomecountries (LMICs). Neonatal mortality is a key indicator of theoverall well-being of a society, and birth registration is central toensuring not only newborn health, but continued well-being andaccess to essential rights and services throughout the lifespan(Solberg, 2015 ). Low rates of birth registration, the lack of a
+reliable system for vital statistics reporting and tracking ofmother-baby pairs contribute to the problem of excessneonatal mortality by preventing health care systems from
+effectively delivering crucial evidence-based interventions
+(Hereward et al., 2019 ).
+An estimated 2.5 million babies globally die during their ﬁrst
+month of life, known as the neonatal period, and approximately47% of all the deaths of children under 5 years old occurred in theneonatal period ( Hug et al., 2019 ). Birth registration is almost
+universal in most high income countries where the vast majorityof births take place in facilities. But in LMICs, where many birthstake place in the home, about 1 in 4 children under age ﬁve are not
+registered. Of the children who are registered, an estimated 237million children under age ﬁve globally do not have proof of
+registration in the form of a birth certi ﬁcate ( Selim, 2019 ). Some
+of the highest rates of neonatal mortality and lowest rates of birthregistration can be found in parts of Sub-Saharan Africa. SDGtargets 16.9 and 17.9 set forth the goals of providing legal identityfor all, including birth registration, by 2030, and supportingcountries to establish robust civil registration systems(Hereward et al., 2019 ). The agenda calls for development of
+innovative technologies to help reach these targets, however,experts are calling for caution that new technologies do notincrease the potential for human rights abuses or furtherdisenfranchize marginalized populations. A lack of adequate
+data governance infrastructure across nations threatens the
+ability of identity technologies to protect the personalidentifying data of both children and guardians ( Privacy
+International, 2018 ;World Bank, 2018 ;Hug et al., 2019 ;
+Schoemaker et al., 2019 ).
+Continued growth in mobile device and telecommunication
+service penetration, as well as a decreasing gender gap in digitalliteracy and device ownership in Sub-Saharan Africa has led to aproliferation of mobile-phone based programs targeting maternaland newborn health ( GSM Association, 2013 ;Sahay et al., 2013 ;
+Kurth et al., 2015 ;Sondaal et al., 2016 ;Rowntree and Shanahan,
+2020 ). In 2019 Kenya reported 51% penetration of unique mobile
+subscribers which was up from 29.9% in 2009. The penetration of
+mobile internet use in 2019 was 25.8% ( GSM Association, 2020 ).
+For the last 10 years, the NeoInnovate Collaborative Consortium(NCC), a multidisciplinary group of academic collaborators frommultiple universities, has been developing and studyingtechnologies to reduce preventable newborn mortality in Sub-Saharan Africa, with a particular focus on Kenya. Employing auser-centered design approach with end-users in the MoiTeaching and Referral Hospital system, the NCC built anddeployed its foundational technology called mobile Helping
+Babies Survive (mHBS). mHBS is a suite of mobile phone-based applications for training, clinical decision support, anddata collection, developed to support health workers in the scale-
+up of Helping Babies Survive programs. The applications were
+built on the open source DHIS2 platform, which is also thenational health data reporting system in Kenya ( Manya et al.,
+2012 ). mHBS was developed for Android smart phones using an
+iterative process with multiple rounds of user testing ( Bucher
+et al., 2020 ). Integration of birth registration and mother/baby
+linkage with mHBS/DHIS2 has been an area of interest to thecollaborative as it could allow for tracking of mother/baby pairs toprovide invaluable data on essential newborn care delivered andnewborn health outcomes ( Aluvaala and English, 2020 ).
+In 2018, the Kenyan Ministry of ICT solicited stakeholder
+presentations addressing opportunities for use of blockchain
+technology in Kenya
+1. In response to this solicitation, NCC
+developed a vision for a birth registration and newborn healthtechnology incorporating blockchain and self-sovereign identity(SSI) principles, as a proof of concept project called NeoLinkID.SSI describes the ability of an individual to have ownership oftheir personal data and to control who has access to that data,without the need for centralized infrastructure, or any control orauthorization by any third party ( Allen, 2016 ). Acknowledging
+that blockchain-based technologies were gaining increasingattention in a landscape of poor global data governance
+infrastructure, the project was envisioned as an opportunity to
+understand how the SSI approach can offer additional dataprotection from within the context of the centralized birthregistration process in Kenya and the challenges involved inintegrating the SSI layer into the existing system.
+A partnership with the Evernym ID for Good accelerator
+2, and
+support of Google Summer of Code3, enabled NCC to rapidly
+develop a prototype that will allow end-user feedback on thefeasibility and acceptability of this technology approach with bothhealth workers and families in a facility-based birth registrationuse case in Kenya. While the majority of unregistered Kenyan
+births take place in the community, the technology platform ’s
+heavy reliance on connected environments made it clear thatdevelopment for community settings would not be possible at theoutset. However, developing this technology would allow forstudy of other possible bene ﬁts of this approach, such as
+facilitating privacy preserving digital linkage with the nationalbirth certi ﬁcate acquisition process, contribution of aggregate
+newborn health data to vital statistics and public health viaDHIS2 integration, and linkage of mother-baby pairs forhealth tracking via a mobile personal health record fornewborns held by guardians. A different research team within
+NCC is currently working to develop a solution to work in
+environments with limited internet connectivity.
+1https://ict.go.ke/taskforce-on-distributed-ledgers-and-arti ﬁcial-intelligence-
+presentation-schedule
+2https://www.evernym.com/identityforgood/
+3https://summerofcode.withgoogle.com
+Frontiers in Blockchain | www.frontiersin.org February 2021 | Volume 4 | Article 631341 2Freytsis et al. NeoLinkID:SSI Mobile Birth Registration2 KENYAN CONTEXT: BIRTH
+REGISTRATION AND DIGITAL INNOVATION
+Currently, the neonatal mortality rate (NMR) in Kenya is 21/
+1,000 (UNICEF4); the SDG NMR target, by 2030, is 12/1,000.
+Despite signi ﬁcant changes in the health system over the past few
+years, including devolution to the County level ( Barker et al.,
+2014 ), and elimination of user fees for facility-based births, rates
+of maternal and perinatal mortality have remained stagnant(Kunkel et al., 2019 ;Gitobu et al., 2018 ). The current birth
+registration rate in Kenya is 67%, with rural areas having 61%coverage, and urban areas at 79%
+5. However, rates as low as 20%
+and as high as 90% have been documented across regions ( Gelb
+et al., 2016 ). In one study published in 2014 about half of the
+participating Kenyan children had birth certi ﬁcates, with
+participants in urban areas more likely to have birthcertiﬁcates than in rural locations ( Apland et al., 2014 ).
+In Kenya, as in many other LMICs, birth registration is a
+process by which “informants ”who include health workers in
+facilities (primarily midwives), and assistant village chiefs/eldersin the communities, acting on behalf of the Civil RegistrationDepartment (CRD), interact with “guardians ”(primarily mothers
+and fathers) in order to provide documentation of birth for boththe guardians and for the health and civil registration systems(Figure 1 ). Informants verify the parents ’identities via legal
+identity documents and document birth details and otherbackground information as required by Form B1
+6. Informants
+are legally authorized and obligated to do this in relation to theirrole as health care providers and assistant village chiefs/elders.
+The issuance of a birth noti ﬁcation document, which is the top
+portion of Form B1, by the informant to the guardian is the ﬁrst
+step in birth registration. The remaining part of the form is sent tothe local of ﬁce of the CRD which allows for the birth to be
+counted in vital statistics. When parents take the next step ofapplying for the birth certi ﬁcate at the local CRD of ﬁce, they are
+required to present the birth noti ﬁcation document, which will bematched with the lower portion of the form submitted by the
+informant ( Apland et al., 2014 ;MEASURE Evaluation, 2014 ).
+Without a birth certi ﬁcate, Kenyan parents may not be able to
+access services, ranging from health insurance to education,which would ensure a thriving childhood. The birth certi ﬁcate
+is helpful but not required to obtain the current form of nationalID (Apland et al., 2014 ). However, lacking a birth certi ﬁcate can
+be a profound threat to children during periods of con ﬂict or
+forced migration, and a life-long barrier to accessing essentialservices such as voting, obtaining a passport, opening a bankaccount, and mobile phone ownership which enables access to agrowing range of essential digital services ( Apland et al., 2014 ;
+Selim, 2019 ).
+The barriers to birth registration are complex. Although there
+are common themes across countries and geographic areas, thesebarriers are also highly contextual. Over the last 20 years therehave been multiple initiatives aimed at strengthening the Kenyancivil registration system including research and targetedinterventions aimed at speci ﬁcally understanding and
+ameliorating the barriers to birth registration. ( Apland et al.,
+2014 ;MEASURE Evaluation, 2014 ;Gelb et al., 2016 ). Barriers fall
+into several categories including:
+1.Lack of awareness regarding the importance of birth
+registration and obtaining a birth certi ﬁcate.
+2.Physical and situational dif ﬁculties contribute to the inability
+to complete the multi-step process. This may include travelinglong distances to the registration authority and fear of penaltiesfor late registration, which in Kenya can include not onlymonetary fees but prison time. Additionally, language barriersor illiteracy, or parents not having the personal identitydocuments required for registration, such as in the case ofrefugees or stateless groups, can also be contributing factors.There are also cultural beliefs within some groups that are not
+aligned with registering newborn births.
+3.Discriminatory laws and practices which prohibit certain
+groups of people from accessing birth registration based onrace, ethnicity, religion, gender, or other characteristics. Thiscan include of ﬁcials requiring bribes to process applications.
+4.Inadequate staff and infrastructure to perform birth
+registration ef ﬁciently, as well as negative attitudes of some
+registration workers ( Apland et al., 2014 ;Gelb et al., 2016 ;
+UNHCR, 2017 ;Kenya Human Rights Commission, 2019 ).
+FIGURE 1 | Kenyan birth registration process.
+4https://data.unicef.org/country/ken/
+5https://data.worldbank.org/indicator/SP.REG.BRTH.ZS?
+end/equals2014&locations /equalsKE&start /equals2003&view /equalschart
+6http://forms.co.ke/forms/41_Birth_Acknowledgement-of-Birth-Noti ﬁcation-
+For-Parents_Form-B1.pdf
+Frontiers in Blockchain | www.frontiersin.org February 2021 | Volume 4 | Article 631341 3Freytsis et al. NeoLinkID:SSI Mobile Birth RegistrationResearch in Kenya has also found a lack of motivation by
+parents to register their children in advance of any particular needand local of ﬁcials not placing a high priority on incentivizing
+registration ( Gelb et al., 2016 ). A 2014 study found Kenyan
+parents reported high awareness and low practical barriers and
+concluded that parents are making a deliberate informed choicenot to pursue birth registration, weighing the cost and bene ﬁt.
+Suggestions of the researchers included increasing the use ofinformation and communication technology to impact parentaldecision-making ( Pelowski et al., 2015 ). Other interventions have
+focused on mass education campaigns, targeted education andincentivization of community based birth registration includinglinking opportunity for registration with other essential servicessuch as immunization and school enrollment, and introduction ofmobile technology to support the birth registration process
+(World Health Organization, 2013 ;Apland et al., 2014 ).
+Kenya has an extremely active, innovative, and engaged digital
+health landscape representing an enabling environment for newtechnology. Known as the “silicon savannah ”(Schoemaker et al.,
+2019 ), Kenya has led the world in regards to technological
+innovations related to mobile banking (e.g., mPESA
+7),
+crowdsourced, decentralized monitoring and reporting(Ushahidi), and development of vibrant innovation ecosystems(iHub
+8). Mobile phone-base health interventions have also
+proliferated over the last decade with many focusing onmaternal and child health. However, evidence shows that
+many of these interventions have not been evaluated and few
+have scaled beyond pilot projects. Additionally, few projects hadbeen implemented in marginalized areas with more health careneeds ( Njoroge et al., 2017 ).
+The Kenyan context also presents myriad challenges for
+implementing identity technology including a high proportionof vulnerable and marginalized populations such as refugees andother groups of stateless persons, a fragmented identityecosystem, increasing reliance on digital services with a privatesector directly connected to the state, and a government withopaque operations, dense bureaucracy, and a history of
+corruption. At the same time, e-Government services are
+growing, and the entire health reporting system has beencloud-based since 2010. The current national debate about anew form of biometric national ID has brought issues of dataprotection to the forefront. The policy landscape related to dataprotection is evolving with signi ﬁcant advocacy efforts from
+community service organizations and numerous failedattempts at passing data protection legislation, culminating inthe current Data Protection Act, introduced in 2019, making itsway through the lawmaking process ( India, 2013 ;Gelb et al.,
+2016 ;Kenya Human Rights Commission, 2019 ;Schoemaker
+et al., 2019 ).3 USE CASE: TECHNOLOGY DESIGN AND
+DEVELOPMENT
+3.1 Self-Sovereign Identity Background
+SSI is built upon well established cryptography techniques
+(Preneel, 1994 ) where a securely held private key is used to
+sign documents, while a complimentary public key can be used toverify the signature and that the document has not been tamperedwith. Researchers have developed mechanisms ( Sporny et al.,
+2019 ) for organisations and individuals to issue signed credentials
+to other parties, where each is identi ﬁed by a unique decentralized
+identi ﬁer (DID). In this way, any party attesting something about
+another party can declare and sign their claim, using their DID
+and cryptographic protocols. The signed document is known as a
+Veriﬁable Credential (VC), and is held by the subject of the
+credential, or in the case of a child, by a guardian. At a later date,when the holder of a VC needs to enter into a transaction, aservice provider can request proof of their status or entitlements.The holder of the credential can generate a Veri ﬁable
+Presentation containing assertions from the VC document, toprovide cryptographically veri ﬁable proof of the claims being
+made. A level of privacy is provided by the principle of SelectiveDisclosure, which allows VC holders to provide presentationscontaining only selected elements of credentials, so that they
+retain control over the data shared in any individual transaction.
+These data models and protocols are implemented in softwaretoolkits, which can be used by third party developers to add SSIcapabilities to their solutions. The Sovrin network provides thefoundation for many of the toolkits, including the Evernymplatform adopted here, and uses the public-permissionedHyperledger Indy blockchain ledger to keep a permanent andimmutable record of the DIDs of public agencies, along withcredential schemas. No personal information is written to theblockchain ( Kondova and Erbguth, 2020 ).
+3.2 Modeling Birth Registration Processes
+as an SSI System
+Prototype design and development was preceded by a research
+phase including a literature review and interviews with Kenyanfacility-based midwives to understand the current birthregistration process. A set of personas representing the twogroups of end users –guardians (parents, primarily mothers)
+and informants (facility-based health workers, primarilymidwives), were developed. A high level use case descriptionbased on these personas was conceived and then evolved into userstories describing the work ﬂows for the two applications.
+Assumptions regarding the selected context and users includeconsistent mobile device access with the possibility of shared
+devices, English language literacy, technology literacy with
+Android smartphones, reliable connectivity, and adequatemobile data. Interactions between informants and guardianswere considered to take place at the facility where the birthoccurred prior to the mother/baby dyad ’s discharge home. The
+prototype represented the process of creating a digital “copy ”of
+the birth registration process alongside the current paper-basedprocess. Personas for the roles of informant and guardian in the
+7https://techcrunch.com/2015/07/23/the-rise-of-silicon-savannah-and-africas-
+tech-movement/
+8https://www.dw.com/en/ ﬁnding-digital-solutions-to-local-problems-kenyas-
+innovation-scene-is-no-one-hit-wonder/a-47119339-0
+Frontiers in Blockchain | www.frontiersin.org February 2021 | Volume 4 | Article 631341 4Freytsis et al. NeoLinkID:SSI Mobile Birth Registrationcommunity-based birth registration process were also developed
+to illustrate the challenges of extending this technology approachto those populations who may have lower language literacy, lessproﬁciency with smartphones, unreliable connectivity, and less
+consistent device and data access.
+Designing systems to use decentralized SSI protocols involves
+developing an understanding of the participants of the system inthe real world, their differing goals, and the interactions anddependencies that they have on each other to ful ﬁll those goals. In
+previous work ( Barclay et al., 2020 ) the authors introduced an
+application of the iStar ( Yu, 2011 ) conceptual modeling
+framework as a method of describing the actors and theirinteractions in an SSI system, in the context of the birthregistration process. In order to meet their goal of “Get Birth
+Certi ﬁcate ”, a newborn ’s guardian needs to receive a copy of the
+birth noti ﬁcation document (BND), which is issued to them by
+the informant. The prototype required that the informant issues
+the BND on provision of a suitable proof of the guardian ’s
+identity. In a deployed system, this type of requirement wouldbe a government policy decision, and the technology would beadapted to meet the needs.
+3.3 Architecture
+The NeoLinkID prototype adopts three participant roles –CRD, as
+the credential issuing authority (and represented by the researchteam in the prototype design); the informant, or health worker; andthe guardian, as the recipient and holder of the credential. In
+interactions, the informant is considered to be a representative of
+the CRD, which manifests in the architecture as the informantrequesting the CRD to issue credentials. Credentials developed forthe prototype include a credential to record that the informant haschecked the guardian ’s identity, the BND and a linking credential
+which creates mother-baby linkage, as detailed in Table 1 .
+Issues related to the SSI concept of “guardianship ”
+9were not
+addressed in credential development, but rather, the Link Credentialwas built to provide a mechanism to study context for thedevelopment of a local guardianship framework. Veri ﬁcation of
+credentials was not addressed in the ﬁrst iteration but the design
+process allowed for considerations of various veri ﬁcation scenarios.
+In the prototype system, the informant is issued with a mobile
+web application which accesses a server operated for the CRD.The server integrates with the core SSI platform, which providesveriﬁable credential structures, and populates and issues credentials.
+The informant ’s web application provides forms to collectinformation about guardians and newborns, and then requests
+the CRD server to sign and issue credentials to the guardian. AnAndroid smartphone application was developed to receive and holdcredentials for the guardian. No direct connection is establishedbetween the informant ’s web application and the guardian ’s
+application. The informant ’s application provides data to the
+server to populate and request credentials to be sent to theguardian ’s application. An informant will meet with many
+guardians during the course of the day. To issue credentials to
+the correct guardian, the informant application creates a connection
+between the server and the guardian they are currently meeting bypresenting a QR code to be scanned by the guardian. When theappointment ﬁnishes the informant ends the session, and the
+connection is removed. The informant ’s application displays
+forms that are populated with the guardian and used to generateand issue credentials. The server sends credentials directly to theguardian ’s mobile application, where they are stored for later use.
+Figure 2 shows the handshaking and credential issuing process ﬂows
+and the interactions between the three participants. Screenshots ofthe applications developed for the informant and the guardian are
+shown in Figure 3 .
+4 DISCUSSION
+The goal of the project was to develop a prototype modeling the
+ﬁrst steps of birth registration using SSI concepts that would allow
+the team to obtain user feedback from health workers and parentsTABLE 1 | Credentials developed for Prototype.
+Credential Issuer Holder Notes
+Informant CRD (research team) Informant Allows informant access to system (not implemented in prototype)
+Identity veri ﬁcation Informant (for CRD) Guardian Asserts that guardian ’s identity has been veri ﬁed
+BND Informant (for CRD) Guardian Birth noti ﬁcation document (one for each child)
+Link credential Informant (for CRD) Guardian Forms a connection between the guardian and each newbornBCG vaccination Informant (for CRD) Guardian Sample of one vaccination as a credential given to each child
+FIGURE 2 | Interaction ﬂows between the participants in the system.
+9https://sovrin.org/library/guardianship-white-paper/
+Frontiers in Blockchain | www.frontiersin.org February 2021 | Volume 4 | Article 631341 5Freytsis et al. NeoLinkID:SSI Mobile Birth Registrationrelated to the feasibility and acceptability of an SSI-based
+technology approach for facility-based birth in Kenya.
+Building on the Evernym SSI platform lowered the barrier to
+delivering an initial prototype capable of demonstrating acomplete interaction between the issuer and holder ofcredentials. The project team also de-risked delivery, byadding a simulation mode to the prototype, which usedrepresentations of transitions between the applications topresent pre-loaded credentials to the user of the guardianapplication. Ultimately, this has proven to be useful, as theCOVID-19 pandemic resulted in an unexpected delay for theplanned participatory design and user feedback activities inKenya. The simulation mode in the applications will enable
+researchers to introduce the application and its operations to
+facility staff remotely, prior to any future facility-based user trialsbeing conducted. The use of simulations for the SSI interactionswas not considered prior to the project inception, but will beconsidered in future work, as this technique has been found toprovide an ef ﬁcient way of demonstrating concepts and
+interactions. The development process which has been utilizedalso allows for understanding of technology issues that, in turn,can guide future research, as described below.
+4.1 SSI Within the Kenyan Healthcare
+Context
+The prototype was developed as a standalone system, which
+enabled the team to focus on the SSI architecture andtechnology. Any practical future deployment will requireintegration into existing healthcare and civil registrationtechnology systems for successful adoption, as shown inFigure 4 , with a need for integration between the
+credentialing system and existing DHIS2 framework utilizedby the Ministry of Health, as well as digital CRD systems. Inthis scenario, a mobile application would be used by informants
+to collect information about newborns from parents and
+guardians, which would be integrated into the centralized
+DHIS2 system. A digital copy of the BND would be issued toguardians, to maintain on their smartphone. The guardian wouldbe able to use this digital copy of the BND when they needed toprovide proof for any reason. A claimed bene ﬁt of holding the
+digital copy in a self-sovereign identity-based system would bethat the guardian has control over access to their data, and canshare it as needed. Selective disclosure means that the guardian
+FIGURE 3 | Mobile applications for informants and guardians.
+FIGURE 4 | The prototype in context as part of a larger infrastructure.
+Frontiers in Blockchain | www.frontiersin.org February 2021 | Volume 4 | Article 631341 6Freytsis et al. NeoLinkID:SSI Mobile Birth Registrationwould, theoretically, have control over which parts of the digital
+document were shared with third parties. The decentralizedarchitecture of the SSI system implies that presentedcredentials, when used in a SSI ecosystem, could be veri ﬁed
+without the CRD having knowledge of the circumstances. This
+proposed architecture, however, does not eliminate the need forcentral databases held by government agencies, which can poserisks to human rights given lack of data protection frameworks(Dixon, 2017 ); however, it may provide greater privacy at the
+point of transactions.
+The current prototype has two applications, one for the
+informant and one for the guardian, as shown in Figure 3 .I n
+a future deployment, the informant ’s application would need to
+be integrated with the existing mHBS application suite, which isalready in use and familiar to the health worker community. User
+studies undertaken with the prototype system will help to identify
+the most effective point of integration with the mHBS app, suchthat it could be most ef ﬁciently adopted into the health worker ’s
+work ﬂow.
+The guardian ’s application was developed for use by parents
+and other guardians, and uses the guardian ’s own smartphone to
+receive and store credentials issued by the informant. Thisreduces the cost of deployment of the NeoLinkID prototype,but places a burden onto users to provide the necessaryequipment, and to be comfortable installing the software ontotheir own devices. It is clear that this approach will not be
+applicable for those areas of Kenya that currently have lowest
+birth registration rates, however, it is possible that this approachcould improve birth registration rates among smartphone ownerswho are a large and rapidly growing segment of the population(Rowntree and Shanahan, 2020 ). Typically in an SSI deployment
+this application is based upon the metaphor of a “wallet, ”and uses
+concepts of credentials and proofs. The NeoLinkID use casepresents an opportunity to provide an application more suitedto its target audience, and to research language and metaphorsthat could be readily adopted by that community. The futurevision for this application is a personal health record design
+modeled on the paper Mother and Child Health Booklet currently
+used in Kenya. The World Health Organization (WHO)recommends the use of home-based records, as a complementto facility-based records, for the care of pregnant women,mothers, newborns, and children ( World Health Organization,
+2018 ). Adopting an SSI-based solution as part of nascent personal
+health records systems
+10,11has the potential to provide data
+security and privacy to parents and guardians, such that theyare able to hold a cryptographically secured copy of their healthdata which can be used without involvement of a centralizedauthority.
+4.2 Identity Veri ﬁcation and Authentication
+In the NeoLinkID prototype, informants are required to check the
+identity of a guardian against existing identi ﬁcation, e.g., aphotographic identity card. This identity source is referenced
+by its unique identi ﬁer in the “Identity Checked ”credential, so
+that it can form a link between the credential and its holder, andcan be used to provide proof that the credential is being
+legitimately presented. A credential is also issued to verify the
+birth of the newborn, based on the witness account of theinformant. A further credential links the guardian and thenewborn, and contains identi ﬁers from both the guardian ’s
+identity credential and the newborn ’s credential, to form an
+inextricable connection between the two.
+Authentication processes are needed to ensure that a
+veriﬁed identity is subsequently presented by the authorized
+person, i.e., that the presented identity matches the person. Ina credential-based system, the verifying party needs to haveassurance that credentials are being presented by the correct
+party. The prototype highligh ted particular concerns about
+providing identity assurance where a phone is shared bymultiple users. Any practical system would need to ensurethat an application storing credentials is protected fromunauthorized use with login protection, so it can only beaccessed by the user of the phone that the “wallet ”app
+belongs to, and provide assurance that the presenter of thecredential is the authorized party.
+For mother and baby pairs, authentication would be necessary
+to show that both the mother and the baby being presented matchpersonal identi ﬁers in their credentials. An architecture can be
+designed to include a biometric identi ﬁer within a credential, and
+used to authenticate the presenter of the credential ( Hardman
+et al., 2019 ). This could be developed in a decentralized manner,
+without requiring a national or centralized biometric service, withthe biometric template being used solely to verify the presenter ofthe credential. Formally, veri ﬁcation should be matched to
+identi ﬁed assurance levels, as de ﬁned by national and/or
+international standards, though this may be complicated insome countries. The biometric mode must be carefully chosenwith consideration for its speci ﬁcity in newborns. The use of
+biometrics for newborns has not been widely studied and is a high
+priority research topic for this use case. The authors are exploring
+the possibility of applying iris recognition methods adapted tonewborn eyes, due to demonstrated long-term stability of irispatterns. A slight drop in similarity between iris images as afunction of time between enrollment and veri ﬁcation has been
+demonstrated by various research groups ( Baker et al., 2009 ;
+Czajka, 2013 ). The impact of these observed time-related
+ﬂuctuations on commercial iris recognition systems has been
+found, however, less important than other factors contributing topotential degradation of recognition reliability, as demonstratedby NIST in their IREX VI report ( Grother et al., 2013 ). The
+research to fully understand iris aging is ongoing.
+4.3 Interoperability and Open Source
+Robust interoperability and open source development are
+critical elements of scalable health technology for LMICs12.
+It is an ongoing requirement for the SSI community at large
+10https://news.vumc.org/2017/11/16/teams-mobile-app-helping-healthcare-
+workers-in-africa/
+11https://www.muzima.org/12https://id4d.worldbank.org/principles
+Frontiers in Blockchain | www.frontiersin.org February 2021 | Volume 4 | Article 631341 7Freytsis et al. NeoLinkID:SSI Mobile Birth Registrationwhich has led to development of open standards by W3C and
+non-pro ﬁt organizations such as the Decentralized Identity
+Foundation and the Hyperledger Foundation, who arecollectively bringing interoperability to the top of their
+agenda
+13.A sw e l la so p e ns t a n d a r d s ,o p e ns o u r c e
+implementations of these protocols are also becomingincreasingly available
+14.F u t u r eN e o L i n k I Dw o r kw i l l
+prioritize open standards, open source development, andinteroperability of credentials as criteria for platformselection. Since mHBS and NeoLinkID are being incubatedunder the open source community of LibreHealth, there is anadditional opportunity to leverage the expertize of the DHIS2and OpenMRS developer communities to explore integrationof SSI-based birth registration with both of these health ITplatforms which have been adopted at the national level in
+Kenya.
+5 CONCLUSION
+The NeoLinkID project has successfully developed an SSI-
+based prototype modeling the ﬁrst steps of birth registration
+based on the Kenyan process, using a personal health record
+approach to store information about newborns and their
+guardians. This development phase has provided someinitial insights into the possibilities for improving dataprivacy, security, and portability, as well as the possiblelimitations of a decentralized approach to birth registration.The next phase of this work will be a feasibility, acceptability,and user design study, conducted virtually with Kenyan nurse-midwives. This paper represents an initial body of contextualknowledge for SSI-based birth registration in Kenya. SSIprotocols continue to evolve and platforms andimplementations are immature, presenting challenges for
+technology adoption outside of research and proof-of-
+concept deployments. Areas of high priority for researchinclude authentication and veri ﬁcation, particularly
+integration of newborn biometrics, as well as integrationwith DHIS2 and the local framework for guardianship.
+Increasing access to birth registration is a critical part of
+improving the survival and health of Kenyan newborns(Målqvist et al., 2008 ). Creating user-centered systems for
+birth registration that prioritize data protection and selectivedata sharing could mitigate some of the inherent risks andbarriers of the birth registration process for segments of theKenyan population. The experience of adapting SSI technology
+for this use case has illuminat ed multiple challenges that
+warrant further research for applying SSI to birth registrationin Kenya and other LMIC settings. Effective solutions willrequire detailed understanding of the speci ﬁc local context.
+Systems interoperability will be critical in order to derivebeneﬁts of this technology for increasing both birth
+registration rates and birth certi ﬁcate acquisition, as well asthe quality of data available for public health and vital statistics
+(Labrique et al., 2018 ;Wang and De Filippi, 2020 ). Research on
+SSI for birth registration should target the diverse localstakeholders whose collaboration will be essential for
+deployment success, including registration, justice, health,
+statistics, and civil society, as well as a broad representationof parent, family, and community stakeholders ( AbouZahr et al.,
+2015 ). Investment in SSI-based birth registration solutions for
+LMICs should prioritize research to understand the uniqueneeds and perspectives of all stakeholder groups, particularlythose who are vulnerable to discrimination or exclusion basedon their demographic, health, or political status.
+DATA AVAILABILITY STATEMENT
+The original contributions presented in the study are included inthe article/Supplementary Material, further inquiries can bedirected to the corresponding authors.
+AUTHOR CONTRIBUTIONS
+All authors listed have made a substantial, direct, andintellectual contribution to the work and approved it forpublication.
+FUNDING
+In-kind support for prototype development was provided by TheEvernym ID for Good Accelerator. Funding for engineering wasprovided by Google Summer of Code to LibreHealth(May –August 2020). LibreHealth provided generous in-kind
+hosting for the GSoC efforts. GS was supported in part by anIBM Faculty Award.
+ACKNOWLEDGMENTS
+We are grateful to the team at LibreHealth for incubating thisproject on their open source community platform and toPrajwal Belagavi for his dedic ated development work through
+the Google Summer of Code program. Robby O ’Connor,
+provided highly engaged and expert guidance for our team ’s
+successful participation as N eoLinkID GSoC mentors. Dan
+Barclay developed the mobile web application for informants.W ea r ea l s og r a t e f u lf o rt h et e c h n i c a ls u p p o r tp r o v i d e db yt h eEvernym team throughout the part icipation in the accelerator.
+This work would not be possible without the bi-directional
+partnership that we are privileged to share with collaborators atMoi University, Alupe University College, and Moi Teachingand Referral Hospital, in Kenya. We are also grateful to theHelping Babies Survive Master Trainer Corps in Kenya, which,over the years, has provided invaluable feedback for conceptsand technologies developed by the NeoInnovate CollaborativeConsortium, including NeoLinkID.
+13https://identity.foundation/interop/
+14https://github.com/decentralized-identity
+Frontiers in Blockchain | www.frontiersin.org February 2021 | Volume 4 | Article 631341 8Freytsis et al. NeoLinkID:SSI Mobile Birth RegistrationREFERENCES
+AbouZahr, C., De Savigny, D., Mikkelsen, L., Setel, P. W., Lozano, R., Nichols, E., et al.
+(2015). Civil registration and vital statistics : progress in the data revolution for counting
+and accountability. Lancet 386, 1373 –1385. doi:10.1016/S0140-6736(15)60173-8
+Allen, C. (2016). The path to self-sovereign identity. Available at: http://www.
+lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html
+(Accessed April 24, 2016).
+Aluvaala, J., and English, M. (2020). Implementing change for facility-based
+peripartum care in low-income and middle-income countries. Lancet Global
+Health 8, e980 –e981. doi:10.1016/S2214-109X(20)30306-5
+Apland, K., Blitz, B. K., Calabia, D., Fielder, M., Hamilton, C., Indika, N., et al.
+(2014). Technical Report. Birth registration and children ’s rights: a complex
+story. Available at: https://eprints.mdx.ac.uk/id/eprint/17346 (Accessed August04, 2015).
+Baker, S. E., Bowyer, K. W., and Flynn, P. J. (2009). “Empirical evidence for correct
+iris match score degradation with increased time-lapse between gallery andprobe matches, ”in International conference on biometrics, Alghero, Italy, June
+2–5, 2009 (Berlin, Heidelberg: Springer), 1170 –1179.
+Barclay, I., Freytsis, M., Bucher, S., Radha, S., Preece, A., and Taylor, I. (2020).
+Towards a modelling framework for self-sovereign identity systems. Preprintrepository name [Preprint]. Available at: arXiv:2009.04327 (AccessedSeptember 9, 2020).
+Barker, C., Mulaki, A., Mwai, D., and Dutta, A. (2014). Devolution of healthcare in
+Kenya assessing county health system readiness in Kenya: a review of selected
+health inputs. Facilities. 16, 18. doi:10.13140/RG.2.2.36622.87363
+Bucher, S. L., Cardellichio, P., Muinga, N., Patterson, J. K., Thukral, A., Deorari, A.
+K., et al. (2020). Digital health innovations, tools, and resources to supporthelping babies survive programs. Pediatrics 146, S165 –S182. doi:10.1542/peds.
+2020-016915I
+Czajka, A. (2013). Template ageing in iris recognition. BioSignals 1, 70 –78. doi:10.
+5220/0004245800700078
+Dixon, P. (2017). A failure to “do no harm ”–India ’s aadhaar biometric id program
+and its inability to protect privacy in relation to measures in Europe and the us.Health Technol 7, 539 –567. doi:10.1007/s12553-017-0202-6
+Gelb, A. H., Anandan, V., and Cannata, A. (2016). “Identi ﬁcation for development
+(ID4D) country diagnostic: Kenya, ”inTechnical report . Washington, DC: The
+World Bank, 1 –82.
+Gitobu, C., Gichangi, P., and Mwanda, W. (2018). The effect of Kenya ’s free
+maternal health care policy on the utilization of health facility delivery servicesand maternal and neonatal mortality in public health facilities. BMC Pregnancy
+Childbirth 18, 77. doi:10.1186/s12884-018-1708-2
+Grother, P. J., Matey, J. R., Tabassi, E., Quinn, G. W., and Chumakov, M. (2013).
+Tech. rep. IREX VI-Temporal stability of iris recognition accuracy. Available at:https://nvlpubs.nist.gov/nistpubs/ir/2013/NIST.IR.7948.pdf (Accessed July 11,2013).
+GSM Association (2013). Mobile birth registration in sub-saharan africa a case
+study of orange Senegal and Uganda telecom solutions. Available at: https://www.gsma.com/identity/resources/mobile-birth-registration-in-sub-saharan-africa-a-case-study-of-orange-senegal-and-uganda-telecom-solutions(Accessed July 2, 2013).
+GSM Association (2020). Mobile taxation in Kenya: accelerating digital
+development. Available at: https://www.gsma.com/publicpolicy/resources/mobile-taxation-in-kenya-accelerating-digital-development (Accessed March23, 2020).
+Hardman, D., Harchandani, L., Othman, A., and Callahan, J. (2019). Using
+biometrics to ﬁght credential fraud. IEEE Commun. Stand. Mag. 3, 39 –45.
+doi:10.1109/mcomstd.001.1900033
+Hereward, M., Williams, C., Petrowski, N., and Cappa, C. (2019). Universal birth
+registration by 2030: progress and challenges. Lancet 394, 2211 –2212. doi:10.
+1016/s0140-6736(19)33101-0
+Hug, L., Alexander, M., You, D., Alkema, L., and For Child, U. I.-A. G. (2019).
+National, regional, and global levels and trends in neonatal mortality between1990 and 2017, with scenario-based projections to 2030: a systematic analysis.Lancet Global Health 7, e710 –e720. doi:10.1016/S2214-109X(19)30163-9
+India, H. (2013). Technical Report. Systematic review of eCRVS and mCRVS
+interventions in low and middle income countries. Available at: https://www.who.int/publications/i/item/systematic-review-of-ecrvs-and-mcrvsinterventions-
+in-low-and-middle-income-countries (Accessed October 19, 2013).
+Kenya Human Rights Commission (2019). Report of the digital identi ﬁcation
+document (id) and citizenship consultative meeting. Available at: https://www.khrc.or.ke/mobile-publications/equality-and-anti-discrimination/198-report-of-digital-identi ﬁcation-citizenship-workshop-naivasha/ ﬁle.html (Accessed
+January 18, 2019).
+Kondova, G., and Erbguth, J. (2020). “Self-sovereign identity on public
+blockchains and the gdpr, ”in Proceedings of the 35th annual ACM
+symposium on applied computing, Brno, Czech Republic, March –April
+30–3, 2020 (New York, USA: SAC) 342 –345.
+Kunkel, M., Marete, I., Cheng, E. R., Bucher, S., Liechty, E., Esamai, F., et al. (2019).
+“Place of delivery and perinatal mortality in Kenya, ”inSeminars in
+perinatology . Editor E. D. Mary (New York, NY: Elsevier), 43, 252 –259.
+Kurth, A., Inwani, I., Agot, K., Macharia, P., and Buttolph, J. (2015). mHEALTH
+compendium volume 5. Available at: http://www.africanstrategies4health.org/uploads/1/3/5/3/13538666/mhealthvol5_ ﬁnal_15jun15_webv.pdf (Accessed
+November 20, 2016).
+Labrique, A. B., Wadhwani, C., Williams, K. A., Lamptey, P., Hesp, C., Luk, R., et al.
+(2018). Best practices in scaling digital health in low and middle incomecountries. Glob. Health 14, 103. doi:10.1186/s12992-018-0424-z
+Målqvist, M., Eriksson, L., Nga, N. T., Fagerland, L. I., Hoa, D. P., Wallin, L., et al.
+(2008). Unreported births and deaths, a severe obstacle for improved neonatalsurvival in low-income countries; a population based study. BMC Int. Health
+Human Rights 8, 4. doi:10.1186/1472-698x-8-4
+Manya, A., Braa, J., Øverland, L., Titlestad, O., Mumo, J., and Nzioka, C. (2012).
+“National roll out of district health information software (dhis 2) in Kenya,
+2011 –central server and cloud based infrastructure, ”in IST-Africa 2012
+conference proceedings, Dares, Salaam, May 9 –11, 2012 (Dublin, Ireland:
+International Information Management Corporation), 1 –9.
+MEASURE Evaluation (2014). Technical Report 14 –110. County civil registration
+and vital statistics stakeholder forums: strengthening civil registration systemsat the county level. Available at: https://www.measureevaluation.org/resources/publications/ (Accessed October, 2014).
+Njoroge, M., Zurovac, D., Ogara, E. A., Chuma, J., and Kirigia, D. (2017). Assessing
+the feasibility of ehealth and mhealth: a systematic review and analysis ofinitiatives implemented in Kenya. BMC Res. Notes 10, 1 –11. doi:10.1186/
+s13104-017-2416-0
+Pelowski, M., Wamai, R. G., Wangombe, J., Nyakundi, H., Oduwo, G. O., Ngugi, B.
+K., et al. (2015). Why don ’t you register your child? a study of attitudes and
+factors affecting birth registration in Kenya, and policy suggestions. J. Dev. Stud.
+51, 881 –904. doi:10.1080/00220388.2015.1010156
+Preneel, B. (1994). Cryptographic hash functions. Eur. Trans. Telecommun 5,
+431
+–448.
+Privacy International (2018). The sustainable development goals, identity, and
+privacy: does their implementation risk human rights? Available at: https://privacyinternational.org/long-read/2237/sustainable-development-goals-
+identity-and-privacy-does-their-implementation-risk (Accessed August 29,
+2018).
+Rowntree, O., and Shanahan, M. (2020). The mobile gender gap report 2020.
+Available at: https://www.gsma.com/mobilefordevelopment/wp-content/uploads/2020/05/GSMA-The-Mobile-Gender-Gap-Report-2020.pdf(Accessed March 5, 2020).
+Sahay, S., Nielsen, P., and Saebo, J. (2013). Systematic review of eCRVS and
+mCRVS interventions in low and middle income countries. Available at: https://webcache.googleusercontent.com/ (Accessed October 19, 2013).
+Schoemaker, E., Kirk, T., and Rutenberg, I. (2019). Caribou digital, Kenya ’s identity
+ecosystem . Farnham, Surrey: Caribou Digital Publishing, 1 –60.
+Selim, L. (2019). What is birth registration and why does it matter? Available at:
+https://www.unicef.org/stories/what-birth-registration-and-why-does-it-matter (Accessed December 10, 2019).
+Solberg, E. (2015). From mdgs to sdgs the political value of common global goals.
+Harv. Int. Rev. 37, 58. doi:10.4045/tidsskr.14.1445
+S o n d a a l ,S .F .V . ,B r o w n e ,J .L . ,A m o a k o h - C o l e m a n ,M . ,B o r g s t e i n ,A . ,
+Miltenburg, A. S., Verwijs, M., et al. (2016). Assessing the effect of
+mhealth interventions in improving maternal and neonatal care in low-
+and middle-income countries: a systematic review. PloS One 11, e0154664.
+doi:10.1371/journal.pone.0154664
+Frontiers in Blockchain | www.frontiersin.org February 2021 | Volume 4 | Article 631341 9Freytsis et al. NeoLinkID:SSI Mobile Birth RegistrationSporny, M., Noble, G., Longley, D., Burnett, D. C., and Zundel, B. (2019). Veri ﬁable
+credentials data model. Available at: https://www.w3.org/TR/vc-data-model/(Accessed March 1, 2019).
+UN General Assembly (2015). Transforming our world: the 2030 Agenda for
+sustainable development (UN). Available at: https://sdgs.un.org/2030agenda(Accessed November 25 –27, 2015).
+UNHCR (2017). Ensuring birth registration for the prevention of statelessness. Available
+at: https://www.refworld.org/pd ﬁd/5a0ac8f94.pdf (Accessed November 02, 2017).
+Wang, F., and De Filippi, P. (2020). Self-sovereign identity in a globalized world:
+credentials-based identity systems as a driver for economic inclusion. Front
+Blockchain 2, 28. doi:10.3389/fbloc.2019.00028
+World Bank (2018). Principles on identi ﬁcation for sustainable development :
+toward the digital age. Available at: https://id4d.worldbank.org/principles(Accessed March 15, 2017).
+World Health Organization (2013). Move it: report on monitoring of vital events
+using information technology. Available at: https://www.who.int/publications-detail-redirect/move-it-report-on-monitoring-of-vital-events-using-information-
+technology (Accessed October 20, 2013).
+World Health Organization (2018). WHO recommendations on home-
+based records for maternal, newborn and child health. Available at:https://www.who.int/publicat ions/i/item/9789241550352 (Accessed
+January 1, 2018).
+Yu, E. (2011). Modeling strategic relationships for process reengineering. Social
+Model. Requir. Eng. 11, 66 –87. doi:10.7551/mitpress/7549.003.0005
+Copyright © 2021 Freytsis, Barclay, Radha, Czajka, Siwo, Taylor and Bucher. This is
+an open-access article distributed under the terms of the Creative Commons
+Attribution License (CC BY). The use, distribution or reproduction in other
+forums is permitted, provided the original author(s) and the copyright owner(s)are credited and that the original publication in this journal is cited, in accordancewith accepted academic practice. No use, distribution or reproduction is permittedwhich does not comply with these terms.
+Frontiers in Blockchain | www.frontiersin.org February 2021 | Volume 4 | Article 631341 10Freytsis et al. NeoLinkID:SSI Mobile Birth Registration

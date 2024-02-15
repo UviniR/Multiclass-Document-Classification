@@ -1,0 +1,1029 @@
+1 The Gender Labor Market Gap in the Digital Economy
+Monserrat Bustelo Luca Flabbi  Mariana Viollaz 
+October, 2019 
+Abstract 
+Recent years have seen an ever-greater expansion of the digital economy , a development that 
+may bring new opportunities to workers who were at a disadvantage in the traditional 
+economy. We focus on a specific set of workers who belong to such a group: women. We 
+study a skill set of particular relevance in the digital economy and estimate their returns in the 
+labor market, according to gender, across four Latin American countries. We find that 
+information and communication technologies (ICT) skills and science, technology, 
+engineering, and mathematics (STEM) skills yield significant positive returns for both men 
+and women. However, there is a significant gender gap that favors men on the STEM returns. 
+There is also a sizable gender gap regarding the amount of skills accumulated by gender. 
+Through an Oaxaca-Blinder decomposition, we estimate that up to 80% of the gender gap in 
+hourly wages may be due to the lower returns that women receive, relative to men, on their 
+STEM skills. If an investment in skills relevant to the digital economy may be beneficial for 
+the labor market performance of both men and women, why returns to STEM exhibit such 
+strong gender asymmetries remains an open and relevant question. 
+ Contact Information: 
+Monserrat Bustelo: Inter-American Development Bank, 1300 New York Avenue, N.W., Washington, DC 20577. E-
+mail: MONSERRATB@iadb.org  
+Luca Flabbi, Department of Economics, University of North Carolina - Chapel Hill, 107 Gardner Hall, CB 3305 
+Chapel Hill, NC 27599-3305. E-mail: luca.flabbi@unc.eduMariana Viollaz, Department of Public Administration, CIDE, Carretera Mexico-Toluca 3655, Ciudad de Mexico 
+and Centro de Estudios Distributivos, Laborales y Sociales (CEDLAS). E-mail: mariana.viollaz@cide.edu  The paper also includes a Web Appendix available at 
+https://sites.google.com/site/lucaflabbi/home/research/BusteloFlabbiViollaz2019_OnlineAppendix .xlsx?attredirects=0&d=1 . 2 1 Introduction 
+1.1 Motivation
+Recent years have seen major changes in global labor markets. Technical innovation is leading to 
+-greater expansion of a digital economy , in 
+which old jobs are lost, new jobs are created, and even the same jobs are approached differently 
+and require different competences. If old jobs are lost but new ones are created, then new 
+opportunities may arise for workers who were previously at a disadvantage in the traditional 
+economy.1 
+In this paper, we focus on a specific set of workers who belong to such a group: women. Gender 
+gaps in the labor market have been a significant and persistent empirical regularity in most 
+countries around the world (Blau and Kahn, 2017). The digital economy affects this longstanding 
+gap and may act to reduce or magnify it, depending on the skills that men and women can acquire 
+and deliver in the labor market. Focusing on a set of high-income countries, OECD (2018a) finds 
+that differences in skill endowments between male and female workers account for some but not 
+all of the wage gap. When controlling for skills relevant to the digital economy, the gender wage 
+gap is reduced by 1 to 12 percentage points.2OECD (2018b) also shows evidence of gender gaps 
+in skills, tracing some back to human capital acquisition during the schooling years. However, 
+among recent generations, the study finds that the gender gap in skills relevant to the digital 
+economy is more ambiguous: In some areas, girls outperform boys (e.g., collaborative problem 
+solving) but are outperformed by boys in others (e.g., digital-related skills). 
+Our report focuses on Latin American countries where no systematic analysis of the interaction 
+between the digital economy and the gender gap has been undertaken.3The primary reason for the 
+1 A number of reports by multilateral organizations and international think-tanks are making a similar point: for the 
+OECD, see OECD (2018a; 2018b); for the World Bank, see Box 2.10 in World Bank (2016); for the ILO, see Ryder 
+(2018); for the WEF, see World Economic Forum (2018); for the IDB, see Busso et al. (2017). 
+2 See Section 1.3 in OECD (2018a). The highest reduction is for Japan, which has the highest gender wage gap among 
+OECD countries at about 40%. 
+3 Some country reports are starting to look at gender differences in skill acquisition, but without relating the results to 
+gender differentials in the labor market. See, for example, OECD (2016) on Chile. The report  using PIAAC data   
+3 
+ absence of systematic contributions across Latin America relates to data limitations: 
+Representative individual-level data, capable of capturing the skills required in the digital 
+economy, are scarce. We are taking a first step in this analysis by using data sets comprising this 
+relevant information for four Latin American countries: Chile, Bolivia, Colombia, and El Salvador. 
+We have obtained the relevant information by combining two different surveys that collected data 
+on skills: the Programme for the International Assessment of Adult Competencies  (PIAAC) survey, 
+available for Chile in 2014, and the Skills Towards Employment and Productivity  (STEP) survey, 
+available for Colombia and Bolivia in 2012 and for El Salvador in 2013.  
+After extracting the estimation sample, we document gender gaps in skills endowments and 
+estimate returns to skills. We control for a variety of factors, including heterogeneous returns by 
+with respect to the endogenous selection of women in the labor market. Finally, we decompose 
+the gender gap in the portion resulting from differences in returns to skills and differences in skill 
+endowments. 
+Two specific skills yield significant returns across the board: STEM ( science, technology, 
+engineering, and math ) and ICT ( information and communication technologies ). ICT returns are 
+similar across genders, with an increase of one standard deviation in the skill generating a return 
+in hourly wages of about 17%. By contrast, STEM returns differ significantly between genders, 
+with an increase of one standard deviation generating a 15% return for men and a 9% return for 
+women. Results by country show some differences in magnitudes. Returns to STEM are higher 
+than the aggregate in Chile and lower than the aggregate in Bolivia, Colombia, and El Salvador. 
+We also estimate that higher levels of education imply significantly higher returns for men but not 
+for women. The estimates indicate that STEM endowments and returns play an important role in 
+explaining the aggregate gender gap in hourly wages; the lower endowments for women may be 
+responsible for up to 30% of the gap, while the lower returns for women may account for close to 
+80%. 
+ 
+ 
+, on study skill formation in the Latin American and the 
+Caribbean region, provided evidence on the availability and adoption of digital technologies but not on their relation 
+to the gender gap.  
+4 
+ 1.2 Structure 
+The paper is organized as follows: Section 2 describes the data and the specific indicators we build 
+to describe the digital economy. Section 3 provides standard descriptive statistics on the gender 
+gaps in the labor market, integrating gaps in skills relevant to the digital economy. Section 4 
+provides estimates of the returns to these skills, according to gender. The estimates control for a 
+rich set of individual characteristics and, in some specifications, for selection in the labor market. 
+We also provide evidence regarding the interaction of the skills with the sectors most exposed to 
+the digital economy, as well as with education levels. Section 5 focuses on the gender gap in hourly 
+wages and unpacks the extent to which the gap can be accounted for by differences in returns, 
+relative to differences in the endowment of digital-economy-relevant skills. Section 6 provides 
+final comments and a summary of the results. Appendix A includes details about the construction 
+of the variables of interest, Appendix B presents the complete regression results, and Appendix C 
+provides results according to country. A Web Appendix includes additional specifications and 
+robustness checks. 
+ 
+2 Data 
+We combine information from two surveys that collected data on skills at work. First, we use 
+information accessible in the  PIAAC survey, available for Chile in 2014. The PIAAC is a survey 
+-
+processing skills  literacy, numeracy, and problem solving  and gathers data on how adults use 
+their skills at work. The survey is implemented by an international consortium, contracted by the 
+OECD, and is designed to ensure international comparability of the data. Second, we use 
+information from the STEP survey, available for Colombia and Bolivia in 2012 and El Salvador 
+in 2013. STEP is a survey collected by the World Bank and gathers data on skills in urban areas 
+of low- and middle-income countries. It also shares the main objectives and structure of the PIAAC 
+questionnaire. It strives to record the data in a way that renders it comparable across different 
+countries. 
+Still, two concerns remain regarding the comparability of STEP and PIAAC for our purposes. The 
+first relates to differences in sampling: STEP is representative of people aged 15-64, living in urban  
+5 
+ areas, while PIAAC is representative of people aged 16-65, living in both urban and rural areas. 
+represented more heavily in non-urban areas: agriculture, forestry and fishery, as well as mining 
+and quarrying.4 Due to the slightly disparate age range between the two surveys, we include 
+individuals aged 16-64 in the estimation sample. We also restrict the sample to wage employees 
+of the private sector, except for El Salvador, where it is not possible to distinguish between the 
+private and public sector. These restrictions generate a final estimation sample with 1,541 
+observation for Chile, 510 for Bolivia, 668 for Colombia, and 522 for El Salvador. 
+The second relates to differences in survey questions. PIAAC and STEP use different 
+questionnaires to collect information. Still, the questions about labor market outcomes, 
+demographic characteristics, socioeconomic variables, and ability measures generate variables that 
+allow for a high degree of comparability between the surveys. The differences in survey questions 
+become more relevant when crafting measures of skills, as eliciting skills is a more difficult, and 
+arguably less agreed upon, task than eliciting demographic characteristics or standard labor market 
+outc
+devote the next section of the paper to describing how we build the relevant skills measures from 
+parability across countries and 
+surveys. 
+Throughout the paper, the unit of observation of the data remains the individual worker. The level 
+of analysis operates at both the country level and the aggregate level, pooling all countries into a 
+single data set. Typically, we discuss the results from the pooled sample in the main text of the 
+paper and report country-level results in the Web Appendix. 
+ 
+ 
+4 We could not limit our direct focus to the urban population in Chile because PIAAC does not report an indicator for 
+urban and rural areas. The only geographic indicator reported by PIAAC is the OECD territorial level 2 region, which, 
+for Chile, corresponds to 11 of the 15 regions of the country. We have combined this information with the rural/urban 
+indicator contained in a nationally representative household survey for Chile  the 2013 CASEN survey. Based on 
+CASEN, we can calculate the proportion of the population in each region living in urban areas. Results show that most 
+of the population in each Chilean region is concentrated in urban centers. In most of the regions, more than 90% of 
+the population lives in urban areas, with the most rural region (Maule) reporting 67% of urban population. Still, we 
+have performed a robustness exercise, where we eliminated regions with less than 85% or 75% of the population living 
+in urban areas. Our results were barely affected. 
+  
+6 
+ 2.1 Skills measures 
+We build the skills measures to summarize the information collected in the numerous relevant 
+survey questions and in order to maximize the comparability with previous literature and across 
+countries. We focus on skills relevant in the digital economy. The previous literature has identified 
+ICT and STEM quantitative skills as critical to thriving in the digital era (OECD, 2018a; OECD, 
+2018b). It has also argued that soft, social, and interpersonal skills, jointly with creativity and 
+critical thinking, will become critical in future, innovative labor markets (Ryder, 2018; World 
+Economic Forum, 2018; OECD, 2018b). To capture both sets of competencies, we follow the 
+classification proposed by Grundke et al. (2017) in preparatory work for a series of OECD reports 
+on skills and the digital economy.5They define the following six sets of skills using data from the 
+PIAAC survey on OECD countries: 
+1. ICT skills are those related to ICT use, from reading and writing emails to using Word and 
+Excel or a programming language. 
+2. Managerial and communication skills  capture strategic management abilities for the 
+generation of sustainable competitive advantages, including human resource management 
+practices, which encompassnegotiating with people, instructing, advising, and persuading people. 
+3. Readiness to learn and creative problem-solving skills  include the ability to solve problems 
+in the process of developing organizational capabilities and improving firm performance. 
+4. Self-organization skills  t to changes and absorb shocks. 
+5. Marketing and accounting skills  include abilities associated with accounting tasks, such as 
+reading financial invoices and bills, and with front-of-office marketing tasks, such as interacting 
+with clients.
+6. STEM quantitative skills  include the ability to apply algebra, simple or complex, and 
+prepare charts and tables. 
+In Table A1 in Appendix A, we provide details on the exact questions from PIAAC and STEP that 
+we use to generate each skill measure and the metric associated with each variable. Variables from 
+ 
+5 See OECD (2018a, 2018b). 
+  
+7 
+ PIAAC derive exactly from the definition proposed by Grundke et al. (2017): We construct the 
+same set of measures using the PIAAC for Chile as they did using the PIAAC on the 31 OECD 
+countries in their analysis.6 In the STEP surveys for Bolivia, Colombia, and El Salvador, we 
+identify the questions aimed at capturing the same skills and that are as close as possible to those 
+available in PIAAC.  
+The first important difference between the two surveys is that most variables in PIAAC capture 
+the , 
+while STEP involves a combination of binary questions (whether a person performs a certain task 
+at work or not) with some categorical frequency questions as in PIAAC. In order to overcome 
+these differences between surveys, we construct the skill measures applying a standardization 
+methodology used by previous studies (Acemoglu and Autor, 2011; Almeida et al., 2018). First, 
+for each variable associated to a skill category, we calculate the mean and standard deviation and 
+standardize the variable by subtracting the mean and dividing by the standard deviation. Second, 
+for each worker in the sample, we obtain a score for each skill category by adding all the 
+standardized variables obtained in the first step. Third, for all skill measures to have a zero mean 
+and standard deviation of one, we do one additional standardization of the six skill categories by 
+subtracting their mean and dividing by their standard deviation. The standardization is performed 
+for each country separately. 
+The second important difference concerns the difference in the actual questions. Many important 
+questions are extremely similar, for example, those related to ICT skills or STEM skills, but there 
+are others with more salient differences. For example, to build marketing and accounting skills, 
+PIAAC includes a question on the frequency of selling products or services, but STEP does not. 
+Our strategy here has been to base our choices on previous literature using the STEP survey to 
+construct skills measures (Di Carlo et al., 2016; Roseth et al., 2016; Lo Bello et al., 2019) or 
+combining both PIAAC and STEP to compare across countries (Lewandowski et al., 2019). The 
+main difference between these previous studies and our paper is that they have focused on a 
+different set of skills, mirroring the measures available in U.S. surveys instead of those available 
+in the OECD PIAAC surveys.7 
+ 
+6 The only difference is the exclusion of a variable capturing physical skills that Grundke et al. (2017) included in the 
+ICT measure with a negative weight. 
+7 They focus on the difference between cognitive and manual skills and between routine and non-routine tasks.  
+8 
+ 2.2 Digital intensity 
+In our econometric analysis, we also estimate differential returns, according to the digital intensity 
+of each economic sector. Digital intensity refers to the degree in which the production and the 
+performance of a given sector has been impacted by the digital transformation, i.e., the same set 
+of technological innovations that have made relevant the skills that are the object of this study. The 
+process of digital transformation is complex, involving more than a mere investment in computers, 
+software, cold computing, or other digital tools, embedding them in production with the 
+appropriate human capital and using them when deal (Calvino et al.,  
+2018). Looking at digital intensity is important in our context because the skills most relevant to 
+the digital economy may be complementary to the technologies and business practices used by 
+least, study the heterogeneity on returns by the degree of digital intensity at the sector level.  
+We proceed by defining an indicator variable of digital intensity for each of 36 economic sectors 
+following the classification established by Calvino et al. (2018) for a subset of OECD countries. 
+Using data from the Latin American region to define the digital intensive indicator variable would 
+seven variables to describe a given sector as more or less digital-intensive: level of investment in 
+ICT equipment, level of investment in software and databases, purchases of ICT services, 
+purchases of ICT goods, robot use, revenues from online sales, and intensity of ICT specialists. 
+None of these variables are reliably collected for Latin American and the Caribbean (LAC) 
+countries, so we use the same indicator defined by Calvino et al. (2018) but apply it to our LAC 
+countries. 
+To determine the extent to which transferring the OECD classifications to LAC countries 
+represents a credible way to proceed, we use the only variable with some correlation to digital 
+intensity available on the LAC region. The International Federation of Robotics (IFR) provides 
+counts of the stock of robots by economic sector, country, and year worldwide, including the four 
+countries under investigation here. We calculate the average number of robots in each economic 
+sectors above the median. We compare this classification specification from the 
+Latin American region to the one appearing in Calvino et al. (2018) to evaluate the viability of the  
+9 
+ robot use component of their digital intensive indicator. The comparison indicates a correlation of 
+0.8 between the Latin American classification and the OECD classification, lending some weight 
+to the use of the OECD classification in our estimates. Still, some important differences exist in 
+the intensity of robot use between regions. Table A2 in Appendix A shows the average number of 
+operational robots for seven aggregate economic sectors in the Latin American region, in the 
+United States, and in Western Europe. The number of operational robots is between 4 and 100 
+times larger in the United States and Europe, relative to Latin America. 
+In conclusion, the comparison shows that LAC countries and high-income OECD countries are 
+generally similar, in terms of the sectors of the economy with high digital intensity, but that the 
+degree of intensity is likely to be much smaller in LAC countries than in OECD countries. 
+ 
+3 Descriptive Analysis: The Gender Gap 
+We first describe the gender gaps in the labor market and the gender differentials in the relevant 
+skills variables. In terms of human capital measures, Table 1 documents the high rates of education 
+of the women in our sample, relative to the men: 79% of women are high-educated (upper 
+secondary education completed or more), while the percentage is 71% for men.  
+In terms of labor market performance, the usual gender gap in earnings emerges: The average wage 
+of low-educated women is 83% of the average wage of low-educated men; for the high-educated 
+group, the value is 87%. We also find the usual gender asymmetries in the distribution of 
+occupation: 32% of women are employed in this occupational category, relative to 16% of men. 
+Among men, crafts and related trades is the main occupation, employing about 22% of the 
+workforce. In terms of sectors, both women and men are largely employed in the services sector, 
+but the percentage for women is higher, reaching 93%, while, for men, it is 86%. A similar pattern 
+is found when comparing the percentages of women and men employed in digital-intensive 
+sectors. For women, we are looking at 53%, while, for men, it is 50%.  The usual gender gap in 
+labor market participation is also confirmed by our data: Figure 1 shows that, on average, 34% of 
+women in the sample do not participate in the labor market, compared to 18% of men. There are  
+10 
+ important differences by education levels: Low-educated women participate at a 54% rate, while 
+high-educated women participate at a 73% rate. 
+Gender differences, with respect to skills relevant to the digital economy, are reported in Figure 2 
+and at the bottom of Table 1. The largest difference relates to STEM, where the average skill level 
+for men is 0.12 of a standard deviation above the mean, while the average for women is 0.15 of a 
+standard deviation below the mean.8 A smaller disadvantage for women is observed in the context 
+of ICT skills, where they hold a value 0.03 of a standard deviation below the mean compared to a 
+similar value ,which is, of course, above the mean for men. On all the other three skills, men and 
+women do not show noticeable differences. 
+ 
+4 Econometric Analysis: Returns to Skills by 
+Gender 
+This section presents estimates of the impact of skills on hourly wages, according to gender. We 
+also analyze how these returns to skills interact with the digital intensity of the sector in which the 
+worker is employed. The interaction is relevant to understand how skills play a role in the process 
+ders that while the digital economy 
+is expanding, it may have not yet reached all the sectors of the labor market. 
+The econometric analysis focuses on estimating equations of the form: 
+ 
+  (1) 
+ 
+where the natural log of the hourly wage of individual i of gender g in country j (wij) is regressed 
+on a set of individual-level controls (the vector xij), a measure of the individual skill relevant in the 
+digital economy ( sij) and a country-fixed effect ( j
+the percentage change in earnings associated with a unit increase in the amount of skill s. 
+Following the literature estimating earnings functions, we label this coefficient the return to skills . 
+ 
+8 All the skill indexes are normalized to be mean zero and a standard deviation of one in the overall population. 
+11 
+ It is worth noting here that the parameters to be estimated are denoted by the superscript g, to 
+indicate that we are estimating gender-specific coefficients. In other words, we are estimating 
+equation (1) separately by gender.9 
+This specification is different, with respect to the one used by OECD (2018a), which performs a 
+-specific returns to skills by 
+interacting a gender dummy with the skill variable and then estimating on the pooled sample of 
+men and women. In terms of equation (1), this is equivalent to having the superscript g, but only 
+-specific 
+returns on all the variables. Without this flexibility, the returns to skills could capture some of the 
+gender-specific impacts of the other covariates. We find that this specification is, indeed, relevant; 
+numerous coefficients are significantly different between men and women. In Section 4.4, we 
+show the extent to which using the OECD (2018a) specifications instead impacts our results.                                                     
+The individual-level controls included in the vector xij are quite parsimonious, due partly to data 
+availability and also to the returns we aim to identify. Specifically, the vector includes a constant, 
+age and age squared, an indicator variable of completed upper secondary education or more, and 
+literacy and numeracy test scores.10 In short, the baseline specification controls for broad human 
+capital indicators (age and education), for a proxy of basic cognitive abilities (literacy and 
+numeracy scores) and for aggregate differences between the economies (the country-fixed effects). 
+The only additional controls available across all data sets, available for our inclusion in the 
+specification, are sectors and occupations indicator variables. We decided not to include them in 
+the baseline specification for the following reason: Choice of sector and occupation is endogenous 
+and, as such, the overall returns to skills may legitimately include the return to the choice of a 
+certain occupation/industry cell. Since we are interested in gender gaps in the overall return to 
+skills, we have preferred not to decompose the returns in the component due to occupation and 
+sector choices and in the component due to differences within a given sector and occupation cell. 
+ 
+9 To simplify notation, we do not add the indicator g to the observed variables, but it is understood that we will include 
+in each regression only individuals belonging of a specific gender. 
+10 Literacy and numeracy test scores are, unfortunately, not available for all countries. Literacy scores are available 
+for Bolivia, Colombia, and Chile, while numeracy scores are only available for Chile. We have therefore decided to 
+have them interact with the country  fixed effects in the section for specification, pooling all the countries together.  
+12 
+ Still, estimating the coefficient conditional on industry and occupation is informative, and we 
+present these estimates in Section 4.4. 
+ 
+4.1 Main Results 
+The main results on returns to skills are presented in Figure 3. The two main cognitive skills 
+relevant in the digital economy ICT and STEM show positive and significant returns for both 
+men and women, but, in STEM, the returns are significantly higher for men.11 Specifically, a one 
+standard deviation increase in the STEM skill measure implies a 15.1% increase in wages for men 
+and an 8.7% increase in wages for women. ICT skill returns are more similar across genders, 
+ranging from 16.9% for women to 17.6% for men. The returns to the other skills are lower but still 
+positive and significant except for marketing and accounting for women. 
+Compared with the returns estimated in OECD countries, the returns to ICT and STEM are higher 
+than the estimated average over the pooled set of 31 OECD countries. OECD (2018a) estimates 
+returns to ICT skills to be about 12% for women and about 10.5% for men. The returns to STEM 
+skills are estimated at 4% and 4.5%, for women and men, respectively. Contrary to the results for 
+the four LAC countries, there is a gender gap in returns to ICT, favoring women, while there is no 
+significant difference in returns to STEM by gender.12 
+We have tried to determine whether the difference in results, with respect to OECD (2018a), 
+derives from differences in the specification. As mentioned above, even when the variables 
+employed are comparable, the specifications are slightly different: OECD (2018a) estimates that 
+by having a gender dummy interacted with skills, while we prefer a more flexible specification, 
+where all the returns are allowed to be gender-specific. We have run the specification preferred by 
+OECD (2018a) on our data and found that the difference in specification explain only a small 
+portion of the difference. We discuss the results in Section 4.4. 
+The main results of the returns to skills interacted with the level of digital intensity in the sector 
+are presented in Figure 4. The figure reports the additional impact of a given skill when the worker 
+ 
+11 We report point estimates with the dot and the diamond, and the 90% confidence interval with vertical lines. As a 
+result, any time that the vertical line does not cross zero, it means that the coefficient is significantly different from 
+zero.
+12 See Figure 1.7, page 16, OECD (2018a).  
+13 
+ is employed in a sector with high digital intensity. The exercise is meant to capture the extent to 
+which a portion of the overall returns discussed above is due to composition effects across sectors, 
+i.e., if the skills have significant and positive returns only in those sectors that are more impacted 
+by the digital economy, or if they are equally valuable across all sectors. The figure shows that 
+digital intensity does not generally have a significant impact: Most of the coefficients are not 
+significantly different from zero, and the point estimates are very close to zero.13 Again, this result 
+stands in stark contrast with the findings for OECD countries. OECD (2018a) estimates that 
+working in digital-intensive industries increases returns to skill by about 2 to 3 percentage points.14 
+The results for our four Latin American countries indicate that either digital intensity is not very 
+pronounced in Latin America or that the skills under consideration are valuable across all the 
+sectors of Latin American economies. Even with the data at our disposal, we cannot disentangle 
+the two explanations, but some of the evidence discussed in Section 2.2 indicate that digital 
+intensity is, indeed, less pronounced in Latin America than in OECD countries. Specifically, Table 
+A2 in Appendix A shows that the average number of operational robots for seven aggregate 
+economic sectors (the only direct measure of digital intensity available for LAC countries) is 
+between 4 and 100 times larger in the United States and Western Europe than in Latin America. 
+This result is consistent with the analysis based on the broader Digital Adoption Index, reported 
+by Busso et al. (2017). The index shows that Latin America lags behind high-income economies 
+in terms of availability and adoption of digital technologies.15 In other words, if the sectors of the 
+economy with high digital intensity are similar between LAC countries and high-income OECD 
+countries, the extent of the intensity is much smaller in LAC. 
+To summarize the results obtained by aggregating the data gleaned from the four countries under 
+study, (i) we estimated significant and large returns to ICT and STEM, with no significant gender 
+differences on the first, but a significant gender gap in favor of men on the second. (ii) For the 
+other skill measures, we found positive but lower returns with mainly not statistically significant 
+differences between women and men. (iii) The digital intensity of the sectors does not seem a 
+crucial factor in determining these returns. 
+ 
+13 The exception are self-organization and marketing & accounting, which have, respectively, slightly smaller and 
+slightly higher returns when used in digital-intensive sectors.  
+14 See Figure 1.3, page 12, OECD (2018a). 
+15 See Figure 4.8, page 95, Busso et al. (2017). 
+14 
+ In Appendix C, we look at each country in isolation from the others; we actually found results for 
+each that are qualitatively similar to the aggregate for Chile, Bolivia, and Colombia but with some 
+differences in magnitude. Returns to STEM are higher than the aggregate ofChile and lower than 
+the aggregate of Bolivia and Colombia. El Salvador, on the other hand, does not report a gender 
+gap favoring men in returns to STEM; both men and women have positive but similar returns. 
+Returns to ICT in El Salvador are also a little different than the aggregate, indicating a higher (but 
+not significantly so) return for women. Extra returns for working in digital-intensive sectors 
+estimated by country confirm the aggregate results: Digital intensity does not significantly increase 
+returns to skills. 
+ 
+4.2 Heterogeneous Effects 
+We focus on the heterogeneous effect on the individual characteristic most relevant with respect 
+to skills formation and acquisition: schooling levels. We focus on upper secondary education, and 
+we report the differential effect on the returns of individuals who completed this educational level 
+with respect to individuals who completed less. The results are reported in Figure 5. They show 
+that higher levels of education yield significantly higher returns for men but not for women. For 
+women, the increase in returns never departs significantly from zero, and the point estimates are 
+always lower than those for men. In the next section, we discuss whether these differences may be 
+due to the different selection in the labor market by gender. 
+These results are more mixed when looking at regressions by country (Figure C4 in Appendix C). 
+In Chile, we estimate significantly higher returns for high-educated men on all skills except 
+readiness to learn. In Bolivia and El Salvador, only half of the skill types demonstrate significant 
+increases; in Colombia, only one. What remains broadly similar to the aggregate results is that the 
+increase in returns is higher for men than women. The only important exception is Colombia, 
+where the point estimate of increase in ICT and STEM is higher for women. However, the 
+estimated coefficient is not significantly different from zero in either case.  
+      
+  
+15 
+ 4.3 Selection in the Labor Market 
+Women participate in the labor market less than men. This is a common feature among most labor 
+markets, and it holds in our samples. Figure 1 shows that women participate in the labor market 
+less than men at all education levels. The Web Appendix shows the results of each country. 
+Because participation is non-random  i.e., it is the result of a choice  the women we observe 
+working may be systematically different from those not working. If the characteristics over which 
+they are different are related to their performance in the labor market, then the return to skills we 
+estimated are only representative of the population of women working and not of the entire 
+population of women. This bias may affect some relevant policy implications. For example, if a 
+policy is successful in increasing the skill levels of women, should we expect the returns 
+that were affected by the policy to be more like those of the women currently participating or the 
+ones who are not? Because some of the factors related to productivity remain unobserved, it is not 
+easy to answer this question. It may therefore be useful to estimate a set of returns that can indicate 
+if the estimated returns of women currently working are significantly different from those of the 
+overall population of women.16 
+We adopt a standard Heckman selection model (Heckman, 1979) to obtain returns that consider 
+selection in the labor market. To avoid relaying only on distributional assumptions for 
+identification, we adopt an exclusion-restriction: W s number of 
+children affects her participation decision but not the wage paid to her.17 
+Results are presented in Figure 6 and show relatively small changes with respect to the baseline 
+specifications reported in Figures3 and 5. Still, two small differences are worth mentioning. First, 
+the point estimate of the return to ICT becomes higher for women than men. However, both in the 
+baseline specification and in the selection-correction specification, the differences in returns 
+between men and women are not significantly different from each other. Second, the gap in favor 
+ 
+16 Notice that in principle, the same selection problem also applies to men but because a high proportion of men 
+participate in the labor market, we follow the common practice of ignoring selection in the labor market for them. In 
+other words, even if not all men participate in the labor market, the small proportion of men who do not is unlikely to 
+affect the overall estimates very much. 
+17 This assumption is common in the literature, but it is not without limitations. If it is true that firms cannot offer 
+wage contracts contingent to the presence of children, some evidence shows that the unequal distribution of household 
+work between men and women may generate a systematic (and potentially causal) association between wages and the 
+presence of children.  
+16 
+ of men in returns to STEM is reduced because the point estimate for women increases from 8.7% 
+to 9.5%. 
+By looking at results by country (reported in Figure C5 of Appendix C), we can see that these 
+minor changes are mainly driven by Chile. In Chile, controlling for selection increases  
+returns to ICT from 18.9% to 24.0% and returns to STEM from 11.0% to 18.3%. Another relevant 
+change takes place in Bolivia, where returns to STEM become significantly different 
+from zero when controlling for selection. 
+With respect to heterogeneous returns, correcting for selection does not qualitatively change the 
+results. The results are reported in Figure 7 and should be compared to Figures 4 and 5. Overall, 
+they confirm the lack of significantly higher returns for agents working in the digital-intensive 
+sector and reiterate that only men have significantly higher returns when they complete upper 
+secondary education. 
+Finally, estimates obtained by correcting for selection show that this is not the source of differences 
+with respect to returns estimated in OECD countries (OECD 2018a). Selection-correction slightly 
+increases the differences because it leads to slightly higher returns to ICT and STEM for women. 
+ 
+4.4 Robustness Analysis 
+In this section, we provide a robustness analysis along three dimensions. First, we study how the 
+results change when we replicate the specifications of the OECD (2018a); we constrain all the 
+coefficients to be the same for men and women except for the returns to skills. Second, we study 
+how the results change when we control for sectors and occupations. Finally, we check if the results 
+controlling for selection are affected by using different exclusion-restrictions in the selection 
+model. 
+Results constraining all the coefficients to be the same for men and women except for the returns 
+to skills are reported in Table B7. This specification consists in running equation (1) on a sample 
+pooling together men and women and then interacting the women indicator variable with the 
+variable measuring the specific skill under consideration. Our favorite baseline specification 
+allows all the coefficients to be gender-specific because it allows for more flexibility. This different 
+constrained version lets only the return to skill be gender-specific; as a result, returns to skills may  
+17 
+ capture some of the gender-specific impacts of the other covariates. By focusing on the two skills 
+with the strongest impact in the baseline specification (ICT and STEM), the estimation results in 
+the constrained specification are essentially identical to ICT and show a small difference to STEM. 
+If, in the baseline specification, returns to STEM are estimated to be 15.2%, those for 
+women are 6.7 percentage points lower.  returns on the constrained specification are 
+estimated to be 14.9%, whereas those for women are 5.9 percentage points lower. This slightly 
+lower gender gap in constrained specification is an indication that allowing for gender-specific 
+returns on the other covariates and on country-fixed effects is useful for estimating returns closer 
+to consistent values. 
+Results controlling for sectors and occupations are reported in Table B8. As mentioned, sectors 
+and occupations are important controls given that each sector/occupation cell may require and use 
+the skills in the digital economy differently. Conditioning on them may clarify if the differences 
+in returns we observed are due to the sorting of men and women over these cells or to different 
+returns within cells. Because occupational choices are endogenous and within-sector differences 
+may be affected by unobservable characteristics, this analysis remains largely descriptive. In other 
+words, the overall returns to skills may legitimately include the return to the choice of a certain 
+occupation. The estimation results conditioning on sectors and occupation qualitatively confirm 
+the main result in the baseline specification: We estimate significant returns to ICT and STEM, 
+with no significant gender differences in the former but a significant gender gap in favor of men 
+in the latter. Quantitatively, both ICT and STEM returns are estimated to be lower when sectors 
+and occupation controls are introduced. For example, ICT returns decreased from 16.8% 
+in the baseline specification to 7.0% in the specification controlling for sector and occupation; the 
+corresponding values for men were 17.4% and 7.1%, respectively. These results indicate, probably 
+not surprisingly, that a portion of the returns to ICT and STEM is because individuals who possess 
+those skills work in a sector and occupation that pay relatively more in comparison to people with 
+a lower level of these skills. More interestingly, the gender gap in ICT returns is unaffected when 
+we change the specification, unlikethe gender gap in STEM returns. In other words, conditioning 
+on the sector and occupation cell,  returns to STEM are estimated to be much greater than 
+ returns to STEM than in the economy as a whole. The results suggest that different 
+choices of occupation and sector are not the main driver of the overall gender gap in STEM returns;  
+18 
+ womens occupational choices, vis-a-vis men s, decreasethe gender gap in returns present within 
+sector/occupation cells. 
+Results controlling for how different exclusion-restrictions affect our selection model are reported 
+in Table B9. In our baseline selection model, we used the presence of children as the exclusion-
+restriction, a variable very likely to affect the participation decisions of women. However, not only 
+fertility decisions are endogenous, but the presence of children may also directly impact wages 
+and not only participation. Still, we are limited in terms of data availability on the exclusion-
+restrictions we can use in the selection model. Furthermore, the number of children is the only 
+variable available on all data sets. However, if we limit ourselves to the STEP countries, we can 
+use additional information. Specifically, we use information about whether the mother or father of 
+the person answering the survey lives in the household. This presence may be very influential on 
+the labor market participation decision of women, either because they can help in household 
+production or because they need resources for their care. We therefore built an indicator variable 
+for whether the mother or father of the person answering the survey is living in the household. We 
+use it as an exclusion-restriction alone and jointly with the presence-of-children variable. 
+Estimation results show very little sensitivity to the various exclusion-restrictions. For example, 
+the overall STEM return in STEP countries is estimated to be about 5.7% without controlling for 
+selection. When controlling for selection, it is estimated to be just a little lower, ranging from 
+5.13% when using only the presence of children as an exclusion-restriction, to 5.17% when using 
+only the presence of grandparents, to 5.16% when using both.18 
+ 
+5 Post-Estimation Analysis: Decomposing the 
+Gender Gap 
+The previous section presented estimates of the returns to skills and to other individual 
+characteristics by gender. Using these estimates, it is possible to decompose the overall gender gap 
+ 
+18 We have also run OLS regressions using the exclusion-restriction variables directly in the wage regressions. We 
+found that they are typically not significant, while they always are in the participation-decision equation. Although 
+the exclusion-restrictions are not formally testable since we use them for identification, this reduced form results lends 
+some credibility to them.
+  
+19 
+ in the portion due to differences in returns and to differences in endowments. The most popular 
+procedure to accomplish this is labeled in the literature as Oaxaca-Blinder decomposition.19 It is 
+simply an accounting exercise based on mean differences. The regressions we have presented in 
+the previous sections and defined in equation (1) are ordinary least squares (OLS) regressions 
+guaranteeing that: 
+ 
+  (2) 
+ 
+where the overbar denotes sample mean, the hat denotes estimated value, and the indicator g=m,w 
+denotes gender-specific values. The country-fixed effect component is averaged out over all the 
+individuals living in the country.20 In other words, equation (2) states that OLS estimation 
+guarantees that the mean of the dependent variable is exactly predicted by the estimated 
+coefficients applied to the sample mean of the regressors. Based on this result and one step of 
+algebra, the gender earnings gap the difference in average earnings between men and women  
+can be decomposed in the portion due to differences in the sample mean of the regressors (the 
+endowments ) and in the portion due to differences in the estimated coefficients (the returns). 
+Focusing on the returns and endowments of relevant skills related to the digital economy  denoted 
+with s  we can write: 
+ 
+ (3) 
+ 
+ 
+19 See Blinder (1973) and Oaxaca (1973). For a more recent assessment of the approach, see Oaxaca and Ransom 
+(1994). For a more general decomposition involving the entire distribution, see Machado and Mata (2005). 
+20 To formally define it, we need to add an indicator function di(j)=1 if individual i lives in country j, leading to: 
+ 
+  
+20 
+ where the first term on the right-hand side denotes gender differences in endowments in digital-
+economy-relevant skills (weighted by the male return ) and the second term denotes gender 
+differences in returns to those skills (weighted by the female endowment ). 
+Figure 8 reports the ratio between each of these two terms and the overall gender gap. For example, 
+looking at STEM skills, we estimate that both gender differences in endowments and in returns 
+have a significant impact in explaining the gender gap. The point estimates indicate that 
+endowments could be responsible for up to 30% of the difference and returns for up to 80%.21 We 
+see this as the main result to be drawn from the decomposition. Two other significant effects are 
+present: Differences in ICT endowments have a marginally significant impact, whereas differences 
+in returns in marketing and accounting have a more substantial impact, with the potential to explain 
+up to 65% of the gap. We perform an additional exercise by reporting the endowment and returns 
+components when including all skills measures at the same time. Results appear in the last panel 
+of Figure 8 and show that endowments explain approximately 40% of the gender wage gap, while 
+the returns to skills do not have any explanatory power. 
+Results by country are reported in Appendix C, Figure C7. They confirm the overall main results 
+for Bolivia, Chile, and Colombia: STEM has a significant impact, with differences in returns 
+contributing up to 64% of the gap in Bolivia, up to 28% in Chile, and up to 90% in Colombia. El 
+Salvador is the only country where STEM does not have either an economically significant or a 
+statistically significant impact on the earnings gender gap. In terms of other skills, the country-by-
+-country results show that the significant impact of marketing and accounting in the aggregate 
+sample was mainly driven by Colombia. 
+  
+6 Conclusion 
+We studied gender differentials in the labor market with a focus on skills relevant to the digital 
+economy. Specifically, we estimated the returns to skills using standard wage regressions, but we 
+allowed for heterogeneous effects and considered selection in the labor market. We focused on 
+ 
+21 Recall that the estimated returns are based on running separate regressions, each with only one of the digital-
+economy-relevant skills at the time. Since there are likely to be correlations between skills, the estimates report the 
+maximum impact that the skill may have in explaining the gap.  
+21 
+ four Latin American countries for which all the relevant data are available: Bolivia, Chile, 
+Colombia, and El Salvador.
+We found that the group of skills described as ICT and as STEM have significant positive returns 
+for both men and women. However, there is a significant gender gap in favor of men on the returns 
+to STEM, while the returns to ICT are very similar between the two genders. We also estimated 
+the returns in specifications allowing for heterogeneity by education and sector of occupation. We 
+found that having upper secondary education or higher implies significantly higher returns for men 
+but not for women. Unlike the results obtained on OECD countries (OECD, 2018a; OECD, 
+2018b), we did not find any significant impact related to working in a digital-intensive sector. This 
+means that either digital intensity is less pronounced in Latin American countries than OECD 
+countries or that the skills under consideration are valuable across all sectors of Latin American 
+economies. All these results are confirmed when controlling for selection in the labor market for 
+women. We also performed a robustness analysis where we studied how results change by varying 
+the specification and by employing various exclusion-restrictions in the selection model. 
+Finally, we provided a decomposition of how skills relevant to the digital economy may contribute 
+to the gender gap in wages. By computing a standard Oaxaca-Blinder decomposition based on our 
+estimates, we concluded that both gender differences in endowments and in returns to STEM skills 
+have a significant impact in explaining the gender gap in earnings. The point estimates indicate 
+that endowments could be responsible for up to 30% of the difference and returns for up to 80%. 
+The summary of results provided so far is aggregated over the four countries under consideration. 
+Many of our results were confirmed when performing the same analysis for each country 
+separately. The most relevant differences between countries concerned returns to STEM. They 
+were estimated to be higher than the aggregate in Chile and lower than the aggregate in Bolivia 
+and Colombia. El Salvador is the only country not reporting a gender gap in favor of men in returns 
+to STEM. As a result, El Salvador is the only country for which gender differences related to 
+STEM skills do not explain the overall gender gap in earnings. 
+Why returns to STEM exhibit such strong gender asymmetries can only be partially answered by 
+our analysis. The list of possible explanations is broad. The first possibility is selection into 
+different sectors and occupations; men and women may systematically choose to work in different 
+jobs, even when possessing similar skills. Our robustness analysis controlling for sectors and  
+22 
+ occupations indicated that this is not the case: The within-sector and occupation gaps are higher
+than the overall gap. The second possibility is selection in the labor market, i.e.,women participate 
+in the labor market at a lower proportion than men. If only the relatively less productive women 
+participate, then their lower returns may reflect a genuine productivity differential. Our analysis 
+estimating a series of selection models indicated that this mechanism may at most explain a very 
+small portion of the differential. The third possibility is different labor market experiences and 
+labor market attachments. Some evidence suggests that time investments in household production 
+are very different between men and women.22 This is reflected both in the extensive and intensive 
+margins of labor supply. The extensive margin differential is reflected in the lower participation 
+rate for women, and the selection models we estimated take this into account. The intensive margin 
+is reflected in hours worked, which is accounted for by using hourly wages as dependent variables 
+in our estimations. However, there is an important dynamic element that our static estimates could 
+not properly consider; over time, a lower labor supply implies lower accumulation of human 
+capital on the job. Our controls for labor market experience is very crude, and therefore, some of 
+the impact of human capital accumulation on the job may be picked up by other returns, such as 
+returns to education and returns to skills. The only objection to this explanation is that human 
+capital accumulation on the job should involve all skills, not only STEM skills, while we estimate 
+the gender gap only on STEM returns. The fourth possibility is discrimination against women in 
+STEM professions. There is a growing, even if by no means conclusive, literature suggesting that 
+STEM and related professions may be more prone to gender discrimination than other 
+professions.23 With the data at our disposal, we neither can exclude nor confirm such an 
+explanation. Finally, the fifth possibility is that the quality of the STEM skills acquired by men 
+and women may be different, explaining the gap in terms of underlining productivity differentials. 
+This may result from human capital acquired before entering the labor market. By controlling for 
+numeracy score, our regressions should condition on some of those differences, but the difference 
+may result also from human capital acquired on the job after entering the labor market. This is the 
+same mechanism we described when discussing the dynamic implication of gender differences in 
+ 
+22 Evidence collected in time-use survey provides convincing evidence in this respect. For cross-country evidence, see 
+van der Lippe et al. (2011) and Apps and Rees (2005). For evidence on a Latin American country, see Salazar-Saenz 
+(2019) on Colombia. 
+23 See, for example, Buffington et al. (2016) and Carrell et al. (2010).  
+23 
+ labor supply. Given the limited controls for dynamic behavior in our empirical models, this is 
+another mechanism that cannot be ruled out. 
+In conclusion, we found that if investing in skills relevant to the digital economy, specifically in 
+ICT and STEM, may be beneficial for the labor market performance of both men and women, it 
+remains a relevant open question in understanding why returns to STEM exhibit such a strong 
+gender gap. Our results can rule out some explanations but cannot precisely point to the actual 
+mechanism. At least two explanations remain good candidates to explain the gender gap in STEM 
+returns: the presence of stronger discrimination against women in STEM-related professions than 
+in other professions and the life-cycle impact of a different rate of human capital accumulation on 
+the job between men and women. The first suggests policies directly targeting the labor market, 
+and the second suggests policies improving work-life balance for both men and women.24
+ 
+ 
+24 For a recent assessment of these policies in the U.S., see Doran et al. (2018).  
+24 
+ 7. References 
+Acemoglu, D., & Autor, D. (2011). Skills, tasks and technologies: Implications for employment 
+and earnings. In Handbook of labor economics (Vol. 4, pp. 1043 1171), Elsevier. 
+Almeida, R. K., Fernandes, A. M., & Viollaz, M. (in press). Software adoption, employment 
+composition, and the skill content of occupations in Chilean firms. The Journal of 
+Development Studies . 
+Apps, P.,&Rees,R.(2005).Gender, time use, and public policy over the life cycle. Oxford Review 
+of Economic Policy , 21(3), 439461. 
+Blau, F. D., & Kahn, L. M. (2017). The gender wage gap: Extent, trends, and explanations. Journal 
+of Economic Literature , 55(3), 789865. 
+Blinder, A. S. (1973). Wage discrimination: Reduced form and structural estimates. Journal of 
+Human Resources , 8(4), 436455. 
+Buffington, C., Cerf, B., Jones, C., & Weinberg, B. (2016). STEM training and early career 
+outcomes of female and male graduate students: Evidence from UMETRICS data linked 
+to the 2010 census. American Economic Review , 106(5), 333338. 
+Busso, M., Cristia, J., Hincapié, D., Messina, J., & Ripani, L. (2017). Learning better: Public 
+policy for skills development . Washington, DC: Inter-American Development Bank. 
+Calvino, F., Criscuolo, C., Marcolin, L., & Squicciarini, M. (2018). A taxonomy of digital intensive 
+sectors (OECD Science, Technology and Industry Working Papers 2018/14). Paris, 
+France: OECD Publishing. 
+Carrell, S., Page, M., & West, J. (2010). Sex and science: How professor gender perpetuates the 
+gender gap. The Quarterly Journal of Economics , 125(3), 1101 1144. 
+Di Carlo, E., Lo Bello, S., Monroy-Taborda, S., Oviedo, A. M., Sanchez-Puerta, M. L., &Santos, 
+I. (2016). The skill content of occupations across low and middle income countries: 
+Evidence from harmonized data (IZA Discussion Paper 10224). Bonn, Germany: IZA 
+Institute of Labor Economics. 
+Doran, E. L., Bartel, A. P., & Waldfogel, J. (2018, Month). Gender in the labor market: The role 
+of equal opportunity and family-friendly policies  (NBER Working Paper No. 25378). 
+Cambridge. USA: National Bureau of Economic Research.  
+Grundke, R., Jamet, S., Kalamova, M., Keslair, F., & Squicciarini, M. (2017). Skills and global 
+value chains: A characterization  (OECD Science, Technology and Industry Working  
+25 
+ Papers 2017/05). Paris, France: OECD Publishing.
+Heckman, J. J. (1979). Sample selection bias as a specification error. Econometrica , 47(1), 153
+161. 
+Lewandowski, P., Park, A., Hardy, W., & Du, Y. (2019). Technology, skills, and globalization: 
+Explaining international differences in routine and nonroutine work using survey data  
+(IZA Discussion Paper 12339). Bonn, Germany: IZA Institute of Labor Economics. 
+Lo Bello, S., Sanchez-Puerta, M. L., & Winkler, H. (2019). From Ghana to America: The skill 
+content of jobs and economic development  (Policy Research Working Paper 8758). 
+Washington, DC: The World Bank.
+Oaxaca, R. (1973). Male-female wage differentials in urban labor markets. International Economic 
+Review, 14(3), 693709. 
+Oaxaca, R. L., & Ransom, M. R. (1994). On discrimination and the decomposition of wage 
+differentials. Journal of Econometrics , 61, 521. 
+OECD. (2016). Country note Chile: Skills matter: Further results from the survey of adult skills . 
+Paris, France: OECD Publishing. 
+OECD. (2018a) Towards the implementation of the G20 roadmap for digitalisation: Skills, 
+business dynamics and competition . Paris, France: OECD Publishing. 
+OECD. (2018b) Bridging the digital gender divide: Include, upskill, innovate . Paris, France: 
+OECD Publishing. 
+Roseth, V. V., Valerio, A., & Gutierrez, M. (2016). Skills and labor market outcomes: Results 
+from large-scale adult skills surveys in urban areas in 12 countries . Washington, DC: The 
+World Bank Publications. 
+Ryder, G. (2018). As tech disrupts our jobs, it s not too late to turn pain into gain. Retrieved from 
+https://www.weforum.org/agenda/2018/10/tech-disrupt-jobs-fourth-industrial-revolution-
+ilo/ 
+Salazar-Saenz, M. (2019). Household search model of the labor market with home production. 
+mimeo, University of North Carolina at Chapel Hill. 
+van der Lippe, T., de Ruijter, J., de Ruijter, E., & Raub, W. (2011). Persistent inequalities in time 
+use between men and women: A detailed look at the influence of economiccircumstances, 
+policies, and culture. European Sociological Review , 27(2), 164179. 
+World Bank Group. (2016). World development report 2016: Digital dividends.  Washington, DC:  
+26 
+ The World Bank Publications.
+World Economic Forum. (2018). The future of jobs report . Cologny/Geneva, Switzerland: Centre 
+for the New Economy and Society. 
+ 
+ 
+ 27 
+ Table 1: Descriptive Statistics
+ 
+Notes: Table reports descriptive statistics on the estimation sample extracted from the 2014 PIAAC (Chile) and 2012 
+(Bolivia, Colombia) and 2013 (El Salvador) STEP survey. Standard deviation is in parentheses. Low-educated: Lower 
+secondary education or lower. High-educated: Upper secondary education or above. ICT: Information and 
+communication technologies.   28 
+ Figure 1: Distribution of Labor Market States
+ 
+Women 
+ 
+ 
+Men 
+ 
+Source: Own elaboration based on PIAAC and STEP surveys. 
+ 
+ 
+ 
+ 
+  29 
+ Figure 2: Skills in the Digital Economy 
+ 
+Source: Own elaboration based on PIAAC and STEP surveys. 
+  30 
+ Figure 3: Returns to Skills
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+Note: The figure reports the coefficient estimate of those individual skill that are relevant to the digital economy in 
+the log hourly wage regression defined in equation (1). It represents the percentage change in hourly wages of one 
+standard deviation increase in the skill measure. The dot and the diamond are the point estimates, while the vertical 
+lines show the 90% confidence interval of the estimate. The complete specification is defined in Section 4, equation 
+(1). Complete results are available in Table B1 in Appendix B. 
+  
+31 
+ Figure 4: Returns to Skills in Sectors with Varying Digital Intensity:
+Extra Returns for Working in Digital-Intensive Sectors 
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+Note: The figure reports the estimate of the coefficient capturing the interaction between the individual skill relevant 
+to the digital economy and a dummy equal to 1 if the sector is a digital-intensive sector. The estimate is obtained in 
+the log hourly wage regression defined in equation (1). It represents the percentage change in hourly wages of a one 
+standard deviation increase in the skill measure of a digital-intensive sector with respect to a nondigital-intensive 
+sector. The dot and the diamond are the point estimates, while the vertical lines show the 90% confidence interval of 
+the estimate. The complete specification is defined in Section 4, equation (1). Complete results are available in Table 
+B2 in Appendix B. 
+  
+32 
+ Figure 5: Heterogeneous Effects by Education:
+Extra Returns to Skills for High-Educated Workers 
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+Note: The figure reports the coefficient estimate for the interaction between the individual skill relevant to the digital 
+economy and a dummy equal to 1 if the individual has completed upper secondary education or above. The estimate 
+is obtained in the log hourly wage regression defined in equation (1). It represents the percentage change in hourly 
+wages of a one standard deviation increase in the skill measure for individuals with at least upper secondary education 
+completed with respect to individuals who have not completed that level. The dot and the diamond are the point 
+estimates, while the vertical lines show the 90% confidence interval of the estimate. The complete specification is 
+defined in Section 4, equation (1). Complete results are available in Table B3 in Appendix B. 
+  
+33 
+ Figure 6: Returns to Skills: Correcting for Selection in the Labor Market
+ 
+ 
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+Note: The figure reports the same estimates as Figure 3 but corrects for selection in the labor market for women. See 
+Section 4.3 for additional details. We correct for selection only on women because men have a sufficiently high 
+participation rate. Complete results are available in Table B4 in Appendix B.   
+34 
+ Figure 7: Heterogeneous Returns to Skills: Correcting for Selection in the Labor Market 
+ 
+Extra Returns for Working in Digital-Intensive Sectors 
+ 
+Extra Returns for High-Educated Workers 
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+Note: The figure reports the same estimates as Figure 4 (top panel) and Figure 5 (bottom panel) but corrects for 
+selection in the labor marketfor women. See Section 4.3 for additional details. We correct for selection only on women 
+because men have a sufficiently high participation rate. Complete results are available in Tables B5 and B6 in 
+Appendix B.   
+35 
+ Figure 8: Contribution of the Skills  Returns and Endowments to the Gender Wage Gap 
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+Note: The figure reports results based on the Oaxaca-Blinder decomposition defined in equation (3). The Endowments  
+correspond to the first term on the right-hand side of equation (3) and represent the contribution to the overall gap due 
+to gender differences in endowments (quantities) of each individual skill relevant to the digital economy. The 
+Coefficients  correspond to the second term on the right-hand side of equation (3) and represent the contribution to the 
+overall gap due to gender differences in returns (prices) to those skills. The dot and the diamond are the point estimates, 
+while the vertical lines show the 90% confidence interval of the estimate. Complete results are available in Table B10 
+in Appendix B.  
+36 
+ APPENDIX A: Data Appendix 
+ 
+Table A1. Skill-Related Questions from the PIAAC and STEP Surveys 
+  
+37 
+ Table A1 cont.  
+ 
+Source: Own elaboration based on PIAAC and STEP surveys. 
+Notes: Reverse order  means we reversed the order of the categories such that a higher value mean higher frequency 
+of the task.38 
+  
+Table A2. Average Number of Operation Robots Over 2011-2014 
+ 
+Source: Own elaboration based on International Federation of Robotics. 
+Note: For Latin America and Western Europe, the table shows the cross-country average from 2011 to 2014. 
+ 
+39 
+ APPENDIX B: Complete Estimation Results 
+Table B1. Returns to Skills 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+Notes: Ordinary least squares regressions. Robust standard errors in brackets. *** p<0.01, ** p<0.05, * p<0.1 
+PPP: Purchasing power parity. 
+40 
+ Table B2. Returns to Skills in Sectors with Varying Digital Intensity 
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+Notes: Ordinary least squares regressions. Robust standard errors in brackets. *** p<0.01, ** p<0.05, * p<0.1 
+PPP: Purchasing power parity.  
+41 
+ Table B3. Returns to Skills: Heterogeneous Effects by Education  
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.
+Notes: Ordinary least squares regressions. Robust standard errors in brackets. *** p<0.01, ** p<0.05, * p<0.1 
+PPP: Purchasing power parity.  
+42 
+ Table B4. Returns to Skills: Correcting for Selection in the Labor Market  
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+Notes: Heckman selection models. Robust standard errors in brackets. *** p<0.01, ** p<0.05, * p<0.1 
+PPP: Purchasing power parity. 
+ 
+   
+43 
+ Table B5. Returns to Skills: Correcting for Selection in the Labor Market. Sectors with Varying 
+Digital Intensity 
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+Notes: Heckman selection models. Robust standard errors in brackets. *** p<0.01, ** p<0.05, * p<0.1 
+PPP: Purchasing power parity.  
+   
+44 
+ Table B6. Returns to Skills: Correcting for Selection in the Labor Market. Heterogeneous Effects 
+by Education 
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+Notes: Heckman selection models. Robust standard errors in brackets. *** p<0.01, ** p<0.05, * p<0.1 
+PPP: Purchasing power parity. 
+ 45 
+ Table B7. Returns to Skills: Robustness Analysis. Constraining All the Coefficients to Be the 
+Same for Men and Women with the Exception of Their Returns to Skills 
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+Notes: Ordinary least squares regressions. Robust standard errors in brackets. *** p<0.01, ** p<0.05, * p<0.1
+PPP: Purchasing power parity.  
+46 
+ Table B8. Returns to Skills: Robustness Analysis. Conditioning on Sectors and Occupations 
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+Notes: Ordinary least squares regressions. Robust standard errors in brackets. *** p<0.01, ** p<0.05, * p<0.1 
+PPP: Purchasing power parity.  
+47 
+ Table B9. Returns to Skills: Robustness Analysis. Correcting for Selection in the Labor Market 
+Using Different Exclusion-Restrictions. STEP Countries Only 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+Notes: Robust standard errors in brackets. *** p<0.01, ** p<0.05, * p<0. 
+PPP: Purchasing power parity. 
+ 
+   
+48 
+ Table B10. Oaxaca-Blinder Decomposition of the Gender Wage Gap 
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+Notes: Robust standard errors in brackets. *** p<0.01, ** p<0.05, * p<0.1  
+49 
+ Appendix C
+ 
+Figure C1. Skills in the Digital Economy 
+ 
+Chile Bolivia 
+  
+ 
+Colombia   
+El Salvador  
+  
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.  
+50 
+ Figure C2: Returns to Skills 
+Chile Bolivia 
+  
+Colombia El Salvador 
+  
+Source: Own elaboration based on PIAAC and STEP surveys.  
+  
+ 
+51 
+ Figure C3: Returns to Skills in Sectors with Varying Digital Intensity: Extra Returns for Working 
+in Digital-Intensive Sectors 
+Chile Bolivia 
+Colombia El Salvador 
+  
+Source: Own elaboration based on PIAAC and STEP surveys.  
+  
+ 
+52 
+ Figure C4: Heterogeneous Effects by Education: Extra Returns for High-Educated Workers 
+Chile Bolivia 
+  
+Colombia El Salvador 
+  
+Source: Own elaboration based on PIAAC and STEP surveys.  
+  
+ 
+53 
+ Figure C5: Returns to Skills: Correcting for Selection in the Labor Market 
+Chile Bolivia 
+  
+Colombia El Salvador 
+  
+Source: Own elaboration based on PIAAC and STEP surveys.  
+ 
+54 
+ Figure C6: Correcting for Selection in the Labor Market: Extra Returns for High-Educated 
+Workers 
+Chile Bolivia 
+Colombia El Salvador 
+  
+ 
+Source: Own elaboration based on PIAAC and STEP surveys.
+ 
+55 
+ Figure C7: Oaxaca-Blinder Decomposition. Contribution of the Skills  Returns and 
+Endowments to the Gender Wage Gap 
+Chile Bolivia 
+Colombia El Salvador 
+  
+ 
+ Source: Own elaboration based on PIAAC and STEP surveys.
+ 
+56 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

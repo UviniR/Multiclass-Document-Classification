@@ -1,0 +1,2277 @@
+UC Berkeley
+CEGA Working Papers
+Title
+Digital Collateral
+Permalink
+https://escholarship.org/uc/item/3rq7g89j
+Authors
+Gertler, Paul
+Green, Brett
+Wolfram, Catherine
+Publication Date
+2021-05-19
+DOI
+10.26085/C39596
+eScholarship.org Powered by the California Digital Library
+University of CaliforniaDigital Collateral
+Paul GertleryBrett GreenzCatherine Wolframx
+May 6, 2021
+Abstract
+A new form of secured lending utlitizing \digital collateral" has recently emerged,
+most prominently in low and middle income countries. Digital collateral relies on
+\lockout" technology, which allows the lender to temporarily disable the ow value
+of the collateral to the borrower without physically repossessing it. We explore this
+new form of credit both in a model and in a eld experiment using school-fee loans
+digitally secured with a solar home system. We nd that securing a loan with digital
+collateral drastically reduces default rates (by 19 pp) and increases the lender's rate
+of return (by 38 pp). Employing a variant of the Karlan and Zinman (2009) method-
+ology, we decompose the total eect and nd that roughly one-third is attributable
+to (ex-ante) adverse selection and two-thirds is attributable to (interim or ex-post)
+moral hazard. Access to a school-fee loan signicantly increases school enrollment
+and school-related expenditures without detrimental eects to households' balance
+sheet.
+Keywords : Collateralized Lending, Micronance, Moral Hazard, Adverse Selection, Edu-
+cation
+JEL Classication : G20, I22, O16
+This research was supported by USAID, CGAP and IFC (as part of the HIFI program), and JPAL's
+Post-Primary Education program and UC Berkeley's Lab for Inclusive FinTech (LIFT). We are very
+grateful to Jenya Kahn-Lang, Renping Li, Sanghamitra Mukherjee, Derek Wolfson, Hilary Yu, and es-
+pecially Robert Pickmans for excellent research assistance. Laura Steiner provided exceptional project
+management, and we are also grateful to the whole team at IPA Uganda. We are also grateful to Efraim
+Benmelech (discussant), David Levine, Isabel Macdonald, David Sraer, and Antoinette Schoar for useful
+comments and suggestions as well as participants at the Harvard/Yale/Berkeley EEE seminar, NBER
+Corporate Finance Meetings, the University of British Columbia, Columbia University, and University of
+California, Merced. The experiment described in this paper is registered at the AEA RCT Registry under
+the code AEARCTR-0004191. The protocol was granted IRB approval by the University of California
+at Berkeley under the code 2018-10-11516. The authors declare that they have no nancial or material
+interests in the results discussed in this paper. The views expressed in this article do not necessarily
+represent the views of the United States or the U.S. Department of the Treasury.
+yUniversity of California, Berkeley, Haas School of Business and NBER, gertler@berkeley.edu
+zWashington University in St. Louis, Olin Business School, b.green@wustl.edu
+xU.S. Department of the Treasury, on leave from Haas School of Business, University of California,
+Berkeley and NBER, cwolfram@berkeley.edu1 Introduction
+There is a general consensus that households in low and middle income countries (LMICs)
+have insucient access to credit. While 20 years ago economists were optimistic that
+micronance would ll this void, most of the evidence suggests that micronance loans do
+not have transformative eects on the average borrower (Banerjee et al., 2015; Meager,
+2019).
+Traditional micronance loans are typically unsecured and characterized by high in-
+terest rates, large transaction costs, and low uptake. In contrast, more than 80% of total
+household debt in the US is secured by a physical asset.1Using collateral to secure debt
+helps overcome economic frictions, thereby expanding the supply of credit and reducing
+the cost of credit provision. Yet, secured debt is much less prevalent in very poor coun-
+tries. Why? First, property rights are dicult to establish and enforce in economies with
+weak legal institutions, which translates to a high cost of repossessing collateral for cred-
+itors. This is especially true for households in remote areas, where the costs associated
+with locating collateral, physically repossessing it, and subsequently redeploying it are
+prohibitive. Second, the primary source of income for many households in LMICs is self-
+employment, which is subject to more frequent shocks than households whose primary
+source of income is from formal sector wages. As such, they are more likely to default for
+nonstrategic reasons and may choose to avoid the risk of having assets repossessed.
+In this paper, we argue that collateral need not be physically repossessed in order to
+serve a useful role in access to credit. Recent technological innovations have facilitated the
+use of digital collateral without the need for costly and inecient physical repossession.
+An emerging example is pay-as-you-go nancing (PAYGO). The typical PAYGO contract
+requires a nominal down payment to take possession of an asset, followed by frequent,
+small payments made via a mobile payment system. PAYGO nancing crucially relies
+on an embedded \lockout technology" that allows the lender to remotely, cheaply, and
+temporarily disable the ow of services from the asset. In other words, the lender can
+digitally repossess the asset without the need to repossess it physically. Digital collateral
+1Source: \Quarterly Report on Household Debt and Credit," Federal Reserve of the Bank of New York
+(2020), https://www.newyorkfed.org/medialibrary/interactives/householdcredit/data/pdf/HHDC 2020Q2.pdf.
+1has several technological advantages: disabling the ow of services is cheap and easily
+reversible. Borrowers unable to make a payment do not lose the asset, rather they are
+simply unable to consume the ow of services from the asset until they start paying
+again. These advantages allow for a richer space of nancial contracts involving exible
+repayment schedules (e.g., pay per usage) and temporary (digital) repossession for non-
+payment.2
+We explore this new form of nancial contracting within a stylized model and a eld ex-
+periment. In the model, rms can produce a good at a constant marginal cost. Households
+have a private value for consuming the good that is realized after they take possession
+of it. Due to their limited wealth and nancial constraints, households cannot aord to
+purchase the good outright. In order to recoup their costs, rms must oer nancing to
+households. But households cannot credibly commit to repay out of future income. Thus,
+rms oer a contract that is collateralized by the good: if the household does not repay
+the loan then the rm repossesses the good.
+In the model, repossessing collateral plays two roles: (i) the lender recovers something
+of value, thereby insuring them against default, and (ii) the household loses something of
+value, thereby providing them incentive to repay or decline the loan oer. In most models
+of collateralized lending, these two implications are inherently bundled. They need not
+be. In both our model and experimental setting, repossessing digital collateral imposes a
+cost on households who fail to repay but does not necessarily involve recovery value for
+the lender.This decoupling is especially valuable when the lender's faces a high cost of
+repossession rendering the recovery role of little (net) value.
+Much like traditional collateral, securing loans with digital collateral reduces the rms'
+cost of providing nancing via two channels relative to unsecured credit. First, it provides
+households with an incentive to repay the loan when they can aord to do so, thereby the
+moral hazard problem of strategic default. Second, when combined with a downpayment,
+digital collateral serves as a screening mechanism to overcome adverse selection. That
+is, a borrower that knows she is more likely to face a negative income shock will have
+2These features are in contrast to the typical secured loan that involves a xed repayment schedule
+and permanent (physical) repossession in default.
+2less incentive to accept a digitally secured loan. By reducing moral hazard and adverse
+selection, lenders can oer more nancing to credit-worthy borrowers at terms they nd
+acceptable.
+In spite of the two aforementioned attributes, a stronger (or more eective) lockout
+technology|which enables collateral to be digitized|does not necessarily increase wel-
+fare. Stronger lockout destroys more surplus (i.e., household utility) when it is employed,
+which can oset the welfare gains of the credit expansion. As a result, an intermediate de-
+gree of lockout can be welfare maximizing. This nding is consistent with the temporary
+and relatively lenient nature in which the lockout technology is employed in the typical
+PAYGO contract compared to traditional secured lending.
+We conduct a eld experiment to identify the impact of digital collateral on market
+frictions and economic outcomes. To conduct the experiment, we partnered with Fenix
+International, the largest solar-home system (SHS) provider in Uganda. The SHS provides
+a household with access to a modest amount of electricity without being connected to the
+grid. Fenix oers PAYGO nancing for their SHS. They also oer follow-up loans for
+good payers, where the SHS is re-used as digital collateral to secure the loan. Our study
+examines the eects of digital collateral with Fenix's most popular follow-up product, a
+cash loan that is oered to customers near the beginning of each school term when school
+fees are due.
+Our experimental design randomizes the sample into three treatment groups and a
+control group. In the rst treatment, the customer is oered a loan secured with digital
+collateral. In the second treatment, the customer is oered an unsecured loan. In the
+third treatment, a customer is oered a secured loan, but if the customer accepts the
+loan, he or she is (positively) \surprised" and receives an unsecured loan. The \surprise"
+group is used to disentangle adverse selection from moral hazard a la Karlan and Zinman
+(2009).
+Our experiment yields ve main results. First, customer interest and take-up rates
+are high. More than 12% of the over 27,000 customers who received an SMS about the
+loan indicated they were interested. Of the 2,200 customers who were oered a loan
+after expressing interest, 47% took up the oer and received a loan. These high take-up
+3rates suggest the loan terms were attractive to customers and help to alleviate credit
+constraints. Second, consistent with our hypothesis that digital collateral reduces adverse
+selection, the take-up rate was about 6 percentage points (pp) lower for customers oered
+a (digitally) secured loan than those oered an unsecured loan (45% vs 51%).
+Third, digital collateral signicantly increases loan repayment. Average repayment
+increased by 11 pp when the loan was secured with digital collateral compared to an
+unsecured loan. Furthermore, the fraction of households that fully repaid the secured loan
+was 19 pp higher than the unsecured loans. About one-third of the total eect can be
+attributed to adverse selection while two-thirds is driven by moral hazard. The reduction
+in moral hazard was concentrated among higher risk borrowers (based on repayment
+of previous loans), whereas the reduction in adverse selection was concentrated among
+lower risk borrowers. From a protability standpoint, digital collateral increased the
+(annualized) internal rate of return on the loans by 38 pp.
+Our nding that moral hazard rather than adverse selection drives the majority of
+the repayment increase is important because it suggests that credit provision is both
+sustainable and acceptable to a large fraction of households, provided they are given the
+right incentives. Therefore, the potential for digital collateral to expand access to credit
+is signicant. By contrast, if we had found that most of the increase in repayment was
+due to adverse selection, then digital collateral serves primarily as a screening device and
+only a select subset of households are both willing and protable lending opportunities.
+Our fourth nding is that the school-fee loan had a positive impact on both enrollment
+and school expenditures. Children in households that were oered a school-fee loan were
+signicantly more likely to be enrolled at school compared to children in the control
+group. Accounting for loan take-up, the loans reduced the share of children who were
+not enrolled by half (from 12% to 6%). In addition, households with loans increased
+schooling related-expenditures by 44%. Increases in enrollment were concentrated among
+males, but increases in expenditures were observed for both males and females.
+Fifth, the loans did not have signicant eects on household balance sheets. Asset
+purchases (sales) increased (decreased) moderately, but not signicantly, and household
+borrowing was largely unchanged. Our estimates are precise enough to rule out large
+4negative impacts on household balance sheet.
+Altogether, our results suggest that digital collateral increases the share of customers to
+whom a company can protably oer loans. Moreover, these loans signicantly increased
+school enrollment and expenditures, suggesting that the customers did not have access to
+other sources of nancing to pay for school fees. While our ndings are mostly positive,
+securing loans with digital collateral is not without cost. First, there are costs to integrate
+and install the lockout technology into a SHS. Second, there is an (ex-post) ineciency
+associated with locking devices. In our sample, the SHS was locked for 50 of the rst 200
+days from loan origination for the median household (Table 3). On one hand, this could
+be viewed as a feature of the PAYGO contract; customers need not make payments on
+days in which they do not require or have a low value for electricity, whereas borrowers
+face permanent repossession if they fail to repay a traditional secured loan. On the other
+hand, it suggests that there is potential room for improvement in the contract design.
+Our study helps to explain why digital collateral is being employed in a range of
+emerging applications. For example, PayJoy, a FinTech rm based in San Francisco,
+developed a lockout technology for smart phones and has been oering digitally secured
+credit for the purchase of smart phones since 2016. Similar to Fenix's school-fee loan
+product, they recently started to oer secured cash loans to customers who have completed
+the payments on the initial loan by recollateralizing the smart phone. Payjoy has large
+scale operations in Mexico, and a small but growing customer base in South Africa, India,
+Indonesia, and Zambia. With the proliferation of smart devices, secured lending via digital
+collateral could easily be extended to a wide range of devices such as laptops, refrigerators,
+and televisions. Importantly, the capacity to reuse collateral for future loans (as it has
+been by Fenix and PayJoy) expands the potential impact of the innovation as a vehicle
+for aordable access to credit.
+A similar technology has been deployed in the United States for subprime auto loans.
+Several rms have developed starter interrupt devices, which allow the lender to remotely
+disable the ability to start the car if the borrower is not in good standing on the loan.
+These devices have been installed in more than two million vehicles.3
+3See https://dealbook.nytimes.com/2014/09/24/miss-a-payment-good-luck-moving-that-car.
+5Finally, electric, telecommunication, and water companies have been using similar
+contracts to nance last mile connection costs (Devoto et al., 2012; van den Berg and
+Danilenko, 2014; Coville et al., 2021). In addition some utilities use their ow of services as
+digital collateral to provide nancing for other asset purchases. For example, TELMEX,
+a Mexican telecom provides secured loans to customers for the purchase of computer
+equipment using the customers' access to internet service as digital collateral.4We believe
+there is signicant potential for utilities to further scale the use of digital collateral in
+providing aordable access to credit in LMICs.
+2 Related Literature
+Our paper relates to several dierent literatures including corporate and household -
+nance, micronance, and education in development economics.
+2.1 Collateral in Credit Markets
+There is a large theoretical literature explaining the use of collateral in credit markets.
+Our contribution to this literature is to explicitly model the repossession technology and
+to understand how its properties impact equilibrium outcomes. Most relevant to our work
+are the numerous papers that have illustrated how collateral can be useful to mitigate
+ineciencies associated with moral hazard, adverse selection, and limited enforcement. In
+a model with adverse selection, Bester (1985) shows that the credit rationing in Stiglitz
+and Weiss (1981) can be (partially) overcome through the use of collateral as a screening
+device: better credit risks post more collateral and receive a lower interest rate, thereby
+eliminating the need for rationing.5Securing debt with collateral does not come without
+cost: by assumption, posting collateral is more costly for riskier borrowers leading to
+a single-crossing property that facilitates screening. Another explanation for the use of
+collateral is to alleviate moral hazard problems: posting collateral makes it more costly
+for a borrower to risk shift, shirk, or strategically default (Bester, 1987; Chan and Thakor,
+4See https://telmex.com/web/hogar/credito-telmex.
+5Similar ndings obtain in Chan and Kanatas (1985); Bester (1987); Besanko and Thakor (1987a,b).
+61987; Tirole, 2006).6
+There is also an extensive empirical literature on the role of collateral in credit markets.
+Consistent with our experimental ndings, a number of papers have found observational
+evidence consistent with moral hazard (Berger and Udell, 1990, 1995; Jimenez et al.,
+2006).
+There is also evidence that a more ecient repossession technology leads to credit
+expansion. One source of ineciency are liquidation costs after repossession. (Assun c~ ao
+et al., 2013) shows that loan spreads dropped and credit expanded, but default rates
+increased after a Brazilian reform that simplied the sale of repossessed cars. Benmelech
+and Bergman (2009) nds that debts secured by more redeployable collateral exhibit lower
+credit spreads, higher credit ratings, and higher loan-to-value ratios. Another source of
+ineciency are the costs associated with repossessing collateral after default due to weak
+creditor rights. In countries with stronger creditor rights protection (and thus lower costs
+of repossession), the credit markets are more developed, which may contribute to economic
+growth (e.g., La Porta et al., 1998; Qian and Strahan, 2007; Djankov et al., 2007). The
+potential economic benets of collateral are therefore more signicant in less developed
+countries and countries with weaker creditor rights protection (Liberti and Mian, 2010;
+Benmelech et al., 2020).
+Nevertheless, borrowing secured is not without cost. Exhausting pledgeable assets may
+mean losing nancial exibility and giving up protable future investment opportunities
+(see, e.g., Acharya et al., 2007; Rampini and Viswanathan, 2010, 2013; Li et al., 2016;
+Donaldson et al., 2019). By pledging collateral, a rm also limits its exibility to sell
+or redeploy assets to craft a better business operation. Indeed, Benmelech et al. (2020)
+document a signicant decline in secured debt (as a fraction of total debt) among US
+rms over the twentieth century attributed in part to these reasons.
+6The theoretical literature also illustrates other roles for the use of collateral (or control rights) in-
+cluding incomplete contracts ((Aghion and Bolton, 1992; Hart and Moore, 1994)), monitoring incen-
+tives (Rajan and Winton, 1995), priority (Ayotte and Bolton, 2011), limited enforcement (Rampini and
+Viswanathan, 2013), exclusivity (Donaldson et al., 2019), and as a commitment device (DeMarzo, 2019).
+72.2 Micronance
+The eectiveness of microcredit as a tool to combat poverty appears to be more modest
+than advocated by its early proponents and unlikely to be a major pathway out of poverty
+for much of the population (Banerjee et al., 1994; Meager, 2019). Moreover, micronance
+institutions (MFIs) are struggling as the costs of making small loans to poor clients are
+high due to mediocre repayment (Cull et al., 2018). We demonstrate that securing loans
+with digital collateral can signicantly reduce lending costs and remain both attractive
+and seemingly benecial to households.
+MFIs turned to joint liability lending as a means to address repayment issues. Under
+joint liability small groups of borrowers are responsible for the repayment of each other's
+loans. All group members are treated as being in default when at least one of them does
+not repay and all members are denied subsequent loans. Because co-borrowers act as
+guarantors they screen and monitor each other and in so doing reduce agency problems
+between the MFI and its borrowers (Ghatak and Guinnane, 1999). Theory suggests that
+joint liability may reduce adverse selection (Ghatak, 1999, 2000; Gangopadhyay et al.,
+2005), ex-ante moral hazard by preventing excessively risky projects, shirking (Stiglitz,
+1990; Banerjee et al., 1994; Laont and Rey, 2003), and ex-post moral hazard by pre-
+venting nonrepayment in case of successful projects (Besley and Coate, 1995; Bhole and
+Ogden, 2010).
+However, the empirical evidence on the eectiveness of joint liability is mixed. At-
+tanasio et al. (2015) nd no dierences in repayment rates between joint and individual
+liability from a eld experiment in rural Mongolia. Gine and Karlan (2014) examine
+the impact of joint liability on repayment through two experiments in the Philippines.
+They nd that group liability did not aect repayment rates over the ensuing three years.
+Carpena et al. (2012) exploit a natural experiment in which an Indian MFI switched from
+individual to joint liability and nd that joint liability signicantly improved repayment
+rates.
+The downsides to joint-liability lending are that it often involves frequent and time-
+consuming repayment meetings, making it potentially onerous for borrowers. In addition,
+8it exerts strong social pressure and can suppress ecient risk taking (Gin e et al., 2010).
+For these reasons, many MFIs (such as ASA, Grameen Bank II, and BancoSol) have
+started to move from joint liability to individual lending (Cull et al., 2009).
+Finally, while collateralized lending is not common in micronance, Jack et al. (2019)
+use a eld experiment to study the potential for asset collateralization to expand access
+to credit in rural Kenya. They nd that a reduction in the down payment on a water tank
+from 25% to 4% led to a signicantly increase in take-up with only a modest increase in
+default rates, which they attribute almost entirely to selection rather than moral hazard.
+This is in contrast with our ndings that secured lending leads to a drastic increase in
+repayment primarily driven by a reduction in moral hazard. These dierences are likely
+attributable to dierences in study design and the contrast between traditional and digital
+collateral. In Jack et al. (2019), all loans were secured by collateral|borrowers in default
+faced physical repossession regardless of the treatment group. Whereas, in our study,
+borrowers faced digital repossession when they were delinquent and not just in default,
+but only if they were assigned to the secured treatment group.
+2.3 Education in Developing Countries
+Out-of-pocket costs are an important constraint to education in most African countries,
+as families are asked to pay for things like school fees, books and supplies, lunch, uniforms
+and transport (Williams et al., 2015). A number of recent observational studies nd that
+reducing or eliminating those costs improve enrollment and educational attainment in
+African countries ( _I scan et al., 2015; Moussa and Omoeva, 2020; Ajayi and Ross, 2020;
+Adu Boahen and Yamauchi, 2017; Masuda and Yamauchi, 2018; Chicoine, 2019, 2020;
+Delesalle, 2019; Valente, 2019; Moshoeshoe et al., 2019). Finally, a randomized controlled
+trial of scholarships for students in Ghana, who had already passed the entrance exam
+but lacked nancing, increased secondary and tertiary attainment (Duo et al., 2019).
+To our knowledge, our study is the rst to demonstrate that loans are an eective
+mechanism for increasing K-12 enrollment and school-related expenditures in LMICs.
+However, for tertiary education, loans are common and have been studied in some middle
+income countries such as Chile, South Africa and China (Solis, 2017; Gurgand et al.,
+92011). While loans have been eective in improving college enrollment, several studies
+have found evidence of adverse eects on students graduating with debt (Cai et al., 2019;
+Dearden, 2019). In contrast, our study does not suggest K-12 loans add undue burden to
+households' balance sheets.
+3 Model
+In this section, we propose a stylized model of collateralized lending. Our primary con-
+tribution is to decompose the repossession technology into two independent parameters
+(\lockout" and \recovery") in order to isolate and understand the role of each.
+Our main ndings are as follows. First, using the lockout technology to secure a
+loan increases borrower's repayment incentives thereby reducing the moral hazard prob-
+lem. Second, lockout leads to positive selection : borrowers with suciently high (ex-ante)
+income risk will be unwilling to accept a loan secured with digital collateral. In combina-
+tion, these ndings imply that the lockout technology makes it easier for rms to recover
+production costs and increases the supply of credit. With a monopolist rm, stronger
+lockout technology leads to less strategic default and repossession in equilibrium, which is
+in contrast to the eect of a higher recovery value. Despite the aforementioned attributes,
+a stronger lockout technology does not necessarily increase welfare.
+The model has two dates (0 and 1) and two types of agents (households and rms).
+Households would like to purchase a durable good produced by rms, but have limited
+wealth. Firms produce the good and can also provide nancing for it. However, due
+to incomplete markets (e.g., moral hazard, adverse selection), rms require collateral in
+order to underwrite household debt.
+Households. There is a unit mass of households, indexed by i2[0;1]. Household i
+derives utility from consuming the production good at date 1, denoted by ~ vi, which is
+distributed according to Fon support [v ;v]2R. Household iprivately observes ~ viat the
+beginning of date 1.7
+7A higher realization of ~ vican be interpreted either as deriving from a shock leading to a particularly
+high value for consuming the good or from a positive income shock and thus a lower marginal utility
+10Each household has date-1 income denoted by ~ yi. Households are heterogeneous with
+respect to income risk. With probability qi, household iexperiences an income shock
+and ~yi= 0. With the complimentary probability, household ihas sucient income,
+~yi=y >v, but may still choose to strategically default. Thus, higher qicorrespond to
+riskier households. Without loss of generality, assume that qiis increasing in i. Households
+know their risk type. Let Gandgdenote the distribution and density of risk types in the
+population, which has support [0; 1]. For simplicity, we assume that all households have
+the same wealth wi=wfor alliand that households are risk-neutral utility maximizers
+with a discount factor normalized to 1.8
+Firms. There areN1 identical rms. Each rm has the technology to produce a good
+that generates value for households at date 1. Each rm has a marginal production cost
+c. Firms also have the ability to provide nancing to their customers. At the beginning
+of date 0, rms rst decide whether to enter (pay cto produce the good). Conditional on
+entry, rms design a contract, which is a pair (d;p), where dis the downpayment required
+at date 0 to take possession of the good and pis the price of consuming the good at date
+1. If a household takes possession at date 0, but does not make the payment at date 1,
+then the rm \repossesses" the good.9
+Repossession. Should the borrower fail to repay, repossession has two implications.
+First, the lender recovers something of value. Second, the household loses something of
+value, which provides an incentive to repay the loan conditional on accepting it and an
+incentive for riskier borrowers to decline the loan oer.
+In most models of collateralized lending, these two roles, recovery and incentives, are
+inseparable and characterized by a single parameter (e.g., Kiyotaki and Moore, 1997).
+The lockout technology facilitates a decoupling of the two roles by providing incentives
+from consumption of other goods.
+8Risk-neutrality simplies the space of relevant contracts since there is no demand for intra- nor
+inter-temporal consumption smoothing.
+9We take the form of contract as given because it is representative of what is used in practice by
+PAYGO providers and in our experiment. If households are identical (e.g., qi=qfor alli) or risk
+is observable, then, under the Myerson's (1981) regularity condition, this contract is optimal within a
+more general class of mechanisms in which the date-1 transfer and repossession are contingent on the
+household's reported value.
+11without the cost and benets associated with physical repossession. To separate the two
+roles, we parameterize rms' repossession technology by the pair (;), where denotes
+the eectiveness of recovery|it is the fraction of the production cost that the rm recovers
+from repossession, and denotes the eectiveness on incentives|the borrower enjoys only
+the fraction 1 times her value of the good in repossession.10
+As discussed earlier, physical repossession is costly in economies with weak creditor
+rights and limited enforcement. Therefore, a (traditional) collateralized loan, where the
+asset is physically repossessed in default, is characterized by relatively low . A loan
+collateralized with lockout involves no physical repossession in default (i.e., = 0), but
+also little to no value for customers who default (i.e., close to 1). Our primary interest
+will be to explore how an improvement in the lockout technology (i.e., increasing ) aects
+household incentives and the equilibrium outcome.
+We make the following parametric assumptions.
+Assumption 1 (Trade is ecient ex-ante) .E[~vi]>c.
+Assumption 2 (Repossession is inecient ex-post). v>c for allv2[v;v].
+Given these assumptions, the rst-best outcome is for all households to purchase the
+good and for rms to never repossess the good. This outcome can be sustained as an
+equilibrium even without lockout if households have sucient wealth. Assumption 3 rules
+out this possibility.
+Assumption 3 (Households are nancially constrained). w<c v, but households that
+do not experience a shock have sucient wealth and income to aord the good: w+y>c .
+Finally, we impose the Myerson (1981) regularity assumption on the distribution of
+household values, which is commonly used in auction theory and mechanism design.
+Assumption 4 (Monotone virtual surplus). v 1 F(v)
+f(v)is monotonically increasing in v.
+10One can interpret as the probability with which the good is successfully repossessed from the
+borrower and (1 )= as the rate of depreciation or the cost of repossession the good (as a fraction of
+c).
+123.1 Household Behavior
+We begin by considering the behavior of households taking the contract ( d;p) as given.
+Suppose that household ipurchases the good at date 0. The household will repay at date
+1 provided that (i) it does not experience an income shock, and ( ii) that it's utility for
+consuming the good is suciently high:
+~vip
+: (1)
+The right hand side is decreasing in , meaning that a more eective lockout technology
+leads to a higher probability of repayment.
+Proposition 1 (Lockout Reduces Moral Hazard) .Fixing a contract, a more eective
+lockout technology (i.e., higher ) decreases the probability that household istrategically
+defaults.
+Consider now the purchase decision of households. The expected date-1 surplus to
+householdiis given by
+Si(p)(1 qi)Zv
+vmaxfv p;(1 )vgdF(v)
++qi(1 )E(~vi)
+Household iwill purchase the good if they can aord to do so and the surplus from
+purchasing is non-negative. More concisely, household iwill purchase the good if
+dminfw;S i(p)g: (2)
+LetUi(d;p) =Si(p) ddenote household i's expected utility from purchasing the good.
+Noting that Si(p) is decreasing in both qiand, we have the following result.
+Proposition 2 (Lockout Reduces Adverse Selection) .Fix a contract (d;p) such that
+S1(p)< dw < S 0(p). Then, there exists q2(0;1)such that only households with
+income risk qiqchoose to purchase. Moreover, qis decreasing in .
+This results shows that in combination with a downpayment, lockout leads to positive
+13selection. Households with more credit risk prefer not to make a downpayment for the
+good because they anticipate a higher chance of being locked out.
+3.2 Firm Prots
+The lowest utility type that strategically defaults when the price is pis
+v(p) =8
+>>>>><
+>>>>>:vpv
+p= p2(v;v)
+v pv(3)
+For anyp, the probability that household irepays is (1 qi)(1 F(v(p))) and a rm's
+expected revenue at date-1 from selling to household iis
+Ri(p) =c+ (1 qi)(1 F(v(p)))(p c)
+Date-1 revenue is increasing in both andand decreasing in qi. The prot from selling
+to household iis
+i(d;p) =8
+<
+:d+Ri(p) cifdminfw;S i(p)g
+0 otherwise(4)
+3.3 Equilibrium
+The equilibrium will naturally depend both on the degree of competition among rms as
+well as whether rms can observe households' risk type. In this section, we consider both
+the monopolistic and competitive equilibrium with observable household risk.
+3.3.1 Monopolist Firm
+When the rm is a monopolist, the contract oered to household isolves
+(di;pi)2arg max
+d;pi(d;p)
+14We decompose the problem into two steps. First, maximize prot conditional on selling
+to household i. Then decide whether to sell to household i. Clearly, the rm's prot is
+increasing in d. So it will be optimal to set di= minfw;Si(p)g. Thus, the rm's problem
+can be written as
+max
+p(minfw;S i(p)g+Ri(p) c)
+Consider the problem of maximizing date-1 revenue with respect to the lowest type
+that strategically defaults, v=p=. The marginal revenue to the rm of increasing vis
+(1 qi) [(1 F(v)) f(v)(v c)]:
+and the rst order condition is
+v 1 F(v)
+f(v)=c
+; (5)
+which has a unique solution by Assumption 4. Notice that vis independent of qi, and
+increases with , but decreases with . Higheror higherboth correspond to a \better"
+repossession technology, but they have dierent eects on the marginal household type
+who strategically defaults; higher gives the rm more incentive to repossess which
+always increases v, whereas higher decreasesv. Equation (5) is intimately linked to
+the monopoly price. In particular, when households' nancial constraints are severe, the
+monopoly price is pv.
+Lemma 1 (Monopoly Prices) .Conditional on selling to household i, the solution to the
+monopolist problem involves di=wand
+pm
+i=8
+<
+:pifwSi(p)
+S 1
+i(w)otherwise
+When household wealth is small, the monopolist prioritizes date-1 revenue by charging
+pi=p. Whenw > Si(p), the rm charges less than pat date 1 in order to extract a
+larger downpayment. Focusing on the rst case, we have the following contrast between
+the two roles of repossession.
+15Proposition 3 (Recovery vs Incentives). When the rm is a monopolist and household
+wealth is suciently small, i.e., w<Si(p):
+More ecient recovery (higher ) leads to more strategic default and repossession.
+More eective lockout (higher ) leads to less strategic default and less repossession.
+Highergives the rm more incentive to repossess the good and makes strategic
+default less of a concern. So the rm sets a higher price and households default more
+frequently. Stronger lockout has the opposite eect. It makes strategic default more
+costly to the rm since it increases the wedge between the rm's payo conditional on
+repayment and the payo conditional on default.
+If the implied prot from the contract in Lemma 1 is positive, then it is optimal for
+the rm to sell to household i. Otherwise, the household will reject any oers that the
+rm is willing to make.
+Proposition 4 (Monopoly Quantities) .The monopolist will sell to household iif and
+only if either
+(i)w+Ri(p)cwhenSi(p)w, or
+(ii)w+Ri(S 1
+i(w))cotherwise.
+Noting that both RiandSiare decreasing in qi, we can conclude that positive selection
+also emerges as an equilibrium outcome.
+Corollary 1. For any >0, there exists qsuch that only households with qi< qwill
+purchase the good.
+Since the downpayment is simply a transfer, we can ignore it when computing total
+suplus. The total surplus in the economy is given by
+TS=Zq
+0(Ri(pi) +Si(pi) c)dG(qi):
+Total rm prot and consumer surplus are given by  =Rq
+0i(di;pi)dG(qi) andCS=
+Rq
+0Ui(di;pi)dG(qi).
+163.3.2 Competitive Firms
+When rms compete for households, they oer the contract that maximizes each house-
+hold's welfare subject to breaking even. That is, the contract oered to household isolves
+(di;pi)2arg max
+d;pUi(d;p)
+s:t: i(d;p)0(6)
+Household expected utility is decreasing in both dandp. However, the deposit is purely a
+transfer while a higher pdestroys more surplus. Therefore, to maximize household utility,
+rms minimize pisubject to breaking even.
+Proposition 5 (Competitive Equilibrium) .In a competitive equilibrium:
+1. The household purchases the good if and only if condition (i) or (ii) from Proposi-
+tion 4 is satised. Otherwise, there does not exist a contract such that both the rm
+breaks even and the household is willing to purchase.
+2. If the household purchases the good then dc
+i=wandpc
+iis the lowest price such that
+Ri(pc
+i) =c w.
+Notice that the household purchases under the exact same conditions as when the rm
+is a monopolist. Thus, Corollary 1 also holds with competitive rms and any implications
+for total surplus apply to both settings. Of course, the price oered by competitive rms
+is lower for all but the marginal household.
+Parametric Example Suppose that both ~ viandqiare uniformly distributed on [0 ;1].
+Let= 0 andc=1
+4, and letwandbe free parameters. Then v=1
+2,p=
+2, and
+Ri(p) =1
+4(1 qi);
+Si(p) =1
+2 (3 +qi)
+8:
+There are two possible cases depending on relative toc w.
+(i) For<4(c w), thenq= 0 meaning that no households purchase.
+17(ii) For4(c w),q= 1 4(c w )
+and the mass of households that purchase is
+G(q) = 1 4(c w)
+.
+0 0.5 100.10.20.30.4Total Quantity
+0 0.5 100.0050.010.015Firm Profit
+0 0.5 100.0050.010.0150.02Consumer Surplus
+0 0.5 100.010.020.03Total Surplus
+(a) Low household wealth, w=1
+12.
+0 0.5 100.20.40.6Total Quantity
+0 0.5 100.010.020.030.04Firm Profit
+0 0.5 100.010.020.030.04Consumer Surplus
+0 0.5 100.020.040.06Total Surplus (b) High household wealth, w=1
+6.
+Figure 1: Illustrating the role of lockout with a monopolist rm.
+Quantity and prot is increasing in as illustrated in the top panels of Figure 1.
+Household welfare increases with on the extensive margin (q i=q) as more households
+get served. However, households that were already purchasing the good (q i< q) face
+higher date-1 prices. As a result, aggregate household welfare can decrease with . This
+possibility is clearly illustrated in Figure 1(b), where both household and total surplus
+decreases for large enough. Intuitively, a stronger lockout technology increases the
+incentive to repay, but also destroys more value when the household defaults. This eect
+is most pronounced on households with higher income risk as they are more likely to
+default for non-strategic reasons.
+Perhaps surprisingly, the decrease in household welfare and total surplus can also
+obtain when rms are perfectly competitive as illustrated in Figure 2(b). These ndings
+suggest that a more lenient repossession policy may be preferable. For example, the rm
+could reposess the good only after a certain number of missed payments or only with
+some probability less than one. Indeed, a key innovation of the PAYGO model is that the
+punishment for missing a payment is not too severe. Failure to make a payment results
+18in a punishment that is proportional to the ow value of consuming the good rather than
+the stock value (i.e., physical repossession).
+0 0.5 100.10.20.30.4Total Quantity
+0 0.5 1-1-0.500.51Firm Profit
+0 0.5 100.010.020.030.04Consumer Surplus
+0 0.5 100.010.020.030.04Total Surplus
+(a) Low household wealth, w=1
+12.
+0 0.5 100.20.40.6Total Quantity
+0 0.5 1-1-0.500.51Firm Profit
+0 0.5 100.020.040.060.08Consumer Surplus
+0 0.5 100.020.040.060.08Total Surplus (b) High household wealth, w=1
+6.
+Figure 2: Illustrating the role of lockout with competitive rms.
+3.4 Reusing digital collateral
+The households in our experiment have already purchased the good and completed pay-
+ments on the loan. The product that they are oered is a follow-up loan for school fees in
+which some fraction of the households are required to (re)-pledge the SHS as collateral in
+order to be eligible for the loan. It is straightforward to extend most of the results above
+to this setting. Increasing reduces both moral hazard and adverse selection. Yet, higher
+destroys more surplus after negative income shocks and therefore may reduce overall
+welfare.
+Unlike the model above, a downpayment on a follow-up loan is not necessary to get
+positive selection|the act re-pledging collateral serves the role of the downpayment.
+Nevertheless, a feature of the loan product oered in our experiment is that it requires
+households to make a cash deposit (several days in advance) when the loan funds are
+disbursed, which can serve as an additional screening device.11
+11To illustrate this claim, consider a three-date model, in which the household receives some income at
+194 Experimental Setting
+We test the eect of digital collateral on a school-fee loan product oered by Fenix Inter-
+national, a solar home system technology company operating in Africa. As of mid-2019,
+Fenix had more than half a million solar home system (SHS) customers across 6 countries
+in Sub-Saharan Africa.12They are the largest SHS provider in Uganda.13Fenix's most
+popular system is 10 Watts and is able to power LED lamps and a radio, and charge cell
+phones.14Fenix's solar home systems dier in several ways from the solar panels on homes
+in the US and Western Europe. First, they are roughly two orders of magnitude smaller
+than the typical solar panel installation on a US or Western European home. Second,
+they are standalone systems, meaning they are not connected to a grid.
+Like most SHS providers, Fenix sells most of its units through a PAYGO model.15
+Customers make a small down payment, less than $10, to take possession of the SHS.
+Customers make small (usually daily or weekly) payments using mobile money until they
+have paid o the loan. If a customer does not make a payment on time, the SHS will lock
+(i.e., the battery will not discharge electricity) until the next payment is made.
+Fenix also uses the remote payment and locking technology to oer products upgrades
+and additional loans. Their most popular follow-up product is a school-fee loan. These
+are cash loans oered to the better-paying customers three times a year at the beginning
+of school terms. As with the original SHS loan, customers make a small down payment
+and then Fenix transfers money to the customer's mobile money account. The deposit
+date 0, has an investment opportunity at date 1, and receives additional income at date 2. The household
+owns a good that delivers value ~ vat date 2 and can be pledged as collateral for a loan at date 1. The rm
+oers a contact (d;L;p ), wheredis the downpayment at date 0, Lis the amount of the loan at date 1,
+andpis the price the household must pay at date 2 in order to avoid repossession. If income is persistent
+then being able to make the downpayment at date 0 is a positive signal about the household's ability
+to repay the loan at date 2 and serves as an additional screening device above and beyond household's
+willingness to pledge their collateral at date 1.
+12See https://www.fenixintl.com/blog/ (Date accessed: October 29, 2020).
+13See Table 8 of the Global O-Grid Solar Market Report: Semi-Annual Sales and Impact Data, 2018.
+Available at https://www.gogla.org/publications.
+14Fenix's biggest system is 34 Watts and can support a variety of small electrical appliances including,
+a fan, speakers, and a custom built 18.5-inch television. Information about Fenix's system can be found
+https://www.fenixintl.com/product/ (Date accessed: October 29, 2020).
+15Over 85% of solar home systems sold in the second half of 2018 were sold on PAYGO (see
+Global O-Grid Solar Market Report: Semi-Annual Sales and Impact Data, 2018. Available at
+https://www.gogla.org/publications).
+20covers administrative fees and gives the customer a seven day grace period before the
+device is subject to being locked. After the grace period, if the customer does not make a
+daily payment, the system will lock and the customer will not be able to use it until they
+make their next payment.
+Our study focused on a 300,000 Ugandan Shilling (UGX) loan ($81).16Obtaining the
+loan requires customers make a deposit of 20% (60,000 UGX, or $16).17Several days after
+making the deposit, the funds are disbursed to the customer via mobile money. Customers
+receive seven free days of light after which they are responsible for making daily payments
+of 3,000 UGX (less than $1) for 100 days. Most customers choose to pay for several days or
+a week of light at a time rather than make daily payments. Fenix considers the loan to be
+paid o as long as the customer makes nominal payments totaling $81 (not including the
+deposit) within 145 days of the loan issue date. This arrangement implies that customers
+who take longer to repay face a lower eective interest rate. For instance, a customer who
+makes a payment every day pays an annual percentage rate (APR) of 168%, whereas a
+customer who makes a payment only two out of every three days pays an APR of only
+112%. Of course, the latter APR does not reect the cost of losing access to the SHS on
+locked days.
+Customers who do not pay o the loan within 45 days of the target repayment date
+face interest charges of 2% per month on any remaining principal. In addition, failure
+to repay the loan in a timely manner renders customers ineligible for futures loan oers.
+After 180 days of no payments, the loan is considered to be in default and Fenix reserves
+the right to repossess the SHS system. In practice, only a very small fraction of defaults
+(less than 5%) result in physical repossession, which is consistent with our hypothesis that
+the traditional repossession technology is expensive and ineective in this setting.
+16All conversions from UGX to USD in this paper are at the 2019 average of 3,704 UGX to 1 USD.
+Source: https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=UG.
+17While down payments on collateralized loans are standard, a deposit in advance of a cash loan is an
+uncommon practice. We explore the eects of this feature and potential mechanisms in Gertler et al.
+(2021).
+214.1 Background: Education and School Fees in Uganda
+Formal schooling in Uganda starts at age 5. Primary school extends for seven years,
+through age 12. Secondary school is for children aged 13-20. Primary and secondary-aged
+children in Uganda have access to both government and privately run schools. In 2016,
+the most recent year for which data are available, 80% of primary-aged students attended
+government-run schools and 20% attended privately run schools. At the secondary level,
+over 50% of children attend private schools.18The government has oered a universal
+primary education program since 1997, although in practice not all students have access
+to subsidized primary education, and even those that do incur expenses for uniforms,
+books, school lunches and other supplies.
+School fees and school related expenditures constitute a non-trivial portion of house-
+hold expenses in Uganda. Conditional on enrollment, the median household spends 14%
+of income on primary education and 21% of income on secondary education based on data
+from the 2019 nationally representative Living Standards Measurement Survey. School
+fees for both government and public schools are typically due three times per year. Two
+of the three due dates are not proximate to harvest season, and hence are periods of low
+income across rural Uganda. In one study, 53% of families reported having their children
+sent home because they were unable to pay school fees (Intermedia, 2016).
+5 Experimental Design
+Figure 3 illustrates our experimental design. Our universe of eligible loan recipients
+consisted of Fenix customers that repaid the initial loan on their solar home system and
+did not have an outstanding school-fee loan. In May 2019 we sent an SMS message to the
+27,081 eligible customers inviting them to reply if they were interested in a school-fee loan
+and 3,300 customers (12%) responded. Table A.1, columns (1) and (2) uses administrative
+data to compare our sample of Fenix customers to population-wide statistics from rural
+Uganda based on the 2019 World Bank Living Standards Measurement Study (LSMS).
+18Statistics from the Uganda Ministry of Education and Sports at http://www.education.go.ug/wp-
+content/uploads/2019/07/FACT-SHEET-2016.pdf
+22Fenix customers are more likely to be male and married and have more children than
+the typical rural Ugandan head of household. They also are more likely to be employed
+outside the agricultural sector and more likely to come from the (relatively more wealthy)
+central region.
+We randomly allocated the interested customers into four groups - a control group, a
+treatment group that was required to post their SHS as (digital) collateral to get the loan
+(\Secured"), a treatment group that did not have to post collateral (\Unsecured"), and
+a treatment group that were oered a secured loan but were later informed they would
+not have to post collateral (\Surprise Unsecured").19The Surprise Unsecured group was
+treated the same as the Secured group until after they had accepted the loan, at which
+point these households were informed that they would in fact not have to post collateral
+to get the loan.
+Following Karlan and Zinman (2009), this surprise allows us to separately identify
+moral hazard and adverse selection. More specically, we identify the pure moral hazard
+eect by comparing repayment of the Secured group to the Surprise Unsecured group|
+both received and accepted the secured loan oer. We identify the pure adverse selection
+eect by comparing the Unsecured group to the Surprise Unsecured loans|neither group
+was ultimately required to post collateral, but the latter group accepted the loan expecting
+that they would have to post collateral.
+Our call center attempted to reach the households in each treatment group using the
+phone number to which we had sent the SMS messages. In the treatment groups, the
+call center reached over 80% of households. The call center explained that the customers
+were eligible for a loan and asked if they were interested in proceeding. The Secured and
+Surprise Unsecured treatment groups were informed they would have to post their SHS
+as (digital) collateral to obtain the loan, whereas the Unsecured treatment group was
+informed they would not have to post collateral.
+Field teams administered a baseline survey to the set of customers that were oered
+a loan and the control group. In some cases, the eld team reached households in the
+19The experiment also included a small group of customers that were given the choice between a secured
+and unsecured loan, which we do not discuss in this paper.
+23Surprise Unsecured treatment group and revealed the surprise before the household had
+made the deposit to nalize the loan. Thus, we observed a multi-stage decision process,
+in which households rst verbally accepted the loan terms, but then only about half of
+those customers made the deposit. Given that some of the households in the surprise
+group knew they would not have to post collateral before they made the second decision
+(to pay the deposit), we separately considered only households that paid the deposit prior
+to interaction with the eld team as a robustness check.
+All households who received a loan were sent regular SMS payment reminders: on the
+payment due date, if they were two days late, and again if they were one week late in
+making a payment. This is standard practice for Fenix and is useful to rule out alternative
+hypothesis as we will discuss in more detail below. We also conducted an endline survey
+six months after the loans had been disbursed.
+6 Experimental Results
+We delineate our experimental results into three categories: (i) take-up rates, (ii) repay-
+ment and protability, and (iii) educational and balance sheet outcomes.
+6.1 Take-up Rates
+Take-up rates were high across all treatment groups. The bottom row of Figure 3 indicates
+the share of households in each group that took the loan as a share of households that
+the call center was able to reach. Consistent with our model, we see a clear indication
+that requiring households to post digital collateral serves as a screening device: 45% of
+households take the secured loan compared to 51% who take the unsecured loan.
+Table A.2 in the Appendix explores whether there are signicant dierences in the
+baseline characteristics of the households that took up the loan across treatment groups.
+Most baseline characteristics are statistically indistinguishable across the two groups,
+suggesting that digital collateral is screening on characteristics that are not captured by
+variables in administrative or survey data.
+246.2 Repayment and Protability
+Repayment We measure repayment as the household's cumulative payments towards
+the principal divided by the total loan principal (i.e., the fraction of principal repaid).20
+Figure 4(a) plots the fraction of principal repaid over time for customers in the three
+treatment groups. Figure 4(b) plots the dierences between the three groups.
+Consistent with our model's predictions, repayment in the Secured group is consis-
+tently higher than repayment in either Unsecured group. Overall, digital collateral in-
+creased repayment by 13 pp at both 100 days (from 46% to 59%) and 150 days (57%
+to 70%). As discussed above, the moral hazard eect is derived by comparing repay-
+ment in the Secured group to repayment in the Surprise Unsecured group; the selection
+mechanisms were the same in these two groups as they both were told they would be
+required to post digital collateral. This accounts for the bulk of the overall eect: 9 pp at
+both 100 and 150 days. The adverse selection eect is derived by comparing repayment
+in the Surprise group to the Unsecured group; both groups faced the same incentive to
+repay conditional on taking-up the loan since neither was required to post collateral. This
+accounts for 4-5 pp of the overall eect.
+Table 1, Panel A presents results from regression specications of the following form:
+rit=t+tTreatment group i+it; (7)
+whereritis the repayment rate for household iaftertdays from loan origination. The
+treatment eect is t,tis a constant, and itis an error term. The results in Table 1 reect
+Local Average Treatment Eects (LATE) estimates, accounting for imperfect compliance
+(i.e., the fact that some customers who were supposed to be locked were unlocked for
+some days and vice versa).21The column labeled \Secured" captures the total eect of
+20Fenix credits commissions to customers who refer other customers to Fenix, and we include payments
+from these commissions, although they account for less than 0.05% of total payments towards principal.
+21Altogether, fewer than 10% of the loan days were not in compliance. There were two general types
+of imperfect compliance: (1) administrative errors at the beginning of the experiment, and (2) customers
+who had additional transactions with Fenix over the study period, for example to upgrade their solar
+home system, and were sometimes switched to the wrong locking arrangement. See Appendix A Tables
+A.5 and A.6 for more details and for the Intent to Treat (ITT) estimates of the specications reported
+in Table 1, respectively.
+25securing loans with digital collateral. Specications in this column include households in
+the Secured and Unsecured groups, where Treatmentgroup iis equal to one for households
+in the Secured group. Specications in the column labeled \Adverse Selection" include
+households in the Surprise and Unsecured groups, where Treatment group iis equal to
+one for households in the Surprise group. Specications in the columns labeled \Moral
+Hazard" include households in the Secured and Surprise groups, where Treatmentgroup i
+is equal to one for households in the Secured group. The rows report the results at
+t= 100, 150 and 200 from origination. The last column provides the p-values for the
+hypothesis test that the moral hazard eect is equal to the adverse selection eect. The
+standard errors indicate that the overall lockout eect is signicant at the 1% level, the
+moral hazard eect signicant at the 5% level while the adverse selection eect is not
+statistically signicant.
+As an alternative measure of repayment, we consider the fraction of loans that have
+completed payments in Table 1, Panel B. A loan is recorded as completed when the repay-
+ment rate equals one. Our results convey a similar message under this alternative measure.
+Lockout leads to a 19 pp increase in the completion rate after 200 days, with moral hazard
+accounting for slightly more than two thirds of the eect and adverse selection accounting
+for slightly less than one third of the total eect.
+Protability To understand how customer repayment translates to rm protability,
+we calculate the monthly internal rate of return (IRR) on loan portfolios.22Table 2
+summarizes the results, and shows that using digital collateral increased protability by
+3.2 pp (38 pp annualized). When we restrict attention to loans with perfect compliance
+(see Table A.8), the increase in protability is even larger 4.5 pp (54 pp annualized).
+We sorted households into terciles based on their repayment history prior to taking the
+school-fee loan (i.e., account percent locked).23Loans in each tercile are formed into a
+portfolio. The rst tercile corresponds to households with the highest repayment rates
+22The internal rate of return is the discount rate such that the net present value of cash ows on the
+portfolio is equal to zero.
+23Account percent locked is the percentage of days in which the household's SHS was locked due to
+non-repayment of loans prior to taking the school-fee loan. While all had completed payments on the
+original SHS loan, some took longer to do so and thereby were locked a higher percentage of days.
+26prior to taking the school-fee loan. Table 2 illustrates that digital collateral increased
+protability by more for the rst two terciles (3.9 pp and 3.8 pp respectively) than it did
+for the third tercile (1.8 pp).
+It is noteworthy that all of the unsecured loan terciles have a negative IRR and only
+the rst tercile of secured loans has a positive IRR. There are several takeaways from this
+nding. First, the unsecured lending contract is not protable even among households
+who have previously been good repayers. Second, securing a loan with digital collateral
+does not ensure protability. Screening remains a necessary component of a sustainable
+lending business. For the purposes of this study, we expanded Fenix's eligibility criterion
+and increased the loan size. Under Fenix's usual business practices, (i) all school-fee
+loans are secured, (ii) only households with above median repayment history (among our
+sample of loans) would be eligible for a school-fee loan, and (iii) as rst-time borrowers,
+they would only be eligible for a loan one-third of the size.24Thus, our ndings are
+consistent with Fenix's usual business practices being value maximizing.
+For more perspective on protability, we calculated IRRs for school-fee loans that
+Fenix had oered in prior school terms (in 2018) under their usual business practices,
+again broken into terciles based on repayment history. As illustrated by the bottom row
+of Table 2), the prior school-fee loans have signicantly better repayment history and are
+considerably more protable. The monthly IRR is 6.6%, 6.0%, and 3.2% across the three
+terciles with an average monthly IRR of 5.1%.
+Heterogeneity across households Table 4 analyzes the treatment impact on repay-
+ment rates and loan completion for households that were above and below median number
+of days locked on the original SHS loan. This allows us to assess the extent to which
+households with higher a priori risk levels had lower repayment and loan completion rates
+because of selection or moral hazard. The coecients on the interaction term in Table
+4 suggest that digital collateral increased repayments and completion slightly more for
+riskier households (with above median number of days locked on their original solar home
+24Our study oered 300,000 UGX ($81) loans to customers who had never had a school-fee loan, while
+the prior school-fee loans were smaller (100,000 UGX, $27) for rst-time borrowers. Fenix oers larger
+loan sizes to customers after they have successfully paid o their rst school-fee loan.
+27system loan). Interestingly, virtually all of the increase in repayment for higher risk house-
+holds is due to moral hazard and not selection, whereas the opposite is true for lower risk
+households.
+Second, we analyze heterogeneity in willingness to pay (WTP) for the electricity pro-
+vided by the SHS. If we incorporated this heterogeneity into our model, it would predict
+that households with a higher WTP would be less willing to accept a locked loan com-
+pared to lower WTP households. Figure 5 analyzes loan take-up by respondent's stated
+WTP for a extra day of access to their SHS.25We group the responses into three cate-
+gories and see that indeed households with the highest WTP are signicantly less likely
+to accept a secured loan compared to an unsecured loan, while households in the lower
+two groups are equally likely to accept them. Also consistent with our model, we found
+the eect on repayment is larger for households with above median WTP for solar (see
+Table A.21). For instance, the eect of requiring digital collateral is 10 pp higher at 150
+days for households with above (vs below) median willingness to pay.
+We also test robustness of our main estimates by exploring heterogeneity with respect
+to how quickly households accepted the loan. In particular, some of the households in the
+Surprise Unsecured group were notied by our eld sta that they would not be required
+to post collateral before completing the paperwork and making the deposit. It is possible
+that the households who made the deposit after they were notied were dierent than the
+households who accepted a secured loan.26To understand by how much this potential
+selection is driving our decomposition results, we re-estimated versions of the specications
+in Table 1 using only those households that completed the deposit before they were visited
+by our eld sta. These results are reported in Table A.7 in the Appendix. Interestingly,
+the overall eect of digital collateral on repayment is almost two times as large among this
+set of people, pointing to considerable heterogeneity. Nevertheless, the overall conclusion
+that moral hazard explains the bulk of the eect remains.
+25Until recently, Fenix's systems did not record the number of hours of use by households, so we could
+not use that as a revealed preference measure of value, although even average hours of usage would be
+an imperfect measure.
+26Note that this potential selection does not impact the estimate of the overall eect.
+286.3 Schooling and Household Balance Sheet Outcomes
+While the results presented thus far clearly suggest that securing loans with digital col-
+lateral increases repayment and rm prots, we are also interested in the impacts of the
+loans on household-level outcomes. At a high level, access to credit may facilitate welfare-
+enhancing investments for households (e.g., schooling). On the other hand, loans with
+high interest rates, especially if they are misunderstood by customers, may have detri-
+mental eects on households' balance sheet. We rst examine schooling outcomes and
+then present results on households' balance sheet.
+Schooling outcomes As discussed in Section 4, the loans we study were oered in
+May 2019, just before school fees were due for Term 2. The product was marketed as a
+school-fee loan, though Fenix oered them to all eligible customers, regardless of whether
+they had school-aged children. Yet, almost 90% of our sample households had school-aged
+children and 92% who accepted a school-fee loan reported using it for education-related
+expenditures.
+To understand whether the loans had an impact on schooling outcomes, we estimate
+the following equations:
+yi=+Loan Oeri+i (8)
+yi=+[Loani+i; (9)
+whereyiis an outcome variable for household i. Equation (8) yields the intent to treat
+(ITT) estimates, where Loan Oeriis an indicator for a household that was oered a
+loan through one of the three (locked, surprise unlocked, unlocked) groups. Equation (9),
+estimated by instrumenting for Loaniwith Loan Oeri, yields the local average treat-
+ment eect (LATE) for households that accepted loans.27In what follows, we focus on
+discussing the LATE estimates, and the ITT estimates are reported in the Appendix.
+Table 5 reports results from estimates of (9) for several schooling-related outcomes.
+27We also estimated specications that allowed the loan impacts to vary by treatment group but saw
+no signicant dierences in the eect size across the treatment groups.
+29The rst two columns report impacts on the share of 5 to 20-year-old children within a
+household who are enrolled in school. The sample is restricted to households that had at
+least one child in that age range at the endline survey. The results indicate that the loan
+increased the fraction of households who enrolled all of their school-aged children by 6
+pp. Given that 88 percent of children in the control group are enrolled, access to the loan
+reduced the share of children who are not enrolled by just over half.28
+The third column on Table 5 analyzes the impact on monthly absences from school
+for households that had at least one child enrolled. The coecients are precisely esti-
+mated and suggest no meaningful impact on days absent. The fourth column shows that
+expenditures for school-related items (including school fees, uniforms, supplies, transport
+and meals) increased by 34.6% for households who received a loan.29The increase in
+school-related expenditures corresponds to roughly 44% of the loan amount (net of the
+deposit) or $29.7.
+Table 6 presents the LATE results on enrollment and expenditures by child, separating
+outcomes for males and females. The unit of observation is now the child and not the
+household. We therefore cluster standard errors at the household level for statistical
+inference. This table indicates that the increased enrollment was concentrated among
+male children, who have a lower base rate (control mean) of enrollment, possibly because
+they were more likely to be working. The loan then may have not only been used to cover
+school costs but also used to oset lost income from reduced child labor supply. The loan
+was associated with a signicant increase in school expenditures for both males (29 pp)
+and females (46 pp) by a similar magnitude to the household-level results.
+In summary, Fenix's loans had an economically meaningful and statistically signicant
+impact on educational outcomes. These ndings suggest that households did not have
+another source of liquidity to use for schooling-related expenditures. The Living Standards
+Measurement Survey (LSMS) reinforces this interpretation: only 3% of households in the
+LSMS had a loan with a commercial bank, only 6% had other formal loans, and only 1%
+28Enrollment rates among households in our sample appear roughly comparable to enrollment rates
+for the population. According to the Living Standards Measurement Survey, nationwide 91% of primary
+school-aged children and 68% of secondary school-aged children are enrolled at school.
+29The estimated coecient of the loan on log expenditures is 0.297. So, the percentage increase in
+expenditures for households who received a loan is e0:297 1 = 34:6%.
+30had a loan with a micronance institution.
+Household balance sheet Table 7 reports results on household asset purchases, sales,
+and borrowing in the six months prior to endline survey. The eect of the loan on
+households balance sheet is not statistically signicant eect in any category. Moreover,
+based on the standard errors, we can rule out large negative impacts on households that
+took loans, such as a signicant increase in asset sales or reduction in purchases. We
+repeated the analysis using endline asset, loans and balance sheet level variables in Table
+8. The estimated eect of the loan on household net balance is small and is not statistically
+dierent from zero. For additional perspectives on households' nancial position, we
+asked a series of questions about shocks households had experienced, including nancial
+shocks, and their ability to weather those shocks. The results are summarized in Table
+A.11. Again, we see no systematic or signicant dierences between households that were
+oered loans and the control group.
+7 Discussion
+We have interpreted digital collateral as providing a repayment incentive for households
+that reduces both moral hazard and adverse selection. An alternative interpretation is
+that getting locked simply serves as a reminder or a nudge to repay. Indeed, there is
+evidence that payment reminders increase on-time repayment (Cadena and Schoar, 2011;
+Medina, 2020). In our setting, this explanation is less plausible because all of the borrowers
+(secured or unsecured) received frequent payment reminders. Fenix sent reminders to all
+customers three days and one day before payment was due, on the day the payment was
+due, when the customer was two days late, and when the customer was one week late.
+The estimated eect of digital collateral on reducing moral hazard is large and signif-
+icant. Yet, it is possible that our estimate is biased downward for the following reason.
+Fenix oers school-fee loans three times per year. In order to be eligible, the customer
+must have completed payments on their prior school-fee loan (i.e., completed the loan
+within 120 days). Thus, households with a high continuation value for a loan in the
+31next term have a strong incentive to complete payments in a timely manner regardless of
+whether digital collateral is applied.30If the set of households with a high continuation
+value overlaps with the set of households that responds to the incentives from lockout,
+then our estimate is biased downward.
+To get a sense for the magnitude of the bias, suppose a fraction qof such households
+have a high continuation value and complete payments within 120 days regardless of
+whether or not lockout is applied. Absent this high continuation value, the true eect of
+lockout on increasing loan completion is m.31If continuation value and willingness to pay
+are independently distributed, then we would estimate the (moral hazard) eect on loan
+completion to be (1  q)m. Under the assumption of independence, we can provide an
+upper bound on musing the observation that 40% of households in the surprise unlocked
+treatment complete the loan within 120 days. Thus, qis at most 0.4 and mis at most
+two thirds larger than the eect size that we estimate.
+Our nding that adverse selection accounts for a smaller portion of the increase in
+repayment than does moral hazard can partially be attributed to the fact that our sample
+has already been screened via other measures. First, in order to be eligible for the school-
+fee loan, customers must have already successfully completed payments on the initial SHS
+loan. The adverse selection eect is likely to be larger on the initial loan. Second, eligible
+school-fee loan customers are required to put down a 20% deposit before getting the school-
+fee loan. In an experiment on a dierent sample of Fenix customers, we investigated the
+role of the deposit and found evidence consistent with it serving as a screening device
+(Gertler et al., 2021).
+In addition to reducing moral hazard and adverse selection, there are other potential
+benets of loans secured with digital collateral. First, the digitally collaterized contract
+eectively functions as a commitment-savings device. Much like a typical fully amortiz-
+ing mortgage contract, each payment that a customer makes covers both interest and
+principal. The principal payment is akin to savings. This savings vehicle can be partic-
+30Consistent with this view, notice that Figure 4(c) exhibits a moderate increase in the rate of loan
+completion right near the 120 day for all treatment groups.
+31Within the context of the model from Section 3, if we consider a locked loan to have = 1 and an
+unlocked loan to have = 0, thenm= 1 F(p) is simply the fraction of households with vigreater than
+the price.
+32ularly valuable to households who lack self control because there is an added incentive
+to save (Laibson, 1994)|failure to do so means facing temporary repossession, and the
+savings are illiquid and cannot be easily or immediately accessed (Laibson, 1997). Sec-
+ond, if lenders lack commitment power to physically repossess collateral, they may face a
+hold-up problem (Hart and Moore, 1998) from strategic borrowers who know they will be
+tempted to renegotiate rather then incur repossession costs. By eectively lowering the
+lender's repossession cost, the lockout technology provides a credible method to avoid the
+hold-up problem.
+Finally, because repossessing digital collateral imposes a cost on borrowers without
+any reciprocal benet to lenders, it may raise ethical questions especially if the primary
+reason for nonpayment is due to income shocks rather than strategic default. Are there
+nancial contracts that are too punitive for borrowers? Should governments regulate
+certain contracts on ethical grounds?32These are important questions, and our study aims
+to provide evidence useful to inform answers. However, for the particular product in our
+experiment, we do not believe they should be of much concern. First, as discussed earlier,
+digital repossession in our setting is temporary and reversible, so it can be signicantly
+less punitive than physical repossession, a practice that is widely accepted. Second, the
+magnitude of the cost imposed on households by digital repossession of their SHS is small
+compared to those that are usually restricted on moral grounds (e.g., imprisonment or
+bondage). Finally, the households in our study are familiar with the contractual terms
+and appear to make informed decisions: households with a higher willingness to pay for
+the service ow from the SHS were signicantly less likely to take-up secured loans.
+8 Conclusion
+In this paper, we explore a novel form of nancial contracting that uses lockout technol-
+ogy to create digital collateral, which does not require physical repossession. Rather, the
+lender temporarily disables the ow value of the collateral to the borrower when the bor-
+32An economic reason to regulate certain types of nancial contracts is if the punishments impose
+externalities on third-parties (Bond and Newman, 2009).
+33rower misses a payment. We show that digitally collateralized loans exhibit signicantly
+higher repayment and are therefore substantially more protable to the lender. About
+one-third of the increase in repayment can be attributed to screening and about two-
+thirds to reducing moral hazard. Access to these loans had positive eects on educational
+outcomes and did not have negative eects on households' balance sheet.
+Our nding that moral hazard drives the majority of the repayment increase implies
+that credit provision is both sustainable and acceptable to a large fraction of households,
+provided they are given the right incentives. Therefore, the potential for digital collateral
+to expand access to credit is signicant. By contrast, if we had found that adverse
+selection drove most of the increase in repayment, then digital collateral serves primarily
+as a screening device and only a select subset of households provide protable lending
+opportunities.
+Our eld experiment also demonstrates the potential for private institutions to oer
+digitally collateralized loans to pay for schooling, resulting in increased enrollment and
+expenditures without placing a long-term nancial burden on the family. This result is
+important as schooling-related costs are large relative to income and must be paid in
+periods of low income for many households, especially those working in agriculture and
+other informal jobs.
+There are numerous other potential applications in which digital collateral could be uti-
+lized to provide cheaper access to credit, which appear especially promising in economies
+with an underdeveloped banking and nancial system. With the proliferation of smart
+devices, secured lending via digital collateral could easily be extended to a wide range
+of devices such as smartphones,laptops, refrigerators, automobiles, and televisions. Im-
+portantly, the capacity to reuse collateral for future loans (as it has been by Fenix and
+PayJoy) expands the potential impact of the innovation as a vehicle for aordable ac-
+cess to credit. Many utility companies (e.g., electric, telecommunication, and water) are
+able to remotely disable service and thus natural candidates for oering credit secured
+by access to the ow of services they provide. We believe there is signicant potential
+for utilities to further scale the use of digital collateral in providing aordable access to
+credit in LMICs.
+34References
+Acharya, V., H. Almeida, and M. Campello (2007): \Is Cash Negative Debt? A
+Hedging Perspective on Corporate Financial Policies," Journal of Financial Intermedi-
+ation, 16, 515{554.
+Adu Boahen, E. and C. Yamauchi (2017): \The Eect of Female Education on
+Adolescent Fertility and Early Marriage: Evidence from Free Compulsory Universal
+Basic Education in Ghana," Journal of African Economies , 27, 227{248.
+Aghion, P. and P. Bolton (1992): \An Incomplete Contracts Approach to Financial
+Contracting," The Review of Economic Studies , 59, 473{494.
+Ajayi, K. and P. Ross (2020): \The Eects of Education on Financial Outcomes:
+Evidence from Kenya," Economic Development and Cultural Change, 69, 253 { 289.
+Assunc  ~ao, J. J., E. Benmelech, and F. S. S. Silva (2013): \Repossession and the
+Democratization of Credit," The Review of Financial Studies , 27, 2661{2689.
+Attanasio, O., B. Augsburg, R. De Haas, E. Fitzsimons, and H. Harmgart
+(2015): \The Impacts of Micronance: Evidence from Joint-Liability Lending in Mon-
+golia," American Economic Journal: Applied Economics, 7, 90{122.
+Ayotte, K. and P. Bolton (2011): \Optimal Property Rights in Financial Contract-
+ing," The Review of Financial Studies , 24, 3401{3433.
+Banerjee, A., D. Karlan, and J. Zinman (2015): \Six randomized evaluations of
+microcredit: Introduction and further steps," American Economic Journal: Applied
+Economics, 7, 1{21.
+Banerjee, A. V., T. Besley, and T. W. Guinnane (1994): \Thy Neighbor's Keeper:
+The Design of a Credit Cooperative with Theory and a Test," The Quarterly Journal
+of Economics, 109, 491{515.
+Benmelech, E. and N. K. Bergman (2009): \Collateral pricing," Journal of Financial
+Economics, 91, 339 { 360.
+Benmelech, E., N. Kumar, and R. Rajan (2020): \The Decline of Secured Debt,"
+Working Paper 26637, National Bureau of Economic Research.
+Berger, A. and G. Udell (1990): \Collateral, loan quality and bank risk," Journal
+of Monetary Economics , 25, 21{42.
+||| (1995): \Relationship Lending and Lines of Credit in Small Firm Finance," The
+Journal of Business, 68, 351{81.
+Besanko, D. and A. Thakor (1987a): \Collateral and Rationing: Sorting Equilibria
+in Monopolistic and Competitive Credit Markets," International Economic Review , 28,
+671{89.
+||| (1987b): \Competitive equilibrium in the credit market under asymmetric infor-
+mation," Journal of Economic Theory, 42, 167{182.
+Besley, T. and S. Coate (1995): \Group lending, repayment incentives and social
+collateral," Journal of Development Economics , 46, 1{18.
+35Bester, H. (1985): \Screening vs. Rationing in Credit Markets with Imperfect Informa-
+tion," American Economic Review, 75, 850{55.
+||| (1987): \The role of collateral in credit markets with imperfect information,"
+European Economic Review , 31, 887{899.
+Bhole, B. and S. Ogden (2010): \Group lending and individual lending with strategic
+default," Journal of Development Economics , 91, 348{363.
+Bond, P. and A. F. Newman (2009): \Prohibitions on punishments in private con-
+tracts," Journal of nancial intermediation, 18, 526{540.
+Cadena, X. and A. Schoar (2011): \Remembering to pay? Reminders vs. nancial
+incentives for loan payments," Tech. rep., National Bureau of Economic Research.
+Cai, Y., B. Chapman, and Q. Wang (2019): \Repayment burdens of mortgage-
+style student loans in China and steps toward income-contingent loans," Economics of
+Education Review , 71, 95 { 108, higher Education Financing: Student Loans.
+Carpena, F., S. Cole, J. Shapiro, and B. Zia (2012): \Liability Structure in Small-
+Scale Finance: Evidence from a Natural Experiment," The World Bank Economic
+Review, 27, 437{469.
+Chan, Y.-S. and G. Kanatas (1985): \Asymmetric Valuations and the Role of Col-
+lateral in Loan Agreements," Journal of Money, Credit and Banking, 17, 84{95.
+Chan, Y.-S. and A. V. Thakor (1987): \Collateral and Competitive Equilibria with
+Moral Hazard and Private Information," The Journal of Finance, 42, 345{363.
+Chicoine, L. (2019): \Schooling with learning: The eect of free primary education and
+mother tongue instruction reforms in Ethiopia," Economics of Education Review , 69,
+94{107.
+||| (2020): Free Primary Education, Fertility, And Women's Access To The Labor
+Market : Evidence From Ethiopia , The World Bank.
+Coville, A., S. Galiani, P. Gertler, and S. Yoshida (2021): \Financing Water
+and Sanitation in Nairobi's Slums," World Bank Working Paper.
+Cull, R., A. Demirg uc -Kunt, and J. Morduch (2009): \Micronance Meets the
+Market," Journal of Economic Perspectives, 23, 167{92.
+||| (2018): \The Micronance Business Model: Enduring Subsidy and Modest Prot,"
+The World Bank Economic Review , 32, 221{244.
+Dearden, L. (2019): \Evaluating and designing student loan systems: An overview of
+empirical approaches," Economics of Education Review , 71, 49{64.
+Delesalle, E. (2019): \The Eect of the Universal Primary Education Program on
+Labor Market Outcomes: Evidence from Tanzania," NBER Working Papers 25789,
+National Bureau of Economic Research, Inc.
+DeMarzo, P. M. (2019): \Presidential Address: Collateral and Commitment," The
+Journal of Finance, 74, 1587{1619.
+Devoto, F., E. Duflo, P. Dupas, W. Parient e, and V. Pons (2012): \Happiness
+on Tap: Piped Water Adoption in Urban Morocco," American Economic Journal:
+36Economic Policy , 4, 68{99.
+Djankov, S., C. McLiesh, and A. Shleifer (2007): \Private Credit in 129 Coun-
+tries," Journal of Financial Economics , 12, 77{99.
+Donaldson, J., D. Gromb, and G. Piacentino (2019): \Conicting Priorities: A
+Theory of Covenants and Collateral," 2019 Meeting Papers 157, Society for Economic
+Dynamics.
+Duflo, E., P. Dupas, and M. Kremer (2019): \The Impact of Free Secondary Edu-
+cation: Experimental Evidence from Ghana," Working paper, Massachusetts Institute
+of Technology.
+Federal Reserve of the Bank of New York (2020): \Quarterly Report on House-
+hold Debt and Credit," .
+Gangopadhyay, S., M. Ghatak, and R. Lensink (2005): \Joint Liability Lending
+and the Peer Selection Eect*," The Economic Journal, 115, 1005{1015.
+Gertler, P., B. Green, and C. Wolfram (2021): \Screening Borrowers with Cash
+Deposits," Working Paper.
+Ghatak, M. (1999): \Group lending, local information and peer selection." Journal of
+Development Economics , 60, 27{50.
+||| (2000): \Screening by the Company You Keep: Joint Liability Lending and the
+Peer Selection Eect," The Economic Journal, 110, 601{631.
+Ghatak, M. and T. W. Guinnane (1999): \The economics of lending with joint
+liability: theory and practice1This version: May 1999.1," Journal of Development Eco-
+nomics, 60, 195{228.
+Gine, X. and D. Karlan (2014): \Group versus individual liability: Short and long
+term evidence from Philippine microcredit lending groups," Journal of Development
+Economics, 107, 65{83.
+Gine, X., P. Jakiela, D. Karlan, and J. Morduch (2010): \Micronance Games,"
+American Economic Journal: Applied Economics, 2, 60{95.
+Gurgand, M., A. Lorenceau, and T. M elonio (2011): \Student loans: Liquidity
+constraint and higher education in South Africa," PSE Working Papers.
+Hart, O. and J. Moore (1994): \A Theory of Debt Based on the Inalienability of
+Human Capital," The Quarterly Journal of Economics, 109, 841{879.
+||| (1998): \Default and Renegotiation: A Dynamic Model of Debt," The Quarterly
+Journal of Economics, 113, 1{41.
+Intermedia (2016): \Wave 3 Report FII Tracker Survey," .
+Jack, W., M. Kremer, J. de Laat, and T. Suri (2019): \Borrowing Requirements,
+Credit Access, and Adverse Selection: Evidence from Kenya," Tech. rep., MIT.
+Jimenez, G., V. Salas, and J. Saurina (2006): \Determinants of collateral," Journal
+of Financial Economics , 81, 255{281.
+Karlan, D. and J. Zinman (2009): \Observing Unobservables: Identifying Information
+Asymmetries With a Consumer Credit Field Experiment," Econometrica, 77, 1993{
+372008.
+Kiyotaki, N. and J. Moore (1997): \Credit Cycles," Journal of Political Economy,
+105, 211{248.
+La Porta, R., F. Lopez-de-Silanes, A. Shleifer, and R. W. Vishny (1998):
+\Law and Finance," Journal of Political Economy , 106, 1113{1155.
+Laffont, J.-J. and P. Rey (2003): \Moral Hazard, Collusion and Group Lending," .
+Laibson, D. (1994): \Self-control and saving," Massachusets Institute of Technology
+mimeo.
+||| (1997): \Golden eggs and hyperbolic discounting," The Quarterly Journal of
+Economics, 112, 443{478.
+Li, S., T. M. Whited, and Y. Wu (2016): \Collateral, Taxes, and Leverage," The
+Review of Financial Studies , 29, 1453{1500.
+Liberti, J. M. and A. R. Mian (2010): \Collateral Spread and Financial Develop-
+ment," The Journal of Finance, 65, 147{177.
+Masuda, K. and C. Yamauchi (2018): \The Eects of Universal Secondary Education
+Program Accompanying Public-Private Partnership on Students' Access, Sorting and
+Achievement: Evidence from Uganda," CEI Working Paper Series 2018-4, Center for
+Economic Institutions, Institute of Economic Research, Hitotsubashi University.
+Meager, R. (2019): \Understanding the Average Impact of Microcredit Expansions:
+A Bayesian Hierarchical Analysis of Seven Randomized Experiments," American Eco-
+nomic Journal: Applied Economics, 11, 57{91.
+Medina, P. C. (2020): \Side Eects of Nudging: Evidence from a Randomized Inter-
+vention in the Credit Card Market," The Review of Financial Studies .
+Moshoeshoe, R., C. Ardington, and P. Piraino (2019): \The Eect of the Free
+Primary Education Policy on School Enrolment and Relative Grade Attainment in
+Lesotho," Journal of African Economies , 28, 511{532.
+Moussa, W. and C. Omoeva (2020): \The Long-Term Eects of Universal Primary
+Education: Evidence from Ethiopia, Malawi, and Uganda," Comparative Education
+Review, 64, 179{206.
+Myerson, R. (1981): \Optimal Auction Design," Mathematics of Operations Research,
+6, 58{73.
+Qian, J. and P. E. Strahan (2007): \How Laws and Institutions Shape Financial
+Contracts: The Case of Bank Loans," The Journal of Finance, 62, 2803{2834.
+Rajan, R. and A. Winton (1995): \Covenants and Collateral as Incentives to Moni-
+tor," The Journal of Finance, 50, 1113{1146.
+Rampini, A. and S. Viswanathan (2010): \Collateral, Risk Management, and the
+Distribution of Debt Capacity," The Journal of Finance, 65, 2293{2322.
+||| (2013): \Collateral and capital structure," Journal of Financial Economics , 109,
+466{492.
+Solis, A. (2017): \Credit Access and College Enrollment," Journal of Political Economy,
+38125, 562{622.
+Stiglitz, J. E. (1990): \Peer Monitoring and Credit Markets," The World Bank Eco-
+nomic Review, 4, 351{366.
+Stiglitz, J. E. and A. Weiss (1981): \Credit Rationing in Markets with Imperfect
+Information," The American Economic Review, 71, 393{410.
+Tirole, J. (2006): The Theory Of Corporate Finance , Princeton University Press.
+Valente, C. (2019): \Primary education expansion and quality of schooling," Economics
+of Education Review , 73, 101913.
+van den Berg, C. and A. Danilenko (2014): \Performance of Water Utilities in
+Africa," Tech. rep., World Bank, Washington, DC.
+Williams, T., P. Abbott, and A. Mupenzi (2015): \Education at our school is
+not free: The hidden costs of fee-free schooling in Rwanda," Compare: A Journal of
+International and Comparative Education, 45, 931{952.
+_Is can, T. B., D. Rosenblum, and K. Tinker (2015): \School Fees and Access to
+Primary Education: Assessing Four Decades of Policy in Sub-Saharan Africa," Journal
+of African Economies , 24, 559{592.
+399 Figures and Tables
+Figure 3: Consort Statement
+27,081 SMS
+sent to completed
+SHS customers
+3,300 responded to SMS Control group: 619
+Call center reached
+1319/1616
+(82%)
+Oered secured loanCall center reached
+855/1002
+(85%)
+Oered unsecured loan
+Took loan
+217/498
+(44%)
+SecuredTook loan
+376/821
+(46%)
+Surprise UnsecuredTook loan
+438/855
+(51%)
+Unsecured
+Took loan refers to accepting the loan, completing the necessary paperwork, and paying the deposit.
+40Figure 4: Loan Repayment and Completion
+0 240 360.480 600.72
+50 100 150 200
+Days elapsed since loan creationFraction of principal repaidSecured
+Surprise UnsecuredUnsecured
+(a) Loan repayment
+0.010.030.050.070.090.110.13
+50 100 150 200
+Days elapsed since loan creationDifference in fraction of principal repaidTotal Effect
+Moral HazardSelection (b) Dierences in repayment
+0 210 320.430 540 65
+100 150 200
+Days elapsed since loan creationFraction completedSecured
+Surprise UnsecuredUnsecured
+(c) Loan completion
+−0.030.010.050.090.130.17
+100 150 200
+Days elapsed since loan creationDifference in fraction completedTotal Effect
+Moral HazardSelection (d) Dierences in completion
+Note: Panel (a) plots average fraction of principal repaid by days elapsed since loan origination for each
+treatment group. Panel (b) plots the dierence in average fraction of principal repaid by days elapsed
+for each treatment group. Panel (c) plots average fraction of customers completed by days elapsed for
+each treatment group. The dierence in average fraction of customers completed by days elapsed for
+each treatment group is in Panel D. In Panel (b) (Panel (d)), \Total Eect" displays the dierence in
+average fraction of principal repaid (customers completed) between the Secured and Unsecured groups,
+\Moral Hazard" displays the dierence in average fraction of principal repaid (customers completed)
+between the Secured and Surprise Unsecured groups, and \Selection" displays the dierence in average
+fraction of principal repaid (customers completed) between the Surprise Unsecured and Unsecured groups.
+(Dierences in) both the fraction of principal repaid and fraction of customers completed are displayed
+over the sample of 1,031 loans, of which 217 are Secured loans, 376 are Surprise Unsecured loans, and
+438 are Unsecured loans.
+41Table 1: Tests of Lockout, Adverse Selection and Moral Hazard on Loan Repayment and
+Loan Completion (LATE)
+Loan
+dayMean
+UnsecuredLockoutAdverse
+SelectionMoral
+Hazardp-value
+di
+Panel A: Loan Repayment
+100 0.46 0.130.04 0.090.29
+(0.04) (0.03) (0.04)
+150 0.57 0.130.05 0.090.46
+(0.04) (0.03) (0.04)
+200 0.62 0.110.04 0.070.65
+(0.04) (0.03) (0.04)
+Panel B: Loan Completion
+110 0.31 0.100.01 0.090.21
+(0.05) (0.04) (0.05)
+150 0.41 0.170.05 0.120.31
+(0.05) (0.04) (0.05)
+200 0.47 0.190.05 0.130.19
+(0.05) (0.04) (0.05)
+n 655 814 593
+Note: Standard errors in parentheses. Loan repayment is measured by the cumulative proportion of
+the loan principal repaid (Panel A). Loan completion describes whether the loan principal has been
+repaid (Panel B). The above results display the Local Average Treatment Eect (LATE), which measures
+the average treatment eect on loan repayment (completion) for compliers, using the share of days in
+compliance as the endogenous variable (see the Appendix for Intent to Treat (ITT) results). The analysis
+is run on samples at either the 100th, 110th, 150th, or 200th day from origination. \Lockout" captures
+the dierence in the repayment (completion) rate between the Unsecured and Secured samples, \Adverse
+Selection" captures the dierence in the repayment (completion) rate between the Unsecured and Surprise
+Unsecured samples, and \Moral Hazard" captures the dierence in the repayment (completion) rate
+between the Surprise Unsecured and Secured samples. \p-value di" records the p-value from testing the
+equality of the dierences between the Adverse Selection and Moral Hazard LATE models.p<.10,
+p<.05,p<.01
+42Table 2: Monthly IRRs of Loan Portfolios
+Treatment Group Account percent locked All n
+1st tercile 2nd tercile 3rd tercile
+Secured 0.2% -2.5% -8.4% -3.7% 217
+[0.00, 0.06] [0.06, 0.19] [0.19, 0.57] [0.00, 0.57]
+Unsecured -3.7 -6.3 -10.2 -6.9 438
+[0.00, 0.05] [0.05, 0.19] [0.19, 0.64] [0.00, 0.64]
+Prior School Fee 6.6 6.0 3.2 5.1 1377
+Loans (Secured) [0.00, 0.04] [0.04, 0.13] [0.13, 0.30] [0.00, 0.30]
+Note: Loans in each treatment group are sorted by proportion of days locked at SMS and divided into
+equal-sized terciles. Loans in each tercile are formed into a portfolio. The internal rate of return (IRR) is
+the discount rate that makes the net present value of cash ows on the portfolio equal to zero. The IRRs
+of portfolios formed using all loans in each treatment group are also reported. The range of the fraction
+of days locked is reported in square brackets.
+Table 3: Fraction of School Fee Loan Days Locked
+Percentile100Day
+150 200
+25th 0.11 0.08 0.06
+50th 0.33 0.33 0.25
+75th 0.66 0.73 0.78
+Note: The above table calculates the fraction of loan days locked at 100, 150, and 200 days from school-fee
+loan origination, by percentile. The gures are calculated for the sample of 217 Secured school-fee loans
+involved in the experiment.
+43Table 4: Tests of Lockout, Adverse Selection, and Moral Hazard, Risk (Interactions
+Model) (LATE)
+LockoutAdverse
+SelectionMoral
+Hazard
+On Loan Repayment at 150 days
+Treatment 0.130.100.02
+(0.06) (0.05) (0.05)
+TreatmentMedian risk or above 0.01 -0.110.13
+(0.08) (0.06) (0.08)
+Median risk or above -0.15-0.15-0.27
+(0.04) (0.04) (0.04)
+Constant 0.630.640.73
+(0.03) (0.03) (0.03)
+On Loan Completion at 200 days
+Treatment 0.150.09 0.06
+(0.07) (0.06) (0.06)
+TreatmentMedian risk or above 0.07 -0.07 0.15
+(0.09) (0.08) (0.09)
+Median risk or above -0.20-0.20-0.28
+(0.05) (0.05) (0.05)
+Constant 0.560.570.65
+(0.04) (0.04) (0.04)
+n 655 814 593
+Note: Standard errors in parentheses. Loan repayment is measured by the cumulative proportion of the
+loan principal repaid. Loan completion describes whether the loan principal has been repaid. The above
+results display the Local Average Treatment Eect (LATE), which measures the average treatment eect
+on either loan repayment or loan completion for compliers, using the share of days in compliance as the
+endogenous variable. The analysis is run on the sample at the 150th day (for loan repayment) or 200th day
+(for loan completion) from origination. Under \Lockout" where the subsample is those who were assigned
+Secured or Unsecured, \Treatment" captures the treatment eect of Secured. Under \Adverse Selection"
+where the subsample is those who were assigned Unsecured or Surprise Unsecured, \Treatment" captures
+the treatment eect of Surprise Unsecured. Under \Moral Hazard" where the subsample is those who
+were in assigned Surprise Unsecured and Secured, \Treatment" captures the treatment eect of Secured.
+\Median risk or above" is an indicator for whether the customer had their solar home system locked for
+11 percent or more of its history by early May 2019, right before the start of the experiment.p<.10,
+p<.05,p<.01
+44Figure 5: Eect of Lockout on Loan Take-up by Willingness to Pay
+Note: This gure covers the sample of 950 individuals, of which 344 are treated with Secured loans and
+606 are treated with Unsecured loans. Individuals treated with Surprise Unsecured loans are excluded
+from this gure. Individuals with willingness to pay to unlock next day of 0 or 1,000 UGX are in the
+rst group, of 2,000 or 3,000 UGX in the second group, and of 4,000 or 5,000 in the third group. The
+dierences in take-up between individuals treated with Secured and Unsecured loans are plotted and 95%
+condence intervals are along with the bars. Note that 1 USD was equal to approximately 3,704 UGX
+in 2019 (Source: https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=UG).
+45Table 5: Education Outcomes, Household-level (LATE)
+Enrollment Days absentLog school
+expenditures
+Loan 0.05560.0319 0.297
+(0.0299) (0.345) (0.127)
+Outcome control mean 0.88 1.28 85.85
+n 1683 1625 1625
+Note: Standard errors in parentheses. Results relate to Term 2 outcomes. The above results display
+the Local Average Treatment Eect (LATE), which measures the average treatment eect for compliers,
+using actual receipt of a school-fee loan as the endogenous variable (see the Appendix for Intent to Treat
+(ITT) results). \Enrollment" describes the share of school-aged children (SAC; individuals aged 5-20)
+enrolled in Term 2, and is conditional on having at least one SAC within the household at endline. \Days
+absent" describes the average days of school missed per month, per enrolled SAC, and is conditional
+on having at least one SAC enrolled at endline in Term 2. \School expenditures" (school fees, supplies,
+transport, and school meals) describes the average school expenditure per enrolled SAC and is conditional
+on having at least one SAC enrolled at endline in Term 2. School expenditures are in USD (1 USD is
+equal to approximately 3704 UGX in 2019). School expenditures are winsorized at the 99th percentile.
+The outcome control mean for school expenditures is not log transformed.p<.10,p<.05,p<
+.01
+Table 6: Education Outcomes for School Aged Children (LATE)
+EnrollmentLog school
+expenditures
+Male Female Male Female
+Loan 0.0593-0.0403 0.2530.381
+(0.0343) (0.0325) (0.145) (0.176)
+P value from Chow test 0.03 0.48
+Outcome control mean 0.89 0.92 79.33 83.07
+n 2756 2903 2508 2606
+Note: Standard errors in parentheses and are clustered at the household level. Results relate to Term
+2 outcomes. The above results display the Local Average Treatment Eect (LATE), which measures
+the average treatment eect for compliers, using actual receipt of a school fee loan as the endogenous
+variable (see the Appendix for Intent to Treat (ITT) results). School expenditures (school fees, supplies,
+transport, and school meals) are conditional on enrollment at endline in Term 2. School expenditures
+are in USD (1 USD is equal to approximately 3704 UGX in 2019). School expenditures are winsorized
+at the 99th percentile. The p value from the Chow test compares the treatment eect for males to that
+of females. The outcome control mean for school expenditures is not log transformed.p<.10,p<
+.05,p<.01
+46Table 7: Eect on Asset Purchases, Sales, and Money Borrowed in the Last 6 Months
+(LATE)
+Asset
+purchases
+(IHST)Asset
+sales
+(IHST)Money
+borrowed
+(IHST)Net
+dierence
+(IHST)
+Loan 0.113 -0.216 0.061 0.060
+(0.380) (0.301) (0.405) (0.407)
+Outcome control mean (USD, level) 238 96 234 -234
+n 1836 1836 1836 1836
+Note: Standard errors in parentheses. The above analysis uses the Local Average Treatment Eect
+(LATE) to derive semi-elasticities. The LATE measures the average treatment eect for compliers,
+using actual receipt of a school fee loan type (or any school fee loan) as the endogenous variable (see
+the Appendix for Intent to Treat (ITT) results). \Net dierence" records the dierence between asset
+purchases and asset sales, minus money borrowed. Asset purchases, asset sales, and money borrowed
+are winsorized at the 99th percentile. Values were converted to USD prior to IHST transformation (note
+that 1 USD was equal to approximately 3,704 UGX in 2019). Winsorizing at the 99th percentile takes
+place before IHST transformation. For 31 individuals who reported Fenix as a creditor, the amount of
+the school fee loan was added back into the total amount reported to have been borrowed. Loan refers to
+the semi-elasticity calculated following the exact method from Bellemare and Wichman (2019), following
+arguments from Halvorsen and Palmquist (1980), Kennedy (1981) and Giles (1982).p<.10,p<
+.05,p<.01
+Table 8: Eect on Household Balance Sheet (LATE)
+Asset
+value
+(IHST)Money
+borrowed
+(IHST)Net
+dierence
+(IHST)
+Loan -0.160 0.114 -0.014
+(0.172) (0.417) (0.756)
+Outcome control mean (USD, level) 1810 553 1258
+n 1830 1830 1830
+Note: Standard errors in parentheses. The above analysis uses the Local Average Treatment Eect
+(LATE) to derive semi-elasticities. The LATE measures the average treatment eect for compliers, using
+actual receipt of a school fee loan type (or any school fee loan) as the endogenous variable (see the
+Appendix for Intent to Treat (ITT) results). \Asset value" records the sum of the household's value of
+assets at baseline, together with net dierence between asset purchases and asset sales over the last 6
+months, recorded at endline. \Money borrowed" is the sum of the amount borrowed over the 12 months
+prior to the baseline survey (recorded at baseline) and the amount over the 6 months prior to the endline
+survey (recorded at endline). The components for \asset value" and \money borrowed" are winsorized
+at the 99th percentile prior to IHST transformations. \Net dierence" records the dierence between
+\asset value" and \money borrowed." Values were converted to USD prior to IHST transformation (note
+that 1 USD was equal to approximately 3,704 UGX in 2019). For 31 individuals who reported Fenix as a
+creditor, the amount of the school fee loan was added back into the total amount reported to have been
+borrowed. Loan refers to the semi-elasticity calculated following the exact method from Bellemare and
+Wichman (2019), following arguments from Halvorsen and Palmquist (1980), Kennedy (1981) and Giles
+(1982). The number of observations diers from that in Table 7 because the outcomes in this table relies
+on having reported values at baseline.p<.10,p<.05,p<.01
+47A Online Appendix
+Table A.1: Descriptive Statistics of Enrollee Characteristics from Administrative Data
+(1) (2) (3)
+CharacteristicUganda
+LSMSSMS
+sent toTook up
+loan
+Proportion of days locked at SMS - 0.13 0.16
+(0.15) (0.15)
+Age (years) 45 4644
+(22) (12) (11)
+Female (proportion) 0.34 0.230.14
+(0.68) (0.42) (0.35)
+Married (proportion) 0.70 0.900.92
+(0.67) (0.30) (0.26)
+Number of children 3.0 4.33.9
+(3.3) (2.9) (2.5)
+Agriculture or Non-employed 0.55 0.370.24
+(0.73) (0.48) (0.43)
+Non-professional 0.27 0.390.38
+(0.65) (0.49) (0.49)
+Other 0.05 0.080.08
+(0.32) (0.27) (0.28)
+Professional 0.13 0.170.30
+(0.55) (0.38) (0.46)
+Central 0.39 0.440.37
+(0.70) (0.50) (0.48)
+Eastern 0.28 0.28 0.35
+(0.68) (0.45) (0.48)
+Western 0.33 0.280.28
+(0.68) (0.45) (0.45)
+n 2281 27081 1072
+Note: Standard deviations in parentheses. The World Bank Uganda LSMS information in (1) comes
+from the 2018/2019 wave and uses probability weights. (2) and (3) come from Fenix administrative data.
+LSMS demographics relate to the household head, while Fenix demographics relate to the customer
+signing with Fenix. For Occupation using the Fenix data, \Agriculture or Non-employed" includes Cattle
+Trader, Farmer, Fisherman, and Not Employed; \Professional" includes Accountant, Banker, Broker,
+Electrician, Engineer, Government / Civil Servant, Health Worker, Journalist, Mechanic / Technician,
+NGO Worker, Oce Work, Police, Security Guard, Teacher, Tour Guide, UPDF, and Uganda Prisons;
+\Non-professional" includes Boda Boda, Butcher, Carpenter, Construction, Driver, Herbalist, MM Agent,
+Market Trader, Money Changer, Religious Leader, Shop Keeper, Small Business Owner, Tailor, and Taxi
+Operator. LSMS sample occupations followed a similar categorization. (3) is a subset of (2). The results
+from tests of dierences comparing (1) to (2) and (2) to (3) are displayed in (2) and (3), respectively.
+Menu of Choice treatment customers are dropped from (2) and (3), and comprised less than 2% of those
+samples.p<.10,p<.05,p<.01
+48Table A.2: Characteristics of those who take-up loans
+Secured Unsecured N
+Percent of days locked at SMS 15.8 14.9 505
+(15.5) (14.3)
+Household head characteristics
+Age (years) 42.7 44.0 505
+(9.9) (11.1)
+Female (proportion) 0.10 0.11 505
+(0.31) (0.32)
+Household head occupation (proportion)
+Family business or farm 0.51 0.65505
+(0.50) (0.48)
+Self-employed 0.61 0.63 505
+(0.49) (0.48)
+Outside the home 0.36 0.33 505
+(0.48) (0.47)
+Number of school aged children 3.0 3.2 505
+(2.1) (2.0)
+Annual household income per adult (USD) 336 298 505
+(333) (248)
+Value of assets per adult (USD) 354 389 505
+(489) (481)
+WTP for SHS next day (USD) 0.81 0.77 505
+(0.40) (0.40)
+Hours to nearest ReadyPay Service Center 0.9 1.0 505
+(0.8) (0.8)
+Note: Standard deviations in parentheses. The above table presents group averages for various charac-
+teristics, and does not include individuals in the Surprise Unsecured treatment group. \Percent of days
+locked at SMS" describes the percentage of days that the customer was locked on their solar home systems
+(SHS) at the time that the initial SMS was sent to customers inviting them to take up a school fee loan.
+School aged children are children between the ages of 5 and 20, inclusive. USD values are winsorized at
+the 99th percentile. \WTP for SHS next day" describes customers' reported willingness to pay to unlock
+their SHS for the next day. \Hours to nearest ReadyPay Service Center" describes the amount of time
+customers reported taking to go to the nearest Fenix ReadyPay Service Center. Values were converted
+to USD (note that 1 USD was equal to approximately 3,704 UGX in 2019). Tests of dierences in means
+are carried out between Unsecured and Secured.p<.10,p<.05,p<.01
+49Table A.3: Baseline Characteristics
+Characteristic SecuredSurprise
+UnsecuredUnsecured Control n
+Risk
+Percent of days locked at SMS (%) 14.7 15.2 16.0 14.0 2130
+(15.3) (15.5) (15.2) (14.5)
+Household head
+Age (years) 43.0 43.8 43.3 43.5 2122
+(11.0) (11.1) (10.6) (11.1)
+Female (proportion) 0.13 0.12 0.11 0.11 2125
+(0.34) (0.32) (0.32) (0.31)
+Married (proportion) 0.89 0.88 0.85 0.86 2125
+(0.32) (0.32) (0.35) (0.34)
+Household head occupation (proportion)
+Family business or farm 0.59 0.56 0.53 0.56 2125
+(0.49) (0.50) (0.50) (0.50)
+Self-employed 0.60 0.63 0.60 0.59 2123
+(0.49) (0.48) (0.49) (0.49)
+Outside the home 0.35 0.36 0.37 0.34 2125
+(0.48) (0.48) (0.48) (0.47)
+Demographics
+Number of people in household 6.6 6.6 6.6 6.6 2130
+(2.7) (3.0) (2.7) (2.7)
+Number of children aged 5-20 enrolled 2.7 2.7 2.7 2.7 2125
+in school (1.9) (2.0) (1.9) (2.0)
+Financial information
+Amount spent on lighting, year (USD) 28 35 42 43 2126
+(73) (73) (96) (99)
+Total household income, year (USD) 1395 1473 1431 1573 2094
+(1271) (1340) (1348) (1484)
+Value of assets (USD) 1755 1599 1705 1767 2127
+(2391) (2062) (2425) (2337)
+Borrowing
+Borrowed in last 12 months 0.60 0.60 0.62 0.63 2125
+(proportion) (0.49) (0.49) (0.49) (0.48)
+Money borrowed in last 12 months 323 310 357 334 2122
+(USD) (739) (675) (726) (666)
+Ever refused for loan in last 12 months 0.13 0.14 0.15 0.20 2124
+(proportion) (0.34) (0.35) (0.35) (0.40)
+Took a micronance loan in last 12 0.07 0.06 0.08 0.07 2125
+months (proportion) (0.26) (0.25) (0.27) (0.26)
+Note: Standard deviations in parentheses. USD values are winsorized at the 99th percentile. Values were
+converted to USD (note that 1 USD was equal to approximately 3,704 UGX in 2019).
+50Table A.4:
+Baseline Characteristics, p-values from pairwise comparisons
+CharacteristicSecured -
+Surprise
+UnsecuredSecured -
+UnsecuredSecured
+-
+ControlSurprise
+Unsecured -
+UnsecuredSurprise
+Unsecured -
+ControlUnsecured -
+Control
+Risk
+Percen
+t of days locked at SMS (%) 0.648 0.177 0.489 0.312 0.222 0.032
+Household head
+Age (years) 0.222 0.595 0.466 0.395 0.687 0.752
+Female (proportion) 0.484 0.330 0.373 0.764 0.764 0.962
+Married (proportion) 0.822 0.150 0.338 0.156 0.395 0.713
+Household head occupation (proportion)
+Family business or farm 0.410 0.067 0.516 0.248 0.922 0.274
+Self-employed 0.343 0.983 0.836 0.279 0.240 0.798
+Outside the home 0.638 0.400 0.904 0.672 0.548 0.331
+Demographics
+Number of people in household 0.919 0.882 0.843 0.966 0.915 0.939
+Number of children aged 5-20 enrolled in school 0.691 0.925 0.802 0.563 0.908 0.704
+Financial information
+Amount spent on lighting, year (USD) 0.137 0.013 0.014 0.139 0.117 0.810
+Total household income, year (USD) 0.354 0.667 0.074 0.568 0.272 0.113
+Value of assets (USD) 0.264 0.742 0.942 0.388 0.226 0.682
+Borrowing
+Borrowed in last 12 months (proportion) 0.858 0.647 0.448 0.460 0.307 0.689
+Money borrowed in last 12 months (USD) 0.767 0.466 0.834 0.222 0.580 0.607
+Ever refused for loan in last 12 months (proportion) 0.547 0.434 0.009 0.839 0.019 0.027
+Took a micronance loan in last 12 months (proportion) 0.687 0.514 0.836 0.220 0.524 0.675
+Note: p-values
+fromt-tests between two dierent treatment groups are included in the above table.
+51Table A.5: Share of Days in Compliance, by Treatment
+Loan
+daySecuredSurprise
+UnsecuredUnsecured
+50 0.93 0.90 0.92
+(0.25) (0.23) (0.22)
+100 0.93 0.93 0.94
+(0.25) (0.20) (0.20)
+150 0.93 0.94 0.94
+(0.25) (0.20) (0.20)
+200 0.93 0.94 0.94
+(0.25) (0.20) (0.20)
+n 217 376 438
+Note: Standard deviations in parentheses. The analysis is run on treatment samples of the share of days
+in compliance at 50, 100, 150, and 200 days from origination.
+52Table A.6: Tests of Lockout, Adverse Selection and Moral Hazard on Loan Repayment
+and Loan Completion (ITT)
+Loan
+dayMean
+UnsecuredLockoutAdverse
+SelectionMoral
+Hazardp-value
+di
+Panel A: Loan Repayment
+100 0.46 0.120.04 0.080.16
+(0.03) (0.03) (0.03)
+150 0.57 0.120.04 0.070.33
+(0.03) (0.03) (0.04)
+200 0.62 0.100.04 0.060.55
+(0.03) (0.03) (0.03)
+Panel B: Loan Completion
+110 0.31 0.090.01 0.080.11
+(0.04) (0.03) (0.04)
+150 0.41 0.150.05 0.100.18
+(0.04) (0.03) (0.04)
+200 0.47 0.160.05 0.120.08
+(0.04) (0.04) (0.04)
+n 655 814 593
+Note: Standard errors in parentheses. Loan repayment is measured by the cumulative proportion of the
+loan principal repaid (Panel A). Loan completion describes whether the loan principal has been repaid
+(Panel B). The above results display the Intent to Treat (ITT) analysis, which measures the average
+eect of assignment on loan repayment (completion). The analysis is run on samples at either the 100th,
+110th, 150th, or 200th day from origination. \Lockout" captures the dierence in the repayment (com-
+pletion) rate between the Unsecured and Secured samples, \Adverse Selection" captures the dierence
+in the repayment (completion) rate between the Unsecured and Surprise Unsecured samples, and \Moral
+Hazard" captures the dierence in the repayment (completion) rate between the Surprise Unsecured and
+Secured samples. \p-value di" records the p-value from testing the equality of the dierences between
+the Adverse Selection and Moral Hazard ITT models.p<.10,p<.05,p<.01
+53Table A.7: Tests of Lockout, Adverse Selection, and Moral Hazard on Loan Repayment
+and Loan Completion, Early Adopters
+Loan Mean Lockout Adverse Selection Moral Hazard p-value
+day Unsecured ITT LATE ITT LATE ITT LATE di
+Panel A: Loan Repayment
+100 0.47 0.150.180.01 0.01 0.140.180.01
+(0.05) (0.07) (0.05) (0.06) (0.05) (0.07)
+150 0.56 0.180.220.05 0.06 0.130.160.16
+(0.06) (0.07) (0.05) (0.06) (0.06) (0.07)
+200 0.62 0.160.190.06 0.07 0.100.130.40
+(0.06) (0.07) (0.05) (0.06) (0.05) (0.07)
+Panel B: Loan Completion
+110 0.33 0.140.18-0.01 -0.01 0.150.190.02
+(0.07) (0.08) (0.05) (0.07) (0.07) (0.08)
+150 0.42 0.180.220.05 0.06 0.130.160.22
+(0.07) (0.08) (0.06) (0.07) (0.07) (0.09)
+200 0.49 0.240.290.05 0.06 0.190.230.02
+(0.07) (0.08) (0.06) (0.07) (0.07) (0.08)
+n 247 247 308 308 223 223
+Note: Standard errors in parentheses. The samples are further restricted to those individuals who had
+received the baseline survey after placing the loan deposit or who had not received a baseline survey
+(Early Adopters). Loan repayment is measured by the cumulative proportion of the loan principal
+repaid (Panel A). Loan completion describes whether the loan principal has been repaid (Panel B). The
+Intention to Treat (ITT) measures the average eect of assignment on loan repayment, while the Local
+Average Treatment Eect (LATE) measures the average treatment eect on loan repayment for compliers,
+using the share of days in compliance as the endogenous variable. The analysis is run on samples at
+either the 100th, 110th, 150th, or 200th day from origination. \Lockout" captures the dierence in the
+repayment (completion) rate between the Unsecured and Secured samples, \Adverse Selection" captures
+the dierence in the repayment (completion) rate between the Unsecured and Surprise Unsecured samples,
+and \Moral Hazard" captures the dierence in the repayment (completion) rate between the Surprise
+Unsecured and Secured samples. \p-value di" records the p-value from testing the equality of the
+dierences between the Adverse Selection and Moral Hazard ITT models.p<.10,p<.05,p<
+.01
+54Table A.8: Monthly IRRs of Loan Portfolios, Compliers Only
+Treatment Group Account percent locked All n
+1st tercile 2nd tercile 3rd tercile
+Secured -0.5% -3.0% -7.4% -3.7% 202
+[0.00, 0.05] [0.06, 0.18] [0.18, 0.57] [0.00, 0.57]
+Unsecured -5.3 -7.1 -11.8 -8.2 358
+[0.00, 0.05] [0.05, 0.20] [0.20, 0.64] [0.00, 0.64]
+Prior School Fee 6.6 6.0 3.2 5.1 1377
+Loans (Secured) [0.00, 0.04] [0.04, 0.13] [0.13, 0.30] [0.00, 0.30]
+Note: In this analysis, we exclude customers with imperfect compliance (i.e., customers who were sup-
+posed to be locked were unlocked for some days and vice versa). Loans in each treatment group are
+sorted by proportion of days locked at SMS and divided into equal-sized terciles. Loans in each tercile
+are formed into a portfolio. The internal rate of return (IRR) is the discount rate that makes the net
+present value of cash ows on the portfolio equal to zero. The IRRs of portfolios formed using all loans
+in each treatment group are also reported. The range of the fraction of days locked is reported in square
+brackets.
+Table A.9: Education Outcomes, Household-level (ITT)
+Enrollment Days absentLog school
+expenditures
+Loan 0.02510.0144 0.134
+(0.0135) (0.156) (0.0567)
+Outcome control mean 0.88 1.28 85.85
+n 1683 1625 1625
+Note: Standard errors in parentheses. Results relate to Term 2 outcomes. The above results display the
+Intent to Treat (ITT) analysis, which measures the average eect of assignment to a loan. \Enrollment"
+describes the share of school-aged children (SAC; individuals aged 5-20) enrolled in Term 2, and is
+conditional on having at least one SAC within the household at endline. \Days absent" describes the
+average days of school missed per month, per enrolled SAC, and is conditional on having at least one SAC
+enrolled at endline in Term 2. \School expenditures" (school fees, supplies, transport, and school meals)
+describes the average school expenditure per enrolled SAC and is conditional on having at least one SAC
+enrolled at endline in Term 2. School expenditures are in USD (1 USD is equal to approximately 3704
+UGX in 2019). School expenditures are winsorized at the 99th percentile. The outcome control mean for
+school expenditures is not log transformed.p<.10,p<.05,p<.01
+55Table A.10: Education Outcomes for School Aged Children (ITT)
+EnrollmentLog school
+expenditures
+Male Female Male Female
+Loan 0.0276-0.0182 0.1200.176
+(0.0158) (0.0146) (0.0688) (0.0804)
+P value from Chow test 0.03 0.51
+Outcome control mean 0.89 0.92 79.33 83.07
+n 2756 2903 2508 2606
+Note: Standard errors in parentheses and are clustered at the household level. Results relate to Term 2
+outcomes. School expenditures are conditional on enrollment at endline in Term 2. The above results
+display the Intent to Treat (ITT) analysis, which measures the average eect of assignment to a loan.
+School expenditures (school fees, supplies, transport, and school meals) are conditional on enrollment at
+endline in Term 2. School expenditures are in USD (1 USD is equal to approximately 3704 UGX in 2019).
+School expenditures are winsorized at the 99th percentile. The p value from the Chow test compares the
+treatment eect for males to that of females. The outcome control mean for school expenditures is not
+log transformed.p<.10,p<.05,p<.01
+56Table A.11: Shocks over the past 6 months
+(1) (2) (3) (4)
+Proportion
+shocks
+experiencedProportion
+shocks
+experiencedHow worried
+are you
+about this?How worried
+are you
+about this?
+Shock Category A: Problem With Money
+Assigned Secured loan 0.0151 0.0369
+(0.0255) (0.0233)
+Assigned Surprise -0.00584 0.0111
+Unsecured loan (0.0227) (0.0210)
+Assigned Unsecured 0.0216 0.00819
+loan (0.0226) (0.0206)
+Assigned any loan 0.00973 0.0157
+(0.0199) (0.0183)
+Constant 0.4150.4150.7290.729
+(0.0180) (0.0180) (0.0165) (0.0165)
+n 1882 1882 1400 1400
+Shock Category B: Money Matters For Coping
+Assigned Secured loan -0.00302 0.00955
+(0.0169) (0.0186)
+Assigned Surprise -0.00625 -0.00607
+Unsecured loan (0.0150) (0.0168)
+Assigned Unsecured 0.0157 0.00901
+loan (0.0149) (0.0166)
+Assigned any loan 0.00314 0.00352
+(0.0132) (0.0146)
+Constant 0.3420.3420.8320.832
+(0.0119) (0.0119) (0.0132) (0.0132)
+n 1882 1882 1648 1648
+Shock Category C: Money Doesn't Help
+Assigned Secured loan -0.00675 0.0646
+(0.0121) (0.0466)
+Assigned Surprise -0.0111 0.0577
+Unsecured loan (0.0107) (0.0410)
+Assigned Unsecured -0.0148 0.0312
+loan (0.0107) (0.0406)
+Assigned any loan -0.0116 0.0486
+(0.00942) (0.0353)
+Constant 0.08860.08860.6950.695
+(0.00851) (0.00851) (0.0315) (0.0314)
+n 1882 1882 455 455
+Note: Standard errors in parentheses. Shock Category A gathers together the following experiences over
+the last 6 months: not having enough money for basic needs such as food and clothing; not having enough
+money for other living home expenses; being unable to educate all of your children; not having enough
+money for medicines and medical treatment; debts owed to others. Shock Category B gathers together
+the following experiences over the last 6 months: health problems or illness; an accident or disaster;
+diculty nding work; death of a family member; job loss; weather aecting your crops. Shock Category
+57C gathers together the following experiences over the last 6 months: problems at home with relatives;
+problems with people in other tribes; idleness of your children or spouse; alcohol consumption of your
+children or spouse. Columns (1) and (2) use the proportion of shocks within a category that one is said to
+have experienced over the last 6 months as the dependent variable. Columns (3) and (4) use the average
+value of the likert-scale values transformed to 0-1 scales, out of the shocks experienced within a category,
+as the dependent variable. The reference group is the Control group that was not assigned any school
+fee loan.p<.10,p<.05,p<.01
+58Table A.12:
+Eect on Asset Purchases, Sales, and Money Borrowed in the Last 6 Months, Regressions, IHST Transformation
+(LATE)
+Asset
+purchases
+(IHST)Asset
+purchases
+(IHST)Asset
+sales
+(IHST)Asset
+sales
+(IHST)Money
+b
+orrowed
+(IHST)Money
+borrowed
+(IHST)Net
+dierence
+(IHST)Net
+dierence
+(IHST)
+Assigned Secured loan 0.0173 -0.0522 -0.0481 0.0568
+(0.390) (0.426) (0.436) (0.438)
+Assigned
+Surprise Unsecured loan -0.104 -0.495 0.0616 -0.0648
+(0.332) (0.363) (0.372) (0.373)
+Assigned Unsecured loan 0.300 -0.00113 0.0879 -0.0880
+(0.308) (0.336) (0.344) (0.346)
+Assigned any loan 0.107 -0.234 0.0587 -0.0580
+(0.342) (0.372) (0.381) (0.383)
+Outcome control
+mean (level) 238 238 96 96 234 234 -234 -234
+n 1836 1836 1836 1836 1836 1836 1836 1836
+Note: Standard errors
+in parentheses. The above analysis uses the Local Average Treatment Eect (LATE). The LATE measures the average treatment
+eect for compliers, using actual receipt of a school fee loan type (or any school fee loan) as the endogenous variable. \Net dierence" records the
+dierence between asset purchases and asset sales, minus money borrowed. Asset purchases, asset sales, and money borrowed are winsorized at the99th percentile. Winsorizing takes place before IHST transformation. Values were converted to USD prior to IHST transformation (note that 1 USDwas equal to approximately 3,704 UGX in 2019). For 31 individuals who reported Fenix as a creditor, the amount of the school fee loan was added
+back into the total amount reported to have been borrowed. The above analysis uses the Intent to Treat (ITT).p<.10,p<.05,p<.01
+59Table A.13:
+Eect on Asset Purchases, Sales, and Money Borrowed in the Last 6 Months, Regressions, IHST Transformation
+(ITT)
+Asset
+purchases
+(IHST)Asset
+purchases
+(IHST)Asset
+sales
+(IHST)Asset
+sales
+(IHST)Money
+b
+orrowed
+(IHST)Money
+borrowed
+(IHST)Net
+dierence
+(IHST)Net
+dierence
+(IHST)
+Assigned Secured loan 0.00850 -0.0256 -0.0236 0.0279
+(0.192) (0.209) (0.214) (0.215)
+Assigned
+Surprise Unsecured loan -0.0533 -0.254 0.0317 -0.0333
+(0.171) (0.186) (0.191) (0.192)
+Assigned Unsecured loan 0.166 -0.000621 0.0484 -0.0485
+(0.170) (0.185) (0.190) (0.191)
+Assigned any loan 0.0468 -0.103 0.0258 -0.0254
+(0.150) (0.163) (0.167) (0.168)
+Outcome control
+mean (level) 238 238 96 96 234 234 -234 -234
+P value from K-W Htest 0.585 0.521 0.937 0.914
+P value from M-W Utest 0.998 0.509 0.900 0.907
+n 1836 1836 1836 1836 1836 1836 1836 1836
+Note: Standard errors
+in parentheses. The above analysis uses the Intent to Treat (ITT) from loan assignment. \Net dierence" records the dierence
+between asset purchases and asset sales, minus money borrowed. Asset purchases, asset sales, and money borrowed are winsorized at the 99th
+percentile. Winsorizing takes place before IHST transformation. Values were converted to USD prior to IHST transformation (note that 1 USD was
+equal to approximately 3,704 UGX in 2019). For 31 individuals who reported Fenix as a creditor, the amount of the school fee loan was added back
+into the total amount reported to have been borrowed.p<.10,p<.05,p<.01
+60Table A.14: Eect on Household Balance Sheet, Regressions, IHST Transformation
+(LATE)
+Asset
+value
+(IHST)Asset
+value
+(IHST)Money
+borrowed
+(IHST)Money
+borrowed
+(IHST)Net
+dierence
+(IHST)Net
+dierence
+(IHST)
+Assigned Secured loan 0.0124 -0.00858 0.274
+(0.232) (0.426) (0.873)
+Assigned Surprise Unsecured loan -0.223 -0.103 0.0140
+(0.198) (0.364) (0.747)
+Assigned Unsecured loan -0.151 0.318 -0.185
+(0.184) (0.339) (0.694)
+Assigned any loan -0.171 0.108 -0.0150
+(0.204) (0.374) (0.767)
+Outcome control mean (level) 1810 1810 553 553 1258 1258
+n 1830 1830 1830 1830 1830 1830
+Note: Standard errors in parentheses. The above analysis uses the Local Average Treatment Eect
+(LATE). The LATE measures the average treatment eect for compliers, using actual receipt of a school
+fee loan type (or any school fee loan) as the endogenous variable (see the Appendix for Intent to Treat
+(ITT) results). \Asset value" records the sum of the household's value of assets at baseline, together with
+net dierence between asset purchases and asset sales over the last 6 months, recorded at endline. \Money
+borrowed" is the sum of the amount borrowed over the 12 months prior to the baseline survey (recorded
+at baseline) and the amount over the 6 months prior to the endline survey (recorded at endline). The
+components for \asset value" and \money borrowed" are winsorized at the 99th percentile prior to IHST
+transformations. \Net dierence" records the dierence between \asset value" and \money borrowed."
+Values were converted to USD prior to IHST transformation (note that 1 USD was equal to approximately
+3,704 UGX in 2019). For 31 individuals who reported Fenix as a creditor, the amount of the school fee
+loan was added back into the total amount reported to have been borrowed. The number of observations
+diers from that in Table A.12 because the outcomes in this table relies on having reported values at
+baseline.p<.10,p<.05,p<.01
+61Table A.15: Eect on Household Balance Sheet, Regressions, IHST Transformation (ITT)
+Asset
+value
+(IHST)Asset
+value
+(IHST)Money
+borrowed
+(IHST)Money
+borrowed
+(IHST)Net
+dierence
+(IHST)Net
+dierence
+(IHST)
+Assigned Secured loan 0.00611 -0.00421 0.135
+(0.114) (0.209) (0.429)
+Assigned Surprise Unsecured loan -0.114 -0.0529 0.00716
+(0.102) (0.187) (0.383)
+Assigned Unsecured loan -0.0826 0.174 -0.102
+(0.101) (0.186) (0.381)
+Assigned any loan -0.0746 0.0472 -0.00655
+(0.0892) (0.164) (0.335)
+Outcome control mean (level) 1810 1810 553 553 1258 1258
+P value from K-W Htest 0.521 0.547 0.728
+P value from M-W Utest 0.221 0.953 0.458
+n 1830 1830 1830 1830 1830 1830
+Note: Standard errors in parentheses. The above analysis uses the Intent to Treat (ITT) from loan
+assignment. \Asset value" records the sum of the household's value of assets at baseline, together with
+net dierence between asset purchases and asset sales over the last 6 months, recorded at endline. \Money
+borrowed" is the sum of the amount borrowed over the 12 months prior to the baseline survey (recorded
+at baseline) and the amount over the 6 months prior to the endline survey (recorded at endline). The
+components for \asset value" and \money borrowed" are winsorized at the 99th percentile prior to IHST
+transformations. \Net dierence" records the dierence between \asset value" and \money borrowed."
+Values were converted to USD prior to IHST transformation (note that 1 USD was equal to approximately
+3,704 UGX in 2019). For 31 individuals who reported Fenix as a creditor, the amount of the school fee
+loan was added back into the total amount reported to have been borrowed. The number of observations
+diers from that in Table A.13 because the outcomes in this table relies on having reported values at
+baseline.p<.10,p<.05,p<.01
+62Table A.16: Eect on Household Balance Sheet, Regressions, Levels (LATE)
+Asset
+valueAsset
+valueMoney
+borrowedMoney
+borrowedNet
+dierenceNet
+dierence
+Assigned Secured loan 119 26 93
+(375) (149) (376)
+Assigned Surprise Unsecured loan -221 -10 -211
+(321) (128) (322)
+Assigned Unsecured loan -7 61 -68
+(299) (119) (300)
+Assigned any loan -72 32 -104
+(330) (131) (331)
+Outcome control mean (level) 1810 1810 553 553 1258 1258
+n 1830 1830 1830 1830 1830 1830
+Note: Standard errors in parentheses. The above analysis uses the Local Average Treatment Eect
+(LATE). The LATE measures the average treatment eect for compliers, using actual receipt of a school
+fee loan type (or any school fee loan) as the endogenous variable (see the Appendix for Intent to Treat
+(ITT) results). \Asset value" records the sum of the household's value of assets at baseline, together
+with net dierence between asset purchases and asset sales over the last 6 months, recorded at endline.
+\Money borrowed" is the sum of the amount borrowed over the 12 months prior to the baseline survey
+(recorded at baseline) and the amount over the 6 months prior to the endline survey (recorded at endline).
+The components for \asset value" and \money borrowed" are winsorized at the 99th percentile. \Net
+dierence" records the dierence between \asset value" and \money borrowed." Values were converted to
+USD (note that 1 USD was equal to approximately 3,704 UGX in 2019). For 31 individuals who reported
+Fenix as a creditor, the amount of the school fee loan was added back into the total amount reported to
+have been borrowed. The number of observations diers from that in Table A.12 because the outcomes
+in this table relies on having reported values at baseline.p<.10,p<.05,p<.01
+63Table A.17: Eect on Household Balance Sheet, Regressions, Levels (ITT)
+Asset
+valueAsset
+valueMoney
+borrowedMoney
+borrowedNet
+dierenceNet
+dierence
+Assigned Secured loan 58 13 46
+(185) (73) (185)
+Assigned Surprise Unsecured loan -113 -5 -108
+(165) (65) (165)
+Assigned Unsecured loan -4 33 -37
+(164) (65) (164)
+Assigned any loan -31 14 -45
+(144) (57) (145)
+Outcome control mean (level) 1810 1810 553 553 1258 1258
+P value from K-W Htest 0.532 0.529 0.728
+P value from M-W Utest 0.221 0.945 0.458
+n 1830 1830 1830 1830 1830 1830
+Note: Standard errors in parentheses. The above analysis uses the Intent to Treat (ITT) from loan as-
+signment. \Asset value" records the sum of the household's value of assets at baseline, together with net
+dierence between asset purchases and asset sales over the last 6 months, recorded at endline. \Money
+borrowed" is the sum of the amount borrowed over the 12 months prior to the baseline survey (recorded
+at baseline) and the amount over the 6 months prior to the endline survey (recorded at endline). The
+components for \asset value" and \money borrowed" are winsorized at the 99th percentile. \Net dif-
+ference" records the dierence between \asset value" and \money borrowed." Values were converted to
+USD (note that 1 USD was equal to approximately 3,704 UGX in 2019). For 31 individuals who reported
+Fenix as a creditor, the amount of the school fee loan was added back into the total amount reported to
+have been borrowed. The number of observations diers from that in Table A.13 because the outcomes
+in this table relies on having reported values at baseline.p<.10,p<.05,p<.01
+64Table A.18: Eect on Asset Purchases, Sales, and Money Borrowed in the Last 6 Months
+(ITT)
+Asset
+purchases
+(IHST)Asset
+sales
+(IHST)Money
+borrowed
+(IHST)Net
+dierence
+(IHST)
+Loan 0.048 -0.102 0.026 0.026
+(0.157) (0.153) (0.172) (0.173)
+Outcome control mean (USD, level) 238 96 234 -234
+n 1836 1836 1836 1836
+Note: Standard errors in parentheses. The above analysis uses the Intent to Treat (ITT) estimates to
+derive semi-elasticities. \Net dierence" records the dierence between asset purchases and asset sales,
+minus money borrowed. Asset purchases, asset sales, and money borrowed are winsorized at the 99th
+percentile. Values were converted to USD prior to IHST transformation (note that 1 USD was equal
+to approximately 3,704 UGX in 2019). Winsorizing at the 99th percentile takes place before IHST
+transformation. For 31 individuals who reported Fenix as a creditor, the amount of the school fee loan
+was added back into the total amount reported to have been borrowed. Loan refers to the semi-elasticity
+calculated following the exact method from Bellemare and Wichman (2019), following arguments from
+Halvorsen and Palmquist (1980), Kennedy (1981) and Giles (1982).p<.10,p<.05,p<.01
+65Table A.19: Eect on Household Balance Sheet (ITT)
+Asset
+value
+(IHST)Money
+borrowed
+(IHST)Net
+dierence
+(IHST)
+Loan -0.072 0.047 -0.007
+(0.083) (0.171) (0.333)
+Outcome control mean (USD, level) 1810 553 1258
+n 1830 1830 1830
+Note: Standard errors in parentheses. The above analysis uses the Intent to Treat (ITT) from loan
+assignment. \Asset value" records the sum of the household's value of assets at baseline, together with
+net dierence between asset purchases and asset sales over the last 6 months, recorded at endline. \Money
+borrowed" is the sum of the amount borrowed over the 12 months prior to the baseline survey (recorded
+at baseline) and the amount over the 6 months prior to the endline survey (recorded at endline). The
+components for \asset value" and \money borrowed" are winsorized at the 99th percentile prior to IHST
+transformations. \Net dierence" records the dierence between \asset value" and \money borrowed."
+Values were converted to USD prior to IHST transformation (note that 1 USD was equal to approximately
+3,704 UGX in 2019). For 31 individuals who reported Fenix as a creditor, the amount of the school fee loan
+was added back into the total amount reported to have been borrowed. Loan refers to the semi-elasticity
+calculated following the exact method from Bellemare and Wichman (2019), following arguments from
+Halvorsen and Palmquist (1980), Kennedy (1981) and Giles (1982). The number of observations diers
+from that in Table A.18 because the outcomes in this table relies on having reported values at baseline.
+p<.10,p<.05,p<.01
+66Table A.20: Tests of Lockout, Adverse Selection, and Moral Hazard, Risk (Interactions
+Model) (ITT)
+LockoutAdverse
+SelectionMoral
+Hazard
+On Loan Repayment at 150 days
+Treatment 0.110.090.02
+(0.05) (0.04) (0.05)
+TreatmentMedian risk or above 0.01 -0.100.11
+(0.07) (0.06) (0.07)
+Median risk or above -0.16-0.16-0.26
+(0.04) (0.04) (0.04)
+Constant 0.640.640.74
+(0.03) (0.03) (0.03)
+On Loan Completion at 200 days
+Treatment 0.130.08 0.06
+(0.06) (0.05) (0.06)
+TreatmentMedian risk or above 0.07 -0.06 0.13
+(0.08) (0.07) (0.08)
+Median risk or above -0.21-0.21-0.27
+(0.05) (0.05) (0.05)
+Constant 0.580.580.65
+(0.03) (0.03) (0.04)
+n 655 814 593
+Note: Standard errors in parentheses. Loan repayment is measured by the cumulative proportion of the
+loan principal repaid. Loan completion describes whether the loan principal has been repaid. The above
+results display the Intent to Treat (ITT) analysis, which measures the average eect of assignment on loan
+repayment or loan completion. The analysis is run on the sample at the 150th day (for loan repayment)
+or 200th day (for loan completion) from origination. Under \Lockout" where the subsample is those
+who were assigned Secured or Unsecured, \Treatment" captures the treatment eect of Secured. Under
+\Adverse Selection" where the subsample is those who were assigned Unsecured or Surprise Unsecured,
+\Treatment" captures the treatment eect of Surprise Unsecured. Under \Moral Hazard" where the
+subsample is those who were in assigned Surprise Unsecured and Secured, \Treatment" captures the
+treatment eect of Secured. \Median risk or above" is an indicator for whether the customer had their
+solar home system locked for 11 percent or more of its history by early May 2019, right before the start
+of the experiment. \ " represents an interaction.p<.10,p<.05,p<.01
+67Table A.21: Tests of Lockout, Adverse Selection, and Moral Hazard, WTP (Interactions
+Model) (LATE)
+LockoutAdverse
+SelectionMoral
+Hazard
+On Loan Repayment at 150 days
+Treatment 0.09 0.02 0.07
+(0.07) (0.06) (0.07)
+TreatmentMedian WTP or above 0.10 0.07 0.03
+(0.09) (0.07) (0.09)
+Median WTP or above -0.00 0.00 0.07
+(0.05) (0.05) (0.05)
+Constant 0.580.580.60
+(0.04) (0.04) (0.04)
+On Loan Completion at 200 days
+Treatment 0.140.00 0.14
+(0.08) (0.07) (0.08)
+TreatmentMedian WTP or above 0.09 0.08 0.01
+(0.11) (0.09) (0.11)
+Median WTP or above -0.01 -0.00 0.07
+(0.06) (0.06) (0.06)
+Constant 0.490.500.50
+(0.05) (0.05) (0.05)
+n 505 638 469
+Note: Standard errors in parentheses. Loan repayment is measured by the cumulative proportion of
+the loan principal repaid. Loan completion describes whether the loan principal has been repaid. The
+above results display the Local Average Treatment Eect (LATE), which measures the average treatment
+eect on either loan repayment or loan completion for compliers, using the share of days in compliance
+as the endogenous variable (see the Appendix for Intent to Treat (ITT) results). The analysis is run on
+the sample at the 150th day (for loan repayment) or 200th day (for loan completion) from origination.
+Under \Lockout" where the subsample is those who were assigned Secured or Unsecured, \Treatment"
+captures the treatment eect of Secured. Under \Adverse Selection" where the subsample is those who
+were assigned Unsecured or Surprise Unsecured, \Treatment" captures the treatment eect of Surprise
+Unsecured. Under \Moral Hazard" where the subsample is those who were in assigned Surprise Unsecured
+and Secured, \Treatment" captures the treatment eect of Secured. \Median WTP or above" is an
+indicator for whether the customer responded as willing to pay at least 3,000 Ugandan Shillings to
+unlock their hypothetically-locked solar home system the next day. \" represents an interaction.p<
+.10,p<.05,p<.01
+68Table A.22: Tests of Lockout, Adverse Selection, and Moral Hazard, WTP (Interactions
+Model) (ITT)
+LockoutAdverse
+SelectionMoral
+Hazard
+On Loan Repayment at 150 days
+Treatment 0.08 0.02 0.06
+(0.06) (0.05) (0.06)
+TreatmentMedian WTP or above 0.09 0.06 0.03
+(0.08) (0.07) (0.08)
+Median WTP or above 0.01 0.01 0.07
+(0.05) (0.05) (0.05)
+Constant 0.580.580.60
+(0.04) (0.04) (0.04)
+On Loan Completion at 200 days
+Treatment 0.130.00 0.12
+(0.07) (0.06) (0.07)
+TreatmentMedian WTP or above 0.08 0.07 0.01
+(0.09) (0.08) (0.09)
+Median WTP or above 0.00 0.00 0.07
+(0.06) (0.06) (0.06)
+Constant 0.500.500.50
+(0.04) (0.04) (0.04)
+n 505 638 469
+Note: Standard errors in parentheses. Loan repayment is measured by the cumulative proportion of the
+loan principal repaid. Loan completion describes whether the loan principal has been repaid. The above
+results display the Intent to Treat (ITT) analysis, which measures the average eect of assignment on loan
+repayment or loan completion. The analysis is run on the sample at the 150th day (for loan repayment)
+or 200th day (for loan completion) from origination. Under \Lockout" where the subsample is those
+who were assigned Secured or Unsecured, \Treatment" captures the treatment eect of Secured. Under
+\Adverse Selection" where the subsample is those who were assigned Unsecured or Surprise Unsecured,
+\Treatment" captures the treatment eect of Surprise Unsecured. Under \Moral Hazard" where the
+subsample is those who were in assigned Surprise Unsecured and Secured, \Treatment" captures the
+treatment eect of Secured. \Median WTP or above" is an indicator for whether the customer responded
+as willing to pay at least 3,000 Ugandan Shillings to unlock their hypothetically-locked solar home system
+the next day. \" represents an interaction.p<.10,p<.05,p<.01
+69Figure A.1: Loan Repayment (Completion) by Percent of Days Locked on Day 150
+(a) Loan repayment
+(b) Loan completion
+Note: 95% condence intervals (displayed with dotted lines) are obtained via bootstrapping. Percent of
+days locked at SMS is trimmed at 1% and 99%. Repayment (completion) rate on day 150 is residualized
+to remove the eects of treatments and recentralized to the mean of the Secured group.
+70Figure A.2: Loan take-up by willingness to pay
+Note: This gure covers the sample of 950 individuals, of which 344 are treated with Secured loans and
+606 are treated with Unsecured loans. Individuals treated with Surprise Unsecured loans are excluded
+from this gure. Individuals with willingness to pay to unlock next day being 0 or 1,000 UGX are
+in the rst group, being 2,000 or 3,000 UGX in the second group, and being 4,000 or 5,000 in the
+third group. The average loan take-up by willingness to pay is plotted and 95% condence intervals
+are along with the bars. Note that 1 USD was equal to approximately 3,704 UGX in 2019 (Source:
+https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=UG).
+71B Proofs
+Proof of Proposition 1. Householdistrategically defaults with probability (1  qi)F(p=), where F() is
+a cdf and therefore increasing in its argument. Fixing p, asincreases the argument, p=, decreases and
+therefore so too does (1  qi)F(p=).
+Proof of Proposition 2. By hypothesis, S1(p) = (1 )E(~vi)< S 0(p) =Rv
+vmaxfv p;(1 )vgdF(v).
+Hence, there must exist vsuch that the household does not strategically default (i.e.,  v > p=) and
+thereforeSi(p) is strictly decreasing in qi. Further, observe that Si(p) is continuous in qi. By the
+intermediate value theorem, there must exist a qj2(0;1) such that Sj(q) =dw. From (2), all isuch
+thatqiqjwill purchase and all isuch thatqi>qjwill not. Hence, qj=q. To see that qis decreasing
+in, dierentiate both sides of Sj(p) =dwith respect to to get that
+0 =dSj(p)
+d
+=@Sj
+@+@Sj
+@qj@qj
+@
+Hence,@qj
+@= @Sj
+@=@Sj
+@qj<0;since@Sj
+@ qjE(~vi)<0:
+Proof of Lemma 1. We will rst show that di=wis optimal. First, clearly di<minfw;Si(pi)gis subop-
+timal since the monopolist can simply increase diand earn more prot. Therefore, di= minfw;Si(pi)g.
+Next suppose that the monopolist sells to household ianddi< w, which therefore implies di=Si(pi)
+and therefore pisolves arg max Si(pi) +Ri(pi) c. Since repossession is inecient (Assumption 2), total
+surplus is maximized by setting v(p) =vorpi=v, but thendi+Ri(pi)<w+Ri(v)w+v<c(by
+Assumption 3). Thus, the monopolist would prefer not to sell to household i, a contradiction. Hence,
+di=w.
+Proof of Proposition 3. As shown in Lemma 1, when wSi(p) then the monopoly price is p=v.
+Conditional on purchasing the good, the probability that household istrategically defaults is therefore
+(1 qi)F(v). Thus, to prove the result, it suces to show that vis increasing in and decreasing in .
+The left-hand side of (5) is independent of the two parameters and increasing in v(by Assumption 4).
+The right-hand side of (5) is increasing in and decreasing in . Thus, the point at which the left and
+right-hand side intersect (i.e., v) must increase with and decrease with .
+Proof of Proposition 4. This result follows from computing when monopoly prots are positive given the
+optimal prices in Lemma 1. For (i), when w <Si(p), the rm's total prot from selling to household i
+under the optimal contract is w+Ri(p) c. Similarly, for (ii), when w >Si(p), the rms total prot
+from selling to household iisw+Ri(S 1
+i(w)) c.
+Proof of Proposition 5. It is straightforward to argue that the constraint in (6) binds with equality. If
+not, then the rm could lower dand increase Ui. We can therefore rewrite the program (6) as
+(di;pi)2arg max
+d;pUi(d;p) +i(d;p)
+s:t: i(d;p) = 0(10)
+Sinceddoes not enter the objective of (10) and total surplus is decreasing in p, the solution to the above
+involves the smallest psuch that the rm makes zero prot (and then setting dc
+i=w), which is precisely
+as stated in (ii). Statement (i) then follows from computing when the rm prots are non-negative given
+the prices in (ii).
+72

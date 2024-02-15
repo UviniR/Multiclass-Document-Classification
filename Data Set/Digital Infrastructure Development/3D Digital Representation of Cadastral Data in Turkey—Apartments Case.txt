@@ -1,0 +1,866 @@
+land
+Article
+3D Digital Representation of Cadastral Data in
+T urkey—Apartments Case
+Fatih Döner1,*
+and Samet ¸ Sirin2
+1Faculty of Engineering and Natural Sciences, Department of Geomatics Engineering, Gümü¸ shane University,
+29000 Gümü¸ shane, Turkey
+2Ministry of Environment and Urbanization, Provincial Directorate of Environment and Urbanism,
+02000 Adıyaman, Turkey; samet.sirin@csb.gov.tr
+*Correspondence: fatihdoner@gumushane.edu.tr
+Received: 28 April 2020; Accepted: 27 May 2020; Published: 1 June 2020
+/gid00030/gid00035/gid00032/gid00030/gid00038/gid00001/gid00033/gid00042/gid00045 /gid00001
+/gid00048/gid00043/gid00031/gid00028/gid00047/gid00032/gid00046
+Abstract: With the widespread use of three-dimensional (3D) geographic information technologies,
+studies for 3D digital representation of property units in cadasters have increased in recent years.
+In Turkey, a project named 3D City Models and Cadasters was initiated by the General Directorate of
+Land Registries and Cadasters in 2018. With this project, which is planned to last four years, it aims to
+create 3D models of individual units (apartments) in buildings and provide visual representations of
+these individual units with legal information. Transition from the current 2D representation towards
+a 3D digital cadaster requires not only replacing analog drawings with 3D models but also examining
+the workﬂow for forming the property units. In this study, the process of registration of property
+rights for individual units is examined and possibilities and challenges for successful completion of
+the 3D cadaster project are evaluated from a legal, an organizational, and a technical point of view.
+Government plays a lead role by adopting the digital transformation as a state policy. However,
+new regulations and organizational settings may have to be introduced. Modeling and visualization
+alternatives for 3D data should be studied further.
+Keywords: 3D cadaster; individual units; condominium; data acquisition; visualization
+1. Introduction
+Reports published by organizations such as the International Federation of Surveyors (FIG)
+and the United Nations (UN) revealed that existing cadastral systems have shown limitations in the
+management of complex rights, restrictions, and responsibilities related to the land [ 1,2]. Ideally,
+it is expected that the future, modern cadastral systems will show the complete legal situation of
+land, including public rights and restrictions [ 3]. A need especially in cadastral systems in urban
+areas has emerged to register and represent the structures or property units located on top of each
+other in space rather than being restricted to a single plane. To address this need, various research
+activities have been conducted related to three-dimensional (3D) cadasters during the last two decades.
+The ﬁrst FIG workshop on 3D cadasters in 2001 was the starting point for the 3D cadaster research.
+In the past 20 years, many meetings, studies, and pilot projects have been carried out related to legal,
+organizational, and technical aspects of 3D cadaster [4–6].
+Buildings and individual units are the main objects with 3D characteristics in cadastral systems.
+Individual units are usually recorded separately from base parcels. In the current situation, individual
+units are not visible on the cadastral map, with only the outline of the building in relation to the ground
+being visible [ 7]. However, some countries and some municipalities have developed solutions for 3D
+volumetric registration /representation of individual units. The most common approach adopted for
+solutions at the beginning was that the drawings of the building showing the individual units (analog
+Land 2020 ,9, 179; doi:10.3390 /land9060179 www.mdpi.com /journal /landLand 2020 ,9, 179 2 of 17
+or digital) were made accessible. But these drawings were not integrated with the spatial part of the
+cadastral database [ 8,9]. However, with the increasing use of 3D geographic information technologies,
+use of spatial data models for a 3D digital representation of individual units has become widespread in
+recent years [10–19].
+Several studies with di erent approaches have been conducted related to individual units in
+recent years. For example, Thompson, et al. [ 20] oers use of XML (Extensible Markup Language)
+based survey plans to integrate individual units with cadastral data while Atazadeh et al. [ 21] models
+property boundaries of individual units within the BIM (Building Information Modeling) environment.
+Cemellini et al. [ 22] developed a LADM (Land Administration Domain Model) based prototype for 3D
+representing of individual units. Atazadeh et al. [ 23] compared di erent 3D spatial data models to
+provide visual representation of individual units. Also, Biljecki et al. [ 24], studied the use of GML-based
+city models in various spatial analyses related to individual units.
+Since the early 2000s, projects have been started by the General Directorate of Land Registries
+and Cadasters (GDLRC) with di erent aims such as updating cadastral data, producing cadastral
+data themes for national data infrastructure, and establishing land information systems [ 25]. GDLRC
+announced a new project named 3D City Models and Cadasters in 2018. The project was ﬁrst started
+in the Turkish capital Ankara and was planned to last four years for the whole country. The main aim
+of the project is to produce 3D models of buildings and individual units and relate these models to
+legal information (Figure 1). At an announcement about the ongoing project made by GDLRC in 2019,
+it was stated that production of detailed 3D models and sample title deeds had been started, and that
+studies for integration of the models with the GDLRC information system would continue [26].
+In addition to GDLRC, the General Directorate of Geographic Information Systems (GDGIS)
+completed the project entitled “Production of 3D Building and City Topography Data Sets in 2019”.
+With this project, after the data acquisition studies carried out by photogrammetric survey, the 3D
+vector data (in CityGML) of buildings was used in analyses such as of solar irradiation and volumetric
+structure density in urban areas [27].
+Land 2020 , 9, x FOR PEER REVIEW 2 of 18 
+with the spatial part of the cadastral database [8,9]. However, with the increasing use of 3D 
+geographic information technologies, use of spatia l data models for a 3D digital representation of 
+individual units has become widespread in recent years [10–19]. 
+Several studies with different approaches have been conducted related to individual units in 
+recent years. For example, Thompson, et al. [20] offers use of XML (Extensible Markup Language) based survey plans to integrate individual units with cadastral data while Atazadeh et al. [21] models property boundaries of individual units within the BIM (Building Information Modeling) environment. Cemellini et al. [22] developed a LADM (Land Administration Domain Model) based prototype for 3D representing of individual units. Atazadeh et al. [23] compared different 3D spatial data models to provide visual representation of indi vidual units. Also, Biljecki et al. [24], studied the 
+use of GML-based city models in various spat ial analyses related to individual units. 
+Since the early 2000s, projects have been started by the General Directorate of Land Registries 
+and Cadasters (GDLRC) with different aims such as updating cadastral data, producing cadastral data themes for national data infrastructure, and establishing land information systems [25]. GDLRC announced a new project named 3D City Models and Cadasters in 2018. The project was first started in the Turkish capital Ankara and was planned to last four years for the whole country. The main aim of the project is to produce 3D models of bu ildings and individual unit s and relate these models 
+to legal information (Figure 1). At an announcement about the ongoing project made by GDLRC in 
+2019, it was stated that production of detailed 3D  models and sample title deeds had been started, 
+and that studies for integration of the models wi th the GDLRC information system would continue 
+[26]. 
+In addition to GDLRC, the General Directorat e of Geographic Information Systems (GDGIS) 
+completed the project entitled “Production of 3D Building and City Topography Data Sets in 2019”. With this project, after the data acquisition stud ies carried out by photogrammetric survey, the 3D 
+vector data (in CityGML) of buildings was used in analyses such as of solar irradiation and 
+volumetric structure density in urban areas [27]. 
+ 
+Figure 1. Application interface of the GDLRC 3D Cadaster project, 3D building models (right) and 
+legal information (left) [28]. 
+In addition to projects initiated/carried out by institutions, strategies aiming to model cadastral 
+data for both spatial data infrastructures and applications of smart cities have also been determined in Turkey. A Presidential Decree was signed on November 7, 2019, in order to establish the target and strategy for the national spatial data infrastructure, to update the geographic data themes in 
+accordance with international standards, and to ensure there is coordination between institutions. 
+The cadaster and building data th emes are included in the decree to gether with 30 other geographic 
+data themes [29]. The cadaster and building data th emes were first prepared in 2012 within the scope 
+Figure 1. Application interface of the GDLRC 3D Cadaster project, 3D building models (right) and
+legal information (left) [28].
+In addition to projects initiated /carried out by institutions, strategies aiming to model cadastral
+data for both spatial data infrastructures and applications of smart cities have also been determined
+in Turkey. A Presidential Decree was signed on November 7, 2019, in order to establish the target
+and strategy for the national spatial data infrastructure, to update the geographic data themes in
+accordance with international standards, and to ensure there is coordination between institutions.
+The cadaster and building data themes are included in the decree together with 30 other geographic
+data themes [ 29]. The cadaster and building data themes were ﬁrst prepared in 2012 within the scope
+of national spatial data infrastructure and published by GDGIS. Shortly after the presidential decree
+was published, the National Smart Cities Strategy and Action Plan covering the period between 2020Land 2020 ,9, 179 3 of 17
+and 2023 was put into force by publication in the o cial gazette on December 24, in 2019. Activities in
+the action plan include developing a reference model for smart cities and integrating the model with
+the national spatial data infrastructure [ 30]. All these developments show that by being integrated
+with other data sets, the cadastral data will be used more frequently in the future for management and
+planning of cities besides providing legal information.
+Transition from current 2D representation towards a 3D digital cadaster requires not only replacing
+analog drawings with 3D models but also examining the workﬂow for deﬁning the property units.
+In this study, the registration process of property rights for individual units is examined, and possibilities
+and needs for successful completion of the 3D cadaster project are evaluated from legal, organizational,
+and technical points of view. Section 2 describes the process for forming property rights of individual
+units in Turkey. Section 3 presents the phases of the 3D cadaster project initiated by GDLRC. The 3D
+cadaster project is evaluated in Section 4. Finally, the paper ends with conclusions in Section 5.
+2. Current Cadastral Registration of Individual Units in T urkey
+The most typical cadastral objects that can be registered separately from the parcels are buildings
+or individual units. There are approximately 20.9 million individual units in Turkey. Registration of
+the individual units is subject to the Condominium Law and the rights on the individual units are
+recorded in a condominium book. In Turkey, a dual model has been adopted to establish the property
+rights of individual units. In this model, every individual unit owner has the full property rights for a
+part of the building (the individual unit) while the communal areas (such as staircases and elevators)
+of the building are held as co-property. After the construction is completed, it is obligatory to survey
+the boundaries of the building on the ground and draw the boundaries on a cadastral map in order to
+prepare the condominium title for each individual unit. A condominium title is an o cial document
+showing property rights of the individual units in a building.
+Registration of the independent units is carried out by GDLRC. However, ﬁrstly, an application
+for construction permission (CP) must be submitted to the municipality. At this stage, documents
+(title deed, architectural project, installation projects, etc.) are prepared according to the Zoning Law
+and related regulations are delivered to the municipality for checking. According to the Zoning Law,
+the municipality must complete the application within 30 days. If a deﬁciency is detected, the applicant
+is given 15 days to correct the deﬁciencies. After the construction is completed, application for
+occupancy permission (OP) must be submitted to the municipality. The OP is the document given
+for all the independent units within the main building and shows that the independent units are
+built in accordance with the CP . In Turkey, due to the country’s growing population, demand for new
+construction is high. The chart in Figure 2 shows the numbers of CP and OP for last ten years in
+Turkey. For the last decade, the total number of CP and OP were 1190350 and 1082388, respectively.
+Therefore, the average of the last ten years for CP and OP were 119035 and 108239, respectively [ 31].
+The reason why the total CP number is larger than the total OP number is the structures that have not
+been completed yet. This is also true for most of the years in Figure 2. In the last two years, however,
+the number of new construction projects is less than the number of buildings that have received a
+residence permit.
+After obtaining the CP , the registration phase of the individual units begins. As in many countries,
+in Turkey, the Civil Law is the main legal basis for deﬁning and registering property boundaries.
+According to article 718 of the Turkish Civil Law, property involving land reaches from the middle
+of the earth up to the sky as far as the owner has possible interest. In addition, constructions ﬁxed
+to the land are part of the property. According to Article 998 of the Turkish Civil Law, individual
+units of the building are registered in the land registry (organizational part of the GDLRC responsible
+for registration of real estates). Both land registration and cadastral mapping are maintained by one
+organization (GDLRC).The registration process of individual units begins with changing the type of
+the base parcel (parcel with the building erected on it) in the land registry records. To do this, after
+the boundaries of the building are surveyed by a licensed surveyor, the type of the parcel in the landLand 2020 ,9, 179 4 of 17
+registry records is updated as ‘parcel with building’. At the same time, boundaries are inserted into the
+spatial cadastral database. Finally, by using the OP and architectural project documentation, which are
+sent to the land registry by the municipality, property rights for each individual unit are established
+according to the Condominium Law. Figure 3 shows the process for forming the property rights of
+individual units in Turkey.
+Land 2020 , 9, x FOR PEER REVIEW 4 of 18 
+records. To do this, after the boundaries of the building are surveyed by a licensed surveyor, the 
+type of the parcel in the land registry records is updated as ‘parcel with buil ding’. At the same time, 
+boundaries are inserted into the sp atial cadastral database. Finally, by using the OP and architectural 
+project documentation, which are sent to the land registry by the municipality, property rights for 
+each individual unit are established according to the Condominium Law. Figure 3 shows the process for forming the property rights of individual units in Turkey. 
+ 
+Figure 2. Number of CP and OP (for construction) by years in Turkey. 
+ 
+Figure 3. Process for forming property rights for individual units in Turkey. 
+3. Modeling and Visualization of Individual Units 
+3.1. Conceptual Model 
+Modeling of cadastral data first started in Turkey in 2000 with the Land Registry and Cadaster 
+Information System (LRCIS) project. The aim of th is project was to carry out land registry and 
+cadaster activities throughout Turkey and to provide up-dated and reliable information about real estate to institutions and citizens. Efforts on mo deling cadastral data taking international standards 
+into account were initiated with the Turkey Na tional Geographic Information Systems (TNGIS) 
+project in 2006. With this project, carried out by GDGIS, in 2012, 10 data themes including LandRegistry_Cadaster (TK-Tapu_Kadastro) and Bu ilding (Bl-Bina) data themes were developed. 
+Figure 2. Number of CP and OP (for construction) by years in Turkey.
+Land 2020 , 9, x FOR PEER REVIEW 4 of 18 
+records. To do this, after the boundaries of the building are surveyed by a licensed surveyor, the 
+type of the parcel in the land registry records is updated as ‘parcel with buil ding’. At the same time, 
+boundaries are inserted into the sp atial cadastral database. Finally, by using the OP and architectural 
+project documentation, which are sent to the land registry by the municipality, property rights for 
+each individual unit are established according to the Condominium Law. Figure 3 shows the process for forming the property rights of individual units in Turkey. 
+ 
+Figure 2. Number of CP and OP (for construction) by years in Turkey. 
+ 
+Figure 3. Process for forming property rights for individual units in Turkey. 
+3. Modeling and Visualization of Individual Units 
+3.1. Conceptual Model 
+Modeling of cadastral data first started in Turkey in 2000 with the Land Registry and Cadaster 
+Information System (LRCIS) project. The aim of th is project was to carry out land registry and 
+cadaster activities throughout Turkey and to provide up-dated and reliable information about real estate to institutions and citizens. Efforts on mo deling cadastral data taking international standards 
+into account were initiated with the Turkey Na tional Geographic Information Systems (TNGIS) 
+project in 2006. With this project, carried out by GDGIS, in 2012, 10 data themes including LandRegistry_Cadaster (TK-Tapu_Kadastro) and Bu ilding (Bl-Bina) data themes were developed. 
+Figure 3. Process for forming property rights for individual units in Turkey.
+3. Modeling and Visualization of Individual Units
+3.1. Conceptual Model
+Modeling of cadastral data ﬁrst started in Turkey in 2000 with the Land Registry and Cadaster
+Information System (LRCIS) project. The aim of this project was to carry out land registry and cadaster
+activities throughout Turkey and to provide up-dated and reliable information about real estate to
+institutions and citizens. E orts on modeling cadastral data taking international standards into account
+were initiated with the Turkey National Geographic Information Systems (TNGIS) project in 2006.
+With this project, carried out by GDGIS, in 2012, 10 data themes including LandRegistry_Cadaster
+(TK-Tapu_Kadastro) and Building (Bl-Bina) data themes were developed. ISO 19152:2012 LADM [ 32]
+and INSPIRE (Infrastructure for Spatial Information in Europe) Cadastral Parcel [ 33] data themes were
+taken into consideration in the development of the TK and Bl data themes [ 34]. ISO /TC211 based
+UML /GML application schemas were designed for the geo-data themes to provide data interoperability.
+The content of LandRegistry_Cadaster covers (in connection with the LADM);
+ Spatial units registered for constituting immovables or constituting a part of immovables even not
+registered (Spatial Unit package in the LADM),
+ Cadastral original data stored in cadastral archive and based for technical studies (Surveying part
+of the Surveying and Representation package in the LADM),Land 2020 ,9, 179 5 of 17
+ Cadastral data structure that forms building blocks of the models (Representation part of the
+Surveying and Representation package in the LADM),
+ Immovables registered in land registry that deﬁne rights on one, more or a part of whole spatial
+units (Administrative package in the LADM),
+ Parties subject to property (Party package in the LADM),
+ External data provided from other systems (External package in the LADM).
+Figure 4 shows the basic classes of the TK data theme and their relationships. The functionality of
+the data theme model is deﬁned by the relationship between the four basic detail classes. These classes
+represent spatially registered spatial units (KonumsalBirim), the registration object (TescilNesne)
+created by the registration of these spatial units, rights, restrictions, and responsibilities (RRR-HKS)
+on the registration objects, person (Ki¸ si) associated with the RRRs and the relationships between
+these classes. The person can be real person, legal person, but also be groups or institutions without
+TescilNesne (registration object) and legal entity.
+Land 2020 , 9, x FOR PEER REVIEW 5 of 18 
+ISO 19152:2012 LADM [32] and INSPIRE (Infrastructure for Spatial Information in Europe) 
+Cadastral Parcel [33] data themes were taken into consideration in the development of the TK and Bl 
+data themes [34]. ISO/TC211 based UML/GML applic ation schemas were designed for the geo-data 
+themes to provide data interoperability. The content of LandRegistry_Cadaster covers (in 
+connection with the LADM);  
+• Spatial units registered for constituting immo vables or constituting a part of immovables 
+even not registered (Spatial Unit package in the LADM), 
+• Cadastral original data stored in cadast ral archive and based for technical studies 
+(Surveying part of the Surveying and Representation package in the LADM), 
+• Cadastral data structure that forms building blocks of the models (Representation part of 
+the Surveying and Representation package in the LADM), 
+• Immovables registered in land registry that define rights on one, more or a part of whole 
+spatial units (Administrative package in the LADM), 
+• Parties subject to property (Party package in the LADM), • External data provided from other systems (External package in the LADM). Figure 4 shows the basic classes of the TK data theme and their relationships. The functionality 
+of the data theme model is defined by the relationship between the four basic detail classes. These 
+classes represent spatially registered spatial un its (KonumsalBirim), the registration object 
+(TescilNesne) created by the re gistration of these spatial un its, rights, restrictions, and 
+responsibilities (RRR-HKS) on the registration objects, person (Ki şi) associated with the RRRs and 
+the relationships between these classes. The person can be real person, legal person, but also be groups or institutions without TescilNesne  (registration object) and legal entity. 
+ 
+Figure 4. Basic classes of TK (Tapu Kadastro) data theme and their relationships. Translation of some 
+of the expressions: ‘KonumsalBirim’ = ‘Spatial Units’, ‘TescilNesne’ = ‘Registration Object ’, ‘HKS’ = 
+‘RRR’, ‘Ki şi’ = ‘Person’, ‘Taraf’ = ‘Party’ [35]. 
+ 
+The spatial unit (KonumsalBirim) class (Figure 5)  has area and volume geometry and describes 
+the basic features of the other spatial unit class ty pes: Parcel (Parsel), Building (Bina), BuildingBlock 
+(BinaBlok), SpatialUnitCollection (KonumsalBirimKümesi), ParcelBlock (Ada), ProjectArea (ProjeAlan ı), and Easement ( İrtifak) detail classes. 
+In Turkey, while a building is registered with the ground parcel, individual units of the 
+building can be registered, with their shares determined based on the relative size of each individual unit [36]. Therefore, the building and the blocks consisting of buildings are modeled as a spatial unit with Building (Bina) and BuildingBlock (BinaBlok) classes. Common parts of the building and the 
+individual units are modeled by representing them  using the IndividualUnit (BagimsizBolum) class. 
+This class is included in the model as being re lated to the Building (Bina) and BuildingBlock 
+(BinaBlok) classes (Figure 6). 
+Figure 4. Basic classes of TK (Tapu Kadastro) data theme and their relationships. Translation of some of
+the expressions: ‘KonumsalBirim’ =‘Spatial Units’, ‘TescilNesne’ =‘Registration Object’, ‘HKS’ =‘RRR’,
+‘Ki¸ si’ =‘Person’, ‘Taraf’ =‘Party’ [35].
+The spatial unit (KonumsalBirim) class (Figure 5) has area and volume geometry and describes
+the basic features of the other spatial unit class types: Parcel (Parsel), Building (Bina), BuildingBlock
+(BinaBlok), SpatialUnitCollection (KonumsalBirimKümesi), ParcelBlock (Ada), ProjectArea (ProjeAlanı),
+and Easement ( ˙Irtifak) detail classes.
+Land 2020 , 9, x FOR PEER REVIEW 6 of 18 
+ 
+Figure 5. Spatial unit class types. Translation of some of  the expressions: ‘Parsel’ = ‘Parcel’, ‘Bina’ = 
+‘Building’, ‘BinaBlok’ = ‘BuildingBlock’, ‘KonumsalBirimKümesi’ = ‘SpatialUnitCollection’, ‘Ada’ = 
+‘ParcelBlock’, ‘ProjeAlan ı’ = ‘ProjectArea ’, ‘ İrtifak’ = ‘Easement’ [35]. 
+ 
+ 
+Figure 6. Individual unit class in relation with building and building block classes. Translation of 
+some of the expressions: ‘Bina’ = ‘Building’, ‘BinaBlok’ = ‘BuildingBlock’, ‘BagimsizBolum’ = ‘IndividualUnit’, ‘KonumsalBirimKümesi’ = ‘SpatialUnitCollection’, ‘Parsel’ = ‘Parcel’, 
+‘KonumsalBirim’ = ‘SpatialUnit’ [37]. 
+ 
+Figure 5. Spatial unit class types. Translation of some of the expressions: ‘Parsel’ =‘Parcel’,
+‘Bina’ =‘Building’, ‘BinaBlok’ =‘BuildingBlock’, ‘KonumsalBirimKümesi’ =‘SpatialUnitCollection’,
+‘Ada’ =‘ParcelBlock’, ‘ProjeAlanı’ =‘ProjectArea ’, ‘ ˙Irtifak’ =‘Easement’ [35].Land 2020 ,9, 179 6 of 17
+In Turkey, while a building is registered with the ground parcel, individual units of the building
+can be registered, with their shares determined based on the relative size of each individual unit [36].
+Therefore, the building and the blocks consisting of buildings are modeled as a spatial unit with
+Building (Bina) and BuildingBlock (BinaBlok) classes. Common parts of the building and the individual
+units are modeled by representing them using the IndividualUnit (BagimsizBolum) class. This class is
+included in the model as being related to the Building (Bina) and BuildingBlock (BinaBlok) classes
+(Figure 6).
+Land 2020 , 9, x FOR PEER REVIEW 6 of 18 
+ 
+Figure 5. Spatial unit class types. Translation of some of  the expressions: ‘Parsel’ = ‘Parcel’, ‘Bina’ = 
+‘Building’, ‘BinaBlok’ = ‘BuildingBlock’, ‘KonumsalBirimKümesi’ = ‘SpatialUnitCollection’, ‘Ada’ = 
+‘ParcelBlock’, ‘ProjeAlan ı’ = ‘ProjectArea ’, ‘ İrtifak’ = ‘Easement’ [35]. 
+ 
+ 
+Figure 6. Individual unit class in relation with building and building block classes. Translation of 
+some of the expressions: ‘Bina’ = ‘Building’, ‘BinaBlok’ = ‘BuildingBlock’, ‘BagimsizBolum’ = ‘IndividualUnit’, ‘KonumsalBirimKümesi’ = ‘SpatialUnitCollection’, ‘Parsel’ = ‘Parcel’, 
+‘KonumsalBirim’ = ‘SpatialUnit’ [37]. 
+ 
+Figure 6. Individual unit class in relation with building and building block classes.
+Translation of some of the expressions: ‘Bina’ =‘Building’, ‘BinaBlok’ =‘BuildingBlock’,
+‘BagimsizBolum’ = ‘IndividualUnit’, ‘KonumsalBirimKümesi’ = ‘SpatialUnitCollection’,
+‘Parsel’ =‘Parcel’, ‘KonumsalBirim’ =‘SpatialUnit’ [37].
+In Turkey, information about buildings and parcels is recorded separately. However, when property
+rights of an individual unit are established, the parcel and individual unit can be related using a
+parcel id. In addition, the address of the building is independent of the parcel. Therefore, the detailed
+relationships of the building data theme to Cadaster and the address data themes are deﬁned in the
+model including building features.
+Detail types deﬁned for the building data theme are SummaryConstruction (OzetYapi),
+SummaryBuilding (OzetBina), OtherConstruction (DigerYapi), Building (Bina), BuildingBlock
+(BinaBlok) and BuildingIndividualUnit (BinaBagımsızBolum). SummaryConstruction is a detail
+type that contains basic attributes of a construction that needs to be deﬁned. The versionStartDate
+(versiyonBaslangicTarihi) and versionFinaleDate (versiyonBitisTarihi) attributes are used for modeling
+temporal changes. Also, constructionDate (insaatTarihi), constructionName (yapiAdi) and
+constructionSituation (yapiDurumu) are deﬁned as primary attributes.
+The SummaryBuilding includes other attributes that need to be deﬁned for the building.
+OtherConstruction is used to deﬁne other constructions such as bridges between buildings and
+swimming pools. Both the OtherConstruction and SummaryBuilding are represented in the
+SummaryConstruction class by the generalization relationship. The Building refers to building
+data type as deﬁned in the Address data theme. BuildingBlock covers other subdivisions of the
+building that are not deﬁned in other classes. BuildingIndividualUnit deﬁnes all or part of the building
+(apartment, cellar, garage, etc.) independently. Here, the apartment, cellar, garage, etc. can be
+represented as features.Land 2020 ,9, 179 7 of 17
+3.2. Data Acquisition
+With modern surveying technology, 3D data collection has become easier. In particular,
+GNSS-based surveying techniques can provide high accuracy 3D coordinates. Also, both terrestrial
+laser-scanning and aerial laser-altimetry (LIDAR) are very e ective in the collection of elevation data
+for large regions [ 38]. In addition, unmanned aerial photogrammetry is an important source of 3D
+data collection in recent years [ 39]. Traditionally, one of the approaches for constructing 3D models
+of buildings is to capture footprints and extrude these footprints to a given height. Although this
+approach is very fast and su cient for large regions, the buildings appear as blocks in the model
+and detail of roofs cannot be modeled [ 40]. Another common approach is to ﬁt predeﬁned shapes of
+buildings to the 3D point clouds. The major disadvantage of the approach, however, is that it is very
+time-consuming [ 41]. Furthermore, with the advancement of remote sensing technologies, such as
+LIDAR (Light Detection and Ranging) and aerial photogrammetry, it is now possible to automatically
+and remotely measure the height of a building, which can be used to obtain a volumetric representation
+of a building (3D city model). For applications such as Google Earth and Bing Maps a number of
+operational tools have been developed for the automatic reconstruction of 3D city models from aerial
+photogrammetry [ 42]. In all approaches, however, individual units cannot be recognized in the 3D
+model. In many countries, although property of the individual units is established in a land registry,
+spatial information related to individual units can only be indicated in 2D drawings. Therefore, it is
+not possible to see the spatial distribution of individual units in a building [43].
+Data acquisition for the 3D cadaster project, announced in February 2018 in Turkey, started in
+December 2018. The study area for the ﬁrst phase of data acquisition covers 1662 cadaster maps at
+a scale of 1 /1000 and 58388 architectural projects. Data acquisition begins with geodetic activities.
+These activities include establishment and surveying of ground control points in the ﬁeld. Then images
+are collected by aerial photogrammetry and processing of GNSS-IMU (Inertial Measurement Unit)
+data are carried out. Production of digital terrain /elevation models, point clouds, and orthophotos
+is performed in the next step. After producing vector data and 3D models of buildings using
+photogrammetric data, 3D models and ﬂoor models of buildings are produced using architectural
+project data. 3D models of the buildings in the project area are ﬁrst produced in accordance with the
+LOD (Level of Detail)2 deﬁnition speciﬁed in the CityGML v2.0 [ 44] document using photogrammetric
+data. In LOD2, buildings are modeled as simple structures containing standard and simpliﬁed roof
+structures. Then, by using the architectural projects, the buildings are modeled at the LOD2.3 and
+each ﬂoor of the building are deﬁned in an OBJ ﬁle. The OBJ ﬁle is a standard 3D image format that
+can be exported and opened by various 3D image editing programs. It contains a three-dimensional
+object, which includes 3D coordinates, texture maps, polygonal faces, and other object information [ 45].
+LOD2.3 requires explicitly modeled roof overhangs if they are longer than 0.2 m, therefore the roof edge
+and the footprints are always at their actual location [ 46]. At next stages, veriﬁcation of geometries is
+performed by comparing models from photogrammetry and from architectural projects. In the project,
+the veriﬁcation is performed for 3D models of buildings by comparing the building model produced
+from photogrammetry to the building model produced from architectural projects. Veriﬁcation criteria
+of CityGML are considered. The geometries that are stored in the CityGML format are supposed to
+conform to the ISO 19107 deﬁnitions [ 47] for polygons (as GM_Ring and GM_Polygon) and polyhedra
+(as GM_Shell and GM_Solid), which should ensure that these form valid 2D and 3D objects. Mainly,
+a polygon should be closed and non-self-intersecting. Similarly, a polyhedron should be closed and
+non-self-intersecting. The results depend on the data set, but this procedure does manage to repair
+many problematic buildings. A tolerance needs to be set to deﬁne which faces are co-planar (set to
+0.01 m) [ 48,49]. Texturing of 3D models of buildings is carried out using oblique images. Individual
+units are modeled in 3D by using the architectural projects. At the ﬁnal stage, we aimed to associate
+these 3D models with legal records in the database of GDLRC.
+Images and vector data are geo-referenced and projected as Universal Transverse Mercator (UTM)
+—Datum ITRF96 (International Terrestrial Reference Frame 1996). In 3D modeling of the individualLand 2020 ,9, 179 8 of 17
+units, the geometry subject to property rights is taken as the basis of the assessment. In the digitization
+of the individual units, the outer boundaries of the individual units in the architectural project is
+considered. Interior walls are digitized with the thickness shown in the architectural project without
+doors. The outer walls and the windows on the inner walls, if any, are not digitized. Walls of the
+individual units in buildings of one story will be extruded by the value given in the architectural
+project. The 3D model of the individual units will show the name (living room, kitchen, etc.) and
+size (in square meters) of each room. In addition, each segment exceeding 50 cm on the outer walls is
+represented in the model. Attributes of 3D models will be prepared in an ADE (Application Domain
+Extensions) ﬁle, which is deﬁned as the CityGML extension. In this ﬁle, the coordinates of the ﬂoors,
+the name of province /district /neighborhood, parcel /individual unit number, and individual unit area is
+included [26].
+3.3. 3D Visualization
+As mentioned earlier, studies have been carried out to manage and model cadastral data since the
+2000s in Turkey. With the LRCIS project, legal information (rights, restrictions, and responsibilities) of
+the real estate has been accessible by users such as citizens, municipalities, and some ministries since
+the mid-2000s. In addition to legal information, in order to provide spatial information of real estate
+to users the Spatial Real Estate System (SRES) project was launched in 2013 by GDLRC. With SRES,
+the aim was to disseminate the CAD (Computer-Aided Design) models of parcels (in 2D) with map
+services and to provide access for citizens through the e-government portal. As the ﬁrst application
+of this project in 2014, the Parcel Query Application (PQA) was opened to public access through the
+GDLRC website (Figure 7). It is possible to query a cadastral parcel and to list attributes (area, parcel
+number, addresses, etc.) of the queried parcel using PQA. While initially 2.5 million queries were
+performed per month using PQA, an average of 3.5 million parcels per day were queried in 2019 [ 50].
+Land 2020 , 9, x FOR PEER REVIEW 9 of 18 
+building is marked on the satellite image (Figure 8). An average of 3 million e-government users per 
+month requested their real estate informatio n (parcel or individual unit) in 2019 [50]. 
+While the data acquisition for the 3D cadaste r project continues, GDLRC has announced a 
+prototype showing how to visualize the individual units. When this prototype shown in Figure 9 is 
+examined, it is seen that 3D building model, floor plan of an individual unit in the building and legal information of the selected individual unit can be visible together. With the 3D cadaster project, the 
+existing roof structure will be obtained by photog rammetric survey and transferred to the 3D model 
+with LOD2.3 model geometry. While 3D floor mo dels are being developed, plans (building, 
+basement, ground and loft), sections and views of architectural projects will be used. In the 3D 
+cadaster project, use of CityGML data model at LoD2.3 is preferred for 3D modeling of buildings. 
+However, studies in several countries have shown that data models such as IFC [51–53], IndoorGML [54–57], and LandXML [58,59] can be used in 3D modeling of cadastral data. In addition, for web-based visualization of the 3D models, there ar e other alternatives such as Nasa World Wind, 
+Cesium JS, Terra Explorer, and Google Earth [60]. On January 24, in 2019, two map services (GDM-Atlas and GDP-Sphere) were opened to user  access by the General Directorate of Mapping 
+(GDM) to meet the web based map needs of citizens and institution, to eliminate the dependency on foreign applications, and to contribute to digital transformation. GDLRC is pl anning to visualize the 
+cadastral data using the GDM infrastructure in the future. Thus, the aim is to avoid paying fees to 
+foreign companies for the visualization of cadastral data and to prevent the collection of personal information through foreign applications. 
+4. Evaluation 
+In order to realize a 3D cadaster, legal, institutio nal, and technical aspects should be taken into 
+account together. If the legal definition of property in 3D is not available, it would be meaningless to 
+survey and register the 3D objects. Therefore legal definitions for registration of 3D property units 
+are needed first. Organizational as pects are critical to providing a workflow to register the legally 
+defined 3D property units. The technical aspect s of 3D cadaster require finding solutions to 
+incorporating the information of the 3D objects in the cadastral database. In this section, 3D digital representation of individual units in Turkey is evaluated based on its legal, organizational, and 
+technical aspects. 
+ 
+Figure 7. A sample query result with PQA displaying pa rcel boundaries and a ttributes. Translation 
+of some of the expressions: ‘Ta şınmaz No’ = ‘Real Estate ID’, ‘ İl’ = ‘Province’, ‘Mahalle/Köy’ = 
+‘District/Village’, ‘Tapu Alan ı’ = ‘Area’, ‘Mevkii’ = ‘Place’, ‘Pafta’ = ‘Map Number’. 
+Figure 7. A sample query result with PQA displaying parcel boundaries and attributes.
+Translation of some of the expressions: ‘Ta¸ sınmaz No’ =‘Real Estate ID’, ‘ ˙Il’=‘Province’,
+‘Mahalle /Köy’ =‘District /Village’, ‘Tapu Alanı’ =‘Area’, ‘Mevkii’ =‘Place’, ‘Pafta’ =‘Map Number’.
+Unlike parcels, information of the individual units can be accessible only by the owner of the
+units through the e-government portal. In addition to title deed information of the individual unit,
+boundaries of the ground parcel can be visible on a map for the individual unit owner. Also, the building
+is marked on the satellite image (Figure 8). An average of 3 million e-government users per month
+requested their real estate information (parcel or individual unit) in 2019 [50].
+While the data acquisition for the 3D cadaster project continues, GDLRC has announced a
+prototype showing how to visualize the individual units. When this prototype shown in Figure 9
+is examined, it is seen that 3D building model, ﬂoor plan of an individual unit in the building and
+legal information of the selected individual unit can be visible together. With the 3D cadaster project,Land 2020 ,9, 179 9 of 17
+the existing roof structure will be obtained by photogrammetric survey and transferred to the 3D
+model with LOD2.3 model geometry. While 3D ﬂoor models are being developed, plans (building,
+basement, ground and loft), sections and views of architectural projects will be used. In the 3D cadaster
+project, use of CityGML data model at LoD2.3 is preferred for 3D modeling of buildings. However,
+studies in several countries have shown that data models such as IFC [ 51–53], IndoorGML [ 54–57],
+and LandXML [ 58,59] can be used in 3D modeling of cadastral data. In addition, for web-based
+visualization of the 3D models, there are other alternatives such as Nasa World Wind, Cesium JS,
+Terra Explorer, and Google Earth [ 60]. On January 24, in 2019, two map services (GDM-Atlas and
+GDP-Sphere) were opened to user access by the General Directorate of Mapping (GDM) to meet the
+web based map needs of citizens and institution, to eliminate the dependency on foreign applications,
+and to contribute to digital transformation. GDLRC is planning to visualize the cadastral data using
+the GDM infrastructure in the future. Thus, the aim is to avoid paying fees to foreign companies
+for the visualization of cadastral data and to prevent the collection of personal information through
+foreign applications.
+Land 2020 , 9, x FOR PEER REVIEW 10 of 18 
+ 
+Figure 8. Accessing the information of individual units through e-government. 
+4.1. Legal Aspects 
+In Turkey, property rights are guaranteed by the Constitution, and the Civil Law describes 
+general boundaries of the rights involving real estate. Although the Civil Law does not limit the 
+property of land in the third dimension, use of a parc el can be restricted by other public laws such as 
+the Zoning Law, Condominium Law, and Mine Law. The Condominium Law is the legal basis for the registration of individual units in a building. The system adopted for registration of property rights of individual units is advantageous for a 3D  representation, and it is easier to determine the 
+property boundaries of the individual units in relation to the parcels. The physical boundaries of the individual units can be used to describe the le gal boundaries. With the 3D cadaster project of 
+Turkey, which was started in 2018 for 3D digital representation of individual units, some technical 
+works were completed and a prototype was introduc ed. In order to make it possible to use 3D 
+digital data in the land registry, arrangements were made in Articles 10, 12, and 14 of the Condominium Law on February 15, 2018. Accordingly, when forming property rights of individual units, architectural projects and documents (occupancy permission and management plan of the building) can be prepared and sent to GDLRC in elec tronic form. However, the term 'electronic' is a 
+very general and there is no reference to any specific  data structure/format in  the law. Therefore, an 
+amendment to the current Statute for Land Registry Plans could be needed to provide exact 
+definition of ‘digital’ files used for the registrati on of individual units. Still, acceptance of the 
+electronic/digital information as a part of the legal documentation necessary for registration is an important step towards 3D digital re presentation of individual units. 
+Figure 8. Accessing the information of individual units through e-government.
+Land 2020 , 9, x FOR PEER REVIEW 11 of 18 
+ 
+Figure 9. Visualization/querying of individual units with 3D cadaster prototype. Translation of some 
+of the expressions: ‘Kat No’ = ‘Floor number’, ‘Daire No’ = ‘Individual unit Number’, ‘Sonuç’ = 
+‘Results’, ‘Ad’ = ‘Name’, ‘Soyad’ = ‘Surname’ [61]. 
+The existence of informal structures should also be taken into account in the 3D digital 
+visualization of independent units. Especially in rapidly growing large cities, there are informal structures (building or individual units). That is, they do not obey zoning or building codes and, 
+therefore, they do not have occu pancy permission. For example, a four-story building may appear as 
+three-story building according to the records in the land registry. In the 3D cadaster project, the whole building is modeled by using photogrammetric data, while individual units are modeled by using their projects stored in the land registry. Ther efore, the last floor of the four-story building and 
+the individual units located on this floor cannot  be represented. As a result, a 3D cadastral 
+representation does not necessarily reflect the real situation it represents. Since the cadaster is concerned with legal objects, a solution (e.g. zoning amnesty) is needed to ensure representation of these objects in a 3D cadaster. 
+Differences between physical and legal objects should be recognized. Boundaries of the legal 
+objects (rights) do not necessarily coincide with physi cal objects, therefore it is not the object which is 
+registered in cadaster but only the legal space (2D/ 3D) related to the individual unit. Since there is a 
+strong relationship between the represented legal object (maintained by the cadaster) and the represented physical object, the physical and legal representations should be updated consistently 
+within a given amount of reasonable time when a individual units is updated [9,62]. 
+In essence, the 3D cadastral objects are the content and partition of space, and they aim to 
+register legal status and property rights associated with land and other real estates or properties. To 
+define the 3D cadastral object, represent its 3D space, and associate it with its attributes and rights become the key contents for the 3D cadastral system  [14]. The boundaries of the 3D cadastral space 
+not only describe the geometric locations but also car ry legal meanings concerning the legal rights of 
+space occupation. 3D cadasters aim to manage the 3D  space of 3D objects by using 3D geometry to 
+Figure 9. Visualization /querying of individual units with 3D cadaster prototype. Translation of some of
+the expressions: ‘Kat No’ =‘Floor number’, ‘Daire No’ =‘Individual unit Number’, ‘Sonuç’ =‘Results’,
+‘Ad’ =‘Name’, ‘Soyad’ =‘Surname’ [61].Land 2020 ,9, 179 10 of 17
+4. Evaluation
+In order to realize a 3D cadaster, legal, institutional, and technical aspects should be taken into
+account together. If the legal deﬁnition of property in 3D is not available, it would be meaningless to
+survey and register the 3D objects. Therefore legal deﬁnitions for registration of 3D property units are
+needed ﬁrst. Organizational aspects are critical to providing a workﬂow to register the legally deﬁned
+3D property units. The technical aspects of 3D cadaster require ﬁnding solutions to incorporating the
+information of the 3D objects in the cadastral database. In this section, 3D digital representation of
+individual units in Turkey is evaluated based on its legal, organizational, and technical aspects.
+4.1. Legal Aspects
+In Turkey, property rights are guaranteed by the Constitution, and the Civil Law describes general
+boundaries of the rights involving real estate. Although the Civil Law does not limit the property of
+land in the third dimension, use of a parcel can be restricted by other public laws such as the Zoning
+Law, Condominium Law, and Mine Law. The Condominium Law is the legal basis for the registration
+of individual units in a building. The system adopted for registration of property rights of individual
+units is advantageous for a 3D representation, and it is easier to determine the property boundaries of
+the individual units in relation to the parcels. The physical boundaries of the individual units can be
+used to describe the legal boundaries. With the 3D cadaster project of Turkey, which was started in 2018
+for 3D digital representation of individual units, some technical works were completed and a prototype
+was introduced. In order to make it possible to use 3D digital data in the land registry, arrangements
+were made in Articles 10, 12, and 14 of the Condominium Law on February 15, 2018. Accordingly,
+when forming property rights of individual units, architectural projects and documents (occupancy
+permission and management plan of the building) can be prepared and sent to GDLRC in electronic
+form. However, the term ’electronic’ is a very general and there is no reference to any speciﬁc data
+structure /format in the law. Therefore, an amendment to the current Statute for Land Registry Plans
+could be needed to provide exact deﬁnition of ‘digital’ ﬁles used for the registration of individual units.
+Still, acceptance of the electronic /digital information as a part of the legal documentation necessary for
+registration is an important step towards 3D digital representation of individual units.
+The existence of informal structures should also be taken into account in the 3D digital visualization
+of independent units. Especially in rapidly growing large cities, there are informal structures (building
+or individual units). That is, they do not obey zoning or building codes and, therefore, they do not
+have occupancy permission. For example, a four-story building may appear as three-story building
+according to the records in the land registry. In the 3D cadaster project, the whole building is modeled
+by using photogrammetric data, while individual units are modeled by using their projects stored in
+the land registry. Therefore, the last ﬂoor of the four-story building and the individual units located
+on this ﬂoor cannot be represented. As a result, a 3D cadastral representation does not necessarily
+reﬂect the real situation it represents. Since the cadaster is concerned with legal objects, a solution
+(e.g., zoning amnesty) is needed to ensure representation of these objects in a 3D cadaster.
+Dierences between physical and legal objects should be recognized. Boundaries of the legal
+objects (rights) do not necessarily coincide with physical objects, therefore it is not the object which
+is registered in cadaster but only the legal space (2D /3D) related to the individual unit. Since there
+is a strong relationship between the represented legal object (maintained by the cadaster) and the
+represented physical object, the physical and legal representations should be updated consistently
+within a given amount of reasonable time when a individual units is updated [9,62].
+In essence, the 3D cadastral objects are the content and partition of space, and they aim to register
+legal status and property rights associated with land and other real estates or properties. To deﬁne
+the 3D cadastral object, represent its 3D space, and associate it with its attributes and rights become
+the key contents for the 3D cadastral system [ 14]. The boundaries of the 3D cadastral space not only
+describe the geometric locations but also carry legal meanings concerning the legal rights of space
+occupation. 3D cadasters aim to manage the 3D space of 3D objects by using 3D geometry to representLand 2020 ,9, 179 11 of 17
+the 3D property unit [ 63–65]. The 3D cadaster project assumes that physical buildings have consistent
+boundaries in legal space. Meanwhile, the 3D cadastral space uniﬁes the physical construction space
+with the legal space. Although a 3D cadastral object occupies some space, its space may not be fully
+ﬁlled by physical entities.
+4.2. Organizational Aspects
+Cadastral systems can only exist within an organizational framework. Therefore, the organizational
+aspects of the 3D cadaster are related to the duties and responsibilities of the land registration and
+cadastral surveying organizations [ 66]. A workﬂow must be provided to produce 3D data for modeling
+3D representations of individual units beyond pilot studies. Current workﬂow needs to change to
+require architects to submit the requisite information to create the 3D models of individual units.
+In Turkey, responsibility of both land registration and cadastral surveying belongs to the GDLRC.
+The GDLRC is a liated to the MEU. The GDGIS, which is responsible for deﬁning national spatial
+data standards, is also a liated to the MEU. In this way, there is a coordination in the standards of
+registration, mapping and cadastral data. Besides the GDLRC, stakeholders such as municipalities,
+licensed surveyors, civil engineers, architects, and lawyers are involved in the registration process
+of individual units. Development of the 3D visualization of individual units in the cadaster needs
+agreement from the stakeholders.
+In general, cadastral organizations are not particularly open to changes. Changing the current
+registration workﬂow is not easy, especially in countries where the state provides a guarantee of title [ 6].
+The legal task of the cadaster and land registry is to survey and record property boundaries of real
+estate and to provide information on these. Even though 3D modeling and visualization of individual
+units improve the registration, the organizations seem reluctant to obtain these improvements because
+of uncertainties (e.g., deﬁning 3D property boundaries). Although research on 3D cadaster has been
+conducted for many years, GDLRC was only able to start the 3D cadaster project in 2018. Financing
+such a high-cost project is not easy because it is di cult to express the economic value of better
+representation of the legal situation. The Presidential Decree and the Action Plan (see Introduction
+section), which were put into practice in the end of 2019 in Turkey, show that government will play a
+leading and coordinating role in the transition from 2D to 3D digital representation, ensuring improved
+datasets and workﬂows.
+The registered legal objects may not necessarily coincide with physical objects. However a link
+between a physical and a legal registration within the Spatial Data Infrastructures (SDI) enables
+eciently checking the consistency between the two. Organizational arrangements have to be made to
+resolve the di erences and to make sure that after changes at the side of the physical objects also the
+legal counterpart is updated. A solution is creating 3D legal space and referring from the cadaster
+system to the corresponding 3D descriptions in external registrations of representations of the physical
+individual units. The solution requires the use of a SDI to access information on physical objects.
+The idea behind this solution is that the cadaster can beneﬁt from distributed registrations within
+a SDI by dynamically linking information from physical objects maintained in di erent databases.
+In this approach, geometry of individual units can be maintained at their original source outside the
+responsibility of cadaster, although this information can be accessed from cadaster whenever it is
+needed [67].
+4.3. Technical Aspects
+The most progress in 3D cadastral research and development has been in technical aspects.
+Advances in the acquisition, modeling, and visualization of 3D data have contributed to this
+development for the past two decades [ 68]. Also, in recent years, the relationship between 3D
+models of the physical world and legal entities has become more visible thanks to BIM models.
+Data acquisition is the most time-consuming and labor-intensive part of the 3D cadaster project,
+due to the di culty of interpreting the existing legal documents and geometric control of 3D models.Land 2020 ,9, 179 12 of 17
+These operations require time and experienced sta . When the project is completed, it will be possible
+to represent the individual units of buildings in a 3D digital environment together with their legal
+information. However, one of the important issues is keeping the 3D digital data up-to-date. Therefore,
+the information of the new building and individual units should be inserted into the cadastral database
+automatically. For this, the need for technical sta who can work with 3D models, especially in
+small municipalities, will need to be met. The creation of 3D data may not be justiﬁable for cadastral
+purposes alone. Therefore, multi-purpose use of digital models of individual units for city planning
+and management should be taken into account for spatial data infrastructures [69].
+First visualization examples of the ongoing project were prepared for simple structures. Geometries
+of selected individual units in 3D models are relatively simple compared to the geometries of the
+3D physical objects in CAD models. Technical issues such as modeling complex property units and
+modeling objects with curved faces should be further studied. Also, information about accuracy of the
+3D cadaster project should be provided. Drawings of individual units have already been provided
+with digital ﬁles for many years but it will be more di cult to interpret and convert the data for too old
+buildings without drawings or, for old buildings, drawings that have been drawn by hand. Therefore,
+accuracy of the data conversion should be given special attention. Also, 3D visualization should be
+improved by using tools such as object selection, object query, navigation, and measurement.
+An important question is how the z-coordinates of 3D objects should be deﬁned: as absolute
+values (in the national coordinate frame) or relative to the earth’s surface (e.g., 10 meters above the
+surface). In the 3D cadaster project, z-coordinates of the 3D objects will be deﬁned in absolute values.
+Absolute z-coordinates are not inﬂuenced by surface changes; furthermore, the deﬁnition of the surface
+level is sometimes not clear, and ﬁnally, using z-coordinates with respect to the surface can complicate
+the deﬁnition of the geometry of 3D objects. Therefore, the most sustainable solution is to deﬁne 3D
+objects with absolute z-coordinates [ 70]. In addition, the horizontal position error of a 3D model for
+the 3D cadaster project cannot exceed 30 cm. Also, the area error of a 3D model is determined based
+on the building area. For example, the area error of the 3D model must not be larger than 10% of the
+building area for buildings with an area less than 100 m2. It must not be larger than 5% of the building
+area for buildings between 100 m2and 500 m2. Digital aerial images for the project are produced in
+10 cm ( 2 cm) GSD (Ground Sample Distance).
+At this stage of the study, the ongoing 3D cadaster project in Turkey was compared to similar
+recent studies in some countries. In Australia [ 22], the Netherlands [ 11], and Sweden [ 71], there are
+studies on the 3D representation of individual units in cadasters. Several 3D models were developed
+by digitizing the survey plans of 5 buildings and 200 individual units in Australia. Then, a web-based
+dissemination prototype was improved to visualize the models in 3D. Geometrical accuracy of the
+models was matched with the accuracy of the unit sketches. Individual units that are modeled in
+3D as KML encoded ﬁles were visualized together with 2D cadastral parcels. In the Netherlands,
+BIM-based 3D models were developed by using the footprints of buildings in cadastral maps together
+with the drawings in the notarial deeds. With these models, the building and individual units were
+visualized in 3D in GIS and Web environments. Then, 3D models were connected with 2D cadastral
+parcels. Geometrical accuracy was associated with the accuracy of the drawings in the notarial deeds.
+In Sweden, IFC-based 3D models of legal and physical spaces of buildings were developed by using
+drawings from property formation dossiers. These models were visualized in 3D in GIS and CAD
+environments. Geometrical accuracy was matched with the accuracy of the cadastral index map.
+Results of the comparison are summarized in Table 1.Land 2020 ,9, 179 13 of 17
+Table 1. 3D representation of cadastral data in four countries.
+T urkey Australia Netherlands Sweden
+Data acquisitionPhotogrammetry and
+digitizing the drawings
+of individual unitsDigitizing survey
+plansFootprints of
+buildings in
+cadastral maps and
+notarial deedsDrawings from
+property formation
+dossiers
+Geometrical accuracyConsistent with the
+accuracy of the
+photogrammetric
+surveys and drawings of
+individual unitsConsistent with the
+accuracy of the
+unit sketchesConsistent with the
+accuracy of the
+notarial deedsConsistent with the
+accuracy of the
+cadastral index map
+3D data management CityGML KML IFC IFC
+Connection to 2D
+cadastral objectsNo Cadastral parcel Cadastral parcel No
+Distinction legal and
+physical spaces in
+visualizationNo No Yes Yes
+3D visualization
+environmentWeb Web GIS and Web GIS and CAD
+5. Conclusions
+The inadequacy of the existing cadastral systems in representing some property situations that
+emerge in the modern world has led to an increase in research and development towards 3D cadaster
+for the last twenty years. In this paper, studies for the 3D digital representation of the cadastral data
+in Turkey are evaluated. In connection with this, some opportunities and challenges are revealed.
+The 3D cadaster project aiming at 3D digital representation of individual units was started by GDLRC
+in 2018. In Turkey, the number of registered individual units is approximately 20.9 million and an
+average of 100 thousand OP application per year are submitted to municipalities for new buildings.
+Only outlines of the buildings can be visible on cadaster maps in current practice. Therefore, with the
+project, representation of cadastral data will be improved by showing distribution of individual units
+in a building.
+Generally, current legal and organizational frameworks in Turkey are advantageous for
+providing 3D representation of individual units. The registration model (title registration) and
+the law (Condominium Law) meet the need for the creation of property rights of individual units.
+Also, the GDLRC is responsible for both registration and cadastral surveys, which facilitates data
+exchange. Municipalities that are responsible for managing the permission and control processes
+of constructions can send information used for registration to GDLRC in a digital environment.
+In addition, the adoption of digital transformation as a state policy with the National Smart Cities
+Strategy and Action Plan supports digital representation of property units.
+Even though developments are available, describing 3D objects in cadastral registration poses a
+challenge. New regulations may have to be introduced. Transition from current 2D representation
+towards a 3D digital cadaster requires not only replacing analog drawings with 3D models but also
+examining the workﬂow for forming the property units. In order to keep the 3D digital data sets
+up-to-date, deﬁning the standards for the production of 3D digital models to be used in the registration
+processes of the new buildings should be further studied. In addition, the use of di erent data
+structures and platforms in modeling and visualization of 3D data should be examined. Regarding
+technical aspects, representation of complex structures and curved faces should be investigated.
+Author Contributions: Conceptualization, F.D. and S.¸ S.; methodology, F.D.; validation, F.D. and S.¸ S.; formal
+analysis, F.D.; investigation, F.D. and S.¸ S.; resources, F.D. and S.¸ S.; data curation, F.D.; writing—original draft
+preparation, F.D.; writing—review and editing, F.D. and S.¸ S.; visualization, S.¸ S.; supervision, F.D. All authors have
+read and agreed to the published version of the manuscript.
+Funding: This research received no external funding.Land 2020 ,9, 179 14 of 17
+Acknowledgments: We acknowledge the Ministry of Environment and Urbanization and General Directorate
+of Land Registry and Cadaster for the information related to the 3D Cadaster Project. We would further like to
+acknowledge Rodney James Thompson from Queensland, Australia for his advising and editing of the English text.
+Conﬂicts of Interest: The authors declare no conﬂict of interest.
+References
+1. UN-FIG. The Bogor Declaration ; FIG Publication; The International Federation of Surveyors (FIG): Copenhagen,
+Denmark, 1996.
+2. UN-FIG. The Bathurst Declaration on Land Administration for Sustainable Development ; FIG Publication;
+The International Federation of Surveyors (FIG): Copenhagen, Denmark, 1999.
+3. Steudler, D.; Kaufman, S. (Eds.) Cadastre 2014 and Beyond ; FIG Publication; FIG: Copenhagen, Denmark, 2014;
+Volume 61.
+4. Paulsson, J.; Paasch, M.J. 3D property research from a legal perspective. Comput. Environ. Urban Syst.
+2013 ,40, 7–13. [CrossRef]
+5. Van Oosterom, P . Best Practices 3D Cadastres , 1st ed.; The International Federation of Surveyors (FIG):
+Copenhagen, Denmark, 2018; pp. 95–113.
+6. Stoter, J.; Ho, S.; Biljecki, F. Considerations for a Contemporary 3D Cadastre for our Times. In Proceedings of
+the XLII. International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences,
+Singapore, 24–27 September 2019.
+7. Doner, F.; Thompson, R.; Stoter, J.; Lemmen, C.; Ploeger, H.; van Oosterom, P . 4D Land Administration
+Solutions in The Context of the Spatial Information Infrastructure. In Proceedings of the FIG Working Week
+2008, Stockholm, Sweden, 14–19 June 2008.
+8. Van Oosterom, P .; Ploeger, H.; Stoter, J. Analysis of 3D Property Situations in the USA. In Proceedings of the
+FIG Working Week 2005, Cairo, Egypt, 16–21 April 2005.
+9. Döner, F.; Thompson, R.; Stoter, J.; Lemmen, C.; Ploeger, H.; van Oosterom, P .; Zlatanova, S. 4D cadastres: First
+analysis of legal, organizational, and technical impact with a case study on utility networks. Land Use Policy
+2010 ,27, 1068–1081. [CrossRef]
+10. Asghari, A.; Kalantari, M.; Rajabifard, A. A structured framework for 3D cadastral data validation—A case
+study for Victoria, Australia. Land Use Policy 2019 , in press. [CrossRef]
+11. Meulmeester, R.W.E. BIM Legal: Proposal for Deﬁning Legal Spaces for Apartment Rights in the
+Dutch Cadastre Using the IFC Data Model. Master’s Thesis, Delft University of Technology, Delft,
+The Netherlands, 2019.
+12. Ying, S.; Guo, R.; Li, L.; Chen, N.; Jia, Y. An Uniform Real-Estate Registration Model for China. In Proceedings
+of the 6th International FIG 3D Cadastre Workshop, Delft, The Netherlands, 2–4 October 2018.
+13. Ying, S.; Guo, R.; Yang, J.; He, B.; Zhao, Z.; Jin, F. 3D space shift from CityGML LoD3-based multiple building
+elements to a 3D volumetric object. ISPRS Int. J. Geo-Inf. 2017 ,6, 17. [CrossRef]
+14. Ying, S.; Guo, R.; Li, L.; Biao, H. Application of 3D GIS to 3D Cadastre in Urban Environment. In Proceedings
+of the 3rd International Workshop on 3D Cadastres: Developments and Practices, Shenzhen, China,
+25–26 October 2012.
+15. Ghawana, T.; Sargent, J.; Bennett, R.M.; Zevenbergen, J.; Khandelwald, P .; Rahmane, S. 3D cadastres in
+India: Examining the status and potential for land administration and management in Delhi. Land Use Policy
+2019 , in press. [CrossRef]
+16. Budisusanto, Y.; Aditya, T.; Muryamto, R. LADM Implementation Prototype for 3D Cadastre Information
+System of Multi-Level Apartment in Indonesia. In Proceedings of the 5th Land Administration Domain
+Model Workshop, Kuala Lumpur, Malaysia, 24–25 September 2013.
+17. Kalantari, M.; Kalogianni, E. Towards LADM Victoria Country Proﬁle—Modelling the Spatial Information.
+In Proceedings of the 6th International FIG 3D Cadastre Workshop, Delft, The Netherlands, 2–4 October 2018.
+18. Pouliot, J.; Vasseur, M. Terrestrial LiDAR Capabilities for 3D Data Acquisition (Indoor and Outdoor) in the
+Context of Cadastral Modelling: A Comparative Analysis for Apartment Units. In Proceedings of the 4th
+International Workshop on 3D Cadastres, Dubai, United Arab Emirates, 9–11 November 2014.
+19. Viitanen, K. 3 3D Property Ownership and Use—Registration of Apartments and Premises in Finland.
+In Proceedings of the FIG XXII International Congress, Washington, DC, USA, 19–26 April 2002.Land 2020 ,9, 179 15 of 17
+20. Thompson, R.J.; van Oosterom, P .; Soon, K.H. LandXML Encoding of Mixed 2D and 3D Survey Plans with
+Multi-Level Topology. ISPRS Int. J. Geo-Inf. 2017 ,6, 171. [CrossRef]
+21. Atazadeh, B.; Kalantari, M.; Rajabifard, A.; Ho, S. Modelling building ownership boundaries within BIM
+environment. Comput. Environ. Urban Syst. 2017 ,61, 24–38. [CrossRef]
+22. Cemellini, B.; van Oosterom, P .; Thompson, R.; de Vries, M. Design, development and usability testing of an
+LADM compliant 3D Cadastral prototype system. Land Use Policy 2020 , in press. [CrossRef]
+23. Atazadeh, B.; Rajabifard, A.; Kalantari, M. Assessing performance of three BIM-based views of buildings for
+communication and management of vertically stratiﬁed legal interests. ISPRS Int. J. Geo-Inf. 2017 ,6, 198.
+[CrossRef]
+24. Biljecki, F.; Stoter, J.; Ledoux, H.; Zlatanova, S.; Çöltekin, A. Applications of 3D City Models: State of the Art
+Review. ISPRS Int. J. Geo-Inf. 2015 ,4, 2842–2889. [CrossRef]
+25. Döner, F. Evaluation of cadastre renovation studies in Turkey. Surv. Rev. 2015 ,47, 141–152. [CrossRef]
+26. ¸ Sirin, S. Three Dimensional Visualization of Cadastral Data. Master’s Thesis, Gümü¸ shane University, Turkey,
+2019. (In Turkish)
+27. MEU (Ministry of Environment and Urbanization). 3D Building and City Topography Data Sets Production
+Project (in Turkish). Available online: https: //cbs.csb.gov.tr /3b-bina-modeli-ornek-veri-kumesi-i-91887
+(accessed on 11 April 2020).
+28. GDLRC (General Directorate of Land Registry and Cadastre). Introduction of 3D Cadastre Project (in
+Turkish). Available online: https: //www.tkgm.gov.tr /tr/icerik /3-boyutlu-sehir-modelleri-ve-kadastro-projesi
+(accessed on 13 April 2020).
+29. OG (O cial Gazette). Presidential Decree on Geographic Information Systems (in Turkish). Available online:
+https: //www.mevzuat.gov.tr /MevzuatMetin /19.5.49.pdf (accessed on 15 April 2020).
+30. OG (O cial Gazette). National Smart Cities Strategy and Action Plan (in Turkish). Available online:
+https: //www.mevzuat.gov.tr /MevzuatMetin /CumhurbaskanligiGenelgeleri /20191224-29.pdf (accessed on
+15 April 2020).
+31. TÜ˙IK (Turkey Statistical Institute). Building Permission Statistics. Available online: http: //www.tuik.gov.tr /
+PreTablo.do?alt_id =1055 (accessed on 11 April 2020).
+32. International Organization for Standardization (ISO). ISO TC /211—ISO 19152:2012. Geographic
+Information—Land Administration Domain Model (LADM) , 1st ed.; ISO: Geneva, Switzerland, 2012.
+33. INSPIRE 2010 (Infrastructure for Spatial Information in the European Community), Data Speciﬁcation
+on Cadastral Parcels—Guidelines. Available online: https: //inspire.ec.europa.eu /documents /Data_
+Speciﬁcations /INSPIRE_DataSpeciﬁcation_CP_v3.0.1.pdf (accessed on 11 May 2020).
+34. Döner, F.; Bıyık, C. Conformity of LADM for Modeling 3D /4D Cadastre Situations in Turkey. In Proceedings
+of the 5th Land Administration Domain Model Workshop, Kuala Lumpur, Malaysia, 25 September 2013.
+35. GDGIS 2012 (General Directorate of Geographic Information Systems), Land Registry-Cadastre Data
+Theme. Available online: https: //webdosya.csb.gov.tr /db/cbs/editordosya /TUCBS_TK1_1.pdf (accessed on
+15 April 2020).
+36. Ça˘ gda, V .; Stubkjær, E.; de Vries, W.T.; Merwe, C.; Paasch, J.; Paulsson, J.; Schwery, N.; Ploeger, H.;
+I¸ sikda˘ g, Ü.; Kara, A. Co-ownership Shares in Condominiums—A Comparison Across Jurisdictions and
+Standards. In Proceedings of the 6th International FIG Workshop on 3D Cadastres, Delft, The Netherlands,
+2–4 November 2018.
+37. GDGIS 2012 (General Directorate of Geographic Information Systems), Building Data Theme. Available
+online: https: //webdosya.csb.gov.tr /db/cbs/editordosya /TUCBS_BI1_1.pdf (accessed on 15 April 2020).
+38. Wolf, P .R.; Ghilani, C.D. Elementary Surveying: An Introduction to Geomatics ; Prentice Hall: New York, NY,
+USA, 2002.
+39. Mårtensson, S.-G.; Reshetyuk, Y. Height uncertainty in digital terrain modelling with unmanned aircraft
+systems. Surv. Rev. 2017 ,49, 312–318. [CrossRef]
+40. Suveg, I.; Vosselman, M.G. Automatic 3D Reconstruction of Buildings. In Proceedings of the SPIE Photonics
+West, Electronic Imaging, Three-dimensional Image Capture and Applications V , San Francisco, CA, USA,
+19 January 2002.
+41. Hofmann, A.D.; Maas, H.-G.; Streilein, A. Knowledge-Based Building Detection Based on Laser Scanner
+Data and Topographic Map Information. In Proceedings of the Symposium on Photogrammetric Computer
+Vision, Graz, Austria, 9–13 September 2002.Land 2020 ,9, 179 16 of 17
+42. Haala, N.; Kada, M. An update on automatic 3D building reconstruction. ISPRS J. Photogramm. Remote Sens.
+2010 ,65, 570–580. [CrossRef]
+43. Jazayeri, I.; Rajabifard, A.; Kalantari, M. A geometric and semantic evaluation of 3D data sourcing methods
+for land and property information. Land Use Policy 2014 ,36, 219–230. [CrossRef]
+44. OGC. OGC City Geography Markup Language (CityGML) Encoding Standard 2.0.0 ; OGC: Welland, MA, USA, 2012.
+45. Xu, Z.; Zhang, L.; Li, H.; Lin, Y.; Yin, S. Combining IFC and 3D tiles to create 3D visualization for building
+information modeling. Autom. Constr. 2020 ,109, 102995. [CrossRef]
+46. Biljecki, F. Level of Detail in 3D City Models. Ph.D. Thesis, Delft University of Technology, Delft,
+The Netherlands, 2017.
+47. ISO. 19107: Geographic Information—Spatial Schema ; Technical Report; ISO: Geneva, Switzerland, 2003.
+48. Boeters, R.; Ohori, K.A.; Biljecki, F.; Zlatanova, S. Automatically enhancing CityGML LOD2 models with a
+corresponding indoor geometry. Int. J. Geogr. Inf. Sci. 2015 ,29, 2248–2268. [CrossRef]
+49. Biljecki, F.; Ledoux, H.; Stoter, J. An improved LOD speciﬁcation for 3D building models. Comput. Environ.
+Urban Syst. 2016 ,59, 25–37. [CrossRef]
+50. GDLRC 2019 (General Directorate of Land Registry and Cadastre), Annual Report. Available online: https: //
+www.tkgm.gov.tr /sites/default /ﬁles/icerik_ekleri /btdb_2019_faliyet_raporu_0.pdf (accessed on 13 April 2020).
+51. Sun, J.; Mi, S.; Olsson, P .; Paulsson, J.; Harrie, L. Utilizing BIM and GIS for representation and visualization
+of 3D cadastre. ISPRS Int. J. Geo-Inf. 2019 ,8, 1–25. [CrossRef]
+52. Floros, G.; Pispidikis, I.; Dimopoulou, E. Investigating integration capabilities between IFC and CityGML
+LOD3 for 3D city modelling. In Proceedings of the 12th 3D Geoinfo Conference 2017, Melbourne, Australia,
+26–27 October 2017.
+53. Donkers, S.; Ledoux, H.; Zhao, J.Q.; Stoter, J. Automatic conversion of IFC datasets to geometrically and
+semantically correct CityGML LOD3 buildings. Trans. GIS 2016 ,20, 547–569. [CrossRef]
+54. Tekavec, J.; Lisec, A. Cadastral data as a source for 3D indoor modelling. Land Use Policy 2020 , in press.
+[CrossRef]
+55. Zlatanova, S.; van Oosterom, P .; Lee, J.; Li, K.J.; Lemmen, C. LADM and indoorGML for support of indoor
+space identiﬁcation. ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci. 2016 ,4, 257–263. [CrossRef]
+56. Ryoo, H.G.; Kim, T.; Li, K.J. Comparison between Two OGC standards for indoor space: CityGML and
+indoorGML. In Proceedings of the Seventh ACM SIGSPATIAL International Workshop on Indoor Spatial
+Awareness, Washington, DC, USA, 6 November 2015.
+57. Alattas, A.; Zlatanova, S.; van Oosterom, P .; Chatzinikolaou, E.; Lemmen, C.; Li, K.J. Supporting indoor
+navigation using access rights to spaces based on combined use of indoorGML and LADM models. ISPRS Int.
+J. Geo-Inf. 2017 ,6, 384. [CrossRef]
+58. Thompson, R.J.; van Oosterom, P .; Soon, K.H.; Priebbenow, R. A Conceptual Model Supporting a Range of
+3D Parcel Representations through all Stages: Data Capture, Transfer and storage. In Proceedings of the FIG
+Working Week 2016, Christchurch, New Zealand, 2–6 May 2016.
+59. Aien, A.; Rajabifard, A.; Kalantari, M.; Williamson, I.; Shojaei, D. 3D cadastre in Victoria: Converting building
+plans of subdivision to LandXML. GIM Int. 2011 ,25, 1–4.
+60. Shojaei, D. 3D Cadastral Visualisation: Understanding Users’ Requirements. Ph.D. Thesis, University of
+Melbourne, Melbourne, Australia, 2014.
+61. GDLRC (General Directorate of Land Registry and Cadastre), Production of 3D City Models and Creation of
+3D Cadastral Maps-Case Study. Available online: http: //3dtest.tkgm.gov.tr:44444 /(accessed on 13 April 2020).
+62. Groothedde, A.; Lemmen, C.; van der Molen, P .; van Oosterom, P . A standardized land administration
+domain model as part of the (spatial) information infrastructure. In Creating Spatial Information Infrastructures,
+Towards the Spatial Semantic Web ; Van Oosterom, P ., Zlatanova, S., Eds.; CRC Press: Boca Raton, FL, USA,
+2008; pp. 129–150.
+63. Guo, R.Z.; Ying, S. 3D cadastre analysis and data delivery. J. China Land Sci. 2010 ,24, 45–51.
+64. Pouliot, J.; Wang, C.; Hubert, F.; Ellul, C.; Rajabifard, A.R. 3D Cadastre Visualization and Dissemination:
+Most Recent Progresses and Future Directions. In Proceedings of the 5th International Workshop on 3D
+Cadastres, Athens, Greece, 18–20 October 2016.
+65. Shojaei, D.; Olfat, H.; Bri a, M.; Rajabifard, A. 3D Digital Cadastre Journey in Victoria, Australia. ISPRS Ann.
+Photogramm. Remote Sens. Spat. Inf. Sci. 2017 ,IV-4 /W5, 117–123. [CrossRef]
+66. Molen, P . Institutional aspects of 3D cadastres. Comput. Environ. Urban Syst. 2003 ,27, 383–394. [CrossRef]Land 2020 ,9, 179 17 of 17
+67. Döner, F.; Thompson, R.; Stoter, J.; Lemmen, C.; Ploeger, H.; van Oosterom, P .; Zlatanova, S. Solutions for 4D
+cadaster—With a case study on utility networks. Int. J. Geogr. Inf. Sci. 2011 ,25, 1173–1189. [CrossRef]
+68. Shnaidman, A.; van Oosterom, P .; Lemmen, C.; Ploeger, H.; Karki, S.; Abdul Rahman, A. Analysis of the
+Third FIG 3D Cadastres Questionnaire: Status in 2018 and Expectations for 2022. In Proceedings of the FIG
+Working Week 2019, Hanoi, Vietnam, 22–26 April 2019.
+69. Van Oosterom, P . Research and development in 3D cadastres. Comput. Environ. Urban Syst. 2013 ,40, 1–6.
+[CrossRef]
+70. Döner, F.; Bıyık, C. Modelling and mapping third dimension in a spatial database. Int. J. Digit. Earth 2011 ,4,
+505–520. [CrossRef]
+71. Larsson, K.; Paasch, J.M.; Paulssond, J. Representation of 3D cadastral boundaries—From analogue to digital.
+Land Use Policy 2020 , in press. [CrossRef]
+©2020 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access
+article distributed under the terms and conditions of the Creative Commons Attribution
+(CC BY) license (http: //creativecommons.org /licenses /by/4.0/).

@@ -1,0 +1,1243 @@
+Creating (Digital) Labor Markets in Rural
+Tanzania
+Dahyeon (DJ) Jeong∗
+August 31, 2020
+Abstract
+Job search costs are high in rural labor markets in developing countries. Conse-
+quently, the ﬂow of information on jobs and wages is limited, and wages tend to be
+dispersed. To lower search costs, I develop an SMS-based messaging app that con-
+nectsagriculturalworkersandemployers. Thetreatmentreduceswithin-villagewage
+dispersion by 16-40 percent. Wage compression occurs from both sides of the wage
+distribution,leavingtheaveragewageunchanged. Consistentwithreducedwagedis-
+persion,Iﬁndevidencethatlaborisreallocatedwithinvillages. Dispersioninper-acre
+laborinputacrossfarmsdecreases. Workersdivertjobapplicationsfromlower-paying
+to higher-paying employers.
+JEL Codes : D83, E24, J21, J31, J42, J43, O12
+Keywords : search frictions, rural labor market, wage dispersion, messaging app
+∗World Bank, email: dahyeonjeong@worldbank.org. Website: people.ucsc.edu/ dajeong. I am grateful to Joseph Kissiri for out-
+standing ﬁeldwork assistance and IPA Tanzania for administrative support. I am heavily indebted to Jonathan Robinson, my advisor,
+forhismentoringandsupportthroughoutthelifeofthisproject. IamalsosincerelygratefultoAjayShenoyandAlanSpearotfortheir
+tireless support. I also thank seminar participants at UCSC for their helpful discussions. I am grateful for funding from the National
+ScienceFoundationDoctoralDissertationResearchImprovementGrantsprogram(Award#1757305),MIT/JPALAgriculturalTechnol-
+ogy Adoption Initiative, the UCSC Blum Center, and the UCSC Department of Economics. The data collection was approved by the
+UCSCIRBandbytheTanzaniaCommissionforScienceandTechnology(COSTECH).ThistrialisregisteredintheAEA’sregistryfor
+randomizedcontrolledtrials(AEARCTR-0004483). Theﬁndings,interpretations,andconclusionsexpressedinthispaperareentirely
+those of the author. They do not necessarily represent the views of the World Bank and its aﬃliated organizations, or those of the
+Executive Directors of the World Bank or the governments they represent.SEARCH FRICTIONS IN RURAL LABOR MARKETS 1
+1 Introduction
+Jobsearchcostsarehighinrurallabormarketsindevelopingcountries. Mostfarmersdo
+not have access to the internet and there are no online job markets for agricultural daily
+laborers. There is rarely a central place where workers are gathered. Employers tend to
+rehire the same workers whom they had hired in previous seasons. As a consequence,
+the ﬂow of information on jobs and wages is imperfect, and the law of one price may fail
+to hold. In my study area of rural Tanzania, I ﬁnd evidence that there exists substantial
+within-village wage dispersion. Figure 1 presents the percent deviation of an individual
+daily wage relative to the village average. Only about half the reported wages are within
+a 25 percent deviation from the village average wage, which is surprising given how jobs
+are relatively homogeneous for manual farm work.1
+Figure 1: Wage Dispersion In Rural Labor Markets
+0.005.01Density
+-100-50050100150Percent Devia3on From Village Average Wage (%)
+I study the eﬀect of reducing search frictions on wage dispersion through a ﬁeld ex-
+periment in Tanzania. To reduce job search costs, I develop an SMS-based messaging
+app that connects agricultural workers and employers. The app was designed to mimic
+an online job portal like monster.com , except that ads are announced over feature phones
+withoutinternetdata. Employerspostajobadtoagatewayphoneandtheadissenttoall
+registered workers in the village. Once a worker replies to the job ad, the worker’s infor-
+mationisinstantlyforwardedbacktotheemployerwhoinitiatedtherequest. Thisservice
+1Thisdataiscollectedbytheauthoracross66villagesinruralTanzaniain2019andthedistributionisat
+theemployer-hiringeventlevel. Inmystudyarea,adailywagerangesfrom$1.2to$6.5withameanof$3.1.2 DAHYEON JEONG
+eﬀectively connects all employers and workers at near-zero user cost, increasing the size
+of labor markets.2Treatment villages were oﬀered to use the app service throughout the
+2019 agricultural season, while control villages received nothing.
+I ﬁnd that the app has a sizeable eﬀect. It reduces within-village wage dispersion by
+16-40 percent (depending on how dispersion is measured).3The results are robust to
+controllingforwageseasonalityaswellasjobcharacteristics. Labormarketsearchtheory
+predicts that lower search cost may raise wage by creating more jobs (Pissarides 2000;
+Van den Berg and Van Vuuren 2010). However, while there is a clear reduction in the
+wage dispersion, I ﬁnd no eﬀect on job creation or the average wage.
+Toreconcilethewagecompressionresultalongwiththenulleﬀectontheaveragewage,
+I look at heterogeneity in the initial level of wage paid by employers. I ﬁrst identify the
+employers who paid a higher wage relative to other employers in the same village before
+the intervention. I ﬁnd that the treatment induces initially high-paying employers to re-
+duce the wage. On the other hand, lower-paying employers increase the wage. These
+competing eﬀects cancel each other out, resulting in little change to the average wage.
+Aprimaryeﬀectofthemessagingappisthatitincreasesthesizeoflabormarkets. By
+sendingajobadtoallregisteredworkersinthevillage,itiseasierforemployerstoconsider
+a new set of workers whom they had not hired in the past. In addition to integrating
+previouslydisconnectedemployersandworkers,theappcanalsochangeotheraspectsof
+labormarketconduct. Onefeatureoftheappisthatitasksemployers(workers)tospecify
+the wage they would like to pay (get paid) to facilitate the transactions. This bidding
+feature could potentially aﬀect the way participants bargain over wages, for example by
+encouragingparticipantstobidmoreaggressivelyandeﬀectively. Second,thewagesignal
+in the job ads and job applications might help market participants to update their beliefs
+2SMS costs are borne by farmers. An SMS voucher costs as little as 22 cents for 1000 messages, while
+an average daily wage is $3.1. Additionally, most talk-time vouchers already come with free text messages.
+From the project side, the annual cost of keeping the messaging app is $950 (= A subscription fee of a 3rd
+party platform ($610) + SMS and mobile data plans ($72) + operation cost ($268)).
+3The measures include standard deviation, coeﬃcient of variation (i.e., the standard deviation divided
+by the mean), p50-p10 percentile wage ratio, and mean-min wage ratio. The magnitude is in the range
+of estimates found in the price dispersion literature. For comparison, Aker (2010) ﬁnds a 10-16 percent
+reduction in grain price dispersion and Jensen (2007) ﬁnds a 75 percent reduction in ﬁsh price dispersion
+after the introduction of mobile phone service.SEARCH FRICTIONS IN RURAL LABOR MARKETS 3
+on prevailing market wages. If information frictions are prevalent, the size of the update
+can be large, inﬂuencing market wages.
+I isolate the channel of search frictions from the change in bargaining behavior and
+wage signaling by randomizing the disclosure of wage information. In a random subset
+of treatment villages, I remove the wage information from job ads and/or job applica-
+tions before sending out a message. In those villages, the app does not carry any explicit
+wage signal and therefore there is no bargaining eﬀect through the information channel.
+Iﬁndnoevidencethatthewagedisclosurefeaturehasanyimpactonwagecompression.
+Moreover, I ﬁnd modest evidence that the overall treatment induces initially high paying
+employerstoincreasetheprobabilityofhiringanewworkeraftertheintervention. Those
+employersalsofaceanincreasednumberofapplicantspervacancy. Takentogether,these
+ﬁndingssuggestthattheappimprovesthecompetitivenessoflabormarkets,andsharing
+job availability alone is suﬃcient to improve the functioning of labor markets (without
+explicit wage information).
+One consequence of wage dispersion is that employers face diﬀerent prices for labor
+due to market imperfections, which contributes to the dispersion in labor demand. By
+reducingwagedispersion,myinterventionispredictedtoreducedispersioninlaborinput
+for farmers in the same labor market. Consistent with this prediction, dispersion in per-
+acre labor input across farms is lower in treatment villages by 20-30 percent, suggesting
+that labor allocation has improved.
+My paper is the ﬁrst study to examine the role of search frictions on wage disper-
+sion in rural labor markets. While there exist many studies on the eﬀect of information
+communication technologies (ICTs) on price dispersion, they mostly focus on commod-
+ity prices (Aker 2010; Aker and Fafchamps 2014; Allen 2014; Goyal 2010; Jensen 2007).4
+More recent studies on labor markets in developing countries use experiments to reduce
+frictions in urban labor markets by organizing job fairs (Abebe et al. 2018 ; Beam 2016),
+oﬀering monetary incentives to travel to job sites (Abebe et al. 2019; Franklin 2017; Bryan
+4Therelationshipbetweensearchcostandpricedispersiondependsonassumptionsonsearchmethods
+and market environments. Counterintuitively, some theories predict that lower search cost increases price
+dispersion (MacMinn, 1980). See Baye et al. (2006) for an excellent review of search-theoretic models and
+price dispersion.4 DAHYEON JEONG
+etal.2014),andprovidinginformationonskillsofjob-seekers(Abeletal.2016;Bassiand
+Nansamba2018;Grohetal.2015).5Afewrelatedstudiesonrurallabormarketsshowthat
+labor market outcomes improve when villages are connected to outside markets through
+the construction of roads or footbridges (Aggarwal 2018; Brooks et al. 2019; Shamdasani
+2019).
+Another contribution of this paper is to document the extent of wage dispersion at-
+tributed to search frictions through a well-identiﬁed experiment. Early search-theoretic
+literatureshowsthatwagedispersionistheequilibriumoutcomeofimperfectwagecom-
+petition in a market with search frictions (Stigler 1961, Butters 1977, Burdett and Judd
+1983, Mortensen 1988, and Burdett and Mortensen 1998). Notably, these papers show
+that wage dispersion may arise even in settings where workers and employers are identi-
+cal.6However, search models do not agree empirically on the contribution of search fric-
+tionstoobservedwagedispersion. Forexample,dependingonwhetheron-the-jobsearch
+and/orsortingareincorporatedinthemodels,somestudiesshowthatsearchfrictionsex-
+plain a large fraction of observed wage dispersion (Postel-Vinay and Robin 2002; Ortego-
+Marti 2016), while other studies ﬁnd that search frictions explain little (Hornstein et al.
+2011;BaggerandLentz2018). Whilethesestudiesattempttoexplainfrictionaldispersion
+through models, my paper takes a diﬀerent approach and experimentally reduces fric-
+tionswith themessaging app. Myﬁndings supporttheidea thatsearch frictionaccounts
+for a sizable variation in wage dispersion.
+This paper is also related to a recent development literature that focuses on imper-
+fections in rural labor markets (LaFave and Thomas 2016; Foster and Rosenzweig 2017;
+Dillon et al. 2019). Recent papers explore possible mechanisms of labor market failures.
+Fink et al. (2018) ﬁnd that seasonal liquidity constraints distort farm labor allocation be-
+cause farmers choose to work on other people’s farms to cope with food shortage even
+thoughreturnsarelower. Kaur(2019)andBrezaetal.(2019)showthatdownwardwage
+rigiditybasedonsocialnormspreventswagesfromfullyadjustinginresponsetoshocks.
+5See McKenzie (2017) for excellent review of papers on this topic.
+6On the other hand, Autor (2001) discusses that lower search cost may increasewage dispersion within
+skillgroupsifworkertalentsareheterogeneousandthelevelsofdemandfortalentarediﬀerentacrossmar-
+kets. Theintuitionisthatheterogeneityindemandfortalentacrossmarketscouldhidethepricediﬀerence
+in talent, which is revealed after market integration.SEARCH FRICTIONS IN RURAL LABOR MARKETS 5
+My paper adds to this literature by documenting another source of rural market ineﬃ-
+ciency, i.e., search costs to ﬁnd workers and jobs, which has not been studied extensively
+in a rural setting in developing countries.
+Section 2 explains the messaging app and the intervention protocols. Section 3 de-
+scribes sampling, data, and context of the study. Section 4 presents the experimental re-
+sults. Section 5 discusses allocative consequences. Section 6 concludes.
+2 Experimental Design
+A key motivation of the intervention in this paper is to make hiring and job search much
+easier than traditional methods allow. While smart phones are still rare, feature phones
+shown in Appendix Figure A1 are almost universal. In the study regions of Tanzania,
+mobile phone ownership rate is 93 percent. Furthermore, the literacy rate is 84 percent,7
+making an SMS-based messaging app a feasible solution for digital labor markets.
+I develop an app which works autonomously on a mobile messaging platform called
+Telerivet, a third party API that was integrated with JavaScript.8See Appendix Figure A2
+for an example of the backend development. When farmers send a message to a gateway
+phone,thesystemﬁrstidentiﬁeswhetherthefarmerisaregistereduserandwhetherthe
+person is an employer or a worker. To register, an individual responds to six messages
+one by one to answer basic questions (e.g. name, location, age, gender, and whether the
+person intends to be an employer or worker).
+A registered employer can post a job by answering a few questions about the job, e.g.,
+thetypeoftask,crop,startingday,andthewage(SeeAppendixFigureA4forthefullmes-
+sage interactions). Once posted, the ad is sent to registered workers located nearby. The
+messaging app allows employers to reach a large number of workers instantly, reducing
+searchcostsdramatically. Auniquejobcodeisattachedtoagivenjobad,andworkerscan
+thentextbackwiththejobcodetoapplyforthejob. Workers’applicationsareforwarded
+7The mobile phone ownership rate is from the author’s own farmer survey data collected in 2019. The
+literacystatisticsiscomputedfromNationalPanelSurvey(Wave4)fromNationalBureauofStatistics,Tan-
+zania, after restricting the regions to the study regions, Kilimanjaro and Manyara
+8The JavaScript codes are available publicly on GitHub, https://github.com/regulusweb/ucsc-tz-labor.6 DAHYEON JEONG
+totheoriginalemployerinrealtime. Bothpartiesaregiventhephonenumbersandnames
+of each other, which they can use to negotiate details over the phone. A week after post-
+ing, a feedback survey is sent automatically via SMS to ask about the hiring result, the
+ﬁnal wage paid, and the worker ratings.
+Anotherusefulfeatureoftheappistheabilitytodisclosethewageinformationinajob
+ad and/or in a job application to facilitate transactions more eﬃciently. The app asks all
+userstospecifythewagetheywouldliketopay(foremployers)andthewagetheywould
+liketogetpaid(forworkers). Whilethebiddingfeatureisintendedtoreducetransaction
+costs,itcouldaﬀectthewaypeoplebargainoverwages. Forexample,itmightencourage
+userstobidmoreaggressively,therebychangingthewage. Italsohelpsuserstoupdatethe
+distribution of wage oﬀers in the market. I isolate these two channels from the reduction
+insearchcost,byrandomizingthedisclosureofwageinformation. Thewageinformation
+could be displayed either in the job ad or in the job application. I cross-randomized the
+non-disclosure of wage information as shown in Table 1 and the example messages are
+in Appendix Table A1. Overall balance between control and treatment group at baseline
+is shown in Appendix Table A2 at a farmer level.9Another balance table using the recall
+data from the phone survey and endline survey for the pre-period is shown in Appendix
+Table A3 at a village level. At both farmer and village level, almost all of the diﬀerences
+between the treatment and control group are insigniﬁcant.
+TheinterventionwasrolledoutinFebruaryandMarch2019,asshowninthetimeline
+in Appendix Figure A6. The village meeting was pre-announced before our visit and ev-
+eryone interestedin hiring andworking wasinvited. They were alsotold to bringmobile
+phones. During the intervention period, ﬁeld enumerators visited each treatment village
+to conduct two meetings. The ﬁrst meeting was in the center of the village and the sec-
+ond was in a more remote part of the village. During the meetings, ﬁeld enumerators
+conducted a hands-on training session to demonstrate how the messaging app works.
+At the meeting, potential employers and workers were given instructions on how to
+9While the randomization selected 30 control villages and 40 treatment villages, some villages are ex-
+cluded from the analysis because not enough farmers reported hiring. In particular, I require at least three
+reportedwageobservationswithinavillage-productionstagewhencalculatingdispersionmeasures. There-
+fore, the analysis involved 30 control villages and 36 treatment villages. To be consistent with the analysis
+sample, I report the balance table for the same set of villages.SEARCH FRICTIONS IN RURAL LABOR MARKETS 7
+Table 1: Treatment Design
+Show
+Employer’s Wage
+in the Job PostingShow
+Worker’s Wage
+in the ApplicationNumber of
+Study Villages
+TreatmentNo No 10
+Yes No 10
+No Yes 10
+Yes Yes 10
+Control 30
+Total 70
+register, which they did by texting SAJILI(“register”). Some had no prior experience us-
+ing SMS messages; thus, enumerators walked them through basic functions of sending
+andreplyingtomessagesontheirfeaturephones. Onceeveryonewasregistered,employ-
+ers were instructed to send a text WAFANYAKAZI (“workers”) to post a job. The job ads
+wereautomaticallysenttotheworkerssittinginthecrowd,andﬁeldoﬃcersguidedwork-
+erstoapplytothosejobsbyhelpingthemtosendatext KAZI(“job”)Duringthetraining
+session, one randomly selected person per village was given a mobile phone as a gift to
+incentivizethepracticeofthemessagingapp. SeeAppendixFigureA7foranexampleof
+avillagemeetingandAppendixFiguresA8andA11fortheﬂyersdistributedwhichalso
+contain the step-by-step message ﬂows.10
+Theusersweresentremindermessagestoencouragetheuseoftheapp,approximately
+ﬁvetimesthroughouttheagriculturalseason. Furthermore,toincentivizefarmerstocon-
+tinueusingthemessagingapp,onefarmerforeachvillagewasrandomlyselectedtowin
+a $10 or the equivalent. The raﬄe was done three times throughout the 2019 agricultural
+season.11
+10The original ﬂyers were distributed in the local language, Swahili.
+11Farmers were eligible to enter the raﬄe conditional on using the app.8 DAHYEON JEONG
+3 Sampling, Context, and Empirical Speciﬁcation
+3.1 Sampling and Data
+ThestudywasconductedintwonorthernregionsofTanzania,KilimanjaroandManyara.
+Idrawonthesampleofstudyfarmersfromarelatedproject(Aggarwaletal.,2019)where
+we had obtained acensus of households from village oﬃces, andhad randomly sampled
+18farmersforeachvillage. Intheoriginalstudy,147villageswererandomlyselectedafter
+stratifying by market in the two regions.
+Tostudyrurallabormarkets,IexcludedvillageslocatedinMoshitown,themajorhub
+inKilimanjaroRegion. Ialsoexcludedvillageswithmobileownershiplessthan80percent
+becausetheinterventionreliesonmobilephonetechnology. Afterremovingpilotvillages,
+I randomly sampled 70 villages out of 86 villages to be included in the study. Treatment
+was randomized at the village level, resulting in 30 control villages and 40 treatment vil-
+lages. Within each village, those farmers who did not participate in rural labor markets
+at the time of the baseline survey were excluded from the study. The ﬁnal study sample
+comprises 650 farmers from 70 villages. However, when constructing wage dispersion
+measures, I require at least three reported wages within a village-production stage. This
+dropsfourvillagesbecausefewemployersreporthiringinthosevillages. Themapofthe
+study villages is shown in Figure A5. The average distance from a village centroid to any
+otherneareststudyvillagecentroidis15km,andtheclosestcontrol-treatmentpairis3km
+apart by geodetic distance. Given that rural labor markets are formed closely within the
+village boundary, spillover eﬀects between control and treatment villages are extremely
+unlikely. Furthermore, the registration for the app was declined if the user is not from a
+treatment village.
+Notethatthefarmerswhoweretreatedbytheinterventionandthefarmerswhowere
+part of the survey data collection are not entirely the same. Everyone in the treatment vil-
+lageswasinvitedtothevillagemeetingsandwaseligibletousethemessagingapp. How-
+ever,toensurethecomparabilitybetweenthetreatmentandthecontrolgroup,therandom
+sampleof650farmerswasindependentlyselectedasexplainedabove. Onlythosefarmers
+weresurveyedbyphoneandin-personinterviews. ThevillagemeetingswerefollowedbySEARCH FRICTIONS IN RURAL LABOR MARKETS 9
+threeroundsofphonesurveysinApril-July2019andendlinesurveysinSeptember2019.
+The compliance rates for each round of phone survey and endline survey are presented
+in Appendix Table A4 and A5. The phone survey compliance rates are slightly lower in
+treatment villages (59 percent vs. 62 percent in control), but the diﬀerence is statistically
+insigniﬁcant. The compliance rates for in-person endline interviews are quite similar (91
+percent vs 90 percent).
+The universe of hiring history from 2018 is constructed by merging the phone survey
+andtheendlineinterviews. Ifafarmerwassuccessfullysurveyedonthephone,thehiring
+events that occurred after the phone survey are supplemented by the endline interview
+data. On the other hand, if a farmer was not reachable by phone, all hiring events data
+solely come from the endline interview data. The merged hiring events from the three
+roundsofphonesurveyandtheendlinesurveyformthebasisofwagedispersionanalysis.
+Ialsousereportedwagesbyemployersonly. Thedatacoverallhiringevents,1,867events
+by 448 employers from 2018 to 2019 September.12
+3.2 Context
+InTanzania,theNorth-EasternregionsincludingKilimanjaroandasmallpartofManyara
+regionhavetwofarmingseasonsannually: alonger,moreproductive“longrains”season,
+which runs from March to August, and a less productive “short rains” season from Oc-
+tober to February.13The intervention was conducted right before the planting season of
+2019 long rains. Panel A of Table 2 shows that rural villages are not small geographically.
+According to the 2012 Population and Housing Census of Tanzania, a typical village has
+532 households. In the farmer surveys collected in 2019, farmers report that it takes on
+average4hourstowalkfromoneendtotheotherendofthevillage. Theyalsoestimated
+that it will take 42 hours if they were to visit every single household in the village.
+FarminginTanzaniaissmall-scaleandlaborintensiveandmostproductionisforsub-
+sistence. A median plot size is two acres, and most people plant a combination of maize
+12Whilethemessagingappalsocollectedwageinformationthroughthesystem-generatedfollow-uptexts,
+thisdataisnotusedforanalysis. Thereisnocomparisondatainthecontrolgroupbecausetheaccesstothe
+app was limited to treatment villages.
+13See the agricultural cycle in Appendix Figure A10 during 2018 and 201910 DAHYEON JEONG
+Table 2: Village Size and Dispersion In Labor Input
+Mean SD
+A. Village Size (Village-Level)a
+Number of Households in The Village (2012 Census) 532.48 373.03
+Estimated Hours to Pass Through The Village 3.95 1.58
+Estimated Hours to Visit Every Household 41.69 33.93
+B. Labor Input (Household Level)b
+On-Farm Labor Days 84.09 68.86
+On-Farm Family Days 49.55 48.23
+On-Farm Hired Labor Days 24.36 33.67
+On-Farm Exchange Labor Days 3.26 8.00
+Labor Per Acre 34.88 29.35
+Notes: a.Village-Levelstatisticsarefrom66villages,andarecomputedusingthemedianvalueacrossfarm-
+ers within village. b.Household-level statistics are based on 566 farmers in 66 villages who participated in
+the endline survey and cultivated in 2018 long rains. Labor input statistics are conditional on cultivating.
+andbeans. Theaveragevalueofproductionwasonly$246in2018and$141in2019.14The
+lowproductivityisinpartduetolowadoptionofinputtechnologies. Inthestudysample,
+only 20 percent of farmers used fertilizer and 50 percent used hybrid seeds in 2018 long
+rains. Lacking access to credit and farm machineries, the most important input to agri-
+cultural production for most farmers is manual labor. Panel B of Table 2 shows that the
+typicallaborinputamountin2018longrainsis84labordays. Muchofthisisownfamily
+labor-about60percentofthetotallaborusage. However,casualworkersalsoaccountfor
+a large part of the labor force. About 30 percent of total labor input is provided by hired
+casualworkers,whileonly4percentiscoveredbyexchangelaborschemebetweenfellow
+farmers. Notethatthereisalargevariationinlaborinputamountacrosshouseholds. For
+example, the average labor days per acre is 35, while the standard deviation is 30.
+Table 3 presents more detailed statistics on rural labor markets. As shown in Panel A,
+a large fraction of households participate in labor markets. Roughly 50 percent of farm-
+ers hired casual workers in the 2017 long rains, while 35 percent of households reported
+workingasacasualworker. Asmallproportionsimultaneouslyboughtandsoldlabor(6
+14Lowproductionin2019ispotentiallyduetolowrainfall. Ninetypercentoffarmerssaidtherainin2019
+was lower than the typical rainfall, and 23 percent of them said it was the worst rain they had seen in their
+life.SEARCH FRICTIONS IN RURAL LABOR MARKETS 11
+percent).
+Table 3: Rural Labor Markets
+Mean SD
+A. Labor Market Participation and Characteristics
+=1 if Employera0.49 0.50
+=1 if Workera0.35 0.48
+=1 if Both Employer And Workera0.06 0.24
+Worker-Employer Ratiob0.87 0.94
+Number of hiring events 1.80 0.97
+Job duration in days 2.73 2.39
+Number of workers hired 6.81 4.58
+Fraction of workers the employer hired outside the village 0.08 0.22
+Fraction of workers the employer had hired previously 0.81 0.27
+B. Search Methods By Employers
+=1 if I called or/and visited workers I know 0.62 0.49
+=1 if Workers visited me asking for a job 0.66 0.48
+=1 if Workers called me asking for a job 0.44 0.50
+=1 if I went to a gathering place 0.10 0.30
+=1 if I asked leaders/friends/families 0.09 0.28
+C. Wage Compensation
+Daily Raw Wage Per Person (USD) 3.12 1.18
+=1 if Paid Workers for Food 0.26 0.44
+=1 if Paid Workers for Transportation 0.03 0.17
+Daily Raw Wage And Beneﬁts Per Person (USD) 3.24 1.20
+Notes: a. Summarystatisticsarefromthebaselinesurveyin2017longrainsfrom566farmers.
+b. The number of employers-workers ratio is at the village level. The remaining statistics are
+conditional on hiring in 2018 long rains, from 352 farmers in 66 villages.
+The remaining statistics show responses from employers in the farmer surveys. Con-
+ditional on hiring, farmers typically hire two times during the season. As expected, job
+durations are short, typically lasting 2-3 days. In a given hiring event, seven workers are
+typically hired at a time. Another feature of rural labor markets is that employers rarely
+hire workers outside the village. Only 8 percent of workers are hired outside the em-
+ployer’s own village.15Eighty-one percent of workers are those whom the employer had
+already hired in previous seasons.
+Employersinthevillagerelyontraditionalsearchmethods. PanelBofthetableshows
+15Anunreportedsurveyresponseindicatesthatitislargelyduetotransportationcostratherthanprefer-
+ential treatment over own villagers.12 DAHYEON JEONG
+that62percentofemployersreportedcontactingworkerswhomtheyalreadyknow. How-
+ever, an equally large fraction of employers reported being visited by workers, while 44
+percent of them reported that workers called them ﬁrst asking for a job. There is rarely a
+centralplaceinruralareaswhereworkersaregathered,afactreportedbyonly10percent
+offarmers. Furthermore,wordofmouthisnotapopularwaytoﬁndworkers,either. Only
+9percentofemployersreportedaskingvillageleaders,friends,andfamilies. Thissuggests
+thatemployersandworkerstrytoﬁndeachotherdirectly. PanelCofthesametableshows
+thatadailywageis3USD.Tomeasurethetotalwagecompensationprecisely,Ialsoasked
+employers if they paid other beneﬁts. 26 percent of employers reported paying for food
+on top of the wage and 3 percent of them paid for transportation. In the analysis section
+below, I show most of results for both raw wage as well as the total wage compensation
+which include food and transportation payments.
+3.3 Empirical Speciﬁcation
+The main outcome of the study is wage dispersion. Wage dispersion is measured within
+village because the intervention treats everyone in the labor market at the village level.
+I use commonly used measures of dispersion in the literature: standard deviation, co-
+eﬃcient of variation, mean-minimum wage ratio, and p50-p10 percentile ratio. Because
+of seasonality in the agricultural production (See Panel B of Appendix Figure A10), the
+wageinleanseasonandthewageinpeakseasonreﬂectdiﬀerentlabormarketconditions.
+Therefore,Idivideagriculturalproductionstagesasfollows: 2018planting,weeding,har-
+vesting, dry season, 2019 planting, weeding, and harvesting. The stages are chosen by
+the most popular job tasks reported in the farmer surveys in a given time period. I con-
+struct dispersion measures within village and agricultural production stage using wages
+reported by employers only. The main regression uses a simple diﬀerence-in-diﬀerences
+speciﬁcation where the source of exogenous variation is the randomization of the treat-
+ment:
+Dispersion vs=0+1TREAT v+2TREAT vPost s+s+"vs: (1)SEARCH FRICTIONS IN RURAL LABOR MARKETS 13
+Post sis a dummy variable to indicate whether a production stage sis after the interven-
+tion,16sisastageﬁxedeﬀect,and TREAT visadummyvariableindicatingthatvillage v
+is in the treatment group. 2estimates the eﬀect of the intervention on wage dispersion,
+by diﬀerencing out pre-post diﬀerence as well as control-treatment diﬀerence.
+While the main speciﬁcation relies on the aggregated village level data, the raw wage
+dataiscollectedattheindividual-hiringeventlevel. Asarobustnesscheck,Iestimatethe
+wagedispersionatafarmer-eventlevelaswell. Iconstructtheabsolutepercentdeviation
+of the individual wage from the village-stage average wage as follows:
+abswivsh wvs
+wvs
+=0+1TREAT v+2TREAT vPost s+C(i;s;h )+J(i;s;h )+s+"ivsh;(2)
+wherewivshis a wage paid by an employer iin villagevin the production stage sfor a
+hiring event index h, and wvsis the average wage paid within village vand stages. The
+fcgC
+c=1are crop-speciﬁc eﬀects on wage and C(i,s,h) is a function indicating the crop of
+thehiringeventindex hofanemployer iinstages. Similarly,thefjgJ
+j=1aretask-speciﬁc
+eﬀects of the hiring event, and sis a stage ﬁxed eﬀect.
+AsnotedinTable1,thedisclosureofwageinformationwasrandomizedwithintreat-
+mentvillages. Aregressionspeciﬁcationthattestswhetherwagedispersionisinﬂuenced
+by the additional bidding feature is:
+Dispersion vs=0+Post s(1TREAT v+2TREAT_BID v) (3)
++3TREAT v+4TREAT_BID v+s+"vs;
+where
+TREAT _BID v=8
+><
+>:0if villagevis in the control group or the wage is not disclosed
+1if villagevis in the treatment group and the wage is disclosed
+Inthisequation,thecoeﬃcient 2capturestheadditionaleﬀectofthebiddingfeatureon
+wage dispersion.
+One caveat of the wage dispersion analysis is that it relies on the wages reported by
+16Village meetings took place for a month. I use a uniform meeting date across treatment and control
+villages to deﬁne Post s. The results are robust to using the median village meeting date as well as the last
+day of all village meetings.14 DAHYEON JEONG
+employers. Theresultswouldsuﬀerfromendogenousselectionoffarmersifthetreatment
+causes some farmers to become employers. Therefore, I explore the treatment eﬀect on
+hiring and other labor input measures using farmer-crop season level, which include all
+study farmers regardless of whether they participate in the labor market:
+Yivr=0+1TREAT v+2TREAT vPost r+r+"ivr; (4)
+whereYivrmeasuresvariousoutcomesatthecropseasonlevelincludingwhetherafarmer
+iinvillagevhiredworkersduringagriculturalseason r.risaseasonﬁxedeﬀect. Farmers
+were asked questions for three rainy seasons, 2018 long rains, 2018 short rains, and 2019
+longrains. Somefarmerscultivatedinallthreeseasons,whileotherfarmerscultivatedin
+only one or two seasons.
+4 Results
+4.1 Take-up
+Themessageapphasbeenusedextensivelybyuserssinceitsadoptioninearly2019. Fig-
+ure2showsthenumberofjobpostsandapplicationsforallusersaswellasforthestudy
+farmers in each panel, respectively. Almost 1,000 jobs have been announced by 250 em-
+ployers during 2019 crop season. Job ads were sent to more than 1,000 unique workers
+during this period. 640 workers sent back almost 1,500 job applications. The large and
+persistentusagesuggeststhatthistechnologyissimpletouseandusefulforfarmers. The
+results are noteworthy given that labor demand was quite low in 2019 season due to low
+rainfall.
+I report the take-up of the messaging app for the village meeting sample as well as
+thestudysample. Table4showsthatonaverage64farmersattendedthemeeting,among
+them29employersand35workers. Amongthosewhocametothemeeting,69percentof
+themregisteredfortheservice. 33percentofthempostedajobasanemployerorapplied
+to a job as a worker through the app.
+Among the randomly selected study sample, the administrative data from the appSEARCH FRICTIONS IN RURAL LABOR MARKETS 15
+databaseindicatesthat39percentoftreatmentfarmersregisteredfortheservice,while16
+percent used the app to ﬁnd workers or jobs. According to the self-report in the endline
+survey, 69 percent of treatment farmers heard about the messaging app while 14 percent
+reported using it. While the usage among study farmers appear modest, the treatment
+intervention was at the village level and hence the study farmers can be aﬀected without
+using the app directly.
+Figure 2: Job Posts and Applications
+A. All App Users B. Study Sample Users
+050010001500Cumulative Number of Job Posts/Applications20feb201911apr201931may201920jul201908sep2019Msg DateVillage MeetingsJob PostsApplications
+050100150200Cumulative Number of Job Posts/Applications20feb201911apr201931may201920jul201908sep2019Msg DateVillage MeetingsJob PostsApplications
+Notes: Almost 1,000 jobs have been announced by 250 employers. And the job ads were sent to more than 1,000 workers during this
+period. Among those, 640 workers sent almost 1,500 job applications as of the end of September 2019.
+Table 4: Take-up of The Search App
+Mean SD N
+A. Village Meeting Sample
+Meeting Turnout 64.17 44.81 40
+Meeting Turnout: Employer 28.60 23.28 40
+Meeting Turnout: Worker 35.58 28.41 40
+Proportion Registered 0.69 0.41 40
+Proportion Used 0.33 0.24 40
+B. Study Sample
+Proportion Registered (Admin Data) 0.39 0.49 370
+Proportion Used (Admin Data) 0.16 0.37 370
+Proportion Heard About The App (Self-Report) 0.69 0.47 324
+Proportion Used (Self-Report) 0.14 0.34 32416 DAHYEON JEONG
+4.2 Wage Dispersion And Search Costs
+BeforeIformallyanalyzewagedispersionusingregressionanalysis,Iﬁrstexaminewage
+dispersionvisuallyinFigure3. Usingthedailywagereportedbyemployers,thewagedis-
+tributions before the intervention in Panel A are quite similar between control and treat-
+mentgroup. However,aftertheintervention,thewagedistributionoftreatmentvillagesis
+morecompressedthanthedistributionofcontrolvillages. Ifurtherregresstherawwage
+on crop, task, production stage, and village ﬁxed eﬀects, and plot the distribution of the
+residualized wage in Panel B. The same pattern is observed – the two distributions are
+similarforcontrolandtreatmentvillagesbeforeintervention,butthewagedistributionof
+treatmentgroupislessdispersedaftertheintervention. AsshowninAppendixTableA6,
+I cannot reject that the variances of the two distributions are equal in pre-period, while
+this hypothesis is rejected in post-period.
+Figure 3: Reduction in Wage Dispersion
+A. Raw Wage B. Residualized Wage
+0.1.2.3.4kdensity
+0246Wage Per Day (USD)ControlTreatmentBefore IntervenDon
+0.1.2.3.4kdensity
+0246Wage Per Day (USD)ControlTreatmentAFer IntervenDon
+0.1.2.3.4.5kdensity
+02468Wage Per Day (USD)ControlTreatmentBefore IntervenFon
+0.1.2.3.4.5kdensity
+02468Wage Per Day (USD)ControlTreatmentAHer IntervenFon
+Notes: Raw wage is the salary paid to workers. Residualized wage is the residual from the regression of raw wage on crop, task,
+production stage, and village ﬁxed eﬀects. The residuals are plotted after centering at the median of the raw wage.
+Table 5 conﬁrms the wage compression by estimating Equation (1). Column 1-2 ex-
+plore the standard deviation in wage, while columns 3-4 explore the standard deviation
+inresidualizedwage,whichistheresidualfromtheregressionofrawwageoncrop,task,
+season,productionstage,andvillageﬁxedeﬀects. Oddcolumnsuserawwagetocalculate
+the standard deviation and even columns use the combined wage and beneﬁts, which isSEARCH FRICTIONS IN RURAL LABOR MARKETS 17
+the sum of the wage and food and transportation payments. The result shows that there
+is a large and signiﬁcant reduction in the standard deviation. As explained in section 3, I
+require at least three reported wages within a village-production stage when calculating
+standard deviation and coeﬃcient variation, and this drops four villages. To avoid this
+exclusion, I collapse all pre- and post-treatment time periods and run a Analysis of Co-
+variance (ANCOVA) estimation as in McKenzie (2012). Appendix Table A7 shows that
+the results are qualitatively similar.
+Table6exploresthewagedispersionusingotherdispersionmeasures,asthestandard
+deviationcanbesensitivetooutliers. Usingthecoeﬃcientofvariation,p50-p10percentile
+wage ratio, and mean-minimum wage ratio, the treatment villages experience 16-30 per-
+cent reduction in wage dispersion. In all regressions reported in Table 5 and 6, wage is
+winsorized at p5 and p95 to make sure that results are not driven by a few outliers.
+Table 5: Reduction in Wage Dispersion (Village-Stage Level)
+SD in Wage SD in Residualized Wage
+(1) (2) (3) (4)
+Wage Wage&Beneﬁts Wage Wage&Beneﬁts
+TREAT 0.113 0.0937 0.0999 0.0787
+(0.111) (0.105) (0.104) (0.0984)
+TREATPost -0.467-0.435-0.458-0.426
+(0.170) (0.162) (0.166) (0.160)
+Stage FE X X X X
+Observations 268 268 268 268
+Villages 66 66 66 66
+Control Mean 1.133 1.151 1.123 1.147
+Notes: Raw wage is the salary paid to workers. Wage and beneﬁts include wage payment, food, and transportation payment. Residu-
+alizedwageistheresidualfromtheregressionofrawwageoncrop,task,season,productionstage,andvillageﬁxedeﬀects. Standard
+errors clustered at the village level.
+Whiletheanalysisatthevillagelevelisintuitive,therawwageiscollectedatthehiring
+eventlevel. Table7furtherconﬁrmsthewagecompressionresultbyestimatingEquation
+(2). In columns, I control for production stage, job task type, and crop type ﬁxed eﬀects.
+I also report results with and without winsorization of wages. Across speciﬁcations in
+columns1-4,thetreatmentvillageshavealowerwagedispersionthanthecontrolvillages18 DAHYEON JEONG
+Table 6: Reduction in Wage Dispersion - Various Measures of Dispersion
+Coeﬃcient of Variation p50-p10 Ratio Mean-Min Ratio
+(1) (2) (3) (4) (5) (6)
+Wage Wage&Beneﬁts Wage Wage&Beneﬁts Wage Wage&Beneﬁts
+TREAT 0.00849 0.0100 0.0704 0.0565 0.0643 0.0769
+(0.0319) (0.0297) (0.0957) (0.0922) (0.0921) (0.0878)
+TREAT Post -0.126-0.121-0.260-0.260-0.333-0.352
+(0.0479) (0.0440) (0.126) (0.124) (0.117) (0.114)
+Stage FE X X X X X X
+Observations 268 268 269 269 269 269
+Villages 66 66 66 66 66 66
+Control Mean 0.379 0.369 1.627 1.621 1.788 1.753
+Notes: Raw wage is the salary paid to workers. Wage and beneﬁts include wage payment, food and transportation payment. All
+numbers are in USD. Standard errors clustered at the village level.
+roughlyby20percent.17Incolumns5-6ofthesametable,Ireportthetreatmenteﬀecton
+wage. Interestingly, the average wage in level in the treatment villages is not signiﬁcantly
+diﬀerent from the average wage in the control villages. Not only insigniﬁcant, but also
+themagnitudeofthewagechangeisquitesmall(i.e.,4percentofthecontrolmeanwage
+before the intervention).
+4.3 Mechanism: Heterogeneous Eﬀects Across Employers
+Toreconcilethewagecompressionresultalongwiththenulleﬀectonaveragewage,Iex-
+plorethecharacteristicsoffarmerswhoareaﬀecteddiﬀerentlybythetreatment. Iﬁrstlook
+at the treatment eﬀect by the initial wage paid by employers. If search frictions are sym-
+metric between workers and employers, search theory predicts that initially high-paying
+employers reduce the wage, while initially low-paying employers raise the wage. Using
+the pre-period wage data, I categorize employers into terciles: initially low-paying em-
+ployers,medium-paying,andhigh-paying. Becauselabormarketsareatthevillagelevel,
+Ideﬁneanindividualpercentwagedeviationfromthevillageaveragewagetodetermine
+the categories using pre-intervention wage data.
+Column1inTable8presentstheresults. Itshowsthatinitiallyhigh-payingemployers
+17The results are similar with and without ﬁxed eﬀects.SEARCH FRICTIONS IN RURAL LABOR MARKETS 19
+Table 7: Reduction in Wage Dispersion (Farmer-Hiring Event Level)
+No Winsorization Winsorized at p5 and p95 Wage In Level
+(1) (2) (3) (4) (5) (6)
+Wage Wage&Beneﬁts Wage Wage&Beneﬁts Wage Wage&Beneﬁts
+TREAT -0.0154 -0.00884 -0.0120 -0.00797 0.202 0.139
+(0.0254) (0.0255) (0.0219) (0.0216) (0.131) (0.134)
+TREATPost -0.0643-0.0715-0.0636-0.0641-0.116 -0.0176
+(0.0298) (0.0306) (0.0271) (0.0268) (0.160) (0.168)
+Stage FE X X X X X X
+Task FE X X X X X X
+Crop FE X X X X X X
+Observations 1613 1613 1613 1613 1613 1613
+Farmers 439 439 439 439 439 439
+Villages 66 66 66 66 66 66
+Control Mean 0.323 0.319 0.300 0.293 2.946 3.095
+Notes: This is regression at a farmer-hiring event level data. Outcomes are individual percent deviations from the village mean wage
+and/orbeneﬁtsinUSD.Theresultsarerobusttousingthedeviationfromthevillagemedianwageasopposedtovillageaveragewage.
+Standard errors clustered at the village level.
+reduce the wage signiﬁcantly relative to initially medium-paying employers (in compar-
+ison to the control group). On the other hand, I do not ﬁnd evidence that an increase in
+wagebyinitiallylow-payingemployersissigniﬁcantlydiﬀerentfromthemedium-paying
+employers. Ialsostandardizetheinitialindividualwagedeviationtoexploretheresultin
+a continuous fashion. Column 2 suggests that one standard deviation increase in initial
+wagedeviationisassociatedwitha12centreductioninwageonlyinthetreatmentgroup,
+althoughinsigniﬁcant.18Theasymmetricresultfoundinthetableimpliesthattheaverage
+wageleveldoesnotchangebecauseinitiallylow-andmedium-payingemployerstogether
+raise the wage while initially high-paying employers reduce the wage.
+Theappisdesignedtopromoteacompetitivemarketenvironmentbyintegratingfrag-
+mentedmarkets. Table9furtherexploresifthemechanismofwagecompressionisdueto
+increased competition. I use three proxies of competition: (i) whether an employer hires
+anewworkerwhomtheemployerhadnothiredpreviouslyinahiringevent,(ii)thefrac-
+tion of new workers from the employer’s labor force, and (iii) the ratio of the number of
+18NotethatIloseafewfarmersincolumns1and2becausetheydidnotreporthiringpre-periodandtheir
+initial wage level is undeﬁned.20 DAHYEON JEONG
+Table 8: Heterogeneous Eﬀects on Wage
+Dep.Variable: Wage In Level
+(1) (2)
+TREATPost 0.317-0.0669
+(0.185) (0.142)
+TREATPostPre-Period Wage: Low -0.288
+(0.314)
+TREATPostPre-Period Wage: High -0.721
+(0.287)
+TREATPostPre-Period Std(Wage Deviation) -0.122
+(0.163)
+Observations 1567 1567
+Farmers 409 409
+Villages 64 64
+Control Mean 2.946 2.946
+Notes: Some farmers are dropped in columns 1 and 2 because they did not report hiring pre-intervention period. Initial
+low vs. high wage is deﬁned at the individual farmer level. All speciﬁcations include crop, task, and production stage
+ﬁxed eﬀects as well as the full interaction variables on the triple diﬀerences. All numbers are in USD. Standard errors
+clustered at the village level.
+applicants to the number of hired workers. By reducing search frictions, employers are
+more likely to consider new workers outside of an exisiting network and face higher job
+competitionmeasuredbythenumberofapplicationspervacancy. Whilesomecoeﬃcients
+suﬀer from a lack of power, I ﬁnd modest evidence that initially high-paying employers
+aremorelikelytohireanewworkerwithanincreasedfractionofnewworkersinthelabor
+force. Moreover,theyexperienceanincreasedjobcompetition,consistentwiththereduc-
+tioninwageinTable8. Overall,theinterventionseemstohaveimprovedcompetitiveness
+of the labor markets.
+4.4 The Eﬀect of The Wage Bidding
+One feature of the messaging app is the ability to disclose wage information which may
+change the bargaining behaviors as well as the belief on the distribution of wage oﬀers.
+To isolate these channels from the reduction in search cost, the wage disclosure was ran-
+domized in a subset of treatment villages. I explore the diﬀerence in the treatment eﬀect
+between villages with and without wage disclosures in Table 10 by estimating regressionSEARCH FRICTIONS IN RURAL LABOR MARKETS 21
+Table 9: Heterogeneous Eﬀects on Labor Supply
+1(Hired a New Worker) New Worker Ratio Job Competition
+(1) (2) (3) (4) (5) (6)
+TREATPostPre-Period Wage: Low -0.0703 -0.00184 0.124
+(0.0886) (0.0475) (0.163)
+TREATPostPre-Period Wage: High 0.133 0.0781 0.277
+(0.116) (0.0526) (0.163)
+TREATPostPre-Period Std(Wage Deviation) 0.08960.03000.0965
+(0.0455) (0.0173) (0.0717)
+Stage FE X X X X X X
+Crop FE X X X X X X
+Task FE X X X X X X
+Observations 1567 1567 1567 1567 1567 1567
+Farmers 409 409 409 409 409 409
+Villages 64 64 64 64 64 64
+Control Mean 0.395 0.395 0.161 0.161 1.595 1.595
+Notes: Somefarmersandvillagesaredroppedbecausetheydidnotreporthiringpre-interventionperiod. 1(HiredaNewWorker)is
+a dummy that indicates whether a hiring event included a new worker that the employer did not hire previously. New Worker Ratio
+is the number of new workers divided by the number of hired workers in a hiring event. Job Competition is the number of applicants
+overthenumberofhiredworkers. Allspeciﬁcationsincludecrop,task,andproductionstageﬁxedeﬀectsaswellasthefullinteraction
+variables on the tripple diﬀerences. Standard errors clustered at the village level.
+equation (3).
+In the table, the coeﬃcient of TREAT_BIDPostmeasures the additional treatment ef-
+fectofthebiddingfeaturerelativetothevillageswherethewageinformationwasnotdis-
+closed. The evidence suggests that displaying the wage information in the job ad and/or
+in the worker application does not contribute more to the wage compression. Appendix
+Table A8 also shows the results at the farmer-hiring event level. Again the additional
+bidding feature does not reduce wage dispersion more than the regular treatment group
+without the bidding feature. Overall, the results seem to suggest that announcing the job
+availability among a large number of workers alone is suﬃcient to compress the wage.
+5 Eﬃciency of Labor Markets
+5.1 Labor Allocation
+The main wage compression results used wages reported by employers only. While the
+main results are at the village level, the results might suﬀer from the endogenous selec-22 DAHYEON JEONG
+Table 10: The Eﬀect of The Bidding Feature
+SD in Wage Coeﬃcient of Variation p50-p10 Ratio Mean-Min Ratio
+(1) (2) (3) (4) (5) (6) (7) (8)
+Wage Wage&B Wage Wage&B Wage Wage&B Wage Wage&B
+TREAT 0.147 0.131 0.00490 0.00969 0.0320 0.0171 -0.0347 -0.0121
+(0.176) (0.165) (0.0441) (0.0427) (0.149) (0.154) (0.129) (0.132)
+TREAT_BID -0.0456 -0.0501 0.00481 0.000422 0.0515 0.0529 0.133 0.119
+(0.182) (0.174) (0.0451) (0.0444) (0.155) (0.158) (0.133) (0.136)
+TREATPost -0.494-0.473-0.138-0.129-0.158 -0.134 -0.258-0.266
+(0.225) (0.217) (0.0594) (0.0558) (0.159) (0.166) (0.129) (0.134)
+TREAT_BIDPost 0.0365 0.0514 0.0131 0.00982 -0.129 -0.158 -0.104 -0.116
+(0.198) (0.195) (0.0502) (0.0485) (0.155) (0.161) (0.121) (0.134)
+Stage FE X X X X X X X X
+Observations 268 268 268 268 269 269 269 269
+Villages 66 66 66 66 66 66 66 66
+Control Mean 1.159 1.175 0.387 0.374 1.635 1.626 1.792 1.758
+Notes: Rawwageisthesalarypaidtoworkers. Wageandbeneﬁtsincludewagepayment,food,andtransportationpayment. Standard
+errors clustered at the village level.
+tionofemployersiftheinterventioncausedsomefarmerstobecomeemployersorcaused
+employerstohiremoreworkers. Table11examinesthechangesinhiringoutcomesbyes-
+timating Equation (4). All speciﬁcations use farmer-crop season level data, including all
+studyfarmersregardlessofwhetherthefarmersareinthelabormarketornot. Column1
+shows that treatment farmers are no more likely to become an employer.
+In columns 2-5 of Table 11, various types of labor input are examined. The results are
+conditional on cultivating in a given rainy season, and hence have a smaller number of
+observations than column 1. Overall, the intervention did not seem to have aﬀected the
+averagelaborinput. Treatmentfarmersarenomorelikelytousefamilylabor,hiredlabor,
+and exchange labor than control farmers. The total labor input amount is also similar
+between control and farmers.
+While there is no treatment eﬀect on the diﬀerent types of labor input measures, the
+wagecompressionresulthasallocativeimplications. Agriculturalproductiontheorypre-
+dicts that the marginal product of labor must be equal across households if markets are
+complete and prices and productivities are controlled for (Benjamin 1992; LaFave and
+Thomas 2016; Dillon et al. 2019). However, the existing wage dispersion due to market
+imperfections implies that employers face diﬀerent prices for labor which contributes toSEARCH FRICTIONS IN RURAL LABOR MARKETS 23
+Table 11: Treatment Eﬀects On Labor Allocation
+Types of Labor Input In Person Days
+(1) (2) (3) (4) (5)
+=1 if Hired On-Farm Labor Family Labor Hired Labor Exchange Labor
+TREAT -0.006 -3.770 -6.170 -0.299 1.558
+(0.039) (9.991) (7.864) (3.018) (0.585)
+TREATPost 0.040 4.244 5.427 2.118 -0.620
+(0.057) (6.243) (3.906) (2.624) (0.689)
+Observations 1698 1139 1139 1139 1139
+Households 566 555 555 555 555
+Villages 66 66 66 66 66
+Season FE X X X X X
+Region FE X X X X X
+Control Mean 0.36 71.70 45.06 18.79 2.53
+Notes: A crop season ﬁxed eﬀect is included. Standard errors clustered at the village level.
+thedispersioninlaborinput. Inotherwords,iflowersearchcostreducesmarketfrictions,
+then it is predicted that the dispersion in labor input also decreases.
+I test this prediction in Table 12 using the dispersion in log labor days per acre as an
+outcome. Forthreeoutofthefourdispersionmeasures,Iﬁndthatthelaborinputdisper-
+sionislowerintreatmentvillagesby17to30percent. Theresultoﬀerssuggestiveevidence
+that the messaging app helps to reduce the misallocation of labor in rural labor markets.
+5.2 Harvest Output
+Theimprovedlaborallocationispredictedtoincreasetheaggregateoutputlevelintheory.
+Thissectionexploresthisdownstreameﬀectonharvestoutput. Onechallengeofestimat-
+ing the eﬀect on harvest level is that many farmers reported that their entire crops were
+wasted due to various shocks including low rainfall, resulting in zero harvest. About 16
+percent of farmers indicated that they cultivated and ended up harvesting nothing in a
+given season. To retain the farmers with zero harvest output, I convert the output using
+an inverse hyperbolic transformation.
+Since some farmers grow multiple crops, the value of each crop is evaluated at the
+prevailing market price and aggregated across crops to compute the total harvest output24 DAHYEON JEONG
+Table 12: Dispersion In Labor Input
+Dep. Var: Dispersion in Log(Labor Days
+Acre)
+SD CV p50-p10 Mean-min
+TREAT -0.038 -0.014 0.005 -0.068
+(0.064) (0.034) (0.140) (0.160)
+TREATPost -0.134-0.077-0.360-0.202
+(0.075) (0.035) (0.181) (0.252)
+Observations 169 169 173 173
+Villages 66 66 66 66
+Season FE X X X X
+Region FE X X X X
+Dep.Var. Mean 0.81 0.27 1.56 1.69
+Arainyseasonﬁxedeﬀectandaregionﬁxedeﬀectisincluded. Standarderrorsclustered
+at the village level.
+value. As a robustness check, I also show the result using physical output in kg, given
+thatthelargeproportionofharvestscomprisesmaizeand/orbeansonly. Theregressions
+also include other controls such as the use of fertilizer or seeds and agricultural shocks.
+Columns1-4inTable13showinconclusiveevidencethattreatmentvillageshadmorehar-
+vestthancontrolvillages. Whilethecoeﬃcientsarepositive,theharvestdataisextremely
+noisy and the treatment eﬀects are not distinguishable from zero.
+Anothermeasureoffarmerwelfareisconsumption. Columns5-6showthattreatment
+farmers are less likely to skip a meal due to food shortage in the past 3 and 6 months.
+One explanation might be that it is now easier for workers to ﬁnd a job and to cope with
+food shortage with the help of the app. But since the village-level employment did not
+increaseasshowninTable11,itisdiﬃculttoconcludewhethertheincreaseinconsump-
+tionisdrivenbytheimbalanceatthebaselinebetweentreatmentandcontrolgroups. This
+outcome is measured at the endline only and therefore the possible baseline diﬀerence is
+not controlled for. Also, recall that two people per village were randomly selected to get
+10 USD if they used the app during the 2019 agricultural season. The robustness check
+controlling for winning a raﬄe prize of cash $10 is shown in Appendix Table A9, and the
+results are similar.19
+19Note that the random selection includes all users (not just study farmers who were interviewed).SEARCH FRICTIONS IN RURAL LABOR MARKETS 25
+Table 13: Treatment Eﬀect on Output Level
+Harvest Output (HH-Season Level) Skip Meals (HH Level)
+(1) (2) (3) (4) (5) (6)
+Kg Kg USD USD Past 6m Past 3m
+TREAT 0.468 0.445 0.377 0.367 -0.034-0.031
+(0.316) (0.287) (0.274) (0.252) (0.020) (0.018)
+TREATPost 0.361 0.370 0.196 0.204
+(0.478) (0.440) (0.385) (0.357)
+Observations 1069 1069 1069 1069 566 566
+Households 554 554 554 554 566 566
+Villages 66 66 66 66 66 66
+Season FE X X X X
+Input Controls X X X X
+Shock Controls X X
+Control Mean 6.534 6.534 5.187 5.187 0.075 0.051
+Control Mean (before IHS) 1001.85 1001.85 224.21 224.21
+Notes: Harvestvaluesarecomputedbyevaluatingthecropharvestatmarketpricesandaddingthemupacrosscrops. Harvestoutput
+measures in columns 1-4 are converted using inverse hyperbolic transformation. HH Endowment means the dummies of the number
+ofhouseholdmembersingender-agebracket(e.g. malefrom0-14yearsold,malefrom15-19yearsold,etc). Inputcontrolsincludethe
+useoffertilizer,seeds,herbicides,insecticides,andirrigation. Shockcontrolsincludewhethertheharvestwasaﬀectedbylowrainfall,
+ﬂood, crop diseases, insects, birds or animals, thefts, or lack of casual workers. The last row for columns 1-4 shows the mean of the
+control group before intervention and before inverse hyperbolic transformation. Standard errors clustered at the village level.26 DAHYEON JEONG
+6 Conclusion
+Understanding the sources of ineﬃciency in labor markets is crucial to improving mar-
+ket outcomes. Labor is the most abundant input factor in rural economies of develop-
+ing countries. More importantly, misallocation of labor implies that some farmers use
+too much or too little labor on their farm relative to what is optimal in a frictionless en-
+vironment. Therefore, simply correcting the misallocation of labor can improve aggre-
+gate output without any technological innovations. In this paper, I ﬁnd evidence that
+search frictions are a constraint for eﬃcient labor allocation even in tightly connected ru-
+raleconomies. Oﬀeringacost-eﬀectiveSMSapptechnologycanconnectalargenumberof
+workersandemployersandcompressthedispersionofprevailingwagesandlaborinput.
+TheuseofdigitaltechnologyinAfricanagricultureisbecomingincreasinglycommon
+withhopestoimproveagriculturalproductivityandfarmers’welfare. Forexample, Hello
+TractorandTrotro Tractor connectsmallholderfarmerswithnearbytractorownersusinga
+mobileappsothatfarmerscanhireatractoreveniftheycannotaﬀordtoown. Addition-
+ally,severalcompaniesoﬀerfrequentupdatesonweatherandmarketpricesandprovide
+tips on farming and ﬁnancial management via SMS.20In particular, WeFarm formulates
+a farmer-to-farmer digital network where farmers can ask and answer questions through
+text messages, just like an online forum for farmers in developed countries.
+The messaging app I developed to create digital rural labor markets is an example
+of this trend. Feedback survey presented in Appendix Table A10 suggests that there is
+enough demand for the app and scope for the proﬁtability of this service. Among the
+study sample app users, 93 percent indicated that the app service was useful. Most of
+them reported that they were able to ﬁnd workers and jobs faster and it required less
+eﬀort and lower costs. Furthermore, 50 percent of treatment farmers indicated that they
+plan to use the app in the next season. 74 percent of those who plan to use the app are
+willingtocontributeanaverageof1.5USDperseason. Aback-of-the-envelopecalculation
+implies that the payments from 630 users are enough to cover the cost of the service to
+Among the study sample, six farmers won the phone during the village meeting, and seven farmers won
+the 10 USD. This is 2 percent of the study sample (13/584 = 0.02).
+20Alistofselectedcompaniesinclude AgroSpaces ,AgroCenta ,Farmerline ,iShamba ,MFarm,Sokopepe ,
+andWeFarm .SEARCH FRICTIONS IN RURAL LABOR MARKETS 27
+makeitsustainable.21Giventhatthelabordemandwasparticularlylowintheyearofthe
+intervention due to low rainfall, it seems that there is a potential for this messaging app
+to be scaled up to beneﬁt a large number of farmers.
+21Theannualmaintenancecostoftheappis$950,whichcanbecoveredby630usersifeachpays1.5USD
+per season.28 DAHYEON JEONG
+References
+A/b.sc/e.sc/b.sc/e.sc, G., S. C/a.sc/r.sc/i.sc/a.sc, M. F/a.sc/f.sc/c.sc/h.sc/a.sc/m.sc/p.sc/s.sc, P. F/a.sc/l.sc/c.sc/o.sc, S. F/r.sc/a.sc/n.sc/k.sc/l.sc/i.sc/n.sc, /a.sc/n.sc/d.sc S. Q/u.sc/i.sc/n.sc/n.sc (2018): “Job Fair: Matching Firms
+and Workers in a Field Experiment in Ethiopia,” Working Paper .
+——— (2019): “Anonymity or Distance? Job Search and Labour Market Exclusion in a Growing African
+City,” Working Paper .
+A/b.sc/e.sc/l.sc, M., R. B/u.sc/r.sc/g.sc/e.sc/r.sc, /a.sc/n.sc/d.sc P. P/i.sc/r.sc/a.sc/i.sc/n.sc/o.sc (2016): “The value of reference letters-experimental evidence from
+South Africa,” Harvard University. Processed .
+A/g.sc/g.sc/a.sc/r.sc/w.sc/a.sc/l.sc, S. (2018): “Do rural roads create pathways out of poverty? Evidence from India,” Journal of
+Development Economics , 133, 375–395.
+A/g.sc/g.sc/a.sc/r.sc/w.sc/a.sc/l.sc, S., B. G/i.sc/e.sc/r.sc/a.sc, D. J/e.sc/o.sc/n.sc/g.sc, J. R/o.sc/b.sc/i.sc/n.sc/s.sc/o.sc/n.sc, /a.sc/n.sc/d.sc A. S/p.sc/e.sc/a.sc/r.sc/o.sc/t.sc (2019): “Market Access, Trade Costs, and
+Technology Adoption: Evidence from Northern Tanzania,” Working Paper .
+A/k.sc/e.sc/r.sc, J. C. (2010): “Information from Markets Near and Far: Mobile Phones and Agricultural Markets in
+Niger,” American Economic Journal: Applied Economics , 2, 46–59.
+A/k.sc/e.sc/r.sc, J. C. /a.sc/n.sc/d.sc M. F/a.sc/f.sc/c.sc/h.sc/a.sc/m.sc/p.sc/s.sc (2014): “Mobilephone coverage andproducer markets: Evidencefrom West
+Africa,” The World Bank Economic Review , 29, 262–292.
+A/l.sc/l.sc/e.sc/n.sc, T. (2014): “Information frictions in trade,” Econometrica , 82, 2041–2083.
+A/u.sc/t.sc/o.sc/r.sc, D. H. (2001): “Wiring the labor market,” The Journal of Economic Perspectives , 15, 25–40.
+B/a.sc/g.sc/g.sc/e.sc/r.sc, J. /a.sc/n.sc/d.sc R. L/e.sc/n.sc/t.sc/z.sc (2018): “Anempiricalmodelofwagedispersionwithsorting,” The Review of Economic
+Studies, 86, 153–190.
+B/a.sc/s.sc/s.sc/i.sc, V. /a.sc/n.sc/d.sc A. N/a.sc/n.sc/s.sc/a.sc/m.sc/b.sc/a.sc (2018): “Screening and Signaling Non-Cognitive Skills: Experimental Evidence
+from Uganda,” USC-INET Research Paper .
+B/a.sc/y.sc/e.sc, M. R., J. M/o.sc/r.sc/g.sc/a.sc/n.sc, P. S/c.sc/h.sc/o.sc/l.sc/t.sc/e.sc/n.sc, /e.sc/t.sc /a.sc/l.sc. (2006): “Information,search,andpricedispersion,” Handbook on
+economics and information systems , 1, 323–375.
+B/e.sc/a.sc/m.sc, E. A. (2016): “Do Job Fairs Matter? Experimental Evidence on the Impact of Job-fair Attendance,”
+Journal of Development Economics , 120, 32–40.
+B/e.sc/n.sc/j.sc/a.sc/m.sc/i.sc/n.sc, D. (1992): “Household Composition, Labor Markets, and Labor Demand: Testing for Separation
+in Agricultural Household Models,” Econometrica: Journal of the Econometric Society , 287–322.SEARCH FRICTIONS IN RURAL LABOR MARKETS 29
+B/r.sc/e.sc/z.sc/a.sc, E., S. K/a.sc/u.sc/r.sc, /a.sc/n.sc/d.sc N. K/r.sc/i.sc/s.sc/h.sc/n.sc/a.sc/s.sc/w.sc/a.sc/m.sc/y.sc (2019): “Scabs: The Social Suppression of Labor Supply,” NBER
+Working Paper .
+B/r.sc/o.sc/o.sc/k.sc/s.sc, W., K. D/o.sc/n.sc/o.sc/v.sc/a.sc/n.sc, /e.sc/t.sc /a.sc/l.sc. (2019): “Eliminating Uncertainty in Market Access: Evidence from New
+Bridges in Rural Nicaragua,” Working Paper .
+B/r.sc/o.sc/w.sc/n.sc, M. B. /a.sc/n.sc/d.sc A. B. F/o.sc/r.sc/s.sc/y.sc/t.sc/h.sc/e.sc (1974): “Robusttestsfortheequalityofvariances,” Journal of the American
+Statistical Association , 69, 364–367.
+B/r.sc/y.sc/a.sc/n.sc, G., S. C/h.sc/o.sc/w.sc/d.sc/h.sc/u.sc/r.sc/y.sc, /a.sc/n.sc/d.sc A. M. M/o.sc/b.sc/a.sc/r.sc/a.sc/k.sc (2014): “Underinvestment in a Proﬁtable Technology: The
+Case of Seasonal Migration in Bangladesh,” Econometrica , 82, 1671–1748.
+B/u.sc/r.sc/d.sc/e.sc/t.sc/t.sc, K. /a.sc/n.sc/d.sc K. L. J/u.sc/d.sc/d.sc (1983): “Equilibrium price dispersion,” Econometrica: Journal of the Econometric
+Society, 955–969.
+B/u.sc/r.sc/d.sc/e.sc/t.sc/t.sc, K. /a.sc/n.sc/d.sc D. T. M/o.sc/r.sc/t.sc/e.sc/n.sc/s.sc/e.sc/n.sc (1998): “Wage diﬀerentials, employer size, and unemployment,” Interna-
+tional Economic Review , 257–273.
+B/u.sc/t.sc/t.sc/e.sc/r.sc/s.sc, G. R. (1977): “Equilibrium Distributions of Sales and Advertising Prices,” The Review of Economic
+Studies, 44, 465–491.
+D/i.sc/l.sc/l.sc/o.sc/n.sc, B., P. B/r.sc/u.sc/m.sc/m.sc/u.sc/n.sc/d.sc, /a.sc/n.sc/d.sc G. M/w.sc/a.sc/b.sc/u.sc (2019): “Asymmetric non-separation and rural labor markets,”
+Journal of Development Economics , 139, 78–96.
+F/i.sc/n.sc/k.sc, G., B. K. J/a.sc/c.sc/k.sc, /a.sc/n.sc/d.sc F. M/a.sc/s.sc/i.sc/y.sc/e.sc (2018): “Seasonal Liquidity, Rural Labor Markets and Agricultural Pro-
+duction,” NBER Working Paper .
+F/o.sc/s.sc/t.sc/e.sc/r.sc, A. D. /a.sc/n.sc/d.sc M. R. R/o.sc/s.sc/e.sc/n.sc/z.sc/w.sc/e.sc/i.sc/g.sc (2017): “AreThereTooManyFarmsintheWorld? Labor-MarketTrans-
+action Costs, Machine Capacities and Optimal Farm Size,” Working Paper .
+F/r.sc/a.sc/n.sc/k.sc/l.sc/i.sc/n.sc, S. (2017): “Location, search costs and youth unemployment: experimental evidence from trans-
+port subsidies,” The Economic Journal , 128, 2353–2379.
+G/o.sc/y.sc/a.sc/l.sc, A. (2010): “Information,DirectAccesstoFarmers,andRuralMarketPerformanceinCentralIndia,”
+American Economic Journal: Applied Economics , 2, 22–45.
+G/r.sc/o.sc/h.sc, M., D. M/c.scK/e.sc/n.sc/z.sc/i.sc/e.sc, N. S/h.sc/a.sc/m.sc/m.sc/o.sc/u.sc/t.sc, /a.sc/n.sc/d.sc T. V/i.sc/s.sc/h.sc/w.sc/a.sc/n.sc/a.sc/t.sc/h.sc (2015): “Testingtheimportanceofsearchfrictions
+and matching through a randomized experiment in Jordan,” IZA Journal of Labor Economics , 4, 7.
+H/o.sc/r.sc/n.sc/s.sc/t.sc/e.sc/i.sc/n.sc, A., P. K/r.sc/u.sc/s.sc/e.sc/l.sc/l.sc, /a.sc/n.sc/d.sc G. L. V/i.sc/o.sc/l.sc/a.sc/n.sc/t.sc/e.sc (2011): “Frictional wage dispersion in search models: A
+quantitative assessment,” American Economic Review , 101, 2873–98.30 DAHYEON JEONG
+J/e.sc/n.sc/s.sc/e.sc/n.sc, R. (2007): “TheDigitalProvide: Information(Technology),MarketPerformance,andWelfareinthe
+South Indian Fisheries Sector,” The Quarterly Journal of Economics , 122, 879–924.
+K/a.sc/u.sc/r.sc, S. (2019): “NominalWageRigidityinVillageLaborMarkets,” Forthcoming, American Economic Review .
+L/a.scF/a.sc/v.sc/e.sc, D. /a.sc/n.sc/d.sc D. T/h.sc/o.sc/m.sc/a.sc/s.sc (2016): “Farms,Families,andMarkets: NewEvidenceonCompletenessofMar-
+kets in Agricultural Settings,” Econometrica , 84, 1917–1960.
+L/e.sc/v.sc/e.sc/n.sc/e.sc, H. (1960): “RobusttestsforequalityofvariancesincontributiontoprobabilityandStatistics,” Olkin:
+Stanford University Press, Palo Alto .
+M/a.sc/c.scM/i.sc/n.sc/n.sc, R. D. (1980): “Search and market equilibrium,” Journal of Political Economy , 88, 308–327.
+M/c.scK/e.sc/n.sc/z.sc/i.sc/e.sc, D. (2012): “Beyond baseline and follow-up: The case for more T in experiments,” Journal of
+development Economics , 99, 210–221.
+———(2017): “HowEﬀectiveAreActiveLaborMarketPoliciesinDevelopingCountries? ACriticalReview
+of Recent Evidence,” The World Bank Research Observer .
+M/o.sc/r.sc/t.sc/e.sc/n.sc/s.sc/e.sc/n.sc, D. (1988): Equilibrium wage distributions: a synthesis , Center for Mathematical Studies in Eco-
+nomics and Management Science, Northwestern University.
+O/r.sc/t.sc/e.sc/g.sc/o.sc-M/a.sc/r.sc/t.sc/i.sc, V. (2016): “Unemploymenthistoryandfrictionalwagedispersion,” Journal of Monetary Eco-
+nomics, 78, 5–22.
+P/i.sc/s.sc/s.sc/a.sc/r.sc/i.sc/d.sc/e.sc/s.sc, C. A. (2000): Equilibrium unemployment theory , MIT press.
+P/o.sc/s.sc/t.sc/e.sc/l.sc-V/i.sc/n.sc/a.sc/y.sc, F. /a.sc/n.sc/d.sc J.-M. R/o.sc/b.sc/i.sc/n.sc (2002): “Equilibrium wage dispersion with worker and employer hetero-
+geneity,” Econometrica , 70, 2295–2350.
+S/h.sc/a.sc/m.sc/d.sc/a.sc/s.sc/a.sc/n.sc/i.sc, Y. (2019): “Ruralroadinfrastructureandagriculturalproduction: Evidencefromindia,” Work-
+ing Paper .
+S/t.sc/i.sc/g.sc/l.sc/e.sc/r.sc, G. J. (1961): “The economics of information,” Journal of political economy , 69, 213–225.
+V/a.sc/n.sc /d.sc/e.sc/n.sc B/e.sc/r.sc/g.sc, G. J. /a.sc/n.sc/d.sc A. V/a.sc/n.sc V/u.sc/u.sc/r.sc/e.sc/n.sc (2010): “The eﬀect of search frictions on wages,” Labour Economics ,
+17, 875–885.SEARCH FRICTIONS IN RURAL LABOR MARKETS 31
+Figure A1: Search App: Feature Phone
+32 DAHYEON JEONG
+Figure A2: Search App Development Using A Mobile Messaging Platform, Telerivet
+SEARCH FRICTIONS IN RURAL LABOR MARKETS 33
+Figure A3: How the Messaging App Works
+Post a job via SMSEmployer
+Send a job ad via SMS
+WorkersAutomated message repliesApply to the jobSend applications34 DAHYEON JEONG
+Figure A4: Message Interactions of The Messaging App
+SEARCH FRICTIONS IN RURAL LABOR MARKETS 35
+Figure A5: Map of Study Villages
+2019 ENDLINE VILLAGES2019intervention_villagesample.…
+0.0
+1.0
+Notes: Orange dots represent 30 control villages and blue dots represent 40 treatment villages in Kilimanjaro and Manyara Region of
+Tanzania.36 DAHYEON JEONG
+Figure A6: Study Timeline
+Baseline conducted in Aggarwal et al. 20192017-20182019Village Meetings in 40 Treatment VillagesFebMarAprPhone Survey Round 1MayPhone Survey Round 2JunePhone Survey Round 3JulyAugEndlinein 40 Treatment Villages and 30 Control VillagesSepPilot Intervention of Labor Search App2018 JulyPlantingWeedingHarvestingSEARCH FRICTIONS IN RURAL LABOR MARKETS 37
+Figure A7: An Example of Village Meeting
+38 DAHYEON JEONG
+Figure A8: Flyer Used For Village Meeting (1)
+    SIMPLE WAY TO HIRE WORKERS  FOR FARM ACTIVITIES A SHAMBA USE SMS SERVICE TO FIND WORKERS AND JOBS EASILY   TO FIND CASUAL WORKERS Once registered, text  WAFANYAKAZI to  0746 217 484 and follow the instructions   INNOVATIONS FOR POVERTY ACTION ACTIONACTIONCALIFONIA, SANTA CRUZ 
+FOR REGISTRATION AND OTHER QUESTIONS: • Call Joseph Kissiri  0745 177973 or 0785 043635  • Do not call 0746 217484. This number is not answerable.  TO FIND JOBS  Once registered, to see if there are available jobs in your area, text:          KAZI  to  0746 217 484 Also, you will instantly receive job announcements whenever they are requested by employers. 
+ REGISTRATION: • Text SAJILI to 0746 217 484 • You will receive text messages and follow the instructions. • Registration and service is free of charge. SEARCH FRICTIONS IN RURAL LABOR MARKETS 39
+Figure A9: Flyer Used For Village Meeting (2)
+EMPLOYER POSTS A JOB ANNOUNCEMENTWORKERS APPLY FOR THE JOBEMPLOYER RECEIVES APPLICATIONS 
+REGISTRATIONEXAMPLE OF HOW THE SMS APP WORKS
++255746217484Sawa. Hutapokea tena ujumbe. Kama utahitaji kupokea ujumbe, Jibu 
+ANZASITISHA
+Sawa. Utaanza tena kupokea ujumbe. Kama ukitaka kusitisha kupokea ujumbe, Jibu SITISHA SAJILIThank youfor using our SMS service to find workers and jobs. We will ask you short 6 questions for successful registration.EMPLOYER: Sarafina Ulaya+255746217484wafanyakaziWelcome! What tasksdo you need workers for? Replywith number:  1. prepare land2. planting3. weeding  4. harvesting  
+When does the job start? Reply with number:0.today1. tomorrow2. the day after tomorrowGreat. How would you like to pay the workers. Reply with number:1.Per Day2.Per ACRE
+Youneed workers, starting today, for harvesting, in Moshi village. Reply:1. Correct0. Cancel4
+02
+1Great. You will hear from workers shortly.What crop? Replywith number:  1. maize2. beans3. sunflower4. banana5. peas6. potatoes1
+How much are you willingto pay per ACRE? Reply using numbers only. Don't include  food, drinks and transportation.$20WORKER 1: Joseph Elias
+WORKER 2: Lusekelo Andrew+255746217484+255746217484Sarafina Ulaya is looking for workers for harvesting starting today in MOSHIvillage. $20 per ACRE.To apply, reply: KAZ 611Great. How much would you like to get paid per ACRE? Do notinclude food, drinks, and transportation fees.$18KAZ 611
+Thanks. The employer's name is Sarafina Ulaya and her number is 8312246278. Call to discuss details.Sarafina Ulaya is looking for workers for harvesting starting today in MOSHIvillage. $20 per ACRE.To apply, reply: KAZ 611Great. How much would you like to get paid per ACRE? Do notinclude food, drinks, and transportation fees.$22KAZ611
+Thanks. The employer's name is Sarafina Ulaya and her number is 8312246278. Call to discuss details.EMPLOYER: Sarafina Ulaya+255746217484
+EMPLOYER: Sarafina Ulaya+255746217484You have an offer of $18per ACRE from Joseph Eliasfrom MOSHI village. Contact the person at  0745177973 to discuss further details.You have an offer of $22 per ACRE from Lusekelo Andrew from MOSHI village. Contact the person at 0623987684to discuss further details.Joseph Eliasanayeishi Moshi ameombakazi uliyoitangaza kwa Shilingi 50000kwa EKARI. Mpigie0745177973kwa makubaliano zaidi. Lusekelo Andrew anayeishi Boma ameomba kaziuliyoitangaza kwa Shilingi 48000kwaEKARI.Mpigie0623987684kwa makubaliano zaidi.40 DAHYEON JEONG
+Figure A10: Production Stages and Seasonality
+A. Agricultural Production Stages B. Wage Seasonality
+Plan%ngWeedingHarvestShort RainPlan%ngWeedingHarvestVillageMee%ng0.001.002.003.004Density of hiring eventsJan 2018Mar 2018Apr 2018Jun 2018Aug 2018Sep 2018Nov 2018Jan 2019Feb 2019Apr 2019May 2019Jul 2019Sep 2019Hiring Date
+VillageMee(ng
+2.62.833.23.4Wage Per Day (USD)0.001.002.003.004Density of hiring eventsJan 2018Mar 2018Apr 2018Jun 2018Aug 2018Sep 2018Nov 2018Jan 2019Feb 2019Apr 2019May 2019Jul 2019Sep 2019Hiring Date
+Notes: Panel A is a binned scatter plot with 66 hiring events per bin on average.SEARCH FRICTIONS IN RURAL LABOR MARKETS 41
+Figure A11: Wage Trajectory By Initial Wage Level
+22.533.544.5
+2018q22018q32018q42019q12019q22019q3quarterLow-Paying EmployerHigh-Paying EmployerWage Per Day (USD)Control Group
+22.533.544.5
+2018q22018q32018q42019q12019q22019q3quarterLow-Paying EmployerHigh-Paying EmployerWage Per Day (USD)Treatment Group42 DAHYEON JEONG
+Figure A12: Telerivet Usage
+A. Cumulative Daily Job posts B. Count of Hiring Events Per Week
+050010001500Cumulative Number of Job Posts/Applications20feb201911apr201931may201920jul201908sep2019Msg DateVillage MeetingsJob PostsApplications
+050100150Weekly Number of Job Posts/Applications2019w52019w132019w222019w312019w40WeekJob PostsApplications
+Figure A13: Telerivet Job Post Performance
+A. Job Post Returns B. First Time Users
+02004006008001000Cumulative Number of Job Posts/Applications01feb201901apr201901jun201901aug201901oct2019Msg DateNumber of Workers HiredJobs with No ApplicantsNumber of Jobs unfilled
+050100150200250Cumulative Number of Users01feb201901apr201901jun201901aug201901oct2019Msg DateEmployerWorkerSEARCH FRICTIONS IN RURAL LABOR MARKETS 43
+Table A1: Within Treatment, Wage Display Is Cross-Randomized
+Show Wage Message Example
+Job ADNo Jennifer is looking for workers for weeding for
+beans, starting tomorrow in village MOSHI. To
+apply for the job, reply: Job 805
+Yes Jennifer is looking for workers for weeding for
+beans, starting tomorrow in village MOSHI. $4
+per Day . To apply for the job, reply: Job 805
+Worker ApplicationNo Joseph from village MOSHI applied to your job
+post. Call 8312246278 to discuss details.
+Yes Joseph from village MOSHI applied to your job
+post with a wage $5 per Day . Call 8312246278
+to discuss details.44 DAHYEON JEONG
+Table A2: Randomization Balance Check: Farmer Level
+(1) (2) T-test
+Control Treatment P-value
+Variable N/[Clusters] Mean/SE N/[Clusters] Mean/SE (1)-(2)
+Abs. Percent Deviation From Village Avg Wage 136
+[29]1.989
+(1.514)201
+[36]-0.182
+(0.381)0.166
+Standardized Wage 136
+[29]-0.054
+(0.093)201
+[36]0.037
+(0.142)0.592
+Fraction of Households with Mobile Ownership 279
+[30]0.932
+(0.017)344
+[36]0.922
+(0.014)0.639
+Respondent is Female 280
+[30]0.371
+(0.035)346
+[36]0.402
+(0.026)0.487
+HH Hired Workers 280
+[30]0.689
+(0.038)346
+[36]0.671
+(0.032)0.705
+HH Worked As A Casual Worker 280
+[30]0.421
+(0.042)344
+[36]0.430
+(0.035)0.872
+Plot Size in Acreage 271
+[30]5.687
+(1.167)334
+[36]3.957
+(1.295)0.321
+Total Labor Person Days 275
+[30]72.782
+(5.428)338
+[36]63.533
+(4.279)0.182
+Labor Input Per Acre 271
+[30]31.478
+(3.048)334
+[36]36.926
+(2.690)0.182
+Family Person Days 270
+[30]56.670
+(5.030)322
+[36]48.676
+(3.479)0.192
+Hired Labor Person Days 275
+[30]24.015
+(4.505)338
+[36]20.556
+(4.303)0.578
+Fraction of Hired Labor Person Days 274
+[30]0.222
+(0.031)334
+[36]0.232
+(0.029)0.818
+Main Farming Season is Long Rainy Season 280
+[30]0.671
+(0.080)346
+[36]0.650
+(0.066)0.837
+Used Chemical Fertilizer 271
+[30]0.247
+(0.057)334
+[36]0.266
+(0.058)0.813
+Used Hybrid Seeds 270
+[30]0.578
+(0.059)334
+[36]0.614
+(0.050)0.639
+Maize Harvest Quantity (Kg) 234
+[30]1209.718
+(215.943)293
+[36]900.638
+(129.626)0.221
+Sold Maize 262
+[30]0.321
+(0.048)322
+[36]0.304
+(0.040)0.793
+Notes: The balance test is shown for 650 study farmers based on the baseline survey collected beforethe intervention. The number of
+control villages is 30 and the number of treatment villages is 40. See Appendix Table A3 for the balance table at village level using
+phone survey and endline survey data. Last column shows the p-value of the t-test for the equality of the two means.SEARCH FRICTIONS IN RURAL LABOR MARKETS 45
+Table A3: Randomization Balance Check: Village Level
+(1) (2) T-test
+Control Treatment P-value
+Variable N Mean/SE N Mean/SE (1)-(2)
+HH Worked as Casual Worker(s) 30 0.099
+(0.019)36 0.117
+(0.018)0.491
+HH Hired Casual Workers 30 0.611
+(0.034)36 0.535
+(0.036)0.140
+Average Wage 29 2.929
+(0.106)35 3.089
+(0.106)0.293
+SD in Wage 29 1.130
+(0.080)35 1.101
+(0.089)0.813
+CV in Wage 29 0.380
+(0.025)35 0.354
+(0.026)0.493
+P50-p10 Wage Ratio 29 1.612
+(0.068)35 1.602
+(0.067)0.915
+Mean-Min Wage Ratio 29 1.810
+(0.075)35 1.747
+(0.070)0.541
+SD Log (Labor Per Acre) 30 0.831
+(0.065)36 0.777
+(0.054)0.527
+CV Labor Per Acre 30 0.762
+(0.043)36 0.691
+(0.049)0.286
+P50-p10 Labor Per Acre Ratio 30 3.529
+(0.662)36 3.587
+(0.491)0.942
+Mean-Min Labor Per Acre Ratio 30 4.993
+(0.738)36 4.482
+(0.632)0.599
+Number of Hired Workers 29 7.391
+(0.501)35 6.203
+(0.427)0.074*
+Number of Prospective Workers Per Position 29 1.608
+(0.053)35 1.543
+(0.053)0.394
+On-Farm Labor Days 30 82.135
+(8.326)36 76.368
+(4.956)0.539
+On-Farm Family Days 30 48.442
+(5.235)36 46.323
+(3.677)0.736
+On-Farm Hired Labor Days 30 24.612
+(3.435)36 18.567
+(2.287)0.137
+On-Farm Exchange Labor Days 30 2.518
+(0.540)36 3.917
+(0.842)0.186
+Used Fertilizer 30 0.226
+(0.051)36 0.254
+(0.049)0.698
+Used Hybrid Seeds 30 0.524
+(0.047)36 0.545
+(0.042)0.748
+Total Harvest Value (USD) 30 170.693
+(17.929)36 206.652
+(19.904)0.192
+Notes: The balance test is done using the phone survey and endline survey. These surveys were
+implemented afterthe intervention, but the data for the pre-intervention period was also collected
+by recall as part of the surveys. See Appendix Table A2 for the balance table using the baseline data
+implemented beforethe intervention. Last column shows the p-value of the t-test for the equality of
+the two means.46 DAHYEON JEONG
+Table A4: Attrition: Phone Survey
+Compliance: Phone Survey Completed
+(1) (2) (3) (4)
+Round1 Round2 Round3 All 3 Rounds
+TREAT -0.0318 -0.0182 -0.0254 -0.00921
+(0.0387) (0.0378) (0.0399) (0.0396)
+Constant 0.6210.6110.6180.579
+(0.0281) (0.0266) (0.0301) (0.0299)
+Farmers 626 626 626 626
+Villages 66 66 66 66
+Notes: Theattritiontableincludesthosefarmersforwhichwedonothaveaphonenumber. Theyarecoded
+as non-compliance. Phone numbers of some treatment farmers were updated during the recent village
+meetings. In other words, we would have not been able to reach them if we did not hold village meetings.
+Sincecontrolvillagesdidnothavevillagemeetings,Iassumethatthosewhosephonenumbersgotupdated
+during the meetings are also non-compliant to ensure the balance between control and treatment villages.
+Round 2 and 3 asked farmers’ all hiring/working events from the most recent survey date. For example, if
+afarmerparticipatedinRound1butnotinRound2,thenRound3askedtheirhiring/workingeventssince
+the completed date of Round 1 survey. Standard errors are clustered at the village level.
+Table A5: Attrition
+Reasons of Non-Compliance
+(1) (2) (3) (4) (5) (6) (7)
+Interviewed Refused Moved Unidentiﬁed Travelling Work Away Sick/Died
+Treatment -0.01 0.01 -0.00 -0.00 0.01 -0.00 0.01
+(0.03) (0.01) (0.01) (0.01) (0.01) (0.01) (0.00)
+Constant 0.910.020.020.020.01 0.01-0.00
+(0.02) (0.01) (0.01) (0.01) (0.01) (0.01) (0.00)
+Farmers 626 626 626 626 626 626 626
+Villages 66 66 66 66 66 66 66SEARCH FRICTIONS IN RURAL LABOR MARKETS 47
+Table A6: Test for Equality of Two Variances of Wage Distributions in Figure 3.
+Test Outcome Control SD Treatment SD P-value
+Levene (1960) Raw Wage (Pre) 1.377 1.371 0.966
+Brown and Forsythe (1974) Raw Wage (Pre) 1.377 1.371 0.835
+Levene (1960) Raw Wage (Post) 1.439 1.271 0.007
+Brown and Forsythe (1974) Raw Wage (Post) 1.439 1.271 0.008
+Levene (1960) Residualized Wage (Pre) 1.316 1.226 0.155
+Brown and Forsythe (1974) Residualized Wage (Pre) 1.316 1.226 0.169
+Levene (1960) Residualized Wage (Post) 1.292 1.141 0.006
+Brown and Forsythe (1974) Residualized Wage (Post) 1.292 1.141 0.007
+Notes: Standard deviations of Control and Treatment group are reported in Columns 3 and 4. Column 5 reports the p-value from the
+test results with the null hypothesis of equal variances using the STATA command robvar. Brown and Forsythe (1974) replaces the
+mean in Levene (1960)’s formula with the median.48 DAHYEON JEONG
+Table A7: ANCOVA Estimation of the Main Regression Results
+p50-p10 Ratio Mean-Min Ratio
+(1) (2) (3) (4)
+p5010 p5010 meanmin meanmin
+TREAT -0.182-0.139 -0.256-0.183
+(0.101) (0.0888) (0.0995) (0.0847)
+Baseline p50-p10 Ratio 0.546
+(0.118)
+Baseline Mean-Min Ratio 0.544
+(0.102)
+Observations 68 68 68 68
+Villages 68 68 68 68
+Control Mean 1.562 1.562 1.707 1.707
+Notes: This regression is at a village-level and controls for baseline outcome measures. Two villages out of
+70 villages are dropped because they do not have any hiring events data after the intervention.SEARCH FRICTIONS IN RURAL LABOR MARKETS 49
+Table A8: Wage Dispersion Is Not Driven By Bidding Feature (Village Level)
+No Winsorization Winsorized at p5 and p95
+(1) (2) (3) (4)
+Wage Wage&B Wage Wage&B
+TREAT -0.0291 -0.0239 -0.0212 -0.0151
+(0.0302) (0.0297) (0.0259) (0.0258)
+TREATPost -0.0596 -0.0595-0.0516 -0.0513
+(0.0379) (0.0352) (0.0349) (0.0321)
+TREAT_BID 0.0181 0.0199 0.0122 0.00940
+(0.0325) (0.0339) (0.0271) (0.0279)
+TREAT_BIDPost -0.00708 -0.0159 -0.0153 -0.0160
+(0.0386) (0.0361) (0.0341) (0.0308)
+Stage FE X X X X
+Task FE X X X X
+Crop FE X X X X
+Observations 1613 1613 1613 1613
+Farmers 439 439 439 439
+Villages 66 66 66 66
+Control Mean 0.323 0.319 0.300 0.293
+Notes: This regression is at a farmer-hiring event level data. Outcomes are individual percent deviation from the village mean wage
+and/orbeneﬁtsinUSD.Theresultsarerobusttousingmedianwageasopposedtomeanwage. Standarderrorsclusteredatthevillage
+level.50 DAHYEON JEONG
+Table A9: Treatment Eﬀect on Skipping Meals Controlling For Winning A Raﬄe
+Dep.Var: Skip A Meal (HH Level)
+(1) (2) (3) (4)
+Past6m Past3m Past6m Past3m
+TREAT -0.035-0.032-0.034-0.032
+(0.020) (0.017) (0.020) (0.017)
+Won A Raﬄe Prize of 10 USD -0.043-0.020
+(0.016) (0.011)
+Won A Raﬄe Prize of 10 USD Or A Feature Phone -0.049-0.026
+(0.014) (0.010)
+Observations 566 566 566 566
+Households 566 566 566 566
+Villages 66 66 66 66
+HH Endowment X X X X
+Control Mean 0.075 0.051 0.075 0.051
+Notes: This table replicates columns 5 and 6 in Table 13 controlling for winning a raﬄe prize. During the village meetings, one
+randomly selected person was given a feature phone to motive the training session. Throughout the agricultural season, two person
+wasrandomlyselectedfromeachvillagetoget10USDiftheyusedtheapp. Notethattherandomselectionincludesallusers(notjust
+study farmers who were interviewed). Among the study sample, six farmers won the phone during the village meeting, and seven
+farmers won the 10 USD. This is the 2 percent of the study sample (13/584 = 0.02).SEARCH FRICTIONS IN RURAL LABOR MARKETS 51
+Table A10: Feedback On The Search App (Treatment Villages Only)
+Mean SD N
+The App Service Was Useful 0.93 0.25 44
+Plan To Use The App in Future 0.50 0.50 274
+I Am Willing To Contribute For The Service 0.74 0.44 129
+Willingness To Pay Per Month 0.40 0.26 89
+Willingness To Pay Per Ag. Season 1.49 2.84 86

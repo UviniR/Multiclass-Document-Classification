@@ -1,0 +1,1133 @@
+1
+Jusril H, et al. BMJ Open 2020;10:e038282. doi:10.1136/bmjopen-2020-038282Open access  
+Digital health for real-  time monitoring 
+of a national immunisation campaign in 
+Indonesia: a large-
+ scale effectiveness 
+ 
+evaluation
+Hafizah Jusril     ,1,2 Iwan Ariawan,1,2,3 Rita Damayanti,1,2,3 Lutfan Lazuardi     ,4 
+Miriam Musa,5 Suci Melati Wulandari,5 Paul Pronyk     ,5 Patricia Mechael     6
+To cite: Jusril H, Ariawan I, 
+Damayanti R, et al.  Digital health for real-
+ time monitoring 
+of a na
+tional immunisation 
+campaign in Indonesia: a large-
+ 
+scale effectiveness 
+ 
+evaluation. BMJ Open 2020;10:e038282. doi:10.1136/bmjopen-2020-038282
+ ►Prepublication history and 
+additional materials for this paper are available online. To view these files, please visit the journal online (http://
+ dx.
+ doi.
+ 
+org/
+ 
+10.
+ 
+1136/
+ 
+bmjopen-
+ 
+2020-
+ 
+038282).
+Received 15 
+April 2020
+Revised 30 October 2020
+Accepted 17 November 2020
+1Center for Health Research, 
+Universitas Indonesia, Depok, Indonesia
+2Reconstra, Jakarta, Indonesia
+3Faculty of Public Health, 
+Universitas Indonesia, Depok, Indonesia
+4Public Health, Gadjah Mada 
+University Faculty of Medicine, Yogyakarta, Indonesia
+5UNICEF Indonesia, Jakarta, 
+Indonesia
+6HealthEnabled, Cape Town, 
+South Africa
+Correspondence to
+Dr Hafizah Jusril;  
+ 
+hafizahjusril@
+ 
+gmail.
+ 
+comOriginal research
+© Author(s) (or their 
+employer(s)) 2020. Re-
+ use 
+permitted under CC BY
+-
+ NC.
+ No 
+commercial re-
+ use.
+ See rights 
+and permissions. Published by BMJ.
+ABSTRACT
+Objective  T o assess the contribution of a digital health 
+real-
+ time monitoring pla
+tform towards the achievement of 
+coverage targets during a national immunisation campaign in Indonesia.Interventions
+ A digital health pla
+tform was introduced to 
+facilitate real-
+ time reporting and da
+ta visualisation. Health 
+workers submitted reports of children immunised each day by geolocation using mobile phones. Automated reports were generated for programme managers at all levels to enable early responses to coverage gaps.Methods
+ Risk profiles were genera
+ted for each district 
+to assess precampaign immunisation programme performance. Digital health platform use and progress towards targets were monitored continuously throughout the campaign. Study outcomes were total coverage and time to achieve full (100%) coverage. Kaplan-
+ Meier
+, Cox 
+and linear regression analyses were used to estimate the associations and outcomes after adjusting for district risk profiles. A complementary qualitative assessment explored user experiences and acceptance through interviews with vaccinators and programme managers in provinces and districts selected through multistage random sampling.Results
+ Between 
+August and December 2018, 6462 
+health facilities registered to use the digital health platform across 28 provinces and 395 districts. After adjusting for precampaign district risk profile and intracampaign delays due to vaccine hesitancy, districts with greater platform utilisation demonstrated higher coverage overall (R
+2=0.28, p<0.0001) and a shorter 
+interval to achieving full coverage (>75% reporting compliance; Risk Ratio 15.4, 95%
+ CI 5.8 to 40.6).
+ Stronger 
+effects were observed among districts experiencing implementation delays due to vaccine hesitancy. Results from 106 key informant interviews conducted in 6 provinces and 18 districts suggest high degrees of acceptability, ease of use and satisfaction.Conclusion
+ A digital health pla
+tform introduced for real-
+ 
+time monitoring of a na
+tional immunisation campaign in 
+Indonesia was feasible, well liked and associated with improved problem solving and programme performance, particularly among districts affected by vaccine hesitancy.Trial registration number
+ ISRCTN10850448.INTRODUCTION
+Indonesia has large numbers of unimmunised children. Vaccine preventable diseases including measles and rubella (MR) remain serious public health challenges.
+1 Prior to 
+2018, coverage with the first dose of measles vaccine had plateaued at 85%, with 60% of children having received the second dose.
+2 
+Measles outbreaks occurred frequently, with over 12
+ 000 cases reported annually in the 
+preceding 
+5
+ 
+years.3 With the rubella vaccine 
+not yet introduced, an estimated 15%–20% of pregnancies remained vulnerable to congen-ital rubella syndrome (CRS).
+4
+Indonesia has committed to eliminating 
+measles and controlling rubella and CRS by 2023. To achieve this ambitious aim, the country undertook a nationwide MR vaccina-tion campaign that targeted over 67
+ million
+ 
+children between 9 months and 15 years old.
+5 The first phase of the campaign was 
+conducted in 2017 on the densely popu-lated Java island with 35
+ million 
+children Strengths and limitations of this study
+ ►This large-  scale effectiveness evalua tion assessed 
+the contribution of a digital health intervention to the 
+achievement of immunisation coverage targets.
+ ►The assessment took place throughout the Indonesian archipelago and included areas of wide socioeconomic and geographical diversity with varying levels of infrastructure, capacity and connectivity.
+ ►The evaluation made use of both quantitative and qualitative data collected before, during and after the immunisation campaign, and accounted for baseline performance of district immunisation programmes.
+ ►While unanticipated issues of vaccine hesitancy affected progress in some areas and prolonged the campaign, they were overcome in most instances and adjusted for in the analyses.Protected by copyright. on December 15, 2022 at Sri Lanka:BMJ-PG Sponsored. http://bmjopen.bmj.com/ BMJ Open: first published as 10.1136/bmjopen-2020-038282 on 10 December 2020. Downloaded from 2
+Jusril H, et al. BMJ Open 2020;10:e038282. doi:10.1136/bmjopen-2020-038282Open access  
+across six provinces.5 In 2018, the second phase, which 
+is referred as the ‘MR campaign’ in this paper, aimed 
+to cover the remaining 31.9
+ million children across 28
+ 
+socioeconomically and geographically diverse prov-inces, comprising 395 districts over an estimated 6000 inhabited islands.
+5–8
+To support implementation and overcome challenges 
+associated with paper-
+ based reporting in a wide geograph
+-
+ical area, the Ministry of Health with the support of partners introduced a digital health platform known as RapidPro. The term digital health refers to the systematic application of information and communications technol-ogies, computer science and data to support informed decision-
+ making by individuals, the health workforce 
+and 
+health systems, to strengthen resilience to disease 
+and improve health and wellness for all.9 During the MR 
+campaign, the platform was used by health workers to send a text message/SMS (short message service) report of the number of children vaccinated each day using mobile phones. For each message sent, an automated response was sent to vaccinators and managers to report local progress against immunisation coverage targets. Programme staff were also able to visualise intracampaign coverage by facility, district or province through an online dashboard to identify areas where corrective action may be required.
+10
+The digital health platform was initially introduced 
+on a limited scale during the first phase of the national campaign. A process evaluation found it to be a useful tool to track progress, identify gaps and intensify outreach.
+11 
+A large-
+ scale effectiveness evaluation12 was conducted 
+during wider deployment of the platform in the second phase of the MR campaign with the aim of assessing its potential contribution towards immunisation coverage and programme performance.METHODS
+Intervention descriptionThe digital health platform was developed using UNICEF-
+ 
+designed open source software (RapidPro) that supports interactive messaging and allows information collected through mobile phones to be entered directly into a data
+-
+base. To ensure simplicity and limit smart phone require-ments, the platform was designed to accept data through text message/SMS. Vaccinators used personal mobile phones to register their health facility which was linked to a known geolocation. At the end of each reporting day, vaccinators submitted a text message to report the number of children immunised. Data from all facilities were aggregated and visualised with an online dashboard at the district, provincial and national levels, respectively. Vaccinators and programme managers received an auto-mated text message at the end of each day with feedback on progress towards coverage targets for their adminis-trative level. The platform was administered at no cost to users (figure
+ 
+1).
+Provincial immunisation managers received a short 
+orientation to the digital health platform at a national coordination meeting in advance of the campaign. District immunisation managers were subsequently introduced to the platform through face-
+ to-
+ face engagement in their 
+respective 
+provinces. Cascade training took place for 
+health facility staff, supplemented by a 2
+ min instructional 
+animated video disseminated through the commonly used social media platform, WhatsApp. Further details of the inter
+vention are reported elsewhere.13
+Study designA large-
+ scale 
+effectiveness assessment was conducted using 
+prospective observational design. Data collected during the campaign (1 August–31 December 2018) on platform use and study outcomes were analysed at the district level comparing varying degrees of implementation.
+Provincial Health Office
+Health facility managers
+External Monitors
+MoH & gov’t officials
+Monitoring Task Force  MR immunisation coverage 
+at the national level is [%].
+MR immunisation coverage 
+at your province is [%].
+MR immunisation coverage 
+at your district is [%].
+MR immunisation coverage 
+at your sub -district is [%].
+MR 
+immunizatio
+n coverage at 
+national level 
+is above 95% 
+coverage.
+73
+PF7899189999M…
+District Health OfficeVaccinators submit 
+daily data via SMSRapidPro
+perform analysisSMS feedback on coverage is sent to users
+Figure 1  Real-  time monitoring innovation used during the second phase of Indonesia’ s MR campaign. MoH, Ministry of 
+Health; MR, measles and rubella; SMS, short message service.Protected by copyright. on December 15, 2022 at Sri Lanka:BMJ-PG Sponsored. http://bmjopen.bmj.com/ BMJ Open: first published as 10.1136/bmjopen-2020-038282 on 10 December 2020. Downloaded from 3
+Jusril H, et al. BMJ Open 2020;10:e038282. doi:10.1136/bmjopen-2020-038282Open access
+The trial was registered with the International Standard 
+Randomised Controlled Trial Network.
+Outcomes
+The primary outcome of interest was immunisation coverage, including achievement of full coverage and time to achieve target thresholds. The secondary outcomes included the potential contribution of the platform towards early problem identification and the taking of corrective action to address challenges during the campaign.
+Quantitative assessment
+Table
+ 
+1 profiles the range of quantitative indicators assessed 
+with the source of data.
+Reporting and coverage data from all registered users were 
+obtained from the digital health platform through continuous monitoring during the campaign. To assess use, numbers of health facility’s reporting days and reporting compliance—defined as the ratio of observed over planned reporting days—were monitored. Coverage data were validated against information collected through manual reporting systems throughout the campaign. All submissions from registered facilities were included in the analysis.
+Risk profiles were generated for each district using a stan-
+dardised WHO Measles Risk Assessment Tool.
+14 The tool 
+combines measures of immunisation coverage, surveillance activities and case load. These district risk profiles were used to adjust for potential confounding related to precam-paign programme performance, including supply-
+ side
+ 
+and demand-
+ side factors, such as management, financing,
+ 
+numbers and capacity of health worker numbers, as well as commodity availability.
+The potential contribution of the digital health platform 
+towards identifying and addressing challenges during the campaign was assessed using mobile phone-
+ based sur
+veys. 
+Requests for participation were sent to all registered users in the final month of the campaign through the same plat-form used to report immunisation coverage. Three yes–no questions were asked, namely perceived usefulness of the platform to achieve targets, whether the platform assisted in the identification of problems during the campaign, and whether the platform facilitated corrective action (table
+ 
+1).
+Qualitative assessmentA complementary qualitative assessment was conducted in parallel to generate insights on user experience and accept-ability. This included indepth interviews with vaccinators and programme managers in 6 selected provinces and 18 districts using a multistage random sampling framework. Provincial stratification was based on (1) levels of mobile connectivity, (2) prior experience with digital health applications and (3) district immunisation programme risk profiles.
+14 Two 
+provinces from each group were selected at random using probability proportional to size (number of districts by size). For each selected province, three districts were selected at random, with three health facilities chosen at random from four coverage groupings.Indepth interviews were conducted face-
+ to-
+ face near the
+ 
+midpoint of the campaign in local language with respondents 
+responsible for immunisation monitoring and implementa-tion. These included programme managers at central, provin-cial and district levels, as well as vaccinators at health facilities. Six informants at the global level were also interviewed from key campaign partners including UNICEF, WHO, and Gavi, Table 1  Indicators included in the quantitative analysis
+Indicators DefinitionData source
+District profile
+Risk profile District risk (low, medium, high and 
+very high) based on assessment of 
+immunisation coverage, surveillance quality and vaccine preventable disease case load.WHO
+Affected by vaccine hesitancyList of districts recorded to ever stop MR campaign activities due to vaccine hesitancy.MoH list
+Digital health platform utilisation
+Reporting 
+daysNumber of days when health facilities submitted their report to digital health platform during the first 2
+ months of 
+the campaign (1 August–30 September 2018), averaged by district.Digital health data
+Reporting compliancePr
+oportion of health facility’s reporting 
+days against eligible reporting days, averaged by district. Eligible reporting days are total days health facilities were expected to report in order to reach 100% coverage. Total days during the whole campaign (1 August–31 December 2018) are eligible reporting days for districts below 100% coverage.Digital health data
+Perceived usefulness
+Help to 
+achieve targetSurvey respondents’ perception of digital health usefulness to achieve coverage (yes/no).Mobile phone-
+ 
+based survey
+Useful for pr
+oblem 
+identificationSurvey respondents’ perception of digital health usefulness for problem identification (yes/no).Mobile phone-
+ 
+based survey
+Useful for corr
+ective 
+actionSurvey respondents’ perception of digital health usefulness for corrective action (yes/no).Mobile phone-
+ 
+based survey
+Coverage
+T
+otal 
+coverageProportion of children immunised 
+against target children to be immunised by district.Digital health data
+Time reaching full (100%) coverageNumber of days districts take to achieve full (100%) coverage—the official target set by MoH to all participating districts during the second phase of the MR campaign.Digital health data
+MoH, Ministry of Health; MR, measles and rubella.Protected by copyright. on December 15, 2022 at Sri Lanka:BMJ-PG Sponsored. http://bmjopen.bmj.com/ BMJ Open: first published as 10.1136/bmjopen-2020-038282 on 10 December 2020. Downloaded from 4
+Jusril H, et al. BMJ Open 2020;10:e038282. doi:10.1136/bmjopen-2020-038282Open access  
+the Vaccine Alliance. The interview guide was designed to 
+explore overall impressions of the digital health platform, ease of use and use-
+ as-
+ intended, and whether data collected
+ 
+through the platform informed problem identification and corrective action. Initial development of the guide was in English, with back-
+ to-
+ back translation to Bahasa Indonesia
+ 
+by local researchers. Informed verbal consent was obtained prior to all interviews. All interviews were audio-
+ recorded,
+ 
+transcribed and coded.
+Analysis
+With high levels of decentralised governance in Indo-nesia, districts were the core administrative units respon-sible for implementation and reporting on campaign performance. To assess statistical associations between platform use and primary coverage outcomes, Kaplan-
+ 
+Meier sur
+vival analysis, Cox regression and linear 
+regression were employed with the district as the unit of analysis. To assess the potential contribution to time to reach full coverage, survival analysis was calculated in reverse
+15–17 with achieving 100% coverage as the event. To 
+address issues of vaccine hesitancy that emerged during the campaign,
+8 analyses were conducted separately for 
+districts experiencing delays.
+To assess associations between secondary outcomes 
+(problem identification and corrective action) and coverage, a t-
+ test was 
+performed on individual responses 
+from mobile phone-
+ based sur
+veys. Similarly, estimates 
+were conducted separately for districts affected and unaf-fected by vaccine hesitancy. All analyses were performed with SPSS V.23.
+The qualitative analysis followed a grounded theory 
+approach.
+18 We avoided possible loss of meaning in trans-
+lation by developing the initial codebook in English, which was then translated to the Indonesian language. Prior to coding of all transcripts, codes were tested on a subset of transcripts by two local native researchers. Discrepancies in codes and their scope were discussed, with updates to the codebook made accordingly. Tran-scripts were coded and analysed using NVivo (V.12, 2018; QSR International). Responses were triangulated across different types of informants and across sites to assess validity through the convergence of information.
+Patient and public involvement
+This research was done without patient involvement. Patients were not invited to comment on the study design and were not consulted to develop patient relevant outcomes or interpret the results.
+RESULTS
+Utilisation of the RapidPro digital health platformBetween August and December 2018, a total of 6462 health facilities across 28 provinces and 395 districts were registered and reported at least once into the RapidPro platform. Reporting compliance was highest during the initial months (August–September 2018), with a gradual decrease towards the end of the campaign (December 2018) as targets were achieved. A total of 72.7% of facili-ties reported at least weekly into the system. Reasons for irregular or non-
+ reporting included decisions by some 
+local 
+areas to conduct the campaign intermittently (only 
+on select days) and/or to upload the data periodically; the fact that not all initially registered facilities were respon-sible for reporting; and mobile connectivity challenges. Additional irregular reporting resulted from 61 of 395 districts and 14% of facilities which stopped participating in the campaign at some point due to vaccine hesitancy (demand-
+ related delays in vaccine acceptance).8 There 
+was a high level of concordance between coverage reports through the digital health platform and final reports received through paper-
+ based systems (<1% difference).
+Associations between platform use and primar
+y 
+coverage outcomes were assessed from August to September 2018—the original timeline of the campaign. After adjusting for district risk profile, associations were observed between coverage and reporting frequency across all reporting districts (R
+2=0.28, p<0.0001) (online 
+supplemental table A-1). Figure
+ 
+2 profiles the correlations 
+separately for districts affected and unaffected by vaccine hesitancy. While significant associations were observed in both groups, stronger correlations were observed among districts reporting ever stopping campaign activities due to vaccine hesitancy (R
+2=0.65, p<0.001) relative to those 
+unaffected (R2=0.06, p<0.001).
+Strong relationships were also observed between 
+reporting frequency and compliance with the likelihood of achieving full coverage and time to achieve coverage thresholds. Districts with higher average reporting compli-ance were more likely to reach 100% coverage. The like-lihood was significantly increased in districts with average health facility reporting compliance of 75% and above (Risk Ratio [RR] 15.4, 95%
+ CI 5.8 to 40.6) (
+figure
+ 
+3). Cox 0 5 10 15 20 25 30 35 40 45 50
+Average number reported days/puskesmas0102030405060708090100110120130District Coverage (%)Correlation of Average number of reported days/puskesmas and district Measles
+Rubella immunization coverage in 1 August - 30 September 2018 by vaccine hesitancy
+issues
+Aﬀected by vaccine hesitancy issues
+No
+YesY = 0.70*X + 52.30
+r=0.25, r-square=0.06,p-value<0.001Y = 2.08X + 3.0
+r=0.81, r-square=0.65,p-value<0.001
+Figure 2  Corr elation of the average number of reported 
+days/health facility and district coverage during the first 
+2
+ months of the campaign (1 August–30 September 2018). Y 
+= district coverage and x= average number of r
+eported days/
+puskesmas in the district.Protected by copyright. on December 15, 2022 at Sri Lanka:BMJ-PG Sponsored. http://bmjopen.bmj.com/ BMJ Open: first published as 10.1136/bmjopen-2020-038282 on 10 December 2020. Downloaded from 5
+Jusril H, et al. BMJ Open 2020;10:e038282. doi:10.1136/bmjopen-2020-038282Open access
+regression analysis yielded similar results, where the like-
+lihoods of reaching full coverage were strongly correlated with reporting compliance (online supplemental table A-2). These relationships were also not influenced by district risk profile.
+Qualitative findings
+A total of 106 interviews were conducted with 114 infor -
+mants from 82 institutions. Overall, vaccinators cited high levels of acceptance. Training was deemed sufficient and the manual and short video guides were clear reference tools. The platform was easy to use, with mobile connec-tivity identified as the most common challenge. While this may have led to delays in reporting, most facilities found ways to overcome this. In some instances, facilities accu-mulated the data and reported when travelling to an area with better connectivity. Others informed their respective district managers who reported on their behalf.
+The timeliness and ease of use of the platform were 
+preferred over paper-
+ based 
+reporting and phone calls 
+used in past immunisation campaigns and programmes. Health facility informants appreciated the daily reminders, which they said improved their motivation to report, creating a sense that their work was recognised and appreciated. Reports submitted through the plat-form went directly to programme managers at district, province and central levels. For some, this digital health ‘cross-
+ check’ reinforced the importance of ensuring 
+manual 
+reports were correctly submitted. Informants also 
+perceived RapidPro submissions reduced workloads as updates were automatically provided to relevant author -
+ities. Data on numbers of immunised children recorded on mobile phones were also perceived as a useful backup system. Illustrative findings are highlighted in table
+ 
+2.
+Both health facility vaccinators and programme 
+managers highlighted that daily RapidPro updates on immunisation coverage triggered discussions through established social media networks. These updates improved local coordination, which better facilitated problem solving. This was reinforced by the online data visualisation platform, which fostered greater account-ability within and between districts. Programme managers also found daily coverage updates from their districts to be helpful in regular progress reviews of campaign perfor -
+mance. However, informants also noted corrective action was not taken in all instances. Some emphasised that data were just one ingredient of success, with the achievement of targets dependent on coordinated efforts to address bottlenecks. While the platform was simple, some respon-dents would have liked to see more detailed information included on age and sex breakdown, as well as the ability to include reporting on perceived reasons for delays.
+Quantitative effects: perceived usefulness of the platform and 
+coverageA total of 981 responses were received from mobile phone-
+ based sur
+veys on the usefulness of the platform 
+(response rate ~10%). Overall, respondents felt that RapidPro helped to achieve targets (90.7%), improve problem identification (73.7%) and facilitate corrective action (72.6%). For districts unaffected by vaccine hesi-tancy, associations were observed between mean end-
+ 
+of-
+ campaign coverage and the perceived contribution 
+of RapidPro towards achieving targets and its use for corrective 
+action (table
+ 3
+). No association with problem 
+identification was observed. Among districts affected by vaccine hesitancy, where campaign efforts had stalled, no associations were observed between mean coverage and secondary outcomes.
+DISCUSSION
+We evaluated the contribution of a digital health platform deployed to support real-
+ time reporting and feedback on 
+the per
+formance of a national immunisation campaign 
+in Indonesia. The introduction of the platform at-
+ scale 
+was feasible, with high levels of user acceptance and ease of use. Feedback of local coverage data to vaccinators and programme managers created a sense of shared account
+-
+ability. A high proportion of respondents felt the plat-form helped to identify and address local obstacles. While the campaign experienced challenges related to vaccine hesitancy, strong associations were observed between plat-form use and the achievement of coverage targets. These relationships were stronger in districts where vaccine hesitancy was an issue, suggesting that feedback from the platform stimulated corrective action to help districts overcome challenges. The observed contributions were independent of the precampaign performance of local immunisation programmes.
+We opted for a large-
+ scale effectiveness evaluation 
+for several reasons. First, Indonesia’
+s MR campaign was 
+an intense and time-
+ bound national effort, requiring 
+implementation 
+and monitoring systems to be highly 
+standardised. This afforded limited political or practical flexibility to adopt randomised evaluation approaches. Second, this design takes advantage of the continuous monitoring of intervention and outcome indicators generated through the platform. With large numbers of districts across a range of contexts, the dose–response 
+Figure 3  Reporting compliance and districts r eaching 100% 
+coverage by 31 December 2018.Protected by copyright. on December 15, 2022 at Sri Lanka:BMJ-PG Sponsored. http://bmjopen.bmj.com/ BMJ Open: first published as 10.1136/bmjopen-2020-038282 on 10 December 2020. Downloaded from 6
+Jusril H, et al. BMJ Open 2020;10:e038282. doi:10.1136/bmjopen-2020-038282Open access  
+analysis generated strengthens the plausibility of find-
+ings. Finally, the availability data on precampaign perfor -
+mance of district immunisation programmes allowed for important potential confounding factors to be addressed in the analysis.
+While the platform deployed in this evaluation was the 
+first application of a digital health application at-
+ scale in Indonesia, the approach leveraged prior learning from recent small- 
+ scale pilots. These included digital innova
+-
+tions to improve access to immunisation services in urban slums, to improve access to healthcare among poor popu-lations,
+19 to monitor malaria bednet distribution and to 
+assess the status of water and sanitation programmes. Importantly, routine reporting in the health sector Table 2  Informant per ceptions of the digital health monitoring platform
+Themes Quotes
+Overall utilisation
+Integration 
+into existing campaign reporting scheme“We haven’t had a clear idea how well people in the field are able to operate and enter the data. But I think someday we can do it. Because there will be a verification process from District Health Office. They would open the data and identify what’s missing. Provincial Health Office would also be able to see districts’ performance. They would say ‘what’s wrong with your data?’ then the District Health Office would verify it.”*
+“Sometimes, their number was different between our recap and what we report in RapidPro. We would know the 
+difference. For instance, we have 10 in RapidPro, while in manual it is written 15. From that data, we could re-
+ check 
+wher
+e we made the mistake.”*
+“Yes, it once occurred (difficulty in sending SMS). Perhaps it was due to lack of network, so it wasn’t successful. Sometimes the network isn’t available. It happened, but not every day. It was only one time, if I’m not mistaken. Then once the signal was available, I sent the accumulation.”†
+Effects on reporting motivation“With the help from RapidPro, first, we were able report quicker. Secondly, it motivated us to work faster. The data all had to be completed in certain hours. For us, it is more like a motivation. I would say to my colleagues, ‘Come on, the report all should be collected.’ It’s different with using the manual data where they usually procrastinate. They would say, ‘there’s still time, it can wait’. With this, we are becoming more well-
+ or
+ganized and able to report faster.”*
+Use as intended
+Understanding 
+of RapidPro purpose“I think this RapidPro made it easier to understand information within the immunization campaign. So, we are able to compare the numbers with what facilities reported. This also facilitated the immunization officers in facilities to do daily reporting and to see the coverage.”*
+“[purpose of RapidPro] to report number of children immunized.”†
+Use on 
+problem identification, target achievement and corrective action“See in this case, we obtained this data from immunization coverage in a province. It says 14 districts and 197 health facilities. This is [the number] that came into us. Meanwhile, we know exactly that we have 304 health facilities in the province, but only 197 reported. To confirm the others that had not reported, we gave them feedback through a WhatsApp group.”*
+”For that case, it’s what I said about the benefit, in MR campaign, we all have targets to achieve. We can see our 
+achievements through RapidPro. Then we can analyse our progress. Automatically, we can give District Health Office officers feedback. So, the result is also coming rapidly. And when our coverage only achieved half the target, we give them time, say, 2 months to achieve the target. At least this has become our monitoring tool, whereas manual reporting takes a longer time. While RapidPro is able to provide us data daily rapidly.”*
+“Coverage achievement would depend on the health workers. On reporting, they are indeed helped [by RapidPro].”*“The challenge here is lack of coordination and support from cross sectoral stakeholders. Lack of support is what I 
+mostly feel, especially from our own Regent (Bupati). Sometimes I envy districts that receive full support, where even the Regent is willing to see the condition directly in the field. Here, it’s difficult to gain cross-
+ sectoral commitment 
+when it comes to a new pr
+ogram. We held a meeting and invited them, but it was difficult to bring in the key person. 
+Some of them just sent delegates. So, it is quite challenging to achieve the target when the pressure is minimal from the Regent and above level.”*
+Satisfaction
+Satisfaction
+  “
+On the last immunization campaign, we did not use RapidPro…I got confused at times. Sometimes program officers 
+would say, ‘I have the data.’ But with RapidPro, I can do it (check the coverage) everywhere, even when I’m away…I’d 
+still have the control.”*
+“If we have enough data to do validation, we can map our achievement based on villages, schools, and integrated 
+health services post. We identify what is the target, how much we have achieved, what are the remaining numbers to be achieved, and the percentage. We could map them if the data is available. We currently don’t have those details in RapidPro. We are not able to do the mapping. There’s only the global data. It could only map coverage in health facilities. But below that, we could not identify where the coverage is low. We could not read that.”†
+*Informant type: programme manager.†Informant type: vaccinator.SMS, short message service.Protected by copyright. on December 15, 2022 at Sri Lanka:BMJ-PG Sponsored. http://bmjopen.bmj.com/ BMJ Open: first published as 10.1136/bmjopen-2020-038282 on 10 December 2020. Downloaded from 7
+Jusril H, et al. BMJ Open 2020;10:e038282. doi:10.1136/bmjopen-2020-038282Open access
+remains largely paper-  based with a reliance on peri -
+odic submissions of aggregate data. There is currently 
+no single national platform that supports seamless data entry, visualisation and feedback of critical health infor -
+mation to improve programme planning, budgeting and performance.
+20 Ongoing support through UNICEF has 
+been helpful to embed digital innovations within the national data architecture, which is important for sustain-ability and wider application. The introduction of this system was intended to be complementary to paper-
+ based 
+reporting, and not a substitute.
+A number of factors contributed to the adoption 
+and effective use of the platform. First, 
+as highlighted 
+in a previous review,21 high-  level endorsement by the 
+Ministr
+y of Health was a central prerequisite to deploy-
+ment during the campaign. This support was informed by positive experience during 2017 across a more limited geographical area.
+11 Second, immunisation campaigns 
+are by nature costly, time and resource-
+ intensive and 
+disruptive to routine ser
+vices. In such a context, rapid 
+problem identification with immediate course correc-tions is critical to achieving targets. Our findings suggest real-
+ time 
+data enhanced local coordination, with nearly 
+three-
+ quarters of respondents reporting the platform 
+facilitated problem identification. There were also strong associations between taking corrective action and overall coverage among districts unaffected by vaccine hesitancy
+. 
+Finally, Indonesia is highly digitally connected, with at least 72% of the population currently using mobile phones
+22 
+and 56% connected to the internet and social media.23 
+While poor network strength is a known barrier to digital health effectiveness in low-
+ resource 
+settings21 24–26 and was 
+identified as an issue for some areas in this assessment, these challenges were generally overcome.
+During Indonesia’s MR campaign, issues of vaccine 
+hesitancy were a serious concern.
+8 The rapid identifica-
+tion of districts experiencing delays allowed for targeted social and political mobilisation, which facilitated campaign resumption in most instances. The availability of decentralised real-
+ time data and visualisation tools 
+was important for advocacy and an improvement over slower paper
+-
+ based systems which aggregate data at the 
+provincial-
+ level only
+. Nonetheless, hesitancy was not over -
+come in several districts, highlighting the importance of parallel accountability and problem-
+ solving mechanisms. 
+These findings are echoed in a recent review suggesting immunisation programmes take time to accommodate digital 
+innovations; that acceptance and quality improve 
+progressively with experience; and that digital strategies can only be optimised once embedded within a wider set of mutually reinforcing system improvements.
+26
+The adoption of digital health platforms by health 
+providers and programme managers has sometimes been hampered by perceptions of dual reporting burdens and the potential for an increased workload by front-
+ line 
+workers. Similar to experience elsewhere, our research suggests health workers found simplified submissions via mobile platforms with real-
+ time feedback to enable 
+improved per
+formance, allowing more convenient 
+updates relative to paper-
+ based systems.26 27 This rein-
+forces important lessons from other low-
+ income 
+and 
+middle-
+ income contexts, where digital health platforms Table 3  Per ceived usefulness of digital health platform and associations with end-  of-  campaign district immunisation 
+coverage among districts af
+fected and unaffected by vaccine hesitancy
+Total (N=981 respondents)Responses
+Residing in unaffected district (n=850 respondents)District coverage
+Residing in affected districts (n=104 respondents)Affected districts (n=44 districts) P valueUnaffected districts (n=274 districts) P value
+ 
+ Help to r
+each target
+ 
+ 
+No 30 (3.1) 1 (1.0) 28 (3.3) – – 98.9 (80.4 to 117.4) 0.066
+ 
+ 
+Yes 890 (90.7) 94 (90.4) 772 (90.8) 44.0 (35.2 to 52.8) 82.9 (80.4 to 85.4)
+ 
+ 
+No responses61 (6.2) 9 (8.6) 50 (5.9)
+ 
+ Helpful for pr
+oblem identification
+ 
+ 
+No 181 (18.5) 17 (16.4) 161 (18.9) 41.5 (15.6 to 67.3) 0.848 80.5 (70.4 to 90.5) 0.494
+ 
+ 
+Yes 724 (73.8) 73 (70.2) 629 (74.0) 44.1 (34.4 to 53.7) 83.5 (80.9 to 86.1)
+ 
+ 
+No responses76 (7.7) 14 (13.4) 60 (7.1)
+ 
+ Helpful for corr
+ective action
+ 
+ 
+No 173 (17.6) 16 (15.4) 154 (18.1) 32.1 (22.6 to 41.6) 0.313 71.1 (59.4 to 82.7) 0.003
+ 
+ 
+Yes 712 (72.6) 72 (69.2) 619 (72.8) 45.6 (35.4 to 55.8) 84.4 (81.9 to 86.8)
+ 
+ 
+No responses96 (9.8) 16 (15.4%) 77 (9.1)
+Response data are n (%), with respondent as unit of analysis. Coverage data are mean % (95%  CI), with district as unit of analysis.
+No significant mean dif
+ferences found among different risk profile and hence not displayed.Protected by copyright. on December 15, 2022 at Sri Lanka:BMJ-PG Sponsored. http://bmjopen.bmj.com/ BMJ Open: first published as 10.1136/bmjopen-2020-038282 on 10 December 2020. Downloaded from 8
+Jusril H, et al. BMJ Open 2020;10:e038282. doi:10.1136/bmjopen-2020-038282Open access  
+have been demonstrated to increase the timeliness and 
+completeness of surveillance reports and immunisation records.
+26–28
+This assessment had several limitations that are 
+important to underscore. First, the study protocol did not anticipate issues of vaccine hesitancy which resulted in campaign extensions. Despite being adjusted for in the analysis, this was not specified in advance. Second, our analysis was restricted by data availability. Use and coverage data from the RapidPro platform facilitated nationwide district-
+ level analysis. However
+, mobile phone-
+ 
+based 
+survey data were only available for a subsample of 
+respondents. Respondent numbers limited our ability to conduct district-
+ level analyses on secondar
+y outcomes, 
+with mobile surveys also subject to potential recruitment bias. Finally, coverage estimates are subject to the avail-ability of accurate denominators for eligible children. While we used both projections from the national census as well as locally generated denominators, there were discrepancies in some instances.
+CONCLUSION
+In summary, this study provides encouraging evidence that a digital health platform to monitor a national immunisation campaign in Indonesia was feasible, well liked and associated with improved programme perfor -
+mance and problem solving, particularly among districts affected by vaccine hesitancy. Its successful application across a diverse range of contexts with varying range of data literacy and connectivity underscores its generalis-ability within the country and elsewhere. Future applica-tions of this approach to other campaigns, to surveillance activities and to routine programming are ongoing areas of work. Finally, digital innovations that combine supply-
+ 
+side decision support for health workers with efforts to improve demand-
+ side awareness among programme 
+beneficiaries are important areas to pursue in future programmes and research.
+Twitter Patricia Mechael @PattyMechael
+Acknowledgements
+ W
+e thank Vensya Sitohang, Prima Yosephine, Gertrudis Tandy 
+and Syamsu Alam (Directorate of Surveillance and Health Quarantine, Ministry 
+of Health Indonesia) for their insights and support to this study. We would also like to thank Gavi, the Vaccine Alliance for funding and support throughout the research process, with special acknowledgement for the contributions made by Laura Craw, Sam Muller and Emmanuella Baguma. We thank I Made Suwancita for his assistance on mobile survey data collection. We acknowledge Heru Suparno, Hendri Hartati, Agus Dwi Setiawan, Ferdinand Siagian, Basuki Imanhadi (Center for Health Research University of Indonesia) and Anida Hanifah (Reconstra) for their contribution to data collection and preliminary analysis of the qualitative component.
+Contributors
+ HJ led all sta
+ges of the work with academic guidance from IA, PM, 
+PP and RD. PM, IA, HJ and RD developed the study design. IA and HJ cleaned and 
+prepared the quantitative data and performed the statistical analysis. HJ and RD performed the analysis of the qualitative component of this paper. LL provided literature review. MM and SMW cleaned and prepared the mobile survey data. HJ and PP led the drafting of the manuscript. IA, PP and PM provided statistical, methodological and critical revisions of the manuscript for intellectual content. All authors provided critical input and approved the final version.Funding
+ This evalua
+tion was funded by Gavi, the Vaccine Alliance and with the 
+support of Nokia through the Finnish Committee for UNICEF (grant number is not available). The funders had no role in the study design, data collection, analysis, interpretation or writing of the paper. The corresponding author had full access to all the data in the study and had final responsibility for the decision to submit for publication.
+Competing interests
+ None dec
+lared.
+Patient consent for publication
+ Not required.
+Ethics appro
+val
+ The stud
+y obtained ethical approval from the IRB-
+ F
+aculty of 
+Public Health, Universitas Indonesia (no. 695/UN2.F10/PPM.00.02/2018) and a 
+study permit from the Ministry of Internal Affairs, Government of Indonesia (no. 440.02/1091/DV). Informed consent from key informants was obtained prior to all interviews.
+Provenance and peer review
+ Not commissioned; externally peer reviewed.
+Data av
+ailability statement
+ Da
+ta are available upon reasonable request.
+Supplemental material
+ This content has been supplied by the author(s).
+ It has 
+not been vetted by BMJ Publishing Group Limited (BMJ) and may not have been 
+peer-
+ reviewed.
+ Any opinions or recommendations discussed are solely those 
+of the author(s) and are not endorsed by BMJ. BMJ disclaims all liability and responsibility arising from any reliance placed on the content. Where the content includes any translated material, BMJ does not warrant the accuracy and reliability of the translations (including but not limited to local regulations, clinical guidelines, terminology, drug names and drug dosages), and is not responsible for any error and/or omissions arising from translation and adaptation or otherwise.
+Open access
+ This is an open access artic
+le distributed in accordance with the 
+Creative Commons Attribution Non Commercial (CC BY-
+ NC 4.0) license,
+ which 
+permits others to distribute, remix, adapt, build upon this work non-
+ commercially
+, 
+and license their derivative works on different terms, provided the original work is 
+properly cited, appropriate credit is given, any changes made indicated, and the use is non-
+ 
+commercial. See: http://
+ 
+creativecommons.
+ 
+org/
+ 
+licenses/
+ 
+by-
+ 
+nc/
+ 
+4.
+ 
+0/.
+ORCID iDsHafizah Jusril http://
+ 
+orcid.
+ 
+org/
+ 
+0000-
+ 
+0002-
+ 
+4748-
+ 
+8061
+Lutfan Lazuardi http://
+ 
+orcid.
+ 
+org/
+ 
+0000-
+ 
+0001-
+ 
+5146-
+ 
+8162
+Paul Pronyk http://
+ 
+orcid.
+ 
+org/
+ 
+0000-
+ 
+0001-
+ 
+7591-
+ 
+2627
+Patricia Mechael http://
+ 
+orcid.
+ 
+org/
+ 
+0000-
+ 
+0002-
+ 
+1034-
+ 
+0549
+REFERENCES
+ 1 W orld Health Organization. Immunization, vaccination and 
+biologicals: data, statistics and graphics. Available: https://www.
+ 
+who.
+ 
+int/
+ 
+en/
+ 
+news-
+ 
+room/
+ 
+fact-
+ 
+sheets/
+ 
+detail/
+ 
+immunization-
+ 
+coverage 
+[Accessed 10 Apr 2019].
+ 2
+ W
+orld Health Organization and United Nations Children’s Fund. 
+Indonesia: WHO and UNICEF estimates of national immunization 
+coverage: 2017 revision. Available: https://www.
+ who.
+ int/
+ 
+immunization/
+ 
+monitoring_
+ 
+surveillance/
+ 
+data/
+ 
+idn.
+ 
+pdf [Accessed 10 Apr 
+2019].
+ 3
+ W
+orld Health Organization. Distribution of measles cases by 
+country and by month, 2011–2018. Available: https://www.
+ who.
+ int/
+ 
+immunization/
+ 
+monitoring_
+ 
+surveillance/
+ 
+burden/
+ 
+vpd/
+ 
+surveillance_
+ 
+type/
+ 
+active/
+ 
+measles_
+ 
+monthlydata/
+ 
+en/
+ 4
+ Resear
+ch and Development Board (Balitbangkes) MoH, Government 
+of Indonesia. Basic health research survey, Riset kesehatan dasar (Riskesdas) 2007. Jakarta: Balitbangkes, 2007. http://
+ kesga.
+ kemkes.
+ 
+go.
+ 
+id/
+ 
+images/
+ 
+pedoman/
+ 
+Riskesdas%
+ 
+202007%
+ 
+20Nasional.
+ 
+pdf
+ 5
+ Ministry of Health Republic of Indonesia. 
+Petunjuk teknis kampanye 
+imunisasi measles rubella (MR). Jakarta: Ministry of Health, 2017. https://www.
+ 
+who.
+ 
+int/
+ 
+docs/
+ 
+default-
+ 
+source/
+ 
+searo/
+ 
+indonesia/
+ 
+non-
+ 
+who-
+ 
+publications/
+ 
+2017-
+ 
+mr-
+ 
+guidance-
+ 
+immunization-
+ 
+campaign-
+ 
+moh-
+ 
+bahasa.
+ 
+pdf?
+ 
+sfvrsn=
+ 
+4c49454a_2
+ 6
+ Ministry of Health Republic of Indonesia. 
+Data DAN informasi: Profil 
+Kesehatan Indonesia 2017. Jakarta: Ministry of Health Republic of Indonesia, 2018. https://
+ 
+pusdatin.
+ 
+kemkes.
+ 
+go.
+ 
+id/
+ 
+download.
+ 
+php?
+ 
+file=
+ 
+download/
+ 
+pusdatin/
+ 
+profil-
+ 
+kesehatan-
+ 
+indonesia/
+ 
+Profil-
+ 
+Kesehatan-
+ 
+Indonesia-
+ 
+tahun-
+ 
+2017.
+ 
+pdf
+ 7
+ Ministry of Health Republic of Indonesia. Kemenkes lanjutkan kampanye imunisasi MR sampai Desember
+. Available: https://
+www.
+ 
+kemkes.
+ 
+go.
+ 
+id/
+ 
+article/
+ 
+view/
+ 
+18110200002/
+ 
+kemenkes-
+ 
+lanjutkan-
+ 
+kampanye-
+ 
+imunisasi-
+ 
+mr-
+ 
+sampai-
+ 
+desember.
+ 
+html [Accessed 10 Apr 
+2019].Protected by copyright. on December 15, 2022 at Sri Lanka:BMJ-PG Sponsored. http://bmjopen.bmj.com/ BMJ Open: first published as 10.1136/bmjopen-2020-038282 on 10 December 2020. Downloaded from 9
+Jusril H, et al. BMJ Open 2020;10:e038282. doi:10.1136/bmjopen-2020-038282Open access
+ 8 Pr onyk P , Sugihantono A, Sitohang V, et al. Vaccine hesitancy in 
+Indonesia. Lancet Planet Health 2019;3:e114–5.
+ 9
+ 
+WHO. Digital implementation investment guide (DIIG): integrating 
+digital interventions into health programmes. Geneva: World Health 
+Organization, 2020.
+ 10
+ United Nations Childr
+en’s Fund. What’s powering up Indonesia’s 
+measles-
+ rubella campaign? RapidPr
+o, 2017. Available: http://
+ 
+unicefstories.
+ 
+org/
+ 
+2017/
+ 
+09/
+ 
+21/
+ 
+rapidpro-
+ 
+a-
+ 
+secret-
+ 
+weapon-
+ 
+behind-
+ 
+the-
+ 
+measles-
+ rubella-
+ campaign/ [Accessed 10 Apr 2019].
+ 11
+ Damayanti R, Jusril H. 
+Assessing real-
+ time monitoring platfor
+ms for 
+Indonesia’s Measles and Rubella Campaign – a qualitative process evaluation of RapidPro. Jakarta: Reconstra, 2019.
+ 12
+ Victora CG, Black RE, Boerma JT
+, et al. Measuring impact in the 
+millennium development goal era and beyond: a new approach to large-
+ scale ef
+fectiveness evaluations. Lancet 2011;377:85–95.
+ 13
+ Jusril H, Michael P
+. Evaluating the effective use of RapidPro for 
+the measles rubella national immunization campaign in Indonesia. Reconstra and HealthEnabled: Jakarta, 2020: 7–44.
+ 14
+ W
+orld Health Organization. Measles programmatic risk assessment 
+tool V1.8. Available: https://www.
+ 
+who.
+ 
+int/
+ 
+immunization/
+ 
+monitoring_
+ 
+surveillance/
+ 
+routine/
+ 
+measles_
+ 
+assessment/
+ 
+en/
+ 15
+ Inter
+national Business Machine. IBM SPSS advanced statistics 25 
+manual. Available: ftp://
+ 
+public.
+ 
+dhe.
+ 
+ibm.
+ 
+com/
+ 
+software/
+ 
+analytics/
+ 
+spss/
+ 
+documentation/
+ 
+statistics/
+ 
+25.
+ 
+0/
+ 
+en/
+ 
+client/
+ 
+Manuals/
+ 
+IBM_
+ 
+SPSS_
+ 
+Advanced_
+ Statistics.
+ pdf [Accessed 10 Apr 2019].
+ 16
+ Clark TG, Altman DG, De Stavola BL. Quantification of the completeness of follow-
+ up. 
+Lancet 2002;359:1309–10.
+ 17
+ Gillespie BW
+, Chen Q, Reichert H, et al. Estimating population 
+distributions when some data are below a limit of detection by using a reverse Kaplan-
+ Meier estimator
+. Epidemiology 2010;21:S64–70.
+ 18
+ Gr
+een J, Thorogood N. Qualitative methods for health research. 3rd 
+edn. Los Angeles: SAGE Publications Ltd, 2015: 180–3. 19  Chib A, Lwin MO, Ang J, et al. Midwives and mobiles: using ICTs 
+to improve healthcare in Aceh Besar, Indonesia1. Asian J Commun 2008;18:348–64.
+ 20
+ Gani A, Budiharsana MP
+. Consolidated report of health sector review, 
+Laporan Konsolidasi Kajian Sektor Kesehatan. Jakarta: Bappenas 2019:23–32.
+ 21
+ Aamir J, Ali SM, Kamel Boulos MN, 
+et al. Enablers and inhibitors: 
+a review of the situation regarding mHealth adoption in low- and middle-
+ 
+income countries. Health Policy Technol 2018;7:88–97.
+ 22
+ Statistia. Number of mobile phone users in Indonesia fr
+om 2013 
+to 2019 (in millions). Available: https://www.
+ statista.
+ com/
+ statistics/
+ 
+274659/
+ 
+forecast-
+ 
+of-
+ 
+mobile-
+ 
+phone-
+ 
+users-
+ 
+in-
+ 
+indonesia/
+ 
+2019
+ 23
+ W
+e are social, Hootsuite. Digital 2019: Indonesia. Available: https://
+ 
+datar
+eportal.
+ 
+com/
+ 
+reports/
+ 
+digital-
+ 
+2019-
+ 
+indonesia2019 [Accessed 10 
+Apr 2019].
+ 24
+ Kim SS, Patel M, Hinman A. Use of m-
+ Health in polio eradication 
+and other immunization activities in developing countries. 
+Vaccine 
+2017;35:1373–9.
+ 25
+ Kazi AM, Murtaza A, Khoja S, 
+et al. Monitoring polio supplementary 
+immunization activities using an automated short text messaging system in Karachi, Pakistan. Bull World Health Organ 2014;92:220–5.
+ 
+26
+ P
+AHO. Immunization data: evidence for action. A realist review of 
+what works to improve data use for immunization, evidence from low- and middle- income countries. Washington, DC: PAHO, 2019: 7–12.
+ 27
+ Oh DH, Dabbagh A, Goodson JL, 
+et al. Real-
+ time monitoring of 
+vaccination campaign performance using mobile phones - Nepal, 2016. 
+MMWR Morb Mortal Wkly Rep 2016;65:1072–6.
+ 28
+ Gibson DG, Ochieng B, Kagucia EW
+, et al. Mobile phone-
+ deliver
+ed 
+reminders and incentives to improve childhood immunisation coverage and timeliness in Kenya (M-
+ SIMU): a cluster randomised 
+contr
+olled trial. Lancet Glob Health 2017;5:e428–38.Protected by copyright. on December 15, 2022 at Sri Lanka:BMJ-PG Sponsored. http://bmjopen.bmj.com/ BMJ Open: first published as 10.1136/bmjopen-2020-038282 on 10 December 2020. Downloaded from 

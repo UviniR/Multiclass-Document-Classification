@@ -1,0 +1,806 @@
+PAPER
+Why Maritime Cybersecurity Is an Ocean
+Policy Priority and How It Can Be Addressed
+AUTHOR
+Phil McGillivary
+MTS Member, Maritime Cybersecurityand Infrastructure Committee
+U.S. Coast Guard Paci ﬁc Area
+Science LiaisonABSTRACT
+Maritime cybersecurity is developing as an issue that affects the ocean. Recent
+security breaches cost shipping companies hundreds of millions of dollars andput marine ecosystems at risk by disabling ship controls and increasing risksof collisions and hazmat spills. Additionally, most new ships are designed totransmit engine performance data ashore to allow timely maintenance and ef ﬁ-
+cient operation. However, many ships still prohibit such data transmission dueto security concerns, resulting in increased ship emissions and environmental
+risks from accidental release of oil, hydraulic ﬂuids, or lubricants. Similarly, re-
+search vessel data are routinely sent ashore, but security concerns for their com-puters are also increasing, especially when they operate in global ports andoceans. Maritime cybersecurity is also critical as autonomous ships are being de-veloped. Addressing maritime cybersecurity is therefore a valid area of scienti ﬁc
+policy research and important for ocean science operations.
+The International Maritime Organization (IMO) has called for improved mari-
+time cybersecurity, and the U.S. Coast Guard also recently released a Navigationand Vessel Inspection Circular (NVIC; NVIC 05-17) on maritime cybersecurity forcomments. The newly established Maritime Cyber Security Committee of theMarine Technology Society is coordinating maritime cybersecurity best practiceinformation, contacts for cybersecurity professionals, and lessons learned on re-sponding to cyberattacks to make this information broadly available. We reviewhere various stakeholder approaches to maritime cybersecurity, outline availableresources, and discuss how advanced methods, including optical communica-tions and quantum encryption, will improve maritime cybersecurity. Scientistshave a role in developing and implementing maritime cybersecurity methodsand policies to ensure safe ship operations and improved environmental security
+for the oceans.
+Keywords: shipping, cybersecurity, port security, quantum encryption“The old need cannot see the
+coming need. ”
+Time Is a Ship That Never CastsAnchor: Sami Proverbs —Harald
+Gaski, 2010
+Background and
+Introduction: TheScope of the Problem
+Shipping has continued to in-
+crease in importance in global trade,complete with subsidies from variouscountries to increase their proportionof this lucrative market (cf. Anonymous,2014). In an era when the Internet-of-things is beginning to extend toships, this puts ship and shippers ’
+computer systems at an increasingrisk (Quaintance, 2017). Ships thatwere built to continuously transmitdata on engine and ship systems ’sta-
+tus ashore to enable just-in-time diag-
+nostics and repairs in some caseshave had these systems intentionallydisabled due to security concernswith the transmission of such data.The recent hack of Maersk shippinglines in June 2017, which caused theshutdown of Maersk operations in13 international ports and losses of$300M, was a wake-up call to manyabout the seriousness of maritimecybersecurity risks (Baraniuk, 2017).However, there have been numerousother cases of shipping hacks, with re-
+portedly over 300 unclassi ﬁed reports
+of such hacks to date. In some cases,cybersecurity breaches involvedcompromising the information forcontainers aboard or of ﬂoaded from
+ships so that they could be stolen(Baraniuk, 2017; Hayes, 2016).Some hacks have shut down bridgeoperations with ransomware de-mands, or ship navigation ElectronicChart Display and Information Sys-tems (ECDIS) system security ﬂaws
+were targeted (Luciano, 2017). Atminimum, these put ships out of op-eration for some period of time, andshipping companies suffer ﬁnancial
+losses from inability to sustain normaloperations. In other cases, such as theClarkson shipping hack (Anonymous,2017g), where the hack allowed ma-nipulation of ship manifest lists withpotential smuggling of containers,these hacks have potentially further
+44 Marine Technology Society Journaldamaged the company ’s reputation by
+possibly putting client information atrisk as well (Wingrove, 2017). The mar-itime cybersecurity hacks are not limitedto commercial shipping or hacker ac-tivity alone; they have also been under-taken by governments such as North
+Korea and Russia and deployed against
+commercial and military vessels, mostlyby hacking or spoo ﬁng GPS, Automatic
+[ship] Identi ﬁcation System (AIS), or
+ECDIS systems (Dunn, 2017; Vaas,2017). The risk from positional spoof-ing was judged so probable, that as of2015, the U.S. Naval Academy beganagain requiring its personnel to under-go training in celestial navigation fortheﬁrst time in a decade (Vaas, 2017;
+Zorabedian, 2015).
+The military aspect of maritime
+cybersecurity is not at all lost in thearea of national defense, for whichwarnings have been coming forsome time (cf. Hayes, 2016; Lyngaas,2015). Federal agencies responsible
+for the safety of shipping, including
+particularly the U.S. Coast Guard,have been interested in how best toapproach the problem of providingstandards and guidance for cybersecuritycompliance for shipping (cf. Heckmanet al., 2017). It is clear from cyber pen-etration tests that the majority of marineshipping vessels are vulnerable to cyber-attacks (Naval Dome, 2017b). Thequestion facing industries using ships,as well as ports and federal and interna-tional agencies, is how best to addressthis issue.
+Approaches to
+Cybersecurity FromIndustry, Federal, and
+International Agencies
+There are questions as to whether
+it is best to look at the means used to
+address maritime cybersecurity issuesfrom a “top-down ”approach, that is,
+from international and federal agencyplans/mandates, or a “bottom-up ”
+approach, that is, the one used by theindustry, which often moves morerapidly than governments to addresssecurity issues. The shipping industry,
+which can suffer ﬁnancial losses from
+cybersecurity attacks, has long beenworking to improve vessel trackingand position reporting using real-time AIS methods, which at least the-oretically (if not hacked) let themknow where their assets are located(Schill, 2017). Shipping companiesand satellite communications compa-nies used by the shipping industryhave turned their attention to cyber-security issues, releasing their ownrecommendations (cf. DNV GL AS,2016) and calling for the interna-tional development and enforcementof cybersecurity standards for datamanagement via the InternationalMaritime Organization (IMO) and
+American Bureau of Shipping (ABS)
+(Anonymous, 2016, 2017d). The oiland gas industry has an Oil Com-panies International Marine Forum(OCIMF) that administers a Ship In-spection Report Program (SIRE),which in 2018 added a cybersecurityrequirement for all vessels subject tothose inspections (Anonymous,2018a). These actions by industryhave been re ﬂected in the prominence
+of this issue in a number of industryshipping conferences (U.K. Port &Harbor Conference [Parsons, 2016];GST Shipping 2030 Conference;Maritime Risk Symposium, 2017[Gianfalla, 2017; Hudson, 2017];and Port Security Technology Con-
+ference, 2017). Cybersecurity is also
+a general issue of interest for theJapanese Port and Airport ResearchInstitute (PARI, 2017) and speci ﬁc
+ports such as the Port of Long Beach(Parsons, 2016) and Port of Los
+Angeles, the highest shipping valueport in the United States (>$140B in2014; Noll, 2017), which has estab-lished a centralized Cyber Lab to com-bat a torrent of cyber-hacking attacksdaily (Anonymous, 2017f ). In 2016,
+the IMO released “Interim Guidelines
+on Maritime Cyber Risk Manage-ment, ”which were ﬁnalized in 2017
+(IMO, 2016, 2017) and are to be im-plemented on ships by 2021. Addi-tionally, in late 2017, the IMOlaunched a network of ﬁve global cen-
+ters of excellence in marine technol-ogy, called Maritime TechnologyCooperation Centers (MTCCs),which should improve the adoptionof these cybersecurity standards inter-nationally (Anonymous, 2017h). Acompilation of industry maritimecybersecurity guidance from diversesources may be found at http://becyberawareatsea.com/guidance; onecomponent of which is shown in
+Figure 1.
+These industry initiatives have
+been supplemented within the UnitedKingdom by the release of guidancedocuments from the U.K. NationalCyber Security Centre (2018) and aU.K. Vessel Code of Practice for ship-ping, from their Department ofTransport (Boyes & Isbell, 2017).Within the European Union (EU),theﬁrst maritime cybersecurity assess-
+ment was done in 2011, and subse-quent general security reports havealso been promulgated, which call fortraining and cooperation but are notfocused on cybersecurity (EuropeanAgency for Network and InformationSecurity [ENISA], 2011; EU, 2014).
+Beginning in May 2018, the EU adds
+two new pieces of cybersecurity leg-islation that will have broad effects:the EU General Data ProtectionRegulation (GDPR), for which stiff
+September/October 2018 Volume 52 Number 5 45penalties for noncompliance can be
+levied against companies doing busi-
+ness in the EU, and the Network In-formation Security (NIS) Directive,which is left up to individual membercountries to enforce (Anonymous,2018a).
+Within the United States, the
+issue of maritime cybersecurity fallsamong several federal agencies.There is an obvious defense compo-nent to cybersecurity. In 2017, theU . S .C y b e rC o m m a n dw a ss p l i tfrom the National Security Agency,and independent commands wereestablished within the Army andNavy, both of which are now opera-tional (Baldor, 2017; Obsorn, 2017).Understandably, ship cybersecurity
+for national defense lies principally
+with the Navy as one component ofan overall Navy defense strategy forthe future (Richardson, 2016). Withinthe realm of federal guidance on cyber-
+security, the National Research Coun-
+cil (NRC) and the National Academiesof Science, Engineering, and Medicine(NAS) have produced a series of re-ports dealing with cybersecurity,including a review of existing cyber-challenges, how the country canimprove its cybersecurity, how it canbetter deter cyberattacks, what isrequired in terms of internationalpolicy initiatives, how transportationinfrastructure can be protected, andhow public policies interface withexecuting cybersecurity initiatives(NAS, 2007, 2010, 2015, 2016,2017a, 2017b, 2017c; NRC, 2014).Partially, as a result of these reports,the Of ﬁce of the President issued an
+Executive Order (EO) in May 2017
+on cybersecurity for federal networksand critical infrastructure, which hassince been a subject of discussion inattempts to clarify the speci ﬁcs and
+practicalities of the path forward(Anonymous, 2017e; Lohrmann,2017; Trump, 2017).
+Additionally, in the areas of cyber-
+security research, the National ScienceFoundation (NSF) has established a
+Cybersecurity Center of Excellence
+and Center for Trusted Scienti ﬁc
+Cyberinfrastructure (NSF, 2016,2017). Likewise, for more appliedcybersecurity technologies, the DefenseAdvanced Research Agency (DARPA)has tapped Rockwell Collins to assist inprotecting computers, including thoseon unmanned systems, from cyber-intrusions through its partnership inthe DARPA High-Assurance MilitarySystems (HACMS) program (Anony-mous, 2017b). DARPA has alsomore recently initiated solicitationsfor the Harnessing Autonomy forCountering Cyberadversary Systems(HACCS) program for land, sea, andsatellite assets (DARPA, 2017; Lane
+et al., 2017) and also for the Con ﬁgu-
+rational Security (ConSec) program,which is aimed at automating com-puter systems con ﬁguration manage-
+ment to minimize risks of cyberattacks(Keller, 2017b).
+Within the Department of Trans-
+portation, the U.S. Maritime Admin-istration (MARAD) has also issuedguidance about the cybersecurityof essential transportation systems,including certi ﬁcation of commer-
+cial carrier and passenger vessels(MARAD, 2017). General guidanceon cybersecurity methods are providedby the U.S. National Institute ofStandards and Technology (NIST)as directed by the 2013 Presidential
+EO 13686, Improving Critical Infra-
+structure, Cybersecurity, as well as theCybersecurity Enhancement Act of2014 (Public Law 113-294). In responseto these directives, NIST developed
+FIGURE 1
+Cybersecurity approach from The Guidelines on Cyber Security Onboard Ships , 2017 (https://
+www.bimco.org/products/publications/free/cyber-secuirty).
+46 Marine Technology Society Journaland released a Cybersecurity Frame-
+work Version 1.0 in 2013 and a Version1.1 on April 16, 2018. The key com-ponents of the V.1.0 Frameworkw e r et op r o v i d eg u i d a n c eo ni d e n t i -fying cybersecurity needs for organi-zations, methods to accomplish
+those cybersecurity needs in terms
+of cyber protection, detection of cy-bersecurity breaches, planning for re-sponses to such breaches, and recoveryfrom breaches (see http://www.nisto.gov).
+Additionally, NIST has also fo-
+cused on the National Initiative forCybersecurity Education (NICE),part of which is the establishment ofa Cybersecurity Workforce Frame-work that recognizes that trainingpersonnel is also a key componentof enabling cybersecurity (NIST,2018a, 2018b) (see Figure 2).
+For maritime cybersecurity, the
+Department of Homeland Security(DHS) deals with the security of criti-
+cal infrastructure (cf. http://www.dhs.
+gov/stakeholder-engagement-and-cyber-infrastructure-resilience),including ports and harbors.Furthermore, as a component ofDHS, the U.S. Coast Guard deals
+speci ﬁcally with the safety and
+security of shipping as well as ports.A recent issue of the “Coast Guard
+Proceedings ”was dedicated to
+maritime cybersecurity and featured aseries of articles on various aspects of
+this topic (cf. Goldstein & Kneidinger,
+2014/2015; http://uscgproceedings.epubxp.com/i/436751-win-2015/47).However, the U.S. Coast Guard is notitself an agency with a speci ﬁce x p e r t i s e
+in cybersecurity technologies, and itcannot impose its own suggestionsor requirements about cybersecuritypractices on other countries or inter-national companies. Instead, theCoast Guard has sought to engagewith the broader maritime com-munity to work synergistically towardimproved cybersecurity, establishcybersecurity best practices, andpromote compliance with theserecommendations. In July 2017, theCoast Guard released a Navigation
+and Vessel Inspection Circular
+(NVIC) Number 05-17, called“Guidelines for Addressing Cyber
+Risks at Maritime TransportationSecurity Act (MTSA) Facilities ”(Federal Register, 2017, and/or
+Manning, 2017). This documentreferred to the Coast Guard CyberStrategy document (U.S. CoastGuard, 2015) and called for publiccomments on how best to addressthe issues of maritime cybersecurity
+in relation to its proposed policies
+and procedures intended to mitigatecybersecurity risks. These procedurescall for ship owners and operatorsto conduct cyber risk pro ﬁle assess-
+ments as part of their facility securityplans. The NVIC also lays out bestpractices for cybersecurity derivedfrom NIST guidelines, includingguidelines on personnel responsibili-ties relating to cybersecurity. The re-quest for comments also included asolicitation for comments relatingto how the guidance provided by theCoast Guard would need to be up-dated in the face of newly developingtechnologies.
+Cyberattack Reporting
+Requirements or WhoYa Gonna Call?
+There have been many discussions
+about preventing cyberattacks, butthere also needs to be a broader dis-semination of what protocols needto be followed when there is a cyber-security breach; most ship crews andmanagement agencies do not knowwhat to do if they are hacked. Fromthe shipping company viewpoint,this is not only a cybersecurity issue;there can also be serious ﬁnancial
+costs if shipping operations are shutdown. So what are the protocols forresponding to a cyber-breach? Heckmanet al. (2017) provide a fairly compre-hensive list of U.S. Coast Guard and
+industry approaches to this issue.
+Coast Guard guidance on “ReportingFIGURE 2
+The NIST NICE has established a Cybersecurity Workforce Framework that is intended to ensure
+a cyber-workforce is developed that can monitor and administer cybersecurity standards cor-
+rectly (NIST, 2018a, 2018b).
+September/October 2018 Volume 52 Number 5 47Suspicious Activity and Breaches of
+Security ”(December 2016) notes
+that information reported to theCoast Guard is “not subject to routine
+public disclosure, ”so that the Coast
+Guard wants to be informed of securitybreaches, but they will not disclose
+such information publicly, in ways
+that might affect the business of anycompany whose security has beenbreached. This same guidance callsfor maritime security breaches to be re-ported to the National Response Center(NRC; 1-800-424-8802), as well asnoting that reports can and shouldalso be made to respective Captainsof the Port(s) and also the NationalCybersecurity and CommunicationsIntegration Center (NCCIC; 1-888-282-0870), which is a 24/7 cyber situa-tional awareness center that links federaland intelligence agencies with law en-forcement agencies. Reports to the lat-ter should speci ﬁcally include mention
+to the NCCIC that the reporting com-
+ponent is a Coast Guard –regulated
+entity, so that their data will be for-warded appropriately to the NRCa n dC o a s tG u a r d( a n da l s ot h eF B I ) .The EU (Europol) also has a URL forreporting cyber-incidents, https://www.europol.europa.eu/report-a-crime/report-cybercrime-online,with reporting criteria that vary bycountry.
+So these are the reporting require-
+ments from the Coast Guard and/orEuropol, but how does this assist inresponding with a cybersecuritybreach? There will be some assistanceforthcoming from the agencies report-ed above automatically, but those thathave been breached can also speci-
+ﬁcally request assistance from the
+Industrial Control Systems CyberEmergency Response Team (ICS-CERT) (https://ics-cert.us-cert.gov/),which, like the other federal agenciesinvolved, has published their own
+“Recommended Practices ”advice (cf.
+https://ics-cert.us-cert.gov/Introduction-Recommended-Practices). As notedabove, the NCCIC and NRC report-ing mandated by the Coast Guardalso goes to the FBI. The FBI ’s“Infra-
+Guard ”program and its webpage
+“iGuardian ”(cf. https://www.fbi.gov/
+resources/law-enforcement/iguardian)a r eaj o i n te f f o r tw i t ht h eb u s i n e s scommunity established in 2013speciﬁcally to protect critical national
+infrastructure by providing a cyber-
+breach reporting mechanism andactivating triage response to industryfor cybersecurity breaches.
+If a shipping company or port sus-
+pects that they may have been breachedand wants to see what other activity ina similar vein may have taken place,they can access the National SuspiciousActivity Reporting (SAR) Initiativewebpage (https://nsi.ncirc.gov/). Notethat this webpage is not for reporting
+incidents but contains a log of reported
+incidents jointly maintained by DHS,the FBI, and local law enforcementagencies. Additionally, the CoastGuard recommends that vessel andfacility operators participate in theirlocal Area Maritime Security Commit-tees (AMSCs) (http://www.dco.uscg.mil/Portals/9/CG-FAC/Documents/AMSC%20Consolidated%20reports/2016/AMSC%202016%20Annual%20Report%20(signed).pdf?ver=2017-11-08-084656-947), contactinformation from which can beobtained from the nearest Captains ofthe Ports or by contacting the CoastGuard Of ﬁce of Port and Facility
+Compliance (202-372-1132).
+The Question of Methods
+Certain cybersecurity approaches
+are focused on securing internal com-puter systems and preventing hack-
+ing into those systems (cf. PASGlobal, 2017). Version 1.1 of theNIST Cybersecurity Framework in-
+cluded a more detailed consideration
+of validating the identity of online en-tities to enable more secure manage-ment of supply chain cybersecurity,which included expanded focus onthe NIST Trusted Identities Group(TIG). The TIG began in 2015 as aseries of pilot programs where thegovernment would certify the identityof commercial partners through an
+Identity Ecosystem Framework
+(IDEF) established through privatesector partnerships that established anIDEF Registry, which provided au-thentication credentials for compa-nies at three assurance levels thatthey were who they said they were.Among other things, such assurancein Version 1.1 was updated to removethe option of one-time passwords via
+email and limit them to SMS messages
+(text messages to cell phones) as well asthe use of security tokens, becausethose could be stolen. Three Authenti-cation Assurance Levels (AALs) wereestablished, where in AAL 1, reauthen-tication was required every 30 days;AAL 2, every 30 min of online use;and AAL 3, every 15 min of onlineuse. These reauthentications could be
+done by self-assertion, remote identi ﬁ-
+cation assertion proof, or in-personprooﬁng. One consequence of the
+adoption of these new requirementsby some federal agency vessels in theearly summer of 2018 was that thebandwidth required for such securityreauthorizations overwhelmed theavailable ship satellite communicationbandwidth and effectively shut down
+ship communication systems until,
+weeks later, additional satellite band-width contracts and software and reau-thorization frequency adjustments
+48 Marine Technology Society Journalcould be put in place —one indication
+of the unexpected consequences ofthe attempted implementation ofthese new cybersecurity requirements
+in an industry where satellite com-
+munications bandwidth is far morelimited than nonmaritime computernetworks.
+Other approaches have been di-
+rected at securing communicationswith systems outside an internal com-puter system, as is inherently the casebetween ports and ships, and shipsand ship managers. Wireless commu-nications with satellites have one in-teresting security communicationsprotocol initially funded by NASAfor the Interplanetary Internet thatwas developed by Vinton Cerf.
+There was a need for a new protocol
+for the Interplanetary Internet be-cause communicating with distantspacecraft involved delays and disrup-tions for which the usual Internetprotocols were insuf ﬁcient. Therefore,
+Cerf developed delay and disruption-tolerant wireless networking (DTN)protocols, which overcame those lim-itations of standard Internet commu-nication protocols. As it happened,the DTN protocol also had an advan-tage in providing higher bandwidththan other wireless communicationprotocols, while also providing highlevels of communications security(cf. the Internet Engineering ResearchGroup DTN webpage, https://irtf.
+org/concluded/dtnrg). Once developed,
+the DTN protocol has been used toprovide secure communicationsbetween unmanned systems, includingmultiple networked autonomousunderwater vehicles (AUVs), surfacevessels (ships and autonomous surfacevessels [ASVs]), and manned andunmanned aircraft (McGillivary et al.,2012a, 2012b). The DTN method isnow being adopted for free-spaceoptical communications by a
+consortium including NASA and theU.S. Naval Research Lab, andcommercial satellite communicationsoperators. For optical communi-cations, just as for wireless communi-cations, use of the DTN protocol will
+again improve performance if data
+transmissions are interrupted for anyreason but will also help to ensure thesecurity of optical communications.Efforts to develop underwater opticalcommunications are also under way inearnest (cf. Baghdady et al., 2016a,2016b) and remain a goal for navalforces (Keller, 2017a), for whichDTN protocols will also be useful.
+Industry has developed its own ap-
+proaches for dealing with both internaland shore-to-ship communicationscybersecurity, and there has been a par-ticular emphasis on cybersecurity with-in the oil and gas industry. The oil andgas industry is heavily involved in ship-ping (cf. Goel, 2017) and has been the
+subject of hacks with potentially very
+dangerous consequences (Bensalhia,2015; Groll, 2017; Paganini, 2015).Among the approaches suggested toimprove cybersecurity is the use ofmodi ﬁed hashing methods instead of
+encryption (Jackson, 2014) ormethods of format-preserving encryp-tion (FPE; Roy, 2017). However, an-other method that appears to be underconsideration for broader implementa-tion is the use of machine learningmethods to analyze data networks innear-real time, a method commonlycalled Continuous Diagnostics andMitigation (CDM) (Anonymous,2015; Goldstein & Kneidinger,2014/2015; Martin & Rajasekaran,
+2016). CDM methods will continue
+to be valuable as machine learningand arti ﬁcial intelligence methods are
+increasingly used in cybersecurity sys-tems. However, as several NationalAcademy reports on cybersecurity have
+noted, pushing software updates andcontinuing to improve cybersecuritymethods remain problematic (NAS,2017a, 2017b, 2017c).
+Autonomous Vessels and
+Unmanned Shipping
+A decade ago, long-range unmanned
+ASVs of varying sorts were being de-veloped, from the wave-poweredWave Gliders (http://www.liquidr.com) (McGillivary & Hine, 2007;McGillivary et al., 2007); to “robo-
+kayaks ”(Curcio et al., 2006) and un-
+manned sailboats, such as the more recentSaildrone (http://www.saildrone.com); tomore conventionally fueled ASVs, suchas the WAM-V (http://www.wam-v.com), and now more recent similarsystems. The use for ASV technologyinitially was mostly in open-ocean set-tings, away from shipping and shippingroutes, where they did not need rapidautonomous control systems and colli-sion avoidance technologies. However,
+as command/control systems and posi-
+tioning and other collision avoidancetechnologies developed, it was rapidlyclear that ASVs could be used for portand harbor security (see Figure 3)(Thomas, 2017) and military uses(Tuttle, 2016). Following the develop-ment of operational protocols for safenavigation of ASVs (e.g., Kuwataet al., 2014) that were gradually agreedupon by various national and interna-tional organizations, it became clearthat commercial development of au-tonomous shipping was possible, atleast on a trial basis, and many arguedthat it might actually be safer thans h i p sm a n n e db yh u m a n s( A n o n y -mous, 2017a; Levander, 2017). Com-
+mercial interests aimed speci ﬁcally
+at developing unmanned shipping
+September/October 2018 Volume 52 Number 5 49inevitably arose from both traditional
+shipping companies like DNV GL,
+Rolls Royce, and Wallenius Wilhelm-sen and newer ﬁrms like One Sea
+(Anonymous, 2017c). This has led tothe development of recommended pro-cedures from Lloyd ’s (2016) study and
+the establishment of ports and harborsas test-beds for unmanned shipping, in-cluding the Port of Rotterdam in Hol-land (Port of Rotterdam, 2018;Rademaker, 2017). A large-scale test-bed for unmanned shipping technol-ogies was also established in TrondheimFjord in Norway, operated jointly withthe Norwegian University of Scienceand Technology (NTNU) throughtheir Centre for Autonomous MarineOperations and Systems (AMOS)
+(NTNU, 2018a). Beyond just the
+complexities of spatial sensors andship command and control software,the cybersecurity of this informationhas also been an integral concern forthe NTNU program, which includesan important component of collabora-tion with the NTNU Center for Cyberand Information Security (CCIS)
+(NTNU, 2018b), so that commercial
+operations of unmanned ships are de-fended against cyberattacks. Cyber-security continues to be an essentialcomponent of the development of un-manned shipping operations and onethat will continue to require researchas well as education of personnel to de-velop, monitor, and administer cyber-security programs within the shippingindustry. This means people will haveto be educated in maritime cybersecurity,for both manned and unmanned ship-ping operations, as well as in the rap-idly expanding world of ASVs.
+The Role of Education and
+Outreach in Advancing
+Maritime Cybersecurity
+The coming need for establishing
+standards and training programs toproduce more cybersecurity specialists
+f o ra l la r e a so ft h ee c o n o m yi sw e l l
+known (Platt, 2015). Within the na-tional framework of the U.S. ap-
+proach to cybersecurity, NIST hasfocused on the fact that successfulcyber-secure systems require peopletrained in their development and op-eration (see Figure 2) (NIST, 2018b).A number of U.S. universities and
+colleges have established computer
+security programs. However, as com-puter connectedness within the ship-ping industry increases, there alsoneeds to be an increase in cyber-security instruction by universities fo-cused on maritime operations. Onerecent development that may assistin this regard was the Congressionalpassage of new Maritime Centers ofExcellence, which are based aroundconsortia of community colleges(Green, 2017). These centers willhave the ability to speci ﬁcally train
+personnel with cyber-expertise whointend to work directly in the worldof operational maritime industries.
+An example of one school cur-
+rently training students speci ﬁcally
+in maritime cybersecurity is the Ste-vens Institute Maritime Security Cen-ter (Stevens Institute, 2018), whoseapproach includes summer courseswhere students can focus on cyber-security speci ﬁcally for port and ship-
+ping operations. Stevens also has acontract for developing training mate-rials for use throughout the industryunder a contract from the ABS ’s
+Cyber Security Project. Similarly, anew program at Texas A&M Uni-versity has recently been set up fortraining cybersecurity engineers, partof which is intended to focus on mar-itime cybersecurity (Texas A&MUniversity, 2018).
+There remains the question of
+whether and how universities can bestassist with developing cybersecuritysolutions (Eidam, 2017), but the Na-tional Science Foundation establishedFIGURE 3
+Autonomous systems, including underwater vessels, surface vessels, and unmanned aircraft,
+are coming into use for port and harbor security, and commercial shipping with unmannedvessels is already being developed and tested. Communications between all these systems re-
+quire cybersecurity assurance.
+50 Marine Technology Society Journala Center for Trustworthy Scienti ﬁc
+Infrastructure in 2016, as well asCybersecurity Centers of Excellence(NSF, 2016, 2017), to assist withthis effort. Moreover, NSF also listedquantum technologies as one of theirtop 10 focus areas for the future
+(Cordova, 2017). As there have
+been rapid technology advances inthis area, it is not just possible, butalso likely, that there will be an in-tersection between improved secu-rity and quantum technologies inthe near future.
+Quantum Components
+of Cybersecurityin the Future
+Currently, encryption methods
+used are not based on quantum en-cryption methods but are susceptibleto decryption using quantum com-puting methods. As quantum encryp-tion methods are developed anddeployed, as an interim step, thereare methods being proposed that
+will make existing encryption
+methods less susceptible or hopefullyresistant to hacking using quantummethods (Mandelbaum, 2018). Vari-ous algorithms have been developed,a n ds o m eo ft h e mh a v ep r o v e ns u s -ceptible to quantum hacking. Onenew method, termed a “modi ﬁed
+knapsack ”approach (Hamlin, 2017),
+has been developed and is now beingtested to see if it can stand up toquantum hacks.
+The use of quantum computing
+was until recently considered a fairlyabstract and remote possibility, re-quiring highly specialized equipmenta n dt r a i n i n g .T h e r ea r eaf e wl a r g eD-Wave quantum computers in the
+United States with a 512-qbit capacity
+(Thompson, 2014), but it has notbeen easy for most graduate students
+or researchers to either learn to codefor them or have the kind of accessthat would develop expertise in theiruse. However, the international pushtoward quantum computing haschanged this picture more rapidly
+than many people realize. Currently,
+the United States still holds the inter-national lead in quantum technologiespatents, dominated by patents fromIBM, but China and other countrieshave very rapidly increased their out-put of patents in this area (Brachmann,2017). IBM has now made access totheir 5-qbit quantum computer, calledQ, freely accessible over the Internet( I B M ,2 0 1 8 ) .T h e ya l s oc o n t i n u et omanufacture chips with higher num-bers of qbits, which are being madeavailable to advanced researchers. Inaddition to now having access to quan-tum computers, the recent develop-ment of quantum programminglanguages, such as Quil, and instruc-
+tional manuals on how to use them
+(Smith et al., 2017) will broaden thebase of users familiar with quantumcomputing technologies. There isnow even a free online 1-qbit comput-er available to test software instructionsbefore running the code on a largerquantum system (Geils, 2017). Noris IBM alone in developing quantumcomputing technologies; naturally,Microsoft has entered the ﬁeld as
+well, using a somewhat different ap-proach (Bright, 2017), as have Intel,Google, and others (Corneliussen,2018). However, what many thinkmay really broaden the availability ofquantum computing was the develop-ment of new methods of building
+quantum computer chips that do not
+require them to be supercooled andcan take advantage of chip manu-facturing technologies similar tot h o s ea l r e a d yi nu s eb yt h ei n d u s t r y(Wagstaff, 2017). One can expect
+that development of this technol-ogy will be the subject of intensefocus, with potential for major changesin computing methods in the nearfuture.
+Apart from simply using quantum
+c o m p u t e r sa sam e a n so fi n c r e a s i n g
+the capability and security of comput-ing systems, quantum methods canalso be used to change the way com-munications are done in the ﬁrst
+place. Technologies have been suc-cessfully developed that allow en-tangled photons to be generated oneven small communication satellites(cf. Tang et al., 2016). Using thesetechnologies, China has installedﬁber optic cables with quantum en-
+cryption between several of theirmajor cities and also demonstratedfree-space quantum communicationsvia satellite that have been found tobe unhackable (Courtland, 2016;Nordrum, 2017; Spender, 2017).
+While the U.S. Navy has continued
+to push for new methods of opticalcommunications between aircraftand submarines (Keller, 2017a), itmay soon be the case that quantumcommunications provide a viable alter-native with improved security as well(Anonymous, 2018b; Gerginov et al.,2017). While there is an existing bodyof literature outlining methods forquantum (and “postquantum ”)c r y p -
+tography (cf. Bernstein et al., 2009),some have continued to question thepracticality of quantum cryptography(Jackson, 2013). However, with theChinese demonstrations, now thequestion is not whether quantumcryptography is a good idea but, in-
+stead, how it should best be developed
+not just for connected computersbut also to network manned andunmanned systems in the real world(Sasaki, 2017). The inevitability of
+September/October 2018 Volume 52 Number 5 51this approach is re ﬂected in a draft mes-
+sage to the President by the NationalSecurity Telecommunications Advi-sory Committee (NSTAC) in 2017,which noted that “the government
+should consider the impact of quan-tum computing not just on military
+or intelligence agencies, but also on
+critical commercial functions …and
+develop a plan for implementingquantum-resistant encryption schemes ”
+(NSTAC, 2017). The bene ﬁts of un-
+hackable quantum cryptography areobvious (cf. Herman, 2017).
+Summary and Conclusions
+With the integration of new navi-
+gation systems onto 1,800 CoastGuard vessels (Keller, 2014), navalvessels, and an ever-increasing num-ber of commercial ships, there willsoon be more than 200,000 vesselsnow believed at cyber-risk (NavalDome, 2017a). Therefore, improve-ments in maritime security are needed.These include improved cybersecuritywithin shore-based and port opera-
+tions, onboard ships, and among at-
+sea communication paths via satellites(Ingols et al., 2017). For federal mari-time agencies in the United States,maintaining currency on cybersecuritybest practices can be improved by par-ticipation in annual NIST Cyber-security Workshops speci ﬁcally for
+federal cybersecurity personnel. Simi-lar NIST workshops are likewise heldfor industry partners. However, whilemethod of cybersecurity protocolswill continue to evolve, in general,cybersecurity methods used will besimilar to those in the past and will re-quire continuous software patch up-grades and analytics as cyber-systemsmove toward implementing auto-
+mated real-time anomaly detection
+and response capabilities. However,in the not distant future, many of the
+problems with the inevitable unpro-
+tected cybersecurity “weak links ”
+found in using these traditional ap-proaches could be eliminated with atransition to quantum encryptionand quantum communications. Tech-nologically, that day may come soonerthan many people think, recalling that,
+a decade ago, the current cell phone
+technology was essentially unimagin-able. However, as new cybersecurityand communication methods arise,they will still require dissemination ofknowledge of standards, protocols, and
+maritime cybersecurity expertise that
+will require broad awareness through-out the industry and a strong programfor training maritime cyber-experts.While NIST Cybersecurity Work-shops and online resource materialswill help those willing and able to
+access them, to help improve both
+national and international cybersecu-rity in the maritime arena, the MarineTechnology Society (MTS) has starteda Maritime Cybersecurity and Infra-structure Committee, which has its
+goals of (1) providing a forum for the
+development and exchange of mari-time cybersecurity ideas, information,and experiences; (2) advancing aware-ness of cyber-risk; (3) promulgatingbest practices to drive organizational
+cyber-resiliency; and (4) coordinating
+and disseminating standards, trainingdocuments, guidelines, and maritimecybersecurity resources through its
+webpage and MTS meetings. Informa-tion on the committee can be foundat https://www.mtsociety.org/
+communities/procommittees/maritime-
+cybersecurity-and-infra.aspx andalso at http://www.garibaldisrock.com/MCSIC/. As a re ﬂection of
+community awareness of the need forincreased maritime cybersecurity, theMTS Cybersecurity Committee isone source of information to assist
+with addressing this need.
+Acknowledgments
+Thanks for assistance with re-
+search materials to Steve Danscukand Jeff Seifried (U.S. Coast GuardPaciﬁc Area), John Mullen (Promia),
+Paul Koola (Texas A&M University),and discussions with Kevin Traver(MTS), Walt Read (GaribaldisRock!), and Max Bobys (HudsonTrident) of the MTS Cybersecurityand Infrastructure Committee.
+Author:
+Dr. Phil McGillivary
+U.S. Coast Guard Paci ﬁc Area
+Science LiaisonEmail: Philip.A.McGillivary@uscg.mil
+References
+Anonymous . 2014. Tilted marine. New tech-
+niques show the damage done by subsidies at
+the heart of global [shipping] trade. The Econ-
+omist. Aug. 9, p.62. Available at: https://www.economist.com/ ﬁnance-and-economics/2014/
+08/09/tilted-marine.
+Anonymous . 2015, February. Making a suc-
+cess of CDM [continuous diagnostic moni-
+toring]. Federal Computer Week. 29(2):5-7.
+Anonymous . 2016, December. Call for [marine]
+comms standards to address cybersecurity risk.Sea Technology. 57(12):52.
+Anonymous . 2017a, July. Groundbreaking
+autonomous offshore support vessel proto-
+type. Available at: https://www.oceannews.com/news/science-technology/groundbreaking-autonomous-offshore-support-vessel-prototype.
+Anonymous . 2017b, June. DARPA taps Rockwell
+Collins to help protect platforms against cyber-
+attacks. Unmanned Systems. 35(6):8.
+Anonymous . 2017c, June. One Sea to achieve
+autonomous commercial maritime traf ﬁcb y
+2025. Sea Technology. 58(6):9.
+52 Marine Technology Society JournalAnonymous . 2017d, July. Joint working
+group on cybercrime and prevention. Sea
+Technology. 59(7):56.
+Anonymous . 2017e, September. What ’s next
+for cybersecurity? [90 days after the Trumpadministration ’s executive order]. Federal
+Computer Week. 31(9):29-32.
+Anonymous . 2017f, October/November.
+L.A. strengthens community cybersecurity.
+Government Technology. 30(8):8.
+Anonymous . 2017g, December. Naval Dome
+responds to Clarksons cyber attack. The MaritimeExecutive. Available at: https://maritime-
+executive.com/corporate/naval-dome-responds-
+to-clarksons-cyberattack#gs.xJTQ3QA.
+Anonymous . 2017h, December. Global
+maritime technology cooperation centre net-work. Available at: https ://www.marineinsight.
+com/shipping-news/global-maritime-
+technology-cooperation-centre-network-ofﬁcially-launched/.
+Anonymous . 2018a, January. Managing
+maritime cyber risks in 2018. Safety 4 Sea
+Newsletter. Available at: https://www.safety4sea.
+com/managing-maritime-cyber-risks-in-2018/.
+Anonymous . 2018b, January. ‘Quantum
+Radio ’may aid communications indoors,
+underground, underwater. NIST News. Avail-
+able at: https://www.nist.gov/news-events/
+news/2018/01/quantum-radio-may-aid-communications-and-mapping-indoors-and.
+Baghdady , J., Kelly, J., Miller, K., Morgan, K.,
+Li, W., & Johnson, E. 2016a. Underwater op-
+tical communications links using Orbital Angular
+momentum space division multiplexing. MTS/IEEE Oceans 2016, Sept. 19 –22. Monterey,
+CA: IEEE.
+Baghdady , J., Miller, K., Morgan, K., Byrd,
+M., Osler, S., Ragusa, R., …Johnson, E.
+2016b. Multi-gigabit/s underwater opti-cal communication link using orbital angu-
+lar momentum multiplexing. Opt. Exp.
+24(9):9794-805. https://doi.org/10.1364/OE.24.009794.
+Baldor , L.C. 2017, July 17. US to create
+independent military cyber command. APNews. Available at: http://apnews.com/
+08ddd54284554c4c8b4d5c7a498c5bf.
+Baraniuk , C. 2017, August 18. How hackers
+are targeting the shipping industry. BBC
+News. Available at: http://bbc.com/news/technology-406-85821.
+Bensalhia , J. 2015, October 12. Cyberattacks
+on U.S. ports risk chemical disaster. The
+Stack. London, UK: CloserStill Media, Ltd.
+Available at: https://thestack.com/security/2015/10/12/cyberattacks-on-u-s-ports-risk-
+chemical-disaster/.
+Bernstein, D., Buchmann, J., & Dahmen, E.
+(Eds.). 2009. Post-Quantum Cryptography.
+Heidelberg, Germany: Spring Verlag. 245 pp.
+https://doi.org/10.1007/978-3-540-88702-7_4.
+Boyes , H., & Isbell, R. 2017. UK Depart-
+ment of Transport. Code of practice: cyber
+security for ships. Available at: https://www.gov.uk/government/publications/ship-security-
+cybersecurity-code-of-practice.
+Brachmann , S. 2017, December. U.S. leads
+world in quantum computing patent ﬁl-
+ings with IBM leading the charge. Military& Aerospace Electronics. 28(12). Availableat: http://www.militaryaerospace.com/articles/
+pt/2017/12/u-s-leads-world-in-quantum-
+computing-patent- ﬁlings-with-ibm-leading-
+the-charge.html.
+Bright , P. 2017, September 25. Microsoft
+makes play for next wave of computing withquantum computing toolkit. Ars Technica.
+Available at: http://arst echnica.com/gadgets/2017/
+09/microsoft-quantum-toolkit.
+Cordova , F. 2017, March. 10 big ideas for
+NSF future investments. Testimony beforethe Committee on Science, Space, and Technol-ogy Subcommittee on Research and Technol-
+ogy, United States House of Representatives
+on the National Science Foundation Part 1:Overview and oversight. Available at: https://
+www.nsf.gov/about/congress/reports/nsf_big_
+ideas.pdf.
+Corneliussen , S.T. 2018, January 30. Quan-
+tum computing advances spur excitementand confusion. Physics Today. Available at:https://doi.org/10.1063/PT.6.3.20180130a.Courtland , R. 2016, November. China ’s
+2,000-km quantum link is almost complete.
+The Beijing-Shanghai project pushes thelimits for “unhackable ”links. IEEE Spectrum.
+53(11)(NA):11-12. Available at: https://
+spectrum.ieee.org/telecom/security/chinas-
+2000km-quantum-link-is-almost-complete.
+Curcio , J.A., McGillivary, P.A., Fall, K.,
+Maffei, A., Schwehr, K., Twigg, R., …Ballou,
+P. 2006. Self-positioning smart buoys, the“un-buoy ”solution: Logistic considerations
+using autonomous surface craft technology
+and improved communications infrastructure.In: Proceedings, IEEE/MTS Oceans 06, Sept.
+18-22. Boston, MA: IEEE.
+DARPA . 2017. Harnessing Autonomy for
+Countering Cyberadversary Systems (HACCS).
+Available at: https://www.fbo.gov/index?s=opportunity&mode=form&id=d53905129
+da42b35511f296bfe5746dd&tab=core&_
+cview=1 and https://www.darpa.mil/program/harnessing-autonom y-for-countering-
+cyberadversary-systems.
+DNV GL AS . 2016. Recommended practice.
+DNVGL-RP-0496. Cyber security resilience
+management for ships and mobile offshoreunits in operation. Available at: http://www.
+dnvgl.com.
+Dunn , J.E. 2017, August. Cyberattacks
+on GPS leave ships sailing in dangerous
+waters. Naked Security. Available at: http://nakedsecurity.sophos.com/2017/08/07/
+cyberattacks-on-gps-leave-ships-sailing-in-
+dangerous-waters/.
+Eidam , E. 2017, October/November. Test-
+tube security. Can university research labora-tories unlock the secret to better cybersecurity?
+Government Technology, 28-31.
+European Agency for Network and Infor-
+mation Security (ENISA) . 2011. Cyber
+security aspects in the marine sector.Available at: https://www.enisa.europa.eu/
+publications/cybersecurity-aspects-in-the-
+maritime-sector-1.
+European Union . 2014. European Union
+maritime security strategy. Available at:
+https://register.consilium.europa.eu/doc/srv?
+September/October 2018 Volume 52 Number 5
+53l=EN&f=ST%2011205%202014%20INIT
+and https://ec.europa.eu/maritimeaffairs/sites/
+maritimeaffairs/ ﬁles/lea ﬂet-european-union-
+maritime-security-strategy_en.pdf.
+Federal Register . 2017. Navigation and
+Vessel Inspection Circular (NVIC) 05-17:
+Guidelines for addressing maritime cyber
+risks at Maritime Transportation SecurityAct (MTSA) regulated facilities. CoastGuard Docket No. USCG-2016-1084,
+32189-32191.
+Geils , B. 2017. Quantum code test site
+for QUIL software on a 1 qbit machine.HackHarvard 2017. Available at: http://35.
+196.91.242/viz.
+Gerginov , V., da Silva, F.C.S., & Howe, D.
+2017. Prospects for magnetic ﬁeld commu-
+nications and locations using quantum sensors.
+Rev Sci Instrum. 88(12):125005. https://doi.org/10.1063/1.5003821.
+Gianfalla , D. 2017. Maritime security —
+Securing ports, products and shipping.
+Keynote at GST North America Shipping
+2030. Available at: https://maritime.knect365.com/shipping2030-northamerica/agenda/2#.
+Goel , A. 2017. Cybersecurity in the O&G
+industry. In: What ’s Here and What ’s Com-
+ing: Marine Technology Society DynamicPositioning Committee Conference, Oct. 10 –11,
+11 pp. Houston, TX: MTS.
+Goldstein , E., & Kneidinger, M. 2014/2015.
+The DHS continuous diagnostics and miti-
+gation program. Coast Guard Proc. 71(4):
+22-4.
+Green , G. 2017. [Congressman, 29th Dis-
+trict, Texas] Press release: Domestic mari-time centers of excellence signed into
+law. Available at: https://green.house.gov/
+media-center/press-releases/domestic-maritime-centers-excellence-legislation-
+signed-law.
+Groll , E. 2017, December. Cyberattack tar-
+gets safety systems at Saudi Aramco. ForeignPolicy. Available at: http://foreignpolicy.com/2017/12/21/cyberattach-targets-safety-system-
+at-saudi-aramco/.Hamlin , N. 2017. Number in mathemati-
+cal cryptography. Open J Discrete Math.
+7:13-31. https://doi.org/10.4236/ojdm.2017.71003.
+Hayes , C.R. 2016. Maritime cybersecurity:
+The future of national security. Thesis,U.S. Naval Postgraduate School, Monterey,
+CA. pp. 78.
+Heckman , M.R., McCready, J., Mayhew, D.,
+& Callahan, W.L. 2017. Towards a maritime
+cybersecurity compliance. In:, eds. Maritime
+Cyber Security, DiRenzo, J., Drumhiller, N.,& Roberts, F.S., 602. Washington, DC:
+Westphalia Press.
+Herman , A. 2017, March. Quantum cryp-
+tography: A boon for security. National
+Review. Available at: htt p://www.nationalreview.
+com/article/445663/quantum-cryptography-intelligence-security-improvement-computing.
+Hudson , C. 2017. The reality and man-
+agement of cyber risks for shipping and
+maritime. In: GST North America Ship-
+ping 2030. Available at: https://maritime.knect365.com/shipping2030-northamerica/
+agenda/2#.
+IBM. 2018. The IBM Q experience [the
+world of quantum computing]. Available at:
+https://quantumexperience.ng.bluemix.net/
+qx/experience.
+IMO . 2016, June. Interim guidelines on mar-
+itime cyber risk management. MSC 1/Circ.1526. Available at: http://edocs.imo.org/
+FinalDocuments/English/MSC.1-CIRC.
+1526(E).docx.
+IMO . 2017, July. Guidelines on Cyber Risk
+Management. MSC.FAL.1/Circ.3. Available at:
+http://www.imo.org/en/OurWork/Security/Guide_to_Maritime_Security/Documents/
+MSC-FAL.1-Circ.3%20-%20Guidelines%
+20On%20Maritime%20Cyber%20Risk%20Management%20%28Secretariat%29.pdf.
+Ingols , K., Zhivich, M., Brandon, J., &
+K o z i e l ,E .2 0 1 7 .C y b e ri naw o r l do fp l e n t y :
+Secure high-performance on-orbit processing
+(SSC17-XII-08). In: 31st Annual Confer-
+ence on Small Satellites. pp 9. Logan, UT:AIAA/Utah State University.Jackson , W. 2013, December. Can quantum
+encryption work in the real world? Govern-
+ment Computer News, 10.
+Jackson , W. 2014, January. How hashing
+(with a pinch of salt) is better than encryption.
+Government Computer News, 10.
+Keller , J. 2014, February. Coast Guard to
+develop integrated navigation systems for1,800 boats and ships. Military & AerospaceElectronics, 6.
+Keller , J. 2017a, March. Navy looks for
+companies able to build optical communi-
+cations between aircraft and submarines.
+Military & Aerospace Electronics. Availableat: http://www.militaryaerospace.com/
+articles/2017/03/opt ical-communications-
+aircraft-submarines.html.
+Keller , J. 2017b, December. DARPA ConSec
+program seeks to reduce opportunities for
+cyber attack while maintaining trusted com-puting. Military & Aerospace Electronics.
+Available at: http://www.militaryaerospace.
+com/articles/2017/12/cyberattack-trusted-computing.html.
+Kuwata , Y., Wolf, M.T., Zarzhitsky, D., &
+Huntsberger, T.L. 2014. Safe maritime au-tonomous navigation with COLREGS, using
+velocity obstacles. IEEE J Oceanic Eng. 39(1):
+110-9. https://doi.org/10.1109/JOE.2013.2254214.
+Lane , D.C., Enrique, S.L., Tacliad, F.C.,
+Solio, D.H., Rodney, I.L., Obukhov, D.I., …
+Cunningham, D.E. 2017. [DARPA] High-
+Assurance Cyber Space Systems (HACSS) forsmall satellite mission integrity (SSC17-V-01).31st Annual AIAA/USU Conference on Small
+Satellites. pp 17. Logan, UT: AIAA/Utah
+State University.
+Levander , O. 2017, February. Autonomous
+ships on the high seas. IEEE Spectrum, 54(2):26-31. https://doi.org/10.1109/MSPEC.2017.
+7833502.
+Lloyd ’sR e g i s t e r . 2016. Cyber-enabled
+ships. ShipRight procedure —Autonomous
+ships (Version 1.0). 23 pp. Available
+at: http://info.lr.org/l/12702/2016-07-07/32rrbk.
+54 Marine Technology Society JournalLohrmann , D. 2017, May. New trump
+executive order on cybersecurity: Just the
+beginning. Government Technology. Avail-able at: http://www.govtech.com/blogs/lohrmann-on-cybersecurity/new-trump-
+executive-order-on-cyb ersecurity-just-an-
+opening-act.html.
+Luciano , M. 2017, August. Yes, even ship-
+ping vessels are susceptible to cyberattacks.Wireless Design. Available at: https://www.
+wirelessdesignmag.com/blog/2017/08/yes-even-
+shipping-vessels-are-susceptible-cyberattacks.
+Lyngaas , S. 2015, March. Drawing back the
+curtain on cyberwar. A review of Shane Harris ’
+book: “@War. The Rise of the Military-Internet
+Complex. ”Federal Computer Week, 28-9.
+Mandelbaum , R.F. 2018, February. Quantum
+hacking could be ‘catastrophic ’if we don ’t
+develop better cryptography. Gizmodo: Privacy
+and Security, 16. Available at: https://gizmodo.com/u-s-government-has-69-proposed-
+candidates-for-quantum-1823084809.
+Manning , R.D. 2017. Navigation and Vessel
+Inspection Circular (NVIC) 05-17: Guide-
+lines for addressing cyber risks at maritime
+transportation security act regulated facilities.Federal Register. 82(132):32189-91.
+Maritime Risk Symposium. 2017. Available
+at: http://www.tif ﬁn.edu/criminaljustice/
+maritime-risk-symposium-2017.
+Martin , R., & Rajasekaran, S. 2016. Data
+centric approach to analyzing security threats
+in underwater sensor networks. In: MTS/IEEE Oceans 2016, Sept. 19-23. Monterey,
+CA: IEEE. https://doi.org/10.1109/OCEANS.
+2016.7761267.
+McGillivary , P.A., & Hine, R. 2007. Wave-
+powered autonomous surface vessels as com-
+ponents of ocean observing systems. In:Paciﬁc Congress on Marine Science & Tech-
+nology (PACON) 2007. Honolulu, HI:
+PACON International.
+McGillivary , P.A., de Sousa, J., & Martins, R.
+2012, October. Connecting the dots: Net-working maritime ﬂeets of autonomous systems
+for science & surveillance. Marine Technol-
+ogy Reporter, 33-8.McGillivary , P.A., de Sousa, J., Martins, R.,
+Rajan, K., & Leroy, F. 2012. Integrating
+autonomous underwater vessels, surface vesselsand aircraft as persistent surveillance com-ponents of ocean observing systems. In: Pro-
+ceedings, IEEE AUV 2012, Sept. 24 –27.
+Southampton, UK: IEEE.
+McGillivary , P.A., Fall, K., & Maffei, A.
+2007, May. Wireless communication advancesfor maritime use. Sea Technology, 10-4.
+McGillivary , P.A., Hine, R., Anderson, R., &
+Rognstad, M. 2007. Long-term, Long-range
+bathymetric mapping in the southern oceanfrom wave-powered autonomous surface vessels.
+In: Cooper, A., Raymond, C., and the 10th
+ISEAE Editorial Team, “Antarctica: A Keystone
+in a Changing World. ”Online Proceedings
+for the 10th International Symposium on
+Antarctic Earth Sciences. U.S. Geological Sur-vey Open-File Report 2007-1047. Availableat: http://pubs.usgs.gov/of/2007/1047/.
+National Academies of Science, Engineering,
+and Medicine . 2007. Toward a Safer and More
+Secure Cyberspace. Consensus Study Report.Washington, DC: The National Academies
+Press. 328 pp. https://dpo/prg/10.17226/11925.
+National Academies of Science, Engineering,
+and Medicine . 2010. Proceedings of a Work-
+shop on Deterring Cyberattacks: Informing
+Strategies and Developing Options for U.S.
+Policy. Washington, DC: The National Acad-
+emies Press. 400 pp. http s://doi.org/10.17226/
+12997.
+National Academies of Science, Engineering,
+and Medicine . 2015. Cybersecurity Dilemmas:
+Technology, Policy, and Incentives: Sum-mary of Discussions at the 2014 Raymond and
+Beverly Sackler U.S.-U.K. Scienti ﬁc Forum.
+Washington, DC: The National AcademiesPress. 36 pp. https://doi.org/10/17226/21833.
+National Academies of Science, Engineering,
+and Medicine . 2016. Protection of Transpor-
+tation Infrastructure from Cyber Attacks: APrimer. Washington, DC: The National Acad-
+emies Press. 183 pp. https://doi.org/10.17226/
+23516.
+National Academies of Science, Engineering,
+and Medicine . 2017. Foundational Cyber-security Research: Improving Science, Engi-
+neering, and Institutions. Washington, DC:
+The National Academies Press. 104 pp. https://doi.org/10.17226/24676.
+National Academies of Science, Engineering,
+and Medicine . 2017. Additional Observations
+on Foundational Cybersecurity Research. Im-
+proving Science, Engineering and Institutions.An Annex: Unclassi ﬁed Abbreviated Version
+of a Classi ﬁed Report. Washington, DC: The
+National Academies Press. 10 pp. https://dois.org/10.17226/24949.
+National Academies of Science, Engineering,
+and Medicine . 2017. Software Updates as
+a Mechanism for Resilience and Security.Proceedings of a Workshop. Washington, DC:The National Academies Press. 92 pp. https://
+doi.org/10.17226/24833.
+National Institute of Standards and Tech-
+nology (NIST) . 2018a. National Initiative
+for Cybersecurity Education (NICE). Avail-
+able at: http://www.nis t.gov/itl/applied-
+cybersecurity/nice.
+National Institute of Standards and Tech-
+nology (NIST) . 2018b. NICE cybersecurity
+workforce framework (NIST special publication
+800-181). Available at: http://doi.org/10.6028/NIST.SP.800-181.
+National Research Council . 2014. At the
+Nexus of Cybersecurity and Public Policy.Some Basic Concepts and Issues. ConsensusReport. ashington, DC: The National Acade-
+mies Press. 150 pp. https://doi.org/10.17226/
+18749.
+National Science Foundation . 2016. Center
+for Trustworthy Scienti ﬁc Infrastructure.
+Available at: https://trustedci.org (accessed27 January 2018).
+National Science Foundation . 2017. Cyber-
+security Center of Excellence. Available at:
+https://www.nsf.gov/attachments/190458/public/CTSC-CCoE-LFW-May-32017.pdf.
+National Security Telecommunications
+Advisory Committee (NSTAC) . 2017.
+NSTAC Report to the president on emerg-ing technologies. Strategic vision executive
+summary, May 18, pre-decisional draft.
+Available at: https://www.dhs.gov/sites/
+September/October 2018 Volume 52 Number 5
+55default/ ﬁles/publications/Draft%20NSTAC%
+20ETSV%20Report%20Executive%
+20Summary%20508%20Compliant_1.pdf.
+Naval Dome . 2017a. More than 200,000
+vessels sail exposed to cyberattack. This should
+be a wake-up call to the shipping industry.
+Available at: https://www.navaldome.com/threat.html.
+Naval Dome . 2017b, December. Cyber
+penetration tests underscore maritime indus-
+try’s nightmare security scenario. Hellenic
+Shipping News. Available at: http://www.
+hellenicshippingnews.com/cyber-penetration-
+tests-underscore-maritime-industrys-nightmare-security-scenario/.
+Noll, G.T. 2017, May. A location strategy for
+funding port infrastructure. Marine Technol-
+ogy Reporter, 22-5.
+Nordrum , A. 2017, October. China demon-
+strates quantum encryption by hosting a video
+call. IEEE Spectrum. Available at: https://spectrum.ieee.org/tech-talk/telecom/security/china-successfully-demonstrates-quantum-
+encryption-by-hosting-a-video-call.
+Norwegian University of Science and
+Technology (NTNU) . 2018a. Centre for
+Autonomous Marine Operations and Systems
+(AMOS). Available at: https://www.ntnu.edu/amos (accessed 27 January 2018).
+Norwegian University of Science and
+Technology (NTNU) . 2018b. Center for
+Cyber and Information Security (CCIS).Available at: https://ccis.no/ (accessed 27
+January 2018).
+Osborn , K. 2017, November. Navy and
+Army Cyber Mission Force teams are nowoperational. Defense Systems. Available at:
+https://defensesystems.com/articles/2017/11/
+02/army-navy-cyber-mission-teams-u.s.-cyber-command.aspx.
+Paganini , P. 2015, October. U.S. ports are
+still vulnerable to cyberattacks that releasedangerous chemicals. Cybersecurity in themaritime industry is crucial for homeland
+security. Security Affairs. Available at: http://
+securityaffairs.co/wordpress/40960/security/us-ports-vulnerable-hacking.html.Parsons , R. 2016. Port of Long Beach: How
+the‘virtual port ’enhances domain awareness,
+incident response & recovery. In: InternationalPort Security Conference. June 1-2, London,UK: SMI Group, Limited. Available at:
+https://www.asdevents.com/data/media/
+E15250_agenda.pdf and https://10times.com/international-port-security.
+PAS Global . 2017. ICS cybersecurity, safety,
+compliance: How to protect control assetsbefore the cybersecurity egg cracks. PowerEngineering, 10. Available at: http://www.
+power-eng.com/whitepapers/2017/11/how-to-
+protect-control-assets-before-the-cybersecurity-egg-cracks.html.
+Platt , J.R. 2015. Raising the bar for cyber-
+security specialists. More training and standardsare needed to meet the growing demand. IEEE
+The Institute. 39(1):9.
+Port and Airport Research Institute (PARI) .
+2017. Introduction to operations. 18 pp.
+Available at: http://www.pari.go.jp.
+Port of Rotterdam . 2018. More vessels
+call on a safe port. Available at: https://www.
+portofrotterdam.com/en/news-and-press-
+releases/more-vessels-call-on-a-safe-port.
+Port Security Technology Conference. 2017
+June 19-20. London, UK: SMI Group Limited.
+Available at: https://www.smi-online.co.uk/defence/uk/port-security-technology.
+Quaintance , Z. 2017, October/November.
+Beyond the cyberheadlines. We break down
+the biggest cyberevents from the past year.Government Technology, 40-1.
+Rademaker , E. 2017. Change of an era:
+[Rotterdam] Becoming a smart port. In: Euro-pean Transportation GIS Summit. Berlin,
+Germany: ESRI. Available at: http://proceedings.
+esri.com/library/userconf/ets17/papers/ets_16.pdf.
+Richardson , J.M. 2016. A design for main-
+taining maritime superiority (Version 1.0).8 pp. Available at: http://www.navy.mil/cno/
+docs/cno_stg.pdf.
+Roy, R. 2017, August. A simple ﬁx that ’s
+tough for attackers. Format preserving en-cryption offers a more granular approach to
+securing legacy computer systems and new
+solutions alike. Federal Computer Week.31(7):8. Available at: https://digital.1105media.com/FCW/2017/FCW_1708/FW_170815Q1_
+701922973.html
+Sasaki , M. 2017, April. Quantum networks:
+Where should be heading? Quantum Scienceand Technology. 2(2):19. Available at: http://orcid.org/oooo-0002-9508-570X.
+Schill , N. 2017, September. Advancing mari-
+time intelligence with real time satellite AIS.
+ECO. 22-5.
+Smith , R.S., Curtis, M.J., & Zeng, W.J. 2017.
+A practical quantum instruction set architecture.Version 2.0. Quantum Physics. Available at:
+arXiv:1608.03355v2.
+Spender , T. 2017, July. Teleportation:
+Photon particles today, humans tomorrow?BBC News. Available at: http://www.bbc.com/news/science-environment-405943-387.
+Stevens Institute . 2018. Maritime Security
+Center Summer Research Institute. Available
+at: https://www.stevens.edu/SummerResearchInstitute.
+Tang , Z., Chandrasekara, R., Tan, Y.C.,
+Cheng, C., Sha, L., Hiang, Z., …Ling, A.
+2016. Generation and analysis of correlated
+pairs of photons on board a nanosatellite.Phys. Rev. 5:054022. https://doi.org/10.1103/
+PhysRevApplied.5.054022.
+Texas A&M University . 2017. Master of
+Engineering in engineering with specializa-tion in cybersecurity. Available at: https://engineering.tamu.edu/academics/degrees/
+graduate/master-of-engineering-in-engineering-
+with-a-specialization-in-cybersecurity.
+Thomas , R. 2017. Heavy traf ﬁc. Develop-
+ment in vessel traf ﬁc management and auto-
+mated identi ﬁcation systems are enhancing
+security by making constant observation morepractical. International Maritime & PortSecurity. 4(2):16-20.
+Thompson , C. 2014, May. The revolutionary
+quantum computer that may not be quantum
+at all. Wired. Available at: https://www.wired.com/2014/05/quantum-computing/.
+56 Marine Technology Society JournalTrump , D.J. 2017. Presidential Executive
+Order on strengthening the cybersecurity of
+federal networks and critical infrastructure.Available at: https://www.whitehouse.gov/presidential-actions/presidential-executive-
+order-strengthening-cybersecurity-federal-
+networks-critical-infrastructure/.
+Tuttle , R. 2016. No man and the sea.
+ACTUV deployment tests boundaries of
+autonomous ship capabilities. Unmanned
+Systems. 34(5):30-1.
+U.K. National Cyber Security Centre . 2018.
+National Cyber Security Centre website. Avail-able at: http://www.ncs c.gov.uk/guidance.
+U.S. Coast Guard . 2015. United States
+Coast Guard cyber strategy. Available at:
+http://www.overview.uscg.mil/Portals/6/
+Documents/PDF/CG_Cyber_Strategy.pdf.
+U.S. Maritime Administration (MARAD) .
+2017. Of ﬁce of Maritime Security. Available at:
+https://www.marad.dot.gov/environment-
+and-safety/of ﬁce-of-security/.
+Vaas, L. 2017, September. Suspected mass-
+spooﬁng of ships ’GPS in the Black Sea.
+Naked Security. Available at: https://nakedsecurity.sophos.com/2017/09/26/
+suspected-mass-spoo ﬁng-of-ships-gps-in-
+the-black-sea/.
+Wagstaff , J. 2017, September. Australia
+researchers say ﬁnd a new way to build
+quantum computers. Reuters Technology
+News. Available at: https://www.reuters.
+com/article/us-australia-computing-quantum/australia-researchers-say- ﬁnd-new-way-to-build-
+quantum-computers-idUSKCN1BH13X.
+Wingrove , M. 2017, November. Opinion:
+Will Clarkson ’s clients become the next cyber
+attack victims? Marine Electronics & Com-munications. Available at: http://www.marinemec.com/news/view,opinion-will-clarksons-clients-
+become-cyberattack-victims_50074.htm.
+Zorabedian , J. 2015. US Navy renews train-
+ing in celestial navigation over GPS hack fears.Available at: https://nakedsecurity.sophos.com/2015/10/22/us-navy-renews-training-in-
+celestial-navigation-over-gps-hack-fears/.
+September/October 2018 Volume 52 Number 5
+57

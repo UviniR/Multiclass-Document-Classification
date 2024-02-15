@@ -1,0 +1,573 @@
+Research Article
+Mobile Learning System for Egyptian Higher Education Using
+Agile-Based Approach
+Menna Elkhateeb
+ ,1Abdulaziz Shehab
+ ,1,2and Hazem El-bakry1
+1Information Systems Department, Faculty of Computers and Information Science, Mansoura University,
+Mansoura 35516, Egypt
+2Department of Computer Science, Faculty of Science and Arts, Jouf University, Saudi Arabia
+Correspondence should be addressed to Menna Elkhateeb; menna.elkhateeb@gmail.com
+Received 9 August 2018; Revised 10 December 2018; Accepted 16 January 2019; Published 3 March 2019
+Academic Editor: Paul
+S. Szalay
+Copyright ©2019 Menna Elkhateeb et al. x#_his is an open access article distributed under the Creative Commons Attribution
+License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is
+properly cited.
+Nowadays, due to easiness and expansion in property of smart mobile devices, it is becoming inevitable for mobile ap-
+plicationstohaveanimportantroleinhighereducationsystems.x#_heEgyptianpublicuniversitiesarefacingtheproblemof
+students’largenumberenrolledineachyear.x#_hus,welackpropercommunicationbetweeneducatorsandlearners.Mobile
+learning can solve that problem, and it enables adjustment of the curriculum to meet students’ learning time and life
+situations. It provides diﬀerent solutions better than traditional educational methods. Students and professors could
+exchange educational material or information even if they are not in the same class. Furthermore, the cost of universities’
+materials reduced, as all course materials can be found online through mobile applications. x#_his paper proposes a mobile
+learning system named “Easy-Edu.” x#_he proposed system intended to make the learning process easier, focus on students’
+needs, and encourage communication and collaboration between students and professors and supports collaborative
+scenario-based learningforuniversity students. Unlikeother traditionalsystems,the proposed“Easy-Edu” wasbuiltusing
+an Agile-based approach that delivers sustainable and high-quality mobile learning system. In addition, it eliminates the
+chances of absolute system failure and detects and ﬁxes issues faster. Summarily, everything related to the design and
+implementation of “Easy-Edu” is discussed.
+1.Introduction
+Highereducation plays a major role in the economic devel-
+opment of society. Egypt’s public universities and educational
+institutes received around 2230314 million enrolled students,
+in the academic year of 2017-2018 according to the EgyptianCentralAgencyforPublicMobilizationandStatistics[1].Suchproblem caused a lack of communication, interaction, anddirect engagement between educators and learners. It is hardfor educators to pay attention to hundreds of students andstudents who cannot ask questions or give feedback in thelecturetime.x#_herefore,mobilelearningisnowanewtrendinsuch education. Because of its expansion and ease of useeverywhere, the network provides quick access to diﬀerentﬁelds of interest. Because of the resilience of mobile learning
+applications,universitiesandinstitutionsaretryingtodevelop
+diﬀerent mobile learning solutions to support their diﬀerentcourses[2,3].Mobilelearningimprovesstudents’interestandmotivation in learning new courses. In addition, it is able tomake a pedagogical shift from classroom-based learning tocollaborative and constructivist learning [4]. Besides, mobile
+devices and wireless networks technologies are improving
+continuously with time. x#_he evolution of these technologieshelped e-learning to extend to mobile learning [5].
+x#_heAgilemodelwasusedtobuildanewmobilelearning
+system “Easy-Edu” that will be used in Egyptian highereducation. Using the Agile model in building the mobilelearning system can ensure that the system is reliable,sustainable, and of high-quality. It can enhance the userinterface(UI)designandtheuserexperience(UX),increasethe sustainability of system usage, create an opportunity tocontinuallyreprioritize,andreﬁnethesystemfeaturestosuit
+students’ needs. In addition, it eliminates any chances of
+system failure, test, and ﬁxes issues.
+Hindawi
+Education Research International
+Volume 2019, Article ID 7531980, 13 pages
+https://doi.org/10.1155/2019/7531980x#_hemajorchallengethatmotivatedustodevelop“Easy-
+Edu” system is a lack of communication between educators
+and learners because of the large number of students in theclasses. x#_he huge number of students has caused diﬀerentproblems such as weaker contacts between students andeducators,insuﬃcientmanagementoflearningcurriculums,
+lack of motivation to learn new subjects, and restricted
+opportunities for students’ feedback.
+Our research has contributed to the mobile learning in
+higher education; the system helps students to study courses’materials and solve problems that are aligned with the courseobjectives. x#_his enhances their problem-solving skills, col-laborative and communicative skills, and analytic thinkingprocess.Inaddition,thesystemtakesintoaccountthelearners’intelligencebymovingthelearnersfromlowerleveltoahigherlevel while solving the questions to adapt to their knowledge.x#_helearnerscansharediﬀerentideasandquestionswitheach
+other using group discussion module, suggest the problem
+solutions, and collaborate with each other. Also, they canparticipate in the educational process by sending theirquestions to the professor to be added to the questions bank,and then the professor adds four diﬀerent answers to thequestion to be used in the exams. x#_he professor’s role is tomentor the learning, enable the self-questioning practices,manage the learning process, monitor the engagement, andprovide instructions and important announcements.
+x#_he Easy-Edu application is intended to support edu-
+cators and students in large populated classes, to ease usingmobile devices in the learning of university courses.
+x#_he purpose of this paper is to discuss the design and
+implementationofEasy-Edumobilelearningsystem.Wearegoing to pursue this goal by answering the following re-search questions:
+(1) How to make the students participate in the edu-
+cational process and exam development?
+(2) How to make the educators communicate with the
+students and vice versa?
+(3) How to change questions’ level in the test and adapt
+according to the learners’ intelligence?
+(4) How to make students ask questions easily and
+collaborate with each other?
+x#_he rest of the paper is organized as follows: Section 2
+presents the current state of mobile learning, mobile learning,collaborative learning, scenario-based learning, and mobilelearning solutions for higher education from the literature re-view. x#_hen, Section 3 explains the proposed system, design anddevelopment, Agile information system, and using the Agileapproach in developing Easy-Edu as well as in the imple-
+mentation of the system. Section 4 presents Easy-Edu capa-
+bilitiesagainstothersystems,whileSection5showsthepotentialimpact and the preliminary results of Easy-Edu system. Lastly,the ﬁnal conclusion and future work are presented in Section 6.
+2.The Current State of Mobile Learning
+2.1. Mobile Learning. Mobile learning, or M-learning, can
+be any educational interaction delivered through mobiletechnology. Early deﬁnitions saw that mobile learning issimply using hand-held devices to support learning [6].Other mobile learning deﬁnitions have been reported byformer researchers [7]. M-learning can be deﬁned as theapplicationinstalledonthemobiledevicestocheckdiﬀerenttypes of learning resources, communicate, share learning
+experiences with other students, and collaborate together in
+solvingproblems.Mobilelearningisnotaboutusingmobiledevices to support learning only, but it also includes all theactions that could happen between educators, students,environments, theories of learning, anyone, anywhere, andanytime learning [8]. x#_he core beneﬁts of learning usingmobile devices are that it allows students to be in a suitableplace at a suitable time, so they can gain experience in anauthentic learning environment, wherever that is.M-learning is identiﬁed by three elements that are all im-portant to the educators and students: (1) Convenience and
+usability. (2) Expediency and eﬃcacy. (3) Immediacy. More
+details can be found in [9].
+2.2.CollaborativeLearning. Collaborative learning is a type
+of learning where two or more students learn something
+together [10, 11]; unlike individual learning, students worktogether in collaborative learning depending on one an-other’s skills and resources (asking one another for in-
+formation, monitoring one another’s work, evaluating each
+other’s ideas, etc.) [12, 13]. Speciﬁcally, collaborativelearning is based on the idea that knowledge can be createdwithin a large number of individuals where members in-teract actively by sharing experiences and ideas [14]. Col-laborative learning refers to environments andmethodologies in which students engage together in acommon task. Discussion boards can be an example ofcollaborative learning because students are forced to readother answers and opinionsand respond carefully.x#_hroughthe back-and-forth engagement and interaction with each
+other, they can expand their personal knowledge and share
+points-of-view, insights, and perspectives.
+2.3. Scenario-Based Learning. Scenario-based learning
+blends e-learning and problem-based learning together.
+Knowledgecannotbedevelopedandunderstoodcompletelyespecially in courses that need practical applications [15]. Itallows students to imagine themselves in realistic situationsrequiring them to apply and develop their knowledge andproblem-solving skills. Good scenarios can help studentsimagine the practical applications of knowledge and con-ceptstheyhavestudied.x#_hefocusisonthestudentexploringmanywaystoﬁndasolutionandtrytolearnfromtheirown
+mistakes. Scenario-based learning places students at the
+center of the learning environment. Students can get inmany diﬀerent activities in the scenario [16]. x#_his allowsthem to understand the problems that they may face in theindustryandreallife.Itgivesstudentsoptionstoexploreandimagine a realistic situation. Students can control their ownlearning process as they see the consequences of their de-cisions and choices when exploring the scenario.2 EducationResearchInternational2.4. Mobile Learning Solutions in Higher Education.
+Mobile learning solutions for higher education shouldsupport meaningful learning and provide motivation tostudentstostudy[17].Leinonenetal.[18]foundthatmobileapps that are designed for learning are in short supply. Asurvey of M-learning trends in computer science education
+showed that M-learning can increase students’ aﬀective
+traits [19]. x#_here are already diﬀerent kinds of M-learningsolutions including the commercial ones in higher educa-tion. Some examples from the literature were chosen tomention here as they are designed and developed by theresearcher,forfree,appliedinhighereducation,andusedincomputer science, information technology, and engineeringclasses. x#_hese literature examples have inspired the work of“Easy-Edu” system. Mbogo et al. [20] proposed an androidmobile learning application developed according to ﬁve-level scaﬀolding framework to support the learning of Java
+programming. x#_his work was developed in the African
+context. x#_hey found that mobile learning as a new methodcould oﬀer opportunities to minimize the diﬃculty faced inlearningprogramming.However,thedrawbacksarethatitisan application for a speciﬁc programming language and donot support other programming languages. It does notsupport collaboration between learners, and it is consideredas self-learning application. It lacks the communicationbetween professors and students.
+Boticki et al. [21] have developed an Android app to
+support sorting algorithms learning. x#_hey found that stu-dents are encouraged using mobile devices for learning. As
+another example, Wen and Zhang [22] implemented a
+microlecture system on mobile. x#_he mobile system helpsstudentstoseevideosandothermicrolectureresources.x#_heideawassoencouragedandhasmanyadvantages.However,itlacksthecollaborationactivitiesbetweenlearners.Besides,there are no quizzes for students to test their skills afterstudying through the microlectures.
+Moreira and Ferreira [23] developed an application to
+assist the teaching of requirement engineering using theLucidchart application on mobile devices for UML systemsmodeling.ShanmugapriyaandTamilarasi[24]designedand
+developed mobile courseware for information and com-
+munications technology students using a problem-basedlearning approach. x#_he course is designed to check theproblem-based learning in a mobile learning environment.“RoboRun” mobile learning game was developed by Vinayet al. [25]. x#_he platform allows touch input devices forcoding and learning conditional programming and algo-rithm sequence ordering.
+Prenner et al. [26] designed a mobile medium for the
+teaching of algorithms and data structure courses to stu-dents. x#_his work created NetLuke, a visualization tool for
+interactive algorithms and data structures. x#_he NetLuke
+assists in direct data input by the user, the loading of vi-sualization samples, and dynamic animations. Potts et al.[27] proposed an M-learning application for iOS and An-droid operating systems. It is used in two electrical engi-neering courses at the University of Tennessee at Martin,ENG 231 Digital Logic and ENGR 361 Digital Signal Pro-cessing. x#_his application is quiz-style and oﬀers the user amultitouchinterfacetoanswertherelevantquestionsrelatedto electric engineering courses.
+x#_he quizzes have a large range of covered topics, in-
+cluding digital logic gate analysis, discrete signal evolution,and digital ﬁlter design. After concluding each work, thescore results are sent to the instructors via e-mail. Two
+evaluations using 18 students from both courses were
+conducted to measure its eﬀect on them. x#_he applicationshould have integrated a discussion and collaborationmodule to make the learning process more attractive to thelearners. Tamhane et al. [28] presented the design and de-velopment of mobile learning application on the AndroidplatformusingJavaprogramminglanguagetohelpstudentsin computer courses at the Computer Engineering De-partment. x#_he approach was to merge between multimediaconcept and command language to create a new learningenvironmentusingthemobilelearningapplication.x#_heaim
+of the mobile learning application was to complement the
+traditional learning and e-learning systems.
+Lim [29] presented the design and implementation of a
+mobile-based interactive teaching model with in-class andoﬀ-class components aided by Socrative online responsesystem to improve the engagement of the students in aMalaysian university. Table 1 summarizes the research-based mobile learning systems from the literature andtheir limitations.
+x#_hiscouldbeasteptosupportlearningbutmightnotbe
+completely continual and eﬃcient considering a largenumber of students in Egyptian universities. However, the
+previous implementation and application of M-learning to
+various computer science courses have been successful; oursolution would work on the issue of teaching large studentsin the classes, using collaborative scenario-based learningapproach. It is important to design a new all-inclusiveM-learning system built using a scientiﬁcally provenmethodology like Agile.
+3.The Proposed System
+x#_hemainpracticalrequirementfor“Easy-Edu”systemistheability to support learning and engagement of a largenumber of learners at any time. One way to boost learners’engagement in mobile learning is to use mobile commu-nication functions, such as discussion forums, announce-ments, notiﬁcations, and self-practice materials. All thesefunctions are available on Easy-Edu, creating on-demandaccess to information. Easy-Edu system supports theuploading of lecture materials. x#_hus, Easy-Edu helpslearners to access learning materials in diﬀerent formats
+such as PDFs, e-books, and videos. View announcements,
+enter discussions forums, solve adaptive scenario-basedquizzes, and receive notiﬁcations. Figure 1 shows the pro-posed framework which uses diﬀerent web services. x#_heframework focuses on providing collaborative scenario-based learning to the students. It is built upon educa-tional, technological, and social aspects.
+x#_heproposedmobilelearningframeworkconsistsofﬁve
+components: (i) mobile devices (user infrastructure), (ii)mobile applications (which is installed on the mobileEducationResearchInternational 3device), (iii) mobile middleware, (iv) wireless network in-
+frastructure (4G/3G/Wi-Fi), and (v) back-end system “da-tabase server” and “web server” (hosting users database,coursesdatabase,material,questionsdatabase,andservices).UserInfrastructure.x#_heframeworksupportsmobiledeviceslike iPhones and iPads, in addition to PCs or laptops toaccess the web application system connected to the mobilelearning system.Table1: Summary of some of the research-based mobile learning systems.
+Researchers YearApp
+namex#_he Solution Main limitations
+Lim [29] 2017 N/AMobile-based interactive teaching model
+based on the Socrative online system.Need implementation of peer discussion
+and assistance tools.
+Moreira and Ferreira [23] 2016 N/AiOS application that helps engineering
+students to learn UML.by adopting the
+Lucidchart application on mobile devices.ItisonlyforlearningUMLcourse.Butwill
+not help in other courses. No activates
+between students.
+Wen and Zhang [22] 2015 N/A x#_he microlecture mobile learning system.No collaboration between students and
+engagement with professors.
+Tamhane et al. [28] 2015 N/AMobile learning application on Android to
+help computer engineering students in
+computer courses.Need game based module and quizzes
+module.
+Prenner et al. [26] 2014 NetLuke“NetLuke” is a mobile environment
+teaching algorithms and data structures
+courses.Does not support other courses. Need
+collaboration module between students.
+Needtobesupportedbypopularplatforms
+like android and iOS.
+Vinay et al. [25] 2013 RoboRun “RoboRun” mobile learning game.Needtosupportcollaborationactivitiesand
+to support other platforms.
+Boticki et al. [21] 2013 Sortko“Sortko”Android-basedapplicationtohelp
+to master sorting algorithms by leveraging
+theexistingbodyofknowledgedealingwith
+the use of animation in teaching and
+learning.Need to support other platforms like iOS
+and Windows phone.
+Mbogo et al. [20] 2013 N/AAndroid mobile learning application to
+help to learn to programme using the
+scaﬀolding technique.Need to support other platforms to gain
+moreaudience.Shouldbepossibletoloada
+saved program in order to reuse it.
+Shanmugapriya andTamilarasi [24]2013 N/AAndroid mobile courseware for ICT
+students.Need to support other platforms like iOS
+and Windows phone.
+Admin
+Professor
+Student
+iOS app
+‘My easy-edu’Windows applicationDash board 
+‘web application’
+Web ser ver
+Technology stack:
+ASP .net
+MVC web APITechnology stack:
+C# windows forms
+application to add
+questions and attachmentTechnology stack:Database server
+Restful web service request/ 
+response “JSON”ADO.net & entity framework
+ADO.net & entity frameworkTechnology stack:
+ASP .net
+Technology stack:
+Xcode IDE
+objective CMS SQL server
+Cloud
+Data
+connection
+Figure1: x#_he proposed framework.4 EducationResearchInternationalMobile Application. x#_he mobile application installed on the
+mobiledevicehasaneye-catchinganduniqueuserinterfacefor thelearner tohelp ininvoking thediﬀerent services thatare associated with the mobile learning scenario. x#_he ap-plication is developed for the iOS platform. x#_he applicationisdevelopedtoworkon“online”modeanditisconnectedtotheback-endserverthroughthewirelessnetworklikeWi-Fior through a mobile network like 3G/4G. x#_he application isdesigned upon the modular structure and each module
+works with other modules in order to provide the required
+functionalities.x#_heapplicationistosupportawidevarietyofdata like audio/video, e-books, PDFs ﬁles, and other ﬁleformats.
+Mobile Middleware. x#_he middleware is built with http://
+ASP.net and model view controller (MVC) web API for
+providing web services using JavaScript object notation(JSON). It accepts the request from the mobile client andtranslates this request as a web service to get the contentfrom the back-end servers through Internet connections.
+x#_he raw data that are collected from the back-end servers
+are formatted according to mobile device proﬁle whichrequested it and then the formatted content issent back tothe mobile devices in a presentable manner to the mobileapplications which invoked it, as shown in Figure 2.
+NetworkInfrastructure. Mobiledevicesmostlyusethewireless
+connection in a home network or in the university. x#_he stu-
+dents send request from their mobile devices through the Wi-Fi connection. When the students are not at home or in theclassroom, they canconnect through 3G/4Gmobile networks.
+Back-End System. Back-end systems may integrate with
+other servers like authentication server, video server, mailserver,oranyotherserverwhichprovidestherequesteddatato the mobile users using the middleware as a service.
+3.1. Design and Development. Easy-Edu utilizes a web and
+databaseservertosharedataandresourcesamongallmobile
+devices as well as an administration subsystem where all
+activities for collaborative learning and scenario-basedquestions are carried out.
+x#_he physical structure of “Easy-Edu” consists of the
+learning center “mobile app,” web application “dashboard,”desktop application, and the server. x#_he learning center iscounted as the core of the proposed system as it representsthe central unit that connects all system components. It isconsisted of 4 main modules to achieve diﬀerent func-tionalities as shown in Figure 3. Contentsupports variouscourses and all the materials such as PDFs, videos, ande-books. Scenario-based questions give access to diﬀerent
+smartadaptivelevelsofquestionsintheshapeofaquizwitha scenario. Ask questions supports collaborative discussion
+between students and professor; students can share ideas orquestionswhereotherstudentscananswerandreplytoeachother.Professorcanhelpthemorchoosethecorrectanswerfrom students’ replies and mark it, so other students knowthe right answer. Also, a student can raise a ﬂag to the
+professor if they want to add their question to the question
+pool. x#_hisoptioncanhelpinmakingstudentsparticipateintheeducationalprocessandletthemengagewithprofessorsin developing the exams. Announcements module provide
+updates on upcoming activities and events.
+3.1.1. Agile Information Systems and Software Development.
+Agile information systems and software development (ISD)attracted the researchers because it is an approach that dealswith changingandhardlycontrollableelementsofISD.Agileis based on an iterative and incremental approach. Instead ofplanning deeply at the beginning of the project, Agilemethodologies are open to requirements changing and getsfeedback from the end user and the stakeholders [30]. Each
+iteration’sgoalistoproduceaprototypethatworkscorrectly.
+Agile refers to any process that aligns with the concepts
+of the Agile Manifesto.17 software developers met together
+todiscussmethodsoflightweightdevelopment,in2001[31].x#_hen, the Manifesto for Agile Software Development waspublished, which covered “better ways of software devel-opment by doing it and helping others do it.”
+Illustrated in Figure 4, the phases of the Agile devel-
+opment cycle which followed our proposed system are asfollows [32]: (1) planning, (2) requirements analysis, (3)design, (4) implementation, coding, or development, (5)
+testing, and (6) deployment.
+3.1.2. Using the Agile Approach in Developing Easy-Edu
+System.x#_he Agile model was chosen as the appropriate ap-
+proachformanagingandbuildingEasy-Edusystem.UsingtheAgilemodelinbuildingthemobilelearningsystemguaranteesdelivering high-quality, reliable, and sustainable mobilelearning system. Agile helps in improving the performanceand features of the system. It also helps in eliminating thesystem failure, by the continuous testing and issues ﬁxing.
+WorkingwithanAgileapproachmadeiteasytorespondto
+stakeholders’requirementchanges.x#_herequirementswerenotwell-deﬁnedandwereevolvingcontinuously.x#_hereweremanyrequirements and ideas that appear in every meeting with the
+Mobile applicationMobile application process
+data sent by middleware
+and displayMiddleware serverMiddleware processes request
+by getting data from database
+or local cashe and returnMobile application sent
+request to middleware
+Database server
+Figure2: x#_he middleware connection.EducationResearchInternational 5stakeholders at the university. Agile depends on iterations; in
+each iteration, a prototype is built and tested [33]. It is provedin many studies that ﬁxing a defect/issue found in ﬁnal pro-duction stages is more expensive than ﬁxing it when found in
+earlierstagesoftheproject[34].x#_hus,Agileapproachesaimat
+ﬁxing issues as early as possible when detected [35].
+ScrumisanAgileframeworkthathasbeenusedinEasy-
+Edu system building, and it has been used widely forsoftwareprojectmanagementasanAgileapproach.ByusingScrum, team members can deliver software to the customerfaster. Transparency, focus, and energy will be added to theplanning and implementation of the project [36].
+Figure 5 shows implementing the Agile approach in
+Easy-Edusystemandhowtheskilledfunctionalteamsworkthings out together; requirements are changing through the
+iterations. x#_he fast feedback is very important to help the
+team to think about the outcomes and provide solutions.Testing allows continuous improvements in the releases ofthe deployable prototype.
+3.2. Implementation of the Proposed System. Our iOS-based
+mobile learning system, as described in the framework sec-
+tion, consists of the clients, web application, desktop appli-cation,database,andtheserver.Toensuresystemportability,eﬃciency,andmaintainability,eachsubsystemusingdiﬀerentsoftware technology is constructed. x#_hese subsystems werelaterconnectedusingadynamiclinklibrary.Afterdeveloping
+the application, we ran it several times on the simulator and
+actual devices to conﬁrm the functionality of the diﬀerentunits. x#_hen, we installed the application on a real mobiledevice for debugging. x#_he testing was done on iPhone 6mobile phone. x#_he system was implemented according tostakeholder’s requirement speciﬁcations. Rigorous ﬁne-tuning and iterative features of Agile were used. x#_he ﬁrstversion of the app was developed for iOS operating systemusers. Easy-Edu app is released on Apple App Store.ObtainingEasy-Eduisfreeandrequiresregistrationbyusers.
+Figures 6 and 7 show snapshots of the homescreen in
+professor view and the student view. x#_he Easy-Edu systemadministrator is responsible for setting up the courses andmanagingusers.x#_heprofessor,aftersigningupasanewuserand securing authentication, can set his/her proﬁle andselect his/her course. Afterward, the professor throughwindows forms application can upload learning resourcesandalsocanaddquestionsandanswerstothequestionspoolwhich is used at scenario-based questions. x#_hrough thedashboardwebapplication,theprofessorcanwriteandsendannouncements,seestudent’sgradesinthequizzes,approve
+Students
+databaseCourses
+databaseMaterials
+databaseQuestions
+database
+StudentsEasy-Edu mobile learning system
+Learning system
+Discussion and collaboration area
+Learning materials area
+Adaptive scenario based questions area
+Feedback
+Notification and announcementFigure3: x#_he structure and functions of Easy-Edu system.
+Agile
+model2-plan
+3-design
+4-develop
+5-release6-track & monitor1-requirements
+Figure4: x#_he Agile model.6 EducationResearchInternationalquestionsfromstudentstobeaddedtothecommunity,and
+read feedback messages from students. x#_hrough the mobileapp “Easy-Edu,” the professor is able to engage with thestudents by choosing correct answers of questions added tothe community and also can see ﬂags from students whowanttheirquestionstobeaddedtothequestionspool,andiftheprofessorseesanewuniquequestion, itcanbe addedtothequestionspoolbyadding4answersandsendingittothequestions pool. x#_hus, that answers our ﬁrst and secondresearch questions.x#_he students would similarly need to obtain authenti-
+cation and then access the mobile learning platform. Au-thentication is mandatory to protect the professor andstudent works, copyrights, privacy, and the identiﬁcation ofstudents [37]. Users are able to change their own passwordto log into the system.
+Scenario-based questions module supports a student
+with two scenarios and each scenario with three diﬀerentadaptive levelsof diﬃculty. x#_he ﬁrst scenario: the studentimaginesthathe/sheﬁnishedthecourseandwantstotest
+Team communication and ownership
+give continuous feedback
+Iterative delivery
+Continuous testing
+and reviewing
+Deployeble prototype
+Changing requirementsIterative planning
+Adaptive teamsFigure5: Implementing the Agile approach in Easy-Edu.
+Figure6: Home screen (professor view).
+ Figure7: Home screen (student view).EducationResearchInternational 7his/her own skills; the second scenario: the student
+imagineshim/herselfasajobseekersohe/shewillgoandanswer interview questions to see if he/she can join acompany. x#_hese scenarios help the student achieve betterlearning outcomes and place them in the learning envi-ronment center.
+Figure8showsthescreenoftheﬁrstscenariostorytelling
+so the student feels him/herself inside the scenario andanswer the questions. As shown in Figure 9, the questionsscreen, the student answers the scenario questions for the
+level that was chosen. Each level consists of 10 multiple
+choice questions type which comes randomly from thequestions pool.
+x#_he proposed system is adaptive enough to sense the
+students’ skills. It could automatically transient students tohigher levels once the student answers most questionscorrectly. In fact, adding this feature would be attractive tomanymotivatedlearnerswhomayfeelboredwithlowlevels.x#_herefore, in our system, if the student correctly answeredthe ﬁrst ﬁve questions and in that case, a pop-up messageappears to the student and asks if he/she wants to go to the
+higher level or stay at the same level. Finally, results with
+percentage are shown to students with a human face thatfeels happy/sad according to their answers as shown inFigure 10. Also, he/she can check back the answers to learnfrom his/her mistakes in the future. x#_hus, this answers ourthird research question which is: how to change questions’
+level in the test and adapt according to the learners’intelligence?
+x#_hrough the Content module, the students can choose
+the course and then see the professors’ teaching materials,suchasPDFs,videos,ande-books.Studentscanaccessthesematerials on the go easily as shown in Figures 11–13, re-spectively. To answer the fourth research question on how
+Figure8: Scenario storytelling.
+ Figure9: Multiple choice questions.
+Figure10: Results of the test.8 EducationResearchInternationalstudents ask questions easily and collaborate with each
+other,Ask Questions module was made to support students’
+teamworkandcollaboration,whereeachstudentcanaskthe
+question, other students can answer, and the professor in-teracts with them and check the correct answer and mark itas correct so the rest of students know the right answer.Students’ questions cannot be added directly to the com-munity;itneedsprofessor’sapprovalﬁrst.Professorreceivesand views the questions at the dashboard web applicationand then he/she has the right to add or discard a questionwhen it is not an appropriate one. x#_he Announcement
+moduleistopassinformationaboutcourseactivities,lecture
+time, and other news. x#_he Easy-Edu system is an all-
+inclusive system that supports collaborative and blendedlearning for a large number of students.
+4.Easy-Edu Capabilities against Other Systems
+Mobile learning apps can be criticized by their availability,sciencecontent,andtype.x#_heavailabilityofthemobileappsis explored through several factors, including the app de-veloper, whether it was publicly accessible, and whether the
+platform recent or not. Mobile apps developed for older
+platforms, such as PDAs or hand-held/pocket PCs, are nolonger being used by the general public. However, morerecentplatformssuchassmartphones,tablets,andiPodsaredeveloped.Mostappsareeitherdirectlyincludedcontentforsciencelearningorprovidedinacustomizabletemplatethatwas enriched with science content. Fourbroad categoriesofapps,includingplace-baseddatacollectiontools,gamesand/or simulations, learning management systems (LMS), andproductivity tools are listed in Table 2. Table 2 presents thegeneral characteristics and application features of a numberof surveyed mobile apps compared with our proposedsystem.
+Figure12: Course material.
+ Figure11: Diﬀerent courses.
+Figure13: PDF book.EducationResearchInternational 9Table2: General characteristics and features of mobile apps.
+ResearchersDeveloped
+by
+researchersPublicly
+accessibleRecent
+platformApp
+typeOﬀer
+learning
+contentProvide
+attractive
+UIDiscussion
+collaborative
+forumAdaptive
+questions and
+quizzesProfessors
+involve with
+studentsNotiﬁcation
+and
+announcementChecking
+previous
+scoresSend
+feedback to
+the professorHas
+control
+panel
+Lim [29]✓ 7✓LMS✓ 7 7 7✓ 7 7 7 7
+Moreira and
+Ferreira [23]✓ ✓ ✓ LMS✓ ✓ 7 7 7 7 7 7 7
+Wen and Zhang[22]✓ 7✓LMS 7 7 7 7 7 7 7 7 7
+Tamhane et al.[28]✓ ✓ ✓ LMS✓ ✓ 7 7 7 7 7 7 7
+Prenner et al.
+[26]✓ 7 7 S✓ 7 7 7 7 7 7 7 7
+Vinay et al. [25]✓ 7 7 G 7 7 7 7 7 7✓ 7 7
+Boticki et al.
+[21]✓ ✓ ✓ Pr✓ ✓ 7 7✓ 7 7 7 7
+Mbogo et al.[20]NS 7✓LMS 7 7 7 7 7 7 7 7 7
+Shanmugapriyaand Tamilarasi
+[24]✓ 7✓LMS✓ 7 7 7 7 7 7 7 7
+Proposed Easy-Edu✓ ✓ ✓LMS/
+Pr✓ ✓ ✓ ✓✓✓✓✓ ✓
+Note.S�simulation; G �game; LMS �learning management system; Pr �productivity; NS �not speciﬁed.10 EducationResearchInternationalx#_hesecommonfeatures,whichareconsideredimportant
+for mobile apps, either addressed a common issue with
+mobile learning, such as reducing potential cognitiveoverload, or took advantage of the aﬀordability of mobiletechnology.
+5.Potential Impact and Preliminary Results of
+the Proposed System
+x#_he proposed system is expected to help students com-municate with each other and with their educators, make iteasy to access the learning materials, help the students toparticipate in the exam development and the educationalprocess, adapt to the learners’ intelligence by changing thediﬃculty of questions in the quizzes, and collaborate insolving questions and problems through the discussionmodule.
+To evaluate the impact of using the Easy-Edu, we con-
+ducted an experiment on students participating in the C#programming course at the Information Technology In-stitute (ITI), Mansoura University, Egypt. “Easy-Edu” wasused as a technology tool for administering the course,supporting students’ learning experience and engagement.
+x#_he participants of this study were 100 students taught
+bythesameprofessor.Afterstudyingthebasicknowledgeofprogramming in a C# programming course, these partici-pantswererandomlyassignedintotwogroupstoparticipateseparately in two diﬀerent teaching methods. x#_he partici-
+pants of the experimental group used Easy-Edu mobile
+learning system and the control group depending on thetraditional face-to-face learning. To check if there is animprovement in students’ learning achievement after usingEasy-Edu, ﬁrst, the pre- and posttest data were analyzed.Pretest examined the level of basic knowledge about C#programming in each group by independent t-test; some
+preliminary results showed that the two groups are equiv-alent. x#_he pretest mean and standard deviation for theexperimental group were (M �18.5600, SD �1.76311) andthe control group were (M �18.6000, SD �1.60357). x#_here
+was no signiﬁcant diﬀerence in the reported pretest resultsfor students who are in the control group and the experi-mental group (T (98) �0.119, P�0.906, P>0.05). x#_his
+meansthatthetwogroupshavethesamelevelofknowledgeat the beginning of the course, as shown in Figure 14.
+Fromtheposttestscores,wefoundthattheexperimental
+group’s average learning performance and achievement aresigniﬁcantly better than students in the control group (theexperimentalgroup(M �48.1200,SD �1.66157);thecontrol
+group(M �43.5600,SD �3.08492)). x#_hisshowsthattheuse
+of Easy-Edu has helped to improve students’ learningachievement (Figure 15).
+x#_hedetailed study will be continued in the next research
+paper to describe the learning achievement, perceptions, andpedagogical experiences of learners using “Easy-Edu” system.Experimental data will be collected and analyzed from in-terviewsandaquestionnairewhichwillbegiventothestudents.
+6.Conclusion and Future Work
+Developing multiobjective mobile learning applications is
+a big challenge. In this paper, a mobile learning appli-cation named “Easy-Edu” that would serve in Egyptianhigher education has been presented. x#_he developmentprocess of Easy-Edu system, an iOS version of theM-learning application, has been reported. It would be asolution to a large number of students in Egyptian uni-versities. BasedonAgilemethodology,theﬁrstversionof
+Easy-Edu app has been designed and implemented. Easy-
+Edu supports blended and collaborative learning withdiﬀerent functions that help learners to interact withcourse materials easily, eﬀectively, and eﬃciently. x#_hisproposed system is evaluated by computer science stu-dents at the Information Technology Institute, MansouraUniversity.
+Toanswer the ﬁrst research question “How to make
+the students participate in the educational process andexam development?” students can ask questions in the
+20.00
+15.0010.00
+5.000.00Mean pre_test_score
+Contol_group
+Students_groupExperimental_groupFigure14: Pretest results.EducationResearchInternational 11discussionmoduleandraiseaﬂagsotheprofessorcansee
+the ﬂags from students who want their questions to beaddedtothequestionspoolwhichtheexamcomesfrom.Ifthe professor sees a unique question, he/she can add 4diﬀerent answers to that question and send it to thequestions pool. x#_hat helps students participate in de-veloping exam questions and to have that ability to share
+ideas with their educators.
+Toanswer the second research question “How to make
+the educators communicate with the students and vice
+versa?” students can ask diﬀerent questions in the dis-cussionmodulewhileotherscananswer;professor’sruleisto check the answers of the students and mark the correctanswer with a right sign, so students can see which is theright answer. Also, students can send the professors amessage with their feedback about the subject they arestudying.
+To answer the third research question “How to change
+questions’ level in the test and adapt according to thelearners’intelligence?”Easy-Eduisadaptiveaccordingtothestudents’ skills. It could automatically move students fromlower level to a higher level once the student answers mostquestions correctly. It is attractive to many motivatedlearners who may feel bored with low levels.
+Toanswer the fourth research question “How to make
+students ask questions easily and collaborate with eachother?” discussion module was made to support students’teamwork and collaboration, where each student can askthe question easily, other students can answer, and the
+professor can help them mark the correct answer, so the
+rest of students know the right answer.
+Since the Agile process is based on iterations, the future
+work will include the improvement and reﬁnement of thesystem. x#_he future work will include improving the contentof the system by adding more modules and other questiontypes like ﬁll in the blank or true/false questions. Addi-tionally, the system will be cross-platform so it can workacross multiple types of platforms/operating system envi-ronments such as Android and Windows phone.Data Availability
+x#_he data supporting this research and thatused to build thesystem are from previously reported studies and datasets,which have been cited.
+Conflicts of Interest
+x#_he authors declare that there are no conﬂicts of interestregarding the publication of this paper.
+References
+[1] Egyptian Central Agency for Public Mobilization and Sta-
+tistics,” http://www.capmas.gov.eg/Pages/Publications.aspx.
+[2] J. Alden, “Accommodating mobile learning in college pro-
+grams,”Journal of Asynchronous Learning Networks, vol. 17,
+no. 1, pp. 109–122, 2013.
+[3] J. M. Zydney and Z. Warner, “Mobile apps for science
+learning:reviewofresearch,” Computers&Education,vol.94,
+pp. 1–17, 2016.
+[4] A. Trifonova and M. Ronchetti, “Where is mobile learning
+going?,” in Proceedings of E-Learn: World Conference on
+E-LearninginCorporate,Government,Healthcare,andHigher
+Education, Phoenix, AZ, USA, 2003.
+[5] T. Georgiev, E. Georgieva, and A. Smrikarov, “M-learning-a
+new stage of Flearning,” in Proceedings of International
+Conference on Computer Systems and Technologies(CompSysTech), Rousse, Bulgaria, June 2004.
+[6] C. Quinn, mLearning: Mobile, Wireless, in Your Pocket
+Learning, Line Zine, Fall 2000, VA, USA, 2000, http://www.linezine.com/2.1/features/cqmmwiyp.html.
+[7] M. Sharples, J. Taylor, and G. Vavoula, “Towards a theory of
+mobilelearning,”in ProceedingsofmLearn,CapeTown,South
+Africa, October 2005.
+[8] R. Andrews and C. Haythornthwaite, “Introduction to
+e-learning research,” in HT_he SAGE Handbook of e-Learning
+Research, pp. 1–52, SAGE, x#_housand Oaks, CA, USA, 2007.
+[9] H. Kyn ¨aslahti, “Mobile learning,” in Search of Elements of
+Mobility in the Context of Education, pp. 41–48, IT Press,
+Helsinki, Finland, 2003.
+50.00
+40.0030.0020.0010.00
+0.00Mean post_test_scores
+Contol_group
+Students_groupExperimental_groupFigure15: Posttest results.12 EducationResearchInternational[10] P. Dillenbourg, “Collaborative learning: cognitive and com-
+putational approaches,” in Advances in Learning and In-
+struction Series, ERIC, New York, NY, USA, 1999.
+[11] L.Cen,D.Ruta,L.Powell,B.Hirsch,andJ.Ng,“Quantitative
+approach to collaborative learning: performance prediction,
+individualassessment,andgroupcomposition,” International
+Journal of Computer-Supported Collaborative Learning,vol. 11, no. 2, pp. 187–225, 2016.
+[12] M. M. Chiu, “Group problem-solving processes: social in-
+teractions andIndividual actions,” Journal for the HT_heory of
+Social Behaviour, vol. 30, no. 1, pp. 26–49, 2000.
+[13] M. M. Chiu, “Flowing toward correct contributions during
+group problem solving: a statistical discourse analysis,”Journal of the Learning Sciences, vol. 17, no. 3, pp. 415–463,2008.
+[14] R. Mitnik, M. Recabarren, M. Nussbaum, and A. Soto,
+“Collaborative robotic instruction: a graph teaching experi-
+ence,”Computers & Education, vol. 53, no. 2, pp. 330–342,
+2009.
+[15] Y.-T. Sung, K.-E. Chang, and T.-C. Liu, “x#_he eﬀects of in-
+tegrating mobile devices with teaching and learning on stu-dents’ learning performance: a meta-analysis and research
+synthesis,” Computers & Education, vol. 94, pp. 252–275,
+2016.
+[16] D. Kiger, D. Herro, and D. Prunty, “Examining the inﬂuence
+of a mobile learning intervention on third grade math
+achievement,” JournalofResearchonTechnologyinEducation,
+vol. 45, no. 1, pp. 61–82, 2012.
+[17] S. S. Oyelere, J. Suhonen, S. A. Shonola, and M. S. Joy,
+“Discovering students’ mobile learning experiences in highereducationinNigeria,”in ProceedingsofFrontiersinEducation
+Conference (FIE), October 2016.
+[18] T. Leinonen, A. Keune, M. Veermans, and T. Toikkanen,
+“Mobile apps for reﬂection in learning: a design research in
+K-12 education,” British Journal of Educational Technology,
+vol. 47, no. 1, pp. 184–202, 2014.
+[19] E. Anohah, S. S. Oyelere, and J. Suhonen, “Trends of mobile
+learning in computing education from 2006 to 2014,” In-
+ternational Journal of Mobile and Blended Learning, vol. 9,
+no. 1, pp. 16–33, 2017.
+[20] C. Mbogo, E. Blake, and H. Suleman, “A mobile scaﬀolding
+application to support novice learners of computer pro-gramming,” in Proceedings of the Sixth International Con-
+ferenceonInformationandCommunicationsTechnologiesandDevelopment, vol. 2, Cape Town, South Africa, December
+2013.
+[21] I.Boticki,A.Barisic,S.Martin,andN.Drljevic,“Teachingand
+learning computer science sorting algorithms with mobile
+devices: a case study,” Computer Applications in Engineering
+Education, vol. 21, no. S1, pp. E41–E50, 2013.
+[22]C.WenandJ.Zhang,“Designofamicrolecturemobilelearning
+system based on smartphone and web platforms,” IEEE
+Transactions on Education, vol. 58, no. 3, pp. 203–207, 2015.
+[23] F. Moreira and M. J. Ferreira, “Teaching and learning
+modeling and speciﬁcation based on mobile devices and
+cloud,”in Proceedingsof 11thIberianConferenceInformation
+Systems and Technologies (CISTI), Gran Canaria, Spain, June2016.
+[24] M. Shanmugapriya and A. Tamilarasi, “Developing a mobile
+courseware for ICT students using problem based learning
+approach,” in Proceedings of International Journal of In-
+novative Research in Computer and Communication
+Engineering, India, 2013.[25] S.Vinay,M.Vaseekharan,andD.Mohamedally,“RoboRun:a
+gamiﬁcation approach to control ﬂow learning for young
+students with TouchDevelop,” 2013, https://arxiv.org/abs/
+1310.0810.
+[26]G. Prenner, A. Rotheneder, and E. Schikuta, “Netluke: web-based teaching of algorithm and data structure concepts har-
+nessing mobile environments,” in Proceedings of the 16th In-
+ternational Conference on Information Integration and Web-basedApplications&Services,Hanoi,Vietnam,December2014.
+[27] J. Potts, N. Moore, and S. Sukittanon, “Developing mobile
+learning applications for electrical engineering courses,” inProceedingsofIEEESoutheastcon,Nashville,TN,USA,March
+2011.
+[28] K. Tamhane, W. T. Khan, S. R. Tribhuwan, A. Burke, and
+S. Take, “Mobile learning application,” International Journal
+of Scientiﬁc and Research Publications, vol. 5, no. 3, pp. 1–4,2015.
+[29] W. N. Lim, “Improving student engagement in higher edu-
+cationthroughmobilebasedinteractiveteachingmodelusing
+socrative,” in Proceedings of IEEE Global Engineering Edu-
+cation Conference (EDUCON), Athens, Greece, April 2017.
+[30] K. Conboy and L. Morgan, “Beyond the customer: opening
+the agile systems development process,” Information and
+Software Technology, vol. 53, no. 5, pp. 535–542, 2011.
+[31] T.Dingsøyr,S.Nerur,V.Balijepally,andN.B.Moe, ADecade
+of Agile Methodologies: Towards Explaining Agile Software
+Development, Elsevier, Amsterdam, Netherlands, 2012.
+[32] J. Highsmith, Agile Project Management: Creating Innovative
+Products, Pearson Education, London, UK, 2009.
+[33] A. Moran, “Agile project management,” in Managing Agile,
+Springer, Cham, Switzerland, 2015.
+[34] RTI, HT_he Economic Impacts of Inadequate Infrastructure for
+SoftwareTesting,RTI,ResearchTrianglePark,NC,USA,2002.
+[35] Ron Eringa, Managing Defects in an Agile Environment, Ron
+Eringa, Susteren, Netherlands, 2017.
+[36] K. Schwaber and J. Sutherland, HT_he Scrum Guide, Scrum.org
+and Scrum Inc., Boston, MA, USA, 2013.
+[37] S.A.ShonolaandM.S.Joy,“SecurityofM-learningsystem:a
+collective responsibility,” International Journal of Interactive
+Mobile Technologies (iJIM), vol. 9, no. 3, pp. 64–70, 2015.EducationResearchInternational 13 Child Development 
+Research
+Hindawi
+www.hindawi.com Volume 2018
+Education  
+Research International
+Hindawiwww.hindawi.com Volume 2018
+Hindawiwww.hindawi.com Volume 2018Psychiatry 
+Journal
+Hindawi
+www.hindawi.com Volume 2018Pathology  
+Research International
+Alzheimer’s Disease
+Hindawiwww.hindawi.com Volume 2018International Journal of
+Hindawi
+www.hindawi.com Volume 2018Research and TreatmentSchizophrenia
+Hindawi
+www.hindawi.com Volume 2018Urban Studies 
+Research
+Population ResearchInternational Journal of
+Hindawi
+www.hindawi.com Volume 2018
+Hindawiwww.hindawi.com Volume 2018Parkinson’s 
+Disease
+Aging ResearchJournal of
+Hindawi
+www.hindawi.com Volume 2018
+Hindawi
+www.hindawi.com
+ Volume 2018
+Nursing
+Research and Practice
+Current Gerontology
+& Geriatrics Research
+Hindawi
+www.hindawi.comVolume 2018
+Sleep Disorders
+Hindawi
+www.hindawi.com Volume 2018
+AddictionJournal of
+Hindawiwww.hindawi.com Volume 2018
+Depression Research 
+and Treatment
+Hindawi
+www.hindawi.com Volume 2018
+Hindawiwww.hindawi.com Volume 2018Pain
+Research and Management
+Hindawi
+www.hindawi.com Volume 2018Research and TreatmentAutism
+Hindawi
+www.hindawi.com Volume 2018Behavioural 
+Neurology
+Biomedical EducationJournal of
+Hindawi
+www.hindawi.com Volume 2018Submit your manuscripts at
+www.hindawi.com

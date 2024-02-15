@@ -1,0 +1,963 @@
+RESEARCH ARTICLE Open Access
+Investigating usability of mobile health
+applications in Bangladesh
+Muhammad Nazrul Islam1*, Md. Mahboob Karim1, Toki Tahmid Inan1and A. K. M. Najmul Islam2
+Abstract
+Background: Lack of usability can be a major barrier for the rapid adoption of mobile services. Therefore, the
+purpose of this paper is to investigate the usability of Mobile Health applications in Bangladesh.
+Method: We followed a 3-stage approach in our research. First, we conducted a keyword-based application search
+in the popular app stores. We followed the affinity diagram approach and clustered the found applications into
+nine groups. Second, we randomly selected four apps from each group (36 apps in total) and conducted a heuristic
+evaluation. Finally, we selected the highest downloaded app from each group and conducted user studies with 30
+participants.
+Results: We found 61% usability problems are catastrophe or major in nature from heuristic inspection. The most
+(21%) violated heuristic is aesthetic and minimalist design. The user studies revealed low System Usability Scale
+(SUS) scores for those apps that had a high number of usability problems based on the heuristic evaluation. Thus,
+the results of heuristic evaluation and user studies complement each other.
+Conclusion: Overall, the findings suggest that the usability of the mobile health apps in Bangladesh is not
+satisfactory in general and could be a potential barrier for wider adoption of mobile health services.
+Keywords: Mobile health, Usability, Usability evaluation, System usability scale, Bangladesh, mHealth applications,
+Health informatics, Human-computer interaction (HCI)
+Background
+Digitalization can play an important role in delivering
+health services to individuals and communities. Hospitals
+have been digitalizing their services and renovating the
+whole process of health care. Digitalization not only helps
+to improve patient safety and satisfaction but also keeps
+health statistics of the population up-to-date. Since an
+approximate of 6 billion people (around 75% of the world
+population) have access to mobile phones, mobile health
+applications have become an important channel for pro-
+viding healthcare services by healthcare service providers
+[1]. Therefore, mHealth (mobile health) as a field of
+research has become prominent in recent years. In
+general, the term mHealth refers to the practice of using
+mobile devices in health care services [ 2]. The Global
+Observatory for eHealth defines mHealth as “medical and
+public health practice supported by mobile devices, such asmobile phones, patient monitoring devices, personal digital
+assistants (PDAs), and other wireless devices ”[3]. The
+mHealth applications include the use of mobile devices to
+improve the process of medical data collection [ 4], service
+delivery [ 5], patient-doctor communication [ 6], and real-
+time monitoring and adherence support [ 7].
+The mHealth applications have even been widely used
+in the remote villages of developing countries [ 8]. For
+example, doctors in Tanzania can use Afya Mtandao
+(Swahili for Health Network) network from anywhere in
+the country even during the surgical operation through
+mobile phones [ 9]. United States Agency for Inter-
+national Development (USAID) has built the foundation
+of Mobile Alliance for Maternal Action (MAMA), a
+support for the development of a health informatics
+network for maternal patients using mobile phones.
+Monitoring and Evaluation to Assess and Use Results
+(MEASURE) is another US (United States) funded pro-
+ject that focuses mainly on the development of mobile
+platforms for monitoring health in developing countries
+© The Author(s). 2020 Open Access This article is distributed under the terms of the Creative Commons Attribution 4.0
+International License ( http://creativecommons.org/licenses/by/4.0/ ), which permits unrestricted use, distribution, and
+reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to
+the Creative Commons license, and indicate if changes were made. The Creative Commons Public Domain Dedication waiver
+(http://creativecommons.org/publicdomain/zero/1.0/ ) applies to the data made available in this article, unless otherwise stated.* Correspondence: nazrul@cse.mist.ac.bd
+1Department of Computer Science and Engineering, Military Institute of
+Science and Technology, Dhaka 1216, Bangladesh
+Full list of author information is available at the end of the article
+Islam et al. BMC Medical Informatics and Decision Making           (2020) 20:19 
+https://doi.org/10.1186/s12911-020-1033-3[10]. Most of these mHealth services in developing
+countries rely on text messaging [ 10] in health related
+issues such as HIV (human immunodeficiency virus)
+prevention [[ 11–14]]. These messages are also used to
+bridge the community and the health worker [ 15].
+In Bangladesh, a number of initiatives on mHealth have
+already been taken by the government and the non-
+government organizations. These include developing mo-
+bile applications for health care service delivery, personal
+health tracking, remote consultation, and information de-
+livery. However, the outcomes of these initiatives are not
+well understood. There has been very little research in the
+mHealth domain of Bangladesh. There are a few studies,
+which mainly focused to assess the opportunities, and
+challenges of using Information Technology in the health
+sector of Bangladesh [ 16–19]. However, very few studies
+have been conducted that evaluate the mHealth applica-
+tions in Bangladesh in terms of usability. Usability is de-
+fined as the effectiveness, efficiency, and satisfaction with
+which users achieve specified goals in a specific context of
+use [ 20]. Usability is one of the key quality attributes for
+the successful development and adoption of mHealth apps
+like any other digital applications [ 21–24] . Therefore, the
+objective of this research is to understand the state of the
+art of the mHealth applications developed in Bangladesh,
+and to assess the overall usability of these applications.
+Consequently, this paper addresses the following research
+questions:
+How usable are the mHealth applications in Bangladesh?
+Does the usability vary depending on the type of
+applications?
+To attain this research objective, this paper follows a
+3-stage research process: systematic application review,
+expert inspection, and user studies. The findings suggest
+that the usability of the mHealth apps in Bangladesh is
+not satisfactory in general. Based on the findings, the
+paper provides several actionable guidelines for the
+practitioners.
+ICT (Information and Communication Technology) in
+healthcare services has brought revolutionary changes by
+enhancing service quality, ensuring safety and clinical
+effectiveness. Research on health informatics, in the
+form of mHealth, has gained much attention [ 25]. A
+synopsis on the impact of mobile applications in public
+health can be found in the study of Fiordelli et al. [ 25].
+They reviewed mHealth related studies published be-
+tween 2002 and 2012 and found that mHealth services
+are mostly focused on chronic conditions. They also
+found a lack of mHealth related studies in Asia. In fact,
+very few studies have been conducted on the influence
+and adequacy of mHealth services in developing
+countries like Bangladesh.In order to understand the influence of mHealth on
+public health services, Ahmed et al. [ 19] studied the
+existing eHealth and mHealth enterprises and
+assessed their prospects in Bangladesh. They found
+that tele-consultation, prescription, and referral are
+the most common initiatives. They also suggested that
+the availability of trained health care professionals,
+capacity building, research support, and experience
+factors sharing are the key for promoting and imple-
+menting mHealth services in Bangladesh. In another
+study, Prodhan et al. [ 26] investigated the telemedi-
+cine initiatives and their interoperability. They found
+that most of the initiatives have different formats of
+data. Different data format along with lack of proper
+data storage facilities greatly affect the interoperability
+among the existing health care services. They further
+found that most of these projects work well at the
+beginning, but fail in the long run due to lack of
+publicity and user acceptance. Thus, they recommend
+for a standard data storage policy as well as a proper
+awareness program to increase the usage of telemedi-
+cine services.
+Ahsan et al. [ 27] conducted a survey on the sub-
+scribers of Aponjon , an app that serves pregnant women
+or new mother. This study concludes that mHealth can
+significantly contribute to improving health status. Prue
+et al. [ 28] found that mobile phone services could assist
+health professionals by rapidly detecting and treating
+patients with Malaria in a remote area in Bangladesh.
+Khatun et al. [ 29] conducted a survey on 4915 randomly
+selected personals and proposed a framework to assess
+the community readiness (in terms of technological, mo-
+tivational and resource) towards mHealth services in
+Bangladesh. The study found that the community has
+access to mHealth services, but a noticeable gap is
+present between the users ’readiness and technological
+competencies. In another study, Khatun et al. [ 30]r e a f -
+firmed this framework by conducting 37 in-depth inter-
+views with the aim to identify the potential obstacles and
+possible solutions for mHealth services in Bangladesh.
+Similarly, another in-depth interview study was conducted
+by Eckersberger et al. [ 31] to explore if women are inter-
+ested to receive text messages on their phone for contra-
+ceptive use and family planning in Bangladesh. Huda et al.
+[32] explored the feasibility, acceptability, and perceived
+appropriateness of using the mobile phone (in a poor rural
+community in Bangladesh) to receive a voice message, dir-
+ect counselling, and unconditional cash transfers to pro-
+vide food and nutrition guide during pregnancy and the
+first year of a child ’s life. The study found that most of the
+mothers did not feel any major problem to operate mobile
+phones and the mothers provided very positive feedbacks
+that support the feasibility, acceptability, and appropriate-
+ness of the mobile messaging program.Islam et al. BMC Medical Informatics and Decision Making           (2020) 20:19 Page 2 of 13A few studies also discussed the design, development,
+evaluation of mobile health applications. For example,
+Islam et al. [ 33] discussed the design and development
+of a mHealth application named DiaHealth . They exam-
+ined the diabetes related health apps and extracted the
+most important features for developing DiaHealth app
+for diabetes. In another study, Shermin et al. [ 34] briefly
+discussed VirtualEyeDoc app and its effectiveness. This
+app is designed in Bengali language to help Bangladeshi
+people to identify their vision problem and maintain
+good eye health. Zaman & Mamun [ 35] designed a pre-
+ventive app for cardiovascular diseases and depicted the
+importance of such app in Bangladesh. Hoque et al. [ 36]
+developed a mobile-based remote monitoring system to
+aid the palliative care treatment for rural breast cancer
+patients in Bangladesh. Khan et al. [ 37] designed a
+mHealth app, PurpleAid for the women of Bangladesh.
+The app is designed to diagnose women specific diseases
+and provide suggestions to prevent and cure.
+A number of studies also investigated the adoption and
+post-adoption of mHealth applications in Bangladesh. For
+example, Hoque et al. [ 38] proposed a theoretical model
+that predicts behavioral intention to adopt mHealth appli-
+cations of the elder citizens in Bangladesh. They used the
+Unified Theory of Acceptance and Use (UTAUT) model
+and derived a set factors of mHealth acceptance in
+Bangladesh. The factors include gender, the experience of
+using a mobile phone, performance expectancy, effort ex-
+pectancy, social influence, facilitating condition, hedonic
+motivation, price, and habit. Akhter et al. [ 39] developed a
+service quality model in the context of mHealth services
+by framing its relationship with satisfaction, continuance
+intention and quality of life. In another study, Akhter et al.
+[40] developed an mHealth continuance model by incorp-
+orating the role of service quality and trust.
+Finally, only a few studies investigated usability and
+user experience of mHealth services. Haque et al. [ 36]
+developed a mobile application for breast cancer patients
+in Bangladesh by following a participatory design
+process involving both patients and doctors. They also
+explored the key quality of such kind of system to accept
+and adopted by users of Bangladesh. The study found
+that the quality of such a system might depend on us-
+ability (effectiveness, efficiency, satisfaction) and sustain-
+ability. In another study, Bhuiyan et al. [ 41] proposed an
+SMS (short message service) based immunization system
+and then valuated the usability of a SMS alert system for
+immunization. Two approaches were used to test the us-
+ability: (a) system centric that measures the availability,
+localizability, supportability, security, and technical feasi-
+bility of the mHealth service; and (b) human centric that
+measures the knowledge of usage, learnability, memor-
+ability, and satisfaction of the user. As outcome, this
+usability study found that the SMS alert system waseffective to the end users, found very easy to use, Learn
+ability, reliability and satisfaction rate was also higher,
+and the participants were willing to use the proposed
+system instead of manual system, which indicate the
+overall efficacy and efficiency of the proposed SMS
+based immunization system.
+Taken together, our literature review indicates that us-
+ability has not been the key focus in most prior research
+conducted in Bangladesh.
+Methods
+We followed a 3-stage research approach to achieve the
+research objectives. Stage I aimed to provide the present
+status of developed mHealth applications and the other
+two stages ( Stage II and Stage III ) aimed to assess the
+usability of mHealth applications in Bangladesh. These
+stages were carried out in sequential order. In stage I, all
+mHealth applications developed for the users/citizens of
+Bangladesh were investigated to extract data related to
+their functionalities/features and targeted users. The ex-
+tracted data were analyzed to provide the present status,
+as well as create categories of mHealth applications in
+Bangladesh. In Stage II , we carried out expert inspec-
+tions [ 42] on a number of selected apps. The set of
+heuristics to conduct the expert inspection were ex-
+tracted and synthesized from the existing literature.
+The expert inspections were carried out by three
+Human-Computer Interactio n (HCI)/usability experts.
+Each expert evaluated each of the 36 selected applica-
+tions. Finally, in Stage III , a survey was conducted to
+get feedback scores from users using System Usability
+Scale (SUS) [ 43]. We evaluated 9 mHealth applica-
+tions in this stage. The feedback scores were collected
+from 30 participants. An overview of the research
+method is shown in Fig. 1. The detailed discussions
+of each stage along with the findings are discussed in
+the following sections.
+Stage I: app review
+This stage of research was aimed to investigate the exist-
+ing mHealth apps in Bangladesh. We conducted the
+following two sequential steps in this stage.
+Application search
+We performed keywords based search in the popular
+app stores: Google Play, Apple App Store, Windows
+Phone Marketplace, and Blackberry App World during
+the period of March 2018 –April 2018. The keywords
+are ‘Mobile health Bangladesh ’,‘Apps for healthcare
+Bangladesh ’,‘Fitness Bangladesh ’,‘Doctor Bangladesh ’,
+‘Health Tracker Bangladesh ’,‘Bangladesh Health Doctor ’,
+‘Healthy Bangladesh ’,‘Digital Health Bangladesh ’,
+‘Bangla Health Guide ’,‘Healthy Bangladesh Citizens ’,
+‘Pocket Medicine Bangladesh ’,a n d ‘Bangladesh healthIslam et al. BMC Medical Informatics and Decision Making           (2020) 20:19 Page 3 of 13care ’. Each app appeared in the search results was
+checked meticulously to ensure whether the applica-
+tion is for health care service and targeted for the
+users from Bangladesh.
+Analysis and results
+We found 234 mobile health applications that are
+developed for the users of Bangladesh. These apps
+were analyzed to understand the present status of
+mobile health applications in Bangladesh from three
+perspectives: health services covered by the mobile
+applications and targeted end users of these
+applications.
+Clustering mHealth apps Each app was analyzed to ex-
+tract information related to its functionalities or features.
+The functionalities of the mHealth apps were analyzed
+through an affinity diagram [ 44]. All four authors of this
+article participated in the clustering process in two inde-
+pendent expert groups. First, the apps were stack in
+different or similar cluster based on its functionalities by
+the two expert groups. Second, the expert groups added
+cluster headers. Third, the expert groups drew the affin-
+ity diagram by organizing these on the board and then
+expert groups reviewed the clusters and relations be-
+tween the clusters and then modified the diagram where
+needed. Finally, these two sets of diagrams were analyzed
+by all experts to prepare one affinity diagram and come
+up with the final clusters.
+At the end of the process, we found nine clusters:
+General Health Informative Apps, Institutional Apps,
+Fitness Apps, Physician Information, Mother & Child,
+Disease Specific Care App, Food & Nutrition, Herbology,
+and Homeopathic. The number of applications in each
+cluster is presented in Table 1. We found that one third
+of the total apps were developed to provide information
+related to health care, followed by institutional apps
+(12%). 10% of the apps were related to physician infor-
+mation whereas, another 10% was related to body fitness.Similarly, 9% of apps were related to mother & child,
+whereas, another 9% was related to herbology. Finally,
+food & nutrition accounted for 7%, disease specific care
+apps accounted for 5%, and homeopathic accounted for
+4% of the total apps.
+General Health Informative Apps provide generic in-
+formation related to the health. Example apps in this
+category includes Patient Aid, and Bangla Health Guide.
+Physician Information apps provide information about
+doctors including their expertise, appointment proced-
+ure, contact information, hospital locations, and treat-
+ment time. This category includes apps such as Practical
+Diagnosis and Management, Doctora, and Ms. Daktar.
+The category, Institutional Apps includes apps that pro-
+vide information related to a specific hospital and their
+services, location, contact information, opening time,
+and emergency number. Example apps in this category
+include Hashpatal and BD Hospitals. Apps that provide
+information/assistance for physical exercise, weight loss
+or gain, and different types of body building exercises
+belong to the Fitness Apps category. Example apps in
+this cluster are Bangla Gym Guide, and Yoga Guide
+Bangladesh. Mother & Child apps were developed to
+Fig. 1 An overview of the research methodology
+Table 1 Number and percent of apps belonging to different
+cluster
+Cluster Names Frequency Percent
+General Health Informative Apps 78 33
+Physician Information 24 10
+Institutional Apps 27 12
+Fitness Apps 24 10
+Mother & Child 22 9
+Disease Specific Care Apps 12 5
+Herbology 21 9
+Food & Nutrition 17 7
+Homeopathic 9 4Islam et al. BMC Medical Informatics and Decision Making           (2020) 20:19 Page 4 of 13provide all sorts of information and support to pregnant
+women, and new mother. Examples in this category are
+Aponjon, and Momota. Applications that provide infor-
+mation (remedies and precautions) about a particular
+disease belong to the Disease Specific Care Apps cat-
+egory. For example, Breast Screening, and Rabies fall in
+this category. Food & Nutrition cluster includes apps
+that provide information about healthy food, and nutri-
+tion information for good health. Example apps that fall
+in this category are Bangla Vitamin Guide, and Pusti
+Kotha. All herbal treatment, herbal medicine, and
+herbal information related applications are grouped
+under the Herbology cluster. Herbology apps also pro-
+vide all sorts of herbal remedies and their preventive
+and curative properties. For example, Bangladeshi
+Herbal Treatment, and Herbal Medicine Bangla apps
+fall in this category. Finally, apps that provide informa-
+tion and medication support related to the Homeo-
+pathic treatment belong to the Homeopathic cluster.
+Example apps in this category are Homeopathy Guide,
+and Homeopathic Bangla Book.
+Targeted users of mHealth apps We found that the
+targeted users of mHealth applications were healthcare
+professionals (4%), mom & kids (15%), patients (24%),
+and other users (57%) (e.g. health-conscious people). It
+was striking to observe that none of the apps was devel-
+oped for the disabled people. We also found that none
+of the applications were developed for illiterate people.
+These results indicate that mHealth apps in Bangladesh
+overlooked marginalized people.
+Stage II: heuristic inspection
+In this stage, we randomly selected four mobile applica-
+tions from each category (i.e., a total 36 apps) for heuris-
+tic usability evaluation.
+Heuristic selection
+Prior literature proposed different sets of heuristics to
+evaluate usability of web and desktop applications such
+as Nielsen ’s 10 general principles for interaction design
+[45], Tognazzini ’s 16 principles of user interface (UI)
+design [ 46], Garrett ’s 7 guidelines to design websites
+[47], Schneiderman ’s 8 Golden Rules of Interface Design
+[48] and Sollenberger ’s 10 fundamentals for UI design
+[49]. Among these, Nielsen ’s 10 general principles are
+widely used [ 50]. Thus, we adapted Nielsen ’s 10 princi-
+ples in this study to evaluate usability of the selected
+mHealth applications. The list of heuristics is presented
+inAppendix 1 .
+Conducting expert inspection
+The selected applications were evaluated based on the
+heuristics presented in Table 6 in Appendix 1 by threeusability experts (first three authors of this article).
+Among them, one had 10 years of experience in UI de-
+sign and evaluation with a PhD degree in HCI, while
+other two were postgraduate students (one in PhD and
+one in MSc program) in Computer Science and had 2 –
+3 years of experience in usability evaluation and UI
+design. Each usability expert conducted the inspection
+independently. Individual evaluation report for each ap-
+plication was then compared to write a single report for
+each application. In some cases, there were conflicts
+raised about the revealed problems. These conflicts were
+solved by discussions. For heuristic evaluation, Nielsen ’s
+(1995) [ 45] concept of severity rating (0 to 4) was
+adopted ,with 0, indicating not a usability problem at all;
+1, cosmetic problem only; 2, minor usability problem; 3,
+major usability problem; and 4, usability catastrophe. A
+few examples of usability problems for CareSatisfaction
+application are presented in Appendix 2 .
+Analysis and results
+The study data was analyzed to find out the overall us-
+ability, heuristics that are violated, and severity associ-
+ated with each heuristic violation. We found 406
+problems by evaluating 36 mHealth applications with an
+average severity of 2.74 (see Table 2). Around 21% of oc-
+currences were related to the violation of the heuristic
+‘Aesthetic and minimalist design (H7) ’. The least
+(around 4%) violated heuristic was the ‘Customization
+and shortcuts (H6) ’. In general, heuristics related to the
+user control and freedom (H2), Consistency and Stan-
+dards (H3), and readability and glanceability (H10)
+showed high severity while physical interaction and
+ergonomics (H8) showed less severity. More than half
+(61%) of the total revealed problems were Catastrophic
+and Major problems. Catastrophic problems were ob-
+served in terms of all heuristics, but maximum number
+is found for H7 and H10.
+Apps related to the Physician Information, Institu-
+tional Apps, and Disease Specific Care Apps showed
+highest percent of usability problems, while the apps re-
+lated to Fitness Apps and Herbology showed highest se-
+verity score (see Table 3). Slightly smaller numbers of
+usability problems were found for apps that belong to
+Mother & Child and Food & Nutrition cluster. The aver-
+age severity level varies from 2.1 to 3, with Herbology
+showing the maximum severity score. A high number
+(from 16 to 33%) of catastrophic problems were found
+for each cluster.
+Table 4shows the number of times each of the heuris-
+tics was violated. As shown in the table, each of the heu-
+ristics was violated from minimum one to maximum 12
+times for each cluster except the Mother & Child cluster.
+We calculated the number of usability problems and
+the number of UIs in each application. The PearsonIslam et al. BMC Medical Informatics and Decision Making           (2020) 20:19 Page 5 of 13Correlation Coefficient tests between the number of UIs
+and the problems observed ( r= 0.0899, p= 0.656) and
+between the number usability problems and the average
+severity rating of each application ( r= 0.3128, p= 0.112)
+were non-significant.
+Stage III: user study
+Participants profile
+We prepared a list of 50 individuals who could par-
+ticipate in our study using snowball sampling. We
+sent email invitations to these individuals for partici-
+pating in our study. Among them 30 individuals
+agreed to participate in this study. Therefore, a struc-
+tured user survey was conducted among these 30 (17
+males and 13 females) participants. The recruited par-
+ticipants ’profession includes undergraduate students,banker, teacher, intern doctor and housewife. The
+participants ’average age was approximately 33 years
+and ranged from23 to 55 years. All the participants
+are experienced with smart phones and mobile appli-
+cations. Twenty-one participants had experience with
+the use of mHealth applications and used 2 –3m o b i l e
+health applications.
+Study procedure
+The study was conducted in a Software Engineering lab
+at the authors ’institute following the System Usability
+Scale (SUS) [ 43] evaluation procedure. The SUS is a sim-
+ple, ten items scale that provides the overall view of sub-
+jective usability assessment. The SUS consists of 10
+items, with odd-numbered items worded positively and
+even-numbered items worded negatively. The questionsTable 2 Number of unique usability problems identified by the evaluators
+Heuristics Severity Total % of Problems Avg Severity
+Cosmetic Minor Major Catastrophic
+H1: Visibility of system status 7 9 16 7 39 10 2.6
+H2: User control and freedom in system navigation 4 12 19 15 50 12 3.1
+H3: Consistency and standards 9 5 23 11 48 12 3.1
+H4: Realistic error management 9 13 7 4 33 8 2.6
+H5: Minimize the user ’s memory load 3 7 14 5 29 7 2.7
+H6: Customization and shortcuts 2 5 7 4 18 4 2.7
+H7: Aesthetic and minimalist design 13 15 33 23 84 21 2.5
+H8: Physical interaction and ergonomics 5 11 4 3 23 6 2.4
+H9: Minimize human-device interaction 5 7 14 4 30 7 2.5
+H10: Readability and Glanceability 7 10 12 23 52 13 3
+Total 64 94 149 99 406 100 2.74
+Table 3 Number of usability problems to each cluster
+Cluster Severity Total % of Problems Avg Severity
+Cosmetic Minor Major Catastrophic
+General Health Informative Apps 8 12 12 12 44 11 2.75
+Physician Information 7 9 21 18 55 14 2.8
+Institutional Apps 6 12 23 13 54 13 2.65
+Fitness Apps 9 17 14 8 48 12 3
+Mother & Child 7 12 7 5 31 8 2.1
+Disease Specific Care Apps 7 10 27 10 54 13 2.8
+Herbology 8 4 18 12 42 10 3
+Food & Nutrition 5 7 16 9 37 9 2.75
+Homeopathic 7 11 11 12 41 10 2.6
+Total 64 94 149 99 406 100 2.74Islam et al. BMC Medical Informatics and Decision Making           (2020) 20:19 Page 6 of 13are included in SUS are presented in Appendix 3 .
+SUS is a Likert scale, and the respondents indicate
+their level of agreement or disagreement on a scale of
+1 to 5 for each statement. Nine mHealth apps, 1 from
+each category were selected for evaluation. The appli-
+cations that had maximum downloads were selected
+for user testing. The test was conducted in three ses-
+sions, where each app was evaluated by 10 partici-
+pants (i.e., each participant evaluated 3 apps selected
+in a random fashion). In each session, one participant
+evaluated 1 app at a time and took on average 25 –30
+min. During each test-session, at first the participant
+was briefed about the purpose of the study and his/
+her roles. The participant was also briefed that the
+goal of the study is not to assess him/her, rather to
+evaluate the mobile application, so that he/she be-
+haves normally during the test session and provides
+honest opinion/response about the overall system
+functionalities and performance. After that, the test
+participant ’s demographic information was collected,and a test-consent form was also signed with him/
+her. Then the participant was asked to explore and
+use a randomly assigned application for 15 –20 min. In
+the end, the participant was asked to answer the SUS
+statements [ 43] . The SUS score was calculated fol-
+lowing the Brooke ’s (1996) [ 43]g u i d e l i n e s .F i r s t ,f o r
+odd numbered questions, we subtracted one from the
+user response (scale positio n), and for even-numbered
+questions, we subtracted the user responses (scale
+position) from 5. After that, we summed up the con-
+verted score and then multiplied it by 2.5. Finally, we
+computed the average value of the SUS scores for the
+studied applications.
+Data analysis and outcomes
+The SUS score of each app is shown in Table 5.W e
+followed Bagor et al. ’s (2008) [ 51] guidelines to evaluate
+the SUS scores. The score can be acceptable (SUS
+score > 70), marginal (50 < SUS score > 70) and un-
+acceptable (SUS score < 50). The results show that moreTable 4 Heuristics violation to each cluster
+Cluster Heuristics Total
+H1 H2 H3 H4 H5 H6 H7 H8 H9 H10
+General Health Informative Apps 4 6 5 4241 2 331 4 4
+Physician Information 7 7 6 4521 0 248 5 5
+Institutional Apps 6 7 7 3539437 5 4
+Fitness Apps 4 7 4 4311 1 347 4 8
+Mother & Child 4 5 4 1208124 3 1
+Disease Specific Care Apps 4 5 5 5431 2 358 5 4
+Herbology 3 4 7 4329235 4 2
+Food & Nutrition 4 3 4 5227226 3 7
+Homeopathic 3 6 6 3316346 4 1
+Total 39 50 48 33 29 18 84 23 30 52 406
+Table 5 SUS score of the studied applications
+Cluster App name Average SUS Score Remarks
+General Health Informative Apps Patient Aid 65.7 High-marginal
+Physician Information DIMS 73.2 Acceptable
+Institutional Apps Hospital Finder 52.8 Low-marginal
+Fitness Apps Bangla Gym Guide 70.5 Acceptable
+Mother & Child Aponjon Pregnancy 79.2 Acceptable
+Disease Specific Care Apps এলার ্জরি সহজ চিচিৎসা <Easy Treatment for Allergy> 69.3 High-marginal
+Herbology ভেষজ চিচিৎসা <Herbal Treatment> 68.3 High-marginal
+Food & Nutrition Fruits Benefit in Bangla 71.7 Acceptable
+Homeopathic Homeopathic Bangla book 65.4 High-marginalIslam et al. BMC Medical Informatics and Decision Making           (2020) 20:19 Page 7 of 13than 50% of the application are below the acceptable
+score. Among the accepted applications, most of the
+apps were found to have SUS scores just above the
+threshold value of acceptable. Only Aponjon Preg-
+nancy was found to have high SUS evaluation score.
+Taken together, most of these apps were found to
+have poor to marginal usability according to their
+SUS scores.
+Figure 2represents the relation between the average
+SUS scores and the number of usability problems
+found. The results show that SUS scores are inversely
+related to the average number of problems found in
+Stage II (see Fig. 2). This indicates that the findings of
+expert inspection and SUS evaluation match with each
+other in most cases. For those apps where we observed
+less number of usability problems (7 –8 problems), we
+found the SUS score values were acceptable. Those
+apps with comparatively higher number of usability
+problems revealed SUS score below the acceptable
+level. However, exception was found for two apps
+(Herbal Treatment and Homeopathic Bangla Book ). Al-
+though, the number of usability problems of these apps
+was comparatively smaller, their SUS scores were below
+the acceptable level. We also investigated if SUS scores
+relate to application size (number of UIs). The result is
+s h o w ni nF i g . 3. We found that SUS scores do not re-
+late to the number of UIs.
+Discussions
+Key findings
+In this paper, we investigated the overall usability of mo-
+bile health applications in Bangladesh through an exten-
+sive empirical research. This research provides three
+main findings. First, we summarized an overview ofmHealth applications developed in Bangladesh along
+with the targeted end users a nd the features/functional-
+ities provided by the applications. We found 9 categor-
+ies of applications based on their features/
+functionalities. The study also found that healthcare
+professionals, mothers, patients, and other general users
+have been the targeted end users for the mHealth apps
+in Bangladesh.
+Second, the study found that the usability of
+selected mHealth applications in Bangladesh in gen-
+eral does not adhere to or follow the design princi-
+ples. Both expert inspection and SUS technique
+revealed that the existing mHealth applications
+would be very hard for the users to use. The results
+indicate that the lack of usability would be one of
+the key barriers for adopt ing mHealth applications
+in Bangladesh.
+Third, we also strived to explore the possible rela-
+tion among the number of usability problems with
+the application size (number of UIs), the severity
+scores, and the SUS score. We found that although
+positive relations were observed between the number
+of usability problems with the number of UIs and
+with the severity score, but the relations were not sig-
+nificant. Furthermore, we found that the number of
+usability problems had an inverse relation with the
+SUS score. This indicates that the findings from heur-
+istic inspection and SUS evaluation complement each
+other.
+However, a major limitation of this study is that we
+conducted the user study with a small number of partici-
+pants and with a small number of apps. Another limita-
+tion is that we have not compared between Government
+and private apps in this study.
+Fig. 2 Average SUS score vs the number of usability problemsIslam et al. BMC Medical Informatics and Decision Making           (2020) 20:19 Page 8 of 13Implications and directions for future research
+This research is the first to provide in-depth view on
+the usability status of mHealth applications in
+Bangladesh. The findings will greatly contribute to re-
+search in health informatics, and to the HCI practi-
+tioners, non-government organizations (NGOs) and
+Government organizations providing health services in
+Bangladesh. The study provides the following implica-
+tions: First, our results provide clear empirical evi-
+dence that usability has been overlooked in mHealth
+applications development. These findings could pro-
+vide important practical implications such as increas-
+ing awareness of improving usability in mHealth
+applications. The results also depicted the type of us-
+ability problems (or heuristics violated in develop-
+ment), found in the tested apps. These findings may
+provide the underlying knowledge (e.g., heuristics
+often not fulfilled) for usable mHealth applications
+development. Furthermore, the findings also reveal
+the necessity of curriculum revision in computer sci-
+ence education to integrate HCI concepts. Conse-
+quently, possible future research area could be to
+investigate the underlying reasons and its possible so-
+lutions of why usability was overlooked in the devel-
+oped mHealth applications.
+Second, the findings of this research can guide re-
+searchers for further studying mHealth services and
+plan for usability-based research designs in the con-
+text of Bangladesh. The lack of usability in tested
+apps imposes an important question of to what extent
+user centered development approaches are actually
+used in Bangladesh for developing the mHealth appli-
+cations. Furthermore, it raises the question of to whatextent requirements elicitation study for finding the
+contextual need for developing new and usable
+mHealth applications has been conducted in develop-
+ing these applications. All these questions provide fur-
+ther research directions that can be conducted by
+researchers. Future research, for example, may focus
+to design, develop and evaluate mHealth applications
+by following methodologies that keep usability at the
+center of attention.
+Third, this paper is the first to provide a taxonomy of
+mHealth apps developed in Bangladesh. We found 9
+types of mHealth applications available in Bangladesh.
+Future studies can be conducted to verify the applicabil-
+ity of this taxonomy in other contexts and possibly ex-
+tend it.
+Finally, our study results suggest that there have
+not been enough effort to develop mHealth apps for
+marginalized population in Bangladesh. Thus, special
+emphasis on user profile (such as disability, literacy,
+etc.) would be required to develop accessible and
+usable apps for the marginalized citizens of
+Bangladesh.
+Conclusions
+The purpose of this study was to explore usability of
+mHealth applications in Bangladesh. The findings sug-
+gest that the usability of the mHealth applications is not
+satisfactory. Our findings highlight the heuristics that
+are often violated in these mHealth applications. Such
+information can be used by designers to improve their
+applications in terms of usability. This in turn, may im-
+pose a barrier on adoption and use of mHealth applica-
+tions in Bangladesh.Fig. 3 Average SUS vs Average SizeIslam et al. BMC Medical Informatics and Decision Making           (2020) 20:19 Page 9 of 13Appendix 1
+Heuristics of Expert Inspection
+Table 6 Set of heuristics for expert inspection
+No Heuristics
+H1 Visibility of system status
+a. Always keep users informed about what is going on (e.g. “loading ”,“deleted ”)
+b. Provide appropriate feedback (e.g. tactile, visual, audible) to the user within reasonable time
+H2 User control and freedom in system navigation
+a. Provide “emergency exits ”to instantly leave an unwanted state
+b. Provide basic navigation controls on screen, even if the device itself provide buttons to perform similar functions (e.g. “back ”function)
+c. Avoid accidental activation of closely located touch controls
+H3 Consistency and standards
+a. Users should be able to do things in a familiar, standard and consistent way, based on experience from similar apps and platforms (e.g.
+tactile gestures)
+H4 Realistic error management
+b. Express error in plain language (no codes) and constructively suggest a solution
+c. Users should be warned to confirm risky action in order to avoid accidental errors (e.g. delete, payment)
+H5 Minimize the user ’s memory load
+a. Provide clear affordance for touch controls and other UI elements
+b. User should not have to remember information between screens
+H6 Customization and shortcuts
+a. Make the system easy for first time setting and learning
+b. Provide basic configuration options for common users and advanced configuration for expert users
+c. Provide shortcuts to most frequent tasks, allow users to tailor frequent actions.
+H7 Aesthetic and minimalist design
+a. Avoid displaying irrelevant or rarely needed information
+b. Most relevant information should be highlighted through large size, color, etc.
+H8 Physical interaction and ergonomics
+a. Touch control elements should have adequate size and spacing for fat fingers
+b. Place control elements in a recognizable position
+c. Place control elements so they can be easily pressed with the user ’s thumb in any hand (or provide an option for switching layout based
+on hand orientation)
+H9 Minimize human-device interaction
+a. Strive to reduce interaction effort because users may be in motion with only one-thumb and one-eye on the system
+b. Reduce data entry, especially with typing. Use sensors (e.g. location, voice) or historical and personalization data to establish defaults
+H10 Readability and Glanceability
+a. Ensure that text and textboxes fit on the screen
+b. Ensure readability in different lighting conditions with sufficient contrast
+c. Ensure user is able to quickly get relevant information by glancing at screenIslam et al. BMC Medical Informatics and Decision Making           (2020) 20:19 Page 10 of 13Appendix 2
+Evaluation of CareSatisfaction App
+A few examples of problems by an evaluator for CareSa-
+tisfaction application (see Fig. 2) are presented in Table 3.
+The CareSatisfaction app provides patients opinions
+about the service quality of clinics or hospitals in
+Bangladesh.
+Fig. 4 The screenshots of CareSatisfaction app
+Table 7 Example of predicted problems in CareSatisfaction app
+Problem No (see Fig. 2) Description (comment from the evaluator) Severity Violated
+Heuristic
+P1 “The hint provided about the text input is confusing since in both fields same example texts
+are shown by default. The first field should be for the Division whiles the second one for the
+District name. So, user will not be able to quickly grasp the information or what they need to do ”3 H10
+P2 “The orientations of the three buttons are very unusual. Despite of having space at left and
+below, the buttons are organized in a very compact way. The buttons are not organized in a
+conventional manner and lack proper spacing among the buttons ”2 H8, H9
+P3 “No proper instruction, indication or hints is given about the button. Even it is almost impossible
+to detect it as a button ”4 H3, H10
+P4 “The lists are organized in a scattered way. Difficult for a user to find the certain area/district. A
+systematic way could be followed, for example, ordering the districts name alphabetically. User
+has no control to see the list in a systematic way ”2 H4, H6, H9
+P5 “The message icon is used instead of a rating icon for asking user to rate the app. It may reduce
+the users ’memory load (user should not remember its functionality) if a proper icon was used here ”3 H3, H5
+P6 “No constraint as well as error control mechanism are given in the fields of adding new hospital.
+For example, user can give alphabetical input in latitude longitude field (where numerical value
+could be the only accepted value) ”2H 4
+P7 “Basic navigation control is missing in the screen like there is no Home or Back button is present
+in the screen ”3H 2Islam et al. BMC Medical Informatics and Decision Making           (2020) 20:19 Page 11 of 13Appendix 3
+List of SUS Questions
+Q1- I think that I would like to use this system
+frequently.
+Q2- I found the system unnecessarily complex.
+Q3 - I thought the system was easy to use.
+Q4 - I think that I would need the support of a
+technical person to be able to use this system.
+Q5 - I found the various functions in this system were
+well integrated.
+Q6 - I thought there was too much inconsistency in
+this system.
+Q7 - I would imagine that most people would learn to
+use this system very quickly.
+Q8 - I found the system very cumbersome to use.
+Q9 - I felt very confident using the system.
+Q10 - I needed to learn a lot of things before I could
+get going with this system.
+Abbreviations
+HCI: Human-computer interaction; HIV: Human immunodeficiency virus;
+ICT: Information and communication technology; MAMA: Mobile alliance for
+maternal action; MEASURE: Monitoring and evaluation to assess and use
+results; NGO: Non-Government Organization; PDA: Personal digital assistant;
+SMS: Short message service; SUS: System usability scale; UI: User interface;
+US: United States; USAID: United States Agency for International
+Development; UTAUT: Unified theory of acceptance and use
+Acknowledgements
+The authors would like to thank the participants whose participation made
+the study possible. Their efforts are gratefully acknowledged.
+Authors ’contributions
+All authors contributed to write the article, while MNI contributed as a lead
+author for defining the problem statement, conducting the studies,
+analyzing the data and wrote a major portion of the article. The app review,
+expert inspection and user survey were carried out by the MNI, MMK, and
+TTI, while data analysis was performed by MNI. AKMNI contributed toward
+rewriting the entire draft article to prepare it for publication. All authors read,
+edited, and approved the final manuscript.
+Funding
+Not Applicable.
+Availability of data and materials
+The datasets used and/or analysed during the current study are available
+from the corresponding author on reasonable request.
+Ethics approval and consent to participate
+We confirm that ethical approval was applied for conducting this research.
+The target of the study was to collect minimal data from human participants
+on the subjective usability assessment of the selected mobile applications.
+No human data, human tissue or any clinical data were collected for this
+study. Therefore, the ethical committee headed by the Research &
+Development Wing of Military Institute of Science and Technology (MIST)
+decided that it is not required to have formal approval. We also declare that
+we have taken written consent from study III participants to participate in
+the evaluation study.
+Consent for publication
+We have not used images or other personal or clinical details of participants
+that compromise anonymity. We declare that we have collected written
+consent from study III participants that the data collected from them will
+contribute to research publications.Competing interests
+The authors declare that they have no competing interests.
+Author details
+1Department of Computer Science and Engineering, Military Institute of
+Science and Technology, Dhaka 1216, Bangladesh.2Department of Future
+Technologies, University of Turku, Turku, Finland.
+Received: 20 September 2019 Accepted: 24 January 2020
+References
+1. van Heerden A, Tomlinson M, Swartz L. Point of care in your pocket: a
+research agenda for the field of m-health. Bull World Health Organ. 2012;90:
+393 –4.
+2. Istepanian R, Laxminarayan S, Pattichis CS. M-health. New York: Springer
+Science+ Business Media, Incorporated; 2006.
+3. Kay M, Santos J, Takane M. mHealth: new horizons for health through
+mobile technologies. World Health Organ. 2011;64:66 –71.
+4. Tomlinson M, Solomon W, Singh Y, Doherty T, Chopra M, Ijumba P, Tsai AC,
+Jackson D. The use of mobile phones as a data collection tool: a report from a
+household survey in South Africa. BMC Med Inform Decis Mak. 2009;9:51.
+5. Rotheram-Borus MJ, Le Roux IM, Tomlinson M, Mbewu N, Comulada WS, Le
+Roux K, Stewart J, O ’Connor MJ, Hartley M, Desmond K, et al. Philani Plus
+(+): a Mentor Mother community health worker home visiting program to
+improve maternal and infants ’outcomes. Prev Sci. 2011;12:372 –88.
+6. Siedner MJ, Haberer JE, Bwana MB, Ware NC, Bangsberg DR. High
+acceptability for cell phone text messages to improve communication of
+laboratory results with HIV-infected patients in rural Uganda: a cross-
+sectional survey study. BMC Med Inform Decis Mak. 2012;12:56.
+7. Haberer JE, Robbins GK, Ybarra M, Monk A, Ragland K, Weiser SD, Johnson
+MO, Bangsberg DR. Real-time electronic adherence monitoring is feasible,
+comparable to unannounced pill counts, and acceptable. AIDS Behav.
+2012;16:375 –82.
+8. Badri H. Key role for information and communication technology in health
+care; 2015.
+9. Mtandao A. Center for Health Market Innovation; 2008.
+10. XK. Mobile Technology for Monitoring and Evaluation and Health
+Information Systems in Low- to Middle-Income Countries; 2015.
+11. Chib A, Wilkin H, Ling LX, Hoefman B, Van Biejma H. You have an important
+message! Evaluating the effectiveness of a text message HIV/AIDS campaign
+in Northwest Uganda. J Health Commun. 2012;17:146 –57.
+12. Cornelius JB, Lawrence JSS, Howard JC, Shah D, Poka A, McDonald D, White
+AC. Adolescents ’perceptions of a mobile cell phone text messaging-
+enhanced intervention and development of a mobile cell phone-based HIV
+prevention intervention. J Spec Pediatr Nurs. 2012;17:61 –9.
+13. Coomes CM, Lewis MA, Uhrig JD, Furberg RD, Harris JL, Bann CM. Beyond
+reminders: a conceptual framework for using short message service to
+promote prevention and improve healthcare quality and clinical outcomes
+for people living with HIV. AIDS Care. 2012;24:348 –57.
+14. Juzang I, Fortune T, Black S, Wright E, Bull S. A pilot programme using
+mobile phones for HIV prevention. J Telemed Telecare. 2011;17:150 –3.
+15. Mahmud N, Rodriguez J, Nesbit J. A text message-based intervention to
+bridge the healthcare communication gap in the rural developing world.
+Technol Health Care. 2010;18:137 –44.
+16. M. Hoque and G. Sorwar, “Factors Influencing mHealth Acceptance among
+Elderly People in Bangladesh, ”arXiv preprint arXiv:1606.00874 ,2016.
+17. Hoque MR, Mazmum MFA, Bao Y. E-health in Bangladesh: current status,
+challenges, and future direction. Int Technol Manag Rev. 2014;4(2):87 –96.
+18. Khan SZ, Shahid Z, Hedstrom K, Andersson A. Hopes and fears in
+implementation of electronic health Records in Bangladesh. Electron J
+Informa Syst Dev Ctries. 2012;54:1 –18.
+19. Ahmed T, Bloom G, Iqbal M, Lucas H, Rasheed S, Waldman L, Khan AS, Islam
+R, Bhuiya A. E-health and M-Health in Bangladesh: Opportunities and
+Challenges (No. IDS Evidence Report; 60). IDS.
+20. Scolari C. The sense of the interface: applying semiotics to HCI research.
+Semiotica. 2009;2009(177):1 –27.
+21. Zapata BC, Fernández-Alemán JL, Toval A, Idri A. Reusable software
+usability specifications for mHealth applications. J Med Syst. 2018;
+42(3):45.Islam et al. BMC Medical Informatics and Decision Making           (2020) 20:19 Page 12 of 1322. Zapata BC, Fernández-Alemán JL, Idri A, Toval A. Empirical studies on
+usability of mHealth apps: a systematic literature review. J Med Syst.
+2015;39:1.
+23. Losa-Iglesias ME, Becerro-de-Bengoa Losa K, López-López D, Jimenez-
+Fernandez R, Corral-Liria I, Vazquez RR, Gallardo CE, Becerro-de-Bengoa
+Vallejo R. The Usability of a Heartbeat Measuring Mobile Phone app: an
+Observational Study. J Med Syst. 2019;43(7):226.
+24. Maramba I, Chatterjee A, Newman C. Methods of usability testing in the
+development of eHealth applications: a scoping review. Int J Med Inform.
+2019;126:95 –104.
+25. Fiordelli M, Diviani N, Schulz PJ. Mapping mHealth research: a decade of
+evolution. J Med Internet Res. 2013;15:5.
+26. Prodhan UK, Rahman MZ, Jahan I. A systematic analysis on the telemedicine
+services in Bangladesh. In: 1st International Conference on Advanced
+Information and Communication Technology; 2016.
+27. Ahsan A, Raihan A. Understanding mHealth impact among Aponjon (MAMA
+Bangladesh) subscribers through a phone survey in Bangladesh. In:
+Proceedings of the Sixth International Conference on Information and
+Communications Technologies and Development; 2013.
+28. Prue CS, Shannon KL, Khyang J, Edwards LJ, Ahmed S, Ram M, Shields T,
+Hossain MS, Glass GE, Nyunt MM, et al. Mobile phones improve case
+detection and management of malaria in rural Bangladesh. Malaria J.
+2013;12(1):48.
+29. Khatun F, Heywood AE, Ray PK, Hanifi S, Bhuiya A, Liaw S-T. Determinants of
+readiness to adopt mHealth in a rural community of Bangladesh. Int J Med
+Inform. 2015;84:847 –56.
+30. Khatun F, Heywood AE, Ray PK, Bhuiya A, Liaw S-T. Community readiness
+for adopting mHealth in rural Bangladesh: a qualitative exploration. Int J
+Med Inform. 2016;93:49 –56.
+31. Eckersberger E, Pearson E, Andersen K, Hossain A, Footman K, Biswas KK,
+Med D, Nuremowla S, Reiss K. Developing mhealth messages to promote
+postmenstrual regulation contraceptive use in Bangladesh: participatory
+interview study. JMIR mHealth and uHealth. 2017;5:12.
+32. Huda TM, Alam A, Tahsina T, Hasan MM, Khan J, Rahman MMM, Siddique
+AB, Arifeen SE, Dibley MJ. Mobile-based nutrition counseling and
+unconditional cash transfers for improving maternal and child nutrition in
+Bangladesh: pilot study. JMIR mHealth uHealth. 2018;6:7.
+33. Islam MA, Alvi HN, Al Mamun KA. DiaHealth: a smart app for complete
+diabetes lifestyle management. In: Medical Engineering, Health Informatics
+and Technology (MediTec), 2016 International Conference on; 2016.
+34. Shermi T, Islam MN, Akter S, Elahi SSB, Abdullah WM, Al Mamun KA. Virtual
+eye doc: an android based app in Bengali. In: Electrical, Computer and
+Communication Engineering (ECCE) ,International Conference on; 2017.
+35. K. Zaman and K. A. Al Mamun, “An evaluation of smartphone apps for
+preventive healthcare focusing on cardiovascular disease, ”in Advances in
+Electrical Engineering (ICAEE), 2017 4th International Conference on}, 2017.
+36. Haque M, Kawsar F, Adibuzzaman M, Ahamed S, Love R, Dowla R, Roe D,
+Hossain S, Selim R. Findings of e-ESAS: a mobile based symptom
+monitoring system for breast cancer patients in rural Bangladesh. In:
+Proceedings of the SIGCHI Conference on Human Factors in Computing
+Systems; 2012.
+37. Khan F, Das M, Ahammed A. PurpleAid: an mHealth platform to combat
+health hazards of women. In: Medical Engineering, Health Informatics and
+Technology (MediTec), 2016 International Conference on; 2016.
+38. Hoque R, Sorwar G. Understanding factors influencing the adoption of
+mHealth by the elderly: an extension of the UTAUT model. Int J Med
+Inform. 2017;101:75 –84.
+39. Akter S, D ’Ambra J, Ray P. Service quality of mHealth platforms:
+development and validation of a hierarchical model using PLS. Electron
+Mark. 2010;20:209 –27.
+40. Akter S, Ray P, D ’Ambra J. Continuance of mHealth services at the bottom
+of the pyramid: the roles of service quality and trust. Electron Mark. 2013;23:
+29–47.
+41. Bhuiyan T, Mahmud I, Alam B. Usability analysis of SMS alert system for
+immunization in the context of Bangladesh. Int J Res Eng Tech. 2013;2:300 –5.
+42. Nielsen J. Usability inspection methods; 1994.
+43. Brooke J. SUS: a retrospective. J Usability Stud. 2013;8(2):29 –40.
+44. Lucero A. Using affinity diagrams to evaluate interactive prototypes. In: IFIP
+Conference on Human-Computer Interaction, INTERACT-2015; 2015.
+45. Nielsen J. 10 usability heuristics for user interface design. Nielsen Norman
+Group. 1995;1:1.46. Tognazzini B. Principles, techniques, and ethics of stage magic and their
+application to human interface design. In: CHI '93 Proceedings of the
+INTERACT '93 and CHI '93 Conference on Human Factors in Computing
+Systems; 1993.
+47. Gerrett JJ. Meet The Elements. In: The Elements of User Experience, New
+Riders; 2010. p. 25 –33.
+48. B. Schneiderman, “Designing the user Interface: strategies for effective
+human-computer interaction. 1998, ”Chapter ,vol. 15, pp. 510--590, 1998.
+49. K. Sollenberger., “10 User Interface Design Fundamentals, ”2012. [Online].
+Available: https://blog.teamtreehouse.com/10-user-interface-design-
+fundamentals .Accessed 23 Oct 2018.
+50. Jiménez C, Rusu C, Roncagliolo S, Inostroza R, Rusu V. Evaluating a
+methodology to establish usability heuristics. In: 2012 31st International
+Conference of the Chilean Computer Science Society; 2012.
+51. Bangor A, Kortum PT, Miller JT. An empirical evaluation of the system usability
+scale. In: International Journal of Human –Computer Interaction; 2008.
+Publisher ’sN o t e
+Springer Nature remains neutral with regard to jurisdictional claims in
+published maps and institutional affiliations.Islam et al. BMC Medical Informatics and Decision Making           (2020) 20:19 Page 13 of 13

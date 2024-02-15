@@ -1,0 +1,971 @@
+CURRENT DEVELOPMENTS IN NUTRITION ORIGINAL RESEARCH
+Implementation Science
+Keywords: implementation science,
+mHealth program, maternal health,
+infant development, infant nutrition
+Copyright © American Society for Nutrition 2019.
+All rights reserved. This is an Open Access article
+distributed under the terms of the Creative Commons
+Attribution Non-Commercial License
+(http://creativecommons.org/licenses/by-nc/4.0/ ),
+which permits non-commercial re-use, distribution,
+and reproduction in any medium, provided the
+original work is properly cited. For commercial re-use,
+please contact journals.permissions@oup.com
+Manuscript received June 18, 2019. Initial review
+completed September 20, 2019. Revision accepted
+September 24, 2019. Published online October 3,
+2019.
+UNICEF provided ﬁnancial support for the qualitative
+evaluation. UNICEF did not participate in the design,
+implementation, data analysis, or interpretation of the
+results in the manuscript.
+Author disclosures: PG-R, SCL, ACPN, AAE, MRVG,
+and MV-C, no conﬂicts of interest.
+Supplementary Material is available from the
+“Supplementary data” link in the online posting of
+the article and from the same link in the online table
+of contents at https://academic.oup.com/cdn/ .
+Address correspondence to MV-C (e-mail:
+mireya.vilar@ibero.mx ).
+Abbreviations used: AEA, American Economic
+Association’s registry for randomized controlled trials;
+FOI, ﬁdelity of implementation; mHealth , mobile
+health; PD, Prospera Digital; PROSPERA, Social
+Inclusion Program; RCT, randomized controlled trial;
+SMS, short messages service; T1, Treatment 1:
+delivery of SMS messages; T2, Treatment 2: delivery
+of SMS messages and community leaders sign
+‘contract’ with beneﬁciaries, and community leaders
+send predeﬁned messages; T3, Treatment 3: delivery
+of SMS messages, and beneﬁciaries anonymously
+evaluate medical care through their mobile phone,
+and best performing clinics receive additional days of
+vacation as an incentive.Fidelity of Implementation of Prospera Digital:
+Evaluation of a Multi-Site mHealth Intervention
+Aimed at Improving Maternal Health Outcomes
+in Mexico
+Pablo Gaitán-Rossi ,1Selene De la Cerda Lobato,1Alma Cecilia Pérez Navarro,1
+Arturo Aguilar Esteva,2Manett Rocío Vargas García,2and Mireya Vilar-Compte1
+1EQUIDE, Iberoamericana University, Mexico City, Mexico and2Department of Economics, Mexican
+Autonomous Technology Institute (ITAM), Mexico City, Mexico
+ABSTRACT
+Background: Infrastructure and human capital limitations motivate the design of mHealth
+programs, but their large-scale implementation may be challenging in a development context.
+Prospera Digital (PD) is a pilot mHealth intervention aiming to improve maternal and child health
+and nutrition designed as a randomized controlled trial with 3 treatment arms. It was
+implemented during 2015–2017 in 326 treatment clinics located in 5 states in Mexico.
+Objective: Assess, with an external evaluation, PD’s ﬁdelity of implementation using 6 dimensions:
+adherence, quality, responsiveness, intervention complexity, facilitation strategies, and program
+differentiation.
+Methods: Benchmark for implementation was ﬁrst established by interviewing PD’s developers.
+Extensive ﬁeldwork in the 5 states was then conducted to assess its ﬁdelity in heterogeneous
+contexts. The evaluation team visited 39 health clinics to assess the initial sign-up events and
+conduct a follow-up. Overall, the team made 28 closed observations; conducted 17 focus
+groups; and interviewed 74 health providers, 10 community leaders, and 92 beneﬁciaries. Field
+notes from the implementation team on all clinics were also examined.
+Results: Co-ordination between the Health and Social Development ministries was adequate,
+although some health providers were not informed about PD. Program developers added useful
+implementation strategies during roll-out to reinforce sign-up events. Key quality facilitators were
+the clarity and relevance of the messages from the short messages service. Beneﬁciaries
+expressed high satisfaction with PD. In contrast, implementation barriers to adherence in some
+localities might reduce the potential impact of PD. Program differentiation was low between the
+3 treatment arms.
+Conclusions: PD is a promising strategy to contribute to the promotion of early childhood
+development in Mexico. Implementation science evaluation can help improve the quality of
+large-scale mHealth interventions by anticipating barriers and providing insights on how to
+increase performance. This is especially relevant to inform impact evaluation in development
+contexts. The trial was registered at the American Economic Association’s registry for randomized
+controlled trials with trial registry number ‘AEARCTR-0001035’. Curr Dev Nutr 2019;3:nzz107.
+Introduction
+Earlylifeisakeystageofanindividual’sdevelopmentanditsinfluenceonlateroutcomeshasbeen
+documented as part of the research surrounding the fetal origins hypothesis ( 1,2). In a context
+in which high inequality is a primary concern, indicators surrounding access to health early
+in life (including fetal development) become the first signs of perpetuating disparities. Mexico,
+for instance, faces important challenges with a rate of maternal mortality of 34.6 deaths per
+100000livebirthsin2015,whereastheaverageintheOrganisationforEconomicCo-operation
+1Downloaded from https://academic.oup.com/cdn/article/3/10/nzz107/5580285 by guest on 17 December 2022
+2Gaitán-Rossi et al.
+and Development (OECD) is 7 ( 3). (The coverage of antenatal care
+during the first trimester in Mexico was 84% among pregnant women
+aged 20–49 y but 75% for women <19 y (4). According to the 2015
+UNICEFMultipleIndicatorClusterSurvey(MICS),10.5%oftheinfants
+in Mexico have low weight [i.e. the percentage of children born alive
+in the previous 2 y who weighed <2500 g at birth]; only 31% receive
+exclusive breastfeeding before the first 6 mo; 34% get full vaccine
+immunization [i.e. percentage of children between 24 and 35 mo
+who received all the vaccines included in Mexico’s National Health
+Plan], and 82% of children presented adequate child development [i.e.
+the percentage of children aged 36–59 mo who have an adequate
+development score in 3 out of 4 dimensions on a scale of infant
+development] [ 5]). Wide differences in maternal and child health
+outcomesbasedonsocioeconomiclevelneedtobeaddressedinorderto
+improvehealth,humancapital,andwell-beingacrossthelifecourse( 6).
+Early childhood interventions target a sensitive period where
+benefitsindevelopment,growth,nutrition,andreductionsinmorbidity
+and mortality may be amplified ( 7). Nonetheless, poor health service
+provision and limited resources can be important limitations. In such
+ac o n t e x t , mHealth interventions – understood as the use of mobile
+devices for public health practice – focusing on this period could
+be effective tools by increasing access, distribution, provision, and
+surveillance of health services, especially in areas with an insufficient
+health infrastructure ( 8).mHealthis attractive because relatively small
+and low-cost interventions can reach large and remote populations
+(8). Systematic reviews have found positive outcomes on mHealth
+interventions (previous work has found they are an effective tool that
+empowerspregnantwomenandhealthcareproviders( 9).Theyincrease
+antenatalserviceutilization,skilledattendanceatbirth,andvaccination
+rates (10); and have a modest impact on exclusive breastfeeding [ 11]);
+however, persistent barriers for their implementation can reduce their
+potentialeffectsandlimittheirefficientscale-up(someofthesebarriers
+are the cost of mobile plans, the lack of network infrastructure, low
+digitalliteracy,nonculturallyrelevantcontent,andlackofknowledgeon
+how to implement). Moreover, large-scale implementation of mHealth
+innovations has been limited by a shortage of empirical evidence,
+(although 87% of the countries in WHO are conducting ≥1mHealth
+program, only 14% of them reported an evaluation [ 8]), supporting
+their value in terms of cost, performance, and health outcomes, as
+well as by the lack of process evaluations identifying facilitators and
+bottleneckstodeliverthe mHealthinterventioneffectively( 12).
+Therefore, fidelity of implementation (FOI) becomes a key input
+for adequate evaluation of evidence-based policies and for replication
+or scale-up of valuable mHealthinterventions ( 13). FOI examines the
+degree to which an intervention was delivered as prescribed in the
+originalprotocolorasitwasintendedbytheprogramdevelopers( 14).
+FOI allows determining if a lack of impact is due to the program
+itselforbecauseofpoorimplementation( 15,16).ResearchontheFOI
+explains how and why an intervention is successful by opening the
+black box of implementation and linking program components with
+program outcomes ( 17). Lastly, FOI eases replication, helps explain
+why some studies generate different results, and provides guidelines
+forimplementationandscale-up( 15).Consequently,theseevaluations
+are useful to optimize the program in specific settings, to expand the
+sustainability of the intervention, and to promote its dissemination to
+othercontexts( 18).T h i sa r t i c l ed o c u m e n t st h eF O Io fam u l t i - s i t ep i l o tt e s to fa n
+mHealthintervention in Mexico aiming to reduce maternal mortality
+andimproveearlychildhoodnutritionanddevelopment.Theprogram
+targetsagroupofvulnerablemothersandchildrenwhoarebeneficiaries
+of the nationwide Social Inclusion Program, PROSPERA, a large
+conditional cash-transfer progra m (formerly named Oportunidades,
+PROSPERAwaslaunchedin1997aimingtostrengthenthesocialrights
+anddevelopmentalcapacitiesoflow-incomefamiliesinordertobreak
+the intergenerational poverty cycle by addressing 3 key components:
+education, health, and nutrition. In 2017, nearly 7.2 million families
+wereaffiliated,including1,255,869childrenaged <5y).Harnessingthe
+available social infrastructure, Prospera Digital (PD) was launched in
+2015 as a pilot study embedded into PROSPERA’s health component
+in a subset of 655 clinics in 5 states. The intervention required a
+co-ordinated collaboration between 2 state ministries: 1)P R O S P E R A
+delegations – part of the State Ministry for Social Development –
+providedthetrainers,deliveredthematerials,andusedtheconditional
+structure of the program to motivate the participation of pregnant
+women, and 2) the State Ministry of Health co-ordinated the health
+clinics (Mexico has a fragmented health system – according to
+employmentstatus[ 19]–withdifferenthealthoutcomesand,therefore,
+beneficiariesofPROSPERAreceivemedicalservicesfrom2systems:the
+StateHealthServices[SeguroPopular]andtheMexicanSocialSecurity
+Institute[IMSS]-PROSPERA.Bothtypesofclinicswereconsideredfor
+PD)andrecruitedthetargetpopulation.
+PD operates by inviting and recruiting pregnant PROSPERA ben-
+eficiaries through primary clinics. Women interested in participating
+aretrainedintheuseofthe mHealthplatform, and the short messages
+service(SMS)textmessagesaresentduringpregnancyandthefirst2y
+oflifeoftheirinfants.SMSmessagesarefreeandcontainhealthadvice
+onmaternalhealthandchildcare,nutritionandbreastfeeding,warning
+signsandhowtorespond,andremindersofmedicalappointmentsand
+vaccinations (see Supplementary Material for an explanation of their
+design, the target behavior, and examples). Messages are personalized
+and tailored to each participant based on self-reported information
+and clinical history. Beneficiaries received 2 types of messages: 1-way
+messages with general information and 2-way messages, requiring a
+response before sending a follow-up message. Moreover, beneficiaries
+can prompt actions like reporting obstetric emergencies and changing
+appointmentdates.
+SMS text messages, training materials (i.e. manuals, posters, and
+visual guides), the implementation, and the qualitative strategy were
+testedthroughaprepilotformativestudyconductedinSeptember2015
+intheStateofMexico.Thisledto561pretestedmessageflowsintending
+to modify health behaviors and were delivered through the RapidPro
+platform( 20).
+Arandomizedcontrolledtrial(RCT)with3treatmentgroupsand1
+controlgroupwasdesignedtomeasuretheimpactofthepilot mHealth
+intervention. Treatment group 1 (T1) exclusively delivered the SMS
+messages described above. In treatment group 2 (T2), participants
+received the same SMS messages as in T1 and community leaders
+signed a voluntary ‘contract’ with beneficiaries to commit to 1 of 3
+possibilities (chosen at will by the beneficiary): 1) taking folic acid
+pills,2) attending all the prenatal check-ups, and 3)r e p l y i n gt oa l l
+PD2-waymessages.Communityleadersalsosentpredefinedmessages
+that reinforced health information to the beneficiaries with whom
+CURRENT DEVELOPMENTS IN NUTRITIONDownloaded from https://academic.oup.com/cdn/article/3/10/nzz107/5580285 by guest on 17 December 2022
+Fidelity of implementation of Prospera Digital 3
+TABLE 1 Comparison of the 5 states included in the pilot of Prospera Digital by sociodemographic variables
+GuanajuatoState of
+Mexico Hidalgo Puebla Chiapas
+Multidimensional poverty146.6% 49.6% 54.3% 64.5% 76.2%
+Extreme multidimensional poverty15.5% 7.2% 12.3% 16.2% 31.8%
+Indigenous population29.1% 17.0% 36.2% 35.3% 36.1%
+Afﬁliation to health services 85.0% 78.7% 82.4% 79.8% 82.3%
+Urbanization261.4% 69.2% 28.8% 45.6% 33.9%
+Total population (in millions)25.8 16.1 2.8 6.1 5.2
+Beneﬁciaries of PROSPERA34.2% 3.6% 7.8% 8.0% 13.5%
+1Note: The source is Mexico’s ofﬁcial poverty measure in 2014 – the most recent before program roll-out – as reported by the National Council of Evaluati on (CONEVAL).
+2The source is the 2015 intermediate census survey from Mexico’s National Institute of Statistics and Geography (INEGI). The indigenous population w as measured as
+self-identiﬁcation to an indigenous community. Urbanization was measured as the percentage of population living in localities with 15,000 inhabit ants or more.
+3The source of the data is PROSPERA’s beneﬁciary register from the period July–August 2015.
+they signed the ‘contract’ (examples of these messages are in the
+Supplementary Material). Treatment group 3 (T3) used the same SMS
+messages as in T1 and allowed beneficiaries to evaluate anonymously,
+through their mobile phone, the services and medical care received;
+healthprovidersdidnothavetodoadditionalactivitiesforPD.Services
+andmedicalcareevaluationresultedfromquestionssenttoparticipants
+about mandatory medical protocols that should have been followed
+during their routine prenatal visits (e.g. weight, height, and blood
+pressure measurement and a test for anemia) and perceived quality of
+the service (i.e. waiting time, receiving a response to their questions
+and concerns, and general satisfaction). Health providers in the best
+performing clinics would be awarded additional vacation days as an
+incentive.
+Randomization was done at the clinic level. The inclusion criteria
+for the clinics in the study was: being primary health centers, being
+in a locality with connectivity to the mobile network, ≥5p r e g n a n t
+PROSPERA beneficiaries in the clinic, and ≥80% of the population
+reportingSpanishastheirfirstlanguage.Forthepilotstudy,655clinics
+in 5 states (Chiapas, Guanajuato, Hidalgo, Puebla, and the State of
+Mexico), stratified by urban and rur al status, were randomly assigned.
+Most of these states are located in the central region of Mexico but
+theywerechosenbecausetheyvaryinpopulationsize,levelsofpoverty,
+urbanization, and percentage of self-identified indigenous population;
+seeTable 1for a comparison of key variables. Program roll-out began
+in December 2015 and 2 rounds of recruitment were considered
+(2roundsoftrainingtookplaceineachparticipantclinicineachstate.
+The second round was implemented ∼7moafterthefirstonewiththe
+objective of signing up more beneficiaries, mainly those who started
+theirpregnancies afterthefirstround).Allpregnantbeneficiaries with
+<32weeksofgestation(duringtheprepilot,onlybeneficiarieswith <28
+weeksofgestationwereinvited,butinthepilottheperiodwasextended
+upto32wkastoincludemorebeneficiaries)wereinvitedtoparticipate
+in the selected clinics and those who did not own a mobile phone
+receivedonefromtheprogram(30%).Intotal,3236beneficiariessigned
+up to PD and received messages. The current qualitative evaluation
+analysestheFOIofthepilotPDin5Mexicanstates.
+Methods
+Stemming from implementation science, a qualitative evaluation to
+assess PD’s FOI was conducted ( 21). The conceptual frameworkfor implementation of Carroll et al. served to guide the qualitative
+evaluation design and data analysis ( 15). The framework poses that
+an intervention achieves high fidelity when adherence and program
+differentiationishighandmoderators–qualityofdelivery,participant’s
+responsiveness, intervention complexity, and facilitation strategies –
+positivelycontributetoachievetheintendedoutcomes.Theseelements
+are not sharply differentiated and there is overlap between them ( 15).
+Thesearetheelementsconsideredinthecurrentqualitativeevaluation:
+1)Adherence to the intervention m e a s u r e s2a s p e c t s ,fi r s t ,w h oi n
+thetargetpopulationreceivedtheinterventionand,second,how
+much and how often the prescribed content of the intervention
+was delivered (given and received dosage). Therefore, adher-
+ence assesses whether the implementation process succeeded
+i n :r e c r u i t m e n t ,c o v e r a g e ,e x p o s u r eo ft h et a r g e tp o p u l a t i o n ,
+completionofcontent,andintendeddurationoftheintervention.
+Consequently,itexamineswhichobstaclesreducedtheadherence
+to the intervention and which population subgroups might
+experiencedifficultiesusingtheintervention.
+2)Program differentiation (the original framework of Carroll
+et al. defines program differentiation as part of Adherence ( 15);
+however, due to its importance in the RCT, we separated them
+into2elementstoeasethepresentationofkeyresults)referstothe
+appropriate adaptation of the essential components in an inter-
+vention,i.e.theactiveingredientsrequiredtoreachtheintended
+outcomes. Theoretically, an intervention can be meaningfully
+implemented if the essential components are preserved even if
+othernonessentialelementsoftheinterventionfail.
+3)Intervention complexity recognizes that complex interventions
+have more elements and actors involved during their imple-
+mentation.Therefore,greatercomplexity impliesagreater scope
+for variation in delivery and are thus more vulnerable to low
+fidelity. Conversely, in interventions where the core components
+are simple, and activities specifically designated to a few actors,
+theheterogeneityofimplementationtendstobelower.
+4)Facilitation strategies refer to support actions or design elements
+seekingtooptimizeandtostandardizedelivery,suchasguidelines
+andfeedbackloops.Thesestrategiesaimtoensureequaltraining
+andsupport.Complexinterventionsmayneedextensivesupport
+strategiestoachievehighfidelity.
+5)Quality of delivery is related to enabling conditions for the
+participants during the implementation of an intervention, such
+CURRENT DEVELOPMENTS IN NUTRITIONDownloaded from https://academic.oup.com/cdn/article/3/10/nzz107/5580285 by guest on 17 December 2022
+4Gaitán-Rossi et al.
+asacomfortablesite,appropriatelytrainedfacilitators,usefuland
+comprehensiblematerials,amongstothers.
+6)Participantresponsiveness referstotheparticipant’sacceptanceof
+the intervention. It assesses participant’s expressions of engage-
+ment, satisfaction, and their perception that the intervention is
+relevant to them. Moreover, higher levels of fidelity are achieved
+when those participating in the delivery of the intervention (i.e.
+healthproviders)areenthusiasticaboutit.
+Successful completion of these 6 elements means implementation
+has been effective and could yield the expected outcomes. Failure to
+achieve an element compromises FOI and therefore could reduce the
+potentialeffectsoftheintervention.
+The current qualitative evaluation was conducted in 2 steps. First,
+b a s e do nt h er e s e a r c hp r o t o c o l ,t h ei m p l e m e n t a t i o nm a t e r i a l s ,a n d
+discussions with the developers, the evaluation team established a
+benchmark for implementation. The 2 key parts of the benchmark
+were the identification of the essential components and a logic model
+that defined the key processes for the appropriate delivery of the
+intervention.Logicmodelsestablishlinksbetweenresources,activities,
+outputs,andoutcomesexpectedtohappeninaninterventionandhelp
+to communicate among stakeholders the intended intervention ( 22).
+Second, fieldwork was performed to assess the degree of compliance
+to the benchmark and the barriers and facilitators that moderated the
+actual implementation of the PD pilot. This process is guided by the 6
+elements of the conceptual framework for implementation analysis of
+Carrolletal.( 15).
+Data Collection
+During fieldwork, the evaluation team worked independently from
+the program developers (the evaluation team was co-ordinated by
+the first author and the corresponding author of the article, both
+holding a Doctor of Philosophy (PhD) in Social Welfare and Public
+Policy,respectively,trainedinqualitativemethods,andwithsubstantive
+experienceusingqualitativemethodsforhealthandnutritionprogram
+evaluation.Bothresearchersdesignedtheresearchguidesandstrategy,
+tested the materials during the prepilot, trained the research assistants
+on data collection for this study, and permanently supervised the data
+collectionprocess.Twofemaleresearchassistantsandco-authors–with
+a master’s degree in Public Policy and in Anthropology, respectively,
+andwithpreviousexperienceinqualitativehealthprogramevaluations
+– collected most of the data during the training sessions and follow-
+up. Nonetheless, the whole team participated in data collection and
+analysis).Theinitialsamplingunitwereclinics,wherepregnantwomen
+would be recruited and trained to use the SMS platform. Clinics were
+selected according to a maximum variability approach covering the 5
+states, the 3 types of treatments, and rural/urban communities. The
+evaluationteamvisited28trainingsinthehealthclinicsinthe5states,
+57%ofthemwereinruralcommunities.Clinicswithdifferenttreatment
+assignmentswereincludedineachstate(exceptPuebla).
+Data was collected between January 2016 and September 2017.
+Data collection included: 1) field notes from the implementation
+staff;2) closed observations of the trainings based on the manuals
+designed by developers; 3) focus groups and face-to-face interviewswith participants in the clinics (i.e. when ≥5 beneficiaries attended
+the training, all were invited to join a focus group in the health clinic
+immediately after the session, but when <5 beneficiaries attended
+or when a focus group with ≥5p e o p l ec o u l dn o tb ea s s e m b l e d ,t h e
+evaluationteamconductedface-to-faceinterviewsinthehealthclinics);
+4) semistructured interviews with health providers (physicians and
+nurses)intheclinic;and 5)semistructuredinterviewswithcommunity
+leaders(‘vocales’,astheyareknowninMexico)inclinicslinkedtoT2.
+Approximately4moafterenrollinginPD,anewsamplewasselected
+to collect follow-up data. Eleven clinics which included the 5 states,
+urbanandruralvariability,andthe3treatments(withanoversampling
+of treatments T2 and T3) were selected. Diverse techniques were
+used to collect data: 1) focus groups in the clinics were conducted
+among women from the selected clinics who had participated in the
+trainings to use the platform; 2) telephone semistructured interviews
+wereperformedamongwomenwhoagreedtobecontactedforfollow-
+up and who were using PD’s platform; 3) semistructured interviews
+in the clinics were conducted with health providers directly involved
+in maternal and infant health. A description of the complete data
+collectionprocess,bytreatment,isin Table 2.
+Specific guides were designed for each data collection technique.
+All participants – beneficiaries, community leaders, physicians, and
+nurses – signed written informed consent forms before providing
+information. PD was registered at AEA as AEARCTR-0001035 and
+receivedInstitutionalReviewBoardapprovalbyBristolUniversitywith
+number‘26101’.
+Analysis
+Interviews and focus groups were audiotaped, transcribed, and
+anonymized for analysis. Once the data collection was complete, the
+evaluation team agreed on a codebook based on the 6 elements of
+Carrolletal.( 15).Usinggroundedtheoryasthetheoreticalframework
+to analyze the data and the health clinic as the unit of analysis, 2
+researcher assistants independently coded the material using NVivo
+11, and a third researcher reviewed the coded material to establish
+key findings. By contrasting these elements with the logic model, the
+expectationwastofindthesourcesofvariationinimplementationthat
+mayhavehinderedtheeffectivenessoftheintervention( 15).
+Results
+ThefirststepoftheFOIwastodefineabenchmarkforimplementation,
+i.e. to identify the essential components and to establish the key
+delivery processes. The essential components were: delivery of the SMS
+messages and appropriation of information (T1, T2, and T3); signing
+the contracts and the continuous participation of community leaders
+sending predefined messages (T2); and the evaluation of the health
+clinics by beneficiaries and the delivery of incentives by the State
+MinistryofHealth(T3).
+In addition, the delivery process was defined in a logic model as a
+processwith3phases: 1)launchingandrecruitmenttotheprogram; 2)
+trainingofthebeneficiaries;and 3) thecontinuous useof the platform
+(Figure 1). Before the fieldwork began, the developers of the program
+CURRENT DEVELOPMENTS IN NUTRITIONDownloaded from https://academic.oup.com/cdn/article/3/10/nzz107/5580285 by guest on 17 December 2022
+Fidelity of implementation of Prospera Digital 5
+TABLE 2 Description of each treatment in the randomized controlled trial and the data collection for the qualitative evaluation
+of fidelity
+Randomized controlled trial Qualitative evaluation
+Treatment 1 Delivery of SMS messages in Trainings (7 clinics; 4 rural):
+107 health clinics −7 closed observations
+−2 focus groups (13 beneﬁciaries)
+−11 interviews to beneﬁciaries
+−12 interviews to health providers
+Follow-up (2 clinics; 1 rural):
+−3 focus groups (20 beneﬁciaries)
+−4 telephone interviews to beneﬁciaries
+−1 interview to health providers
+Treatment 2 Delivery of SMS messages and Trainings (11 clinics; 7 rural):
+community leaders sign −11 closed observations
+‘contract’ with beneﬁciaries and −0 focus groups
+community leaders −30 interviews to beneﬁciaries
+continuously send predeﬁned −10 interviews to community leaders
+messages in 111 health clinics −24 interviews to health providers
+Follow-up (5 clinics; 3 rural):
+−5 focus groups (35 beneﬁciaries)
+−10 telephone interviews to beneﬁciaries
+−4 interviews to health providers
+Treatment 3 Delivery of SMS messages and Trainings (10 clinics; 5 rural):
+beneﬁciaries anonymously −10 closed observations
+evaluate medical care −3 focus groups (20 beneﬁciaries)
+through their mobile phone and −17 interviews to beneﬁciaries
+best performing clinics receive −26 interviews to health providers
+additional days of vacation in Follow-up (4 clinics; 3 rural):
+108 health clinics as an incentive −4 focus groups (35 beneﬁciaries)
+−20 telephone interviews to beneﬁciaries
+−7 interviews to health providers
+Control clinics 329 health clinics No control clinics were included
+confirmed that these are the essential components and agreed that
+the logic model accurately represented the intended delivery process.
+The logic model helped the evaluators identify the key moments
+and information needed to assess the fidelity framework of Carroll
+et al. The first phase of the logic model (launching and recruitment)
+helped identify several parts of adherence, such as recruitment and
+coverage, and to assess the complexity of the intervention. The second
+phase of the logic model (training) helped to examine the initial
+exposure to the treatment, the completion of the content, and the
+duration of the training. Key inputs of the section were program
+differentiation during the trainings, quality of delivery, and immediate
+participants’ response and health provider’s buy-in. The third phase
+(continuous use of the platform) complemented information about
+the exposure, completion, and duration to the program, confirmed
+insights of program differentiation and completed responsiveness of
+beneficiaries and health providers. The 3 phases offered information
+about the facilitation strategies. The main results of the fieldwork are
+summarizedinthefollowing6elements.
+Adherence to the intervention
+Theimplementationteamtrained ≥1healthproviderperintervention
+clinic and, according to the field notes and closed observations, the
+recruitmentofthetargetpopulationwasadequateinmosthealthclinics.
+Examination of the field notes from the implementation showed thatPD was delivered to 90% of the intended clinics during the first round
+and to 86.7% during the second round. The most common causes of
+nondelivery were: absence of the target population (i.e. clinics with no
+pregnant women at the time of recruitment), missing material, lack
+of mobile signal, and road blockages. Health clinics had lists with the
+expectednumberofparticipantsforeachtraining.However,theclosed
+observationsrevealedthatthisnumbercoincidedwithactualattendants
+onlyin11%ofthevisitedclinics.Intherestoftheclinics,thecoverage
+was lower: 20–80% of the expected participants arrived at the initial
+training.
+The training was divided into 3 parts: theory, practice, and sign-
+up. It was mostly delivered completely, but a few trainers modified
+the order of the sessions. The theory part was designed to last 35
+min; however, trainers usually shortened this section by simplifying
+theprogramdescription.Theyalwaysmentioneditwasfree,voluntary,
+nonpartisan,andthebenefitsofjoining.Signingtheinformedconsent
+forms to participate in the program and providing the phones took
+longerthanexpected(30minonaverage).
+The expected duration of the practice session was 40 min. Trainers
+struggledinthispartbecausetheabilitytousethephonevariedamong
+participantsandthusthepaceofthesessiondiffered;youngparticipants
+wereoftenfasterandthosewhoreceivedanewphonewereslowerthan
+therest.Differencesinthephonesforcedthetrainertoomitthesection
+onhowtousethem(i.e.addingPDasafrequentnumber).Nonetheless,
+participants helped each other to catch-up with the session. Another
+CURRENT DEVELOPMENTS IN NUTRITIONDownloaded from https://academic.oup.com/cdn/article/3/10/nzz107/5580285 by guest on 17 December 2022
+6Gaitán-Rossi et al.
+FIGURE 1 Logic model for the 3 implementation phases of Prospera Digital (PD).
+CURRENT DEVELOPMENTS IN NUTRITIONDownloaded from https://academic.oup.com/cdn/article/3/10/nzz107/5580285 by guest on 17 December 2022
+Fidelity of implementation of Prospera Digital 7
+omission was the explanation on how to activate the trigger words for
+emergenciesandappointments.
+After the training, the lack of mobile signal inside some clinics or
+zones within the locality prevented the beneficiaries from practicing
+with PD’s platform; according to the field notes, this happened in 38
+clinics during both rounds. Unexpectedly, slight differences among
+carriers on how to sign-up delayed the session and excluded some
+participants. The program is free, but participants needed to have
+minimum credit on their phone (1 Mexican peso, roughly 0.05 Unites
+States dollars [USD]) to receive the first SMS and sign-up to the
+platform. They often did not know about the need for funds or always
+carried the phones without money because participants use them
+exclusivelytoanswercalls.Theseproblemsdividedthegroupbetween
+thosewhogotintotheplatformandthosewhodidnot,leadingtoalow
+sign-upratebytheendofthetrainings:59%inthefirstroundand55%
+in the second. In order to solve this issue, the developers of PD added
+thepossibilitytosign-upremotely.Becauseofthesedifficulties,trainers
+frequentlydidnotprovidethemotivationalclosuremessage.
+Once participants started using PD, they reported reading, under-
+standing, and responding to the SMS messages. Since the intervention
+was personalized, the number of messages the participants received
+once enrolled varied by gestational stage. Beneficiaries mostly remem-
+ber receiving 2–3 message flows per week and they were sensitive to
+messagefluctuation,notingthemomentswhenthenumberofmessages
+decreased and increased. They did not mind the fluctuation, but they
+wanted to receive more, rather than less messages. Administrative
+problems that led to late payments for the service resulted in a
+temporarysuspensionoftheservice.AgroupofparticipantsinPuebla
+recognizedthisgapintheincomingflowofmessagesandreportedthat
+theprogramhad“ abandonedthem ”.Importantly,illiteratebeneficiaries
+andwomenforwhichSpanishisnottheirfirstlanguagewereinstructed
+toaskfamilymembersforhelp–especiallyteenagers–inordertokeep
+interactingwiththeplatform.Follow-upinterviewsconfirmedthatthey
+wereabletoaskforhelpandusetheplatform.
+Eventhoughmostparticipantsmentionedtheywereabletointeract
+seamlesslywiththeplatform,somenetworkissuesreducedtheexposure
+to the intervention. One locality in Chiapas and one in Puebla lost the
+mobile signal for almost a month. Also, one locality in Chiapas near
+the international border received the signal from Guatemalan mobile
+carriers,whichresultedindroppingitfromthesample.Anotherbarrier
+was that mobile carriers occasionally sent “ No Service ”o r“Invalid”
+messagesandbeneficiariestookthemasfailuresinPD.Anotherbarrier
+resulted from default messages from phones indicating that sending
+messages could result in fees to the users. Beneficiaries interpreted
+messages from the carriers about the costs of their service as the cost
+forparticipatinginPD.Somedecidedtoaddcredittotheirphones,but
+others stopped answering the 2-way messages, “ just in case ”. Likewise,
+others reviewed their credit and confirmed the messages were free of
+charge. The result was that some read the 1-way messages but did not
+respondtothe2-waymessages.Thedevelopersreactedtothislimitation
+by designing mostly 1-way messages and ensuring that even if the
+message was 2-way, the beneficiaries would receive the relevant piece
+ofinformationwithoutneedingtoanswerthemessage.
+A worrisome exposure challenge was that several beneficiaries
+reportedtheirpregnancyinthesecondorthirdtrimester,whichhalved
+the exposure to the intervention during pregnancy. Moreover, anotherkey challenge for full delivery was that beneficiaries frequently lost or
+changedmobilephonesbuttheydidnotknowhowtogetbackintoPD
+once they got a new one. They ignored the mechanism explained in a
+sheet with Frequently Asked Questions handed out during the initial
+training.
+Program differentiation
+D e l i v e r yo ft h em e s s a g e s( T 1 ,T 2 ,a n dT 3 ) .
+The main function of the messages was to provide key health
+informationaimedatpromotinghealthybehaviors.Participantsvalued
+themessages,asoneofthemhighlighted:“ Ilearnedalot,IrealizedIwas
+forgetting things, but now I know about the pregnancy, the babies, how
+to feed him, about diseases ”. Qualitative evidence suggests participants
+did not use the messages to substitute their medical appointments
+and the reminders might even increase them; as exemplified in the
+followingquote:“ Ididnotbringmyotherdaughtertotheclinic,butnow
+I bring her each month, to get her vaccines and all ”. The messages were
+useful to solve immediate problems, as another participant expressed:
+“Oftentimes, I have no idea what to do, but now I have some guidance
+on how to take care of her ”.Triggerwordstochangeanappointmentor
+for an emergency call were underused, probably because the trainers
+of PD frequently omitted the explanation. Even though an impact
+evaluationisneededtoascertaintheeffectsofPD,participantsreported
+behaviorchangesassociatedwiththemessagesinseveraldomains,such
+asimprovedexperiencewiththeirpregnancy,preparationsfordelivery,
+medicalcare,nutrition,breastfeeding,andchildcare.
+Treatment 2: community leaders.
+Implementation records show that community leaders were recruited
+inconsistently.Theydidnotassist5outofthe10observedclinicsand3
+leftearly,partiallybecauseofthevoluntarynatureofthetask.According
+to the closed observations, only 2 community leaders received the
+specialtrainingtoperformtheirtask.Atrainerexplainedthattheclinics
+“Did not recruit the leaders, as they did not know they were supposed to
+do so”. The community leaders that did attend the trainings faced the
+sameproblemssigninguptotheplatformasthosedescribedpreviously.
+Records indicate the sign-up rate was 60.8% on the first round and
+47% in the second. Community leaders were also allowed to sign-up
+remotely.
+The evaluation team recorded in their observations a lack a moti-
+vation from the community leaders. Interviews with the community
+leaders often confirmed this and highlighted that using the platform
+was difficult: “ T h et i m et ou n d e r s t a n di ti st o os h o r t ;i fm o s tp e o p l ea r e
+slow learners, such as myself, then we ´ll face difficulties ”; “Ih a dt r o u b l e
+sending messages, dialing the asterisk, and with all the numbers; it was
+tough”.Moreover,interviewsrevealedthattheydidnotknowabouttheir
+keyactivities:“ Iunderstoodthattheywillreceivesupporttomanagetheir
+pregnancyandnothingelse ”;“Theycalledusbecausewearealsomothers,
+for our testimony, so we can explain them how to take care and feed the
+baby”. None of the community leaders recalled the contract they had
+to sign with beneficiaries as a commitment with PD. One community
+leaderexplainedthatshewasabletosign-upbutitwasn’tuntilthethird
+monththatshereceivedareminderandstartedsendingmessages;then,
+“I sent some during 2 weeks but then I had to stop because PD was not
+available anymore ”.
+CURRENT DEVELOPMENTS IN NUTRITIONDownloaded from https://academic.oup.com/cdn/article/3/10/nzz107/5580285 by guest on 17 December 2022
+8Gaitán-Rossi et al.
+Unsurprisingly, the community leaders were not present in the
+beneficiaries’discourseabouttheintervention.Noneoftheparticipants
+in the follow-up interviews reported interactions with their leaders; as
+abeneficiarymentioned:“ I never received her messages, zero, I received
+the others, though ”; “I saw her (the community leader) and told me to
+wait for the messages, she did not know what to do, but expected to find
+out soon”. Notably, participants did not feel they needed help from the
+communityleaders.
+Treatment 3: evaluation of clinics.
+The trainers omitted or superficially explained the evaluation element
+tothebeneficiariesin7outofthe10observedclinics.Someparticipants
+wereunawareofthepossibilitytoevaluatebuttheoneswhounderstood
+the component expressed it would be useful so “ They can improve,
+provide a better service ”. Importantly, they were not worried about a
+backlash due to negative evaluations: “ I do not think so, it is important
+forustoexpresshowtheyprovidetheserviceandhowtheytreatpeople ”.
+In only 3 of the observed clinics did the health providers receive
+specific information about the evaluation and the available incentives.
+Some trainers provided a general explanation of PD, as if they were in
+themessages-onlytreatment(T1)butdidnotmentionthebeneficiaries
+feedback nor the incentives for them. Nonetheless, health providers
+that did receive the full training had a positive opinion about the
+intervention. They mentioned that “ I would appreciate knowing what
+wearedoingwrong,maybe,inadvertently,Iuseaverytechnicallanguage,
+andthiscouldhelpmechangeit ”;“Itisagoodpersonalincentiveshowing
+that we are doing a good job and also the recognition to our unit would
+make me proud ”.Overall,healthprovidersinthistreatmentweremore
+knowledgeableaboutPD.
+During follow-up, health providers ignored when the evaluation
+occurred or which clinics were the winners – an award ceremony
+had already taken place. Beneficiaries recognized they were unable
+to differentiate information messages from evaluation feedback. They
+recalled the evaluation messages but did not realize they were
+evaluating.
+Intervention complexity
+Even though the co-ordination of 2 state ministries introduced
+complexity to the intervention, the implementation staff were able to
+organize most of the trainings. PROSPERA proved effective because
+all the staff were trained, the material was received on time, and
+training sessions were mostly adequate. Timely recruitment by the
+Health Ministry at the clinics worked with beneficiaries because they
+reliedonpreviousmedicalrecordswithcontactinformation.Therefore,
+thebasicproceduresforthedeploymentofPDwereplacedcorrectlyand
+ontime.
+The implementation became too complex when additional actors
+were included – especially health providers and community leaders –
+andtheadditionaltrainingforT2andT3wasinsufficient.Mosthealth
+providersignoredwhatPDwas,hadmisconceptionsaboutit,andonly
+those who were directly trained understood their responsibility. The
+health providers who knew about PD recognized that they did not
+know how the triggers were supposed to work and mentioned they
+had not received information related to any emergency. Responses
+suggest that participants did not trigger the centralized system of
+notificationsorthatthesystemwasnotfunctioningproperly.IntheT2clinics,therecruitmentofcommunityleaderswasinadequate,andthey
+lacked incentives to participate. Thus, their role was not noticeable to
+beneficiaries.
+Facilitation strategies
+Trainers used detailed implementation manuals that guided them
+throughoutthetrainingandpostersaidedcommunicatingkeymessages
+during the session. However, several health providers in charge of
+recruitmentcomplainedabouttheabsenceofcommunicationstrategies
+to reach the target population. Moreover, they did not have clear
+guidelinestohelpilliteratewomenandparticipantswhosefirstlanguage
+wasnotSpanish(i.e.indigenouslanguages,especiallyinChiapas).
+Beneficiariesreceivedasimpleandvisualguidewithbasicinforma-
+tion that explained the program, how to access the platform, and the
+typeofinteractions.TheyalsoreceivedaseparatesheetwithFrequently
+Asked Questions, but the trainers often forgot to distribute them.
+During program roll-out, additional messages were sent to reinforce
+the training. These messages were especially useful to explain that the
+interventionwasfree.
+Anunexpectedsupportstrategywasneededduringtheimplementa-
+tionofPD.Lackofsignalanddifficultieswiththecommandstosign-up
+forcedtheimplementationteamtoaddasecondoptiontogetintothe
+intervention. Developers created a format and instructed trainers that
+ifsign-upwasnotpossible,thecontactinformationwouldberecorded
+in that format and beneficiaries would automatically be subscribed to
+PD.Oncethelistwascompiled,theimplementationstaffenrolledthem
+remotely.Thiswasasuccessfulsolutiontoavoidanimportantnumber
+of drop-outs. However, several women were still unable to sign-up
+because trainers could not do it if the participants’ mobile phones had
+insufficientfunds.
+Quality of delivery
+The setting for several trainings was inadequate because it was not
+privateandwasuncomfortableforpregnantwomen(i.e.brokenchairs,
+insufficientspace,andbathroomsoutofservice).Thetrainerswereaged
+between 30 and 40 y and 50% were male. Beneficiaries described the
+trainers (trainers had field experience dealing with matters related to
+PROSPERA with the communities. Thus, they were already known to
+someparticipantsandknewhowtoacknowledgeandspeaktoacrowd)
+as “nice”, “warm”, “respectful”, “trustworthy ”, and highlighted that they
+spoke“clearly”andknewwhattheyweretalkingabout.Observersnoted
+how most of the time the trainers were able to correctly answer the
+participants’ questions. When the implementation team was present,
+thetrainerscededauthorityandaskedthemtorespondtothequestions,
+whichdistortedtheregularsession.
+In87%oftheobservedtrainingsthematerialwasdeliveredfullyand
+ontime.Developerswereconcernedthatprovidingamobilephonefor
+freetobeneficiarieswhodidnothaveonewouldcreateconflictwithin
+the training session. For that reason, they chose to give the cheapest
+nonsmartphoneavailableinthemarket(worth20USD).Beneficiaries
+usuallyhadbettermobilesand,onaverage,42%receivedone(Chiapas
+43%, Guanajuato 37%, Hidalgo 64%, Puebla 29%, and the State of
+Mexico37%).Fewconflictswerereportedwiththemobilephones.
+Participants considered that the messages were “ clear”a n dt h e
+language was “ simple and easy to grasp ”. Messages that required
+numbers, such as dates or medical information, were the hardest to
+CURRENT DEVELOPMENTS IN NUTRITIONDownloaded from https://academic.oup.com/cdn/article/3/10/nzz107/5580285 by guest on 17 December 2022
+Fidelity of implementation of Prospera Digital 9
+respond to for them. Moreover, they felt the messages were timely
+andmatchedthedevelopmentalchangestheywereexperiencing:itfelt
+“like magic, like they could foresee what was going to happen ”. However,
+for the program to transition between pregnancy and infant messages,
+mothers needed to report the infant’s birthdate in order to get precise
+information. This initially did not work and the developers had to
+design a transition mechanism that would insist asking mothers and,
+ifaresponsewasnotsent,adatewouldbeassumed.
+Participantspreferredtoreceivemessagesthroughouttheday–not
+inabundle–sotheycould“ understandeachone ”and“avoidconfusions ”
+of receiving several messages at the same time, especially when they
+receivedtwo2-waymessages,sincetheyignoredhowtoanswerthefirst
+one. Receiving them did not interrupt their daily activities; however,
+most liked to answer the 2-way messages at night, once they finished
+theiractivities.
+Participant responsiveness
+Interviews and focus groups with participants consistently showed
+accurate expectations with PD and considerable satisfaction with the
+training.Thetrainingwas“ nice”a nd“interesting” andtheinformation
+was generally perceived as “ important ”a n d“useful”. They appreciated
+thereminders,thehealthandnutritioninformation,andthepossibility
+ofchangingtheappointmentandaskingforhelpduringemergencies.
+After the training, most beneficiaries were able to point out the
+benefitsoftheprogramandwhatwasexpectedfromthem.Theyfeltthat
+practicingwiththetoolwas“ easy”andmostofthemfeltconfidentabout
+usingitcorrectly.Theoneswhocouldnotjointheprogramimmediately
+felt “frustrated ” and excluded. One participant was unable to send the
+sign-upmessageduetoitscostandexpressedthat:“ Icouldnotsendthe
+messageanddidnotreceivetheinformation,asotherladiesdid ”.
+Once they were using PD regularly, they valued 1-way messages
+because they considered them to be the most “ informative ”a n dt h e2 -
+way messages because they showed PD is “ interested”i nt h e m .T h e i r
+favorite topics were nutrition during pregnancy, breastfeeding, and
+infant development. Participants expressed some frustration with the
+2-way messages because they would want to extend “ the conversation ”
+beyond 2 responses and would like to be able to send their own
+questions. Messages were perceived as useful to solve problems and
+anticipate different situations. Even among women with previous
+pregnancies, the messages were “ helpful reminders of symptoms and
+circumstances, a useful update ”. Some beneficiaries even reported that
+PD“cared”aboutthemandfelt“ abandoned ”whentheydidnotreceive
+messages.Participantsexpressedtheywouldliketheinterventiontolast
+untiltheirinfantswereaged2y.
+Discussion
+The evaluation provided a nuanced description of how PD was used
+and implemented, and how the low FOI in the essential components
+of T2 and T3 could be affecting its expected outcomes. The results
+offered key details on how beneficiaries interact with these programs,
+which in turn shape their satisfaction and engagement. For instance,
+why they prefer 1-way messages and the reasons they read the 2-way
+SMS messages but might not have answered them. Furthermore, the
+responses of the participants about the usefulness of the messages, anessential component for the 3 treatments, suggest that the intervention
+couldyieldvaluablebehaviorchanges,ashasbeenobservedinprevious
+research ( 8,9). Nonetheless, limitations of adherence and inadequate
+implementation of the essential components of T2 and T3 might have
+hinderedbehaviorchanges.
+Important contextual and implementation barriers were related
+to the adherence to the intervention. The implementation team was
+able to recruit target participants and to deliver the program in the
+majority of health clinics; however, the coverage was limited because
+training session attendance fluctuated between 20–80%. A contextual
+barrierthatreducedtheinterventionexposureperiodwasthepractice
+from pregnant women to delay prenatal services until the second or
+even third trimester of the pregnancy. More communication materials
+like posters and specific strategies for recruitment could help health
+providersimprove thisfundamentalstep.Inaddition,therequirement
+ofhavingminimumcreditonthemobilephonetosend/receivethefirst
+message precluded eligible participants signing up to PD. Insufficient
+or absent phone signal hampered the trainings, excluded participants
+fromsign-up,andlimitedthereceptionofmessages.Moreover,oncein
+the program, unexpected automated error messages from the carriers
+confused the participants and suggested that the interaction with the
+platform had a cost. An additional obstacle was the high rate at which
+participantsloseorchangemobilephonesandtheirunfamiliaritywith
+the process of resubscribing. These barriers reduced the exposure to
+theintervention,whichmaycausea“voltagedrop”,limitingpopulation
+impact and sustainability ( 23). The implementation team had low
+leverage over carriers to solve such problems but SMS messages with
+remindersofissuessuchaserrors,falsefees,orwaystore-enrollcanbe
+usefulandsimplestrategiestoavoidhighattrition.
+In contrast, several facilitators strengthened the implementation
+of PD. Beneficiaries were highly responsive to the trainers who
+conveyed key information in culturally accepted ways. The training
+materials were simple, visually attractive, and included all the basic
+information. Even though the trainings were not always delivered in
+full, participants helped each other, especially with older participants
+who were not familiar with the mobile phones. This highlights the
+relevanceofadaptingcontextswhenimplementingcomplexandlarge-
+scale interventions. Similarly, illiterate women and women with an
+indigenous background were able to ask for help, frequently from
+teenagers. Identifying these informal strategies was important because
+theymayexplainheterogenouseffectsandsuggestwaysofadaptingthe
+interventiontoothercontexts.Oneofthesestrategiesmaybetoincrease
+the practicing exercises in the platform during the first months and to
+sendadditionalremindersoftheinformationcoveredinthetrainings.
+Another important facilitator was the quality of the program. The
+messageswererelevant,easytounderstandandrespondto,andpartic-
+ipants even demanded a higher frequency of SMS messages. Likewise,
+the information was timely, useful, and perceived as precise according
+to their gestational and development stages. Notably, beneficiaries
+reported how the messages triggered an emotional response in which
+they felt taken care of by the program or abandoned in the absence
+of messages. Health providers showed support for the intervention
+and believe it could benefit participants. Both beneficiaries and health
+providersexpressedsatisfactionwithPD,whichmayfacilitatethebuy-
+in of important stakeholders and effective implementation ( 24). Large
+interventionsarecomplex,inpart,becauseoftheco-operationinvolved
+CURRENT DEVELOPMENTS IN NUTRITIONDownloaded from https://academic.oup.com/cdn/article/3/10/nzz107/5580285 by guest on 17 December 2022
+10 Gaitán-Rossi et al.
+amonginstitutionsandpoliciesintheoutersettingoftheprogram( 18).
+PD mostly succeeded in co-ordinating 2 state agencies and managed
+to deliver the majority of the trainings on time. Nonetheless, the outer
+settingshouldnotbetakenforgrantedinanewpoliticalenvironment,
+suchastheoneMexicoisfacinginthelightofanewadministration.
+A key finding of the evaluation is that the inadequate implemen-
+tation of some essential components may hinder the effectiveness of 2
+treatmentsintheexperimentalevaluation.PDtested1maintreatment
+–messagesonly–and2additionaltreatments;acontractandmotivation
+fromcommunityleaders(T2)andanevaluationofhealthserviceswith
+incentives for health providers (T3). The main treatment had a high
+correspondence with the intended design. Adequate training, precise
+recruitment, quality of delivery, and adoption of the intervention sug-
+gested how program components may lead to key behavioral changes,
+such as additional antenatal visits, improved nutrition, breastfeeding,
+and quality childcare. Program fidelity, however, was low in T2 and
+T3 when compared with the intended design. T2 failed to recruit
+enough community leaders and trainers omitted its specific content,
+especiallythecontract.Inaddition,communityleadershaddifficulties
+usingthe platformand hadlow motivation toparticipate because they
+did not receive incentives. Beneficiaries rarely reported an interaction
+with the leaders and did not understand how they could help them.
+Therefore, the evidence suggests that the T2 was implemented in a
+similarwayasthemaintreatment.T3faceddifficultiesaswell.Trainers
+didnotfullyexplainitsessentialfeaturestothebeneficiariesandtothe
+healthproviders.Untrainedhealthprovidershadmisconceptionsabout
+the program, so the effect of the evaluation was not well understood
+by all healthcare providers in participating clinics. In addition, a key
+assumption of T3 was to provide incentives to healthcare providers
+to improve their performance, while empowering pregnant women.
+But incentives were unclear to healthcare providers and evaluation
+mechanismswereunperceivedbyparticipatingwomen,soT3mightnot
+clearly differentiate from the main treatment. A new implementation
+strategyshouldprovideamoreintensiveimmersionofhealthproviders
+andamoreengagingmechanismtocommunityleadersinordertofully
+observetheirpotentialcontributions.
+PD is an example of how complex interventions need additional
+facilitationstrategiestoensuretheadequateimplementationofessential
+components. These findings can help improve the quality of the
+design and the implementation of similar large-scale interventions
+through anticipating potential barriers and providing insights on the
+way to increase their performance. This is particularly relevant in
+a development context, where improving health system quality is
+paramounttoimprovehealthoutcomes( 25).
+Inconclusion,maternalandinfanthealthandnutritionremainkey
+challengesinmiddle-incomecountries. mHealthprograms,suchasPD,
+a r ea t t r a c t i v ei n t e r v e n t i o n st h a tc a nc o n t r i b u t et ob u i l du pm o t h e r s ’
+knowledgeandempowerment.Moreover,theseinterventionsmayhelp
+improve the quality of universal healthcare systems ( 25). Program
+evaluations based on implementation science offer useful designs to
+strengthenimportantprograms,expanditssustainability,andpromote
+itsdisseminationtonewcontexts( 26).
+The FOI showed key aspects that might reduce the impact of PD
+andthatneedrevisionbeforescale-uporreplicationintoothersettings.
+It also revealed that PD might have important population health andnutrition effects in a vulnerable population in Mexico. Therefore, the
+adequate implementation of PD is a promising strategy to contribute
+to the Sustainable Development Goals in Mexico and other middle-
+incomecountries.
+Acknowledgments
+We thank the Behavioural Insights Team (BIT) and BabyCenter for
+messagedevelopment;theNationalDigitalStrategyoftheOfficeofthe
+Presidentforoutstandingco-ordinationofallparticipants;theMinistry
+of Health and the National Coordination of PROSPERA Program for
+providing content, access to data and invaluable feedback; the State
+Health Ministry and State Delegation of PROSPERA Program of the
+states of Hidalgo, Puebla, Guanajuato, State of Mexico, and Chiapas.
+AAEalsothankstheAsociaciónMexicanadeCultura.
+The authors’ contributions were as follows—PGR and MVC:
+designed the study, conducted research, analyzed data, wrote the
+manuscript, and have primary responsibility for final content; AAE
+andMRVG:participatedinthedesignofPD,designedthequantitative
+impact evaluation, and revised the manuscript; SCL and ACPN:
+conducted research and analyzed data; and all authors have read and
+approvedthemanuscript.
+References
+1. BarkerDJP.Mothers,BabiesandHealthinLaterLife.London,UK:Elsevier
+HealthSciences;1998.
+2. ContiG, HeckmanJ.EconomicsofChildWell-Being.In:Ben-AriehA,
+editor.HandbookofChildWell-Being:Theories,MethodsandPoliciesin
+GlobalPerspective.Dordrecht,TheNetherlands:SpringerPublishing
+Company;2014.p.363–401.
+3. OECD.HealthataGlance2015.OECDIndicators.Paris:OECD;2015.
+4. GutierrezJ,Rivera-DonmarcoJ,Shamah-LevyT,Villalpando-HernandezS,
+FrancoA,Cuevas-NasuL,Romero-MartinezM, Hernandez-AvilaM.
+EncuestaNacionaldeSaludyNutricion2012.ResultadosNacionales.
+Cuernavaca,Mexico:InstitutoNacionaldeSaludPublica;2012.
+5. INSP,UNICEF.EncuestaNacionaldeNiños,NiñasyMujeresenMéxico
+2015-EncuestadeIndicadoresMúltiplesporConglomerados2015,
+ResultadosPrincipales.MexicoCity:InstitutoNacionaldeSaludPública
+andUNICEFMéxico;2016.
+6. RichterLM,DaelmansB,LombardiJ,HeymannJ,BooFL,BehrmanJR,Lu
+C,LucasJE,Perez-EscamillaR, DuaT,etal.Investinginthefoundationof
+sustainabledevelopment:pathw aystoscaleupforearlychildhood
+development.LancetNorthAmEd2017;389(10064):103–18.
+7.BrittoPR,L yeSJ,ProulxK,Y ousafzaiAK,MatthewsSG,V aivadaT,
+Perez-EscamillaR,RaoN,IpP, FernaldLCH,etal.Nurturingcare:
+promotingearlychildhooddevelopment.LancetNorthAmEd
+2017;389(10064):91–102.
+8. WHOGlobalObservatoryforeHealth.GlobalDiffusionofeHealth:
+MakingUniversalHealthCoverageAchievable.Geneva:WorldHealth
+Organization;2016.
+9. TamratT, KachnowskiS.Specialdelivery:ananalysisofmHealthin
+maternalandnewbornhealthprogramsandtheiroutcomesaroundthe
+world.MaternChildHealthJ2012;16(5):1092–101.
+10. SondaalSFV,BrowneJL,Amoakoh-ColemanM,BorgsteinA,Miltenburg
+AS,VerwijsM, Klipstein-GrobuschK.AssessingtheeffectofmHealth
+interventionsinimprovingmaternalandneonatalcareinlow-and
+middle-incomecountries:asystematicreview.PLoSOne2016;11(5):1–26.
+11. LeeSH,NurmatovUB,NwaruBI,MukherjeeM,GrantL, PagliariC.
+EffectivenessofmHealthinterventionsformaternal,newbornandchild
+healthinlow-andmiddle-incomecountries:systematicreviewand
+meta-analysis.JGlobHealth2016;6(1):010401.
+CURRENT DEVELOPMENTS IN NUTRITIONDownloaded from https://academic.oup.com/cdn/article/3/10/nzz107/5580285 by guest on 17 December 2022
+Fidelity of implementation of Prospera Digital 11
+12. LabriqueAB,VasudevanL,KochiE,FabricantR, MehlG.mHealth
+innovationsashealthsystemstrengtheningtools:12commonapplications
+andavisualframework.GlobHealthSciPract2013;1(2):160–71.
+13.AgarwalS,LeFevreAE,LeeJ,L’EngleK,M ehlG,SinhaC,LabriqueA;
+WHOmHealthTechnicalEvidenceReviewGroup.Guidelinesforreporting
+ofhealthinterventionsusingmobilephones:mobilehealth(mHealth)
+evidencereportingandassessment(mERA)checklist.BMJ2016;352:i1174.
+14. ProctorE,SilmereH,RaghavanR,HovmandP,AaronsG,BungerA,
+GriffeyR, HensleyM.Outcomesforimplementationresearch:conceptual
+distinctions,measurementchallenges,andresearchagenda.AdmPolicy
+MentHealth2010;38(2):65–76.
+15.CarrollC,PattersonM,W oodS,BoothA,RickJ,BalainS.Aconceptual
+frameworkforimplementationfidelity.ImplementSci2007;2:40.
+16. MuralidharanK.Fieldexperimentsineducationindevelopingcountries.
+In:BanerjeeA DufloE,eds.HandbookofEconomicFieldExperiments.
+HandBookofFieldExperiments.Vol.2.Oxford,UK:Elsevier;2017.
+17. SaundersRP,EvansMH, JoshiP.Developingaprocess-evaluationplanfor
+assessinghealthpromotionprogramimplementation:ahow-toguide.
+HealthPromotPract2005;6(2):134–47.
+18. DamschroderLJ,AronDC,KeithRE,KirshSR,AlexanderJA, LoweryJC.
+Fosteringimplementationofhealthservicesresearchfindingsintopractice:
+aconsolidatedframeworkforadvancingimplementationscience.
+ImplementSci2009;4:50.19. DantésOG,SesmaS,BecerrilVM,KnaulFM,ArreolaH, FrenkJ.Sistema
+desaluddeMéxico.SaludPúblicadeMéxico2011;53:s220–32.
+20. UNICEF.RapidPro:UNICEF;2018[Availablefrom:
+https://community.rapidpro.io/about-rapidpro/ ].
+21. NilsenP.Makingsenseofimplementationtheories,modelsand
+frameworks.ImplementSci2015;10:53.
+22. McLaughlinJA, JordanGB.Logicmodels:atoolfortellingyourprograms
+performancestory.EvalProgramPlann1999;22(1):65–72.
+23. ChambersDA,GlasgowRE, StangeKC.Thedynamicsustainability
+framework:addressingtheparadoxofsustainmentamidongoingchange.
+ImplementSci2013;8:117.
+24. JacobsSR,WeinerBJ, BungerAC.Contextmatters:measuring
+implementationclimateamongindividualsandgroups.ImplementSci
+2014;9:46.
+25. KrukME,GageAD,JosephNT,DanaeiG,García-SaisóS, SalomonJA.
+Mortalityduetolow-qualityhealthsystemsintheuniversalhealthcoverage
+era:asystematicanalysisofamenabledeathsin137countries.LancetNorth
+AmEd2018;392(10160):2203–12.
+26. TumilowiczA,RuelMT,PeltoG,PelletierDL,MonterrosaEC,
+LappingK,KraemerK,DeRegilLM,BergeronG, ArabiM,etal.
+Implementationscienceinnutrition:conceptsandframeworks
+foranemergingfieldofscienceandpractice.CurrDevNutr
+2019;3(3):1–11.
+CURRENT DEVELOPMENTS IN NUTRITIONDownloaded from https://academic.oup.com/cdn/article/3/10/nzz107/5580285 by guest on 17 December 2022

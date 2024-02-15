@@ -1,0 +1,1644 @@
+ 
+ TECHNICAL NOTE  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+CÔTE D’IVOIRE     
+ 
+EVALUATING DIGITAL P AYMENT 
+SYSTEMS FOR EXPANDIN G SOCIAL 
+PROTECTION COVERAGE  
+ 
+ 
+ 
+ 
+ 
+ 
+DECEMBER  2019  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+2 CONTENTS  
+ 
+ACKNOWLEDGEMENTS  ................................ ................................ ................................ ...............  3 
+I. MOTIVATION AND OBJEC TIVES  ................................ ................................ ........................  4 
+Choice of Social Protection and Labor Programs Included in this Note  ................................ .......  4 
+Structure of this Note  ................................ ................................ ................................ .................  5 
+II. ENABLING ENVIRONMENT  FOR DIGITAL PAYMENT S ................................ ........................  5 
+Institutional Framework  ................................ ................................ ................................ ..............  5 
+PSP landscape in Côte d’Ivoire  ................................ ................................ ................................ ... 5 
+KYC Requirements  ................................ ................................ ................................ .......................  6 
+Interoperability  ................................ ................................ ................................ ............................  6 
+Identification Systems  ................................ ................................ ................................ .................  6 
+III. EFFECTIVE MONITORING  OF DIGITAL PAYMENTS  ................................ ............................  8 
+PSP Reporting  ................................ ................................ ................................ .............................  8 
+Specific Challenges of Monitoring Digital Payments  ................................ ................................ . 8 
+The Grievance Redress Mechanism  ................................ ................................ ............................  9 
+GRM Basics  ................................ ................................ ................................ ................................ .. 9 
+GRM and M&E  ................................ ................................ ................................ ...........................  10 
+Putting It All Together: A Monitoring System for Digital Payments  ................................ ...........  10 
+IV. PERFORMANCE EVALUATI ON................................ ................................ .........................  12 
+Evaluation Framework  ................................ ................................ ................................ ..............  12 
+Detailed Findings  ................................ ................................ ................................ ......................  13 
+Accessibility  ................................ ................................ ................................ ...............................  13 
+Integration  ................................ ................................ ................................ ................................ . 15 
+Lessons Learned from Global Experience  ................................ ................................ ..................  16 
+V. RECOMMENDATIONS  ................................ ................................ ................................ .... 18 
+Interoperability, choice and quality -based competition  ................................ ............................  18 
+Monitoring and Accountability  ................................ ................................ ................................ .. 19 
+Grievance Redress  ................................ ................................ ................................ ....................  19 
+Conclusion  ................................ ................................ ................................ ................................  19 
+VI. ANNEXES  ................................ ................................ ................................ ........................  22 
+A. Fundamental Performance Indicators for Payment Mechanisms  ................................ ...... 22 
+B. Good Practice for M&E of Digital Payments  ................................ ................................ .......  23 
+C. Good Practice for GRMs  ................................ ................................ ................................ .... 25 
+D. Example Survey Instrument for Payment Monitoring – PFSP  ................................ .............  28 
+E. Example Grievance Form – PFSP  ................................ ................................ ........................  30 
+F. ISPA Payment Assessment Tool Overview  ................................ ................................ .........  32 
+ 
+ 3 ACKNOWLEDGEMENTS  
+This technical note was prepared as part of the World Bank's technical assistance program1 (2015 -2018) 
+in Côte d'Ivoire on social protection  and labor policy (contributory and non -contributory), "Building 
+Productive and Resilient Social Pr otection and Labor Systems" and "Strengthening Social Protection and 
+Labor Delivery Systems". The note complements the  broader  World Bank policy note, Modernizing 
+Social Protection and Labor Policy for Inclusive Growth  (2019).  The present  note  is based on  an 
+adaptation of the Inter  Agency  Social Protection Assessment s’ (ISPA) Payment s Assessment Tool , 
+described in Annex D.  The program was implemented in partnership with the Intersectoral Social 
+Protection Technical Committee under the Presidency, responsible for the operationalization of the 
+National Social Protection Strategy and the National Employment Plan (2016 -2020), as part of the 
+National Development Plan 2016 -2020. This work has accompanied investment projects on 
+strengthening t he social protection and labor system for vulnerable populations, funded with support 
+by the World Bank/International Development Association (IDA), under the Productive Social Nets 
+Project and the Social Protection and Economic Inclusion Project, managed by the Ministry of 
+Employment and Social Protection and the Ministry of Solidarity, Social Cohesion and Poverty 
+Reduction. The team appreciates the effort, time and views shared by public and civil society 
+representatives as part of the preparation of this  work.  
+This technical note was prepared by a World Bank team including Chris Tullis (Consultant, Digital 
+Development Specialis t) and Heba Elgazzar (Senior Economist, Social Protection and Jobs), with 
+contributions by Meritxell Martinez (Operations Officer,  International Finance Corporation/IFC), Giulia 
+Parzani (Consultant, Operations), Rita Oulai (Consultant, IFC)  and Michael Muhanna (Consultant, Social 
+Protection) .  The work benefited from helpful inputs and discussions with Robert Palacios (Lead 
+Economist , Social Protection and Jobs), Tina Georges (Senior Public Sector Specialist, Social Protection 
+and Jobs), Laura Rawlings (Lead Social Protection Specialist),  and Kathy Lindert (Lead Economist, Social 
+Protection and Jobs).  
+The team thanks the peer reviewer s of this work for their helpful comments and suggestions, including 
+Giuseppe Zampaglione (Lead Specialist, Social Protection and Jobs), Silvia Baur -Yazbeck (Financial 
+Analyst, International Finance Corporation) and John Van Dyck (Senior Specialist, Social  Protection and 
+Jobs).  The team also thanks the broader Côte d'Ivoire country team, including Oumou Coulibaly 
+(Program Assistant, Abidjan Office), Lydie Anne Billey (Program Assistant, Washington) and Dora Harris 
+(Senior Program Assistant, Washington) for  their helpful logistical and office assistance.  
+The technical assistance program was mobilized under the general direction of Jehan Arulpragasam 
+(Practice Manager, Social Protection and Jobs, Africa Region) and Pierre Laporte (Country Director, Côte 
+d'Ivo ire). 
+  
+                                                           
+1 This work has received generous financial support from the Rapid Social Response Trust Fund and these donors (Sweden, 
+Norway, the United Kingdom, Australia and the Russian Federation), with sincere appreciation from the authors.  
+ 
+No part of this report may be reproduced or disseminated in any form or by any means, electronic or mechanical, photocopying 
+or recording, storage, or retrieval system, without the prior written permission of the World Bank.  
+ 
+The observations, interpretations and conclusi ons expressed here are those of the authors and do not necessarily reflect the 
+views of the Executive Directors of the World Bank or the countries that they represent, or the financial donors to the work.  The 
+World Bank does not guarantee the accuracy of t he data cited in this report.  
+ 4 I. MOTIVATION AND  OBJECTI VES 
+Coverage of social protection and labor programs (SPL) in Côte d’Ivoire  remains very  limited, but 
+emerging delivery platforms hold the promise of enhancing inclusion among the most vulnerable 
+groups .   As of  20142, labor market programs covered 0.3 percent ; all social insurance, 7.9 percent; all 
+social assistance covered 27.5 percent, including cash transfers at 0.2 percent.     While this means that 
+33 percent of the population are covered in total, the bulk is in -kind food assistance, followed by 
+pensions for formal sector workers.  Given that 46 percent of the population is under the poverty line, 
+determining the relative effectiveness of different SPL instruments can help maximize the value of 
+spending for the poorest households.   
+Côte d’Ivoire’s 2014 Na tional Social Protection Strategy (NSPS)  calls for  a shift  in public expenditures 
+towards a more  targeted, focused approach on the poor, and this note aims to shed light on innovative 
+approaches to delivering services to the hard -to-reach in rural regions .  Within the framework of the 
+NSPS, the Ministry of Employment and Social Protection (MESP) plays an important role in coordinating 
+key programs  and has been gradually instituting a new delivery platform, with a focus on designing 
+coherent payment,  targeti ng, identification , and monitoring  systems to support income and livelihoods  
+programs across agencies .  Prior to the creation of the NSPS steering committee in 2015, coordination 
+across programs has been limited since financing, implementation, program dat abases, policies, 
+targeting and delivery mechanisms remain largely independent.   Concerns around error, fraud and 
+corruption (EFC)  and international experience with different payment modalities , discussed outside the 
+scope of this note, have led to more e ffective and transparent mechanisms for delivering benefits, 
+notably those in cash used by pension schemes, labor programs, cash transfers, and voucher schemes 
+for education and health programs.  
+The main objective of this note is  to evaluate the institutional and implementation framework needed  
+for strengthening payment systems as a core element of delivering SPL benefits to the poor, around 
+which targeting, identification  and monitoring systems operate . The assessment aims to support 
+improving ho w new  national programs and initiatives identify the poorest households, assess their 
+needs and facilitate the delivery of investments and services to them  by ma ximizing digital financial 
+technology .   
+Choice of Social Protection and Labor  Programs Included in thi s Note  
+The four SP L programs features in this note were chosen for several  reasons. The first is their size. Côte 
+d’Ivoire’s  SPL system is still in its  early stages, with relatively few programs that reach a substantial 
+percentage of the population . The tw o pension funds —the Caisse Natioale de la Prévoyance Sociale 
+(CNPS ), for the private sector, and the Caisse Générale de la Retraite des Agents de l’Etat ( CGRAE ), 
+which covers the public sector —and by far the two most mature and developed SPL programs in the 
+country . While the PFSP is significantly smaller —currently in its pilot phase —its scope is set to expand 
+manifold in the short and medium term.  Payment and c ontribution mechanisms used for other 
+programs, notably e mployment programs and health insurance , will form th e basis of future dia gnostic 
+work based on lessons learned from applying the approach for this  assessment.  
+The other facto r is significance to Côte d’Ivoire’s  SPL strategy.  The SP L system is in the process of 
+undergoing major reform. The current system is dominated by the two pension funds, which cover only 
+formally e mployed workers, and represent 93 per cent of total SPL spending  in Côte d’Ivoire. However, 
+formal e mployment arrangements account for only 6-10 per cent of the active labor force . Recognizing 
+that the  current focus excludes significant portions of the population that could benefit from SP L 
+                                                           
+2 Most recent data , similar to 2015 -2018 relative distribution . Data on how beneficiaries are distributed across quintiles are 
+available from the National Household Living Standards Survey, which may not accurately reflect th e number of beneficiaries 
+found in administrative databases.  Data available from administrative databases is used in discussing each individual progra m 
+in this policy note.  5 programming, the current gov ernment strategy calls for this gap to be filled. The two most strategically 
+significant programs are current the CNPS, which is currently in the process of implementing an 
+ambitious program to extend contributory pensions to the entire informal sector, an d the PFSP, which 
+is set to offer non -contributory uncondi tional transfers to the bottom 20 per cent of the population by 
+income, regardless of employment status.  
+Structure of this Note  
+The note is structured as follows.  Following the introduction  in section I, section II looks at institutional 
+framework, including the regulatory environment for financial services as well as the  personal 
+identification  (ID) landscape in Côte d’Ivoire. Section III assess es the current payment systems in the 
+four focus programs chosen. Section IV provides recommendations for improvement of the payment 
+systems of the four focus programs in the short and long term, with an eye not only toward improving 
+service delivery for the beneficiaries of individual pro grams, but also toward improving coordination 
+between programs. Th e final  section also discusse s in detail monitoring and evaluation and grievance 
+redress mechanisms and how they link to payments. The note  concludes with a summary of key 
+opportunities and challenges to coordinating payment systems between SP L programs.  
+II. ENABLING ENVIRONMENT  FOR DIGITAL PAYMENTS   
+Institutional Framework  
+PSP landscape in Côte d’Ivoire  
+While Côte d’Ivoire has an established banking sector,  its reach is limited to only 15  per c ent of the 
+population, and only 10 per cent of the rural population .3 Banks’ traditional service models, which rely 
+on capital -intensive bank branches for service  delivery , inherently limit banks ’ ability to reach several  
+population segments, including tho se in rural areas.  
+In recent years, technology has allowed FSPs to innovate alternative FSP service -delivery models to 
+better reach lower income clients. Some examples of such service -delivery models include agency 
+banking, OTC transfer services, and mobi le money. While many markets have a mix of different types 
+of services, mobile money is clearly dominant in Côte d’Ivoire. The following chart shows the extent to 
+which the network of access points of mobile money providers in Côte d’Ivoire dwarfs the comp etition  
+(Figure 1 ). 
+Figure 1 Number of financial service access points by PSP type  
+ 
+Source: MIX Market (2015 -16). 
+ 
+There are several  reasons for this, but a key reason is regulatory. While mobile money services have 
+been given the regulatory space to flourish in WAEMU, the regulatory environment has not been 
+hospitable to agency banking over the same period, providing a barrier to the development of this 
+sector as an alternative to mobile money. 4 From the perspective of SPL delivery systems, mobile money 
+                                                           
+3 Global Findex, 2014, latest available data.  
+4 CGAP study, p21  
+6 systems offer advantages to other PSPs as they are already familiar to most of the population, requiring 
+less time to adopt particular ly among rural populations.  
+KYC Requirements  
+Know Your Customer (KYC) requirements are a basic aspect of financial sector regulation that 
+establishes minimum standards that FSPs must adhere to identify their customers. Traditionally, KYC 
+regulation requir es identity documents that much of the financially excluded population are unable to  
+provide. Banks have the most stringent requirements, which in Côte d’Ivoire include a valid state -issued 
+photo identification and a valid proof of address. Both documents can be costly to obtain, especially 
+when accounting for informal and indirect costs, and remain inaccessible to certain vulnerable groups, 
+including those who se birth is not registered in the civil registry.  
+Recognizing the barriers to financial inclusion of overly stringent KYC requirements, the regional 
+regulator (BCEAO) is working on risk -based KYC requirements that would decrease the rigor of required 
+documentation for certain low -value accounts. A mobile money account can already by opened with 
+an ID only, without proof of address. Additionally, new regulation provides for the opening of low value 
+accounts (transacting less than 200,000 FCFA or $325 per month) without any proof of identification at 
+all. Wh ile this is a very encouraging step, and a potential boon for SPL programs, especially those 
+targeting low -income and informally employed populations, there is one caveat. Namely, despite 
+regulations allowing low -value accounts not to be identified for several years , no mobile -money 
+provider in Côte d’Ivoire has to date offered  such a low -value account. Although i t is unclear exactly 
+why this is the case , the fact that identification is  required to purchase a SIM card (sales of which are 
+governed by a diffe rent regulator) , which is a prerequisite for using mobile money , may be a principal 
+barrier .5 
+Interoperability  
+Some markets feature a robust environment of interoperability in payments systems, whereby money 
+stored in an account at one provider can be tra nsferred to an account at a competitor. This can benefit 
+all participants in the SPL payments ecosystem, with governments find it easier to administer payments, 
+beneficiaries being able to choose the PSP most suited to their needs, and PSPs themselves gain ing 
+additional revenue from payments in interoperable systems that they may no t be able to achieve 
+otherwise .6  
+Currently, sector -wide interoperability in Côte d’Ivoire is limited to th e banking sector, where the 
+regional SICA -UEMOA  switch allows inter -bank wire transfers and the GIM -UEMOA network allows card 
+withdrawals at competing banks’ ATMs. There is currently no interoperability or sector -wide payment 
+switch for mobile money. Interoperability between mobile money and the banking sector (including 
+some  MFIs) does exist, but this functionality still immature and limited to bilateral partnerships 
+between individual banks and mobile money providers. In the absence of sector -wide switches to 
+ensure interoperability, there are certain payment aggregators on the market, which allow SPL 
+programs make payments using multiple PSPs while only themselves dealing with a single actor for the 
+purposes of making payment orders and reporting.  
+Identification Systems  
+In general, SPL program need to be able to  both  identi fy their beneficiaries  initially  and then also 
+authenticate t hese  identities at the time of service delivery . Historically, the main SPL programs in Côte 
+d’Ivoire  were contributory programs such as the  public - and private -sector pension funds, both of which 
+used the national ID card for identification  purpose s. Despite the limited coverage of this document, it 
+has been possible to rely on it because the pension funds, themselves limited in coverage to the 10 per 
+                                                           
+5 CGAP study.  
+6 Benson and Loftesness 2012  
+ 7 cent of the adult population in  formal  employment ,7 had target populations that in practice were 
+subset of the population covered by the national ID card . Only recently has the national SPL strategy 
+called for expanding contributory coverage to the informa lly employed as well as offering non -
+contributory benefits, such as the means -tested social safety net (PFSP) and subsidized health insurance 
+scheme (CNAM).8 
+The primary ID document in Côte d’Ivoire is the national ID card. In general, coverage is limited to 
+Ivoirian nationals who have access to documentary evidence to prove their nationality. Despite efforts 
+in recent years to expand access to this document, coverage remains at 64  percent  of the adult 
+population by one recent estimate.9 
+There are also othe r ID cards available in Côte d’Ivoire, but ma ny of them share the same accessibility 
+issues as the national ID card. The ID card for the CNAM ’s was cause for high hopes for expanding 
+coverage when it was introduced, given the CNAM’s mandate for universal c overage. In its current form 
+however, this card  suffers from many of the same accessibility limitations as the national ID due to the 
+need for breeder documents (another state -issued ID card or a birth certificate) as a prerequisite for 
+obtaining a CNAM ID  that vulnerable populations may not have access to. Apart from the accessibility 
+issues, this card is highly attractive, with a robust identifier whose uniqueness is guaranteed by 
+fingerprint biometrics.  
+The PFSP also issues a program ID card to one perso n designated as the primary transfer recipient in 
+each beneficiary household. This card is non -biometric,  and the identity of its bearer is not backed up 
+by any breeder documents, but instead by community witness testimony given during the community 
+valida tion of the program’s beneficiary lists. The decision to forego breeder documents was made by 
+the program to ensure the card’s accessibility. Unfortunately, the lack of a legal basis for the community 
+identification method used limits the card’s applicabil ity outside of the PFSP program itself, and 
+ultimately the utility of the card to the beneficiary. These limitations extend to receiving the PFSP 
+benefit itself, as in the future the card will no longer be accepted by the mobile money provider who 
+delivers  the PFSP payments. Thus,  PFSP beneficiaries will have to acquire an additional ID document to 
+receive their payments (or designated a proxy recipient who has). Additionally, it should be noted that 
+the identifier used for the PFSP card is a household -level identifier (due to the program’s beneficiaries 
+being defined on a household level) and not an individual identifier, further limiting the card’s 
+usefulness outside of the program.   Further work will delve in to linkages with the development of the 
+propose d national biometric identification system.  
+The characteristics of the cards issued by the SPL programs selected for this asse ssment are 
+summarized in  Table 1.  
+Table 1 ID documents issued by SPL programs in Côte d’Ivoire  
+ PFSP  CNAM  CNPS  CGRAE  PEJEDEC  
+Issues program -
+specific ID?  Yes Yes No No n/a 
+Number included on 
+program ID?  Yes (household -level identifier 
+only, no individual identifier)  Yes n/a n/a n/a 
+How is uniqueness of 
+the identifier assured?  Witness testimony during 
+community validation of 
+beneficiary lists  Biometrics 
+(fingerprints)  n/a n/a n/a 
+Biometrics included in 
+program ID ? No Yes (fingerprints)  n/a n/a n/a 
+                                                           
+7 Côte d’Ivoire Modernizing  Social Protection and Labor Policy for Inclusive Growth , World Bank, forthcoming . 
+8 République de Côte d’Ivoire (2013), “Stratégie Nationale de Protection Sociale.”  
+ http://www.coopami.org/fr/countries/countries/cote_ivoire/social_protection/pdf/social_protection07.pdf  
+9 Joseph Atick (2015), “Identification for Development (ID4D) Identification Systems Analysis: Côte d’Ivoire Country 
+Assessment,” World Bank Group.  
+https://openknowledge.worldbank.org/bitstream/handle/10986/25197/108189.pdf?sequence=4&isAllowed=y  8  PFSP  CNAM  CNPS  CGRAE  PEJEDEC  
+Prerequisites for 
+program ID  No breeder documents required, 
+only witness testimony from 
+community to the beneficiary’s 
+identity  National ID card or 
+birth certificate  n/a n/a n/a 
+Program ID enough  to 
+fully benefit from 
+program?  No, to open the required mobile 
+money account , transfer recipient 
+must have a  valid  state -issued ID  Yes n/a n/a n/a 
+Source: World Bank staff compilation.  n/a: not available.  
+III. EFFECTIVE MONITORING  OF DIGITAL PAYMENTS  
+Monitoring digital payments to SPL program beneficiaries presents unique challenges no t faced when 
+monitoring cash payments. The core of a monitoring and evaluation (M&E) system for digital payments 
+consists of two fundamental building blocks:   The Grievance Redress System and PSP reporting. Because 
+the GRM also has an important role as a f iduciary safeguard in addition to serving as an M&E data 
+source, this section will begin with a presentation of the GRM overall along with some examples of 
+international good practice before detailing  its role in payment monitoring specifically. Then the r ole 
+of PSP reporting will be described, and finally it will be explained how GRM and PSP data can be 
+combined to form a coherent monitoring system for digital social payments.   
+PSP Reporting  
+All providers of digital payments have the capacity to produce i ndividual -level reports on bulk 
+payments. Because this technical capacity is inherent to the digital payment platform, there is no 
+reason that SPL program administrators should settle for aggregate reporting, which is frequently used 
+in cash programming. T his individual -level data is not only important because it allows transactions to 
+be reconciled individually and thus helps reduce losses due to fraud and corruption on the part of PSP 
+staff, but also because it provides an important input to the program’s  M&E system.  
+Specific Challenges of Monitoring Digital Payments  
+Monitoring cash payments is conceptually a straightforward affair. Since program / PSP staff are 
+physically present at the moment when beneficiaries receive cash in their hands, monitoring is often 
+little more than  keeping a checklist of who receives cash and who does not. Even if in practice this type 
+of monitoring can be costly and open to corruption, it is theoretically simple to implement.  
+When payments are digitized and  deposited onto a transaction account on behalf on the beneficiary 
+instead of being paid in cash, monitoring becomes more complex. Conceptually, it becomes necessary 
+to divide the payment into two steps: first, there is the deposit onto the transaction account, and 
+secondly, the beneficiary must  access this store of value. It is important  not to conflate the concept of 
+access with a cash withdrawal. Funds can be accessed in a variety of ways, including not only withdrawal 
+(in cash) but also by making a transfer or payment (within the digital ecosystem). In addition to these 
+various active ways of accessing the payment, an SPL program beneficiary can also access her payment 
+passively if she is aware that the deposit has been made onto her account but chooses to save it instead 
+of using it immediately.  
+From a monitoring perspective, one key advantage of digital payments is that they allow rigorous 
+monitoring of the deposit onto the account. However, in environments where program beneficiaries 
+are not accustomed to digital payments —and in many cases have just opened their first -ever financial 
+account in the context of the program in question —having data on deposits is not enough  to 
+determined that beneficiaries were also able to access their payments. There are many reasons who a 
+beneficiary might not have access to a deposit made in her name. For example, she might have 
+misplaced the physical hardware (ATM card, mobile phone, etc.) needed to access her benefit. Or she 
+may not understand the payment mechanism enough (for example, how to enter a PIN code) to access 9 her account. Or she may simple not be aware that the deposit had been made. In such cases, 
+beneficiaries may find themselves in a situation where, although money is successfully being deposited 
+on an account in their name, they are unable to take the additional steps needed to access or  benefit 
+from this transfer.  
+It is also important to note that even in cases where programs can obtain access to the PSP’s data on 
+beneficiary transactions (such as withdrawals), this data is still not enough  to monitor the success of 
+the payment. Withdra wal and transaction data are unable to differentiate between cases where 
+beneficiaries who were unable to transact, for whatever reason, and those who chose not to —to save, 
+for example. Because empowering beneficiaries to save is one of the key advantages of making SPL 
+payments onto a digital account, it is not desirable to discourage this savings behavior to make 
+monitoring more straightforward. Instead, the monitoring system needs to be adapted to complex 
+array of choices that digital payments offer progr am beneficiaries.  
+The Grievance Redress Mechanism  
+GRM Basics  
+A GRM is meant to given program -affected persons (PAPs) an avenue to express any concerns they may 
+have concerning the project implementation. The type of grievance handled by the GRM will depend  
+on the type of program. In the context of cash transfer programs, complaints will often be linked to the 
+payment mechanism (non -receipt of transfer, problems with PIN, etc.). In programs that are targeted, 
+complaints will likely relate to eligibility (imp roper inclusion or exclusion from the program). Other more 
+general complaint types might include inefficient service delivery, bribery or malpractice, sexual 
+harassment, etc.  
+Once complaints are made by PAPs, they are recorded in the program’s complaints database, which 
+ideally should automatically assign a unique tracking number to each complaint. Then the complaints 
+are then referred to the appropriate actors —which may be program staff, but could also be staff of 
+partner organizations, such as the PSP, o r actors in the local justice system —for investigation. Once the 
+appropriate action has been taken, the grievance is marked as resolved in the tracking system and the 
+outcome is communicated clearly to the complainant. This process is summarized in Figure 2. 
+ 
+Figure 2 The Life Cycle of a Complaint in the GRM  
+ 
+Source: World Bank staff compilation.  Reception
+Grievance 
+channels:
+Phone hotline
+Local program staff
+Local community
+leaders
+Other intermediariesRecording
+Data entry into 
+tracking system
+Complaint tracking 
+number assigned
+Confirmation sent 
+to complainant
+(unless 
+anonymous)Investigation
+Complaint codified 
+according to type
+Case assigned to 
+appropriate 
+personnel
+Investigation 
+carried outResolution
+Grievance 
+resolved according 
+to procedures in 
+GRM manualFeedback
+Complaintant 
+informed of 
+resolution
+(unless 
+anonymous)10 A good GRM is accessible to and understood by all PAPs (not only program beneficiaries), giving them 
+adequate means to express any grievances they may have. It also has efficient processes for resolving 
+grievances and  communicates clearly and proactively w ith PAPs about not only the resolution but also 
+the process and any expected delays. Annex F gives a summary of good practice in GRM design SPL 
+programs as well as some examples of programs that have effectively implemented GRMs with these 
+features.   
+GRM a nd M&E  
+Although the grievance redress mechanism (GRM) is often considered more as a fiduciary safeguard, 
+from an M&E perspective, the GRM has a core role in providing payment monitoring data  when 
+monitoring digital payments. When a GRM is well functioning —that is, when grievance channels are 
+well understood by program beneficiaries and are accessible —then it not only allows grievances to be 
+resolved in an efficient manner, but it also supplies a steady stream of qualitative and quantitative data 
+on any prob lem areas in the program. It is the GRM’s quality as a data source that makes it central to 
+the M&E system.  
+Putting It All Together: A Monitoring System for Digital Payments  
+Figure 3 illustrates the logical framework needed to assess whether beneficiaries h ave meaningfully had 
+access to their digital payment. To begin, it should be noted that knowing whether  there has been a 
+transaction on the beneficiary account is always insufficient to determine whether  the beneficiary had 
+access to their benefit. This is  true both in cases where there was a transaction was and was not 
+observed. For example, a beneficiary would not have accessed her benefit despite the program observe 
+a withdrawal in the PSP data if that beneficiary was a victim of fraud (PIN stolen, etc.) . Similarly, a 
+beneficiary would have accessed her benefit despite not transacting on her account if she was aware 
+of the deposit on her account but had chosen to save and withdraw later .  
+It follows then that PSP transaction data, while necessary for moni toring digital payments, is always 
+insufficient for monitoring the delivery of social payments deposited onto beneficiary accounts. This is 
+due to the very nature of digital deposits, where in general —in contract to traditional cash payments —
+the expectatio n is that no program or PSP staff are physically present at the moment when the benefit 
+is accessed. Indeed, in the case of saving, there is no event to observe apart from the beneficiary’s 
+internal intention to save. To determine whether beneficiaries hav e accessed their benefits, the PSP 
+data must thus be supplemented by data collected from beneficiaries themselves: either passively (in 
+the case of the GRM) or actively (in the case of spot checks and surveys).  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 11 Figure 3 Logical framework for access of digital SPL payments, including suggested data sources  
+ 
+Source: World Bank staff compilation.  
+ 
+In general, due to the challenges of monitoring digital payments, a key to successful monitoring is to 
+combine various data sources to assemble a complete picture of beneficiaries’ access to their transfers. 
+In addition to data on deposits from the PSP (an d, if possible, transfers and withdrawals), other data 
+sources include surveys of beneficiaries, data produced by grievance redress systems (GRMs) or 
+complaints hotlines, and mystery shopping exercises. Although administering a survey to each 
+beneficiary f ollowing each payment is unlikely to be cost -effective in the context of most SPL, if surveys 
+12 are deemed necessary the costs can be kept to a minimum by extrapolating from small samples (spot 
+checks), conducting surveys by phone, or both.  
+Among these vario us sources of data,  however,  two should be considered as primary, namely the 
+payment report from the PSP and the GRM.  The primacy of the GRM over surveys and spot checks is 
+due to the facts that a) it makes use of an existing system, b) the system gives da ta in real time, as 
+opposed to the periodic nature of surveys, c) the system is passive, and thus is less costly to administer 
+than surveys, which are usually the most expensive item in any M&E budget.  
+In a well -functioning SPL program, data from the  PSP and GRM alone  is usually enough  to conclude, on 
+a day -to-day operational level, that payments are being made successfully and that beneficiaries have 
+access to their transfers. In general, the monitoring system will have produced strong evidence that a 
+beneficiary had access to her transfer if the following five conditions are met  ( 
+Table  2). 
+ 
+Table 2 Conditions for effective monito ring of digital payments using data from GRM and PSP  
+ Condition  Data source  
+1 The beneficiary is aware that they should expect a transfer and of the transfer amount  Precondition  
+2 A deposit has been made onto the beneficiary’s account  PSP reports  
+3 The beneficiary is aware of and can use the GRM  Precondition  
+4 The GRM data is feeding into the M&E system  Precondition  
+5 No complaint has been filed complaining of non -payment  GRM data  
+Source: World Bank staff compilation.  
+ 
+It should be noted that since the three preconditions in the above table must be met for the PSP and 
+GRM data to allow adequate payment monitoring. As such, these preconditions themselves should also 
+be monitored periodically in order ensure the reliabilit y of such a payment -monitoring system. 
+Additionally, although the above system provides for some quality assurance of the PSP data some 
+initial monitoring of potential fraud on the part of the PSP, at intervals it will also be necessary to 
+perform addition al quality assurance where beneficiaries are systematically surveyed to ensure that 
+they have received their transfers. For example, an SPL program’s M&E plan could provide for periodic 
+spot checks where beneficiaries are explicitly asked whether they rece ived and how they used their 
+transfer, to complete the original picture offered by the PSP data and GRM. The survey instrument that 
+is used for such post -payment surveys in the PFSP is provided as an example in Annex C.   
+Additionally, a n example of a PSP reporting framework that is adapted to the specificities of mobile 
+money providers’ ICT platforms  and can be integrated into contracts with mobile money PSPs  is 
+provided in Annex B.  
+IV. PERFORMANCE  EVALUATION  
+Evaluation Framework  
+The assessment approach  used i n this note  is adapted from  standardized methodology developed by 
+the Inter Agency Social Protection Assessments (ISPA) group, housed at the World Bank.  The ISPA 
+payment assessment tool, whose detailed methodology can be found in Annex E, specifically look s at 
+the quality of SPL program delivery, assessing three criteria , namely  accessibility, robustness and 
+integration , ranging on a scale of 1 (lowest) to 5 (highest) in terms of effectiveness and performance . 
+The tool  was specifically designed to review th e payment mechanis m used by an individual program  or 
+those payment mechanisms used across the whole SPL sector , providing  a common framework for 
+comparing multiple payment delivery mecha nisms  ( 13 Table 3). An existing SPL program ’s payment mechanism can be measured against these criteria to 
+provide a snapshot of its stage of development as well as tracking its evolution over time.  This 
+assessm ent approach is designed to  help to identify areas that may benefit from strengthening, in line 
+with best practice, as well as ensuring that trade -offs between criteria are made explicit to policy 
+makers.  
+ 
+Table 3 Summary of Assessm ent Scores for Selected SPL Programs  
+  PFSP  CNPS10 CGRAE  PEJEDEC  
+ Cost of Access  3.33  TBC TBC TBC 
+Accessibility  Appropriateness  2  3  
+ Rights and Dignity  2.33     
+ Reliability  1.4    
+Robustness  Governance  3    
+ Security  2.33     
+Integration  Financial Inclusion  2.67   3.5  
+ Coordination  1    
+OVERALL  SCORE  2.25     
+Source: World Bank staff compilation.  
+ 
+The scores of the selected payment systems assessed in this note  are summarized in  
+Table 3. The following sections will give details of these assessments  by sub-score .   The discussion in 
+the following section focuses on the case of PFSP and  discusses the following key areas in deta il in this 
+note given the availability of data to date: cost of access, appropriate ness,  rights and dignity , security 
+and financial inclusion .  Preliminary scores are given for reliability (based on a nearly 90  percent  success 
+rate in payment delivery as o f 2017 based on the first 5,000 beneficiaries, with an additional 30,000 
+beneficiaries to follow), governance and security  and a more detailed discussion of these dimensions 
+will follow through future work.  
+Detailed Findings  
+Accessibility  
+The PFSP payment  system is fully digitized, based on mobile money technology. This choice was made 
+possible by the relatively advanced development of the Ivoirian mobile money market, which boast ed 
+53 per cent  of the transaction volume of the entire seven -country WAEMU re gion.11 At the same time, 
+the market is not yet so mature that providers’ agent networks extend into beneficiaries’ villages. 
+Indeed, during the current pilot phase of the program, only 3 of the 56  pilot villages had a permanent 
+mobile money agent present  in the village itself (although in many cases there was an agent in a nearby 
+market town) . In order the overcome this limitation in the next phase of the program, the PFSP staff 
+have begun working with mobile money providers to help them expend their agent networks to cover 
+program villages. Until this is accomplished, the payment s are made by roving agents who come to 
+villages on a fixed schedule after payments are made and  facilitate on -site withdrawals.  
+• Cost of access  
+The PFSP program management has clea rly thought about cost of access and has put several  measures 
+into place to minimize the cost to beneficiaries. During the program’s pilot phase, the cost of not only 
+the SIM card but also the phone was subsidized to 100 per cent.  Additionally, PFSP progra m officers 
+                                                           
+10 Note: The assessment for CNPS, CGRAE and PEJEDEC will depend on data availability; the note mainly focuses on the case 
+of PSNP as a case study representing th e main challenges and opportunities faced across SPL programs.  
+11 BCEAO (2015), “Situation des services financiers via la téléphonie mobile dans l’UEMOA à fin septembre 2015.” 
+http://www.bceao.int/IMG/pdf/situation_des_services_financiers.pdf  
+ 14 came to beneficiary villages to collect the documents necessary to open their mobile money accounts 
+and opened accounts on their behalf. The program also gave all beneficiaries a free program -specific 
+ID card that they could use to authenticate the first few payments. Cash  out was also subsidized, with 
+the market rate withdrawing the full transfer amount at one time added to the amount of the original 
+transfer (the PSP backend software offers no way to eliminate cash -out fees directly  for transfers  or 
+accounts ). Additionally, for those villages where the PSP did not have a permanent presence, the PSP 
+sent itinerant agents to beneficiaries’ villages on a set sched ule, once after each transfer, lowering 
+beneficiaries’ transport costs to zero.  Because the villages where small , wait time were also low.   
+There are however some costs that still get passed on to beneficiaries. For example, if beneficiaries 
+wish to withdraw at another time or wish to withdraw in multiple tranches, then they must cov er their 
+own transport costs to regular mobile money agent, which in many cases can be far away. Additi onally, 
+the cost of obtaining a  national ID card, which will be required to continue receiving electronic 
+payments after the pilot period, is not subsidi zed. This will likely imply significant expenses for certain 
+groups of beneficiaries, including migrants  and internally -displaced persons , who may have to travel to 
+a far -away birthplace to acquire a birth certificate.  
+There is some evidence that some ben eficiaries may be excluded from the program and/or prevented 
+from receiving their benefit because they are being discriminated against by local leaders, on whom 
+the program depends for communication with beneficiaries. The program plans to review its 
+commu nications strategy to make more use of above -the-line communications, including posters and 
+radio announcements in local languages, in addition to expanding below -the-line communication, 
+primarily through the line ministry’s national network of  social work ers. 
+Although O range money accepts a variety  of ID documents for account opening, 12 what these 
+documents have in common is that in almost all cases they require the account holder to have access 
+to a birth certificate, not only for themselves but in many cases also for their parents . This is problematic 
+for non -citizens, IDPs, and those whose birth s were registered in civils registers that have been lost, 
+either due to the 2002 –2011 political crisis  or due to poor archival conditions . In the short term, Orange 
+Money has agreed to open accounts for these beneficiaries and pay them based on  the program -
+specific ID document that the PFSP has issued to beneficiaries, while waiting for them to obtain a 
+national ID document such as the CNI. It is not yet clear what percentage of PFSP beneficiaries will be 
+able to obtain the necessary ID document s by the time that Orange Money stops accepting the project -
+specific ID. At this point, it is likely that at least some beneficiary households will lose access to the 
+current payment mechanism.  
+Training on the payment channel for PFSP beneficiaries has be en inadequate to allow them to 
+autonomously make withdrawals and perform basic function s on their accounts (change PIN,  etc.). 
+Training on the payment mechanism needs to be reinforced significantly  to minimize fraud as well as 
+to maximize the financial -inclusion benefits of the accounts .  
+• Appropriateness  
+The social workers are not well placed to offer supplementary training during these on -site payments 
+because of time pressure to complete all the payments within the allotted time (usually one-half day).  
+Beneficiaries general understand the frequency of the payments, which are quarterly, but they only 
+learn the actual date that the roving agent will pass through their village with one- or two -days’  notice. 
+They are communicat ed this info rmation mainly by soc ial workers , which is problematic, as some 
+evidence suggests that they are not reliably transmitting PFSP messages  on time due to a variety of 
+factors often outside of their control , but it will be important to monitor whether and why information 
+is being  withheld .  
+                                                           
+12 The list of acceptable identification documents includes the national ID card, passport, driver’s license, voter registration  
+card, and birth certificate for citizens, as well as a foreign national ID card, consular card, or passport for non -citizens.  15 Currently, beneficiaries have no choice of PSP. The PFSP has an exclusive contract with Orange Money 
+for the first two transfers, after which a competitive -bidding process will be used to select another PSP, 
+possible Orange Money again, for anot her exclusive contract. There is also the question of the inherent 
+appropriateness of mobile money to populations such as the one targeted by the PFSP, since some 
+beneficiaries, due to illiteracy or other factors, may be ill equipped to use payment channel  that 
+requires manipulating a phone, and may thus be at heightened risk for fraud.  
+• Rights and Dignity  
+There is a complaints mechanism,  but it is still in the preliminary stages of development . Evidence from 
+the first payment shows that the complaints mecha nism is highly utilized, suggesting that it is well 
+publicized and accessible. Its chief manifestation at the moment is through a helpline, whose number 
+is printed on the back of the program ID card that was issued to each transfer recipient.  
+Although due  to the lack of PSP agents in PFSP localities, most withdrawals are currently performed 
+using special itinerant PSP agents that are dispatched according to the PFSP timetable. It is, however, 
+not necessary that beneficiaries use this program -specific infra structure if they happen to live in one of 
+the few localities with a PSP agent or they travel to an area where there is one.  
+• Security  
+Training is currently poor,  and most beneficiaries do not know how to use their phones independently 
+to perform basic fun ctions, such as changing their PIN code, or making a withdrawal.  
+Current means by which payroll lists are communicated is not secure and open to fraud. No systematic 
+review of fraud risks has been conducted and no systematic effort has been made to establ ish protocols 
+for mitigating fraud risks.  
+Integration  
+• Financial Inclusion  
+The current method for subsidizing beneficiaries’ withdrawal fees penalizes beneficiaries who choose 
+to withdraw their benefit in multiple smaller tranches —for example, if they want  to save or use their 
+account to help with budgeting —which incentivizes beneficiaries to cash out their entire benefit at one 
+time and  normalizes this behavior . 
+The fact that the PFSP authentication and monitoring protocols do not require beneficiaries to use 
+program -specific payment infrastructure is a key advantage of the program, as it allows beneficiaries 
+to progressively become more and more integrated in pub lic financial services infrastructure as this 
+infrastructure becomes more developed in their communities.  
+However, the state of PSPs’ current agent networks means that few beneficiaries will be able to take 
+advantages of the savings and budgeting possibil ities offered by their accounts unless these agent 
+networks are brought closer to beneficiaries’ villages.  (For details of the PFSP strategy on agent network 
+expansion, see box X.)   
+Financial literacy training is also lacking, to allow beneficiaries to tak e full advantage of their accounts 
+and help them see the advantages of not withdrawing their entire benefit immediately in cash. This will 
+become more and more relevant as the program matures and agents become more and more 
+accessible to beneficiaries.  (For details of the PFSP financial inclusion strategy, see box Y.)  
+• GRM  
+The PFSP GRM was operational before the first transfer was made to the pilot group of 5000 
+households. Over the three -month period following the first payment, 2072 official complaints wer e 
+filed, of which 97 per cent were successfully resolved. All the received complaints pertained to the 
+payment mechanism, with delays in opening of mobile money accounts (59  percent ), delays in receiving 
+the transfer to the account (31  percent ), and blocke d SIM cards due to incorrect PIN entry (9  percent ) 
+being the principle reasons for filing a complaint. Most of these difficulties were due to logistical 
+problems stemming from setting up an entirely new payment mechanism, including some delays on 16 the PSP s ide. The fact that all complaints related to the payment mechanism and not, for example, to 
+targeting, is likely to do the fact that the GRM had not yet been adequately publicized within the wider 
+community, and so only program beneficiaries were aware of the possibility to file a grievance. 
+Concerning the channel used to make complaints, most  official grievances were recorded though the 
+dedicated complaints hotline (whose number was printed on the back of the program ID card). 
+However, many beneficiaries, especially those who do not speak French, did not place the call 
+themselves, instead asking a community leader or local social worker to make the call on their behalf.  
+This experience shows that the GRM is fully operational. The large volume of complaints  shows that a 
+large proportion of households were able to express themselves through one of the various available 
+grievance channels, and the 71 per cent resolution rate within four weeks shows that the system 
+worked efficiently to redress many of benefici aries’ grievances. Compared to international experience, 
+where GRMs have often been added to SPL programs as an afterthought if they are included at all, this 
+be a very positive performance for a pilot GRM of a greenfield SPL program.  
+Lessons Learned from  Global Experience  
+International experience shows the positive effects of promoting financial inclusion, where having a 
+financial account increases individual savings, female empowerment, consumption and productive 
+investment of entrepreneurs, and income f or the poor, particularly among women.13  “Mobile finance ” 
+is an umbrella term that describes the how mobile phones can be used to perform tasks that have 
+traditionally only been able to be done through personal accounts in the formal banking sector account  
+or through services such as Western Union. Some of these tasks include mobile cash transfers, direct -
+to-vendor payments, as well as a broad range of banking services, such as account -based savings, credit 
+or transaction products.  
+Kenya has used digital m echanisms to extend social protection coverage to the informal sector at scale.  
+The case of Kenya is interesting because of its reliance on a new platform to collect contributions and 
+promote savings through mobile phones.  In March 2007, M -PESA was launc hed by Kenya’s largest 
+cellular network operator, Safaricom, which is partly owned by London -based Vodafone. The project 
+was largely funded by donors from the financial services sector. Since its inception, M -PESA has 
+witnessed an incredibly fast adoption rate and now boasts near 50  percent  market penetration. As of 
+the end of December 2016, M -PESA served almost 29.5 million active customers through a network of 
+more than 287,400 agents. It is important to mention that a large portion of M -PESA users have 
+previously been excluded from the formal financial service sector.  
+Through partnerships with local cellular providers, M -PESA has grown to other markets internationally 
+including as Tanzania, Afghanistan, South Africa, India, Romania, Albania, Mozambique, Lesotho, and 
+Egypt. Also, in a recent development, through a new pa rtnership, Kenyan users of M -PESA will be able 
+to transfer money directly to any Western Union location worldwide. In terms of services, the platform 
+can fill the needs satisfied by many traditional banking services. Using their mobile phone, users can 
+benefit from many services, including  send money ; withdraw ing cash at licensed M -PESA agents (many 
+of whom are retailers who also sell SIM cards, airtime and other products);  buying airtime;  buying goods 
+and services through licensed vendors;  paying bills, including paying contributions to NSSF;  saving 
+money and r equest ing lo ans, through licensed products with partnering banking institutions.  
+All individuals who use M -PESA must have register for the service from a registered agent using their 
+National  ID (card or passport) and mobile device. To add cash into their mobile wallet, users deposit 
+cash at an agent shop. The same is to true for withdrawals.  The organization business model operates 
+on transaction fees that vary based on amount of transaction  and type of transfer (to M -PESA user, to 
+                                                           
+13 Deléchat, et al. 2018. “What Is Driving Women ’s Financial Inclusion Across Countries? ” IMF Working Paper WP/18/38,  
+International Monetary Fund, Washington, DC. See also: Aportela 1999; Ashraf and others, 2010; Dupas and Robinson 2009; 
+Swamy 2013.  17 unregistered users, and cash withdrawals). Registered businesses who allow users to pay bills through 
+M-PESA cover the full transaction fee (1.5  percent  per transaction).  
+Recently the NSSF in Kenya has partnered w ith a digital provider  to fully adopt a cashless payment 
+system, both for contributions and withdrawals, erasing the need to visit an NSSF office. Going forward, 
+employers with more than 20 employees will now be able to make their staff contributions throu gh M -
+PESA.  It is worth noting, while M -PESA dominates the market of mobile money subscriptions, (66  
+percent  of the total number of subscribers as of 2017), there are  at least three  other smaller mobile 
+money platforms with  over ten  million users  collectiv ely. 
+In addition, the  NHIF (National Hospital Insurance Fund) has partnered with a leading 
+telecommunication company in Kenya to provide the informal sector an easier way to pay 
+contributions. The fund stopped cash transactions aiming to reduce utilization  rates to NHIF services. 
+It is important to mention that since NHIF started using mobile money to collect contributions, travel 
+time and long lines to be registered/to pay contributions has been reduced given that, one of the main 
+problems that the informa l sector had, were the penalty fees (5 times the monthly contribution14) 
+payed once a member default. Members no longer worry about not being able to pay contributions on 
+time, in fact M -PESA allows individuals to contribute on behalf of others too.  
+It is i mportant to note that, although NHIF in Kenya is mandatory for the formal sector, NHIF is voluntary 
+for the informal sector. Therefore, healthcare coverage is still low in general, but due to M -PESA the 
+informal sector grew significantly between 2009 and 2 017. Mobile payments made contributions 
+easier, safer, and quicker. It also reduced workload on the NHIF staff.  A study15 shows that out of 60 
+emergency bills, 36 are paid though M -PESA, fast access to cash leads to fast access to healthcare. 
+These reporte d bills were not only linked directly to hospital bills, but to the transportation an individual 
+need to get to the health facility. In addition to that, patients can access preventive care through NHIF 
+easier using M -PESA and by going to preventive care p atients would seek emergency care less.  
+In addition to that, it is interesting to explore the central connectivity that using M -PESA offer. NHIF’s 
+network interconnection gives access to the members, customers, and stakeholder to the system, no 
+matter how  far. A member could contribute while out of town and the transaction would be displayed 
+in all NHIF branches. An interesting part is not only in the display of the transaction itself, but in the 
+information a member submits to the system. Information is t ransferred then to a data center this is 
+how it becomes accessible to all branches.  Consequently, NHIF witnessed important growth over  the 
+last five years .  Overall membership has grown  from 2.8M in 2010 to 5.2M in 2015 .  Membership in the 
+informal sector  has reached 1.7M  as of 2015, from around 530,000 in 2010 to 1.7 M , and a s of 2015, 
+with an increase in monthly revenues to NHIF from  M-PESA . 
+Overall, Mobile Money has effectively supported  expand ing coverage to  the informal sector . Its key  
+advantages include its  ability to lower opportunity costs in registration and payment (time saved, ease 
+of services), imp rove access to health care, and in the case of health insurance, reduce out -of-pocket 
+payments for vulnerable workers.   
+ 
+ 
+ 
+                                                           
+14 Case Study: Kenya National Hospital Insurance Fund (NHIF) Premium Collection for the Informal Sector - USAID 
+https://www.hfgproject.org/wp -content/uploads/2014/06/14 -1022 -HFG -Mobile -Money -Case -Study -NHIF -mpesa.pdf  
+15 Stuart, G. Ph.D., Cohen. M., Ph.D. - Cash In, Cash Out Kenya: The Role of M­PESA in the Lives of Low -Income People 
+http://www.fsassessment.umd.edu/publications/pdfs/cash_in_cash_out_kenya.pdf  
+ 18 V. RECOMMENDA TIONS  
+This note demonstrates that Côte d’Ivoire has successfully  gradual ly scale -up of digital financial 
+inclusion through mobile money accounts for social protection beneficiaries through  an innovative 
+public -private partnership.16  This approach has supported the Government’s efforts in developing a 
+new productive social safety net national program, including livelihoods support and tools for 
+supporting social protection service delivery a s a system  since 201517 18.  As of  March 2018 , 50,000 
+beneficiary households (approximately 600,000 individuals) have been receiving targeted cash 
+transfers as of March 2018, exceeding the original target of 35,000 households, and reaching three 
+percent of t he poor. The program  has also supported a new mobile money account platform for 
+delivering cash transfers and economic inclusion activities to boost earnings among beneficiaries, 
+largely subsistence farmers.  
+An important aspect of the program is its relia nce on  a social registry information system , housing  
+socioeconomic information on 164,000 households (800,000 individuals, or three percent of the 
+national population) located in 16 regions across a total of over 882 villages, coordinated with the 
+national  pension funds and universal health insurance program.  This system includes an identification 
+mechanism , which will be enhanced through coordination with the unique biometric identification 
+system project  launched in 201919 with  the National Identification Office.  
+In the future , given the pension system capitalizes on multiple payment channels, the productive safety 
+nets program  likewise aims to develop a competitive process for including more than one payment 
+service provider, where possible. Quality improvement will focus on areas such as payment 
+reconciliation (that is, reporting arrangements and quality assurance regarding payments credited to 
+beneficiary accounts versus withdrawn), coordinating with other government agencies  involved in e -
+government -to-person payments, notably the two national pension funds and tax administration.  
+More specifically, detailed recommendations for improving  social protection payment mechanisms , 
+notably of the  productive safety net program, in the short, medium and long term are summarized in 
+Table 4. 
+Interoperability, choice and quality -based competition  
+In the short term, if SPL programs wish to give beneficiaries different options for their PSP, programs 
+will have to either process bulk payments separately for each PSP or go through an aggregator. The 
+eventual emergence of a sector -wide interoperable switch will simplify this process for SPL programs 
+and eventually allow them to be truly PSP agnostic.  
+However, it is not clear that SPL programs in Côte d’Ivoire should aspire to offer this kind of choice. 
+Giving SPL program beneficiaries a wide array of choice  of PSP is considered best practice, and is 
+common in more mature SPL environments, with that rationale that this choice both allows 
+beneficiaries to choose the service that is best suited to their needs while also encouraging competition 
+among PSPs. In le ss-mature payment environment such as Côte d’Ivoire, however —where financial 
+infrastructure is not fully developed, especially in rural areas —this “choice” may be a false one if there 
+is no appropriate provider in beneficiaries’ localities for them to choo se from.  
+                                                           
+16 IFC-World Bank. 2018. “Granting Access: Leveraging Social Payments to Expand Digital Financial Inclusion in Côte D’ivoire.” 
+Field Note No. 11, World Bank Group, Washington, DC.   
+17 World Ban (2015). Project Appraisal Document for Côte d’Ivoire Productive Social Safety Net Project.  Washington, DC: 
+World Bank.  
+18 World Bank (2019).  Project Appraisal Document for Côte d’Ivoire Social Protection and Economic Inclusion Project 
+(Additional Financing to Productive Social Safety Net Project).  Washington, DC: World Bank.  
+19World Bank  (2019). Project Appraisal Document: West Africa Unique Identification for Re gional Integration and Inclusion 
+(WURI) Program (including Côte d’Ivoire), P161329 . Washington, DC: World Bank.  19 Monitoring and Accountability  
+It is important that contracts with PSPs offering digital payments should explicitly require a) individual 
+reporting on transfers, and b) that all transactions be individually reconciled before the PSP’s fees are 
+paid. Annex B contains a sample reporting framework to be annexed to a contract with a PSP.  
+Grievance Redress  
+While the overall design of the PFSP GRM is in line with international best practices, the program will 
+want to continue to make improvements to ensure that the GRM is efficient enough to keep pace with 
+the growth of the program during scale -up. In particular, the PFPS should formalize the roles of local 
+leaders in the GRM and training relative actors in their responsibilities (vill age committees, local 
+political leaders, local social workers, etc.); make grievance processing more efficient (digitization of 
+complaints database, coding of complaints to allow for priority treatment of certain complaint types, 
+standardization of communi cation with beneficiaries on expected delays and on complaint resolution); 
+continued awareness raising with beneficiaries on possible grievance channels; opening the complaints 
+system to non -beneficiaries of the PFSP (allowing complaints on program targeti ng, etc.); and 
+reinforcing the capacity of the GRM call center, including implementation of a toll -free complaints 
+hotline, and support for the most common local languages.  
+Conclusion  
+Overall, it may be wise in the short and medium term for SPL programs to  focus on developing 
+partnerships with a small number of high -potential PSPs, to collaborate with them on the development 
+of the financial infrastructure —networks of agents and cash points —that will pay dividends for SPL 
+program delivery down the road.  
+ 20 Table 4 Recommendations for Evolution of the PFSP Payment Delivery Mechanism  
+  Short term  Medium term  Long term  
+ 
+Cost of Access  Subsidize the cost of and assist beneficiaries in acquiring a 
+national ID card (for those who do not have one).  
+Work with PSP to facilitate provision of a low -value, relaxed -
+KYC account to PFSP beneficiaries.  Work with ONI on a system to give PFSP beneficiaries national ID cards en 
+masse.  
+Liaise with relevant stakeholders to clarify regulation on low -value accounts at 
+regulatory level and seek a potential program -level exception to KYC 
+requirements for SIM cards.  Liaise with ONI during rollout of the RNPP such at by 2020 all PFSP 
+beneficia ries are systematically and automatically enrolled in the 
+national and civil registries as an integral part of PFSP enrolment.  Accessibility  
+Appropriateness  Work with current PSP to deploy additional itinerant field 
+agents to reduce wait times.  
+Work with current PSP to encourage it to expand its agent 
+networks to beneficiary localities. (For those localities that 
+do not immediately offer agents a viable business case, 
+continued reliance on itinerant agents may be necessary in 
+the short/medium term.)  
+Improve training of beneficiaries on use of payment channel 
+and ensure that this training is adapted to the specific needs 
+of the PFSP population.  
+Improve communication with beneficiaries on the 
+parameters of the PFSP. It is important to diversify 
+communica tions channels (posters, radio, SMS, robo -calling, 
+through community leaders, through social workers, etc.) to 
+mitigate the risks of communicating through any one 
+channel.  Begin working with other two mobile money operators, giving beneficiaries a 
+choice b etween multiple services.  
+Work with all PSPs to encourage them to expand their agent networks to 
+beneficiary localities. (For those localities that do not immediately offer agents 
+a viable business case, continued reliance on itinerant agents may be necess ary 
+in the short/medium term.)  
+Depending on the conclusions of the evaluation of the pilot phase, consider 
+expanding to PSPs not based on mobile, which maybe be more appropriate for 
+certain types of beneficiaries (illiterate, elderly, etc.).  Branch out to banks, MFIs and other relevant PSPs for those 
+beneficiaries who prefer them.  
+Permanent PSP agent networks in beneficiaries’ localities allow 
+on-demand withdrawals, reducing wait times to negligible levels.  
+Stay abreast of developments in the Ivoirian DFS market and 
+integrate mobile -enabled savings -and-loans and insurance 
+products and other new innovations that are relevant to PFSP 
+beneficiaries as they become available.  
+Coordinate with relevant stakeholders/donors in the 
+development of a national payment s witch that will allow 
+seamless integration of multiple PSPs, delivering maximum 
+beneficiary choice.   
+Rights and Dignity  Improve communication about GRM and encourage 
+beneficiaries to voice complaints.  
+Monitor exclusion closely in M&E design and take corrective 
+action as necessary. If any beneficiary households are 
+unable to access their benefits due to the payment channel 
+(no access, unable to use), then corrective action is 
+necessary.  Use feedback fro m pilot to review GRM processes and make improvements in 
+case -management processes.  
+Work with PSP on joint case -management process for payment -related 
+complaints, including data sharing on complaints.  
+Conduct consultations to ask local communities what ro le they wish to have in 
+the GRM and integrate them as appropriate.  Give local communities and meaningful and clearly defined role 
+in the GRM. Foster linkage to integrate the GRM with the broader 
+justice system. Publish comprehensive GRM manual publicly .  
+Reliability  Work with PSP to identify inefficient processes leading to 
+payment delays.  
+Develop M&E tools to allow payment delays to be tracked 
+reliably at the transaction level.  Conduct systematic review of risks leading to payment delays and develop 
+mitigating measures to manage these risks.  
+Work directly with PSPs to better understand how PFSP payments can be 
+leveraged to ensure a viable business case the maximal number of PSP agents. 
+For localities where no viable business case exists, contemplate a sub sidy to the 
+PSP in the short/medium term.  Ensure regular updating and adaptation of the risk review and 
+mitigating measures.  
+Working with other stakeholders, work toward build a mobile -
+money ecosystem in beneficiary villages, to ensure a clear and 
+sustaina ble business case for PSP agents.  Robustness  
+Governance  
+Work with PSP to improve quality and timeliness of 
+transaction -level reporting.  Codify staff roles and responsibilities clearly in a comprehensive operational 
+manual and ensure that all staff, includ ing field staff, understand their role.  Integrate PFSP and PSP MIS such that reporting is automatic and 
+in real time.  
+As program matures, increase independence of internal M&E to 
+improve data reliability.  21   Short term  Medium term  Long term   
+Security  Develop M&E tools to automatically flag potentially 
+fraudulent activity from payment reports and GRM data and  
+ensure that PSP agents are also monitored for fraudulent 
+activity.  
+Reinforce training for beneficiaries on PIN codes, including 
+on how (and when) to change them.  When developing PFSP MIS, provide for functionality to automate creation of 
+payroll lists, with checks to ensure data quality, and generate a secure file for 
+transmission to the PSP.  
+Conduct systematic review of risks leading to fraud and d evelop any fraud -
+control measures identified as lacking.  
+Engage with ONI as a stakeholder to ensure that the new national registry 
+facilitates PFSP’s fraud -prevention needs (ability to remove duplicate 
+beneficiaries based on biometric data, etc.).  Integrat e PFDP and PSP MIS to enable straight -through payment 
+processing.  
+Regularly update review of fraud risk and update fraud -control 
+measures as appropriate.   
+Financial Inclusion  Work with PSPs to expand network of permanent agents to 
+beneficiaries’ localities, reducing program reliance on 
+itinerant agents.  
+Work with PSPs to devise a fee structure whereby 
+beneficiaries are not penalized for making multiple, smaller 
+withdrawals.  
+ Work with all PSPs to encourage them to expand their agent  networks to 
+beneficiary localities reducing program reliance on itinerant agents.  
+Develop financial -literacy training training for beneficiaries on using their 
+accounts as a tool for managing their household budgets, with a special 
+emphasis on medium -term savings. Use regular household visits from social 
+workers to systematically reinforce key messages from this training as well as 
+provide individualized coaching on household budgeting.  
+Work with PSPs to offer earmarked - and commitment -savings sub -accoun ts to 
+beneficiaries and other relevant budgeting too ls. Incorporate these into the 
+training.  Permanent PSP agent networks in beneficiaries’ localities allow 
+on-demand withdrawals, reducing wait times to negligible levels.  
+As additional financial services b ecome accessible through the 
+PSPs used by the PFSP, expand the nature of the financial -literacy 
+training to include borrowing, investing, insurance, etc.  
+Stay abreast of developments in the Ivoirian DFS market and 
+integrate mobile -enabled savings -and-loans  or insurance 
+products and other new innovations that are relevant to PFSP 
+beneficiaries as they become available.  Integration  
+Coordination  Subsidize the cost of and assist beneficiaries in acquiring a 
+national ID card (for those who do not have one).  
+Identify other programs that deliver payments to similar 
+target populations and  begin exploring synergies to 
+coordinating payment delivery.  
+Coordinate on any internal processes used, for example to 
+open accounts or process payments, and share tools 
+between programs.  
+ Work with ONI on a system to give PFSP beneficiaries national ID cards en 
+masse.  
+Establish dialogue between all country SPL programs on a shared emergency -
+payment system. Even if payments are outsourced to PSPs, emergency 
+payments may hav e to be handled internally by the government, leading to 
+significant economies of scale to establishing common protocols across 
+programs.  
+Leverage different SPL programs to improve local digital payment ecosystems. 
+If multiple programs can pay into the sam e account —including perhaps non -
+SPL payments such as government salaries —then this will only improve PSP 
+business models, lowering prices of payments for the government and 
+improving the quality of agent networks.  Liaise with ONI during rollout of the nati onal registry such at by 
+2020 all PFSP beneficiaries are systematically and automatically 
+enrolled in the national and civil registries as an integral part of 
+PFSP enrolment.  
+All country SPL programs are fully integrated into the national 
+population regis try, using its unique identifier and biometric data 
+for all identification purposes (including account opening and 
+payment authentication).  
+Review SPL procurement strategy for PSPs and  try to combine 
+multiple programs’ procurements into a single RFP to decrease 
+costs.  
+Source: World Bank staff compilation.  22 VI. ANNEXES  
+A. Fundamental  Performance Indicators for Payment Mechanisms  
+ INDICATEUR PAR COMPOSANTE  Mode d'obtention/definition  Unité  PAIEMENT  1-Nombre moyenne de paiement reçu par le 
+ménage  Dénombrement sur declaration du ménage et 
+vérification des portable (message de 
+notification) ménage  Nombre 
+(moyenne)  
+2-Pourcentage de paiements ayant été effectué 
+avec succès  Nombre de transfers  effectués pendant le 
+dernier paiement avec succès (selon le 
+rapport de l'operateur de paiement) divisé par 
+le nombre de bénéficiaires à payer  % 
+3-Etat d'avancement du suivi des paiements  Pourcentage de ménages pour lequel la fiche 
+de suivi de paiement a bien été soumise par 
+les TS après le dernier paiement  % 
+4-Delai de transmission des rapport de l'opérateur 
+de paiement  Le temps mis par l'opérateur de paiement 
+entre le temps du dépôt  du transfert sur le 
+compte du bénéficiaire et la transmission des 
+rapport, en jours (Etat de paiement/ 
+Reporting) (dernier paiement)  jours  
+5-Integralité du rapport de l'opérateur de 
+paiement  Pourcentage de ménages bénéficiaires inclus 
+dans le rapport de paiement soumis par 
+l'operateur de paiement (dernier paiement)  % 
+6-Accord entre les données fournies par Orange 
+money et le suivi effectué par l'UGP  Pourcentage d'accord entre de deux bases de 
+suivi des paiements (fournie par Orange et 
+collecté par l'UGP) (dernier paiement)  % 
+7-Motif de non retrait du transfert  Pourcentage de ceux qui n'ont pas retiré leur 
+dernier paiement  % 
+(a)   Volonté de faire une épargne     
+(b)   Cas de maladie / invalidité / voyage     
+(c)   Manque de liquidité au PDV OM     
+(d)   Non informé de la récéption du 
+transfert     
+(e)   Perte du matériel (portable, puce, etc.)     
+(f)   Oublie du code sécret     
+(g)   Manque de la carte d'identité     CONDITIONS PREALABLES  
+8-Pourcentage de recipiendaires sachant 
+manipuler leur portable de manière satisfaisante  Pourcentage de recipiendaires qui arrivent à 
+effectuer une transaction simple de manière 
+independante  % 
+9-Pourcentage de ménage ayant des pièces 
+d'identité valides  Il s'agit de l'effectif des bénéficiaires ayant des 
+documents d'identité (Carte Nationale 
+d'Identité ou attestation d'identité pour les 
+nationaux, carte consulaire ou passeport ou 
+titre de séjour pour les non nationaux) dont la 
+date de v alidité n'est pas encore arrivée  % PLAINTES  10-Pourcentage des ménages bénéficiaires ayant 
+porté plainte  Nombre de ménages ayant porté plainte (au 
+moins une fois) divisé par le nombre total de 
+ménages ayant réçu au moins un paiement  % 
+11-Pourcentage des plaintes ayant été resolu  Nombre de plaintes pour lesquelles une 
+solution satisfaisante a été proposée au 
+bénéficiaire dans le delai prevu divisé par le 
+Nombre de plaintes réçus  % 
+12-Les types de plainte recurrente/ fréquente  Pourcentage de ceux qui one porté plainte  % 
+(a)   Modalité 1      
+(b)   Modalité 2      
+(c)   …     
+Source: Republic of Côte d’Ivoire,  Productive Social Safety Net / Social Protection and Economic I nclusion Project, 
+2015 to present . 23 B. Good Practice for M&E of Digital Payments  
+Deliverable  Report must include…  Reporting 
+frequency  Required remediation measures  
+5000 project 
+beneficiaries 
+successfully 
+registered to OM 
+service  • Extract from database of 
+OM clients (excel/csv), 
+showing customer names 
+and phone numbers for all 
+project beneficiaries  
+• For any beneficiaries that 
+were not registered 
+successfully, an 
+explanation of what went 
+wrong in each case  Once, at latest 
+3 weeks 
+before first 
+scheduled 
+payment  If <99.5% of project beneficiaries are 
+registered for OM service, then OM must 
+register remaining beneficiaries and 
+resubmit report  
+Agents are alerted 
+to expect higher 
+than normal 
+demand for cash 
+withdrawals and 
+have developed a 
+credible plan to 
+manage their 
+liquidity  • Details of communication 
+with agents, including date 
+of communic ation  
+• Summary of the agent’s 
+strategy to manage 
+liquidity in face of 
+increased demand for cash 
+withdrawals  No later than 3 
+days before 
+each 
+scheduled 
+payment  If not all agents identified by the UGP as 
+participating in the PFSP program have 
+been communicate d with or not all 
+agents have submitted a liquidity -
+management strategy, then both must 
+occur and the report must be 
+resubmitted.  
+Transfers made 
+successfully and 
+on time into 
+beneficiary 
+accounts  • Transaction statement of 
+the PFSP OM account, 
+listing all t ransactions in 
+and out of this account 
+(including all transfers into 
+the beneficiary accounts, 
+including timestamps, 
+beneficiary name, and 
+beneficiary ID), including 
+any and all failed transfers 
+along with their error 
+codes  
+• For any failed transfers, an 
+explanation of what went 
+wrong in each case  No later than 5 
+days following 
+each payment  If transfer failure rate >0.5%, then the 
+appropriate remedial actions must be 
+taken to ensure delivery of transfer, and 
+the report must be resubmitted.  
+Beneficiaries who 
+wish to make cash 
+withdrawals from 
+their accounts are 
+able to, on 
+demand  EITHER  
+• Individual customer 
+transaction statements 
+(excel/csv) for the 
+individual customer 
+account of each project 
+beneficiary, listing all 
+transactions (deposits, 
+withdrawals and transfers, 
+and including timestamps, 
+and beneficiary ID) in and 
+out of the beneficiary’s 
+account  
+OR 
+• List of all transactions 
+(excel/csv) listing all 
+transactions (deposits, 
+withdrawals and transfers, 
+and including timestamps, 
+and beneficiary ID) in and 
+out of the beneficiary’s 
+account  
+ Monthly, 
+starting no 
+later than 30 
+days following 
+the first 
+payment into 
+the first 
+beneficiary 
+account  If the PFSP UGP, in analyzing beneficiary 
+complaints delivered through its 
+Grievance Redress Mechanism, 
+iden tifies geographic zones and/or 
+specific agents who are consistently 
+unable to meet beneficiaries’ demand 
+for cash withdrawals, then it will notify 
+OM of the problem agent. In response, 
+OM must take at least one of the 
+following remedial measures within 10 
+days of being notified by the PFSP UGP of 
+the problem agent:  
+• Assist the existing agent to 
+manage liquidity such that the 
+agent is able to satisfy 
+demand for withdrawals  
+• Dispatch a mobile agent to go 
+to each beneficiary village in 
+this zone, at a fixed time  and 
+date, at least once per month, 
+until the immobile agent is 
+able to satisfy demand for 
+withdrawals  24 • Deploy a new agent in this 
+zone who is better able to 
+address beneficiary demand 
+than the existing agent  
+ 
+OM will be required to submit a report 
+on all s uch remedial actions taken within 
+15 days of receiving notification of the 
+problem agent by the UGP. Remedial 
+measures shall only be considered 
+successful if the number of complaints 
+delivered through the GRM drop to 
+within 1 standard deviation of the over all 
+mean of all agents for the project, as 
+calculated by the UGP. If not considered 
+successful, then additional remedial 
+measures will be required.  
+Source: World Bank staff compilation.   25 C. Good Practice for GRMs  
+Good Practice  Description  Example Programs20 
+Multiple entry 
+points  The GRM should not limit complainants to a 
+single point of entry for expressing their 
+grievances. As an example, a GRM might 
+allow complainants to file grievances either 
+with local project staff or via a telephone 
+hotline. This approach helps ensure that PAPs 
+have recourse to a grievance channel that is 
+appropriate to their needs. It also helps avoid 
+conflicts of interest in cases of corruption or 
+malfeasance: if the corrupt actors are 
+implicated in the GRM, then they may ha ve an 
+interest in preventing the complaint from 
+being registered.  • Philippines  
+• India —Tamil Nadu Empowerment and Poverty 
+Reduction Project (TNEPRP)  
+• Upper Cisokan Pumped Hydroelectrical Power 
+Project  
+• (Indonesia)  
+• Tanzania: Zanzibar Urban Services Project  
+• Lake  Victoria Phase II, APL 2  
+• Indonesia: Upper Cisokan Pumped Storage  
+• China: Hubei Yiba Highway Project  
+• Vietnam: Trung Son Hydro  
+• Azerbaijan: Highway 3  
+• Kazakhstan: South West Roads Project  
+• Kyrgyz Republic: National Road Rehabilitation (Osh 
+transport)  
+• Colombia: Rio Bogota Environment Infrastructure  
+• Southern West Bank Solid Waste Management  
+• India: Vishnugad Hydropower  
+• India: National Ganga River Basin Project  
+ 
+Make use of 
+existing social 
+structures  Various programs have tried to create 
+project -specific  complaint channels, for 
+example using SMS, only to discover that 
+PAPs preferred to complain directly to the 
+same local community leadership structures 
+that they were used to communicating with. 
+Programs should make an effort to 
+incorporate these local lea ders in the 
+program GRM.  • India —Tamil Nadu Empowerment and Poverty 
+Reduction Project (TNEPRP)  
+• Hubei Yiba Highway Project (China)  
+• Tanzania: Zanzibar Urban Services Project  
+• Lake Victoria Phase II, APL 2  
+Allow for 
+anonymous 
+complaints  In certain cases, a PAP might wish to file a 
+grievance anonymously, and the GRM should 
+accommodate this wish. This is especially 
+relevant in sensitive programs where the PAP 
+fear reprisal or retaliation for complaining, for 
+example if there are ethnic tens ions at play.  • Kyrgyz Republic: National Road Rehabilitation 
+(Osh transport)  
+• Kazakhstan SW Road Project  
+• Azerbaijan Highway 3  
+• China: Hubei Yiba Highway Project  
+• India —Tamil Nadu Empowerment and Poverty 
+Reduction Project (TNEPRP)  
+• India: Second Madhya Pradesh District Poverty 
+Initiatives  
+Ability to file 
+complaints in 
+local languages  It is important to ensure that PAPs can 
+express grievances in the language they are 
+most comfortable with. If the local context 
+makes central management of complaints in 
+all local languages impractical, then local 
+leaders and project staff can often be 
+employed as intermediaries.  • Pakistan –Flood Emergency Cash Transfer Project  
+• Kazakhstan SW Road Project  
+Accessible 
+communication  Since the vulnerable groups targeted by many 
+SP programs may not be fully literate or 
+conversant in the national language, it is 
+important that the communication strategy 
+for the GRM and the options for filing a 
+complaint take into account this limitation.  
+For example, text -based communication can 
+be eschewed in favor of illustrations or local -
+language radio broadcasts.  • India —Tamil Nadu Empowerment and Poverty 
+Reduction Project (TNEPRP)  
+• Uganda: Electricity Sector Development Project  
+• Indonesia: Upper Cisoka n Pumped Storage  
+• China: Hubei Yiba Highway Project  
+• Vietnam: Trung Son Hydro  
+• Azerbaijan: Highway 3  
+• Kazakhstan: South West Roads Project  
+• Kyrgyz Republic: National Road Rehabilitation 
+(Osh transport)  
+• Southern West Bank Solid Waste Management  
+• India: Vishnugad Hydropower  
+                                                           
+20 Marie Brown (2014), “Global Review of Grievance Redress Mechanisms in World Bank Projects,” World Bank Group.  26 Good Practice  Description  Example Programs20 
+• India: National Ganga River Basin Project  
+• India: Eastern Dedicated Freight Corridor  
+• Pakistan: Floods Emergency Cash Transfer Project  
+Issuance of a 
+case number  Each complaint should be assigned a case 
+number that can be used by both the program 
+staff and the complainant to track progress 
+toward resolution.  • Philippines  
+• India —Tamil Nadu Empowerment and Poverty 
+Reduction Project (TNEPRP)  
+• Tanzania: Zanzibar Urban Se rvices Project  
+• Indonesia: Upper Cisokan Pumped Storage  
+• Lao PDR: Nam Theun 2 Hydropower  
+• China: Hubei Yiba Highway Project  
+• Vietnam: Trung Son Hydro  
+• Azerbaijan: Highway 3  
+• Kazakhstan: South West Roads Project  
+• Kyrgyz Republic: National Road Rehabilitation 
+(Osh transport)  
+• Colombia: Rio Bogota Environment Infrastructure  
+• Southern West Bank Solid Waste Management  
+• India: Mumbai Urban Transport Project (MUTP)  
+• India: Vishnugad Hydropower  
+• India: National Ganga River Basin Project  
+• India: Tamil Nadu Empowerment Project  
+• India: Eastern Dedicated Freight Corridor  
+• Pakistan: Floods Emergency Cash Transfer Project  
+Categorization 
+and routing of 
+grievances  Complaints should be categorized with 
+routing codes in order to enable more 
+efficient processing. For example, complaints 
+that can be resolved quickly by low -level 
+program staff could be in one category, while 
+complaints that require input from high -level 
+program staff or take more time to process 
+can be considered separately. Categorizing 
+complaints not only enables more efficient 
+processing, but can also permit better 
+communication with PAPs about wait times, 
+as different types of complaints likely take 
+different amounts of time to process.  • Kazakhstan SW Road Project  
+• Pakistan Flood Emergency Cash Transfer Project  
+• Uganda: Electricity Sector Development Project  
+• Indonesia: Upper Cisokan Pumped Storage  
+• Vietnam: Trung Son Hydro  
+• India: National Ganga River Basin  Project  
+• India: Vishnugad Hydropower  
+• India: Eastern Dedicated Freight Corridor  
+• Pakistan: Floods Emergency Cash Transfer Project  
+Written 
+confirmations  All PAPs should receive a written confirmation 
+that their complaint has been received. This 
+written record important even for illiterate 
+PAPs. This confirmation should include the 
+case number as well as the anticipated 
+treatment delays. For example, an automated 
+SMS could be sent to the PAP once the 
+complaint had been recorded into the 
+complaint tracking system. Once the case is 
+closed, its resolution should also be 
+communicated in writing (in addition to other 
+communication mechanisms that are more 
+suitable to illiterate PAPs).  • Kazakhstan: South West Roads Project  
+• China: Hubei Yiba Highway Projec t 
+• India: National Ganga River Basin Project  
+• India: Vishnugad Hydropower  
+• India: Eastern Dedicated Freight Corridor  
+• Pakistan: Floods Emergency Cash Transfer Project  
+Transparency 
+about expected 
+delays  PAPs should understand the anticipated wait 
+time before their complaint resolved. 
+Categorizing complaints according to wait 
+times at entry into the GRM can help facilitate 
+this communication.  • Philippines  
+• India —Tamil Nadu Empowerment and Poverty 
+Reduction Project (TNEPRP)  
+• India: National Ganga River Basin Project  
+• India: Vishnugad Hydropower  
+• Kazakhstan: South West Roads Project  
+• Kyrgyz Republic: National Road Rehabilitation 
+(Osh transport)  
+• Southern West Bank Solid Waste Management  
+• Colombia: Rio Bogota Environment Infrastructure  
+• Turkey: ECSEE APL#6  
+• Azerbaijan: Highway 3  27 Good Practice  Description  Example Programs20 
+• China: Hubei Yiba Highway Project  
+• Vietnam: Trung Son Hydro  
+• Indonesia: Upper Cisokan Pumped Storage  
+• Tanzania: Zanzibar Urban Services Project  
+Training of all 
+actors  Everyone implicated i n the GRM should be 
+trained in their role and how it fits into the 
+overall GRM. This training should not be 
+limited to program staff, but also any 
+contractors involved in the GRM (such as the 
+PSP) as well as other actors (community 
+leaders, etc.).  • Nigeria  
+• Philippines  
+Electronic data 
+management  In order to allow complaints to be tracked and 
+processed effectively, they should be 
+managed —at least once they reach a certain 
+level —in a GRM tracking database. Data entry 
+can be performed either centrally or in the 
+field, using tablets equipped with an 
+electronic complaint form.  • Philippines  
+• India —Tamil Nadu Empowerment and Poverty 
+Reduction Project (TNEPRP)  
+• Tanzania: Zanzibar Urban Services Project  
+• Indonesia: Upper Cisokan Pumped Storage  
+• Lao PDR: Nam Theun 2 Hydr opower  
+• China: Hubei Yiba Highway Project  
+• Vietnam: Trung Son Hydro  
+• Azerbaijan: Highway 3  
+• Kazakhstan: South West Roads Project  
+• Kyrgyz Republic: National Road Rehabilitation 
+(Osh transport)  
+• Colombia: Rio Bogota Environment Infrastructure  
+• Southern West Bank So lid Waste Management  
+• India: Mumbai Urban Transport Project (MUTP)  
+• India: Vishnugad Hydropower  
+• India: National Ganga River Basin Project  
+• India: Tamil Nadu Empowerment Project  
+• India: Eastern Dedicated Freight Corridor  
+• Pakistan: Floods Emergency Cash Transfer  Project  
+Source: World Bank staff compilation.   28 D. Example  Survey Instrument for Payment Monitoring – PFSP  
+A. Information générale  
+Rapport à  Intitulé  Modalité (réponse)  
+ Identifiant de l’enquêteur   
+Enquêteur  Nom, prénoms de l’enquêteur   
+ Date de l’entretien   
+ Région   
+ Village   
+Ménage  Identifiant du ménage   
+ Nom, prénoms du chef de ménage   
+ Nom, prénoms du récipiendaire   
+Récipiendaire  Numéro de téléphone (sur lequel il reçoit le transfert)   
+ Genre du récipiendaire  Masculin |__|    Féminin|__|  
+ 
+B. FICHE DE SUIVI DES PAIEMENTS  
+Intitulé  Modalité (réponse)  
+1-Statut du bénéficiaire  Transfert reçu|__| Transfert non reçu|__|  
+1.1 Si transfert non reçu, pour quel motif  ? 1-Transfert non effectué  
+2-Carte SIM égarée ou bloquée  
+3-Pas de réception de notification  
+4-Autre  
+Si autre, à préciser  
+1.2 Si transfert reçu, montant notifié au récipiendaire   
+1.3 Si transfert reçu, date de réception de la notification   
+1.4 Si transfert reçu, le récipiendaire a -t-il effectué un retrait  ? Oui |__| Non|__|  
+1.4.2. Si oui  : Combien le récipiendaire a -t-il souhaité retirer  ?  
+1.4.3. Si oui  : Le récipiendaire a -t-il pu retirer le montant souhaité  ? Oui |__| Non|__|  
+1.4.1 Si oui  : Date de retrait   
+1.4.4 Si non  : Quels en sont les motifs  ? 
+ 
+ 1-Volonté de faire une épargne  
+2-Incapacité à effectuer les retraits  
+2.1 cas de maladie/Invalidité/voyage  
+2.2 Indisponibilité de l’agent au point de vente 
+(liquidité)  
+2.3 Service de mauvaise qualité au point de vente  
+2.4 Problème de réseau  
+2.5 Problème d’identification/authentification  
+2.6 Récipiendaire non informé  
+2.7 Perte du matériel  29 2.8 Non maitrise du service Orange money  
+2.9 Difficulté avec le code secret  
+2.10 Ne veut pas payer des frais de transaction 
+élevés  
+2.11 Autre problème avec Orange money.  
+       Précisez  :………………………………….  
+ 
+1.5.1 Le récipiendaire a -t-il consulté son solde avant l’opération de 
+retrait  ? Oui |__| Non|__|  
+1.5.2 Le récipiendaire a -t-il consulté son solde après l’opération de 
+retrait  ? Oui |_ _| Non|__|  
+2.1. A quelle date le récipiendaire pense -t-il recevoir le paiement suivant  ?  
+2.2. Quel doit être le montant de ce paiement  ?  
+2.3. Le récipiendaire aurait -il eu besoin de l’appui d’une tierce personne 
+pour effectuer l’utilisation du service Orange money  Oui |__| Non|__|  
+2.4. Le récipiendaire maitrise -t-il l’utilisation du portable (administration 
+de teste de capacité de manipulation)  Oui |__| Non|__|  
+3.1 Avez -vous connaissance de la helpline/mécanisme de gestion des  
+réclamations  ?  
+3.2 Savez -vous comment l’utiliser  ?  
+3.3. Souhaiteriez -vous enregistrer une réclamation maintenant  ? Oui |__| Non|__|  
+        Si oui  : Ouvrez la fiche d’enregistrement des plaintes   
+Source: Republic of Côte d’Ivoire,  Productive Social Safety Net / Social Protection and Economic I nclusion 
+Project.   30 E. Example  Grievance Form  – PFSP  
+ 
+ 
+ 
+(continued)  
+FICHE D’ENREGISTREMENT DES PLAINTES  
+ 
+A- REFERENCE GEOGRAPHIQUE  
+ 
+PLAINTE N°………du ………………20………  
+REGION  :……………………………………………………………… ……………………………………  
+DEPARTEMENT  :…………………………………………………… ………………………………………  
+SOUS -PREFECTURE  : ……………………………  LOCALITE / VILLAGE  : ……………....... ..........  
+NIVEAU DE TRAITEMENT  :  
+□  Comité Villageois (CV)   □Travailleur Social    □UGP  
+ 
+B- IDENTIFICATION DU PLAIGNANT  
+ 
+NOM  : …………………… ………………… .   PRENOMS  : ……………………………………………………….  
+SEXE  :  □ Masculin   □ Feminin  
+LIEU DE RESIDENCE  : …………………………… ……………………………………………………………  
+ 
+CONTACT  (Tél)  : ……………………………… ……………………………………………………………… ……. 
+STATUT                           □ Bénéficiaire                               □ Non bénéficiaire  
+Si bénéficiaire , N° d’Identifiant  : …………………………………………………..  
+Si Non bénéficiaire  :       □ Lien avec un bénéficiaire          □ Pas de lien avec un bénéficiaire  
+Si « NON » préciser  Nom et Prénoms du bé néficiaire  : ……………………………………… …………..  
+ 
+MOTIF DE LA PLA INTE  : 
+ 
+ CIBLAGE DES MENAGES  
+□ Exclusion d’un ménage dans le processus    
+□ Inclusion d’un ménage dans le processus   
+□ Omission d’un ménage  dans le processus   
+□ Autre   à préciser  :……………………………………  
+……………………………….........................................  
+……………………………………………………………..  
+ IDENTIFICATION DE MENAGES ELIGIBLES  
+□ Exclusion du ménage dans le processus    
+□ Inclusion d’un ménage dans le processus   
+□ Omission du ménage  dans le processus   
+□ Omission du récipiendaire du ménage  
+□ Omission du suppléant  dans le processus   
+□ Autre   à préciser  :…………………………… ………  
+……………………………….........................................  
+……………………………………………………………..  
+ 31  
+Source: Republic of Côte d’Ivoire,  Productive Social Safety Net / Social Protection and Economic I nclusion Project, 
+2015 to present.   
+PAIEMENT DU BENEFICIAIRE  
+□ Exclusion du bénéficiaire  
+□ Inclusion du bénéficiaire   
+□ Omission du bénéficiaire  
+□ Corruption  
+□ Non perception du transféré   
+□ Non perception du montant total à transférer  
+□ Non reversement du moins perçu du moi précèdent   
+□ Retard  dans le transfert   
+□ Mode de paiement non adapté  
+□ Absence de point de paiement /de structure de paiement   
+□ Retard de paiement du point de vente  
+□ Retard des agents de paiement  
+□ Eloignement du point de paiement par rapport à la localité  
+ □ Refus de paiement par le point de vente  
+□ Espace non propice au paiement  
+□ Intimidation  des agents de paiement  
+□ perte/vol de la carte SIM  
+ □ Oublie/perte du mot de pass  
+□ Décès du récipiendaire du ménage  
+ □ Décès du suppléant du ménage  
+□ Difficulté à manipuler le terminal/potable  
+□ Manque de couverture réseau mobile du prestataire  
+□ Autre  à préciser  :……………………………………  
+………………………………................ .........................  
+……………………………………………………………..  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Description sommaire de la plainte  
+…………………………………………………………………………………………………………………………………………….  
+…………………………………………………………………………………………………………………………………………….  
+…………………………………………………………………………………………………………………………………………….  
+…………………………………………………………………………………………………………………………………………….  MESURES D’ACCOMPAGNEMENT  
+□ Stigmatisation  
+□ Absence des agents de mise en œuvre des MA 
+□ Manque d’intrants -matériel -équipement  
+□ Retard  des agents de mise en œuvre des MA  
+□ Non-respect du calendrier proposé   
+□ Manque de courtoisie des agents  
+□ Non-respect  des programmes et modules  
+□ Manque  de suivi des bénéficiaires  -MA  
+□ Lourdeur  dans le processus de traitement des plaintes   
+□ Autre  à préciser  :……………………………………  
+……………………………….........................................  
+……………………………………………………………..  AUTRES  
+□ Stigmatisation  
+□ Fraude sur l’identité   
+□ Conflit intercommunautaire  
+□ Conflit entre bénéficiaires  
+□ Disfonctionnement du CV   
+□ Disfonctionnement du Comité Communal  
+□ Disfonctionnement du Comité Régional  
+□ Inégalement  de traitement des bénéficiaires  
+□ Manque de courtoisie des agents de paiement  /MA  
+□ Négligence constatée dans le traitement des plaintes   
+□ Lourdeur  dans le processus de traitement des plaintes   
+□ Autre  à préciser  :……………………………………  
+……………………………….........................................  
+……………………………………………………………..  
+ 32 F. ISPA Payment Assessment Tool Overview  
+ 
+Source: Interagency Social Protection Assessment  partner organizations , World Bank; http://www.ISPATools.org .  
+ 
+  
+33  
+ 
+  

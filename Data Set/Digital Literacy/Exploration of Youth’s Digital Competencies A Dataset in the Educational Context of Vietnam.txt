@@ -1,0 +1,1499 @@
+data
+Data Descriptor
+Exploration of Youth’s Digital Competencies: A
+Dataset in the Educational Context of Vietnam
+Anh-Vinh Le1, Duc-Lan Do1
+, Duc-Quang Pham1, Phuong-Hanh Hoang1,
+Thu-Huong Duong2, Hoai-Nam Nguyen3
+, Thu-Trang Vuong4, Hong-Kong T. Nguyen5,
+Manh-Toan Ho6,7,8,*
+, Viet-Phuong La6,7
+and Quan-Hoang Vuong6,7,*
+1National Centre for Sustainable Development of General Education Quality, Vietnam National Institute of
+Educational Sciences, 101 Tran Hung Dao street, Hoan Kiem District, Hanoi 100000, Vietnam;
+leanhvinh@gmail.com (A.-V .L.); doduclan@gmail.com (D.-L.D.);
+pducquanghn62ktrung@yahoo.com.vn (D.-Q.P .); hoangphuonghanh.hph@gmail.com (P .-H.H.)
+2Research Division on Educational Assessment, Vietnam National Institute of Educational Sciences, 101 Tran
+Hung Dao street, Hoan Kiem district, Hanoi 100000, Vietnam; duongthuhuong@gmail.com
+3ICT Department, Ministry of Education and Training, 15 Hai Ba Trung Street, Hoan Kiem District, Hanoi
+100000, Vietnam; nam.moet@gmail.com
+4Sciences Po Paris, Campus de Dijon, 21000 Dijon, France; thutrang.vuong@sciencespo.fr
+5Graduate School of Asia Paciﬁc Studies, Ritsumeikan Asia Paciﬁc University, Beppu, Oita 874-8577, Japan;
+tohong19@apu.ac.jp
+6Centre for Interdisciplinary Social Research, Phenikaa University, Ha Dong District, Hanoi 100803, Vietnam;
+phuong.laviet@phenikaa-uni.edu.vn
+7Faculty of Economics and Finance, Phenikaa University, Ha Dong District, Hanoi 100803, Vietnam
+8Vietnam—Netherlands Master in Development Economics, Institute of Public Policy and Management,
+National Economics University, 207 Giai Phong street, Hai Ba Trung District, Hanoi 100000, Vietnam
+*Correspondence: toan.homanh@phenikaa-uni.edu.vn (M.-T.H.);
+hoang.vuongquan@phenikaa-uni.edu.vn (Q.-H.V .)
+Received: 24 April 2019; Accepted: 10 May 2019; Published: 14 May 2019
+/gid00030/gid00035/gid00032/gid00030/gid00038/gid00001/gid00033/gid00042/gid00045 /gid00001
+/gid00048/gid00043/gid00031/gid00028/gid00047/gid00032/gid00046
+Abstract: The recent surge of the Fourth Industrial Revolution has set forth demands for a new
+generation of the labor force with a comprehensive set of skills to meet the standards of the global
+market. Despite widespread concerns about educational reforms and renovations to enhance the
+workforce capacity in terms of information and communication technology (ICT) skills, research
+into the digital proﬁciencies of students has been limited in Vietnam. This dataset contains 1061
+observations on the digital competency level of 10th-grade students in 20 surveyed schools from ﬁve
+provinces in Vietnam. The investigation, joining frequentist and Bayesian analyses, aims to provide
+valuable insights into the current state of children’s attitudes, behaviors, competency levels, and
+use of ICT within the Vietnamese educational context. The values of the dataset lie in its proposed
+scientiﬁc framework for replication in multiple regions and contexts as well as the feasibility of
+categorical regression techniques together with Bayesian statistics for hierarchical regression analysis.
+Dataset: The dataset is submitted and will be published as a supplement to this paper.
+Dataset License: CC-BY
+Keywords: information technology; ICT skills; digital citizenship; Bayesian statistics; Vietnam
+1. Summary
+This manuscript introduces a dataset (Supplementary Materials) of 1061 observations of students
+from 20 senior high schools across ﬁve provinces and cities in Vietnam. The dataset was collected
+Data 2019 ,4, 69; doi:10.3390 /data4020069 www.mdpi.com /journal /dataData 2019 ,4, 69 2 of 37
+as a component of the “Digital Kids Asia Paciﬁc (DKAP)” project that aimed to investigate school
+students’ information and communication technology (ICT) competency levels in Asia-Paciﬁc through
+four pilot countries: Vietnam, Bangladesh, Fiji, and the Republic of Korea. The DKAP investigation,
+implemented by the United Nations Educational, Scientiﬁc, and Cultural Organization (UNESCO) in
+Bangkok within the scope of the “Fostering Digital Citizenship through Safe and Responsible Use of
+ICT” Project, seeks to establish concrete understanding of ICT use and competency levels of regional
+children by creating and verifying a framework to gather quantitative data reﬂecting their attitudes,
+perceptions, proﬁciency, and behavioral use of ICT in an educational setting. The compiled data
+include information regarding respondents’ demographic and personal features such as gender, ICT
+awareness and access, socioeconomic status, school and neighborhood living standards, and their
+digital citizenship competencies.
+The goal of this dataset is not only to describe students’ ICT cognitive and non-cognitive skills,
+but also to encompass a thorough examination of the relationship between demographic, cognitive,
+behavioral, sociocultural, and contextual factors, and the digital competencies of school students.
+Utilizing both the frequentist and Bayesian approaches, analyses of these data would shed light on
+possible predictive factors and the determinants of ICT proﬁciency as an essential ability of future
+global citizens.
+This research is particularly crucial to developing economies that rely heavily on technology
+transfer to boost technological progress and sustain long-term economic growth [ 1] Research has
+conﬁrmed the underlying signiﬁcance of human capital stock in secondary and tertiary levels of
+education, as absorption capacity, in facilitating technology transfer [ 1,2]. The ICT skills readiness
+of school students is even more critical for low and middle-income economies in the era of Industry
+4.0, which presents substantial challenges and opportunities. In Vietnam as a particular case study,
+researchers have pointed out the increased risks for the “middle-income trap” where investment will
+recede due to the rising labor cost and poor labor-saving technology [ 3]. As Vietnam transits from
+traditional entrepreneurship to a new ‘computational entrepreneurship [ 4,5], skill shortages are another
+problem facing the Southeast Asian country, with the highest percentage of wage workers at risk due
+to automation in the region [ 6]. As of 2016, low skilled workers still took up to over one-third of the
+total labor force in the country [ 7], despite a growing demand for information technology (IT) workers
+by 47% per year [ 8]. Alongside the possible disruption in growth rates and concerns over the weak
+human capital, Vietnam’s cybersecurity is still vulnerable, with a four-fold increase of the number of
+cyberattacks and incidents within one year from 2015 to 2016 [ 9]. Vietnam only ranked 101 out of 193
+countries in a global cybersecurity index in 2017 [ 10]. Recognizing this peril of falling far behind in
+the age of digitalization, the Vietnamese government has made an e ort to improve skills education
+for youth, especially technical education [ 11]. In addition to enhancing the competitiveness of the
+labor force, digital competencies are also relevant to widespread concerns facing the global community
+such as cyberbullying, youth suicide, depression, or behavioral disorders [ 12]. Therefore, ﬁndings
+from this dataset are expected to have signiﬁcant implications for the development and evaluation of
+management and capacity-building policies in the emerging country.
+Within the scope of this text, description of the dataset, including the survey questionnaire,
+potential research questions, the research framework, and our data collection procedure will be
+presented. Examples of possible statistical model methods and analyses will also be provided.
+Limitations and potential implications of the dataset will be discussed in the ﬁnal section of the paper.
+2. Data Description
+DKAP was proposed as part of UNESCO’s “Enhancing National Capacity to Foster Digital
+Citizenship Education in Asia Paciﬁc” project to understand students’ digital competency in the Asia
+Paciﬁc region. The project was ﬁnancially supported by the Government of the Republic of Korea
+Funds-In-Trust and Google in close cooperation with The International Telecommunication Union
+(ITU) and The United Nations Children’s Fund (UNICEF).Data 2019 ,4, 69 3 of 37
+The DKAP survey tool has been assessed as reliable and validated to measure digital citizenship
+competencies under the DKAP Framework. A total of 5129 responses from children aged 15 from four
+countries—Bangladesh, Fiji, South Korea, and Vietnam—have been obtained using the instrument
+within the scope of a comparative investigation study of digital citizenship across the pilot countries.
+The Vietnam Institute of Educational Sciences (VNIES) became the focal point of the Ministry of
+Education and Training to carry out the project component in Vietnam. VNIES signed the contract with
+UNESCO Hanoi (N04500363176) to conduct the survey in September 2018 in ﬁve provinces within the
+country. The survey questionnaire of the project in Vietnam was translated into Vietnamese from the
+English version of the DKAP framework.
+The dataset contains responses by 1061 15-year-old school students regarding their digital
+competencies. The questionnaire consists of 117 multiple-choice questions, most of which require the
+respondents to choose one single answer out of the provided options, while some of the questions
+ask for more than one answer. Questions and answers were treated as discrete and continuous
+variables and encoded according to the coding instructions provided by UNESCO (see the dataset).
+The questions were divided into two groups: group (1), contextual questions; and group (2), digital
+competence questions. Group 1 contains 33 items asking for students’ ICT experiences along with
+their demographic information. Group 2 contains 84 items concerning students’ ICT competencies
+across ﬁve di erent domains.
+2.1. Group (1) Personal Background Questions
+The 33 question items in group (1) cover three domains: (1) student personal background
+(eight items); (2) access and usage of digital devices (18 items); and (3) socioeconomic status (SES)
+(seven items).
+2.1.1. Domain (1): Student Personal Background
+In domain (1), the ﬁrst two questions are ‘Gender’ and ‘Year of birth’. The question of ‘Gender’
+oers two options: ‘female’ and ‘male’ (‘F1’). Other questions within this domain ask about
+the surveyors’ current study grade level (‘F3’), the language they use (‘F4’), their country (‘F5’),
+expected highest level of education(‘F6’), number of days absent from school (‘F7’), and time spent on
+outside-school activities (‘F8’).
+The distribution of answers for domain (1) questions is presented in Table 1. The percentage of
+female participants is slightly higher than male participants (by 6.2%). Nearly all (99%) of the students
+were born in 2003, and all were in Grade 10. In the Vietnamese 12-grade education system, these
+students were in the ﬁrst year of senior high school.
+The question of academic expectation asks about the highest expected education level. The
+responses were encoded as variable ‘F6’. Statistics show that the majority of students wished to
+complete post-secondary (36%) and masters /doctoral level (33.5%). Distributions of responses to F6 by
+gender can be found in Figure 1.Data 2019 ,4, 69 4 of 37
+Table 1. Distribution of students according to their personal background.
+Coded Name Descriptions Values Frequencies Proportions
+F1 GenderFemale 558 53.10%
+Male 493 46.90%
+F2 Year of birth2001 1 0.09%
+2002 10 0.95%
+2003 1043 98.96%
+F3 Study grade level 10 1061 100.00%
+F4 LanguageVietnamese 1016 95.90%
+Other, please specify 43 4.10%
+F5 Country Vietnam 1061 100.00%
+F6 Expected highest level of educationLower secondary 10 0.90%
+Upper secondary 190 18.00%
+Post-secondary 381 36.00%
+Masters /Doctoral 354 33.50%
+I don’t know 123 11.60%
+F7 Number of days absent from schoolNone 928 87.50%
+1 or 2 days 87 8.20%
+3 or 4 days 29 2.70%
+5 to 10 days 9 0.80%
+More than 10 days 8 0.80%
+F8 Time spent on outside-school activities
+F8_1 Socializing with friendsLess than an hour 246 23.20%
+1–2 h a day 484 45.70%
+3–4 h a day 240 22.60%
+5–6 h a day 49 4.60%
+7 h a day or more 41 3.90%
+F8_2Helping family with work, housework, or
+caretakingLess than an hour 112 10.60%
+1–2 h a day 392 37.20%
+3–4 h a day 332 31.50%
+5–6 h a day 144 13.60%
+7 h a day or more 75 7.10%
+F8_3Doing homework or other academic
+activitiesLess than an hour 50 4.70%
+1–2 h a day 328 31.00%
+3–4 h a day 407 38.50%
+5–6 h a day 197 18.60%
+7 h a day or more 76 7.20%
+F8_4 Doing volunteer workLess than an hour 759 72.10%
+1–2 h a day 204 19.40%
+3–4 h a day 57 5.40%
+5–6 h a day 18 1.70%
+7 h a day or more 15 1.40%
+F8_5 Doing ﬁne arts activitiesLess than an hour 663 63.00%
+1–2 h a day 266 25.30%
+3–4 h a day 67 6.40%
+5–6 h a day 29 2.80%
+7 h a day or more 28 2.70%Data 2019 ,4, 69 5 of 37
+Data 2019 , 4, 69 5 of 36 
+  
+Figure 1. Students’ highest expected level of education by gender.  
+2.1.2. Domain (2): Access and Usage of Digital Devices 
+Regarding students’ access and usage of digital devices, the first question in domain (2) on 
+students’ “experience of using digital devices” yields  four values: ‘never’, ‘l ess than 1 year’, ‘1–2 
+years’, ‘3–4 years’, and ‘more than 5 years’ (‘G1’). The other questions in this domain collect information about the frequency of students’ Internet access from a digital device (‘G2’); the location from which they are connected to the Internet (‘G3 ’), the types of digital devices used for Internet 
+connection from home (‘G4’), school  (‘G5’), or a local community access point (‘G6’); the type of 
+Figure 1. Students’ highest expected level of education by gender.
+2.1.2. Domain (2): Access and Usage of Digital Devices
+Regarding students’ access and usage of digital devices, the ﬁrst question in domain (2) on
+students’ “experience of using digital devices” yields four values: ‘never’, ‘less than 1 year’, ‘1–2 years’,
+‘3–4 years’, and ‘more than 5 years’ (‘G1’). The other questions in this domain collect information about
+the frequency of students’ Internet access from a digital device (‘G2’); the location from which they are
+connected to the Internet (‘G3’), the types of digital devices used for Internet connection from homeData 2019 ,4, 69 6 of 37
+(‘G4’), school (‘G5’), or a local community access point (‘G6’); the type of Internet connection at home
+(‘G7’), school (‘G8’), or a local community access point (‘G10’); whether students can access the Internet
+at a public venue or not (‘G9’); people who provided instructions on computers and the Internet (‘G11’
+and ‘G12’); the purpose and use of Internet connections (‘G13’–‘G16’); and experiences with coding
+and software development (‘G17’ and ‘G18’).
+The distribution of answers for domain (2) questions is presented in Table 2. Almost all the
+students had Internet coverage at home (97.2%).
+Table 2. Distribution of students according to their access and usage of digital devices.
+Coded Name Descriptions Values Frequencies Proportions
+G1Amount of experience that
+students have regarding
+usage of digital devicesNever 13 1.20%
+Less than 1 year 60 5.70%
+1–2 years 180 17.00%
+3–4 years 333 31.50%
+More than 5 years 472 44.60%
+G2Amount of time accessing
+the Internet using digital
+devices per dayHardly ever 22 2.10%
+Less than an hour 54 5.10%
+1–2 h 329 31.10%
+3–4 h 414 39.10%
+5–6 h 156 14.70%
+7 h or more 84 7.90%
+G3 Location of Internet access
+G3_1Frequency of Internet
+connection from homeHardly ever 32 3.00%
+At least every month 10 1.00%
+At least every week 32 3.00%
+Less than an hour 83 7.90%
+1–2 h a day 298 28.40%
+3–4 h a day 367 35.00%
+5–6 h a day 128 12.20%
+7 h a day or more 100 9.50%
+G3_2Frequency of Internet
+connection from schoolHardly ever 663 63.80%
+At least every month 34 3.30%
+At least every week 91 8.80%
+Less than an hour 172 16.60%
+1–2 h a day 43 4.10%
+3–4 h a day 10 1.00%
+5–6 h a day 20 1.90%
+7 h a day or more 6 0.60%
+G3_3Frequency of connection
+from Internet cafeHardly ever 585 56.10%
+At least every month 127 12.20%
+At least every week 151 14.50%
+Less than an hour 85 8.20%
+1–2 h a day 64 6.10%
+3–4 h a day 19 1.80%
+5–6 h a day 3 0.30%
+7 h a day or more 8 0.80%Data 2019 ,4, 69 7 of 37
+Table 2. Cont.
+Coded Name Descriptions Values Frequencies Proportions
+G3_4Frequency of connection
+from a local Internet
+access pointHardly ever 779 74.50%
+At least every month 81 7.80%
+At least every week 69 6.60%
+Less than an hour 69 6.60%
+1–2 h a day 27 2.60%
+3–4 h a day 13 1.20%
+5–6 h a day 3 0.30%
+7 h a day or more 4 0.40%
+G4Digital devices used for
+Internet access at home
+G4_1 Desktop computerNo 623 58.70%
+Yes 438 41.30%
+G4_2 LaptopNo 555 52.30%
+Yes 506 47.70%
+G4_3 SmartphoneNo 80 7.50%
+Yes 981 92.5%
+G4_4 Tablet PCNo 729 68.70%
+Yes 332 31.30%
+G4_5 PrinterNo 938 88.40%
+Yes 123 9.80%
+G4_6 None of the aboveNo 1053 99.20%
+Yes 8 0.80%
+G5Digital devices used for
+Internet access at school
+G5_1 Desktop computerNo 374 35.30%
+Yes 686 64.70%
+G5_2 LaptopNo 1006 94.90%
+Yes 54 5.10%
+G5_3 SmartphoneNo 656 61.90%
+Yes 404 38.10%
+G5_4 Tablet PCNo 1028 97.00%
+Yes 32 3.00%
+G5_5 PrinterNo 1005 94.80%
+Yes 55 5.20%
+G5_6 None of the aboveNo 906 85.50%
+Yes 154 14.50%
+G6Digital devices used for
+Internet access at a local
+community access point
+G6_1 Desktop computerNo 770 72.60%
+Yes 291 27.40%
+G6_2 LaptopNo 924 87.10%
+Yes 137 12.90%
+G6_3 SmartphoneNo 572 53.90%
+Yes 489 46.10%Data 2019 ,4, 69 8 of 37
+Table 2. Cont.
+Coded Name Descriptions Values Frequencies Proportions
+G6_4 Tablet PCNo 982 92.60%
+Yes 79 7.40%
+G6_5 PrinterNo 1002 94.40%
+Yes 59 5.60%
+G6_6 None of the aboveNo 714 67.30%
+Yes 347 32.70%
+G7Type of Internet connection
+at home
+G7_1 Wired InternetNo 652 61.50%
+Yes 409 38.50%
+G7_2 Wireless InternetNo 205 19.30%
+Yes 856 80.70%
+G7_3 NoneNo 1031 97.20%
+Yes 30 2.80%
+G8Type of Internet connection
+at school
+G8_1 Wired InternetNo 726 68.40%
+Yes 335 31.60%
+G8_2 Wireless InternetNo 477 45.00%
+Yes 584 55.00%
+G8_3 NoneNo 803 75.80%
+Yes 257 24.20%
+G9Availability of local Internet
+access pointNo 713 67.80%
+Yes 338 32.20%
+G10Type of Internet connection
+at a local community access
+point
+G10_1 Wired InternetNo 802 75.70%
+Yes 257 24.30%
+G10_2 Wireless InternetNo 356 33.60%
+Yes 703 66.40%
+G10_3 NoneNo 860 81.20%
+Yes 199 18.80%
+G11People who provided the
+most instructions on how to
+use computersMy teachers 309 29.40%
+My friends 110 10.50%
+My family 130 12.40%
+I learned myself 495 47.10%
+My local community 2 0.20%
+Others 6 6
+G12People who provided the
+most instructions on how to
+use the InternetMy teachers 95 9.00%
+My friends 131 12.40%
+My family 98 9.30%
+I learned myself 715 67.70%
+My local community 9 0.90%
+Others 8 0.80%Data 2019 ,4, 69 9 of 37
+Table 2. Cont.
+Coded Name Descriptions Values Frequencies Proportions
+G13Computers or Internet usage
+per day for school study
+purposesHardly ever 356 33.60%
+Less than an hour 257 24.30%
+1–2 h 365 34.50%
+3–4 h 57 5.40%
+5–6 h 14 1.30%
+7 h or more 9 0.90%
+G14Computers or Internet usage
+per day for personal study
+purposesHardly ever 87 8.20%
+Less than an hour 220 20.80%
+1–2 h 582 55.00%
+3–4 h 129 12.20%
+5–6 h 33 3.10%
+7 h or more 8 0.80%
+G15Computers or Internet usage
+per day for leisure purposesHardly ever 19 1.80%
+Less than an hour 124 11.70%
+1–2 h 520 49.10%
+3–4 h 286 27.00%
+5–6 h 78 7.40%
+7 h or more 33 3.10%
+G16Computers or Internet usage
+per day for peer socializing
+and communication
+purposesHardly ever 28 2.60%
+Less than an hour 227 21.50%
+1–2 h 506 47.80%
+3–4 h 205 19.40%
+5–6 h 66 6.20%
+7 h or more 26 2.50%
+G17Learning experiences of
+basic coding skills at schoolNo 445 42.10%
+Yes 611 57.90%
+G18Experiences of website or
+application developmentNo 142 13.40%
+Yes 916 86.60%
+The responses to questions on the purposes of computer and Internet usage were encoded as
+continuous variables ‘G13’, ‘G14’, ‘G15’, and ‘G16’. Statistics indicate that the modal value for ‘G13’ is
+1–2 h of computer and Internet usage per day for school study purposes.
+Figure 2 depicts the distribution of values for variable ‘G14’ about the amount of time spent online
+or using computer by gender. The horizontal axis refers to the provided di erent time lengths. The
+blue columns represent the number of female students, and the red columns represent the number of
+male students. It can be seen that a large number of students spent between one and two hours online
+for personal study purposes (55%). It also seems that female students preferred spending more hours
+online or using a computer than their male counterparts.Data 2019 ,4, 69 10 of 37
+Data 2019 , 4, 69 10 of 36 
+  
+Figure 2. Distributions of students by gender according to their time spent being on the Internet or 
+using a computer.  
+2.1.3. Domain (3): Socioeconomic Status (SES) 
+Questions regarding socioeconomic status in domain (3) concerned issues such as the highest 
+education level of students’ parents (‘H2’ and ‘H3’), level of access to physical (‘H4’) and academic resources (‘H5’), and level of support by others (‘H6’ and ‘H7’). The distribution of answers for 
+domain (1) questions is presented in Table 3. 
+Figure 2. Distributions of students by gender according to their time spent being on the Internet or
+using a computer.
+2.1.3. Domain (3): Socioeconomic Status (SES)
+Questions regarding socioeconomic status in domain (3) concerned issues such as the highest
+education level of students’ parents (‘H2’ and ‘H3’), level of access to physical (‘H4’) and academic
+resources (‘H5’), and level of support by others (‘H6’ and ‘H7’). The distribution of answers for domain
+(1) questions is presented in Table 3.Data 2019 ,4, 69 11 of 37
+Table 3. Distribution of students according to their socioeconomic status.
+Coded Name Descriptions Values Frequencies Proportions
+H1People sharing the same
+household
+H1_1 MotherNo 134 12.70%
+Yes 925 87.30%
+H1_2 FatherNo 205 19.40%
+Yes 853 80.60%
+H1_3Grandparent(s) or other
+relativesNo 744 70.30%
+Yes 314 29.70%
+H1_4Siblings (including half, step,
+or foster siblings)No 290 27.40%
+Yes 768 72.60%
+H1_5Living in a foster home or
+children’s homeNo 1053 99.50%
+Yes 5 0.50%
+H1_6 Living aloneNo 1051 99.30%
+Yes 7 0.70%
+H1_7 Someone or somewhere elseNo 1039 98.20%
+Yes 19 1.80%
+H2Mother’s highest education
+levelNo education 27 2.60%
+Primary 86 8.10%
+Lower secondary 275 26.00%
+Upper secondary 250 23.70%
+Post-secondary 273 25.90%
+Masters /Doctoral 55 5.20%
+I don’t know 90 8.50%
+H3Father’s highest education
+levelNo Education 18 1.70%
+Primary 73 6.90%
+Lower secondary 249 23.60%
+Upper secondary 239 22.60%
+Post-secondary 310 29.30%
+Masters /Doctoral 60 5.70%
+I don’t know 108 10.20%
+H4Access to physical facilities
+and resources
+H4_1 CarYes 254 25.50%
+No 744 74.50%
+H4_2 TelevisionYes 1030 97.60%
+No 25 2.40%
+H4_3Bathrooms with a bathtub or
+showerYes 883 84.60%
+No 161 15.40%Data 2019 ,4, 69 12 of 37
+Table 3. Cont.
+Coded Name Descriptions Values Frequencies Proportions
+H5 Home access to print books0–10 books 205 19.40%
+11–25 books 320 30.40%
+26–100 books 364 34.50%
+101–200 books 96 9.10%
+201–500 books 44 4.20%
+More than 500 books 25 2.40%
+H6Level of support from others
+on ways to use the
+Internet safely
+H6_1 Parents /caregiversNever 227 21.60%
+Hardly ever 281 26.80%
+Sometimes 307 29.30%
+Often 138 13.20%
+Very often 28 2.70%
+All the time 68 6.50%
+H6_2 TeachersNever 150 14.30%
+Hardly ever 243 23.20%
+Sometimes 413 39.40%
+Often 194 18.50%
+Very often 26 2.50%
+All the time 23 2.20%
+H6_3 SiblingsNever 158 15.00%
+Hardly ever 160 15.20%
+Sometimes 356 33.80%
+Often 251 23.80%
+Very often 80 7.60%
+All the time 48 4.60%
+H6_4 PeersNever 117 11.10%
+Hardly ever 208 19.70%
+Sometimes 336 31.90%
+Often 236 22.40%
+Very often 97 9.20%
+All the time 60 5.70%
+H7Level of encouragement
+from others to explore or
+learn things on the InternetData 2019 ,4, 69 13 of 37
+Table 3. Cont.
+Coded Name Descriptions Values Frequencies Proportions
+H7_1 Parents /caregiversNever 224 21.40%
+Hardly ever 315 30.10%
+Sometimes 320 30.60%
+Often 116 11.10%
+Very often 30 2.90%
+All the time 41 3.90%
+H7_2 TeachersNever 71 6.80%
+Hardly ever 188 17.90%
+Sometimes 348 33.10%
+Often 315 30.00%
+Very often 68 6.50%
+All the time 61 5.80%
+H7_3 SiblingsNever 117 11.20%
+Hardly ever 197 18.80%
+Sometimes 346 33.00%
+Often 239 22.80%
+Very often 99 9.40%
+All the time 50 4.80%
+H7_4 PeersNever 81 7.70%
+Hardly ever 163 15.40%
+Sometimes 320 30.30%
+Often 293 27.70%
+Very often 127 12.00%
+All the time 72 6.80%
+Regarding the level of help and support from others, less than a quarter of parents /caregivers
+were perceived as being highly concerned for their children’s cyber safety (‘H6_1’). The level of
+encouragement from parents, teachers, peers, and siblings for the students’ online learning activities
+also seem to be low (‘H7’).
+2.2. Group (2) Competency Questions
+The purpose of group (2) questions is to learn about competency level in using digital technology
+and the capacity to manage potential risks caused by digital technology. This group comprises ﬁve
+domains and corresponding component capacities: Digital Literacy, Digital Safety and Resilience,
+Digital Participation and Agency, Digital Emotional Intelligence, and Creativity and Innovation (see
+the dataset).
+The Digital Literacy domain consists of 14 questions assessing the use of tools and digital
+information: for example, the ability to use software and digital devices and exploit digital information
+in dierent contexts. Assessing scale is in the form of a four-point Likert scale measuring the extent
+to which students can exploit tools and digital information. The visual distribution of responses for
+this variable is displayed in Figure 3a. The modal option is ‘agree a little’ to the ability to use digital
+tools and information, followed by an almost 30% proportion of the respondents claiming to ‘agree a
+lot’, meaning highly conﬁdent in their ability to handle digital tools and information. Besides, theData 2019 ,4, 69 14 of 37
+distribution of gender in each choice is relatively homologous. The mean scores by gender in the
+Digital Literacy domain is around 3.1 (Figure 3b).
+Data 2019 , 4, 69 13 of 36 
+ encouragement from parents, teachers, peers, and sibl ings for the students’ online learning activities 
+also seem to be low (‘H7’). 
+2.2. Group (2) Competency Questions 
+The purpose of group (2) questions is to learn about competency level in using digital technology 
+and the capacity to manage potential risks caused by digital technology. This group comprises five 
+domains and corresponding component capacities: Di gital Literacy, Digital Safety and Resilience, 
+Digital Participation and Agency, Digital Emotional Intelligence, and Creativity and Innovation (see the dataset).  
+The Digital Literacy domain consists of 14 questions assessing the use of tools and digital 
+information: for example, the ab ility to use software and digital devices and exploit digital 
+information in different contexts. Assessing scale is in the form of a four-point Likert scale measuring 
+the extent to which students can exploit tools and digital information. The visual distribution of 
+responses for this variable is displayed in Figure 3a. The modal option is ‘agree a little’ to the ability to use digital tools and information, followed by  an almost 30% proportion of the respondents 
+claiming to ‘agree a lot’, meaning highly confident in their ability to handle digital tools and information. Besides, the distribution of gender in each choice is relatively homologous. The mean scores by gender in the Digital Literacy domain is around 3.1 (Figure 3b). 
+ 
+(a) 0.0010.0020.0030.0040.0050.0060.00
+Unset Disagree
+a lotDisagree
+a littleAgree a
+littleAgree a
+lotFemale Male Unset
+Data 2019 , 4, 69 14 of 36 
+  
+(b) 
+Figure 3. (a) bar chart of students’ ability to  use tools and digital info, and ( b) box plot of mean scores 
+by gender in the Digital Literacy domain.  
+Similarly, the other four domains (Digital Safety and Resilience, Digital Participation and 
+Agency, Digital Emotional Intelligence, and Creati vity and Innovation) also  employ a four-point 
+Likert scale to evaluate the corresponding capaci ties. Figure 4 illustrates the distributions of 
+responses in each of the domains. 
+The Digital Safety and Resilience domain includes 18 questions examining students’ 
+understanding about digital rights, privacy protecti on, well-being, and risk management ability in 
+the digital world. Figure 4a is the histogram of me an scores, which suggests that most of the students 
+felt that they understood their rights, and knew ho w to protect their privacy and react to potential 
+risk in the digital world. Figure 4b shows a small discrepancy in re sponses between girls and boys in 
+this domain. 
+Figure 3. (a) bar chart of students’ ability to use tools and digital info, and ( b) box plot of mean scores
+by gender in the Digital Literacy domain.Data 2019 ,4, 69 15 of 37
+Similarly, the other four domains (Digital Safety and Resilience, Digital Participation and Agency,
+Digital Emotional Intelligence, and Creativity and Innovation) also employ a four-point Likert scale to
+evaluate the corresponding capacities. Figure 4 illustrates the distributions of responses in each of
+the domains.
+Data 2019 , 4, 69 15 of 36 
+   
+(a) ( b) 
+Figure 4. (a) Histogram of mean scores and ( b) Box plot of mean scores by gender in the Digital Safety 
+and Resilience domain. 
+Figure 5a presents the distributi on of responses in the Digital Participation and Agency domain 
+with 12 questions evaluating students’ reactions an d behaviors regarding collaboration as well as 
+engagement in the digital environment. The statistics  show that most of the responses are in the range 
+of “disagree a little” to “agree a li ttle”. Figure 5b demonstrates that girls scored slightly higher than 
+boys in this domain. 
+Figure 4. (a) Histogram of mean scores and ( b) Box plot of mean scores by gender in the Digital Safety
+and Resilience domain.
+The Digital Safety and Resilience domain includes 18 questions examining students’ understanding
+about digital rights, privacy protection, well-being, and risk management ability in the digital world.
+Figure 4a is the histogram of mean scores, which suggests that most of the students felt that they
+understood their rights, and knew how to protect their privacy and react to potential risk in the digital
+world. Figure 4b shows a small discrepancy in responses between girls and boys in this domain.
+Figure 5a presents the distribution of responses in the Digital Participation and Agency domain
+with 12 questions evaluating students’ reactions and behaviors regarding collaboration as well as
+engagement in the digital environment. The statistics show that most of the responses are in the range
+of “disagree a little” to “agree a little”. Figure 5b demonstrates that girls scored slightly higher than
+boys in this domain.
+The distribution of students’ answers to questions in the Digital Emotional Intelligence domain is
+displayed in Figure 6a. This domain consists of 16 questions aiming to assess students’ interpersonal
+skills and awareness when joining the digital world (i.e., their use of social networking sites and
+real-time chatting apps). The histogram of mean scores demonstrates that most of the answers fall into
+the range of “agree a little” to “agree a lot”, meaning that the students showed ﬁrm understanding and
+awareness of legitimate cyber behaviors. The mean score in this domain is not high (around three),
+with a narrow gap between answers by boys and girls (Figure 6b).Data 2019 ,4, 69 16 of 37
+Data 2019 , 4, 69 16 of 36 
+  
+(a) ( b) 
+Figure 5. (a) Histogram of mean scores and ( b)  B o x  p l o t  o f  m e a n  s c o r e s  b y  g e n d e r  i n  t h e  D i g i t a l  
+Participation and Agency domain. 
+The distribution of students’ answers to question s in the Digital Emotional Intelligence domain 
+is displayed in Figure 6a. This domain consists of 16 questions aiming to assess students’ interpersonal skills and awareness when joining the di gital world (i.e., their use of social networking 
+sites and real-time chatting apps). The histogram of mean scores demonstrates that most of the 
+answers fall into the range of “agree a little” to “a gree a lot”, meaning that the students showed firm 
+understanding and awareness of legitimate cyber be haviors. The mean score in this domain is not 
+high (around three), with a narrow gap between  answers by boys and girls (Figure 6b). 
+Figure 5. (a) Histogram of mean scores and ( b) Box plot of mean scores by gender in the Digital
+Participation and Agency domain.
+Data 2019 , 4, 69 17 of 36 
+ (a) ( b) 
+Figure 6. (a) Histogram of mean scores and ( b)  B o x  p l o t  o f  m e a n  s c o r e s  b y  g e n d e r  i n  t h e  D i g i t a l  
+Emotional Intelligence domain. 
+The Creativity and Innovation domain contains  11 questions measuring students’ ability to 
+develop creative digital products and present onesel f in the digital world. Figure 7a suggests that 
+most of the responses have the value of “disagree a little”. This means that the majority of surveyors 
+were slightly doubtful of their originality and creativeness in manipulating digital resources on 
+online platforms.  
+Figure 6. (a) Histogram of mean scores and ( b) Box plot of mean scores by gender in the Digital
+Emotional Intelligence domain.Data 2019 ,4, 69 17 of 37
+The Creativity and Innovation domain contains 11 questions measuring students’ ability to develop
+creative digital products and present oneself in the digital world. Figure 7a suggests that most of the
+responses have the value of “disagree a little”. This means that the majority of surveyors were slightly
+doubtful of their originality and creativeness in manipulating digital resources on online platforms.
+Data 2019 , 4, 69 18 of 36 
+  
+(a) ( b) 
+Figure 7. (a) Histogram of mean scores and ( b) Box plot of mean scores by gender in the Creativity 
+and Innovation domain.  
+It is noted that questions 15 to 18 concerning digital resilience are in multiple-choice instead of 
+Likert-scale form (see the dataset) . The descriptive statisti cs of questions 15 to 18 are listed in Table 
+4. 
+Table 4. Distribution of responses to questions 15 to 18 concerning digital resilience. 
+Coded Name Descriptions Values Frequencies Proportion 
+B15 Reaction when exposed to unwanted disturbing 
+files or websites    
+B15_1 Get rid of it immediately by closing the page, 
+deleting the file, or scrolling away No 138 13.00% 
+Yes 923 87.00% 
+B15_2 Talk about it with parents/caregivers No 907 85.50 
+Yes 154 14.50% 
+B15_3 Use a program that prevents it from happening 
+again No 414 39.00% 
+Yes 647 61.00% 
+B15_4 Talk about it with a friend No 955 90.00% 
+Yes 106 10.00% 
+B15_5 Look away or close my eyes No 988 93.10% 
+Yes 73 6.90% 
+B15_6 Keep on browsing No 1035 97.50% 
+Yes 26 2.50% 
+B15_7 Block the webpage or website No 271 25.50% 
+Yes 790 74.50% 
+B15_8 Don’t know what to do No 1042 98.20% 
+Figure 7. (a) Histogram of mean scores and ( b) Box plot of mean scores by gender in the Creativity and
+Innovation domain.
+It is noted that questions 15 to 18 concerning digital resilience are in multiple-choice instead of
+Likert-scale form (see the dataset). The descriptive statistics of questions 15 to 18 are listed in Table 4.
+2.3. Potential Research Questions
+Use of the Internet or digital devices at home is a vital factor inﬂuencing primary students’ ICT
+literacy [ 13]. Speciﬁcally, a study in German primary schools suggested a lack of parental concern for
+the online behaviors of their children from lower socioeconomic backgrounds [ 14]. Moreover, it is not
+easy to obtain the goal of digital equity among students from di erent backgrounds [ 15]. In general, a
+higher level of self-e ciency is associated with a better level of self-perceived digital competencies [ 16].
+Regarding gender, there are di erences in the basic digital competencies of male and female university
+students [17]. Drawing on the dataset, we present potential research questions in the following list.
+ What are the background factors that could a ect students’ digital competency levels?
+ How do socioeconomic conditions a ect students’ digital competency levels?
+ What are the factors related to the access and usage of digital devices that could a ect the digital
+competencies of students in any domains?
+ Is there any relationship between high academic expectation and students’ digital
+competency levels?
+ Is there any correlation among the ﬁve domains of digital competencies?
+ Are there any di erences in the digital competency levels of male and female school students?Data 2019 ,4, 69 18 of 37
+Table 4. Distribution of responses to questions 15 to 18 concerning digital resilience.
+Coded Name Descriptions Values Frequencies Proportion
+B15Reaction when exposed to unwanted
+disturbing ﬁles or websites
+B15_1Get rid of it immediately by closing the
+page, deleting the ﬁle, or scrolling awayNo 138 13.00%
+Yes 923 87.00%
+B15_2 Talk about it with parents /caregiversNo 907 85.50
+Yes 154 14.50%
+B15_3Use a program that prevents it from
+happening againNo 414 39.00%
+Yes 647 61.00%
+B15_4 Talk about it with a friendNo 955 90.00%
+Yes 106 10.00%
+B15_5 Look away or close my eyesNo 988 93.10%
+Yes 73 6.90%
+B15_6 Keep on browsingNo 1035 97.50%
+Yes 26 2.50%
+B15_7 Block the webpage or websiteNo 271 25.50%
+Yes 790 74.50%
+B15_8 Don’t know what to doNo 1042 98.20%
+Yes 19 1.80%
+B16Reaction when receiving unwanted
+disturbing messages including annoying
+messages or embarrassing pictures from
+someone in the contact list
+B16_1 Block and report the personNo 216 20.40%
+Yes 845 79.60%
+B16_2 Delete the contactNo 475 44.80%
+Yes 586 55.20%
+B16_3 Ignore the messages and the personNo 874 82.40%
+Yes 187 17.60%
+B16_4Talk with parents /caregivers about what
+to doNo 826 77.90%
+Yes 235 22.10%
+B16_5Ask the person to stop sending these
+messages or picturesNo 377 35.50%
+Yes 684 64.50%
+B16_6 Talk with teachers about what to doNo 985 92.80%
+Yes 76 7.20%
+B16_7Report the issue to the police and show
+them what happenedNo 848 79.90%
+Yes 213 20.10%
+B16_8 Don’t know what to doNo 1057 99.60%
+Yes 4 0.40%Data 2019 ,4, 69 19 of 37
+Table 4. Cont.
+Coded Name Descriptions Values Frequencies Proportion
+B17Reaction when ﬁnding out about
+personal information being misused,
+compromised, or acquired online without
+permission
+B17_1 Change account passwordNo 301 28.40%
+Yes 760 71.60%
+B17_2Review privacy settings and choose a
+more secure passwordNo 158 14.90%
+Yes 903 85.10%
+B17_3 Use a report buttonNo 525 49.50%
+Yes 536 50.50%
+B17_4Disable or delete the account and create a
+new accountNo 711 67.00%
+Yes 350 33.00%
+B17_5 Ask parents /caregivers to helpNo 905 85.30%
+Yes 156 14.70%
+B17_6 Ask teachers to helpNo 1001 94.30%
+Yes 60 5.70%
+B17_7Report the issue to the police and show
+them what happenedNo 803 75.70%
+Yes 258 24.30%
+B17_8 Don’t know what to doNo 1044 98.40%
+Yes 17 1.60%
+B18Reaction when being bullied
+online by friends or others?
+B18_1 Block and report the personsNo 347 32.80%
+Yes 711 67.20%
+B18_2 Delete the contactNo 605 57.20%
+Yes 453 42.80%
+B18_3Show the persons I am not bothered by
+their behavior by ignoring themNo 730 69.00%
+Yes 328 31.00%
+B18_4Talk with parents /caregivers about what
+to doNo 746 70.50%
+Yes 312 29.50%
+B18_5Ask the persons to stop sending annoying
+messages or picturesNo 519 49.10%
+Yes 539 50.90%
+B18_6 Talk with teachers about what to doNo 917 86.70%
+Yes 141 13.30%
+B18_7Report the issue to the police and show
+them what happenedNo 855 80.80%
+Yes 203 19.20%
+B18_8Keep the evidence of bullying (e.g.,
+screenshot)No 351 33.20%
+Yes 707 66.80%
+B18_9 Don’t know what to doNo 1043 98.60%
+Yes 15 1.40%Data 2019 ,4, 69 20 of 37
+3. Methods
+3.1. Research Framework
+This research is theoretically based on Bronfenbrenner’s bio-ecological model, which describes
+a child’s maturity in interactions with multiple levels of sociodemographic, cultural, and societal
+elements that constitute his or her community [ 18]. In particular, the model proposes four layers of the
+environment with a respective impact on a child’s cognitive growth.
+As illustrated in Figure 8, the innermost circle represents a microsystem that contains the developing
+individual together with their personal and closest ties. The next layer is a mesosystem involving the
+interdependence of the microsystems with which the developing individual actively interacts (e.g.,
+the child’s interrelationship between home and school environments). This is accommodated in an
+ecosystem with contexts having indirect and distant e ects on the developing child. The outermost
+layer macrosystem encompasses systematic cross-cultural compatibilities together with philosophies or
+ideologies that reinforce the structure.
+Data 2019 , 4, 69 21 of 36 
+  
+Figure 8. Research framework of the study. 
+Given the scarcity and underdevelopment of  theoretical explanations for children’s 
+development of digital competencies, Bronfenbrenn er’s bio-ecological model serves as a useful 
+framework by offering a child-centered approach to  examine children’s behaviors, knowledge, or 
+attitudes relating to ICT, considering multiple layers of social impacts, and illustrated in the form of concentric circles of family, schools, or community and culture. 
+The framework employed in this study pr oposes three sets of interconnections: 
+o Personal level within the microsystem; 
+o Social mediation level, primaril y concerning home, school syst em, and peer networks within 
+the mesosystem; and 
+o National level where the country is the subject of analysis, and the macro levels of 
+socioeconomic classification, systems of regula tion, and cultural values act as influential 
+factors. 
+The Conference on Digital Citizenship Education in Asia-Pacific and the subsequent experts’ 
+meeting have proposed a detailed framework of digital citizenship domains, proficiencies, and 
+performance indicators to comprise a wide paramete r of essential competencies for a digital citizen 
+to adapt to, develop, and serve the digital community in the 21st century. An itemized description of the framework is provided in Table A1, Appendix A. Definitions of the five suggested domains are listed in Table 5 below. 
+Table 5. Digital citizenship domains and descriptions. ICT: information and communication 
+technology. 
+Domain Definition 
+Digital Literacy  The ability to seek, critically evaluate, and use digital tools and 
+information effectively to make informed decisions 
+ 
+Digital Safety and 
+Resilience  The ability to understand how to protect oneself and others from 
+harm in a digital space 
+Digital Participation 
+and Agency  The ability to equitably interact, engage, and positively influence 
+society through ICT Macrosystem-
+Country
+Mesosystem
+Microsystem -
+Home, School
+Person-
+Digital 
+Competenties
+Figure 8. Research framework of the study.
+Given the scarcity and underdevelopment of theoretical explanations for children’s development
+of digital competencies, Bronfenbrenner’s bio-ecological model serves as a useful framework by
+oering a child-centered approach to examine children’s behaviors, knowledge, or attitudes relating to
+ICT, considering multiple layers of social impacts, and illustrated in the form of concentric circles of
+family, schools, or community and culture.
+The framework employed in this study proposes three sets of interconnections:
+# Personal level within the microsystem;
+# Social mediation level, primarily concerning home, school system, and peer networks within the
+mesosystem; and
+# National level where the country is the subject of analysis, and the macro levels of socioeconomic
+classiﬁcation, systems of regulation, and cultural values act as inﬂuential factors.
+The Conference on Digital Citizenship Education in Asia-Paciﬁc and the subsequent experts’
+meeting have proposed a detailed framework of digital citizenship domains, proﬁciencies, andData 2019 ,4, 69 21 of 37
+performance indicators to comprise a wide parameter of essential competencies for a digital citizen to
+adapt to, develop, and serve the digital community in the 21st century. An itemized description of the
+framework is provided in Table A1, Appendix A. Deﬁnitions of the ﬁve suggested domains are listed
+in Table 5 below.
+Table 5. Digital citizenship domains and descriptions. ICT: information and communication technology.
+Domain Deﬁnition
+Digital LiteracyThe ability to seek, critically evaluate, and use digital tools and
+information e ectively to make informed decisions
+Digital Safety and ResilienceThe ability to understand how to protect oneself and others
+from harm in a digital space
+Digital Participation and AgencyThe ability to equitably interact, engage, and positively
+inﬂuence society through ICT
+Digital Emotional IntelligenceThe ability to recognize, navigate, and express emotions in
+one’s digital intrapersonal and interpersonal interactions
+Digital Creativity and InnovationThe ability to express and explore oneself through the creation
+of content using ICT tools
+The framework takes a rights-based and child-centered approach aligned with the commonly
+endorsed Convention on the Rights of the Child, which constitutes a common reference on human
+rights standards for children.
+3.2. Data Collection
+The research team strictly followed UNESCO’s procedure for the survey: (1) Organizing the
+consultancy workshop in July 2018 to review and develop the adapted version of the survey
+questionnaire; (2) Conducting the pilot test for the survey questionnaire at two schools in Hanoi and
+making necessary amendments in August 2018; (3) Contacting the target school administrators and
+coordinators and carrying out administrative work for the investigation; (4) Implementing the survey
+with the support of school coordinators in September 2018 at 20 schools across provinces in Vietnam;
+(5) Cleaning and encoding the data from 18 September to 1 October 2018, according to the codebook
+and coding instructions (see the dataset) provided by UNESCO Bangkok.
+The sample geographical locations are indicated in the map in Figure 9. In total, the survey
+covered 1061 high school students (See Table A2, Appendix A) from 20 schools located in ﬁve provinces
+and cities: Lao Cai, Hanoi, Danang, Lam Dong, and Can Tho.
+3.3. Data Analysis
+Raw data gathered from the questionnaire were entered into a spreadsheet at data.csv (see the
+dataset). Then, the data were processed and saved in CSV format for analyses using R statistical
+software (v3.5.3). Both frequentist and Bayesian statistics approaches were employed in the data
+analysis process.
+3.3.1. Frequentist Analysis
+Since the majority of variables in the dataset are categorical, most of the responses and predictor
+variables are discrete; thus, it’s appropriate to use logistic regression model for data analysis [ 19,20]. In
+the logistic regression model, we use the two following equations:
+lnj(x)
+J(x)=j+T
+jx,j=1,:::,J 1Data 2019 ,4, 69 22 of 37
+In which xis the independent variable, and j(x)=P(Y=jx)is the corresponding probability.
+Therefore,j=P
+Yij=1
+, with Yas the dependent variable.
+Data 2019 , 4, 69 22 of 36 
+ Digital Emotional 
+Intelligence  The ability to recognize, navigate , and express emotions in one’s 
+digital intrapersonal and interpersonal interactions 
+Digital Creativity and 
+Innovation  The ability to express and explore oneself through the creation of 
+content using ICT tools 
+The framework takes a rights-based and child-c entered approach aligned with the commonly 
+endorsed Convention on the Rights of the Child , which constitutes a common reference on human 
+rights standards for children.  
+3.2. Data Collection 
+The research team strictly followed UNESCO’s procedure for the survey: (1) Organizing the 
+consultancy workshop in July 2018 to review and develop the adapted version of the survey 
+questionnaire; (2) Conducting the pilot test for the survey questionnaire at two schools in Hanoi and 
+making necessary amendments in August 2018; (3) Contacting the target school administrators and 
+coordinators and carrying out administrative work for the investigation; (4) Implementing the survey 
+with the support of school coordinators in Septem ber 2018 at 20 schools across provinces in Vietnam; 
+(5) Cleaning and encoding the data from 18 Septem ber to 1 October 2018, according to the codebook 
+and coding instructions (see the da taset) provided by UNESCO Bangkok. 
+The sample geographical locations are indicated in  the map in Figure 9. In total, the survey 
+covered 1061 high school students  (See Table A2, Appendix A) from 20 schools located in five 
+provinces and cities: Lao Cai, Hanoi, Danang, Lam Dong, and Can Tho.  
+ 
+Figure 9. The geographical locations of the ﬁve provinces and cities covered in the survey: Lao Cai,
+Hanoi, Danang, Lam Dong, and Can Tho.
+The second equation estimates the probability of each item of dependent variables:
+j(x)=exp
+j+T
+jx
+1+PJ 1
+h 1exp(h+T
+hx)
+Besides, the data can be analyzed by a linear regression model for the numerical variables. The
+general equation of the linear equation is:
+Y=+1X1+kXk
+where Yis a continuous variable; and the independent variables Xican be concrete, categorical,
+or continuous.
+The linear regression method is applied with the outcome variable being digital resilience (from
+‘B15’ to ‘B18’), the father’s highest level of education (‘H2’), the student’s expectation of highestData 2019 ,4, 69 23 of 37
+education level (‘F6’), and time spent using digital devices (‘G1’) as predictor variables. The regression
+coecients are reported in Table 6.
+Table 6. Estimating of independent variables ‘father’s level of education’ and ‘student’s expectation of
+the highest education level’ against outcome variable ‘digital resilience’.
+Estimate Std. Error t Value Pr( >|t|)
+(Intercept)  0.182 0.123  1.476 0.140
+factor(g1)2  0.034 0.093  0.365 0.715
+factor(g1)3 0.035 0.088 0.403 0.687
+factor(g1)4 0.046 0.088 0.520 0.603
+factor(g1)5 0.062 0.088 0.710 0.478
+factor(f6)2 0.083 0.097 0.855 0.393
+factor(f6)3 0.148 0.096 1.538 0.124
+factor(f6)4 0.203 0.096 2.115 0.035 *
+factor(f6)5 0.159 0.099 1.615 0.107
+factor(f6)6 0.243 0.229 1.058 0.290
+factor(h2)2 0.019 0.067 0.284 0.778
+factor(h2)3  0.008 0.063  0.133 0.894
+factor(h2)4 0.013 0.063 0.212 0.832
+factor(h2)5  0.049 0.064  0.778 0.437
+factor(h2)6  0.125 0.073  1.709 0.088
+factor(h2)7  0.061 0.068  0.895 0.371
+Signif. codes: 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1. Residual standard error: 0.2947 on 1034 degrees of freedom (11
+observations deleted due to missing). Multiple R-squared: 0.0387, Adjusted R-squared: 0.0248, F-statistic: 2.776 on
+15 and 1034 DF, p-value: 0.0003.
+Examples of the code on R that were used to come up with the results in Table 6 are presented below:
+>t=ﬁle.choose()
+>data=read.csv(t, header =T, na.strings =“99”)
+>attach(data)
+>ds=lm(mean_b3 ~ factor(g1) +factor(f6) +factor(h2), data =data)
+>summary(ds)
+More examples of R code are provided in the dataset (see File CodeR.docx). The linear regression
+model is:
+Y= 0.182  0.034 G1 (Less than 1 year) +0.035 G1 (1–2 years)
++0.046 G1 (3–4 years) +0.062 G1 (More than 5 years) +0.083 F6 (Upper secondary)
++0.148 F6 (Post-secondary) +0.203 F6 (Master /Doctoral) +0.159 F6 (I don’t know)
++0.019 H2 (No education)  0.008 H2 (Primary) +0.013 H2 (Lower secondary)
+ 0.049 H2 (Post-education)  0.125 H2 (Masters /Doctoral)  ( 0.061) H2 (I don’t know)
+The following example in Table 7 presents the relationship between time spent using digital
+devices, biological sex, and the student’s digital emotional intelligence.Data 2019 ,4, 69 24 of 37
+Table 7. Estimating of independent variables ‘student’s time spent using digital devices’ and ‘student’s
+gender’ against outcome variable ‘digital emotional intelligence’.
+Estimate Std. Error t Value Pr( >|t|)
+(Intercept) 2.79685 0.07177 38.970 <210 16***
+factor(g2)2 0.10545 0.08408 1.254 0.21003
+factor(g2)3 0.11177 0.07321 1.527 0.12714
+factor(g2)4 0.14963 0.07281 2.055 0.04013 *
+factor(g2)5 0.22707 0.07582 2.995 0.00281 **
+factor(g2)6 0.19926 0.07973 2.499 0.01260 *
+factor(f1)2 0.02989 0.02075 1.440 0.15008
+Signif. codes: 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1. Residual standard error: 0.3324 on 1041 degrees of freedom (13
+observations deleted due to missing). Multiple R-squared: 0.0196, Adjusted R-squared: 0.0139, F-statistic: 3.462 on 6
+and 1041 DF, p-value: 0.0022.
+3.3.2. Bayesian Analysis
+The Bayesian statistics approach will also be used to examine the dataset in this section. A
+hierarchical regression model of the amount of experience that students have with using digital devices
+(‘G1’) according to their schools and sex was developed by employing R statistical software and
+BayesVL package (v0.7.5), which is available in [ 21]. Similar applications of Bayesian statistics can
+be found in [ 22,23]. The Bayesian approach is strong in visually demonstrating the results and the
+distributions of the coe cients. Moreover, the robustness of the model is tested by analysis of the
+sensitivity of the model to prior change. Its credibility is evident when the model does not show
+sensitivity to adjustment of the prior [24–27].
+The mathematical formula of the model is as follows:
+G1[i] =alpha[i,j] +beta_sex * sex[i]
+In which j =20 schools, and G1 is the student’s experiences in using digital devices: 1 =Never; 2
+=Less than 1 year; 3 =1–2 years; 4 =3–4 years; and 5 =More than 5 years.
+Examples of codes that were used to command the BayesVL package to construct the model are
+as follows:
+Box 1
+# Design the model
+model <- bayesvl()
+model <- bvl_addNode(model, “G1”, “norm”)
+model <- bvl_addNode(model, “sex”, “norm”)
+model <- bvl_addNode(model, “schoolid”, “norm”)
+model <- bvl_addArc(model, “schoolid”, “G1”, “varint”)
+model <- bvl_addArc(model, “sex”, “G1”, “slope”)
+# Generate the stan code for model
+model_string <- bvl_model2Stan(model)
+cat(model_string)
+# Fit the model
+ﬁt<- bvl_modelFit(model, dkap_data, warmup =2000, iter =20000, chains =4, cores =1)
+Moreover, the STAN codes that were generated by the BayesVL package for the model sampling
+and parameter learning are:Data 2019 ,4, 69 25 of 37
+Box 2
+data {
+//Deﬁne variables in data
+//Number of level-1 observations (an integer)
+int<lower =0>Nobs;
+//Number of level-2 clusters
+int<lower =0>Nschool;
+//School IDs
+int<lower =1, upper =Nschool >schoolid[Nobs];
+int<lower =1>sex[Nobs];
+//Continuous outcome
+real g1[Nobs];
+}
+parameters {
+//Deﬁne parameters to estimate
+//Level-1 errors
+real<lower =0,upper =100>sigma_e0;
+//Varying intercepts
+real alpha_school[Nschool]; //intercept estimated with 20 schools
+real mu_alpha; //mean for intercepts
+real<lower =0,upper =100>sigma_alpha;
+//Population slope
+real beta_sex;
+}
+transformed parameters {
+//Individual mean
+real mu[Nobs];
+//Individual mean
+for (i in 1:Nobs) {
+mu[i] =alpha_school[schoolid[i]] +sex[i] * beta_sex;
+}
+}
+model {
+//Prior part of Bayesian inference
+//Flat prior for mu (no need to specify if non-informative)
+//Random e ects distribution
+alpha_school ~ normal(mu_alpha, sigma_alpha);
+//Likelihood part of Bayesian inference
+//Outcome model N(mu, sigmaˆ2) (use SD rather than Var)
+g1 ~ normal(mu, sigma_e0);
+}
+The results from the hierarchical regression model are as in Table 8.
+Table 8. Results of hierarchical regression model.
+4 Chains, Each with Iter =5000; Warmup =2000; Thin =10;
+Post-Warmup Draws per Chain =300, Total Post-Warmup Draws =1200.
+Mean se_mean sd 2.5% 25% 50% 75% 97.5% n_e  Rhat
+alpha_school[1] 3.95 0 0.15 3.65 3.86 3.95 4.05 4.24 1179 1
+alpha_school[2] 3.65 0 0.15 3.35 3.55 3.65 3.76 3.94 1072 1
+alpha_school[3] 4.64 0 0.15 4.36 4.54 4.64 4.74 4.93 1162 1
+alpha_school[4] 4.64 0 0.15 4.36 4.55 4.64 4.74 4.94 1165 1
+alpha_school[5] 4.43 0 0.15 4.14 4.34 4.43 4.53 4.72 1049 1
+alpha_school[6] 4.45 0 0.15 4.15 4.35 4.45 4.56 4.73 1158 1
+alpha_school[7] 4.44 0 0.14 4.16 4.35 4.45 4.54 4.73 943 1Data 2019 ,4, 69 26 of 37
+Table 8. Cont.
+4 Chains, Each with Iter =5000; Warmup =2000; Thin =10;
+Post-Warmup Draws per Chain =300, Total Post-Warmup Draws =1200.
+Mean se_mean sd 2.5% 25% 50% 75% 97.5% n_e  Rhat
+alpha_school[8] 3.49 0 0.15 3.19 3.38 3.49 3.59 3.78 1267 1
+alpha_school[9] 4.09 0 0.15 3.79 3.99 4.09 4.19 4.37 1204 1
+alpha_school[10] 4.58 0 0.15 4.28 4.48 4.58 4.69 4.87 1290 1
+alpha_school[11] 4.56 0 0.15 4.26 4.46 4.56 4.67 4.86 928 1
+alpha_school[12] 4.34 0 0.15 4.05 4.23 4.34 4.44 4.63 1278 1
+alpha_school[13] 4.28 0 0.13 4.01 4.19 4.28 4.37 4.52 1009 1
+alpha_school[14] 4.21 0 0.13 3.94 4.11 4.21 4.30 4.48 1187 1
+alpha_school[15] 4.39 0 0.14 4.12 4.31 4.39 4.48 4.67 1183 1
+alpha_school[16] 3.62 0 0.13 3.36 3.53 3.62 3.71 3.88 1130 1
+alpha_school[17] 4.44 0 0.15 4.15 4.33 4.43 4.53 4.73 1311 1
+alpha_school[18] 4.32 0 0.16 4.04 4.21 4.32 4.43 4.63 1209 1
+alpha_school[19] 4.30 0 0.15 4.02 4.20 4.30 4.41 4.60 1199 1
+alpha_school[20] 4.35 0 0.13 4.09 4.26 4.35 4.44 4.61 1203 1
+beta_sex  0.09 0 0.06  0.20  0.12  0.09  0.05 0.02 1172 1
+sigma_e0 0.91 0 0.02 0.87 0.89 0.91 0.92 0.95 1254 1
+mu_alpha 4.26 0 0.12 4.02 4.18 4.25 4.35 4.51 1320 1
+sigma_alpha 0.38 0 0.08 0.26 0.33 0.37 0.42 0.55 1028 1
+The posterior coe cients are shown in Figure 10:
+Data 2019 , 4, 69 27 of 36 
+ The posterior coefficients are shown in Figure 10: 
+ 
+Figure 10. All posterior coefficients. 
+The posterior distribution of all the coefficients is as in Figure 11. The mean of the mu_alpha is 
+around 4.2, which shows a high level of usage of technological devices. 
+ 
+Figure 10. All posterior coe cients.
+The posterior distribution of all the coe cients is as in Figure 11. The mean of the mu_alpha is
+around 4.2, which shows a high level of usage of technological devices.Data 2019 ,4, 69 27 of 37
+Data 2019 , 4, 69 27 of 36 
+ The posterior coefficients are shown in Figure 10: 
+ 
+Figure 10. All posterior coefficients. 
+The posterior distribution of all the coefficients is as in Figure 11. The mean of the mu_alpha is 
+around 4.2, which shows a high level of usage of technological devices. 
+ 
+Figure 11. The posterior distributions of all the coe cients. Note: HPDI: highest posterior
+density interval.
+In the model, the correlation coe cients’ posterior distributions are presented in Figure 12. The
+diagonal boxes present the posterior distributions for individual coe cients: beta_sex, sigma_e0,
+mu_alpha, and sigma_alpha. The simulated pairs of each coe cient are shown in the o -diagonal
+boxes. All satisfy the standard distributions.
+Data 2019 , 4, 69 28 of 36 
+ Figure 11. The posterior distributions of all the coefficients. Note: HPDI: highest posterior density 
+interval. 
+In the model, the correlation coefficients’ posterio r distributions are presented in Figure 12. The 
+diagonal boxes present the posterior distributions for individual coefficients: beta_sex, sigma_e0, 
+mu_alpha, and sigma_alpha. The simulated pairs of each coefficient are shown in the off-diagonal 
+boxes. All satisfy the standard distributions. 
+ 
+Figure 12. The correlation of coefficients’ posterior distribution. 
+The log posterior of the model is shown in Figure 13: 
+ 
+Figure 12. The correlation of coe cients’ posterior distribution.
+The log posterior of the model is shown in Figure 13:Data 2019 ,4, 69 28 of 37
+Data 2019 , 4, 69 28 of 36 
+ Figure 11. The posterior distributions of all the coefficients. Note: HPDI: highest posterior density 
+interval. 
+In the model, the correlation coefficients’ posterio r distributions are presented in Figure 12. The 
+diagonal boxes present the posterior distributions for individual coefficients: beta_sex, sigma_e0, 
+mu_alpha, and sigma_alpha. The simulated pairs of each coefficient are shown in the off-diagonal 
+boxes. All satisfy the standard distributions. 
+ 
+Figure 12. The correlation of coefficients’ posterior distribution. 
+The log posterior of the model is shown in Figure 13: 
+ 
+Figure 13. The log posterior of the model.
+Figure 14 shows the comparison among surveyed schools in the digital device usage experience of
+students. The overall usage of the digital device is above average, and it is notable that many schools
+from more developed cities such as Hanoi or Danang show a low level of digital device usage.
+Data 2019 , 4, 69 29 of 36 
+ Figure 13. The log posterior of the model. 
+Figure 14 shows the comparison among surveyed schools in the digital device usage experience 
+of students. The overall usage of the digital device is above average, and it is notable that many 
+schools from more developed cities such as Hanoi or Danang show a low level of digital device usage. 
+ 
+Figure 14. Comparison among surveyed sch ools in the digital device us age experience of students. 
+Figure 15 explains the correlation between sex an d the usage of technological devices based on 
+the slope coefficient beta_sex. The sex and usage of digital devices show low correlation, but female 
+students demonstrate a slightly higher level of us age than their male counterparts because the value 
+of the coefficient is smaller than zero. 
+ 
+Figure 15. The correlation between sex and usage of technological device. 
+4. Conclusions and User Notes 
+Our dataset offers comprehensive descriptive stat istics yielding significant insights regarding 
+digital citizenship competencies in  the Vietnamese educational contex t, specifically school students’ 
+perceptions, proficiency levels, and behavioral use of ICT. This research area has rarely been studied 
+in the field of Social Sciences and Humanities, despite potential challenges concerning professional 
+Figure 14. Comparison among surveyed schools in the digital device usage experience of students.
+Figure 15 explains the correlation between sex and the usage of technological devices based on
+the slope coe cient beta_sex. The sex and usage of digital devices show low correlation, but femaleData 2019 ,4, 69 29 of 37
+students demonstrate a slightly higher level of usage than their male counterparts because the value of
+the coe cient is smaller than zero.
+Data 2019 , 4, 69 29 of 36 
+ Figure 13. The log posterior of the model. 
+Figure 14 shows the comparison among surveyed schools in the digital device usage experience 
+of students. The overall usage of the digital device is above average, and it is notable that many 
+schools from more developed cities such as Hanoi or Danang show a low level of digital device usage. 
+ 
+Figure 14. Comparison among surveyed sch ools in the digital device us age experience of students. 
+Figure 15 explains the correlation between sex an d the usage of technological devices based on 
+the slope coefficient beta_sex. The sex and usage of digital devices show low correlation, but female 
+students demonstrate a slightly higher level of us age than their male counterparts because the value 
+of the coefficient is smaller than zero. 
+ 
+Figure 15. The correlation between sex and usage of technological device. 
+4. Conclusions and User Notes 
+Our dataset offers comprehensive descriptive stat istics yielding significant insights regarding 
+digital citizenship competencies in  the Vietnamese educational contex t, specifically school students’ 
+perceptions, proficiency levels, and behavioral use of ICT. This research area has rarely been studied 
+in the field of Social Sciences and Humanities, despite potential challenges concerning professional 
+Figure 15. The correlation between sex and usage of technological device.
+4. Conclusions and User Notes
+Our dataset o ers comprehensive descriptive statistics yielding signiﬁcant insights regarding
+digital citizenship competencies in the Vietnamese educational context, speciﬁcally school students’
+perceptions, proﬁciency levels, and behavioral use of ICT. This research area has rarely been studied
+in the ﬁeld of Social Sciences and Humanities, despite potential challenges concerning professional
+development facing developing countries such as Vietnam in the age of Industry 4.0. With over 100
+question items collecting information across the ﬁve domains—Digital Literacy, Digital Safety and
+Resilience, Digital Emotional Intelligence, Creativity and Innovation, and Digital Participation and
+Agency—the dataset contains values of multiple variables, both categorical and continuous, hence
+allowing potential diverse methodologies of in-depth analyses and the strict control of variables.
+The richness of our dataset would foster further research on multifaceted domains of digital
+competencies in adolescents. Promising grounds for future investigations include the e ects of
+school-related factors such as curriculum, teaching practices, syllabi or assessment criteria and format,
+as well as non-educational factors concerning demographic backgrounds, daily time-spending routines,
+or online behavioral activities. Research into these areas is critical, as ICT skills have been identiﬁed
+as one of the major barriers to students and teachers’ readiness for STEM (Sciences, Technology,
+Engineering, and Mathematics) education [ 28]. Scientiﬁc ﬁndings regarding the determinants of both
+the cognitive and the non-cognitive attributes of the ICT competency of students would comprehensively
+inform future decisions and suggestions for policy development, particularly in the education sector in
+developing countries with similar socioeconomic structures to Vietnam [29].
+In addition to presenting the dataset, this article also explores statistical methods for data analysis,
+which is categorical data in this dataset. Traditionally, the frequentist approach is used for data
+analysis. However, as the scientiﬁc community is debating over the traditional approach, due to
+the manipulation of statistical signiﬁcance and other misconducts such as stargazing, p-hacking, or
+HARKing [ 30], we also introduce the application of Bayesian statistics for hierarchical regression
+analysis. The employment of both frequentist and Bayesian approaches are expected to strengthen
+the credibility and soundness of scientiﬁc results produced from the dataset, which would pique the
+interests of the scientiﬁc community and policymakers.Data 2019 ,4, 69 30 of 37
+The values of this dataset are beyond the instant analyses of data, considering its high replicability
+of methodology and the survey framework in di erent regions and contexts. As stated earlier in this
+text, the study was originally designed to make a cross-national comparison of data in four countries:
+Bangladesh, South Korea, Vietnam, and Fiji. The ﬁndings derived from this dataset would be more
+generalizable if the target sample is extended to include more observations from students at di erent
+levels of study rather than limited to only 10th graders. A more comprehensive sample, which is
+entirely feasible in the future, would allow interesting cross-regional and cross-generational ﬁndings
+on a panoramic scale.
+Therefore, replicating the survey framework to yield comparable datasets would contribute to
+a cross-boundary database with immense scientiﬁc implications. Knowledge sharing, open access
+to data and information are also aligned with the current movements in the academic world that
+resulted from better communication and connection concerning international collaboration in research,
+transparency of data processing, and Open Science [ 31,32]. It is not unusual nowadays that studies
+with groundbreaking ﬁndings are attained by large research groups from all over the world, such as
+the picture of the black hole [ 33] or the large dataset of societies [ 34]. All these changes will ultimately
+address the global sustainable development goals of United Nations. This is also the original aim of
+this investigation by UNESCO, and the reason why the organization approved the dissemination and
+access of this dataset.
+Supplementary Materials: The following are available online at http: //www.mdpi.com /2306-5729 /4/2/69/s1,
+Figure S1: title, Table S1: title, Video S1: title.
+Author Contributions: Conceptualization, A.-V .L. and Q.-H.V .; methodology, Q.-H.V ., V .-P .L., D.-L.D.; software,
+Q.-H.V ., V .-P .L.; validation, T.-H.D., H.-N.N., D.-L.D., and V .-P .L.; formal analysis, T.-H.D., D.-L.D., and V .-P .L.;
+investigation, D.-L.D., H.-N.N., and H.-K.T.N; resources, A.-V .L., D.-Q.P ., and D.-L.D.; data curation, D.-Q.P .,
+H.-N.N., and T.-H.D.; writing—original draft preparation, P .-H.H., D.-L.D., H.-N.N., T.-T.V ., H.-K.T.N., and M.-T.H.;
+writing—review and editing, M.-T.H., P .-H.H., T.-T.V ., H.-K.T.N.; visualization, D.-L.D., V .-P .L.; supervision,
+A.-V .L., Q.-H.V .; project administration, D.-Q.P ., A.-V .L., M.-T.H., and Q.-H.V .
+Funding: This research was funded by UNESCO under the contract N04500363176.
+Acknowledgments: The authors would like to send appreciation to members of UNESCO: Jian Xi Teng and
+Jonghwi Park (UNESCO Bangkok) and Toshiyuki Matsumoto and Hoang Diem Huyen (UNESCO Hanoi) for
+their cooperation in implementing the Digital Kids Asia Paciﬁc project. In addition, we would also want
+to express our gratitude to members of the survey team from the Vietnam National Institute of Educational
+Sciences, Hanoi—Nguyen Thu Huyen, Bui Dieu Quynh, Phan Thanh Ha, and Vuong Quoc Anh—for their
+tremendous e orts.
+Conﬂicts of Interest: The authors declare no conﬂict of interest.Data 2019 ,4, 69 31 of 37
+Appendix A
+Table A1. Digital Citizenship Framework.
+DOMAINS COMPETENCIES SAMPLE PERFORMANCE INDICATORS
+Digital Literacy1.1 ICT Literacy: Managing and operating ICT
+hardware and software responsibly in digital
+environments to access and search for data, information,
+and content, and to utilize them1.1.1 The child is able to copy and move a ﬁle or folder.
+1.1.2 The child is able to copy and paste tools to duplicate or move information within a document.
+1.1.3 The child is able to send e-mails with attached ﬁles (e.g., document, picture, video).
+1.1.4 The child is able to use arithmetic formulae in a spreadsheet.
+1.1.5 The child is able to connect and install new devices (e.g., a modem, camera, printer).
+1.1.6 The child is able to ﬁnd, download, install, and conﬁgure software.
+1.1.7 The child is able to create electronic presentations with presentation software (including text, images, sound, video, or charts).
+1.1.8 The child is able to transfer ﬁles between a computer and other devices.
+1.1.9 The child is able to write a computer program using a specialized programming language.
+1.1.10 The child is able to use a search engine and advanced applications (e.g., digital ﬁnancial services, online shopping,
+e-governance, online learning).
+1.1.11 The child is open to learning new digital technology.
+1.1.12 The child uses social media platforms to share ideas, participate in discussions, and collaborate with others.
+1.1.13 The child is able to use mobile devices and applications with conﬁdence.
+1.2 Information Literacy: The ability to seek, critically
+evaluate, and use digital information e ectively to
+make informed decisions.1.2.1 The child has knowledge of the di erent information categories (e.g., PR, Advertising, Propaganda, Entertainment,
+Educational) and their motivations, goals, and outputs.
+1.2.2 The child has knowledge of disinformation and unethical platforms e.g., clones, bots, ﬁshing sites.
+1.2.3 The child is able to contextualize and analyze information by a diverse range of categories (e.g., by location, culture, values,
+age, and ownership).
+1.2.4 The child is able to analyze digital proﬁles of individuals and institutions.
+1.2.5 The child is able to identify and evaluate information for credibility and reliability.
+1.2.6 The child is able to make an informed judgment or decision based on information classiﬁcation and local context (e.g., age,
+location, applicable laws)
+1.2.7 The child is motivated to disseminate credible and reliable information.Data 2019 ,4, 69 32 of 37
+Table A1. Cont.
+DOMAINS COMPETENCIES SAMPLE PERFORMANCE INDICATORS
+Digital Safety &
+Resilience2.1 Understanding Child Rights: Knowledge of legal
+rights and obligations within the global and local
+context2.1.1 RIGHTS (GLOBAL /LOCAL): The child demonstrates a comprehensive understanding of their legal rights under the
+Convention on the Rights of the Child and in applicable local laws (particularly rights to protection from all kinds of online
+violence, to access to information and education, to play and recreation, to freedom of thought, expression, and to participation).
+2.1.2 OBLIGATIONS (GLOBAL /LOCAL): The child demonstrates a comprehensive understanding of their obligations under the
+Convention on the Rights of the Child and in applicable local laws to respect the rights of others (particularly the responsibilities to
+respect the rights, freedoms, and reputations of others, and not to breach applicable criminal, civil, or administrative laws online).
+2.2 Personal data, privacy and reputation: To
+understand how to use and share personally
+identiﬁable information while being able to protect
+oneself and others from harm. Be able to implement
+strategies for information and device security and
+personal security protocols2.2.1 DATA (YOURS): The child can apply principles of managing their personal data to maintain digital privacy and security and
+is able to take preventive measures against digital data collection.
+2.2.2 PRIVACY (YOURS /OTHERS): The child understands the implications of sharing personal identifying information, photos,
+videos, comments, and opinions in di erent online contexts, and is able to engage in safe, legal, and ethical behavior that respects
+their own privacy as well as the privacy of others.
+2.2.3 REPUTATION (YOURS /OTHERS): The child is able to cultivate and manage their digital identity and reputation and is
+aware of the permanence of their actions in the digital world.
+2.2.4 INTELLECTUAL PROPERTY: The child understands and respects the rights and obligations of using and sharing
+intellectual property.
+2.3 Promoting and Protecting Health and Well-Being:
+Ability to identify and manage health risks, and use
+digital technology in order to protect and improve the
+physical and psychological well-being of oneself
+and others2.3.1 BULLYING HARASSMENT and HATE SPEECH: Understand, identify, and successfully manage risks related to being a
+victim, perpetrator, or witness of bullying, harassment, or hate speech.
+2.3.2 UNPLUG and ADDICTION: The child is able to manage their own use of technology, taking full advantage of technology
+while avoiding excessive time online and addiction.
+2.3.3 PROTECTION (SEXUAL VIOLENCE): The child understands and is able to identify and successfully manage risks related to
+being a victim, perpetrator, or witness of sexual harassment, sexual extortion, grooming, and exposure to disturbing sexually
+violent or inappropriately graphic content.
+2.3.4 IMPROVEMENT (PHYSICAL /PSYCHOLOGICAL): The child understands, accesses, and uses information to improve
+mental, physical, psychological, and sexual health online.
+2.4 Digital Resilience: A set of preventative, reactive
+and transformative competencies that allow young
+people to avoid or cope with risky situations they face
+and improve themselves.2.4.1 AWARENESS: The child understands the potential risks in the digital environment.
+2.4.2 INSTRUMENTAL ACTIONS: The child can prevent and respond to risk using digital skills and media literacy.
+2.4.3 COGNITIVE ACTIONS: The child safely and critically engages with online content, adopts problem-solving and
+decision-making skills when facing online risks, and transforms challenging experiences into positive lessons.
+2.4.4 COMMUNICATING: The child is willing to communicate with people when faced with a risky, upsetting, or potentially
+dangerous situation online.Data 2019 ,4, 69 33 of 37
+Table A1. Cont.
+DOMAINS COMPETENCIES SAMPLE PERFORMANCE INDICATORS
+Digital
+Participation &
+Agency3.1 Interacting, Sharing, and Collaborating: The ability
+to interact, share data and information, and collaborate
+with others using suitable digital technologies to
+achieve shared goals (work, social, leveraging network,
+education, entertainment, etc.).3.1.1 The child is able to use digital tools to interact and share information and data with peers and other children from a variety of
+background and cultures.
+3.1.2 The child is able to use digital tools to interact and share information and data with adults from a variety of background
+and cultures.
+3.1.3 The child is able to use digital tools to work together with peers and other children to achieve a common goal.
+3.1.4 The child is able to use digital tools to work together with adults to achieve a common goal.
+3.2 Civic Engagement: The ability and willingness to
+recognize, seek, and act on opportunities to positively
+inﬂuence local and global communities online and /or
+oine through appropriate digital technologies.3.2.1 The child is able to use ICT to discuss political and social issues with other people online
+3.2.2 The child is able to use ICT to be involved in activities, associations, and movements on social and political issues.
+3.2.3 The child is able to use ICT with the intention to inﬂuence society, locally or globally.
+3.2.4 The child believes that their involvement contributed to a better world.
+3.3 Netiquette: Demonstrate ethical and courteous
+behavior to inform choices in interacting and engaging
+in dierent digital environments with
+dierent audiences.3.3.1 The child acts with courtesy in their interaction with others while using digital tools.
+3.3.2 The child demonstrates respect for others’ rights through their online behavior.
+3.3.3 The child demonstrates non-discriminatory behavior that is also gender and culturally sensitive.
+Digital Emotional
+Intelligence4.1 Self-Awareness: Ability to explain one’s moods,
+emotions, drives, and how these a ect oneself and
+others in the digital world through introspection.4.1.1 The child is able to explain emotions they have in any given time as a result of digital experiences.
+4.1.2 The child is able to reﬂect on the relationship between emotions, action, and consequences as they engage in digital activities.
+4.1.3 The child is able to assess his or her own strengths and weaknesses in managing one’s emotions when using
+digital technologies.
+4.2 Self-Regulation: Ability to manage one’s emotions,
+moods, and impulses during online engagements4.2.1 The child sets personal limits on the use of digital devices.
+4.2.2 The child is able to control one’s emotions in the online environment.
+4.3 Self-Motivation: Demonstrates initiative,
+commitment to attain internal or external goals despite
+setbacks in the digital sphere.4.3.1 The child sets goals to improve the self through digital opportunities.
+4.3.2 The child acts on the set goals even in the face of challenges.
+4.3.3 The child revises set goals based on digital experiences.
+4.4 Interpersonal Skills: Build positive online
+relationships to communicate, build rapport and trust,
+embrace diversities, manage conﬂicts, and make
+sound decisions.4.4.1 The child can communicate with others with due courtesy, respect, and regard for one’s and others’ welfare through varied
+digital forms and contexts (e.g., words, symbols, or images).
+4.4.2 The child demonstrates tact and diplomacy during online disagreements, di erences of opinions, and the ability to di use
+dicult situations.
+4.4.3 The child builds rapport and nurtures positive relationships through online engagements.
+4.4.4 The child demonstrates respect and value for the dignity and worth of others through online interactions.
+4.5 Empathy: Demonstrate awareness and compassion
+for the feelings, needs, and concerns of others during
+digital interactions4.5.1 The child displays sensitivity and takes emotional cues to respond to the needs, feelings, and perspectives of others
+when online.
+4.5.2 The child takes appropriate actions to help those facing challenging circumstances or threats to their digital rights.Data 2019 ,4, 69 34 of 37
+Table A1. Cont.
+DOMAINS COMPETENCIES SAMPLE PERFORMANCE INDICATORS
+Digital Creativity
+& Innovation:5.1 Creative Literacy: Apply skills and use tools to
+create /adapt and /or curate digital content5.1.1 The child applies a wide range of digital media tools to manipulate, create, or remix digital content (including photos, videos,
+music, text, etc.).
+5.1.2 The child is capable of coding and developing applications.
+5.1.3 The child is able to express ideas through the curation of existing digital material.
+5.2 Expression: The ability to use technology to
+represent or express creatively children’s identities.5.6.1 The child is able to utilize digital platforms to explore, experiment, and generate ideas.
+5.6.2 The child is able to use digital platforms to creatively represent digital and real-life identities.
+5.6.3 The child is able to use creative digital formats to express ideas and connect with others.Data 2019 ,4, 69 35 of 37
+Table A2. List of all surveyed schools.
+No School Name City /Province School ID Area
+1 Đ/uni1EA1i Cư/uni1EDDng Hanoi V01 rural
+2 H /uni1EE3p Thanh Hanoi V02 rural
+3 Th ăng Long Hanoi V03 urban
+4 Nguy /uni1EC5n Trãi Hanoi V04 urban
+5 L ào Cai city no1 Lao Cai V05 urban
+6 B/uni1EA3o Th/uni1EAFng Lao Cai V06 urban
+7 B/uni1EAFc Hàno1 Lao Cai V07 rural
+8 Si Ma Cai no1 Lao Cai V08 rural
+9 ÔngÍch Khi êm Danang V09 rural
+10 Tr/uni1EA7n Phú Danang V10 urban
+11 Ng ũHành Sơn Danang V11 rural
+12 Th ái Phiên Danang V12 urban
+13 Tr/uni1EA7n Phú Lam Dong V13 urban
+14 Don Duong Lam Dong V14 rural
+15 Duc Trong Lam Dong V15 urban
+16 Lang Biang Lam Dong V16 rural
+17 Tr/uni1EA7nĐ/uni1EA1i Ngh ĩa Can Tho V17 rural
+18 Nguy /uni1EC5n Vi/uni1EC7t H/uni1ED3ng Can Tho V18 urban
+19 L ưu Hưu Phư/uni1EDBc Can Tho V19 urban
+20 Thu /uni1EADn Hưng Can Tho V20 rural
+References
+1. Lee, J.-W. Education for Technology Readiness: Prospects for Developing Countries. J. Hum. Dev. 2001 ,2,
+115–151. [CrossRef]
+2. Mutula, S.M.; Van Brakel, P . ICT skills readiness for the emerging global digital economy among small
+businesses in developing countries: Case study of Botswana. Library Hi Tech 2007 ,25, 231–245. [CrossRef]
+3. Cameron, A.; Pham, T.; Atherton, J. Vietnam Today—First Report of the Vietnam’s Future Digital Economy Project ;
+CSIRO: Brisbane, Australia, 2018.
+4. Vuong, Q.H. Computational entrepreneurship: From economic complexities to interdisciplinary research.
+Prob. Perspect. Manage. 2019 ,17, 117–129. [CrossRef]
+5. Vuong, Q.H.; Tran, T.D. The cultural dimensions of the Vietnamese private entrepreneurship. IUP J.
+Entrepreneurship Dev. 2009 ,VI, 54–78. [CrossRef]
+6. Chang, J.-H.; Rynhart, G.; Huynh, P . ASEAN in Transformation: How Technology is Changing Jobs and Enterprises ;
+International Labour O ce: Geneva, Switzerland, 2016.
+7. GSO. Annual Employed Population at 15 Years of Age and Above by Occupation and Year ; General Statistics O ce:
+Hanoi, Vietnam, 2016.
+8. VNA. Vietnam Lacks High-Quality IT Workforce. 2016. Available online: https: //english.vietnamnet.vn /fms/
+science-it /166260 /vietnam-lacks-high-quality-it-workforce.html (accessed on 8 May 2019).
+9. Oxford Business Group. The Report—Vietnam 2017 ; Oxford Business Group: Dubai, United Arab Emirates,
+2017.
+10. ITU. Global Cybersecurity Index 2017 ; International Telecommunication Union (ITU): Geneva, Switzerland, 2017.
+11. UNESCO. Viet Nam Takes Action Towards STEM Education for Sustainable Development. 2017.
+Available online: http: //un.org.vn /en/unesco-agencypresscenter1-100 /4388-viet-nam-takes-action-towards-
+stem-education-for-sustainable-development.html (accessed on 8 May 2019).Data 2019 ,4, 69 36 of 37
+12. Illing, S. Bored and Lonely? Blame Your Phone. 2019. Available online: https: //www.vox.com /recode /2019/
+5/2/18510958 /social-media-addiction-boredom-loneliness-society-technology-smart-phones (accessed on
+8 May 2019).
+13. Aesaert, K.; Van Nijlen, D.; Vanderlinde, R.; Tondeur, J.; Devlieger, I.; van Braak, J. The contribution of pupil,
+classroom and school level characteristics to primary school pupils’ ICT competences: A performance-based
+approach. Comput. Educ. 2015 ,87, 55–69. [CrossRef]
+14. Heinz, J. Digital skills and the inﬂuence of students’ socio-economic background. An exploratory study in
+German elementary schools. Italian J. Sociol. Educ. 2016 ,8, 186–212. [CrossRef]
+15. Tondeur, J.; Sinnaeve, I.; van Houtte, M.; van Braak, J. ICT as cultural capital: The relationship between
+socioeconomic status and the computer-use proﬁle of young people. New Med. Soc. 2011 ,13, 151–168.
+[CrossRef]
+16. Popa, D.; Topal ă, I.R. Students’ Digital Competencies, Related Attitudes and Self Directed Learning. In
+Proceedings of the International Scientiﬁc Conference eLearning and Software for Education, Bucharest,
+Romania, 19–20 April 2018; pp. 90–95.
+17. Vázquez-Cano, E.; Meneses, E.L.; Garc ía-Garz ón, E. Di erences in basic digital competences between male
+and female university students of Social Sciences in Spain. Int. J. Educ. Technol. High. Edu. 2017 ,14, 27.
+[CrossRef]
+18. Bronfenbrenner, U.; Ceci, S.J. Nature-nuture reconceptualized in developmental perspective: A bioecological
+model. Psychol. Rev. 1994 ,101, 568–586. [CrossRef] [PubMed]
+19. Fienberg, S.E.; Junker, B.W. Categorical Data Analysis. In International Encyclopedia of Education , 3rd ed.;
+Peterson, P ., Baker, E., McGaw, B., Eds.; Elsevier: Oxford, UK, 2010; pp. 58–65.
+20. Agresti, A. Categorical Data Analysis , 3rd ed.; Wiley: Hoboken, NJ, USA, 2013.
+21. Vuong, Q.H.; La, V .-P . BayesVL Package for Bayesian Statistical Analyses in R. Github: BayesVL Package
+Version 0.6. 2019. Available online: https: //github.com /sshpa /bayesvl (accessed on 20 April 2019).
+22. Vuong, Q.-H.; Bui, Q.-K.; La, V .-P .; Vuong, T.-T.; Nguyen, V .-H.T.; Ho, M.-T.; Nguyen, H.-K.T.; Ho, M.-T.
+Cultural additivity: Behavioural insights from the interaction of Confucianism, Buddhism and Taoism in
+folktales. Palgrave Commun. 2018 ,4, 143. [CrossRef]
+23. Vuong, Q.-H.; Bui, Q.-K.; La, V .-P .; Vuong, T.-T.; Ho, M.-T.; Nguyen, H.-K.T.; Nguyen, H.-N.; Nghiem, K.-C.P .;
+Ho, M.-T. Cultural evolution in Vietnam’s early 20th century: A Bayesian networks analysis of Franco-Chinese
+house designs. arXiv 2019 , arXiv:1903.00817v1. [CrossRef]
+24. Scutari, M.; Denis, J.-B. Bayesian Networks: With Examples in R ; Chapman and Hall /CRC: London, UK, 2014.
+25. Kruschke, J. Doing Bayesian Data Analysis: A Tutorial with R, JAGS, and Stan , 2nd ed.; Academic Press: London,
+UK, 2014.
+26. Lynch, S.M. Introduction to Applied Bayesian Statistics and Estimation for Social Scientists ; Springer: New York,
+NY, USA, 2007.
+27. McElreath, R. Statistical Rethinking: A Bayesian Course with Examples in R and Stan ; Chapman and Hall /CRC:
+London, UK, 2018.
+28. Ejiwale, J.A. Barriers to successful implementation of STEM education. J. Educ. Learn. 2013 ,7, 63–74.
+[CrossRef]
+29. Vuong, Q.-H. The (ir)rational consideration of the cost of science in transition economies. Nat. Hum. Behav.
+2018 ,2, 5. [CrossRef] [PubMed]
+30. Vuong, Q.H.; Ho, M.T.; La, V .-P . ‘Stargazing’ and p-hacking behaviours in social sciences: Some insights
+from a developing country. Eur. Sci. Edit. 2019 ,45, 54–55.
+31. Vuong, Q.H. Open Data, Open Review and Open Dialogue in Making Social Sciences Plausible. 2017.
+Available online: http: //blogs.nature.com /scientiﬁcdata /2017/12/12/authors-corner-open-data-open-review-
+and-open-dialogue-in-making-social-sciences-plausible /(accessed on 8 May 2019).
+32. Wilkinson, M.D.; Dumontier, M.; Aalbersberg, I.J.; Appleton, G.; Axton, M.; Baak, A.; Blomberg, N.;
+Boiten, J.-W.; da Silva Santos, L.B.; Bourne, P .E.; et al. The FAIR Guiding Principles for scientiﬁc data
+management and stewardship. Sci. Data 2016 ,3, 160018. [CrossRef] [PubMed]Data 2019 ,4, 69 37 of 37
+33. Collaboration, E.H.T. First M87 Event Horizon Telescope results. I. The shadow of the supermassive black
+hole. Astrophys. J. Lett. 2019 ,875, L1. [CrossRef]
+34. Whitehouse, H.; François, P .; Savage, P .E.; Currie, T.E.; Feeney, K.C.; Cioni, E.; Purcell, R.; Ross, R.M.;
+Larson, J.; Baines, J.; et al. Complex societies precede moralizing gods throughout world history. Nature
+2019 ,568, 226–229. [CrossRef] [PubMed]
+©2019 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access
+article distributed under the terms and conditions of the Creative Commons Attribution
+(CC BY) license (http: //creativecommons.org /licenses /by/4.0/).

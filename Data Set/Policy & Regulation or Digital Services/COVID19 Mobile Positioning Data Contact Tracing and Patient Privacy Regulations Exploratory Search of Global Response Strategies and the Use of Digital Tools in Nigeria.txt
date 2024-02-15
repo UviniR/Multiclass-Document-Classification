@@ -1,0 +1,502 @@
+Original Paper
+COVID-19 Mobile Positioning Data Contact Tracing and Patient
+Privacy Regulations: Explor atory Search of Global Response
+Strategies and the Use of Digital Tools in Niger ia
+Iniobong Ekong1*, MBBS, MPH, CGEIT ; Emeka Chukwu2*, BEng, MSc, CGEIT ; Martha Chukwu3*, BSc, MPA
+1Department of Health Planning, Research and Statistics, FCT Health and Human Services Secretariat, Abuja, Nigeria
+2Department of Computer Information System, Faculty of Information & Communication Technology , University of Malta, Msida, Malta
+3Ragnar Nurkse Department of Innovation and Governance, School of Business and Governance, Tallinn University of Technology , Tallinn, Estonia
+*all authors contrib uted equally
+Corr esponding Author:
+Emeka Chukwu, BEng, MSc, CGEIT
+Department of Computer Information System
+Faculty of Information & Communication Technology
+University of Malta
+PG room A24, Level 0
+Msida, MSD 2080
+Malta
+Phone: 356 99330888
+Email: nnaemeka_ec@hotmail.com
+Abstr act
+Backgr ound: The corona virus disease (COVID-19) pandemic is the biggest global economic and health challenge of the century .
+Its effect and impact are still evolving, with deaths estimated to reach 40 million if uncheck ed. One effective and complementary
+strate gy to slow the spread and reduce the impact is to trace the primary and secondary contacts of confirmed COVID-19 cases
+using contact tracing technology .
+Objecti ve: The objecti ve of this paper is to survey strate gies for digital contact tracing for the COVID-19 pandemic and to
+present how using mobile positioning data conforms with Nigeria’ s data privacy regulations.
+Methods: We conducted an exploratory review of current measures for COVID-19 contact tracing implemented around the
+world. We then analyzed how countries are using mobile positioning data technology to reduce the spread of COVID-19. We
+made recommendations on how Nigeria can adopt this approach while adhering to the guidelines provided by the National Data
+Protection Regulation (NDPR).
+Results: Despite the potential of digital contact tracing, it always conflicts with patient data privacy regulations. We found that
+Nigeria’ s response complies with the NDPR, and that it is possible to leverage call detail records to complement current strate gies
+within the NDPR.
+Conclusions: Our study shows that mobile position data contact tracing is important for epidemic control as long as it conforms
+to relevant data privacy regulations. Implementation guidelines will limit data misuse.
+(JMIR Mhealth Uhealth 2020;8(4):e19139) doi: 10.2196/19139
+KEYW ORDS
+COVID-19; contact tracing; Nigeria’ s National Data Protection Regulation; General Data Protection Regulation; GDPR;
+corona virus; surveillance; mHealth; eHealth; digital health
+Introduction
+The corona virus disease 2019 (COVID-19) is caused by severe
+acute respiratory syndrome corona virus 2 (SARS-CoV -2) [1].
+This infectious respiratory disease was first detected in WuhanCity, China, in December 2019. It was declared a global
+pandemic by the World Health Organization (WHO) on March
+11, 2020, and has currently infected over two million people
+worldwide and has killed over 150,000 people. Globally ,
+responses have been swift and in full influenza pandemic control
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 4 | e19139 | p. 1 http://mhealth.jmir .org/2020/4/e19139/
+(page number not for citation purposes)Ekong et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXmode [2]. Travel and movement restrictions to curtail spread
+both within and across cities are in force. Many cities around
+the world are in lockdo wn or lock-in mode. Some have issued
+dusk-to-da wn curfe ws. In other scenarios, large gatherings have
+either been banned or discouraged. Estimates suggest that this
+pandemic can claim the lives of as many as 40 million people
+globally [3]. The Spanish flu, which lasted between 1918 and
+1920 in some places, has been estimated to have cost the lives
+of 21-50 million people globally [4]. Evidence suggests that
+influenzas can mainly be spread through large clusters [5]. The
+WHO global influenza preparedness plan presents guidelines
+for the management and control of influenza and other disease
+[6]. Nigeria, one of the countries that adopts WHO guidelines,
+has over 493 cases of COVID-19 as of April 17, 2020, with 17
+mortalities. This is a substantial increase since the index case
+was reported on February 27, 2020. To better manage the spread,
+Nigeria’ s federal government has declared a lockdo wn in key
+affected states (ie, Lagos, Ogun, and the Federal Capital
+Territory). The lockdo wn was in addition to several mitig ating
+actions by state governments, ranging from a ban on social
+gatherings to dusk-to-da wn curfe ws. During the lockdo wn,
+schools, mark ets, churches, mosques, banks, offices, parks,
+motor parks, and airports remain closed, often for a 14-day
+period.
+The Nigeria Centre for Disease Control (NCDC) reported that
+it is currently conducting contact tracing of over 9000 contacts
+of confirmed cases in an attempt to effectively contain the spread
+of the disease, in line with the recommended measures for
+pandemic response [7,8]. These measures include antiviral,
+vaccine, and nonpharmaceutical measures such as case isolation,
+household quarantine, school or workplace closure, and travel
+restrictions. Given the scale of the COVID-19 pandemic,
+nonpharmaceutical actions appear to be the only practical and
+logical option in the absence of any known antiviral drug or
+vaccine. Resources are stretched even in countries with advanced
+health care systems, as seen in Italy, the United Kingdom, China,
+and the United States [9,10].
+Although the NCDC's approach has been commended for its
+compliance with WHO guidelines for large-scale containment
+and contact tracing, there remain options that may yet beexplored [11]. Given the inadequac y of testing kits, it is belie ved
+that the number of confirmed cases may be far lower than the
+actual number of cases in Nigeria and most African countries.
+This is fueling speculations of a real, catastrophic-le vel
+pandemic if isolation, containment, quarantine, and
+contact-tracing mechanisms are not urgently implemented. In
+a country with an already weak health care system occasioned
+by poor health investment choices, managing such an outbreak
+will become impossible.
+There is, therefore, a need to develop and adopt new strate gies,
+particularly digitally-enabled strate gies, to facilitate a more
+extensi ve, accurate, seamless, and timely response in line with
+the high frequenc y of new infections among contacts of
+confirmed cases (ie, the secondary infection rate) [12]. The
+adoption of digital solutions in Nigeria has been focused on
+electronic forms for contact data collection and visualization
+for follow-up [13]. Digital technologies can do more than be a
+tool for field data collection or serve as an outbreak investigation
+platform. Data on households and general population movement
+patterns can be extracted through digital technologies [14].
+Farrahi et al [15] showed that over a 9-month period, 72
+participants made 10,992 phone calls and 9432 SMS records
+representing communication flow; additionally , these
+participants made 1,973,547 Bluetooth interactions representing
+physical proximity movements. When extrapolated for three
+cases in Abuja, the capital city of Nigeria, their movement can
+result in thousands of interactions. In the case of an infection,
+these three cases can initiate an exponential number of contacts
+through these interactions, as seen in Figure 1A. The registered
+quarantine address can be visualized on the map and movement
+of quarantine subjects can be monitored with notifications
+enabled (Figure 1B).
+Our paper reviews global practices in the use of mobile
+positioning data to achie ve a more targeted and efficient
+approach at contact tracing and disease surveillance, especially
+in the conte xt of the COVID-19 pandemic. We discuss how this
+approach is possible within regulatory confines. We also
+recommend a novel strate gy for coordinating agencies to
+leverage mobile positioning data, and how to ensure patient
+privacy is preserv ed.
+Figur e 1. Visualization of Movement paths of cases and quarantine location.
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 4 | e19139 | p. 2 http://mhealth.jmir .org/2020/4/e19139/
+(page number not for citation purposes)Ekong et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXMethods
+The COVID-19 pandemic is emer ging and only three months
+old with little scholarly work to justify a systematic search,
+review, and analysis approach. We conducted an exploratory
+(nonsystematic) internet search for technology approaches and
+responses to COVID-19. Results from global and national
+agencies responsible for infection prevention and control were
+analyzed to ascertain how they currently use technology . We
+also reviewed how these use cases fit within the regulatory
+frame work for contact tracing and isolation. A similar internet
+search methodology was adopted for Nigeria’ s response and its
+use of digital tools for contact tracing.
+Results
+Our search yielded results based on emer ging trends and the
+use of digital technologies by countries around the world to
+respond to COVID-19. We first present global perspecti ves and
+response strate gies on the use of mobile position data during
+previous and current pandemics. We then present Nigeria’ s
+approach.
+Mobile Position Data: How It Works
+The GSM Association puts the total number of mobile
+subscribers at 5 billion unique subscribers and 7 billion
+connected devices [16]. Nigeria has 184 million active mobilesubscriber lines [17]. Mobile telecommunications subscriber
+communication and movement data was used for contact tracing
+during the Ebola outbreak [14]. Many countries are currently
+using mobile data for a more rapid response to the COVID-19
+pandemic [18,19]. There has been a 90% increase in the number
+of countries implementing digital tracking measures and a 100%
+increase in reports of censorship [20]. These approaches range
+from the use of anon ymized aggre gate data to monitor the
+general mobility of people and track the mobile phones of
+confirmed cases to tracking suspected patients and their contacts.
+In some cases, these approaches were individualized and
+mandatory while, in others, they were aggre gated and
+anon ymized. In all cases, there were collaborations between the
+government, mobile netw ork operators (MNOs), and other data
+controllers such as technology companies and financial services
+providers.
+At any time, each mobile subscriber is connected to a segment
+of the MNO base station tower. For simplicity , we have
+presented a cell tower and a subscriber in Figure 2. We used
+letters A and B to illustrate the farthest and shortest distance of
+the subscriber from the base station tower based on power
+throughput and internal cell tower position triangulation. The
+difference between A and B, representing the diameter of a
+user’ s device, which is a proxy for the user’ s location, often
+ranges between 50 and 300 meters, but depends other factors
+[14].
+Figur e 2. Location of a subject with respect to a mobile netw ork operator (MNO) cell tower.
+Global Strategies
+Table 1details some of the strate gies governments around the
+world are adopting to track and isolate COVID-19 patients and
+their contacts or for lockdo wn/lock-in enforcement. In the
+United States, US $500 million of the US $2 trillion economic
+stimulus bill recently signed into law has been allocated to the
+US Centers for Disease Control and Prevention to launch a new
+surveillance and data collection system to monitor the spread
+of COVID-19 [21]. This move is a first for the United States
+since stringent patient data privacy and security regulationshave hampered the adoption of contact tracing as a
+countermeasure for epidemic control in the past [22]. Similarly ,
+the state of Massachusetts has announced the launch of what it
+calls the “first contact tracing” call center with 1000 virtual
+assistants to call and trace contacts of COVID-19-positi ve
+persons [23].
+The European Union’ s General Data Protection Regulation
+(GDPR) is being tested on a large scale. Within the regulation,
+a patient can decide not to disclose who they have been in
+contact with or legally resist being traced [24]. Evidence has
+emer ged that German y, Austria, and Italy are using aggre gated
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 4 | e19139 | p. 3 http://mhealth.jmir .org/2020/4/e19139/
+(page number not for citation purposes)Ekong et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXcall detail records (CDRs) to enforce lockdo wn and stay-at-home
+policies [25]. As this is an evolving challenge and European
+countries such as Italy and France are amongst the worst
+affected, changes to the GDPR regulations are expected and
+anticipated.
+In China, the government worked with telecommunications
+companies to track and contact people who had traveled through
+Hubei province during the early days of the disease outbreak.
+Location data was shared with China's National Health
+Commission and other agencies, enabling them to
+retrospecti vely simulate the location of confirmed cases and
+their contacts, who were then issued warnings via social media[26]. Information has also emer ged that the Chinese government
+may have leveraged its large netw ork of sensors and surveillance
+cameras supported by an artificial intelligence–po wered facial
+recognition and recommender system in its response to the
+COVID-19 outbreak [27]. This success may not be unconnected
+with the often criticized and loose patient data privacy and
+security regulation in China.
+It was, however, observ ed that the extent of compliance with
+international and country-le vel regulations regarding data
+privacy considerations in deplo ying this digital technology
+varied from country to country .
+Table 1. Strate gies planned or adopted by countries for the use of mobile positioning data in response to the COVID-19 pandemic.
+Strate gy planned or adopted Country
+The state of Massachusetts announced the launch of its first contact tracing call center to be manned by 1000
+virtual assistants [23]. The US federal government announced a US $500 million package for COVID-19
+surveillance for the CDC [21].United States [21]
+A mandatory smartphone app “Health code” that leverages a mesh netw ork for infected persons contact
+tracing and notification.China [22,28]
+Telecommunications providers allow for the sharing of location data with health authorities to check whether
+people are remaining at home. The data is aggre gated and anon ymous, mapping concentrations rather than
+individuals to respect Europe’ s privacy laws.Italy, German y, and Austria [25]
+The government created a map of cell phone data provided by telecommunications and credit card companies.
+The map was made public, so everyone could track their level of exposure.South Korea [29]
+The government is using GMS call detail records in addition to patient mobile phone position data to locate
+contacts and trace their movement patterns.Israel [19]
+Iranian authorities developed a mobile app with government endorsement for COVID-19 self-diagnosis
+checks. It, however, also discretely collects user’ s location data.Iran [30]
+Singapore is using a mobile app that uses a Bluetooth-based mesh netw ork to detect people's proximity to
+those who have been exposed to COVID-19 and warns them to get tested if they come in close contact.Singapore [18,21]
+The Nigerian Strategy
+Human travel patterns and mobility can be assessed using
+available mobile phone data, and its application can be useful
+in disease epidemiology [31]. Panigutti et al [31] also revealed
+the adequac y of mobile phone data for tracking infectious
+disease spread, particularly in heavily populated and highly
+interconnected communities.
+Border restrictions, internal travel restrictions, and school
+closures or total lockdo wn are reasonable but have minimal
+impact compared to effective case isolation or quarantine, which
+have been shown to have a signif icant impact if properly
+conducted [2]. This is particularly important in Nigeria’ s case,
+where total compliance to these strate gies cannot be guaranteed.
+Therefore, data on case isolation and quarantine should be a
+signif icant priority in Nigeria. Moreo ver, data is useful in
+modeling disease transmission. Specif ically , collecting and
+analyzing data on transmission in different social conte xts is
+highly effective in mapping interv ention strate gies since the
+impact of case isolation and quarantine depends on reducing
+contact between unaffected individuals and the index and other
+cases while they are ill [2].
+In order for the NCDC to effectively conduct the current
+large-scale contact tracing of over 9000 contacts of confirmed
+cases, use of digital technology is inevitable. The number ofcontacts may even be more than this number considering the
+frequenc y of new infections. Currently , there are several digital
+contact data capture solutions, including the Surveillance ,
+Outbr eak Response Mana gement and Analysis System
+(SORMAS). These solutions require a field epidemiologist or
+their representati ve to visit every contact.
+Discussion
+Principal Findings
+Evidence suggests that contact tracing and data protection can
+go together [32]. Signif icant progress is being made with current
+strate gies. As promising as they may seem, data privacy
+concerns remain a major impediment; it is necessary to find a
+balance between deplo ying the technology and maintaining data
+safety and patient privacy. Existing patient privacy regulations
+are currently being tested. Some countries have attempted to
+relax existing stringent regulations that protect patient privacy
+to allow for greater access; others have worked around them.
+According to Woods [21], many of the new digital technology
+approaches appear inevitable and legitimate, given the
+unprecedented high frequenc y of the COVID-19 infection
+spread. Many countries have now also invoked speedy
+legislati ve processes to give legitimac y to their workarounds
+and deplo yments.
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 4 | e19139 | p. 4 http://mhealth.jmir .org/2020/4/e19139/
+(page number not for citation purposes)Ekong et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderXIn Israel, for instance, the cabinet has passed an emer gency law
+to use mobile data for tracking people infected with COVID-19,
+trace their contacts, and identify individuals for quarantine [19].
+This law was passed overnight, bypassing parliamentary
+appro val. In the United States, privacy advocates are proposing
+stringent procedures to keep personal information safe, including
+deletion, once the data are no longer in use to prevent abuse by
+law enforcement agents [21].
+The National Data Protection Regulation (NDPR) of Nigeria
+was promulg ated in 2019 [33]. Amongst other stipulations, the
+regulation outlines the guiding principles for data processing
+in Section 5. These principles consider data processing unlawful
+if there is no consent by the individual data subjects (in this
+case, the confirmed persons), if it is inaccurate with prejudice
+to human dignity and not protected against cybercrime, and if
+it is stored beyond a reasonable period of time. However, despite
+these guiding principles, Section 6, part 2.0, subsection 2.2 (e)
+of the document lists the conditions for lawful data processing
+and states that:
+Processing is necessary for the performance of a task
+carried out in the public interest or the exercise of
+official public mandate vested in the contr oller.
+The data controller in the case of mobile positioning data is the
+MNO, the entity that determines the purposes for and the manner
+in which netw ork subscriber phone data is processed or is to be
+processed. Section 11 of the regulation states that data
+processing by a third party (eg, a public authority such as the
+Federal Ministry of Health, the NCDC, or anybody engaged in
+processing the location data such as a technology compan y)
+shall be governed by a written contract with the data controller .
+Interestingly , though the NDPR protects the privacy of personal
+mobile location data, it also provides exceptions for the use of
+such data that override public interest, such as the current
+COVID-19 outbreak.
+Recommendations
+Mobile phone location data can be effectively utilized in Nigeria
+for COVID-19 response. The government can leverage existing
+mobile technology resources and infrastructure available
+in-country by working with MNOs and technology firms to
+optimize the ongoing contact tracing and surveillance of over
+9000 known contacts of confirmed cases. This collaboration
+should be guided by the NDPR in order to protect and safeguard
+individuals' data, prevent a breach of data privacy rights as well
+as inappropriate use and abuse by law enforcement agencies
+beyond the period of contact tracing and surveillance.
+In practice, however, the first step should involve anon ymized
+mobile subscriber data in line with good data governance polic y.In the spirit of goodwill, informed consent of confirmed cases
+should be appropriately obtained once they are diagnosed,
+whene ver possible. The use of the public interest exception
+should be a last resort. A simplif ied guideline for these processes
+for adhering to the NDPR should be written and made
+transparently available for data custodians, requesting bodies,
+data handlers, and the patient or contact.
+A third-party agreement should also be formally signed between
+parties interf acing with patient data in any way. A typical use
+case sensiti ve to data privacy concerns is the use of information
+only regarding visits to public facilities, including public
+transportation systems, parks, churches, mosques, or malls, by
+COVID-19-positi ve individuals, as described by Ohmukai et
+al [34]. The use of CDRs has been proven to be effective in
+detecting outbreak clusters, followed by the use of other
+frontline data collection tools for mitig ating impact and
+containment [14]. A key limitation of using CDRs from MNOs
+is that for basic 2G (second generation) phone users, the location
+will rely on mobile netw ork phone mast location triangulation
+only. This approach alone has a proximity accurac y of 50-300
+meters. This accurac y level is not sufficient to identify persons
+who have been in contact with a COVID-19 patient since the
+WHO contact definition prescribes two meters [7]. The use of
+telecommunication CDRs should complement other strate gies
+for effective results.
+The immediate action after a successful contact trace is
+communicating the expected course of action to citizens of an
+infected community cluster . A simple, user-friendly interf ace
+using Unstructured Supplementary Service Data will help
+impro ve information requests and management for low-income
+but literate users. Interacti ve voice response technology will be
+suitable and appropriate for awareness response for low-literate
+users in their local language.
+Conclusions
+Mobile positioning data can signif icantly impro ve the capacity
+and scope of timely outbreak response and will help
+governments as well as other responders in Nigeria. When
+implemented early [15], there are opportunities to leverage
+positioning data to break the chains of disease transmission in
+community clusters. It can impro ve the efficienc y of currently
+used field data collection and outbreak investig ation platforms
+when used in syner gy.
+While mobile positioning data can be used within the current
+regulation, guidelines for data handlers must include measures
+to curtail misuse and unauthorized access. Future research
+should design and implement models for mobile position contact
+tracing.
+Conflicts of Inter est
+None declared.
+Refer ences
+1. World Health Organization. 2020. Naming the corona virus disease (COVID-19) and the virus that causes it URL: https:/
+/tinyurl.com/t82w9ka [accessed 2020-04-01]
+2. Ferguson NM, Cummings DAT, Fraser C, Cajka JC, Coole y PC, Burk e DS. Strate gies for mitig ating an influenza pandemic.
+Nature 2006 Jul 27;442(7101):448-452. [doi: 10.1038/nature04795 ] [Medline: 16642006 ]
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 4 | e19139 | p. 5 http://mhealth.jmir .org/2020/4/e19139/
+(page number not for citation purposes)Ekong et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderX3. van Elsland SL, O'Hare R. Imperial Colle ge London. 2020 Mar 26. Corona virus pandemic could have caused 40 million
+deaths if left uncheck ed URL: https://www .imperial.ac.uk/ne ws/196496/corona virus-pandemic-could-ha ve-caused-40/
+[accessed 2020-04-03]
+4. Johnson NPAS, Mueller J. Updating the accounts: global mortality of the 1918-1920 "Spanish" influenza pandemic. Bull
+Hist Med 2002;76(1):105-115. [doi: 10.1353/bhm.2002.0022 ] [Medline: 11875246 ]
+5. Ferguson NM, Fraser C, Donnelly CA, Ghani AC, Anderson RM. Public health. Public health risk from the avian H5N1
+influenza epidemic. Science 2004 May 14;304(5673):968-969. [doi: 10.1126/science.1096898 ] [Medline: 15143265 ]
+6. World Health Organization. 2005. WHO Global Influenza Preparedness Plan URL: https://www .who.int/csr/resources/
+publications/influenza/WHO_CDS_CSR_GIP_2005_5.pdf [accessed 2020-03-29]
+7. World Health Organization. 2020 Apr 03. Corona virus disease 2019 (COVID-19): Situation Report - 74 URL: https://www .
+who.int/docs/def ault-source/corona viruse/situation-reports/20200403-sitrep-74-co vid-19-mp.pdf?sfvrsn=4e043d03_12
+[accessed 2020-03-01]
+8. World Health Organization Writing Group, Bell D, Nicoll A, Fukuda K, Horby P, Monto A, et al. Non-pharmaceutical
+interv entions for pandemic influenza, national and community measures. Emer g Infect Dis 2006 Jan;12(1):88-94 [FREE
+Full text] [doi: 10.3201/eid1201.051371 ] [Medline: 16494723 ]
+9. Cascella M, Rajnik M, Cuomo A, Dulebohn S, Di Napoli R. Features, Evaluation and Treatment Corona virus (COVID-19).
+Treasure Island, FL: StatPearls Publishing; 2020.
+10. Cao B, Wang Y, Wen D, Liu W, Wang J, Fan G, et al. A Trial of Lopina vir–Ritona vir in Adults Hospitalized with Severe
+Covid-19. N Engl J Med 2020 Mar 18. [doi: 10.1056/nejmoa2001282 ]
+11. World Health Organization. 2020 Mar 19. Considerations for quarantine of individuals in the conte xt of containment for
+corona virus disease (COVID-19) URL: https://tin yurl.com/y8smo4pe [accessed 2020-03-25]
+12. World Health Organization. 2020. Household transmission investig ation protocol for corona virus disease 2019
+(    CO VID-19)     URL: https://www .who.int/publications-detail/
+household-transmission-in vestig ation-protocol-for -2019-no vel-corona virus-(2019-nco v)-infection [accessed 2020-04-01]
+13. Dimagi.com. 2020. Digital Solution for COVID-19 Response URL: https://www .dimagi.com/co vid-19/ [accessed 2020-04-01]
+14. Shibasaki R. International Telecommunication Union. 2017. Call detail record (CDR) analysis: Sierra Leone URL: https:/
+/www .itu.int/en/ITU-D/Emer gency-Telecommunications/Documents/2017/Reports/SL/D012A0000CA3301PDFE.pdf
+[accessed 2020-03-20]
+15. Farrahi K, Emonet R, Cebrian M. Epidemic contact tracing via communication traces. PLoS One 2014 May 1;9(5):e95133
+[FREE Full text] [doi: 10.1371/journal.pone.0095133 ] [Medline: 24787614 ]
+16. GSMA Intelligence. 2017. Number of Mobile Subscribers Worldwide Hits 5 Billion URL: https://www .gsma.com/ne wsroom/
+press-release/number -mobile-subscribers-w orldwide-hits-5-billion/ [accessed 2020-04-01]
+17. Nigerian Communications Commission. 2017. URL: https://www .ncc.go v.ng/[accessed 2017-02-17]
+18. Choudhury SR. CNBC. 2020 Mar 25. Singapore says it will make its contact tracing tech freely available to developers
+URL: https://www .cnbc.com/2020/03/25/corona virus-sing apore-to-mak e-contact-tracing-tech-open-source.html [accessed
+2020-03-04]
+19. Lomas N. Tech Crunch. 2020 Mar 18. Israel passes emer gency law to use mobile data for COVID-19 contact tracing URL:
+https://techcrunch.com/2020/03/18/israel-passes-emer gency-law-to-use-mobile-data-for -covid-19-contact-tracing/ [accessed
+2020-03-18]
+20. Cozzens T. GPS World. 2020 Mar 26. 19 countries track mobile location to fight COVID-19 URL: https://tin yurl.com/
+y8kpuvcv [accessed 2020-03-29]
+21. Woods A. New York Post. 2020 Mar 26. CDC to launch new surveillance system to track corona virus spread URL: https:/
+/nypost.com/2020/03/26/cdc-to-launch-ne w-surv eillance-system-to-track-corona virus-spread/ [accessed 2020-04-01]
+22. Rafalski EM. Health Insurance Portability and Accountability Act of 1996 (HIPAA). Encyclopedia of Health Services
+Research 1996. [doi: 10.4135/9781412971942.n180 ]
+23. Carraggi M. Patch. 2020 Apr 03. MA To Launch First Corona virus Contact Tracing Program In US URL: https://patch.
+com/massachusetts/boston/ma-launch-f irst-corona virus-contact-tracing-program-u-s [accessed 2020-04-03]
+24. Information Commissioner's Office. Guide to the General Data Protection Regulation (GDPR). Information Commissioner's
+Office 2018 [FREE Full text] [doi: 10.1211/pj.2017.20203048 ]
+25. Pollina E, Busvine D. Reuters. 2020 Mar 18. European mobile operators share data for corona virus fight URL: https:/
+/tinyurl.com/yadpu9gm [accessed 2020-04-01]
+26. Grind K, McMilan R, Mathe ws AW. The Wall Street Journal. 2020 Mar 17. To Track Virus, Governments Weigh Surveillance
+Tools That Push Privacy Limits, Geolocation and facial-recognition systems can locate vectors of infections, but they also
+gather highly personal data URL: https://tin yurl.com/v99re x4[accessed 2020-04-02]
+27. Yuan S. Aljazeera China. 2020 Mar 01. How China is using AI and big data to fight the corona virus URL: https://www .
+aljazeera.com/ne ws/2020/03/china-ai-big-data-combat-corona virus-outbreak-200301063901951.html [accessed 2020-03-20]
+28. Zhang O. Associated Press / Time. 2020 Apr 02. Inside China's Smartphone 'Health Code' System Ruling Post-Corona virus
+Life URL: https://time.com/5814724/china-health-code-smartphones-corona virus/ [accessed 2020-03-10]
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 4 | e19139 | p. 6 http://mhealth.jmir .org/2020/4/e19139/
+(page number not for citation purposes)Ekong et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderX29. Lyons K. The Verge. 2020 Mar 23. Governments around the world are increasingly using location data to manage the
+corona virus URL: https://tin yurl.com/y75xuwyz [accessed 2020-03-29]
+30. Gilbert D. Vice. 2020 Mar 14. Iran Launched an App That Claimed to Diagnose Corona virus. Instead, It Collected Location
+Data on Millions of People URL: https://tin yurl.com/yddt2p38 [accessed 2020-03-27]
+31. Panigutti C, Tizzoni M, Bajardi P, Smoreda Z, Colizza V. Assessing the use of mobile phone data to describe recurrent
+mobility patterns in spatial epidemic models. R Soc Open Sci 2017 May 17;4(5):160950 [FREE Full text] [doi:
+10.1098/rsos.160950 ] [Medline: 28572990 ]
+32. Abeler J, Bäck er M, Buerme yer U, Zillessen H. COVID-19 Contact Tracing and Data Protection Can Go Together . JMIR
+Mhealth Uhealth 2020 Apr 20;8(4):e19359 [FREE Full text] [doi: 10.2196/19359 ] [Medline: 32294052 ]
+33. National Information Technology Development Agenc y. 2019. Nigeria General Data Protection Regulation URL: https:/
+/nitda.go v.ng/[accessed 2020-04-02]
+34. Ohmukai I, Yamamoto Y, Ito M, Okumura T. arXiv.org. 2020. Tracing patients' PLOD with mobile phones: Mitig ation of
+epidemic risks through patients' locational open data URL: http://arxi v.org/abs/2003.06199 [accessed 2020-03-27]
+Abbreviations
+2G: second generation
+CDC: US Centers for Disease Control and Prevention
+CDR: call detail record
+COVID-19: corona virus disease
+GDPR: General Data Protection Regulation
+MNO: mobile netw ork operator
+NCDC: Nigeria Centre for Disease Control
+NDPR: National Data Protection Regulation
+SARS-CoV -2: severe acute respiratory syndrome corona virus 2
+SORMAS: Surveillance, Outbreak Response Management and Analysis System
+WHO: World Health Organization
+Edited by G Eysenbac h; submitted 05.04.20; peer-reviewed by T Yasaka, GE Iyawa, D Pförring er; comments to author 16.04.20;
+revised version received 17.04.20; accepted 19.04.20; published 27.04.20
+Please cite as:
+Ekong I, Chukwu E, Chukwu M
+COVID-19 Mobile Positioning Data Contact Tracing and Patient Privacy Regulations: Explor atory Search of Global Response
+Strategies and the Use of Digital Tools in Nigeria
+JMIR Mhealth Uhealth 2020;8(4):e19139
+URL: http://mhealth.jmir .org/2020/4/e19139/
+doi: 10.2196/19139
+PMID: 32310817
+©Iniobong Ekong, Emeka Chukwu, Martha Chukwu. Originally published in JMIR mHealth and uHealth (http://mhealth.jmir .org),
+27.04.2020. This is an open-access article distrib uted under the terms of the Creati ve Commons Attrib ution License
+(https://creati vecommons.or g/licenses/by/4.0/), which permits unrestricted use, distrib ution, and reproduction in any medium,
+provided the original work, first published in JMIR mHealth and uHealth, is properly cited. The complete bibliographic information,
+a link to the original publication on http://mhealth.jmir .org/, as well as this copyright and license information must be included.
+JMIR Mhealth Uhealth 2020 | vol. 8 | iss. 4 | e19139 | p. 7 http://mhealth.jmir .org/2020/4/e19139/
+(page number not for citation purposes)Ekong et al JMIR MHEAL TH AND UHEAL TH
+XSL•FO
+RenderX

@@ -1,0 +1,665 @@
+Full Terms & Conditions of access and use can be found at
+http://www.tandfonline.com/action/journalInformation?journalCode=hoce20
+Journal of Organizational Computing and Electronic
+Commerce
+ISSN: 1091-9392 (Print) 1532-7744 (Online) Journal homepage: http://www.tandfonline.com/loi/hoce20
+Exploring SME cybersecurity practices in
+developing countries
+Salah Kabanda, Maureen Tanner & Cameron Kent
+To cite this article:  Salah Kabanda, Maureen Tanner & Cameron Kent (2018) Exploring SME
+cybersecurity practices in developing countries, Journal of Organizational Computing and Electronic
+Commerce, 28:3, 269-282, DOI: 10.1080/10919392.2018.1484598
+To link to this article:  https://doi.org/10.1080/10919392.2018.1484598
+Published online: 13 Jul 2018.
+Submit your article to this journal 
+View Crossmark data
+Exploring SME cybersecurity practices in developing countries
+Salah Kabanda, Maureen Tanner, and Cameron Kent
+Department of Information Systems, University of Cape Town, Cape Town, South Africa
+ABSTRACT
+The continued use of information technology systems by small and med-
+ium enterprises (SMEs) in developing countries has the potential to bring
+significant benefits but, at the same time, expose them to online cyberse-
+curity threats. Addressing these threats is, therefore, of paramount impor-
+tance for developing countries, not only because SMEs are seen as the
+vehicle for employment and job creation, but because research on SMEs
+and cybersecurity in this context is limited. This study is a contribution
+toward addressing this gap.
+The purpose of this study is, therefore, to explore SME cybersecurity
+practices and the challenges they face in developing countries. The goal is
+to sensitize practitioners and government institutions about the challenges
+and practices faced by SMEs, so that the various parties can work collabora-
+tively in providing context-specific solutions to address these challenges
+and improve current cybersecurity practices. The study follows a qualitative
+enquiry approach to solicit information from three South African SMEs that
+had implemented cybersecurity practices. The findings show that an SME ’s
+perception of cybersecurity is constrained by internal factors of budget,
+management support, and attitudes. Further findings show that SMEs ’
+cybersecurity practices are affected by the landscape of cybersecurity, as
+well as institutional pressures.KEYWORDS
+Small and medium
+enterprises (SMEs);
+cybersecurity; developing
+countries; institutional
+pressure; South Africa
+Introduction
+Developing countries, specifically those in Africa, have traditionally lagged developed countries in
+adoption and use of the Internet. However, recent reports from the International
+Telecommunication Union (ITU) (2016) show that “developing countries now account for the
+vast majority of Internet users, with 2.5 billion users compared with one billion in developed
+countries. ”These developments, though, should be put in context of the Internet penetration
+rates, which is 81% in developed countries, compared with 40% in developing countries and 15%
+in the least-developed countries (ITU 2016 ). Thus, despite poor Internet penetration, developing
+countries are changing the Internet usage landscape by becoming one of the key players. They are
+taking advantage of the multitude of benefits that the Internet provides. For example, organizations
+can now forge international relationships with new vendors (to lower costs) and new customers (to
+increase sales), thereby decreasing communication costs, and resulting in higher efficiency and
+quicker transaction processing.
+Despite these benefits, organizations also face many challenges when using the Internet ––for
+example, the threat from attackers, spammers, and criminal corporations. This danger is more real
+for developing countries and more so for the SMEs who tend to have limited resources to acquire
+and implement cybersecurity mechanisms in their organizations (Sulayman et al. 2012 ) and do not
+CONTACT Salah Kabanda salah.kabanda@uct.ac.za Department of Information Systems, University of Cape Town, Tel:
++27216504253.
+Color versions of one or more of the figures in the article can be found online at www.tandfonline.com/hoce .
+© 2018 Taylor & FrancisJOURNAL OF ORGANIZATIONAL COMPUTING AND ELECTRONIC COMMERCE
+2018, VOL. 28, NO. 3, 269 –282
+https://doi.org/10.1080/10919392.2018.1484598
+have a dedicated IT management department that can shoulder the responsibilities even though they
+hold sensitive data about their staff, customer, and business partners and proprietary (Leung 2012 ).
+A consistent theme in literature has been how SMEs do not take cybersecurity concerns seriously
+(Nycz, Martin, and Polkowski 2015 ). This is partly because of the misconception that cybersecurity is
+associated with large organizations who have sophisticated and vulnerable information systems
+(Abbott et al. 2015 ); and partly because there are limited studies on the phenomenon from these
+contextual setting. The need for SMEs to be aware of and understand the consequences of cyberse-
+curity and how it can be addressed cannot be understated because this awareness and the under-
+standing can potentially “influence the adoption of secure behaviours ”(Bada and Sasse 2014 ).
+Against this background, the purpose of this study is to explore SME cybersecurity practices and
+the challenges they face in developing countries. The goal is to sensitize practitioners and govern-
+ment institutions of the challenges and practices faced by SMEs, so that the various parties can work
+collaboratively to arrive at context-specific solutions to address these challenges and improve current
+cybersecurity practices. SMEs in South Africa have been used to study this phenomenon because
+there have been “several negative comments about Africa ’s lack of preparedness to combat cyber-
+crime ”(Von Solms and Kritzinger 2011 ); and “South Africa remains one of top three countries that
+are targeted by phishing attacks ”(Dlamini and Modise 2013 ).
+Related work
+Cybersecurity in developing countries
+Security issues related to information technology (IT) continue to be a concern in both large and
+small organizations. This is because “cybercrime has led to the loss of billions of dollars, the
+malfunctioning of computer systems, the destruction of critical information, the compromising of
+network integrity and confidentiality, etc. ”(Abubakar et al. 2015 ). Despite these negatives, there
+remains little academic literature on the issue of cybersecurity, specifically for developing countries.
+According to Ben-David et al. ( 2011 ), developing countries have ﬁve core forces that shape their
+security landscape: (1) poor “security hygiene, ”i.e., the degree to which it runs with up-to-date
+software patches and recent malware protection; (2) unique usage patterns not commonly seen in
+the developed economies such as reliance on mobile technology for conducting ﬁnancial transactions
+even in places where credit cards and the web have not penetrated; (3) novice users who have joined
+the Internet and do not have exposure to the risks posed online and disseminating security
+educational material and tools is extremely challenging; (4) the use of pirated software which may
+not necessarily pose as a security risk, but challenging to verify that such software is not malicious;
+and (5) limited understanding on the adversaries ’of cybersecurity. These contextual factors can
+potentially explain why SME adopt information technologies but are ignorant of cybersecurity
+concerns. For example, Abubakar, Bass, and Allison ( 2014 ) found Nigerian SMEs to be less
+concerned with challenges like security, privacy and data loss, although they continued to show
+optimism in using the potential opportunities that cloud computing presents. In another study,
+Alawiye-Adams and Awoyemi ( 2014 ) report how the lack of cybersecurity framework poses as one
+of the main barriers toward automated teller machine (ATM) transaction charges on the new key
+cash-less policy in Nigeria.
+In South Africa, Grobler and Van Vuuren ( 2010 ) identify the following as main concerns:
+continuous phishing attacks, Sim-swap fraud and ID theft. According to the authors, these concerns
+are enabled and fueled by bandwidth availability, shortage of IT education, absence of African
+languages, lack of standardized procedures, and operating system distribution (Grobler and Van
+Vuuren 2010 ). Other studies such as Von Solms and Kritzinger ( 2011 ) have identified increasing
+bandwidth, increasing use of wireless technologies and infrastructure, lack of cybersecurity aware-
+ness, ineffective legislation and policies, and weak technical cybersecurity measures factors which
+introduce a higher level of cybersecurity risks and expose the critical infrastructures in many African270 S. KABANDA ET AL.countries to higher levels of risk. As a consequence, researchers such as Irons and Ophoff ( 2016 )
+have called for the need to develop digital forensics skills in South Africa through university
+programs, have associated training courses, and evaluate the extent to which the current cyberse-
+curity awareness initiatives address cybersecurity threats and risks (Dlamini and Modise 2013 ).
+Figure 1 summarizes the cybersecurity landscape of developing countries, and more specifically
+that of Africa. Other related work on cybersecurity (Ahmad, Maynard, and Shanks 2015 ) have
+shown that miscommunication and organizational barriers, such as financial resources (Srinidhi,
+Yan., and Tayi 2015 ), management support (Soomro, Shah, and Ahmed 2016 ), availability of
+expertise and awareness of cybersecurity threats (Champion et al. 2014 ; Cowley and
+Greitzer 2015 ), are significant factors that affect cybersecurity implementation.
+Cybersecurity approaches
+There have been several approaches for tackling cybersecurity and these include intrusion, anomaly,
+signature, hybrid, honeypot, web server logging (web servers, contents of log files, and log data
+analysis) and Intrusion using web server logs. Table 1 documents these approaches.
+The intrusion detection (ID) system is used in systems to detect attempted or successful
+unauthorized access to a network or computer system (Patcha and Park 2007 ). ID can be used to
+prevent intrusions as well as provide information in the case of a successful intrusion, which may
+help to implement an appropriate counter-measure (Abraham, Grosan, and Chen 2005 ).
+Data sources for analyzed information may vary with host or network activity, with application
+and command logs being common sources for information analysis (Patcha and Park 2007 ). To
+avoid the large amount of data that have to be analyzed, most ID systems store data for a particular
+period of time in order to be able to reference it at a later point. The ID system is usually managed
+Figure 1. Factors influencing cybersecurity implementation in developing countries.
+Table 1. Approaches to tackling cybersecurity (Garcia-Teodoro et al. 2009 ;Mirza et al. 2016 ).
+Intrusion Detection Security tools that, like other measures such as antivirus software, firewalls and
+access control schemes, are intended to strengthen the security of information
+and communication systems.
+Anomaly Intrusion detection A type of intrusion detection which attempt to estimate the “normal ”behavior of
+the system to be protected, and generate an anomaly alarm whenever the
+deviation between a given observation at an instant and the normal behavior
+exceeds a predefined threshold
+Signature patterns A type of intrusion detection which seek defined patterns, or signatures, within
+the analyzed data.
+Hybrid approach (anomaly and signature
+intrusion detection methods)Generalized use of a principal signature-based detection module, combined with
+a complementary anomaly-based scheme
+Honeypot Computer connected to the Internet that offers services and data that appear to
+be of value to an attacker but in fact is a deception traps used to monitor and
+log the activities of attackers
+Web server logging Gain knowledge of the state of a web server, given suitable web server log
+informationJOURNAL OF ORGANIZATIONAL COMPUTING AND ELECTRONIC COMMERCE 271by the Network Intrusion Detection Sensor Products (NIDS) —a device linked to the network and
+assesses incoming data to the server. Another product, among others that can manage the ID, is the
+Host Intrusion Detection Sensor (HIDS) which is a piece of software installed on a host compute for
+the purpose of identifying threats via behavior or signature analysis, then proceeding to attempt the
+prevention of an attack. HIDS are considered active defense mechanism because they combine
+identification and attack response (Peterson 2004 ).
+T h eu s eo fa n o m a l i e si sa n o t h e rm e a n so fa d d r e s s i n gc ybersecurity. Anomaly ID systems require normal
+usage patterns to identify the intrusions which are ge nerated by aggregating data usage (Abraham, Grosan,
+and Chen 2005). The behavior of all users is monitored and any deviation from normal usage is deemed as
+an intrusion. Anomaly ID is deemed to be an essential part of protecting against malicious attacks (Lee and
+Xiang 2001). Signature detection is another means of identifying attacks that attempt to exploit application
+software or a system (Abraham, Grosan, and Chen 2005). Signature patterns are pre-encoded and updated
+using known vulnerabilities to general systems, th en compared to incoming input in order to detect
+intrusion attempts (Abraham, Grosan, and Chen 2005; Kruegel and Vigna 2003). By watching out for
+certain patterns, the signature ID systems compare and match incoming packets, commands or other input
+to known attack signatures (Patcha and Park 2007). Unfortunately, it is extremely challenging to stay
+current to the near daily disclosure of vulnerabilities ,e v e nw h e nc o n c e n t r a t i n go nas p e c i f i ca s p e c ts u c ha s
+web-server related vulnerabilities (Kruegel and Vigna 2003). Vulnerabilities can also be very specific to
+certain technologies or their combinations, making s ignature ID systems better when complemented with
+anomaly ID systems (Kruegel and Vigna 2003). A good signature needs to be concentrated enough to be
+able to identify that certain attack, but elastic enough t ob ea b l et oi d e n t i f yi fav a r i a t i o no fac e r t a i na t t a c ki s
+being used (Kreibich and Crowcroft 2003). If the signature is either too concentrated or elastic, a large
+number of false positives and negatives will be recorded (Kreibich and Crowcroft 2003).
+The hybrid detection approach involves a combination of anomaly and signature detection
+methodologies (Patcha and Park 2007 ). At the core of the hybrid system is a signature ID system
+that operates by using information on what the attacker ’s suspicious and normal actions have been
+(Patcha and Park 2007 ). Other researchers have proposed the use of honeypots as a means of
+gathering information about attackers; Web Server Logging which can be used to detect security
+breaches or misbehavior are very useful when performing a postdisaster inspection of a security
+incident (Oliner, Ganapathi, and Xu 2012 ). In addition, the ID using Web Server Logs can be
+implemented. The main goal of a log-based ID system should be to gain knowledge of the state of a
+web server, given suitable web server log information (Barse and Jonsson 2004 ).
+Soomro, Shah, and Ahmed ( 2016 ) posits that the concept of security needs to be examined
+holistically, because numerous activities of management, particularly development and execution
+of security policy, awareness, compliance training, development of effective enterprise informa-
+tion architecture, IT infrastructure management, business and IT alignment and human resources
+management, had a significant impact on the quality of management of information security. De
+Barros and Lazarek ( 2018 ) conquers stating that handling cyber threats requires a cooperative
+action to secure nations cyberspace and one key factor is the existence of well-defined organiza-
+tional structure. While there are several studies that have examined the adoption of differentTable 2. Respondent profile.
+SME Position Experience in information security (years)
+A Respondent A1 Co-founder and CSO
+(chief strategic officer)15
+Respondent A2 Senior security analyst: threat analysis 6
+Respondent A3 Senior security analyst: research and development 8
+Respondent A4 Security analyst and developer 3
+Respondent A5 Network specialist 10
+B Respondent Owner, entrepreneur and technical specialist 15
+C Respondent C1 Developer 10
+Respondent C2 Chief technical officer 10272 S. KABANDA ET AL.approaches to cybersecurity, there are limited s tudies in the context of developing countries
+which explore the factors that influence how SMEs implement cybersecurity and the challenges
+they face. With this literature review in mind, we seek to examine (1) the factors that influence
+South African SME cybersecurity implementations, and (2) the various approaches adopted and
+challenged faced from the adoption of these approaches. Figure 1 will act as a sensitizing lens for
+exploring the objectives.
+Methodology
+Research approach
+A qualitative enquiry was adopted for the study with the purpose of allowing the researcher to be
+grounded in the SME contextual setting and be able to make sense of the results from the SME
+perspective. Studies that follow such an inquiry have been advocated for in developing countries
+(Avgerou 2001 ). Given the unique contextual landscape of developing countries, that is different
+from developed economies which sets the pace on how best to address cybersecurity, it is important
+to understand how cybersecurity is perceived by organizations from these environments. It is
+through such an enquiry that cybersecurity solutions can be designed that are context specific to
+developing countries.
+Purposive sampling was adopted to identify and select SMEs that were engaged with cybersecurity
+implementation. Three SMEs (A –C) were selected to participate in this study. These were selected on
+the basis that they had previously, and some were still currently, engaged in cybersecurity. These
+SMEs, therefore, have experienced cybersecurity and can share that knowledge with the researcher.
+SME_A was an Information Security consulting firm of 90 –150 employees. SME_B was relatively
+smaller than SME_A with less than 10 employees. The organization was involved in the development
+of software which customer use by paying a subscription fee. SME_C was a software development
+company with clients primarily in the United States of America. The organization had 150 –200
+employees and had its internal networks and application security to consider as well as the security
+of applications which they wrote for customers.
+Data collection and analysis
+Data from SMEs were collected via semi-structured qualitative interviews. The factors influencing
+implementation of cybersecurity in developing countries, as depicted in Figure 1 guided the inter-
+view process. The study had in total eight respondents from the three participating SMEs
+(see Table 2 ). Five members of SME_A participated in the study. In addition to the interviews,
+multiple months of web server logs were given to the researcher by Interviewee 5. The respondent
+from SME_B was the owner and the person responsible for the management and technical opera-
+tions. The respondent also provided the researcher with a 2000-line snippet of Apache Web Server
+logs. Two participants from organization C responded to the study request. Although the SME
+sample size is small, qualitative studies are more concerned with in-depth understanding of the
+phenomenon from its natural setting as perceived by participants.
+Data analysis commenced with the transcription of the recorded interviews which were compli-
+mented with the researcher ’s notes that were made during the process of the interviews. Then, the
+interview documents were repeatedly read to identify patterns across the entire data corpus.
+Thematic analysis was used identify, analyze and report patterns (themes) emerging from the data
+(Braun & Clarke, 2006 ). Inductive coding followed whereby a list of concepts were created and then
+assembled into categories describing a significant theme from the data. Then, deductive coding
+followed: the data was repeatedly read to identify patterns that were consolidated into significant
+themes. NVIVO Version 10 was used to assist with analysis.JOURNAL OF ORGANIZATIONAL COMPUTING AND ELECTRONIC COMMERCE 273Discussion of findings
+Internal factor: SMES perception of cybersecurity
+The findings show that five factors influenced how SMEs perceived cybersecurity. These are as
+follows: budget, lack of management support, IT complexity and legacy systems, attitude toward
+security, and compliance to regulations.
+Low budget priority
+Budget was consistently noted as a constraint to having efficient cybersecurity mechanisms in place
+bymost participants. For example, SME_A1 indicated that
+. . .there is less money available for information security activities such as independent testing. Smaller
+companies won ’t spend money on independent security testin g because it is too expensive. . .and so when
+doing external testing on smaller companies, we often deal with the company ’s CEO or CTO instead of
+anyone that specializes in security ––s i m p l yb e c a u s et h e yd on o th a v et h eb u d g e tf o rs u c hac o u r s e .
+As a consequence, “. . .most small budget places have a bad security posture ”(SME_A4).
+All respondents indicated that much still needs to be done to protect their systems and processes, but
+agreed that this is a challenge because “there is no immediate return on investment and so generally we
+don’t have third parties testing for our systems. We ensure we put the necessary security checks and
+perform our own internal audits of the software ”(SME_C1). According to this respondent, external
+testing by third parties was not a priority due to its cost, although they acknowledge the importance of
+engaging specialist third-party service to continuously test the robustness of the security defenses. The
+smaller budget available to SMEs makes it unlikely that they will get external consulting firms to
+perform security assessments which then leave these organizations more vulnerable to attackers. There
+was consensus that an organization ’s attention to security and budget were proportional.
+Minimal management support
+Respondents also indicated that top management ’ssupport and their ability to prioritize security by
+assigning the appropriate budget to it were crucial in having a successful cybersecurity measures in
+place. They acknowledge that management support is mainly hindered by the financial resources and
+other competing projects. For example, respondent SME_A4 explains:
+Often you ’ll see that the less budget given to security the more vulnerabilities there are - but this is
+not always the case but it has happened here before because resources are not there to address the
+issue [security]. . . there ’s definitely a correlation between the amount of money spent and the
+company ’s security as it equates to the amount of attention given toward it [security].
+The implication of this empirical findings is that according to organization A, management ’s
+commitment of cybersecurity is influenced by financial availability (budget). Additional findings
+show that management supported new technologies that brought cost savings. For example, one of
+the respondents explained that “we usually do not have as many servers on site, especially with the
+recent rise (and reduction in cost) of cloud computing ”(SME_B). Similar remarks were made by
+SME_C1 “Smaller companies are looking to leverage IaaS far more, especially if they ’re at their
+infancy. It ’s not uncommon for companies not have a massive server room and host their stuff
+locally unlike we have here to host our applications ”Hosting web applications in this manner allows
+SMEs to not have their own servers on site, reducing cost and increasing scalability.
+Less technologically complex
+It was perceived that, because SMEs often do not have complex legacy systems in place, they do not
+faceas much security threats as larger organizations. Legacy systems was seen as a source of security274 S. KABANDA ET AL.issues as they often need custom security code to be written to maintain their security level, but were
+often no longer supported by their manufacturers. Respondent A1 explained: “Smaller companies
+have fewer assets (servers etc.) that are easier to maintain. Bigger companies have more legacy
+systems that need a lot of work to maintain to be secure ”(A1).
+Size less vulnerable
+SME_B had the perception that the organization will not become a target for cybercrime because of
+itssize:
+Well I can only talk about myself being a small business; I try to do as much as I can in writing
+the code. Because it ’s a small business I do everything. I write the code and definitely have to think
+about security, but because I ’m a small business I feel like I ’m not going to be targeted easily. I don ’t
+have proper precautions I guess, I have no precautions. I just hope I ’ve written the code OK enough.
+Similar perceptions were reported by SME_A2 that “Smaller companies don ’t have determined
+attackers ”and therefore they were at a lesser risk of attack than large organization. This attitude,
+specifically by respondent SME_A2, is concerning given that the respondent works in an informa-
+tion security consulting firm as a senior security analysts responsible for detecting potential threats.
+Priority on compliance to regulations and policies
+All SMEs indicated the need to comply with institutional policies and this was seen as the first
+preference prior to engaging with stringent cybersecurity measures. This was because compliance to
+regulations such as Payment Card Industry (PCI) standards was not seen as challenging and costly
+and organizations were assured of bare minimum amount of security because according to SME_C1,
+we avoid areas that are risky. For example, we ’ve recently implemented a ticketing system for one
+of our client, and we ’ve had to adhere to PCI compliance. What ’s very important is that we try not to
+store any credit card information; we try to limit our risk. . . bigger companies are more aware of it,
+because there ’s potentially more risk.
+All SMEs acknowledged that management was able to provide sufficient funding to ensure
+compliance and attain some security in their organization. However, this bare minimum security
+derived from compliance overshadowed the consequences of not having sound cybersecurity
+measures.
+Difficulty in using cyber tools
+Although most SMEs confirm that cost was one of the barrier toward cybersecurity; some organiza-
+tions had adopted and were currently using cyber tools and techniques in their organizations. The
+main challenge they faced with these tools was in how to operate them effectively, given their
+complexity. There was a perception that the tools were complex to implement and maintain
+(SME_A1); and for some tools, the value was not realized (SME_A4).
+Cybersecurity approaches and their challenges
+Cybersecurity approaches
+The common cybersecurity approach used by SMEs was web server logging. The majority of
+respondent agreed that there were multiple ways web server logging could be performed in SMEs
+although not all are viable and valuable for organizations with limited resources. The most suggested
+methods included the use of Apache or IIS logging as respondent C2 indicated: “Web server logging
+is done through the standard Windows IIS logging facility. ”Some of the respondents suggested that
+logging attributes that were perceived as useful should be stored. These include IP, visiting path, path
+traversed, time stamp, success rate (of loading page), user agent and URL. Respondent SME_A1 gaveJOURNAL OF ORGANIZATIONAL COMPUTING AND ELECTRONIC COMMERCE 275an example of logged items: “Useful things that are usually logged include the browser used, time of
+day and geographical location. These provide a much better chance of responding to an anomaly. ”
+Apache and IIS logging is accepted as a viable cost-effective manner of performing web server
+logging as there is limited setup, no additional software cost and easily compressible output given
+through this method. SME_A2 explained:
+I think logging is actually easier for a smaller company because you have a smaller focus and
+footprint to make those logs into something useful. . . If you ’re logging 170 web servers with 30
+applications as opposed to 3 web servers on 3 servers it is easier to figure out something that
+happening as opposed to on a big scale.
+Although SME_A used mostly Apache web server logs as their form logging, it planned to
+implement the ELK stack elastic search method of logging in the future as SME_A5 indicates: “...
+mostly Apache. We are working on rolling out the ELK stack, the elastic search log stack, and
+shipping logs to a central log server. ”In addition, there was strong suggestion that SMEs should opt
+for open source as demonstrated by SME_A5: “we’re running snort [a free, open source solution] at
+the moment on our firewall. ”Other options highlighted as cost-effective means of performing ID
+and IP (Intrusion Protection) along with core router, firewall, and general network functionality ID
+include the use of Unified Threat Management (UTM) devices, log analysis tools such as “Fail to
+Ban, ”and Cloud Front. SME_A5 explained that “The easiest and most cost-effective way to
+implement ID on a small network. . .is to use fail to ban, it ’s a very simple utility, that does not
+need a special firewall; you can have an ADSL router with a port open. ”SME_B preferred the use of
+external services such as “Cloud Front ”which was deemed cost-effective as it shows only cached
+pages to the user if they are deemed to be suspicious, reducing the likelihood that they will gain
+access to sensitive information that a general user should not see. SME_B explains: “I have a hosted
+proxy service called Cloud Front which does a basic kind of intrusion detection, if there ’s very
+strange traffic they only serve you the cache, they don ’t let you go further. ”SME_C focused on the
+prevention of intrusions rather than their detection, with a strong emphasis on ensuring that their
+authentication methods are secure. All organization identified this type of security measure as critical
+when exposed to a limited budget and named this type of technique as a must have for all
+organizations “because it limits the attacking surface ”(SME_A4); and allows the organization to
+“focus on ensuring that only users with valid credentials are allowed in and that other methods of
+gaining access to the network are reduced to an absolute minimum ”(SME_C2).
+Challenges with intrusion detection
+Most respondents argued that ID for an SME is possible using open source software. They strongly
+identified IDS or IPS (Intrusion Protection System) as inadequate and not useful to smaller
+companies such as start-ups, due to the amount of time and money it may take to implement
+such technologies. The intrusion detection using ID technique was highlighted as costly as it was
+hardware and software intensive. As such, SMEs opted for free open source software. Several
+challenges relating to the ID technique were identified. One of the challenges, especially signature
+based, was that the malicious content in an attack needs to be identified before action can be taken
+against it. SME_A1 explains: “Generally speaking, signature detection is seen as very weak. Most
+companies that have the funds to do intrusion detection want anomaly detection using web
+application firewalls. ”Although anomaly detection was proposed, it was perceived as more expensive
+to acquire, implement and maintain. There was skepticism about the usefulness of the ID technique
+as SME_A4 explained:
+The bad thing for IDSs is it ’s normally only when I ’m really, really loud, when I put on a nessus
+scanner or do dirbusting, trying to brute force directories. As far as ID goes, only very few apps,
+systems and networks I ’ve tested have ever noticed me even though I ’ve not tried to be quiet at all. . .
+(SME_A4)
+The majority of the respondents failed to perceive the ID technique as useful. SME_A5
+elaborated:276 S. KABANDA ET AL.I’m trying to still figure out what the benefits are. We might get a lot of false positives, especially
+in our business where the guys are hacking [the consulting firm hacks clients to perform security
+assessments]; they ’re actually sending malicious packets across the network. How is that going to
+work in our IDS? If I ’m running one in the office here and want to protect some nodes, are we going
+to get false positives?
+Due to the costs and the uncertainty attached to the ID technique, other organization opted for
+open source software solutions. For example, the network administrator of organization A was in the
+processes of implementing an open source IDS Snort, on their network. Respondents voiced their
+observation that IDSs are rarely seen during security assessments as SME_A1 indicated: “People say
+that intrusion detection is on the rise, but we don ’t actually ever see it implemented well in practice. ”
+Another challenge was in using web server logs to perform ID. Most SMEs used web server
+loggings for two main reasons: post disaster analysis and big data analytics. Most had yet to fully
+utilize the functionality. For example, SME_A2 was “yet to see locally [in South Africa], someone to
+do logging well. . . ”while SME_A3 shared his experience: “What I ’ve seen in most assessments is that
+web server logs are ignored. ”The concern highlighted by respondents regarding web server logs was
+what to do once you have the web server logs that are generated via general Apache or IIS web server
+logging because “Logging is only half the problem, logging is very easy, and it ’s what we do with the
+logs afterwards that is hard ”(SME_A2). The findings show that there was a problem in getting value
+out of web server logs because of the vast amounts of data being stored - “The volume of logs is just
+so huge, even for a low traffic website ”(SME_A3). As a result, “we don ’t actually do much with those
+[Apache logs], we don ’t do any parsing ”(SME_A5). SME_B indicated that they had never analyzed
+their logs but only looked at errors to determine what code they need to fix in their application:
+I’ve got little modules on that if there is an error I get it sent to an error site, and that compiles all
+my errors. In those errors I ’ve seen a few little SQLi attempts. I don ’t know if it was a person or a
+script, but someone was trying out some very strange URLs. But I just looked at it and said “ok well
+whatever, it didn ’t work, they failed because it caused an error.
+SME_B admitted that once they had noticed signs of SQLi and other cybersecurity attacks in their
+error reporting, no further actions was taken as they perceived these to be unsuccessful events which
+produced errors. The findings also show that SMEs were not familiar with software such as Splunk to
+organize their logs in a central location so that they can be better analyzed graphically as SME_A3
+reports: “. . .technology like Splunk is quite popular that lets you get all your logs from multiple
+sources and push them to a central logging server to look at some basic visualizations, but I haven ’t
+seen anything exciting in customers I ’ve looked at. ”
+Finally, respondents noted that it was not viable to perform ID based on web server logs alone as
+web server logs do not contain enough information to perform proper ID. If web server logs are used
+as means of performing ID, they need to be (1) complimented with other methods of monitoring the
+web server and simultaneously “making sure that there is value for money. i.e. that you are not
+taking up too much hard drive space or processing power ”(SME_A1); and (2) done in real time in
+order to be useful instead of “looking at logs after the fact or if some huge alarm goes off in a big
+organization ”(SME_A4). An analysis of the web server logs of organization A and B, using Deep
+Web Analyzer, shows that security and ID received minimal attention.
+Summary of findings
+Internal factors
+Cybersecurity has been documented as one of the main threats for SMEs and SMEs are encouraged
+tonot only become aware of the consequences of not having protective measures in place to address
+this challenge but to also engage in ongoing measures of protecting their organization systems from
+potential threats. However, SMEs in this study indicate that cybersecurity comes with its own
+implementation challenges. The main organizational challenges were budget constraints, manage-
+ment, and employee support and commitment toward security concerns of IT systems. RespondentsJOURNAL OF ORGANIZATIONAL COMPUTING AND ELECTRONIC COMMERCE 277opinioned the lack of financial resources, specifically the budget to access cybersecurity and other IT-
+related resources. In the absence of this resource, management became involved in IT decisions and
+implementation although they do not have the expertise required. While respondents perceived this
+as a disadvantage, Talke, Salomo, and Rost ( 2010 ) sees management involvement as a means of
+providing strong impact on the strategic choice of firms, making the organization focus on innova-
+tion fields which can then drive new product innovativeness and firm performance. Souitaris and
+Maestro ( 2010 ) also contend that such involvement “has a positive effect on new technology venture
+financial performance. ”
+Management and employee attitude toward cybersecurity was highly influenced by (1) the lack of
+immediate return on investment; and (2) the perception that there is a low likely hood of SMEs
+being the target of cybercrime and related crimes because of their size and less IT complex systems
+and legacy systems. Most respondents perceived the lack of legacy systems and complexity as an
+advantage because they are able to easily examine and adopt new potential technologies such as IaaS.
+Although such technologies and systems, enabled by increasing bandwidth, wireless technologies
+and infrastructure (Von Solms and Kritzinger 2011 ) bring cost savings, it is important to note that
+SMEs themselves are “novice users ”(Ben-David et al. 2011 ) who can be negatively affected if security
+measures are not implemented. These challenges highlighted in Figure 2 confirm traditional barriers
+SMEs face with cybersecurity and therefore reaffirm the need to redress organizational factors.
+Environmental factors
+The findings show that three contextual factors of technological issues, consumer related challenges
+andInstitutional pressure, shaped how SMEs perceived cybersecurity in South Africa.
+Technological and consumer related concerns. The findings show that SMEs were aware of cyber-
+security concerns and attempted to address these using available techniques that were within their
+financial means. The majority of SMEs used web server logging as a means of addressing ID because
+it was perceived to be “easier for a smaller company because you have a smaller focus and footprint
+to make those logs into something useful ”(SME_A2). However, the signature IDS detection method
+was perceived as a weak form of protection while anomaly IDS detection methods were perceived
+costly to acquire, implement and maintain. Other options highlighted as cost-effective for SMEs
+include the use of: core router, firewall and general network functionality, UTM devices, log analysis
+tools such as “Fail to Ban, ”and Cloud Front. SMEs however identified several challenges with some
+of the approaches because the value from its use was not realized and therefore did not see the need
+to perform consistent security checks. This confirms the findings of Ben-David et al. ( 2011 ) that
+organizations in developing countries have poor security hygiene given that they do not regularly
+update their security such as updating operating system and anti-virus software.
+SMEs noted they find it difficult to have real time analysis of web server logs ––an ideal situation.
+Instead there was an after the fact analysis and the problem of what to do with the logs so that they
+actually give value to the organization: “it’s what we do with the logs afterwards that are hard ”
+Figure 2. Factors influencing cybersecurity implementation in South African SMEs.278 S. KABANDA ET AL.(SME_A2). Despite the use of these techniques, there was acknowledgment that awareness of how to
+use them to derive maximum benefits was lacking, like in the case of web server logging; but no
+acknowledgement that the lack of IT expert (security experts) was a factor although this can be
+inferred from the limited use practice (minimal recurrent use of cybersecurity measures), lack of
+assimilation of security culture within the SMEs, and the lack of confidence in security implementa-
+tion as demonstrated by SME_B “I don ’t have proper precautions I guess, I have no precautions. I
+just hope I ’ve written the code OK enough and . . . I ’m hoping that I ’m not going to be targeted. ”The
+lack of IT expert and awareness of how to derive maximum benefits reaffirms the findings in
+literature of the need for IT education (Grobler and Van Vuuren 2010 ). As a consequence of these
+challenges, SMEs such as startup had limited use of cybersecurity techniques and the organizational
+challenges they continue to face, reinforce the limited use practice.
+Institutional pressure. The findings show that external factors further reinforced the limited use
+practice. The landscape of developing countries as demonstrated by (Ben-David et al. 2011 ; Von
+Solms and Kritzinger 2011 ) show to have significantly influenced how cybersecurity was practiced by
+SMEs in this study. We see the existence of coercive pressure (external authoritative pressures, such
+as governmental policy or regulatory activity, or driven by market forces or competition (Tolbert
+and Zucker 1999 ) from regulatory bodies such as PCI standards, but a lack of normative and
+mimetic institutional pressures, which are influential for organizations to gain legitimacy from
+external institutions. In this context, legitimacy defines accepted form of actions of an entity within
+some socially constructed system of norms, values, beliefs, and definitions and this plays a key role in
+how organizations access various resources from potential trading partners (Lui, Ngai., and Lo 2016 ).
+Institutional legitimacy is attained not only when organizations compete for resources and custo-
+mers, but also when they comply to and address institutional pressures which have the potential to
+shape the way an organizations behaves (Lui, Ngai., and Lo 2016 ), such as how it adopts and
+implements cybersecurity. Although coercive pressure is exerted on SMEs, it is important that other
+pressure sources be exerted to influence behavior in how they obtain legitimacy and avoid potential
+sanctions such as denying them the resources and social support. For example, the findings show
+that SMEs did not appear to be aware of and concerned of normative pressure from cybersecurity
+community of practice, such as professional standards and practices, for example established by
+education and training methods and professional bodies (DiMaggio and Powell 1983 ). This is a
+concern because normative pressure is a source from which SMEs can obtain “professional opinions
+or controlling the work conditions and methods in an industry ”(Hovav 2017 ).
+Mimetic pressure occurs when organizations emulate the actions of similar organizations in the same
+industry (Martínez-Ferrero and García-Sánchez, 2017; Craig, and Rodrigues, 2016). In this study, we
+observe how SMEs consciously adopted or in other cases propagated for open source software solutions
+(SME_A), and cloud computing solutions (SME_C, SME_B). Mimetic pressure has the potential to
+influence other organizations to adopt an innovation in uncertain times, particularly when there is little
+understanding of a new process, technology or external conditions (DiMaggio and Powell 1983). Thus,
+SMEs that broadly deploy and routinize IT security measures (such as, cybersecurity) into their day-
+today work procedures have the potential to act as role models for SMEs that face similar contextual
+challenges. The findings therefore show evidence of coercive and mimetic pressure but relatively weak
+normative pressure. This is problematic because “any business that wants to have a competitive edge in
+today ’s global marketplace should adopt a comprehensive security policy in consultation with partners,
+suppliers, and distributors that will provide ‘safe environment ’for the conduct of online transactions ”
+(AlSlamy 2008).The presence of such pressure, can positively influence behavior (Daddi et al. 2016),
+such as having proactive cybersecurity measures, although behavior change can also depend on
+organizational structure and on their management style.
+To reinforce the importance of each of the external forces, we have distinctively categorized them
+into technological factors to address concerns related to the use of extant technologies and the
+consequence of emerging software and technologies; consumer factors, which address awareness,JOURNAL OF ORGANIZATIONAL COMPUTING AND ELECTRONIC COMMERCE 279attitude, and social behavior of consumers; and institutional pressure, which requires organization
+adherence in order for it to obtain competitive, social, and political legitimacy. In this manner, each
+institutional force is addressed. Our findings, therefore, call for the need to reexamine the role of
+institutional pressure, as well as organizational factors in how SMEs address cybersecurity. Our
+findings, therefore, extend the current forces that shape the security landscape of developing
+countries by noting the importance of institutional forces, as well as organizational forces which
+constrain and enable SME activities by providing frameworks for legitimizing actions and behavior.
+Conclusion
+This study has examined the cybersecurity phenomenon from a developing country perspective.
+South African SMEs set the case of investigation and provided a means of understanding how they
+perceive cybersecurity and the factors that influence the techniques that they employ. The findings
+show that SMEs ’perception of cybersecurity is constrained by internal organizational factors of
+budget, management support, and attitudes. These factors are perceived to have a negative influence
+toward cybersecurity implementation and constrain how cybersecurity is implemented. SMEs do not
+have complex systems which could potentially make it difficult to embrace stringent cybersecurity
+measures. The lack of complex business processes and legacy systems is seen as a benefit. The
+developing countries ’landscape toward cybersecurity has shown to have a resilient influence on how
+cybersecurity is propagated in SMEs.
+Coercive pressure as a form of institutional pressure was evident in the study, specifically
+complying with the PCI standards. SMEs adopted open source software and cloud computing
+solutions ––and this as a form of mimetic pressure that had become a widely accepted behavior.
+There was minimal evidence of normative pressure. Without such pressures, SMEs are able to
+operate without the need of obtaining institutional legitimacy necessary for accessing various
+resources from their environment; and in so doing reinforce the understanding that SMEs can
+operate without proactive cybersecurity strategies. Once reinforced, and legitimized by SMEs
+themselves, it becomes taken for granted, that operating without cybersecurity is an SME social
+practice. It is therefore important for mimetic and normative to be enacted and exerted on SMEs as
+much as they are exerted on large organizations. Given that SMEs are usually resource constrained, it
+is imperative that future studies examine how to ensure such pressures can be created in the
+developing countries institutional environment.
+Although the paper examines the cybersecurity phenomenon in SMEs and has identified chal-
+lenges SMEs face in dealing with security threats, the study has several limitations which can be
+taken further for future research. One of the limitations is the data sample which consisted of one
+SMEs that had fully implemented cybersecurity. Future studies could potentially have more samples
+of such SMEs as this could provide a better explanation of the cybersecurity in these contexts. One of
+the findings pointed to the fact that CEO or CTO being directly involved or engaged in the
+information security implementation process. It Future studies should explore the benefits of having
+top management being directly involved or engaged in this process given that in many companies it
+is a struggle/deficiency to get senior management to commit to and actively engage in cybersecurity
+initiatives. Another finding pointed to the lack of adequate funding as being one of the issue
+associated with SMEs lack of having stringent cybersecurity mechanism in place. However, there
+is also a need to examine how the existing resources are spent, as this could affect cybersecurity
+initiatives. While SMEs understood the need to comply with institutional policies, future studies can
+explore the relationship between risk avoidance and compliance.
+References
+Abbott, R. G., J. McClain, B. Anderson, K. Nauer, A. Silva, and C. Forsythe. 2015 . Log analysis of cyber security
+training exercises. Procedia Manufacturing 31(3):5088 –94. doi: 10.1016/j.promfg.2015.07.523 .280 S. KABANDA ET AL.Abraham, A., C. Grosan, and Y. Chen. 2005 . Cyber security and the evolution of intrusion detection systems. i-
+Manager ’s Journal on Future Engineering and Technology 1:74. doi: 10.26634/jfet.1.1.968 .
+Abubakar, A. D., J. M. Bass, and I. Allison. 2014 . Cloud computing: Adoption issues for Sub-Saharan African SMEs.
+Electronic Journal of Information Systems in Developing Countries 62:1–17. doi: 10.1002/j.1681-4835.2014.tb00439.x .
+Abubakar, A. I., H. Chiroma, S. A. Muaz, and L. B. Ila. 2015 . A review of the advances in cyber security benchmark
+datasets for evaluating data-driven based intrusion detection systems. Procedia Computer Science 62:221 –27.
+doi:10.1016/j.procs.2015.08.443 .
+Ahmad, A., S. B. Maynard, and G. Shanks. 2015 . A case analysis of information systems and security incident
+responses. International Journal of Information Management 35:717 –23. doi: 10.1016/j.ijinfomgt.2015.08.001 .
+Alawiye-Adams, A. A., and B. O. Awoyemi. [November 20, 2014 ]. Cash-less economy policy and remote-on-US ’ATM
+transaction fee in Nigeria. doi: 10.2139/ssrn.2528608 .
+AlSlamy, N. M. A. 2008 . E-Commerce security. International Journal of Computer Science and Network 8:340 –44.
+Avgerou, C. 2001 . The significance of context in information systems and organizational change. Information Systems
+Journal 11:43 –63. doi: 10.1046/j.1365-2575.2001.00095.x .
+Bada, M., and A. Sasse. 2014 . Cyber security awareness campaigns: Why do they fail to change behaviour? Accessed
+March 14, 2017. http://discovery.ucl.ac.uk/1468954/1/Awareness%20CampaignsDraftWorkingPaper.pdf
+Barse, E. L., and E. Jonsson. 2004 . Extracting attack manifestations to determine log data requirements for intrusion
+detection. Computer Security Applications Conference, 158 –67. IEEE.
+Ben-David, Y., S. Hasan, J. Pal, M. Vallentin, S. Panjwani, P. Gutheim, and E. A. Brewer. 2011 . Computing security in
+the developing world: A case for multidisciplinary research. Proceedings of the 5th ACM workshop on Networked
+systems for developing regions (pp. 39 –44). ACM. June
+Braun, V., & ClarkeV. ( 2006 ) Using thematic analysis in psychology. Qualitative Research in Psychology 3 :77 –101.
+Champion, M., S. Jariwala., P. Ward., and N. J. Cooke. 2014 . Using cognitive task analysis to investigate the
+contribution of informal education to developing cyber security expertise. In Proceedings of the Human Factors
+and Ergonomics Society Annual Meeting 58 (1):310 –14. Sage: Los Angeles. doi: 10.1177/1541931214581064 .
+Cowley, J. A., and F. L. Greitzer. 2015 . Organizational impacts to cybersecurity expertise development and main-
+tenance. Proceedings of the Human Factors and Ergonomics Society Annual Meeting 59 (2015):1187 –91. Sage: Los
+Angeles. doi: 10.1177/1541931215591185 .
+Craig, R., and L. L. Rodrigues. 2016 . Using a Dialectic Approach to Understand Stakeholders ’Conflicts with Corporate
+Social Responsibility Activities. In A Stakeholder Approach to Corporate Social Responsibility , 339 –356. Routledge.
+Daddi, T., F. Test, M. Frey., and F. Iraldo. 2016 . Exploring the link between institutional pressures and environmental
+management systems effectiveness: An empirical study. Journal of Environmental Management 183(2016): 647 –656.
+De Barros, M. J. Z., and H. Lazarek 2018 . Comparative study of cybersecurity policy among South Africa and
+Mozambique. International Conference on Cyber Warfare and Security (pp. 521 –XI). Academic Conferences
+International Limited.
+DiMaggio, P. J., and W. W. Powell. 1983 . The iron cage revisited: Institutional isomorphism and collective rationality
+in organizational fields. American Sociological Review 48(2):147 –60. doi: 10.2307/2095101 .
+Dlamini, Z., and M. Modise. 2013 . Cyber security awareness initiatives in South Africa: A synergy approach. Case
+Study. Information Wharf Security Researcher Teachers Studies 1, ed. M. Warren, 1 –22. Academic Conferences
+Limited.
+Garcia-Teodoro, P., J. Diaz-Verdejo, G. Maciá-Fernández, and E. Vázquez. 2009 . Anomaly-based network intru-
+sion detection: Techniques, systems and challenges. Computers & Security 28(1 –2):18 –28. doi: 10.1016/j.
+cose.2008.08.003 .
+Grobler, M., and J. J. Van Vuuren. 2010 . Broadband broadens scope for cybercrime in Africa. Information Security for
+South Africa (ISSA), (1 –8). IEEE
+Hovav, A. 2017 . How espoused culture influences misuse intention: A micro-institutional theory perspective.
+Proceedings of the 50th Hawaii International Conference on System Sciences.
+Irons, A., and J. Ophoff. 2016 . Aspects of digital forensics in South Africa. Interdisciplinary Journal of Information,
+Knowledge, and Management 11:273 –83. doi: 10.28945/3576 .
+ITU. 2016 . ICT services getting more affordable ––But more than half the world ’s population still not using the
+Internet. Accessed March 20, 2017. http://www.itu.int/en/mediacentre/Pages/2016-PR30.aspx
+Kreibich, C., and J. Crowcroft. 2003 .Automated nids signature creation using honeypots . University of Cambridge
+Computer Laboratory. https://www.researchgate.net/profile/Jon _Crowcroft/publication/245571098Automated_
+NIDS_Signature_Creation_using_Honeypots/links/0c960537b498cddd41000000.pdf
+Kruegel, C., and G. Vigna. 2003 . Anomaly detection of web-based attacks. Proceedings of the 10th ACM conference on
+Computer and Communications Security (251 –61). ACM.
+Lee, W., and D. Xiang. 2001 . Information-theoretic measures for anomaly detection. Security and Privacy , IEEE
+Symposium on (pp. 130 –143). IEEE.
+Leung, S. 2012 . Cyber security risks and mitigation for SME. CISSP CISA CBCP 1–50.http://haffa.hk/files/2012-05_
+HKTDC_SME.pdfJOURNAL OF ORGANIZATIONAL COMPUTING AND ELECTRONIC COMMERCE 281Lui, A. K. H., E. W. T. Ngai., and C. K. Y. Lo. 2016 . Disruptive information technology innovations and the cost of
+equity capital: The moderating effect of CEO incentives and institutional pressures. Information & Management
+53:345 –54. doi: 10.1016/j.im.2015.09.009 .
+Mirza, M., M. Usman, R. P. Biuk-Aghai, and S. Fong. 2016 . A modular approach for implementation of honeypots in
+cyber security. International Journal of Applied Engineering Research 11(8):5446 –51.
+Martínez-Ferrero, J., and Isabel-María, G-S. Coercive, normative and mimetic isomorphism as determinants of the
+voluntary assurance of sustainability reports. International Business Review. 26, no. 1:102 –118.
+Nycz, M., M. J. Martin, and Z. Polkowski. 2015 . The cyber security in SMEs in Poland and Tanzania. International
+Conference on Electronics, Computers and Artificial Intelligence (ECAI), AE –27. IEEE. June 25.
+Oliner, A., A. Ganapathi, and W. Xu. 2012 . Advances and challenges in log analysis. Communications of the ACM
+55:55 –61. doi: 10.1145/2076450 .
+Patcha, A., and J. M. Park. 2007 . An overview of anomaly detection techniques: Existing solutions and latest
+technological trends. Computer Networks 51:3448 –70. doi: 10.1016/j.comnet.2007.02.001 .
+Peterson, D. 2004 . Intrusion detection and cyber security monitoring of SCADA and DCS networks. I SA Automation
+West, May.
+Soomro, Z. A., M. H. Shah, and J. Ahmed. 2016 . Information security management needs more holistic approach: A
+literature review. International Journal of Information Management 36:215 –25. doi: 10.1016/j.ijinfomgt.2015.11.009 .
+Souitaris, V., and B. M. Maestro. 2010 . Polychronicity in top management teams: The impact on strategic decision
+processes and performance of new technology ventures. Strategic Management Journal 31(6):652 –78.
+Srinidhi, B., J. Yan., and G. K. Tayi. 2015 . Allocation of resources to cyber-security: The effect of misalignment of
+interest between managers and investors. Decision Support Systems 75:49 –62. doi: 10.1016/j.dss.2015.04.011 .
+Sulayman, M., C. Urquhart, E. Mendes, and S. Seidel. 2012 . Software process improvement success factors for small
+and medium Web companies: A qualitative study. Information and Software Technology 54:479 –500. doi: 10.1016/j.
+infsof.2011.12.007 .
+Talke, K., S. Salomo, and K. Rost. 2010 . How top management team diversity affects innovativeness and performance
+via the strategic choice to focus on innovation fields. Research Policy 39(7):907 –18. doi: 10.1016/j.respol.2010.04.001 .
+Tolbert, P. S., and L. G. Zucker. 1999 . The institutionalization of institutional theory. In Studying organization. theory
+& method , edited by S. R. Clegg, S. Clegg and C. Hardy, 169 –84. Thousand Oaks, New Delhi: London.
+Von Solms, B., and E. Kritzinger. 2011 . Critical information infrastructure protection (CIIP) and cyber security in
+Africa –Has the CIIP and cyber security Rubicon been crossed? International Conference on e-Infrastructure and
+e-Services for Developing Countries 116 –24. Springer: Berlin.
+Notes on contributors
+Salah Kabanda is a senior lecturer at the University of Cape Town, South Africa. Dr. Kabanda ’sresearch interests
+focus on the adoption, use, and consequence of ICTs in both private and public organizations in developing countries.
+Maureen Tanner is an associate professor at the University of Cape Town, South Africa. Her research interests include
+issues related to agile software development (for both collocated and distributed teams), UML, software engineering
+and social aspects of software engineering, global software development, virtual teams, team collaboration, and ICT4D.
+Cameron Kent is a student in the department of information systems at the University of Cape Town. He has a
+research interest in the challenges facing organizations with respect to cybersecurity.
+Appendix
+(1) What factors influence your understanding of and implementation of cybersecurity in your organization?
+(2) What cybersecurity mechanism do you have in place in your organization?
+(3) What technical challenges do you face as a result of the implementation of these cybersecurity initiatives in your
+organization?
+(4) What organizational and institutional challenges have you faced, or you perceive you could face, when
+embarking on a cybersecurity initiative in your organization?282 S. KABANDA ET AL.

@@ -1,0 +1,673 @@
+3D CITY MODELLING TOWARD CONSERVATION AND MANAGEMENT. THE 
+DIGITAL DOCU
+MENTATION OF MUSEU DO IPIRANGA - USP, SAN PAULO, BRAZIL 
+M. Balzani 1, L. Rossato 1, F. Raco 1*, B. Mugayar Kühl 2 
+1 University of Ferrara, Department of Architecture, DIAPReM/TekneHub, Ferrara, Italy - (bzm , rsslcu, rcafbn) @unife.it 
+2 FAU-USP Faculdade de Arquitetura e Urbanismo dell'Universidade de São Paulo - bmk@usp.br 
+Commission IV, WG IV/1 
+KEY WORDS: 3D City Modeling, 3D Integrated Survey, Point cloud processing and analysis, Smart Cultural Heritage, Museu do 
+Ipiranga – USP, Brazil 
+ABSTRACT: 
+The present paper illustrates the survey and documentation activities for the 3D city modelling and visualisation carried out since 2016 
+on complex monumental buildings of the city of São Paulo in Brazil by the DIAPReM research centre and the TekneHub Laboratory 
+of the University of Ferrara in collaboration with FAU-USP Faculdade de Arquitetura e Urbanismo of  Universidade de São San Paolo 
+and funded by the Fundação de Apoio à Universidade de São Paulo- FUSP for the definition of interdisciplinary collaboration protocols 
+and the development of integrated digital databases of Brazilian cultural heritage. Starting from a wider joint international research 
+collaboration dated more than five years ago, the project aims to define interdisciplinary protocols for the digital documentation of 
+built heritage in order to support the knowledge, restoration, maintenance, management and enhancement of Museu do Ipiranga - USP 
+involving both academic and research competencies, as well as professional and technical skills. The definition of the first integrated 
+digital database of the Museu do Ipiranga took into account the documentation needs of complex architecture for restoration and the 
+project for new accessibility and the extension of the Museum itself and a wider digitisation project for urban planning as well as new 
+Smart Cultural Heritage accessibility. 
+1.INTRODUCTION
+The recent world pandemic emergency has further highlighted 
+the fragility of the world's tangible and intangible cultural 
+heritage, increasing the need to implement knowledge sharing 
+and awareness and understanding of the importance of the 
+protection and enhancement of built heritage (ICCROM, 2013). 
+The intervention process is marked by discontinuity and lack of 
+information relating to the current state of built heritage, the 
+duplication of data, poor accessibility (Parrinello, 2019) and 
+usability (Ramos, 2015) of information, characteristics which, 
+despite improved digitization processes, offer an interesting field 
+for the application of exceptional ICT and Key Enabling 
+Technologies (KETs) in order to support knowledge accessibility 
+and semantic modelling from a Smart City management 
+viewpoint. 
+On one hand the uniqueness and variety of cultural heritage 
+hinders the definition of a single method for knowledge and 
+documentation, but at the same time it is becoming increasingly 
+urgent to have real time sharing of an integrated information 
+system that allows the specific features of an individual context 
+to be overcome and the complex knowledge, management and 
+promotion of the world’s cultural heritage to be made effective 
+(Jokilehto, 1998). 
+Consequently, the paper aims to illustrate the impact of Smart 
+City and Smart Object approaches also on decision-making 
+processes and urban planning (Angelidoua, 2017) with reference 
+to a prime example of Brazilian cultural heritage, which is the 
+result of an ongoing international cooperation between the 
+University of Ferrara and the University of San Paolo USP which 
+began over five years ago. From this perspective, the issue of 
+“Smart City” and Smart Cultural Heritage refers to the social 
+impact and inclusiveness of the intervention on built heritage as 
+* C orresponding author well as a means of enhancing the application of ICT, IoT and 
+KETs integrated technologies (EU, 2018). 
+The optimization of digitisation processes on Cultural Heritage 
+preservation, management (ICOMOS, 2017) and enhancement 
+aims to define, from the data acquisition phase, the accuracy and 
+level of detail of the data in order to develop the digital model, 
+digital twin, in accordance with the needs of the end-users 
+involved. Therefore, from the perspective of ICT and integrated 
+Key Enabling Technologies it helps to develop the accessibility 
+of information, system automation and cost-effective solutions. 
+On the other hand the specific cognitive skills required 
+(Brusaporci, 2018), in terms of perception and understanding of 
+the digital model, from the real to the virtual, are still preventing 
+the dissemination and wider adoption of Smart Objects and 
+contents (Gaiani, 2017). The development of smart contents in 
+relation to Cultural Heritage may connect the diachronic and 
+synchronic levels of meanings of the Cultural Heritage itself. The 
+aim of the research project is to make the complexity of 
+information and meanings related to built heritage 
+understandable to a variety of experienced and inexperienced 
+users. Consequently, the technology transfer activities within the 
+project deal with the transfer of the skills and competences 
+required in order to understand, use and implement digital models 
+and make project innovation effective for more interactive and 
+responsive involvement of citizens and an interoperable Smart 
+City ecosystem (EU, 2018). 
+1.1 Museu do Ipiranga - USP 
+The building was begun in 1885 as a memorial to the 
+independence of Brazil and as of its inauguration in 1895 it was 
+designed to function as a museum, initially housing the natural 
+history collection. Conceived as a monument that symbolizes 
+The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Volume XLIV-4/W3-2020, 2020 
+5th International Conference on Smart City Applications, 7–8 October 2020, Virtual Safranbolu, Turkey (online)
+This contribution has been peer-reviewed. 
+https://doi.org/10.5194/isprs-archives-XLIV-4-W3-2020-99-2020 | © Authors 2020. CC BY 4.0 License.
+ 
+99Fig
+ure 1. Museu do Ipiranga – USP main façade. View of the 
+central projecting pronaos from the monumental gardens 
+overlooking the main building 
+Independence, the history of Brazil and Sao Paulo, the Museu do 
+Ipiranga in Sao Paulo, commonly known as "Museu do Ipiranga", 
+stands on the river site where it is said that the Emperor Pedro I 
+proclaimed Brazil's independence in 1822, near the banks of the 
+Ipiranga River. 
+The museum, which currently houses a collection of over 
+125,000 exhibits of Brazilian history dating from the 16th to the 
+mid-20th century, was designed by Eng. Tommaso Gaudenzio 
+Bezzi and it represents, as stated in the preliminary report and 
+recommendations for the Museu Paulista, a conservation project 
+dated 2013, a unique testimony to the irreplaceable values of 
+Brazil's history, architecture and engineering (Emerich, 2016) . 
+The Museum is certainly the repository of the national memory 
+linked to São Paulo, which was built through the epic expeditions 
+of the various local explorers and the pioneering vocation of São 
+Paulo, since the colonial era, as testified by the objects, 
+documents, iconography and specimens from the collection 
+(Fonseca Brefe, 2005). 
+Even though the construction of the building was interrupted 
+several times and underwent variations, the Museu do Ipiranga – 
+USP was intended to testify the memory of Brazilian 
+independence. Moreover, although increasing urbanisation is still 
+taking place in the area of the Museu do Ipiranga – USP, Parque 
+da Independência, Monumento à Independência do Brasil and 
+Casa do Grito and the history of the place is still unknown, every 
+year crowds of tourists and locals attend the Independence 
+Anniversary celebrations. Consequently, the international 
+research group started developing the 3D city modelling as 
+described below in order to support conscious conservative and 
+management intervention processes as well as future IoT and 
+KETs technology applications across industries and society. 
+Currently, the building is bound under Brazilian law through the 
+Instituto do Patrimônio Histórico e Artístico Nacional - IPHAN 
+and has been closed to the public since 2013 for total restoration, 
+one of the aims of which is to preserve the important functions 
+performed by this significant example of architecture. 
+Based on a series of studies on the behaviour of the building and 
+on the state of conservation of the roofs and facades and a 
+structural analysis, a competition was held in 2017 in order to 
+explore ideas for the restoration of the museum and the extension 
+of the building. The renovation project consists of 3,345 square 
+metres in order to accommodate the new accessibility to the 
+building, in compliance with safety and accessibility standards, 
+under the Esplanada . The main aim of the new project is to 
+emphasise inclusive public fruition and engagement.  Figure 2. View of the perspective axis in the direction of the 
+Monumento à Independência from the roof of the Museu do 
+Ipiranga 
+Consequently, all the administrative areas have been moved, in 
+order to allow the full enjoyment of the building's architecture, in 
+a way that is fully integrated with the urban complex. 
+In fact, in addition to the dissemination and interpretation of its 
+permanent collections, focusing on material culture, the Museu 
+Paulista institute conducts advanced research for the presentation 
+and interpretation of new collections of Brazilian history, culture 
+and society. At the same time, it carries out intense advanced 
+training in museology conservation techniques and promotes 
+many of the museology initiatives in the State of São Paulo. 
+2.RELATED WORKS
+First of all, the project involving the survey and implementation 
+of the first integrated digital database of the Museu do Ipiranga 
+took into consideration the needs of the conservation and 
+restoration project as well as the requirement to document the 
+state of deterioration and maintenance of the building elements. 
+Subsequently, the completed 3D database allowed H+F 
+Arquitetos studio, the winner of the public competition launched 
+by the University of São Paulo for the restoration and 
+modernization of the building, to verify the design hypotheses 
+relating to the new access to the building. 
+The project by the architects Pablo Herenu and Eduardo Ferroni 
+(selected from the 13 proposals received by invitation) was also 
+supported by the collaboration with the DIAPReM centre which 
+took the form of a period of face-to -face training, at the 
+University of Ferrara, of some of the architects from the firm .  
+The technology transfer training activity focused on the real time 
+management of the database in order to allow the representation 
+of the project in the 3D point cloud model, for the purpose of 
+verifying the feasibility of the interventions from a 
+morphological and structural point of view.  
+The mentioned training activity is part of a wider field of research 
+and experimentation coordinated by the DIAPReM centre and the 
+TekneHub Laboratory within the activities, developed in a 
+public-private partnership with over ten large companies and 
+SMEs of the Emilia-Romagna High Technology Network 
+(Balzani, 20 20), and aimed at assessing the impact of enabling 
+technologies on the value chain of the intervention on built 
+heritage. In fact, it is interesting to note that even in the presence 
+of complex projects in international contexts that are advanced 
+from the point of view of the spread of survey and digital 
+modelling technologies, the behaviour of the operators is mainly  
+The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Volume XLIV-4/W3-2020, 2020 
+5th International Conference on Smart City Applications, 7–8 October 2020, Virtual Safranbolu, Turkey (online)
+This contribution has been peer-reviewed. 
+https://doi.org/10.5194/isprs-archives-XLIV-4-W3-2020-99-2020 | © Authors 2020. CC BY 4.0 License.
+ 
+100Fig
+ure 3. Integrated digital database and three-dimensional point 
+cloud model hierarchy and structure  
+implemented through traditional procedures and the use of 2D 
+and analogue representation tools. 
+The requirement of the public client first and of the designers for 
+2D representation drawings with a high level of detail, and the 
+skills of the team in terms of management of 3D point cloud 
+databases, have led to the definition of data processing extraction 
+protocols. As a result, the expected level of accuracy and the 
+digital detailed survey performed were addressed towards the 
+definition of the database structure and 2D representation 
+processes in order to support the analysis of the geometric characteristics and the aims of the intervention project such as the 
+understanding of: 
+- morphologies of vertical elevation and construction elements
+for the understanding of the static and structural safety of the
+building;
+- development, consistency, and material characterisation of the
+monumental façades to allow for further investigation of the
+conservation status of the surfaces and integration of data from
+diagnostic investigations.
+Nevertheless, the survey and documentation project took into
+account the complex relationship between the Museu do
+Ipiranga, the park and the Monument to the Independence, which
+is the most important and complex urban system that bears
+witness to this phase of Brazilian history. Moreover, the
+Monument to the Independence was the subject of an integrated
+3D survey by the DIAPReM/TekneHub research centre of the
+University of Ferrara in 2018 and the system of the park and the
+emerging architecture housed therein is close to completion.
+The survey campaign planned for spring 2020 has been
+interrupted and postponed due to the current world pandemic.
+3.DEVELOPED METHODOLOGY
+The digital documentation of tangible and intangible cultural 
+heritage, aimed at its accessibility (UCLG, 2018), as well as 
+dissemination and more effective management (Kioussi, 2012) in 
+terms of networks and services ( UN, 2020), in support of the 
+strengthening of the identity of the territories, raises challenges 
+and opportunities which refer to both the horizontal and vertical 
+direction of the technological development of the value chain. 
+The survey of the Museu do Ipiranga in São Paulo wa s 
+developed, starting in 2017, as part of the collaboration between 
+the Universidade de São Paulo, Faculdade de Arquitetura e 
+Urbanismo, University of São Paulo; CPC (Centro de 
+Preservação Cultural) University of São Paulo (USP); "Fundaçao 
+de Apoio a Universidade de São Paulo" São Paulo, Brazil, the 
+Future Consortium in Research, CFR and the DIAPReM 
+Research Centre (Development of automatic integrated 
+procedures for the restoration of monuments), University of 
+Ferrara, which has over twenty years' experience in the definition 
+of optimised protocols of integrated 3D survey for built heritage 
+(Balzani et altri, 2019); from the urban scale to the architectural 
+scale. 
+Over time, the evolution of laser scanner technologies has 
+allowed operators to use tools in order to optimise the 3D point 
+cloud acquisition phases in relation to the amount of information 
+recorded, reducing the time required (Young, 2019) . 
+Nevertheless, the subsequent data processing phases remain 
+dependent on the action and experience of the operator or can at 
+most be considered semi-automatic, for example: 
+- noise reduction, which depends both on the instrumental
+characteristics and on the methods of execution of the survey
+project;
+- the segmentation (Grilli, 2017) of the point cloud in order to
+clean up the disturbing elements and manage them both in
+assisted drawing and 3D modelling programs, BIM for example.
+The experience gained over years of applied research on
+numerous case studies has highlighted the close correlation
+between the project and the way the survey is carried out and the
+optimisation of the post-processing phases of noise reduction and
+segmentation with the same accuracy.
+In fact, the integration of surveying technologies, such as 3D
+laser scanner survey with time-of -flight technology (Leica P40
+Laser Scanner), and topographic survey, Leica Total Station
+TCR, for the creation of a first and second level polygonal
+system, aims to:
+The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Volume XLIV-4/W3-2020, 2020 
+5th International Conference on Smart City Applications, 7–8 October 2020, Virtual Safranbolu, Turkey (online)
+This contribution has been peer-reviewed. 
+https://doi.org/10.5194/isprs-archives-XLIV-4-W3-2020-99-2020 | © Authors 2020. CC BY 4.0 License.
+ 
+101- re
+duce the number and overlapping of scans typical of a
+morphological approach to 3D surveying which, in current
+practice, tends to eliminate support target networks;
+- guarantee in the post-processing phase the usability of the
+model through the reduction of the quantity of data, but not of the
+accuracy necessary to guarantee that the operators of the value
+chain of the built heritage intervention have information models
+consistent with conservation needs on the one hand or
+enhancement with a wider public on the other.
+3.1 Digital documentation 
+The integrated digital survey campaign involved the entire 
+complex of more than fifty-five rooms on the five main levels 
+(basement, ground floor, first floor, attic and roof) which includes 
+the Museu do Ipiranga, for a total area of over 12,500 square 
+metres divided into about 2,500 square meters per floor. The 
+development of the building was also taken into account, varying 
+from 15 m to 25 m, corresponding to a development of the 
+external fronts of about 123 m. 
+Concerning the data processing phase (Weinmann, 2016), the 
+management of the large amount of data deriving from the 
+morphological characteristics of the building determined the 
+choice of the hierarchy of the model breakdown structure 
+(Georgopoulos, 2017). For the purposes of the survey project and 
+the choice of the integrated time- of-flight technologies adopted, 
+the survey campaign took place over 21 working days for a total 
+of 208 hours of instrument activity, corresponding to 160 hours 
+for each operator involved in the survey activities; 1800 stations 
+were built and 375 targets were employed for a total of 
+240,260,487,654 acquired coordinates. The overall database is 
+accessible and searchable both through the Leica Cyclone 7.0 
+software source and through open source software compatible  Figure 4. Cross-section and façade with specification of the 
+cutplanes for the identification of the planimetric DEM and 
+analysis of the elevation profile in the relationship between 
+museum and the gardens 
+with the format. imp (CloudCompare). The subsequent 
+registration phase took into account, on the one hand, the 
+accessibility of the data in the whole point cloud model in order 
+to allow the analytical interrogation of the data, and on the other 
+hand, the identification and management of the most 
+representative section plans, in order to understand the 
+morphological relationships, for the extraction of the Digital 
+Elevation Model (DEM) and subsequent 2D processing through 
+assisted drawing software (CAD).  
+The reference systems related to the identified cutplanes and the 
+reference planes were documented in a report, together with the 
+rototranslation matrix with the average square deviations of the  
+Figure 5. Digital reconstruction of the Digital Elevation Models, DEM, of the mezzanine plane for the study of the relationship between 
+the spatial and functional composition of the building and the consistency of the vertical elevation structures. The representation 
+highlights the central system of the building jutting out at the pronaos on the main front and the monumental staircase in the atrium . 
+Floor plan projection of the ceiling 3D survey.  
+The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Volume XLIV-4/W3-2020, 2020 
+5th International Conference on Smart City Applications, 7–8 October 2020, Virtual Safranbolu, Turkey (online)
+This contribution has been peer-reviewed. 
+https://doi.org/10.5194/isprs-archives-XLIV-4-W3-2020-99-2020 | © Authors 2020. CC BY 4.0 License.
+ 
+102Fig
+ure 6. Digital Elevation Model, DEM, of the roofing system 
+for the analysis of the wooden truss elements of the primary 
+structural system. 
+registration, in order to ensure, at any time, the accessibility 
+and verification of the choices and actions implemented, 
+allowing in this sense any possible subsequent integration and 
+implementation of the model also through new campaigns.   
+3.2 Data processing and analysis 
+Subsequently, the acquisition, data processing and analysis 
+phase of the point cloud model was guided by the aim of 
+documenting the geometrical and morphological 
+characteristics of the building's factual state while at the same 
+time enabling multiscale and interdisciplinary investigations 
+of a restoration project on the one hand and functional 
+adaptation on the other (Ki oussi, 2011). There was a particular 
+focus on the slopes and section elevation profiles in the 
+relationship between ground level, the podium and the ground, 
+near the relevant areas in front of the main part, now used as a 
+park, once designed to house the extension of the Museum. As 
+previously mentioned, for the purpose of the completion of the 
+urban survey (2020) of the entire area that houses the Museu 
+do Ipiranga (2016), the Parque da Independência (postponed 
+due to the world pandemic) and the Monumento à 
+Independência do Brasil (2019), the choice of the cross-section 
+planes was conducted with the further geometric 
+morphological characteristics of the site in relation to the 
+original project, its variants and the construction choices 
+adopted. The orographic and planoaltimetric characteristics of 
+this area, which was at the time sparsely urbanised, of the city 
+of São Paulo were well suited to the idea of a man-made  Figure 7. Digital Elevation Model, DEM, Monumento à 
+Independência do Brasil; longitudinal section; axonometric 
+cutaway; planimetry of the imperial crypt. 
+landscape, the park, within which the main architectural 
+features of the Museu do Ipiranga, Parque da Independência, 
+Monumento à Independência do Brasil would enter into a 
+direct visual relationship, together with secondary architecture 
+such as the Casa do Grito (House of Scream), through the 
+construction of precise perspective cones. 
+General info  
+Mission start 10th August 2017 
+Mission end 31st August 2017 
+Days of work 21 working days 
+Hours of work 208 hours 
+Technicians 2 
+Survey Data 
+Equipment 2 Leica P40 + LEICA TCR 
+12
+03 
+Time of data capturing 160 hours/person 
+Number of scan stations 1800 
+Number of targets 375 
+Number of points 
+(co
+ordinates) 240.260.487.654 
+Table 
+1. Survey data and technical equipment: 3D integrated 
+survey of Museu do Ipiranga – USP 
+The 3D survey level of detail allows experts to develop both 
+conventional and non-conventional representation for a variety 
+of end users involved.     
+The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Volume XLIV-4/W3-2020, 2020 
+5th International Conference on Smart City Applications, 7–8 October 2020, Virtual Safranbolu, Turkey (online)
+This contribution has been peer-reviewed. 
+https://doi.org/10.5194/isprs-archives-XLIV-4-W3-2020-99-2020 | © Authors 2020. CC BY 4.0 License.
+ 
+103Fig
+ure 8. Museu do Ipiranga main façade: central perspective 
+view from Monumento à Independência do Brasil and the 
+relationship with the Parque da Independência. 
+3.
+3 Medium and long-term fallout 
+The digitisation process, through digital survey and 
+documentation of the complex urban area of Museu do 
+Ipiranga – USP, Parque da Independência and Monumento à 
+Independência, is the first challenge of the international 
+cooperation activity toward the digitisation of the Brazilian 
+Cultural Heritage in order to support more effective decision 
+making processes and awareness of the use of resources, with 
+reference to the identity of the place.  
+Moreover, the level of accuracy pursued in the data acquisition 
+and processing phases took into account the following need to 
+develop digital contents, model segmentations and 
+interoperable and detailed representations that even allow an 
+inexperienced audience to access cultural heritage, to engage 
+new users and to develop creative and accessible content for 
+education and the enhancement of cultural heritage 
+enhancement.  
+As a result, the digital model is suitable for implementing 
+specialist uses such as data integration related to: sensors and 
+remote sensing in order to monitor the state of conservation 
+and maintenance of buildings, public spaces and so on; 
+integrated Key Enabling Technologies, thermal imaging, GIS, 
+satellite maps, for the management of security in public 
+spaces; VR and AR content for the enhancement of tangible 
+and intangible cultural heritage, which helps with intercultural 
+dialogue, encourages mutual respect and provides innovative 
+solutions for accessing cultural contents. The research is 
+certainly part of a broader challenge for the development of 
+cross sector digital platforms (EIP SCC, 2020) of built  
+Fig
+ure 10. Museu do Ipiranga, Parque da Independência, 
+Monumento à Independência do Brasil: 3D survey campaigns. Fig
+ure 9. Monumento à Independência do Brasil: central 
+perspective view from Museu do Ipiranga and the relationship 
+with the Parque da Independência. 
+heritage, in order to support data-based decision-making 
+processes as well as the production of knowledge through 
+participatory action research and knowledge accessibility 
+enhancement (Gaiani, 2017). 
+4.CONCLUSIONS
+The research activities carried out since 2017 have made it 
+possible to consolidate integrated survey protocols and the 
+digital documentation of complex architectures subject to 
+interventions, restoration and in part adaptation, which require 
+multidisciplinary contributions (Ioannides, 2018). At the same 
+time, the experience gained with the Museu do Ipiranga in the 
+relationship between the urban system of the park and the 
+Monument to the Independence of Brazil is contributing to the 
+optimisation of the protocols for the acquisition and 
+management of integrated digital information systems from 
+the scale of architectural survey to urban survey, toward the 
+development of a digital platform for the digitisation of 
+cultural heritage as well as an open information system. 
+The activity carried out concerned the strategy of integration 
+of digital terrestrial survey methods aimed at the development 
+of databases and 3D models that are reliable and 
+implementable over time (cit.). In particular, the use of 
+topographic survey together with the Terrestrial Laser Scanner 
+(TLS) survey instrumentation pursues multiple purposes: 
+firstly, the verification and control of geometric and 
+morphological characteristics, from the architectural scale to 
+the detail scale, with a view to the accessibility and usability 
+of the database created and subsequent implementations, also 
+conducted with different tools and survey techniques. 
+Subsequently, the normalisation of the information models 
+generated is pursued, also with a view to subsequent semantic 
+modelling through the use of Building Information Modelling 
+tools, taking into account both the cognitive needs and 
+methods of data representation and visualisation during the 
+project phase and subsequent needs for knowledge, 
+management, use and enhancement by multidisciplinary teams 
+(Parrinello, 2019). 
+In addition to the huge amount of data from an integrated 3D 
+survey, one of the main results of the project was aimed at 
+consolidating the methods of technology transfer to allow 
+teachers and researchers of the FAU USP of São Paulo to  
+The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Volume XLIV-4/W3-2020, 2020 
+5th International Conference on Smart City Applications, 7–8 October 2020, Virtual Safranbolu, Turkey (online)
+This contribution has been peer-reviewed. 
+https://doi.org/10.5194/isprs-archives-XLIV-4-W3-2020-99-2020 | © Authors 2020. CC BY 4.0 License.
+ 
+104Fig
+ure 11. 3D points cloud processing and analysis. Variety of 
+uses of Digital Elevation Models, DEM: from state of the art 
+documentation and analysis for the restauration project toward 
+3D point cloud comparison with the photographic survey of 
+Monumento à Independência do Brasil in order to develo p 
+non-conventional representation for both experienced and 
+inexperienced end users.   
+manage and implement digital models and complex databases 
+of existing built heritage (Balzani et. al., 2017). 
+The research staff of the DIAPReM centre and of the 
+TekneHub laboratory have in fact been engaged, for over five 
+years, in training activities involving professors, researchers, 
+PhD students and students both at the University of São Paulo  
+and at the Department of Architecture of the University of 
+Ferrara. The result of this continuous exchange is the sharing 
+of an integrated multidisciplinary and multiscale approach that 
+allows the results of the research activity conducted on 
+Brazilian cultural heritage to be implemented, explored and 
+enhanced in a continuous way and not exclusively related to 
+international mission activities (Balzani, 2020).  
+Overall, a team of over fifteen scholars, both with academic and professional backgrounds, was involved in the project of 
+historical, digital integrated documentation for the survey of 
+the state of affairs and structural analysis allowing the team in 
+charge of the restoration project to verify, in real time, the 
+hypotheses and spatial design configurations in relation to the 
+actual geometry and morphology of the built architecture. 
+5.CREDITS
+Museu do Ipiranga 
+International cooperation: DIAPReM center, University of 
+Ferrara, UNIFE, TekneHub Technopole of Ferrara; 
+Consorzio Futuro in Ricerca, Ferrara, Italy;  Universidade de 
+Sao Paulo, Faculdade de Arquitetura e Urbanismo della 
+Universidade de São Paulo; CPC (Centro de Preservação 
+Cultural) dell’Universidade de São Paulo (USP); Museu 
+Paulista dell'Universidade di São Paulo; “Fundaçao de Apoio 
+a Universidade de Sao Paulo” Sao Paulo, Brasil.  
+UNIFE: 
+DIAPReM/TekneHub 
+Scientific coordinator:   Marcello Balzani  
+Project coordinators:  Luca Rossato 
+3D survey coordinators:  Guido Galvani 
+3D survey technician:  Daniele Felice Sasso 
+Diagnostic survey:  Federica Maietti 
+USP: FAUUSP-CPC USP 
+Scientific coordinator: Beatriz Mugayar Kuhl (FAU USP) 
+Responsible for the Cooperation Agreement : Mônica 
+Junqueira de Camargo (CPC USP; FAU USP); 
+Research group: Renata Cima Campiotto (PhD Student; 
+FAUUSP) 
+Monumento à Independência do Brasil  
+International cooperation: DIAPReM center, University of 
+Ferrara, UNIFE, TekneHub Technopole of Ferrara; 
+Consorzio Futuro in Ricerca, Ferrara, Italy; Mackenzi e 
+University; Department of Historical Heritage (DPH) – SP 
+Scientific coordinator:   Marcello Balzani  
+Project coordinators:  Luca Rossato 
+3D survey coordinators:  Guido Galvani 
+Survey Support Team: Maria Fernanda Torgal Fonseca, 
+Henrique Shoiti (Mackenzie University) 
+Survey Support Team Coordinator: Guilherme Antonio 
+Michelin (Mackenzie University) 
+Elaboration of 3D data: Guido Galvani  
+Leader for support logistics: Valter Caldana (Mackenzie 
+University) 
+Logistics support coordinator: Guilherme Antonio Micheli n 
+(Mackenzie University) 
+REFERENCES 
+Angelidoua, M.; Karachalioua, E.; Angelidoua, T.; 
+Stylianidisa, E., 2017. Cultural heritage in smart city 
+environments in The International Archives of the 
+Photogrammetry, Remote Sensing and Spatial Information 
+Sciences, Volume XLII-2/W5, 2017 26th International CIPA 
+Symposium 2017, 28 August –01 September 2017, Ottawa, 
+Canada, pp. 27- 32 
+Balzani, M.; Maietti, F.; Rossato, L., 2019. 3d data processing 
+toward maintenance and conservation. The integrated digital 
+documentation of casa de vidro  in The international archives 
+of the photogrammetry, remote sensing and spatial 
+The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Volume XLIV-4/W3-2020, 2020 
+5th International Conference on Smart City Applications, 7–8 October 2020, Virtual Safranbolu, Turkey (online)
+This contribution has been peer-reviewed. 
+https://doi.org/10.5194/isprs-archives-XLIV-4-W3-2020-99-2020 | © Authors 2020. CC BY 4.0 License.
+ 
+105info
+rmation sciences , XLII-2/W9, Proceedings, 8th 
+International Workshop 3D-ARCH 3D Virtual Reconstruction 
+and Visualization of Complex Architectures", Copenicus, 
+Göttingen, Germany, pp. 65-72. 
+Balzani, M., Maietti, F., Mugayar Kühl, B., 2017. Point cloud 
+analysis for conservation and enhancement of modernist 
+architecture. In: Int. Arch. Photogramm. Remote Sens. Spatial 
+Inf. Sci., XLII-2/W3, pp. 71-77. 
+Balzani, M.; Raco, F., 2020. Integrated Digital Models for the 
+Representation and Diagnosis in Existing Buildings: The 
+Clust-ER BUILD Project for the Value Chain Innovation in 
+Bolognesi, C. M.; Santagati, C. (2020) Impact of Industry 4.0 
+on Architecture and Cultural Heritage , Business Science 
+Reference, Advances in Civil and Industrial Engineering, pp. 
+181-201.
+Brusaporci, S.; Maiezza, P.; Tata, A. 2018. For a Cultural-
+based Smart City. In: Rappresentazione materiale/immateriale 
+- Drawing as (in) tangible , 40° Convegno internazionale dei
+Docenti delle discipline della Rappresentazione, 2018,
+Gangemi, pp. 73- 80.
+Emerich, D., 2016. Museu Paulista : 120 Anos de História , 
+Editora Brasileira, ISBN; 9788563186362, São Paulo, Brazil, 
+pp. 200. 
+European Commision, 2018. Innovation in Cultural Heritage 
+Research. Retrieved: https://op.europa.eu/it/publication-
+detail/-/publication/1dd62bd1-2216-11e8-ac73-
+01aa75ed71a1 
+Fonseca Brefe A. C., 2005. O Museu Paulista, Editora UNESP , 
+ISBN: 85713958 88, São Paulo, Brazil, pp. 336. 
+Gaiani, M., 2017. A framework for Smart Cultural Heritage. 
+In: New activities For Cultural Heritage . Springer. DOI: 
+https://doi.org/10.1007/978-3-319-67026-3_24 
+Georgopoulos, A., 2017. Data Acquisition for the Geometric 
+Documentation of Cultural Heritage. In: Mixed Reality and 
+Gamification for Cultural Heritage . Springer, Cham, pp. 29-
+74. 
+Grilli, E.; Menna, F.; Remondino, F. (2017). A review of point 
+clouds segmentation and classification algorithms in The 
+International Archives of the Photogrammetry, Remote 
+Sensing and Spatial Information Sciences , Volume XLII-
+2/W3, 2017 3D Virtual Reconstruction and Visualization of 
+Complex Architectures, 1 –3 March 2017, Nafplio, Greece, pp. 
+339-344
+ICCROM, 2013. Management guidelines for World Cultural 
+Heritage sites. Rerieved: 
+www.iccrom.org/it/publication/managing-cultural-world-
+heritage. 
+ICOMOS, 2017. Smart Heritage Policy. Retrieved: 
+http://openarchive.icomos.org/1834/ 
+Ioannides, M., Fink, E., Brumana, R., Patias, P., Doulamis, A., 
+Martins, J., & Wallace, M., 2018. Digital Heritage. Progress 
+in Cultural Heritage: Documentation, Preservation and 
+Protection  7th International Conference, EuroMed 2018, 
+Nicosia, Cyprus, October 29 –November 3, 2018, Proceedings, 
+Part I. Berlin, D: Springer.  Jokilehto, J., 1998. International trends in historic 
+preservation: from ancient monuments to living cultures. APT 
+Bulletin, 29 (3-4), pp. 17-19. 
+Kioussi, A., Labropoulos, K., Karoglou, M., Moropoulou, A., 
+Zarnic, 
+R., 2011. Recommendations and strategies for the 
+establishment of a guideline for monument documentation 
+harmonized with existing European standards and codes. 
+Journal Geoinformatics FCE CTU, 6 (2011), pp. 178-184. 
+Kioussi, A., Karoglou, M., Bakolas, A., Moropoulou, A., 
+2012. Integrated Documentation Protocols Enabling Decision 
+Making in Cultural Heritage Protection. In: Ioannides M., 
+Fritsch D., Leissner J., Davies R., Remondino F., Caffo R. 
+(eds). Progress in Cultural Heritage Preservation. EuroMed 
+2012. Lecture Notes in Computer Science, vol 7616. Springer, 
+Berlin, Heidelberg, pp. 211-220. 
+Parrinello, S., Dell’Amico, A., 2019. Experience of 
+Documentation for the Accessibility of Widespread Cultural 
+Heritage, 2-2019, doi.org/10.3390/heritage2010067, pp. 
+1032-1044. 
+Parrinello, S.; Picchio, F.; De Marco, R. A. Dell’Amico, A., 
+2019. Documenting the cultural heritage routes. The creation 
+of informative models of historical Russian churches on upper 
+kama region in The international archives of the 
+photogrammetry, remote sensing and spatial information 
+sciences Volume XLII-2/W15, 2019 27th CIPA International 
+“Documenting the past for a better future”, 1– 5 September 
+2019, Ávila, Spain, pp. 887-894 
+Ramos, M.M. and Remondino, F., 2015. Data fusion in 
+cultural heritage a review. ISPRS – Int. Archives of the 
+Photogrammetry,  Remote Sensing and Spatial Information 
+Sciences, 5, W7, pp. 359-363. 
+Weinmann, M., 2016. Preliminaries of 3D Point Cloud 
+Pro
+cessing. In: Reconstruction and Analysis of 3D Scenes . 
+Springer, Cham, pp. 17- 38. 
+Young, H.J.; Seonghyuk, H. 2019. Three-Dimensional Digital 
+Documentation of Cultural Heritage Site Based on the 
+Convergence of Terrestrial Laser Scanning and Unmanned 
+Aerial Vehicle Photogrammetry. ISPRS Int. J. Geo-Inf. 2019, 
+8, 53. DOI: 10.3390/ijgi8020053 
+UCLG, 2018. Cultural Heritage and Sustainable Cities Key 
+Themes and Examples in European Cities , retrieved from 
+http://www.agenda21culture.net/sites/default/files/report_7_-
+_cultural_heritage_sustainable_development_-_eng.pdf 
+UNESCO, 2013.  Managing cultural world heritage. Retrieved 
+from https://www.iccrom.org/sites/default/files/2018-
+07/managing_cultural_world_heritage_en.pdf 
+United Nations 2020. The SDG partnership guidebook. A 
+practical guide to building high impact multi-stakeholder 
+partnerships for the Sustainable Development Goals,  retrieved 
+https://sustainabledevelopment.un.org/PartnershipAccelerator 
+The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Volume XLIV-4/W3-2020, 2020 
+5th International Conference on Smart City Applications, 7–8 October 2020, Virtual Safranbolu, Turkey (online)
+This contribution has been peer-reviewed. 
+https://doi.org/10.5194/isprs-archives-XLIV-4-W3-2020-99-2020 | © Authors 2020. CC BY 4.0 License.
+ 
+106

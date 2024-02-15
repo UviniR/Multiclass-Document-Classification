@@ -1,0 +1,1881 @@
+White Paper
+Windows of Opportunity: 
+Facilitating Trade with 
+Blockchain Technology
+July 2019 
+© World Economic Forum
+2019 – All rights reserved 
+No part of this publication may be reproduced or 
+transmitted in any form or by any means, including 
+photocopying and recording, or by any information 
+storage and retrieval system.
+The views expressed are those of certain participants in 
+the discussion, and do not necessarily reflect the views of 
+all participants or of the World Economic Forum.
+REF 180118 - case 00040020Contents
+    
+This white paper has been published by the World Economic Forum as a contribution to a project, 
+insight area or interaction. The findings, interpretations and conclusions expressed herein are 
+a result of a collaborative process facilitated and endorsed by the World Economic Forum, but 
+whose results do not necessarily represent the views of the World Economic Forum, nor the 
+entirety of its Members, Partners or other stakeholders.Preface        3
+Introduction        4
+State of single windows      5
+ Benefits       5
+ Pain points      7
+Potential use-cases with blockchain     10
+ Challenges      11
+ Use-cases      11
+Guidelines for operationalizing use-cases    15
+Next steps        19
+Appendix       20
+Acknowledgements       21
+Endnotes       223
+Windows of Opportunity: Facilitating Trade with Blockchain TechnologyThe Fourth Industrial Revolution, driven by rapid technological change and 
+digitization, is having a profound impact on global trade. By applying innovative 
+new technologies to trade, “TradeTech” promises to increase efficiency, 
+drive economic development and grow inclusivity. However, challenges and 
+uncertainties remain on the policy governance of TradeTech. Public-private 
+partnerships are needed to maximize the benefits and mitigate the potential 
+downsides of applying new technologies to global trade. 
+Building on global developments and aspirations for TradeTech, the World 
+Economic Forum’s Centre for the Fourth Industrial Revolution, through its Digital 
+Trade team, collaborated with the Inter-American Development Bank (IDB) to 
+launch a new project. This project aims to guide public-sector stakeholders to 
+make informed decisions about using emerging technologies to facilitate trade, 
+drive economic development and improve competitiveness – particularly in the 
+case of blockchain deployment in trade single windows. Given its prioritization 
+of emerging technologies and having worked closely with Latin American and 
+Caribbean (LAC) governments, the IDB has valuable experience and knowledge  
+to help co-design and shape the trade agenda. 
+Within trade facilitation, trade single windows serve as the single electronic point 
+for exporters and importers to submit regulatory and commercial documents to 
+respective government ministries and agencies. However, promises of increased 
+efficiency are hindered by pain points and challenges, such as the lack of 
+interoperability among agencies, persistence of outdated processes and limited 
+visibility and traceability of shipped goods. 
+By exploring the application of new technology – blockchain – in the trade single 
+windows network, this White Paper outlines the current obstacles governments 
+face in implementing and maintaining single windows, and the potential for 
+blockchain to address those issues – while understanding the experimental nature 
+of the technology. The White Paper draws on the expertise of more than 80 
+project community members globally across various industry sectors, government 
+agencies, intergovernmental organizations and academic institutions as well as in 
+civil society. The policy framework laid out in this White Paper is also intended to 
+be applied in a proof of concept with the support of the IDB. 
+This project reflects the mission of the World Economic Forum’s Centre for the 
+Fourth Industrial Revolution: to provide an international platform of expertise, 
+knowledge-sharing and public-private collaboration and to co-design and pilot 
+innovative new approaches to policy and governance in the Fourth Industrial 
+Revolution. This project will encourage proofs of concept within and outside of the 
+project community, share and scale lessons learned using the World Economic 
+Forum’s platform on international trade and investment.Preface
+Ziyang Fan, 
+Head of Digital 
+Trade, World 
+Economic Forum
+Pablo M. Garcia, 
+Director of the 
+Institute for the 
+Integration of 
+Latin America and 
+the Caribbean, 
+Inter-American 
+Development 
+Bank4
+Windows of Opportunity: Facilitating Trade with Blockchain TechnologyTrade costs – the costs of moving cargo from one country 
+to another – are a leading constraint for companies wanting 
+to engage in trade. A significant share of these costs 
+stems from the time and money that companies spend 
+on paperwork and in multiple submissions of the same 
+information, as required by various government border 
+agencies to release goods for export and allow them to 
+enter the importing country. Trade single windows have 
+considerably improved this process, acting as one-stop 
+electronic platforms for registered users to lodge the 
+required import and export trade documents. Studies 
+suggest that electronic single windows have helped halve 
+document processing times in border agencies, cut 
+trade compliance times to one-third, increased adopting 
+countries’ exports and gross domestic products (GDPs) 
+and encouraged an overall improvement in transparency 
+and user experience for border clearance.
+Single windows have proliferated in recent years; as of 
+2017, 27 countries had a full electronic single window 
+and 36 had a partial single window. All 164 signatories 
+to the Trade Facilitation Agreement (TFA), which entered 
+into force in 2017, are encouraged to adopt an electronic 
+single window. Their benefits notwithstanding, single 
+windows leave a good deal of room for improvement. 
+Implementation has been challenging, especially for 
+many developing countries; surveys have revealed such 
+problems as agencies’ long response times, a reliance on 
+paper-based documents and a requirement to submit the 
+same data multiple times to different authorities. 
+Such challenges undermine government progress in 
+facilitating trade and enabling small- and medium-sized 
+enterprises (SMEs) to engage in trade. It is also a good 
+time to address such issues: Companies are digitizing their 
+trade operations and thus demand automated processes, 
+including those provided by governments. There is also 
+a compelling case for improving single windows due to 
+the growth of e-commerce: whereas previously border 
+agencies mostly dealt with a limited number of large 
+companies doing regular, container-based transactions, 
+now they have to contend with an avalanche of parcel-
+based shipments and new traders with whom they are less 
+familiar. In response, governments around the world are 
+considering using new methods and the technologies of 
+the Fourth Industrial Revolution to improve the operation, 
+data quality, risk management and user experience in 
+single windows. Introduction
+The purpose of this policy framework is to help 
+governments in these explorations by focusing on the 
+potential for blockchain in single windows. Blockchain, 
+a database that retains information on all transactions 
+on a ledger visible to all stakeholders, is already being 
+considered and piloted in various areas of world trade 
+– such as trade logistics, supply-chain management, 
+customs and border regulatory processes, cross-border 
+payments and trade finance. This policy framework (1) 
+analyses the main pain points in single windows around the 
+world; (2) assesses specific use-cases where blockchain 
+might alleviate some of these pain points; and (3) develops 
+guidelines for governments to consider and apply 
+blockchain in trade single windows. The policy framework 
+is aimed at government agencies involved in border 
+clearance; however, private-sector organizations engaged 
+in trade can also use this report to consider how best to 
+encourage governments to use this technology.
+The following section discusses the importance of trade 
+single windows in trade facilitation and reviews the main 
+pain points experienced by single window operators and 
+users. The next section assesses the value propositions 
+of blockchain and analyses how these are best applied 
+to remove the main pain points experienced by single 
+window operators and users, while also developing a 
+series of use-cases for blockchain in single windows. 
+The section thereafter focuses on the considerations for 
+operationalizing blockchain use-cases in single windows. 
+The final section discusses what steps can be taken next. 5
+Windows of Opportunity: Facilitating Trade with Blockchain TechnologyExploring blockchain’s usefulness in single windows 
+requires an understanding of the essential challenges 
+facing single windows and their users. This section 
+discusses the gains and pain points single windows have 
+created, based on academic literature and structured 
+interviews with single window operators in various 
+geographic regions.
+Benefits 
+Introduced in the late 1980s in Sweden and Singapore, 
+where they reduced border clearance times from four 
+days to 15 minutes, trade single windows have become a 
+centrepiece of trade facilitation efforts around the world. 
+The TFA encourages signatories to adopt electronic 
+single windows – single windows powered by information 
+technology. The United Nations Economic Commission 
+for Europe has been instrumental in developing definitions, 
+guidelines and standards for single windows, and several 
+entities including development banks and the World Customs 
+Organization have helped countries build and finance them.
+By 2017, trade single windows had been adopted in full 
+or in part in 63 countries (Figure 1). They typically bring 
+together dozens of government agencies in charge of 
+such areas as health, agriculture, quarantine, immigration 
+and technical standards. For example, in Uruguay, the 
+single window brings together 27 agencies such as tax 
+and customs authorities and ministries of agriculture and State of single windows
+fisheries, environment, energy and mining, and enables 
+traders to submit 127 different types of documents 
+required by the various border agencies. 
+Single windows have delivered a notable return on 
+investment in a wide range of countries, facilitating trade 
+considerably and lowering companies’ international trade 
+costs (Table 1). Their benefits have been compounded by 
+the digitization of trade documents: such “paperless trade” 
+obviates the need for exporters and importers to spend 
+time filling out paper documents, re-entering the same data 
+multiple times and visiting government agencies in person 
+to secure signatures and stamps.3 Many governments have 
+digitized customs clearance and duty payments; research 
+suggests this has cut border compliance time for imports 
+by one-third, and significantly reduced corruption in the 
+customs process.4
+Such efficiency gains can be even greater when trade 
+single windows are combined with port community 
+systems (PCS) that enable the exchange of information 
+among players in port environments. For example, in 
+Benin, Togo and Democratic Republic of the Congo, 
+traders receive a “single invoice”, where all costs at the port 
+(such as terminal handling charges) and regulatory costs 
+(for instance, duties and taxes) are combined into a single 
+invoice that is automatically sent to the importer or relevant 
+party. Once the full invoice is paid, the bank pays all of the 
+individual stakeholders and goods are released.
+Figure 1: Trade single window adoption among 120 analysed countries, 2017
+Source: Author processing from the UN Paperless Trade Database, 20176
+Windows of Opportunity: Facilitating Trade with Blockchain TechnologyTable 1: Selected impacts of digital technologies in border processes
+Digital 
+approachesGeneral objectives Selected impactsCountries that have 
+adopted by 20175
+Digital single 
+windows
+Digital 
+payments of 
+customs duties 
+and fees
+Information 
+on export and 
+import processes 
+available onlineDigital trade 
+documents, 
+“paperless 
+trade”Improve and accelerate 
+trade compliance by 
+enabling traders to submit 
+all documents required 
+for border clearance in 
+one “window”, typically 
+electronically
+Enable agencies to process 
+trade documents faster, 
+thereby accelerating the 
+clearance of cargo at borders
+Reduce invoicing times by 
+automating computation of 
+duties and fees
+Reduce corruption in customs
+Reduce time for importers to 
+make payments online
+Accelerate reconciliation and 
+thus customs clearance
+Make trade requirements  
+easily accessible, including for 
+new exporters and importers, 
+and promote transparency of 
+trade operationsReduce re-entry of same 
+information on multiple 
+paper-based documents
+Lower processing times for 
+traders and staff at trade 
+agencies that process 
+documents
+Improve legibility of trade 
+documents traditionally filled 
+out by hand
+Reduce probability of errorIn Kenya, the average time spent on 
+processing applications dropped by 50%, the 
+number of documents required for processing 
+halved and traders saved time previously 
+spent on visiting various agencies.6
+In Cameroon, the time to import used cars 
+fell from seven to two days, the time to lodge 
+shipping manifests from seven days to one 
+minute and the time to obtain import licences 
+from eight hours to 15 minutes.7
+In Colombia, the time to import a container fell 
+from 48 to 13 days and the time to export a 
+container from 34 to 14 days in 2006–2011.8
+Costa Rica reaped $16 in economic gains 
+from every $1 invested in the single window. 
+Without the system, exports would have been 
+on average 2% lower than they were between 
+2008 and 2013, or 0.5% of GDP.9
+In Tanzania, digitization of customs clearance 
+and duties cut import clearance times from 
+nine days to less than one day.13
+Small and remote firms accelerating their 
+access to trade requirements, information 
+and documents in a single place reduces 
+processing time and enables them to work 
+without intermediaries.Exporters and importers in countries with 
+paperless trade spend far less time on 
+paperwork for border clearance: Sub-Saharan 
+African importers spend on average 98 hours 
+on paperwork for a consignment, as opposed 
+to only four hours in Thailand and one hour in 
+Canada and Sweden where traders use digital 
+documents.10
+In Costa Rica, exporters became able to fill 
+out a single form online, which the single 
+window distributed automatically across trade 
+agencies to issue permits; trade in this channel 
+grew 1.4% faster than exports processed via 
+traditional methods. 
+Paperless trade has facilitated global supply 
+chains, such as by enabling just-in-time 
+delivery.1127
+53
+6467127
+Windows of Opportunity: Facilitating Trade with Blockchain TechnologyPain points 
+While they have delivered significant gains, single windows 
+in many countries have yet to be implemented in full and 
+thus work as seamless one-stop shops for traders to submit 
+trade documents and accelerate border clearance. Research 
+and interviews reveal several pain points in single window 
+systems related to interoperability among the stakeholders, 
+paperless trade, traceability of goods, document and 
+payment processing and trustworthiness of data (Table 2). 
+The following section details some of the main challenges.
+Limited interoperability
+– National single windows are disconnected from one 
+another. The TFA calls for countries to coordinate their 
+border procedures to facilitate trade. Such coordination 
+is, however, still very limited – in the UN survey, only 
+seven European countries and Canada reported full 
+engagement in “trade-related cross-border electronic 
+data exchange” while 48 had some partial exchanges.14 
+For example, the ten members in the Association of 
+Southeast Asian Nations’ (ASEAN) single window enable 
+electronic exchange of preferential certificates of origin, 
+while the four members of the Pacific Alliance share 
+phytosanitary and origin certificates.15 The reasons for 
+the fragmentation of national single windows include 
+disparate national databases, lack of platforms for 
+efficient exchange of data and differing regulations, such 
+as tax secrecy, data privacy, transfer laws and different 
+document formats. As a result, every country is worse 
+off: Traders have to enter the same data on export and 
+import declarations, risking mismatches and longer 
+processing times; governments “fly solo” in interpreting 
+data, managing risks and detecting anomalies; and each 
+importing country has a more limited window to conduct 
+pre-arrival processing that would otherwise accelerate 
+the release of goods.16
+– Border agencies operate with isolated data.  The 
+main value proposition of single windows to their users 
+is that they aggregate trade processes in one window.17 
+However, single windows are not that single: Border 
+agencies that form part of a single window still often 
+operate in isolation with regard to their respective data, 
+struggling to share data and coordinate actions such 
+as risk management and inspections with each other.18 
+Single windows in some Latin American and Caribbean 
+countries are also disconnected from customs, so that 
+traders inherently need to deal with a “double window”. 
+Part of the problem is technical, with legacy databases 
+impeding the sharing of data, while part is political, with 
+agencies keen to protect their turf and modus operandi.19 
+In some countries, corruption remains a problem: Players 
+who monetize delays at the border have little interest in 
+facilitating trade. 
+Persistence of paper
+– Border agencies still demand that traders file paper-
+based documents and visit agencies in person.  
+Despite pledges to introduce paperless trade, electronic 
+single windows are not always that electronic: Many developing country border agencies and customs 
+demand traders submit paper documents – by 2017, 
+only 28 countries had adopted electronic application 
+protocols for export permits, 25 had adopted electronic 
+issuance of preferential certificates of origin and 45 had 
+adopted electronic submission of both sea and air cargo 
+manifests.20 The persistence of paper is caused by sheer 
+inertia, limited budgets and staff concerns about the 
+impact of digitization and automation on jobs. 
+– Businesses are unfamiliar with digital processes and 
+lack information and communications technology 
+(ICT) skills to perform digital filings. Companies 
+can also impede paperless trade. Even in advanced 
+countries, some companies are set in their ways and 
+continue to use paper-based documents; in developing 
+countries, companies can lack confidence in the 
+security of data submitted online and ICT skills or IT 
+infrastructures to use digital interfaces – even though 
+digitization of trade processes in principle should help 
+especially small firms that have limited staff capabilities 
+for trade compliance.21
+– Unstructured data embedded in trade documents 
+are not converted into more easily analysable 
+structured data, and data formats are not 
+harmonized. Governments have enormous amounts 
+of useful data on traders and shipments that can be 
+used for sophisticated predictive analytics, such as 
+risk management. Yet this data cannot be efficiently 
+analysed because it remains in unstructured formats, 
+embedded in paper documents that have yet to 
+be converted into digitized, structured databases. 
+Moreover, data formats are not harmonized, limiting the 
+scalability of data analytics. 
+Inefficient manual processes and lack of automation
+– Manual document processing and reconciliation 
+of databases.  Errors are legion in trade documents, 
+because many are still often handwritten and simply 
+illegible, and because the same data is being re-
+entered manually multiple times into new documents 
+and databases, a process prone to error. Even in more 
+digitized settings, updates to agencies’ databases can 
+require manual interventions, which wastes staff time, 
+increases the odds of error and stops agencies from 
+allocating resources to more value-adding work such as 
+sophisticated risk management. Even in countries with 
+low labour costs, the inefficiencies of manual processes 
+can raise personnel costs far above those with digitized 
+documents and shared databases.
+– Inefficiencies in making and reconciling customs 
+duty and fee payments. While 53 countries have 
+enabled electronic payments for customs duties 
+and fees, the costs of making and reconciling these 
+payments can be surprisingly high.22 One reason is 
+that, while invoicing based on a customs declaration 
+is typically automated, customs payments in many 
+countries require importers to first pay the sum in the 
+invoice, and even physically present a document to 
+customs to prove the duty was paid. In Sri Lanka, the 
+customs platform computes the fees, taxes and duties 8
+Windows of Opportunity: Facilitating Trade with Blockchain Technologyautomatically, but traders still need to visit customs to 
+submit paper documents that agents then process.23 
+Furthermore, direct deposits and wire payments contain 
+limited data, and customs then has to manually match 
+an electronic payment to a given shipment, which 
+decelerates customs clearance rates.
+Limited traceability of goods in supply chains
+– Limited sharing of data across trade networks 
+among border agencies and the private sector.  
+Digitization and sharing of data among border agencies 
+themselves and with the private sector has increased 
+visibility and advance knowledge about incoming 
+shipments. For example, in the United States, the Air 
+Cargo Advance Screening (ACAS) enables customs 
+access from airlines’ advanced air cargo information 
+regarding shipments arriving in the United States. 
+However, sharing of data among governments and the 
+private sector is still limited, impeding agencies’ ability 
+to trace goods to their origin, verify certificates of origin 
+and recognize anomalous patterns and manage risks, 
+ultimately resulting in potential risks to end users of 
+shipped products. 
+Concerns about data trustworthiness and security  
+of data
+– Limited trustworthiness of data entered on single 
+windows.  Border agencies and traders’ processes 
+involving the re-entry of the same data multiple 
+times while reconciling different agencies’ databases 
+undermine the trustworthiness of data in single windows. 
+Data trustworthiness diminishes if data provided by the 
+agencies and trader differ. 
+– Companies are concerned about the security of their 
+sensitive commercial and financial data submitted 
+online.  This problem is exacerbated in countries where 
+the government has misused corporate information, 
+and/or has limited cybersecurity protections, electronic 
+signature laws and centralized management of data.24 
+There are no contracts between firms that use single 
+windows and border authorities. Thus, the former has 
+little control over how their data may be used or shared 
+and by whom. This contrasts with port community 
+systems where parties enter into a contract and have 
+recourse if their data is misused. 
+– Companies are unable to access and reuse their 
+identities and data in single windows.  Companies 
+that use single windows often need to enter their identity 
+and other datasets multiple times to access government 
+and commercial services, as well as being forced to 
+use a variety of identifiers when dealing with different 
+stratas of government. They are unable to use data, such 
+as their records of compliance, authorized economic 
+operator (AEO) certifications and trade transactions, in 
+single windows. This level of data could be very useful 
+for commercial purposes, such as enabling banks 
+that provide trade finance to carry out due diligence or 
+insurance companies to offer better rates to companies 
+with a strong record of trade compliance.Solving these pain points can have significant payoffs; 
+for example, the dramatic difference in the number of 
+hours spent on regulatory paperwork between countries 
+that have implemented paperless trade and countries 
+that are still using paper-based documents. But even 
+countries that have the world’s most digitized single 
+windows and are the top performers in trade facilitation 
+struggle with lack of interoperability and inefficient 
+processes; they are still seeking to further reduce 
+border clearance times and gain new capabilities.9
+Windows of Opportunity: Facilitating Trade with Blockchain TechnologyTable 2: Selected pain points in electronic trade single windows
+Main pain points Selected reasons Main impacts
+Limited 
+interoperability
+Persistence  
+of paper
+Inefficient 
+manual 
+processes
+Limited 
+trustworthiness 
+and portability 
+of identities 
+and dataLimited 
+traceability  
+of shipmentsNational single windows disconnected from 
+each other
+Border agencies still demand traders file paper-
+based documents and visit agencies in person
+Businesses are unfamiliar with digital processes 
+and lack ICT skills to perform digital filings
+Manual document processing and reconciliation 
+of databases
+Limited trustworthiness of data entered on 
+single windowsLimited sharing of data across the trade network 
+among border agencies and the private sectorIncreases overheads as staff in each agency 
+need to reconcile respective databases with 
+those of others.
+Undermines the credibility and usefulness of 
+data held by any one border agency. Limits agencies’ ability to verify origin of goods, 
+trace goods in supply chains and detect 
+anomalies and fraudulent patterns in multi-
+country supply chains, resulting in possible 
+risks to end consumers of shipped products.Unstructured data embedded in trade 
+documents are not converted into more easily 
+analysable structured data; and data formats are 
+not harmonized
+Inefficiencies in making and reconciling customs 
+duty and fee payments
+Companies are concerned about the security 
+of their sensitive commercial and financial data 
+submitted online
+Companies are unable to access and reuse their 
+identities and data in single windowsWastes customs staff’s time in mundane 
+reconciliation processes; decelerates the 
+release of goods from customs, costing traders 
+time and money.
+Makes companies reluctant to use single 
+windows and electronic documents and filings, 
+where these are optional; process devolves 
+back to paper.
+Forces companies to re-enter data across 
+government services and forego opportunities 
+to use valuable transactional data for other 
+commercial purposes. Duplication of efforts, delays and lack of end-
+to-end visibility of shipments: traders have 
+to enter the same data on export and import 
+declarations, risking mismatches and longer 
+processing times; each government “flies 
+solo” in interpreting data, managing risks and 
+detecting anomalies; each importing country 
+has more limited opportunities to conduct pre-
+arrival processing. 
+Increases data re-entry, probability of 
+errors and mundane, repetitive processes 
+that consume traders’ and agencies staff 
+resources. 
+Perpetuates use of paper in regulatory filings, 
+wastes firms’ time in mundane processes.
+Limits opportunities for sophisticated data 
+analytics to detect anomalies and fraud in 
+shipments, and scalability of data analytics.10
+Windows of Opportunity: Facilitating Trade with Blockchain TechnologyBlockchain has several useful properties for settings that 
+characterize single windows – multistakeholder systems 
+in which users struggle to share data with each other are 
+forced to continue performing manual processes and 
+question the trustworthiness of their data. For example, 
+blockchain can help diverse stakeholders interoperate by 
+enabling them to access the same data at the same time 
+(hence the term “distributed ledger”); smart contracts built 
+on a blockchain can automate stakeholders’ compliance 
+with various contractual obligations; and blockchain data 
+is a stream of reliable information on past transactions 
+as they are immutable once entered (Box 1). This section 
+assesses potential use-cases to alleviate the pain points in 
+single windows using blockchain.25Potential use-cases with blockchain 
+Box 1: What is blockchain? 
+There are a great many definitions and descriptions of 
+blockchain. For the purposes of this paper, blockchain 
+can be defined as a shared, distributed ledger of records 
+or transactions that is open to inspection by every 
+participant, such as countries’ trade agencies that form 
+part of single windows.
+To understand blockchain’s various properties, it is 
+useful to think of a typical trade transaction. It involves 
+several documents and bilateral interactions, such as 
+between importers and trade finance banks, exporters 
+and shipping lines and exporters and importers and 
+their countries’ regulatory authorities. These interactions 
+amount to a significant waste of time: Parties fill out 
+numerous documents, often entering the same data 
+multiple times; they email and call each other to verify 
+and often correct information that was entered; they 
+check on each other’s processing times, often bilaterally 
+in each individual transaction. 
+Each of these bilateral messages and interactions holds 
+its own version of “truth” about the product’s journey 
+from seller to buyer. The multiple bilateral “truths” often 
+lead to error, fraud, delays and inefficiency, including in 
+border clearance. 
+Blockchain can reduce the number of steps and 
+processes among the network of players involved in 
+any one trade transaction and give every player a bird’s 
+eye view of any one shipment. As a distributed ledger 
+technology (DLT), blockchain can slash the number of 
+bilateral communications and informational linkages 
+and leakages by providing a single ledger that records 
+the transactions as they occur and enables all parties, 
+such as trade agencies, to access this data in real time. 
+Blockchain enables transactions to be recorded in “blocks” of data that are visible to all stakeholders – and 
+thus enables disparate parties in a network to access the 
+same data in real time, reducing all parties’ transaction 
+costs and enabling stakeholders to share data and 
+interact more fluidly. 
+Why is blockchain useful?
+Blockchain also holds promise for authenticating data 
+and improving the trustworthiness of data. Shortly after 
+each transaction occurs, it is put into a block on the 
+blockchain. These blocks are mathematically “chained” 
+together. The blocks are verified and managed by the 
+network nodes (computers or users participating in a 
+blockchain network) via a shared governance protocol; 
+each node contains a complete record of all of the 
+transactions ever recorded in that blockchain. No single 
+node can change or delete a block – which means data 
+on blockchain is immutable and tamper-evident. With 
+immutable blocks of data, blockchain also enhances a 
+party’s ability to trace transactions, such as shipments in 
+world trade.
+Blockchain can also automate the fulfilment of contractual 
+obligations via smart contracts built on a blockchain, and 
+thereby reduce intermediation costs. 
+Who can use blockchain?
+Often, blockchain is thought of as a database anyone 
+can use – and it is the case that blockchains can be 
+“permissionless” like bitcoin, where anyone can join the 
+network of users. But in most commercial applications, 
+they are permissioned, meaning that users need 
+permission to join.26 Though permissionless networks 
+are open, transparent and decentralized, they are also 
+anonymous, unregulated, usually crypto-based and 
+have high transaction fees. Meanwhile, permissioned 
+blockchains are not decentralized or open to all, but they 
+have low transaction costs and identifiable participants, 
+and they can be regulated. This paper focuses on 
+permissions ledgers – bearing in mind that there is a 
+continuum of blockchain applications falling between the 
+permissioned and permissionless models, with different 
+governance and revenue models.11
+Windows of Opportunity: Facilitating Trade with Blockchain TechnologyChallenges
+Before going further to assess blockchain’s value added, 
+it is important to consider some challenges in analysing 
+blockchain’s potential in single windows. 
+First, data on blockchain’s impact is still very limited: Piloting 
+and testing is needed to understand blockchain’s full 
+potential. Governments have been adopting digital single 
+windows and paperless trade over the past 30 years, and 
+by now there are significant amounts of data and analysis 
+data on the impacts of digitization of single windows, trade 
+documents and payments. However, no systematic data 
+currently exists on blockchain’s impacts: We essentially 
+know the “digitization premia” but we still cannot, in a similar, 
+rigorous way, capture the “blockchain premia” in border 
+clearance.27 However, blockchain pilots in trade and other 
+domains are compelling enough to suggest that it could have 
+significant new value and thus merits exploring and piloting. 
+Secondly, it is premature to determine blockchain’s unique 
+potential with regard to other technologies in border 
+clearance. This report does not claim that other digital 
+technologies could not solve many of the pain points in single 
+windows: Digital documents, payments and data sharing 
+via application programming interfaces (APIs) have already 
+done a great deal of good. Many developing countries would 
+score enormous gains if they implemented single windows as 
+successfully as Singapore, Korea or Mexico have done. This 
+report is not a “battle of technologies” intended to compare 
+technologies side-by-side or seek to persuade governments 
+that blockchain is a superior technology. The evidence is 
+still much too limited to make such claims, since blockchain 
+technology (like many other technologies) is maturing, and 
+fierce debates persist.
+What can be said is that blockchain is not a silver bullet that 
+cures all ills in world trade –what it can and cannot do well 
+can be defined only through further testing and piloting. 
+Many governments that have been successful in automating 
+their border processes – such as the United Kingdom, 
+Korea, Singapore, Mexico and the United States – are today 
+the most avid experimenters with blockchain in customs 
+and single windows, precisely to assess the technology’s 
+potential in offering new efficiencies and capabilities. Also, 
+many leading logistics companies and banks are exploring 
+blockchain for streamlining their operations. 
+This report seeks to help governments consider where 
+and how to apply blockchain in border clearance, and to 
+operationalize blockchain use-cases in single windows.
+Use-cases
+Table 3 and the following discussion lay out several potential 
+use-cases to address selected pain points in single windows 
+for which blockchain could be a particularly useful solution, 
+along with further complementary technologies and policy 
+measures.12
+Windows of Opportunity: Facilitating Trade with Blockchain Technology
+Pillars for blockchain in single windows: electronic signatures and transactions laws, solid IT Infrastructures, 
+mobile-enabled interfacesSingle windows use-cases and blockchain’s potential
+Auditability
+Main pain 
+point 
+Limited 
+interoperability
+Inefficient 
+manual 
+processes
+Limited 
+trustworthiness 
+and portability 
+of identities 
+and dataNational single windows 
+disconnected from each 
+other
+Limited trustworthiness 
+of data entered on single 
+windowsLimited sharing of data 
+across the trade network 
+among border agencies 
+and the private sector
+Inefficiencies in making 
+and reconciling customs 
+duty and fee paymentsBorder agencies that form 
+part of a single window 
+operate in isolation
+Companies are unable 
+to access and use 
+their identities and 
+data included in single 
+windowsInteroperability and 
+data share among two 
+or more national single 
+windows
+Improved reliability of 
+data entered on single 
+windowsEnd-to-end visibility into 
+shipments and supply 
+chains
+Automation of processes 
+to make and reconcile 
+duty and fee paymentsInteroperability and 
+coordination of actions 
+among agencies making 
+up the single window
+Authentication of 
+identities and portability 
+of identities and data 
+across service providers, 
+including for commercial 
+purposes (e.g. access 
+trade finance)Big data and AI; 
+harmonization of 
+national documentation 
+requirements, agreements to 
+share data across borders 
+Data standards; data-
+security protocols; AI to 
+detect fraudulent and 
+erroneous data entriesInternet of things 
+applications; agreements 
+to share data with private 
+sector and across borders; 
+machine learning to detect 
+anomalous patterns in data
+Robotic process automation; 
+deferred duty payments; 
+information-rich electronic 
+paymentsInter-agency collaboration 
+and APIs to share data; big 
+data and AI
+Development of a unique 
+ID such as Global Trade 
+Identity (GTID); government 
+regulations to encourage or 
+demand portability of dataImprove all national single windows’ visibility 
+into supply chains, ability to manage risks 
+and recognize patterns and conduct pre-
+arrival processing; share data on Authorized 
+Economic Operator certifications
+Make data entered into single windows 
+immutable and unauthorized modification to 
+the data traceableEnable more complete data on shipments 
+and supply chains and audit trails on traders 
+by bringing together single windows and/
+or private-sector trade intermediaries on a 
+common blockchain with immutable streams 
+of data
+Automate payments and their reconciliation; 
+accelerate revenue collectionImprove all border agencies’ ability to 
+share data and coordinate actions, gain 
+360-degree visibility of transactions and 
+manage risks, improve user experience
+Provide single window users with a unique 
+identity and enable users to apportion relevant 
+parts of their identities and transactional data 
+to third-party service providersLimited 
+traceability 
+of shipmentsSelected reasons Use-case Blockchain’s potential Alternative/
+complementary 
+technologies and 
+actions 
+Distrubuted database
+ Immutability
+ImmutabilityImmutabilityAuditability
+Auditability
+Auditability
+Smart contracts
+Digital identity
+Distrubuted database
+Distrubuted database
+Distrubuted database
+Table 3: Single windows use-cases and blockchain’s potential 13
+Windows of Opportunity: Facilitating Trade with Blockchain TechnologyInteroperability among national single windows.  
+Interconnected, interoperable national single windows 
+would have various benefits. They could enhance national 
+border agencies’ oversight of traders and transactions; 
+help countries tackle fraud, such as the undervaluation of 
+shipments by the importing country’s customs; and reduce 
+the number of data entries and document submissions from 
+exporters and importers. Governments adopting blockchain 
+to connect their single windows would need to integrate 
+processes within their own single windows, build trust with 
+each other, standardize data elements,28 align blockchain 
+implementations with their respective cross-border data-
+transfer regulations and establish robust collaboration with 
+the private sector.29 One novel solution is Infocomm Media 
+Authority of Singapore’s effort to develop an interoperability 
+framework, TradeTrust, for the secure exchange of electronic 
+trade documents in cross-border trade.30 Piloting can help 
+countries work together while discovering mutual benefits. 
+For example, with IDB’s support, Latin American customs 
+agencies have successfully piloted a blockchain scheme to 
+share data from their respective AEO programmes (Box 2). 
+Interoperability among border agencies that form part 
+of a single window. One of the main pain points facing 
+single windows is the friction in sharing data among trade 
+agencies that form part of that window. Blockchain can 
+make a significant difference in this setting: Used in a 
+way analogous to Google Drive, blockchain can enable 
+the myriad trade agencies to access the same data at 
+the same time, gain greater visibility of shipments and 
+manage such critical issues as food safety and intellectual 
+property compliance while reducing staff time spent on 
+reconciling agencies’ respective databases. It could also 
+be used to drive interoperability between a single window 
+and PCS. However, operationalizing data-sharing among 
+agencies will take serious political leadership for agencies 
+to work together – yet this work is already being done. 
+For example, the UK government has piloted a blockchain 
+scheme to share data and coordinate actions among the 
+country’s 28 border agencies.31 A recent proof of concept 
+established that blockchain can be used to securely share 
+the results of sensitive risk checks involved with granting 
+firms AEO status.32
+End-to-end visibility of shipments and supply chains.  
+As changes are made on the blockchain, new blocks 
+are added over time, forming a chain of data that can 
+serve as an audit trail for border agencies to detect fraud 
+and suspicious patterns, manage AEO certifications and 
+possibly also establish new categories of trust, such as 
+“trusted e-trader” programmes for small firms that have a 
+solid track record of compliant trade transactions but which 
+do not necessarily qualify for traditional AEO status.34 The 
+end-to-end visibility will be even greater as a larger set of 
+players in the trade networks, such as lines and logistics 
+firms, adopt blockchain. More generally, blockchain could 
+help agencies move from a transactional (shipment-based) 
+risk-management approach to an entity-based approach, 
+thereby enabling audit trails of companies and allowing 
+companies themselves to better reuse their data included in 
+single windows. Automation of workflows and customs duty and fee 
+payments.  Smart contracts can be built on a blockchain 
+to do x when y happens and thus automate what, in 
+many cases, are still manual processes involving costly 
+intermediaries. Smart contracts could be applied in single 
+windows to automate customs fee, duty and tax payments. 
+For example, smart contracts could trigger advance 
+payment from the importer when customs authorities 
+have completed pre-arrival processes for the importer’s 
+consignment. Automating payments would reduce 
+importers’ shoe-leather costs of making payments and 
+presenting paper-based proofs that payments had been 
+made and reduce customs’ payment reconciliation costs. 
+It could possibly also reduce legal disputes and litigation 
+costs and increase trust and confidence in the supply chain.
+Improved trustworthiness of data entered into single 
+windows.  Once entered into blockchain, the data cannot 
+be modified. Data records on all entries and transactions Box 2: CADENA: Blockchain in AEO mutual 
+recognition agreements in Latin America
+During 2018, the IDB, together with the customs 
+administrations of Mexico, Peru, Costa Rica and Chile, 
+and with technical support from Microsoft, designed a 
+solution using blockchain technology called CADENA 
+v.0.33 It facilitates the sharing of the data associated with 
+Authorized Economic Operator (AEO) certificates among 
+customs administrations as specified in their mutual 
+recognition agreements (MRA). While AEO programmes 
+enable companies to facilitate their trade and save time 
+and money in their trade transactions, CADENA helps to 
+secure and facilitate supply chains globally. 
+CADENA has been designed, first, to find a solution to 
+a customs and border management challenge – the 
+sharing of cross-border data – and secondly, to enable 
+customs to learn about blockchain in order to consider 
+possible further use-cases. Blockchain enables different 
+national customs authorities to access the same verified, 
+tamper-proof and real-time data. This ensures that 
+traders can receive MRA benefits both at the countries 
+of origin and destination of their exports as soon as they 
+are granted their AEO certification. 
+During the pilot project, customs validated the benefits of 
+the technology for sharing cross-border data, providing 
+timely information about the level of compliance of 
+traders to feed risk-management systems. Furthermore, 
+they found that CADENA could next be expanded to 
+automate the entire AEO certification process, and to 
+other customs functionalities that require engagement 
+with different stakeholders, both public and private. 
+To build on the findings made during CADENA and to 
+incorporate new developments in blockchain technology 
+in 2018, a new phase is proposed to develop CADENA 
+v.1 during 2019. CADENA v.1 will scale to other 
+countries, such as Colombia, and will benefit from the 
+synergies of LACChain (see Box 5) to address further 
+issues related to governance, administration, data 
+privacy, sustainability and scalability.14
+Windows of Opportunity: Facilitating Trade with Blockchain Technologyare timestamped and any changes and additions will 
+be visible on the chain to all stakeholders, as the one 
+and only version of the “truth”. As such, blockchain can 
+improve the trustworthiness of data entered into single 
+windows and used by border agencies. Granted, like 
+any database, blockchain is only as useful as the data 
+included in it; the veracity and quality of data can be 
+increasingly assessed with AI-driven tools – and by making 
+machines rather than humans impute data on ledgers 
+when possible.35 Blockchain’s security is also still debated. 
+The companies developing blockchain technologies are 
+strongly encouraged to improve blockchain’s security. Much 
+ultimately depends on the security architecture built around 
+blockchain implementations. 
+Authentication of identities and portability of identities 
+and data across service providers, including for 
+commercial purposes.  Blockchain can help users 
+to authenticate and control their identities and data. 
+Blockchain-based identities can be “self-sovereign”, 
+administered by the identity holder and based on the 
+decentralized identifiers (DIDs) that are much like a secure 
+website. Each DID can be assigned to different parts of 
+a user’s identity; one DID could be a company’s name; 
+another, its federal identification number; still another, 
+its Harmonized System (HS) codes, and so on. Single 
+window users could be encouraged to access and carry 
+these pieces of their digital identity and use their DIDs and 
+transactions authenticated by blockchain for commercial 
+purposes. For example, companies that have managed 
+to secure an AEO status could use that data point to 
+negotiate better cargo or corporate insurance rates, and 
+small companies could use their blockchain-based trade 
+compliance data to better access trade finance.36
+The concept of a Global Trade Identity (GTID) – to reduce 
+supplier and customer risk in supply chains by enabling any 
+supply chain partner to validate the trustworthiness of a 
+legal entity with which it looks to do business – can, in the 
+blockchain environment, offer a commercially and politically 
+neutral identity infrastructure.37 It would help develop the 
+concept of a trade data pipeline, in which commercial, 
+logistics and regulatory trade data associated with an 
+operation “travels” through a pipeline that could be read 
+and used by public and private stakeholders according to 
+their level of access to the data.Single windows can gain when blockchain is adopted 
+in the broader trade ecosystem. Gains from blockchain 
+in single windows can also expand as blockchain becomes 
+more widely adopted in the trade network, and as banks, 
+ports, terminal operators, logistics providers and tax 
+authorities adopt blockchain solutions to streamline their 
+operations. Bringing the various players that “touch” a trade 
+transaction on a common blockchain could drastically 
+reduce re-entry of data in trade transactions, enhance 
+intermediaries’ visibility of shipments end-to-end and enable 
+border agencies to access more diverse and reliable supply-
+chain data – which can help optimize their risk-targeting and 
+verify the origin of products, for example. Multistakeholder 
+blockchains will have a critical need for common 
+understandings on governance and data, and IP rights.
+Such multistakeholder solutions are already being 
+developed, including the Maersk-IBM TradeLens platform 
+for logistics, the we.trade platform for trade finance and 
+a range of national initiatives. For example, Mexican 
+customs, customs brokers, Hutchison Ports, and the Port 
+of Veracruz are together piloting a blockchain solution 
+that provides them with common, real-time data on the 
+location and documents associated with a given export 
+shipment. The Korean Customs Service has worked with 
+the logistics community to explore blockchain’s usefulness 
+in the accuracy and transparency of data on certificates 
+of origin; more than 50 Korean companies on the export 
+side, alongside five working groups and ten companies 
+based in Viet Nam and Singapore on the import side, 
+have participated in pilots.38 The European Commission’s 
+Directorate-General for Taxation and Customs Union 
+(DG-TAXUD) recently tested blockchain’s value added in 
+temporary admission and excise domains, finding that 
+blockchain has significant potential in these specific areas 
+of trade and revenue collection.39Box 3: Technologies to complement blockchain in 
+single windows
+Blockchain has several potential use-cases for single 
+windows – and can also be usefully complemented by 
+other technologies. For example, machine learning can be 
+a powerful complement to blockchain in border agencies’ 
+risk management and fraud prevention, helping agencies 
+predict risks and invest resources in high-risk shipments 
+while facilitating licit trade. Artificial intelligence (AI) can 
+help agencies transform unstructured data in trade 
+documents into structured data that enables data and 
+information on trade documents to be used for pattern 
+recognition and risk analysis. 
+Robotic process automation can further streamline well-
+functioning single windows’ workflow by automating 
+mundane and repetitive processes, enabling agency staff to 
+invest their time in serving users and performing other higher-
+value work, and reducing the odds of human error. Internet 
+of things (IoT) applications can further border agencies’ and 
+single window users’ visibility of shipments end-to-end – 
+for example, IoT-enabled physical tamper detection with 
+edge-computing and sensors can enhance the integrity and 
+availability of data for border agencies on the blockchain and 
+enable ledger updates and payment transactions.15
+Windows of Opportunity: Facilitating Trade with Blockchain TechnologyBlockchain has the potential to generate new efficiencies 
+and provide new capabilities, both for the agencies that 
+form part of single windows and the businesses that use 
+them. The biggest question mark for border agencies 
+is to what extent blockchain adds new value in single 
+windows, and what it actually takes to effectively pilot and 
+operationalize blockchain. For staff at border agencies 
+to champion blockchain requires compelling answers to 
+these questions. 
+There are at least six key steps and considerations when 
+introducing blockchain into single windows (Table 4).Guidelines for operationalizing use-cases 
+Actions
+Who 
+drives
+Level 
+of effort 
+needed
+Key 
+questions 
+to addressEnsure political support 
+exists for trade facilitation
+Establish a “grand 
+vision” for blockchain 
+in the single window 
+and a business case for 
+stakeholders
+Adopt blockchain in 
+pilots and iterating to 
+improve outcomes
+Bring together a 
+multidisciplinary team 
+to pilot and apply 
+blockchain
+Define how to cover 
+costs and how to 
+engage development 
+banks and donors
+What is the outcome 
+to be attained by using 
+blockchain? 
+What is in it for each 
+stakeholder? 
+How are costs covered?
+How could development 
+banks and donors best 
+support via technical 
+advice and funding?Where is blockchain 
+managed from? 
+What are the 
+responsibilities of the 
+different stakeholders and 
+what are stakeholders 
+rewarded for? 
+How are data and 
+document-sharing 
+governed among 
+stakeholders?
+How to define and 
+differentiate access 
+privileges?
+Which international data 
+standards should be 
+considered?How does the new 
+solution integrate 
+with the current 
+solutions (process and 
+technology)?
+Can IT create a 
+functionable “digital twin” 
+of a trade?
+Does blockchain provide 
+a trusted interaction layer 
+for sharing events and 
+information/data?
+Does blockchain also 
+need to account for and 
+support wider supply 
+chain business models?Could users make their 
+data portable and for 
+what purposes, and how 
+is off-chain data shown 
+to outsiders certified as 
+“real”? 
+Are data-storage needs 
+an issue?
+How to best 
+communicate the 
+benefits of blockchain 
+to firms that use single 
+windows?What is the improvement 
+from baseline and last 
+measurement?
+What are the weakest 
+links in implementation 
+and why?
+How does my country 
+compare to others that 
+are also working on trade 
+facilitation, before and 
+after blockchain was 
+adopted?How to improve on the 
+process and outcomes in 
+steps 1-5?
+What new properties of 
+blockchain technology 
+and other technologies 
+could be employed? 
+What is the optimal 
+governance structure 
+if pilot is scaled or 
+replicated?
+In which other areas of 
+trade facilitation could 
+blockchain be tested?Head of state, agency 
+heads, private-sector 
+users, focus groupsAgency heads, IT leads 
+and users; international 
+expertsAgency IT leads, experts Agency heads, IT leads Agency front-line staff,  
+report to head of stateImplementors, private-
+sector usersEstablish a governance 
+structure with mandate, 
+scope, responsibilities 
+and data-share rules
+Standardize data entered 
+on blockchain and data-
+security protocols
+Define reward systems 
+for staff in agencies to 
+implement blockchain
+Define data-storage 
+needs
+Assess compatibility of 
+blockchain with existing 
+regulations; consider 
+regulatory sandboxes 
+to fuel blockchain’s 
+developmentDevelop the technology 
+architecture, acquire 
+blockchain technologies 
+and integrate blockchain 
+with existing databases 
+and technologies
+Retrain agencies’ IT 
+staff and acquire new 
+capabilities with technical 
+knowledge of blockchainTest a single, 
+interoperable identity for 
+single window users and 
+enable them to make 
+their data portable
+Possibly develop a new 
+identity for blockchain 
+users, e.g. GTID
+Communicate technology 
+improvements to usersDevelop and track 
+KPIs, e.g. time release 
+indicators; operational 
+efficiency in border 
+agencies; and trade 
+facilitation and SME  
+trade growth 
+Reward agencies’ staff 
+for meeting targets 
+defined in steps 1 and 2Assess the pilot and 
+consider ways to 
+improve and scale it
+Consider blockchain’s 
+emerging capabilities and 
+rethink its governance
+Assess governance 
+structure built into step 2
+Consider range of 
+applications in other 
+niche areas in single 
+windowsCreate vision and  
+business caseCreate governance 
+structure, including  
+for data, and 
+implementation planBuild technology 
+architecture and
+integrate technologyManage user 
+identities  
+and dataMeasure impact  
+and report on it IterateTable 4: Guidelines for operationalizing blockchain use-cases in single windows16
+Windows of Opportunity: Facilitating Trade with Blockchain Technology1. Create a ‘grand vision’ and make the 
+business case
+Ensure high-level political support exists for trade 
+facilitation.  Single windows work best in countries in which 
+the leadership is firmly committed to trade facilitation. The 
+same is true for blockchain applied in single windows: It has 
+a fighting chance to work if its adoption and implementation 
+are supported by the highest levels of government.40
+Establish a “grand vision” and make the business case 
+for stakeholders. The decision to use blockchain requires 
+a vision of the benefits that it can generate for border 
+agencies and trade facilitation. This initial vision will inform 
+further steps, such as specific key performance indicators 
+(KPIs), blockchain’s governance model and technology 
+architecture and agencies’ reward systems. Since the main 
+impediment to blockchain’s adoption tends to be defining a 
+business model in which all stakeholders perceive benefits, 
+blockchain champions need to spend time and energy to 
+develop compelling value propositions for each stakeholder 
+group – in this case, border agencies and the private 
+sector (Box 4). Focus groups are a useful way to quickly 
+understand players’ pain points and preferences. Activities 
+and games in which players are encouraged to work 
+together can also be useful – such strategies have been 
+used to train agencies to use customs software and for port 
+ecosystem actors to use a PCS. 
+Adopt blockchain in pilots and iterating to improve 
+outcomes.  It is useful to define the initial steps towards the 
+grand vision as pilots that enable stakeholders to test the 
+blockchain technology and explore its benefits in various 
+specific use-cases, rather than being locked into using 
+it indefinitely. Experimentation is also important in that 
+blockchain is a nascent technology in which the benefits 
+have yet to come to full view, and stakeholders need to be 
+socialized into using it. 
+Bring together a multidisciplinary team to implement 
+pilots. Implementing blockchain in single windows will 
+require multidisciplinary teams of technology experts and 
+domain experts in trade facilitation, as well as input from 
+private-sector users. 
+Define how costs are covered. Questions related to 
+funding and burden-sharing should not derail a blockchain 
+project before it gets started. It is important to define early 
+on how the blockchain project is paid for and articulate that 
+to stakeholders.
+Partner with development banks for technical advice 
+and funding.  Developing countries can tap development 
+agencies to bring valuable technical knowledge and 
+financial resources into blockchain pilots. Multilateral 
+development banks and donors are starting to increase 
+their experience in blockchain implementation and can also 
+help developing countries learn from each other, cooperate 
+and measure blockchain’s effects on trade costs and trade 
+flows. For their part, development organizations could 
+condition their support on recipient governments’ actions to 
+digitize trade documents and processes and report on KPIs 
+from the blockchain pilots.2: Create a governance structure, including 
+for data, and an implementation plan
+Establish a governance structure around blockchain. 
+Blockchain’s governance architecture needs to be 
+sorted out early on, as many subsequent decisions 
+flow from it. This includes the mandate, scope and 
+responsibilities of each participating stakeholder, as well as 
+understanding how data is shared and which technologies 
+are used. It is also important to define from where the 
+blockchain application will be managed, a particularly 
+important question in multi-country and/or multi-ledger 
+implementations. Important approaches include standards Box 4: Lessons learned from piloting blockchain in 
+Korean customs and trade ecosystem
+ 
+The Korean Customs Service (KCS) has been highly 
+active in piloting blockchain. In 2018, KCS conducted 
+three pilot projects: the E-clearance Blockchain 
+Project; the Blockchain Cross-Border Project with 
+Viet Nam, aimed at enhancing the reliability of shared 
+certificates of origin data via blockchain; and the 
+Export Logistics Blockchain Project with Samsung, 
+Hyundai Glovis, Busan Port Terminal, Shinhan Bank and 
+more than 60 Korean companies, aimed at exploring 
+whether blockchain could enhance the accuracy 
+and transparency of data generated by the logistic 
+community.
+To pave the way for the pilots, KCS created a dedicated 
+division for blockchain’s adoption, and selected as 
+project managers staff with a strong understanding 
+of blockchain technology. These staff had gained the 
+necessary knowledge through training, participation in 
+forums and seminars and capacity-building provided by 
+blockchain service providers. To develop the pilots, KCS 
+worked extensively to interact and engage stakeholders, 
+holding many meetings and workshops at which the 
+stakeholders could define the data that could be shared, 
+and share information related to export logistics and 
+their respective business processes. 
+KCS’s ICT Development Division led the technology’s 
+adoption; the blockchain platform was developed by 
+Samsung and KCnet. It was geared to generating and 
+sharing information such as trade documents, export 
+declarations, bills of lading and letters of credit among 
+others. The platform minimized manual work in the trade 
+process and greatly improved the transparency and 
+reliability of data, as the data is collected from multiple 
+sources and is immutable. 
+The main driver of success behind KCS’s effort was its 
+early realization that the most important challenge in 
+using blockchain is not the adoption of the technology, 
+but (1) consensus-building on the need for, and 
+benefits of, blockchain with internal staff and external 
+stakeholders; and (2) extensive dialogues on how 
+blockchain will be applied – especially how stakeholders’ 
+business processes ought to be updated to best 
+facilitate trade when blockchain is used.17
+Windows of Opportunity: Facilitating Trade with Blockchain Technologyand solutions such as IDB’s LACChain where countries 
+can plug the blockchains in their single windows as nodes 
+into an interoperable regional blockchain architecture (Box 
+5). Governments that are interested in making their single 
+windows interoperable with each other will also need to 
+review the interoperability of their regulations and standards. 
+Standardize and secure data.  The use of standardized 
+data (data semantic, data format and data access protocol, 
+perhaps as in the WCO Data Model) ensures that any 
+stakeholder’s systems interface seamlessly with the 
+blockchain network.41 Blockchain’s governance structure 
+should inform how data on a blockchain is secured; for 
+example, agency staff’s access to review the data on a 
+blockchain is a vulnerability to be managed. Encryption 
+techniques used today may be compromised in the future, 
+and thus the security management needs to continually 
+evolve. Implementations will also need to consider how 
+stakeholders’ off-chain data is integrated with on-chain 
+data in a secure manner. Mitigating these types of risks 
+will introduce some moderate cybersecurity costs. The 
+ISO 27000 series of standards regarding the security of IT 
+systems can provide general guidance.42
+Define reward and accountability systems for blockchain 
+adoption.  Blockchain pilots need to be co-owned by 
+stakeholders in the agencies that are responsible for their 
+implementation. In particular, a sense of co-ownership 
+among two IDB departments and beneficiary customs was 
+vital to CADENA’s shift and successful implementation. 
+Primary staff need to coordinate work through weekly 
+meetings, and be rewarded when meeting milestones and 
+KPIs, and for transparently measuring impacts. 
+Define needs for data storage.  Whether data is stored 
+directly on the ledger or off-chain with hashes on the ledger, 
+the storage costs will need to be covered. Data storage 
+costs can be roughly based on typical data storage costs. 
+Consider blockchain’s compatibility with digital 
+regulations and establish regulatory sandboxes for 
+blockchain. Ultimately, legal frameworks on electronic 
+signatures, data privacy and transfer, and internet 
+intermediary liability need to be made compatible with 
+aspirations for digitization and use of technologies such as 
+blockchain. For example, smart contracts, if used, need 
+to be embedded in laws that make digital signatures and 
+smart contracts enforceable in courts and, if used among 
+players from two different countries, are understood in 
+the same way in these countries’ legal frameworks. It will 
+also be useful to consider a regulatory sandbox approach 
+to blockchain, for companies to bring new blockchain 
+applications to market without having to comply with the 
+gamut of regulations that might otherwise apply.43
+3: Build technology architecture and 
+integrate technology 
+Develop the technology architecture, acquire blockchain 
+technologies and integrate blockchain with existing 
+databases and technologies.  Blockchain deployment 
+requires unique upfront costs to develop the IT Box 5: Enabling blockchain development in Latin 
+America and the Caribbean
+Over the past five years, different blockchain-based 
+solutions have been attempted in the LAC region. Even if 
+some of them have been successful at a pilot stage, few 
+have scaled. In 2018, IDB Lab, the innovation laboratory 
+of the Inter-American Development Bank, launched 
+the Global Knowledge Alliance for the Development 
+of the Blockchain Ecosystem in Latin America and the 
+Caribbean (LACChain).
+LACChain is aimed at accelerating the development of 
+the blockchain network in LAC. It solves several specific 
+challenges to blockchain’s scalability in the region: 
+limited coordination among network stakeholders in 
+exploring an alternative to governance structures; limited 
+infrastructure capabilities; lack of standards for scalable 
+and interoperable solutions; and high transaction costs. 
+LACChain works in four areas: (1) partnerships between 
+public-private stakeholders, (2) the technological 
+infrastructure, (3) the marketplace of applications, and (4) 
+data analytics to measure social impact. 
+LACChain is creating a hybrid public-permissioned 
+network that combines the features of public and 
+permissioned blockchains. It offers networks that 
+are decentralized, while requiring that users are 
+authenticated and comply with the law, as the 
+blockchain will be regulated and there are no transaction 
+fees. In late 2018, LACChain launched its first public-
+permissioned test-net using the software Quorum, and, 
+in 2019, will release a second test using Pantheon.
+architecture and to integrate existing systems with the 
+newly developed blockchain system. However, these fixed 
+upfront costs may be offset by the increased efficiency 
+and lower variable costs over time, comparable to 
+conventional IT systems. 
+Train IT staff and acquire new technical capabilities to 
+operationalize blockchain in agencies’ day-to-day work.  
+Optimizing blockchain in single windows takes both 
+domain expertise and technical know-how. It requires 
+the training of agencies’ existing IT personnel – Korea 
+Customs Service set up a dedicated team that had to 
+undergo training to manage blockchain pilots. For non-IT 
+personnel and businesses that use single windows, the 
+impacts are minor, as front-end interfaces can remain the 
+same or show little change.
+4: Manage user identities and data
+Test a single, interoperable identity for single window 
+users and enable them to make their data portable. A 
+blockchain pilot can enable a government to test, perhaps in 
+partnership with various public- and private-sector entities, 
+the concept of a single digital identity for single window 
+users. Enabling companies to make their transactional data 
+portable and use it for commercial purposes, such as for 
+securing insurance or trade finance, could be tested as a 
+standalone use-case or in the context of any one use-case 
+to understand how the stakeholders respond. 18
+Windows of Opportunity: Facilitating Trade with Blockchain TechnologyCommunicate technology improvements to users and 
+ask about their user experience. Single window users 
+need to be educated about the benefits of blockchain, and 
+their views need to be included in assessments of pilots 
+and implementations. 
+5: Measure impact and report on it
+Develop and track KPIs of single windows powered 
+by blockchain.  Blockchain’s impact on single windows 
+and trade costs needs to be measured for governments 
+to identify improvements enabled by blockchain, make 
+the business case for scaling the solution, harvest lessons 
+learned and keep agencies and blockchain champions 
+accountable. Important KPI measures should at least 
+include impacts on border agencies’ operations and 
+expenditures and a range of second-order economic 
+outcomes, such as impacts on trade facilitation, SME trade 
+and trade growth. They could also include the granular 
+indicators in the WCO Time Release Study.44 Baseline 
+measures should be established before blockchain is 
+adopted, and investment in KPI management and reporting 
+needs to be made upfront, not after blockchain has 
+been piloted. To the extent that several countries adopt 
+blockchains in single windows, it is useful to collect similar 
+data points – development banks can produce such 
+common data. 
+6: Iterate  
+Assess the pilot and consider ways to improve 
+and scale it, including by considering blockchain’s 
+emerging capabilities and rethinking its governance.  
+Often, blockchain models and governance discussions 
+are “frozen in place”, anchored in a certain understanding 
+of the technology when it was first tested – even though 
+blockchain and its user base are rapidly evolving, offering 
+and demanding different functionalities. As they experiment 
+with blockchain and other technologies, single windows 
+need to keep up with how the technology is maturing, what 
+new providers are emerging and which new players are 
+adopting blockchain – and ask themselves whether the 
+governance and IT architectures that were initially put in 
+place continue to optimize outcomes.19
+Windows of Opportunity: Facilitating Trade with Blockchain TechnologyThis policy framework has presented real-life problems in 
+single windows, taken a sober look at how and whether 
+blockchain could solve them, and offered useable guidelines 
+for governments to adopt blockchain in single windows. 
+This framework has found that blockchain has the 
+potential to solve various pain points facing single windows 
+and bring new efficiencies and capabilities to border 
+agencies. For example, it can be useful in enhancing 
+interoperability of national single windows and of agencies 
+within a country’s single window, automating contractual 
+obligations such as payment of customs duties and fees, 
+enabling traceability of products across supply chains, and 
+attenuating agencies’ concerns about the trustworthiness 
+of data at their disposal. 
+However, blockchain’s benefits, just like the benefits of 
+single windows, will critically hinge on the rigour of its 
+implementation. Governments that want to pilot and test 
+blockchain in single windows should have a clear vision 
+of how blockchain can advance the attainment of trade 
+facilitation objectives; understand stakeholders’ pain 
+points and develop a compelling value proposition for 
+each stakeholder to adopt blockchain; build a governance 
+structure and an enabling legal environment and 
+technology architecture while providing clear targets and 
+KPIs for blockchain implementation; be flexible to change 
+course and iterate to improve outcomes; and, in particular, 
+secure high-level political support and collaboration with 
+the private sector. 
+This framework is intended to pave the way for blockchain 
+pilots around the world. The World Economic Forum and 
+the Inter-American Development Bank will be working 
+to implement proofs of concept with a subset of LAC 
+governments to pilot blockchain use- cases, use the 
+implementation guidelines discussed here and build 
+LAC governments’ capacity to understand and apply 
+new technologies on border clearance while sharing the 
+lessons learned.Next steps20
+Windows of Opportunity: Facilitating Trade with Blockchain TechnologyAppendix
+The graphic below walks through an example of how the 
+guidelines for operationalizing use-cases (see the earlier 
+section on this subject) can be applied. The example refers 
+to the Inter-American Development Bank’s CADENA project.
+In early 2018, the IDB 
+staged a workshop 
+to identify three Latin 
+American countries’ 
+customs pain points 
+when sharing data with 
+AEO-certified companies
+Together with these 
+countries’ customs, the 
+IDB drafted a vision and 
+business case; the aim 
+was to contribute to the 
+facilitation and securing 
+of trade through the 
+sharing of each other’s 
+AEO certification data in 
+a secure fashion in real 
+time
+Blockchain was identified 
+as the technology to 
+be validated to create 
+efficiency and security in 
+the exchange of data 
+The project was branded 
+“CADENA” (“Chain”)
+The IDB funded the pilot 
+project and created an 
+interdisciplinary team 
+with IDB’s trade and 
+technology experts 
+and beneficiaries – the 
+customs administrations 
+of Costa Rica, Peru and 
+Mexico. Chile joined 
+afterwards The pilot project was 
+crafted collaboratively 
+during the workshop, 
+by first learning about 
+blockchain as the 
+proposed technology, 
+and then developing 
+common understandings 
+of the business 
+challenges to be tackled 
+This resulted in the 
+definition of the 
+functionalities, technical 
+requirements and 
+data management 
+requirements for the 
+solution, and were 
+included in RFP 
+specifications
+An ad hoc governance 
+structure was defined 
+for the pilot project, 
+consisting of a private 
+blockchain ecosystem 
+of the customs 
+administrations with 
+the initial support and 
+participation of the IDB 
+and the technological 
+vendor
+Interaction and constant 
+feedback among the 
+IDB, countries and the 
+technology vendor 
+were established 
+during the design and 
+implementation phase 
+throughout 2018Together with the 
+selected technological 
+vendor, an ad hoc 
+blockchain architecture 
+was adopted for 
+validating the exchange 
+of data 
+Beneficiary customs 
+opted out of integrating 
+CADENA with legacy 
+systems during the pilot, 
+to keep the focus on the 
+exchange of data
+Customs agreed that 
+CADENA would be 
+enhanced with a Power 
+App to enable customs 
+officials and AEO-
+certified companies to 
+access the platform 
+through mobile devicesData privacy and user 
+identities were managed 
+to control access to 
+and functions in the 
+blockchain, thereby 
+preventing the deletion 
+or alteration of data and 
+enabling audit trails
+Portability of user 
+identities and data is 
+explored in futureApproach developed in 
+phases 1 and 2 allowed 
+for a fast and measurable 
+pilot over the pilot 
+project. Among gains:
+Accelerated process 
+of granting benefits 
+to new AEO-certified 
+firms in the countries 
+of destination for their 
+cargo operations 
+Increased transparency 
+and traceability of 
+cross-border data
+Strengthened security 
+of supply chains by 
+facilitating access to 
+data of new AEO-
+certified companies 
+and also to AEO 
+suspensions and 
+cancellations in real 
+time across countries’ 
+customs
+Increased knowledge 
+of the application of 
+new technologies 
+among customs and 
+the broader trade 
+communityThe pilot project resulted 
+in a globally innovative 
+customs management 
+system and in several 
+lessons learned related 
+to the governance, data 
+privacy and additional 
+functionalities of the 
+solution. These will be 
+addressed during the 
+second phase, CADENA 
+v.1
+CADENA v.1 will 
+catalyse synergies with 
+LACChain, a region-wide 
+initiative facilitated by the 
+IDB to develop a regional 
+blockchain ecosystem 
+in Latin America and the 
+Caribbean 
+CADENA v.1 will evolve 
+towards a model of 
+autonomous and 
+sustainable governance 
+and to one for data 
+privacy provisions, by 
+benefiting from the 
+technology architecture 
+provided by LACChain. 
+This will further enable 
+CADENA’s scalability to 
+further customs such as 
+that of ColombiaCreate vision and  
+business caseCreate governance 
+structure, including  
+for data, and 
+implementation planBuild technology 
+architecture  
+and integrate 
+technology with  
+other systemsManage user 
+identities  
+and dataMeasure impact  
+and report on it Iterate21
+Windows of Opportunity: Facilitating Trade with Blockchain TechnologyAcknowledgements
+The World Economic Forum’s Centre for the Fourth 
+Industrial Revolution and the Inter-American Development 
+Bank would like to acknowledge the valuable contributions 
+from the individuals below. 
+The Global Trade Single Window project involved a global, 
+multi-industry and multistakeholder community to co-
+design and pilot proofs of concept and then share lessons 
+learned in implementing policy frameworks. This report is 
+based on numerous discussions, interviews, workshops 
+and webinars – and the combined effort of all involved. 
+Opinions expressed herein may not necessary correspond 
+with those of everyone involved with the project.
+Project Team
+Inter-American Development Bank
+Alejandra Radl , Integration and Trade Specialist
+Sandra Corcuera-Santamaria , Customs and Trade 
+Facilitation Senior Specialist
+Lorena Cano , Open Knowledge Senior Associate 
+World Economic Forum  
+Ziyang Fan , Head of Digital Trade
+Jesse Lin , Project Specialist, Digital Trade 
+Nextrade Group LLC
+Kati Suominen , Chief Executive Officer
+Contributors
+Ady Beitler , Inter-American Development Bank
+Agnes Budzyn , ConsenSys AG
+Avi Dutt , Ministry of Shipping of India
+Barbara Kotschwar , Visa
+Cecilia Fernandez Ruiz , Everis
+Cuitlahuac Baños , Inter-American Development Bank
+Emmanuelle Ganne , World Trade Organization (WTO)
+Erin English , Microsoft
+Gadi Benmoshe , Israel Ports Development  
+& Assets Company
+Henrik Hvid Jensen , TrustWorks
+Jaime Granados , Inter-American Development Bank
+Jan Hoffmann , United Nations Conference on Trade  
+and Development (UNCTAD)
+Jens Munch  Lund-Nielsen, IOTA Foundation
+John Bescec , Microsoft
+Krista Lucenti , Inter-American Development Bank
+Michele Nati , IOTA Foundation
+Luca Castellani, United Nations Commission on 
+International Trade Law (UNCITRAL)
+Nadia Hewett , World Economic ForumNicolas Buhmann , A.P. Moller-Maersk A/S
+Pandey Pashupati , World Customs Organization (WCO)
+Philippe Isler , World Economic Forum 
+Rebecca Liao , SKUchain
+Richard Morton , International Port Community  
+Systems Association (IPCSA)
+Saverio Puddu , Linklaters
+Sean Doherty , World Economic Forum
+Soichi Furuya , Hitachi
+Solomon Anzagra , United Nations Conference on Trade  
+and Development (UNCTAD)
+Stuart Davis , Latham & Watkins
+Theodore Waddelow , Visa
+Tomás Deane , Ministry of Production and Labor  
+of Argentina
+Virginia Cram-Martos , United Nations Economic 
+Commission for Europe (UNECE)
+Young-Mi Kim , Korean Customs Service
+Yves Jobin , Jobin Consult
+Interviewees
+Aurelio Garcia , Center for International Private Enterprise (CIPE)
+Avi Dutt , Ministry of Shipping of India
+Beth Frisher , Port of Oakland
+Carmen Ivonne Gómez Díaz , Ministry of Commerce, 
+Industry, and Tourism of Colombia (MINCIT)
+Cecilia Fernandez Ruiz , Everis
+Cecilia Valenzuela , Inter-American Development Bank
+Eduardo Rodriguez Apolinario , Customs of Dominican 
+Republic 
+Emmanuelle Ganne , World Trade Organization (WTO)
+Frank Heijmann , Customs Administration of the Netherlands
+John Bescec , Microsoft
+Marco Antonio Siqueira , Federal Revenue Service of Brazil
+Rodrigo Contreras Huerta , Inter-American  
+Development Bank
+Tomás Deane , Ministry of Production and Labor of Argentina
+Vincent Annunziato , United States Customs and Border 
+Protection
+Contacts
+For questions about the World Economic Forum’s work  
+in Digital Trade, please contact:
+Ziyang Fan , Head of Digital Trade,  
+Ziyang.Fan@weforum.org
+Jesse Lin , Project Specialist, Digital Trade,  
+Jesse.Lin@weforum.org 22
+Windows of Opportunity: Facilitating Trade with Blockchain Technology1. http://www.unece.org/uncefact/tfrecs.html and the technical note at http://www.unece.org/fileadmin/DAM/cefact/cf_plenary/2017_Plenary/ECE_
+TRADE_C_CEFACT_2017_10E_TechnicalNoteSW.pdf (links as of 18 June 2019).
+2. https://untfsurvey.org/world (link as of 18 June 2019).
+3. For example, http://www3.weforum.org/docs/WEF_36073_Paperless_Trading_How_Does_It_Impact_the_Trade_System.pdf (link as of 18 June 2019).
+4. http://www.doingbusiness.org/~/media/WBG/DoingBusiness/Documents/Annual-Reports/English/DB17-Chapters/DB17-CS-Trading-across-borders.
+pdf (link as of 18 June 2019).
+5. https://untfsurvey.org/world (link as of 18 June 2019).
+6. https://www.slideshare.net/Africanalliance/implementation-of-the-kenya-national-single-window-systemkentradeswc2016 (link as of 18 June 2019).
+7. https://www.slideshare.net/Africanalliance/the-single-form-for-foreign-trade-operators-guce-gie-cameroon (link as of 18 June 2019).
+8. World Bank’s “Doing Business”, various years.
+9. https://blogs.iadb.org/integration-trade/en/how-does-trade-respond-when-borders-are-simplified-via-one-stop-systems/ (link as of 18 June 2019).
+10. World Bank “Doing Business” database, http://www.doingbusiness.org/en/data (link as of 18/6/19).
+11. http://www3.weforum.org/docs/WEF_36073_Paperless_Trading_How_Does_It_Impact_the_Trade_System.pdf (link as of 18 June 2019).
+12. Acceptance of paper or electronic copies of supporting documents required for import, export or transit formalities.
+13. https://btca-prod.s3.amazonaws.com/documents/237/english_attachments/Tanzania-Case-Study.pdf?1515010379 (link as of 18 June 2019).
+14. https://untfsurvey.org/world (link as of 18 June 2019).
+15. To be sure, governments have sought to exchange information in certain regions: They have exchanged information in the ASEAN, as well as some 
+data from customs declarations; Australia and New Zealand share electronic information on SPS certificates; and the ministries of transport of Japan, 
+China and Korea have a common cargo status to track and query requirements. Some good strides have been made. For example, Nordic and Baltic 
+countries have shared data to gain a fuller picture of such patterns as Chinese supplier networks of wood products, to better enforce the EU’s timber 
+regulations.
+16. https://www.unescap.org/sites/default/files/CROSS-BORDER%20SINGLE%20WINDOW%20INTEROPERABILITY.pdf (link as of 18 June 2019).
+17. This is not a new theme: One-third of countries in the UN paperless trade survey have a national legislative framework and institutional arrangements to 
+ensure border agencies cooperate with one another.
+18. National single windows do not necessarily have the same level of integration. See UNECE recommendation and guidelines on establishing a single 
+window: https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec33/rec33_trd352e.pdf (link as of 18 June 2019).
+19. Interviews with customs and single window operators in the Americas; and https://www.slideshare.net/Africanalliance/challenges-for-an-implementation-
+of-an-electronic-single-window-guichet-unique-de-la-cte-divoire, https://www.researchgate.net/publication/276605029_Study_on_the_Challenges_
+of_Implementing_Single_Window_Concept_to_Facilitate_Trade_in_Sri_Lanka_A_Freight_Forwarder_Perspective, http://www.joebm.com/papers/302-
+BM00027.pdf and https://commons.wmu.se/cgi/viewcontent.cgi?article=1648&context=all_dissertations (links as of 18 June 2019).
+20. https://untfsurvey.org/world (link as of 18 June 2019).
+21. These challenges are quite common in developing nations. See, for example, https://commons.wmu.se/cgi/viewcontent.cgi?article=1648&context=all_
+dissertations and http://www.joebm.com/papers/302-BM00027.pdf (links as of 18 June 2019).
+22. https://untfsurvey.org/world (link as of 18 June 2019).
+23. http://www.joebm.com/papers/302-BM00027.pdf (link as of 18 June 2019).
+24. https://www.slideshare.net/Africanalliance/challenges-for-an-implementation-of-an-electronic-single-window-guichet-unique-de-la-cte-divoire (link as of 
+18 June 2019).
+25. For excellent analyses of the use of blockchain in single windows, see https://www.unece.org/fileadmin/DAM/cefact/cf_plenary/2019_plenary/
+CEFACT_2019_INF03.pdf and https://www.wto.org/english/res_e/booksp_e/blockchainrev18_e.pdf. For broader analysis of blockchain and 
+technologies as enablers of trade, see https://www.amazon.com/Revolutionizing-World-Trade-Technologies-Opportunities/dp/1503610713/ref=sr_1_1?
+qid=1559683158&refinements=p_27%3AKati+Suominen&s=books&sr=1-1 (links as of 18 June 2019).
+26. For a good review, see https://www.weforum.org/whitepapers/inclusive-deployment-of-blockchain-for-supply-chains-part-1-introduction (link as of 18 
+June 2019).
+27. Granted, blockchain’s security is still debated: Some argue that blockchain is a more secure database than others; others claim that it is increasingly 
+susceptible to hacking; and still others think that risks could arise if the blockchain network were to be outsourced by the government to a private third 
+party or if on-chain data is exported to an off-chain database that then is no longer immutable. Companies developing blockchain technologies are 
+strongly urged to improve the security around blockchain, so the security is evolving and improving; much ultimately rests with the security architecture 
+surrounding blockchain implementation.
+28. For example, in line with the World Customs Organization (WCO) Data Model.
+29. See also https://www.bakermckenzie.com/en/-/media/files/expertise/fig/br_fig_blockchainsandlaws_jul17.pdf (link as of 18 June 2019).Endnotes23
+Windows of Opportunity: Facilitating Trade with Blockchain Technology30. https://www.imda.gov.sg/-/media/imda/files/industry-development/call-for-proposals/trade-trust-rfi_002_final_march21.pdf?la=en (link as of 18 June 
+2019).
+31. https://www.csis.org/blogs/future-digital-trade-policy-and-role-us-and-uk/blockchain-accelerate-transatlantic-trade (link as of 18 June 2019).
+32. https://cryptoslate.com/uk-customs-service-halts-blockchain-border-project-with-brexit-looming/ (link as of 18 June 2019).
+33. https://mag.wcoomd.org/magazine/wco-news-87/cadena-a-blockchain-enabled-solution-for-the-implementation-of-mutual-recognition-arrangements-
+agreements/ (link as of 18 June 2019).
+34. https://docs.wixstatic.com/ugd/25efdb_ddca049eff6b45bcaab793f8b20223c1.pdf (link as of 18 June 2019).
+35. For example, https://csis-prod.s3.amazonaws.com/s3fs-public/publication/181101_Suominen_Blockchain_v3.pdf (link as of 18 June 2019).
+36. Such portability of data across domains would be akin to the open banking practices whereby small companies can access and carry their various 
+transactional data, such as from online platforms and financial services, to help lenders underwrite their loans, thus opening access to finance for the 
+long tail of “thin-file” users. Trade single windows could also become the first-movers and incubators of new national blockchain-based corporate 
+identities, simplifying companies’ interactions with national, state and local governments.
+37. GTID could as such be recognized across the whole government-business network and eliminate the need for intermediaries’ services providers to 
+certify and recertify a business or individual. It would also make it more feasible to designate full data ownership to the trader, which could then share all 
+or some relevant information on a transaction to selected stakeholders, such as share the invoice with the buyer and the bank, packing list with freight 
+forwarder, compliance documents with government agencies and so on. See https://www.weforum.org/agenda/2019/05/global-trade-identity-can-be-
+the-cornerstone-of-paperless-trade/ (link as of 18 June 2019).
+38. https://www.ccn.com/korea-customs-authority-to-test-blockchain-clearance-system-for-imports-exports/ (link as of 18 June 2019).
+39. https://www.wto.org/english/res_e/reser_e/session_2c_4_zahouani_saadaoui_dg_taxud_blockchain_v1.0.pdf (link as of 18 June 2019).
+40. This may paradoxically mean that successful implementation of blockchain may be most feasible where its value add is quite low – single windows 
+that are already digitized and where players are already interoperating well, as it is in those single windows where players have summoned the political 
+wherewithal to overcome the problems that need to be solved for blockchain to be adopted and useful.
+41. http://www.wcoomd.org/en/topics/facilitation/instrument-and-tools/tools/data-model.aspx (link as of 18 June 2019).
+42. For encryption-related concerns, see existing discussions in the context of bitcoin, such as https://bitcoin.stackexchange.com/questions/88/is-bitcoin-
+future-proof (link as of 18 June 2019).
+43. For example, https://csis-prod.s3.amazonaws.com/s3fs-public/publication/181101_Suominen_Blockchain_v3.pdf (link as of 18 June 2019).
+44. The Time Release Study is an internationally recognized tool to measure the actual time required for the release and/or clearance of goods, from the 
+time of arrival until the physical release of cargo, with a view to finding bottlenecks in the trade-flow process and taking the corresponding necessary 
+measures to improve the effectiveness and efficiency of border procedures: http://www.wcoomd.org/en/topics/facilitation/instrument-and-tools/tools/
+time-release-study.aspxWorld Economic Forum
+91–93 route de la Capite
+CH-1223 Cologny/Geneva
+Switzerland  
+Tel.:  +41 (0) 22 869 1212
+Fax: +41 (0) 22 786 2744
+contact@weforum.org
+www.weforum.orgThe World Economic Forum, 
+committed to improving  
+the state of the world, is the 
+International Organization for 
+Public-Private Cooperation.
+ 
+The Forum engages the 
+foremost political, business  
+and other leaders of society  
+to shape global, regional 
+and industry agendas.

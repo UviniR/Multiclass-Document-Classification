@@ -1,0 +1,373 @@
+https://doi.org/10.1177/2043886920985863Journal of Information Technology 
+Teaching Cases
+ 1 –15
+© Association for Information 
+Technology Trust 2021
+Article reuse guidelines: 
+sagepub.com/journals-permissions
+DOI: 10.1177/2043886920985863Journals.sagepub.com/jittc
+JITTC
+“Aarogya Setu”—Mobile application was launched on 2 
+April 2020 as a common bridge to prevent the spread of the coronavirus pandemic in India. The main objective of the app is contact tracing of the citizens of India who were tested positive for coronavirus disease 2019 (COVID-19), who had come in close contact with the COVID-19-positive person for a longer duration, and alert others whether they are at risk or not. The app observed a record-breaking download in a very short span of its launch for the contact-tracing app category in the world (O’Neill, 2020). However, at the same time, the civil liberty groups have raised con-cerns for the app on the grounds of privacy and security (John, 2020). To counter the concerns raised, the Government of India issued the Aarogya Setu Data Access and Knowledge Sharing Protocol to clarify the legal basis of the collection, protection, and sharing of personal data (Sawhney, 2020). The controversy continued when the Government announced that it would be mandatory to install Aarogya Setu for the passengers who are traveling by train or flight, and for the employees working in the cen-tral government organizations (Times Now, 2020). Massachusetts Institute of Technology (MIT) downgraded its ranking from 2 to 1 out of five based on privacy and data principles (Bhalla, 2020).
+The Government of India mentioned that the Aarogya 
+Setu app had been built on the pillars of transparency, secu-rity, and privacy and followed India’s policy on Open Source Software (Ministry of Electronics and Information Technology, 2020). With that, the government announced that the source code of Aarogya Setu is now open source and invited experts for the inspection (Verma, 2020). Not only that, but as per the National Informatics Center under the Ministry of Electronics and Information Technology, the Government of India also announced the bug bounty program for Android App to collaborate with the security researchers and Indian developer community to identify “Aarogya Setu”: The mobile 
+application that monitors and mitigates the risks of COVID-19 pandemic spread in India
+Viral Nagori
+Abstract
+The case study demonstrates the journey of the ‘Aarogya Setu’ app  - A contact tracing the mechanism developed in the form of a mobile application to monitor and mitigate the risk of COVID-19 pandemic spread in India.  The case describes how Aarogya Setu mobile app works, how it identifies the hotspot areas, its features and privacy policies, and the reasons why the app had been in the news due to positive and negative perceptions of the citizens related to the app.  However, the case can be used as a pedagogical tool for the various subjects in the discipline of Information Systems and Digital Tech-nologies.  The case helps to understand how to design and develop mobile application features and functions that protect individual privacy.  In the end, the case throws challenging questions to the users on different aspects of gamification and m-governance.
+Keywords
+Teaching cases, E-government, digital platforms and ecosystems, digitalization, Health IS, ICTs and society, innovation, IS development, IS management and governance, mobile
+MICA, India
+Corresponding author:
+Viral Nagori, MICA, Ahmedabad, Gujarat 380058, India. Email: viral.nagori@micamail.in985863 TTC Journal of Information Technology Teaching Cases X(X)Nagori
+Teaching Case
+2 Journal of Information Technology Teaching Cases 00(0)
+bugs and provide reports on that (National Informatics 
+Center, 2020). The winners of the bug bounty program will be rewarded as per the categories identified.
+In just three months of its launch, the journey of the 
+Aarogya Setu app has been a roller coaster ride. What should be the next step for ‘Aarogya Setu’? How should the government encourage people to use the app in the fight against COVID-19 without making it mandatory? After almost two months of lockdown, the Government of India started the unlock in a phased manner from June 2020. The phase Unlock 5.0 was announced by the Government of India on 15 October 2020 with more relaxations in the restrictions. What new features and functions should be added to the mobile app so that it truly becomes a digital instrument in the fight against the COVID-19 pandemic? Should the government revisit its privacy policy to bring more transparency and trust in the usage of the Aarogya Setu mobile app? Not only that, should the government position the “Aarogya Setu” App as an M-Governance ini-tiative to monitor and mitigate risks of COVID-19?
+The birth of the app
+“Aarogya Setu” is a contact tracing, syndromic mapping, and self-assessment digital service available in the form of the mobile application (Wikipedia, 2020). Mr Rahul Goyal, a member of the Aarogya Setu team who facilitated corpo-rate mentoring to the “Aarogya Setu” project, explained the need for technology intervention for contact tracing to reduce the spread of COVID-19; through his blog on the web platform “Medium.com” (Goyal, 2020). He mentioned that in the initial stage of COVID-19 spread, the State Government of Karnataka used manual contact tracing and published patient flow charts on the social media platform to inform people whether they had come in close contact with the infected person or not. If a person was present at the same time and the same location of the coronavirus-infected person, a person is advised to home quarantine by the state government and report further if found with any symptoms of COVID-19. The process was a time-consuming affair when the number of cases is increasing rapidly, and the approach of drawing a manual flow chart was not scalable. The accuracy of such a chart also depends on the accuracy of an individual’s memory whether a person can recollect precisely the time and places he or she visited during those days. That is the moment when the thought of technology intervention, which is accurate and scalable, had emerged, and later on, “Aarogya Setu”—mobile application for the mobile platforms Android, iOS, and KaiOS—was devel-oped and released on 2 April 2020.
+National Informatics Center under the Ministry of 
+Electronics and Information Technology had developed the Aarogya Setu mobile application under the leadership and collaboration of various experts from the government, aca-demics, and industry (NIC D, 2020). The mobile application is available in 12 different languages, and the services offered by the mobile app can be accessed through feature phones and landlines as per the guidelines given for the usage.
+Objectives
+The main objective of the Aarogya Setu app is to inform the citizens of India whether they are at risk of COVID-19 infection or not. Nevertheless, at the same time, the mobile app also provides the authenticated health advisories as per the Ministry of Health and Family Welfare (MoHFW) and Indian Council of Medical Research (ICMR) related to the COVID-19 pandemic (Anon, 2020b).
+Another objective of the app is to provide medical help 
+and advisory to asymptomatic people who have not shown any symptoms but might have been at the risk of being infected by COVID-19 (Anon, 2020b).
+Benefits of using app
+On any typical day, a person may meet and interact with many people for his day-to-day routine. The app uses con-tact tracing to record the details of people with whom a person might have interacted during his or her activities. Out of the people with whom a person has interacted, if anyone of them tests positive with COVID-19 in the near future, then an individual will get an alert, and proactively, medical advice might be arranged for him or her.
+The app not only protects the individual but also protects 
+the community by helping the local authorities to identify the hotspots where the disease might have a likelihood to spread. The identification of hotspots helps the local gov-ernment to identify the containment zones and arrange nec-essary interventions and facilities.
+The government claims that those who were recom-
+mended to be at high risks of COVID-19 infection by the app, 24% of them have been found positive (Ministry of Electronics and Information Technology, 2020). The early prediction helped the government to monitor the focus groups who need immediate testing to avoid the spread of the pandemic. It helped the government to identify more than 3500 hotspots across the country before India geared up for phase Unlock 1.0 (Ministry of Electronics and Information Technology, 2020). In addition to that, when India is gearing up for Unlock 3.0, the Aarogya Setu has helped identify more than 30,000 virus hotspots and helped government health officials to take necessary measures to mitigate the risk of COVID-19 spread (Hindustan Times, 2020).Nagori 3
+How does Aarogya Setu identify 
+corona hotspot
+It was interesting to observe the case where local civic bodies 
+of Ahmedabad city in the Gujarat state had used the data pro-vided by the Aarogya Setu app to identify the possible hot-spots and took corrective measures to prevent and mitigate the spread of coronavirus. They harnessed the live data pro-vided by the Aarogya Setu app to classify regions based on the extent of virus spread and color-coded them as pink, orange, and blue to indicate the possibilities of converting it into hotspots. The pink color was used for the areas suspected to be hotspots; orange color was used for the areas where cases are low in number, but having a higher probability of becoming a hotspot. The blue color was used for the areas with very low to almost zero probability of becoming a hot-spot. The color-coding of a particular area changed according to the spread of COVID-19 and increase or decrease of new cases over a period of 7–14 days (Patel, 2020).
+Based on the color-coding, the Ahmedabad Municipal 
+Corporation (AMC) identified the need and the extent of corona testing required. In the areas with a high probability of converting into the hotspot, AMC started door to door monitoring and collected a random sample of residents for testing. The strategy worked well and helped AMC to mon-itor and mitigate the spread of COVID-19. Later on, other civic bodies also adopted the same strategy based on the data received from the Aarogya Setu App.
+How does the Aarogya Setu mobile 
+app work?
+The app uses Bluetooth signals for contact tracing, and a 
+user is recommended to switch Bluetooth on and set their location sharing to “Always” for an app to work (Anon, 2020b).
+The app works on the fundamental principle of contact 
+tracing. It detects other devices in the Bluetooth’s proxim-ity of the user’s phone with the Aarogya Setu mobile app. When this happens, the digital signature of the interaction consisting of time, proximity, location, and duration of the interaction is stored on the users’ mobile. When another user with the Aarogya Setu app installed comes in contact with the first user and tests COVID-19 positive, the app updates the risk status of the first user based on the duration and proximity of the interactions and recommend the suit-able course of actions. The updated status might be used by the Government of India to arrange the necessary medical- and policy-based interventions if required.
+The risk status is updated with each such interaction of 
+an individual with other users based on the probability of infection, and this probability is continuously refined based on the subsequent interactions (Anon, 2020b). The app classifies the risk descriptions in the four categories based on the severity of risk and infection. They are color-coded, as shown in Table 1. The sample screenshots indicating color coding and different risk probability of infection are shown in Exhibit 1.
+When a person is tested COVID-19 positive, the testing 
+lab shares the information with ICMR, and ICMR shares the list of those persons with the Aarogya Setu Server. If a person tested positive has the Aarogya Setu app installed, then the server automatically updates the status to red and run contact tracing for the person to identify with whom the person has come in close contact with and who else may also be at the risk of infection.
+The risk status is based on the results of contact tracing 
+and an individual’s response to the self-assessment test.
+Self-assessment test
+When a user signs up for the first time, the user is requested to take the self-assessment test on the app, and based on the user’s answers, the risk status is displayed.
+Features
+The following are the key features of the Aarogya Setu mobile application services (Anon, 2020b):
+ •Contact tracing using Bluetooth;
+ •Self-assessment test;
+ •Whether a user is safe or at different risk categories of COVID-19 infection;
+ •Advisory and best practices to follow to avoid COVID-19 infection;
+ •State- and India-wise statistics of people infected, recovered, and died due to COVID-19;
+ •Helpline numbers in case of emergency;
+ •List of nearby private and government laboratory for COVID-19 test approved by ICMR;
+ •e-Pass integration for transit to different Indian regions during a lockdown.
+T able 1. Color coding of risk classifications.
+Color code Risk descriptions
+Green Safe or at lower risks
+Yellow Moderate risks of infection
+Orange High risks of infection
+Red Tested COVID-19 positive
+COVID-19: coronavirus disease 2019.4 Journal of Information Technology Teaching Cases 00(0)
+Exhibit 1. Mobile application screenshots showing different risk status for individual.
+Figure 1. User risk status indicating safe.Nagori 5
+Figure 2. User’s risk status marked at moderate risk of infection.6 Journal of Information Technology Teaching Cases 00(0)
+Figure 3. User’s risk status indicating a high risk of infection.Nagori 7
+Figure 4. User’s risk status indicating high-risk infection in one of the regional language Gujarati.8 Journal of Information Technology Teaching Cases 00(0)
+Figure 5. The new feature added in the app indicating the number of people with whom a user has come in contact and their 
+status of risk infection.Nagori 9
+Privacy
+Aarogya Setu had been built on the principle of “privacy-
+first by design” and incorporate the following standard practices to protect individual’s privacy:
+1. Data anonymization;
+2. Data minimization;
+3. Purpose and use limitation;
+4. Data retention.
+The Aarogya Setu app collects the following informa-
+tion from the users at the different stages of users’ interac-tion with the app.
+When a user registers on Aarogya Setu App
+When the user registers on the Aarogya Setu App, it col-lects the following information from the user and stores it on the Aarogya Setu server in the encrypted form:
+1. Mobile number;
+2. Name;3. Gender;4. Age;5. Profession;6. Countries visited in the last 30 days;
+7. Willingness to volunteer.
+When a user registers, the Aarogya Setu server assigns the 
+anonymous randomize unique device identity number (DiD) and associates it with the user’s mobile number (Anon, 2020b).
+When a user takes the self-assessment test
+When the user takes the self-assessment tests, the app col-lects the following information along with location and stores it on the Aarogya Setu server in the encrypted form. If not applicable, then the user can choose none of the above options for all the answers.
+1.  Is the user experiencing any of the following symptoms:
+(a) Cough(b) Fever(c) Difficulty in breathing(d) Loss of senses of smell and taste
+2. Does the user have the history of the following?
+(a) Diabetes(b) Hypertension(c) Lung disease(d) Heart disease(e) Kidney disorder
+3.  Had the user traveled internationally in the last 28–45  
+days?
+4. Which of the following applies to the user?(a) Interacted or lived with someone who tested posi-tive for COVID-19(b) Healthcare worker and examined a COVID-19-positive case without protective gear
+When a user comes in contact with another 
+user who uses Aarogya Setu App
+During the contact tracing, the app collects the following 
+information along with the anonymized DiD of the other user and stored on the user’s device in the encrypted form:
+1. Interaction time;
+2. Interaction duration;
+3. Distance between two users;
+4. Location of the interaction.
+All the interactions between the two devices and between 
+the Aarogya Setu server and the user’s device are done using DiD, and no personal information is used for record-ing the transaction history (Anon, 2020b). When an indi-vidual tests positive for COVID-19, then only DiD is used to map the personal information for necessary medical help.
+Retention period of the information. All the contact tracing and 
+location information are stored for 30 days on the user’s 
+mobile devices and, after that, deleted permanently. The 
+same information, if uploaded on the Aarogya Setu server, is deleted after 45 days if the user is not tested positive for 
+COVID-19. If a user is tested positive for COVID-19, then the above information is deleted permanently after 60 days 
+when the user is declared completely cured of COVID-19.
+Furthermore, the data are only used by the government 
+to generate insights to mitigate the COVID-19 spread as per the privacy policy. Even if a person is tested COVID-19 positive, the government does not reveal the personal iden-tity of that individual with other users of the app.
+It is important to note that if the user cancels the registra-
+tion, all the information provided by the user will be deleted after the expiry of 30 days from the date of cancelation 
+(Mani, 2020).
+Security
+All the information stored on users’ mobile devices and on the Aarogya Setu server is protected through encryption technique called Advance Encryption Standard (AES). Before the release of the updated version of the app, the security audit is carried out by external experts from academic institutions, private companies, and ethical hackers’ community.
+Sharing of the response data
+The response data, along with the personal details, might be shared with the necessary government ministry and 10 Journal of Information Technology Teaching Cases 00(0)
+departments only for the purpose of health and administrative 
+interventions to be implemented. The response data shared will always be in de-identified form, which prevents an individual’s identification. NIC will also maintain a registry when sharing the data along with the information of the dataset shared, and the purpose for which data are shared (Sawhney, 2020).
+The response data will be shared for the research purpose 
+after hard anonymization, and as per the anonymization pro-tocols. The anonymization protocols are developed, reviewed, and updated periodically by an expert committee appointed by the Principal Scientific Adviser to the Government of India. The research institutions requesting such data shall be responsible for not to reverse anonymizing such data to re-identify any individuals. If they do so, they are liable for penalties applicable under law. The research institutions shall further share this data with other research institutions only for the same purpose for which it was granted approval originally (Sawhney, 2020). The expert committee has the right to terminate any rights given to any research institutions for non-compliance of protocols.
+Making the source code open source
+On 26 May 2020, the app had 114 million users, which is more than any contact tracing app ever had in the world (Ministry of Electronics and Information Technology, 2020). To make it more transparent in terms of privacy, security, and trust, the government has decided to open source Aarogya Setu Android application code for review and possible collaboration through the bug bounty pro-gram. The government also announced that in subsequent weeks, they would also make an iOS version of the app also open source and followed by server code as well.
+The Android app source code is available on https://
+github.com/nic-delhi/AarogyaSetu_Android.
+After releasing the source code on Github, there were 
+139 pull requests and 276 issues reported on the platform as on 6 July 2020, at 12:00 p.m. Indian Standard Time (IST).
+The Government of India, has demonstrated its strong 
+commitment to contribute to the global cause by making its technology solution available to the entire world to adopt by opening the product design and code (Ministry of Electronics and Information Technology, 2020).
+Bug bounty program
+The reason to announce a bug bounty program is to col-laborate with the top technical brains of young India to col-lectively build a more effective and secure technology solution to fight the pandemic.
+Statistics and reports
+The Aarogya Setu app shows the following statistics on users’ home screens based on the live location of the user at a distance of 500 m and 1, 2, 5, and 10 km:1.  The total number of Indians who are using the Aarogya Setu app;
+2.  The total number of Aarogya Setu users within the distance range selected;
+3.  The total number of users who have taken the self-assessment test within the distance range selected;
+4.  The total number of users who have indicated any symptoms of COVID-19 within the distance range selected;
+5.  The total number of users who have been tested COVID-19 positive within the distance range selected;
+6.  The total number of users who have come in direct con-tact with COVID-19 patients for a longer duration.
+Aarogya Setu—introduction of new 
+features and functions
+On 5 July, Aarogya Setu added a new feature in the app. 
+The new feature was initially available in the Android ver -
+sion of the app and later on made available in the iOS version of the app. The feature enables users to assess their risk status based on their Bluetooth contacts with whom they have been in close contact (HT Tech, 2020).
+India was moving to unlock Phase 4, and on 22 August 
+2020, Aarogya Setu had introduced a new feature that will help organizations to get the COVID-19 risk status of the employees and other stakeholders. The new feature is called “Open API Service” that is available to organi-zations and business houses registered in India with more than 50 employees (Business Standard, 2020).
+The organization can use “Open API Service” to request 
+Aarogya Setu servers to get the risk status of the employees or any other stakeholder associated with their business in real-time with conditions apply. One of the conditions is that the Aarogya Setu user should have provided consent for sharing the health status with the organization. The API will only provide the Aarogya Setu status and the name of the user with his or her consent. No other personal data will be provided through the API, hence without violating data privacy (The Tribune, 2020).
+Organizations can register for Open API Service using 
+the link https://openapi.aarogyasetu.gov.in. To register, the organization needs to provide the requested details on the organization’s letterhead, signed by the Head of the organization.
+Aarogya Setu in the news
+The world has never seen such a phenomenal growth for any app similar to Aarogya Setu. The prime minister of India, Mr Modi, endorsed the download of app to fight against COVID-19 (O’Neill, 2020).
+The Aarogya Setu mobile application is differentiated in 
+the following ways from other apps developed by other countries for contact tracing (Patrick Howell et al., 2020):Nagori 11
+1.  It shows a color-coded badge showing the risk of 
+infection (Exhibit 1);
+2.  It offers access to telemedicine, e-pharmacy, and other diagnostic services;
+3.  The data used by the app during interactions with other devices and servers are not counted toward the use of mobile data limits.
+In MIT ranking, the Aarogya Setu app lost more points 
+on the parameters of data minimization, which means it is collecting more data than needed for the app to work.
+The report ranked contact-tracing apps on the following 
+five parameters:
+1. V oluntary or mandatory usage;
+2.  Usage for public health purpose only or law enforcement;
+3.  Provisioning for deleting data within a reasonable amount of time;
+4. Data collection;
+5. Transparency.
+MIT Technology Review COVID Tracking Tracker 
+database had reviewed 25 automatic contacts tracing app 
+across the globe on the parameters of voluntary, limited, data destruction, minimized, and transparent (Patrick Howell et al., 2020). Many contact tracing apps based in European countries and “TraceTogether” from Singapore have five-star ratings in the above review.
+The experts argue that Singapore had developed its 
+contact-tracing app called “TraceTogether” on the pri-vacy-preserving protocol and is doing contact tracing in a peer-to-peer and decentralized manner (Anon, 2020c). The Government of India released the document and explained the reasons to collect location information using GPS. The government mentioned that GPS helps to trace the paths an infected person has traversed. This helps local authorities to sanitize the areas and helps in identifying persons in those areas who might have been infected, which might not have been identified by con-tact tracing only (Anon, 2020b). Even though the loca-tion sharing is set to “Always,” the app records the location of the user every 30 min. However, the govern-
+ment mentioned that in the future, if the spread of pan-demic expands, then it might be required to collect location details every 15 min.
+There is a thin line of margin between privacy-preserv-
+ing and privacy-invading (O’Neill, 2020). Anivar Aravind, executive director at the civic-technology organization Indic project, said that a set of private sector corporate vol-unteers without any accountability toward protecting indi-vidual privacy developed an app, and India has no national data privacy law (O’Neill, 2020).
+Estelle Masse, a policy analyst from the digital rights 
+group “Access Now,” said that it is difficult to justify the infringement of human rights in this case. He added that who would bear the risk if this tool were used for surveil-lance and monitoring after the pandemic (O’Neill, 2020).
+Kushal Das, a Public interest technologist at Freedom of 
+Press Foundation, said that it is important to understand what processing is done from the data rather than knowing what is getting collected (John, 2020).
+The representative from Free Software Community of 
+India mentioned that complete transparency would disclose the processes followed in public–private partnership, dis-closure of work agreements given to private companies, how to separate the personal data of the citizens from the hands of private players, and how to involve more stake-holders to make the platform more effective (Pandharipande, 2020).
+The former supreme court justice BN Srikrishna termed 
+the government move to make it mandatory is not backed by any law (Vishwanath, 2020). During the hearing of one of the petitions in the Karnataka High Court, the Government of India told the court that it is not mandatory to use the app for those who are traveling by air or rail (Pandharipande, 2020).
+On 30 June, the app was unavailable for some time due 
+to technical glitches, but it was restored in just a few hours (Anon, 2020a).
+It is interesting to note that Mr Jain from Xiaomi Mobile 
+mentioned that the company would pre-install the Aarogya Setu app in future Xiaomi phones if they received instruc-tions from the government (Saha, 2020).
+At the same time, there are various other applications 
+developed by the Union and State Governments to fight against coronavirus (Priyadarshini, 2020). They are COV A Punjab from the Government of Punjab, Corona Kavach by the Union Ministry of Electronics and Information Technology in association with Ministry of Health and Family Welfare, Mahakavach by Maharashtra Government, Test Yourself Goa by Goa Government, COVID-19 Quarantine Monitor Tamil Nadu, Quarantine Watch by Tamil Nadu Government, Corona Watch by Karnataka Government, and Gok—Direct Kerala. However, none of them comes closer to the features and func-tion of Aarogya Setu.
+The important milestone of journey of the Aarogya Setu 
+app is depicted in Exhibit 2.
+Challenges
+As per the World Bank report, the total population of India was 1.37 billion in 2019 (Anon, 2019b). While the total num-ber of smartphone users in India is approximately 346 million in September 2019, as per the report published on 20 January (O’Dea, 2020). It means that approximately 25% population of India is using the smartphone. As of 6 July 2020, a total of 13.87 crore Indians are using the Aarogya Setu app. The sta-tistics reveal that approximately only 10.12% of the total population are using the Aarogya Setu app. The same ratio goes to 21.6 % for Australia, 17.3% for Turkey, and 14.4% for 12 Journal of Information Technology Teaching Cases 00(0)
+Germany (Sharma, 2020). Out of the total number of people 
+having a smartphone, approximately 40% are using the Aarogya Setu app in India.
+Considering India’s total population, the number of peo-
+ple who are using the Aarogya Setu App is significantly less. As per the order from the court of law and privacy policy protocols, the Government of India cannot make it mandatory for the people to use it. The app can be more effective when a higher number of people download the app and use it regularly. The mass acceptance for contact 
+Exhibit 2. Important milestone of Aarogya Setu app on timeline.Nagori 13
+Exhibit 3. The COVID-19 statistics in India of 15 days from 21 June to 5 July.
+Sr. No. Date Total number  
+of casesIncrease in number of 
+cases% increase in 
+the number  
+of casesTotal number of 
+cases recoveredTotal number of cases recovered 
+per dayTotal  
+deathsNo of deaths 
+per day
+1 21-06-2020 410,461 15,413 3.90 227,756 13,925 13,254 306
+2 22-06-2020 425,282 14,821 3.60 237,196 9440 13,699 445
+3 23-06-2020 440,215 14,933 3.50 248,190 10,994 14,011 312
+4 24-06-2020 456,183 15,968 3.60 258,685 10,495 14,476 465
+5 25-06-2020 473,105 16,922 3.70 271,697 13,012 14,894 418
+6 26-06-2020 490,401 17,296 3.70 285,637 13,940 15,301 407
+7 27-06-2020 508,953 18,552 3.80 295,881 10,244 15,685 384
+8 28-06-2020 528,859 19,906 3.90 309,713 13,832 16,095 410
+9 29-06-2020 548,318 19,459 3.70 321,723 12,010 16,475 380
+10 30-06-2020 566,840 18,522 3.40 334,822 13,099 16,893 418
+11 01-07-2020 585,493 18,653 3.30 347,979 13,157 17,400 507
+12 02-07-2020 604,641 19,148 3.30 359,860 11,881 17,834 434
+13 03-07-2020 625,544 20,903 3.50 379,892 20,032 18,213 379
+14 04-07-2020 648,315 22,771 3.60 394,227 14,335 18,655 442
+15 05-07-2020 673,165 24,850 3.80 409,083 14,856 19,268 613
+COVID-19: coronavirus disease 2019.
+tracing apps differs from the app specification acceptance. 
+The policymakers should focus on communicating societal benefits as well as self-benefits to the group of citizens who are critics and undecided, respectively (Trang, 2020).
+The contact-tracing app may go “viral” if the citizens 
+trust the app to install it and have incentives to make them enthusiastic enough to recommend it to the other citizens in their networks (Cho et al., 2020). Henceforth, the first chal-lenge for the Government of India is to encourage citizens of India to use the Aarogya Setu App without making it mandatory. Should the government use gamification and introduce in-app reward systems for the citizens to use the Aarogya Setu app? If yes, then what could be the possible problems in implementing it?
+India ranked 31st in the population density ranking with 
+394.5 people per square kilometer as of 1 January 2019 (Anon, 2019a). However, if we consider few of the metro cities and capital cities of the state, the population density figure can go up to six to seven times of national average (Anon, 2011). On the contrary, when we observe the statis-tics of the number of cases in India in the last 15 days pro-
+vided by the Aarogya Setu app, it reveals that the cases in India are increasing at an average of 3.6% daily (Exhibit 3). If citizens of India use the Aarogya Setu app with due dili-gence, then the app can become a digital instrument in its true sense to monitor and mitigate the risks of the COVID-19 pandemic.
+India has already geared for phase Unlock 4.0 from 21 
+September 2020, and it is expected that more restrictions will be withdrawn, and more activities will be permitted going further in the next phases of unlock. What new fea-tures and functions should be added in the app so that it becomes more effective in monitoring and mitigating the risks of the COVID-19 pandemic?
+Currently, Aarogya Setu provides different statistics on 
+the dashboard, as described in the earlier section of the case. However, it does not help users in any decision mak-ing on whether they are following safe practices for their day-to-day activities or not. On a daily basis, users may interact with the milkman, grocery shop employees, fruit and vegetable vendors, mechanics, and utility service pro-viders. The app is reactive and informs a user when he or she has come in close contact with a COVID-19 patient, but why not an app be proactive and inform the user of the potential risk of getting infected by COVID-19 while inter -
+acting with different stakeholders. The immediate alert by the app on the probable high risk of getting infected will, in its real sense, help to mitigate and reduce the spread of COVID-19 further. How should the government incorpo-rate this feature and still avoid the breach of privacy?
+Aarogya Setu app scored a rating of two out of five on the 
+MIT review of contact-tracing mobile apps. How should the Aarogya Setu app improve from its current score of two? The voluntary download of an app depends on the trust the citi-zens have on the government that the government will protect their data. Ireland’s contact-tracing app, called COVID Tracker, had received 1.3 million downloads in a month, which was equal to 37% country’s total adult population (Sharma, 2020). The makers of the COVID Tracker attributed the success to the consultation and behavioral research involv-ing citizens. Unfortunately, India does not have a strict pri-vacy law or data protection rule (Dinesh Narayanan, 2020). Should the Government of India revisit the privacy policy to make the app more transparent and trustworthy for the users?14 Journal of Information Technology Teaching Cases 00(0)
+Currently, the Aarogya Setu app shows the COVID statis-
+tics consist of the total number of confirmed cases, cases recov-
+ered from COVID-19, and the total number of people deceased across India and breakdown of the same statistics for different states. It also shows the government and private ICMR-approved laboratories for COVID-19 testing. The concept of the M-Governance model is not new to the Indian Government. The State Government of Karnataka had won the Gold at the World Government Summit in United Arab Emirates in February 2016. The Karnataka Government mobile-one gov-ernance project provided 4000 services accessible through mobile and web platforms (Aji, 2016). The next challenge for the Government of India is that should this app be scaled and positioned as a one-stop Mobile-Governance platform to pro-vide all necessary detailed information on statistics, resources, and help available to fight against the COVID-19 pandemic? What additional information should be displayed on the dash-board, which can be useful to the citizen?
+Declaration of conflicting interests
+The author(s) declared no potential conflicts of interest with respect 
+to the research, authorship, and/or publication of this article.
+Funding
+The author(s) received no financial support for the research, 
+authorship, and/or publication of this article.
+ORCID iD
+Viral Nagori  https://orcid.org/0000-0002-5692-2798
+References
+Aji S (2016) Karnataka mobile one M-governance model wins gold 
+at World Government summit in UAE. Available at: https://economictimes.indiatimes.com/tech/internet/karnataka-
+mobile-one-m-governance-model-wins-gold-at-world-gov  
+ernment-summit-in-uae/articleshow/50940654.cms
+Anon (2011) Top 10 most densely populated districts of India. 
+Available at: https://www.census2011.co.in/facts/topdistrict density.html
+Anon (2019a) Available at: https://www.indexmundi.com/g/r.
+aspx?v=21000
+Anon (2019b) Population, total – India. Available at: https://data.
+worldbank.org/indicator/SP.POP.TOTL?locations=IN
+Anon (2020a) Aarogya Setu app back after snag. Available at: 
+https://www.tribuneindia.com/news/nation/aarogya-setu-
+app-back-after-snag-106695
+Anon (2020b) Aarogya Setu Faqs. Available at: https://static.
+mygov.in/rest/s3fs-public/mygov_159056978751307401.pdf
+Anon (2020c) How TraceTogether works. Available at: https://
+www.tracetogether.gov.sg/
+Bhalla K (2020) Aarogya Setu Flunks MIT Test, gets 1 out of 
+5 stars. Available at: https://inc42.com/buzz/aarogya-setu-flunks-mit-test-gets-1-out-of-5-stars/Business Standard (2020) Aarogya Setu’s new feature to help 
+organisations get health status of staff. Available at: https://www.business-standard.com/article/technology/aaro-
+gya-setu-s-new-feature-to-help-organisations-get-health-
+status-of-staff-120082200603_1.html
+Cho H, Ippolito D and William Y (2020) Contact tracing mobile 
+apps for COVID-19: Privacy considerations and related 
+trade-offs. New York. Available at: https://arxiv.org/
+Dinesh Narayanan V A (2020) Vidhi and making India’s data 
+protection law. Available at: https://economictimes.
+indiatimes.com/prime/economy-and-policy/vidhi-and-the-making-of-indias-data-protection-law/primearticle-
+show/77768876.cms
+Goyal R (2020) Origin story: Setu Mera bodyguard. Available 
+at: https://medium.com/aarogyasetu/origin-story-setu-mera-
+bodyguard-2b713d4a6515
+Hindustan Times (2020) Aarogya Setu’s new feature to help businesses 
+function during Covid-19 pandemic: Govt. Available at: https://www.hindustantimes.com/business-news/aarogya-setu-s-  
+new-open-api-service-feature-to-help-businesses-return-to-new-normal/story-12m95fAvrsVU7fN6FqEqBL.html
+HT Tech (2020) Aarogya Setu app gets a new feature, lets 
+you assess your risk level based on your BT contacts. Available at: https://tech.hindustantimes.com/tech/news/aarogya-setu-gets-a-new-feature-check-out-details-
+here-71593960172699.html
+John N (2020) Aarogya Setu: Open sourcing client-side 
+code is just the first step on a long road to transparency. 
+Available at: https://prime.economictimes.indiatimes.com/news/76048976/technology-and-startups/aarogya-setu-
+open-sourcing-client-side-code-is-just-the-first-step-on-a-
+long-road-to-transparency
+Mani RS (2020) Privacy policy. Available at: https://static.mygov.
+in/rest/s3fs-public/mygov_159051645651307401.pdf
+Ministry of Electronics and Information Technology (2020) 
+Aarogya Setu is now open source. Available at: https://static.mygov.in/rest/s3fs-public/mygov_159050700051307401.pdf
+National Informatics Center (2020) Aarogya Setu bug bounty pro-
+gram (for Android app). Available at: https://static.mygov.in/rest/s3fs-public/mygov_159057669351307401.pdf
+NIC D (2020) Aarogyasetu Android contributors. Available at: 
+https://github.com/nic-delhi/AarogyaSetu_Android/blob/
+master/Contributors.md
+O’Dea S (2020) Number of smartphone users by country as of 
+September 2019. Available at: https://www.statista.com/sta-
+tistics/748053/worldwide-top-countries-smartphone-users/
+O’Neill PH (2020) India is forcing people to use its Covid app, 
+unlike any other democracy. Available at: https://www.tech-nologyreview.com/2020/05/07/1001360/india-aarogya-setu-covid-app-mandatory/
+Pandharipande N (2020) Aarogya Setu not ‘open source’ in real 
+sense, claim cybersecurity activists, say server code must be made public. Available at: https://www.firstpost.com/tech/news-analysis/aarogya-setu-not-open-source-in-real-sense-claim-cybersecurity-activists-say-server-code-must-be-made-public-8480011.html
+Patel L (2020) Aarogya Setu app data is helping AMC iden-
+tify potential hots. Available at: https://ahmedabadmirror.indiatimes.com/ahmedabad/others/aarogya-setu-app-data-Nagori 15
+is-helping-amc-identify-potential-hotspots/article-
+show/76376752.cms
+Patrick Howell ON, Ryan-Mosley T and Johnson B (2020) A flood 
+of coronavirus apps are tracking us. Now it’ s time to keep 
+track of them.. Available at: https://www.technologyreview.com/2020/05/07/1000961/launching-mittr-covid-tracing-tracker/
+Priyadarshini P (2020) Coronavirus: Aarogya Setu and 10 other apps 
+deployed by the government to track the pandemic. Available at: https://www.entrepreneur.com/slideshow/348641
+Saha S (2020) Aarogya Setu app will be pre-installed in Xiaomi 
+smartphones if Govt orders: Manu Jain. Available at: https://indianexpress.com/article/technology/mobile-tabs/xiaomi-
+phones-will-have-aarogya-setu-app-pre-installed-if-govt-
+orders-manu-jain-6393791/
+Sawhney A (2020) Aarogya Setu mobile app. Available at: 
+https://static.mygov.in/rest/s3fs-public/mygov_159051652  
+451307401.pdf
+Sharma S (2020) Why Aarogya Setu, other global govern-
+ment contact-tracing apps have failed to contain pandemic. Available at: https://economictimes.indiatimes.com/prime/technology-and-startups/why-aarogya-setu-other-global-
+government-contact-tracing-apps-have-failed-to-contain-
+pandemic/primearticleshow/77380804.cms
+The Tribune (2020) Aarogya Setu’s new feature to help organi-
+sations get health status of staff, other users. Available at: 
+https://www.tribuneindia.com/news/nation/aarogya-setus-
+new-feature-to-help-organisations-get-health-status-of-staff-other-users-129826Times Now (2020) From air to travel by train: List of places where 
+Aarogya Setu app is mandatory. Available at: https://www.timesnownews.com/india/article/from-air-to-travel-by-train-
+list-of-places-where-aarogya-setu-app-is-mandatory/593861
+Trang S, Trenz M and Weiger WH (2020) One app to trace them all? 
+Examining app specifications for mass acceptance of contact-
+tracing apps. European Journal of Information Systems. Epub 
+ahead of print 27 July. DOI: 10.1080/0960085X.2020.1784046.
+Verma S (2020) Aarogya Setu is now open-source for developers, 
+Govt announces bug bounty programme. Available at: https://
+www.indiatoday.in/technology/news/story/aarogya-setu-is-now-open-source-for-developers-govt-announces-bug-
+bounty-programme-1682226-2020-05-26
+Vishwanath A (2020) Mandating use of Aarogya Setu app ille-
+gal, says justice B N Srikrishna. Available at: https://
+indianexpress.com/article/india/aarogya-setu-app-mandate-
+illegal-justice-b-n-srikrishna-6405535/
+Wikipedia (2020) Aarogya Setu. Available at: https://en.wikipedia.
+org/wiki/Aarogya_Setu
+Author biography
+Viral Nagori has a total of 16 years of experience in academics 
+and research. He has published more than 40 papers in peer-
+reviewed national and international journals. He has received a 
+prestigious ‘Instagram Social Technology’ research award of US $50,000 from Facebook. His research areas are information sys-
+tems, digital technologies and entrepreneurship.

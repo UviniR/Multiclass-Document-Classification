@@ -1,0 +1,1056 @@
+Original Paper
+Deter minants of Scale-up From a Small Pilot to a National
+Electronic Immunization Registr y in Vietnam: Qualitativ e
+Evaluation
+Huyen Dang1, MD, PhD; Sang Dao2, MPH; Emily Carnahan3, MPH; Nami Kawakyu3,4, RN, MPH; Hong Duong1,
+MD, PhD; Trung Nguyen1, MPH; Doan Nguyen1, MD; Linh Nguyen2, MPH; Maya Rivera2, MPH; Tuan Ngo2, MScIT ;
+Laurie Werner3, MPA; Nga Nguyen2, MD, PhD
+1National Expanded Program on Immunization, National Institute of Hygiene and Epidemiology , Hanoi, Vietnam
+2PATH, Hanoi, Vietnam
+3PATH, Seattle, WA, United States
+4Department of Global Health, University of Washington, Seattle, WA, United States
+Corr esponding Author:
+Nga Nguyen, MD, PhD
+PATH
+#1101, 11th Floor , Hanoi Towers, 49 Hai Bai Trung Street
+Hoan Kiem District
+Hanoi,
+Vietnam
+Phone: 84 24 3936 2216 ext 105
+Email: ntnguyen@path.or g
+Abstr act
+Backgr ound: Digital health innovations can impro ve health system performance, yet previous experience has shown that many
+innovations do not advance beyond the pilot stage to achie ve scale. Vietnam’ s National Immunization Information System (NIIS)
+began as a series of digital health pilots, first initiated in 2010, and was officially launched nationwide in 2017. The NIIS is one
+of the few examples of an electronic immunization registry (EIR) at national scale in low- and middle-income countries.
+Objecti ve: The aim of this study was to understand the determinants of scale-up of the national EIR in Vietnam.
+Methods: This qualitati ve study explored the facilitators and barriers to national scale-up of the EIR in Vietnam. Qualitati ve
+data were collected from October to December 2019 through in-depth key informant intervie ws and desk review. The mHealth
+Assessment and Planning for Scale (MAPS) Toolkit guided the development of the study design, intervie w guides, and analytic
+frame work. MAPS defines the key determinants of success, or the “axes of scale, ” to be groundw ork, partnerships, financial
+health, technology and architecture, operations, and monitoring and evaluation.
+Results: The partnership and operations axes were critical to the successful scale-up of the EIR in Vietnam, while the groundw ork
+and monitoring and the evaluation axes were considered to be strong contrib utors in the success of all the other axes. The partnership
+model leveraged complementary strengths of the technical working group partners: the Ministry of Health General Department
+of Preventive Medicine, the National Expanded Program on Immunization, Viettel (the mobile netw ork operator), and PATH.
+The operational approach to introducing the NIIS with lean, iterati ve, and integrated training and supervision was also a key
+facilitator to successful scale-up. The financial health, technology and architecture, and operations axes were identif ied as barriers
+to successful deplo yment and scale-up. Key barriers to scale-up included insuf ficient estimates of operational costs, unanticipated
+volume of data storage and transmission, lack of a national ID to support interoperability , and operational challenges among end
+users. Overall, the multiple phases of EIR deplo yment and scale-up from 2010 to 2017 allowed for continuous learning and
+impro vement that strengthened all the axes and contrib uted to successful scale-up.
+Conclusions: The results highlight the importance of the measured, iterati ve approach that was taken to gradually expand a
+series of small pilots to nationwide scale. The findings from this study can be used to inform other countries considering,
+introducing, or in the process of scaling an EIR or other digital health innovations.
+(J Med Internet Res 2020;22(9):e19923) doi: 10.2196/19923
+J Med Internet Res 2020 | vol. 22 | iss. 9 | e19923 | p. 1 http://www .jmir.org/2020/9/e19923/
+(page number not for citation purposes)Dang et al JOURN AL OF MEDICAL INTERNET RESEARCH
+XSL•FO
+RenderXKEYW ORDS
+immunization; immunization information system; electronic immunization registry; scale-up; digital health interv ention; mHealth;
+eHealth
+Introduction
+Digital health innovations are changing the way health is
+delivered worldwide. The World Health Organization (WHO)
+defines digital health as “the field of knowledge and practice
+associated with the development and use of digital technologies
+to impro ve health” [1]. Digital health innovations can play an
+important role in impro ving health system performance and can
+advance progress toward achie ving universal health coverage
+and sustainable development goals [2,3]. However, previous
+experience has shown that many digital health innovations do
+not advance beyond the pilot stage to become institutionalized
+within health systems [4-6].
+Vietnam’ s National Immunization Information System (NIIS)
+began as a series of digital health pilots, first initiated in 2010
+[7], and was officially launched nationwide in 2017. By 2020,
+the NIIS included 20 million client records. The NIIS is an
+example of an electronic immunization registry (EIR), a
+confidential, computerized, population-based routine system to
+capture, store, access, and share individual-le vel, longitudinal
+health information on vaccine doses administered [8,9].
+Immunization is among the most cost-ef fective child health
+interv entions and saves 2 to 3 million lives per year; however,
+1 in 5 infants do not recei ve all their required vaccine doses
+[10]. EIRs aim to impro ve the immunization delivery system
+to reach every child by supporting the delivery of more effective,
+efficient, data-dri ven care. EIRs can capture other
+individual-le vel demographic or health data and can link to
+other systems that manage vaccine stock and logistics, human
+resources, or other individual or population health data [11]. In
+Vietnam, the EIR, which includes SMS text message reminders,
+has been shown to impro ve immunization coverage and
+timeliness of vaccination [12] and is one of the few examples
+of an EIR at national scale in low- and middle-income countries.
+Scale-up refers to “deliberate efforts to increase the impact of
+innovations successfully tested in pilot or experimental projects
+so as to benef it more people and to foster polic y and program
+development on a lasting basis” [13]. Scaling goes beyond
+expanding an innovation to more users or geographies and in
+fact often results in new organizational or technological
+comple xities [14]. Others have defined scale more expansi vely,
+including integration with the health system, sustainable funding
+and government support, and the ability to replicate, refine, and
+impro ve over time [4,15].
+The digital health community has increasingly recognized the
+importance of scale and has initiated efforts to support scaling
+digital health interv entions [15]. The Principles for Digital
+Development, collaborati vely developed by 500+ implementersto capture best practices for integrating technology in
+development projects, highlight “design for scale” as one of 9
+guiding principles [16]. Initiati ves like the Health Data
+Collaborati ve [17], Digital Impact Alliance [18], and Digital
+Square [19] have been launched to support scale-up through
+alignment and coordination, strate gic resourcing, operational
+guidance, and development of “global goods” that can be
+adapted and scaled in new conte xts [15].
+The evidence base to understand factors that influence scaling
+digital health interv entions is limited [20,21]. The WHO and
+others have identif ied the need for implementation research to
+understand the comple xities of implementing and scaling digital
+interv entions [2,6]. National EIRs are far from being universal,
+even in high-income countries [22,23], and to our knowledge,
+there are limited studies of the facilitators and barriers
+influencing their scale-up, particularly in low-resource settings.
+The aim of this study was to understand the determinants of
+scale-up of the national EIR in Vietnam, thereby contrib uting
+to the evidence on how and why digital interv entions can
+successfully achie ve scale.
+Methods
+Study Design
+This study explored the facilitators and barriers to national
+scale-up of the EIR in Vietnam through qualitati ve methods,
+using the mHealth Assessment and Planning for Scale (MAPS)
+Toolkit as a conceptual frame work [13]. The MAPS Toolkit,
+codeveloped in 2015 by the WHO, the United Nations
+Foundation, and Johns Hopkins University , outlines 6 axes to
+measure digital health project maturity . Qualitati ve data were
+collected through in-depth key informant intervie ws and
+document review and were analyzed according to the MAPS
+Toolkit axes.
+Conceptual Framew ork
+The MAPS Toolkit served as the conceptual frame work for this
+study to ground Vietnam’ s experience in scaling up an EIR
+within known factors that influence successful scale-up and
+sustainability of digital health products. Although the toolkit
+was designed to prospecti vely guide iterati ve program
+implementation, it has also been used for retrospecti ve program
+evaluation [24]. MAPS defines the key determinants of success,
+also known as the “axes of scale, ” to be groundw ork,
+partnerships, financial health, technology and architecture,
+operations, and monitoring and evaluation (M&E) (Figure 1),
+each of which are divided into more specif ic drivers of success
+(Figure 2) [13].
+J Med Internet Res 2020 | vol. 22 | iss. 9 | e19923 | p. 2 http://www .jmir.org/2020/9/e19923/
+(page number not for citation purposes)Dang et al JOURN AL OF MEDICAL INTERNET RESEARCH
+XSL•FO
+RenderXFigur e 1. The mHealth Assessment and Planning for Scale Toolkit axes of scale [13]. mHealth: mobile health.
+Figur e 2. The mHealth Assessment and Planning for Scale Toolkit drivers of success within each axis of scale [13].
+Setting
+Vietnam has a 5-level health system, with administrati ve levels
+at the national, regional, provincial, district, and commune levels
+[25]. At the national level, the Ministry of Health (MOH) sets
+national policies and programs and manages the national and
+regional-le vel hospitals and institutes [26]. The provincial level
+oversees provincial health departments and provincial health
+centers and hospitals that follow national MOH policies [26].
+The Vietnam National Expanded Program on Immunization
+(NEPI) was first introduced in Vietnam in 1981 with the primary
+goal of protecting children from the most common infectiousdiseases by providing free immunization services to children
+[27]. At the national level, the MOH’ s General Department of
+Preventive Medicine (GDPM) oversees NEPI activities in 4
+regions, 63 provinces and cities, 696 districts, and 11,138
+communes (Figure 3) [25]. Public immunization services are
+mainly delivered at the commune level, the hepatitis B vaccine
+is provided at hospitals, and vaccines that are not supported by
+NEPI are administered at fee-based immunization facilities [25].
+Until 2009, Vietnam’ s immunization records and vaccine supply
+tracking were paper based. Health centers began to be equipped
+with computers in 2005; internet connection at the commune
+level became available in 2012.
+J Med Internet Res 2020 | vol. 22 | iss. 9 | e19923 | p. 3 http://www .jmir.org/2020/9/e19923/
+(page number not for citation purposes)Dang et al JOURN AL OF MEDICAL INTERNET RESEARCH
+XSL•FO
+RenderXFigur e 3. Structure of the health system in Vietnam. EPI: Expanded Program on Immunization; IHE: Institute of Hygiene and Epidemiology .
+Inter vention
+The evolution of the current national EIR in Vietnam began
+with a small pilot (Figure 4). From 2010 to 2012, NEPI and
+PATH, an international nongo vernmental organization serving
+as a technical partner , collaborated with the WHO to develop
+and pilot an electronic vaccine stock management system
+(VaxTrak) in 3 provinces and an immunization registry softw are(ImmRe g) in one district of Ben Tre province. The goal of the
+softw are was to impro ve the ability to track babies who were
+due for vaccination and reduce the time for immunization
+recording and reporting compared with a paper -based system.
+Both systems were successful in reducing the time burden of
+reporting among health workers and most users found the
+systems to be acceptable and feasible for scale-up [7].
+Figur e 4. Timeline of the electronic immunization registry introduction and scale-up in Vietnam. MOH: Ministry of Health; NIIS: National Immunization
+Information System.
+These two systems were combined, upgraded, and then deplo yed
+by NEPI with support from PATH in all districts of Ben Tre
+province from 2014 to 2015. This resulted in increased full
+immunization coverage and impro ved on-time vaccination rates
+[12].In 2016, this combined system was integrated into the NIIS,
+which was being developed by the MOH in partnership with
+Viettel, the largest mobile netw ork operator (MNO) in Vietnam.
+The NIIS was to be an EIR system in which health workers
+could register and track the immunization records of pregnant
+women and newborns, as well as inform vaccine stock
+J Med Internet Res 2020 | vol. 22 | iss. 9 | e19923 | p. 4 http://www .jmir.org/2020/9/e19923/
+(page number not for citation purposes)Dang et al JOURN AL OF MEDICAL INTERNET RESEARCH
+XSL•FO
+RenderXmanagement. The NIIS technical working group includes
+GDPM, NEPI, Viettel, and PATH, who partnered to pilot the
+NIIS in 5 provinces. The NIIS was further upgraded based on
+learnings from this experience and in preparation for national
+scale-up. In June 2017, the NIIS was officially deplo yed
+nationally . Leading up to nationwide scale-up, the MOH
+requested all communes to back enter the full vaccination history
+for all children born from January 2015 through June 2017.
+From 2018 to 2019, the NIIS technical working group focused
+on increasing NIIS uptak e, impro ving data quality and data use,
+and transitioning completely to paperless immunization records.
+As of January 2020, over 20 million records have been registered
+into the system (including back-entered data, immunization data
+for pregnant women, and childhood immunizations delivered
+among the annual birth cohort of approximately 1.7 million
+[28]).
+Participants
+Project documents were selected for inclusion in the document
+review based on project and study relevance. A total of 1 project
+proposal and 8 project evaluation reports detailing the project
+objecti ves, processes, successes, and challenges were included
+in the document review. Documents included end users’
+perspecti ves on the acceptability and feasibility of the system
+through surveys of Expanded Program on Immunization (EPI)
+staff at provincial, district, and commune health centers
+conducted in 2012 and 2015.
+Critical case purposi ve sampling [29] was used to select key
+informants to intervie w. A case was identif ied as critical based
+on their essential and extensi ve involvement with the project,
+with consideration for diversity of perspecti ves based on each
+participant’ s role on the project. A total of 6 key informants
+were selected: 2 Ministry of Health staff (1 from GDPM and 1
+from NEPI), 2 representati ves from Viettel, and 2 PATH staff
+members. These key informants represented each of the
+organizations in the national-le vel NIIS technical working group
+(TWG), had been involved in every phase of the NIIS
+implementation, and were selected for their ability to speak to
+all the axes of scale in the MAPS frame work.Data Collection
+PATH staff conducted 6 in-depth semistructured intervie ws in
+person with key informants from October to December 2019.
+The semistructured intervie w guide was developed based on
+the evaluation questions and the MAPS frame work. Intervie ws
+were audiorecorded with permission from the informant, and
+the intervie wer documented summary notes during the intervie w.
+Audiorecordings were transcribed into Microsoft Word and
+translated into English.
+Data Analysis
+An a priori codebook was developed, guided by the MAPS axes.
+The codebook was then refined by coding data from project
+documents and in-depth intervie ws in Microsoft Excel and
+Atlas.ti (version 8; ATLAS.ti Scientif ic Softw are Development
+GmbH). Coding was completed independently and concurrently
+by 2 PATH staff and an external evaluator . Codes were reviewed
+by the evaluation team and any changes or disagreements were
+discussed until resolv ed. Once coding was finalized, codes were
+grouped into key themes guided by the evaluation questions
+and MAPS axes. Exemplary quotations were identif ied to
+present the themes and were validated with key stakeholders.
+Ethics
+The study procedures were reviewed and recei ved nonresearch
+determination by PATH. Prior to the intervie ws, participants
+were informed of the study’ s objecti ves, advantages and
+disadv antages of participating, and rights of participants.
+Importance of maintaining confidentiality was emphasized
+during training of data collectors and the start of intervie ws.
+Written consent was obtained from all participants. Study data
+were stored in an access-restricted server, only available to study
+staff for the purpose of data analysis.
+Results
+Overview
+Table 1summarizes the key facilitators and barriers experienced
+during scale-up of the NIIS, organized by the MAPS axes of
+scale.
+J Med Internet Res 2020 | vol. 22 | iss. 9 | e19923 | p. 5 http://www .jmir.org/2020/9/e19923/
+(page number not for citation purposes)Dang et al JOURN AL OF MEDICAL INTERNET RESEARCH
+XSL•FO
+RenderXTable 1. Key facilitators and barriers to scale-up.
+Barriers Facilitators Axes of scale
+N/Aa - Learnings from multiple pilots and phases con-
+tributed to optimization of all other axes
+- Learnings established scientif ic basis for scale-
+upGroundw ork and monitoring and evaluation
+N/A - Each member of the partnership plays a critical
+role
+- MOHbis owner and leader
+- MOH contracts MNOcto provide a service
+- Expansi ve technological, netw ork, human, and
+financial resource capacity of MNO
+- MNO well established and trusted by govern-
+ment and publicPartnerships
+- Unanticipated operational costs, particularly
+for refresher trainings, supporti ve supervision,
+and regular system upgrades- Estimated time and cost of system
+- MNO provides services free of charge
+- Government commitment to allocate budgetFinancial health
+- Enormity of data affects system capacity and
+netw ork connecti vity
+- Lack of national ID- User-friendly system
+- System adaptability
+- Strong data security and privacy
+- Existing infrastructureTechnology and architecture
+- Dual reporting systems (paper and digital)
+- Low computer literac y of end users
+- High turno ver of health care workers- Availability of pretested and enhanced training
+materials and standard operating procedures
+- Cascading training-of-trainer training for nation-
+wide training and technical support netw ork
+- Integration of supervision within existing struc-
+turesOperations
+aN/A: not applicable.
+bMOH: Ministry of Health.
+cMNO: mobile netw ork operator .
+Key Facilitators to Scale-up
+The partnership and operations axes were most commonly
+percei ved to be critical to the successful deplo yment and
+scale-up of the EIR in Vietnam. Though key informants
+identif ied elements in the financial health axis and technology
+and architecture axis that were facilitators to successful scale-up,
+these axes were not as commonly or strongly mentioned in
+comparison to the partnership and operations axes. The
+groundw ork and monitoring and evaluation axes were
+considered to be strong contrib utors in the success of all the
+other axes.
+Partnership
+The NIIS is a product of a hybrid model, with the public, private,
+and civil society sectors contrib uting to the successful scale-up
+and sustainability of the NIIS. The NIIS partnership has enabled
+the government to own and run the system alongside supporti ve
+partners working together as a team.
+The NIIS TWG was formed in 2016 with the aim to contrib ute
+to the technical implementation and sustainability of the NIIS.
+Membership comprises MOH’ s GDPM as the management
+authority , NEPI as the immunization expert, Viettel as the
+technology expert, and PATH as the liaison, serving as the
+connection across stakeholders. Initially the TWG met weekly ,then over time it shifted to once or twice per month, depending
+on whether NIIS operationalization challenges emer ged that
+required a timely response.
+The most commonly expressed theme among key informants
+was the importance of the partnership in the success of the EIR
+implementation and scale-up. Key informants repeatedly noted
+the importance of the role that each member held in the TWG.
+One informant commented:
+Each member of the TWG plays an important role. It
+could not be as it is without each member .[Key
+Informant A]
+Key informants described the importance of the MOH’ s role,
+both to sustainably lead and to oversee the national system. As
+key informants observ ed:
+Political commitment is key. First you need to have
+political commitment, to invest in resour ces and
+provide guidance from the government for
+implementation. [Key Informant B]
+Only the MOH can mana ge such a large system that
+includes so much of the population. [Key Informant
+C]
+NEPI provided immunization expertise and acted as the
+technical lead to define and develop immunization workflo ws,
+J Med Internet Res 2020 | vol. 22 | iss. 9 | e19923 | p. 6 http://www .jmir.org/2020/9/e19923/
+(page number not for citation purposes)Dang et al JOURN AL OF MEDICAL INTERNET RESEARCH
+XSL•FO
+RenderXuser requirements, and reporting systems and mechanisms.
+NEPI also oversaw and strengthened the implementation of the
+NIIS.
+Given the expansi ve technological requirements of a national
+EIR, the MOH sought to partner with an MNO that already had
+an extensi ve netw ork and was capable of high-capacity data
+storage. In addition to these technical specif ications, key
+informants noted the importance of selecting a well-established
+MNO with a history of success:
+If you want to implement a system at this scale , it is
+imper ative to work with a big company like Viettel.
+The MNO of choice must have large capacity and a
+large presence in the country , be financially secur e,
+and be able to provide necessary human resour ces
+in both quality and quantity . Choosing an MNO, it
+would be best to select the largest MNO with the
+longest history of success in the country of
+implementation. [Key Informant D]
+Additionally , some informants observ ed that the nature of the
+partnership between MOH and Viettel was a driver for
+successful scale-up and sustainability . That is, Viettel provided
+key development, storage, and maintenance services rather than
+only providing softw are developer services that would
+eventually be transitioned to the government to maintain and
+upgrade. As one informant explained:
+Viettel provides a service , not just the softwar e, so
+there is always a partner ship and not just a hando ver.
+So, whene ver the system needs to be updated, the
+MOH and Viettel are working together . NIIS belongs
+to the MOH and Viettel provides a service . This is a
+good model for other countries: outsour ce the service
+to a mobile network operator.[Key Informant E]
+PATH has played a critical role throughout the pilot–to–national
+scale-up process. Having both local and global experience in
+piloting, scaling up, and evaluating digital health products,
+PATH was able to transfer all technology , such as data flow
+and database structure design, to Viettel and share lessons
+learned with the TWG. PATH could also act as a liaison between
+the MOH, a health system–focused entity , and Viettel, an
+information technology entity , given its experience in global
+health and digital technologies. One informant explained:
+PATH complements and supplements the gaps in
+MOH and Viettel. PATH’s experience in the field,
+piloting and demonstr ating and disseminating that
+information globally , has been critical. [Key
+Informant B]
+This partnership, in which each partner contrib uted a critical
+role, was built on a foundation of trust, which key informants
+identif ied as an important driver of successful scale-up and
+sustainability:
+Viettel is government owned, so they trust the
+government, and the government trusts them. So when
+MOH trusts PATH, then there is a big circle of trust…
+An MNO that is trusted by the government is very
+important. Because the health information is very
+sensitive . So the partner ship can only be establishedwith an MNO that is an old and trusted one, not a
+new or just established MNO. This helps with
+scaling-up. [Key Informant B]
+Operations
+Another recurrent theme across the intervie ws was the strength
+of the end user training and support approach that was developed
+for successful scalability and sustainability .
+For NIIS national deplo yment, training materials and standard
+operating procedures, which had been developed, tested, and
+enhanced based on learnings from a landscape assessment and
+monitoring and evaluation of multiple phases of the EIR, were
+readily available for use. Additionally , the cascade approach to
+conduct training-of-trainer trainings had been developed to
+quickly establish and expand a netw ork to train end users across
+the country . As one informant explained:
+You want to conduct a cascade training because you
+don’t have the resour ces to go everywher e. Instead,
+conduct the training-of-tr ainer training to provincial
+and district health work ers, then they can provide
+training and technical support to end-user s in
+hospitals, fee-based facilities, and commune health
+center s. This is the best method due to limited
+resour ces and the trainer s will be the supervisor s, so
+this informs them about who is the strongest and who
+is weak so they can provide feedbac k to them to
+improve.[Key Informant E]
+Through these trainings, a multile vel technical support netw ork
+was established across the country . The trained provincial and
+district health staff acted as mentors who served as focal points
+for technical support at each health level and provided direct
+support to end users. Supporti ve supervision was integrated into
+existing structures of immunization supervision. In addition,
+Viettel trained district-le vel staff on the NIIS, who are now able
+to provide technical support to end users. This approach is
+working to sustain country ownership and sustainability of the
+NIIS in Vietnam.
+Financial Health
+Estimating the cost of the system and its implementation to
+appropriately allocate resources to scale up was critical to the
+success of the NIIS. After the first pilot from 2010 to 2012, a
+business model frame work was developed to provide an
+overvie w of the proposed key partners, resources, and activities
+for sustaining and scaling an EIR in Vietnam. A costing model
+was also created to determine the financial resources needed to
+implement the system across multiple provinces in Vietnam.
+Identif ied costs included softw are development and
+maintenance, training, supporti ve supervision and monitoring,
+and the cost for technical meetings after the first months of
+implementation. In the case of the NIIS, the MOH has not
+incurred the cost of softw are development and maintenance, as
+the MNO has been providing these services in kind, currently
+with the expectation that the pricing model may shift in the
+long-term.
+In addition to estimating costs of the system, as a necessary
+component to successful EIR scale-up, it was essential to have
+J Med Internet Res 2020 | vol. 22 | iss. 9 | e19923 | p. 7 http://www .jmir.org/2020/9/e19923/
+(page number not for citation purposes)Dang et al JOURN AL OF MEDICAL INTERNET RESEARCH
+XSL•FO
+RenderXthe government commitment to allocate a budget to this work.
+As one informant explained:
+The government needs to commit and support the
+implementation and [provide] direction and
+leader ship to the local government to allocate the
+budget for implementation and maintenance .[Key
+Informant E]
+Technology and Architecture
+Key informants noted 3 main technology and architecture
+facilitators to successful scale-up of the EIR related to the
+technology itself: its user-centered design, adaptability , and
+strong data security and privacy. Initial development of the EIR
+and subsequent upgrades prioritized end user needs. As such,
+The system is designed with high-r ate of acceptability
+and is user-friendly . It meets the basic requir ements
+of end-user s and it operates smoothly . These are
+factor s to excite provinces to implement and use the
+system. [Key Informant F]
+The NIIS supports facility health workers to document and track
+immunization records and can easily print electronic records
+for storage in compliance with current regulations. Individual
+immunization records can be updated with vaccine doses
+delivered in different facilities, which is particularly important
+in large cities where many children recei ve vaccines from public
+and private facilities and there is a large migrant population
+moving between facilities.
+To maintain system acceptability by ensuring smooth operation
+of the system, the NIIS has a mechanism to monitor system
+operations so that issues that appear can quickly be resolv ed.
+The system is updated regularly , and adaptations can be made
+to fit evolving needs. Relatedly , the system has strong data
+security and privacy measures to maintain public trust of the
+NIIS.
+In addition to the NIIS design, the importance of an already
+existing technology infrastructure at health facilities cannot be
+overstated as a facilitator to the successful deplo yment and scale
+of the EIR. That is, because almost all health facilities in
+Vietnam already had computers and internet, and health care
+workers had access to computer systems, the NIIS could be
+developed with this starting point in mind. Had computers and
+internet not already been available at health facilities, the NIIS
+would likely have been designed differently or would have
+required additional resources at the outset for equipment and
+connecti vity.
+Groundw ork and Monitoring and Evaluation
+The steps taken in the early phases of the EIR and the M&E
+learnings from multiple EIR implementation phases set the
+groundw ork for successful national scale-up, especially
+informing the planning, implementation, and optimization of
+the other axes of scale. Given this interconnected relationship
+between groundw ork and M&E throughout the many
+implementation phases, we merged these two axes for our
+analysis.
+Key groundw ork activities included a landscape analysis and
+the development of a business model frame work. The main aimof the landscape analysis was to evaluate how a digital registry
+might impro ve the ability to track children due for vaccinations
+and how it might shorten the time required for recording and
+reporting immunizations compared to a paper -based registry .
+This analysis provided a snapshot of the current policies,
+technical capacities, and health information systems already in
+place or under development in Vietnam. On the importance of
+conducting a landscape analysis, one informant emphasized:
+It is a necessary step to look at two sides: the policy
+and technical sides. Befor e you scale-up, you must
+look at the policy environment and see what are the
+advanta ges, what is available , and what are the gaps.
+To under stand what is financially necessary and what
+are some foreseen challeng es.[Key Informant B]
+The analysis was particularly critical in informing the
+development of the pilot EIR system in 2010 but also continued
+to guide decisions about the operations and the technology and
+architecture of the EIR phases. One major takeaway from the
+analysis was the importance of understanding user needs to
+build a system that supports end users at all levels. The analysis
+also informed the development of the end user training plan, as
+it identif ied potential issues such as high turno ver and low
+computer literac y of health care workers that could affect
+successful implementation and scale-up of the EIR.
+Learnings gathered from both groundw ork activities and M&E
+facilitated effective and efficient national scale-up:
+We only had 8 months to work on the NIIS together
+[in 2016], but at that time we already had the business
+model and under stood well about the business and
+the technical, so we could just transfer the knowledg e
+and the technolo gy to develop the NIIS. This
+shortened the time for NIIS development. [Key
+Informant E]
+The multiple phases of the EIR that preceded NIIS national
+scale-up created many opportunities for learning and
+optimization. In total, the Vietnam EIR system phased through
+4 pilots and deplo yments from 2010 to 2017, starting with a
+pilot at the district level, then scaled and piloted at the provincial
+level, scaled again and piloted in multiple provinces, and then
+finally , scaled nationally . As one informant noted:
+The piloting of the system is so important to get
+feedbac k from the end-user s, befor e scale-up. And it
+is important to collect lessons learned as you go, to
+determine when you can and how you can scale-up.
+[Key Informant E]
+This continuous test-learn-optimize and scale-learn-optimize
+impro vement cycle allowed for impro vements in the operations
+and technology and architecture of the EIR, such that by the
+time it was scaled nationally , many things had been pretested
+and impro ved.
+Furthermore, evaluation activities from these phases contrib uted
+to the growing evidence of the benef its of an EIR, as well as
+local validation that such a system was both feasible and
+effective in the Vietnam conte xt. It was these quantif iable
+successes that catalyzed the support for nationwide scale-up.
+As one key informant recommended:
+J Med Internet Res 2020 | vol. 22 | iss. 9 | e19923 | p. 8 http://www .jmir.org/2020/9/e19923/
+(page number not for citation purposes)Dang et al JOURN AL OF MEDICAL INTERNET RESEARCH
+XSL•FO
+RenderXThe pilot should be conducted in two years, to get the
+feedbac k and upgrade the system, and have enough
+time to evaluate the system. Two years is enough to
+evaluate the impact of the system rather than just
+evaluate the acceptability and feasibility of the system.
+In the short-term, end-user s just want to say the good
+things. [Key Informant E]
+Key Barriers to Scale-up
+The financial health, technology and architecture, and operations
+axes were most commonly percei ved to be barriers to the
+successful deplo yment and scale-up of the EIR in Vietnam.
+Financial Health
+Although the cost of EIR deplo yment was estimated during
+various EIR phases, there were some costs to national scale-up
+that were underestimated or not estimated. The majority of the
+initial financial model was based on costs associated with
+softw are development and maintenance. Budgets for operational
+costs of training, supporti ve supervision, and monitoring and
+evaluation were sometimes insuf ficient. For example, there was
+insuf ficient funding and human resources for EIR’ s supporti ve
+supervision visits:
+A low budget for supportive supervision visits made
+it difficult for higher level supervisor s to conduct
+timely supervision of end-user s.[Key Informant F]
+Local governments do not allocate budget for
+resear ch and some don’t have supervision budgets,
+so they had to integrate [NIIS supervision] with
+supervision of other health areas.[Key Informant E]
+Another unanticipated cost to scale-up was that, because of the
+enormity of the data, the server has needed to be frequently
+updated and expanded. Through this experience, the TWG has
+identif ied the importance of accurately estimating the operational
+aspects of scaling up an EIR.
+Technology and Architecture
+Two key barriers to successful scale-up and sustainability were
+identif ied within the technology and architecture axis, namely
+issues with data transmission and storage and interoperability .
+Although a sizing and infrastructure assessment was conducted
+to inform the server capacity and connecti vity bandwidth, the
+substantial increase in the demand for data storage and
+transmission for national scale-up were not appropriately
+anticipated. There are nearly 20 million clients in the NIIS, and
+this number will continue to increase as the population grows.
+Informants explained:
+We did not foresee just how large the data would be,
+how large of a number of people would be register ed
+into the system, and how to store this data without
+slowing down the system. The number of people
+register ed is growing rapidly… During times of high
+influx, the NIIS system is overloaded. The server needs
+to be updated and expanded frequently to
+accommodate the enormity of the data. [Key
+Informant F]We did not estimate the increase of data, therefore
+could not optimize the algorithm as well as the
+database infrastructur e from the beginning .[Key
+Informant A]
+This, along with a large number of people using the system, has
+meant that the system can sometimes run slowly. The TWG is
+working to find a solution, which includes upgrading the server,
+separating the data storage and data query servers, and
+developing standard operating procedures in cases where the
+system is down. The MNO has also been working to address
+this issue by identifying and indexing frequently queried data
+files to optimize the speed of queries.
+Another barrier to successful scale-up has been the lack of a
+national ID to develop an integrated, interoperable system.
+Viettel is currently working to develop a health information
+system that integrates all data from existing systems, including
+immunization, infectious diseases, and noncommunicable
+diseases, all of which have their own softw are without a
+common unique identif ier for each client. This has been an issue
+even within the NIIS, with duplication of individual records.
+(Based on a January 2019 GDPM report, 1.2% of NIIS records
+were duplicates [30].) Similarly , facilities that use their own
+systems, such as hospitals and private facilities, are not
+interoperable with the NIIS. The NIIS includes barcode
+technology , and it has been suggested that each child’ s unique
+barcode could serve as a national ID; however, with limited
+resources, there are few public facilities equipped with barcode
+readers and printers. Through this experience, the TWG has
+identif ied that having a national unique ID would be a facilitator
+to building an interoperable system.
+Operations
+There were 3 key barriers to successful scale-up and
+sustainability identif ied within the operations axis: dual
+reporting, low computer literac y of end users, and high turno ver
+of health care workers.
+From the beginning, there have been persistent concerns among
+health sector staff about whether an EIR would increase the
+workload of health care workers. Evaluations of the early phases
+of the system found that it successfully reduced the time burden
+of reporting among health workers; however, the current
+dual-reporting scenario is burdening the health workforce
+workload. Because a completely digital system is not mandated
+by the government, end users are tasked with using both the
+paper -based system and the NIIS to ensure data accurac y in
+both systems. During planning for national scale-up, a clear
+transition plan from paper to digital would reduce the workload
+for end users.
+During the landscape analysis conducted in 2010, low computer
+literac y of end users was identif ied as a possible barrier to
+effective implementation and scale-up of an EIR. Some health
+care workers were not well versed in computer usage, including
+basic computer functions, such as typing and Microsoft Excel.
+Low computer literac y also meant that staff would not know
+how to use the data to calculate indicators and interpret results
+for decision making. As one key informant described:
+J Med Internet Res 2020 | vol. 22 | iss. 9 | e19923 | p. 9 http://www .jmir.org/2020/9/e19923/
+(page number not for citation purposes)Dang et al JOURN AL OF MEDICAL INTERNET RESEARCH
+XSL•FO
+RenderXOne of the difficulties in the pilot phase was the
+computer skills of the health care work ers. Some
+needed a lot of support, even in typing . We trained
+on everything . This was a big challeng e for
+implementing the system. [Key Informant E]
+Given that the issue was identif ied during the landscape analysis,
+the project team was able to use various strate gies in the
+development of the EIR and training approach to increase the
+usability of the EIR for end users:
+Due to different levels of digital literacy of commune
+health work ers, each commune must assign two
+people to take part in the training sessions. After the
+training , this peer support is very important to ensur e
+success in implementation. [Key Informant E]
+A lot has changed since these early years of EIR implementation,
+with an increasingly computer -literate health workforce and
+increased computer and internet infrastructure at the commune
+level. This change has helped increase the accessibility and
+usability of the NIIS.
+Another barrier to scale-up and sustainability identif ied during
+the landscape analysis was the frequent staff rotation and high
+staff turno ver rate. Again, because this was identif ied during
+the landscape analysis, it was possible to address this during
+the development of the training approach. Multiple staff
+members at every level of the health system, including the health
+facility , district, provincial, and national levels, are trained. The
+cascading training-of-trainers approach (described in
+“Operations” under the “Key Facilitators to Scale-up” section)
+also ensures a sustainable peer-training system is in place to
+train new staff. Vietnam is also exploring e-learning options to
+train new staff.
+Discussion
+Principal Findings
+While there were facilitators across all axes within the MAPS
+frame work, the partnership and operations axes were most
+commonly percei ved to be critical to the successful scale-up of
+the EIR in Vietnam. The EIR scale-up has been facilitated by
+a partnership comprised of public, private, and civil society
+actors working together toward shared goals and leveraging
+each partner’ s expertise. It was operationalized through a
+cascading training-of-trainer approach, which was integrated
+within existing supervision structures and used training materials
+that were iterati vely refined during each phase of
+implementation.
+The most commonly percei ved barriers to the scale-up of the
+EIR in Vietnam were related to the financial health, technology
+and architecture, and operations axes. Related to financial health,
+there were challenges in sufficiently estimating operational
+costs associated with training, supporti ve supervision, and
+monitoring and evaluation. Technology and architecture barriers
+included issues with the unanticipated volume of data storage
+and transmission demands and the lack of a national ID to
+support interoperability with other health information systems.
+Key operational barriers were mainly among end users andincluded challenges of dual-reporting systems, low computer
+literac y, and high staff turno ver.
+Overall, the phased approach of multiple small pilots allowed
+for iterati ve assessment and planning that strengthened all the
+axes and contrib uted to the successful scale-up.
+Implications for Scale-up and Futur e Resear ch
+Though the MAPS Toolkit was not designed as an evaluation
+frame work, overall, the axes of scale and their specif ied
+definitions helped ground the analysis for this evaluation. The
+MAPS conceptual model ackno wledges that scaling up is an
+“iterati ve cyclical process of thorough assessment, careful
+planning and targeted impro vements” [13]. However, there is
+not an axis or a cross-cutting axis to represent the dynamic,
+continuous learning-and-impro vement process that was so
+critical to the success of the full national-scale deplo yment of
+the NIIS. In Vietnam, each of the 4 phases of the EIR
+deplo yment from 2010 to 2017 allowed for opportunities to
+learn and make impro vements that strengthened multiple axes.
+The technology itself impro ved with feedback from end users
+to impro ve its acceptability and functionality , operations
+benef itted by fine-tuning training materials and standard
+operating procedures, costing models were refined at various
+points, and with time and experience, trust between the partners
+continued to grow. Furthermore, the evaluation activities from
+each phase built the evidence base, which strengthened partners’
+support to continue to scale the system. Thus, the MAPS
+frame work was adapted during analysis by merging the M&E
+and groundw ork axes as a way to ackno wledge this
+interconnectedness of the two axes. When applying the MAPS
+frame work, implementors and evaluators should strive to
+understand the interconnectness between and dynamic influences
+across axes.
+Using the MAPS Toolkit allowed for comparison between the
+experience in Vietnam with that of Tanzania and Zambia, where
+a recent study explored the factors influencing the introduction
+and adoption of EIRs in low-resource settings using the MAPS
+Toolkit [24]. Tanzania and Zambia took a similar approach by
+starting implementation in a single pilot district or province
+before expanding the EIR further , which was also percei ved as
+a facilitator of scale-up, as it allowed for opportunities to learn
+and iterate [24]. The value of pilot testing an EIR has been
+documented in the United States as well [9] and is consistent
+with the scale-up literature for other nondigital interv entions
+[31].
+The central role of the partnership model in Vietnam cannot be
+overstated. There were initial challenges as partners developed
+shared language and understanding across their areas of
+expertise, which included public health and immunization,
+financial health, and information technology . It was important
+to allow time for this learning curve and to formalize roles as
+part of the NIIS TWG. Lessons learned from implementing
+subnational EIRs in the United States also highlighted the
+importance of a steering committee or coalition to guide EIR
+development and garner support [9]. Similar to Vietnam, in
+both Tanzania and Zambia, the MOH leadership’ s support of
+the EIR was an important facilitator , and the MOH relied on
+PATH as a technical partner . However, the partnership model
+J Med Internet Res 2020 | vol. 22 | iss. 9 | e19923 | p. 10 http://www .jmir.org/2020/9/e19923/
+(page number not for citation purposes)Dang et al JOURN AL OF MEDICAL INTERNET RESEARCH
+XSL•FO
+RenderXin these African countries differed from Vietnam’ s in that
+nongo vernmental partners, including PATH, John Snow Inc,
+and the Catholic Medical Mission Board were more directly
+involved with implementing the EIR at subnational levels in
+Tanzania and Zambia [24]. Other countries may also not be able
+to replicate the MNO partnership that was a key facilitator to
+scale-up in Vietnam, as Viettel is uniquely positioned as a
+state-o wned MNO with large mark et share across the country .
+In terms of operations, Tanzania initially used an on-the-job
+training approach that relied on PATH staff to visit each health
+facility , but later Tanzania and Zambia implemented a
+training-of-trainers approach similar to Vietnam’ s model. As
+mentioned, nongo vernmental partners were more heavily
+involved in the initial subnational deplo yment and trainings in
+Tanzania and Zambia, which was also a large cost driver in
+these countries [32]. In all three countries, EIR supervision was
+integrated within existing structures, which was a facilitator for
+scale and sustainability , but also meant there was limited time
+spent specif ically on EIR issues during supervision visits.
+Similar to Vietnam, Tanzania and Zambia also faced barriers
+due to dual-reporting systems, low computer literac y of end
+users, and high health care worker turno ver. Other studies echo
+that human resources are a challenge to the Vietnam EPI as a
+result of limited resources for supervision in hard-to-reach areas,
+underpaid and unmoti vated frontline workers, and low levels
+of knowledge and computer literac y [33].
+Whereas in Vietnam, the existing technology infrastructure was
+in place at health facilities, this was not the case in Tanzania
+and Zambia, where lack of hardw are and electricity was a barrier
+to initial introduction of the EIR [24]. Other technology and
+architecture barriers to scale of the EIRs in Tanzania and Zambia
+included synchronization delays, discrepancies in data across
+systems, and challenges due to separate immunization service
+delivery and stock management systems [24]. In Vietnam, this
+last challenge was avoided by integrating ImmRe g and VaxTrak
+into a single system (NIIS) before scaling nationwide. The
+iterati ve piloting of the technology in Vietnam may have avoided
+the heavy costs that can be associated with EIR redesign or
+reconf iguration [9,32]. Both Tanzania and Zambia had to modify
+their EIR requirements and design a second system for scale
+[34].
+As more countries aim to introduce EIRs, these findings can
+inform efforts to plan for scale-up. Seth Berkle y, CEO of Gavi,
+the Vaccine Alliance, wrote about the importance of harnessing
+digital innovations to support immunization, noting that “one
+of the biggest needs is for affordable, secure digital identif ication
+systems that can store a child’ s medical history , and that can
+be accessed even in places without reliable electricity” [35].
+Previous studies have recommended using digital health
+innovations for immunization, based on systematic reviews
+[36], but there is recognition that current research on the role
+of digital health in immunization initiati ves is limited [22,36].
+This is true for the field of digital health overall, with repeated
+calls to continue to strengthen the evidence base [6]. Thefindings presented here touch on priority evidence gaps related
+to evaluating economics, enabling ecosystems, financial and
+programmatic sustainability , and data use pathw ays related to
+digital health interv entions [6].
+Limitations
+This study was based on the experience scaling the EIR in
+Vietnam, and care should be taken when generalizing these
+findings beyond Vietnam. This limitation was in part addressed
+by identifying determinants guided by the MAPS Toolkit, a
+conceptual frame work that can be applied to digital health
+implementations in varied conte xts.
+This study purposi vely selected key informants to represent the
+range of partners on the NIIS TWG; each was very involved in
+the EIR scale-up and could speak to the details of the
+implementation. The study focused on national-le vel
+stakeholders and did not include key informants representing
+subnational or community perspecti ves. Although end user
+perspecti ves were represented in the documents reviewed, for
+a more comprehensi ve understanding of the factors influencing
+the EIR scale-up in Vietnam, future studies could also include
+perceptions of the barriers and facilitators from EIR end users
+at the district and health facility levels, as well as caregiver or
+community perceptions of immunization service delivery.
+Different determinants may emer ge at each level. For example,
+a systemic literature review (with the majority of studies from
+the United States) identif ied health care providers’ perceptions
+of usefulness and ease of use of digital health innovations as
+influential factors to their acceptance of the innovation [37].
+Dolan et al [24] highlighted some of the barriers influencing
+EIR scale-up at subnational levels in Tanzania and Zambia,
+including inadequate data bundles, increased workload due to
+dual systems, and lack of EIR integration with the health
+management information system (Zambia only). In Vietnam,
+subnational differences in urbanization, socioeconomic status,
+behaviors, and other factors that may have affected EIR scale-up
+were not the focus of this study .
+Conclusion
+This study described the key facilitators and barriers that
+influenced the scale-up of the NIIS in Vietnam using a
+comprehensi ve digital health frame work. The results highlight
+the importance of the measured, iterati ve approach that was
+taken to gradually expand a series of small pilots to nationwide
+scale. Key facilitators included the partnership model, which
+leveraged complementary strengths of the MOH and GDPM,
+NEPI, Viettel, and PATH, and the operational approach to
+introducing the NIIS with lean, iterati ve, and integrated training
+and supervision. Key barriers to scale-up included insuf ficient
+estimates of operational costs, unanticipated volume of data
+storage and transmission, lack of a national ID to support
+interoperability , and operational challenges among end users.
+The findings from this study can be used to inform other
+countries considering, introducing, or in the process of scaling
+an EIR or other digital health innovations.
+J Med Internet Res 2020 | vol. 22 | iss. 9 | e19923 | p. 11 http://www .jmir.org/2020/9/e19923/
+(page number not for citation purposes)Dang et al JOURN AL OF MEDICAL INTERNET RESEARCH
+XSL•FO
+RenderXAckno wledgments
+The authors thank the Bill and Melinda Gates Foundation (BMGF) for providing support for this study . The authors also thank
+the technical working group team members involved in implementing the EIR scale-up in Vietnam, including representati ves
+from GDPM, NEPI, Northern EPI, Hanoi Center for Disease Control, and PATH. Thank you to the PATH Vietnam team: Hung
+Pham, Thi Hoang, and Hai Le. The authors thank Tove Ryman (BMGF) for her support and guidance. This study was funded by
+BMGF (Investment ID OPP1198325).
+Conflicts of Inter est
+None declared.
+Refer ences
+1. Draft global strate gy on digital health 2020-2024. Gene va, Switzerland: World Health Organization URL: https://www .
+who.int/docs/def ault-source/documents/gs4dhdaa2a9f352b0445bafbc79ca799dce4d.pdf [accessed 2020-09-02]
+2. WHO Guideline: recommendations on digital interv entions for health system strengthening. Gene va, Switzerland: World
+Health Organization; 2019. URL: https://www .who.int/publications-detail/
+who-guideline-recommendations-on-digital-interv entions-for -health-system-strengthening [accessed 2020-09-02]
+3. Mehl G, Labrique A. Prioritizing integrated mHealth strate gies for universal health coverage. Science 2014 Sep
+12;345(6202):1284-1287. [doi: 10.1126/science.1258926 ] [Medline: 25214614 ]
+4. Wilson K, Gertz B, Arenth B, Salisb ury N. The Journe y to Scale: Moving Together Past Digital Health Pilots. Seattle, WA:
+PATH; 2014. URL: https://www .path.or g/resources/the-journe y-to-scale-mo ving-together -past-digital-health-pilots/
+[accessed 2020-09-04]
+5. Lemaire J. Scaling up mobile health: Elements necessary for the successful scale up of mHealth in developing countries.
+Gene va, Switzerland: Advanced Development for Africa; 2011 Dec. URL: http://www .adaor ganization.net/uploads/2/3/7/
+1/23713723/
+scaling_up_mobile_health_elements_necessary_for_the_successful_scale_up_of_mhealth_in_de veloping_countries.pdf
+[accessed 2020-09-04]
+6. Labrique A, Vasude van L, Weiss W, Wilson K. Establishing Standards to Evaluate the Impact of Integrating Digital Health
+into Health Systems. Glob Health Sci Pract 2018 Dec 10;6(Suppl 1):S5-S17 [FREE Full text] [doi:
+10.9745/GHSP-D-18-00230 ] [Medline: 30305335 ]
+7. PATH, National Expanded Programme on Immunization. Summary of Optimize Activities Conducted With Vietnam's
+National Expanded Programme on Immunization. Hanoi, Vietnam: PATH; 2012. URL: https://www .path.or g/resources/
+summary-of-optimize-acti vities-conducted-with-vietnams-national-e xpanded-programme-on-immunization/ [accessed
+2020-09-04]
+8. Classif ication of Digital Health Interv entions v1.0. Gene va, Switzerland: World Health Organization; 2018. URL: http:/
+/apps.who.int/iris/bitstream/handle/10665/260480/WHO-RHR-18.06-eng.pdf?sequence=1 [accessed 2020-09-04]
+9. Freeman VA, DeFriese GH. The challenge and potential of childhood immunization registries. Annu Rev Public Health
+2003;24:227-246. [doi: 10.1146/annure v.publhealth.24.100901.140831 ] [Medline: 12668757 ]
+10. UNICEF . Vaccination and Immunization Statistics. UNICEF Data: Monitoring the situation of children and women. 2019.
+URL: https://data.unicef.or g/topic/child-health/immunization/ [accessed 2020-03-20]
+11. Hinman AR, Ross DA. Immunization registries can be building blocks for national health information systems. Health Aff
+(Mill wood) 2010 Apr;29(4):676-682. [doi: 10.1377/hlthaf f.2007.0594 ] [Medline: 20368598 ]
+12. Nguyen NT, Vu HM, Dao SD, Tran HT, Nguyen TXC. Digital immunization registry: evidence for the impact of mHealth
+on enhancing the immunization system and impro ving immunization coverage for children under one year old in Vietnam.
+Mhealth 2017;3:26 [FREE Full text] [doi: 10.21037/mhealth.2017.06.03 ] [Medline: 28828373 ]
+13. World Health Organization. The MAPS toolkit: mHealth assessment and planning for scale. Gene va, Switzerland: World
+Health Organization; 2015. URL: http://www .who.int/entity/reproducti vehealth/publications/mhealth/maps/en/inde x.html
+[accessed 2020-09-04]
+14. Sanner TA, Roland LK, Braa K. From pilot to scale: Towards an mHealth typology for low-resource conte xts. 2012 Sep
+Presented at: ECIS 2012 Proceedings; May 15, 2012; Barcelona, Spain URL: https://aisel.aisnet.or g/ecis2012/112 [doi:
+10.1016/j.hlpt.2012.07.009 ]
+15. Labrique AB, Wadhw ani C, Williams KA, Lampte y P, Hesp C, Luk R, et al. Best practices in scaling digital health in low
+and middle income countries. Global Health 2018 Nov 03;14(1):103 [FREE Full text] [doi: 10.1186/s12992-018-0424-z ]
+[Medline: 30390686 ]
+16. Principles for Digital Development. URL: https://digitalprinciples.or g/principles/ [accessed 2019-01-30]
+17. Health Data Collaborati ve. URL: https://www .healthdatacollaborati ve.org/[accessed 2020-04-24]
+18. Digital Impact Alliance. URL: https://digitalimpactalliance.or g/[accessed 2020-04-24]
+19. Digital Square. URL: https://digitalsquare.or g[accessed 2020-04-24]
+J Med Internet Res 2020 | vol. 22 | iss. 9 | e19923 | p. 12 http://www .jmir.org/2020/9/e19923/
+(page number not for citation purposes)Dang et al JOURN AL OF MEDICAL INTERNET RESEARCH
+XSL•FO
+RenderX20. Tomlinson M, Rotheram-Borus MJ, Swartz L, Tsai AC. Scaling up mHealth: where is the evidence? PLoS Med
+2013;10(2):e1001382 [FREE Full text] [doi: 10.1371/journal.pmed.1001382 ] [Medline: 23424286 ]
+21. Agarwal S, Lefevre AE, Labrique AB. A Call to Digital Health Practitioners: New Guidelines Can Help Impro ve the Quality
+of Digital Health Evidence. JMIR Mhealth Uhealth 2017 Oct 06;5(10):e136 [FREE Full text] [doi: 10.2196/mhealth.6640 ]
+[Medline: 28986340 ]
+22. Tozzi AE, Gesualdo F, D'Ambrosio A, Pandolf i E, Agricola E, Lopalco P. Can Digital Tools Be Used for Impro ving
+Immunization Programs? Front Public Health 2016;4:36 [FREE Full text] [doi: 10.3389/fpubh.2016.00036 ] [Medline:
+27014673 ]
+23. Derrough T, Olsson K, Gianfredi V, Simondon F, Heijbel H, Danielsson N, et al. Immunisation Information Systems –
+useful tools for monitoring vaccination programmes in EU/EEA countries, 2016. Euro Surveill 2017 Apr 27;22(17):30519.
+[doi: 10.2807/1560-7917.es.2017.22.17.30519 ]
+24. Dolan SB, Alao ME, Mwansa FD, Lymo DC, Bulula N, Carnahan E, et al. Perceptions of factors influencing the introduction
+and adoption of electronic immunization registries in Tanzania and Zambia: a mixed methods study . Implement Sci Commun
+2020;1:38 [FREE Full text] [doi: 10.1186/s43058-020-00022-8 ] [Medline: 32885195 ]
+25. Organizational system.: Vietnam Expanded Program on Immunization URL: http://www .tiemchungmorong.vn/vi/content/
+he-thong-chuc.html [accessed 2020-04-24]
+26. Nguyen TD, Dang AD, Van Damme P, Nguyen CV, Duong HT, Goossens H, et al. Coverage of the expanded program on
+immunization in Vietnam: Results from 2 cluster surveys and routine reports. Hum Vaccin Immunother 2015;11(6):1526-1533
+[FREE Full text] [doi: 10.1080/21645515.2015.1032487 ] [Medline: 25970593 ]
+27. TCMR History .: Vietnam Expanded Program on Immunization URL: http://www .tiemchungmorong.vn/vi/content/
+lich-su-tcmr .html [accessed 2020-04-24]
+28. National Expanded Program on Immunization. Vietnam Expanded Program on Immunization (EPI) Report 2018. Hanoi,
+Vietnam: Vietnam Ministry of Health; 2019.
+29. Cohen D, Crabtree B. Qualitati ve Research Guidelines Project. 2006. URL: http://www .qualres.or g/[accessed 2020-04-24]
+30. General Department of Preventive Medicine. Report on duplications in 9 provinces. Quang Ninh, Vietnam: Vietnam Ministry
+of Health; 2019.
+31. Bark er PM, Reid A, Schall MW. A frame work for scaling up health interv entions: lessons from large-scale impro vement
+initiati ves in Africa. Implement Sci 2016 Jan 29;11:12 [FREE Full text] [doi: 10.1186/s13012-016-0374-x ] [Medline:
+26821910 ]
+32. Mvundura M, Di Giorgio L, Lymo D, Mwansa FD, Ngwe gwe B, Werner L. The costs of developing, deplo ying and
+maintaining electronic immunisation registries in Tanzania and Zambia. BMJ Glob Health 2019;4(6):e001904 [FREE Full
+text] [doi: 10.1136/bmjgh-2019-001904 ] [Medline: 31803511 ]
+33. Nguyen C, Grappasonni I, Scuri S, Nguyen B, Nguyen T, Petrelli F. Immunization in Vietnam. Ann Ig 2019;31(3):291-305
+[FREE Full text] [doi: 10.7416/ai.2019.2291 ] [Medline: 31069373 ]
+34. Seymour D, Werner L, Mwansa F, Bulula N, Mwanyika H, Dube M, et al. Electronic Immunization Registries in Tanzania
+and Zambia: Shaping a Minimum Viable Product for Scaled Solutions. Front Public Health 2019;7:218 [FREE Full text]
+[doi: 10.3389/fpubh.2019.00218 ] [Medline: 31440494 ]
+35. Berkle y S. Immunization needs a technology boost. Nature 2017 Nov 16;551(7680):273. [doi: 10.1038/d41586-017-05923-8 ]
+[Medline: 29144479 ]
+36. Dumit EM, Novillo-Ortiz D, Contreras M, Velandia M, Dano varo-Holliday MC. The use of eHealth with immunizations:
+An overvie w of systematic reviews. Vaccine 2018 Dec 18;36(52):7923-7928 [FREE Full text] [doi:
+10.1016/j.v accine.2018.06.076 ] [Medline: 29983255 ]
+37. Li J, Talaei-Khoei A, Seale H, Ray P, Macintyre CR. Health Care Provider Adoption of eHealth: Systematic Literature
+Review. Interact J Med Res 2013;2(1):e7 [FREE Full text] [doi: 10.2196/ijmr .2468 ] [Medline: 23608679 ]
+Abbreviations
+BMGF: Bill and Melinda Gates Foundation
+EIR: electronic immunization registry
+GDPM: General Department of Preventive Medicine
+MAPS: mHealth Assessment and Planning for Scale
+M&E: monitoring and evaluation
+MNO: mobile netw ork operator
+MOH: Ministry of Health
+NEPI: The Vietnam National Expanded Program on Immunization
+NIIS: Vietnam’ s National Immunization Information System
+TWG: technical working group
+WHO: World Health Organization
+J Med Internet Res 2020 | vol. 22 | iss. 9 | e19923 | p. 13 http://www .jmir.org/2020/9/e19923/
+(page number not for citation purposes)Dang et al JOURN AL OF MEDICAL INTERNET RESEARCH
+XSL•FO
+RenderXEdited by G Eysenbac h; submitted 07.05.20; peer-reviewed by T Collins, M Das, N Jarour; comments to author 12.06.20; revised
+version received 07.08.20; accepted 10.08.20; published 22.09.20
+Please cite as:
+Dang H, Dao S, Carnahan E, Kawak yu N, Duong H, Nguyen T, Nguyen D, Nguyen L, River a M, Ngo T, Werner L, Nguyen N
+Determinants of Scale-up From a Small Pilot to a National Electr onic Immunization Registry in Vietnam: Qualitative Evaluation
+J Med Internet Res 2020;22(9):e19923
+URL: http://www .jmir.org/2020/9/e19923/
+doi: 10.2196/19923
+PMID: 32960184
+©Huyen Dang, Sang Dao, Emily Carnahan, Nami Kawakyu, Hong Duong, Trung Nguyen, Doan Nguyen, Linh Nguyen, Maya
+Rivera, Tuan Ngo, Laurie Werner , Nga Nguyen. Originally published in the Journal of Medical Internet Research
+(http://www .jmir.org), 22.09.2020. This is an open-access article distrib uted under the terms of the Creati ve Commons Attrib ution
+License (https://creati vecommons.or g/licenses/by/4.0/), which permits unrestricted use, distrib ution, and reproduction in any
+medium, provided the original work, first published in the Journal of Medical Internet Research, is properly cited. The complete
+bibliographic information, a link to the original publication on http://www .jmir.org/, as well as this copyright and license information
+must be included.
+J Med Internet Res 2020 | vol. 22 | iss. 9 | e19923 | p. 14 http://www .jmir.org/2020/9/e19923/
+(page number not for citation purposes)Dang et al JOURN AL OF MEDICAL INTERNET RESEARCH
+XSL•FO
+RenderX

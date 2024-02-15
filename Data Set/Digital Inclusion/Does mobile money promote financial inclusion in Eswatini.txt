@@ -1,0 +1,782 @@
+Does mobile money promote
+financial inclusion in Eswatini?
+Siphesihle Myeni
+School of Economics and Business Sciences (SEBS), University of the Witwatersrand,
+Johannesburg, South Africa
+Marshall Makate
+Department of Health Economics and Data Analytics, Curtin University,
+Perth, Australia, and
+Nyasha Mahonye
+School of Economics and Business Sciences (SEBS), University of the Witwatersrand,
+Johannesburg, South Africa
+Abstract
+Purpose –Mobile money, a service permitting monetary value to be digitally stored in a mobile phone and
+transacted to others through text messaging, is increasingly becoming available in several African countries
+including Eswatini. This study examines the factors associated with mobile money usage and the extent towhich mobile money accelerates financial inclusion in Eswatini.
+Design/methodology/approach –Data were collected from the nationally representative FinScope
+Consumer Survey for Eswatini conducted in 2014. The authors use a quasi-experimental method in propensityscore matching (PSM) with bootstrapped standard errors to alleviate the possibility of selection bias associated
+with mobile money use and bank account ownership. As a sensitivity check, the authors calculate the average
+treatment effect (ATE) using kernel-based matching methods, as well as estimate a multilevel model thataccounts for the hierarchical structure of data.
+Findings –The authors found that higher education, entrepreneurship, being female, improvement in work
+situation in the past year and living in urban area and in the Lubombo region all positively influence theprobability to use mobile money. The results also show that individuals who use mobile money are 19% more
+likely to own a bank account at a formal financial institution with a higher probability estimate observed
+amongst rural residents.
+Originality/value –This study examines whether mobile money accelerates financial inclusion in Eswatini.
+On analysing data from the 2014 FinScope Consumer Survey, the results show that mobile money does not
+seem to be accelerating the reach of financial services to those who are structurally excluded from the formalfinancial system and suggest the need for ongoing review of the financial inclusion strategies of the country to
+enhance access to financial services in underserved areas.
+Peer review –The peer review history for this article is available at: https://publons.com/publon/10.1108/IJSE-
+12-2019-0723
+Keywords Financial inclusion, Mobile money, Propensity score matching, Eswatini
+Paper type Research paper
+1. Introduction
+Mobile money, a service that facilitates the storage and transfer of money digitally through
+mobile phone, has increasingly become available in several countries in Africa including
+Eswatini (known as Swaziland in the past). There is a growing consensus concerning the
+myriad of benefits associated with using this technology, some of which include povertyMobile money
+693
+Funding : There was no funding for this study.
+The authors greatly acknowledge FinMark Trust for granting unlimited access to the 2014 FinScope
+consumer survey for Eswatini used in this study. All replication material for this paper will be madeavailable upon a reasonable request. The views expressed in this article and any perceived errors andomissions are those of the authors and not reflective of the institutions of affiliation nor of FinMarkTrust.The current issue and full text archive of this journal is available on Emerald Insight at:
+https://www.emerald.com/insight/0306-8293.htm
+Received 14 May 2019
+Revised 11 January 2020
+Accepted 17 March 2020
+International Journal of Social
+Economics
+Vol. 47 No. 6, 2020
+pp. 693-709
+© Emerald Publishing Limited
+0306-8293
+DOI 10.1108/IJSE-05-2019-0310alleviation, increased investment and general economic activity through capital distribution,
+control of payment systems and reduction in communication costs ( Corbett, 2008 ;Aker and
+Mbiti, 2010 ;Pollard, 1995 ). Inclusive finance impacts the ways in which communities and
+individuals participate in the economic development process ( Leyshon and Thrift, 1994 ).
+Thus, while it is possible that communities with banking infrastructures generally exhibit
+faster growth rates on an average, a mere presence of banks may not necessarily be a
+sufficient condition for overall economic growth and development.
+Access to banking infrastructure remains an issue of concern in several sub-Saharan
+African (SSA) countries including Eswatini, especially in rural and remote communities where
+an estimated 60% of the population resides ( World bank, 2019 ). Having banking
+infrastructures in rural areas is less likely to be a cost-effective strategy for development,
+given that a significant part of the rural population does not have regular incomes and hence,
+a low volume of financial transactions is expected. This is where mobile money comes into
+play as a potential accelerator for financial inclusion, especially amongst the financially
+excluded segment of the population. Increasing the reach of financial services to the
+underserved population has the potential of reducing vulnerability from economic shocks
+through increased incomes in the broader economy, thus, reducing poverty and overall
+welfare. In 2010, the Government of Eswatini established the Microfinance Unit, through the
+Ministry of Finance, to implement the Rural Finance and Enterprise Development Programme
+(RFEDP) ( FinMark Trust, 2014 ). The 2014 National Consumer Survey for Eswatini suggests
+that an estimated 64% of the Liswati adult population owns a bank account at a formal
+financial institution. While this is a positive development, there are still barriers that render
+certain societal groups structurally excluded from participation in the formal financial system.
+The uptake and success of mobile money has been inconsistent across individual
+countries in the Southern African Development Community (SADC) region ( Fanta et al., 2016 ).
+A fundamental question is whether using mobile money is contributing to enhancing
+financial inclusion in Eswatini. Mobile money is a service that facilitates the cheap and secure
+transfer of money electronically through mobile phones and is premised to advance the
+financial inclusion agenda ( Jack and Suri, 2011 ). Previous studies have shown that using
+mobile money increases the probability of borrowing, receiving ( Munyegera and Matsumoto,
+2018) and saving money for health emergencies ( Kyet al., 2018 ). However, in the context of
+Eswatini, not much is known about the specific factors influencing mobile money usage and
+the extent to which it is an accelerator for financial inclusion.
+The analyses focuses on Eswatini, particularly given that the rate of mobile money usage/
+uptake was considered low when compared to other countries using survey data collected by
+the FinScope Consumer Survey in 2014 and estimated to be around 21% ( FinMark Trust,
+2014). The Government of Eswatini through its central bank has implemented several
+initiatives targeted at enhancing financial inclusion in the country including the
+establishment of a National Payment System (NPS) in 2000 targeted at facilitating
+improved access to financial services by the underbanked and unbanked segments of the
+population ( Central bank of Swaziland, 2016 ). The National Financial Inclusion Strategy
+(NFIS), 2017 –2022, was also created to further increase the depth of financial inclusion in the
+country ( Government of Swaziland, 2017 ). The focus on the determinants of financial
+inclusion in Eswatini is consistent in large part to the objectives articulated in the NFI
+strategy. The Centre for Financial Inclusion –the agency responsible for the implementation
+of the Eswatini National Financial Inclusion Strategy (NFIS) –released the results of the
+FinScope Consumer Survey of 2018 in MTN (2019) and showed that mobile money usage
+increased by 28% to 71%. The results also show that bank account coverage declined from
+54% in 2014 to 50% in 2018. The survey also shows that enhancing financial inclusion is not
+only a question of increasing supply, but of understanding the nature of demand of financial
+products, developing products and services that more effectively meet the needs of the people.IJSE
+47,6
+694This study examines the factors associated with mobile money usage and its implications
+on financial inclusion in Eswatini. Our contributions to the broader literature on mobile
+money in low-income countries are twofold. First, we characterise the specific factors
+associated with mobile money usage in Eswatini. Second, we examine the extent to which
+mobile money usage accelerates financial inclusion or substitutes formal financial services in
+Eswatini using the propensity score matching method (PSM) to account for the possibility
+that some observed and unobserved factors might be driving the decision to use mobile
+money and own a bank account at a financial institution. To the best of our knowledge, we are
+unaware of any studies that explore these issues in the context of Eswatini. The empirical
+analysis uses the nationally representative individual household-level data set from the 2014
+FinScope Consumer Survey for Eswatini.
+1.1 Background: mobile money in Eswatini
+Mobile money access and usage have evolved in Eswatini over the past few years. The 2018
+FinScope Consumer Survey suggests that mobile money usage has increased by an estimated
+28% to 70% between 2014 and 2018. Mobile money users can withdraw their funds from any
+automated teller machine (ATM) of participating banks, in addition to access through service
+agents. Swazi MTN, in collaboration with Old Mutual, also offers users of the service the
+opportunity to qualify for funeral assistance ( Mutual, 2018 ). Users can transfer mobile money
+to another subscriber at least once a month (for a year) in order to qualify for SZL500 funeral
+assistance, three to four times a month to qualify for SZL1, 500 assistance and more than five
+times a month to qualify for SZL 2,000 assistance —an amount that can be claimed for a
+period up to 12 months. Swazi MTN is also piloting a “tap and pay ”system, which enables
+mobile money users to pay at point-of-sale machines using mobile money cards ( Observer,
+2017). All these are examples of efforts by local banks in close partnership with the central
+bank that are targeted at enhancing financial inclusion in the country.
+1.2 Access and usage of mobile money in Eswatini
+In Figure A1 of the supplementary material, the value of mobile money transactions is high
+with an average of SZL57.0 million being deposited per month from October 2014 to
+December 2016. This value indicates that mobile money is a valuable platform for money
+transfers in Eswatini. The value of both withdrawals and deposits has been steadily
+increasing, with troughs seeming to occur regularly towards the end of each year. This may
+be because towards the end of the year fewer remittances are made as people working far
+from home return to their homesteads for the end-of-year holidays, only returning to work
+after New Year ’s Day. Initially, the value of deposits was larger than the value of transactions,
+but in April 2015, a switch occurred and deposits have been consistently lower than
+withdrawals. In Figure A1 of the supplementary material, withdrawals constitute the
+majority of mobile money transactions. Even though making mobile money withdrawalsaccessible through ATMs has certainly alleviated the agent liquidity challenge, this may also
+work to disincentivise the active agents, particularly those in urban centres within the
+proximity of the ATMs (see Figure A1).
+1.3 Mobile money service agents in Eswatini
+Figure A2 in the supplementary material shows the distribution of service agents and active
+customers between October 2014 and January 2017. It appears that there is a large disparity
+between the cumulative number of active customers and service agents. Additionally, the
+growth in service agents must be taken with a grain of salt owing to high agent dormancy
+rates. Only 60% of registered agents were considered as active in 2015 ( FinMark Trust, 2014 ).
+Majority of the current mobile money agents are converted airtime resellers, and this
+indicates a lack of incentive to register to be an agent (see Figure A2). Recently, Swazi MTNMobile money
+695faced a number of challenges regarding its service agent network –most of which emanated
+from the lack of a coherent agent recruitment and management structure. Agent liquidity
+problems and the unavailability of agents on Sundays and public holidays were a big
+hindrance to the efficiency of the mobile money service ( Shongwe Sam, 2017 ). Mobile money
+thrives because of the convenience it offers, and once that is compromised, consumers may
+stop using the service.
+1.4 Mobile money transactions in Eswatini
+Figure A3 of the supplementary material breaks down the type of transfers carried out from
+October 2014 to December 2016. Here, we observe that mobile money is predominantly used
+for person-to-person transfers. This is not surprising since mobile money was introduced as a
+platform for personal money transfers. Owing to its success in Eswatini, mobile money is now
+being promoted for business use. According to the Observer (2017) , MTN offers a retail
+product for business owners and landlords. MTN assigns businesses a unique number, like
+an account number, to be used by clients when making payments. MTN does not provide any
+specific incentives to business owners using mobile money to receive or make payments. The
+regulation on the mobile thresholds for the mobile money transactions per customer
+(maximum SZL4,000 per day and SZL25,000 per month) was not amenable for the business-
+to-person transaction. Therefore, both factors may possibly explain why mobile money is not
+extensively used for business transactions. Business-to-person transfers are the least
+common, but this may be because instances in which businesses need to pay individuals are
+uncommon. Typically, transactions are made by a client to a business in payment for a
+service or good delivered.
+2. Related literature
+In line with the study ’s objectives, we structure the literature review into three sections: (1)
+that focussing on examining the factors associated with mobile money usage, (2) a strand
+exploring the associations of mobile money with other outcome variables and (3) another
+strand providing a brief overview of studies on the merits and demerits of mobile money
+usage. The development of mobile money in SSA started in Kenya in 2007 when M-Pesa –a
+cell phone-based money transfer system/technology that permits individuals to deposit, send
+and withdraw funds with relative ease and convenience –was launched ( Jack and Suri, 2011 ).
+The popularity of this mobile service in SSA is especially interesting because it was
+unanticipated by the research community and financial sector ( Etzo and Collender, 2010 ).
+While a lot has been written about the merits and demerits of mobile money ( Aker and Mbiti,
+2010;Donovan, 2012 ;Allen et al. , 2014 ), we briefly discuss the factors associated with its
+usage and its role in financial inclusion. The consensus in much of the available evidence so
+far is that mobile money improves financial inclusion, especially amongst the poor and low-
+income groups of the population, given its affordability and convenience in access.
+Previous literature has documented several factors associated with mobile money usage,
+some of which include (just as examples) differences in income, access to information through
+social media platforms and improved literacy ( Sarma and Pais, 2011 ). The idea is that
+countries that exhibit higher levels of per capita income, literacy and have better access to
+information tend to be more financially inclusive than those experiencing low levels of such
+factors. Broadly, research evidence suggests that factors associated with mobile money
+usage can be classified into what can be considered structure-based, policy-oriented and
+individual-level factors. Structural-level factors are those that create enabling opportunities
+for financial inclusion and are related to how the economic, social, policy environment is
+organised or structured to enhance financial inclusion. Policy-oriented factors deal with
+specific policies that target, for instance, improved bank competitiveness to enhance financial
+inclusion ( Demirg €uç-Kunt and Klapper, 2013 ;Allen et al., 2016 ). Individual-level factors on theIJSE
+47,6
+696other hand include sociodemographic factors such as the age, gender, employment and
+education status of individuals ( Suri and Jack, 2016 ;Mattson and Stuart, 2018 ). In a study
+conducted amongst women entrepreneurs in Kenya, Gichuki and Mulu-Mutuku (2018) found
+that membership to table banking groups, control of enterprise finances and decision-making
+all increased the prospect of adoption of mobile money services in the country. However, the
+study noted that women were less likely to adopt mobile money when the technology was
+likely to be distant from their communities ( Gichuki and Mulu-mutuku, 2018 ).
+The empirical literature has also linked mobile money to several outcomes including
+financial inclusion ( Aron, 2018 ). Recent empirical evidence has shown that increased mobile
+money usage has helped to enhance the probability of saving, borrowing and receipt of
+remittances within the population in Uganda and Nigeria ( Munyegera and Matsumoto, 2018 ;
+Lwanga Mayanja and Adong, 2016 ;Ajefu and Ogebe, 2019 ), while in Burkina Faso mobile
+money usage was associated with increased savings for health emergencies ( Kyet al., 2018 ).
+A recent review featured in the World Bank Research Observer singled out risk-sharing
+behaviour as an important channel through which mobile money influences economic
+activity. The study including others also concluded that mobile money fosters risk-sharing
+behaviour and promotes welfare and savings, even though the latter evidence was considered
+less robust ( Aron, 2018 ;Jack and Suri, 2014 ;Aker and Mbiti, 2010 ;Ouma et al. , 2017 ;
+Munyegera and Matsumoto, 2016 ). In related research for Kenya, mobile money usage was
+associated with increased per capita consumption, subsequently lifting an estimated 2% of
+households out of poverty ( Suri and Jack, 2016 ).
+Even though the literature has documented several benefits associated with mobile money
+adoption as noted earlier, there are potential challenges hindering the growth of this
+technology in developing countries, as banks face difficulties with reducing transaction costs
+to affordable levels to increase uptake by the poor ( Fanta et al., 2016 ). A substantial body of
+literature has qualitatively explored the merits of mobile money with very few studies
+looking at the drawbacks and potential concerns of the digital service. Understanding the
+limitations of mobile money as a service is essential information for economic development
+(Etzo and Collender, 2010 ). One of the concerns around usage of mobile money has been that
+using this technology as a savings vehicle is problematic given that the service pays zero
+interest, thereby discouraging its use for that purpose ( Mas and Morawczynski, 2009 ). Others
+have argued that using mobile money has the potential to widen the gap between the poor
+and poorest ( Etzo and Collender, 2010 ). Others have also noted some challenges with the
+digital technology ’s user interface as a potential barrier for using the service especially
+amongst the illiterate individuals ( Medhi et al., 2009 ).
+The goal in this study is to examine the relationship between mobile money usage and
+financial inclusion in Eswatini –a country where we know very little about this nexus. As a
+secondary objective of the study, we examine the factors associated with mobile money usage.
+All analyses were done using nationally representative individual-level data for Eswatini.
+3. Methods
+3.1 Data source
+The data for the empirical analysis were collected from the 2014 FinScope Consumer Survey
+–a nationally representative survey of the general Eswatini population. Developed by
+FinMark Trust and conducted in 19 countries including Eswatini, the survey seeks to
+measure the levels of financial inclusion, describes the landscape of access, as well as
+identifies the drivers and barriers of the use of financial products and services ( FinMark
+Trust, 2014 ). In Eswatini, the survey serves as an essential research tool designed to identify
+the specific barriers contributing to financial access disparities especially amongst the
+underserved populations and provides a benchmark for ongoing surveys that measure theimpact of policy interventions related to access of financial services in the country. TheMobile money
+697survey has been conducted in 19 countries to date including Zimbabwe, Zambia and South
+Africa amongst several others.
+The 2014 FinScope Consumer Survey consisted of 3,440 face-to-face interviews conducted
+by the Central Statistics Office (CSO), with technical assistance received from FinMark Trust.
+The survey was conducted on a nationally representative sample of the adult population aged
+18 years and above in Eswatini. The survey relies on a multistage sampling design, in which
+enumeration areas from population estimates are selected using a probability proportional to
+size sampling procedure. About 6 –10 households are then randomly selected from each
+shortlisted enumeration area using a systematic sampling with one representative individual,
+then chosen per household using the Kish grid ( FinMark Trust, 2014 ).
+3.2 Measuring financial inclusion and mobile money usage
+The outcome variable in this study is a measure of financial inclusion, captured using a
+binary indicator variable taking 1 if an individual currently owns a bank account and
+0 otherwise. Each respondent in our study was asked the question: “which services do you
+use in cell phones? ”Responses to this question ranged from SMS services, calls, the Internet,
+mobile banking or mobile money amongst others. We use responses to this question to createa binary indicator equaling 1 if an individual indicated that they used mobile money on their
+cell phone and 0 otherwise. Other explanatory variables included in our models are detailed in
+the empirical model section.
+3.3 Econometric approach
+The empirical analysis in this study seeks to estimate the potential causal association
+between mobile money usage and financial inclusion –measured by whether an individual
+respondent has access to bank account or not as observed at the time of the survey. However,
+estimating the causal effect of mobile money usage on financial inclusion poses some
+econometric challenges since we cannot simultaneously observe the outcomes for the same
+individuals in treatment and control groups ( Heckman, 1996 ,Heckman and ROBB, 1985 ). For
+instance, in our study, we can only observe the outcomes for individuals using mobile money,
+but we cannot observe the results for the same individuals in both states simultaneously. The
+ideal solution to this problem will be to implement some kind of randomised controlled
+experiment, in which individuals with similar observable characteristics are assigned to atreatment group (having access to mobile money) and control group (no access to mobile
+money). However, in the absence of randomised control data, standard practice is to use
+quasi-experimental methods such as PSM methods to consistently estimate an average
+treatment effect (ATE) of the intervention or treatment.
+The analysis here uses the PSM technique to assess the possible causal impact of mobile
+money usage on the probability that an indi vidual currently owns a bank. In essence, PSM
+creates statistically comparable treatment and control groups that are similar in observable
+characteristics and differing only in their av erage probability in access to mobile money
+(Rosenbaum and Rubin, 1985 ;Rosenbaum, 2002 ). The approach is a two-step procedure in
+which the first step involves the estimation of a propensity score, pðXÞ(i.e. the probability
+that an individual uses mobile money) using s tandard non-linear models such as probit or
+logit and controlling for a vector of observable characteristics ( X). The characteristics ( X)
+we include are gender (1 if female); age (years) a n di t ss q u a r e dt e r m ;e d u c a t i o n a la t t a i n m e n t
+(none, primary, secondary, high school/vocational or college/university); geographical
+location (Hhohho, Manzini, Shiselweni and Lubombo); marital status (1 if married);
+employment situation (1 if work situation im proved in the past year); household headship
+(1 if head); proportion of households with a ccess to information via television or radio
+within a given enumeration area and an ur ban residence dummy indicator. The second
+stage involves matching individuals from ho useholds using mobile money to non-users ofIJSE
+47,6
+698mobile money. A comparison of the fraction of individuals who own a bank account in the
+treatment and control groups can then be attributed to the impact of mobile money, and that
+selection into the programme is sorely based on the vector Xof observed covariates.
+3.4 The average treatment effect on the treated
+To minimise the potential bias due to the possible endogeneity of mobile money (our
+treatment variable, pmoney ), we use the PSM technique as explained earlier. Endogeneity in
+this case implies that there are some observed characteristics that drive mobile money usethat are correlated with unobserved characteristics influencing bank account ownership.
+Thus, the simultaneous determination of financial inclusion and mobile money usage is the
+primary source of the endogeneity problem here. Alternatively, the endogeneity problem
+might as well emanate from an omitted-variable bias. A potential solution to this problem is
+the use of instrumental variables ( Kyet al., 2018 ). However, given the challenge associated
+with getting appropriate instrumental variables, we resort to using quasi-experimental
+methods. Formally defined, let Fin
+1iandFin 0idenote the outcome variables for individuals in
+treated and control groups, respectively. Define pmoney ∈f0;1gas the binary indicator for
+the treatment –mobile money usage. Following Rosenbaum and Rubin (1983) , the propensity
+score pðXÞcan be specified as follows:
+pðXÞ¼probðpmoney ¼1jXÞ¼Eðpmoney jXÞ (1)
+where Xis a vector of observed characteristics believed to influence mobile money usage,
+which we have described earlier. Using the propensity score pðXÞcalculated in Equation (1) ,
+the ATE on the treated ðdATT Þcan thus be specified as follows:
+dATT ¼EfFin 1i/C0Fin 0ijpmoney i¼1g¼E½EfFin 1i/C0Fin 0ijpmoney i¼1;pðXÞg/C138
+¼E½EfY1ijpmoney i¼1;pðXÞg /C0 EfFin 0ijpmoney i¼0;pðXÞgjpmoney i¼1/C138
+(2)
+Equation (2) shows the average effect of the treatment, if the conditional independence (CIA)
+and overlap assumption holds. The CIA assumes random programme participation given the
+observed covariate Xand can be written as ðFin 1;Fin 0⊥pmoney jXÞ. The overlap
+assumption implies that for each X, there are corresponding control and treatment
+observations, that is, f0< Prob ½pmoney ¼1jX/C138<1g.
+3.5 The nearest-neighbor matching method
+The second stage in the PSM technique involves matching treatment observations to control
+units. This paper uses the widely employed matching algorithm –the one-to-one nearest-
+neighbor (NN-1) matching technique with replacement and within a specified caliper. The main
+idea in this matching method is that the propensity score of each treatment unit is matched to
+the closest control case with a propensity score closest in value to it. The NN matching
+estimator with replacement and within a caliper can formally be specified as follows:
+dATT ¼1
+N1X
+i¼1fFin i/C0Fin jg (3)
+For a given caliper of size w>0;jis selected such that,
+w>jpðXiÞ/C0pðXjÞj ¼ min k∈IfjpðXiÞ/C0pðXjÞjgMobile money
+699Any control observation joutside the caliper wradius of the treated observation iwill be left
+unmatched and thus excluded from the analysis. The analysis in this study uses the NN
+observation within the w¼0:0025 radius to create the counterfactual for each treatment unit
+i. To enhance precision in the calculated estimates, bootstrapped standard errors using 500
+replications are calculated.
+3.6 Robustness checks
+We conducted several sensitivity checks to enhance the credibility of our empirical estimates.
+First, we re-estimated the ATE using a kernel-based matching method with bootstrapped
+standard errors using 500 replications. Second, we used a propensity score-based weighted
+regression in which the propensity score is used as a sampling weight, also known as inverse
+probability weighting ( Kumar and Vollmer, 2013 ;Holmes, 2014 ). This is a commonly used
+method in the programme evaluation literature ( Hirano and Imbens, 2001 ;Hirano et al., 2003 ;
+Rosenbaum, 1987 ;Kumar and Vollmer, 2013 ). Finally, we estimated a three-level mixed
+model in which individuals (level 1 units) are nested in enumeration areas (level 2 units) and
+regions (level 3 units). For brevity, results for the robustness checks are presented as
+supplementary materials (see Tables A1 –A3). All data management and analysis were
+conducted using Stata, version 15.1, with the matching procedure completed using the user-
+written command, psmatch2 , while multilevel mixed models were estimated using xtmixed
+command ( Statacorp, 2017 ).
+4. Results
+4.1 Characteristics of the overall sample before propensity score matching
+Table 1 provides the prematching summary characteristics for the overall sample and stratified
+by mobile money use status. The unit of analysis is the individual respondent interviewed in
+the 2014 FinMark Consumer Survey. The average age of individuals in our sample is 51.35
+years, 43.7% are female and 38.2% are married and live in households with an average of three
+(3.23) people. In terms of educational attainment, 11.6% report having no formal education,
+24.9% completed primary, 25.2% secondary, 28.2% high school/vocational and 10.1%
+attended college/university level. Bank account ownership is about 54.5% in the overall sample;
+the average ownership of radio sets within an enumeration area was 65%, while that of
+television sets was 53.8%. Nearly 35.6% of the respondents experienced an improvement in
+their work situation in the previous years, 19.4% own a formal or informal business, 49% are
+heads of household and 22.9% live in an urban area with the distribution by regions almost
+similar. The t-test for the differences between users and non-users of mobile money reveal
+significant differences in terms of age, household size, education, access to information through
+the television and radio, improvement in work situation and urban residence.
+InFigure 1 , we plot local polynomial regressions exploring the associations amongst
+mobile money usage, current bank account ownership and educational attainment. We
+observe a clear education gradient in mobile money usage and the probability of currently
+having a bank account. The results in Figure 1 show that the propensity of using mobile
+money and owning a bank account rises with increasing education, with individuals having
+college or university education having the highest probability. This observation is consistent
+across all the four regions of Eswatini.
+4.2 What are the factors associated with mobile money usage in Eswatini?
+InTable 1 , we also report the probit regression estimates (shown in column (5)) together with
+their standard errors (column (6)), including the corresponding marginal probability effects
+(ME) for the model exploring the factors associated with mobile money usage in Eswatini.IJSE
+47,6
+700This is the model that generates the propensity score that is used for the matching procedure.
+The results show that the propensity to use mobile money decreases with age of the
+respondent and when the head of household has no formal education. Particularly, we
+observe that each additional year decreases the probability of using mobile money by 0.2
+percentage points (pp) which is statistically significant at the 1% level. The likelihood of
+mobile money usage decreases by 11.8pp, when the head of household has no formal
+education. In addition, the propensity to use mobile money increases by about 10.3pp and
+18.5pp for individuals with high school/vocational and college/university education,
+respectively. An individual who owns a business, whether formal or informal, is 4.3pp
+more likely to use mobile money, while an improvement in the employment situation in the
+previous years enhances the probability for mobile money usage by about 3.2pp. Individuals
+living in an urban area are 4.2pp more likely to use mobile money than their rural
+counterparts are. People living in the Lubombo region are on the average 5.2pp more likely toMaximum
+likelihood
+estimates Marginal effects
+Mobile
+money
+usersNon-mobile
+money userst-test (1) –(2)
+(p-value)Overall
+sample Coef SE ME SE
+Variables (1) (2) (3) (4) (5) (6) (7) (8)
+Age of respondent 46.753 52.422 0.000 51.348 /C00.009***0.002 /C00.002***0.000
+Female 0.418 0.441 0.549 0.437 0.140*0.055 0.035*0.014
+Married 0.372 0.384 0.230 0.382 0.040 0.098 0.010 0.024
+Household size 3.038 3.274 0.001 3.229 0.004 0.022 0.001 0.005
+Household head 0.503 0.487 0.392 0.490 0.052 0.096 0.013 0.024
+Educational attainment
+No formal education 0.036 0.135 0.000 0.116 - - - -
+0.047 Primary education 0.125 0.277 0.000 0.249 /C00.137 0.188 /C00.034
+Secondary education 0.271 0.247 0.482 0.252 0.224 0.187 0.056 0.046
+High school/vocational
+education0.350 0.267 0.000 0.283 0.415*0.187 0.103*0.046
+College/university 0.217 0.073 0.000 0.101 0.743***0.196 0.185***0.048
+Head of household has noeducation0.014 0.098 0.000 0.082 /C00.473*0.218 /C00.118*0.054
+Business owner (formal
+or informal)0.217 0.189 0.025 0.194 0.174**0.063 0.043**0.016
+Work situation improved
+in the past year0.465 0.330 0.000 0.356 0.127*0.055 0.032*0.014
+-
+Currently has a bank
+account0.752 0.496 0.000 0.545 - - -
+% of households with
+radio in enumeration area0.673 0.644 0.000 0.650
+% of households with a
+television set
+in enumeration area0.597 0.525 0.000 0.538 0.256 0.131 0.064 0.033
+Geographical variables
+Urban resident 0.442 0.302 0.000 0.329 0.170*0.066 0.042**0.016
+Hhohho region (ref) 0.286 0.290 0.794 0.289 - -
+Manzini region 0.354 0.349 0.767 0.350 /C00.045 0.071 /C00.011 0.018
+Shiselweni region 0.147 0.175 0.686 0.169 0.127 0.076 0.032 0.019
+Lubombo region 0.213 0.186 0.300 0.191 0.208**0.076 0.052**0.019
+Note(s) :p< 0.001, p< 0.05 and p< 0.10 imply statistical significance at 1, 5 and 10% levels, respectively.
+Except for age and household size, which are continuous, all other variables are dummy variables. All estimates
+are weighted to be nationally representative of the Eswatini general population. Coef 5coefficient,
+SE5standard error, ME 5marginal effectTable 1.
+Weighted summary
+statistics for selected
+variables for the
+overall sample, users
+and non-users of
+mobile money before
+the PSMMobile money
+701use mobile money compared to those living in Hhohho region which is statistically significant
+at the 5% level.
+4.3 Quality of the PSM
+Table 2 shows the differences in the mean values of the treatment and control groups. The
+matching process should result in a significant reduction in the bias to make the two groups
+of users and non-users of mobile money comparable ensuring the overall balance of the
+covariates. The results in Table 2 indicate that the matching process resulted in a significant
+reduction in the bias and that the treatment and control groups are statistically similar in
+terms of observable characteristics. The t-values of below two (2) and corresponding p-values
+well above the 0.05 threshold for statistical significance at 5% confirm the similarity of the
+treatment and control groups.
+One of the necessary conditions required for a successful matching process is the
+fulfilment of the overlap condition. In other words, there needs to be a sufficient overlap of the
+propensity score across treatment and control groups ( Rosenbaum, 2002 ). The visual
+inspection of the density distribution of the propensity score in Figure 2 indicates a
+sufficient overlap between the two groups and thus satisfies the required overlap condition
+of the PSM method. In addition, comparing the density distribution of the propensity
+scores before and after the matching reveals that the matching process was successful
+(seeFigure 3 ).Note(s): The figure plots local regressions of mobile money usage and 
+current bank account ownership on educational attainment. The 
+dependent variable in the left panel is a binary indicator for mobile 
+money usage while in the right panel, bank account ownership is the
+dependent variable. The graphs represent the raw relationships between 
+the variables. Education categories: 1 = no education, 2 = primary education,
+3 = secondary education, 4 = high school/vocational education,5 = college/university education  
+Figure 1.
+Mobile money usage
+and current bank
+account ownershipincrease with
+educational attainmentIJSE
+47,6
+7024.4 Mobile money usage and financial inclusion
+Table 3 presents the main results of our study, the ATT for the effect of mobile money usage
+on financial inclusion in Eswatini. The ATT measures the difference in the average
+proportion of current bank account ownership for individuals who use mobile money to thosewho do not use it. The results show that individuals who use mobile money are more likely to
+currently own a bank account. Particularly, we observe that individuals who use mobile
+money are 14pp more likely to have a bank account at a formal financial institution which is
+statistically significant at the 1% level. Given that the average bank account ownership rate
+amongst mobile money users is 74%, the 14 pp increase in bank account ownership
+represents an approximately 18.9% ð14/C3100 =74Þhigher prevalence of bank account
+ownership amongst mobile money users. The results also show that amongst rural residents,
+the probability of bank account ownership is much higher amongst those using mobile
+money (15.9pp). Given that 67% of rural residents in our sample own a bank account, the
+15.9pp increase in bank account ownership translates to an approximately 23.9% higher
+prevalence of bank account ownership amongst rural residents. The results for the urban
+sample do not show statistical significance.
+To test the sensitivity of our estimates, we present results of the PSM using kernel
+matching (see supplementary material Table A1). The results are consistent with those we
+found using the NN matching method, except that mobile money usage is now significantly
+associated with bank account ownership for the urban subsample. Table A2 in the
+supplementary material provides the results when we consider a propensity-based weightedMobile
+money
+userNon-user
+of mobile money % Bias reductionDifferences
+(1)–(2)
+Variables (1) (2)Standardised
+biasAbsolute
+% bias t-value p-value
+Age of respondent 45.79 45.60 1.2 95.5 0.18 0.859
+Age squared 2327.80 2310.70 1 96.3 0.15 0.879Female 0.500 0.529 /C05.7 /C0258.3 /C00.79 0.429
+Married 0.319 0.316 0.6 63.8 0.08 0.938Head of household 0.573 0.604 /C06.3 /C011.4 /C00.88 0.381
+No education
+(ref. category)Primary education 0.205 0.210 /C01.2 94.4 /C00.18 0.859
+Secondary education 0.303 0.329 /C05.8 54.9 /C00.77 0.44
+High school/vocationaleducation0.329 0.303 5.8 74.7 0.77 0.44
+College/university 0.098 0.104 /C01.9 80.3 /C00.24 0.812
+Work situation improvedin the past year0.373 0.360 2.7 80.5 0.37 0.709
+Business owner (formal or
+informal)0.215 0.202 3.2 10.7 0.44 0.658
+% with television access in
+enumeration area0.541 0.524 7 68.8 0.97 0.333
+Urban resident 0.350 0.313 7.9 57.3 1.07 0.285
+Hhohho region (ref.category)Manzini region 0.290 0.308 /C04 /C0200.9 /C00.55 0.583
+Shiselweni region 0.228 0.269 /C09.8 /C0777.2 /C01.33 0.183
+Lubombo region 0.202 0.199 0.6 28.5 0.09 0.929
+Note(s) : Data collected from the 2014 FinScope Consumer SurveyTable 2.
+Covariate balance after
+PSM-individual t-testsMobile money
+703regression approach as described earlier. The results suggest that our findings from the PSM
+approach ( Table 3 ) are robust to alternative modelling approaches. However, we noted that
+the estimates from the weighted regression approach are slightly larger than the results from
+the PSM in Table 3 . We speculate that the observed difference in the magnitude of the
+Note(s): The figure plots the propensity scores for the overall, urban and rural
+subsamples to gauge the degree of overlap and region of common support betweenthe control (non-users of mobile money) and treatment (users of mobile money) groups
+Figure 2.
+The density
+distribution of thepropensity scores
+representing the
+probability that an
+individual uses mobile
+money for the overall,urban and rural
+subsamples
+Figure 3.
+The density
+distribution of the
+propensity score for theoverall before and after
+the PSM for users and
+non-users ofmobile moneyIJSE
+47,6
+704calculated estimates could partly be explained by different methodological assumptions
+imposed on the different modelling strategies.
+4.5 Hidden bias and sensitivity checks
+The purpose of conducting a PSM is to minimise potential bias due to observable
+characteristics. However, there could still be some other unobserved biases influencing the
+results and hidden from the researcher. To investigate this possibility, we calculated
+Rosenbaum bounds –a non-parametric test recommended for binary outcomes –using the
+Mantel –Haenszel (MH) test ( Mantel and Haenszel, 1959 ). The MH tests the null hypothesis
+that, given random sampling, the probability of owning a bank is not influenced by the usage
+of mobile money. Table 4 provides the results for this test, where gamma ( Γ) measures the
+odds of differential assignment due to unobservable characteristics. In the instance whenthere is zero hidden bias, Γ¼1, the Q
+MHtest statistic equals 4.079 and suggests strong
+evidence that mobile money usage is strongly associated with bank account ownership in
+Eswatini. The matching process resulted in a positive and statistically significant effect of
+mobile money; hence, we focus on interpreting the results shown in the column (4) of Table 4 .
+We find these results to be robust to a certain degree. Specifically, we found in Table 4 that
+increasing the odds of mobile money usage in each of the two groups to 1.6 times the current
+odds ratios make the results become less robust. The upper bounds on the significance levels
+forΓ¼1, 1.2, 1.4 and 1.6 are p< 0.000, 0.002, 0.030 and 0.156, respectively. Thus, our
+estimates are insensitive to hidden bias that would increase the odds of mobile money usage
+to 1.4 times but sensitive to a bias that would increase the odds by 1.6 times.
+5. Discussion
+This study sought to examine the factors associated with mobile money usage and the extent
+to which mobile money is an accelerator for financial inclusion or rather a substitute for
+Overall sample Rural sample Urban sample
+Specifications (I) (II) (III)
+Mobile money user 0.141*** 0.159*** 0.0571
+(0.0283) (0.0405) (0.0436)
+Observations 3,354 2,350 985Average bank ownershipMobile money user 0.74 0.67 0.83Non-user of mobile money 0.47 0.39 0.70
+Note(s) : ***Significant at 1% level; **significant at 5% level; *significant at 10% level. Standard errors (SEs)
+for the ATT in parentheses are calculated using bootstrapping with 500 replications
+Gamma ( Γ) Q_mh þ Q_mh – p_mh þ p_mh –
+1 4.079 4.079 0.000 0.000
+1.2 2.887 5.288 0.002 0.000
+1.4 1.881 6.317 0.030 0.000
+1.6 1.013 7.218 0.156 0.0001.8 0.248 8.021 0.402 0.0002 0.281 8.746 0.389 0.000
+Note(s) : The MH tests the null hypothesis that the treatment effect is overestimated; rejecting the null
+hypothesis implies that we do not suspect overestimationTable 3.
+ATEs from the PSM –
+NN method
+Table 4.
+MHp-values (p_MH þ)
+for the overall sampleMobile money
+705formal financial services in Eswatini. Our findings suggest that increased education (i.e.
+having a college education), improved work situation in the past year, having a small
+business, married, being an urban resident and residence in the Lubombo region all positively
+correlate with mobile money usage. The PSM results reveal that individuals who currently
+own a bank account are more likely to be users of mobile money. Our findings are largely
+consistent with previously related studies ( Aker and Mbiti, 2010 ;Suri and Jack, 2016 ).
+The observation that mobile money usage is highly associated with a higher probability of
+bank account ownership might reflect a supply-side effect at play here. These findings are
+consistent with the previous literature that also documents a positive relation between mobile
+money usage and financial inclusion ( Della peruta, 2018 ,Aron, 2018 ;Aker and Mbiti, 2010 ;
+Okello Candiya Bongomin et al., 2018 ). The positive correlation between mobile money use
+and current bank account ownership can possibly be explained by the realisation that, as
+mobile money use increases, local banks might respond to this increased use either by
+competing or partnering with mobile money service providers and facilitate the opening of
+new bank accounts for customers. This is quite possible given that some local banks such as
+the Swazi bank have already formed partnerships with mobile money service providers such
+as MTN and have incorporated mechanisms to facilitate the withdrawal of money sent using
+mobile money services through their ATMs, hence a higher possibility for individuals to open
+bank accounts with the bank ( MTN, 2019 ). Also, FNB Eswatini has established an aggressive
+strategy to grow their e-wallet and Cashplus, Standard Bank Eswatini with instant money
+and the Eswatini Bank with the Visa Prepaid card. Nedbank Eswatini launched their new
+banking application with improved features which is also likely to support functionality for
+cell phone-based money transfers.
+Furthermore, the finding that mobile money positively correlates bank account ownership
+in Eswatini with a higher proportion of users in urban areas appears to suggest that mobile
+money does not seem to be increasing the reach of financial services to those who are
+structurally excluded from participating in the formal financial system in Eswatini, mostly
+those in rural areas of the country. However, the results of FinScope Consumer Survey of 2018
+show a significant 28% increase in the growth of mobile money since 2014. Mobile money
+application in Africa has been a key platform for financial transactions in the areas of
+commerce, healthcare, agriculture and other sectors ( Donovan, 2012 ). It is important to note
+that much of these sectors mostly serve the already banked and working-class population
+mostly resident in urban areas and not in areas with greatest need. Insurance products andpeer-to-peer transfers are likely to constitute most of the transactions undertaken by mobile
+users in most developing countries. Mobile money is more than a telephonic technology, as it
+requires cash-in and cash-out infrastructures, hence the need for a constant interaction
+between ICT and financial services. From a policy standpoint, this observation echoes a call
+for continued or ongoing government support for strategies targeted at improving ICT
+infrastructure in the country. Also, the need for efforts to improve entrepreneurship and
+employment opportunities in the country cannot be overemphasised as these have a direct
+positive correlation with mobile money usage.
+The results also show that the rural population and the relatively uneducated are amongst
+the least users of mobile money in Eswatini. This observation is possible, given that most
+financial products are more prevalent in urban areas where the infrastructure is relatively
+well developed compared to rural areas. This finding suggests the need for strategies that
+deliberately target increasing investment in physical banking infrastructures to rural areas,
+improved financial education, as well as the promotion of mobile money usage through
+activities like roadshows in remote locations to raise awareness and hence uptake of mobile
+money. Investment in physical infrastructure is not likely to be a cost-effective strategy, given
+that a significant part of the rural population does not have regular income. Moreover, the
+value of transactions is very low to warrant the investment. The accelerated coverage of theIJSE
+47,6
+706mobile money agents is covering the space as shown by the rapid uptake of the mobile money
+usage. Also, banks are considering potential solutions including virtual wallets as possible
+strategies to extend coverage to the rural population, for example, FNB bank ’s Cashplus and
+e-wallet initiatives. Increasing mobile money access to rural areas is more likely to enhance
+the saving capacity of the poor, less educated and those with irregular incomes and
+subsequently improve healthcare access and utilisation amongst the rural populace
+(Munyegera and Matsumoto, 2018 ;Kyet al., 2018 ).
+This study is not without its limitations. First, we rely on a cross-sectional data set, which
+has its own limitations. Research questions of this nature are best tackled in the context of
+longitudinal data sets, in which we can observe individuals over extended periods and make
+robust conclusions, especially regarding the causal nature of mobile money use on financial
+inclusion. Second, while the empirical analysis used a quasi-experimental strategy to
+minimise the possibility of bias due to self-selection associated with mobile money usage, our
+estimates could still be minimally plagued with endogeneity problems. The lack of good
+instrumental variables within our data sets precludes more credible analyses using
+instrumental variable methods –techniques that are specifically designed to tackle such
+econometric problems. Third, we are unable to ascertain whether it is mobile money
+influencing financial inclusion or the other way around. Thus, we interpret our findings as
+representing mere associations between mobile money usage and financial inclusion. The
+authors also acknowledge the recent release of the 2018 FinScope Consumer Survey for
+Eswatini into the public domain, which at the time of writing this paper was not available.
+Thus, it is plausible that the conclusions made in this paper could potentially be at odds with
+the 2018 survey. Part of such differences in the conclusions could be explained by the recent
+policy developments targeted at increasing financial inclusion in the country. Regardless of
+the noted concerns, our study makes vital contributions to the emerging literature on the
+influence of mobile money use on financial inclusion in sub-Saharan Africa and other low-
+income countries.
+6. Conclusion
+This study examines the factor sa s s o c i a t e dw i t hm o b i l em o n e yu s a g ea n dt h ee x t e n tt ow h i c h
+mobile money usage is an accelerator for financi al inclusion or rather a substitute for formal
+financial services in Eswatini. Our findings show that mobile money usage in Eswatini positively
+correlates with bank account ownership –a possible indication of a supply-side response or
+collaborative partnership with mobile money service providers by local banks in Eswatini. This
+finding, together with a lower mobile money preva lence rate in rural areas, suggests that mobile
+money use does not seem to be increasing the reach of financial services to those who are
+structurally excluded from participating in the formal financial system in Eswatini.
+References
+Ajefu, J.B. and Ogebe, J.O. (2019), “Migrant remittances and financial inclusion among households in
+Nigeria ”,Oxford Development Studies , Vol. 47, pp. 319-335.
+Aker, J.C. and Mbiti, I.M. (2010), “Mobile phones and economic development in Africa ”,Journal of
+Economic Perspectives , Vol. 24, pp. 207-232.
+Allen, F., Carletti, E., Cull, R., Qian, J., Senbet, L. and Valenzuela, P. (2014), “The African financial
+development and financial inclusion gaps ”,Journal of African Economies , Vol. 23, pp. 614-642.
+Allen, F., Demirguc-kunt, A., Klapper, L. and Martinez peria, M.S. (2016), “The foundations of financial
+inclusion: understanding ownership and use of formal accounts ”,Journal of Financial
+Intermediation , Vol. 27, pp. 1-30.
+Aron, J. (2018), “Mobile money and the economy: a review of the evidence ”,The World Bank Research
+Observer , Vol. 33, pp. 135-188.Mobile money
+707Central bank of Swaziland (2016), National Payment System (NPS) Vision and Strategy Document
+from 2009 to 2016 , Central Bank of Swaziland, Mbabane.
+Corbett, S. (2008), Can the Cellphone Help End Global Poverty , The New York Times, New York,
+NY, Vol. 13.
+Della peruta, M. (2018), “Adoption of mobile money and financial inclusion: a macroeconomic approach
+through cluster analysis ”,Economics of Innovation and New Technology , Vol. 27, pp. 154-173.
+Demirg €uç-kunt, A. and Klapper, L. (2013), “Measuring financial inclusion: explaining variation in use
+of financial services across and within countries ”,Brookings Papers on Economic Activity ,
+Spring, No. 1, pp. 279-340.
+Donovan, K. (2012), “Mobile money for financial inclusion ”,Information and Communications for
+Development , Vol. 61, pp. 61-73.
+Etzo, S. and Collender, G. (2010), “The mobile phone ‘revolution ’in Africa: rhetoric or reality? ”,African
+Affairs , Vol. 109, pp. 659-668.
+Fanta, A.B., Mutsonziwa, K., Goosen, R., Emanuel, M. and Kettles, N. (2016), “The role of mobile
+money in financial inclusion in the SADC region ”, FinMark Trust policy research paper No. 03/.
+Finmark Trust, F. (2014), FinScope Swaziland 2014 Consumer Survey , Johannesburg.
+Gichuki, C.N. and Mulu-mutuku, M. (2018), “Determinants of awareness and adoption of mobile money
+technologies: evidence from women micro entrepreneurs in Kenya ”,Women ’s Studies
+International Forum , Vol. 67, pp. 18-22.
+Government of Swaziland (2017), National Financial Inclusion Strategy for Swaziland 2017-2022 ,
+Mbabane.
+Heckman, J.J. (1996), Randomization as an Instrumental Variable , MIT Press, Cambridge, MA.
+Heckman, J.J. and ROBB, R. (1985), “Alternative methods for evaluating the impact of interventions:
+an overview ”,Journal of Econometrics , Vol. 30, pp. 239-267.
+Hirano, K. and Imbens, G.W. (2001), “Estimation of causal effects using propensity score weighting: an
+application to data on right heart catheterization ”,Health Services and Outcomes Research
+Methodology , Vol. 2, pp. 259-278.
+Hirano, K., Imbens, G.W. and Ridder, G. (2003), “Efficient estimation of average treatment effects
+using the estimated propensity score ”,Econometrica , Vol. 71, pp. 1161-1189.
+Holmes, W.M. (2014), Using Propensity Scores in Quasi-Experimental Designs. 55 City Road , SAGE
+Publications, London.
+Jack, W. and Suri, T. (2011), Mobile Money: The Economics of M-PESA , National Bureau of Economic
+Research, Cambridge, MA.
+Jack, W. and Suri, T. (2014), “Risk sharing and transactions costs: evidence from Kenya ’s mobile
+money revolution ”,American Economic Review , Vol. 104, pp. 183-223.
+Kumar, S. and Vollmer, S. (2013), “Does access to improved sanitation reduce childhood diarrhea in
+rural India? ”,Health Economics , Vol. 22, pp. 410-27.
+Ky, S., Rugemintwari, C. and Sauviat, A. (2018), “Does mobile money affect saving behaviour?
+Evidence from a developing country ”,Journal of African Economies , Vol. 27, pp. 285-320.
+Leyshon, A. and Thrift, N. (1994), “Access to financial services and financial infrastructure
+withdrawal: problems and policies ”,Area , pp. 268-275.
+Lwanga mayanja, M. and Adong, A. (2016), “A pathway to financial inclusion: mobile money and
+individual savings in Uganda ”, Research Series .
+Mantel, N. and Haenszel, W. (1959), “Statistical aspects of the analysis of data from retrospective
+studies of disease ”,JNCI: Journal of the National Cancer Institute , Vol. 22, pp. 719-748.
+Mas, I. and Morawczynski, O. (2009), “Designing mobile money services lessons from M-PESA ”,
+Innovations: Technology, Governance, Globalization , Vol. 4, pp. 77-91.IJSE
+47,6
+708Mattson, C. and Stuart, G. (2018), Understanding KeyMobile Money Users - A Public Report , Boston, MA.
+Medhi, I., Gautama, S. and Toyama, K. (2009), “A comparison of mobile money-transfer UIs for non-
+literate and semi-literate users ”,Proceedings of the SIGCHI Conference on Human Factors in
+Computing Systems , ACM, pp. 1741-1750.
+MTN (2019), “Swazi bank [online] ”, available at: https://www.mtn.co.sz/en/MobMoney/Banking/Pages/
+SwaziBank.aspx .
+Munyegera, G.K. and Matsumoto, T. (2016), “Mobile money, remittances, and household welfare: panel
+evidence from rural Uganda ”,World Development , Vol. 79, pp. 127-137.
+Munyegera, G.K. and Matsumoto, T. (2018), “ICT for financial access: mobile money and the financial
+behavior of rural households in Uganda ”,Review of Development Economics , Vol. 22, pp. 45-66.
+Mutual, M.A.O. (2018), “How can i get even more value from MTN Mobile money? ”, in Mutual,
+M.A.O. (Ed.).
+Observer, S. (2017), New, Easy Way To Pay Rent With Mobile Money , Swazi Observer, Mbabane.
+Okello Candiya Bongomin, G., Ntayi, J.M., Munene, J.C. and Malinga, C.A. (2018), “Mobile money and
+financial inclusion in sub-Saharan Africa: the moderating role of social networks ”,Journal of
+African Business , Vol. 19, pp. 361-384.
+Ouma, S.A., Odongo, T.M. and Were, M. (2017), “Mobile financial services and financial inclusion: is it
+a boon for savings mobilization? ”,Review of Development Finance , Vol. 7, pp. 29-35.
+Pollard, J.S. (1995), Industry Change and Labor Segmentation: The Banking Industry in Los Angles,
+1970-1990 , University of California, Los Angeles.
+Rosenbaum, P.R. (1987), “Sensitivity analysis for certain permutation inferences in matched
+observational studies ”,Biometrika , Vol. 74, pp. 13-26.
+Rosenbaum, P.R. (2002), Observational Studies [2002] , 2nd ed., Springer, New York.
+Rosenbaum, P.R. and Rubin, D.B. (1983), “The Central role of the propensity score in observational
+studies for causal effects ”,Biometrika Trust , Vol. 70 No. 1, pp. 41-55, doi: 10.2307/2335942 .
+Rosenbaum, P.R. and Rubin, D.B. (1985), “Constructing a control group using multivariate matched
+sampling methods that incorporate the propensity score ”,American Statistical Association ,
+Vol. 39 No. 1, pp. 33-38.
+Sarma, M. and Pais, J. (2011), “Financial inclusion and development ”,Journal of International
+Development , Vol. 23, pp. 613-628.
+Shongwe Sam (2017), Mobile Communications and Financial Inclusion , MTN CCO, Ezulwini.
+Statacorp, L. (2017), Stata Statistical Software: Release 15 , Special Edition Release, StataCorp LLC,
+College Station, TX.
+Suri, T. and Jack, W. (2016), “The long-run poverty and gender impacts of mobile money ”,Science ,
+Vol. 354, pp. 1288-1292.
+World bank (2019), “Rural population (% of total population) [Online] ”, Washington DC, World Bank,
+available at: https://data.worldbank.org/indicator/sp.rur.totl.zs?view 5map (accessed 07
+March 2019).
+Appendix
+Online appendix is available for this article.
+Corresponding author
+Marshall Makate can be contacted at: marshall.makate@curtin.edu.au
+For instructions on how to order reprints of this article, please visit our website:
+www.emeraldgrouppublishing.com/licensing/reprints.htmOr contact us for further details: permissions@emeraldinsight.comMobile money
+709

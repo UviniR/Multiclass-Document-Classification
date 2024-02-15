@@ -1,0 +1,1154 @@
+Chan  et al. BMC Med Inform Decis Mak           (2021) 21:39  
+https://doi.org/10.1186/s12911-021-01406-z
+RESEARCH ARTICLE
+Development of a novel mobile 
+application, HBB Prompt, with human factors 
+and user -centred design for Helping Babies 
+Breathe skills retention in Uganda
+Natalie Hoi‑Man Chan1, Hasan S. Merali2, Niraj Mistry3,9, Ryan Kealey4,5, Douglas M. Campbell6,7,9, 
+Shaun K. Morris8,9 and Santorino Data10,11* 
+Abstract 
+Background: Helping Babies Breathe (HBB) is a life ‑saving program that has helped reduce neonatal morbidity and 
+mortality, but knowledge and skills retention after training remains a significant challenge for sustainability of impact. 
+User ‑centred design (UCD) can be used to develop solutions to target knowledge and skills maintenance.
+Methods: We applied a process of UCD beginning with understanding the facilitators of, and barriers to, learning 
+and retaining HBB knowledge and skills. HBB Master Trainers and frontline HBB providers participated in a series of 
+focus group discussions (FGDs) to uncover the processes of skills acquisition and maintenance to develop a mobile 
+application called “HBB Prompt” . Themes derived from each FGD were identified and implications for development 
+of the HBB Prompt app were explored, including feasibility of incorporating strategies into the format of an app. Data 
+analysis took place after each iteration in Phase 1 to incorporate feedback and improve subsequent versions of HBB 
+Prompt.
+Results: Six HBB trainers and seven frontline HBB providers participated in a series of FGDs in Phase 1 of this study. 
+Common themes included lack of motivation to practise, improving confidence in ventilation skills, ability to achieve 
+the Golden Minute, fear of forgetting knowledge or skills, importance of feedback, and peer ‑to‑peer learning. Themes 
+identified that were not feasible to address pertained to health system challenges. Feedback about HBB Prompt was 
+generally positive. Based on initial and iterative feedback, HBB Prompt was created with four primary functions: Train‑
+ing Mode, Simulation Mode, Quizzes, and Dashboard/Scoreboard.
+Conclusions: Developing HBB Prompt with UCD to help improve knowledge and skills retention was feasible and 
+revealed key concepts, including drivers for successes and challenges faced for learning and maintaining HBB skills. 
+HBB Prompt will be piloted in Phase 2 of this study, where knowledge and skills retention after HBB training will be 
+compared between an intervention group with HBB Prompt and a control group without the app.
+Trial registration Clinicaltrials.gov (NCT03577054). Retrospectively registered July 5, 2018, https ://clini caltr  ials.gov/ct2/
+show/study /NCT03 57705 4.
+© The Author(s) 2021. Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which 
+permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the 
+original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or 
+other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line 
+to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory 
+regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this 
+licence, visit http://creat iveco mmons  .org/licen ses/by/4.0/. The Creative Commons Public Domain Dedication waiver (http://creat iveco  
+mmons  .org/publi cdoma in/zero/1.0/) applies to the data made available in this article, unless otherwise stated in a credit line to the data.Open Access
+*Correspondence:  sdata@must.ac.ug
+10 Department of Pediatrics and Child Health, Mbarara University 
+of Science and Technology, P .O. Box 1410, Mbarara, Uganda
+Full list of author information is available at the end of the articlePage 2 of 15 Chan et al. BMC Med Inform Decis Mak           (2021) 21:39 
+Background
+Despite a significant reduction in global neonatal mortal -
+ity from 1990 through 2018, approximately 2.5 million 
+newborns die annually. These newborn deaths represent 
+nearly half of the 5.3 million children under five who die 
+each year [1]. The proportion of newborns who contrib -
+ute to under-five mortality has been growing and the gap 
+between reduction of childhood and infant mortality is 
+rising. This is because strategies for newborn mortality 
+reduction are challenging to implement [2]. The top three 
+causes of newborn deaths continue to be prematurity, 
+intrapartum-related events, and infection [2]. Approxi -
+mately 10% of babies require help after birth in high-
+resource settings, compared with 15% in low-resource 
+settings [3, 4]. Skilled personnel who can resuscitate 
+babies immediately after delivery save lives [5, 6]. Stand -
+ardized training through the Helping Babies Breathe 
+(HBB) program has been shown to improve newborn 
+resuscitation skills [7, 8].
+The HBB curriculum, currently in its second edition 
+(HBB 2.0), was designed to train frontline health pro -
+viders in low-resource settings to provide life-saving 
+interventions for newborns [9]. HBB has been taught in 
+over 80 countries and has been shown to reduce neona -
+tal mortality and morbidity [10]. HBB training materi -
+als are standardized with a flowchart that illustrates the 
+steps in the HBB algorithm, accompanied by a facilitator 
+flip chart that provides all the teaching prompts for HBB 
+workshop delivery. The training program emphasizes 
+the practice of individual steps, key skills, and integra -
+tion of skills into the delivery setting through simulation. 
+Illustrations and a green-yellow–red colour scheme are 
+used to visually guide providers through the HBB algo -
+rithm. In Uganda, the HBB program has been deployed 
+with the help of international health implementing part -
+ners in collaboration with the Ministry of Health due 
+to the relatively high costs of HBB training [11]. One of 
+the most essential skills HBB teaches is how to ventilate 
+a newborn struggling to breathe, and to start doing so 
+within one minute after birth, referred to as the Golden 
+Minute. Skills deterioration after initial training is a sig -
+nificant barrier to sustained impact of programs like HBB 
+[12]. Low dose high frequency (LDHF) practice, use of 
+simulation, refresher training, and supportive supervi -
+sion are strategies that help reduce the decay of skills 
+over time [13–17]. However, implementing initial train -
+ing, refresher training, and supportive supervision are 
+all costly and resource intensive, particularly in settings where births occur at smaller facilities in rural commu -
+nities spread out over a large geographic region [11]. 
+Since 2010, the Ugandan Ministry of Health alongside 
+implementing partners have been scaling up training for 
+healthcare workers who look after newborns across the 
+country using the HBB program. As of 2014, HBB was 
+offered in more than 40% of health facilities [18].
+Mobile health solutions have been increasingly popular 
+as smart devices are ubiquitous. Their rate of ownership 
+in low- and middle-income countries has grown expo -
+nentially, with over 5 billion unique users worldwide in 
+2019 [19], making it especially attractive when designing 
+solutions aiming to reach large audiences [20]. In 2018, 
+there were 19.8 million unique mobile phone users in 
+Uganda, with half of these subscribers using the inter -
+net on their mobile phones [21]. This represents mobile 
+internet penetration in 23% of the population. Of these 
+users, only 16% had a smart phone compared with the 
+average of 30% of users having smart phones in Sub-
+Saharan Africa [21]. Mobile applications have been tested 
+in numerous settings within healthcare and medical edu -
+cation with varying success. Thoughtful development to 
+optimize usability and utility for the target population is 
+important [22–24]. Design processes with iterative pro -
+totyping have been successfully used to develop mobile 
+apps for various purposes, such as supporting lifestyle 
+interventions for cardiovascular health [25], clinical 
+decision-making for osteoporosis treatment [26], and 
+self-management for dementia patients [27]. Apps tar -
+geted towards newborn health [28–34] have been cre -
+ated and evaluated previously, some employing UCD, but 
+none have informed their design by exploring the cogni -
+tive processes of learning newborn resuscitation skills. 
+Understanding the underlying preferences, perceptions, 
+facilitators and barriers that drive behaviours can help 
+tailor the development of features and functions of apps 
+[25, 35, 36]. Applying UCD and assessing human factors 
+during the development of a mobile app can enhance 
+user experience and increase the effectiveness of the tool.
+In this paper we describe the UCD process of the devel -
+opment a mobile app (HBB Prompt) to improve knowl -
+edge and skills retention after initial HBB training.
+Methods
+Study overview
+The study was conducted at Mbarara University of Sci -
+ence and Technology (MUST) in southwestern Uganda. 
+This article describes Phase 1, the development of HBB Keywords: Newborn resuscitation, Helping babies breathe, Mobile application, Uganda, Simulation, Human factors, 
+User ‑centred design, mHealthPage 3 of 15
+ Chan et al. BMC Med Inform Decis Mak           (2021) 21:39 
+ 
+Prompt. More details regarding the entire study can be 
+found in the protocol paper [37]. Further details includ -
+ing the focus group discussion (FGD) guides for Phase 1 
+can be found in Additional file 1 and Additional file 2.
+Objectives
+The overall objectives of the study were to apply a UCD 
+framework to develop a mobile app to enhance HBB 
+knowledge and skills maintenance (Phase 1) and to test 
+its effectiveness in a pilot setting (Phase 2). The objective 
+of Phase 1a of the study was to understand the facilita -
+tors and barriers to learning and maintaining HBB skills 
+for providers with varying levels of experience with 
+newborn resuscitation. Information from Phase 1a was 
+incorporated into modifications of HBB Prompt version 
+0 (v0) to create version 1 (v1), which was used in Phase 
+1b UCD testing. Subsequently, the objective for Phase 
+1b was to evaluate how HBB Prompt v1 does or does not 
+meet the needs of HBB users and how it could be feasibly 
+improved prior to pilot testing in Phase 2 of this study. 
+See Fig. 1.
+Participant recruitment
+Participants for Phase 1 were recruited by letter from 
+a register of previously HBB-trained healthcare work -
+ers who reside and care for newborns in southwestern Uganda. Participants who responded and who were able 
+to attend the scheduled FGD sessions were included in 
+the study. Inclusion criteria for the first focus group was 
+any healthcare provider with HBB trainer experience (i.e. 
+received previous training in HBB and also completed 
+the HBB Master Trainer Course) allowing them to teach 
+the HBB curriculum. Inclusion criteria for the second 
+focus group was frontline providers who had previously 
+received HBB training.
+Phase 1: mobile app development
+HBB Prompt v0 development
+Study co-investigators collectively used their knowledge 
+and experience with the HBB program, resuscitation 
+education, and mobile app development to create foun -
+dational features of HBB Prompt v0. In particular, we 
+sought to leverage strategies that have previously been 
+shown to improve skills retention, including LDHF prac -
+tice, use of simulation, refresher training, and supportive 
+supervision [10, 38, 39]. This provided a framework for 
+our two software developers to build features of the app 
+that we anticipated HBB trainers and providers would 
+request. The basic functions that were identified as most 
+important were: training videos and information portal, 
+self-practice mode and group simulation mode, knowl -
+edge assessments, and a practice dashboard.
+•HBB tr aine rs (FGD 1)
+•HBB pr oviders (FGD 2)
+•Sharing per sonal experiences  
+regarding newborn stabiliza/g415on
+•Under standing  facilitators and barri ers 
+to HBB learning
+•Building /g415meline of HBB learning
+•Co-designing of solu/g415ons  to addr ess 
+challenges iden /g415ﬁed earlie rPhase 1 a
+HBB P rompt v0
+HBB tr aine rs (FGD 1)
+••
+HBB providers (FGD 2)
+•FGDs and explora/g415on of HBB P rompt 
+•Simula/g415ons of using HBB P rompt to  
+facilitate prac/g415ce of HBB skills
+•Speciﬁc f eedback r egarding app 
+features  and func/g415ons solicit ed
+•Feedback used to mak e 
+modiﬁca/g415ons to exis/g415ng a ppPhase 1 b
+HBB P rompt v1.0 – v1.2
+•Training interven/g415on and co ntrol sites 
+on HBB and E CEB
+•Interven/g415on  site par/g415cipants tr ained on  
+HBB Pro mpt
+•6 month skills  assessment and FGDs f or 
+feedback on skills mainte nanc ePhase 2
+HBB P rompt v2
+Fig. 1 Overview of HBB Prompt study. The HBB Prompt study is divided into Phase 1, where there were iterative UCD cycles to develop HBB Prompt 
+and Phase 2, where the HBB Prompt app will be piloted. During Phase 1, HBB trainers formed one focus group (FGD 1) and HBB providers formed 
+the second focus group (FGD 2). Each group went through Phase 1a and 1b separately to facilitate UCD of HBB PromptPage 4 of 15 Chan et al. BMC Med Inform Decis Mak           (2021) 21:39 
+The HBB Prompt app is an Android-based application 
+that can run on smart devices with an Android Operating 
+System, Version 4.0.3 and above. The Android platform 
+was chosen due to lower cost and higher penetration of 
+Android devices in Uganda and other low- and middle-
+income countries. The app was designed using Android 
+Studio 3.0, an Integrated Development Environment pro -
+vided by Google for design and development of Android 
+apps. HBB Prompt, once installed, does not require inter -
+net connectivity; however, when internet connectivity 
+is detected, it automatically logs usage data to a remote 
+Linode server, which it maps according to device Inter -
+national Mobile Equipment Identity (IMEIs). Usage 
+data tracked does not require runtime or dangerous 
+permissions and therefore users do not need to be con -
+cerned about access to potentially sensitive data on their 
+accounts. The app does not have access to audio or video 
+recording, the camera function, or location data. Usage 
+data recorded include user identification, date and time 
+of login, time spent on each page of the app, and scores 
+on quizzes or simulations. The app is designed to solely 
+track in-app use, which is intended for education and 
+practice only and not for direct patient care. The logged 
+data can later be exported in comma-separated values 
+(csv) format for further analysis.
+Phase 1a
+Two separate focus groups underwent the same sequence 
+of exploratory activities: discussion of personal experi -
+ences with newborn resuscitation, facilitators and barri -
+ers to learning HBB knowledge and skills, perceptions of 
+the timeline in acquisition of knowledge and skills, and 
+generation of ideas on how to maintain and sustain HBB 
+knowledge and skills. The composition of each focus 
+group was primarily divided by HBB training experience 
+so that input could be elicited separately from trainers 
+(FGD 1) and frontline users (FGD 2) of the HBB curricu -
+lum. See Additional file 1 for details.
+Phase 1b
+The same focus groups were invited back to help co-
+design and provide feedback to improve the HBB Prompt 
+v1. Participants explored the app, simulated use of 
+the app and provided feedback regarding app content, 
+interface, navigation, functionality, customizability, and 
+usability. Two iterations of UCD feedback sessions took 
+place prior to finalizing the app for Phase 2 pilot testing. 
+See Additional file 2 for details.
+Analysis
+FGDs were recorded and thematic analysis was con -
+ducted, where investigators independently coded com -
+ponents of the transcript to highlight needs and mental models of the participants. These independent codes 
+were aggregated and synthesized in order to uncover 
+main themes consistent across investigators. After each 
+iteration, categories and themes were reviewed together 
+with the software developers to incorporate feasible 
+improvements to HBB Prompt.
+Results
+Participants
+The first focus group comprised six HBB trainers who 
+were all physicians and the second focus group com -
+prised seven midwives. Table  1 describes the demo -
+graphic characteristics of the participants in each FGD, 
+including level of practical and simulated experience with 
+newborn care, emergency training, and comfort with 
+mobile devices.
+Phase 1a
+Exploring personal experience, facilitators and barriers
+Themes that emerged from FGDs are summarized in 
+Table  2. Important factors that motivated HBB learning 
+and skills maintenance were supportive supervision and 
+self-esteem. Additionally, continuing medical education 
+opportunities, peer-to-peer learning, refresher courses, 
+and timely feedback were all identified as positive driv -
+ers. Barriers identified were lack of equipment and health 
+system issues such as inadequate transport for escalation 
+of care.
+Timeline of learning HBB and perceptions of what 
+was difficult to learn and remember
+Participants explored the timeline of learning HBB skills 
+and knowledge, including what was perceived as, and 
+what was in reality, the most difficult to learn and remem -
+ber (Fig.  2). A concern throughout was how to translate 
+skills from a training environment to real-life scenarios. 
+Before HBB training, many concerns surrounded learn -
+ing about the steps to help a baby breathe and the fear 
+of not retaining skills. During HBB training, there was 
+fear of not achieving the Golden Minute. Three months 
+after training, participants were worried about forgetting 
+their skills and not effectively debriefing to improve after 
+a resuscitation.
+Co‑designing solutions
+Prior to being exposed to HBB Prompt v0, participants 
+were asked to co-design solutions to help learn and main -
+tain HBB skills. They identified promoting a safe learning 
+environment as an important goal. To achieve this, sug -
+gestions emphasized the use of audio and visual prompts 
+and written and video guides to facilitate different ways 
+of learning. To counteract the inertia to practise, meth -
+ods of motivating users were discussed, including setting Page 5 of 15
+ Chan et al. BMC Med Inform Decis Mak           (2021) 21:39 
+ 
+Table 1 Focus group participant demographics and characteristics
+a Health Centre III is a local clinic with access to delivery services and inpatient care, Health Centre IV is a small local hospitalHBB trainers (n = 6) HBB providers (n = 7)
+Provider type Medical Officers = 2
+Medical Specialists = 4Enrolled Midwife = 4
+Registered Midwife = 3
+Years of experience as healthcare provider < 5 years = 1
+5–10 years = 3
+> 10 years = 2< 5 years = 0
+5–10 years = 4
+> 10 years = 3
+Age 21–30 years old = 1
+31–40 years old = 521–30 years old = 1
+31–40 years old = 5
+41–50 years old = 1
+Sex Female = 4
+Male = 2Female = 7
+Male = 0
+Health district
+Ntungamo 1 0
+Mbarara 5 7
+Level of Health facilitya
+Health Centre III 0 4
+Health Centre IV 0 2
+Hospital 6 1
+Training courses attended
+Helping Babies Breathe (HBB) 6 7
+Essential Care for Every Baby (ECEB) 6 5
+Essential Care for Small Babies (ECSB) 4 4
+Helping Mothers Survive—Bleeding after birth 2 1
+Comprehensive Emergency Maternal and Newborn Care (CEMONC) 1 1
+Basic Emergency Maternal and Newborn Care (BEMONC) 0 1
+Emergency Triage and Treatment (ETAT) 4 1
+Master Trainer for HBB 6 2
+Experience in last year
+Number of births attended where babies not breathing at birth None = 2
+1–10 = 2
+11–20 = 1
+> 20 = 1None = 0
+1–10 = 4
+11–20 = 1
+> 20 = 2
+Simulated deliveries with baby not breathing None = 0
+1–10 = 2
+11–20 = 2
+> 20 = 2None = 0
+1–10 = 4
+11–20 = 2
+> 20 = 1
+Preterm deliveries attended None = 1
+1–10 = 2
+11–20 = 2
+> 20 = 1None = 1
+1–10 = 5
+11–20 = 1
+> 20 = 0
+Simulated preterm deliveries None = 2
+1–10 = 3
+11–20 = 0
+> 20 = 1None = 2
+1–10 = 4
+11–20 = 0
+> 20 = 1
+Deliveries attended in the last  montha (at the time of first FGD session) None = 6 None = 1
+1–10 = 2
+11–20 = 3
+> 20 = 1
+Ownership of smart device Yes = 6
+No = 0Yes = 6
+No = 1
+Comfort with using smart device (Likert scale 1–5) Not comfortable = 0
+Somewhat comfortable = 4
+Very comfortable = 2Not comfortable = 1
+Somewhat comfortable = 5
+Very comfortable = 1Page 6 of 15 Chan et al. BMC Med Inform Decis Mak           (2021) 21:39 
+Table 2 Themes to address in HBB learning and skills maintenance during Phase 1a
+Themes Implications on app development Selected quotes
+Facilitators
+Peer ‑to‑peer learning Design of rater mode to support group practice through simula‑
+tion
+Scoreboard/Dashboard feature to keep each other accountable 
+for practice“I see [peer learning] as helpful in the HBB training because most 
+of us don’t go on the same pace. They sit in class together but 
+then find that some pick faster and others nothing at all but 
+when you are together in a health facility…we share what I did 
+not get while someone did, so we learn from our friends”
+Supportive supervision “helpful when mentors use checklist while giving feedback—so 
+every person knows where they made mistakes and where to 
+keep learning”
+Continuing Medical Education and Refresher courses Repository of HBB information including demonstration videos
+Self‑ confidence Scoreboard/Dashboard feature to track practice statistics and 
+longitudinal trends of scores on quizzes“I know I can do some good work and since then I have never lost 
+any other baby and I am glad that HBB did some good work”
+Timely feedback Use of checklists to help review required steps in HBB after 
+simulation completed
+Rater mode to help facilitate peer ‑to‑peer feedback after simula‑
+tion“If [you] practice the same thing in and out on your own—may 
+not be as effective as having someone to give you feedback, 
+someone with more experience to give you more input on how 
+to improve”
+Safe learning environment Use of audio and visual prompts to facilitate different ways of 
+learning
+Barriers
+Inadequate or inappropriate resuscitation equipment for prac‑
+tice or for clinical useVideos to review choice of and maintenance of resuscitation 
+equipment“We come here to do the training and practice but when we 
+leave this place and go back to our health centres we don’t have 
+what to use. You feel you have the skills, but you don’t have any 
+equipment to use so some of the skills end up dying there.”
+Lack of motivation to practice
+Too much self‑pride
+Lack of support from colleagues to practise together, or to 
+acknowledge and support the importance of practiceScoreboard/Dashboard feature to track practice statistics and 
+results of quizzes to encourage friendly competition and keep 
+each other accountable
+Scoreboard/Dashboard to act as a reminder system to encour ‑
+age ongoing practiceLack of confidence
+Infrequent trainings Videos to review individual HBB skills
+Simulation mode to put knowledge and skills together and 
+applying them to simulated delivery scenario
+Fear of not knowing how to translate skills from a training set ‑
+ting to real life scenariosDesign of simulation mode is to facilitate ongoing practice of 
+skills to best mimic real‑life resuscitationsPage 7 of 15
+ Chan et al. BMC Med Inform Decis Mak           (2021) 21:39 
+ 
+reminders, promoting champions, having dedicated 
+group practice sessions, and creating a friendly competi -
+tive environment to increase accountability. Participants 
+also expressed the importance of a community of sup -
+port, for example, through a message board or group 
+chat to review cases and to encourage each other. Sug -
+gested mobile app features included information for each 
+HBB skill (introduction, video demonstration, practice 
+prompts, scenarios, and if possible, ability to provide 
+feedback) and the ability to function offline as internet 
+connectivity can often be unreliable.
+Implications on app development
+Themes that were not feasible to address using a mobile 
+app included health system challenges such as lack of 
+available equipment and transport for escalation of care 
+for unstable babies. Additionally, due to limited funds to 
+facilitate real-time internet connectivity of the app, the 
+reminders, group chat and message board functions were 
+not implemented. Otherwise, many themes identified in 
+the FGDs were anticipated by the authors and already 
+addressed by features in HBB Prompt v0.
+Functions and features of the HBB Prompt v0 
+and modifications based on Phase 1a
+Figure  3 shows screen shots of HBB Prompt v1 and 
+Table  3 describes the features of HBB Prompt. Train -
+ing mode was designed to demonstrate each step of the 
+HBB algorithm through videos, aimed as a resource for 
+refreshing knowledge and skills. In response to concerns 
+about lack of equipment, a video demonstrating how to 
+reprocess and maintain equipment was added. Other 
+feedback from Phase 1a helped inform the video content, 
+such as breaking down skills into digestible steps and 
+troubleshooting when effective ventilation is not being 
+achieved.Simulation mode was designed to facilitate routine 
+practice of HBB skills, running through various sce -
+narios that emphasize different aspects of resuscita -
+tion. Simulation mode was divided into alone mode (for 
+individual practice) and rater mode (for group prac -
+tice or peer-to-peer learning). This feature encourages 
+and supports LDHF training. Consistent practice and 
+increased familiarity and confidence in carrying out the 
+steps of the Golden Minute enable HBB providers to 
+perform all actions within one minute of a baby’s birth. 
+To support this, timer prompts were built into simula -
+tion mode to facilitate practice of the Golden Minute. 
+Furthermore, checklists were added at the end of every 
+simulation to help users debrief what went well and 
+what could be improved.
+The Quizzes and knowledge check section was 
+designed to help refresh and consolidate knowledge 
+about the HBB algorithm and rationale for steps in 
+resuscitation, providing real-time feedback regarding 
+information retention.
+The Scoreboard/Dashboard was created to increase 
+accountability and motivation, encourage all users to 
+practise HBB consistently, and foster confidence by dis -
+playing personal performance benchmarks.
+Phase 1b
+Table  4 summarizes the feedback that was received 
+during Phase 1b and outlines modifications that were 
+made, where possible, in response to the suggestions 
+from the FGDs. Feedback about HBB Prompt was gen -
+erally positive and navigation was felt to be overall intu -
+itive. There were two iterations of Phase 1b (one with 
+FGD1 and the other with FGD2). After suggestions 
+were incorporated, the team was satisfied that the HBB 
+Prompt app was ready for deployment in Phase 2 for 
+pilot testing.BeforeHow to s tart a 
+resuscit a/g415on
+How long to ven/g415la te for 
+Not being able to retain 
+learnt skills
+Forming a good seal with  
+the mask during 
+ven/g415la/g415on,  how to 
+posi/g415on the baby
+How to apply new skills to 
+a real bab y
+Being bombar ded with  
+lots of new knowledge 
+DuringNot being able to achieve 
+the Golden Minut e 
+Not ha ving o xygen sour ce 
+in real life 
+Having to demons trate 
+skills they did not yet 
+know 
+Immediat ely a/g332erWorrying  about lack of 
+equipment 
+Lack of conﬁdence in  
+transla/g415ng skills to a real 
+baby
+3 months a/g332 er Fear of consequences of 
+forge/g427 ng what was  
+learned int ernally  and 
+externally  when e valuated 
+by supervisor s
+Not being able to reﬂect 
+appropriat ely how a 
+resuscit a/g415on  went and 
+iden/g415fy what wen t well 
+and what can be impr oved  
+and how 
+Fig. 2 Insights about the timeline in HBB learning and skills maintenance during Phase 1a. Themes from FGDs with HBB trainers and providers 
+regarding their thought process in relationship to the timing of HBB trainingPage 8 of 15 Chan et al. BMC Med Inform Decis Mak           (2021) 21:39 
+Discussion
+In Phase 1 of this study, we applied a UCD framework 
+and engaged a group of HBB trainers and provid -
+ers to develop a mobile app, HBB Prompt, to improve knowledge and skills retention after initial HBB train -
+ing. Many facilitators and barriers identified were 
+feasible to address with HBB Prompt and reflected 
+anticipated features based on prior knowledge about 
+contributors to skills decay. Participants expressed 
+a  b c 
+d
+Fig. 3 HBB Prompt v1.0 screenshots. a different scenarios users can choose from in Simulation Mode. b Performance checklist that appears once a 
+simulation is complete. c Beginning of a simulation. Note the two countdown timers from the time the simulation begins and the time when the 
+simulated infant is born. d Sample of dashboard statisticsPage 9 of 15
+ Chan et al. BMC Med Inform Decis Mak           (2021) 21:39 
+ 
+positive perceptions of the app’s ability to help users 
+practise and maintain HBB knowledge and skills.
+Strengths
+HBB Prompt is a novel mobile app that facilitates simu -
+lation of newborn resuscitation to promote deliber -
+ate practice of applying the HBB algorithm to real-life 
+scenarios. We employed a cooperative design UCD 
+framework, which prioritized participation from front -
+line end-users, both trainers and learners of HBB, since 
+failure of adoption of healthcare technology has been 
+attributed to absence of end-user input [40]. There are 
+different methods to involve end-users in the design 
+and evaluation process, with prototyping and simula -
+tion being commonly used in design, and focus groups 
+and observations being common evaluative methods 
+[41]. Understanding the usability of a mobile app and 
+how it meets needs and addresses gaps to improve out -
+comes have been key to the successful adoption of health 
+technologies. UCD and understanding human factors is 
+crucial since certain ideas may not translate well into a 
+mobile app. Understanding the needs of primary users 
+by exploring acquisition and maintenance of skills and 
+knowledge helped map out areas where HBB Prompt 
+can assist and remaining gaps that need to be addressed 
+through other means [40]. Each function of HBB Prompt was vetted during Phase 1b and largely addressed the 
+issues that were uncovered during Phase 1a.
+By iterative testing through participatory design and 
+evaluation, we hoped to overcome the common barrier 
+of failed interventions due to lack of user input. Since 
+the main goal of designing HBB Prompt is to improve 
+knowledge and skills retention after initial HBB train -
+ing, the UCD process specifically focused on HBB trainer 
+and trainee experiences regarding the process of learn -
+ing HBB skills and the daily challenges of implementing 
+those skills. We used FGDs to better understand when 
+different cognitive processes took place, influencing our 
+strategies for knowledge and skills retention, a method 
+supported by the applied cognitive task analysis [42]. This 
+strategy has been successful in developing apps for vari -
+ous purposes in healthcare [25, 43, 44], including those 
+in the maternal newborn health domain [29, 32–34, 42].
+Newborn health apps [28, 34] have been developed 
+to support HBB training by provision of HBB reference 
+material and clinical decision support. HBB Prompt 
+builds on that foundation and adds new features includ -
+ing Simulation mode and the Scoreboard/Dashboard, 
+which aim to promote LDHF practice. NeoTree [29] is a 
+mobile application developed in a single neonatal unit in 
+Malawi using similar methodology as HBB Prompt, but 
+was intended for data capture of neonatal admissions 
+and clinical decision support. The authors used focus Table 3 HBB Prompt app features during Phase 1b
+App function Description Rationale for inclusion
+Training videos Series of training videos outlining the steps in HBB 
+(Preparation for birth, Routine care, Golden Minute 
+without ventilation, Golden Minute with ventilation, 
+Golden Minute with normal or slow heart rate)Videos to serve as review materials, with ability to visualize 
+skills that are being demonstrated
+Simulation mode—alone mode Option of targeting practice to a specific scenario that 
+an individual user chooses versus a random scenario 
+that is chosen from the pool of standard scenarios 
+(Preparation for birth, Routine care, Golden Minute 
+without ventilation, Golden Minute with ventilation, 
+Golden Minute with normal or slow heart rate)
+Audio and visual cues that accompany the scenario that 
+are timed to simulate an actual deliveryTo help prompt users through simulated delivery sce ‑
+narios to facilitate in context practice of skills
+Simulation mode—rater mode Same as alone mode except that the designated rater 
+has a checklist available to reviewTo help prompt an observer to assess how well the user 
+completes steps in the HBB algorithm in response to the 
+prompts provided about the baby’s condition
+To help facilitate team practice and peer ‑to‑peer learning 
+of HBB skills and to assist the rater to systematically give 
+targeted feedback
+Quizzes/Knowledge Check Sets of quizzes with questions generated from the HBB 
+curriculumTo help reinforce knowledge pertaining to the steps and 
+reasoning for actions within the HBB algorithm
+To address the fear of forgetting knowledge learned after 
+initial training
+Scoreboard/Dashboard Visual tracker providing trends regarding practice fre ‑
+quency and knowledge assessment scoresInformation to serve as an external motivator to practise 
+regularly and perform as well if not better than peers
+To increase accountability for practising and increase con‑
+fidence in resuscitation skills with increased practicePage 10 of 15 Chan et al. BMC Med Inform Decis Mak           (2021) 21:39 
+Table 4 Summary of feedback for HBB Prompt during Phase 1b
+Feedback Modifications made Selected quotes
+Likes
+Content flows well and is consistent with the HBB curriculum
+Can complement use of the HBB flip chart during HBB training
+Can serve well as a refresher training programIncluded additional practical recommendations, such as, when to refer 
+infants for advanced care, how to cut and trim the cord length, how to 
+keep the baby warm“You can use it on a daily basis and at any time. 
+You don’t have to wait for a workshop, or organ‑
+ized day.”
+“I am satisfied that this is a dream come true. The 
+last time we met, we had ideas but did not 
+know how that would be incorporated in an 
+app, and I am hoping the developers carry it 
+farther, and avail it as quickly as they could.”
+Training videos comprehensive, realistic and highlighted relevant materi‑
+als from HBBSupplemented training videos with text to facilitate review
+Demonstration in video of preparation for birth and testing of equip ‑
+ment in front of family—helps promote transparency and confidence 
+in newborn resuscitation processKept this video as a part of the app to help encourage this process of 
+transparency
+Quizzes were useful for review, gave immediate feedback and can be 
+useful tool for teaching
+Random order of questions helped users not relying on memory aloneSome technical flaws noted that were fixed, for example unsaved 
+answers and needing to redo the entire quiz when users tapped the 
+screen in any incorrect place
+Added a review feature where answers that are correct and answers that 
+were marked are shown to provide feedback to users
+Simulation mode was helpful for self‑practice and group practice
+Audio and visual prompts were effectiveFixed flaws in orientation of images and timing of prompts “Yes, it will help us practice with our colleagues. 
+For instance, if you are helping someone who 
+does not know, the video guides you and helps 
+you know what do to next, if you forget. It also 
+helps to time you.”
+“I think the videos helped us, because it directs 
+you on what to do. Because if they kept saying 
+the baby is not breathing, you would know what 
+to do and keep doing it, ‘till the baby breathes.”
+Dislikes
+Lack of consistency throughout the app (e.g. how prompts are given, 
+audio for crying, where the baby is being resuscitated in the videos)Modified videos and simulations to use the same prompts
+In the HBB curriculum timing of cutting the cord, and location of where 
+the baby should be during ventilation (near mother, or on a separate 
+surface) is left up to the discretion of the facilitators teaching in their 
+own setting. For simplicity, decision made to only show ventilation 
+near the mother rather than specifying location depending on the 
+status of the baby
+Some aspects of the training videos were not as realistic, such as the 
+timing with certain actions being too slowModified videos to be more realistic and modified timing of transitions 
+in simulation mode
+Font size and menu options at times not clear Modified text size and colour scheme to improve visibility
+Navigation—suggestion for a restart button in simulation mode Added pause button (restart feature with back button)
+General comments and suggestions
+Using the same HBB curriculum colour scheme of Green, Yellow and Red 
+may help reinforce learning by means of a visual promptAdded HBB colour scheme in different parts of HBB Prompt contentPage 11 of 15
+ Chan et al. BMC Med Inform Decis Mak           (2021) 21:39 
+ 
+Table 4 (continued)
+Feedback Modifications made Selected quotes
+For training videos different viewing angles to better capture the details 
+of the actions (e.g. mask seal in bagging)Decision made not to re ‑film the videos due to time constraints in film‑
+ing and editing
+For the Dashboard, use of real names vs. aliases was debated Consensus was to use real names
+Customizability
+Consideration of creating animated videos rather than filming individu‑
+als—may allow more flexibility if the app scales to different settingsNot feasible to create animations to address this need within the study 
+time line available
+Including locally relevant practices even if it is not a part of the standard 
+HBB protocol—e.g. asking birth attendants to have bed sheets avail‑
+able for baby in the preparation for birth section as this is common 
+place throughout Uganda, but may not be in other settingsDecision made not to add customized recommendations and adhere to 
+what is presented in the HBB curriculumPage 12 of 15 Chan et al. BMC Med Inform Decis Mak           (2021) 21:39 
+groups to better understand acceptability and feasibil -
+ity of mobile health (mHealth) solutions before and after 
+implementation of NeoTree. The positive impact of the 
+NeoTree app was attributed to UCD and coproduction. 
+HBB Prompt, on the other hand, applies UCD to create 
+and fine-tune the features deployed in the app. Finally, 
+HBB Prompt builds on the success of the Safe Delivery 
+App (SDA) [30]. The SDA [30] contains education mate -
+rial and videos based on the United Nations Basic Emer -
+gency Obstetric and Neonatal Care program (BEMONC) 
+and was evaluated in a large cluster-randomized trial in 
+Ethiopia, which found improved knowledge and skills 
+retention and a statistically non-significant 24% reduc -
+tion in perinatal mortality. HBB Prompt shares many fea -
+tures with SDA, including video and text as educational 
+materials. HBB Prompt goes beyond the reference tool 
+function by supporting simulation-based skills practice, 
+an interactive feature developed with UCD based on 
+FGD themes of the importance of simulation and peer-
+to-peer learning. Furthermore, HBB Prompt contains a 
+knowledge assessment feature, which was not available in 
+the early version of the SDA that was tested in the clus -
+ter-randomized trial.
+Facilitating simulation
+Our app design was informed by the principles of delib -
+erate practice, a well-established methodology for sim -
+ulation-based medical education [17]. HBB Prompt 
+differs from available apps because it facilitates hands-on 
+practice and simulation, which is a core component of 
+the HBB 2.0 curriculum. While simulated resuscitation 
+will differ from real-life scenarios, consistent practice 
+through simulation is an effective method to maintain 
+competency in managing high-acuity low-occurrence 
+events, such as apnea in a newborn [16, 38]. Much of 
+HBB Prompt’s design focus was to facilitate users’ abil -
+ity to practise HBB skills in short, directed ways, either 
+alone or with peers. LDHF practice of specific skills such 
+as bag-mask ventilation has been shown to be effective in 
+enhancing skills retention after training [10, 38, 45, 46]. 
+For individuals who are unable practise skills with oth -
+ers, the Training mode videos serve as a guide, and the 
+function of Simulation—alone mode provides a structure 
+and framework whereby users can benchmark their skills 
+and receive automated external prompts and feedback in 
+order to retain their resuscitation skills.
+Use of motivation/behaviour change strategies
+The Scoreboard/Dashboard feature was designed to 
+track trends in scores on quizzes, and participants felt 
+it would foster confidence in knowledge retention and 
+increase awareness of knowledge gaps. Being able to vis -
+ualize frequency and practice patterns serves to increase ownership and accountability for practising as it is a vis -
+ual audit, providing feedback to each user about habits 
+of practice and where skills may be adequate or lacking 
+[47, 48]. Besides having visual statistics that may benefit 
+end-users, this feature was built to also track app func -
+tion usage to provide insight in Phase 2 of the study to 
+improve the app and assess which parts of the HBB 2.0 
+curriculum require more reinforcement. Benchmarking 
+to help healthcare providers inform behaviour change is 
+supported by Social Comparison Theory and Reference 
+Group Theory and has been shown to be a successful 
+strategy to motivate behaviour change [48]. The display 
+of longitudinal trends provides ongoing feedback and is 
+supported by the Feedback Intervention Theory [48]. The 
+Scoreboard/Dashboard feature is unique to HBB Prompt 
+compared with other apps in the newborn mHealth space 
+and evaluating its effectiveness during Phase 2 will fur -
+ther enhance understanding of how audit and feedback 
+can increase retention of knowledge and skills after 
+training.
+Limitations
+Although we recruited a diverse group of participants, 
+we may have missed some perspectives. One limita -
+tion is the absence of larger scale beta-testing prior 
+to deployment in Phase 2. For example, Bucher et  al. 
+invited a large group of users to download and beta-test 
+their app, and provide feedback through a UCD ques -
+tionnaire [34]. However, the size of our FGDs allowed 
+in-depth exploration and likely uncovered input to 
+reach theme saturation. HBB Prompt’s user interface 
+and functions may be less intuitive for potential users 
+who are less familiar with use of technology as all but 
+one participant (in the HBB provider group) owned a 
+smart device and described themselves as comfort -
+able with their use. Even though the target audience 
+for HBB Prompt are those who were previously HBB 
+trained, including input from first-time learners of the 
+curriculum could have provided additional insight to 
+the knowledge and skills acquisition and retention pro -
+cess. There was an intention to recruit a third focus 
+group with naïve HBB learners; however, due to logisti -
+cal constraints, we were unable to run a separate series 
+of focus groups with pre-service trainees (medical stu -
+dents and nursing students). On the other hand, our 
+in-depth FGDs solicited input from two groups of HBB 
+users with various experiences that are representative 
+of HBB providers in Uganda, where there is a national 
+mandate for all frontline providers to be trained in both 
+HBB and ECEB. Participant experiences, perceptions, 
+and input through the UCD process were likely gener -
+alizable to HBB providers in Uganda and translatable to 
+similar resource settings. Recent clinical and simulation Page 13 of 15
+ Chan et al. BMC Med Inform Decis Mak           (2021) 21:39 
+ 
+experience were similarly variable across both HBB 
+facilitators and HBB providers, which allowed us to 
+capture opinions that would reflect those with differen -
+tial exposure to deliveries requiring HBB skills.
+While our goal of soliciting input from different types 
+of end-users uncovered many themes that were feasible 
+to address with a mobile app, there are additional limita -
+tions to consider. App features addressed intrinsic factors 
+such as motivation and confidence, but not health sys -
+tem constraints, which were frequently cited as barriers. 
+Another challenge of UCD is balancing implementation 
+of suggestions and prolonging the timeline of app devel -
+opment. For example, although Simulation—rater mode 
+was felt to work well, having the ability to link two devices 
+so that the user and the rater could engage in the simula -
+tion on different screens would have further enhanced its 
+function but this was technically not feasible given the 
+time constraint of the study. Although customization was 
+requested during feedback, it was important to consider 
+how to be specific enough without reducing generaliza -
+bility. Keeping the app content close to the HBB curricu -
+lum would allow it to scale to other settings more easily.
+Conclusion
+With the ubiquity of mobile devices, apps that are care -
+fully designed and evaluated have the potential to scale 
+rapidly and reach a broad audience to effect large scale 
+change. HBB Prompt was developed with UCD input 
+from HBB trainers and providers to tailor its design to 
+support knowledge and skills maintenance after HBB 
+training. HBB Prompt features were built to address 
+themes uncovered, which included motivation to practise, 
+confidence in knowledge or skills, importance of feedback 
+and peer-to-peer learning. The iterative process of incor -
+porating feedback further improved the features and func -
+tions of HBB Prompt as a practice tool to facilitate skills 
+and knowledge retention. Pilot-testing of HBB Prompt in 
+Phase 2 of this study will further evaluate the ability of this 
+UCD process to build a mobile tool to address the impor -
+tant issue of increasing sustainability of HBB training.
+Supplementary Information
+The online version contains supplementary material available at https ://doi.
+org/10.1186/s1291 1‑021‑01406 ‑z.
+Additional file 1. HBB Prompt Phase 1a Focus Group Guide Plan and 
+Standard Operating Procedures. Focus group guide with operational 
+details, questions and prompts used to conduct focus group discussions 
+during Phase 1a.
+Additional file 2. HBB Prompt Phase 1b Focus Group Guide Plan and 
+Standard Operating Procedures. Focus group guide with operational 
+details, questions and prompts used to conduct focus group discussions 
+during Phase 1b.Abbreviations
+AAP: American Academy of Pediatrics; app: Application; BEMONC: Basic Emer ‑
+gency Obstetric and Neonatal Care; CEMONC: Comprehensive Emergency 
+Maternal and Newborn Care; csv: Comma‑separated values; ECEB: Essential 
+Care for Every Baby; ECSB: Essential Care for Small Babies; ETAT  : Emergency 
+Triage and Treatment; FGD: Focus group discussions; HBB: Helping Babies 
+Breathe; IMEI: International Mobile Equipment Identity; LDHF: Low‑ dose high 
+frequency; mHealth: Mobile health; MUST: Mbarara University of Science and 
+Technology; REC: Research Ethics Committee; REB: Research Ethics Board; SDA: 
+Safe Delivery App; UCD: User centred design; v0: Version 0.
+Acknowledgements
+The authors would like to acknowledge Mukama Martin and Openja Moses 
+for their contributions as the software developers of HBB Prompt, Tumwesigye 
+Paul for his efforts as research assistant and Dr. Diego Bassani for his assistance 
+in study planning. Additionally, the authors acknowledge the innovation 
+design process of the Consortium for Affordable Medical Technologies in 
+Uganda (CAMTech Uganda) that enabled the development of the HBB Prompt 
+App using UCD approaches. The authors acknowledge Sabrina Kernerman for 
+her assistance in editing.
+Authors’ contributions
+NC, SD, HM, and SM conceived of the study. NC drafted the manuscript. NC, 
+SD, and RK analyzed the data. All authors participated in the design of the 
+study, revised the manuscript critically for intellectual content, and have read 
+and approved the final manuscript.
+Funding
+This study was funded by a grant from the Grand Challenges Canada Stars in 
+Global Health program, R‑ST ‑POC‑1707‑07454. The funder had no role in any 
+aspect of the study.
+Availability of data and materials
+The datasets used and analyzed during the current study are available from 
+the corresponding author on reasonable request.
+Ethics approval and consent to participate
+This study was approved by the Research Ethics Board at The Hospital for Sick 
+Children (SickKids) (REB No. 1000059992) and MUST Research Ethics Commit ‑
+tee (REC No. 16/09‑17) and registered at Clinicaltrials.gov (NCT03577054). All 
+participants provided written informed consent for this study.
+Consent for publication
+Not applicable.
+Competing interests
+Santorino Data is a co ‑creator of the Augmented Infant Resuscitator, which 
+is used in Phase 2 of this study. All other authors declare that they have no 
+competing interests.
+Author details
+1 Division of Neonatology, British Columbia Women’s Hospital, 1N55‑4480 
+Oak Street, Vancouver, BC V6H 3V4, Canada. 2 Division of Pediatric Emergency 
+Medicine, Department of Pediatrics, McMaster Children’s Hospital, 1280 Main 
+Street West, HSC‑2R104, Hamilton, ON L8S 4K1, Canada. 3 Division of Paediatric 
+Medicine, Department of Pediatrics, The Hospital for Sick Children, 555 Univer ‑
+sity Avenue, Toronto, ON M5G 1X8, Canada. 4 Interactive Media Lab, University 
+of Toronto, 5 King’s College Road, Toronto, ON M5S 3G8, Canada. 5 Design 
+Research, TD Bank Group, Toronto, ON, Canada. 6 Division of Neonatology, 
+The Hospital for Sick Children, Toronto, ON, Canada. 7 Neonatal Intensive Care 
+Unit, St. Michael’s Hospital, 15014 ‑ 30 Bond St, Toronto M5B 1W8, ON, Canada. 
+8 Division of Infectious Diseases and Centre for Global Child Health, The Hos‑
+pital for Sick Children, 555 University Avenue, Toronto, ON M5G 1X8, Canada. 
+9 Department of Pediatrics, University of Toronto, Toronto, ON, Canada. 
+10 Department of Pediatrics and Child Health, Mbarara University of Science 
+and Technology, P .O. Box 1410, Mbarara, Uganda. 11 Consortium for Affordable 
+Medical Technologies in Uganda (CAMTech Uganda), Mbarara, Uganda. 
+Received: 7 October 2020   Accepted: 21 January 2021
+Page 14 of 15 Chan et al. BMC Med Inform Decis Mak           (2021) 21:39 
+Reference
+ 1. UNICEF. Levels and trends in child mortality—report 2019. 2019, p. 1–52. 
+https ://child morta lity.org/wp ‑conte nt/uploa ds/2019/10/UN‑IGME‑ Child 
+‑Morta lity‑Repor  t‑2019.pdf .
+ 2. Liu L, Oza S, Hogan D, Chu Y, Perin J, Zhu J, et al. Global, regional, and 
+national causes of under ‑5 mortality in 2000–15: an updated systematic 
+analysis with implications for the sustainable development goals. Lancet. 
+2016;388(10063):3027–35. https ://doi.org/10.1016/S0140 ‑6736(16)31593 
+‑8.
+ 3. Kamath‑Rayne BD, Berkelhamer SK, Ashish KC, Ersdal HL, Niermeyer S. 
+Neonatal resuscitation in global health settings: an examination of the 
+past to prepare for the future. Pediatr Res. 2017;82(2):194–200. https ://doi.
+org/10.1038/pr.2017.48.
+ 4. Ersdal HL, Mduma E, Svensen E, Perlman JM. Early initiation of basic 
+resuscitation interventions including face mask ventilation may reduce 
+birth asphyxia related mortality in low‑income countries: a prospective 
+descriptive observational study. Resuscitation. 2012;83(7):869–73. https ://
+doi.org/10.1016/j.resus citat ion.2011.12.011.
+ 5. Wyckoff MH, Aziz K, Escobedo MB, Kapadia VS, Kattwinkel J, Perlman JM, 
+et al. Part 13: neonatal resuscitation: 2015 American Heart Association 
+guidelines update for cardiopulmonary resuscitation and emergency car ‑
+diovascular care (reprint). Pediatrics. 2015;136(Suppl 2):S196–218. https ://
+doi.org/10.1542/peds.2015‑3373G .
+ 6. Ariff S, Lee AC, Lawn J, Bhutta ZA. Global burden, epidemiologic 
+trends, and prevention of intrapartum‑related deaths in low‑resource 
+settings. Clin Perinatol. 2016;43(3):593–608. https ://doi.org/10.1016/j.
+clp.2016.05.001.
+ 7. Msemo G, Massawe A, Mmbando D, Rusibamayila N, Manji K, Kidanto HL, 
+et al. Newborn mortality and fresh stillbirth rates in Tanzania after helping 
+babies breathe training. Pediatrics. 2013;131(2):e353–60. https ://doi.
+org/10.1542/peds.2012‑1795.
+ 8. Goudar SS, Somannavar MS, Clark R, Lockyer JM, Revankar AP , Fidler 
+HM, et al. Stillbirth and newborn mortality in India after helping babies 
+breathe training. Pediatrics. 2013;131(2):e344–52. https ://doi.org/10.1542/
+peds.2012‑2112.
+ 9. Kamath‑Rayne BD, Thukral A, Visick MK, Schoen E, Amick E, Deorari A, 
+et al. Helping babies breathe, second edition: a model for strengthening 
+educational programs to increase global newborn survival. Glob Health 
+Sci Pract. 2018;6(3):538–51. https ://doi.org/10.9745/GHSP ‑D‑18‑00147 .
+ 10. Morris SM, Fratt EM, Rodriguez J, Ruman A, Wibecan L, Nelson BD. Imple ‑
+mentation of the helping babies breathe training program: a systematic 
+review. Pediatrics. 2020;146(3):e20193938. https ://doi.org/10.1542/
+peds.2019‑3938.
+ 11. Chaudhury S, Arlington L, Brenan S, Kairuki AK, Meda AR, Isangula KG, 
+et al. Cost analysis of large ‑scale implementation of the ‘Helping Babies 
+Breathe’ newborn resuscitation‑training program in Tanzania. BMC Health 
+Serv Res. 2016;16(1):681. https ://doi.org/10.1186/s1291 3‑016‑1924‑2.
+ 12. Reisman J, Arlington L, Jensen L, Louis H, Suarez‑Rebling D, Nelson BD. 
+Newborn resuscitation training in resource ‑limited settings: a system‑
+atic literature review. Pediatrics. 2016;138(2):e20154490. https ://doi.
+org/10.1542/peds.2015‑4490.
+ 13. Cordova E, Al‑Rousan T, Castillo ‑Angeles M, Aftab S, Nelson BD. Effect of 
+low‑ cost interventions on the retention of knowledge and skills following 
+Helping Babies Breathe training. Int J Gynaecol Obstet. 2018;142(2):248–
+54. https ://doi.org/10.1002/ijgo.12512 .
+ 14. Mduma E, Ersdal H, Svensen E, Kidanto H, Auestad B, Perlman J. Frequent 
+brief on‑site simulation training and reduction in 24‑h neonatal mortal‑
+ity—an educational intervention study. Resuscitation. 2015;93:1–7. https 
+://doi.org/10.1016/j.resus citat ion.2015.04.019.
+ 15. Bang A, Patel A, Bellad R, Gisore P , Goudar SS, Esamai F, et al. Helping 
+Babies Breathe (HBB) training: what happens to knowledge and skills over 
+time? BMC Pregnancy Childbirth. 2016;16(1):364. https ://doi.org/10.1186/
+s1288 4‑016‑1141‑3.
+ 16. Tabangin ME, Josyula S, Taylor KK, Vasquez JC, Kamath‑Rayne BD. 
+Resuscitation skills after Helping Babies Breathe training: a comparison of 
+varying practice frequency and impact on retention of skills in different 
+types of providers. Int Health. 2018;10(3):163–71. https ://doi.org/10.1093/
+inthe alth/ihy01 7.
+ 17. Cheng A, Nadkarni VM, Mancini MB, Hunt EA, Sinz EH, Merchant RM, 
+et al. Resuscitation education science: educational strategies to improve 
+outcomes from cardiac arrest: a scientific statement from the American Heart Association. Circulation. 2018;138(6):e82–122. https ://doi.
+org/10.1161/CIR.00000 00000 00058 3.
+ 18. Kak L, Johnson J, McPherson R, Keenan W, Schoen E, editors. Helping 
+Babies Breathe—lessons learned guiding the way forward. Washington, 
+DC: Helping Babies Breathe Global Development Alliance; 2015. p. 1–116.
+ 19. Feroz A, Jabeen R, Saleem S. Using mobile phones to improve commu‑
+nity health workers performance in low‑and‑middle ‑income coun‑
+tries. BMC Public Health. 2020;20(1):49. https ://doi.org/10.1186/s1288 
+9‑020‑8173‑3.
+ 20. Bastawrous A, Armstrong MJ. Mobile health use in low‑ and high‑income 
+countries: an overview of the peer ‑reviewed literature. J R Soc Med. 
+2013;106(4):130–42. https ://doi.org/10.1177/01410 76812 47262 0.
+ 21. Okeleke K. Uganda: Driving inclusive socio ‑economic progress through 
+mobile ‑enabled digital transformation. London: GSMA; 2019. p. 1–56.
+ 22. Labrique AB, Vasudevan L, Kochi E, Fabricant R, Mehl G. mHealth innova‑
+tions as health system strengthening tools: 12 common applications and 
+a visual framework. Glob Health Sci Pract. 2013;1(2):160–71. https ://doi.
+org/10.9745/ghsp ‑d‑13‑00031 .
+ 23. Siedner MJ, Santorino D, Lankowski AJ, Kanyesigye M, Bwana MB, Haberer 
+JE, et al. A combination SMS and transportation reimbursement interven‑
+tion to improve HIV care following abnormal CD4 test results in rural 
+Uganda: a prospective observational cohort study. BMC Med. 2015. https 
+://doi.org/10.1186/s1291 6‑015‑0397‑1.
+ 24. Siedner MJ, Santorino D, Haberer JE, Bangsberg DR. Know your audience: 
+predictors of success for a patient ‑centered texting app to augment link ‑
+age to HIV care in rural Uganda. J Med Internet Res. 2015;17(3):e78–e78. 
+https ://doi.org/10.2196/jmir.3859.
+ 25. Brewer LC, Hayes SN, Caron AR, Derby DA, Breutzman NS, Wicks A, 
+et al. Promoting cardiovascular health and wellness among African‑
+Americans: community participatory approach to design an innovative 
+mobile ‑health intervention. PLoS ONE. 2019;14(8):e0218724. https ://doi.
+org/10.1371/journ al.pone.02187 24.
+ 26. Krueger RA, Casey MA. Focus groups: a practical guide for applied 
+research. 4th ed. Los Angeles: SAGE; 2009.
+ 27. Øksnebjerg L, Woods B, Waldemar G. Designing the ReACT app to 
+support self‑management of people with dementia: an iterative 
+user ‑involving process. Gerontology. 2019;65(6):673–85. https ://doi.
+org/10.1159/00050 0445.
+ 28. Prakash V, Thukral A, Sankar MJ, Agarwal RK, Paul VK, Deorari AK. Efficacy 
+and acceptability of an ‘App on sick newborn care’ in physicians from 
+newborn units. BMC Med Educ. 2016;16(1):84. https ://doi.org/10.1186/
+s1290 9‑016‑0579‑3.
+ 29. Crehan C, Kesler E, Nambiar B, Dube Q, Lufesi N, Giaccone M, et al. 
+The NeoTree application: developing an integrated mHealth solution 
+to improve quality of newborn care and survival in a district hospi‑
+tal in Malawi. BMJ Glob Health. 2019;4(1):e000860‑ e912. https ://doi.
+org/10.1136/bmjgh ‑2018‑00086 0.
+ 30. Lund S, Boas IM, Bedesa T, Fekede W, Nielsen HS, Sørensen BL. Association 
+between the safe delivery app and quality of care and perinatal survival 
+in Ethiopia. JAMA Pediatr. 2016;170(8):765–7. https ://doi.org/10.1001/
+jamap ediat rics.2016.0687.
+ 31. Chan NH, Mistry N, Campbell DM. A simulation‑based pilot study of a 
+mobile application (NRP prompt) as a cognitive aid for neonatal resus‑
+citation training. Simul Healthc J Soc Simul Healthc. 2019;14(3):146–56. 
+https ://doi.org/10.1097/SIH.00000 00000 00035 3.
+ 32. Amoakoh HB, Klipstein‑ Grobusch K, Ansah EK, Grobbee DE, Yveoo 
+L, Agyepong I. How and why front ‑line health workers (did not) 
+use a multifaceted mHealth intervention to support maternal and 
+neonatal healthcare decision‑making in Ghana. BMJ Glob Health. 
+2019;4(2):e001153‑ e1214. https ://doi.org/10.1136/bmjgh ‑2018‑00115 3.
+ 33. Schaeffer LE, Ahmed S, Rahman M, Whelan R, Rahman S, Roy AD, et al. 
+Development and evaluation of a mobile application for case manage ‑
+ment of small and sick newborns in Bangladesh. BMC Med Inform Decis 
+Mak. 2019;19(1):116. https ://doi.org/10.1186/s1291 1‑019‑0835‑7.
+ 34. Bucher S, Meyers E, Kshatriya BSA, Avanigadda PC, Purkayastha S. Devel‑
+opment of an innovative mobile phone ‑based newborn care training 
+application. In: Abraham A, Gandhi N, Pant M, editors. innovations in bio ‑
+inspired computing and applications. Cham: Springer; 2019. p. 361–74. 
+https ://doi.org/10.1007/978‑3‑030‑16681 ‑6_36.
+ 35. Schnall R, Rojas M, Bakken S, Brown W, Carballo ‑Dieguez A, Carry M, et al. 
+A user ‑centered model for designing consumer mobile health (mHealth) Page 15 of 15
+ Chan et al. BMC Med Inform Decis Mak           (2021) 21:39 
+ 
+•
+ fast, convenient online submission
+ •
+  thorough peer review by experienced researchers in your ﬁeld
+• 
+ rapid publication on acceptance
+• 
+ support for research data, including large and complex data types
+•
+  gold Open Access which fosters wider collaboration and increased citations 
+ maximum visibility for your research: over 100M website views per year •
+  At BMC, research is always in progress.
+Learn more biomedcentral.com/submissionsReady to submit y our researc h Ready to submit y our researc h  ?  Choose BMC and benefit fr om: ?  Choose BMC and benefit fr om: 
+applications (apps). J Biomed Inform. 2016;60:243–51. https ://doi.
+org/10.1016/j.jbi.2016.02.002.
+ 36. Couture B, Lilley E, Chang F, DeBord SA, Cleveland J, Ergai A, et al. 
+Applying user ‑centered design methods to the development of 
+an mHealth application for use in the hospital setting by patients 
+and care partners. Appl Clin Inform. 2018;09(02):302–12. https ://doi.
+org/10.1055/s‑0038‑16458 88.
+ 37. Merali HS, Chan NH‑M, Mistry N, Kealey R, Campbell D, Morris SK, et al. 
+Designing and evaluating a novel mobile application for Helping Babies 
+Breathe skills retention in Uganda: comparative study protocol. BMJ Pae ‑
+diatr Open. 2019;3(1):e00561. https ://doi.org/10.1136/bmjpo  ‑2019‑00056 
+1.
+ 38. Ugwa E, Kabue M, Otolorin E, Yenokyan G, Oniyire A, Orji B, et al. 
+Simulation‑based low‑ dose, high‑frequency plus mobile mentoring 
+versus traditional group ‑based trainings among health workers on day 
+of birth care in Nigeria; a cluster randomized controlled trial. BMC Health 
+Serv Res. 2020;20(1):586. https ://doi.org/10.1186/s1291 3‑020‑05450 ‑9.
+ 39. Eblovi D, Kelly P , Afua G, Agyapong S, Dante S, Pellerite M. Retention 
+and use of newborn resuscitation skills following a series of helping 
+babies breathe trainings for midwives in rural Ghana. Glob Health Act. 
+2017;10(1):1–6. https ://doi.org/10.1080/16549 716.2017.13879 85.
+ 40. Kushniruk A, Nøhr C. Participatory design, user involvement and health IT 
+evaluation. In: Ammenwerth E, Rigby M, editors. Evidence ‑based health 
+informatics: promoting safety and efficiency through scientific methods 
+and ethical policy. Amsterdam: IOS Press; 2016. p. 139–51. https ://doi.
+org/10.3233/978‑1‑61499 ‑635‑4‑139.
+ 41. Scott PJ. Mixed methods: a paradigm for holistic evaluation of health IT. 
+In: Ammenwerth E, Rigby M, editors. Evidence ‑based health informat ‑
+ics: promoting safety and efficiency through scientific methods and 
+ethical policy. Amsterdam: IOS Press; 2016. p. 102–13. https ://doi.
+org/10.3233/978‑1‑61499 ‑635‑4‑102.
+ 42. Pickup L, Lang A, Shipley L, Henry C, Carpenter J, McCartney D, et al. 
+Development of a clinical interface for a novel newborn resuscitation 
+device: human factors approach to understanding cognitive user require ‑
+ments. JMIR Hum Factors. 2019;6(2):e12055–113. 43. Stinson JN, Lalloo C, Harris L, Isaac L, Campbell F, Brown S, et al. iCanCope 
+with  PainTM: user ‑centred design of a web ‑ and mobile ‑based self‑
+management program for youth with chronic pain based on identified 
+health care needs. Pain Res Manag. 2014;19(5):257–65. https ://doi.
+org/10.1155/2014/93527 8.
+ 44. Simpson AJ, Honkoop PJ, Kennington E, Snoeck ‑Stroband JB, Smith I, East 
+J, et al. Perspectives of patients and healthcare professionals on mHealth 
+for asthma self‑management. Eur Respir J. 2017;49(5):1601966. https ://
+doi.org/10.1183/13993 003.01966 ‑2016.
+ 45. Gomez PP , Nelson AR, Asiedu A, Addo E, Agbodza D, Allen C, et al. 
+Accelerating newborn survival in Ghana through a low‑ dose, high‑fre ‑
+quency health worker training approach: a cluster randomized trial. BMC 
+Pregnancy Childbirth. 2018;18(1):72–83. https ://doi.org/10.1186/s1288 
+4‑018‑1705‑5.
+ 46. Evans CL, Bazant E, Atukunda I, Williams E, Niermeyer S, Hiner C, et al. 
+Peer ‑assisted learning after onsite, low‑ dose, high‑frequency training and 
+practice on simulators to prevent and treat postpartum hemorrhage and 
+neonatal asphyxia: a pragmatic trial in 12 districts in Uganda. PLoS ONE. 
+2018;13(12):e0207909–17. https ://doi.org/10.1371/journ al.pone.02079 09.
+ 47. Gude WT, Roos‑Blom M ‑J, van der Veer SN, Dongelmans DA, de Jonge 
+E, Francis JJ, et al. Health professionals’ perceptions about their clinical 
+performance and the influence of audit and feedback on their intentions 
+to improve practice: a theory‑based study in Dutch intensive care units. 
+Implement Sci. 2018;13(1):33. https ://doi.org/10.1186/s1301 2‑018‑0727‑8.
+ 48. Gude WT, Brown B, van der Veer SN, Colquhoun HL, Ivers NM, Brehaut 
+JC, et al. Clinical performance comparators in audit and feedback: a 
+review of theory and evidence. Implement Sci. 2019;14(1):39. https ://doi.
+org/10.1186/s1301 2‑019‑0887‑1.
+Publisher’s Note
+Springer Nature remains neutral with regard to jurisdictional claims in pub ‑
+lished maps and institutional affiliations.

@@ -1,0 +1,497 @@
+ 1
+Dougherty L, et al. BMJ Global Health 2019;4:e001606. doi:10.1136/bmjgh-2019-001606From paper maps to digital maps: 
+enhancing routine immunisation microplanning in Northern
+ 
+Nigeria
+Leanne Dougherty,   1 Masduq Abdulkarim,1 Fiyidi Mikailu,1 Usman Tijani,1 
+Kazeem Owolabi,2 Kate Gilroy,1 Ahmed Naiya,1 Adamu Abdullahi,3 
+Hadiza Bodinga,4 Folake Olayinka,1 Imelda Moise5Practice
+To cite: Dougherty L, 
+Abdulkarim M, Mikailu F, et al. From paper maps to digital maps: enhancing routine immunisation microplanning in Northern Nigeria. BMJ Global Health 2019;4:e001606. doi:10.1136/bmjgh-2019-001606
+Handling editor Seye Abimbola
+ ►Additional material is 
+published online only. To view 
+please visit the journal online (http://
+ 
+dx.
+ 
+doi.
+ 
+org/
+ 
+10.
+ 
+1136/
+ 
+bmjgh-
+ 
+2019-
+ 
+001606).
+Received 2 April 2019Revised 29 May 2019Accepted 1 June 2019
+For numbered affiliations see end of article.
+Correspondence to
+Leanne Dougherty;  
+ 
+leanne_
+ 
+dougherty@
+ 
+jsi.
+ 
+com
+© Author(s) (or their 
+employer(s)) 2019. Re-use permitted under CC BY-NC. No commercial re-use. See rights and permissions. Published by BMJ.Summary box
+ ►Geographical information systems technology is an 
+effective decision-support tool that can be used to generate digital maps depicting primary health cen-tre catchment areas for service delivery planning.
+ ►The principal challenges for using open-source geospatial technologies are the quality of available data and the healthcare provider capacity to use the technology.
+ ►Engaging communities and healthcare providers is important to validate and resolve context-specific challenges and improve understanding of geospatial data for decision-making.
+AbSTrACT
+Geographical information systems (GIS) can be effective decision-support tools. In this paper, we detail a GIS approach implemented by the Bauchi and Sokoto state primary healthcare development agencies in Nigeria to generate and convert routine immunisation (RI) paper maps to digital maps for microplanning. The process involved three stages: primary and secondary data collection and reconciliation, geospatial data processing and analysis, and production and validation of maps. The data collection and reconciliation stage identified a number of challenges with secondary data sources, including the need to standardise and reconcile health facility and settlement names. The study team was unable to apply population estimates generated from the Global Polio Eradication Initiative to RI planning because operational boundaries for polio activities are defined differently from RI activities. Application of open-source GIS software enabled the combination of multiple datasets and analysis of geospatial data to calculate catchment areas for primary health centres (PHCs) and assign vaccination strategies to communities. The activity resulted in the development of PHC catchment area digital maps, and captured next steps and lessons learnt for RI microplanning in the two states. While the digital maps provided input into the microplanning process, more work is needed to build capacity, standardise processes and ensure the quality of data used to generate the maps. RI service providers and communities must be engaged in the process to validate, understand the data, the contextual factors that influence decisions about which vaccination strategies RI microplans include and how resources are allocated.
+InTrodu CTIon
+WHO, the United Nations Children’
+s Fund 
+and other partners developed and first intro-
+duced the Reaching Every District (RED) strategy in 2002 to help improve immunisa-tion coverage.
+1 The RED strategy combines 
+best practices in immunisation systems strengthening and includes five components: ‘planning, coordination and management of resources; reaching all eligible popula-tions; engaging with the community and social mobilisation; conducting supportive supervision and monitoring and using data for action’.
+2 3 Recent evaluations in sub-Sa-
+haran African countries have demonstrated that implementing the RED strategy results in increased infant vaccination coverage.
+2–4 
+These studies document that successful imple-mentation begins when service providers are able to create routine immunisation (RI) microplans and use coverage and dropout data to identify and give priority to geograph-ical areas with poor access to and/or low utilisation of RI services. Microplans that are based on outdated population estimates and inaccurate estimates of the distances between communities and service delivery points can result in poor resource allocation and the inability to reach infants in need of immuni-sation services.
+2
+ConTexT And Appro ACH
+Nigeria has not conducted a national census
+ 
+since the 2006 housing and population census,
+5 which provided the total population 
+of children aged 0 to –4 years by sex and local government authority (LGA, Nigeria’s district equivalent). This level of aggregation does copyright. on December 15, 2022 at Sri Lanka:BMJ-PG Sponsored. Protected by http://gh.bmj.com/ BMJ Glob Health: first published as 10.1136/bmjgh-2019-001606 on 1 July 2019. Downloaded from 2
+Dougherty L, et al. BMJ Global Health 2019;4:e001606. doi:10.1136/bmjgh-2019-001606BMJ Global Health
+not allow determination of the population at the commu-
+nity level (called settlements in Nigeria), a problem ‘attributed to the lack of authoritative lists and maps of localities.
+6’ Global guidance calls for the use of primary 
+health centre (PHC) and district catchment area maps and updated population estimates to determine service delivery strategies and allocate RI programme resources.
+7 
+Under this approach, State Primary Health care Develop-ment Agency (SPHCDA) staff at the state and LGA levels work with local stakeholders (eg, health workers, village chiefs and community leaders) to generate final popula-tion estimates and determine vaccination strategies for each settlement in their PHC catchment area using hand-drawn maps and estimated travel time. The process can be inaccurate and incomplete, and in some instances settle-ments are missed.
+8 In addition, population projections 
+are often out of date due to growth rate disparities. When population estimates for LGAs, wards and settlements exist, they are often incorrect because they have been calculated using constant growth rates that are based on national estimates
+6 of birth, death and migration.9 10
+There is growing international interest in applying 
+geospatial data and technology for immunisation programme strengthening in low-resource settings.
+11 
+These data and technology can be used to improve the validity and quality of catchment area maps and popu-lation estimates and increase transparency around how such data are generated and used to improve account-ability for RI resource allocation. The Global Polio Eradication Initiative (GPEI) has applied geograph-ical information systems (GIS) in Nigeria to track polio vaccination, provide near real-time monitoring of team performance and identify service gaps since 2012.
+8 12–14 
+In 2017, the Bauchi and Sokoto SPHCDAs, with support from the Maternal and Child Survival Program (MCSP) of the US Agency for International Development, sought an alternative approach to improve RI microplanning using GIS technology. Six ‘representative’ LGAs (three in each state) were selected to pilot the approach based on population density, pentavalent three coverage, geopo-litical zone and accessibility. The approach aimed to address two aspects of microplanning: first, by applying updated target population estimates generated through GPEI activities using GIS technology,
+6 15 and second, 
+by developing digital PHC maps addressing location of services, reach and service gaps based on geocoordinates that would provide more accurate vaccination strategy determination.
+16 17
+This paper details the process of developing digital 
+maps for PHC catchment areas and documents the lessons learnt and next steps. Diverse stakeholders were involved in this work including national level stakeholders (at project inception), MCSP, the SPHCDA monitoring and evaluation staff, and eHealth Africa.
+d
+el
+I
+ne
+ATI
+ng 
+p
+HC 
+CATCH
+men
+T
+ 
+A
+re
+A
+ d
+I
+g
+ITA
+l m
+A
+p
+S
+The process of generating PHC catchment area digital maps involved three stages: (1) information gathering (primar
+y and secondary) and reconciliation, (2) geospa-
+tial data processing and analysis, and (3) production and validation of maps.
+Stage 1: information gathering and reconciliation
+Stakeholder engagementStakeholder engagement is necessary to increase the legitimacy, credibility, acceptability and ownership of the decisions made when generating PHC catchment area maps.
+18 The MCSP-led team identified critical stake-
+holders from government and implementing partners at the state level and in the six pilot LGAs. These stake-holders participated in inception meetings discussing data requirements and the identification of existing datasets. The discussions resulted in a protocol, which included activity goals and objectives and was approved by the state governments and partners.
+Dataset source identification
+The team identified the data inputs needed for microplanning, which included (1) PHC locations; (2) settlements’ names and locations; (3) points of interest (POIs) (eg, churches, schools, mosques, markets, village head houses, etc); (4) roads, rails and waterways; (5) target population data and (6) administrative bounda-ries (eg, state, LGA and ward boundaries). In Nigeria, state and LGA boundaries are authoritative, while ward boundaries are operational and based on local knowl-edge with names designated by the ward focal person and the village head. The two data sources were (1) the Bauchi and Sokoto SPHCDA lists of health facilities and their corresponding settlements by ward and LGA and (2) a geodatabase (funded by the Bill & Melinda Gates Foundation) to support the GPEI in Nigeria, which is referred to hereafter as the geodatabase.
+19 The geoda-
+tabase contains data from a number of sources and is updated on an ongoing basis by eHealth Africa. See online supplementary file 1 for a description of each primary data source abstracted from this database.
+Data cleaning, reconciliation and collection
+The team performed a data cleaning and reconciliation process to develop a comprehensive dataset to populate the GIS digital maps, as shown in figure
+ 
+1. This process 
+of verifying existing and compiled data resulted in a list of unreconciled settlements that required further field-based data collection. Prior to field data collection, the team designed and configured a data collection form using an open data kit (ODK) mobile survey application that could collect geographical coordinates and informa-tion about settlements, health facilities (including PHC and secondary-level and tertiary-level healthcare) and POIs. Tablets configured with the application OSMAnd (https://
+ osmand.
+ net/) aided both in navigation and in 
+deriving the 
+geographic coordinates entered in the ODK 
+forms.
+A 2-day training oriented data collectors on commu-
+nity engagement and data collection procedures. Data copyright. on December 15, 2022 at Sri Lanka:BMJ-PG Sponsored. Protected by http://gh.bmj.com/ BMJ Glob Health: first published as 10.1136/bmjgh-2019-001606 on 1 July 2019. Downloaded from Dougherty L, et al. BMJ Global Health 2019;4:e001606. doi:10.1136/bmjgh-2019-0016063BMJ Global Health
+Figure 1  Data cleaning and r econciliation work flow. RI, routine immunisation.
+Figure 2  Geopr ocessing stages to develop PHC catchment area polygons. PHC, primary health centre; RI, routine 
+immunisation.collectors learnt how to use ODK forms to identify, 
+collect and upload geospatial coordinates and how to use Humanitarian OpenStreetMap (OSM) Tasking Manager V.3 (https://www.
+ hotosm.
+ org/), a collaborative mapping 
+tool which was used to digitise and verify roads and distances in the focal LGAs.
+Data collectors used tablets preloaded with a list of 
+unreconciled settlements and PHCs and had copies of hand-drawn catchment area maps. At each settlement, they met with community leaders to explain the main goal of their visit and the benefit of the activity to the commu
+-
+nity. Data collectors then worked with the assigned local guides (the LGA leaders) and the government-assigned ward focal officer to determine the exact locations of the settlement and nearby health facilities and recorded their responses to questions preloaded on their tablets. On completion, the team merged field-collected data with the harmonised dataset (data from the SPHCDA list and geodatabase) and verified the compiled data with health workers and community leaders in each LGA.
+Stage 2: data processing and geospatial analysis
+Delineate PHC geolocated catchment areasTo estimate the boundary of the catchment area for each PHC, the team created a convex hull (or zone) by connecting the furthest settlement points and forming a polygon around the PHC, as shown in figure
+ 
+2. The 
+convex hull was created using an open-source GIS appli-cation called QGIS V.2.8.9.
+20Digitise road networks and address accessibility barriers
+The study team digitised and classified road types from OSM (https://www.
+ openstreetmap.
+ org) 
+using an online 
+reference map. The team developed a road network layer with estimated travel distance by entering the settlements and corresponding PHCs into the Open Street Routing Machine (http://
+ 
+project-
+ 
+osrm.
+ 
+org/), a high-perfor -
+mance routing engine designed to determine the shortest paths within the road networks. To connect road segments to each other, the study team linked the road network layer to the map of PHCs and settlements and calculated the travel time between them. The study team considered many different criteria in determining the distance between settlements and corresponding PHCs (eg, road distances, topography or elevation and physical barriers like mountains). Due to a lack of data on the location and status of bridges and seasonal characteristics of rivers in the study LGAs, rivers were excluded from the definition of catchment areas and when calculating distances.
+Assign vaccination strategy delineations and population estimates
+Catchment area boundaries are drawn according to service distance requirements set by the government of Nigeria
+21 and are used in determining vaccination 
+strategy during RI microplanning. Fixed-session catch-ment areas include settlements within 0–2 km of the PHC; this strategy assumes that people living within 2 km of copyright. on December 15, 2022 at Sri Lanka:BMJ-PG Sponsored. Protected by http://gh.bmj.com/ BMJ Glob Health: first published as 10.1136/bmjgh-2019-001606 on 1 July 2019. Downloaded from 4
+Dougherty L, et al. BMJ Global Health 2019;4:e001606. doi:10.1136/bmjgh-2019-001606BMJ Global Health
+Figure 3  A hand-drawn MAP (left) and a GIS-generated MAP (right) of Miri primary health. GIS, geographical information 
+systems.
+Table 1  Number of key informants interviewed by study ar ea, December 2018
+Key informants Study LGAs (n=6, 3 per state)
+State partners All
+LGA and ward RI supervisors (12 total supervisors) 2 supervisors/LGA
+PHC health facility (HF) in charge (12 total HF in charge) 2 HF in charge/LGA
+RI service providers (12 total HF in charge) 2 RI providers/LGA
+Community representatives (12 FGDs with community representatives) 2 FGD/LGA with 8–10 community representatives
+FGD, Focus Group Discussion; LGA, local government authority; PHC, primary health centre; RI, routine immunisation.the PHC can walk there to receive services. Outreach-ses-
+sion catchment areas include settlements that are 2–5 km from the PHC; this strategy involves RI providers trav-elling to established outreach sites to provide services. Mobile-session catchment areas include settlements that are 5–10 km from the PHC; this strategy involves trans-porting RI providers to hard-to-reach settlements to provide services. To determine the target population, the study team downloaded estimates from the vaccina-tion tracking system (VTS) of the number of children under 1 year of age in each LGA and settlement. The Nigeria Federal Ministry of Health and the GPEI partners use this data source to estimate the population for GPEI campaign planning purposes. The VTS data have been updated at least once annually since 2015. The process of deriving population estimates has been described else-where,
+6 15 21 and a brief description is provided in online 
+supplementary file 1.
+Stage 3: produce and validate maps
+The study team used QGIS to generate a set of maps for each PHC catchment area showing PHC and other health facilities, settlements, administrative and catchment area boundaries, POIs, waterways, water bodies, railway networks and road networks (figure
+ 
+3). The generated 
+maps had the same format, so reproduction was auto-mated using the Atlas tool in QGIS.
+To gain insight into possible interventions from poli-
+cy-level stakeholders, build confidence in the maps generated from the microplans, and understand the 
+strengths and challenges of using the digital maps (compared with traditional paper-based maps), the study team convened meetings with key informants and engaged them in validating the maps (table
+ 
+1). Infor -
+mants made several suggestions for changes to the maps, including removing overlapping catchment areas that made the maps difficult to read; adding colour defini-tions to more clearly show vaccination strategy distances; using non-colour-dependent symbols for printing in black and white; and using localised symbols such as a basket of food items instead of a cart to represent a market.
+nexT STepS
+The next steps are for RI ser
+vice providers to use the 
+updated PHC catchment area maps to inform microplan-ning and resource allocation. Each state’s GIS team will be responsible for updating the digital PHC catchment area and ward-level maps. The study team also recom-mends that the states revise the protocol for updating microplans to include annually reviewing and updating digital maps with accurate settlement and PHC data. State GIS teams should continue to consult with PHC health workers (the users of the maps) during microplan-ning to ensure that the digital PHC maps they create are technically sound and meet users’ needs.copyright. on December 15, 2022 at Sri Lanka:BMJ-PG Sponsored. Protected by http://gh.bmj.com/ BMJ Glob Health: first published as 10.1136/bmjgh-2019-001606 on 1 July 2019. Downloaded from Dougherty L, et al. BMJ Global Health 2019;4:e001606. doi:10.1136/bmjgh-2019-0016065BMJ Global Health
+leSSonS leArnT
+GIS technology is an effective decision-support tool in 
+that it can be used to generate digital maps depicting the PHC catchment areas and their associated settlements. However
+, while such maps are dynamic and easy to inter -
+pret by our stakeholders, they are only as good as the data used to generate them. Below are the challenges the study team encountered in developing the digital maps. The study team recommends that the key challenges be addressed prior to scaling up the approach.
+l
+ack of comprehensive S
+p
+HC
+dA lists and inconsistenc
+y in 
+naming facilities and settlementsThe geographical and non-geographical data needed for RI microplanning are readily available and can either be downloaded from government databases (eg, the geoda-tabase, VTS and the Office of the Surveyor General of the Federation) or collected through primary data collection efforts (such as for settlements with missing attributes like a missing name). However, the identifica-tion of accurate data sources for this activity proved to be difficult because of the existence of multiple SPHCDA lists with different PHCs and settlements. As a result, a number of data quality issues inherent in the SPHCDA lists had to be addressed (eg, misspelled settlements, duplications and blank records) and verified by state stakeholders prior to reconciling existing databases (the SPHCDA list and geodatabase). The approach used to produce digital maps offers a unique opportu-nity to develop a standard governance structure for the naming of facilities and settlements (eg, based on tradi-tional names) that can be applied to PHC microplans and help build the capacity of governments to use open-source GIS software and data. We recommend that the state develop policies and procedures that address data quality issues, including those related to standardisa-tion, systematic documentation (including description of data and sources), and the process of updating the databases with dates and technical notes on the changes made over time.
+population estimates
+The VTS disaggregates population estimates based on GPEI operational boundaries. In instances where the GPEI operational boundar
+y names matched the 
+SPHCDA list, the team assigned population estimates. However, the majority of settlements in the SPHCDA list did not match the GPEI operational boundary names, so VTS population estimates could not be used at the settle-ment level for this activity. Because the VTS population estimates are based on polygons, we could not assign them to the SHPCDA settlements, which were identified as points rather than as polygons. Moving forward, efforts should be made to develop an algorithm that would allow population estimates based on a point rather than on a polygon, so that the population data could be used for health programme beyond polio eradication efforts.e stimating travel distances for vaccination strategy sessions
+To estimate travel time between settlements and their 
+corresponding PHCs, the researchers used OSM, a free online service for which subsequent usage is not subject to copyright or licensing constraints. The literature iden-tifies OSM’s dependency on volunteers to generate spatial data as a limitation.
+22 23 This type of voluntary data collec-
+tion raises concerns around data quality and consistency (eg, data formats and lack of detailed information on street segments). Furthermore, it is not clear if the OSM roads are accurate, complete and authoritative, nor is it clear who generated the road layers. However, without another reliable source, OSM provides the current best option for incorporating travel time. Alternatively, governments, donors or the private sector could invest in a systematic and standardised data collection effort of the road network to ensure the data are regularly collected and quality procedures are enforced.
+Stakeholder engagement
+Involving local stakeholders early resulted in the identi-fication of challenges inherent in reconciling data and provided opportunities to improve data quality. SPHCDA staff did not recognise a number of settlements in the geodatabase because names had not yet been assigned. In addition, settlements in the geodatabase were defined based on land area (ie, walking distance in a day to deliver vaccines during a supplemental immunisation campaign) rather than on the community definition in the SPHCDA list. In this context, stakeholders, who are also future users of the digital maps, were able to identify a number of these data quality issues. In addi-tion, communities and health providers at times offered rationales for why some settlements preferred to access a facility that did not align with geographic guidance due to issues that were not apparent when looking at geospa-tial data (eg, market days, ethnic tensions). This experi-ence is consistent with previous public health interven-tions that found stakeholder involvement contributes to a well-rounded understanding of the programme and may influence intervention adoption.
+24 25
+Capacity developmentIn order for this approach to be deployed further by the Nigerian SPHCDAs, effort will be required to build capacity of staff. Training SPHCDA staff on how to use GIS data will strengthen the use of the technology for decision making. While the Bauchi and Sokoto SPHCDAs staff were engaged in this study, a local consultancy firm conducted most of the technical GIS-related work. The SPHCDA should also consider recruiting GIS experts to support data collection and analysis of geospatial data.
+Con
+C
+lu
+SI
+on
+Besides generating digital maps, this work highlighted 
+challenges and lessons learnt in moving from RI paper maps to digital maps in a low-income country. It also demonstrated how locally available geographical data copyright. on December 15, 2022 at Sri Lanka:BMJ-PG Sponsored. Protected by http://gh.bmj.com/ BMJ Glob Health: first published as 10.1136/bmjgh-2019-001606 on 1 July 2019. Downloaded from 6
+Dougherty L, et al. BMJ Global Health 2019;4:e001606. doi:10.1136/bmjgh-2019-001606BMJ Global Health
+and other datasets collected through various initiatives 
+such as polio campaigns can be triangulated to create maps that guide planning and the expansion of service reach. In the case of the six study LGAs, key informants found the digital maps easy to use, enabling previously undocumented settlements and overlapping catchment areas to be identified and ultimately providing improved information for the assignment of individual settlements to different vaccination strategies. Challenges for health workers, health managers and policy-makers using this approach relate to the lack of a standard governance structure and system for naming health facilities and settlements, lack of source documentation on data and the reconciliation process, and inconsistencies across existing lists. The approach used in this study offers a methodology for validating digital maps that calls for stakeholders to reach consensus on settlement names and appropriate vaccination strategies and resources. Finally, it also demonstrates compelling reasons to consider use of this approach not only in RI but also in broader primary healthcare planning.
+Author affiliations
+1International Division, John Snow, Inc, Arlington, Virginia, USA
+2Geographic Information System and Data Analytics Division, eHealth Africa, Kano, 
+Nigeria
+3Disease Control and Surveillance Unit, State Primary Health Care Development 
+Agency, Bauchi, Nigeria
+4Monitoring and Evaluation Unit, State Primary Health Care Development Agency, 
+Sokoto, Nigeria
+5Department of Geography, University of Miami, Coral Gables, Florida, USA
+Contributors
+ MA,
+ FM, UT, AN, AA and HB supervised the state stakeholder 
+engagement meetings. KO and MA led the digitisation and reconciliation process. LD and IM wrote the manuscript. All authors reviewed and provided input into the final version of the manuscript.
+Funding
+ This manuscript is made possible by the generous support of the 
+American people through the United Sta
+tes Agency for International Development 
+(USAID) under the terms of the Cooperative Agreement AID-OAA-A-14-00028.
+d
+isclaimer
+ The contents are the responsibility of the Ma
+ternal and Child Survival 
+Program and do not necessarily reflect the views of USAID or the United States 
+Government.
+Competing interests
+ None dec
+lared.
+patient consent for publication
+ Not required.
+e
+thics approval
+ The stud
+y team received expedited approval for the activities from 
+the Bauchi and Sokoto State Ministry of Health ethics committees.
+p
+rovenance and peer review
+ Not commissioned; externally peer reviewed.
+d
+ata availability statement
+ All da
+ta relevant to this publication can be obtained 
+by request to the authors. In addition, VTS data are available on the VTS website: 
+http://
+ 
+vts.
+ 
+eocng.
+ 
+org/.
+o
+pen access
+ This is an open access artic
+le distributed in accordance with the 
+Creative Commons Attribution Non Commercial (CC BY-NC 4.0) license, which permits others to distribute, remix, adapt, build upon this work non-commercially, and license their derivative works on different terms, provided the original work is properly cited, appropriate credit is given, any changes made indicated, and the use is non-commercial. See: http://
+ 
+creativecommons.
+ 
+org/
+ 
+licenses/
+ 
+by-
+ 
+nc/
+ 
+4.
+ 
+0/.
+ReFeRence S
+ 1. V andelaer Jet al. The reaching every district (RED) approach as a 
+way to improve immunization performance. Bull World Health Organ 
+2008;86:240–B. 2.
+ Mwanamwenge A, Masumbu P
+, Mwansa F , et al. Evaluation of the 
+implementation of the reaching every district approach in routine immunisation in Lusaka district, Zambia. Med J Zambia 2016;43.
+ 3.
+ Ryman T
+, Macauley R, Nshimirimana D, et al. Reaching every 
+district (RED) approach to strengthen routine immunization services: evaluation in the African region, 2005. J Public Health 2010;32:18–25.
+ 4.
+ Ryman TK, T
+rakroo A, Wallace A, et al. Implementation and 
+evaluation of the reaching every district (RED) strategy in Assam, India, 2005-2008. Vaccine 2011;29:2555–60.
+ 5.
+ Report of Nigeria's national population Commission on the 2006 census. 
+Popul Dev Rev 2007;33:206–10.
+ 6.
+ W
+eber EM, Seaman VY , Stewart RN, et al. Census-independent 
+population mapping in northern Nigeria. Remote Sens Environ 2018;204:786–98.
+ 7.
+ Micr
+oplanning for immunization service delivery using the Reaching 
+Every District (RED) strategy [Internet] [Internet], 2009. Available: www.
+ 
+who.
+ 
+int/
+ 
+vaccines-
+ 
+documents/
+ 8.
+ Barau I, Zubairu M, Mwanza MN, 
+et al. Improving polio vaccination 
+coverage in Nigeria through the use of geographic information system technology. J Infect Dis 2014;210(suppl 1):S102–S110.
+ 9.
+ Bigna JJR. Polio eradication ef
+forts in regions of geopolitical strife: 
+the Boko Haram threat to efforts in sub-Saharan Africa. Afr Health Sci 2016;16.
+ 10.
+ Gidado SO, Ohuabunwo C, Nguku PM, 
+et al. Outreach to 
+underserved communities in northern Nigeria, 2012-2013. J Infect Dis 2014;210(suppl 1):S118–S124.
+ 11.
+ Guidance on the Use of Geospatial Data and T
+echnologies in 
+Immunization Programs: Overview and Managerial Considerations for In-Country Strengthening [Internet], 2018. Available: https://www.
+ 
+unicef.
+ 
+org/
+ 
+health/
+ 
+files/
+ 
+Gavi_
+ 
+UNICEF_
+ 
+HGLC_
+ 
+GIS_
+ 
+Immunization_
+ 
+guidance_
+ 
+Oct2018.
+ 
+pdf.
+ 
+pdf
+ 12.
+ Gammino VM, Nuhu A, Chenoweth P
+, et al. Using geographic 
+information systems to track polio vaccination team performance: pilot project report. J Infect Dis 2014;210(suppl 1):S98–S101.
+ 13.
+ T
+ouray K, Mkanda P , Tegegn SG, et al. Tracking vaccination 
+teams during polio campaigns in northern Nigeria by use of geographic information system technology: 2013-2015. J Infect Dis 2016;213(suppl 3):S67–S72.
+ 14.
+ Nasir UN, Bandyopadhyay AS, Montagnani F
+, et al. Polio elimination 
+in Nigeria: a review. Hum Vaccin Immunother 2016;12:658–63.
+ 15.
+ W
+ardrop NA, Jochem WC, Bird TJ, et al. Spatially disaggregated 
+population estimates in the absence of national population and housing census data. Proc Natl Acad Sci U S A 2018;115:3529–37.
+ 16.
+ DeGuzman P
+, Altrui P , Doede AL, et al. Using Geospatial analysis 
+to determine access gaps among children with special healthcare needs. Health Equity 2018;2:1–4.
+ 17.
+ Moise IK, Kalipeni E, Zulu LC. Analyzing geographical access to HIV sentinel clinics in r
+elation to other health clinics in Zambia. J Map 
+Geogr Libr 2011;7:254–81.
+ 18.
+ Kapiriri L. Stakeholder involvement in health r
+esearch priority 
+setting in low income countries: the case of Zambia. Res Involv Engagem [Internet], 2018. Available: https://
+ r
+esearchinvolvement.
+ 
+biomedcentral.
+ 
+com/
+ 
+articles/
+ 
+10.
+ 
+1186/
+ 
+s40900-
+ 
+018-
+ 
+0121-3 [Accessed 
+cited 2019 Jan 11].
+ 19.
+ eHealth. Pr
+oject GRID: Mapping Communities in Nigeria to Aid 
+Humanitarian Efforts [Internet]. Project GRID: Mapping Communities in Nigeria to Aid Humanitarian Efforts, 2017. Available: https://www.
+ 
+ehealthafrica.
+ 
+org/
+ 
+blog/
+ 
+2017/
+ 
+09/
+ 
+29/
+ 
+2017929project-
+ 
+grid-
+ 
+mapping-
+ 
+communities-
+ 
+in-
+ 
+nigeria-
+ 
+to-
+ 
+aid-
+ 
+humanitarian-
+ 
+efforts [Accessed 4 Jul 
+2018].
+ 20.
+ QGIS Development T
+eam. QGIS Geographic Information System 
+[Internet], 2004. Available: https://www.
+ 
+qgis.
+ 
+org/
+ 
+en/
+ 
+site/ [Accessed 
+10 Aug 2018].
+ 21.
+ V
+accination Tracking System (VTS) [Internet]. Vaccination Tracking 
+System Database online, 2013. Available: http://
+ vts.
+ eocng.
+ or
+g/ 
+[Accessed 5 Feb 2019].
+ 22.
+ Kamel Boulos MN, Resch B, Cr
+owley DN, et al. Crowdsourcing, 
+citizen sensing and sensor web technologies for public and environmental health surveillance and crisis management: trends, OGC standards and application examples. Int J Health Geogr 2011;10.
+ 23.
+ Ridwan SB, Fer
+dous HS, Ahmed SI. The state of OpenStreetMap in 
+Bangladesh. Hum-Comput interact tour cult Herit 2012:133–43.
+ 24.
+ Leykum LK, Pugh JA, Lanham HJ, 
+et al. Implementation research 
+design: integrating participatory action research into randomized controlled trials. Implement Sci 2009;4.
+ 25.
+ Beran D, Lazo-Porras M, Car
+denas MK, et al. Moving from formative 
+research to co-creation of interventions: insights from a community health system project in Mozambique, Nepal and Peru. BMJ Glob Health 2018;3:e001183. Nov.copyright. on December 15, 2022 at Sri Lanka:BMJ-PG Sponsored. Protected by http://gh.bmj.com/ BMJ Glob Health: first published as 10.1136/bmjgh-2019-001606 on 1 July 2019. Downloaded from 

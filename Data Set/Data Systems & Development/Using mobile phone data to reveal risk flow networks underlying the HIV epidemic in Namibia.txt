@@ -1,0 +1,846 @@
+ARTICLE
+Using mobile phone data to reveal risk ﬂow
+networks underlying the HIV epidemic in Namibia
+Eugenio Valdano1, Justin T. Okano1, Vittoria Colizza2, Honore K. Mitonga3& Sally Blower1✉
+Twenty-six million people are living with HIV in sub-Saharan Africa; epidemics are widely
+dispersed, due to high levels of mobility. However, global elimination strategies do notconsider mobility. We use Call Detail Records from 9 billion calls/texts to model mobility inNamibia; we quantify the epidemic-level impact by using a mathematical framework based onspatial networks. We ﬁnd complex networks of risk ﬂows dispersed risk countrywide:
+increasing the risk of acquiring HIV in some areas, decreasing it in others. Overall, 40% ofrisk was mobility-driven. Networks contained multiple risk hubs. All constituencies (admin-istrative units) imported and exported risk, to varying degrees. A few exported very highlevels of risk: their residents infected many residents of other constituencies. Notably, pre-valence in the constituency exporting the most risk was below average. Large-scale networksof mobility-driven risk ﬂows underlie generalized HIV epidemics in sub-Saharan Africa. In
+order to eliminate HIV, it is likely to become increasingly important to implement innovativecontrol strategies that focus on disrupting risk ﬂows.https://doi.org/10.1038/s41467-021-23051-w OPEN
+1Center for Biomedical Modeling, The Semel Institute for Neuroscience and Human Behavior, David Geffen School of Medicine, University of California , Los
+Angeles, CA, USA.2INSERM, Sorbonne Université, Institut Pierre Louis d ’Epidémiologie et de Santé Publique, IPLESP, Paris, France.3Department of
+Epidemiology and Biostatistics, School of Public Health, University of Namibia, Windhoek, Namibia.✉email: sblower@mednet.ucla.edu
+NATURE COMMUNICATIONS |         (2021) 12:2837 | https://doi.org/10.1038/s41467-021-23051-w | www.nature.com/naturecommunications 11234567890():,;Twenty-six million people live with HIV-infection in sub-
+Saharan Africa (SSA)1. In this region, HIV epidemics are
+generalized and populations are highly mobile2–4. How-
+ever, global HIV elimination strategies do not take mobility intoconsideration. Multiple phylogenetic and epidemiological
+studies
+5–12of HIV in SSA have shown the importance of mobility
+for the dispersal of HIV, and the effect of mobility on HIV
+transmission. Individuals travel and have sex partners who live
+outside their home communities. Therefore, high levels of mobi-
+lity can change who is at risk of infection, who transmits infection
+and where transmission occurs. Due to the dif ﬁculty of collecting
+data on mobility at a large spatial scale, previous studies5–12have
+focused on small geographic areas. Here, we study the impact of
+mobility on a high-prevalence HIV epidemic in SSA at the
+national level. We use a large-scale mobility network (constructed
+using Call Detail Records (CDRs) from mobile phones) that spans
+an entire country: Namibia (Fig. 1a). Worldwide, Namibia has one
+of the worst HIV epidemics; in 2017, the most recent survey found
+HIV prevalence to be ~15% in women and ~8% in men 15 –49
+years old13. HIV treatment has been rolled out in all countries in
+sub-Saharan Africa, and coverage levels are now high13–15. The
+effect of HIV treatment on transmission is now well known16–18.
+Here, our objective is to obtain an understanding of the effect of
+mobility on HIV transmission. Therefore, we conduct a retro-
+spective analysis, and evaluate the effect of mobility on Namibia ’s
+HIV epidemic a decade ago, before HIV treatment was widely
+available. Our results lead to a new conceptual understanding of
+the dynamics of generalized HIV epidemics in SSA. We discuss
+the importance of our results for guiding current HIV elimination
+strategies.
+Namibia has a population of ~2.5 million people, and the
+second lowest population density in the world. The country is
+divided into three administrative levels: 14 geographic regions, 54
+provinces, and 121 constituencies. Due to its economy, Namibia
+has a highly mobile population. The economy is heavily depen-
+dent on mining, ﬁsheries, large-scale farming and high-end
+tourism19. This has led to a system of circular migration of labor
+to mines, ports, farms, urban areas, and tourism nodes. Both
+women and men move around the country seeking employment;
+the most recent data show that ~70% of Namibians, 15 years or
+older, are economically active19.
+CDRs have an unmatched potential to measure population
+movements, and have been shown to be a key tool for retro-
+spective analysis20. Over the past decade, CDRs have increasinglybeen used in health research20–31; particularly to model the geo-
+graphic spread of infectious diseases32, most recently SARS-CoV-
+222,28. In these studies, population mobility networks are modeled
+by using algorithms to aggregate large datasets of CDRs intoOrigin-Destination (OD) matrices. The CDRs that we use have
+previously been used by Ruktanonchai and colleagues to evaluate
+the impact of mobility on malaria transmission in Namibia
+29, and
+to design novel malaria elimination strategies30,33. We use the OD
+matrix that they constructed34; it contains aggregated CDRs from
+9 billion calls/texts made from 1.19 million unique SIM cards over
+a 12-month period (October 2010 to September 2011) in
+Namibia29. The CDRs had been aggregated using an algorithm
+that accounts for the time spent by each individual in each con-
+stituency. In the OD matrix, rows specify the constituencies where
+individuals live, columns specify the constituencies they visit, and
+the entries/coef ﬁcients in the matrix specify weights. The weights
+are estimates of the average amount of time residents of one
+constituency spent in another constituency over 1 year. It is not
+possible to construct gender-speci ﬁc OD matrices, because CDRs
+are collected anonymously. Therefore, we used the same OD
+matrix for both genders. To check whether this was an appropriate
+assumption we conducted two analyses. First, we determined
+whether one gender was more likely than the other to have owned
+or used a mobile phone. Second, we determined if there were
+gender differences in travel behavior.
+A mobility network based on CDRs only re ﬂects the mobility
+of individuals who use mobile phones. By 2012, 93% of Nami-
+bians (18 and older) were using mobile phones; therefore, the
+mobility network that we use re ﬂects the mobility of a very high
+percentage of the population. Namibians who did not use mobile
+phones, in comparison with those who did, were more likely to
+live in very rural areas, have a low level of education, be unem-
+ployed, and older than 55. The movements of these individuals
+(who constitute 7% of the population) are not included in the
+mobility network. Conversely, the movements of some non-
+residents (e.g., tourists or business travelers) —if they had bought
+a local SIM card —are included in the mobility network. Given
+that Namibia had a population of 1.34 million individuals (15 or
+older)35and a very high percentage of the population were using
+mobile phones (with some owning more than one SIM card36),
+relatively few of the 1.19 million SIM cards in the database would
+have been owned by non-Namibians. Consequently, the move-
+ments of non-residents would have had little effect on the
+mobility network.
+Fig. 1 Geography of Namibia and mobility network. a Map of Namibia. Red dots indicate main cities and towns. The names of the ﬁve largest cities appear
+in black. Region names appear capitalized in orange. Names of bordering countries appear in orange in bold. National park areas are indicated in green ,
+water bodies in light blue. National borders appear in black. Main road (thick) and secondary roads (thin) are indicated in brown. bMap of mobility
+network, constructed from CDRs, based on an OD matrix constructed by Ruktanonchai and colleagues34. Red lines show travel between constituencies.ARTICLE NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-23051-w
+2 NATURE COMMUNICATIONS |         (2021) 12:2837 | https://doi.org/10.1038/s41467-021-23051-w | www.nature.com/naturecommunicationsWe use an approach based on modeling spatial networks to
+determine the effect that mobility had on the risk of acquiring,
+transmitting, and dispersing HIV in the time before treatment
+was made widely available. We conceptualize HIV epidemics asspatial networks consisting of communities that import and/or
+export risk; communities are interconnected by groups of indi-
+viduals moving, on a temporary basis, between them. Mobility is
+speciﬁed by the OD matrix. A community imports risk if their
+residents are at-risk of being infected with HIV by residents of
+other communities. Risk can be imported into a community by
+either of two mechanisms: (i) their uninfected residents visit other
+communities and acquire HIV, or (ii) HIV-infected residents of
+other communities visit and transmit HIV. The greater the ﬂow
+of imported risk to a community, the more vulnerable the com-
+munity is to the risks posed by the other communities. The most
+vulnerable communities are called in- ﬂow risk hubs. A commu-
+nity exports risk if their residents have the potential to infect
+residents of other communities. Risk can be exported from a
+community by either of two mechanisms: (i) their HIV-infected
+residents visit other communities and transmit HIV, or (ii)
+uninfected residents of other communities visit and acquire HIV.
+The greater the ﬂow of exported risk from a community, the more
+“risky ”the community is to the other communities. The most
+risky communities are called out- ﬂow risk hubs.
+In our spatial network modeling framework, each node
+represents a constituency, and each link represents a mobility-
+driven risk ﬂow between two constituencies. Risk ﬂows are gen-
+der-speci ﬁc: the risk of acquiring HIV for women depends upon
+the prevalence of HIV in men, and the risk of acquiring HIV for
+men depends upon the prevalence of HIV in women. Our fra-
+mework enables us to quantify and visualize countrywide net-
+works of mobility-driven risk ﬂows, determine the drivers of risk
+ﬂows, detect in- ﬂow and out- ﬂow risk hubs, and ﬁnd the geo-
+graphic location of every risk hub in Namibia. The residents of
+constituencies that are in- ﬂow risk hubs are at the greatest risk of
+acquiring HIV from individuals, who live outside their con-
+stituency. The residents of constituencies that are out- ﬂow risk
+hubs have the highest probability of transmitting HIV to indivi-
+duals, who live outside their constituency. A mathematical
+description of the spatial risk ﬂow networks is given in the
+methods.
+Results
+Gender and mobility . We did not ﬁnd gender differences among
+adults in Namibia in the ownership of mobile phones (84.3%
+(women), 84.2% (men)), the usage of mobile phones (93.0%
+(women), 92.8% (men)), or in the frequency of phone calls and
+texting (Supplementary Table 1). We did ﬁnd that women (15 –49
+years old) were slightly less likely to have taken overnight trips
+than men: 37% of women versus 43% of men (Supplementary
+Table 2). However, similar proportions (18%) of each gender took
+trips that lasted for more than a month.
+The effect of mobility on changing risk . The mobility network
+(Fig. 1b, which is a visualization of the OD matrix), shows that
+the population of Namibia was highly mobile, and both short and
+long distance trips were common. On average, residents spent
+2.6 months per year outside their home constituency between
+October 2010 and September 2011, although there was con-
+siderable geographic variation, ranging from approximately
+1–6 months (Fig. 2a and Supplementary Fig. 1). As a result of the
+speciﬁc travel patterns, many of the constituencies were highly
+connected (Fig. 1b). In 2010, there were 107 constituencies in
+Namibia; 11 of these are not represented in the mobility networkbecause, due to a low population density, they lacked cell phone
+towers.
+To conduct our analyses, we needed to estimate the prevalence
+of HIV in women and men at the approximate time that theCDRs were collected. However, the ﬁrst estimate of HIV
+prevalence in Namibia, based on a representative sample of the
+population, was based on data collected in 2013
+37. At that stage of
+the epidemic, HIV prevalence was relatively stable38. Therefore,
+we made the parsimonious assumption that prevalence did not
+change substantially between 2010 and 2013. In 2013, the average
+prevalence in women and men (aged 15 –49 years old) was 17 and
+11%, respectively37. However, there was considerable geographic
+variation: ranging from 6 to 39% in women (Fig. 2b), and from 0
+to 24% in men (Fig. 2c). Notably, the prevalence patterns were
+considerably different for men and women.
+The connectivity-prevalence matrix (Fig. 2d) shows the effect
+that the mobility network (Fig. 1b) had on changing the risk of
+acquiring HIV for men. Data below the diagonal show the
+proportion of men who spent time in constituencies, where the
+prevalence of HIV in women was higher than in their home
+constituency; these men potentially increased their risk of
+acquiring HIV. Data above the diagonal show the proportion of
+men who spent time in constituencies, where the prevalence in
+women was lower than in their home constituency; these men
+potentially decreased their risk of acquiring HIV. Data along the
+diagonal show the proportion of men who spent the majority of
+their time in their home constituency, and in other constitu-
+encies, where prevalence in women was similar to that in their
+home constituency. The level of risk for these men essentially did
+not change. We found similar results for women (Supplementary
+Fig. 2). Taken together, our results imply that there were
+substantial mobility-driven risk ﬂows, for both genders, among
+different areas of Namibia in the time before treatment was
+widely available.
+Risk ﬂow networks: risk importation .W ef o u n dt h a ta l lc o n -
+stituencies imported risk to some degree. Imported risk for
+men, and the mechanism by which it was imported, is shown in
+Fig.3a: orange data show the risk that was imported into each
+constituency due to travel by its uninfected male residents,
+green data show the risk that was imported into each con-
+stituency due to visits from HIV-infected women, who lived in
+other constituencies. Stacked values (orange plus green data)
+show the total amount of risk that was imported into each
+constituency. Constituencies in Fig. 3a are ordered based on
+HIV prevalence in women: from the lowest (6%) to the highest
+(39%). Supplementary Fig. 3 shows similar results, as in Fig. 3a,
+for women.
+We de ﬁned in- ﬂow risk hubs as constituencies that were in the
+top 40% of constituencies in terms of imported risk: 38
+constituencies were risk hubs. Each risk hub has a different
+amount of risk ﬂowing into it; the greater the in- ﬂow of risk, the
+more important the constituency is as a risk hub. Some
+constituencies (e.g., Oshakati East: blue dot, Fig. 3a) were in-
+ﬂow risk hubs for men, primarily because they were visited by
+HIV-infected women who lived in other constituencies (green
+data). Other constituencies (e.g., Kongola: red dot, Fig. 3a) were
+in-ﬂow risk hubs for men, primarily because of travel by their
+uninfected male residents (orange data).
+The in- ﬂow risk network for men in Oshakati East (Supple-
+mentary Fig. 4) shows which constituencies the female visitors
+were from, and the magnitude of the in- ﬂow of risk from each
+constituency. Risk was imported because many of the female
+visitors were from constituencies, where HIV prevalence in
+women was higher than in Oshakati East.NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-23051-w ARTICLE
+NATURE COMMUNICATIONS |         (2021) 12:2837 | https://doi.org/10.1038/s41467-021-23051-w | www.nature.com/naturecommunications 3time spent outside [months]
+prevalence [%]prevalence [%]a)
+c) d)b)
+Fig. 2 Spatial relationships for mobility and HIV prevalence. a Cartographic map showing the average proportion of time (over a year: 2010 –2011)
+residents spent outside their home constituencies. bHIV prevalence map showing geographic variation in prevalence in women (15 –49 years old) at the
+level of the constituency in 2013. cHIV prevalence map showing geographic variation in prevalence in men (15 –49 years old) at the level of the
+constituency in 2013. dMatrix showing the proportion of time (over a year) that men in Namibia spent in each prevalence “class ”, as a function of the
+prevalence class of their home constituency. Prevalence refers to prevalence in women. The matrix is color-coded to show the fraction of time spent in the
+destination constituency. A logarithmic scale is used, ranging from 0.1 to 100%.
+a) b)
+Fig. 3 Importation of risk. a Histogram showing the importation of risk for men into each constituency. The y-axis shows the value for imported risk; a
+mathematical de ﬁnition of imported risk is given in the methods (Eq. 5). The numbers on the x-axis refer to speci ﬁc constituencies; the key code is given in
+Supplementary Table 4. Constituencies are ordered by increasing HIV prev alence in women: from 6 to 39%. The constituency of Oshakati East is labeled w ith a blue
+dot, the constituency of Kongola with a red dot. Orange data show the risk for men that was imported into each constituency due to travel by their uninfec ted male
+residents. Green data show the risk for men that was imported into each constituency due to visits from HIV-infected women, who lived in other constitu encies. The
+stacked value represents the total amount of imported risk. bChord diagram showing the in- ﬂow risk network for men in Kongola; the lines represent risk
+importation due to uninfected male residents of Kongola visiting other constituencies. The thickness of the lines is proportional to the amount of im ported risk.ARTICLE NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-23051-w
+4 NATURE COMMUNICATIONS |         (2021) 12:2837 | https://doi.org/10.1038/s41467-021-23051-w | www.nature.com/naturecommunicationsThe in- ﬂowrisk network for men in Kongola (Fig. 3b and
+Supplementary Fig. 5) shows which constituencies its male
+residents visited, HIV prevalence in women in those constitu-
+encies, and the magnitude of the in- ﬂow of risk from each
+constituency. Even though prevalence in women in Kongola was
+extremely high (26%), risk was imported because male residents
+of Kongola visited a constituency (Katima Muliro Urban), where
+prevalence in women was even higher, 39% (Fig. 3b).
+Risk ﬂow networks: risk exportation . We found that all con-
+stituencies, as well as importing risk, exported risk to some
+degree. Exported risk for men, and the mechanism by which it
+was exported, is shown in Fig. 4a: orange data show the risk (for
+men) that was exported from each constituency due to visits from
+uninfected men who lived in other constituencies, green data
+show the risk (for men) that was exported from each constituencydue to travel by their HIV-infected female residents. Stacked
+values (orange plus green data) show the total amount of risk (for
+men) that was exported from each constituency. Constituencies
+in Fig. 4a are in the same order as in Fig. 3a. Supplementary Fig. 6
+shows similar results, as in Fig. 4a, for women.
+We de ﬁned out- ﬂow risk hubs as the top 40% of constituencies
+in terms of exported risk: 38 constituencies were risk hubs. Each
+risk hub has a different amount of risk ﬂowing out of it; the
+greater the out- ﬂow of risk, the more important the constituency
+is as a risk hub. Notably, only a few out- ﬂow risk hubs exported a
+great deal of risk. Windhoek West (blue dot, Fig. 4a) was the most
+important exporter of risk for men, even though prevalence in
+female residents of Windhoek West was well below the national
+average (12% vs. 17%). Windhoek West was the most important
+out-ﬂow risk hub, because it was a very important mobility hub
+and many of the male visitors to Windhoek West were from
+constituencies, where prevalence in women was lower than 12%.
+a) b)
+c) d)
+Fig. 4 Exportation of risk. a Histogram showing the exportation of risk for men from each constituency. The y-axis shows the value for exported risk; a
+mathematical de ﬁnition of exported risk is given in the methods (Eq. 5). The numbers on the x-axis refer to speci ﬁc constituencies; the key code is given in
+Supplementary Table 4. Constituencies are ordered as in Fig. 3a. The constituency of Windhoek West is labeled with a blue dot, the constituency of Rundu
+Urban with a red dot. Orange data show the risk for men that is exported from each constituency due to visits from uninfected men who lived in other
+constituencies. Green data show the risk for men that is exported from each constituency due to travel by their HIV-infected female residents. The sta cked
+value represents the total amount of exported risk. bMap showing the out- ﬂow risk network for men; risk is due to HIV-infected female residents of Rundu
+Urban (represented by the red dot) visiting other constituencies. cChord diagram showing the out- ﬂow risk network for men; risk is due to uninfected male
+residents of other constituencies visiting Windhoek West. dMap showing the out- ﬂow risk network from Windhoek West (red dot). The thickness of the
+orange lines is proportional to the amount of exported risk.NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-23051-w ARTICLE
+NATURE COMMUNICATIONS |         (2021) 12:2837 | https://doi.org/10.1038/s41467-021-23051-w | www.nature.com/naturecommunications 5Rundu Urban (red dot, Fig. 4a) is an example of an out- ﬂow
+risk hub for men where risk was exported due to the travel
+behavior of their HIV-infected female residents (green data).
+Rundu Urban (Fig. 4b) exported risk to many constituencies, near
+and far; risk was exported because prevalence in women in Rundu
+Urban was much higher (26%) than in the constituencies the
+women visited. Other constituencies (e.g., Windhoek West) were
+out-ﬂow risk hubs for men, primarily because they were visited by
+uninfected men who lived in other constituencies (orange data).
+The out- ﬂow risk network from Windhoek West (Fig. 4c, d)
+shows which constituencies the male visitors were from, HIV
+prevalence in women in those constituencies, and the magnitude
+of the out- ﬂow of risk to each constituency.
+Mobility-driven risk of acquiring HIV . We used our risk ﬂow
+networks to calculate the average overall annual risk of acquiring
+HIV in Namibia, subdivided into three components: risk due to
+localized transmission in an individuals ’home constituency, risk
+due to visiting other communities, and risk due to residents of
+other communities visiting an individuals ’home constituency.
+We de ﬁne localized transmission as transmission between resi-
+dents of the same constituency, when they are in their homeconstituency. We found that the majority of the risk (60%) was
+due to localized transmission, 25% of the risk was due to visiting
+other communities, and 15% of the risk was due to residents of
+other communities visiting an individuals ’home constituency.
+Overall, ~40% of the total risk was due to mobility-driven
+transmission. We obtained similar results for men and women.
+Identifying the geographic location of risk hubs . Figure 5a
+shows the geographic location of all out- ﬂow risk hubs. The red
+data show the top 10% of constituencies in terms of exported risk,
+i.e., the most important out- ﬂow risk hubs. Five of these risk hubs
+are constituencies that are very close together in the central part
+of the north, the other ﬁve risk hubs are widely dispersed
+throughout the country.
+Figure 5b shows the geographic location of all in- ﬂow risk hubs
+in Namibia. The red data show the top 10% of constituencies in
+terms of imported risk, i.e., the most important in- ﬂow risk hubs.
+Several of the important in- ﬂow risk hubs are close to important
+out-ﬂow hubs in the central part of the country in the north, and
+in the Zambezi region in the northeast. Notably, two constitu-
+encies are very important as both in- ﬂow and out- ﬂow risk hubs:
+Oshakati East and Ondangwa, neighboring constituencies in thenorth (the only constituencies shown in red in both Figs. 5a
+and5b).
+Discussion
+The effect of treatment on generalized HIV epidemics in SSA is
+well known
+16–18. Previous studies have made important con-
+tributions to our understanding of the impact of mobility on
+transmission at the community level5–12. However, very little is
+known about the effect of mobility —at the population level —on
+these generalized epidemics. Here by reconstructing the state of
+the HIV epidemic in Namibia a decade ago (before treatment was
+widely available) and using CDRs to model population-level
+mobility, we were able to evaluate the effect of mobility on an
+HIV epidemic at the national-level. Using a modeling framework,
+we discovered that a combination of high levels of mobility,
+substantial geographic variation in prevalence, and speci ﬁc travel
+patterns, had generated complex risk ﬂow networks that spanned
+Namibia. The networks dispersed risk throughout the country:
+increasing risk in some areas, decreasing risk in others. All con-
+stituencies were vulnerable to the in- ﬂow of risk, some more than
+others. Some risk ﬂows were between constituencies that were
+close together, others were between constituencies that were
+geographically very far apart. All constituencies posed some
+degree of risk to other constituencies. A few constituencies were
+extremely risky; the most risky was Windhoek West, where
+prevalence was slightly less than the national average. Our results
+show that mobility has been extremely important for the acqui-
+sition, transmission, and dispersal of HIV in Namibia: overall,
+~40% of the total risk of acquiring HIV was driven by mobility.
+More importantly, taken together, our results provide a new
+conceptual understanding of generalized HIV epidemics in SSA:
+i.e., they should be understood as large-scale complex networks of
+mobility-driven risk ﬂows. Our results imply that, to eliminate
+HIV, it will be essential to design new control strategies that focus
+on disrupting these risk ﬂows.
+Many other countries in SSA have similar characteristics to
+Namibia: substantial geographic variation in the prevalence of
+HIV, a highly mobile population, and circular migration.
+Therefore, spatial risk ﬂow networks are likely to exist in these
+countries, and throughout SSA. Networks will be country-spe-
+ciﬁc: they will depend upon the mobility level of the population,
+the geographic variation in HIV prevalence, and the degree to
+which travel patterns link high-prevalence and low-prevalence
+areas. The importance of mobility on HIV epidemics can be
+expected to vary by country39,40.
+a) b)
+Fig. 5 Geographic location of risk hubs. a Map showing the risk hubs for exported risk, i.e., the out- ﬂow risk hubs. The top 10% of constituencies, in terms
+of exported risk, are shown in red. The next 10% are in yellow, the next 10% in light purple, and the next 10% in blue. bMap showing the risk hubs for
+imported risk, i.e., the in- ﬂow risk hubs. The top 10% of constituencies, in terms of imported risk, are shown in red. The next 10% are in yellow, the next
+10% in light purple, and the next 10% in blue.ARTICLE NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-23051-w
+6 NATURE COMMUNICATIONS |         (2021) 12:2837 | https://doi.org/10.1038/s41467-021-23051-w | www.nature.com/naturecommunicationsHIV treatment both increases survival, and prevents onward
+transmission16–18. HIV treatment in Namibia, as in other coun-
+tries in SSA, was rolled out based on geographically targeting
+high-prevalence areas41; high-prevalence areas are de ﬁned as
+Hot-Spots. Hot-Spots were disproportionally allocated treatment.
+This targeting strategy was based on two assumptions, that: (i)
+risk was localized, and (ii) the highest prevalence areas were the
+areas of greatest risk. However, we have found that these two
+assumptions did not hold in Namibia; a substantial proportion
+(40%) of the risk was not localized, and high-risk areas (e.g.,
+Windhoek West) were not always high-prevalence areas. There-
+fore, the geographic targeting strategy that was employed did not
+target several of the areas in Namibia, where the risk of acquiring
+and transmitting HIV was the greatest.
+Our results provide qualitative insights into the effect that
+treatment had on the Namibian epidemic. Treatment would have
+disrupted the risk ﬂow networks. In the targeted high-prevalence
+areas that were important out- ﬂow risk-hubs, the structure of the
+riskﬂow networks would have spatially dispersed the bene ﬁcial
+effect of treatment on reducing transmission. This would have
+decreased both localized transmission and transmission in many
+other constituencies in Namibia. In the targeted high-prevalence
+areas that were not important out- ﬂow risk-hubs, only localized
+transmission would have decreased.
+Our results have important policy implications for the design of
+HIV elimination strategies in Namibia. The country has made
+considerable progress in controlling its HIV epidemic. Progress
+has been the result of political leadership, an effective community-
+centered approach to interventions, and the strategic expansion of
+treatment services. There are many preventative modalities that
+are currently being used successfully in HIV interventions in
+Namibia: e.g., pre-exposure prophylaxis, medical circumcision,
+and condoms41. The Government began nation-wide imple-
+mentation of the “Treat All ”policy in April 2017. This policy
+recommends providing treatment to all HIV-infected individuals,
+and removing treatment eligibility requirements. By 2017, the HIV
+treatment program in Namibia was doing extremely well: ~83% ofall HIV-infected adults in Namibia were on treatment
+13, a level of
+coverage among the highest in Africa42. The Government ’sc u r -
+rent goals are to reach UNAIDS ’2030 treatment targets for
+elimination and to achieve treatment equity41with respect to
+geography, age, and gender targets (especially for young women).
+UNAIDS ’goals for 2030 are to have 95% of HIV-infected indi-
+viduals diagnosed, 95% of the diagnosed on treatment, and 95% of
+treated patients with viral suppression43. Our new understanding
+of the generalized HIV epidemic in Namibia suggests that, in
+order to eliminate HIV, control strategies will need to take into
+account the riskiness, and vulnerability, of constituencies. To
+design effective strategies, it will be necessary to identify the
+current mobility network; therefore more recent data on CDRs in
+Namibia need to be collected. Then, by expanding the metho-
+dology that we have presented in this study to include treatment,
+the current risk ﬂow networks and the risk hubs can be identi ﬁed.
+We recommend developing strategies that preferentially target the
+most important in- ﬂow and out- ﬂow risk hubs in the country.
+Within in- ﬂow risk hubs, it is most important to target uninfected
+residents; within out- ﬂow risk hubs, it is most important to target
+HIV-infected residents.
+There are limitations to our study, both with respect to the data
+that we have used and the assumptions that we have made. We
+have made the parsimonious assumption that HIV prevalence did
+not change substantially between 2010 (the year the CDRs were
+collected) and 2013 (the year the prevalence data were collected).
+Although this assumption cannot be veri ﬁed, it is supported by the
+fact that UNAIDS prevalence estimates for Namibia did not
+change signi ﬁcantly over this three year time period38. CDRs arealways anonymized and therefore OD matrices cannot be dis-
+aggregated on the basis of gender or any other demographic
+factors44. In our study, as in all previous studies that have used
+CDRs to model population-level mobility20–31, we assumed that
+neither phone ownership, usage, or travel behavior differed sub-
+stantially between genders. The data that we have presented have
+shown that phone ownership and usage and length of trips did not
+differ by gender. However, men traveled slightly more frequently
+than women, and we do not know whether there were gender
+differences in the origins and destinations of trips. Therefore, it is
+possible that women and men had different mobility networks. If
+true, this could potentially have changed which of the con-
+stituencies were risk hubs. However, it would not have changed
+our central conclusions: (i) that mobility has been extremely
+important for the acquisition, transmission, and dispersal of HIV
+in Namibia, and (ii) that our results present a new conceptual
+understanding of generalized HIV epidemics in SSA. The CDRs
+used to construct the OD matrix show that there was seasonal
+variation in mobility. However, it is not necessary to model sea-
+sonal changes in mobility as HIV transmission occurs throughout
+the year. Even a substantial seasonal variation in transmission
+would have a negligible impact (over a year) on prevalence; this is
+because prevalence is an order of magnitude higher than inci-
+dence. Finally, our study focuses on identifying spatial networks of
+riskﬂows in a generalized epidemic where the vast majority of
+transmission is through heterosexual sex. We have not modeled
+spatial networks of risk ﬂows among men who have sex with men.
+These networks could be included in future studies.
+Many countries in SSA, including Namibia, have very mobile
+borders45,46, therefore it is essential to develop more complex
+spatial network models that can be used to evaluate the effect of
+intra-country and inter-country mobility on generalized HIV epi-
+demics throughout SSA. Many in- ﬂow and out- ﬂow hubs in
+Namibia are close to the Angolan border (Fig. 5a). HIV prevalence
+along the border (in adults aged 15 –49 years old) is substantially
+lower in Angola (5 –6%)47than in Namibia (9 –32%). This suggests
+that the out- ﬂow of risk from Namibia would have been greater
+than the in- ﬂow of risk from Angola. Consequently, Namibia would
+have had more of an impact on the HIV epidemic in Angola, than
+Angola would have had on the HIV epidemic in Namibia.
+We propose that high levels of mobility may be reducing the
+effectiveness of current epidemic control strategies in SSA.
+UNAIDS ’HIV elimination strategy is based, in large part, on the
+assumption that a high coverage of treatment will reduce inci-
+dence to an extremely low level. Four large-scale clinical trials
+were set up to test this premise: the ANRS 12249 TasP study in
+South Africa48, the SEARCH study in Kenya and Uganda49, the
+HPTN 071 (PopART) study in South Africa and Zambia50, and
+the Ya Tsie study in Botswana51. The ﬁrst three of these trials
+failed to show a reduction in incidence, and the Ya Tsie study
+showed a modest decrease of ~30%51. We suggest that the high
+level of mobility in these countries could have been an important
+factor that contributed to the failure of these trials. High inci-
+dence rates in the areas of study could have been maintained due
+to the importation of risk. This could have occurred due to
+uninfected residents of communities in the study area visiting
+communities outside the study area, or due to HIV-infected
+residents of other communities visiting communities in the study
+area. As HIV approaches elimination, mobility-driven transmis-
+sion is likely to become increasingly important. This has already
+been seen in elimination campaigns for polio52and malaria53;
+high levels of mobility have led to the continuous introduction of
+new infections into areas, where localized transmission had
+already been stopped or reduced to extremely low levels. Mobility
+may also become a substantial barrier to the elimination of HIV
+in SSA.NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-23051-w ARTICLE
+NATURE COMMUNICATIONS |         (2021) 12:2837 | https://doi.org/10.1038/s41467-021-23051-w | www.nature.com/naturecommunications 7Methods
+Assessing gender bias in mobility . To determine whether there was gender bias
+in mobile phone ownership or usage we analyzed data collected in 2012 in Namibia
+in the 5thround of the Afrobarometer surveys36. To determine if there were gender
+differences in travel behavior, we analyzed data (strati ﬁed by gender) from the 2013
+Namibian Demographic and Health Survey (NDHS)37on the number of overnight
+trips that had been made in the previous 12 months (between 2012 and 2013), andon the number of those trips that had lasted more than a month.
+The Afrobarometer surveys are conducted in 37 African countries
+36. The survey
+utilizes a multistage clustered strati ﬁed sampling design to generate a representative
+sample of the population, 18 years and older. It collects public opinion data on a
+country ’s economy, governance, and society. The survey also collects data on
+ownership and usage of mobile phones.
+The 2013 NDHS utilized a two-stage cluster design to collect a representative
+sample of Namibia ’s population37; clusters were georeferenced. Demographic and
+behavioral data were collected from 14,499 individuals in 9849 households.
+Participants who were 15 or older were tested for HIV infection. Each individual ’s
+test results were linked to their demographic and behavioral data. The overall
+response rate was high: 92% for women, 85% for men. Participation in HIV-testing
+(in 15 –49 year olds) was also high: 83% for women, 74% for men.
+HIV prevalence mapping . We used data from the 7731 individuals (aged 15 –49
+years old) who were tested for HIV in the 2013 NDHS37to construct the gender-
+speciﬁc prevalence maps for Namibia: Fig. 2b (women) and Fig. 2c (men). Pre-
+valence was estimated, and maps constructed, using R v. 3.6.3 (packages “survey ”
+and “sp”).
+Calculating prevalence-connectivity matrices . We combined the OD matrix
+with the prevalence data to construct the gender-speci ﬁc prevalence-connectivity
+matrices. These matrices are shown in Fig. 2d (men) and Supplementary Fig. 2
+(women). Each matrix was calculated by using the data in the OD matrix to
+determine the time spent in each constituency. The prevalence data for womenwere used to construct the prevalence-connectivity matrix for men; the prevalence
+data for men were used to construct the prevalence-connectivity matrix
+for women.
+Modeling spatial networks of risk ﬂows. To model these networks, we used three
+sources of data: (i) the OD matrix, (ii) HIV prevalence data
+37, and (iii) Census
+data35.W ed e ﬁne risk as the probability that a new sex partner, who is a resident of
+constituency i, is infected with HIV. If the population is not mobile, the risk to one
+gender simply equals the prevalence of HIV in the opposite gender. If the popu-
+lation is mobile, risk is calculated as described below.
+The effective population size ð^niÞand the effective HIV prevalence ð^pi;^qiÞare
+calculated. The effective population size ð^niÞis the expected number of individuals
+present in a constituency at a given time. The effective HIV prevalence ð^pi;^qiÞis the
+expected prevalence of HIV in men and women, respectively, in a constituency at a
+given time.
+^ni¼∑
+jnjAji;ð1Þ
+^pi¼∑
+jpjnjAji
+^ni;ð2Þ
+^qi¼∑
+jqjnjAji
+^ni;ð3Þ
+where
+lrel
+i¼li
+ri;
+nirepresents the size of the resident population of constituency i.
+Aijrepresents the average proportion of time a resident of constituency ispends
+in constituency j(measured over a year); by construction ∑
+jAij¼1.
+pi,qirepresent the HIV prevalence in men and the HIV prevalence in women,
+respectively, among the resident population of constituency i.
+The total risk for women, ri, is then calculated; riis the probability that when a
+woman, who is a resident of constituency i, meets a new male sex partner, he is
+infected with HIV. The total risk for women in constituency iis deﬁned as follows:
+ri¼∑
+jAij^pj ð4Þ
+The total risk can be broken down into three distinct contributions, which make
+up the right-hand side of Eq. ( 5):
+ri¼liþ∑
+j≠itF
+jiþvF
+ji;ð5Þ
+wherelilocal risk for women . This is the probability that a woman, who is a resident
+of constituency i, meets a new sex partner, she is in her home constituency, and the
+partner is infected with HIV and a resident of the same constituency i.
+tijrisk for women due to their travel . This is the probability that a woman, who
+is a resident of constituency j, meets a new sex partner while visiting constituency i,
+and the partner is infected with HIV and a resident of constituency i.
+vijrisk for women due to travel of HIV-infected men who are residents of
+other constituencies . This is the probability that a woman, who is a resident of
+constituency j, meets a new sex partner in her home constituency, and the partner
+is infected with HIV and a resident of constituency i.
+li¼Aii/C0/C12pini
+^ni; ð6Þ
+tij¼Aji^pi; ð7Þ
+vij¼piniAijAjj
+^nj: ð8Þ
+Note that inserting Eqs. ( 6,7,8) in Eq. ( 5) leads to Eq. ( 4). By swapping pforq
+the risks for men can be calculated.
+The relative impact of a risk on any speci ﬁc constituency can be de ﬁned in
+terms of the relative impact on the total risk:
+lrel
+i¼li
+ri; ð9Þ
+trel
+ij¼tij
+rj; ð10Þ
+vrel
+ij¼vij
+rj; ð11Þ
+For instance, trel
+ij=0.3 means that 30% of the risk in constituency jcomes from
+constituency i, in terms of risk type t.
+The risk networks are speci ﬁed in terms of the ﬂows of risk ( tijandvij) between
+constituencies, where constituencies are the nodes in the network. A link from
+constituency ito constituency jalways represents a ﬂow of risk from constituency i
+to constituency j. Constituency iincreases the risk in constituency jby adding tij
+and vijtorj. Clearly either tijorvijor both can be zero, if no ﬂow of risk occurs.
+The risk ﬂow networks are weighted and directed networks. Weights are
+speciﬁed in terms of the amount of risk that a link carries. The direction of risk
+ﬂows is not always the same as the direction of the mobility ﬂuxes that generate
+them. It is the same direction for v, which ﬂows from constituency ito constituency
+jthrough individuals going from constituency ito constituency j(see the presence
+of the term Aijin Eq. ( 8)). It is the opposite direction for t, which ﬂows from
+constituency ito constituency jthrough individuals going from constituency jto
+constituency i(see the presence of the term Ajiin Eq. ( 7)). In this latter case, risk in
+constituency jincreases as its residents travel to other constituencies and risk
+getting infected there.
+Risk was calculated using Python 3 and standard libraries (numpy v1.19,
+pandas v1.2).
+Calculating risk importation and exportation . The in-strength of a node in a
+weighted, directed network is the sum over the weights of its incoming links. We
+deﬁnerisk importation as the in-strength of a node in the networks. Therefore, the
+risk importation into each node is:
+tIN
+i¼∑
+j≠itji;ð12Þ
+vIN
+i¼∑
+j≠ivji:ð13Þ
+The out-strength of a node in a weighted, directed network is the sum over the
+weights of its outgoing links. We de ﬁnerisk exportation as the out-strength of a
+node in the networks of relative impacts:
+tOUT
+i¼∑
+j≠itrel
+ij¼∑
+j≠itij
+rj; ð14Þ
+vOUT
+i¼∑
+j≠ivrel
+ij¼∑
+j≠ivij
+rj: ð15Þ
+Notably, tOUT
+i,vOUT
+ican be larger than one. For instance, if constituency i
+generates 60% of type- trisk of j, and 50% of type- trisk of k, then its risk
+exportation, tOUT
+iis equal to 1.1.
+We calculated the risk ﬂows for each node/constituency in the networks; the
+values are shown in Supplementary Table 3 for women and Supplementary Table 4
+for men. These values were also used to construct the histograms shown in Fig. 3a,
+4a and Supplementary Figs. 3 and 6.ARTICLE NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-23051-w
+8 NATURE COMMUNICATIONS |         (2021) 12:2837 | https://doi.org/10.1038/s41467-021-23051-w | www.nature.com/naturecommunicationsReporting summary . Further information on research design is available in the Nature
+Research Reporting Summary linked to this article.
+Data availability
+The 2010 –2011 Namibian mobility data in the form of a geographic origin-destination
+adjacency matrix are freely available at: https://doi.org/10.1371/journal.pcbi.1004846.
+s00234. The 2013 Namibian Demographic and Health Survey (NDHS) data (Individual
+recode and HIV test results recode) are available for non-commercial use to registered
+users at: https://dhsprogram.com/data/dataset/Namibia_Standard-DHS_2013.cfm . The
+2011 Namibia Population and Housing census data is freely available for non-commercialuse to registered users at: https://nsa.org.na/microdata1/index.php/catalog/19 .
+Code availability
+Code used to carry out these analyses is available in a Github repository: https://github.
+com/eugenio-valdano/namibia_hiv_risk ;https://doi.org/10.5281/zenodo.465129554.
+Received: 10 July 2020; Accepted: 8 April 2021;
+References
+1. UNAIDS. Fact sheet —World AIDS day 2019. https://www.unaids.org/sites/
+default/ ﬁles/media_asset/UNAIDS_FactSheet_en.pdf (UNAIDS, 2019).
+2. Camlin, C. S. & Charlebois, E. D. Mobility and its effects on HIV acquisition
+and treatment engagement: recent theoretical and empirical advances. Curr.
+HIV/AIDS Rep. 16, 314 –323 (2019).
+3. Dzomba, A., Tomita, A., Govender, K. & Tanser, F. Effects of migration on
+risky sexual behavior and HIV acquisition in South Africa: a systematic reviewand meta-analysis, 2000 –2017. AIDS Behav. 23, 1396 –1430 (2019).
+4. Palk, L. & Blower, S. Mobility and circular migration in Lesotho: implications
+for transmission, treatment, and control of a severe HIV epidemic. J. Acquir.
+Immune De ﬁc. Syndr. 68, 604 –608 (2015).
+5. Grabowski, M. K. et al. The role of viral introductions in sustaining
+community-based HIV epidemics in rural Uganda: evidence from spatial
+clustering, phylogenetics, and egocentric transmission models. PLoS Med. 11,
+e1001610 (2014).
+6. Rasmussen, D. A. et al. Tracking external introductions of HIV using
+phylodynamics reveals a major source of infections in rural KwaZulu-Natal,
+South Africa. Virus Evol. 4, vey037 (2018).
+7. Abeler-Dorner, L., Grabowski, M. K., Rambaut, A., Pillay, D. & Fraser, C.
+PANGEA-HIV 2: phylogenetics and networks for generalised epidemics inAfrica. Curr. Opin. HIV AIDS 14, 173 –180 (2019).
+8. Grabowski, M. K. et al. Migration, hotspots, and dispersal of HIV infection in
+Rakai, Uganda. Nat. Commun. 11, 976 (2020).
+9. Ratmann, O. et al. Quantifying HIV transmission ﬂow between high-
+prevalence hotspots and surrounding communities: a population-based study
+in Rakai, Uganda. Lancet HIV 7, e172 –e183 (2020).
+10. Bbosa, N. et al. Phylogeography of HIV-1 suggests that Ugandan ﬁshing
+communities are a sink for, not a source of, virus from general populations.Sci. Rep. 9, 1051 (2019).
+11. Kiwuwa-Muyingo, S. et al. HIV-1 transmission networks in high risk ﬁshing
+communities on the shores of Lake Victoria in Uganda: a phylogenetic and
+epidemiological approach. PLoS ONE 12, e0185818 (2017).
+12. Novitsky, V. et al. Mapping of HIV-1C transmission networks reveals
+extensive spread of viral lineages across villages in Botswana treatment-as-
+prevention trial. J. Infect. Dis. 222, 1670 –1680 (2020).
+13. Ministry of Health and Social Services. Namibia Population-Based HIV
+Impact Assessment (NAMPHIA) 2017: Final Report. https://phia.icap.
+columbia.edu/wp-content/uploads/2019/12/NAMPHIA-Final-Report_for-
+web.pdf (Ministry of Health and Social Services, 2019).
+14. Ministry of Health (MoH) Lesotho, Centers for Disease Control and
+Prevention (CDC) & ICAP at Columbia University. Lesotho Population-basedHIV Impact Assessment (LePHIA) 2016 –
+2017: Final Report. https://phia.icap.
+columbia.edu/wp-content/uploads/2019/09/LePHIA_FinalReport_Web.pdf
+(MoH Lesotho, CDC, and ICAP, 2019).
+15. Ministry of Health Malawi. Malawi Population-Based HIV Impact
+Assessment (MPHIA) 2015-2016: Final Report. https://phia.icap.columbia.
+edu/wp-content/uploads/2019/08/MPHIA-Final-Report_web.pdf (Ministry of
+Health, 2018).
+16. Tanser, F., Barnighausen, T., Grapsa, E., Zaidi, J. & Newell, M. L. High
+coverage of ART associated with decline in risk of HIV acquisition in ruralKwaZulu-Natal, South Africa. Science 339, 966 –971 (2013).
+17. Vandormael, A. et al. Declines in HIV incidence among men and women in a
+South African population-based cohort. Nat. Commun. 10, 5482 (2019).18. Cohen, M. S. et al. Prevention of HIV-1 infection with early antiretroviral
+therapy. N. Engl. J. Med. 365, 493 –505 (2011).
+19. Namibia Statistics Agency. The Namibia Labour Force Survey 2018 Report.
+https://d3rp5jatom3eyn.cloudfront.net/cms/assets/documents/NLFS_2018_Report_Final_.pdf (Namibia Statistics Agency, 2019).
+20. Oliver, N. et al. Mobile phone data for informing public health actions across
+the COVID-19 pandemic life cycle. Sci. Adv. 6, eabc0764 (2020).
+21. Buckee, C. O., Wesolowski, A., Eagle, N. N., Hansen, E. & Snow, R. W. Mobile
+phones and malaria: modeling human and parasite travel. Travel Med. Infect.
+Dis.11,1 5–22 (2013).
+22. Chang, S. et al. Mobility network models of COVID-19 explain inequities and
+inform reopening. Nature 589,8 2–87 (2021).
+23. Finger, F. et al. Mobile phone data highlights the role of mass gatherings in the
+spreading of cholera outbreaks. Proc. Natl. Acad. Sci. USA 113, 6421 –6426
+(2016).
+24. Kraemer, M. U. et al. Spread of yellow fever virus outbreak in Angola and the
+Democratic Republic of the Congo 2015 –16: a modelling study. Lancet Infect.
+Dis.17, 330 –338 (2017).
+25. Lai, S., Farnham, A., Ruktanonchai, N. W. & Tatem, A. J. Measuring mobility,
+disease connectivity and individual risk: a review of using mobile phone dataand mHealth for travel medicine. J. Travel Med. 26, taz019 (2019).
+26. Peak, C. M. et al. Population mobility reductions associated with travel
+restrictions during the Ebola epidemic in Sierra Leone: use of mobile phone
+data. Int. J. Epidemiol. 47, 1562 –1570 (2018).
+27. Pindolia, D. K. et al. Human movement data for malaria control and
+elimination strategic planning. Malar. J. 11, 205 (2012).
+28. Pullano, G., Valdano, E., Scarpa, N., Rubrichi, S. & Colizza, V. Evaluating the
+effect of demographic factors, socioeconomic factors, and risk aversion onmobility during the COVID-19 epidemic in France under lockdown: apopulation-based study. Lancet Digit. Health 2, e638 –e649 (2020).
+29. Ruktanonchai, N. W. et al. Identifying malaria transmission foci for
+elimination using human mobility data. PLoS Comput. Biol. 12, e1004846
+(2016).
+30. Tatem, A. J. et al. Integrating rapid risk mapping and mobile phone call record
+data for strategic malaria elimination planning. Malar. J. 13, 52 (2014).
+31. Wesolowski, A. et al. Impact of human mobility on the emergence of dengue
+epidemics in Pakistan. Proc. Natl. Acad. Sci. USA 112, 11887 –11892 (2015).
+32. Tizzoni, M. et al. On the use of human mobility proxies for modeling
+epidemics. PLoS Comput. Biol. 10, e1003716 (2014).
+33. Wesolowski, A. et al. Quantifying the impact of human mobility on malaria.
+Science 338, 267 –270 (2012).
+34. Ruktanonchai, N. W. et al. Adjacency matrix from mobile phone data
+aggregated to the constituency level, https://doi.org/10.1371/journal.
+pcbi.1004846.s002 (2016).
+35. Namibia Statistics Agency. Namibia 2011 population & housing census basic
+report. https://www.npc.gov.na/downloads/Policies%20(By%20institutions%
+20or%20sector)/NPC/Census%20Report%202011%20FINAL.pdf (Namibia
+Statistics Agency, 2011).
+36. Afrobarometer Data. Namibia round 5, 2012. http://www.afrobarometer.org/
+(Accessed 26 Oct 2020).
+37. Ministry of Health and Social Services & Namibia Statistics Agency. Namibia
+Demographic and Health Survey 2013. https://dhsprogram.com/pubs/pdf/
+FR298/FR298.pdf (Ministry of Health and Social Services, and Namibia
+Statistics Agency, 2014).
+38. UNAIDS. Nambia HIV epidemic pro ﬁle.http://rstesa.unaids.org/documents/
+the-region/country-pro ﬁles/12-namibia-hiv-epidemic-pro ﬁle/ﬁle(UNAIDS,
+2014).
+39. Isdory, A., Mureithi, E. W. & Sumpter, D. J. The impact of human mobility on
+HIV transmission in Kenya. PLoS ONE 10, e0142805 (2015).
+40. Brdar, S., Gavri ć, K.,Ćulibrk, D. & Crnojevi ć, V. Unveiling spatial
+epidemiology of HIV with mobile phone data. Sci. Rep. 6, 19342 (2016).
+41. PEPFAR. Namibia country operational plan 2019: strategic direction
+summary. https://www.state.gov/wp-content/uploads/2019/09/
+Namibia_COP19-Strategic-Directional-Summary_public.pdf (PEPFAR,
+2019).
+42. UNAIDS. Children living with HIV lagging behind adults in access to
+treatment. https://www.unaids.org/en/resources/presscentre/featurestories/
+2021/march/20210308_children-living-with-hiv-treatment (UNAIDS, 2021).
+43. UNAIDS. On the fast-track to end AIDS by 2030: 2016 –2021 Strategy.
+https://www.unaids.org/sites/default/ ﬁles/media_asset/20151027_UNAIDS_
+PCB37_15_18_EN_rev1.pdf (UNAIDS, 2015).
+44. Wesolowski, A., Buckee, C. O., Engo-Monsen, K. & Metcalf, C. J. E.
+Connecting mobility to infectious diseases: the promise and limits of mobile
+phone data. J. Infect. Dis. 214, S414 –S420 (2016).
+45. Dwyer-Lindgren, L. et al. Mapping HIV prevalence in sub-Saharan Africa
+between 2000 and 2017. Nature 570, 189 –193 (2019).
+46. Blower, S. & Okano, J. T. Precision public health and HIV in Africa. Lancet
+Infect. Dis. 19, 1050 –1052 (2019).NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-23051-w ARTICLE
+NATURE COMMUNICATIONS |         (2021) 12:2837 | https://doi.org/10.1038/s41467-021-23051-w | www.nature.com/naturecommunications 947. Angola National Institute of Statistics (INE), Ministry of Health (MINSA),
+Ministry of Planning and Territorial Development (MPDT) & ICFInternational. Key ﬁndings of the 2015 –2016 Angola Multiple Indicator and
+Health Survey (IIMS). https://dhsprogram.com/pubs/pdf/SR238/SR238.pdf
+(INA, MINSA, MPDT, and ICF, 2017).
+48. Iwuji, C. C. et al. Universal test and treat and the HIV epidemic in rural South
+Africa: a phase 4, open-label, community cluster randomised trial. Lancet HIV
+5, e116 –e125 (2018).
+49. Havlir, D. V. et al. HIV testing and treatment with the use of a community
+health approach in rural Africa. N. Engl. J. Med. 381, 219 –229 (2019).
+50. Hayes, R. J. et al. Effect of universal testing and treatment on HIV incidence —
+HPTN 071 (PopART). N. Engl. J. Med. 381, 207 –218 (2019).
+51. Makhema, J. et al. Universal testing, expanded treatment, and incidence of
+HIV infection in Botswana. N. Engl. J. Med. 381, 230 –242 (2019).
+52. Duintjer Tebbens, R. J. & Thompson, K. M. Polio endgame risks and the
+possibility of restarting the use of oral poliovirus vaccine. Expert Rev. Vaccines
+17, 739 –751 (2018).
+53. Cotter, C. et al. The changing epidemiology of malaria elimination: new
+strategies for new challenges. Lancet 382, 900 –911 (2013).
+54. Valdano, E. Using mobile p hone data to identify risk ﬂow networks within an HIV
+epidemic in Namibia, Github. https://doi.org/10.5281/zenodo.4651295 (2021).
+Acknowledgements
+E.V., J.T.O., and S.B acknowledge the ﬁnancial support of the National Institute of
+Allergy and Infectious Diseases, National Institutes of Health (grant R01 AI116493 andR56 AI152759). V.C. acknowledges the ﬁnancial support of the Sorbonne Université
+Emergence project RISKFLOW.
+Author contributions
+S.B., E.V., and V.C developed the concept. S.B. drafted the manuscript. E.V. performedthe calculations. J.T.O. contributed to results. H.K.M. provided in-country expertise. All
+authors interpreted results and contributed to writing. All authors read and approved theﬁnal manuscript.Competing interests
+The authors declare no competing interests.
+Additional information
+Supplementary information The online version contains supplementary material
+available at https://doi.org/10.1038/s41467-021-23051-w .
+Correspondence and requests for materials should be addressed to S.B.
+Peer review information Nature Communications thanks Caroline Buckee and the other,
+anonymous, reviewer(s) for their contribution to the peer review of this work. Peerreview reports are available.
+Reprints and permission information is available at http://www.nature.com/reprints
+Publisher ’s note Springer Nature remains neutral with regard to jurisdictional claims in
+published maps and institutional af ﬁliations.
+Open Access This article is licensed under a Creative Commons
+Attribution 4.0 International License, which permits use, sharing,
+adaptation, distribution and reproduction in any medium or format, as long as you give
+appropriate credit to the original author(s) and the source, provide a link to the Creative
+Commons license, and indicate if changes were made. The images or other third partymaterial in this article are included in the article ’s Creative Commons license, unless
+indicated otherwise in a credit line to the material. If material is not included in thearticle ’s Creative Commons license and your intended use is not permitted by statutory
+regulation or exceeds the permitted use, you will need to obtain permission directly from
+the copyright holder. To view a copy of this license, visit http://creativecommons.org/
+licenses/by/4.0/ .
+© The Author(s) 2021ARTICLE NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-021-23051-w
+10 NATURE COMMUNICATIONS |         (2021) 12:2837 | https://doi.org/10.1038/s41467-021-23051-w | www.nature.com/naturecommunications

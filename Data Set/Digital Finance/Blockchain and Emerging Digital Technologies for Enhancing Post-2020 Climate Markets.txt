@@ -1,0 +1,1552 @@
+Blockchain and Emerging  
+Digital Technologies for 
+Enhancing Post-2020  
+Climate Markets
+Public Disclosure Authorized Public Disclosure Authorized Public Disclosure Authorized Public Disclosure Authorized© 2018 International Bank for Reconstruction and Development/The World Bank 
+1818 H Street NW 
+Washington DC 20433 
+Telephone: 202-473-1000 
+Internet: www.worldbank.org 
+This work is a product of the staff of The World Bank with external contributions. The findings, 
+interpretations, and conclusions expressed in this work do not necessarily reflect the views of The World 
+Bank, its Board of Executive Directors, or the governments they represent. 
+The World Bank does not guarantee the accuracy of the data included in this work. The boundaries, 
+colors, denominations, and other information shown on any map in this work do not imply any judgment 
+on the part of The World Bank concerning the legal status of any territory or the endorsement or 
+acceptance of such boundaries. 
+Nothing herein shall constitute or be considered to be a limitation upon or waiver of the privileges and 
+immunities of the World Bank, all of which are specifically reserved. Furthermore, it is expected that the 
+proposed concepts and components outlined in this paper will evolve based on a range of elements, 
+namely, discussions with stakeholders, further technical work, the development of the Paris Agreement, 
+and technological advancement.
+Rights and Permissions 
+The material in this work is subject to copyright. Because The World Bank encourages dissemination of 
+its knowledge, this work may be reproduced, in whole or in part, for noncommercial purposes as long 
+as full attribution to this work is given. 
+Any queries on rights and licenses, including subsidiary rights, should be addressed to World Bank 
+Publications, The World Bank Group, 1818 H Street NW, Washington, DC 20433, USA; fax: 202-522-2625; 
+e-mail: pubrights@worldbank.org. 1Contents
+ Acknowledgments  ____________________________________________________________________________ 3
+1. Executive Summary  ___________________________________________________________________________ 4
+2. Introduction  ___________________________________________________________________________________ 6
+Market Provisions Under the Paris Agreement  _________________________________________________________ 6
+Objective: Development of the Next Generation of Climate Markets  ________________________________________ 6
+3. Brief Review of Technologies and Practices in Existing Climate Markets  _____________________ 8
+Current Data Collection  _____________________________________________________________________________ 8
+Current Market Schemes  ___________________________________________________________________________ 8
+Existing Technological Architecture  ___________________________________________________________________ 9
+4. Architecture for New Market Design  __________________________________________________________ 11
+Enhancing the Comparability and Potential Fungibility of Mitigation Outcomes Across Bottom-up, 
+Heterogeneous Markets  __________________________________________________________________________ 11
+5. Blockchain as an Emerging Technology  _______________________________________________________ 14
+Blockchain  _______________________________________________________________________________________ 14
+Blockchain in Climate Markets  _______________________________________________________________________ 16
+Smart Contracts  __________________________________________________________________________________ 17
+6. How New Technology Aligns with Policy Framework  _________________________________________ 18
+Building on the METRIC Principles  ____________________________________________________________________ 18
+Extensibility  _______________________________________________________________________________________ 18
+Scalability  ________________________________________________________________________________________ 19
+Governance Systems for Emerging Practices and the New Architecture  ____________________________________ 19
+Challenges, Vulnerabilities and Uncertainties for Blockchain  _______________________________________________ 21
+7. Conclusions and Recommendations  _________________________________________________________ 22
+Recommendation #1  ______________________________________________________________________________ 22
+Recommendation #2  ______________________________________________________________________________ 23
+Recommendation #3  _____________________________________________________________________________ 23
+ Appendix  _____________________________________________________________________________________ 24
+ References  ___________________________________________________________________________________ 25
+ Acronyms  ____________________________________________________________________________________ 282
+Blockchain and Emerging Digital Technologies for Enhancing Post-2020 Climate MarketsFigures
+Figure 1. Different Types of Emissions Accounting Systems Compared  _____________________________________ 9
+Figure 2. The Transaction Registry in its Environment: Potential Connections and Interfaces  ____________________ 10
+Figure 3. Architectural Vision for Networked Climate Markets  _____________________________________________ 12
+Figure 4. Peer-to-Peer vs. Centralized Authority  _________________________________________________________ 15
+Figure 5. Generic Structure of Blockchain Solutions  _____________________________________________________ 15
+Figure 6. Illustrating the Hashing of Transaction Data Across Member Nodes and the Reconciliation of the 
+Ledger via Consensus to Resolve Non-Conformities  ___________________________________________________ 17
+Figure 7. World Bank METRIC Principles  _______________________________________________________________ 18
+Figure 8. Governance Systems for Blockchain Applications Supporting the Next Generation of Climate Markets  __20
+Tables
+Table 1. Implementation Responsibilities for the New Generation of Climate Markets  __________________________ 13
+Table 2. Pros and Cons of Peer-to-Peer vs. Centralized Hub Networks  ______________________________________ 153Acknowledgments
+This paper was prepared jointly by Xpansiv, Collaborase, and the World Bank’s Climate Change Group.
+The Xpansiv team included Joe Madden, Tom Baumann (also Collaborase), Jason Libersky, Eamonn McCormick, and Jeff 
+Cohen.
+The World Bank’s Climate Change Group team included Xiaoqun Dong, Rachel Mok, Durreh Tabassum, Pierre Guigon, 
+Eduardo Ferreira, and Chandra Shekhar Sinha under the guidance of and support from Neeraj Prasad (Practice Manager) 
+and James Close (Director). 
+The paper also received expert advice during several rounds of peer-reviews from Rachel Alexandra Halsema, Susan David 
+Carevic, Peter Z.Y. Zhou, Joanne Olushola Martins, Stelina Maltezou, and Stela Mocan from the World Bank Blockchain 
+Lab; Katherine A. Foster, Deanna MacDonald, and Karim Jabbar from the Blockchain Labs for Open Collaboration (BLOC); 
+Xing Zhang from the International Finance Corporation (IFC)’s Climate Business Department; Frederic Dinguirard; and Paul 
+Warren.
+The team also wishes to acknowledge Justin Macinante from the University of Edinburgh for the valuable guidance and 
+editing provided.
+Despite efforts to be comprehensive, the team apologizes to any individuals or organization inadvertently omitted from 
+this list and expresses our gratitude to all who contributed to this paper.4
+Blockchain and Emerging Digital Technologies for Enhancing Post-2020 Climate MarketsExecutive Summary
+Scientific consensus is that rapid and aggressive reductions 
+in greenhouse gas (GHG) emissions are needed if significant 
+climate disruption and irreversible environmental impacts 
+are to be averted. The changes required necessitate 
+large-scale investment and governments at all levels are 
+responding with combinations of regulatory mandates, 
+incentives and market-driven solutions. In this post-Kyoto 
+Protocol era, there is a growing application of pricing 
+mechanisms, especially markets, in multiple contexts to 
+address mitigation of emissions. The new generation of 
+climate markets is thus likely to develop as a network of 
+decentralized markets, linking at regional, national and 
+subnational levels.
+The Paris Agreement (the Agreement) recognizes the 
+heterogeneity of approaches. To foster higher ambition 
+and sustainable development, and encourage large-
+scale financing towards the most effective mitigation 
+measures, Article 6 recognizes that parties may 
+engage in cooperative approaches, including the use of 
+internationally transferred mitigation outcomes (ITMO) 
+towards their individual nationally determined contribution 
+(NDC). 
+Such a bottom-up framework promotes innovation 
+and addresses jurisdictional priorities. Nevertheless, 
+the growing diversity in the type, design, and scope of 
+schemes does not encourage economic efficiency or the 
+effective application of available financial resources. As 
+such, an identified need is development of tools, services 
+and institutions to foster and enhance this next generation 
+of climate markets that accommodate such a “patchwork” 
+of different domestic climate actions.
+Different climate markets trade different units (assets), 
+have differences in structure and governance, and rely on 
+separate, centralized registries. The result is a multitude of 
+schemes trading instruments within closed technological 
+systems (with centralized registries) and differing rules, 
+such as those associated with monitoring, reporting and 
+verification (MRV). To facilitate larger, more liquid and 
+resilient trading across heterogeneous climate markets, a 
+new architecture is needed. 
+There is a corresponding need, also, for the capability 
+to generate, manage, and harmonize information 
+representing the outcomes of GHG mitigation actions 
+across multiple industry sectors and governmental 
+jurisdictions. The complexity of conducting transactions 
+between heterogeneous climate actions across 
+jurisdictions increases when additional instrument types 
+(that is, not just emission allowances) are traded. Thus, 
+the next generation of bottom-up climate markets must 
+include mechanisms to address these differences so that the technological limits of an infrastructure based on 
+centralized registries does not inhibit achieving the scale, 
+heterogeneity, and functional complexity required.
+At the same time, a rapidly evolving technological 
+landscape presents opportunities for efficient and robust 
+design and development of this next generation of climate 
+markets, as well as risks, both in terms of failure to engage, 
+or in failing to understand how to engage effectively. 
+Blockchain, Big Data, the Internet of Things (IoT), smart 
+contracts and other disruptive technologies hold out 
+the promise of addressing the needs of new generation 
+climate markets post-2020. 
+Blockchain, in particular, provides data sharing and 
+transaction management elements well aligned with 
+the requirements of climate markets. Blockchain is an 
+implementation of distributed ledger technology (DLT), 
+which, broadly, combines a distributed ledger (that is, a 
+copy of the ledger is held by all network participants), 
+public/private key encryption, and a decentralized 
+infrastructure. The ledger is organized into blocks of 
+information, each block containing information, such as 
+a collection of transactions. Once there is consensus, 
+the block is added to the ledger, which is immutable and 
+accumulative. These characteristics support data integrity 1.
+Blockchain, Big Data, 
+the Internet of Things 
+(IoT), smart contracts 
+and other disruptive 
+technologies hold 
+out the promise of 
+addressing the needs 
+of new generation 
+climate markets 
+post-2020.5and security, while the distributed nature of the ledger promotes 
+transparency.
+There are also challenges associated with blockchain, both technical 
+and non-technical. The former includes the fact that certain types 
+of blockchain networks require high energy consumption (although 
+these are unlikely to be suitable for climate markets), and potential 
+issues with the speed and security for data transfers to and from 
+blockchain applications, for example, with other digital systems. 
+Non-technical challenges include a paucity of understanding of the 
+technology and its applications by many stakeholders. In particular, 
+a challenge for adoption of the emerging digital technologies that 
+must be resolved quickly is a culture change among regulators, 
+standards developers, and policymakers. It is important to recognize 
+that established interests and legacy systems could inhibit the 
+adoption of digital technologies. 
+Significant factors characterizing the changing landscape of 
+stakeholder needs, driving the transition from current to emerging 
+technologies and practices, thus include the increasing diversity of 
+regulations, MRV systems, climate assets, and values of mitigation 
+outcomes, within and across jurisdictions; the increasing size and 
+scale of post-2020 climate markets, as well as linkages with related 
+climate actions and other markets; the expectation of new cross-
+jurisdictional trading arrangements (e.g., clubs, regional trading 
+schemes, sectoral trading schemes); and greater financial flows 
+and types of transactions, such as peer-to-peer and results-based 
+finance.
+It is concluded that digital innovations can help address these 
+challenges firstly, through blockchain-enabled distributed ledgers 
+that provide transparency and robust rule implementation via smart 
+contracts; secondly, through collaborative governance systems that 
+enable more efficient development of MRV standards structured as 
+holistic systems of modular, compatible and extensible methods and rules; and finally, through smart meters and other devices 
+associated with the IoT, combined with big data analytics, so as 
+to facilitate the automated data flows necessary to harness the 
+potential of blockchain technology in supporting new generation 
+climate markets.
+It is recommended that:
+1. A roadmap for the implementation of blockchain and other 
+emerging digital technologies in climate markets should be 
+developed with the objective of making substantive progress 
+on overall design, demonstration activities, and implementation. 
+There should be close coordination with the technical policy 
+agenda, both at the international level, for instance, in terms of 
+the Article 6 work schedule and milestones, and at the national 
+level. Specifically, these new technologies are most relevant in 
+helping to address agenda items such as transparency, double 
+counting, environmental integrity, and alignment with NDCs. 
+2. Additional research should be conducted, firstly, to clarify and 
+elaborate how other types of emerging technologies, such 
+as smart meters and other devices associated with the IoT 
+and Big Data, can complement applications of blockchain 
+that support new generation climate markets; and secondly, 
+to confirm the technical, economic and legal underpinnings 
+of the perceived advantages of blockchain applications in 
+addressing the challenges that confront the new generation 
+climate markets.
+3. By way of extension of the research carried out under 
+the preceding recommendation, pilot markets should 
+be established to test research outcomes in “real world” 
+environments. Such pilots should also serve to elucidate 
+stakeholder understanding of how, in practical terms, the new 
+technology will interface with existing technologies, will be 
+embedded, implemented and operated. 6
+Blockchain and Emerging Digital Technologies for Enhancing Post-2020 Climate MarketsIntroduction 2.
+Market Provisions Under the 
+Paris Agreement
+Since its adoption in December 2015 by the 21st Conference 
+of Parties (COP21), within the United Nations Framework 
+Convention on Climate Change (UNFCCC), 175 countries to 
+date have ratified the Paris Agreement (“the Agreement”). 
+These countries have made commitments (NDCs), in some 
+cases contingent on financing by developed countries, 
+to limit or reduce their GHG emissions through a variety 
+of measures including more significant deployment of 
+renewable power, energy efficiency, land-use controls 
+such as conservation of forests and grasslands, carbon 
+pricing, and other measures compatible with each 
+country’s national circumstances and capabilities.
+Even with full ratification of the Agreement by all 197 
+signatories, the aggregate effect is projected only to slow 
+the rate of GHG emissions growth from the 24 percent 
+increase, between 1990 and 2010, to an anticipated 
+increase between 2010 and 2030 of between 11 and 
+23 percent.1 Far greater reductions, approaching net 
+zero emissions, will be needed after 2030 to meet the 
+Agreement’s goals of limiting the rise in global temperature 
+to below 2° C, or ideally below 1.5° C.
+To foster higher ambition and sustainable development, 
+and also encourage large-scale financing towards the 
+most effective mitigation measures, Article 6 of the 
+Agreement recognizes that countries may engage in 
+cooperative approaches, including the use of ITMOs 
+towards their individual NDC. Unlike the Kyoto Protocol, 
+under which emissions trading was restricted to developed 
+countries, who also could purchase emission reductions 
+generated by projects in developing countries, Article 6 of 
+the Agreement potentially allows countries to contribute a 
+diversity of climate actions with mitigation outcomes that 
+can be transferred in any direction between cooperative 
+Parties.
+In this new, complex and diverse environment, this 
+paper aims to examine emerging digital technologies 
+and architectures that could be used to enhance and 
+connect the heterogeneous climate actions across 
+countries, thereby supporting post-2020 climate markets 
+that facilitate the most cost-effective achievement of the 
+highest possible ambition. Given the speed with which 
+information technology, system architectures, domestic 
+1 UNFCCC, 2015, “Synthesis report on the aggregate effect of the intended nationally determined contributions,” UNFCCC COP21, October 30, https://unfccc.int/resource/docs/2015/cop21/eng/07.pdf.
+2 World Bank and Carbon Pricing Leadership Coalition, 2017, “2016-2017 Carbon Pricing Leadership Report,” http://pubdocs.worldbank.org/en/183521492529539277/WBG-CPLC-2017-Leadership-Report-
+DIGITAL-Single-Pages.pdf.policy, and other relevant elements are developing, the 
+roadmap laid out in this paper will likely continue to evolve 
+significantly over the next few years.
+Objective: Development of the 
+Next Generation of Climate 
+Markets
+Today, there is a broad use of pricing mechanisms, 
+especially markets, in multiple contexts to address 
+mitigation of emissions. Market mechanisms have proven 
+to be an economically efficient way to mitigate GHG 
+emissions to deliver a specific objective (e.g., an emissions 
+reduction target by a specific date). There are 40 countries 
+and more than 20 cities, states, and provinces that 
+have already established or will soon be implementing 
+some form of carbon pricing system — either cap-and-
+trade or a carbon tax, including seven of the world’s ten 
+largest economies. Carbon pricing initiatives now cover 
+approximately 13 percent of annual global GHG emissions.2 
+There are jurisdictions engaging in cooperative programs 
+(e.g., EU Emission Trading System (ETS), Regional 
+Market mechanisms 
+have proven to be an 
+economically efficient 
+way to mitigate GHG 
+emissions to deliver 
+a specific objective 
+(e.g., an emissions 
+reduction target by a 
+specific date).  7Greenhouse Gas Initiative (RGGI), California-Quebec-Ontario3) 
+but even connecting independent emissions trading schemes 
+necessitates mechanisms to deal with different accounting rules, 
+scope, pricing, offset eligibility, governance, complementary 
+policies, and other key features. In reality, pricing mechanisms 
+may take a variety of forms including as carbon taxes, schemes 
+generating project-based credits, or certificates schemes for fuel 
+switching or renewable energy. All these have the potential for 
+integration in the broad mix of global “climate markets” post-2020.
+While such a bottom-up framework promotes innovation and 
+addresses jurisdictional priorities, the growing diversity in the 
+type, design, and scope of schemes does not foster the most 
+efficient and effective application of the financial resources 
+available. Against this backdrop, the World Bank is working with 
+governments, the private sector, academia and civil society to 
+develop the tools, services and institutions needed to foster and 
+develop the next generation of climate markets that accommodate 
+such a “patchwork” of different domestic climate actions. 
+3 California, Quebec, and Ontario established a linkage agreement that became effective on January 1, 2018.To ensure an efficient and robust design and development of 
+this next generation of climate markets, it is critical to consider 
+the rapidly evolving technological landscape. The goal of this 
+paper is to provide background clarity to understanding the 
+emerging technology trends that can support both the design and 
+function of new climate markets from the bottom-up. While other 
+technologies such as the IoT and big data analytics are mentioned 
+(and elaborated briefly in Section 5), specifically, this paper will 
+focus on the application of blockchain technology, and how it can 
+work cumulatively with those other technologies. 
+To achieve the vision of a new generation of climate markets 
+driving higher mitigation ambition, it is essential to first consider the 
+current practices and technologies that have been used to support 
+pricing and the challenges they present. Understanding the issues 
+and gaps is essential to assessing the potential for emerging 
+practices, technologies and architectural frameworks to harness 
+the power of markets in delivering on the objectives outlined in the 
+Paris Agreement.8
+Blockchain and Emerging Digital Technologies for Enhancing Post-2020 Climate MarketsBrief Review of Technologies 
+and Practices in Existing 
+Climate Markets3.
+Current Data Collection
+In spite of their differences, carbon pricing mechanisms 
+around the world share common elements (e.g., data-
+driven emission caps and allowances, offset provisions, 
+defined sectors),4, 5, 6 and there are a multitude of MRV 
+practices and technologies encompassing data collection, 
+data processing, and data analysis that underpin these 
+mechanisms. Since the 1990s, new technologies have 
+enabled expanded MRV practices, from simplified 
+organizational and subnational inventories and project-
+specific calculations to more accurate and comprehensive 
+accounting, including, for example, continuous emission 
+monitoring systems (CEMS), integrated life cycle 
+assessment (LCA) databases, and cloud-based, tracking 
+software systems for supply chains and programs of 
+activities (POA). 
+More recently, innovative MRV practices and technologies 
+utilizing information and communication technologies 
+(ICT),7 such as mobile and remote monitoring, are being 
+advanced for transportation, distribution of household 
+appliances and land use mitigation activities. 
+At a time when climate markets are gaining interest,8 
+and advances in technological adoption and automation 
+of MRV is occurring, nevertheless most climate change 
+related MRV practices still involve manual processes 
+that rely on disconnected data trails, spreadsheets, and 
+static PDFs to achieve market and environmental integrity. 
+These processes stand in contrast to the increasingly 
+interconnected, highly transparent digital paradigm that 
+is emerging globally,9 constraining market integration and 
+scalability.
+4 World Bank, 2016, “Emissions Trading Registries: Guidance on Regulation, Development, and Administration,” October 1, http://documents.worldbank.org/curated/en/780741476303872666/pdf/109027-
+WP-PUBLIC-12-10-2016-15-54-42-PMRFCPFRegistriesPosting.pdf.
+5 Kossoy, Alexandre et al., 2016, “State and Trends of Carbon Pricing,” World Bank, October 14, http://documents.worldbank.org/curated/en/598811476464765822/pdf/109157-REVISED-PUBLIC-wb-report-
+2016-complete-161214-cc2015-screen.pdf.
+6 World Bank, 2016, “ Emissions Trading in Practice: A Handbook on Design and Implementation,” January 1, http://documents.worldbank.org/curated/en/353821475849138788/pdf/108879-WP-P153285-
+PUBLIC-ABSTRACT-SENT-PMRICAPETSHandbookENG.pdf.
+7 Smarter2030, accessed September 30, 2017, http://smarter2030.gesi.org . 
+8 World Bank, 2015, “State and Trends of Carbon Pricing,” September 20, http://documents.worldbank.org/curated/en/636161467995665933/State-and-trends-of-carbon-pricing-2015.
+9 World Economic Forum, 2016, “Introducing the Digital Transformation Initiative,” accessed September 30, 2017, http://reports.weforum.org/digital-transformation/introducing-the-digital-transformation-
+initiative/.Current Market Schemes
+The Kyoto Protocol took a homogeneous approach to 
+tradable units, which by definition were all equal to one 
+tonne CO2-equivalent GHG emission. The two most 
+common types of tradable units in climate markets have 
+been allowances and credits and following the Kyoto 
+approach, these are generally set at a value of one 
+tonne as well, although what it is a tonne of (e.g., CO2, 
+or CO2 — equivalent, or another GHG) will depend on the 
+nature of the particular scheme. 
+The next generation 
+of bottom-up climate 
+markets must 
+include mechanisms 
+to address these 
+differences so 
+as to not inhibit 
+reaching the scale, 
+heterogeneity, and 
+functional complexity 
+that will be required.9Allowances are issued under cap-and-trade programs where 
+emissions within a defined boundary (e.g., country, industry 
+sector) are capped. The allowances are issued to entities that are 
+regulated within the boundary of the cap, to be surrendered by 
+them against their emissions. Thus, the face value of an allowance 
+reflects a unit of the amount the regulated entity can emit, rather 
+than the amount of GHG emission mitigation brought about by a 
+unit of that scheme. 
+Credits can encompass a variety of instruments, most notably GHG 
+offset credits, renewable energy certificates ,10 and renewable fuel 
+certificates (RINs).11 As opposed to an allowance, a credit can reflect 
+a unit of the amount of GHG emission reduction achieved, although 
+depending on the type of credit, it may need to be converted into 
+a base unit such as tonnes CO2-equivalent: for example, renewable 
+energy certificates  may be expressed in KWh and need to be 
+converted in order to be comparable with other units.
+In any case where diverse pricing mechanisms are connected so 
+as to allow transactions between them, in other words to provide 
+for “fungibility” (or the mutual interchangeability) of their respective 
+tradable units, there will need to be a mechanism to enable 
+comparability. This is discussed further below.
+Existing Technological Architecture
+A functioning climate market requires rules, institutions, and 
+infrastructure to enable proper market operation, transparent 
+accounting and to ensure environmental integrity. A fundamental 
+building block for market infrastructure is the accounting system(s) 
+in which tradable units are held, transferred, retired, and recorded.
+The World Bank has defined three types of emissions accounting 
+systems (illustrated in Figure 1.)
+Figure 1. Different Types of Emissions Accounting Systems 
+Compared
+GHG 
+Inventory
+Records physical 
+GHG emissions and 
+removalsRegister/
+Transaction 
+Registry
+Records carbon 
+units for market 
+mechanism/
+results-based 
+climate finance 
+programsData 
+Management
+System
+Records information 
+on carbon unit and 
+policy/program/
+project
+Source: Emissions Trading Registries – Guidance on Regulation, Development, and 
+Administration . World Bank, 2016.
+10 United States Environmental Protection Agency, “Renewable Energy Certificates,” accessed September 30, 2017, https://www.epa.gov/greenpower/renewable-energy-certificates-recs . 
+11 United States Environmental Protection Agency, “Renewable Identification Numbers (RINs) under the Renewable Fuel Standard Program,” accessed September 30, 2017, www.epa.gov/renewable-fuel-standard-program/renewable-
+identification-numbers-rins-under-renewable-fuel-standard . 
+12 California Air Resources Board, “ARB Offset Credits Issued,” accessed September 30, 2017, https://www.arb.ca.gov/cc/capandtrade/offsets/issuance/arb_offset_credit_issuance_table.pdf.The term registry can refer to a GHG emissions inventory, a list 
+of project and program information, or databases with varying 
+levels of functionality. While there are multiple considerations in 
+the development, administration and regulation of GHG registries, 
+there is a commonality in the underlying technological architecture 
+of existing registries. Regardless of structure or level of complexity, 
+existing transactional registries utilize a technological architecture 
+based on a centralized ledger (or database) to support the 
+transaction of units. There are good reasons for this design around 
+central ledgers. Centralized ledgers are reliable and provide a 
+system of record for transactions within a given scheme with 
+clearly defined, tradable units. 
+Due to legal constraints, confidentiality concerns, institutional 
+barriers, or other factors, there may be multiple registries or 
+multiple centralized ledgers used within a single jurisdiction. 
+Integrating multiple centralized ledgers requires not only new 
+architecture (see Figure 2), but also overcoming constraints so as 
+to facilitate the integration and transfer of relevant data.
+For example, under California’s Cap-and-Trade Program, details 
+associated with an approved project may be stored across 
+multiple websites each referencing serialized numbers and 
+reports held in various places. The California Air Resources Board 
+(ARB) summary for a project will be a set of serialized numbers 
+held in the ARB central ledger, but these same numbers might 
+initially have been held as a separate serialized set of numbers 
+in a centralized register operated by another registry, such as 
+the American Carbon Registry (ACR) and backed by a separate, 
+PDF verification report.12 In order for the original set of serialized 
+numbers representing offsets issued under the ACR and held on 
+the ACR registry to be transferred to ARB’s centralized ledger, 
+ACR must (a) “retire” the serialized numbers in its central ledger, 
+(b) manually transfer the same numbers to ARB via spreadsheet 
+or CSV to ARB, and (c) have ARB reissue a new, equivalent set of 
+serialized numbers in ARB’s central ledger.
+An approach, such as in this example, may be sufficient within 
+a given jurisdiction with appropriate governance and oversight. 
+However, when the centralized ledgers are in different jurisdictions, 
+standardized rules and oversight to enable transfers of units 
+between those ledgers may not be available. 
+Figure 2 illustrates the systems supporting GHG data collection, 
+aggregation, accounting, and reporting in jurisdictions usually 
+organized around centralized databases. The databases have 
+varying degrees of integration, depending on the jurisdiction and/
+or program considered. This is indicative of the system architecture 
+in many jurisdictions with a market program in operation, each 
+of which operates with its transaction registries at the core of 
+its design. Each transaction registry will reflect the particular 10
+Blockchain and Emerging Digital Technologies for Enhancing Post-2020 Climate Marketsdesign and type of scheme of which it forms part, and thus will 
+be technologically separate from those in other jurisdictions with 
+different schemes, as will be the units, transactions in which are 
+recorded in that ledger. 
+To address these differences, specific bilateral or multilateral 
+agreements are required for any cross-jurisdictional transactions 
+to occur. When the climate actions in the different jurisdictions 
+are both emissions trading schemes, agreement as to the relative 
+respective value of the units (and as to what those units/that value is a measure of) is necessary. The complexity of conducting 
+transactions between heterogeneous climate actions across 
+jurisdictions increases when additional instrument types (e.g., not 
+just emission allowances, but also renewable energy certificates, 
+RINs, offsets) are introduced. Thus, the next generation of bottom-
+up climate markets must include mechanisms to address these 
+differences so that the technological limits of an infrastructure 
+based on centralized registries does not inhibit reaching the scale, 
+heterogeneity, and functional complexity that will be required. 
+Figure 2. The Transaction Registry in its Environment: Potential Connections and Interfaces
+Account AccountCarbon
+UnitGHG INVENTORIES
+Records physical GHG emissions and removals
+REGISTER/TRANSACTION 
+REGISTRY
+Records carbon units for 
+market mechanism and 
+results-based paymentsSupporting IT 
+Systems
+(e.g., customer 
+relationship 
+management, 
+identification 
+management, 
+workflow 
+automation)National StatisticsInternational 
+Reporting 
+(e.g., UNFCCC)
+Policy 
+Compliance 
+(e.g., Tax, ETS, etc.)National 
+Subnational
+Reporting Companies
+Facilities
+Products
+ProjectsMarket 
+Infrastructure
+(e.g., trading 
+platform)
+Other Register/ 
+Transaction 
+Registry
+DATA MANAGEMENT SYSTEMS
+Records information on policy/program/project activities, carbon units, and 
+additional information (e.g., safeguards, data on other air polutants)AGGREGATION AND ACCOUNTING MEASURE/CALCULATION REPORTING, COMMUNICATON AND ANALYSIS
+Databases
+Data
+UsesData
+Sources
+National/Subnational Level
+Program/Project Level
+GHG data
+(verified) and related informationGHG data(processed) and related information
+ 
+Source: Emissions Trading Registries – Guidance on Regulation, Development, and Administration . World Bank, 2016.11Architecture for 
+New Market Design4.
+As noted above, different climate markets trade different 
+units (assets), have differences in structure and governance, 
+and rely on separate, centralized registries. The result is a 
+multitude of schemes trading instruments within closed 
+technological systems (central-ledger-based registries) 
+and differing rules—for example, those associated with 
+MRV. There are examples of linked programs (e.g., the 
+California-Quebec-Ontario cap-and-trade program) that 
+aim to facilitate larger, more liquid markets by providing 
+for cross-jurisdictional transactions, but the advent of 
+more advanced technological approaches and designs 
+that could provide more secure, efficient transactions of 
+assets (carbon allowances, credits, or other carbon units) 
+is changing the paradigm. 
+To facilitate larger, more liquid and resilient trading across 
+heterogeneous climate markets, a new architecture 
+is needed. There is a corresponding need, also, for 
+the capability to generate, manage, and harmonize 
+information representing the outcomes of GHG mitigation 
+actions across multiple industry sectors and governmental 
+jurisdictions. Advances in technology and standards, 
+discussed in subsequent sections, allow conceptualization 
+and design of systems in which information pertaining to 
+different qualities of assets can be identified and tracked 
+separately, but in connection with, other information 
+concerning those assets, as they are transacted in the 
+markets. 
+13 World Bank, 2017, “Results-Based Climate Finance in Practice: Delivering Climate Finance for Low-Carbon Development,” May 1, http://documents.worldbank.org/curated/en/410371494873772578/
+Results-based-climate-finance-in-practice-delivering-climate-finance-for-low-carbon-development . Enhancing the Comparability 
+and Potential Fungibility of 
+Mitigation Outcomes Across 
+Bottom-up, Heterogeneous 
+Markets: Tracking 
+Environmental Attributes of 
+Various Commodities
+Physical commodities such as oil, coal, palm oil, or 
+soybeans can vary in value according to grade or quality 
+or source location. Assets in climate markets (emission 
+allowances, credits, renewable energy certificates or other 
+units), although they are not natural commodities but a 
+function of the policies and legislative schemes by which 
+they are created, similarly may vary in value, in terms of the 
+GHG mitigation in which they result. The variations will be 
+a function of many factors, such as scope of the scheme, 
+coverage, specific rules and scheme boundaries; the 
+suite of policies and measures within which the scheme 
+operates; or the jurisdiction’s particular circumstances, 
+capacity and ambition. 
+For different physical commodities, a digital asset can be 
+created to represent and provide title to the commodity 
+asset, as well as the multiple outputs (e.g., energy content) 
+and outcomes (e.g., GHG emissions, energy access 
+enhancement, poverty reduction impact) associated with 
+its production and/or lifecycle.13 The digital asset can be 
+registered at the point of initial production to create a 
+single, immutable record of the embedded attributes for 
+that unit of the particular physical commodity. 
+Similarly, for tradable units in climate markets, information 
+concerning value in terms of mitigation, or in relation to 
+co-benefits such as energy access enhancement, or 
+poverty reduction impact, can be identified as separate 
+elements and tracked independently, while at the same 
+time maintaining information concerning their source 
+or identity. Blockchain technology can provide a digital 
+mechanism for recording and tracking these separate 
+streams of information associated with units, including 
+when they are transacted across jurisdictional boundaries.This delineation and 
+tracking of separate 
+value elements in 
+the units is the key 
+idea behind this new 
+architecture.12
+Blockchain and Emerging Digital Technologies for Enhancing Post-2020 Climate MarketsThis delineation and tracking of separate value elements in the 
+units is the key idea behind this new architecture. As long as firstly, 
+the integrity of the recording of the information is maintained, 
+secondly, the information is aggregated in an accepted form of 
+a climate information asset (or “climate asset”), and thirdly, the 
+necessary mechanism is in place to convert climate assets to a 
+common metric for comparability, such as their mitigation value, 
+then transactions can take place across jurisdictions. Further, any 
+type of market instrument (e.g., allowances, credits, RINs, renewable 
+energy certificates), can be so transacted, provided such a metric 
+(as, for example, mitigation value) can be applied. Furthermore, 
+irrespective of how markets bundle and transact, the underlying 
+information for the climate asset remains the same. This approach 
+ensures market and environmental integrity by precluding double 
+counting in relation to climate assets.
+In this paradigm, ideally, new and existing markets (commodity 
+markets, environmental and climate markets) might incorporate, 
+or be configured in relation to, a universal ledger and trade the 
+underlying attributes. Physically measurable events, represented 
+by production and operational data, could be certified against new 
+standards and aggregated into universally accepted assets. In 
+the case of electricity, for instance, each MWh of power (derived from coal, natural gas, solar, hydro, or wind) could be accurately 
+associated with its embedded impact within a given electricity 
+market or, as in the case of renewable energy certificates, 
+transacted separately. 
+This approach is dependent on the integration of production 
+data (supported by appropriate technology, e.g., the IoT), the 
+next generation of governance that supports digital approaches 
+to MRV, larger scale data analysis to support MRV processes 
+(e.g., big data analytics), and the broad application of blockchain 
+functionalities in a dynamic market context at (or close to) real time. 
+Such an integrated approach is unlikely to be possible through the 
+combination of manual audit processes and multiple, disaggregated 
+databases at the producer, auditor and/or market level. Further 
+analysis of these emerging technologies and practices is included 
+in Section 5.
+The combination of blockchain technology, IoT, and the governance 
+of the next generation of climate markets (discussed below), 
+enables the creation of digital representations of commodities that 
+can be used for existing markets and for transacting across climate 
+markets (see Figure 3). The function of each layer illustrated in this 
+vision of the new architecture in Figure 3 is outlined in Table 1.
+Figure 3. Architectural Vision for the Networked Climate Markets
+Existing 
+Market AMarket
+Layer
+Automated Market
+Administration Layer
+Governance
+Layer
+Data Integration
+and Analytics Layer
+Commodity
+Producer LayerExisting 
+Market BFuture 
+Market AFuture
+Market B
+Oil and
+GasAgriculture ElectricityAsset
+Information
+Integrator• Legal• Accounting• StandardsMarket
+Manager
+OffsetAsset Information Changes in Asset Ownership13Table 1. Implementation Responsibilities for the New Generation of Climate Markets
+Functional Layer Role Function Examples
+Commodity 
+ProducerEvent Data 
+ProviderFoundational role in the ecosystem.
+The entities are primarily commodity producers and other sources of 
+GHG emissions or emission reductions, subject to governance.■■Oil and gas producers, 
+growers, refiners, power 
+generators 
+■■Capped emitters
+■■Offset project developers
+Asset Information 
+IntegratorData 
+Integration, 
+Analysis, and 
+Attribution 
+AssignmentGathers event data from event data providers. 
+Data analytics and assignment of quantified and verified climate asset 
+using consensus and peer-to-peer communication protocols (that is, 
+blockchain). 
+The role of “information provider” is also key to transparency. 
+Increasingly, information asset providers will leverage IoT to obtain 
+access to production data and Big Data as a secondary source of 
+information for automated verification.■■Data platform operator
+■■Independent monitoring and 
+verification body (although 
+this role could be automated, 
+depending on design)
+Governance Layer Legal, 
+Accounting, 
+and 
+StandardsGovernance will also be increasingly automated and can be 
+administered through embedded logic derived from a combination of 
+consensus-based, internationally-recognized standards, market rules, 
+regulation, and auditing.Standards organizations
+Automated Market 
+Administration 
+LayerMarket 
+ManagerAggregates and structures climate assets using blockchain and makes 
+them available to the market. This layer also records the provenance of 
+the assets as they are bought, sold, and eventually retired. Blockchain platform
+Market Layer Transactions All manner of markets■■GHG allowances, RINs, 
+renewable energy certificates, 
+offsets
+■■Existing commodity markets 
+(e.g., oil and gas, agricultural, 
+electricity)
+This simple “information service provider” architecture is the 
+key to transacting across climate markets from the bottom-
+up. If deployed across multiple jurisdictions over time, the 
+technological link between jurisdictions together with appropriate 
+mechanisms to allow comparability of tradable units would 
+enable direct transfers of mitigation outcomes and decrease the need for complex trading agreements across separate, 
+centralized registries housing non-fungible assets. Over time, 
+the foundational approach of generating climate assets could 
+encourage standardization of MRV processes, enhancing the 
+reliability of the mitigation outcomes of different instruments. 14
+Blockchain and Emerging Digital Technologies for Enhancing Post-2020 Climate MarketsThe emerging and accelerating technological landscape 
+holds promise in supporting the new generation of climate 
+markets from the bottom-up in a post-2020 environment. 
+Specifically, blockchain technology, trends referred to 
+as IoT and Big Data,14 and smart contracts should be 
+considered in the future design of climate markets. 
+While this section examines the application of blockchain 
+technology and smart contracts on post-2020 climate 
+markets, more detailed analysis on other types of 
+emerging technologies, such as IoT and Big Data, 
+should be considered moving forward. Briefly, by way of 
+background, the IoT is a very broad, constantly changing 
+concept, for which one technical professional organization 
+has sought to establish a baseline definition15 that gives 
+an all-inclusive definition that ranges from small, localized 
+systems confined to a specific location to a large globally 
+distributed system, composed of complex systems.16 
+The expression “Big Data” describes:
+“… high-volume, high-velocity and/or high-variety 
+information assets that demand cost-effective, 
+innovative forms of information processing that 
+enable enhanced insight, decision making, and 
+process automation. ”17
+These concepts are mentioned as technologies that can 
+be complementary to applications of blockchain that 
+support the new generation of climate markets and, as 
+such, they are areas for future research. However, they 
+are not considered here in more detail, the principal focus 
+of this paper being on blockchain and its applications.
+14 There are also other aspects not necessarily falling within the concept of “Big” data, such as the inclusion of specified and necessary data points. 
+15 IoT, https://iot.ieee.org/definition.html : ‘Towards a definition of the Internet of Things (IoT)’ Revision 1 published 27 May 2015 (IEEE).
+16 Ibid.
+17 Gartner, 2012, https://www.gartner.com/it-glossary/big-data.
+18 Haber, S. and W.S. Stornetta, 1991, “How to Time-Stamp a Digital Document,” J. Cryptology  3: 2, https://doi.org/10.1007/BF00196791 . 
+19 Bayer, D., S. Haber, W.S. Stornetta, 1993, “Improving the Efficiency and Reliability of Digital Time-Stamping,” In: Capocelli, R., A. De Santis, and U. Vaccaro (eds), Sequences II . Springer: New York, NY.
+20 Nakamoto, Satoshi, 2008, “Bitcoin: A Peer-to-Peer Electronic Cash System,” November https://bitcoin.org/bitcoin.pdf.Blockchain
+While secure chains of blocks of data,18 incorporating 
+cryptographic hashing,19 have been defined and designed 
+since the early 1990s, the first production implementation 
+of blockchain technology was in a white paper authored 
+by a person (or persons) using the pseudonym “Satoshi 
+Nakamoto” in 2008.20 The paper proposed an innovative 
+peer-to-peer electronic currency called Bitcoin that would 
+enable online payments to be transferred directly, without 
+an intermediary. Bitcoin has garnered much attention, 
+but the underlying technology, blockchain, is particularly 
+relevant here. Blockchain as an 
+Emerging Technology5.
+Blockchain technology 
+can synthesize 
+and support the 
+transaction of all types 
+of emission-related 
+data (e.g., facility level, 
+projects, programs, 
+quantified production, 
+and life cycle 
+attributes) in a shared, 
+globally accessible 
+environment.15Blockchain is just one possible implementation of Distributed 
+Ledger Technology (DLT). Deloitte describes DLT as:
+“a type of database that is spread across multiple sites, 
+countries, or institutions. It is decentralized in nature, 
+eliminating the need for an intermediary to process, 
+validate, or authenticate transactions. Each party (e.g., 
+individual, organization, or group) is represented by their 
+computer, called a node, on the network. Each node keeps 
+its own copy of all transactions on the network, and nodes 
+work directly with one another to check a new transaction’s 
+validity through a process called consensus. Each of these 
+transactions is encrypted and sent to every node on the 
+network to be verified and grouped into time-stamped 
+blocks of transactions.”21 
+Putting this another way, transactions are grouped into 
+timestamped blocks. Blocks that have been chosen for adding to 
+the chain by the consensus mechanism are sent to every node on 
+the network.
+Blockchain can be seen as enabling the collaborative creation 
+of ledgers with properties and capabilities that go far beyond 
+centralized ledgers and as having broad application for the transfer 
+of value in human systems — including climate markets.
+Financial services companies have shown early support for 
+blockchain due to its ability to reduce risks and costs, although 
+discretion and solutions are still needed for anti-money laundering 
+(AML), as well as combating the financing of terrorism (CFT). The 
+technology is increasingly being used in a variety of other sectors 
+as well, including retail, manufacturing, telecommunications, media 
+and entertainment, and healthcare.22 
+The basic premise of blockchain can be illustrated by comparing 
+two types of transactions: (a) peer-to-peer; and (b) via a centralized 
+hub (an intermediary or series of interconnected, trusted 
+intermediaries). 
+Figure 4. Peer-to-Peer vs. Centralized Authority
+A
+C
+E FDB A
+X C
+E FDB
+21 Deloitte, 2017, “Project Ubin: SGD on Distributed Ledger,” May 26, https://www2.deloitte.com/content/dam/Deloitte/sg/Documents/financial-services/sg-fsi-project-ubin-report.pdf .
+22 PwC, 2017, “Briefing: Blockchain,” May 18, http://usblogs.pwc.com/emerging-technology/briefing-blockchain/.Table 2. Pros and Cons of Peer-to-Peer vs. Centralized Hub Networks
+Pros Cons
+Peer-to-Peer■■Low transaction cost
+■■No single point of failure
+■■Resiliency
+■■Distributed authority
+■■Innovation independence
+■■No large attack target■■Difficult reconciliation
+■■Intricate coordination
+■■Hidden vulnerabilities 
+(double spending)
+Centralized 
+Hub■■Transactional security
+■■Reliability
+■■Single connection
+■■Reduced complexity
+■■Simplified reconciliation
+■■Universal system of 
+record■■Single point of failure
+■■Higher transaction 
+cost
+■■Influence 
+consolidation
+■■Consolidated attack 
+target
+In order to transact money or anything of value, society has 
+relied on intermediaries such as banks, governments, escrow, 
+and settlement services to perform a range of services to build 
+flexibility and trust into transactional processes. 
+There is no requirement for an intermediary in peer-to-peer 
+transactions. However, intermediaries are important when making 
+a digital transaction. Digital assets, like money in a bank account or 
+credits on a registry, are electronic files that are easy to reproduce. 
+This creates the “double spending” (or in the case of climate 
+markets, a “double counting”) problem. 
+Figure 5. Generic Structure of Blockchain Solution
+Blockchain solutionA B B A C
+As can be seen in Figure 5, blockchain technology combines the 
+“pros” of peer-to-peer with the “pros” of a centralized hub listed in 
+Table 2. The accumulative and immutable nature of the blockchain 
+enables multiple parties to securely transact directly between 
+each other without a central “trusted” authority.
+Blockchain can be used in public (permissionless) or private 
+(permissioned) networks. A public blockchain network is open 
+to anyone who is interested in joining and participating in the 
+network. On the other hand, a private blockchain network can 
+only be joined by invitation and participants will be validated by the 16
+Blockchain and Emerging Digital Technologies for Enhancing Post-2020 Climate Marketsnetwork initiator. Therefore, a private blockchain network is usually 
+a permissioned network that places restrictions on the type of 
+eligible participants and/or transactions.23 
+Blockchain in Climate Markets
+In a post-Kyoto Protocol era, carbon-constrained world, GHG 
+mitigation in all its forms increasingly has financial value. Blockchain 
+technology can synthesize and support the transaction of all types 
+of emission-related data (e.g., facility level, projects, programs, 
+quantified production, and life cycle attributes) in a shared, globally 
+accessible environment. A blockchain-based architecture can 
+accommodate data that is captured automatically or manually 
+to support an integrated network of climate markets over time 
+without disruptive action. Recent publications by the University of 
+Edinburgh present the advantages of blockchain in this context 
+and make the case for the transition to “networking” of markets 
+through the new architecture.24, 25
+As noted in one of the Edinburgh publications, currently public and 
+permissionless blockchain networks (e.g., Bitcoin and Ethereum) 
+tend to use mining as a mechanism to reach consensus without 
+a single entity dominating the network or participants being able 
+to tamper with the distributed ledger. However, this mechanism 
+requires significant computing power, and therefore, significant 
+energy consumption. If the energy consumed is from high GHG-
+emitting resources such as oil and coal, then these types of 
+blockchain networks may not be suitable for climate markets.
+Thus, the proposed conceptual model advocates the use of 
+permissioned networks that do not undertake mining, but rather 
+reach consensus by agreement of the permissioned nodes, and 
+allow for the flexibility to define user roles and privileges that will 
+deliver the required functionality across different organizational 
+and regulatory environments. 
+Blockchain’s ability to collect an increased amount of data at a 
+national and subnational level and make it available to every 
+participant in a network may create concerns about data 
+sensitivity. In some cases, a private blockchain network may be 
+useful to address these concerns. However, this topic requires 
+more in-depth consideration in future studies.
+23 Jayachandran, Praveen, 2017, “The difference between public and private blockchain,” IBM, May 31, https://www.ibm.com/blogs/blockchain/2017/05/the-difference-between-public-and-private-blockchain/ .
+24 Macinante, Justin D., 2017, “A Conceptual Model for Networking of Carbon Markets on Distributed Ledger Technology Architecture,” Edinburgh School of Law, April 10, http://ssrn.com/abstract=2948580  and [2017] 3 CCLR 243-260.
+25 Jackson, Adrian, et al., 2017, “Networked Carbon Markets: Permissionless Innovation with Distributed Ledgers?” University of Edinburgh, July 4, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2997099.
+26 Technology diffusion considerations are described in detail in Jackson et al. (supra).Transformative
+In the context of transacting across climate markets pertaining to 
+jurisdictions at various levels of technological maturity, DLT (hence 
+blockchain) can be transformative:
+■■DLT does not require sophisticated IT infrastructure; it can 
+support the migration to increasing levels of IT sophistication 
+and functionality requirements over time. This is important, 
+as global climate markets span jurisdictions with varying 
+degrees of technological sophistication and also jurisdictions 
+with existing, “legacy” infrastructure and processes.26
+■■The immutability of transactions supports market integrity , and 
+the distributed nature of the ledger supports transparency  in 
+line with the METRIC Principles (see Section 6). 
+■■The shared environment provides a common source of data 
+to support the creation of new and/or the refinement of 
+existing methodologies and governance systems. 
+Integrity
+The current process for assuring integrity of mitigation outcomes 
+for most tradable units requires a significant amount of manual 
+verification by third-party, independent auditors. The “notary 
+function” as a standard component of blockchain technology could 
+be deployed to automate many aspects of existing verification 
+processes. This would entail, for purposes of validation, verification, 
+or issuances, creation of computer code logic to automatically 
+require “proof of existence” of permits, certifications, standards, 
+and/or other verification methods by referencing information 
+that is publicly available on outside databases, as well as data 
+from private sources (e.g., remote sensing, satellite imagery and 
+encryptions, data providers, etc.) to ensure integrity of any and all 
+digital assets.
+Further, the assurance of marketplace integrity is supported 
+through consensus across the ledger. A blockchain ledger is 
+replicated across multiple member nodes and each location 
+maintains its copy. Each member’s copy of the ledger is updated 
+based on new transaction data. Figure 6 illustrates a sequence of 
+three transactions. In transactions #1 and #2, the data and signature 
+information are properly validated by all three Member Nodes with 
+identical hash values. However, the hash located at transaction #3 
+at Member Node 1 does not match the corresponding records at 
+Member Nodes 2 and 3. Thus, this non-conforming record will be 
+corrected by a consensus of the other member nodes.17Smart Contracts
+A “smart contract” refers to transactional terms and conditions 
+embedded in computer code which allow automatic execution of 
+the relevant transaction once precise conformity with those terms 
+and conditions has been established. 
+In the context of transactions between climate markets, smart 
+contracts have multiple applications. First, they can provide the 
+mechanism for transactions between existing market schemes 
+domiciled in different jurisdictions operating different registry 
+infrastructures with differing instruments at the national, sub-
+national, or even industry level. This would only be the case if there 
+27 World Bank, “ Mitigation Action Assessment Protocol ,” accessed September 30, 2017, https://maap.worldbank.org/#/homepage.were an independent assessment framework or frameworks 
+to provide a common metric to value the differences between 
+units of differences schemes, thereby affording those assets 
+fungibility. This could include the internalization and execution of 
+mutually agreed-upon equivalencies at the unit level by integrating 
+independent assessment of mitigation actions and outcomes 
+(for example through the Mitigation Action and Assessment 
+Protocol (MAAP)27). Furthermore, smart contracts can be used 
+to internalize governance (e.g., standards, policy, verification, 
+data sources and commercial terms) between two or more 
+jurisdictions or counterparties to prevent negative consequences 
+(e.g., leakage), inhibit “bad actors” in the marketplace and ensure 
+the environmental integrity of the market.
+Figure 6. Illustrating the Hashing of Transaction Data Across Member Nodes and the Reconciliation of the Ledger via Consensus to Resolve 
+Non-Conformities
+Transaction Data 1
+Signature A
++
+Signature B
+=
+HashTransaction Data 2
+Signature C
++
+Signature D
+=
+Hash
+Transaction Data 3
+Signature E
++
+Signature F
+=
+Hash
+Transaction Data 1
+Signature A
++
+Signature B
+=
+HashTransaction Data 2
+Signature C
++
+Signature D
+=
+Hash
+Transaction Data 3
+Signature E
++
+Signature F
+=
+HashTransaction Data 1
+Signature A
++
+Signature B
+=
+Hash Transaction Data 2
+Signature C
++
+Signature D
+=
+Hash
+Transaction Data 3
+Signature E
++
+Signature F
+=
+HashCorrect Hash 
+by ConsensusBad or Corrupt DataMember Node 1
+Member Node 2 Member Node 318
+Blockchain and Emerging Digital Technologies for Enhancing Post-2020 Climate Markets6. How New Technology Aligns 
+with Policy Frameworks 
+To support new generation markets post-2020, 
+policymakers and stakeholders need the means to 
+assess the suitability and effectiveness of direct, indirect, 
+and other, more innovative, forms of cross-jurisdictional 
+transacting. The METRIC Principles, outlined in Figure 7, 
+provide a framework for such assessment. 
+Figure 7. World Bank METRIC Principles
+Ensuring that capital is allocated efficiently and avoiding 
+disturbing the continued efficient function of carbon and related markets (such as financial and energy markets)
+Enhancing the transparency and comparability of the 
+value of the mitigation outcomes that are being transferred, based on key parameters such as 
+robustness and ambition of the linked schemes
+Transparent design to provide all stakeholders with a 
+clear understanding of its rationale in order to generate support, and allow the free exchange of information
+Recognize effort sharing for a below 2° C target and 
+avoid incentives to reduce effort
+Facilitate and encourage more jurisdictions to join the 
+scheme and promote greater international cooperation
+Reduce the overall cost of mitigation, including 
+administrative and transaction costs, and improve economic efficiency
+arket integrity
+nvironmental integrity
+ransparency
+ecognize ambition
+nclusiveness
+ost-effectiveness
+Source : World Bank, 2016.
+28 Gold Standard, 2015, “Gold Standard For The Global Goals: Leveraging Climate Action for Greater Impact in Sustainable Development,” www.goldstandard.org/articles/gold-standard-global-goals . Building on the METRIC 
+Principles
+Further to the framework provided by the METRIC 
+Principles, technology needs to be aligned with policy in 
+designing effective connections between climate markets 
+that can put the world on a path to achieve the ambitions in 
+the Paris Agreement. Thus, it is important that technology 
+design takes into account factors such as future growth 
+(extensibility) and the need to accommodate increasing 
+amounts of work (scalability). 
+Extensibility
+Extensibility means that design takes into account future 
+growth. The principle of extensibility in this context refers 
+to practices and technologies for MRV and market 
+instruments that can encompass multiple attributes, such 
+as activities involving diverse Sustainable Development 
+Goals (SDGs), as well as the ability to be applied in a 
+modular and interoperable approach. 
+Existing environmental markets have overlapping and 
+sometimes redundant requirements such as carbon 
+emission caps, fuel switching (coal to natural gas), 
+renewable energy targets, renewable energy credits, 
+rebates for energy efficiency and electric vehicles, 
+direct sector-specific regulatory controls, and carbon 
+fuel-intensity limits. In addition, local public health and 
+economic impacts may be difficult to account for in cases 
+where a reduction in GHG emissions is the only metric. 
+Accounting units and standards need to be extensible 
+and interoperable for MRV at different levels of application, 
+such as at the project-level and throughout the value 
+chain level. Additionally, MRV standards and practices 
+need to be modular to facilitate multiple environmental 
+attributes and claims, such as the structure of the new 
+Gold Standard for the Global Goals.2819Scalability
+Scalability means the capacity of a system or network to 
+accommodate an increasing amount of work, or the potential 
+to be enlarged in order to do so. The principle of scalability 
+applicable in this context refers to practices and technologies 
+for MRV and market instruments that can be efficiently applied 
+to large-scale climate actions at local and regional levels such as 
+supply chains and commodity markets. Heavy reliance on manual 
+processes of current practices and technologies, described earlier, 
+combined with multiple, dissociated and centralized registries 
+inhibits the ability to scale market mechanisms and provide for 
+markets to connect more globally. Thus, scalability is an important 
+consideration to be addressed.
+Governance Systems for Emerging 
+Practices and the New Architecture
+To operationalize and provide oversight for these new connected 
+climate markets, underpinned by emerging technologies such as 
+blockchain, new systems of governance will be required. With 
+the adoption of the SDGs in 2015, and the Paris Agreement as 
+the new global framework for addressing climate change, an 
+unprecedented diversity of initiatives and innovative models 
+integrating environment, society, and economy, with significant 
+implications for the existing world of governance,29 have been 
+recognized. Though blockchain is a powerful technology to ensure 
+rules are observed and applied, how to develop appropriate rules 
+for the digital age and bottom-up implementation of the Paris 
+Agreement is a separate issue. For example, connecting markets 
+will require rules to govern trading of assets across multiple 
+jurisdictions. The new architecture enabled by digital technologies 
+requires a new set of operating rules such as smart standards and 
+rules for smart contracts.
+The next generation of governance will shape the application of 
+digital technologies to support or automate activities such as data 
+input and processing, quality assurance and quality control (QA/
+QC), audits and verifications, and standards collaboration. Digital 
+technologies also enable greater participation and transparency for 
+29 For climate markets, “governance” generally refers to technical standards, methodologies, protocols, and guidance related to GHG quantification or assurance (i.e., MRV), as well as market rules and relevant legal, regulatory and 
+institutional frameworks. stakeholders into governance-related activities and documentation, 
+while being able to balance necessary data protections. 
+Beyond these advances, additional innovations and enhancements 
+may be needed for a next-generation governance system that will 
+support a blockchain or digital platform. Elements that might be 
+included in such are listed in the Appendix at the end of the paper. 
+A next generation of governance systems that provide greater 
+agility and scalability will be essential to support the transformation 
+of the economy and communities with new digital technologies 
+like blockchain. The following figure illustrates an example of a 
+governance system for blockchain applications.Though blockchain is 
+a powerful technology 
+to ensure rules are 
+observed and applied, 
+how to develop 
+appropriate rules for the 
+digital age and bottom-
+up implementation of 
+the Paris Agreement is 
+a separate issue.20
+Blockchain and Emerging Digital Technologies for Enhancing Post-2020 Climate MarketsFigure 8. Governance System for Blockchain Applications Supporting the Next Generation of Climate Markets
+ Democratized open standard processes 
+for rules development, validation and digital implementation
+Knowledge base of technical content and modular rules framework
+Decentralized communities using digitally enabled collaborative platforms
+Global Solution Networks1 of networks for MRV and digital governance
+Global community 
+of experts developing 
+and managing governance 
+system for MRV rules 
+supporting marketsData  Climate metrics
+and instrumentsSmart contractsClimateActions
+Knowledge Networks
+2Advocacy Networks3
+Standards Networks4Policy Networks5Various blockchain applications
+Modular framework for system rules for technical, legal, accounting and MRVBlockchain supported 
+registries, exchanges 
+and markets
+1. Global Solution Networks (GSNs) are multi-stakeholder, self-governing networks enabled with digital technologies, such 
+as the Blockchain Governance GSN.
+2. Examples of knowledge networks addressing education and research are the Partnership for Market Readiness, NDC 
+Partnership, Transparency Partnership, LEDS Global Partnership, GHG Management Institute, World Resources Institute, and Climate Ledger Initiative.
+3. Examples of advocacy networks are the Carbon Pricing Leadership Coalition (CPLC), International Emission Trading 
+Association (IETA), World Business Council for Sustainable Development, and Environmental Defense Fund.
+4. Examples of Standards networks are the GHG Protocol, International Organization for Standardization (ISO), ISEAL 
+Alliance, Gold Standard, American Carbon Registry (ACR), and Verified Carbon Standard.
+5. Examples of Policy networks are We Mean Business, The Climate Group, 350.org, the Climate Reality Project.
+Note: The initiatives listed in 1–5 are indicative and not intended to be exhaustive. 21Challenges, Vulnerabilities, and 
+Uncertainties for Blockchain
+As with other digital technologies, there are technical challenges 
+associated with blockchain, such as the fact that certain types of 
+blockchain networks require high energy consumption to adopt 
+financial applications ubiquitously30 (and generally the association 
+of the technology with bitcoin). There may also be issues with 
+the speed and security of data transfers to and from blockchain 
+applications, for example, with other digital systems such as 
+those in the IoT. Currently, there are also only a limited number 
+of blockchain developers (as of June 2017, the estimate is only 
+20,000),31 yet a further consideration is the risk that the diversity 
+of types of blockchain technologies could create incompatibility. 
+Therefore, industry stakeholders will need to establish blockchain 
+governance and standards to avoid the technology lock-in risk. 
+Among the widely-recognized, major, non-technical challenges is 
+the lack of understanding of the technology and its applications by 
+many stakeholders, for instance, in relation to issues of privacy on 
+transactions, access to commercially-sensitive data, security of the 
+digital assets, access to digital technologies (e.g., smart devices), 
+and the costs and benefits of using blockchain as an alternative 
+to conventional financial services. Additionally, stakeholders may 
+lack understanding as to what the technology can and cannot 
+provide, while intended recipients’ capacity to implement also 
+needs to be considered. The lack of, and the overarching need for, 
+a governance system to support blockchain applications can also 
+create uncertainty.32 
+In summary, blockchain technology has the potential to establish 
+efficient peer-to-peer transactions without the need to have an 
+intermediary (such as a bank, in the case of financial systems). 
+However, new governance systems will be needed to ensure 
+market and environmental integrity in a peer-to-peer environment. 
+Realizing the speed, agility, and scalability that distributed 
+technologies offer will require new types of collaborative “distributed 
+governance” systems that incentivize and motivate participants. 
+Otherwise, the deployment of the digital technologies and climate 
+actions necessary to achieve the goals of the Paris Agreement 
+and the SDGs could be inhibited by bottlenecks associated with 
+the application of technical governance (standards, protocols, 
+methodologies) mechanisms in a digital context.
+30 As noted in section 5, public and permissionless blockchain networks (e.g., Bitcoin and Ethereum) can involve intensive algorithmic computations to confirm financial transactions, incurring high energy consumption. In contrast, 
+permissioned blockchains (e.g., IBM Hyperledger) require lower energy consumption. 
+31 Redman, Jamie, 2017, “Experienced blockchain developers demand big salaries,” June 8, Bitcoin News , https://news.bitcoin.com/experienced-blockchain-developers-demand-big-salaries/ .
+32 Financial Times , London, 2017, “Blockchain’s Governance Paradox,” July 14, https://ftalphaville.ft.com/2017/06/14/2190149/blockchains-governance-paradox . A next generation 
+of governance 
+systems that provide 
+greater agility and 
+scalability will be 
+essential to support 
+the transformation 
+of the economy and 
+communities with new 
+digital technologies like 
+blockchain. 22
+Blockchain and Emerging Digital Technologies for Enhancing Post-2020 Climate MarketsConclusions and 
+Recommendations7.
+This report has focused on the potential and issues 
+associated with emerging digital innovations, principally 
+blockchain and its applications, which could enable a 
+new architecture to be designed and operationalized 
+to support the next generation of climate markets and 
+its related diversity of assets in the post-Kyoto Protocol 
+era. While hurdles remain for digital innovations to 
+become fully operational, such as the integration of digital 
+technologies and governance systems to support a new 
+digital paradigm, the benefits of the emerging technologies 
+outweigh the limitations of the current technologies and 
+practices.
+Significant factors characterizing the changing landscape 
+of stakeholder needs and drivers to precipitate the 
+transition from current to emerging technologies and 
+practices include:
+■■The increasing diversity of regulations, MRV systems, 
+climate assets, and values of mitigation outcomes, 
+within and across jurisdictions;
+■■A demand for more robust MRV systems 
+corresponding to the needs of climate finance for 
+ITMOs;
+■■The increasing size and scale of post-2020 climate 
+markets, as well as linkages with related climate 
+actions and other markets;
+■■The expectation of new cross-jurisdictional trading 
+arrangements (e.g., clubs, regional trading schemes, 
+sectoral trading schemes); and
+■■Greater financial flows and types of transactions, 
+such as peer-to-peer and results-based finance.
+Digital innovations can help address these challenges 
+through:
+■■Blockchain-enabled distributed ledgers that provide 
+transparency and robust rule implementation via 
+smart contracts, to address the array of regulations 
+and standards, and provide both the accountability 
+and transactional efficiency required by regulators, 
+investors, and market participants;
+■■Collaborative governance systems that enable more 
+efficient development of MRV standards that are 
+structured as holistic systems of modular, compatible 
+and extensible methods and rules; and■■Smart meters and other devices associated with the 
+IoT, combined with big data analytics, so as to facilitate 
+the automated data flows necessary to harness the 
+potential of blockchain technology in supporting new 
+generation climate markets.
+While considering how emerging technologies and 
+practices can be deployed, it is essential to support different 
+sectors and jurisdictions, proceeding at various rates and 
+applying combinations of practices and technologies, 
+to ensure a stable transition to a new global “disruptive 
+technology” architecture. Investors and companies are 
+already demonstrating enthusiastic bottom-up adoption 
+of blockchain for financial and non-financial applications. 
+A key, non-technical, challenge for adoption of the 
+emerging digital technologies that must be resolved 
+quickly is a culture change among regulators, standards 
+developers, and policymakers. It is important to recognize 
+that established interests and legacy systems could 
+inhibit the adoption of digital technologies. Culture change 
+requires acceptance by these stakeholders of the need 
+to support development of rules and standards via 
+collaborative governance systems and to encourage 
+greater innovation. 
+On the basis of the challenges and opportunities 
+described in this report, the following recommendations 
+aim to support a rapid phase of capacity building and 
+implementation of emerging digital solutions.
+Recommendation #1
+A roadmap for the implementation of blockchain and other 
+emerging digital technologies in climate markets should 
+be developed with the objective of making substantive 
+progress on overall design, demonstration activities, and 
+implementation. There should be close coordination with 
+the technical policy agenda, both at the international level, 
+for instance, in terms of the Article 6 work schedule and 
+milestones, and at the national level. Specifically, these 
+new technologies are most relevant in helping to address 
+agenda items such as transparency, double counting, 
+environmental integrity, and alignment with NDCs. 
+Through its different initiatives building climate markets, 
+the World Bank will support countries to make informed 
+decisions and facilitate parallel development and alignment 
+of policy and technology, so as both to address and resolve 
+constraints, and to identify and leverage opportunities. 23Recommendation #2
+Additional research should be carried out, firstly, to clarify and 
+elaborate how other types of emerging technologies, such 
+as smart meters and other devices associated with the IoT 
+and Big Data, can complement applications of blockchain that 
+support new generation climate markets. Secondly, and perhaps 
+more importantly, there should be research conducted to test 
+and confirm the technical, economic and legal underpinnings 
+of the perceived advantages of blockchain applications in 
+addressing the challenges that confront the new generation 
+climate markets (including, for example, the dichotomy between 
+greater transparency and the need to preserve data privacy and 
+confidentiality). It is important that this research be coordinated 
+and dovetail with the agenda items focused in the roadmap, 
+and dive deeper to examine key aspects such as the delineation 
+and tracking of separate value elements of climate assets, the 
+identification and application of common metrics for comparability, 
+and the mechanics of transactions (e.g., including smart contracts) 
+in these new generation climate markets.  Recommendation #3
+By way of extension, pilot markets should be established to test 
+research outcomes in a “real world” environment. The pilots might 
+not only engage a variety of sectors and regions, but should focus 
+on diverse elements, so as to better identify drivers of design 
+aspects in the new generation markets, thus assisting in the 
+prioritization of issues going forward. Such pilots should also serve 
+to elucidate stakeholder understanding of how, in practical terms,  
+the new technology will interface with existing technologies, will be 
+embedded, implemented and operated.
+On this front, the World Bank is working with a number of countries 
+to identify a pipeline of climate actions where blockchain and other 
+emerging digital innovations could be applied. By targeting different 
+stages and layers of climate markets (e.g., asset generation and 
+digitization vs. transferring and reporting; national vs. individual 
+trading), the World Bank aims to effectively build countries’ 
+knowledge and capacity, address challenges and concerns, and 
+thus create opportunities for timely blockchain developments in 
+these countries. To facilitate this process, the World Bank — through 
+its “Blockchain Lab” — has already started to engage and partner 
+with leading technology companies, start-ups, entrepreneurs, 
+innovators and other development organizations.24
+Blockchain and Emerging Digital Technologies for Enhancing Post-2020 Climate MarketsAppendix
+Additional innovations and enhancements that may be needed for a next-generation governance system to support a blockchain or digital 
+platform might include:
+(1) A community of experts (e.g., standards development, management, application) using advanced online collaboration tools much 
+more extensively;
+(2) Standards structured so that specific parts can be updated more easily (as a “living document”) without compromising the overall 
+integrity of the document or governance system, in contrast to current practices with loosely-related static published documents;
+(3) Standards linked to contextual content within a larger collaborative knowledge management (KM) system, including platform and 
+user communities, for example: 
+(a) Links to the online knowledge base (e.g., a Wiki) and supporting research or work that has gone into the development of a 
+standard, 
+(b) Links to “how to” guides, templates, data sources, and other resources to support the better implementation of a standard, 
+(c) Direct engagement with online expert groups (such as a mini social network of professionals) sharing expertise in Q&A 
+forums;
+(4) Standards designed to be more modular within a comprehensive framework, 
+(a) Modular standards made to be interoperable building blocks to reduce conflicting or duplicative requirements, as well as to 
+avoid wasted resources and uncoordinated proliferation of standards; and
+(b) Standardized or sectoral approach developed with a good balance of environmental integrity and the MRV cost;
+(5) The specific content and methods in the standards that reflect the new digital, automated processes enabled by blockchain and 
+IoT (in contrast to the largely manual or Excel-based current practices);
+(6) The foundational governance system rules, e.g.,“the standard for developing a standard,” and validation of new standards, that 
+reflect more open, decentralized participatory or democratized collaboration models enabled by online tools, in contrast to the current 
+practices that are more hierarchical and bureaucratic; and,
+(7) Participants motivated to develop standards by a new economic model that is results-based, built on the outcomes of the use of 
+the standards, in contrast to current practices in which strained expert volunteers experience “standards fatigue,” or standards bodies 
+sell copyrighted standards to recover the high cost of developing standards. For example, revenues associated with the carbon assets 
+generated by the application of the standard(s) are shared directly with the standards participants as compensation. This approach 
+is analogous to the blockchain model in which cryptocurrency “miners” are compensated according to a consensus validation of 
+transactions on the blockchain.
+Studies by the International Organization for Standardization (ISO) demonstrate standards have created significant economic value.33 
+33 ISO, “The main benefits of ISO standards”, accessed September 30, 2017, http://www.iso.org/benefits-of-standards.html. 25References
+Andium, “Building Management,” accessed September 30, 2017, http://andium.com/building-management/ .
+Bayer, D., S. Haber, and W.S. Stornetta, 1993, “Improving the Efficiency and Reliability of Digital Time-Stamping,” In: Capocelli, R., A. 
+De Santis, and U. Vaccaro (eds), Sequences II . Springer: New York, NY.
+Blackrock Investment Institute, 2016, “Adapting Portfolios To Climate Change—Implications and Strategies for All Investors,” Global 
+Insights, September, https://www.blackrock.com/investing/literature/whitepaper/bii-climate-change-2016-us.pdf .
+The Boston Consulting Group (BCG), 2016, “Are Your Operations Ready for a Digital Revolution?,” InsideOPS  2, July, http://media-
+publications.bcg.com/BCG-Inside-OPS-Jul-2016.pdf
+California ISO, 2017, “NERC Tagging Requirements,” accessed September 30, https://www.caiso.com/Documents/2510.pdf.
+California Air Resources Board, “ARB Offset Credits Issued,” accessed September 30, 2017, https://www.arb.ca.gov/cc/capandtrade/
+offsets/issuance/arb_offset_credit_issuance_table.pdf.
+CapGemini, “Cryptocurrencies and the Blockchain,” accessed September 30, 2017, http:// www.capgemini.com/beyond-the-buzz/
+cryptocurrency-blockchain . 
+CDP, “Assessing low Carbon Transition initiative,” accessed September 30, 2017, https://www.cdp.net/en/campaigns/act-assessing-low-
+carbon-transition-initiative .
+Collaborase, “Collaborase makes consensus-based mass collaboration easy,” accessed September 30, 2017, http:// www.collaborase.
+com. 
+Crawford, Shaun, David Plesse, et al., 2016, “Blockchain Technology as a Platform For Digitization,” EY, http://www.the-blockchain.
+com/docs/Blockchain%20technology%20as%20a%20platform%20for%20digitization%20-%20Implications%20for%20the%20
+insurance%20industry.pdf.
+Deloitte, 2016, “Blockchain – Enigma. Paradox. Opportunity,” https://www2.deloitte.com/content/dam/Deloitte/uk/Documents/
+Innovation/deloitte-uk-blockchain-full-report.pdf.
+______, 2017, “Project Ubin: SGD on Distributed Ledger,” May 26, https://www2.deloitte.com/content/dam/Deloitte/sg/Documents/
+financial-services/sg-fsi-project-ubin-report.pdf . 
+The Economist Group, 2010, “Carbon Markets: The wrong sort of recycling,” The Economist , March 25, 2010, http:// www.economist.com/
+node/15774368 . 
+Frankfurt School-UNEP Collaborating Centre, 2017, “Global Trends In Renewable Energy Investment 2017,” http://fs-unep-centre.org/
+sites/default/files/publications/globaltrendsinrenewableenergyinvestment2017.pdf .
+Galenovich, Anton, 2017, “Smart-Contracts and Blockchain Technology-Based Ecosystem for Carbon Market Instruments, Environmental 
+Assets and Liabilities,” DAP IPCI, 2017, http://ipci.io/wp-content/uploads/2017/02/DAO_IPCI-WP_ENG_3_1-1.pdf .
+Gartner, Inc., 2012, “IT Glossary,” https://www.gartner.com/it-glossary/big-data.
+Global e-Sustainability Initiative (GeSI), “ICT Solutions for 21st Century Challenges, Smarter2030,” accessed September 30, 2017, http://
+smarter2030.gesi.org . 
+Gold Standard, 2015, “Gold Standard for the Global Goals: Leveraging Climate Action for Greater Impact in Sustainable Development,” 
+www.goldstandard.org/articles/gold-standard-global-goals . 
+Haber, S. and W.S. Stornetta, 1991, “How to Time-Stamp a Digital Document,” J. Cryptology  3: 2 (99), https://doi.org/10.1007/BF00196791 . 
+Hamilton, Katherine and Thomas Marcello, 2008, “Registries: Tracking the Trades,” Ecosystem Marketplace , April 24, 
+www.ecosystemmarketplace.com/articles/registries-tracking-the-trades . 
+IBM, 2016, “Trust in Trade – Toward Stronger Supply Chains,” Institute for Business Value, https://www-01.ibm.com/common/ssi/cgi-bin/
+ssialias?htmlfid=GBE03771USEN&.26
+Blockchain and Emerging Digital Technologies for Enhancing Post-2020 Climate MarketsIntergovernmental Panel on Climate Change (IPCC), 2014, “Climate Change 2014: Mitigation of Climate Change,” https://www.ipcc.ch/
+report/ar5/wg3/ .
+International Organization for Standardization (ISO), “The main benefits of ISO standards”, accessed September 30, 2017, http://www.
+iso.org/benefits-of-standards.html. 
+Jackson, Adrian, et al., 2017, “Networked Carbon Markets: Permissionless Innovation with Distributed Ledgers?” University of Edinburgh, 
+July 4, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2997099.
+Jayachandran, Praveen, 2017, “The difference between public and private blockchain,” IBM Blockchain Blog, May 31, https://www.ibm.
+com/blogs/blockchain/2017/05/the-difference-between-public-and-private-blockchain/ .
+KPMG, 2016, “Consensus – Immutable Agreement for The Internet of Value,” https://www.disledger.com/kpmg-blockchain-consensus-
+mechanism.pdf. 
+Kaminska, Izabella, 2017, “Blockchain’s Governance Paradox,” Financial Times , July 14, https://ftalphaville.ft.com/2017/06/14/2190149/
+blockchains-governance-paradox
+Kossoy, Alexandre et al., 2016, “State and Trends of Carbon Pricing,” World Bank, October 14, http://documents.worldbank.org/curated/
+en/598811476464765822/pdf/109157-REVISED-PUBLIC-wb-report-2016-complete-161214-cc2015-screen.pdf .
+LO3ENERGY, “LO3ENERGY,” accessed September 30, 2017, www.lo3energy.com . 
+Macinante, Justin D., 2017, “A Conceptual Model for Networking of Carbon Markets on Distributed Ledger Technology Architecture,” 
+Edinburgh School of Law, April 10, http://ssrn.com/abstract=2948580 .
+Madden, Joe et al., 2015, “Introducing the Carbon Impact Factor–A Family of Financial Instruments to Differentiate and Reward Carbon 
+Efficiency in Commodity Production,” EOS Climate , December, http://eosclimate.com/wp-content/uploads/2015/11/Carbon_
+Impact_Factor_Concept_Paper.pdf.
+McKinsey, 2015, “Beyond the Hype: Blockchains in Capital Markets,” December, https://www.mckinsey.com/industries/financial-
+services/our-insights/beyond-the-hype-blockchains-in-capital-markets .
+Nakamoto, Satoshi, 2008, “Bitcoin: A Peer-to-Peer Electronic Cash System,” November, https://bitcoin.org/bitcoin.pdf .
+Paris Process on Mobility and Climate (PPMC), “Innovative Monitoring of CO2 for Transport – IMC4T,” accessed September 30, 2017, 
+http:// www.ppmc-transport.org/innovative-monitoring-of-co2-for-transport-imc4t . 
+PwC, 2016, “Blockchain – An Opportunity for Energy Producers and Consumers?,” https://www.pwc.com/gx/en/industries/assets/pwc-
+blockchain-opportunity-for-energy-producers-and-consumers.pdf .
+______, 2017, “Briefing: Blockchain,” May 18, http://usblogs.pwc.com/emerging-technology/briefing-blockchain/.
+Provenance, “Every Product Has a Story,” accessed September 30, 2017, http:// www.provenance.org . 
+Pureswaran , Veena, 2016, “Rethinking Enterprises, Ecosystems and Economies with Blockchains,” IBM Blockchain Blog, July 7, https://
+www.ibm.com/blogs/think/2016/07/enterprises-and-blockchains/ .
+Siegel, David, 2017, “It’s time for smart law,” Medium , May 2, https://medium.com/@pullnews/its-time-for-smart-law-f218598dee92.
+Solar Coin, “A global rewards program for solar electricity generation,” accessed September 30, 2017, http:// www.solarcoin.org .
+The Sun Exchange, “The Solar Panel Sharing Economy,” accessed September 30, 2017, http:// www.thesunexchange.com .
+Taghiyeva, Maryam et al., 2016, “Internet-of-Value: Capturing Total Value Through Social Earnings Ratio Integration of Intangible 
+Non-Financial Attributes Within a Seratio Blockchain,” Centre for Citizenship, Enterprise and Governance, October 31, 2016, 
+https://www.researchgate.net/profile/Olinga_Taeed/publication/316701664_Currency_of_Intangible_Non-Financial_Value_
+SERATIO_BLOCKCHAIN_Seratio_Blockchain_Internet-of-Value_capturing_Total_Value_through_Social_Earnings_Ratio_
+integration_of_intangible_non-financial_attribute/links/590df4220f7e9b2863a47ecd/Currency-of-Intangible-Non-Financial-27Value-SERATIO-BLOCKCHAIN-Seratio-Blockchain-Internet-of-Value-capturing-Total-Value-through-Social-Earnings-Ratio-
+integration-of-intangible-non-financial-attribute.pdf.
+______, 2016, “Seratio Blockchain: Values Based Impact Interventions,” Centre for Citizenship, Enterprise and Governance, December 
+12, https://mypad.northampton.ac.uk/cceg/files/2017/03/Seratio-Blockchain-whitepaper-Values-Based-Impact-Interventions-
+21-Dec-2016-v2.14-2c81ton.pdf .
+Tapscott, Don, and Alex Tapscott, 2016, Blockchain Revolution: how the technology behind bitcoin is changing money, business, and the 
+world , New York: Penguin Random House.
+United Kingdom, Office for Science, 2016, “Distributed Ledger Technology: Beyond Block Chain,” January 19, https://www.gov.uk/
+government/news/distributed-ledger-technology-beyond-block-chain .
+United Nations Environment Programme (UNEP), 2016, “Fintech and Sustainable Development—Assessing the Implications,” December, 
+http://unepinquiry.org/wp-content/uploads/2016/12/Fintech_and_Sustainable_Development_Assessing_the_Implications.
+pdf.
+United Nations Framework Convention on Climate Change (UNFCCC), 2016, “CDM methodologies—sectoral scope linkage,” March 11, 
+accessed September 30, 2017, http://www.cdm.unfccc.int/DOE/scopes.html. 
+______, 2015, “Synthesis report on the aggregate effect of the intended nationally determined contributions,” UNFCCC COP21, October 
+30, https://unfccc.int/resource/docs/2015/cop21/eng/07.pdf.
+United States Environmental Protection Agency, “Renewable Energy Tracking Systems,” accessed September 30, 2017, https://www.
+epa.gov/greenpower/renewable-energy-tracking-systems.
+______, “Renewable Identification Numbers (RINs) under the Renewable Fuel Standard Program,” accessed September 30, 2017, www.
+epa.gov/renewable-fuel-standard-program/renewable-identification-numbers-rins-under-renewable-fuel-standard . 
+______, “Resources by Subpart for GHG Reporting,” accessed September 30, 2017, http:// www.epa.gov/ghgreporting/resources-
+subpart-ghg-reporting . 
+World Bank, 2016, “ Emissions Trading in Practice: A Handbook on Design and Implementation,” January 1, http://documents.worldbank.
+org/curated/en/353821475849138788/pdf/108879-WP-P153285-PUBLIC-ABSTRACT-SENT-PMRICAPETSHandbookENG.pdf. 
+______, 2016, “Emissions Trading Registries: Guidance on Regulation, Development, and Administration,” October 1, http://documents.
+worldbank.org/curated/en/780741476303872666/pdf/109027-WP-PUBLIC-12-10-2016-15-54-42-PMRFCPFRegistriesPosting.
+pdf. 
+______, “ Mitigation Action Assessment Protocol ,” accessed September 30, 2017, https://maap.worldbank.org/#/homepage. 
+______, 2016, “Partnership for Market Readiness – Greenhouse Gas Data Management: Building Systems for Corporate/Facility-Level 
+Reporting,” April 19, https://openknowledge.worldbank.org/handle/10986/23741 . 
+______, 2017, “Results-Based Climate Finance in Practice: Delivering Climate Finance for Low-Carbon Development,” May 1, http://
+documents.worldbank.org/curated/en/410371494873772578/Results-based-climate-finance-in-practice-delivering-climate-
+finance-for-low-carbon-development .
+______, 2016, “The Networked Carbon Markets Initiative,” March, http://pubdocs.worldbank.org/en/162841457735232763/NCM-
+initiative-pitchbook.pdf .
+World Bank and Carbon Pricing Leadership Coalition, 2017, “2016–2017 Carbon Pricing Leadership Report,” http://pubdocs.worldbank.
+org/en/183521492529539277/WBG-CPLC-2017-Leadership-Report-DIGITAL-Single-Pages.pdf .
+Worl Economic Forum, 2016, “Intrducing the digital Transformation Initiative,” http://http://reports.weforum.org/digital-transformation/
+introducing-the-digital-transformation-initiative/ .
+World Resources Group (WRI), 2008, “The Bottom Line on Renewable Energy Certificates,” November, http://www.wri.org/sites/default/
+files/pdf/bottom_line_renewable_energy_certs.pdf .28
+Blockchain and Emerging Digital Technologies for Enhancing Post-2020 Climate MarketsAcronyms
+DLT distributed ledger technology
+ETS Emission Trading System
+GHG Greenhouse gas
+IoT Internet of Things
+ITMOs internationally transferred mitigation outcomes
+MRV Monitoring, Reporting, and Verification
+NDC Nationally Determined Contributions
+RINs Renewable Identification Numbers
+SDGs Sustainable Development Goals
+UNFCCC United Nations Framework Convention on Climate Change

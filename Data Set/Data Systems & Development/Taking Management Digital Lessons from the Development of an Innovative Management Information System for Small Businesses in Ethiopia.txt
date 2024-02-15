@@ -1,0 +1,1020 @@
+Policy Research Working Paper 8608
+Taking Management Digital
+Lessons from the Development of an Innovative 
+Management Information System for Small Businesses 
+in E
+thiopia
+Salman Alibhai
+Francesco Strobbe
+Espen Villanger
+Finance, Competitiveness and Innovation Global Practice 
+October 2018
+WPS8608
+Public Disclosure Authorized Public Disclosure Authorized Public Disclosure Authorized Public Disclosure AuthorizedProduced by the Research Support TeamAbstract
+The Policy Research Working Paper Series disseminates the findings of work in progress to encourage the exchange of ideas about development 
+issues. An objective of the series is to get the findings out quickly, even if the presentations are less than fully polished. The papers carry the 
+names of the authors and should be cited accordingly. The findings, interpretations, and conclusions expressed in this paper are entirely those 
+of the authors. They do not necessarily represent the views of the International Bank for Reconstruction and Development/World Bank and 
+its affiliated organizations, or those of the Executive Directors of the World Bank or the governments they represent.Policy Research Working Paper 8608
+In many aid projects, monitoring and evaluation is a static 
+exercise driven by donor reporting requirements. After 
+project closure, there are seldom sustainable benefits of the 
+monitoring and evaluation system. This paper examines 
+how monitoring and evaluation can be transformed into a 
+dynamic tool for effective project management, with ben -
+efits carrying over beyond the typical project lifecycle. The 
+paper assesses an innovative, digital management informa -
+tion system developed under the Women Entrepreneurship 
+Development Project, a Government of Ethiopia initiative 
+financed by a World Bank International Development Asso -
+ciation loan and grant funding from Global Affairs Canada. 
+The paper examines the context of the development of the management information system, its effectiveness, and its 
+potential for sustainability. Ethiopia is among the poorest 
+countries in the world, and government administration 
+units involved in administering projects often face fund -
+ing and resource shortfalls. The paper demonstrates how 
+effective and sustainable monitoring and evaluation systems 
+can be developed even in challenging contexts such as these, 
+by focusing on simple technical solutions that can be main -
+tained and refined locally, ensuring low development and 
+maintenance costs compatible with government monitoring 
+and evaluation budgets, and linking project-level monitor -
+ing and evaluation to broader government operations. 
+This paper is a product of the Finance, Competitiveness and Innovation Global Practice. It is part of a larger effort by the 
+World Bank to provide open access to its research and make a contribution to development policy discussions around the 
+world. Policy Research Working Papers are also posted on the Web at http://www.worldbank.org/research. The authors 
+may be contacted at aalibhai@worldbank.org and fstrobbe@worldbank.org.   *Chr. Michelsen Institute, P.O. B ox 6033, Bedriftssenteret, N‐58 92 Bergen, Norway. Email :
+espen.v
+illanger@cmi.no. Phone: +4799799476 .Taking Management Digital: 
+Lessons from the Development of an Innovative Management 
+Information System for Sma ll Businesses in Ethiopia 
+Salman Alibhai  Francesco Strobbe  Espen Villanger* 
+Keywords:  Information Systems, Monitoring and Evaluation, Ethiopia 
+JEL: O32 O38  1. Introduction  
+How can project monitoring and evaluation (M&E) be transformed  into a dynamic tool for effective 
+project management? How can M&E tools be integrated into nation al government structures and carry 
+over beyond the lifecycle of a project? These are the two key q uestions that this paper aims to address.  
+In many aid projects, M&E is a static exercise driven by donor  system reporting requirements. An 
+external consultant is often hired to develop the framework, th e client reluctantly generates the data 
+as an addition to its ordinary data collection, and the M&E ser ves solely project purposes. When the 
+project closes, the M&E system i s also shut down, and there are  seldom any sustainable benefits of 
+the M&E component. This seems to be a misuse of resources that  would not be tolerated in other 
+project components, where the re quirement is usually that the b enefits of a program continue after 
+donor funding ceases (Chianca 2008). 
+Sustainability of the resources used for M&E in development pro jects should be a concern, with 
+sustainability of development assistance defined as the extent  to which the benefits of the project 
+continue after donor assistance  has been completed (OECD 2010a) . Sustainability in foreign aid is one 
+of five objectives the Organizat ion for Economic Cooperation an d Development recommends for 
+inclusion in any evaluation of development aid projects (OECD 2 010b), but there is usually very limited 
+focus on sustainability of M&E components in development evalua tion. For example, in a review of 
+Norwegian evaluations, all susta inability assessments omitted t he M&E components (Norad 2014).  
+Maintaining the benefits of M&E  investments after project closu re is challenging. Often, investments 
+in M&E involve the design and deployment of novel management in formation systems (MIS), to track 
+project‐level outcomes.  However, there is no consensus in the  literature on information systems (IS) 
+in developing countries on how to achieve sustainability of suc h technologies, and information 
+technology (IT) projects in gene ral have a high  failure rate. I n the government sector alone, failures of 
+IS projects in developing countries are as high as 85 percent ( Silva and Fernández 2016). A review of 
+World Bank support of information and communications technology  (ICT) from 2003 to 2010 found 
+that only 25 percent of projects supporting diffusion and use o f ICT achieve their results (IEG 2011). 
+Moreover, fewer than 60 percent of the ICT components of World  Bank projects achieved or were 
+expected to achieve their intende d results. Similarly, in more  than 70 percent of projects supporting 
+public sector governance, the IC T components of World Bank proj ects were modified, cancelled 
+completely, or substantially delayed. Although some explanation s have been offered, the reasons for 
+the poor performance and high failure rates of ICT initiatives  in development are poorly understood 
+(Silva and Fernández 2016).  
+In this paper, we discuss the e ffectiveness and sustainability  of the M&E component of an aid‐funded 
+project in Ethiopia: the Women Entrepreneurship Development Pro ject (WEDP). This project was 
+selected because we believe it provides some useful and illustr ative lessons. Our aim is to document 
+an innovative approach to developing the M&E framework that not  only resulted in an effective online 
+management information system (MI S), but also generated sustain able results in and of itself. The MIS 
+used a low‐cost, easily accessible platform that can be adapted  to almost any other project or 
+organization,  with  par ticular  benefits  when  semi‐autonomous  ent ities  collaborate  and  need  to 
+coordinate their M&E functions. In addition to serving project  purposes in a timely and accurate 
+manner, the MIS had a large pote ntial catalytic function in tha t it served as a demonstration scheme 
+for MISs within the recipient government.  
+3 
+ The purpose of the paper is therefore twofold. First, the paper  explores how an MIS can be created to 
+serve as an effective  project management tool, even under chall enging conditions. Second, the paper 
+assesses some features that lead to sustainability of an MIS. T hese discussions provide some practical 
+guidance for others with similar intentions of developing an am bitious MIS at a very low cost in a 
+developing country context. We document the process leading to  a fully functional MIS that provides 
+real‐time access to all monitoring data across participating in stitutions that is accessible online from 
+anywhere in the world.  
+The MIS examined was developed in Ethiopia, one of the poorest  countries in the world, whose 
+government administration units  often face funding and resource  shortfalls, especia lly for lower‐level 
+units responsible for data collection. The MIS was implemented  at the central and r egional or district 
+levels in 45 sites around the country. This regional dispersion  is something that greatly increases the 
+complexity of the project and ma kes it much more challenging (D ener et al. 2010). 
+Despite a challenging context, local IT consultants developed t he WEDP MIS at very low cost using free 
+software platforms as its basi s. We believe that similar MISs c an be implemented in most other 
+developing  countries  from  similar  challenging  starting  points.  To  facilitate  learning  from  the 
+development of the Ethiopia MIS, we also provide an overview of  the system and document its features 
+and advantages over the standard M&E approaches. 
+The main approach taken in this paper was to interview the key  users of the MIS and the associated 
+stakeholders and to assess the project documentation. The autho rs have played central roles in the 
+WEDP and the development of the MIS on behalf of the World Bank , and we used our own reflections 
+and experiences in conjunction with secondary sources in the as sessment. Therefore, the judgements 
+in this paper should be seen not as independent scrutiny but as  a type of self‐assessment. We do not 
+believe that this biases the review or diminishes the importanc e of the findings. We make reference 
+to the empirical foundations of our conclusions to facilitate s ubsequent independent evaluation of the 
+WEDP and the MIS. 
+Our main finding is that the government’s commitment to the pro ject was one key to its success. In 
+order for an MIS to be sustainabl e, it must serve the governmen t’s needs and be seen as a useful tool 
+beyond project purposes. The system must be based on simple tec hnical solutions that can be 
+maintained and refined locally, and development and maintenance  costs must be low and compatible 
+with the government’s M&E budget  if the system is going to cont inue to be used. Finally, building an 
+IT culture was important for mak ing the system work in practice . 
+Section 2 is a review of the literature; section 3 explains the  context; section 4 provides details of our 
+methodology; sections 5 and 6 analyze the effectiveness and sus tainability, respectively, and section 7 
+highlights lessons learned and concludes.  
+ 
+2. Literature review 
+There is a large and growing literature on IS in developing cou ntries (Avgerou 2008, Pires and 
+Fernández 2016). Coverage is broad, with specialized journals d eveloped for such purposes, such as 
+Information Technology for Development , Information Technologies and International Development ,  
+4 
+ and the electronic  Journal of Information Systems in Developing Countries . Moreover, broad ICT 
+journals such as the  Journal of Global Information Technology Management  often include papers on IS 
+in developing countries, and there are general IS research conf erences that include panel and paper 
+sessions on developing countries. General IS journals also freq uently publish papers on research in 
+developing countries, including special issues on this topic. 
+Our paper is about the sustainability of IS in developing count ries, especially assessments of what 
+factors are important for system survival. This literature has  much broader coverage than the scope of 
+our  project  management  IS‐focused  assessment.  The  literature  as sesses  many  information  and 
+communication systems with widely different functions, aims, se ctors, implementers, and users,1 but 
+there are many useful lessons to be learned about why systems s urvive or not. We first focus on 
+proposed, general explanatory factors for the failure and succe ss of IS projects and components 
+because this helps identify common characteristics. The materia l presented here is manly taken from 
+reviews and broader studies. Sec ond, we present the existing ev idence in a structured way according 
+to this categorization, including a range of case studies in de veloping countries.  
+The sustainability of IS solutions in developing and developed  countries is much discussed in the 
+literature because sustainability is critical to the steady fut ure flow of benefits from these projects 
+(Yogesh et al. 2015; Pires and Fernández 2016). The literature  notes an extraordinarily high incidence 
+of failure rates of IS projects and components, which suggests  that IS projects and components to a 
+large degree have been a waste of resources. A striking example  is World Bank investments in financial 
+MIS, which amounts to approximately US$2.2 billion from 1984 to  the 2010 to finance 87 projects in 
+51 developing countries. Only ap proximately half of the project s completed by 2010 were rated as 
+likely or highly likely to be su stainable (Dener et al. 2010). 
+There are many well‐known exampl es of large, complex IS in deve loped countries on which hundreds 
+of millions of dollars were spent on planning and development t hat never came into operation (Nelson 
+2007). The focus on the lack of sustainability in the literatur e on developing countries is not so much 
+on the investment and preparation phase. The general impression  seems to be that, with the right 
+support, relatively simple systems can be made to work in the i nitial phase, albeit with substantial 
+delays and changes to the origin al design (IEG 2011). The criti cal phase for sustainability seems to be 
+after the system has been put into daily operation, particularl y after donor financial and technical 
+support has ended.  
+Because the continued high failure rates of IS are a common the me, the literature contains many 
+assessments of what factors need to be in place for the systems  to survive and function, although in 
+developing countries, the literature is to a large extent anecd otal, focusing on achieving individual 
+aspects of sustainability that by themselves may not solve the  problem because the reasons for failure 
+can  often  be  a  combination  of  factors  (Pires  and  Fernández  2016 ) .  M or e ov e r ,  i t i s  s o m e ti m e s 
+                                                            
+1 Dener at al. (2010) provide many  examples. In service delivery , for example, one would find IS in health 
+projects with objectives ranging from strengthening medical sta tistics systems to setting up an integrated bio‐
+behavioral surveillance system f or HIV/AIDS. In disaster manage ment, IS systems are used to develop better 
+digital elevation models and obtain supporting satellite imager y. In social protection, pension projects use IS to 
+improve efficiency of government  services by financing IT impro vements for pension offices and providing 
+training for staff and management. In education, IS projects ha ve been used to prepare for modern technology 
+in the recipient country. In water and sanitation, a project in tended to supply and install IT equipment to allow 
+for regular, efficient monitori ng of utility performance and pr ogram implementation.  
+5 
+ impossible to determine exactly why the successes occurred beca use so many factors need to be in 
+place for success (IEG 2011). The general IS literature contain s many attempts to identify predictors of 
+IS success (Petter et al. 2013). M ost of these mirror the failu re literature in that w hat is identified as a 
+key factor to success (e.g., user involvement) is also identifi ed as a key factor for failure (lack of user 
+involvement). 
+It is inherently difficult to identify the critical factors lea ding to success because separating out the 
+binding constraints may often be impossible. Identifying which  factors led to failure may be more 
+informative, although different stakeholders may have different  opinions about what constitutes a 
+failure and the reasons for the p oor results (see Yogesh et al.  2015 for a discussion).  
+General factors of sustainability 
+Kumar and Best (2006) propose five factors of sustainability th at together seem important for the 
+continuation of IS after the initial investment stage:  
+1.  Political  and  institutional  sustainability:  a  political  and  institutional  environment  for  IS 
+implementation and continued system use and improvements.  
+2. Financial and economic sustainability: the financial support  necessary for continued system use, 
+maintenance, and enhancement. 
+3.  Technological  sustainability:  technology‐related  support  suc h  as  hardware,  software,  and 
+infrastructure needed for continued use, such as interface and  maintenance of the technology. 
+4.  Cultural  and  social  sustainability:  a  social  setting  and  sys tem  culture  receptive  to  the  new 
+approaches. Local customs (values and principles), equality or  inequality of access to the system, and 
+continued delivery of benefits to relevant actors are critical.  
+5. Environmental sustainability: environmental concern of IS im plementation and use (IT equipment 
+use, reuse, refurbishmen t, recycling, disposal). 
+Pires and Fernández (2016) take this further and argue that, wi thin each of these factors, the IS needs 
+to be shaped and adapted to the context by cultivating local le arning processes and institutionalizing 
+routines of use that persist over time. They also add a sixth f actor that could explain lack of results of 
+IS projects: the large number of actors with competing interest s and different rationales.  
+Pires and Fernández (2016) also contend that the various involv ed parties (top management, vendors, 
+donors, end users, project implementers) may have different inc entives and agendas that could 
+influence project sustainability  and different interpretations  of the realities and cultures of project 
+management. When the new IT solution is implemented, this may a ffect the organization and in turn 
+the positions and power structures, which can lead actors to op pose or change the direction of the 
+implementation. The authors hence take a holistic approach to s ustainability and argue that each of 
+the six factors and not any single aspect or factor must shape  IS design, implementation, and use. They 
+claim that the high failure rates are a consequence of not taki ng into account all these factors that 
+influence sustainability. This re sonates with Dwivedi et al. (2 015) and the Independent Evaluation  
+6 
+ Group (IEG 2011), which emphasize the failure to account for co mplexity and multifactorial nature of 
+problems as a reason for the failure of IS interventions. 
+Similarly, a World Bank review (Dener et al., 2010) of experien ces with financial MIS in 55 projects 
+revealed that lack of human resource capacity was the single mo st important factor in project failure, 
+mentioned  as  a  factor  in  60%  of  the  projects.  In  addition,  they   reveal  that  institutional  and 
+organizational resistance were key factors that could cause fai lure and that this was interlinked with 
+weak leadership from senior management. This accords with the f indings of Nelson (2007), who points 
+to lack of proper management as a critical factor in failure. T he last factor mentioned in the World 
+Bank review was complexity of project design and lack of projec t preparation and planning. 
+Heeks (2002) developed two models for understanding and explain ing failure of IS in government 
+organizations, although the models apply more widely to general  IS failure. The first, the Factor Model, 
+uses five factors that can be sources of failure: strategy, man agement, design, competencies, and 
+technology. The second, the Design‐Reality Gap Model, assesses  gaps between project design and the 
+actual situation to explain failure, focusing on areas such as  information, technology, processes, 
+objectives and values, staffing and skills, management systems  and structures, and other resources. 
+Similarly, Rand Europe (2010) listed five capacities and readin ess conditions (infrastructure, financial, 
+institutional, human, relationship or receptivity) for using IC T successfully in service delivery. 
+In  donor‐funded  projects  that  the  recipient  government  implemen ts,  the  question  of  recipient 
+ownership and government commitment to the project usually play s a role. An evaluation of World 
+Bank performance of all ICT comp onents of projects between Fisc al Year 2003 (FY03) and FY10 
+highlights government commitment as an important factor that ne eds to be in place to avoid failure 
+(IEG 2011). The IEG finds that the rate of achievement of ICT o bjectives is low (IEG 2011). Intended 
+results are achieved in only half of the ICT components in proj ects supporting public sector governance 
+in which MIS development is included. Again, the quality of des ign of ICT components is essential to 
+avoid project failure and is listed as the most critical factor  leading to poor performance. The poorly 
+performing projects were found to have overly complex designs i n contexts in which stakeholders 
+lacked basic abilities to address problems. The IEG (2011) also  highlights implementation shortcomings 
+and a high rate of cancellation of ICT components. In a summary  of others’ experiences, the IEG refers 
+to complexity that organizational and political pressure adds t o “think and act big” as a source of 
+failure, as well as users’ lack of understanding of the system  and failure to focus on real problems and 
+needs.  
+Systematizing the case study evidence  Many case studies confirm the main findings described in the re views and larger studies cited above. 
+To provide a comprehensive pictu re of the factors, taking these  case studies into account, Table 1 
+provides a summary of the eviden ce of factors that probably con tribute to IS project failure.  
+Table 1: Main Factors Contributing to Information System (IS) P roject Failure 
+Areas  Factors  Suggested effects (source of evidence) 
+Incentives 
+and agenda Agents  with 
+opposing incentive ‐Local actors behave according to own values or vested interest s 
+not aligned with IS project requirements (Walsham and Sahay  
+7 
+ structures  and 
+agendas  in preparation, 
+implementation, and daily use 1999; Leidner and Kayworth 2006; Kenny 2013; Imran and Gregor 
+2011). 
+‐Donor agency and foreign actors involved in IS implementation 
+act in accordance with own agenda (Ciborra 2006). 
+‐Vendors push foreign solutions not adapted to local realities 
+(Heeks 2002, 2003; Avgerou 2000). 
+‐IS  projects  change  internal  incentives  that  those  who  lose 
+oppose (Kumar and Best 2006; Chan and Pan 2008; Jensen and 
+Aanestad 2007; Montealegre and Keil 2000; Scott, Golden, and Hughes 2004; Bartis and Mitev 2008). 
+Misalignment 
+with  user 
+interests Misalignment with user interests leads to resistance, disparity  in 
+system use, unsustainable system implementation (Yogesh et al. 
+2015). 
+Weak  project management Project is poorly estimated, scheduled, sized, or scoped; the 
+effort and time required are incorrectly estimated, not taking  into 
+consideration  resource  availability  or  technical  aspects  of 
+acquisition;  follow‐up  is  weak, contract  management  is  poor 
+(Nelson 2007; IEG 2011; Dener, Watkins, and Dorotinsky 2010). 
+Political and institutional setting Lack  of 
+leadership Lack of leadership and clear responsibilities lead to failure i n 
+system implementation and sustainability (IEG 2011; Imran and Gregor 2010; Young and Jordan 2008). 
+Misalignment of goals  and 
+ambitions Goals  of  relevant  institutions  are  not  aligned  to  deliver 
+organizational changes that IS implementation requires, resulti ng 
+in cancellation or minimum system use (IEG 2011; Dhillon 2004; 
+Heeks and Stanforth 2007; Ciborra and Navarra 2005). 
+Lack  of involvement Lack of involvement, l eads to user resistance (Chan and Pan, 
+2008, Scott, Golden, and Hughes 2004; Lin and Silva 2005; Joia 
+and Magalhães 2009; Jensen and Aanestad 2007). 
+Asymmetric relationships between stakeholders Top‐down  approaches  and  frequent  changes  are  made  to 
+systems  without  consultations  wi th  stakeholders,  conclusions 
+about system success or failure conflict (Kimaro and Namphossa 2005; Bartis and Mitev 2008; Joia and Magalhaes 2009; Nyella 
+and Mndeme 2010). 
+Lack of trust  Direct donor handling of project financial transa ction, leads to 
+lack of cooperation between stakeholders or abandonment of IS because of lack of trust between core stakeholders (Kimaro and 
+Nhampossa 2004; Vaidya, Myers, and Gardner 2013). 
+Ownership  Commitment  Lack of political commitment and ownership  in implementing 
+institution leads to project failure(IEG 2011). 
+Preferential relationship Vendor receipt of funding directly from donor, undermines clien t, 
+leading  to  to  lack  of  cooperation  from  client  (Kimaro  and Nhampossa 2004).  
+8 
+ Gap  between 
+design  and reality Gap  between  technological  solutions  and  reality  regarding 
+environment, organization, and capacity of end‐users results in  
+long  implementation  process  and  unsuccessful  system implementation (Heeks 2002; Nguyen and Fernandez, 2009). 
+Technology  Lack of technical 
+capacity Relevant users and operators in developing countries often lack  
+technical capacity to develop, use, and maintain IS solutions; 
+donors sometimes also lack technical capacity (IEG 2011; Imran 
+and Gregor 2010; Lee 2001; Nguyen and Fernandez 2009). 
+Technical 
+solutions Too‐advanced, ‐ambitious, ‐complex technical solutions, lead to  
+inability to implement is envisaged (IEG 2011) 
+Dysfunctional relationships 
+between stakeholders Dysfunctional  relationship  betw een  implementing  institutions 
+leads  to  poor  system  implementation  and  user  resistance 
+because of slow responses (Bartis and Mitev 2008, Kimara and Nhampossa 2004) 
+Culture  Organizational 
+and  national culture There is lack of cooperation between actors, lack of system use , 
+unclear  decision‐making  process  influenced  by  cultural background  and  knowledge;  local  context  is  not  taken  into consideration (IEG 2011; Walsham and Sahay 1999; Westrup et 
+al. 2003). 
+ 
+ 
+3. The Ethiopian Context and the WEDP 
+The local context 
+With a per capita gross domestic product of US$1,900, Ethiopia  is one of the poorest countries in the 
+world. Government administration units often face funding and r esource shortfalls, especially the 
+lower‐level units responsible for data collection. The Governme nt of Ethiopia takes a hands‐on 
+approach to project implementation, with strong ownership of th eir policies and projects. Once 
+projects and policies have been decided on, there is a strong w ill to move toward implementation. The 
+government  structure  is  strictly   hierarchical,  and  coordination   challenges  between  lower‐level 
+administrative units are usually solved at a higher level on a  case‐by‐case basis. For projects involving 
+more than one ministry and semi‐autonomous institution (e.g., D evelopment Bank of Ethiopia (DBE), 
+microfinance institutions (MFIs )), there is no formally establi shed system for communication and 
+interaction.  
+The hierarchical government structure has several layers, subdi vided into regional states with a high 
+degree of autonomy. Government of fices have large variations in  staff competencies and capabilities 
+and a high degree of turnover, especially in the one‐stop shops  (OSSs), which are entry positions for 
+young people into the government. 
+In our experience, at the lower administrative levels, staff la cked basic competencies for operating in 
+an electronic office environment. For example, most data entry  staff had no experience using the 
+Internet for work purposes, such as emailing, saving and sendin g files, and using search engines, 
+although most were well acquainted with mobile phone social med ia applications (e.g., Facebook) and  
+9 
+ Internet‐based communication (e.g ., Viber, WhatsApp). They seld om required more than three to four 
+days of training to be able to manage the MIS. In many OSSs, an nual turnover exceeded 30 percent, 
+with many staff leaving shortly  after they had been trained on  the MIS. Turnover was also high in MFIs 
+and the DBE, making training of st aff on the MIS a continuous,  ongoing process. 
+WEDP: A complex project Ethiopia has achieved high economic growth in the past decade,  averaging 10.7 percent per year, 
+establishing it among the fastes t growing economies in Africa a nd the developing world, but it is falling 
+behind its peers in terms of credit to the private sector. Acco rding to the World Bank Enterprise 
+Surveys, micro (41 percent), small (36 percent), and medium (29  percent) enterprises in Ethiopia 
+perceive access to finance to be the main business environment  constraint, compared with Sub‐
+Saharan Africa averages of 24 percent, 20 percent, and 16 perce nt, respectively. 
+Opportunities for female entrepr eneurs in Ethiopia lag far behi nd those for men. In  The Economist  
+Women’s Economic Opportunity index, Ethiopia ranks 107 of 112 c ountries. Most growth‐oriented 
+female entrepreneurs fall into a “missing middle” trap, in whic h neither commercial banks nor MFIs 
+serve them. High minimum loan sizes and excessive collateral re quirements restrict women’s access 
+to loans from commercial banks. MFIs primarily cater to micro‐f irms with group lending schemes that 
+provide very small loans and tend to have poor outreach to wome n (30 percent). Growth‐oriented 
+women‐owned enterprises are therefore starved of the investment  they need to thrive. 
+To address this challenge, the Government of Ethiopia, with the  support of the World Bank and the 
+Governments of Canada and the United Kingdom, launched the WEDP  in 2012 to support women‐
+owned micro and small enterprises (MSEs). The WEDP aimed to inc rease the income of female 
+entrepreneurs and to create empl oyment and job opportunities. M SE development was critical to the 
+government’s efforts to increase the economic empowerment of wo men, and the development of 
+income‐generating activities for women was a specific aim of th e five‐year plan of the government at 
+that time – the Growth and Tran sformation Plan 2011‐2015. 
+The WEDP was established in October 2012 as a $50 million Inter national Development Association 
+investment lending operation. In addition to the World Bank, th e Governments of Canada and the 
+United Kingdom were the core dev elopment partners, contributing  an additional $13 million. In 2017, 
+the  Gove rn m en ts  of  Japa n a nd I taly a dd ed r es ou r ces ,  b ri n gi ng  th e  total  donor  contribution  to 
+approximately $130 million. 
+The project development objective of the WEDP has been to incre ase the earnings and employment 
+of female‐owned or partly owned MSEs in the five main cities of  Ethiopia. This was to be achieved by 
+removing two of the main barriers to female enterprise growth b y tailoring financial instruments to 
+the needs of the target group and ensuring availability of fina nce and by developing women’s 
+entrepreneurial  and  technical  skills.  The  target  beneficiaries  were  growth‐oriented  female 
+entrepreneurs.  
+The  implementing  structure  was  c omplex,  involving  entities  from  s e v e r a l  d i f f e r e n t  g o v e r n m e n t  
+structures. The components included access to finance; entrepre neurial skills development; and 
+project management, advocacy and  outreach, M&E, and impact eval uation.   
+10 
+ Access to finance 
+To facilitate access to finance for female entrepreneurs, WEDP  created a dedicated line of credit, with 
+the DBE acting as a wholesaler and MFIs acting as retailers. Th e project used an incentive‐based 
+approach aimed at helping the DBE develop a new business line i nvolving wholesaling of MSE 
+subsidiary loans, providing rela ted technical support to partic ipating MFIs, and helping the MFIs build 
+up a high‐quality MSE loan portfolio based on lending technique s that have been developed and 
+validated under successful MFI expansion approaches in other co untries. 
+Using a dedicated technical assistance component, WEDP built th e capacity of Ethiopia’s leading MFIs 
+to deliver loans to female entrepreneurs on an individual basis  with larger average loan sizes. The MFIs’ 
+improved ability to appraise loan applications resulted in thei r capacity to reduce the collateral 
+requirements from an average of 200 percent of the value of the  loan to 125 percent. At the same 
+time, WEDP MFIs are adopting and diffusing new techniques to re ach and serve female entrepreneurs 
+better. They are developing new loan products and recognizing n ew forms of collateral such as 
+vehicles, personal guarantees, and even business inventory to s ecure loans. 
+The disbursement and management of the line of credit required  a complex structure, with multiple 
+financial intermediaries bearing full credit risk. Figure 1 pro vides an overview of the resource flows of 
+the component. 
+Figure  1.  Resource  Flow  in  the  A ccess‐to‐Finance  Component  of  t he  Women  Entrepreneurship 
+Development Project 
+ 
+Notes: MoFEC, Ministry of Finance and Economic Cooperation; DBE , Development Bank of Ethiopia; 
+PFI, Participating Financial Ins titution; TA, Technical Assista nce; MSE, Micro or Small Enterprise. 
+ 
+11 
+ Entrepreneurial skills development 
+The aim of this component was to  develop growth‐oriented female  entrepreneurs’ skills in a way that 
+would help them to increase their profit. An international cons ulting firm was hired to design and 
+implement a top‐class capacity‐b uilding technical assistance pr ogram to increase the capacity of the 
+institutions  that  provided  direct  services—primarily  the  techni cal  and  vocational  education  and 
+training (TVET) institutions. Training modules were developed a nd offered at 11 selected TVET colleges 
+in the five cities. Two additional training providers were comm issioned to broaden th e scope of training 
+offered: the Digital Opportunity Trust,2 supported by Canada, and the Entrepreneurship Development 
+Centre3, a quasi‐governmental entity established under the framework o f the Entrepreneurship 
+Development Program developed in  partnership with the UN Develo pment Programme. 
+The Federal Urban Job Creation and Food Security Agency (FUJCFS A) had direct responsibility for 
+planning, designing, and coordinating the WEDP project in close  collaboration with the National TVET 
+Agency. FUJCFSA also had the over all responsibility for ensurin g delivery of high‐quality training and 
+support to WEDP members in entrepreneurship and technical skill s. The two additional training 
+providers were also reporting tr aining achievements to FUJCFSA.  
+Implementing structure 
+The implementing structure for WEDP implied that the DBE and MF Is were central in service delivery 
+under the project, with responsibility for disbursement of cred it to female entrepreneurs. At the same 
+time, the TVET Agency and its co lleges and two private training  providers in the country, Digital 
+Opportunities Trust and the Entr epreneurship Development Centre , taught entrepreneurial skills to 
+the same target population. Adding to the complexity, project m anagement was assigned to FUJCFSA, 
+w h i c h  r e p o r t s  n o t  t o  e i t h e r  o f  t h e  t w o  m a i n  s e r v i c e  p r o v i d e r s  b ut  to  the  Ministry  of  Urban 
+Development and Construction. The project was a national urban  project covering the four regional 
+capitals of Tigray; Amhara; Southern Nations, Nationalities, an d Peoples’ Region; and Oromiya and the 
+two chartered cities, Addis Ababa and Dire Dawa. These features  and the geographic coverage 
+required coordination, especially for monitoring progress and c ollecting and compiling data. Five 
+government ministries and agencies and dozens of implementing e ntities below them are involved in 
+running the WEDP project. 
+This complexity necessitated a sophisticated MIS to collect and  provide access to project information 
+for management and supervision. Developing and establishing a s uitable M&E system to accurately 
+track and assess the progress and results of WEDP was a subcomp onent of component 3 of the project. 
+During development of the WEDP, it was not envisaged that MIS d evelopment would be used as a 
+catalyst for reforming the client’s approach to using data for  monitoring its own performance but that 
+a consultant would be hired to perform the tasks. The initial p roposed terms of reference for the M&E 
+work confirm this approach and specify assignment of consultant s to develop a turnkey M&E system 
+that would require a minimum of client involvement in developme nt (World Bank 2012). Nevertheless, 
+the project design stipulated that “the data collection and rep orting on WEDP will be based on the 
+existing structures and Federal Medium and Small Enterprises De velopment Agency’s (FeMSEDA)4 own 
+                                                            
+2 https://ethiopia.dotrust.org/about/about‐us/   
+3 https://www.edcethiopia.org/index.php/contact   
+4 In 2016, as part of the Ethiopia government restructuring, FeM SEDA was restructed to be the Federal Urban 
+Job Creation and Food Security Agency (FUJCFSA).   
+12 
+ M&E system,” although this was abandoned during implementation  of the MIS, especially because the 
+compilation and oversight functions in the hierarchical structu re were no longer needed when the data 
+were automatically aggregated and instantly available online fo r involved institutions. 
+During implementation of the WEDP, the approach to developing t he M&E system gradually became 
+a partnership, with active client participation. The Government  of Ethiopia made the decision to 
+develop and test an ambitious online real‐time MIS, which they  deemed could potentially be useful to 
+the government structure more broadly . The government therefore enga ged its own IT experts from 
+the IT department at FeMSEDA to  assist the WEDP in developing s pecifications for the MIS and ensure 
+that the system would be developed so that it would be useful a t a later stage. On the technical side 
+hardware such as servers, networks, and server rooms were upgra ded to serve larger data flows than 
+what the WEDP would generate.  The client’s eagerness to develo p the MIS into a system of gene ral 
+applicability highlights the potential for using M&E efforts to  generate sustainable results in capacity 
+building.  
+A local IT company was hired through a competitive bidding proc ess to develop the MIS. Based on 
+initial  rounds  of  developing  the  MIS  specifications,  a  simple,  low‐cost  solution  satisfying  some 
+minimum requirements was selected. The aim was to develop a rea l‐time web platform–based system 
+that was as simple as possible and at the same time choose solu tions that would enable the FeMSEDA 
+IT department to manage and develop the system once the IT comp any withdrew from the project. 
+The contract with the IT company included one year of support a fter start‐up of the MIS. It was 
+envisaged that FeMSEDA could sub sequently manage the MIS withou t external support.  
+Finally, the WEDP had a unique design in that rigorous impact e valuations were included in a separate 
+component of the project (World Bank 2012). Hence, from the sta rt the involved parties wanted to 
+learn about how the WEDP was working and how to increase its ef fect. This may have increased 
+awareness of the usefulness of accurate, timely data and intere st in using data to monitor progress 
+and achievements. 
+ 
+4. Methodology 
+The empirical foundations for this paper are the experiences of  the involved stakeholders as reflected 
+in qualitative interviews collected in Addis Ababa in June 2017 , approximately six months after the MIS 
+had started basic operations. We also used the full archive of  project documents and internal World 
+Bank documentation use d in developing the MIS. Our own experien ces complement this.  
+At the data collection stage, the WEDP project was coming to an  end,5 and World Bank support to 
+project M&E was at a minimum. We collected data from the key st akeholders, primarily focusing on 
+the three main user categories of the MIS: FUJCFSA, DBE and the  micro finance institutions, and the 
+Federal TVET Agency.  
+                                                            
+5 The project was extended for two additional years with additio nal funding from the Go vernments of Italy and 
+Japan. As of September 2018, the project implementation end dat e is expected to be  December 31, 2019.   
+13 
+ To  capture  any  broader  strategic  u se  of  the  MIS  in  the  governme nt,  we  also  interviewed 
+representatives from the Federal Small and Medium Manufacturing  Industries Development Agency 
+because they expressed  interest in developing an agency‐wide MI S with the same structure as that of 
+the WEDP MIS. We also interviewed the Association of Ethiopian  Microfinance Institutions (AEMFI) 
+because they were planning a similar MIS for connecting MFIs an d because they attempt to coordinate 
+MFI M&E and reporting systems. 
+Conceptually, one can think of d eveloping an M&E framework for  a project on three levels. On the 
+most basic level, the M&E framework needs to deliver as require d from the project perspective. This 
+includes the donor’s, client’s,  implementers’, and other stakeh olders’ needs to be informed about 
+project progress and l ikely outcomes. In thi s case, the standar d approach entails hiring an external 
+M&E consultant to develop the framework.  
+The second level involves more‐integrated development of the M& E framework using the client’s M&E 
+systems. The donor and client together map out the indicators,  modes of data collection, and other 
+components of the system. Althou gh learning may not be part of  the objective, working closely 
+together usually entails some capacity building to meet the req uired standards.  
+On the third and most‐advanced l evel, there is an explicit capa city‐building aim, with the client learning 
+through the project how to develop its own M&E systems and syst ematically using the information 
+provided to manage the project. In this latter case, the system  for generating the data for the M&E is 
+often referred to as an MIS. 
+ 
+5. Effectiveness:  How to Establish an Effective MIS 
+5.1 An effective MIS 
+By September 2018, the MIS contained a database of approximatel y 25,611 female business owners 
+who had applied to the WEDP and fulfilled the participation cri teria. Data are enter ed in the MIS at 
+three main points: when an eligible client registers with the W EDP, takes training, and takes a loan 
+from the MFI. We present information from each of the sources a nd provide a graphic overview of 
+some of the functions that can b e applied to display the overvi ew of the data and trends.  
+The MIS has an easy‐access user‐friendly interface that is suit able even for people without basic 
+computer skills. Most users at the entry level have had no prio r experience with computers, and only 
+some have experience with the Internet through mobile phone app lications. The start page when 
+accessing the webpage (available here:  http://197.156.90.249:8100/)  
+The website start page contains real‐time data on project indic ators, number of clients, number of 
+clients trained, and number of loans that these clients have ta ken out. Refreshing the browser provides 
+instant changes in the figures w hen a new client has been regis tered, some training has been 
+completed, or a loan has been dis bursed. Everything can be view ed in Amharic to ensure that nothing 
+is lost in translation for individuals without strong English s kills, for instance, lower‐level government 
+staff.   
+14 
+ Image 1: Screenshot of WEDP MIS  Webpage Start Page (as of Septe mber 29, 2018) 
+ 
+The front page is also used to present WEDP news, and the MIS c an provide messages directly to 
+various participating institutions. Logging on would then provi de the user with a dashboard displaying 
+categories of reports, tables, and figures that can be produced  with a few clicks. The full database is 
+available for WEDP management to export into Excel for more‐adv anced analysis. We return to this 
+below. 
+Registration data 
+Entrepreneurs register locally in OSSs at the lowest government  administrative level  (kebele or subcity 
+office) in the five largest cities in Ethiopia.   During registration, basic information on the entrepreneur 
+and her business is collected. Entrepreneur data include person al information such as education; years 
+of business experience; whether the registrant has taken out a  loan before and, if so, the largest 
+amount taken; and what services she needs to expand her busines s.  
+Registration data on the entrepreneur’s business include the ye ar the business was established, the 
+current number of female and male employees, her ownership shar e in the business, the starting 
+capital for that business, its y early earnings, and the number  of employees. Upon completion of 
+registration, the client receives a membership card with a uniq ue WEDP identification number that 
+WEDP service providers use to identify each client.  
+If a WEDP staff member requires information about a WEDP member , he or she can click on “Details” 
+on the member of interest in the membership list, which will di splay the registration details in the 
+system for each client. 
+  
+ 
+15 
+ Image 2: Screenshot of the First  of Four Steps for Entering Reg istration Information  
+ 
+When the client obtains a WEDP loan or takes WEDP training, the  service provider accesses the MIS 
+and registers detailed information about the services provided  to each client. The database therefore 
+contains a wealth of information on clients that is accessible  to WEDP staff with access rights to the 
+various types of data.6 
+Training data 
+Training data are available in the MIS for each individual, inc luding information about categories of 
+training the client has taken, training content, and duration o f training completed. An examination is 
+administered after completion of each course, and the client’s  performance is recorded.  
+A detailed record of previous WEDP and non‐WEDP training taken  is also available, as well as an 
+assessment of each client’s needs for further training. Client  satisfaction is also reported after each 
+course. For management purposes, it is important to identify th e training provider and the trainers, 
+including names and contact information, so that it is easy for  the WEDP to follow up on poor 
+performance, report problems, an d perform other quality checks.   
+ 
+                                                            
+6 There is a detailed list of access rights to various informati on in the MIS, and clear responsibilities have been 
+assigned to the a ppropriate staff. 
+ 
+16 
+ Image 3: Screenshot of Report Category in the Pull‐Down Menu  
+ 
+Loan data 
+Loan data registered in the MIS contain information about the l oan (size, date of agreement, MFI 
+branch), intended use of funds, and sector and subsector of int ended investment. The reporting 
+opportunities link this informat ion to the registration and tra ining data so that a compound picture of 
+borrowers can be provided. The MIS webpage can show reporting o pportunities for WEDP staff and a 
+display of average loan size for those who have never borrowed  before.7 
+  
+                                                            
+7 Average loan size for those who have never borrowed before is  an important indicator of market 
+imperfections for female entrepreneurs in finance: Why had the  women not borrowed before but then 
+suddenly started to take large loans when WEDP gave them the op portunity to do so? The most likely answer, 
+and the answer we get from discu ssing this with  clients, is tha t they were credit constrained and not able to 
+access large loans in the market. 
+ 
+17 
+ Table 2: Number of First Time Loan Clients (as of September 201 8) 
+Sector  Number of Loans  Average Loan (ETB) 
+Manufacturing  569  ETB 273,088.00  
+Construction  191  ETB 298,660.00  
+Trade  3467  ETB 232,220.00  
+Service  2277  ETB 248,185.00  
+Agriculture  131  ETB 164,924.00  
+Other  127  ETB 322,520.00  
+ Management tools and reports 
+The MIS can generate a range of  descriptive reports that are us eful for project implementers at the 
+local and central levels to monitor and analyze project progres s under their responsibility in their area. 
+It also provides project management with detailed and aggregate d figures and trajectories that enable 
+them to see whether the project is achieving its overall aims.  Management can easily identify whether 
+local units are delivering according to plan and immediately id entify those that are not.  
+The critical performance indicators are number of clients regis tered, number of trainings delivered, 
+and number of loans disbursed. These indicators are reported in  a standard format that individuals 
+with basic understanding of the software can amend.  
+Other examples of reports useful  for management are those that  provides users with basic WEDP 
+performance indicators, average  number of female and male emplo yees that WEDP clients in each 
+sector have hired, average earnings, and average loan size (not  including themselves), such as the loan 
+report by sector.  
+Chart 1: Trends of WEDP Members Registration, Training and Loan  (as of September 2018) 
+   
+932712411744157222028125606
+142500520677211073514617
+13803493531171699155
+050001000015000200002500030000
+2013 2014 2015 2016 2017 2018Client Registered Client Trained
+ Client Loan Received 
+18 
+  Table 3: Loan Report by Sec tor (as of September 2018) 
+Sector Ave.  Female 
+Employees Ave.  Male 
+Employees Average Earning  Average Loan Taken 
+Agriculture  1.85  1.4   ETB     546,796.00    ETB            193,055.00  
+Construction  2.68  3.32   ETB     361,921.00    ETB            325 ,797.00  
+Manufacturing  2.29  1.77   ETB     807,156.00    ETB            282,563.00  
+Other  2.76  1.97   ETB     367,175.00    ETB            378,036.00   
+Service  2.29  1.36   ETB     823,229.00    ETB            260,160.00  
+Trade  10.59  0.64   ETB     554,863.00    ETB            238,844.0 0  
+Total  22.46  10.46   ETB     3,461,140.00    ETB           1,678,455.00  
+Management and local staff can also obtain disaggregated figure s to see how WEDP performs locally. 
+For example, the number of clients that have registered in each  city can easily be provided, as well 
+asthe number regis tered at each OSS.  
+Much of the information can be displayed for any time period sp ecified and disaggregated according 
+to OSS, MFI, TVET Agency, and city for various indicators and i nformation collected. Data can be 
+extracted and used for advanced a nalysis using statistical soft ware.  Frequently used WEDP bimonthly 
+reports generated from MIS data include the training provided r eport, the lending performance 
+reports, and the report on the d iscrepancy between new members  registered and trained. 
+1. Training provided 
+Chart 2: WEDP Training by Traini ng Institutions (as of Septembe r 2018) 
+ 
+  9%
+7%
+25%
+13%11%14%6%15% Adama PTC
+Bahirdar PTC
+DOT
+EDC
+Hawassa PTC
+Mekelle PTC
+Meles Zenawi PTC
+Other 
+19 
+ 2. Lending performance 
+According to WEDP MIS reports, 2,538 new clients who have recei ved WEDP loan between July 2017 
+to July 2018, a 48% increase from the number of new clients the  year before. So far, a total of 9,338 
+loan data has been uploaded in MIS, which can track WEDP loan b y city and by disbursing MFI 
+respectively.     
+Table 4: Number and Size of Loans by City (as of June 2018) 
+City  Number of Loans  Ave. Loan Size 
+Addis Ababa  5085  ETB               274,057 
+Bahir Dar  1064  ETB               389,659 
+Hawassa  312  ETB               256,170 
+Adama  1269  ETB               192,032 
+Mekelle  1180  ETB               172,883 
+Dire Dawa  232  ETB               118,095 
+Assela  13  ETB               253,077 
+Total  9155  ETB                236,568 
+ 
+Table 5: Number and Size of Loa ns by MFIs (as of July 2018) 
+MFI   Number of Loan  Ave. Loan Size 
+ WASASA    358   ETB                      356,022  
+ SFPI   308   ETB                      418,498  
+ OCSSCO   1,380   ETB                      283,019  
+ ADCSI    2,957   ETB                      224,826  
+ ACSI   1,079   ETB                      628,908  
+ DECSI   1,195   ETB                      290,835  
+ HARBU    249   ETB                      291,332  
+ OMO   204   ETB                      413,501  
+ MEKLIT   80   ETB                      200,018  
+ METEMAMEN   206   ETB                      283,226  
+ AGAR   715   ETB                      304,663  
+ VISION   606   ETB                      231,654  
+Total  9,337   ETB                      327,208  
+3. Discrepancy between registration and training of new members 
+Chart 3: Trends of WEDP Client Registration and Training from A pril 2018 to September 2018 
+ 20710211159
+475383
+230
+1577311087
+156321 53050010001500
+Apr May Jun Jul Aug SepNewly Registered Newly Trained 
+20 
+ 5.2 Establishing the MIS and success factors 
+This section describes the evolution of the M&E of the project  and what factors have contributed to 
+success in developing an effective MIS. We use the categories f ound in the literature review when they 
+are relevant to our case. We highlight not only functional and  system developments, but also processes 
+leading to various achievements.  
+Establishing an IT culture The experiences of the involved parties indicate that it would  not have been possible to establish the 
+MIS without developing an IT work culture. This accords with fi ndings in the literature on IS solutions 
+but adds a new dimension: The WE DP was established in a work se tting that was no t digitalized.  
+From the beginning, most staff involved in WEDP tasks were not  used to digital work solutions. In 
+particular, OSS and TVET staff had used only paper‐based system s, although some MFIs had digital 
+solutions. The project therefore not only provided software and  hardware for OSSs, TVETs, and the 
+FUJCFSA WEDP office, but FUJCFSA IT staff also provided a subst antial amount of training to operate 
+the systems.   
+FUJCFSA staff emphasized that one  of the keys to making the MIS  work was developing an IT culture 
+among involved WEDP staff. In the beginning, operating the IT s ystems was seen as a burden, but at 
+the time of our interviews, most  involved parties saw the usefu lness of operations and management 
+having an instantly updated overview of project implementation.   
+We  also  found  that  maintaining  an  effective  MIS  required  user  a cceptance.  To  achieve  user 
+acceptance, solutions must be compatible with users’ skills, an d the system must improve their work 
+operations. To this end, the WEDP developed videos that show th e functionalities, which serves as 
+refresher training between regular face‐to‐face staff trainings . This was a popular way to learn how to 
+operate the MIS.  
+Finally, development of the MIS was strongly embedded in the lo cal context, which is an additional 
+condition for success in terms of cultural sustainability. Give n that the FUJCFSA, which also took 
+responsibility for detailing the specifications, commissioned t he MIS, the starting point for developing 
+the MIS was the existing capabilities of the FUJCFSA’s IT depar tment. Moreover, a local IT firm designed 
+the MIS, the government paid for it, and a local project implem entation unit ran and maintained it, 
+which contributed to establishing the IT culture and to a feeli ng of strong ownership of the system. 
+Political setting and ownership As discussed in the literature review, embarking on an inclusiv e process in which the client takes 
+ownership of the project seems to be essential to developing a  system that works well once World 
+Bank supervision ends. Similarly, without clear leadership, lik elihood of IS failure is high. 
+Our interviews revealed that a str ong, hierarchical political l eadership endorses the MIS and wants to 
+broaden its reach to other enterprises in the country. Over the  extended project period, the WEDP is 
+opening operations in four new cities; the MIS will have to be  established there fi rst. Compatibility  
+21 
+ between the low‐tech MIS solutions, the local situation for the  implementing organizations, and the 
+capacity of the end‐users contributed to a high degree of local  ownership of the MIS.  
+Local solutions 
+Developing simple, accessible technical solutions also contribu ted to establishing an  effective MIS. An 
+Ethiopian IT firm developed the technical solutions locally, wh ich were based on free software with a 
+user‐friendly design, so even if many of the individuals involv ed lacked technical capacity to develop, 
+use, and maintain the IS solutions, which the literature has id entified as a risk factor, the low‐tech 
+solution helped overcome this challenge.  
+Developing the MIS was a long process, starting with initial sp ecification of the core data requirements 
+for the project and development of a full M&E manual. The first  steps in registering clients involved 
+developing and testing of an Excel‐based registration form, whi ch provided useful insights into what a 
+functioning MIS should look like. 
+Attention to Data Quality The WEDP intended to provide several services to clients, mostl y financial services and training. 
+Because clients could access many combinations of services from  different service providers that were 
+not linked to each other, it was essential from the planning st age of the MIS that WEDP services 
+provided should be identified for each client. The first step w as therefore to develop a unique client 
+identifier. 
+Another important challenge was to ensure basic data quality. G iven that so many diverse users were 
+accessing and uploading data to the system, it was important to  develop quality checks to minimize 
+errors in data entry and avoid misunderstandings. To avoid conf usion, training and demonstration 
+videos were complemented with pop‐up boxes that would explain i n the local language exactly what 
+information needed to be entered. If an incorrect data format w as used, the user would receive an 
+error message with an explanation of the correct format or type  of information to enter. In addition, 
+experience suggested that pull‐do wn menus with fixed choices si mplified data entry and minimized 
+likelihood of errors. 
+In the initial phase, tests were run on the database to ensure  data quality. The database could be 
+exported to Excel and then used with any statistical software.  This was helpful for detecting errors in 
+the system and refining data ent ry procedures. Moreover, WEDP M &E staff used exported data 
+regularly to conduct advanced analysis. Although the built‐in r eporting functions shown in the previous 
+section worked well for basic monitoring and provided some stan dard evaluation tools, the richness 
+of the database could be used in a range of ways when not restr icted to prespecified parameters.  
+The WEDP also had a database expert conduct in‐depth advanced d ata quality assessments and check 
+for errors,
+8 which provided useful technical  inputs for refining the system .  
+                                                            
+8 It was necessary in this case to inquire into errors leading t o incorrect identificati ons when uploading data 
+from the first‐phase Excel‐based system into the final version  of the MIS. It is difficult to guard against human 
+errors, but the MIS minimizes  the likelihood of such errors.  
+22 
+ Finally, the role of users in ensuring data quality should not  be underestimated. Users have a unique 
+opportunity to detect errors in their daily work with the syste m, and it is important to create feedback 
+loops from them to the system manager. Users had good suggestio ns for developing automatic 
+aggregations for key figures and for how the data should be dis played, such as how it should appear in 
+terms of tables, graphs,  charts, and the like. 
+Although the MIS has generally been a success, there were many  rounds of fixing problems until it was 
+working in an acceptable manner. Some of the challenges encount ered stemmed from lack of Internet 
+reliability in Ethiopia. Frequent Internet interruptions can le ad to duplication errors with automatic 
+database updates and data not being automatically uploaded to t he central server from satellite 
+offices. Close monitoring and checking data transfer was theref ore needed, even when the MIS was in 
+regular operation. 
+ 
+6. Sustainability 
+At the time of our fieldwork, th e MIS was functioning well and  was popular among users, although its 
+sustainability depends on the sustainability of the WEDP. If th e WEDP is discontinued, there will be no 
+need for joint reporting even if training and finance continue  to be provided to growth‐oriented female 
+entrepreneurs. M&E of the servic es would then be integrated int o the regular government system, 
+and it would probably not be possible to continue to identify g rowth‐oriented female entrepreneurs 
+registered in the WEDP (under th e current government SME regist ry).  
+Our sustainability assessment is therefore split into two parts . First, we assess sustainability based on 
+the assumption that the WEDP wou ld continue as a dedicated prog ram after donor support ends and 
+assess the likelihood that the g overnment will continue with th e MIS, as opposed to integrating it into 
+their regular M&E system. Then,  we assess spillovers from the M IS and the benefits generated beyond 
+its functions as an MIS project. 
+Continuation of the MIS beyond project life If the WEDP is maintained after donor financing ends, it is mos tly a question of the costs of running 
+the MIS in relation to FUJCFSA IT operating costs. We inquired  into the operating costs of the MIS and 
+those of the regular FUJCFSA IT system. 
+The operating costs for the MIS at the TVET colleges are minor,  and the TVET colleges could take them 
+on easily if they continue to provide training after project cl osure. One relatively costly support 
+function has been the WEDP city coordinators, who have facilita ted data transfer. They have acted as 
+a link between the implementing i nstitutions (mainly OSS and TV ETS) and the head office. In the first 
+phase of the WEDP, they were instrumental in collecting and sub mitting data. As the MIS started to 
+function  and  gradually  improved,  their  contributions  decreased,   although  they  still represent  a 
+substantial cost in operating the MIS.  
+The city coordinators have mainly provided temporary support in  the start‐up phase. Challenges such 
+as poor Internet connections, high OSS staff turnover, and limi ted administrative resources for WEDP 
+management have made the role of city coordinators important. F or the TVETs, for example, once  
+23 
+ their new fiber cables are installed, there will be no need for  city coordinator support as long as TVET 
+management assigns administrative personnel capable of basic da ta entry. Only a short training is 
+needed, depending on staff knowl edge of the Internet and basic  use of Excel. 
+Microfinance Duplication of efforts in the registration process needs to be  avoided to obtain microfinance support. 
+This is an inherent challenge fo r any finance project; loans pr ovided to clients from project funds must 
+be recorded to account for resources provided, and if the clien t’s MIS is not compatible with that of 
+the MFI, loan transactions must be recorded twice—first as a WE DP loan and then entered into the 
+MIS of the MFI. If the WEDP is discontinued, all stakeholders i ndicated that the MFIs would be unlikely 
+to continue to maintain such a double registry. WEDP clients wo uld then be treated like any other 
+customer and be registered in the ordinary system. The proposed  solution was to make the WEDP MIS 
+compatible with the MFI MIS. Our interviews with AEMFI made it  clear that it was important to align 
+donor reporting needs with the current MFI systems. AEMFI has i nitiated a large MIS project with the 
+goal of connecting all MFI reporting and information sharing in  real time. 
+Spillovers A qualitatively different benefi t of the MIS is the learning ef fect on other government entities and on 
+other projects.  
+There were two initiatives in which there were direct influence s of the WEDP MIS on government 
+learning and using the knowledge  generated. First, the FUJCFSA  has developed a new MIS that will 
+connect the 1,600 OSSs in the country. They used experiences an d took many components of the new 
+system from the WEDP MIS. 
+Second, the newly created Federal Small and Medium Manufacturin g Industry Development Agency, 
+which has de facto responsibility for support to SMEs in Ethiop ia, expressed strong interest in obtaining 
+their own MIS, with a similar structure to that of the WEDP MIS . The Director General stated that, with 
+the churn in the SME sector, it is necessary to have a system t hat can easily be updated. Moreover, the 
+agency had recently developed a catalog of SMEs in Ethiopia, bu t it was already outdated and no longer 
+used. The WEDP MIS could easily connect information from licens ing offices with the agency and 
+provide real‐time information ab out the number of SMEs in the c ountry. 
+The WEDP MIS has also influenced  other World Bank–supported pro jects in Ethiopia, especially the 
+SME finance and urban food security and safety projects. 
+The government’s commitment to the project is one aspect of its  success. Moreover, for this approach 
+to be sustainable, the MIS must  serve the government’s needs an d be seen as a useful tool, be based 
+on simple technical solutions that can be maintained and refine d locally, and have low development 
+and maintenance costs that are c ompatible with the government’s  M&E budgets. 
+  
+24 
+ 7. Lessons learned and conclusions 
+An important lesson from the WEDP experience is that the govern ment’s commitment to the project 
+was critical to its success. By developing a system that served  the government’s needs and was seen 
+as a useful tool beyond project purposes, the WEDP MIS generate d extensive local support.  
+A second lesson from the WEDP experience is that the MIS must b e integrated into local cost and 
+implementation structures. The WEDP MIS achieved a high degree  of sustainability by developing a 
+simple technical solution that can be maintained and refined lo cally and is compatible with the skills 
+of the involved parties.  
+A final lesson from the WEDP experience was that building an IT  culture was important for making the 
+system  work  in  practice.  Creating  an IT  culture  in  a  low‐tech,  largely  analog  environment  is  a 
+challenging but achievable task. In this case, government commi tment and willingness to endure were 
+central to success.  
+The main reason for the success of the WEDP MIS was the interpl ay of these critical factors to make 
+the system work; government commi tment helped generate an IT cu lture of working with a system 
+that the local staff was able to operate. In addition, because  local government entities can afford to 
+maintain and operate it, the sustainability of the MIS is high.  As long as the WEDP continues, the MIS 
+will continue in its current form. Once the WEDP closes, the MI S is likely to transform into a broader 
+tool to help manage future gover nment initiatives providing sup port to private enterprises in the 
+country.  
+Given the high failure rate of I S interventions around the worl d, the WEDP lessons seem particularly 
+germane. By garnering deep government support, developing a loc ally relevant solution, and staying 
+the course in a challenging context, an effective system for in formation management was developed, 
+and a lasting technological solution was provided to manage com plex public sector programs in 
+Ethiopia. 
+ 
+ 
+ 
+ 
+    
+25 
+ References 
+Avgerou, C. 2008. “Information S ystems in Develop ing Countries:  A Critical Research Review.”  Journal 
+of Information Technology  23 (3): 133‐146. 
+Bartis, E., and N. Mitev. 2008. “A Multiple Narrative Approach  to Information Systems Failure: A 
+Successful System That Failed.”  European Journal of Information Systems  17 (2): 112‐124. 
+Chan,  C.M.L.,  and  S.L.  Pan.  2008.  “User  Engagement  in  Egovernme nt  Systems  Implementation: 
+Comparative  Case  Study  of  two  Singaporean  E‐Government  Initiati ves.” The  Journal  of 
+Strategic Information Systems  17 (2): 124‐139. 
+Chianca, T. K. 2008. "International Aid Evaluation: An Analysis  and Policy Proposals." PhD Dissertation. 
+Western Michigan University, Kalamazoo, MI. 
+Ciborra,  C.  2005.  “Interpreting  E ‐Government  and  Development:  E fficiency,  Transparency  or 
+Governance at a Distance?”  Information Technology & People  18 (3): 260‐279. 
+Ciborra, C., and D.D. Navarra. 2005. “Good Governance, Developm ent Theory, and Aid Policy: Risks 
+and Challenges of E‐Government in Jordan.”  Information Technology for Development  11 (2): 
+141‐159. 
+Dener, C., J.A. Watkins, and W.L. Dorotinsky. 2010.  Financial Management Information Systems: 25 
+Years of World Bank Experience on What Works and What Doesn't.  Washington, DC: World 
+Bank.  
+Dhillon, G. 2004. “Dimensions of Power and IS Implementation.  Information & Management  41 (5): 
+635‐644. 
+Dwivedi, Y.K., D. Wastell, S. Laumer, H. Z. Henriksen, M.D. Mye rs, D. Bunker, A. Elbanna, M.N. 
+Ravishankar,  and  S.C.  Srivastava.  2015.  “Research  on  Informatio n  Systems  Failures  and 
+Successes: Status Update and Future Directions.”  Information Systems Frontiers ,17 (1): 143‐
+157. 
+Dorotinsky, W., and J. Cho. 2003.  The World Bank’s Experience with Financial Management Informati on 
+System (FMIS) Projects.  Washington, DC: World Bank Group, PRMPS.  
+Heeks,  R.  2002.  “Information  Sys tems  and  Developing  Countries:  Failure,  Success,  and  Local 
+Improvisations.”  The Information Society  18 (2): 101‐112. 
+Heeks, R. 2003. “Most E‐Governme nt‐for‐Development Project Fail s: How Can Risks Be Reduced?” 
+iGovernment 
+Heeks,  R.,  and  C.  Stanforth.  2007.  “Understanding  E‐Government  Project  Trajectories  from  an 
+Actornetwork Perspective.”  European Journal of Information Systems  16 (2): 165‐177. 
+IEG (Independent Evaluation Group). 2011.  Capturing Technology for Development: An Evaluation of 
+World Bank Group Activities in Information and Communication Te chnologies.  Washington, DC: 
+World Bank Group.  
+26 
+ Imran, A., and S. Gregor. 2010. “Uncovering Hidden Issues in E‐ Government Adoption in a Least 
+Developed Country: The Case of Bangladesh.”  Journal of Global Information Management  18 
+(2): 30‐56. 
+I m r a n ,  A . ,  a n d  S .  G r e g o r .  2 0 1 1 .  “ V e s t e d  I n t e r e s t s  O b s t r u c t i n g  I nformation  Systems  Use:  Land 
+Administration in a Least Develo ped Country.” Presented at the  SIG Globdev 4th Annual 
+Conference, Shanghai, China. 
+Jensen, T.B., and M. Aanestad. 2007. “Hospitality and Hostility  in Hospitals: A Case Study of an EPR 
+Adoption Among Surgeons,”  European Journal of Information Systems  16 (6): 672‐680. 
+Joia, L.A., and C. Magalhães. 2009. “Implementation of an Elect ronic Prescription S ystem in a Brazilian 
+General Hospital: Understanding Sources of Resistance.”  Electronic Journal of Information 
+Systems in Developing Countries  39 (2): 1‐18. 
+Kenny, K.M. 2003. “Power and the Construction of Independence i n ICTD Organizations.”  Information 
+Technology for Development  : 1‐17. 
+Kimaro, H., and J. Nhampossa. 2004. “The Challenges of Sustaina bility of Health Information Systems 
+in Developing Countries: Comparat ive Case Studies of Mozambique  and Tanzania.” Presented 
+at the Twelfth European Conference on Information Systems. Turk u School of Economics and 
+Business Administration, Turku, Finland. 
+Kimaro, H.C., and J.L. Nhampossa. 2005. “Analyzing the Problem  of Unsustainable Health Information 
+Systems  in  Less‐Developed  Economies:  Case  Studies  from  Tanzania   and  Mozambique. 
+Information Technology for Development  11 (3): 273‐298. 
+Kumar, R., and M.L. Best. 2006. “Impact and Sustainability of E ‐Government Services in Developing 
+Countries: Lessons Learned from Tamil Nadu, India.”  The Information Society: An International 
+Journal 22 (1): 1‐12. 
+Lee, J.‐W. 2001. “Education for Technology Readiness: Prospects  for Developing Countries.”  Journal of 
+Human Development  2 (1): 115‐151. 
+Leidner, D.E., and T. Kayworth.  2006. “Review: A Review of Cult ure in Information Systems Research: 
+Toward a Theory of Information  Technology Culture Conflict.”  MIS Quarterly  30 (2): 357‐399. 
+Lin, A., and L. Silva. 2005. “The Social and Political Construc tion of Technological Frames.”  European 
+Journal of Information Systems  14 (1): 39‐49. 
+Montealegre, R., and M. Keil. 2000. “De‐Escalation Information  Technology Projects: Lesson from the 
+Denver International Airport.”  MIS Quarterly , 24 (3): 417‐447. 
+Nelson, R.R. 2007. “IT Project Management: Infamous Failures, C lassic Mistakes, and Best Practices.” 
+MIS Quarterly Executive , 6 (2), 67‐78.  
+Nguyen, V., and W. Fernández. 2009 . “Bridging the Gaps: Package d Software Implementation Projects 
+in Vietnam.” Presented at the 17th European Conference on Infor mation Systems, Verona, 
+Italy.  
+27 
+ Nyella, E., and M. Mndeme. 2010. “Power Tensions in Health Info rmation System Integration in 
+Developing Countries: The Need  for Distributed Control.”  Electronic Journal of Information 
+Systems in Developing Countries  43 (4): 1‐19. 
+NORAD  (Norwegian  Agency  for  Development  Cooperation).  2014.  C a n  W e  D e m o n s t r a t e  t h e  
+Differences That Norwegian Aid Makes? Evaluation of Results Mea surement and How This Can 
+Be Improved.  Evaluation Department evalua tion report 1/2014, Oslo. 
+OECD (Organization for Economic Cooperation and Development). 2 010a. “Glossary of Key Terms in 
+Evaluation  and  Results  Based  Management.” 
+http://www.oecd.org/dac/evaluation/2754804.pdf   
+———.  2010b.  “Quality  Standards  for  Development  Evaluation.” 
+https://www.oecd.org/development/ evaluation/qualitystandards.pd f  
+Scott, M., W. Golden, and M. Hughes. 2004. “Implementation of S trategies for eGovernment: A 
+Stakeholder  Analysis  Approach.”  Presented  at  the  European  Confe rence  on  Information 
+Systems, Turku, Finland. 
+Silva, da A., and W. D. Fernández. 2016. “Sustainability of ICT D Projects and Its Influencing Factors: A 
+Comprehensive Literature Review.”  System Sciences (HICSS),  2016 49th Hawaii International 
+Conference on System Sciences.  
+Vaidya, R., M. Myers, and L. Gardner. 2013. “Major Issues in th e Successful Implementation of 
+Information Systems in Developing Countries, in Grand Successes  and Failures in IT.” In  Public 
+and Private Sectors , edited by Y. Dwivedi, et al.,  151‐163. Berlin Heidelberg: Spr inger. 
+Walsham,  G.,  and  J.  Sahay.  1999.  “GIS  for  District‐Level  Admini stration  in  India:  Problems  and 
+Opportunities.”  MIS Quarterly , 23 (1): 39‐65. 
+Westrup, C., et al., 2003. “Taking Culture Seriously: ICTs, Cul tures and Development.” In  The Digital 
+Challenge: Information Technology , edited by S. Krishna and S. Madon.  Hampshire: Ashgate. 
+Yogesh, D.K., D. Wastell, S. Laumer, H. Z. Henriksen, M.D. Myer s, D. Bunker, A. Elbanna, M. N. 
+Ravishankar,  and  S.C.  Srivastava.  2015.  “Research  on  Informatio n  Systems  Failures  and 
+Successes: Status Update and Future Directions.”  Information Systems Frontier  17 (1): 143‐157. 
+https://dspace.lboro.ac.uk/dspace ‐jspui/bitstream/2134/16922/3/ ISFI‐D‐13‐00185‐05‐04‐
+2014.pdf  
+Young, R., and E. Jordan. 2008. “Top Management Support: Mantra  or Necessity?”  International 
+Journal of Project Management  26 (7): 713‐725.    
+28 
+ Stakeholders interviewed 
+Name  Affiliation  Role  Date 
+Ato Asfaw Abebe Eregna w  Federal  Small  and 
+Medium  Manufacturing 
+Industry  Development 
+Agency Director General  15.06.17 
+Ato Yohannes Solomon  FUJCFSA  WEDP project leader  14‐15.06.17 
+Ato Getachew Yimer  Federal  Small  and 
+Medium  Manufacturing 
+Industry  Development Agency Advisor  to  Director 
+General of FUJCSA 15.06.17 
+Dr. Behailu Kassaye  Development  Bank  of 
+Ethiopia,  Special  Funds Administration Director  19.06.17 
+Ato Teklit Berhe  FUJCFSA  FUJCSA  Information 
+and  Communications 
+Technology Director 15.06.17 
+Ato Ahmed M  FUJCFSA  WEDP  Information 
+Technology Specialist 14‐15.06.17 
+Ato Dagnachew Amberbir  FUJCFSA  WEDP  Monitoring 
+and  Evaluation 
+Coordinator 14.06.17 
+Ato Mulugeta Alemu  Nefas  Silk  technical  and 
+vocational education and training  college,  Addis 
+Ababa Regular  and 
+extension  division training  program 
+coordinator,  WEDP 
+focal person at Nefas 
+Silk college 16.06.17 
+W/ru Tsigereda Worku  Association  of  Ethiopian 
+Microfinance Institutions Ethiopia  Inclusive 
+Finance Training and 
+Research  Institute 
+Management 
+Information  System 
+Officer 21.06.17 
+W/ru Seblewongel Ayalew  World Bank    14‐15.06.17 
+W/ru Tsedey Asheber  World Bank  WEDP  Skills 
+Development 
+Specialist 14‐15.06.17 
+Notes:  FUJCFSA,  Federal  Urban  Job  Creation  and  Food  Security  Agency;  WEDP,  Women 
+Entrepreneurship Development Project. 
+If they want to do more complex larger projects, it might requi re much more resources and complex 
+IT solutions.  
+ 

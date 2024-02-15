@@ -1,0 +1,555 @@
+INDIA’S NEW 
+APPROACH  
+TO PERSONAL  
+DATA-SHARING
+Leena Datwani and Anand Raman July 2020Consultative Group to Assist the Poor
+1818 H Street, NW, MSN F3K-306
+Washington, DC 20433 USA
+Internet: www.cgap.org
+Email: cgap@worldbank.org
+Telephone: +1 202 473 9594
+Cover photo by Sudipto Rana, 2014 CGAP Photo Contest.
+© CGAP/World Bank, 2020.
+RIGHTS AND PERMISSIONS
+This work is available under the Creative Commons Attribution 4.0 International Public License 
+(https://creativecommons.org/licenses/by/4.0/). Under the Creative Commons Attribution 
+license, you are free to copy, distribute, transmit, and adapt this work, including for commercial 
+purposes, under the terms of this license.
+Attribution—Cite the work as follows: Datwani,  Leena, and Anand Raman. 2020. “India’s New 
+Approach to Personal Data-Sharing.” Working Paper. Washington, D.C.: CGAP.
+All queries on rights and licenses should be addressed to CGAP Publications, 1818 H Street, 
+NW, MSN F3K-306, Washington, DC 20433 USA; e-mail: cgap@worldbank.org.CONTENTS
+List of Acronyms ii
+Executive Summary 1
+Introduction  3
+India’s consent-based data-sharing model 6
+Institutional framework  8
+Governance  9
+Business model  10
+Operational model  11
+Remaining questions  13
+Benefits for financial inclusion  13
+Digital literacy and access to smartphones 13
+Limits of the use of consent 13
+Financial services provider capacity  14
+Regulator capacity  14
+Competitive market development  14
+Considerations for other countries  15
+Conclusion  16
+References  17LIST OF ACRONYMS
+AA Account Aggregator
+API Application Programming Interface
+DSA Distributed Sales Agencies
+FIP Financial Information Provider
+FIU Financial Information User
+G2P Government to Person benefit payment
+GSTN Goods and Services Tax Network
+IRDAI  Insurance Regulatory and Development Authority of India
+MeitY  Ministry of Electronics and Information Technology
+MSME Micro, small, and medium enterprises 
+PFRDA  Pension Fund Regulatory Development Authority
+RBI Reserve Bank of India
+ReBIT  Reserve Bank Information Technology Private Limited
+SEBI Securities and Exchange Board of India
+UPI Unified Payments Interface1
+11
+EXECUTIVE SUMMARY
+OVER THE PAST DECADE, INDIA’S INVESTMENTS IN ITS DIGITAL 
+financial infrastructure—known as “India Stack”—have sped up the large-scale 
+digitization of people’s financial lives. As more and more people begin to conduct 
+transactions online, questions have emerged about how to provide millions of customers 
+adequate data protection and privacy while allowing their data to flow throughout the financial 
+system. Data-sharing among financial services providers (FSPs) can enable providers to more 
+efficiently offer a wider range of financial products better tailored to the needs of customers, 
+including low-income customers. However, it is important to ensure customers understand  
+and consent to how their data are being used. 
+India’s solution to this challenge is account aggregators (AAs). The Reserve Bank of India (RBI) 
+created AAs in 2018 to simplify the consent process for customers. In most open banking 
+regimes, financial information providers (FIPs) and financial information users (FIUs) directly 
+exchange data. This direct model of data exchange—such as between a bank and a credit 
+bureau—offers customers limited control and visibility into what data are being shared and to 
+what end. AAs have been designed to sit between FIPs and FIUs to facilitate data exchange 
+more transparently. Despite their name, AAs are barred from seeing, storing, analyzing, or using 
+customer data. As trusted, impartial intermediaries, they simply manage consent and serve as 
+the pipes through which data flow among FSPs. When a customer gives consent to a provider 
+via the AA, the AA fetches the relevant information from the customer’s financial accounts and 
+sends it via secure channels to the requesting institution.
+The Indian government has developed a comprehensive technology framework to guide the 
+implementation of its policies for consensual data-sharing, including the establishment and 
+operation of AAs. It provides a set of guiding design principles, outlines the technical format of 
+data requests, and specifies the parameters governing the terms of use of requested data. It 
+also specifies how to log consent and data flows. 
+There are several operational and coordination challenges across these three types of entities: 
+FIPs, FIUs, and AAs. There are also questions around the data-sharing business model of AAs. 
+Since AAs are additional players, they generate costs that must be offset by efficiency gains in 
+the system to mitigate overall cost increases to customers. 2
+INDIA’S NEW APPROACH TO PERSONAL DATA-SHARING
+It remains an open question whether AAs will advance financial inclusion, how they will navigate 
+issues around digital literacy and smartphone access, how the limits of a consent-based model 
+of data protection and privacy play out, what capacity issues will be encountered among 
+regulators and providers, and whether a competitive market of AAs will emerge given that 
+regulations and interoperability arrangements largely define the business.3
+InTROD uCTIOn
+INTRODUCTION
+ACCOUNT AGGREGATORS (AA s) IS ONE OF THE NEWEST CATEGORIES 
+of nonbanking financial companies (NBFCs) to figure into India Stack— India’s inter-  
+connected set of public and nonprofit infrastructure that supports financial services.1 
+India Stack has scaled considerably since its creation in 2009, marked by rapid digitization 
+and parallel growth in mobile networks, reliable data connectivity, falling data costs, and 
+continuously increasing smartphone use. Consequently, the creation, storage, use, and 
+analyses of personal data have become increasingly relevant. Following an “open banking” 
+approach,2  the Reserve Bank of India (RBI) licensed seven AAs in 2018 to address emerging 
+questions around how data can be most effectively leveraged to benefit individuals while 
+ensuring appropriate data protection and privacy, with consent being a key element in this.
+Background 
+Before the advent of AAs, India Stack comprised the core layers of identification, payments, 
+and data, which themselves are made up of several pieces. Components such as the Aadhaar 
+Payments Bridge, which supports government benefit transfer, and the Unified Payments 
+Interface (UPI), which supports real-time interoperable payments, had reached impressive 
+scale.3
+As these services have scaled, paper-based processes that had required time-consuming, 
+costly, physical due diligence efforts were transitioned to digital processes that are low cost, 
+more trustworthy, and often remote. Digitization along with advances in mobile networks, 
+connectivity, falling data costs, and smartphone use put a spotlight on the gathering and use of 
+personal data.4,5,6  
+1. For a brief video about India Stack, see “India Stack: New Financial Inclusion Infrastructure,” CGAP , https://www.
+youtube.com/watch?v=suE8CQkCqOQ.
+2. We define open banking as “data-sharing schemes that are mandated or supported by regulators with a goal of 
+creating competition and fostering innovation in financial services” (Staschen and Plaitakis 2020). 
+3. The volume of transactions went from ~93,000 in August 2016 to just under 2 million in December 2016 to over  
+1.3 billion in February 2020 (https://www.npci.org.in/product-statistics/upi-product-statistics).
+4. Data costs have fallen 95 percent since 2013 (Kaka et al. 2019). 
+5. The number of internet users has more than doubled from 239 million to 560 million between 2014 and 2018; the 
+number of smartphones has more than quadrupled from 5.4 to 26.2 per hundred people (Kaka et al. 2019). 
+6. The number of mobile phone internet users has grown from 243 million users in 2015 to 421 million in 2019 and is 
+expected to reach 501 million users by 2023. See “Number of Mobile Phone Internet Users in India from 2015 to  
+2018 with a Forecast until 2023,” Statista, https://www.statista.com/statistics/558610/number-of-mobile-internet-
+user-in-india/.4
+INDIA’S NEW APPROACH TO PERSONAL DATA-SHARING
+The Role of Account Aggregators
+RBI created AAs to address the challenges posed by the proliferation of data by enabling 
+data-sharing among financial institutions with customer consent. The intent is to provide 
+a method through which customers can consent (or not) to a financial services provider 
+accessing their personal data held by other entities. Providers are interested in these data, in 
+part, because information shared by customers, such as bank statements, will allow providers 
+to better understand customer risk profiles. The hypothesis is that consent-based data-sharing 
+will help poorer customers qualify for a wider range of financial products—and receive financial 
+products better tailored to their needs. See Box 1, “Why use an open banking model?”
+Despite the nomenclature, AAs are, by regulation, barred from seeing, storing, analyzing, 
+or using client data. They simply are consent managers who act as trusted and impartial 
+intermediaries between users and providers of data. The concept of AAs emerged from 
+discussions at the Financial Stability and Development Council, the apex body for Indian 
+financial sector regulators, in 2015.7 In 2016, RBI released the Account Aggregator Master 
+Direction, and the four financial sector regulators—RBI, Securities and Exchange Board of India 
+(SEBI), Insurance Regulatory and Development Authority of India (IRDAI), and Pension Fund 
+BOX 1.  Why use an open banking model?
+India’s efforts in consent-based data-sharing are not alone. The AA model arrives in 
+the context of a larger global discussion around open banking. The European Union, 
+the United Kingdom, and Australia have regulations and legislation mandating financial 
+institutions to share data upon customer consent. Other countries are considering a 
+voluntary approach. 
+In each scenario, there are differences in the types of data involved, the entities that 
+can participate, and the regulators involved. However, all focus on putting the customer 
+in control of their data. They also share a focus on cost-effectively expanding access 
+to data to third parties that may be better positioned to enable delivery of services to 
+underserved and unserved people. 
+Cost-efficient information exchange may make the business case for serving previously 
+underserved and unserved customers. This may be especially the case if stores of 
+data beyond just financial data—of which these customers might have very little—can 
+be accessed. Open banking models also often have some significant government 
+engagement, support, or involvement. What makes India’s approach distinct for now is 
+that a regulated intermediary—the AA—records consent and facilitates data exchange.a 
+a. Note that India’s AAs are different from a “digilocker” in that they are unable to store data. A digilocker 
+is a platform that enables individuals to access, store, and share a wide range of digital documents in 
+their personal locker such as vehicle registrations, medical records, and graduation certificates. 
+7. “RBI Central Board Meets at Chennai: RBI to Allow Account Aggregator NBFCs; to Set up Financial Inclusion 
+Advisory Committee,” RBI, press release, 2 July 2015, https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.
+aspx?prid=34345.5
+InTROD uCTIOnRegulatory and Development Authority (PFRDA)—agreed to allow their regulated entities to 
+participate.8,9
+Figure 1 illustrates the relationships between various entities and the new AAs. In 2018, seven 
+AAs were granted in-principle licenses. Three of them have received an operational license  
+(as of June 2020). The first go-live is expected in 2020 (Radhakrishnan 2020). 
+FIGURE 1.  Account aggregator(s) in the context of regulators and financial institutions
+New service of fers Financial services
+Supervision SupervisionConsent r ecordsCustomer(s)
+Account 
+aggr egator(s)Licensed
+/f_inancial
+institutions
+seeking
+customer
+data Licensed
+/f_inancial
+institutions
+holding
+customer
+data 
+Pension Fund
+Regulatory 
+and
+Development
+AuthoritySecurities 
+and
+Exchange 
+Board  of 
+IndiaReserve Bank
+of IndiaInsurance
+Regulatory
+Development
+Authority
+of India
+8. RBI/DNBR/2016-17/46, Master Direction DNBR.PD.009/03.10.119/2016-17, https://rbidocs.rbi.org.in/rdocs/
+notification/PDFs/MD46859213614C3046C1BF9B7CF563FF1346.PDF.
+9. India has four financial sector regulators: RBI regulates banking, nonbank financial companies, and payments system 
+providers; IRDAI regulates all types of insurance providers; PFRDA regulates pension providers; and SEBI regulates 
+capital markets.6
+INDIA’S NEW APPROACH TO PERSONAL DATA-SHARING
+10. One example of such an agency is Perfios (https://www.perfios.com/index.php/money-manager-for-consumers/). 
+Historically, Perfios provided a service to customers of banks to extract electronic bank statements using customer-
+provided internet banking login IDs and passwords. This relies largely on good faith that a company like Perfios will 
+not abuse customer consent and data, rather than relying on a formal framework, such as the account aggregator 
+framework. In another model, outsourced companies act as direct sales agents of banks who collect physical 
+copies of documents from customers, which offers even lower protection and accountability.
+11. See National Data Sharing and Accessibility Policy (2012)  at https://dst.gov.in/sites/default/files/nsdi_gazette_0.pdf.
+12. See Policy for Open Application Programming Interfaces at https://meity.gov.in/writereaddata/files/Open_
+APIs_19May2015.pdf.
+13. See the Information Technology Act, 2000, https://indiacode.nic.in/bitstream/123456789/1999/3/A2000-21.pdf.
+14. India’s Personal Data Protection Bill was introduced in Parliament in December 2019. It is possible that once the Bill 
+is enacted, practices and processes will have to be modified to conform to it. INDIA’S CONSENT-BASED 
+DATA-SHARING MODEL
+PAPER-BASED DATA COLLECTION IS INCONVENIENT, TIME-CONSUMING, 
+and costly for customers and providers. Where models for digital-sharing exist, they 
+typically involve transferring data through intermediaries that are not always secure or 
+through specialized agencies that offer little protection for customers.10 India’s consent-based 
+data-sharing model provides a digital framework that enables individuals to give and withdraw 
+consent on how and how much of their personal data are shared via secure and standardized 
+channels. 
+India’s guiding principles for sharing data with user consent—not only in the financial sector—  
+are outlined in the National Data Sharing and Accessibility Policy (2012) and the Policy for Open 
+Application Programming Interfaces for the Government of India.11,12   The Information Technology 
+Act (2000) requires any entity that shares sensitive personal data to obtain consent from the 
+user before the information is shared.13 The forthcoming Personal Data Protection Bill makes it 
+illegal for institutions to share personal data without consent.14
+India’s Ministry of Electronics and Information Technology (MeitY) has issued an Electronic 
+Consent Framework to define a comprehensive mechanism to implement policies for 
+consensual data-sharing. It provides a set of guiding design principles, outlines the technical 
+format of the data request, and specifies the parameters governing the terms of use of the data 
+requested. It also specifies how to log both consent and data flows. This “consent artefact” was 
+adopted by RBI, SEBI, IRDAI, and PFRDA. 
+Components of the consent artefact structure include the following:
+• Identifier. Specifies entities involved in the transaction: who is requesting the data, who is 
+granting permission, who is providing the data, and who is recording consent.7
+InDIa’s COnsen T-BaseD  DaTa-sha RInG mODeL• Data.  Describes the type of data being accessed and the permissions for use of the 
+data. Three types of permissions are available: view (read only), store, and query (request 
+for specific data). The artefact structure also specifies the data that are being shared, 
+date range for which they are being requested, duration of storage by the consumer, and 
+frequency of access.
+• Purpose. Describes end use, for example, to compute a loan offer.
+• Log.  Contains logs of who asked for consent, whether it was granted or not, and data flows.
+• Digital signature.  Identifies the digital signature and digital ID user certificate used by the 
+provider to verify the digital signature. This allows providers to share information in encrypted 
+form.8
+INDIA’S NEW APPROACH TO PERSONAL DATA-SHARING
+INSTITUTIONAL  
+FRAMEWORK
+AS THE LEAD REGULATOR OF THE AA ECOSYSTEM, RBI HAS OPTED 
+for an intermediated approach.15 Licensed AAs are authorized to act as neutral 
+intermediaries. They manage consent requests by seeking and sharing data based on 
+consent. However, AAs are barred from viewing, storing, or processing customer data.
+Three types of entities are involved in the consent process: 
+1. AAs are nonbanking financial companies licensed exclusively to act as an intermediary for 
+consent-based data exchange. The paid-up capital requirement for an AA is INR 20 million 
+(~$270,000).
+2. Financial information providers (FIPs)  are financial institutions and nonfinancial 
+institutions—as permitted by RBI—that hold customer data that potentially can be shared.16
+3. Financial information users (FIUs)  are financial institutions that seek to access customer 
+data from FIPs, based on explicit customer consent.17 
+Unlike other open banking regimes, where FIPs and FIUs directly connect and share data, 
+AAs sit between FIPs and FIUs to facilitate data exchange. As mentioned, AAs do not  actually 
+aggregate account data; rather, they serve as consent managers and the pipes through which 
+data flow upon consumer consent. Electronic consent flows from the consumer to the AA, 
+which then enables the information fetch from the various FIPs specified by the consumer. This 
+information then flows back through the AA to the FIU or the consumer itself.
+To ensure AAs act in the best interest of the consumer and to avoid instances of conflicts of 
+interest, they may not view, store, or use customer data. Data visibility is obscured through 
+end-to-end encryption, while storage, use, and processing of data are disallowed by regulation. 
+15. RBI leadership appears circumstantial: AAs have been licensed as NBFCs, an institutional category traditionally 
+regulated by RBI, and the first wave of participants are banks, which also are regulated by RBI. Other sectoral 
+regulators for insurance, securities, and pensions also are involved in the broader effort but are less active. See  
+RBI (2019a).
+16. The regulation includes “bank, banking company, non-banking financial company, asset management company, 
+depository, depository participant, insurance company, insurance repository, pension fund and such other entity  
+as may be identified by the Bank” (RBI Master Direction: DNBR.PD.009/03.10.119/2016-17).
+17. “[A]n entity registered with and regulated by any financial sector regulator” (RBI Master Direction: DNBR.
+PD.009/03.10.119/2016-17).9
+InsTITuTIOna L FRamew ORk  Furthermore, AAs are not permitted to conduct any other business; however, they can be 
+subsidiaries of other companies that conduct other businesses.18
+Regulations limit participation in the AA ecosystem to entities regulated by one of the four 
+financial sector regulators as both FIPs and FIUs. An exception has been made to allow 
+the unique Goods and Services Tax Network (GSTN) to participate as an FIP.19,20 GSTN has 
+been set up to provide IT infrastructure and services to the central and state governments, 
+tax payers, and other stakeholders for implementation of the Goods and Services Tax. The 
+rationale is that this provides more accurate turnover information about micro, small, and 
+medium enterprises (MSMEs) given that MSME invoices with large upstream suppliers (such as 
+fast-moving consumer good companies) are expected to be more accurately recorded. This, 
+in turn, will enable formal providers to better serve this underserved segment, which typically 
+transacts in cash and without the benefit of formally documented cash flows. Small businesses 
+only recently have started generating digital footprints through low-cost and accessible 
+payments systems such as UPI. These newly generated data could enable smaller businesses 
+to prove their creditworthiness at lower cost to financial institutions. 
+Governance
+Notwithstanding RBI regulations, there are several operational coordination challenges across 
+the three entity types—FIPs, FIUs, and AAs—involved in consent and data flows. Some 
+questions include the following:
+• How will participants work together? 
+• How will differences in provider systems achieve a smooth flow of information? 
+• What is the incentive for large players, those who have relatively more data to share than to 
+receive, to join? 
+• Will FIPs and FIUs on one hand and AAs on the other hand enter into bilateral agreements or 
+multilateral ones?
+DigiSahamati Foundation was created in response to RBI’s “Report of the High Level 
+Committee on Deepening of Digital Payments” (May 2019).21 The Foundation (referred to as 
+Sahamati henceforth) is a membership-based collective. It was created as a nongovernment 
+not-for-profit company to manage scheme governance in the AA ecosystem.22  For example, 
+18. Master Direction—Non-Banking Financial Company—Account Aggregator (Reserve Bank) Directions, 2016, https://
+rbidocs.rbi.org.in/rdocs/notification/PDFs/MD46859213614C3046C1BF9B7CF563FF1346.PDF
+19. Another exception is a public credit registry, which would participate as an FIP . It is expected to be operational 
+by mid-2020. This raw registry can provide data in real time and promises to provide a holistic picture of the 
+borrower’s credit history, bring down the due diligence cost of lenders, and include those previously left out of 
+the credit market. It will not provide credit scores or analytical information. 
+20. See “About GSTN,” https://www.gstn.org.in/.
+21. RBI (2019b) recommends the creation of a self-regulatory organization to regulate AAs and build regulatory 
+capacity. 
+22. The company is registered under a provision that allows it to turn a profit, but it is only able to reinvest such 
+earnings into growing and operating the company. It is barred from providing shareholder returns.10
+INDIA’S NEW APPROACH TO PERSONAL DATA-SHARING
+23. “AA API Specifications,” ReBIT, https://api.rebit.org.in.
+24. Technical Specifications for All Participants of the Account Aggregator (AA) Ecosystem, RBI/2019-20/96. DOR NBFC 
+(PD) CC.No.104/03.10.001/2019-2, https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11729&Mode=0.
+25. Sahamati was formally registered on 17 September 2019 with the registrar of companies.RBI regulations do not mandate that FIUs have to be FIPs. However, Sahamati and its members 
+have agreed to this requirement to promote fair participation in the ecosystem. 
+Sahamati’s role includes helping to ensure that its members conform to relevant technical 
+standards, for example, application programming interface (API) specifications were created 
+by the fully owned technology subsidiary of RBI, Reserve Bank Information Technology 
+(ReBIT).23 In conjunction, RBI has issued a notification to ecosystem participants to adopt the 
+specifications.24  Sahamati also intends to leverage member working groups to play a part in 
+developing standards for data exchange that have the widest applicability among its members. 
+It currently is working to develop a directory service that lists regulated AAs, FIPs, and FIUs 
+along with end point, public key, and other relevant data. The service is expected to be 
+operational in 2020.
+Sahamati membership is open to any company, including those offering nonfinancial services. 
+Various aspects of the governance arrangement are not yet finalized.25 Some licensed large 
+banks and AAs are among the first members. Operating entities under other financial sector 
+regulators (e.g., insurance) are expected to join. 
+Business model 
+Unlike other open banking regimes, the Indian regime includes AAs as additional players that 
+create additional costs that have to be offset by efficiency gains to mitigate an overall cost 
+increase to consumers.
+AAs are permitted to charge consumers directly, but it is unlikely that consumers will go directly 
+to AAs to request data. The value proposition to customers is more likely to be framed in 
+terms of (i) FIUs’ ability to offer a better or more competitively priced product and (ii) quicker 
+turnaround time on accessing data through an AA. Thus, the revenue aspect of the AA model 
+stems from charging either the FIU or the consumer. To minimize conflicts of issues arising, 
+ecosystem players are considering having FIUs issue a voucher to consumers who then use 
+it to pay an AA of their choice. This approach enables consumers to choose from the host 
+of AAs available since all AAs should be connected to all FIUs. In paying the AA directly for 
+providing a trusted data courier service, the idea is that consumers may begin to think of AAs 
+as a fiduciary that offers value worth paying for. How AAs price their services and differentiate 
+themselves from one another, given that much of the business is defined either by regulation or 
+interoperability arrangements, is yet to be seen. 11
+InsTITuTIOna L FRamew ORk  Operational model
+The consent process begins when a financial services provider, acting as an FIU, requests an 
+AA to obtain customer consent  to share specific data  (within standardized parameters) 
+from certain (possibly several)  sources  to be shared for a predetermined length of time  for 
+a stated purpose . The request shared through the AA is expected to be presented in a format 
+that makes it easy for customers to know what they are consenting to with some granularity 
+and to decide to share or not. One example is privacy permissions offered by some apps: 
+one simply can touch a toggle button against various data-sharing choices to grant or deny 
+consent. Upon consent, the AA requests the relevant data from across multiple FIPs. Finally,  
+the AAs receive, collate, and pass on the data in machine readable form to the requesting FIU.
+Figure 2 illustrates the entities involved in and the information flow for fulfilling a consensual data 
+request.
+Even more critical than the specific flow of information, the AA mechanism provides a 
+standardized structure to seek and obtain consent. The structure is programmable, achieved 
+electronically, and keeps a central record of consents being given. 
+ReBIT’s specifications on interfacing applications, backed by an RBI notification, are examples 
+of standardization in the Indian market.26 Standardization of specifications is common (although 
+not universal) among open banking models globally. It helps to ensure interoperability among 
+providers and improve speed to market.
+In the AA model, each FIU should be able to use any AA, and each FIP has to work with all the 
+AAs. The consumer chooses which AA to interact with. Sahamati plans to provide a centralized 
+address translation service to facilitate interoperability between AAs. Since the implementations 
+will be based on the standard API specifications, once an FIP or FIU completes integration 
+with any one AA, the process will be easily replicated with any other AA that starts operations. 
+Similarly, once an AA is part of the system, it does not have to write additional code when new 
+members are added to the ecosystem. 
+26. Technical Specifications for All Participants of the Account Aggregator (AA) Ecosystem, RBI/2019-20/96. DOR NBFC 
+(PD) CC.No.104/03.10.001/2019-20, https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11729&Mode=0.12
+INDIA’S NEW APPROACH TO PERSONAL DATA-SHARING
+FIGURE 2.  Account aggregator ecosystem
+The information flows as follows:
+1. FIU initiates a request to AA for specific data (with predefined, standardized parameters) for a specific 
+purpose. 
+2. AA sends the customer a message to obtain her consent to share the requested data for the purpose 
+specified in the request.
+3. Customer examines the request and chooses to either accept or reject the data request.
+4. AA processes the customer’s response:
+4a. If customer consents to the request, AA forwards a request to fetch the data from FIPs.
+4b. If consent is denied, AA informs FIU that the customer has declined the request.
+5. FIPs examine the request, obtain the data from their systems, encrypt the data, and send the data to 
+AA.
+6. AA can collate data into one package if there are several FIP sources for a single request and forward 
+the package to the requesting FIU. AAs cannot view, store, modify, use, or analyze customer data. 
+This makes AAs materially different from credit bureaus and distributed sales agencies (DSAs).a The 
+AA is a “data blind” messenger.
+a.  DSAs are third parties that help banks collect physical records such as bank statements. They are used by financial 
+services providers to assess risk and eligibility. They present a risk of data theft. Credit bureaus are different in that 
+they use data to create scores based on analytics.Customer r esponse
+Seek consent
+Consent given
+DataFinancial
+information
+user (FIU)Financial
+information
+provider (FIP)2
+4a1
+64b
+53
+Collated dataConsent declinedInitiate consent
+request
+Account 
+aggr egator(s)Customer(s)13
+Rema InInG ques TIOns  REMAINING QUESTIONS 
+Benefits for financial inclusion
+For smaller merchants and individuals who do not generate much digital data, questions remain 
+about the ultimate impact of any data-sharing model. The hypothesis is that lenders regulated 
+by RBI will be able to use tax and transaction data to consider lending to this previously 
+underserved segment. Poor people in India appear to accept that these services will take 
+time to trickle down—the financially poor also are data poor. Advances in technology and 
+infrastructure are leading to falling costs associated with collecting relevant data. Thus, lenders 
+can reduce costs of servicing small-ticket loans and make it a viable business. 
+Digital literacy and access to smartphones
+The first AA products are expected to be smartphone applications. It is not clear how the AA 
+model can serve low-literate, feature-phone-using individuals. Even smartphone users may  
+face capacity, comfort, and perception issues that make it difficult for them to use the new  
+AA products.27 
+Furthermore, poor Indians typically lack literacy and tend to want assisted models of financial 
+transactions (preferably from a trusted member of the community). To address their needs, 
+AAs will need to develop services that support high-touch, hand-holding experiences in the 
+consent-giving process. As it stands, questions remain around the assisted model of giving 
+consent. Risks include misuse of data and consent that originates from the assistant and not 
+from the customer herself. User interface and user experience principles can go a long way in 
+helping AAs design consent services for low-literate smartphone users. However, there remains 
+a risk that this ecosystem may deepen the digital divide rather than bridge it.
+Limits of the use of consent
+Is it unfair to impose on individuals the burden of providing consent as a means of protecting 
+their data? To answer this question, some issues need to be considered, including the 
+following: 
+• A large proportion of the population is opening accounts or coming online for the first time.
+27. Omidyar Network’s Currency of Trust Report (2017) finds that Indian consumers view digital financial services as 
+being overly complex and that even financially savvy consumers are weary of accessing financial services on their 
+phones. 14
+INDIA’S NEW APPROACH TO PERSONAL DATA-SHARING
+• Reading long, complex privacy notices is challenging, especially where literacy rates are low.
+• Language and technology are persistent barriers. 
+Obtaining time-bound and specific consent is a clear improvement over the traditional approach 
+of providing complex overarching disclosures. However, customers still need to understand 
+the risks of what they are consenting to and weigh the advantages and disadvantages of 
+doing so or not. In practice, most people do not read or understand privacy notices. Finally, it 
+is yet to be determined how the Data Protection and Privacy Bill, with provisions such as the 
+creation of “consent managers” and “data trust scores,” would be applied to and impact the AA 
+infrastructure. 
+Financial services provider capacity 
+Financial services providers, especially large ones, may have their own hurdles to overcome. 
+Some of them have slow-moving technology teams. Others have legacy systems that may not 
+be able to model the data—if they are able to obtain them at all—to make them meaningful. This 
+situation may provide opportunities for interesting and unexpected partnerships between banks 
+and fintech providers.
+Regulator capacity
+Questions remain around the institutional capacity of RBI to ensure compliance, given that 
+AAs are in the business of obtaining consent for the transfer of data, but regulated as an 
+NBFC. While AA clients are financial services providers, AAs themselves are purely technology 
+companies. In addition, the regulations ensure that AAs do not impose any financial risk: they 
+do not accept deposits, provide loans, process payments, or even provide a credit score. 
+Currently, they pose even less risk than the internet service provider that customers use to 
+access their internet banking. 
+RBI needs to tailor its supervisory approach to the specific risk profile of this new type of NBFC. 
+While RBI has shown foresight in creating ReBIT, cross-regulatory arrangements with the other 
+three financial sector regulators and, eventually, the Data Protection Authority proposed in the 
+Personal Data Protection Bill will need to be considered to ensure effective compliance. 
+Competitive market development
+Given that AAs cannot provide value-added services based on analytics or anything else, 
+it is not clear that a competitive market will develop. If they are all essentially offering the 
+same service, how will they differentiate themselves from one another? While they have an 
+opportunity to attract customers through superior user experiences, margins would be low and 
+there may not be a sustainable way to retain customers. Ultimately it may be the case that the 
+one offering the lowest price gets the customer. Among the many scenarios on this issue, one 
+is that a single AA could operate as a centralized market utility, rather than forcing open-market 
+competition.15
+COns IDeR aTIOns FOR  OTheR  COunTRIes  CONSIDERATIONS FOR 
+OTHER COUNTRIES 
+THIS APPROACH TO CONSENT-BASED DATA-SHARING COMES AT A 
+time when surging data generation and data-dependent product design and 
+development are fuelling global concern about data protection and privacy. Issues 
+on data ownership, data use, data collection methods, and who benefits from the use of 
+data are coming into sharp focus. India’s consent-based data-sharing infrastructure is being 
+created in parallel to these developments and is aligned with its Personal Data Protection 
+Bill. Stakeholders are debating the sequence of the development of institutions and legal 
+framework, given that robust data protection and privacy regulations are critical to ensure that 
+consent works in ways that do not harm individuals. 
+Law-making is a slow process, so a delicate balance must be struck between innovation and 
+compliance. In the absence of a law, there are risks in allowing providers to start operating. 
+Some risks could be mitigated by designing a system that incorporates privacy principles. 
+Conversely, waiting to act until the law is in place could significantly delay the development 
+of enabling institutions and systems. Regulatory sandboxes have been used as a tool to 
+experiment in the spirit of encouraging innovation while minimizing harm.28 
+Other countries that are looking to implement similar systems or systems to perform similar 
+functions should examine the types of institutions and regulatory frameworks already in place. 
+In addition, countries should examine their institutional capacity to implement, regulate, and 
+supervise an open banking system and the potential demand for sharing financial information 
+digitally.
+28. A regulatory sandbox is a framework set up by a regulator that allows fintech start-ups and other innovators to 
+conduct live experiments in a controlled environment under a regulator’s supervision. See Jenik and Lauer (2017).16
+INDIA’S NEW APPROACH TO PERSONAL DATA-SHARING
+CONCLUSION
+THE AA CONSENT-BASED DATA-SHARING MODEL BROKERS THE FLOW 
+of data between producers and users of data, ensuring that sharing data is subject to 
+granular customer consent. AAs manage only the consent and data flow for the benefit 
+of the consumer, mitigating the risk of an FIU pressuring consumers to consent to access to 
+their data in exchange for a product or service. However, AAs, as entities that sit in the middle 
+of this ecosystem, come with additional costs that will affect the viability of the business model 
+and the cost of servicing consumers. 
+FIUs most likely will urge consumers to go directly to an AA to receive fast, efficient, and 
+low-cost services. However, AAs ultimately must market their services directly to the consumer. 
+While AA services are not an easy sell, the rising levels of awareness among Indian consumers 
+that their data are being sold without their consent or knowledge may give rise to the initial 
+wave of adopters. 
+While the AA model is promising, it remains to be seen how and when it will have a direct 
+impact on the financial lives of consumers, especially poor people.17
+ReF eRenC es  REFERENCES 
+Jenik, Ivo, and Kate Lauer. 2017. “Regulatory Sandboxes and Financial Inclusion.” Working Paper. Washington, 
+D.C.: CGAP. https://www.cgap.org/research/publication/regulatory-sandboxes-and-financial-inclusion
+Kaka, Noshir, Anu Madgavkar, Alok Kshirsagar, Rajat Gupta, James Manyika, Kushe Bahl, and Shishir Gupta. 
+2019. “Digital India: Technology to Transform a Connected Nation.” McKinsey Global Institute. https://www.
+mckinsey.com/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/Digital%20
+India%20Technology%20to%20transform%20a%20connected%20nation/MGI-Digital-India-Report-April-2019.
+ashx
+MeitY (Ministry of Electronics and Information Technology). n.d. “Electric Consent Framework: Technology 
+Specifications, Version 1.1.” MeitY. http://dla.gov.in/sites/default/files/pdf/MeitY-Consent-Tech-Framework%20
+v1.1.pdf
+Omidyar Network. 2017. “Currency of Trust: Consumer Behavior and Attitude Towards Digital Financial 
+Services in India.“ Omidyar Network. https://www.omidyar.com/sites/default/files/file_archive/
+CofTrust/17-05-15_Currency_of_Trust_Report_DIGITAL_FINAL.pdf
+Radhakrishnan, Hariprasad. 2020. “Account Aggregators Gear up to Launch Their Platforms.” Financial 
+Express, 18 March. https://www.financialexpress.com/industry/banking-finance/account-aggregators-gear-
+up-to-launch-their-platforms/1901428/
+RBI (Reserve Bank of India). 2019a. “Master Direction—Non-Banking Financial Company—Account 
+Aggregator (Reserve Bank) Directions, 2016 (updated 22 November 2019). RBI. https://www.rbi.org.in/Scripts/
+BS_ViewMasDirections.aspx?id=10598
+— — — . 2019b. “Report of the High Level Committee on Deepening of Digital Payments.” RBI. https://rbidocs.rbi.
+org.in/rdocs/PublicationReport/Pdfs/CDDP03062019634B0EEF3F7144C3B65360B280E420AC.PDF
+Staschen, Stefan, and Ariadne Plaitakis. 2020. “Open Banking: 7 Ways Data-Sharing Can Advance Financial 
+Inclusion.” CGAP blog post, 7 May. https://www.cgap.org/blog/open-banking-7-ways-data-sharing-can-
+advance-financial-inclusion22
+BEYOND KYC UTILITIES cgap.org

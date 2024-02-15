@@ -1,0 +1,396 @@
+1CHATBOTS FOR SERVICE DELIVERY 
+MONITORING: A CIVICTECH PILOT IN 
+MADAGASCAR
+GOVERNANCE NOTES
+JUNE 2020  No.23
+Prepared by Olivia Rakotomalala, Tiago Peixoto and Saki Kumagai1 
+Growing evidence confirms that citizen engagement 
+is key to improving the delivery and quality of 
+public services, management of public finances, 
+and promoting social inclusion, tangibly improving 
+people’s lives (World Bank Group 2014). The advent 
+and availability of innovative technologies provide 
+new opportunities to reach citizens, aggregate their 
+“voice” and demands, help governments respond, and 
+partner with citizens to find and implement solutions 
+collectively. With the right approach, CivicTech enables 
+citizens to overcome income, social, and geographical 
+barriers to interact with governments and participate 
+at the local or national level.
+Launched in February 2019, the CivicTech pilot in 
+Madagascar supported the development of a Facebook 
+chatbot to enable third-party and citizen monitoring 
+of service delivery operations for the Madagascar 
+Public Sector Performance Project (PAPSP). This 
+Governance Note  documents the experience gained and 
+lessons learned. A similar approach can potentially be 
+replicated for operations through community-driven 
+development and local government and decentralized 
+service delivery operations that benefit from third-
+party and citizen monitoring with a multi-channel 
+engagement structure (e.g., engagement offline and 
+with mobile and web resources).
+1  This Governance Note  was prepared by Olivia Rakotomalala, Tiago Peixoto, and Saki Kumagai (Governance Global Practice (GGP), World 
+Bank). The pilot was partially supported by the GGP’s programmatic analytics and advisory service (ASA), “Citizen Engagement: Re-building 
+the State and Citizen Social Contract.” The ASA aims to provide analytical insights, knowledge, and learning the implementation of the next 
+phase of the World Bank Group’s Strategic Framework for Mainstreaming Citizen Engagement in World Bank Group Operations.  The authors 
+express their appreciation to Asmeen Khan and Helene Grandvoinnet for their guidance and comments, Kimberly Johns for peer review 
+comments, and Barbara Rice for editorial support. 
+2 For the overview, see the World Bank website at https:/ /www.worldbank.org/en/country/madagascar/overview.COUNTRY CONTEXT: DECENTRALIZED SERVICE 
+DELIVERY
+Madagascar is the fifth largest island in the world with 
+a population of 25.6 million. In spite of its considerable 
+natural resources, it is one of the poorest countries 
+in the world, with an estimated poverty rate of 74.1 
+percent in 2019—far exceeding the regional average of 
+41 percent. The country’s human capital index ranking 
+is among the lowest worldwide with an estimated 1.4 
+million children having dropped out of primary school 
+in 2012.2 The government of Madagascar adopted a 
+national development plan to address the country’s 
+development challenges, focused on three pillars: 
+(i) improving basic social services; (ii) strengthening 
+governance and democracy; and (iii) promoting economic 
+growth. Decentralization is identified as a core feature to 
+improve service delivery nationwide. The PAPSP supports 
+this vision by helping to improve revenue management—
+boosting the government’s revenue mobilization efforts 
+and public financial management effectiveness—and local 
+service delivery nationwide as well as in the education 
+sector within selected regions (World Bank 2016).
+Madagascar’s decentralization framework establishes 
+three levels of government: provinces, regions, and 
+communes. Communes are the level of subnational 
+government led by elected officials that is closest to 
+Public Disclosure Authorized Public Disclosure Authorized Public Disclosure Authorized Public Disclosure Authorized2
+JUNE 2020  No.23 GOVERNANCE NOTEScitizens in urban and rural areas. In September 2014, the 
+government adopted new decentralization legislation that 
+increases the responsibilities of communes for service 
+delivery, particularly the rehabilitation of education 
+and health facilities and investments in small-scale 
+infrastructure, such as rural roads and markets. Yet 
+local governments have limited capacity for revenue 
+mobilization, and the budget remains highly centralized. 
+Only 5 percent of total government revenues are 
+channeled outside the Analamanga region, where the 
+capital city is located, despite these combined regions 
+accounting for 90 percent of the country’s population. In 
+addition, funds being transferred to local governments 
+often experience significant delays. 
+To alleviate these challenges, the PAPSP provides 
+grant transfers to rural communes nationwide through 
+the Local Development Fund (FDL). The FDL was created 
+in 2007 by the government to support sustainable 
+socioeconomic development though subnational 
+government capacity building and funding for local 
+public investment projects. The PAPSP grant transfer 
+program is designed to encourage citizens to engage in 
+the process of budget allocation decision-making through 
+local participatory budgeting. While this engagement 
+constitutes a significant landmark for decentralization in 
+Madagascar, the central government and FDL are unable 
+to monitor the allocation and use of these funds in over 
+1,700 remote communes. This ultimately poses a threat 
+to the credibility of the decentralization process and the 
+effective delivery of public services.
+The CivicTech pilot for third-party and citizen 
+monitoring aimed at addressing this concern by engaging 
+with citizens—and youth in particular. The chatbot was 
+designed to be linked to the PAPSP’s grievance redress 
+mechanism, composed of an “issues-tracker,” in which 
+citizens’ reports were uploaded. These reports were 
+then sorted and sent to relevant institutions, which 
+were tasked with formulating a response that would be 
+reported back to citizens. An existing toll-free “3-2-1” 
+automated hotline, which delivers information on a wide 
+range of development topics, was leveraged to direct 
+callers to the PAPSP hotline to find more information 
+about local government investments through the FDL. The rollout of the toll-free 3-2-1 hotline and participatory 
+budgeting mechanisms have been successful in 
+increasing access to information on development issues 
+and engaging citizens at the local level.
+FACEBOOK CHATBOT FOR THIRD-PARTY AND 
+CITIZEN MONITORING
+Understanding the local context is important to design 
+suitable and sustainable CivicTech approaches and tools. 
+A key element is deciding whether to explore using an 
+existing open source solution or developing a customized 
+solution. For this pilot, the team took into account 
+the following elements: types of communication and 
+interaction needed on the CivicTech tool, cost and time 
+required to develop it, and uptake. The project identified 
+the Facebook Messenger chatbot as a tool to explore 
+third-party and citizen monitoring of decentralized 
+service delivery and civil works (see box 1).
+Box 1. Identification of a Suitable CivicTech 
+Solution for the Pilot
+For this CivicTech pilot for third-party and citizen 
+monitoring of decentralized service delivery in 
+Madagascar, the following considerations were made:
+• Built-in chatbot functions.  Chatbots can support 
+very targeted and personalized interactions with 
+users. They use a self-learning process to monitor 
+user interactions and preferences, and adapt 
+their responses accordingly. This allows them to 
+offer relevant services to the user and proactively 
+approach them on a regular basis. 
+• Cost and timeframe.  Building new applications, 
+and promoting their uptake, is more costly than 
+building on an existing, popular platform such as 
+Facebook.
+• Why Facebook rather than a customized solution?  
+Many internet users in developing countries are 
+familiar with the Facebook interface. Sixty-five 
+developing countries worldwide benefit from 
+Facebook’s “Free Basics” program. It allows users 3
+JUNE 2020  No.23 GOVERNANCE NOTESequipped with a smartphone to access a range of 
+free basic services, including chats. The majority 
+of their internet users—and particularly those who 
+cannot afford data plans—navigate the internet 
+exclusively through Facebook. This is the case in 
+Madagascar. While a customized solution may 
+provide a more versatile CivicTech application that 
+matches the scope and scale of grant activities in 
+over 1,700 communes, it would run potential risks 
+of higher cost and longer solution development 
+time frames together with uptake challenges.
+• Uptake of CivicTech applications.  Many users 
+in developing countries have limited Wi-Fi 
+connectivity, access to mobile data, and on-board 
+memory, which makes it difficult to introduce 
+and install an entirely new CivicTech application. 
+Users might not see any value in downloading 
+an unfamiliar new app. Evidence suggests that 
+a quarter of all downloaded apps are abandoned 
+after a single use. The already existing user 
+population and uptake were considerations 
+addressed by the project team.
+Given the context, mobilizing the user base of the 
+Facebook Messenger chatbot for content generation 
+and diverse engagement on service delivery appeared 
+to be a more convenient way to target participants 
+for third-party monitoring. Users are more familiar 
+with the Facebook interface and more likely to be 
+responsive if asked to download a new app.
+Source: World Bank.
+Note:  There are an estimated 2.4 million Facebook users in 
+Madagascar, out of 2.6 million total active internet users, with 
+a quarterly growth of 4.3 percent in January 2019. For more 
+information see the Digital 2019 Madagascar website at https:/ /
+www.slideshare.net/DataReportal/digital-2019-madagascar-
+january-2019-v01.
+3 The total cost includes two contracts for the development of chatbot, the integration of the issues-tracker function, and the deployment of 
+outreach campaigns; a World Bank short-term consultancy; and World Bank staff cost.
+4 Chatbots must go through an approval process by Facebook to ensure that the chatbot meets the platforms’ standards and terms of use.
+5 Information can also be provided through a hotline that is integrated with the issues-tracker.ACHIEVEMENTS TO DATE AND CHALLENGES
+The CivicTech pilot in Madagascar was rolled out in two 
+phases: (i) development of the chatbot and integration 
+of the issues-tracker function; and (ii) deployment of 
+targeted outreach campaigns on Facebook. The total 
+pilot budget was $80,000,3 which was supported by the 
+PAPSP and the GGP’s Citizen Engagement ASA. Once the 
+product is fully developed, additional deployment of the 
+chatbot in another project is estimated to cost $10,000 
+per project.
+Under the pilot, the chatbot was prototyped, 
+developed, approved by Facebook4 and tested by the 
+client (the Public Sector Reform Unit within the Presidency 
+of the Republic of Madagascar) between May and 
+August 2019. It was implemented in a Facebook page 
+and compatible with Facebook versions on any device, 
+browser, and handset, including on Facebook Free Basics.
+The platform supporting the chatbot interacts with the 
+Facebook application program interface to automatically 
+respond to the feedback of end users, i.e., citizens, in 
+real time. End users access the chatbot in the Facebook 
+Messenger app on their smartphones. The interactions 
+take place through text commands or by selecting 
+predefined menu options, and the chatbot answers with 
+text, voice, and visual or audiovisual content. It prompts 
+Facebook users to monitor public works in their area, 
+allowing users to: 
+• Receive information about public works projects in their 
+area to be monitored (e.g., type of work, cost, timeline);
+• Submit information about the status of public works;
+• Anonymously report potential irregularities;5 and
+• Invite other Facebook friends to join the monitoring 
+efforts.
+The chatbot provides user-driven interaction flow along 
+a predefined decision tree. Users are walked through the 
+decision tree and can opt into different options, responding 
+to the chatbot by typing text or numeric answers (“I want 
+more info”) or clicking on menu options (“More info”).4
+JUNE 2020  No.23 GOVERNANCE NOTESA two-week promotion effort in May 2019 used 
+the 3-2-1 hotline to encourage users to receive more 
+information from the PAPSP hotline. More than 46,000 
+users heard the promotional message, and 83 percent 
+(more than 38,000 users) expressed an interest in 
+receiving a call back from the PAPSP hotline. This 
+overwhelmingly positive response was unexpected and 
+resulted in a budgetary shortfall with so many users to 
+call back. As a result, only a sample of 1,863 call backs 
+were made, of which 40 percent were successful. Of 
+the successful calls, 40 percent asked to speak to an 
+operator. More than half of the users called were between 
+the ages of 18 and 24, and overwhelmingly male (see 
+tables 1 and 2).
+Table 1. Feedback from the PAPSP Hotline Promotion, 
+May 15–31, 2019
+Feedback Number Percentage
+Would 
+you like to 
+receive a call 
+back from 
+the PAPSP 
+hotline?Yes 38,682 83%
+No 7,854 17%
+T otal responses 46,536 100%
+Call-back 
+statisticsUnsuccessful call 
+(no response)1,094 59%
+Successful call 769 41%
+Call not completed 470 25%
+Call fully completed 299 16%
+T otal 1,863 100%
+Table 2. Demographics of Successful Call Backs
+Age in Y ears Female Male T otal
+18–24 296 720 1,016
+25–34 54 201 255
+35–44 23 84 107
+Over  44 9 34 43
+Under  18 138 304 442
+T otal 520 1,343 1,863Despite these achievements, the chatbot is not yet 
+entirely operational. Delays were caused initially when the 
+tech team struggled to make information available for 
+the more than 1,700 communes, sometimes with several 
+ongoing or closed projects within the same commune. 
+The off-the-shelf product required further development. 
+In addition, in June 2019, Facebook unexpectedly disabled 
+the “share your location function” for all chatbots, which 
+underlies the commune look-up feature, and allowed 
+users to obtain more information on the PAPSP-funded 
+projects in their vicinity. This complication contributed to 
+delays while the tech team tried to develop alternative 
+proposals to make the look-up feature work.
+Once this stage is finalized, the government plans 
+to organize testing and feedback sessions with users 
+and civil society. They will focus on highlighting any 
+context-based improvements in the overall design 
+and deployment of the chatbot as well as highlighting 
+any technical challenges that might prevent the user 
+from having a seamless experience. The tech team will 
+integrate possible adjustments to the chatbot as required 
+based on the participants’ feedback.
+LESSONS LEARNED
+Six key lessons learned during the implementation of this 
+pilot have important ramifications for replication in other 
+projects and countries.
+Creating accountability requires leadership and 
+coordination to close the feedback loop. Transparency 
+through access to information is essential, but not 
+sufficient to achieve accountability. Projects must 
+focus on closing the feedback loop by ensuring the 
+government’s responsiveness to citizens’ concerns 
+through the chatbot or other third-party monitoring 
+tools. Establishing the right institutional framework 
+is key and requires high-level leadership. This can help 
+ensure the allocation of adequate resources to respond 
+to citizens’ concerns. It also signals to civil servants that 
+they are given sufficient latitude to respond transparently 
+to citizens’ feedback. Full or partial outsourcing of 
+services to professional call centers is an option. 
+Coordination with anti-corruption agencies is essential to 5
+JUNE 2020  No.23 GOVERNANCE NOTESfollow-up and investigate any allegations or anomalies. 
+This requires allocation of dedicated resources.
+Conducting user testing is essential to deploy user 
+centric CivicTech solutions.  User testing was done using 
+task scenarios, where users were expected to accomplish 
+specific tasks, in this case requesting information or 
+reporting a case to the authorities. This is only one of 
+a series of tests that should be continued as the tool is 
+refined and released to the wider public. User testing is 
+recommended for future development of any CivicTech 
+solution in different settings. Testing user experience and 
+flow of engagement is essential to create a successful 
+experience for the end user. The design aspects of 
+modifications and user testing should be an ongoing effort, 
+with several iterations to make needed improvements 
+for the overall user-engagement experience. This is 
+particularly important since chatbot experts are not user 
+and content experts, and the government tends to adopt 
+an institutional approach that does not promote uptake of 
+CivicTech initiatives, especially among youth. In addition, 
+it is essential to test the product within the target 
+user’s familiar environment, where natural constraints 
+(e.g., connectivity) can be assessed and they will feel 
+comfortable providing candid feedback.
+Factoring in the complexity of multiple points of sale 
+is critical to design, plan, and roll out the CivicTech 
+activities. Projects should take into consideration the 
+complexity of designing digital technology with a large 
+number of points of sale. Madagascar’s PAPSP targets 
+more than 1,700 communes. The scale—the number 
+of points of sale—was an unexpected challenge for the 
+technical team and generated delays given the off-the-
+shelf solution initially discussed lacked the capacity 
+to manage such a large volume of information. Such 
+complexities should be factored up-front into project 
+planning and budgeting. 
+Leveraging a successful point of interaction works 
+but be prepared for the demand. The common practice 
+in the private sector is to use a successful point of 
+interaction with users to promote another service. Yet, 
+this approach is rarely used in the public sector and for CivicTech in particular. The pilot has demonstrated that 
+this approach can be highly effective, with promotions 
+on the 3-2-1 hotline generating many more calls 
+than initially foreseen. However, they also generated 
+significant subsequent work to respond to the sudden 
+and unexpected demand, for which government was 
+unprepared. When adopting such a mobilization strategy, 
+projects should be ready for the response and sudden 
+rise in demand. Training should be conducted before the 
+launch, and financial and human resources adequately 
+allocated.
+Relying on an off-the-shelf CivicTech solution can have 
+drawbacks. While it is most useful to rely on a platform 
+that already has a strong audience such as Facebook, 
+the project should be prepared for possible changes 
+in the policy of the solution provider(s) over which the 
+project has no control. This is the case, for example, with 
+the “share your location” function that was withdrawn 
+by Facebook, which can lead to very costly alternative 
+development. Budget should be allocated during planning 
+for unforeseen development costs.
+Allocating the maintenance and update costs 
+up-front can contribute to the sustainability of 
+CivicTech activities. Even with an off-the-shelf 
+solution, digital technology is a living product that 
+should not be considered simply as a capital cost. It also 
+requires recurrent costs for maintenance and constant 
+updating. This is especially the case when leveraging 
+other platforms (such as Facebook) and facing possible 
+changes in policy over which the client has no control. 
+Solutions should be considered during project planning 
+and budgeting for the financing of recurrent costs to 
+ensure sustainability.6
+JUNE 2020  No.23 GOVERNANCE NOTESREFERENCES
+World Bank Group. 2014a. Strategic Framework for 
+Mainstreaming Citizen Engagement in World Bank Group 
+Operations: Engaging with Citizens for Improved Results. 
+Washington, DC: World Bank Group. http:/ /documents.
+worldbank.org/curated/en/266371468124780089/
+pdf/929570WP0Box380ategicFrameworkforCE.pdf.
+World Bank. 2016. “Madagascar — Public 
+Sector Performance Project.” Program Appraisal 
+Document Report 1547, World Bank, Washington, 
+DC. http:/ /documents.worldbank.org/curated/
+en/513681468197098764/pdf/PAD1547-PAD-P150116-
+OUO-9-IDA-R2016-0116-1.pdf.
+GOVERNANCE GLOBAL PRACTICE
+Guiding Results through Public Institutions
+Governance Notes  captures knowledge derived from 
+World Bank engagements and technical and financial 
+assistance requests. 
+The views expressed are those of the authors and do not 
+necessarily reflect the views of the World Bank.
+For more information, contact: govgplearns@worldbank.org.

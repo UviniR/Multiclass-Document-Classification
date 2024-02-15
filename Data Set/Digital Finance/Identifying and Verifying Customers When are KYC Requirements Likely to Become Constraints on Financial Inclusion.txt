@@ -1,0 +1,993 @@
+Working Paper 522 
+December 2019Identifying and Verifying Customers:  
+When are KYC Requirements Likely 
+to Become Constraints on Financial 
+Inclusion?
+Abstract
+Onerous KYC documentation requirements are widely recognized as a potential constraint to full 
+financial inclusion. However, it is sometimes difficult to judge the extent to which this constraint is a 
+serious or binding one, relative to the many other factors that can limit access to finance or demand 
+for financial services. The paper considers this question, distinguishing between different types of  
+documentation and different financial market segments according to their KYC requirements. Using 
+data from several sources it then looks at cross-country patterns which provide some suggestive 
+evidence on the conditions under which particular requirements are more or less likely to pose 
+serious constraints. It concludes with policy suggestions, including on the use of  technology to help 
+ease the burden of  documentary requirements while still maintaining financial integrity.  
+www.cgdev.orgAlan Gelb and Diego Castrillon
+Keywords: documentation, identification, financial inclusion, KYC
+JEL: G210, G230, G280, L510, O160, O310, O500Center for Global Development
+2055 L Street NW
+Washington, DC  20036
+202.416.4000
+(f) 202.416.4050
+www.cgdev.orgThe Center for Global Development works to reduce global poverty 
+and improve lives through innovative economic research that drives 
+better policy and practice by the world’s top decision makers. Use and 
+dissemination of  this Working Paper is encouraged; however, reproduced 
+copies may not be used for commercial purposes. Further usage is 
+permitted under the terms of  the Creative Commons License.
+The views expressed in CGD Working Papers are those of  the authors and 
+should not be attributed to the board of  directors, funders of  the Center 
+for Global Development, or the authors’ respective organizations.Identifying and Verifying Customers:  
+When are KYC Requirements Likely to Become Constraints on 
+Financial Inclusion?
+Alan Gelb
+Center for Global Development
+Diego Castrillon
+Center for Global Development
+We gratefully acknowledge very helpful comments from Mike Pisa, Liliana 
+Rojas-Suarez, Albert van der Linden, Masiiwa Rusare and an anonymous 
+referee. We also thank the GSMA for permission to use graphics from 
+their studies.
+The Center for Global Development is grateful for contributions from the 
+Bill & Melinda Gates Foundation in support of  this work. 
+Alan Gelb and Diego Castrillon, 2019. “Identifying and Verifying Customers: When 
+are KYC Requirements Likely to Become Constraints on Financial Inclusion?” CGD 
+Working Paper 522. Washington, DC: Center for Global Development. https://www.
+cgdev.org/publication/identifying-and-verifying-customers-when-are-kyc-requirements-
+likely-become-constraintsContents  
+1. Introduction  ................................ ................................ ................................ .............................  1 
+2. Documentation Requirements and Market Segments  ................................ .........................  3 
+2.1 ID and ID+  ................................ ................................ ................................ .......................  3 
+2.2 Market Segments: Bank Accounts, Restricted Accounts and Mobile Money  .............  5 
+3. A Look at the Data  ................................ ................................ ................................ ................  10 
+3.1 Some C ross-Country Relationships ................................ ................................ ...............  14 
+3.2 Distinguishing between Requirements ................................ ................................ ..........  17 
+3.3 The Picture for Mobile Money  ................................ ................................ ......................  21 
+4. Conclusion and Policy Suggestions ................................ ................................ ......................  23 
+References  ................................ ................................ ................................ ................................ .. 27 
+Annex 1. Findex Data for Some Countries  ................................ ................................ .............  30 
+Annex 2. Documentation Required at Commercia l Banks and Financial Inclusion  ...........  31 
+ 
+ 
+ 
+  1 1. Introduction  
+Onerous  KYC documentation requirements are widely recognized as a potential constraint 
+to full financial inclusion. The latest F index  survey reports that , globally, some  20 percent of 
+adults without a bank account report lack of necessary documentation as a factor. Which 
+specific documentary requirements pose a serious problem in a particular settin g and 
+whether they constitute THE binding constraint on financial inclusion -- out of many 
+potential constraints -- is more difficult to assess. This paper considers how to approach this 
+question with cross -country analysis and what this offers to inform s pecific country contexts. 
+It also proposes measures to use new technology to ease documentary requirements, 
+consistent with maintaining controls to ensure financial integrity.  
+As for any goods or services market, the observed quantity of products (in this  case, 
+financial services) is determined by the intersection of demand and supply schedules. People 
+will have high demand for financial accounts if they are seen to offer useful services. 
+Interoperability, for example, boosts the value of the payment servi ces offered by accounts, 
+since clients can transact across different payments service providers. The supply of financial 
+services will be affected by a wide range of regulatory and infrastructural factors, as well as 
+the tax regime. A constraint can operat e on the demand side of the market – shifting the 
+demand curve inwards so that less is wanted at the same service price -- or on the supply 
+side – shifting the supply curve backwards as less service is offered -- or on both.  
+Demanding documentation and ve rification requirements imposed by regulators boost a 
+bank’s costs of onboarding clients and maintaining accounts. They can represent a supply -
+side constraint, shifting the curve backwards, especially for small customers. Higher costs 
+mean higher charges t o customers, less investment in reaching out to new customers and 
+fewer accounts. The effects will be larger if there is no ready way for potential customers to 
+provide the necessary documentation; in such cases, banks in some countries, such as 
+Nigeria, h ave been forced to develop and maintain their own ID systems, a more costly 
+proposition than relying on a pre -existing government ID. Costs will also be higher if the 
+financial service providers are required to also verify credentials without having the 
+infrastructure needed to do so easily. However, requirements to provide costly or difficult -
+to-obtain documentation can also act directly on the demand side, discouraging potential 
+customers from applying for accounts.  The constraints are therefore potential ly on both 
+sides of the market.  
+Section 2 first considers the landscape from the documentation side. Common requirements 
+can include basic evidence of identity, or ID – either a card or a number – as well as a range 
+of other documentation, such as proof o f address or occupation, that provide additional 
+information on the individual. We term these attributes ID+. From the constraints 
+perspective , ID and ID+ can be look different depending, for example, on the coverage and 
+capabilities of the ID system and t he degree of formalization of the economy . Another 
+important consideration is the infrastructure available to verify documents. This can differ a 
+great deal between countries. Some  have electronic mechanisms to verify ID cards , or 
+individuals using biometr ics; have no such facilities; Especially for rural or poorly connected 
+areas, verification requirements could therefore pose a serious supply side constraint.  2 The section then considers financial access in terms of three financial market segments. The 
+first consists of regular commercial banks and similar accounts which are subject to “full” 
+KYC requirements. The second involves the simplified or restricted accounts which some 
+countries have introduced in response to concerns that excessive documentation 
+requirements constitute a barrier to financial inclusion. These countries operate “tiered 
+KYC”, with less demanding requirements for small accounts limited by balance and 
+transaction size. The third segment is mobile money issued by non -bank providers (such  as 
+Mobile Network Operators or MNOs), under a different, and usually and less demanding, 
+KYC regime for both SIMs and mobile money relative to commercial bank accounts. This 2 
+x 3 framework 1 can be used, together with country characteristics, to help pro vide a 
+perspective on the likely impact of KYC requirements on financial inclusion. Of course, not 
+all three market segments need be present in every country.  
+Section 3 then looks at some cross -country patterns using a number of indicators. The 
+objective is to better understand the prevalence of certain practices, such as requiring ID+ 
+for bank accounts , including in some countries with high degrees of informality, and also the 
+relationship between measures of ID prevalence and financial inclusio n. This does not 
+definitively reveal cases of binding constraints but is at least suggestive in flagging cases for 
+more detailed assessment.  
+Section 4 concludes, with suggestions for using technology more effectively to ease the 
+potential KYC constraint on financial inclusion.  
+Before proceeding further, it is essential to flag the difference between the de jure  
+requirements of regulators and the de fact o behavior of financial service providers. It is 
+usual to think of constraints as reflecting public policies that can be changed by legislation or 
+regulation. But some apparent constraints can reflect behaviors of market participants that 
+may derive from t heir interpretation of regulatory intent or may reflect completely different 
+considerations. In the present context, this applies to the practices of banking institutions 
+that may require more documentation to open accounts than the minimum prescribed by 
+national regulators. 2  
+How to interpret such a gap, if observed, in terms of binding constraints? If the reason 
+seems to be a pattern of regulatory communications or behavior that encourages severe risk 
+aversion on the part of financial institutions, the i mplication is clear; this is a de facto  
+regulatory constraint that would need to be lifted by changing the actions and 
+ 
+1 The 2x3 framework brings together the two types of documentary requirements and the three 
+potential financial market segments.   
+2 De Koker and Symington (2011) survey banks in South Africa to understand why many choose to 
+follow conservative compliance be havior. The reasons include regulatory uncertainty, corporate 
+culture, inexperienced compliance officers, and concern over possible liability arising from fraudulent 
+accounts or transactions. They also note that customer due diligence processes are not onl y designed 
+to serve AML/CFT purposes but to gather data to help serve customer needs and to target marketing 
+efforts. Institutions may gather information that will assist with credit -scoring even if the service does 
+not immediately include a credit product .  3 communications strategy of the regulators.  But there could also be other reasons for the 
+excessive requirements. For example, the banks m ight be using documentary requirements 
+to screen out low -income customers that they prefer not to service, perhaps because they do 
+not fit their desired customer profile or because of other factors that raise the costs of 
+dealing with them and make opening  accounts for such customers unprofitable.   
+2. Documentation Requirements and Market Segments  
+2.1 ID and ID+  
+Documentary requirements for KYC  purposes can usefully be divided into two groups. The 
+first comprises basic identifying information or “ID”, usual ly in the form of a National ID 
+card or similar credential. The second group, which we can term “ID+”, includes a 
+potentially wide range of supplementary evidence, such as proof of address, proof of 
+employment or income, proof of nationality, or evidence o f other attributes. According to 
+World Bank (2009) , the most commonly required document is an identity (ID) card, 3 yet 
+commercial banks (and similar financial institutions) often ask for several further documents.  
+Cons idering first ID, the requirement to provide it can be onerous, especially for the poorest 
+and most deprived groups of people who are least likely to be registered. But in many 
+countries, this problem will apply to relatively few people. As estimated by th e World Bank 
+Identification for Development Dataset (ID4D Global Dataset) ,4 some 1 billion people are 
+likely to lack identification, either birth certificates or, for adults, a national ID or voter 
+registration card. Half of these will be children under t he age of 16 whose births have not 
+been registered, and many of the remaining ones will be concentrated in a relatively few 
+countries.   
+Another important consideration is the infrastructure available to verify ID cards and other 
+documents. This can differ a great deal between countries. Several countries, including Peru 
+and Kenya, for example, have well -developed electronic mechanisms to verify ID cards (and 
+in Peru also the capability to authenticate individuals biometrically against the registry’s 
+databas e), while India’s biometric Aadhaar system is able to provide full e -KYC, with 
+essential customer details sourced directly from the central registry rather than provided as 
+paper documents . In some cases, verification is provided free as a public service ( Kenya); in 
+others (Peru, Pakistan), banks are required to pay for verification services. Charges vary but 
+are commonly in the range of US$0.25 for a card verification and considerably higher for a 
+biometric customer verification  (ID4D, 2019) .5 However,  many countries have no such 
+ 
+3 The definition of identity card varies by country. To see the full list of IDs included in the Findex 
+survey by country, visit the Global Findex web page   
+4 See https://id4d.worldbank.org/global -dataset   
+5 For a summary of verification requirements, capacity and charges in a number of countries see 
+ID4D (2019) . 4 facilities  for easy verification, which is likely to be more difficult and costly in the absence of 
+an electronic infrastructure.   
+Turning to ID+, the first question must be: why are such documents required? While they 
+have become  commonplace in the context of AML/CFT regulations to prevent money -
+laundering and the financing of terrorism, there is no formal assertion of the need for proofs 
+of address, employment , or other ID+ in the pronouncements of the Financial Action Task 
+Force  (FATF), the global body responsible for regulatory standards in the area. The answer 
+seems to lie in history: such assorted documentary evidence was used to validate claims of 
+identity through “triangulation”  across several documents , especially before th e advent of 
+rigorous and robust national ID card systems, often based on biometrics.  
+Ferreira et al. (2018)  explain that in response to the issue of money laundering, The US 
+Banking Secrecy Act of 1970 required financia l institutions to ascertain the identity of 
+customers by obtaining the name, date of birth and physical address of the prospective 
+client. At the time, proof of address was a useful way to prove identity, because in the 
+absence of electronic databases, cus tomer profiles were stored via tin -stamp address -o-graph 
+systems. As such, it was a relatively robust, unique identifier because the address was literally 
+cast in metal. Also, in the absence of interoperable digital databases, it was the only way of 
+cross verifying an identity because people’s addresses were kept across multiple, independent 
+institutions. People without multiple independent relationships were not considered valuable 
+enough to have a bank account.  
+Especially in countries with high levels of  informality, potential clients often cannot provide 
+such documentation. Ferreira et al.  (2018)  analyze survey data for Nigeria, Tanzania and 
+Uganda. Considering an ID only, this was held by 47, 74 and 69 percent of resp ondents in 
+respective countries but when including both ID and proof of address, the numbers fell to 
+only 39, 11 and 12 percent.  As they note, with the advent of technology (especially the 
+personal printer) and the expansion of formal financial services in to new frontiers, the value 
+of proof of address as a unique identifier has decreased significantly. It is possible to edit or 
+change paper documents, create fake documents or use the valid documents of another 
+person and assume their identity. In contrast,  cards issued by ID systems normally embody a 
+range of security features and are increasingly backed up by biometric identification and 
+authentication.  
+Moreover, in an age of increased labor mobility, people do not necessarily stay in the same 
+place for e xtended periods. Thus, a document that supposedly proves where someone lives 
+is merely one of many identifiers, and a relatively weak one; apart from habit and false 
+perception of its robustness, there is no clear reason why proof of address is being relie d on 
+as an identifier. This is not to say that such information might not be useful for commercial 
+purposes – a good address may tell a good deal about the likely income of a new customer 
+and some ID+ is probably needed for lending. But there is a differen ce between asking 
+customers to provide an address for certain services and requiring specified standard 
+documents, such as utility bills, to “prove” it to open an account.   5 2.2 Market Segments: Bank Accounts, Restricted Accounts and Mobile 
+Money  
+Recognizin g the possible impact of KYC requirements in driving many people towards 
+informal financial markets, FATF (2012)  encouraged countries to adopt a risk -based, or 
+tiered, KYC approach to ensuring the integrity of financial institutions. According to this 
+approach, requirements should be simplified for customers and for accounts considered to 
+pose little risk. With regu lar bank accounts the first segment of the financial market, 
+simplified or restricted accounts thus constitute a second segment from a KYC perspective.  
+The third segment is provided by mobile money, issued under KYC requirements that may 
+differ from those for regular bank accounts.  
+Tiered KYC: A Work in Progress . Tiered KYC has generally been taken to apply to 
+smaller -value accounts, limited in terms of maximum balances, transfers and services. But 
+there have not been explicit prescriptions on how small su ch accounts need to be, how the 
+risk-based assessments are to be done and exactly what requirements should be for such 
+low-risk accounts. Judgment on these issues is left to country regulators. Each country has 
+had to interpret FATF guidance in the light o f its own circumstances. As an example, in 
+2011 Mexico approved a four -tiered regime for opening deposit accounts at credit 
+institutions. As levels advanced, transaction limits increased, and simplification processes 
+were reduced. Table 1  summarizes the fe atures of Mexican bank accounts as of 2011 
+(Global Partnership for Financial Inclusion, 2011) .  
+However, within countries, banks and other financial institutions have ultimate 
+accountability for knowing their customers. This th ree-stage assignment of accountability to 
+the lowest level (from FATF to country regulators to financial institutions) -- means that 
+there can be considerable room for uncertainty and that  providers will not necessarily act on 
+suggestions to minimize requi rements for fear of a regulatory backlash. And, taking Mexico  
+as an example , it is notable that an address is required even for the second lowest tier of 
+basic accounts.  
+  6 Table 1 . Features of Banking Accounts in Mexico (2011)  
+(Transactional limit in paren thesis)  
+  Level 1  
+(280 USD)  Level 2 6 
+(1,114 USD)  Level 3  
+(3,715)  Traditional 
+Bank 
+Account  
+Customer file  No ID 
+needed  Basic customer 
+information 7 Complete customer 
+information  Complete 
+customer 
+information  
+Customer 
+documentation  Not 
+applicable  No need to keep a hard copy  Required to 
+keep hard 
+copy 
+Face to face 
+process  No No (bank could 
+decide for a face 
+procedure)  Yes Yes 
+Point of access  Bank branch/banking 
+agent/Internet/  
+Mobile phone/Third -party call 
+center  Bank branch/banking 
+agent  Bank 
+branch  
+Source: Global Partnership for Financial Inclusion  
+Progress in applying risk -based KYC was reported by FATF  (2017) , which reviewed country 
+practices based on risk assessments in more than 20 countries. Among the findings it noted 
+that there was often limited dialogue between the financial intelligence unit and the 
+governmental department that specializes on promotion of financial inclusion. In many 
+countries, the AML/CFT regulatory framework still did not recognize the risk -based 
+approach or offer the possibility of simplified KYC. It found that, in general, the country 
+regulators were reluctant to develop innovative s implified KYC  measures out of concern 
+that an AML/CFT country assessment would not condone their risk -based approach. The 
+report also noted that similar concerns often applied to the banks, especially when there was 
+not adequate guidance from the country r egulatory authorities. Compliance officers from 
+financial institutions remained risk averse even after the national risk assessment had been 
+carried out. The report also confirmed that – from the perspective of the FATF – stringent 
+KYC requirements were st ill among the most important impediments to financial inclusion 
+in some countries. This alone, warrants taking seriously the proposition that they could be a 
+serious, and perhaps even a binding, constraint.  
+Examples of such requirements noted by the FATF report included to verify the address, 
+document the purpose of a transaction, or provide a Tax ID number or a secondary ID 
+document regardless of the amount and risk level of the transactions. Especially for low 
+income customers, the report noted that requ irement for the “proof of address” could be 
+more challenging than the proof of identity. Finally, the report noted that KYC  practices for 
+ 
+6 There is a one -time traditional period to verify customers’ identifications (18 months). In this period, 
+the transactional limit is 560 USD.  
+7 Name, date, and place of birth, gender and address.  7 financial inclusion products in traditional financial institutions and mobile network operators 
+(MNOs) were often diff erent, either due to inconsistent provisions that affected the two 
+types of institutions, or to delay in the implementation of AML/CFT supervision 
+arrangements for MNOs, and that this created an uneven playing field.  According to this 
+picture, the risk -based approach to KYC is still a work in progress. Successive tiers of risk -
+aversion between the three levels – the FATF, the national regulators and the financial 
+institutions themselves – appears to be slowing the application of measures to facilitate 
+finan cial inclusion.  
+This is not the case in all countries. As previously noted, India has revised its banking law to 
+ease restrictions on the opening of small accounts and lower the cost of KYC through using 
+the Aadhaar ID system as the sole and adequate cred ential and permitting e -KYC as a way to 
+eliminate the costs of verifying documents. 8 One Ministry of Finance official estimated that 
+moving from paper -based KYC to e -KYC in India  reduced  the average  cost of verifying  
+customers  from  roughly  $15 to $.0.50 , and that Indian banks that had made the shift had 
+lessened the time spent on verifying customers from  more  than five days to seconds .9 
+Some 340 million accounts have been opened, boosting India’s 2017 rate of financial 
+inclusion to 80 percent and substantially closing the gender gap in inclusion. 10 But, even 
+though many other countries have taken steps to upgrade their identity management 
+systems, FATF (2017)  notes that most have not taken advantage of this to relax other 
+documentary requirements. 11  
+Further, the FATF study notes that regulation and practice can be different. Even if 
+regulators have approved tiered KYC arrangements there is no guarantee th at banks will 
+follow suit, especially to attract small customers who they see as offering little prospects of 
+profitable business. 12 This raises the question of whether regulators should encourage 
+MNOs and other non -bank entities to create a nother channel for financial inclusion that is 
+more attuned to the economics of serving low -income clients.  
+Mobile Money: A Powerful Segment in Few Countries. Mobile money has played a 
+major role in financial inclusion in some countries (in the sense of enrolling custom ers who 
+ 
+8 Under e -KYC a customer applying to open an account gives permission for the bank to secure her 
+data directly from the central registry rather than from the customer. This populates the required 
+forms automatically, saving time, document management and verification costs.   
+9 See Pisa and Woodsome (2019) . 
+10 The estimate of pre e -KYC customer verification cost is comparable to the $10 cost for the 
+Philippines, offered by an official at a conference in Mexico in October 2019. Like India before 
+Aadhaar, the Philippines does not have a centralized ID system.   
+11 More countries have initiated national ID programs since 2000 than ever had them before.  Most 
+use digital technology, including biometrics (Gelb and Metz (2018) ). 
+12 As an example of traditional bank attitudes to acquirin g poor customers see CGAP (2011)  for 
+Colombia. The banks were reluctant to open accounts for this group to deliver government transfers. 
+They did not see them as their target clientele, or as a viable market for profit -making services. Similar 
+attitudes of established financial institutions to poor customers has been documented for Mexico, 
+including discriminatory practices based on perceived ethnicity (Martínez Gutiérrez, 2018) . 8 do not have bank accounts) but the number of such countries is limited. Most  of the leading 
+cases, in the sense of additionality rather than the number of accounts, are in Africa  (see Box 
+1).  
+A full explanation for this picture is a topic somewhat  outside our ambit. One important 
+determinant appears to be whether non -bank financial service providers (FSPs), such as 
+MNOs, are authorized to open mobile money accounts for customers in their own right, 
+with the fiduciary requirement that a counterpart to customers’ balances be held in a trust 
+account with a bank, along the lines of the M -Pesa model developed in Kenya. 13 In many 
+cases “deposit -taking” activities are restricted to commercial banks; there may still be active 
+competition to provide mobile p ayments services using various customer interfaces and 
+providers but there is no additionality in terms of financial inclusion. Naturally, banks have 
+generally been reluctant to see the emergence of a new class of competitors, so have typically 
+lobbied aga inst autonomous mobile money accounts.  
+The relationship between the banks and their regulators is, therefore, a key issue. One way of 
+explaining this relationship is by the phenomenon of regulatory capture. Suarez (2016) , 
+proposes that the more closely banks  are regulated, the more likely it is that they will form 
+close relationships with the regulators due to constant interaction, and that this regulatory 
+capture leads the regulators to identify with the interests of the banks.  This may or may not 
+undermine the quality and rigor of regulation, but in any event it is less likely that the 
+regulators will permit MNOs or other entities to open mobile money accounts without these 
+being, at the same time, subject to the full  range of regulation as bank accounts. To  operate 
+on their own account, MNOs would then have to register as banks, something that they will 
+be loath to do because of the higher regulatory costs that they would incur. These would 
+make their business model unviable, as it involves making huge numbe rs of small 
+transactions across a very large customer base.  
+In support of this hypothesis, Suarez  (2016)  compares Mexico and Kenya. When 
+telecommunication firms asked the Mexican regulatory agencies for permission to offer 
+mobile banking services, they were opposed by a banking industry dominated by foreign 
+banks and highly regulated due to international deb t crisis and privatization processes (Haber 
+& Mussachio, 2013) . Mobile money customers therefore were required to hold bank 
+accounts, robbing the potential mobile money industry of its dynamism. In contrast, she 
+argues that the relationship between Kenyan banks and regulators was not similarly close . 
+That t his enabled the Central Bank to  take a permissive, learning, approach towards mobile 
+money which expanded rapidly (see also N’dungu (2019) ). Even though the banks opposed 
+M-Pesa they were not able to interfere with its launch.  
+ 
+13 In some cou ntries, mobile money is issued by other non -bank providers; bKash in Bangladesh, for 
+example, is a subsidiary of BRAC bank.  9 Further insights into the dynamic between banks and regulators in Ghana and Tanzania is 
+provided by CGAP (2018) ; in both cases mobil e money exploded only when non -banks 
+were permitted to issue it.  
+The mobile money  segment represents a second possible avenue for increasing financial 
+inclusion outside the “regular” KYC requirements because KYC requirements for SIMs and 
+mobile money acco unts are, in general, less demanding than those for full bank accounts. 
+SIM registration, as GSMA (2018)  notes, is required by more than 140 countries and the 
+details differ across jurisdictions. While registration polic ies require MNOs to capture 
+customer information and recognized identification credentials, only a few of them (11%) 
+enable MNOs to validate identification (whether paper -based or biometric) against the ID 
+registry ( Figure 1 ). For the rest, MNOs are requir ed to copy or keep a record of credentials 
+(85%) or to share the information with government agencies on demand (4%). Even these 
+modest requirements could discourage registration by forcing agents to obtain camera -
+enabled phones , or in areas of low connect ivity.  
+Figure 1 . SIM Registrations Requirements  
+Source: GSMA (2018)  
+Nevertheless, KYC requirements  are only one among multiple factors, including other 
+regulation, market structure and digital infrastructure, that determine whether a country has a 
+dynami c mobile money segment. 14 This suggests that, while they cannot be overlooked as a 
+possible influence on the dynamism of the segment, a search for binding constraints to the 
+spread of mobile money would need to consider several other critical factors, including the 
+ 
+14 There may be additional dimensions, such as differential access to the national payments switch, 
+that discriminate against mobile money providers.  There are also questions of market structure and 
+coverage – whether non -bank providers will find it profitable to incur the substantial investments 
+needed to roll out their systems in countries where the banking system already has a fairly  wide 
+presence.   
+10 basic question of whether non -banks are permitted to offer payments services and have 
+access to financial infrastructure, such as the national payments switch, that help them to 
+deliver value to customers.   
+ 
+3. A Look at the Data  
+The latest Global Findex Survey 2017 provides a useful picture of the barriers to financial 
+inclusion as perceived by those who do not have a bank account. The first three  columns of 
+Table 2  show constraints to inclusion relating to the pricing, location and documentation 
+requirements of the banks. These can perhaps be considered as supply -side barriers, 
+although, as discussed above, documenta ry requirements can also be seen as a direct 
+constraint to demand. The last three columns show factors that can be more reasonably 
+interpreted as relating to demand.  Box 1 . Mobile money’s contributions to financial inclusion  
+ 
+The figure shows the top 20 co untries by proportion of overall financial inclusion which is due exclusively 
+to mobile money accounts (that is, users who do not also have a bank account). As of 2017, the mobile 
+money story is dominated by Africa —the only non -African country to make it i nto the top 20 is Paraguay.  
+Mobile money is even more dominant in Somalia, both relative to its banking system and in terms of 
+absolute coverage.  
+Proportion of financial inclusion attributable to mobile money
+ 
+Measured as (any account coverage – financial account coverage) / any account coverage)  
+Source Findex 2017.  
+ 
+ 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%GhanaLesothoKenyaMalawiParaguaySierra LeoneGuineaNigerLiberiaCongo, Dem. Rep.GabonUgandaBurkina FasoMadagascarMaliZimbabweSenegalTanzaniaChadCote d'Ivoire
+Have a financial account (%) Have a mobile money account only (%)11 In every region, a substantial proportion of unbanked adults cite lack of documentation a s a 
+barrier, on average around 20 percent. 15 However, this number is likely to understate the 
+overall impact: the question is not only whether potential customers have documents, it is 
+also the cost and difficulty of acquiring them and, for the financial institutions, the costs 
+associated with accep ting, validating and recording them, as well as subsequent storage, 
+management and updating. 16 This cost disincentive to opening new bank accounts, especially 
+for poor customers,  will be reflected in higher fees and charges and less favorable conditions 
+of service. As shown in Table 2 , costs emerge as a major barrier to inclusion, particularly in 
+Latin America. 17  
+Findex data therefore confirms the proposition that documentation requirements act as one 
+out of several barriers. Extensive and costly ID+ requi rements are likely to discourage 
+financial institutions from reaching out to develop services and access points for low -income 
+customers. In addition, they send a powerful signal to the banking system about the desirable 
+characteristics of their client bas e. They are therefore likely to reinforce well -documented 
+biases in this area, against poor people and possibly customers of particular ethnicities who 
+historically have been among the more isolated and less well documented groups (CGAP, 
+2011) (Martínez Gu tiérrez, 2018).  
+Table 2 . Reasons for not having an Account  
+ percentage of people who do not have a financial account who say it is because…  
+Region  too far 
+away  too 
+expensive  lack 
+documentation  lack 
+trust lack of 
+money  family 
+member 
+already 
+has one  no need 
+for 
+financial 
+services  
+East Asia and Pacific*  24% 20% 17% 9% 66% 32% 31% 
+Europe and Central Asia*  15% 32% 15% 31% 51% 34% 54% 
+Latin America and the 
+Caribbean*  27% 53% 25% 31% 59% 32% 35% 
+Middle East and North 
+Africa*  9% 20% 12% 12% 73% 12% 32% 
+South Asia  22% 25% 20% 18% 58% 35% 31% 
+Sub-Saharan Africa*  28% 30% 27% 16% 76% 12% 18% 
+ 
+* (excluding high income)  
+Source: Findex Survey 2017  
+ 
+15 The surprising degree of correlation between the percentages citing documentation and location 
+constraints at regional level is not paralleled by the country -level observations.  
+16 These costs can be high, see for example Elliehausen (1998) , PWC (2003) , Sathye (2008) , Veris 
+Consulting  (2013) , Financial Times (2015) , KPMG (2015)  (also cited in our previous CGD study of 
+the risk -based approach: Gelb (2016)).  
+17 In the 2017 FICP survey, out of 124 jurisdictions 58 percent indicated that there were no 
+regulations limiting bank fees  and charges.  12 For more detailed data on documentation requirements we turn to the Global Financial 
+Inclusion and Consumer Protection survey (FICP) (2017) . This provides the most 
+comprehensive source of information on documentary requirements at country level for 
+banking and similar institutions ( Figure 2).18 For commercial bank accounts, almost all of 
+the 134 responding jurisdictions required a national ID  with some requiring, or accepting, 
+some other form of ID. In addition, 75 percent required proof of address, 69 percent proof 
+of nationality and many others proof of income or employment . Overall, half of the 
+jurisdictions reported some form of simplified  customer due diligence, with fewer in the 
+Middle East (22 percent) and Sub -Saharan Africa (41 percent) and more in South Asia (100 
+percent).  
+Figure 2. Documentation Requirements for Account Opening at Commercial Banks  
+(Percent  of responding jurisdictions  that require documentation type to open an account at a Commercial Bank)  
+ 
+Source:  Global FICP Survey  2017  
+Overall, 82 of these countries also report in the 2017 Findex survey. Excluding high -income 
+countries leaves 51 low and middle -income countries that are represented in both surveys. 
+Table 3  shows the distribution of the countries by region, and the type of  documentary 
+requirements for opening a standard deposit account. In 12 countries, commercial banks ask 
+solely for some type of identification (ID) 19 while the rest (70) ask for various types of ID+ 
+such as address or statements of income or employment. Ex cluding high income countries, 
+ 
+18 These include commercial banks, financial cooperatives, and other deposit -taking institution 
+(ODTI).  The survey asked each country’s regulators to submit one consolidated response.   
+19Armenia, Austria, Canada, China, Iran, Islamic Rep., Isra el, Kuwait, Kyrgyz Republic, Lithuania, 
+Norway, Peru, Slovak Republic. If we consider also the proof of nationality as part of ID+, the 
+sample would reduce to 8 countries (excludes Kyrgyz Republic, Armenia, Peru and Israel).  90%
+32%69%75%
+44%
+35%
+22%
+0%10%20%30%40%50%60%70%80%90%100%
+Government
+issued IDAny ID Nationality or
+legal statusProof of
+addressProof of income  Proof of
+employmentOther13 the picture is similar; all but 5 of the 51 countries report that they require some type of ID+ 
+to open an account. The following analysis will focus on these 51 countries.  
+Table 3 . Countries in Findex Requiring ID+ Document ation  
+  
+All Countries  Non -High -Income 
+Countries 20 
+ Do they require ID+ 
+documentation?  Do they require ID+ 
+documentation?  
+Region  No Yes No Yes 
+East Asia & Pacific  1 10 1 5 
+Europe & Central Asia  6  23 2  8 
+Latin America & Caribbean  1 15 1 12 
+Middle East & North Africa  3 6 1 5 
+North America  1 0 0 0 
+South Asia  0  5 0  5 
+Sub-Saharan Africa  0 11 0 11 
+Total  12 70 5 46 
+Source: Global FICP Survey and Findex  
+Turning to simplification or tiered KYC, out of the sample of 51 countries, almost half allow 
+simplifications/exceptions ( Table 4 ). Most of these are upper -middle income countries 
+from Latin America and the Caribbean.  
+Table 4 . Countries allowing simplifications/exceptions for KYC 21 
+Region  Low-income  
+countries  Lower -middle 
+income  
+countries  Upper -middle 
+income  
+countries  Total  
+East Asia & Pacific  0 2 1 3 
+Europe & Central Asia  0 2 4 5 
+Latin America & Caribbean  0 2 7 9 
+Middle East & North Africa  0 1 0 1 
+North America  0 0 0 0 
+South Asia  1 3 0 5  
+Sub-Saharan Africa  1 1 2 4 
+Total  2 11 14 27 
+Source: Global FICP Survey and Findex   
+While the most common way to simplify KYC  requirements is to adopt some form of tiered 
+KYC process where requirements and information are relaxed subject to limits on the 
+ 
+20 This involves low, lower -midd le, and upper -middle income countries according to The World 
+Bank’s group division   
+21 If a country answered “Yes” to the question “Are th ere simplifications or exceptions to the 
+documentation requirements for certain types of applicants (e.g. low income) or deposit account 
+products (e.g. small -value, low -risk transactions or basic accounts)?” according to the Global FICP 
+Survey.  14 balances and transactions for each type of account (GSMA, 2019) , this is not the only way to 
+simplify KYC requirements. As noted by the Global FICP Survey, some commercial banks 
+have moved towards non -face-to-face customer due diligence and enabling electronic 
+banking via the Internet. Nevertheless, supervisors expect that banks should take into 
+consideration the different risks posed by new technology and design identification 
+procedures with due regard to such risks (Basel Committee on Banking Supervision, 2001) . 
+Another possibility not listed in the survey includes re liance on third parties to conduct 
+customer due diligence.  
+3.1 Some Cross -Country Relationships  
+Documentation Dominance . How serious is the documentation constraint in Findex 2017 
+relative to the other two “supply -side” constraints of distance and cost?  In Figure 3 , 
+“Documentation Dominance” is defined as (the percentage of excluded people citing 
+documentation as a constraint) divided by (the average of those citing cost and distance to 
+bank branches as constraints).  A score of more than one therefore signi fies that 
+documentation may be a more serious constraint than the other two supply -side factors. 
+Combining this with the level of bank inclusion offers a window into the question.   
+This analysis highlights Myanmar, Malawi and Cambodia among others, as a cl uster of 
+countries that might face an important documentation constraint ( Annex 1  shows 2014 and 
+2017 Findex data for some of the countries identified  in the figure).  While documentary 
+requirements are seen as more problematic than other supply -side constr aints in Mauritius, 
+its high level of financial inclusion suggests that they are not a serious problem in its 
+relatively formalized economy. Madagascar offers an interesting counterpoint  – poor, 
+dispersed and with very low levels of financial inclusion, do cumentation is not seen as more 
+of an obstacle than the other two constraints . Indeed, requirements will be seen to be 
+modest as shown in Figure 4.  
+  15 Figure 3. Dominance of Documentation Constraint and Financial Inclusion  
+ 
+Source: Global FICP Survey and Findex  
+Number of Documents . We next consider the relationship between the number of 
+different documents required at commercial banks and the level of account ownership in 
+financial institutions (banks), as reported in the 2017 Findex survey. The se numbers do not 
+include mobile money accounts, where we have no comparable data on KYC  requirements. 
+Figure 4  shows the scatter for the 51 countries with account ownership for people in the 
+bottom 40 percent of the income distribution ( Annex 2 provides t he same scatter for all 
+Findex respondents). The first, striking, observation is how many countries with low levels 
+of financial inclusion require multiple documents. 22 Even with inclusion rates below 40 
+percent, many countries require 4, 5 or more differe nt documents. The negative correlation 
+between the number of documents required and the level of inclusion (at -.30) provides at 
+least some support to the proposition that countries with higher numbers of documentary 
+requirements tend to have lower rates o f bank financial inclusion.  
+ 
+22 For this analysis, every documentation a bank requires has the same weight (is as important as the 
+rest).  
+16 Figure 4 . Documentation Required at Commercial Banks and Financial Inclusion in 
+the Poorest 40% of the Population  
+ 
+Source: Global FICP Survey and Findex  
+Considering outliers, in some countries such as Mauritius or Malaysia, account ownership is 
+high even though commercial banks ask for multiple documents. This confirms that high 
+documentation requirements need not necessarily be a binding constraint. Both countries 
+have well -documented populations and effective ID s ystems, with Malaysia’s MYCAD 
+incorporating numerous credentials in addition to being an ID. Documentary requirements 
+might not be the most binding constraint in Madagascar either, where, as previously noted, 
+low levels of account ownership could reflect m ultiple factors, including remoteness and 
+extreme poverty. However, Paraguay, the Philippines and Botswana require more documents 
+than the average and have low rates of bank account ownership. Documentary requirements 
+in commercial banks might be a constra int in these cases.  
+We also distinguish countries reporting simplified KYC  requirements for commercial banks, 
+which are labeled in red. While there is not a very clear relationship, some of the countries at 
+the low end of the financial inclusion measure do  not appear to have adopted simplified 
+KYC. Mauritius and Indonesia do offer simplified KYC; this is then possibly another factor 
+facilitating inclusion.  
+17 3.2 Distinguishing between Requirement s 
+Since the difficulty of obtaining each document will be count ry dependent , it is not obvious 
+that every proof of ID or ID+ required by commercial banks  will have the same impact 
+across countries . If a document acts as a binding constraint for a certain jurisdiction, the 
+severity of this constraint might reflect part icular features that make it more difficult or 
+costly for people to acquire it.  
+We therefore associate each requirement with a specific country characteristic, as 
+summarized in Table 5 . A requirement for government -issued ID is reasonably assessed 
+against  the coverage of the ID system. Proof of address, income or employment is 
+reasonably judged against the criterion of informality. Not all the countries in the sample 
+have the information for all the indicators, which further limits the number of countries.   
+Table 5 . Document required to open a deposit account and socioeconomic  indicators  
+Documents  Possible Indicator  
+Government issued ID (A)  
+National Identity Card Ownership  Any ID (B)  
+Nationality or legal status (C ) 
+Proof of address (D)  Employment outside the formal sector 
+or Informality Rate  Proof of income (E)  
+Proof of employment (F)  
+ 
+Sources: Identity card ownership Findex 2017; Informality rate ILO  
+  18 Identification Documents . Figure 5  associates the proportion of respondents that have an 
+account in a financial institution with the proportion of the population with national identity 
+cards as reported by Findex 2017, for countries that report that an ID card is needed to open 
+a deposit a ccount.  With the exception of two countries the rest of the sample have quite 
+high ID coverage 23 so that the number of people who respond negatively to the question of 
+whether they hold a national ID is generally far smaller than the number who do not have  a 
+bank account. Most countries are far above the 45 -degree line, along which the percentages 
+of those with an ID and account would be similar. This confirms that requiring an ID card 
+might exclude certain groups but on its own is not likely to be the main  or binding constraint 
+for most people .  
+Figure 5 . ID card ownership and financial inclusion in countries where an ID card is 
+required  
+ 
+Source: Global FICP Survey and Findex  
+ 
+23 Considering the two outliers, at the time of the survey Malawi had no National ID system but has 
+since rolled one out; some 36 percent of those wit hout a bank account cited lack of documentation as 
+a barrier.  In contrast, although Findex shows low National ID coverage in Armenia, only 8 percent of 
+those without a bank account cite documentation as a barrier.  
+19 Proof of Address . Proof  of address has been identified as perhaps even a more sev ere 
+challenge than proof of income for poor people  (FATF, 2017) ; it certainly is a more 
+pervasive requirement.  Proof of address is more likely to be a problem in countries that are 
+highly informalized, where many people live “o ff the grid” and where there is a large 
+migratory population. For three groups of countries, Figure 6  shows the distribution (mean, 
+interquartile range and range) of the percentages of respondents owning a bank account, 
+overall and among the poorest 40 per cent.  
+i. Proof of address is not required.  
+Examples within this group are Iran, China or Pakistan  
+ii. Proof of address is required but the country has provisions for simplified KYC.  
+Examples within this group are Afghanistan, Mauritius, Indonesia  
+iii. Proof of addre ss is required and there is no simplified KYC . 
+Examples within this group are Botswana, Egypt, or Lesotho  
+While there is a wide  spread, countries that require proof of physical address but do not 
+offer any type of simplified KYC have lower rates of bank ac count ownership, on average , 
+than countries in the other two groups. The picture is similar when only the poorest 40 
+percent of the population is considered. This provides some empirical support to the 
+proposition that requiring proof of address can be a binding constraint in some si tuations  
+Figure 6 . Proof of address and financial inclusion  
+  
+Source: Global FICP Survey and Findex  
+We do not know how many countries require proof of address for mobile money accounts, 
+but some apparently do. According to AFI (2019) , “the physical proof of address remains an 
+entrenched KYC requirement for institutions when onboarding: the persistence of this 
+requirement is particularly harmful when requested by financial institutions to open non -
+traditional digital acc ounts.”  However, many do not: as an example, the same report notes 
+20 that the Council for Financial Activities Control (CFAC) in Brazil does not explicitly require 
+proof of address from MNO providers of financial services.  
+Proof of Income or Employment . Figure 7  relates the proportion of respondents owning 
+a bank account to the proportion of the population working outside the formal sector 24 for 
+countries where banks require proofs of income or employment. Several countries with very 
+high rates of informalit y require proof of income or employment to open a bank account; 
+this could then be a binding constraint in such countries. As expected, t here is also a clear 
+negative correlation (-0.7) between the variables. 25 
+Figure 7 . Informality and financial inclusion  in countries requiring proof of income 
+or employment  
+ 
+Source: Global FICP Survey , Findex  and ILO  
+ 
+24 Defined as the number of people in info rmal employment outside the formal sector divided by total 
+employment. For more information visit: https://www.ilo.org/ilostat -
+files/Documents/description_IFL_EN.pdf   
+25 Ther e is also a negative correlation in countries not requiring proof of income and employment.  A 
+test of whether the effect is stronger in countries that do require proofs of income and employment 
+finds the expected negative sign, but the coefficient is not s ignificant, possibly due to the limited 
+number of observations.   
+21 3.3 The Picture for Mobile Money 26 
+The lack of a cross -country dataset on the documentary requirements for mobile money 
+accounts limits our ability to carry out a similar analysis for this form of financial inclusion. 
+However, we know that , in general , KYC requirements for SIMs and mobile money are less 
+demanding than those for for full bank accounts. Further research would be needed to 
+completely unders tand how mobile money and KYC requirements relate to each other.  
+One powerful relationship, shown by GSMA (2019) , is that between mobile penetration (as 
+measured by the estimated number of unique subscribers) and the coverage of the ID system 
+across African countries ( Figure 8 ). While there can be several factors behind this 
+relationship, it does suggest that lack of ID could be a factor constraining mobile coverage in 
+some cases. However, SIM coverage is generally highe r than mobile money coverage, in 
+most cases by a substantial margin. This suggests that other constraints may be relevant, 
+including, as previously discussed, the basic question of whether non -banks are permitted to 
+offer mobile money services.  
+  
+ 
+26 For this section, mobile subscription and mobile penetration are considered as different definitions. 
+The latter represents the number of registered populations, while the former is the num ber of SIM 
+cards (one person may carry more than one SIM card).  22 Figure 8 . Identification coverage and mobile penetration across African countries 
+where mobile SIM registration is mandatory  
+ 
+Source: GSMA (2019)  
+ 
+ 
+ 
+ 
+ 
+23 4. Conclusion and Policy Suggestions  
+This paper has tried to approach the problem of determining when documentat ion 
+requirements might be a critical or a  binding constraint to financial inclusion. It distinguishes 
+two main categories of requirements:  evidence of identity (termed ID) and evidence of a 
+range of other attributes, such as address and employment (termed ID+).  It also 
+distinguishes three financial market segments:  regular bank accounts; restricted bank 
+accounts issued under less restrictive tiered KYC requirements, and mobile money.  While 
+the use of various indices and metrics cannot def initively determine how serious 
+documentation requirements might be in a particular country, they can at least offer some 
+suggestive guidance as well as a framework to help analysis of the question.   
+From the Findex  Survey, the Global FICP S urvey , and the findings of FATF (2017) , it is 
+clear that documentary KYC requirements  can represent a quite serious constraint  for many 
+people . Requirements often go beyond an ID to include proofs of address, legal status, 
+income or em ployment . Such ID+ may be a more serious problem than ID, depending on 
+the country conditions.  The likelihood that a typical person, or a typical poor person, will 
+have such documentation will be country -dependent, but our analysis confirms that full 
+docum entation requirements may be serious constraints in many countries, especially those 
+characterized by high rates of informality. Some countries with high levels of informality and 
+low levels of financial inclusion require multiple documents to open a bank account. This is 
+itself is of concern, and perhaps more striking than the modest correlations between high 
+documentary requirements and low financial inclusion. Obtaining proofs of address or 
+income may be especially difficult for people at the low end of the income spectrum. One 
+example, suggested by several indicators, is the case of the Philippines (Box 2) .  
+Bringing together the characteristics of countries and their regulatory requirements, as we 
+have sought to do in this paper, therefore provides a fi rst approach towards understanding 
+when documentary requirements are likely to pose a binding constraint to financial inclusion 
+for many people.  
+Any country assessment would need to also understand whether steps had been taken to 
+mitigate the problem  by enabling two additional market segments for financial services . One 
+approach has been to permit restricted accounts with tiered, risk -based, KYC in line with the 
+recommendations of FATF (2012) , but this is still a work in  progress. It seems that banks 
+still tend to demand a range of documentation to open accounts, perhaps because of a risk -
+averse interpretation of regulation and perhaps for other reasons related to their business 
+model.  
+A second option has been to license  MNOs or other non -bank entities to offer mobile 
+money accounts with less stringent KYC  requirements than for bank accounts. Mobile 
+phone ownership has grown rapidly in many countries together with the estimated number 
+of unique SIM holders, mobile money h as taken off in a big way in only a limited number of 
+countries.  The reasons probably go beyond documentation requirements, to include 
+permission for MNOs or other non-banks to provide financial services to their customers 
+without requiring them to become licensed as banks .  24  
+Looking to th e future, there seem to be four approaches to ease the problem.   
+• Reinforce risk -based KYC.  From our sample, around 50  percent  of countries 
+offer some form of simplification, and our analysis suggests that this might have a 
+favorable impact o n financial inclusion.  However, it does not seem that, as now 
+applied and interpreted, risk -based KYC is fully applied, an adverse result for FATF 
+because of the greater risk of harmful transactions on the unregulated financial 
+markets.  As argued by Pisa and  Woodsome (2019), FATF should require assessors 
+to encourage the use of simplified due diligence measures unless there is good 
+reason not to and should explicitly justify cases where risks are too high or 
+regulatory capacity too low to do so. Perhaps each year FATF should offer a public 
+commendation to country regulators who have applied risk -based KYC in an 
+effective way. This would help to balance out the perception that stricter is always 
+better, and also create a body of case practice. Building on studi es like de Koker and 
+Symington (2011), more research is also needed to understand actual bank behavior 
+and the motivation behind it.  
+• Draw on the evolving experience with mobile money to create recommended 
+regulatory practices to unleash the power of compe tition at the base of the 
+financial pyramid.  This could be an extension of the risk -based approach already 
+endorsed by FATF. FATF could play a powerful role in encouraging regulators to 
+take advantage of risk -based KYC  by licensing non -banks to offer a ran ge of 
+services, subject, of course, to appropriate prudential requirements (trust accounts  
+held with banks ) and supervision.  Box 2 . The Philippines  
+Findex 2017 estimates f inancial inclusion in the Philippines at only 34%. Some 45% of adults who 
+do not posses s a bank  account cite lack of documentation as a reason ; with a Findex 
+Documentation Dominance score of 0.96, documentation is about as much as much of a barrier as 
+distance or cost.  Commercial banks are required to ask for ID and for extensive ID+. The country 
+does not yet have a widely held national ID, yet, according to the National Bas eline Survey on 
+Financial Inclusion  (Bangko Sentral ng Pilipinas, 2015) , some form of ID is required for some 
+94% of the transactions surveyed. ID+ includes up to six pieces of evidence (Figure 4), a 
+formidable requirement in a  country with considerable informality. Estimates f rom the Asian 
+Development Bank indicate  that KYC processes can cost between 5 to 10 USD per person (2018)  
+and that verifying someone’s credentials can take up to 2 to 4 weeks  (2017) .  
+Fortunately, policymakers are encouraging the implementation of a National ID Strategy (PhilSys) . 
+According to the same ADB study, benefits are substantial: “comparing the cost and benefits, there are 
+significant net benefits – with a net present value (NPV) of US$517 million – that should encourage financial 
+institutions to adopt the digital national ID as a priority ”. Stronger ID could also enable regulators to 
+streamline ID+ requirements.  25 Take advantage of new technology in two ways to further ease KYC  documentary 
+requirements while still maintaining AML/CFT controls :  
+• To simplify KYC, shift from weak identifiers like proof of address to more 
+robust ID -based identification in the many countries that are implementing 
+such systems.  This follows the observation of FATF 2017 that many countries 
+have not exploited the impr ovements in their ID systems, including through the use 
+of digital biometrics, to ease up on other requirements.  India offers an outstanding 
+example with the use of Aadhaar to provide e -KYC; Peru offers another case of a 
+country that does not require docum entation beyond that provided by its ID system 
+(Box 3) .  
+ 
+ 
+• Shift from customer documentation requirements to the analysis of 
+transactional data.  With financial accounts linked to u nique ID numbers, digital 
+technology enables an integrated view of clients across all of their accounts, and 
+real-time monitoring of all financial flows, including through the use of AI to spot 
+suspicious patterns of activity. New digital technology offers  the potential to 
+combine biometrics with behavioral characteristics. This will provide much stronger Box 3 . Peru  
+According to the Registro Nacional de Identificación y Estado Civil (RENIEC) 
+(2018) , almost every Peruvian possess es an ID (99.2%); Findex estimate s 98 
+percent  do. Per the FICP Survey, commercial banks require a government issued 
+ID to open an account but no ID+. Peru also has effective online means to verify 
+the ID card with RENIEC and to authenticate biometrically, if required.  For 
+banks, these ser vices have costs, but they are relatively modest.  
+Still, according to Findex, only 43% of Peruvian adults possess a bank account in a 
+financial institution. While 29% of those without an account cited a 
+documentation constraint, this was far below the per centage who cited cost (59 
+percent) and less than those who cited distance (31 percent) resulting in a 
+Documentation Dominance score of only 0.63.   Mobile money services are not yet 
+highly used by the Peruvian population, but account openings “can be purel y 
+electronic, and IDs can be checked subsequently to the account being opened” 
+(World Bank, 2014)   
+On face value, identification requirements are therefore not likely to be a binding 
+constraint in Peru. A demand -side assessmen t by the Superintendence of Banking, 
+Insurance and Private Pension Fund Administrators of Peru (SBS)  (2017)  finds 
+that it is mentioned as a major constraint by only 4% of respondents, while the 
+perspective of usage and/or awareness was cited by more than 30%.  The question 
+then arises of how to interpret the 29% estimate of Findex; this could reflect lack 
+of awa reness, or the practice of banks rather than regulatory requirements. Further 
+research would be needed to resolve these differences.  
+ 26 KYC than in a world where identification occurs intermittently.  By using customer 
+data, verification of identity can occur continuously. 27 Individual bank s are already 
+monitoring flows actively, using receipts and payments data to create a picture of 
+their customers with a view to tailoring lending and other services to their needs. 
+Regulators would of course need to ensure transparency and data protection in the 
+process, as well as maintaining privacy and commercial confidentiality. Nevertheless, 
+in the vast majority of cases it should be possible to flag patterns of suspicious 
+transactions without violating the confidentiality of clients.  
+  
+ 
+27 Cooper, Rusare, van der Linden and Ferreira (2018)  27 References  
+Alliance for Financial Inclusion (AFI). (2019). KYC Innovations, Financial Inclusion and 
+Integrity in Selected AFI Member Countries. Kuala Lumpur: AFI.  
+Asian Development Bank. (2017). Accelerating Financial Inclusion in South -East Asia with 
+Digital Finance. M anila: Asian Development Bank.  
+Asian Development Bank. (2018). Financial Inclusion Framework Strengthening - Digital 
+National Identification for Financial Inclusion: Final Report. Manila: Asian 
+Development Bank.  
+Bangko Sentral ng Pilipinas. (2015). National Baseline Survey on Financial Inclusion. Manila: 
+Bangko Sentral ng Pilipinas.  
+Basel Committee on Banking Supervision. (2001). Customer due diligence for banks. Basel: 
+Bank for International Settlements.  
+CGAP. (2011). CGAP G2P Research Project: Colo mbia Country Report. Washington DC: 
+CGAP.  
+Cooper, B., Rusare, M., van der Linden, A., and Ferreira, M. (2018). Biometrics and financial 
+inclusion: A roadmap for implementing biometric identity systems in sub -Saharan 
+Africa.  CENFRI, Belville, South Africa.  March. https://cenfri.org/wp -
+content/uploads/2018/03/Biometrics -and-financial -inclusion_Cenfri -FSDA_March -
+2018 -2.pdf  
+De Koker, L. and Symington, J. (2011).  Conservative compliance Behaviour:  Drivers of 
+conservative compliance responses in the South African financial services industry.  
+Finmark Tr ust, August.  https://cenfri.org/wp -
+content/uploads/2011/12/Conservative -compliance -behaviour_FinMark -
+Trust_August -2011.pdf  
+Demirgüç -Kunt, A., Klapper, L., Singer, D., Ansar, S., & Hess, J. (2018). The Global Findex 
+Datab ase 2017: Measuring Financial Inclusion and the Fintech Revolution. Washington 
+DC: World Bank.  
+Elliehausen, G. (1998). The cost of banking regulation: A review of the evidence. Federal 
+Reserve Bulletin, 84(4): 252 -253. 
+FATF. (2012). International Standards  on Combating Money Laundering and the Financing 
+of Terrorism & Proliferation: The FATF Recommendations. Paris: FATF.  
+FATF. (2013). Methodology for Assessing Compliance with the FATF Recommendations 
+and the Effectiveness of AML/CFT System. Paris: FATF.  
+FATF. (2017). FATF Guidance: Anti -Money Laundering and Terrorist Financing Measures 
+and Financial Inclusion, with a supplement on Customer Due Diligence. Paris: FATF.  
+Ferreira, M., van der Linden, A., & Cooper, B. (2018, December 4). Proof of Address must 
+fall. Retrieved from CENFRI: https://cenfri.org/blog/proof -of-address -must -fall/ 
+Financial Times. (2015, April 17). HSBC Wrestles with Soaring Costs of Compliance. 
+Retrieved from Financial Times: www.ft.com/cms/s/0/0e3f0760 -1bef-11e4-9666 - 
+Gelb, A. (2016). Balancing Financial Integrity with Financial Inclusion: The Risk -Based 
+Approach to “Know Your Customer” CGD Policy Paper 74. Washington DC: Center 
+for Global Development.  
+Gelb, A., & Metz, A.  (2018). Identification Revolution: Can Digital ID be Harnessed for 
+Development? Washington DC: Center for Global Development.  28 Global Partnership for Financial Inclusion. (2011). Mexico’s engagement with the standard 
+setting bodies and the implications for  financial inclusion. Bangkok: Alliance for 
+Financial Inclusion (AFI).  
+GSMA. (2018). Access to Mobile Services and Proof -of-Identity: Global policy trends, 
+dependencies and risks. London: GSM Association.  
+GSMA. (2019). Access to Mobile Services and Proof o f Identity 2019: Assessing the impact 
+on digital and financial inclusion. London: GSM Association . 
+GSMA. (2019). Overcoming the Know Your Customer hurdle: Innovative solutions for the 
+mobile money sector. London: GSM Association.  
+Haber, S., & Mussachio, A.  (2013). These are the good old days: foreign entry and the 
+Mexican banking system. National Bureau of Economic Research.  
+Hardy, D. (2006). Regulatory Capture in Banking. Washington , DC: International Monetary 
+Fund.  
+Identification for Development (ID4D). (2019). Identity Authentication and Verification 
+Fees: Overview of Current Practices. Washington , DC: World Bank Group.  
+KPMG. (2015, April 17). Global Anti -Money Laundering Survey. Retrieved from KPMG: 
+http://www.kpmg.com/KY/en/IssuesAndInsights/ArticlesPublications/PublishingIm
+ages/global -anti-money -laundering -survey -v3.pdf  
+Martínez Gutiérrez, A. L . (2018). ¿Quién tiene acceso al crédito en México? Discriminación 
+por color de piel en el mercado crediticio mexicano. Tesis doctoral. Centro de 
+Investigación y Docencia Económicas.  
+Mattern, M., & McKay, C. (2018, June). Building Inclusive Payment Ecosyst ems in Tanzania 
+and Ghana. Retrieved from CGAP: 
+https://www.cgap.org/research/publication/building -inclusive -payment -ecosystems -
+tanzania -and-ghana  
+Ndung'u, N. (2019). Digital Technology and State Capacity in Kenya. Washington, DC: 
+CGD Policy Paper 154.  
+Pisa, M., & Woodsome, J. (2019, February 7). Overcoming the “Know Your Customer” 
+Hurdle with E -KYC. Retrieved from Center for Global Development : 
+https://www.cgdev.org/blog/overcoming -know -your-customer -hurdle -e-kyc 
+PWC. (2003). Anti -money Laundering Current Customer Review Cost Benefit Analysis. 
+London: The Fina ncial Services Authority.  
+Registro Nacional de Identificación y Estado Civil. (2018). Correspondence with RENIEC. 
+Lima: RENIEC.  
+Sathye, M. (2008). Estimating the cost of compliance of AML /CTF for financial institutions 
+in Australia. Journal of Financial Cr ime, 15(4): 347 -363. 
+Suárez, S. (2016). Poor people's money: The politics of mobile money in Mexico and Kenya. 
+Telecommunications Policy , 945 -955. 
+Superintendencia de Banca, Seguros y AFP. (2017). Encuesta Nacional de Demanda de 
+Servicios Financieros y Nivel de Cultura Financiera en el Perú. Lima: SBS.  
+Veris Consulting. (2013). The Global Cost of Anti -Money -Laundering Compliance. 
+Washington, DC: Veri s Consulting.  
+World Bank. (2009). Banking the Poor: Measuring Banking Access in 54 Economies. 
+Washington DC: World Bank.  29 World Bank. (2014). The Potential of New Delivery and Business Models for Financial 
+Inclusion in Peru. Washington, DC: World Bank.  
+Worl d Bank. (2017). Global Financial Inclusion and Consumer Protection Survey: 2017 
+Report. Washington , DC: World Bank.  
+ 
+  30 Annex  1. Findex Data for Some Countries  
+  
+  2014 2017 
+Country  Account  
+(% age 
+15+)  Financial 
+institution 
+account (% 
+age 15+)  Mobile 
+money 
+account 
+(% age 
+15+)  Account  
+(% age 
+15+)  Financial 
+institution 
+account (% 
+age 15+)  Mobile 
+money 
+account 
+(% age 
+15+)  
+Azerbaijan  29% 29%   29% 29%   
+Botswana  52% 49% 21% 51% 45% 24% 
+Egypt, Arab Rep. 14% 14% 1% 33% 32% 2% 
+Haiti  19% 17% 4% 33% 28% 14% 
+Cambodia  22% 13% 13% 22% 18% 6% 
+Lesotho   n.d. n.d.  n.d.  46% 33% 28% 
+Myanmar  23% 23% 0% 26% 26% 1% 
+Mauritania  23% 20% 6% 21% 19% 4% 
+Mauritius  82% 82% 1% 90% 89% 6% 
+Malawi  18% 16% 4% 34% 23% 20% 
+Nigeria  44% 44% 2% 40% 39% 6% 
+  
+  31 Annex  2. Documentation Required at Commercial Banks and 
+Financial Inclusion  
+ 
+ 
+ 

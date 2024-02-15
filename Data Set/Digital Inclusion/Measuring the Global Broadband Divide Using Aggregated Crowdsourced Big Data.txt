@@ -1,0 +1,1389 @@
+ 
+ Digital Development  
+ 
+Working Paper Series  
+ 
+The Digital Development (formerly Development Informatics) working paper series 
+discusses the broad issues surrounding digital data, information, knowledge, 
+information systems, and information and communication t echnologies in the 
+process of socio -economic development  
+ 
+ 
+ 
+ 
+ Paper  No. 8 7 
+ 
+Measuring the Global 
+Broadband Divide Using 
+Aggregated Crowdsourced Big 
+Data  
+ 
+ALFONSO RIVERA -ILLINGWORTH, RICHARD 
+HEEKS  & JACO RENKEN  
+ 
+ 
+2020  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Publishe r: Centre for Digita l Development  
+Global Development Institute , SEED  
+University of Manchester, Arthur Lewis Building, Manchester, M13 9PL, UK  
+Email: cdd@manchester.ac.uk         Web: https://www.cdd.manchester.ac.uk/  
+ 
+View/Download from:  
+http://www.gdi.manchester.ac.uk/research/publications/di/    
+ Table of Contents  
+ 
+ABSTRACT  ................................ ................................ ................................ ......................  1 
+ 
+A. Introduction  ................................ ................................ .............................  2 
+B. Measuring Broadband and the Broadband Divide  ................................ ..... 3 
+C. Researc h Dataset and Methods  ................................ ................................  5 
+D. Results  ................................ ................................ ................................ ..... 7 
+D.1.  DESCRIPTIVE STATISTICS  ................................ ................................ ............................  7 
+D.2.  BROADBAND SPEED DIVIDE  ................................ ................................ ........................  9 
+D.3.  FIXED–MOBILE SPEED DIVIDE  ................................ ................................ ..................  10 
+D.4.  DOWNLOAD –UPLOAD SPEED ASYMMETRIES  ................................ ...............................  11 
+D.5.  BROADBAND INDICES  ................................ ................................ ..............................  12 
+E. Discussion  ................................ ................................ ...............................  17 
+E.1.  INSIGHTS INTO BROADBAND SPEED DIVIDES ................................ ................................ . 17 
+E.2.  AGGREGATED BIG DATA BENEFITS AND LIMITATIONS  ................................ ....................  19 
+F. Conclusions  ................................ ................................ .............................  21 
+ 
+ACKNOWLEDGEMENTS  ................................ ................................ ................................ ... 23 
+REFERENCES  ................................ ................................ ................................ .................  23 
+APPENDIX A. CISCO-OOKLA DATA ................................ ................................ ....................  26 
+APPENDIX B. BROADBAND INDICES SCORES  ................................ ................................ ........  31 
+ Manchester Centre for Digital Development Working Paper 87  
+1 
+ Measuring the Global Broadband Divide 
+Using Aggregated Crowdsourced Big Data  
+ 
+ 
+Alfonso Rivera -Illingworth,  Richard Heeks  & Jaco Renken  
+Centre for Digital Deve lopment, University of Manchester, UK  
+ 
+2020  
+ 
+ 
+Abstract  
+ 
+Growing broadband connectivity is central to development strategies of all countries.  Thus 
+measurement of that connectivity and associated broadband divides is an essential 
+foundation for telecommuni cations  and digital  policy.  Yet traditional broadband measures 
+face challenges of data completeness, accuracy, relevance, timeliness and accessibility.  
+ 
+This paper therefore investigates the potential for measuring broadband connectivity and 
+broadband div ides between countries using aggregated crowdsourced big data, based on 
+online survey of connectivity speeds from many millions of users.  This data source exposes 
+broadband divides between high -, middle - and low -income countries.  While such divides 
+are w ell known, we demonstrate that  this form of  big data provides a more complete and 
+accurate picture, alongside other benefits compared to traditional data sources . 
+ 
+We show how this aggregated form of big data offers new insights: into divides between 
+fixed  and mobile networks, and download and upload speeds; and we show how it can be 
+used to calculate new broadband indices and to measure readiness for broadband.  
+Acknowledging the limitations of this type of big data to guide broadband divide 
+measurement an d related policy decisions, we argue it should be at least a complement to 
+traditional measures  given, unlike many big datasets, that it is free to access.  Manchester Centre for Digital Development Working Paper 87  
+2 
+ A. Introduction  
+ 
+Access to a broadband Internet connection is no longer a luxury but more of a nece ssity, 
+part of the basic infrastructure of life that some even argue to be a human right (Weiss et 
+al., 2015).  Broadband is seen as fundamental in a modern society to fulfilment of economic, 
+social and political goals (Kelly and Rossotto, 2012; OECD, 2014 ; GSMA, 2016; Broadband 
+Commission, 2018) .  As a result, an important foundation for telecommunications – and 
+other – policy will be good quality data on broadband connectivity including the “broadband 
+divide”: geographical and other divisions between thos e who are able to use high -speed 
+broadband and those who are not (Jordán, 2011; Broadband Commission, 2018; ITU, 
+2018b) . 
+ 
+Globally, bodies such as the International Telecommunication Union  (ITU)  started gathering 
+national -level data on broadband connectivi ty and divides from the turn of the century, as it 
+became available for individual countries (ITU, 2019).  Such data derives largely from 
+administrative records and self -reporting of  the telecommunications operators that provide 
+Internet services, often fu nnelled through national telecommunications regulatory 
+authorities  (ITU, 2016; Broadband Commission, 2018) .  Although widely used, this data has 
+acknowledged shortcomings around issues including completeness, accuracy, accessibility , 
+etc. (Bauer et al., 20 10; Helderop et al., 2019).  
+ 
+Given these shortcomings, this paper investigates an alternative approach: use of big data.  
+It specifically asks, “What difference is made by measurement of  broadband connectivity 
+and divides based on  crowdsourced big data rat her than traditional data sources?”.  Past 
+work ( Riddlesden and Singleton, 2014; Hilbert, 2016b ) has demonstrated big data’s 
+potential in this regard but has not systematically analysed the differential implications of 
+big data; an issue of increasing inte rest given the growing presence of big data and 
+perception of its value, for example among international agencies (Gabay and Ilcan, 2017).  
+ 
+The next section reviews knowledge about the role and measurement of broadband.  The 
+third section presents the meth ods and dataset adopted in this study, which uses  
+aggregated  Internet speed data crowdsourced from millions of users.  Results of the analysis 
+using descriptive statistics and aggregated indices are then presented, differentiating results 
+by income level o f country: high, middle and low ; and in terms of network type (fixed vs. 
+mobile), speed (download vs. upload) and readiness threshold (low vs. high).  Finally, the 
+paper discusses the findings in terms of what they tell us about the broadband divide, about  
+the use of this type of big data to measure that divide, and about policy implications of that 
+use. 
+ 
+  Manchester Centre for Digital Development Working Paper 87  
+3 
+ B. Measuring Broadband and the  Broadband Di vide  
+ 
+To understand the relevance of measuring broadband using big data, this section reviews 
+existing knowledg e to understand the importance of broadband, its traditional 
+measurement, and the potential for crowdsourced  data.  
+ 
+At the macro -level, the evidence base on broadband’s impact is relatively limited but there 
+is some that shows broadband enabling positive e conomic growth both at national level 
+(Katz, 2012; Minges, 2016) and also in terms of regional or local development (Prieger, 
+2013; WWC, 2015; Grubesic and Mack, 2016).  This is mirrored at micro -level with evidence 
+of productivity gains for companies that  adopt broadband (Katz, 2012; OECD, 2018)  and 
+employment / income gains for individuals able to access broadband ( Whitacre et al., 2014; 
+Akerman et al., 2015).  Though much less studied there is also evidence of access to 
+broadband being positively associa ted with facets of political and social development 
+(Fuentes -Bautista, 2014; Campante et al., 2017; Broadband Commission, 2018).  
+ 
+While the overall evidence base is mixed – including examples of broadband correlated with 
+null or even negative development i mpacts (LaRose et al., 2011; Belo et al., 2013; Ford, 
+2018) – the balance leans towards positive impacts, and that is certainly the perception 
+driving both policy and investment.  As noted in the Introduction, a central concern has 
+therefore been the “broa dband divide”: a lack of access to development benefits for those 
+unable to make effective use of broadband.  This has multiple dimensions including within -
+country gaps between ethnic groups (Prieger and Hu, 2008), between urban and rural areas 
+(Prieger, 2 013), and between men and women (Fowlie and Biggs, 2015).  There has also 
+been an issue of between -country gaps, especially a broadband divide between the higher -
+income countries of the global North and the lower -income countries of the global South 
+(Weiss  et al., 2016; A4AI, 2018; Broadband Commission, 2019).  It is this latter – the 
+between -country broadband divide – which will be our focus here, though our findings will 
+have relevance for other divides.  
+ 
+Over time, conceptualisation of the broadband divi de has updated and expanded in various 
+ways.  Four aspects will be discussed here: infrastructure, value chain, speed, and quality of 
+service.  
+ 
+Broadband was initially delivered via fixed -line services; hence measures of the broadband 
+divide focused on fix ed broadband.  More recently, broadband has increasingly been 
+delivered via mobile networks; especially in the global South where there have been hopes 
+that countries might “leapfrog” over their limited fixed -line infrastructure (Weiss et al., 
+2015; A4AI, 2018; UNCTAD, 2018).  Any understanding of broadband thus needs to cover 
+both types of network.  
+ 
+In relation to the value chain, the original concern was about availability: did users have 
+access to broadband and, if so, how many could access it.  The divi de was thus thought of in 
+terms of measures such as existence of broadband services within a country, geographical 
+coverage, number of subscribers (Vicente and Gil -de-Bernabe, 2010).  More recently, 
+concern has expanded from availability to adoption and us e (Heeks, 2018).  There has thus 
+been interest in the cost of broadband, given the link between affordability and adoption; Manchester Centre for Digital Development Working Paper 87  
+4 
+ and in the skills available to make effective use of broadband connectivity.  The focus on use 
+also means interest in broadband spee d and other aspects of service quality (Hilbert, 
+2016b).  
+ 
+Growth in videoconferencing and video sharing, cloud applications, machine -to-machine 
+communications and other data -intensive applications – and increasingly concurrent use of 
+such applications – all require bandwidths well beyond the original definition of broadband 
+(Kelly and Rossotto, 2012; OECD, 2014; Broadband Commission, 2018; Ericsson, 2018).  That 
+original definition labelled download speeds above 256 kbps as “broadband” but more 
+recent updat es have seen, for example, the Broadband Commission (2019) define 
+broadba nd download speed as  3Mbps and “good quality” broadband download speed as 
+10Mbps.  
+ 
+Finally, the original usage focus looked solely at download speeds.  More recently, there has 
+been a n expansion in focus to also include upload speeds in measurements of quality of 
+service, reflecting a broad shift in user models; from users simply being consumers of 
+downloaded data to also being producers of high data volumes that must be uploaded  
+(Cisc o, 2017a; Cisco, 2017b; Ofcom, 2019b; Broadband Commission, 2019b) .  Alongside has 
+been a growing concern that long latency times for transmission to servers can undermine 
+quality of service for some consumers; particularly in the global South (A4AI, 2018;  Liu et al., 
+2018).  
+ 
+Traditional openly -accessible worldwide measures of broadband have been fixed and 
+mobile broadband subscriptions, and population covered by mobile broadband services 
+(ITU, 2016; Broadband Commission, 2018; ITU, 2019).  Non -openly -acces sible measures in 
+the paid -for ITU database include broadband technology type, service activation time, cost, 
+traffic and subscriptions categorised by fixed -network speed type (ITU, 2019).  Even when 
+reported by other sources (e.g. World Bank, 2020), these  data invariably derive from the 
+International Telecommunication Union.  The ITU in turn has derived this data from two 
+sources (ITU, 2011; ITU, 2014; Ofcom, 2019a).  First, from national telecommunications 
+regulators who compile data from the telecommunic ations operators that provide 
+broadband services and report about these.  Second, from some national  statistical offices  
+who sometimes use surveys to  capture data on broadband speed and cost from individual 
+households . 
+ 
+There are a number of recognised sho rtcomings of this approach to measurement of 
+broadband (UN, 2005; Bauer et al., 2010; Hilbert, 2016b; Helderop et al., 2019), which we 
+will summarise using the CARTA set of data qualities: completene ss, accuracy, relevance, 
+timeli ness and accessibility (ad apted from Heeks, 2018).  Traditional broadband data is 
+incomplete.  Only one of the quality of service indicators described above is even partly 
+covered: category of download speed on the fixed network.  The data is not available for all 
+countries as some  regulators and even operators have problems compiling or reporting; 
+some operators also refuse to release data on grounds of commercial confidentiality.  
+Because the data relies largely on self -reports from telecom operators without 
+triangulation, then it s accuracy is uncertain.  There has also been uncertainty and potential 
+for inaccuracy due to differential interpretation of indicators by those reporting.  Relevance 
+is questionable; in terms of speed, for example, data relates to advertised or theoretica l Manchester Centre for Digital Development Working Paper 87  
+5 
+ speeds which may well not correspond to the real speeds experienced by users.  But it is 
+those latter speeds that determine development impact.  Timeliness of data is lacking 
+because of the time it takes for operators to gather data, then typically pass it on to national 
+regulators , then to the ITU.  There may then be some iterations of checking data so that 
+confirmed (i.e. non -estimated) data is always about one year old and sometimes more .  
+Finally, there are accessibility challenges  given  the c.US$300 cost of the database.  
+ 
+Across a growing number of domains, big data is increasingly seen as advantageous 
+compared to traditional data sources (Mayer -Schonberger and Cukier, 2013; Hilbert, 2016a)  
+and there is interest among agencies such as the ITU to inves tigate its value for Internet -
+related measurement (Vall, 2017) .  Big data has been used already for measurement of 
+broadband divides, in the form of crowdsourced broadband speed check data, as used in 
+this paper.  Such use appears limited , perhaps because of the high cost or inaccessibility of 
+broadband big data for most researchers, but it  has been seen to measure broadband 
+connectivity within countries (Riddlesden and Singleton, 2014) or within subsets of 
+countries (Rojas and Poveda, 2017; FCC, 2018).  It  has also been used in conjuction with 
+traditional ITU data for global between -country measurement, though focusing on 
+bandwidth rather than speed and complemented by other data sources (Hilbert, 2016b; see 
+also Abeliansky and Hilbert, 2017).  All of these  examples demonstrate the potential value of 
+big data in measuring broadband.  But the object of their research has been tracking 
+broadband progress and divides rather than, as here, the implications of replacing 
+traditional with big data.  
+ 
+C. Research Dataset and  Meth ods 
+ 
+To conduct this study we identified five potential sources of big data (see Table 1), each with 
+different data points and characteristics, which could be used to measure broadband.  For 
+comparison, the traditional ITU dataset is also incl uded.  
+ 
+Table 1 Big data sources available to measure broadband services  
+ Fixed  Mobile  Frequency  Source  Open 
+raw 
+data  Source  Download  Upload  Latency  Download  Upload  Latency    
+Akamai  ✓      Quarterly*  Sensor  No 
+M-Lab ✓ ✓ ✓ ✓ ✓ ✓ Daily  Crowd+ Yes 
+Netflix  ✓      Monthly  Crowd+ No 
+Ookla  ✓ ✓  ✓ ✓  Monthly  Crowd+ No 
+Ookla -
+Cisco  ✓ ✓ ✓ ✓ ✓ ✓ Yearly*  Crowd+ No 
+ITU ✓   ✓#   Yearly  Admin  No 
+* Frequency of public release of these data is not guaranteed.  
++ Crowdsourced data are generated by a request initiated b y a user but the measurement is produced by a 
+machine.  
+# Only in paid -for database and for a more limited sub -set of countries . 
+Source: Akamai (2017), Cisco (2017b), M -Lab (2020), Netflix (2020), Ookla (2020)  
+ 
+Table 1 shows that only M -Lab and Ookla -Cisco have download, upload, and latency data for 
+both fixed and mobile networks.  While M -Lab’s raw data is frequent and accessible, there is  Manchester Centre for Digital Development Working Paper 87  
+6 
+ at present  little data for the majority of countries, thus making it unsuitable for our 
+purposes.  This left the crowds ourced Ookla -Cisco dataset as the best available option, with 
+Ookla’s data recognised by other researchers as a reliable source ( Bauer et al., 2010; EIU, 
+2018).  
+ 
+The most -recent complete  dataset at the time of writing was that generated using 360 
+million r ecords  created  during 2017 by Internet users whilst verifying the speed of their 
+Internet connections through a web service or a mobile application.1  Then these data were 
+acquired by Cisco, processed and released as an aggregated dataset at the country le vel on 
+the Cisco Global Cloud Index webpage (Cisco, 2017a; Cisco, 2017b).  We then extracted the 
+data from the Cisco webpage collecting, in total, data for both fixed and mobile networks of 
+112 countries covering both mean and median values for download an d upload speed and 
+latency.2  These countries were then categorised based on the World Bank (2019) and OECD 
+(2017) country classifications for 2017 to consist of 45 high -income countries, 59 middle -
+income countries, and 8 low -income countries3. 
+ 
+This datas et thus has two important limitations.  First, Ookla does not provide direct, open 
+access to the source big data.  We therefore have to work only on the aggregation provided 
+by Cisco which constrains the nature of statistical analysis that can be undertake n.  Second, 
+the low-income  country part of the dataset is small and likely – given the more limited 
+number of users in those countries – to be itself based on a relatively limited number of 
+speed tests.  In particular, and as noted below, the eight data po ints for fixed upload speed 
+are unexpectedly high and can thus lead to only uncertain conclusions.  
+ 
+The research strategy is based on a quantitative approach with two main stages: descriptive 
+analyses and measurement through indices with the latter being e xplained below.  The first 
+stage comprised four sub -stages: i) exploratory analyses including investigation of mean vs. 
+median speeds; ii) descriptive analyses using medians by country income group; iii) 
+measurement of the divide between mobile vs. fixed n etworks; and iv) measurement of 
+asymmetries between download vs. upload speeds.  In addition to the exploratory and 
+descriptive analyses, Wilcoxon signed -rank tests and Kruskal -Wallis tests were also used, as 
+explained further below.4 
+ 
+ 
+  
+                                                      
+1 Ookl a provides free speed tests to I nternet users  available in 17 languages , and stores and aggregates the 
+results of these tests in order to produce a monthly index : the “Speedtest Global Index” with information o n 
+the average speed of broadband connections at the country leve l for fixed and mobile networks (Ookla, 2020 ). 
+2 Data for a further 23 countries was excluded because it covered only the fixed network.  
+3 Using the OECD (2017) ODA DA C list, “least -developed countries” and “other low -income countries” were 
+categorised as “low -income”; “lower middle -income countries and territories” and “upper -middle income 
+countries and territories” were categorised as “middle -income”.  Countries not o n the DAC list were 
+categorised as either “high -income” or “middle -income” based on World Bank’s (2019) categorisation of  GNI 
+per capita in 2017 . 
+4 We also undertook regression analysis on one of the indices developed but, for reasons of brevity, that is n ot 
+reported here.  Manchester Centre for Digital Development Working Paper 87  
+7 
+ D. Results  
+ 
+D.1. Descriptive Statistics  
+To explore the download and upload speeds for fixed and mobile networks, the values of 
+country means and medians are presented using boxplots (see Figure 1 ; data presented in 
+Appendix A ); a technique to present the dispersion of data  in a simple fashion (Cramer and 
+Howitt, 2004; Stockemer, 2019) . 
+ 
+Fig. 1.  Boxplot speed distributions, fixed and mobile networks  
+ 
+Note: Fixed networks are identified with the prefix “fix” and mobile networks with “mob”; download speeds are contracted 
+as “down” and upload speeds as “up”; means are given the suffix “avg”, and medians “med”.  
+The box contains 50 percent of all cases, with the upper and lower sides of the box (quartile 1 [Q1] and quartile 3 [Q3]) 
+showing the boundary of the remaining 25% of the  cases, respectively; the middle line inside the box represents the 
+median value (quartile 2 [Q2]).  The whiskers show the minimum and maximum value excluding outliers, and they are 
+derived from the interquartile range ( IQR=Q3 -Q1): lower whisker = Q1 - 1.5 * IQR; upper whisker = Q3 + 1.5 * IQR.  The 
+data plotted as a circle above or below the whiskers represents the outliers.  
+Source: Authors using Ookla -Cisco dataset, 2017  
+ 
+The data suggest two things that could not be derived from traditional data sources.   First, 
+that the higher speeds are found on the fixed networks (e.g. comparing the position of the 
+higher whisker for comparable measures between fixed and mobile networks) but that 
+other comparisons between fixed and mobile networks are harder to make.  For instance, 
+there does not appear to be any great difference between the median  values for fixed and 
+mobile networks, perhaps reflecting the speed gains seen on mobile networks over the 
+course of the century.  It will therefore be useful to investigate f ixed–mobile differences 
+further below.  
+ 
+Second, and despite the growing requirements for upload parity, upload speeds appear to 
+be on average well below download speeds.  It will therefore also be useful to investigate 
+Manchester Centre for Digital Development Working Paper 87  
+8 
+ download –upload differences further b elow.  Download speeds themselves are not that 
+exemplary , with the majority of countries’ highest speed, on the fixed network, below 
+15Mbps using means and below 10Mbps – the Broadband Commission’s definition of good 
+quality broadband – using medians.  
+ 
+This differential of means and medians5 exposes a third finding that traditional data sources 
+could not derive: that median speeds are always well below mean speeds.  This was 
+statistically validated through comparison of mean and median download and upload 
+speeds for both fixed and mobile networks using a Wilcoxon signed -rank test.6  In all cases, 
+H0 (mean = median) was rejected in favour H a (mean ≠ median).  We can therefore say that 
+mean speeds are faster and statistically different to median speeds, indicating a positive 
+skew of data.  
+ 
+As a measure of central tendency the median is more resistant than the mean to extreme 
+values and skews ( Stockemer, 2019) .  As an illustration, Figure 2 shows the mean, median 
+and distribution of fixed network download speeds for Mexico.  The distribution is 
+significantly positively skewed i.e. towards lower recorded speeds.  Only a little over one 
+third of t he population experiences speeds above the mean which is raised to 150% of the 
+value of the median due to a small proportion of high -speed outliers.  As in theory, so in 
+practice, the median is a better measure of average than the mean.  
+ 
+Fig. 2.  Distributi on of download speeds for fixed network, Mexico  
+ 
+Source: Cisco (2017b)  
+                                                      
+5 The mean is the arithmetic average while the median is the midpoint of a range of values (leaving 50 per cent 
+of values above and 50 per cent below).  
+6 The Wilcoxon signed -rank test is a non -parametric test that can be used when the dif ference between two 
+measurements is not normally distributed, assuming an ordinal difference in the variables.  It was used here to 
+identify the differences between two sets of observations (speeds at the country level) that are not 
+independent, to find if  there is a statistically significant difference or not; this test defines a null hypothesis 
+(Ho) and an alternative hypothesis (H a) (Suchmacher and Geller, 2012; Scheff, 2016; UCLA, n.d.).  In our case H o 
+assumes that the mean is equal to the median; H a assumes the mean is different from the median.  
+Manchester Centre for Digital Development Working Paper 87  
+9 
+ Research including broadband speeds quite often uses mean values (Kongaut and Bohlin, 
+2014; Nardotto et al., 2015; Gijon and Whalley, 2018).  But the widespread presence of 
+skew in dis tribution of broadband speeds leads us to conclude that it is median values which 
+should be used instead as they are more representative  of the real speeds observed by the 
+majority of users in a country . 
+ 
+D.2. Broadband Speed Di vide  
+A key use of global bro adband data has been to identify inter -country differences, and we 
+now move to this using – for the reasons just given – median speeds  as most -representative 
+of real speeds .  This country data itself is also positively skewed so we summarise in terms 
+of me dians, with figures for the three country types presented in Figure 3, broken down into 
+fixed and mobile (upper and lower panels respectively) and download and upload speed 
+(left and right panels).  
+ 
+Fig. 3.  Median speeds on fixed and mobile networks by inc ome -level group  
+ 
+ 
+Source: Authors using Ookla -Cisco dataset, 2017  
+ 
+The data shows a clear hierarchy and divide: broadband service is much better in high -
+income  countries than others, and in general better in middle -income  than low-income  
+countries.  The divide is sharpest in relation to download speeds on the fixed network: high -
+income  country median speeds are more than four times faster than those in middle -
+income  countries, and more than eight times faster than those of low-income countries .  
+Different ials are not quite so large but still sizeable for download speeds on mobile 
+networks.  For upload speeds, there is a similar differential between high -income  and less -
+wealthy countries but less difference between the middle - and low -income countries.  
+Differences were statistically validated through application of Kruskal -Wallis tests.7  In all 
+cases except that of middle - vs. low-income countries  for fixed upload, H o (aggregated 
+speed is equal across all income level groups) was rejected in favour of H a (aggregated 
+                                                      
+7 The Kruskal -Wallis test can be used to identify disparities within a dependent variable given some different 
+levels defined by an independent variable.  This test allowed us to identify the statistical signif icance of 
+disparities within a dependent variable (speed), given some levels defined by an independent variable (country 
+income -level group) (Scheff, 2016) .  In this case H o assumes that the aggregated speed is equal across all 
+country income levels; H a assumes the aggregated speed is not equal across all country income levels.  
+Manchester Centre for Digital Development Working Paper 87  
+10 
+ speed is not equal across all income level groups).  The difference in broadband speed 
+between income levels of countries is therefore statistically significant.  
+ 
+The broadband divide between countries exposed by this  aggregated  big dataset is n ot 
+particularly surprising.  Similar hierarchies and divides emerge through analysis of traditional 
+data sources on broadband speed categories, broadband coverage and subscription levels 
+(ITU, 2018b).  All that the crowdsourced  data adds here is a somewhat  fuller picture given 
+the addition of mobile network and upload data.  
+ 
+There is a further potential value, at least for some countries.  The speed data compiled by 
+ITU counts subscriptions within three fixed network download speed segments: 256Kbps –
+2Mbps; 2Mbps –10Mbps; and 10Mbps or more (ITU, 2018b)8.  Yet average high -income  
+country speeds on the fixed network, as shown in Figure 3, are well above 10Mbps.  This 
+reflects the fact that roughly 90 percent of high -income  countries fall into the ITU’s 
+10Mbps+ category (ITU, 2018a), so it is no longer a good within -category d ifferentiator.  By 
+contrast, this  big data  source  can readily be used to differentiate: say if one wished to split 
+countries into <10MBps, 10 –50 Mbps and >50Mbps categories9. 
+ 
+D.3. Fixed–Mob ile Speed Di vide  
+Particularly given the aspirations for mobile networks in lower -income countries noted 
+earlier, it is important to measure the speed experienced on  these networks relative to fixed 
+networks to see if there is any fixed –mobile divide.  Such  investigation is only possible with 
+the crowdsourced big data not with traditional data.  Some sense of this was present in 
+Figures 1 and 3 but here we use a more direct comparison.  Figure 4 shows the result of 
+calculating the ratio of median speeds betw een fixed and mobile networks for each 
+individual country and then taking the median of these for different country types; 
+distinguishing download and upload10.  Ratios are above one where fixed network speed is  
+faster on the aggregate ; below one where mobi le network speed is faster.  
+ 
+Fig. 4. Ratio fixed / mobile , download and upload speeds by income -level group  
+ 
+Source: Authors using Ookla -Cisco dataset, 2017  
+ 
+                                                      
+8 These are advertised not actual speeds.  
+9 Additional segments for higher speeds have been alr eady defined by the ITU (10 –100Mbps; 100Mb ps–1Gbps; 
+>1Gbps) (ITU, 2011); however, when the 2018 indicators were released , data were only available for the first 
+three segments (ITU, 2018a).  
+10 Median values  are again used to calculate group aggregates rather than means because the country dataset 
+is positively skewed, and so use of the mean w ould give a less -representative picture.  
+Manchester Centre for Digital Development Working Paper 87  
+11 
+ Overall figures across all countries show no great fixed –mobile network divide: download 
+speeds e xperienced on fixed networks are just 2% faster  than  the mobile networks; upload 
+speeds experienced on mobile networks are 23% faster than those on fixed networks.  As 
+might be predicted given the different roles of fixed and mobile networks in the global 
+North and South, there are differences by income level.  Speeds experienced on f ixed 
+networks are faster in high -income countries (only just for upload speeds).  Speeds 
+experienced on m obile networks are greater  overall in lower -income countries (excepting  
+the anomaly of low-income country  fixed upload speeds noted above).  
+ 
+To provide a further perspective on the disparities between fixed and mobile networks, 
+Figure 5 identifies the proportion of countries in each category that record faster speeds on 
+mobil e networks; noting again that this information is only available via big data.  Consistent 
+with the data shown in Figure 4, the majority of middle -income  countries are experiencing 
+faster download and upload speeds on the mobile network (59% and 68% respec tively).  
+This all represents valuable information e.g. for policy makers considering the relative speed 
+contributions and value  of fixed and mobile infrastructure.  
+ 
+Fig. 5.  Faster experienced speeds on mobile compared to fixed  networks , download and 
+uploa d by income -level group  
+ 
+Source: Authors using Ookla -Cisco dataset, 2017  
+ 
+D.4. Download –Upload Speed Asym metries  
+As noted above, the shift from users as digital consumers to also being digital producers 
+means that an ideal network would provide upload spe eds similar to download speeds.  
+With traditional datasets it has not been possible to investigate this but the Ookla -Cisco  
+data set allows us to calculate the (a)symmetry of telecommunication networks.  Figure 6 
+shows the result of calculating the ratio of  median download:median upload speeds for 
+each individual country and then taking the median of these for different country types; 
+distinguishing fixed and mobile networks.  
+ 
+Fig. 6.  Ratio download / upload  speed, fixed and mobile network by income -level gr oup 
+ 
+Source: Authors using Ookla -Cisco dataset, 2017  
+ 
+Manchester Centre for Digital Development Working Paper 87  
+12 
+ Again setting a question mark over the low-income country  fixed upload figures, we can see 
+that asymmetries across income levels and across networks are fairly consistent.  Despite 
+the much greater inv estments in broadband infrastructure in high -income countries, and 
+despite the much greater role of mobile networks in lower -income countries, neither effect 
+can really be seen in the data: download speeds are around three times faster than upload 
+speeds i n all cases.  Comparing the two network types, then overall ratios / asymmetries are 
+only around one -sixth higher on fixed compared to mobile networks, suggesting relatively 
+limited benefits on this particular measure for those focused on mobile network 
+investment.   Finally, the figures suggest relatively limited impact at the time of sampling of 
+superfast fibre fixed networks and of 5G mobile networks, both of which allow symmetric 
+download/upload, unlike earlier generations of the technologies11.  With gro wth in digital 
+producer roles including data -intensive production such as video upload as part of digital 
+economy strategies, policy makers will be increasingly needing these types of insights in 
+order to determine investment and regulatory priorities.  
+ 
+D.5. Broadband  Indices 
+Notwithstanding its aggregation, this  crowdsourced big dataset has allowed us to separately 
+explore multiple dimensions of the broadband speed divide; something not possible with 
+traditional broadband data.  But we can also use this da taset  to do the opposite: create a 
+broadband index figure for each country.  Indices have been popular in measuring the digital 
+divide as they aggregate multiple dimensions into a single figure and readily allow 
+comparisons between countries and across tim e (OECD, 2008; Bruno et al., 2010; 
+Hanafizadeh et al., 2013) .  In this case, we calculate the broadband index giving equal (i.e. 
+one-third) weight to median download speed, median upload speed, and latency12.  
+Standardisation is required in order to enable the three elements to be combined (OECD, 
+2008); normalising the distributions, moderating the effect of outliers and adjusting values 
+to a 0 –1 scale based on the following rescaling formula:  
+ 
+𝑟𝑒𝑠𝑐=𝑥−𝑚𝑖𝑛
+𝑚𝑎𝑥−𝑚𝑖𝑛 
+ 
+Each of the three elements is rescaled to a maximum value of 1/3.   Within the upload and 
+download segments a value of 1/3 is given when the country has the highest speed, and a 
+fraction of the value if this is lower; lat encies work in the opposite direction as the ideal is to 
+have lower values closer to zero.  Given the differential roles of, and policies towards, fixed 
+and mobile networks in different countries, we decided to create separate indices for each 
+type: ifix for the fixed network, imob  for the mobile network according to the following 
+formulae:  
+ 
+ ifix = ((1/3 * download speed fixresc )  + (1/3 * upload speed fixresc ) + (1/3 (1 -latency fixresc ))) 
+                                                      
+11 At an individual country level, impacts can be seen.  For example, the best -performing country on the mobile 
+network – Singapore – had a mobile download/upload ratio of 2.3 (three -quarters the high -income country 
+average), and the best -performing country on the fixed network – South Korea – had a fixed download/upload 
+ratio of 1.1 (one -third the high -income country average).  
+12 Equal weight has usually  been given to each of these three elements by researchers using these types of 
+data and for instance in the estimation of the EIU (2018) index; however Vicente and Gil -de-Bernab é (2010) 
+suggest the use of different weights which could be valuable to lower the importance of latencies.  Manchester Centre for Digital Development Working Paper 87  
+13 
+  
+ imob  = ((1/3 * download speed mobresc )  + (1/3 * upload speed mobresc ) + (1/3 (1 -
+latency mobresc ))) 
+As a result the ifix and imob  indices  for each country  can take values between 0 and 1: 
+values closer to 1 reflect relatively fast download and upload speeds, and relatively low 
+latencies compared to the country with the best per formance in each dimension  (see 
+Appendix B for data) .  Thus the indices can be useful policy tools, helping any individual 
+country understand where it stands in relation to others; for example, creating a “league 
+table” of broadband performance either sepa rately for fixed and mobile, or combining the 
+two into a single measure.  These can be important for digital development given the role 
+that indices and league tables play in shaping and even stimulating policy action (Kauffman 
+and Kumar, 2005; Gerpott and  Ahmadi, 2015) . 
+ 
+We can also gain insights through visualisation of the indices: Figure 7 is a country -level 
+scatterplot of the ifix index (x -axis) and imob  index (y -axis).  The size of each point 
+represents the country GDP per capita in US$ purchasing pow er parity; the shape indicates 
+the country income -level group; and the colour shows the region.  
+ 
+Fig. 7.  Fixed and mobile network indices  
+ 
+Source: Authors using Ookla -Cisco dataset, 2017  
+ 
+The first thing to note is the reasonable degree of clustering arou nd the line of best fit: 
+there is a fair degree of correlation between performance on the two indices.  Some 
+Manchester Centre for Digital Development Working Paper 87  
+14 
+ countries are offset below and to the right of the line: in these the performance of the fixed 
+network relative to other countries is greater than the relative performance of the mobile 
+network.  For those countries towards the right side of the graph, this likely occurs due to 
+their significant investments in high -speed fibre -optic broadband; something easier for the 
+city-states/territories represen ted13.  Most countries, though, lie above and to the left of the 
+x=y diagonal, reflecting the differing general distribution of the two indices: the ifix indicator 
+is more positively -skewed with countries concentrated more towards the lower part of the 
+distribution than is the case for the imob  indicator14.  This may again reflect the influence on 
+the indicator of the outlier countries with some very high -performing fixed broadband 
+infrastructures.  
+ 
+Looking at the upper -right of the graph, we find countries w ith the best -performing 
+broadband overall.  Singapore stands out, leading in the performance of both its fixed and 
+mobile networks.  With a few exceptions – e.g. Thailand and China – almost all countries in 
+this high -performing part of the graph are high -income countries, as one would expect from 
+earlier findings.  Looking at the lower -left of the graph, we find countries with the worst -
+performing broadband infrastructure.  Venezuela stands out, with the lowest scores for 
+both indices.  Virtually all countr ies in the low -performing part of the graph are lower -
+income  countries, thus illustrating the global broadband divide relating to income15. 
+ 
+D.5.1. Fixed network broadband index  
+To confirm these disparities we present the results of the calculation of the ifix indicator 
+aggregated for all countries by income -level group in Figure 8.  The ifix indicator clearly 
+shows the divide between high -income  countries and the other two groups.  The scores for 
+the two lower -income groups  are around one -third lower when c ompared to those 
+obtained by high -income  countries.  There is no difference between the scores given to 
+middle - and low -income  countries on this network: the low-income  sample has fixed 
+network performance similar to that o f the average middle -income count ry and may thus 
+not be representative of low-income countries  overall.  A Kruskal -Wallis test confirms the 
+divide between high -income  countries and the rest of the world.  The ifix index confirms 
+that a global broadband speed divide exists and that high -income  countr y users  benefit 
+from better service on fixed networks.  
+ 
+  
+                                                      
+13 For more on why Romania is in thi s group, see Rogers (2015).  
+14 Note, the independent calculation of the two indices means the graph is not showing the performance of 
+mobile and fixed networks relative to one another in a country.  The upward offset therefore does not mean 
+mobile networks in most countries are performing better than fixed networks in those countries.  
+15 The lowest -scoring countries are middle - not low -income countries, likely reflecting the issues with low -
+income country data noted earlier.  Manchester Centre for Digital Development Working Paper 87  
+15 
+ Fig. 8.  Fixed network broadband index  by income -level group  
+ 
+Source: Authors using Ookla -Cisco dataset, 2017  
+ 
+D.5.2. Mobile network broadband index  
+Similar calculations are performed on the mobile network; Figure 9 presents the results for 
+imob16.  It shows a clear divide across country income levels.  Once more, high -income  
+countries get the highest scores, followed by middle - and then low -income countries .  The 
+aggregated scores of middl e-income  countries are around one -third lower than those of 
+high -income  countries; low-income countries  have scores that are less than half of the high -
+income  countries and around one -third lower than middle -income  countries.  These 
+differences  are statist ically significant between high -income countries and others when 
+performing the Kruskal -Wallis test, and confirm an income -related  divide.  
+ 
+Fig. 9.  Mobile network broadband index  
+ 
+Source: Authors using Ookla -Cisco dataset, 2017  
+ 
+Overall, via the ifix and imob  indices we are able to explore multiple dimensions of the 
+speed divide as a joint score for countries in our dataset.  The results confirm presence of a 
+global broadband speed divide.  Fixed and mobile networks in high -income  countries have 
+better per formance when compared to those in middle - and low -income  countries, which 
+                                                      
+16 As noted above, while we can com pare the values of both indices, a score of – for example – 0.5 on imob  
+does not mean performance on the mobile network equal to a 0.5 on the ifix score due to the independent 
+calculation and re -scaling of each index.  
+Manchester Centre for Digital Development Working Paper 87  
+16 
+ are least able to benefit from the use of data -intensive services and applications.  None of 
+the measurements in this section could be performed with traditional data.  
+ 
+D.5.3. Broad band readiness calculations  
+We can also use indices to understand the broadband readiness of nations using two 
+thresholds estimated by Cisco (2017b) (see Table 2).  The low threshold is based on 
+performance requirements for a country to be on the “cusp” of  using data -intensive 
+services; the high threshold reflects requirements for full use of data -intensive services: 
+concurrent use of multiple services including basic (e.g. text/instant messaging), 
+intermediate (augmented reality) and advanced (virtual real ity streaming).  
+ 
+Table 2 Low and high thresholds, data -intensive services and applications  
+Threshold  Download (Mbps)  Upload (Mbps)  Latency (ms)  
+Low More than 9.1  More than 2.1  Less than 56  
+High  More than 85  More than 85  Less than 20  
+Source: (Cisco, 2017 a; 2017b)  
+ 
+Indices were created for the low and the high thresholds, for both fixed and mobile 
+networks: lowfix , lowmob , hifix  and himob .  As above, each of the three components is 
+equally weighted with upload/download getting a value of 1/3 when median sp eed is equal 
+to or greater than the threshold value and a fraction of this value if lower; and latency 
+getting a value of 1/3 when median latency was equal to or lower than the threshold value 
+and a fraction of this if higher.  In sum indices can take valu es between 0 and 1, with a value 
+of 1 meaning the country is ready based on the threshold criteria.  
+ 
+For both fixed (Figure 10) and mobile (Figure 11) networks, patterns are the same.  The 
+great majority of high -income countries are ready at the low thresh old but this was true of 
+only a small minority of middle -income  countries, and only one of  the low -income countries , 
+for its mobile network alone .  This readiness measure therefore reiterates the global pattern 
+of broadband divide by income.  No countries are yet deemed ready for full use of data -
+intensive services as per the high threshold.  We believe these threshold measures will be of 
+value to policy makers in understanding readiness of their countries e.g. for particular types 
+of participation in the d igital economy and society.  Again, these measures are not available 
+with traditional broadband data sources.  
+ 
+  Manchester Centre for Digital Development Working Paper 87  
+17 
+ Fig. 10.  Countries ready on the fixed network, low and high thresholds (%)  
+ 
+Source: Authors using Ookla -Cisco dataset, 2017  
+ 
+Fig. 11.  Countrie s ready on the mobile network, low and high thresholds (%)  
+ 
+Source: Authors using Ookla -Cisco dataset, 2017  
+ 
+ 
+E. Discussion  
+ 
+The discussion in this se ction focuses around two topics that address our main question: 
+“What difference is made by measurement o f broadband connectivity and divides based on  
+crowdsourced big data rather than traditional data sources?” .  First, the insights into 
+dimensions of the broadband speed divide that this aggregated big dataset has provided, 
+and then a summary of the comparat ive opportunities and limitations of using  this form of  
+crowdsourced data.  
+ 
+E.1. Insights into Broadband Speed Divides  
+What  new insights has this  big data -based analysis provide d? 
+ 
+The first insight was methodological; identifying a differential between me an and median 
+broadband speeds within individual countries.  Analysis was limited by lack of access to the 
+Manchester Centre for Digital Development Working Paper 87  
+18 
+ raw big data and presentation of distribution profiles for only six countries.  However, from 
+the available data and statistical testing, it was poss ible to demonstrate that medians are a 
+better reflection than means of observed broadband speeds in a country, due to positive 
+skews / outliers in speeds.  As noted above, to date, most studies use mean speeds 
+(theoretical or observed) for research analysi s and policy recommendations.  Results here 
+support the argument that medians will be a better way to understand broadband and 
+broadband divides in a country, and a better basis for making policy decisions.  
+ 
+Using median speeds aggregated into country type s by income, we were able to identify a 
+global broadband speed divide.  There was a fairly consistent correlation of speed and 
+income; particularly reflected in much faster speeds experienced by high -income countries 
+compared to others.  On average, middle - and low -income countries have not yet achieved 
+“good quality” broadband; thus restricting their ability to build and participate in digital 
+economies and societies.  While such a finding is not new, we argue that the basis for our 
+big data -based analysis  – bar the concerns about low-income  country fixed upload data – 
+may be an improvement on more traditional approaches.  This derives from the greater 
+accuracy and relevance of the data including use of medians, use of individual speeds rather 
+than speed ca tegories, and use of real not theoretical speeds.  
+ 
+Use of the crowdsourced dataset permitted deeper investigation of specific dimensions of 
+the broadband divide; something not possible with traditional broadband data sources.  The 
+first of these is a fixed –mobile divide which, while not great, was differentiated by country 
+income group.  In aggregate, speeds experienced on fixed networks were faster than those 
+on mobile networks in high -income  countries; but the reverse was true in middle -income  
+countries.  At the individual country level, these patterns applied to a small majority of high -
+income  countries and around two -thirds of middle -income  countries.  More pronounced 
+was a download –upload divide with download speeds across both fixed and mobile network 
+around three times faster on average than upload speeds; something likely to hamper 
+digital economy development.  
+ 
+Finally, the ability of crowdsourced tests to provide download, upload and latency data 
+allows  – despite access being limited to data aggregat es – the creation of new broadband 
+service quality indices; valuable given the clear policy signals that such scoring provides.  
+There are many possible ways in which these could have been approached but here we 
+weighted the three elements equally and calc ulated separate indices for fixed and mobile 
+service quality.  The indices are of individual value but plotting them together allowed 
+identification of patterns and outliers that provide some level of policy insight.  The indices 
+provide an overview measur e and confirmation of the global broadband divide; particularly 
+between high -income and lower -income countries.  The same was seen by measuring which 
+countries were ready for particular types of broadband use: none met the high -level 
+threshold but there wa s a very strong divide between the proportion of high -income vs. 
+lower -income countries meeting the basic threshold.  All of this confirms the digital 
+economy / society infrastructure advantage of the former group.  
+ Manchester Centre for Digital Development Working Paper 87  
+19 
+ E.2. Aggregated Big Data Ben efits and  Limitations  
+On the basis of the analysis undertaken, we can now review this form of aggregated big data 
+in terms of the ‘CARTA’ data quality issues identified in traditional data by prior literature, 
+looking at both the benefits but also limitations of the d ataset exposed here.  
+ 
+Both  underlying and aggregated big data  is not really more complete than traditional 
+broadband data.  Instead, it provides different measures to traditional data: speed and 
+latency rather than speed categories, subscriptions and mobil e coverage.  Completeness 
+would be improved by combining the two types of data.  The big dataset  is less complete in 
+terms of country coverage: we derived full data for 112 countries compared to the 192 
+covered by the ITU.  Coverage was particularly incomp lete for the lower -income countries: 
+the ITU provides data for all middle -income  countries while the Ookla -Cisco dataset covers 
+only 63% of these countries.  And ITU provides data for 50 of the 52 low-income  countries; 
+full crowdsourced data was only avail able for eight (15%) of those countries.   While 
+coverage may grow over time, t his is indicative of a “big data divide” between countries; 
+excluding significant numbers, particularly of the poorest nations from the analysis and also, 
+hence, from the policy and other benefits that big data -based measurement can bring.  
+ 
+Accuracy of underlying big data can only be hypothesised.  It may be  higher than for 
+traditional broadband data17.  There is relatively little self -interest in the automatic creation 
+of crowdsou rced data; certainly not the issues of commercial confidentiality or desire to 
+inflate speeds that may impact operator reporting.  And country -level data is based on 
+multiple – typically many thousands or even millions – of data points, not the reports of a 
+tiny handful of operators.  The dataset is methodologically homogeneous: generated by a 
+single company via a single method rather than being gathered from multiple operators, all 
+potentially using their own measurement approaches.  
+ 
+The results above show  relevance of this big data set to be  greater than for traditional 
+broadband data.  First, in terms of the range of indicators provided.  As argued from the 
+literature review, traditional data provides relatively little of relevance to service quality.  By 
+allowing access to key service indicators of upload/download speed and latency, 
+crowdsourced data is a significant improvement and, as summarised in the previous sub -
+section , has allowed analysis of multiple, policy -relevant dimensions of broadband 
+connect ivity and the broadband divide.  Second, in terms of the nature of the indicators, this 
+data set provides access to real rather than merely advertised or theoretical speeds; much 
+more relevant for – say – policy makers seeking to guide regulatory or other d ecisions.  
+Third, and related, in terms of the measures that can be calculated, this big data offers both 
+mean and median measures of average, with the findings above demonstrating that 
+medians are a better measure of typical real experience of broadband.  
+ 
+Raw crowdsourced data is a contemporaneous reflection of the state of broadband in a 
+country.  However, that is not the case with the processed dataset – there is a lag in 
+                                                      
+17 There is a suggestion (Bauer et al., 2010) that speed test data may be subject to skews due to greater 
+likelihood of testing by those who perceive a problem with their connection.  But the existence of such a skew, 
+and its bias e.g. to those with faster - or slower -than -average connections is un -evidenced.  We can speculate 
+that awareness and hence usage of speed tests might be greater among more educated, urban populations.  
+However, all of this remains to be researched.  Manchester Centre for Digital Development Working Paper 87  
+20 
+ production, it is only available on a yearly basis after production by Cisco, and t here is no 
+regular release date despite Ookla releasing its measurement data on a monthly basis18. 
+ 
+Accessibility of this aggregated data set is equivalent to that of a sub -set of traditional data 
+in that both are open -access and cost -free.  Pre -processing a nd aggregation of the data by 
+Cisco means users do not require intensive computational power and data science 
+capabilities in order to analyse these data; and thus users can access some of the 
+advantages of big data without encountering some of the barrier s typically associated with 
+its application.  Analyses such as our own can therefore be readily replicated without direct 
+financial cost and by a broad range of telecommunications /digital  policy or other 
+researchers.  Although the costs of producing it are  lower than traditional data sourced from 
+operators, raw crowdsourced data must be purchased for a fee, just like the data on the 
+paid -for ITU database, except that the costs are well above the US$300 charged by ITU: 
+access to the Ookla dataset costs  order s of magnitude more than this, without the right to 
+publish the data .  With raw data inaccessible for all but a very few institutions with large 
+budgets and technical capabilities, it is not possible to obtain complete information about 
+the distributions o f data measurements within each country (number of observations, 
+maximum and minimum values, etc.).  Similarly, basic documentation is available about how 
+the big data were compiled and processed but it is not possible to identify full details of the 
+data preparation and transformation undertaken by Cisco.  All of this rather limits the 
+analyses that can  be undertaken with the dataset, and accessibilty presents a foundational 
+constraint that analyses of the potential and challenges of big data rarely highli ght (Jin et al., 
+2015; Connelly et al., 2016).  
+ 
+Table 3 summarises the benefits and limitations of using this type of aggregated big data to 
+measure broadband, as found from this analysis.  
+ 
+  
+                                                      
+18 At the time of writing, Cisco had  just released data for 2018 though it was unclear if this was fully updated 
+from the 2017 dataset.  The Economist Intelligence Unit releases a dataset based on Ookla data as part of their 
+Inclusive Internet Index but only for 100 countries.  Manchester Centre for Digital Development Working Paper 87  
+21 
+ Table 3 Relative benefits and limitations of the Ookla -Cisco datas et in relation to traditional 
+broadband data  
+Characteristics  Benefits  Limitations  
+Completeness  -Provides additional measures for 
+112 countries  
+ -Covers fewer countries and 
+absent for several middle -income 
+and most low -income countries  
+-No ready access to  raw data  
+Accuracy  -Greater accuracy  
+-Methodological homogeneity  -Potential skew  
+ 
+Relevance  -Greater relevance given measures 
+of service quality  
+-Real not theoretical/advertised 
+speeds  
+-Multiple data points via mean and 
+median values   
+Timeliness  -Shorte r lag time in production  -Made available only on yearly 
+basis  
+-No regular release of dataset  
+Accessibility  -Aggregated dataset is cost -free, 
+open -access  
+-Use does not require high -level 
+computing or data science 
+capabilities  
+-Ready replicability of analys is -High cost of raw data  
+-No access to detailed 
+documentation  
+-Methodological limitations of 
+working with aggregated data  
+ 
+ 
+ 
+F. Conclusions  
+ 
+The fundamental and increasing importance of broadband to national and regional 
+development plans – hence also the growing dangers of broadband divides between those 
+with and those without high -quality services – serves to amplify the need for good 
+broadband d ata and indicators.   Traditional measures, such as those provided through the 
+International Telecommunication Union, have been a valuable basis for understanding 
+broadband.  However, there are some limitations of traditional data and so, here, we sought 
+to investigate the implications of using a different data source: hundreds of millions of 
+crowdsourced speed tests.  Prior work has shown the potential value of such data, 
+prompting us to undertake a more systematic review.  
+ 
+We found, overall, that – compared  to traditional broadband datasets – crowdsourced big 
+data provides additional measures, is more accurate, relevant, timely and accessible.  In 
+particular it provides a much better picture of the actual broadband service experienced by 
+users.  However, it is also less complete especially for lower -income countries.  Because of Manchester Centre for Digital Development Working Paper 87  
+22 
+ its high cost, we did not make direct use of the big data that Ookla speed tests produce; 
+instead utilising a freely -available Cisco dataset that pre -processes and aggregates Ookla’s 
+big data.  While this brought benefits of zero cost and low analytical capacity requirements, 
+it also reduced understanding, control over access, and range of data manipulation.   Our 
+work can thus provide only a partial insight into the wider potential of big data but 
+realisation of that potential is currently constrained by access/cost barriers.  
+ 
+This aggregated big dataset confirmed the presence of a global broadband divide between 
+countries at different income levels but it offered an improved method of m easuring this 
+divide, based on median rather than mean speeds.  The comparative benefits of this form of 
+big data also allowed a deeper insight into the global broadband divide than traditional 
+sources offer, providing an understanding of the asymmetries b etween fixed and mobile 
+network service , and download vs. upload speeds.   It also allowed development of single -
+score indices to measure broadband service quality  and readiness for different levels of 
+data -intensive services ; offering a better reflection o f actual user needs and experience.  
+ 
+Implications for policy and practice can be considered.  At global level, the current 
+limitations of big data suggest that it should be seen as a complement to, rather than 
+substitute for traditional broadband measures.  But the additional value it has been shown 
+here to provide , create s a strong argument for its adoption.  Likewise at national level, we 
+have shown ways in which crowdsourced data – even in aggregate form – offers policy 
+makers greater understanding of bro adband use in their countries; thus providing a basis for 
+better policy decisions  than traditional data alone .  This includes more realistic measures of 
+speed; better measures of speed that encompass both mean and median values; measures 
+of asymme tries bet ween different network  types and between download and upload 
+speeds; and the ability to create single -score indices of broadband service that offer a 
+simple and powerful way to assess broadband readiness and to track improvements over 
+time.  This data set has also highlighted  specific issues warranting policy attention: the 
+performance value of relative investments in fixed vs. mobile broadband, and the need for 
+more attention to the relative slowness of upload speeds.  
+ 
+Finally, we recognise some of the lim itations of our work which point to directions for future 
+research.  We have used only one of the big data sources identified in Table 1, and it will be 
+useful to undertake a comparative analysis of the value offered by each the five shown 
+there.  This ext ension may, for those with funds available, extend to analysis of the raw data 
+where sold by vendors.  We focused on particular measures and issues but future research 
+can also broaden this; for example, studying within individual countries patterns over t ime 
+exposed by big data; using alternative measures and tests of the divides; and trying out 
+different ways to calculate broadband indices.  
+ 
+  Manchester Centre for Digital Development Working Paper 87  
+23 
+ Acknowledgements  
+The authors would like to thank Gindo Tampubolon and Susan Teltscher for comments on 
+an earlier ver sion of the paper.   The research reported here was partially funded by Conacyt 
+(Mexico) . 
+ 
+References  
+A4AI (2018). Improving Mobile Broadband Quality of Service in Low - and Middle -Income Countries . 
+Washington, DC: Alliance for Affordable Internet.  
+Abeliansky , A. L., & Hilbert, M. (2017). Digital technology and international trade: is it the quantity of 
+subscriptions or the quality of data speed that matters?. Telecommunications Policy , 41(1), 35 -
+48. 
+Akamai (2017). State of the Internet: Q1 2017 Report . Cambri dge, MA: Akamai.  
+Akerman, A., Gaarder, I., & Mogstad, M. (2015). The skill complementarity of broadband internet. 
+The Quarterly Journal of Economics,  130(4) , 1781 -1824.  
+Bauer, S., Clark, D. D. & Lehr, W. (2010). Understanding broadband speed measurements. Paper 
+presented at TPRC 2010 , Arlington, VA, 1 -3 Oct.  
+Belo, R., Ferreira, P., & Telang, R. (2013). Broadband in school: impact on student performance. 
+Management Science , 60(2), 265 -282.  
+Broadband Commission (2018). The State of Broadband 2018 . Geneva: Broadband Commission for 
+Sustainable Development, International Telecommunication Union.  
+Broadband Commission (2019). Connecting Africa Through Broadband . Geneva: Broadband 
+Commission for Sustainable Development, International Telecommunication Union.  
+Brun o, G., Esposito, E., Genovese, A., & Gwebu, K. L. (2010). A critical analysis of current indexes for 
+digital divide measurement. The Information Society,  27(1) , 16-28. 
+Campante, F., Durante, R., & Sobbrio, F. (2017). Politics 2.0: the multifaceted effect o f broadband 
+internet on political participation. Journal of the European Economic Association , 16(4), 1094 -
+1136.  
+Cisco (2017a). Cisco Cloud Readiness Tool . San Jose, CA: Cisco.  
+Cisco (2017b). Cisco Global Cloud Index Supplement: Cloud Readiness Regional De tails . San Jose, CA: 
+Cisco.  
+Connelly, R., Playford, C. J., Gayle, V., & Dibben, C. (2016). The role of administrative data in the big 
+data revolut ion in social science research. Social Science Research , 59, 1 -12. 
+Cramer, D. & Howitt, D. (2004). The Sage Dictionary of Statistics . London: Sage Publications.  
+EIU (2018). The Inclusive Internet Index: Bridging Digital Divides . London: Economist Intelligence 
+Unit.  
+Ericsson (2018). Ericsson Mobility Report. Stockholm: Ericsson.  
+FCC (2018). International Broadban d Data Report . Washington, DC: Federal Communications 
+Commission.  
+Ford, G. S. (2018). Is faster better? Quantifying the relationship between broadband speed and 
+economic growth. Telecommunications Policy , 42(9), 766 -777.  
+Fowlie, G., &  Biggs, P. (2015). The digital broadband and gender divides. In Digital Divides , K. 
+Andreasson (ed) . New York, NY: Routledge, 56 -75. 
+Fuentes -Bautista, M. (2014). Rethinking localism in the broadband era: a participatory community 
+development approach. Gove rnment Information Quarterly , 31(1), 65 -77. 
+Gabay, C., & Ilcan, S. (2017). The affective politics of the Sustainable Development Goals: 
+partnership, capacity -building, and big data. Globalizations , 14(3), 468 -485.  
+Gerpott, T. J., & Ahmadi, N. (2015). Compo site indices for the evaluation of a country's information 
+technology development level. Technological Forecasting and Social Change , 98, 174 -185.  
+Gijon, C., & Whalley, J. (2018). Broadband access speeds across the Northern Powerhouse. Paper 
+presented at 29th European Regional Conference of the International Telecommunications 
+Society , Trento, Italy, 1 -4 Aug.  Manchester Centre for Digital Development Working Paper 87  
+24 
+ Grubesic, T. H., & Mack, E. A. (2015). Broadband Telecommunications and Regional Development . 
+Routledge: London.  
+GSMA (2016). Connected Society Digita l Inclusion in Latin America and the Caribbean . London: 
+GSMA.  
+Hanafizadeh, M. R., Hanafizadeh, P., & Bohlin, E. (2013). Digital divide and e -readiness: trends and 
+gaps. International Journal of E -Adoption,  5(3), 30-75. 
+Heeks, R. (2018). Information and Com munication Technology for Development (ICT4D) . Abingdon, 
+UK: Routledge.  
+Helderop, E., Grubesic, T. H. & Alizadeh, T. (2019). Data deluge or data trickle? Difficulties in 
+acquiring public data for telecommunications policy analysis. The Information Society,  35(2) , 69-
+80. 
+Hilbert, M. (2016a). Big data for development: a review of promises and challenges. Development 
+Policy Review,  34(1) , 135-174.  
+Hilbert, M. (2016b). The bad news is that the digital access divide is here to stay: domestically 
+installed bandwi dths among 172 countries for 1986 –2014. Telecommunications Policy , 40(6), 
+567-581.  
+ITU (2011). ITU Handbook for the Collection of Administrative Data on Telecommunications/ICT . 
+Geneva: International Telecommunication Union.  
+ITU (2014). Manual for Measuring  ICT Access and Use by Households and Individuals . Geneva: 
+International Telecommunication Union.  
+ITU (2016). Measuring the Information Society Report 2016 . Geneva: International 
+Telecommunication Union.  
+ITU (2018a). ITU World Telecommunication/ICT Indicat ors Database 2018 . Geneva: International 
+Telecommunication Union.  
+ITU (2018b). Measuring the Information Society Report 2018 . Geneva: International 
+Telecommunication Union.  
+ITU (2019). ITU World Telecommunication/ICT Indicators Database 2019 . Geneva: International 
+Telecommunication Union.  
+Jin, X., Wah, B. W., Cheng, X., & Wang, Y. (2015). Significance and c hallenges of big data research. Big 
+Data Research , 2(2), 59 -64. 
+Jordán, V. (2011). Broadband: the new digital divide. In: Fast -Tracking The Digital Revolution: 
+Broadband For Latin America and the Caribbean . Santiago: ECLAC, 81 -118.  
+Katz, R. (2012). The Impact of Broadband on the Economy . Geneva: International Telecommunication 
+Union.  
+Kauffman, R. J., & Kumar, A. (2005). A Critical Assessment of the Ca pabilities of Five Measures For ICT 
+Development , Management Information Systems Research Center Working Paper. Minneapolis, 
+MN: University of Minnesota.  
+Kelly, T. & Rossotto, C. M. (2012). Broadband Strategies Handbook . Washington, DC: World Bank.  
+Kongaut, C., & Bohlin, E. (2014). Impact of broadband speed on economic outputs: an empirical 
+study of OECD countries. Paper presented at 25th European Regional Conference of the 
+International Telecommunications Society , Brussels, 22 -25 Jun.  
+LaRose, R., St rover, S., Gregg, J. L., & Straubhaar, J. (2011). The impact of rural broadband 
+development: lessons from a natural field experiment. Government Information Quarterly , 28(1), 
+91-100.  
+Liu, Y. H., Prince, J., & Wallsten, S. (2018). Distinguishing bandwidth a nd latency in households’ 
+willingness -to-pay for broadband internet speed. Information Economics and Policy , 45, 1 -15. 
+M-Lab (2020). Internet Measurement Tests . M-Lab. https://www.measurementlab.net/tests/  
+Mayer -Schonberger, V., & Cukier, K. (2013). Big Da ta: A Revolution that will Transform how we Live, 
+Work, and Think . New York, NY: Houghton Mifflin.  
+Minges, M. (2016) Exploring the Relationship between Broadband and Economic Growth . 
+Washington, DC: World Bank.  Manchester Centre for Digital Development Working Paper 87  
+25 
+ Nardotto, M., Valletti, T., & Verboven, F. (2 015). Unbundling the incumbent: evidence from UK 
+broadband. Journal of the European Economic Association , 13(2), 330 -362.  
+Netflix (2020). Netflix ISP Speed Index . Los Gatos, CA: Netflix. https://ispspeedindex.netflix.com/  
+OECD (2008). Handbook on Constructing Composite Indicators: Methodology and User Guide . Paris: 
+OECD.  
+OECD (2014). Data -Driven Innovation For Growth And Well -Being . Paris: OECD.  
+OECD (2017). DAC List of ODA Recipients . Paris: OECD.  
+OECD (2018). Fostering Greater SME Participation i n a Globally Integrated Economy . Mexico: OECD.  
+Ofcom (2019a). Connected Nations Update: Spring 2019 . London: The Office of Communications.  
+Ofcom (2019b). UK Home Broadband Performance . London: The Office of Communications.  
+Ookla (2020). Speedtest Global In dex. Seattle, WA: Ookla. http://www.speedtest.net/global -
+index/about  
+Prieger, J. E. (2013). The broadband digital divide and the economic benefits of mobile broadband 
+for rural areas. Telecommunic ations Policy , 37(6 -7), 483 -502.  
+Prieger, J. E., & Hu, W. M. (2008). The broadband digital divide and the nexus of race, competition, 
+and quality. Information Economics and Policy , 20(2), 150 -167.  
+Riddlesden, D. & Singleton, A. D. (2014). Broadband speed e quity: a new digital divide? Applied 
+Geography,  52, 25-33. 
+Rogers, K. (2015). Why Romania’s internet is so much faster than America’s. Vice, 2 Feb.  
+Rojas, E.F. & Poveda, L. (2017). State of Broadband in Latin America and the Caribbean . Santiago: 
+ECLAC.  
+Scheff, S. W. (2016). Fundamental Statistical Principles for the Neurobiologist.  London: Academic 
+Press.  
+Stockemer, D. (2019). Quantitative Methods for the Social Sciences . Cham, Switzerland: Springer.  
+Suchmacher, M., & Geller, M. (2012). Practical Biostat istics.  San Diego, CA: Academic Press.  
+UCLA (n.d.). What Statistical Analysis Should I Use? Statistical Analyses Using Stata . Los Angeles, CA: 
+UCLA.  
+UN (2005). Measuring ICT: The Global Status of ICT Indicators . New York, NY: United Nations ICT Task 
+Force.  
+UNCTAD (2018). Leapfrogging: Look Before You Leap , Policy Brief . Geneva: United Nations 
+Conference on Trade and Development.  
+Vall, I.V. (2017). Measuring real broadband speeds using crowdsourcing data from the Internet 
+Foundation. Paper presented at WTIS -17, Hammamet, Tunisia, 14 -16 Nov.  
+Vicente, M. R., & Gil -de-Bernabé, F. (2010). Assessing the broadband gap: from the penetration 
+divide to the quality divide. Technological Forecasting and Social Change,  77(5) , 816-822.  
+Weiss, J. W., Gulati, G. J., Yates, D. J., & Yates, L. E. (2015). Mobile broadband affordability and the 
+global digital divide --an information ethics perspective. In 2015 48th Hawaii International 
+Conference on System Sciences . New York, NY: IEEE, 2177 -2186. 
+Whitacre, B., Gallardo, R., & Strover, S. (2014). Does rural broadband impact jobs and income? 
+Evidence from spatial and first -differenced regressions. The Annals of Regional Science,  53(3) , 
+649-670.  
+World Bank (2019) World Bank Country and Lending Grou ps. Washington, DC: World Bank.  
+World Bank (2020) Data . Washington, DC: World Bank.  
+WWC (2015). Broadband: Evidence Review.  London: What Works Centre for Local Economic Growth.  
+ Manchester Centre for Digital Development Working Paper 87  
+26 
+ Appendix A . Cisco -Ookla Data  
+Table shows speeds for fixed and mobile networks (Mbps); and latencies (ms).  Fixed ne tworks are identified with the prefix “fix” and mobile networks with 
+“mob”; download speeds are contracted as “down” and upload speeds as “up”; means are given the suffix “avg”, and medians “med ”; latencies are show as 
+“lat”.  
+ITU Country Name  ISO Income  fixdownavg  fixdownmed  fixupavg  fixupmed  fixavglat  fixmedlat  mobdownavg  mobdownmed  mobupavg  mobupmed  mobavglat  mobmedlat  
+Afghanistan  AFG Low 4 2.5 3.4 2 59 17 3.3 2.1 1.1 0.8 96 55 
+Albania  ALB Mid 10.1  7 6.6 1.8 42 26 11.1  8.4 5.7 2.6 40 27 
+United Arab Emi rates  ARE High  23.7  17 9.7 5.4 23 7 25.2  22.6  12.4  5.3 45 29 
+Argentina  ARG  Mid 7 5 1.8 0.9 53 30 9 6.9 5.4 2.6 58 43 
+Armenia  ARM  Mid 13 6.1 9.8 3.1 31 19 9.6 5.5 5.4 1.4 34 27 
+Australia  AUS High  19.2  11 7.5 1 41 21 28 21 11.7  7.4 36 27 
+Austria  AUT  High  28.9  19.1  8.2 5.9 26 15 27.3  22.4  12.1  7.7 31 26 
+Azerbaijan  AZE Mid 7.9 3.8 7.7 0.9 44 32 10.3  6.9 4.4 2 50 36 
+Belgium  BEL High  45.1  33.8  10 7 25 14 30 22.9  13 9.7 30 25 
+Bangladesh  BGD  Low 10.8  3.8 9.2 3 39 9 4.3 3.2 1.5 1.2 70 43 
+Bulgaria  BGR  Mid 37.7 31.8  27.5  19.2  17 9 25 20.3  12.6  6.5 33 28 
+Bahrain  BHR  High  14.7  9.8 5.5 2.1 29 18 9.3 5.9 8.2 4.4 39 24 
+Bosnia and 
+Herzegovina  BIH Mid 16.5  9.5 3.8 1.4 34 20 9.1 7.6 2.2 1.9 45 37 
+Belarus  BLR Mid 17.9  9.7 15 5.3 27 15 13.1  9.9 10.3  4.4 34 28 
+Bolivia  (Plurinational 
+State of)  BOL Mid 3.9 2.9 1.3 0.8 46 18 5.9 4.6 5.1 1.6 59 39 
+Brazil  BRA Mid 13.2  8.1 5.1 1.6 42 20 10.5  6.8 5.4 2 79 59 
+Canada  CAN  High  36.6  26.6  15.5  9.8 32 15 39.2  28.2  12.4  8.5 40 31 
+Switzerland  CHE High  71.8  41.6  37.1  13.5  21 13 31.6 20.6  12.8  9.1 32 27 
+Chile  CHL Mid 26.4  18 9.1 6 35 18 15.7  9.3 9 4.5 46 32 
+China  CHN  Mid 47.5  40.7  17 6.3 17 9 37.9  32.2  18.3  11.9  44 32 
+Colombia  COL Mid 7.4 5.2 3.2 1.1 50 32 8.2 5.8 5.7 2 80 54 
+Costa Rica  CRI Mid 6.8 5.6 3.3 1.7 41 13 3.4 2.9 1.9 1.2 73 41 
+Cyprus  CYP High  14.2  8.9 3.4 1 35 24 10.8  8.5 4.9 2.3 52 34 
+Czech Republic  CZE High  28.1  18.9  17.3  8.5 22 15 23.2  19.1  12.7  11.3  32 26 Manchester Centre for Digital Development Working Paper 87  
+27 
+ ITU Country Name  ISO Income  fixdownavg  fixdownmed  fixupavg  fixupmed  fixavglat  fixmedlat  mobdownavg  mobdownmed  mobupavg  mobupmed  mobavglat  mobmedlat  
+Germany  DEU  High  40.7  29.9  9.6 5.9 31 21 22.9  15.4  8.9 4.7 56 43 
+Denmark  DNK  High  63 46.6  49.5  27.3  17 10 37.9 27.7  16.4  12.9  28 22 
+Dominican Rep.  DOM  Mid 16.1  9.2 3.9 2 45 16 10.1  6.4 4.5 1.9 55 38 
+Algeria  DZA Mid 2.7 1.9 0.8 0.5 72 45 4.1 2.5 1.8 1 70 50 
+Ecuador  ECU Mid 6.7 4.1 5 1.4 41 20 8.4 5.2 7.9 1.9 54 43 
+Egypt  EGY Mid 4 2.3 1.1 0.6 58 33 5.9 5.2 3 2.1 52 36 
+Spain  ESP High  50.3  30.2  43 10 36 22 31.6  22.3  14 6.8 53 43 
+Estonia  EST High  28.6  18.8  20 9.4 23 13 23.3  14.9  9.7 5.1 29 21 
+Finland  FIN High  37.4  23.8  17.9  9.9 28 20 27.2  21.6  12.3  8.2 31 26 
+France  FRA High  33.5  10.9  18.8  1 37 24 27.5  18.9  9.1 5.3 47 36 
+United Kingdom  GBR  High  33.7  25.6  9.7 6.2 31 18 25.2  18.2  10.6  7.2 43 38 
+Georgia  GEO  Mid 13 8.7 12.5  7.7 40 14 12.4  8.9 8.3 4.9 49 30 
+Ghana  GHA  Mid 7.5 4.2 6.6 2.5 62 24 8.2 5.6 4.4 1.8 68 38 
+Greece  GRC  High  11.3  9.2 1.5 0.8 43 26 15.9  13.7  6.4 3.5 41 29 
+Guatemala  GTM  Mid 5 4.1 1.9 1 58 22 7.6 6.4 5.2 3 47 35 
+Hong Kong, China  HKG  High  117.3  66.8  117.1  49.4  20 5 25 16.3  12.1  6.4 36 27 
+Honduras  HND  Mid 4.3 3 3.1 1 54 20 5.7 5 3.1 1.3 77 59 
+Croatia  HRV  High  16.6  10.8  5.5 2 31 20 19.7  18.2  9 4.7 37 28 
+Hungary  HUN  High  49.2  30.5  20.2  9.3 23 14 39.1  32.1  15.7  11 34 22 
+Indonesia  IDN Mid 9.4 7.4 6.3 1.7 33 15 8 5.4 6 3.8 52 41 
+India  IND Mid 9.5 5.9 8.9 3.4 39 19 7.1 4.4 3.2 2.2 71 50 
+Ireland  IRL High  32.3  21.9  12.1  8.7 36 19 19.2  11.5  8.5 4 39 33 
+Iran (Islamic Republic 
+of) IRN Mid 6.3 4.8 3.2 0.8 42 31 10.3  7.9 5.5 3.2 56 36 
+Iraq IRQ Mid 6.9 4.6 6.1 3.1 50 18 4.9 2 3.1 1.2 92 47 
+Israel  ISR High  33.8  28.7  4.3 2.8 24 15 19.6  13 9.7 4 35 27 
+Italy  ITA High  16.4  10.7  6.6 1 43 29 20.3  14.3  8.6 4.5 49 43 
+Jamaica  JAM  Mid 10.6  6.8 3.3 1 56 27 10.5  6.2 4.1 2.1 52 34 
+Jordan  JOR Mid 12.4  8.2 8.2 2 43 20 11.1  8.2 9.8 4.7 43 23 Manchester Centre for Digital Development Working Paper 87  
+28 
+ ITU Country Name  ISO Income  fixdownavg  fixdownmed  fixupavg  fixupmed  fixavglat  fixmedlat  mobdownavg  mobdownmed  mobupavg  mobupmed  mobavglat  mobmedlat  
+Japan  JPN High  77.9  41.6  73.1  40.7  32 21 30 16.2  12.6  8.5 59 50 
+Kazakhstan  KAZ Mid 19.3  8.2 18.4  3.9 40 28 12.7  8.1 9.1 4 49 38 
+Kenya  KEN Low 9 5.4 6 2.6 43 15 13.5  9.6 7.4 3.8 49 33 
+Kyrgyzstan  KGZ Mid 12.2  6 11.5  3.5 36 21 10 6.4 5.2 2.1 47 35 
+Cambodia  KHM  Low 9.2 6.1 8.9 5 19 7 6.1 3.8 6 3.2 42 29 
+Korea (Rep. of)  KOR  High  88.9  72 85.2  67.2  14 7 38.7  26.1  14.4  11.4  53 31 
+Kuwait  KWT  High  10.4  6.5 9.2 3 26 8 12.4  8 12 6.3 43 25 
+Lebanon  LBN Mid 2.7 1.8 1.8 0.7 64 42 4.2 3.8 3.2 1.7 56 39 
+Sri Lanka  LKA Mid 15.9  10.2  6 1.4 45 25 7.1 5.4 3.3 1.9 53 36 
+Lithuania  LTU High  55.1  35.6  52.7  27.3  19 10 32.6  23.8  14.3  9.3 31 24 
+Luxem bourg  LUX High  50.7  30.2  27.7  13.6  24 16 33.4  27 13.6  10.1  34 28 
+Latvia  LVA High  45.7  29.7  45.6  24.8  17 8 26 20.1  12.2  7.7 28 18 
+Macao, China  MAC  High  65 47.5  64.1  46.8  10 4 25.4  13.8  12.3  5.3 32 21 
+Morocco  MAR  Mid 10.3  4.1 1.9 0.4 79 46 11.7  8.9 6.3 3.4 47 33 
+Moldova  MDA  Mid 39 25.8  34.3  17.7  24 9 16.5  9.6 7.4 2 35 28 
+Maldives  MDV  Mid 10.5  4.8 8.3 2.9 46 8 13.7  11 9.8 4.4 48 29 
+Mexico  MEX  Mid 14.6  9.8 6.9 2 46 26 13.4  10.4  9.3 4.7 64 49 
+The Former Yugoslav 
+Rep. of Macedonia  MKD  Mid 13.8  9.2 9.2 1 34 21 16.3  11 9.2 2.5 40 30 
+Malta  MLT  High  36.9  29.7  5.2 3.1 22 11 38.1  32.2  10.3  4.6 22 15 
+Montenegro  MNE  Mid 14.9  12.6  2.3 1.7 31 22 15.7  11.9  7.5 3 36 28 
+Mongolia  MNG  Mid 14.2  3.9 14.1  3.1 38 11 12.1  7.4 8.7 3.4 44 32 
+Mozambique  MOZ  Low 3.4 2.6 2.9 1.7 72 29 8.4 6.7 2.3 2.2 60 36 
+Malaysia  MYS  Mid 15 8.5 9.1 6 44 20 11 7.1 6 2.9 51 37 
+Nigeria  NGA  Mid 5.7 3.7 5.5 3 84 37 6.7 4 3.1 1.8 118 67 
+Nicaragua  NIC Mid 4.7 3.3 2.7 1.1 53 19 6 4.6 4.5 1.3 51 38 
+Netherlands  NLD High  56.4  40.6  26.5  15.4  22 12 46.5 36.5  16.7  12.3  32 27 
+Norway  NOR  High  45 30.3  34.3  17 26 10 54.8  42.5  17.6  13.2  37 32 
+New Zealand  NZL High  39.9  26.4  24.5  9.9 27 16 32 21 13.3  7.6 43 36 Manchester Centre for Digital Development Working Paper 87  
+29 
+ ITU Country Name  ISO Income  fixdownavg  fixdownmed  fixupavg  fixupmed  fixavglat  fixmedlat  mobdownavg  mobdownmed  mobupavg  mobupmed  mobavglat  mobmedlat  
+Oman  OMN  High  9.8 5.4 5.8 0.9 69 23 15.2  12.1  9.8 3.8 50 37 
+Pakistan  PAK Mid 4.9 3.2 3.8 1 59 35 7 5.6 4.2 2.4 78 48 
+Panama  PAN  Mid 13.3  8.2 4.5 3.4 42 16 13.4  10.3  7.7 4.5 67 39 
+Peru  PER Mid 8.5 5.9 2.3 0.7 64 35 11.5  9 9 5.2 62 38 
+Philippines  PHL Mid 9 4.6 7.7 0.8 58 30 7.7 5 5 2.4 56 37 
+Poland  POL High  30.2  18.7  11.8  5.9 28 19 17.9  12.3  8.6 4.9 39 34 
+Portugal  PRT High  42.2  28 20.3  8.5 23 13 22.4  12.1  10.2  4.7 36 29 
+Paraguay  PRY Mid 5.2 3.9 3.7 2 40 15 7.6 5.9 4.8 3 82 43 
+Qatar  QAT  High  18.7  11 13.1  5.5 23 5 26.1  17.3  12.8  8.8 42 21 
+Romania  ROU  Mid 94.7  54.8  70.2  42 19 9 35.9  16 14.2  5.5 38 28 
+Russian Federation  RUS Mid 33.8  21.9  30.9  21.9  23 8 12 7.4 6 3 57 45 
+Saudi Arabia  SAU High  12.2  7.5 6.4 1.1 47 31 8.5 4.7 6.8 3.4 58 39 
+Singapore  SGP High  142.6  66.4  139.8  55.4  14 4 63.6  46.2  33.5  20.5  30 21 
+El Salvador  SLV Mid 4 3.3 1.5 0.7 66 27 4.8 4.4 2 1.4 64 49 
+Serbia  SRB Mid 19.4  11.3  2.8 1.9 25 14 19.3  15.5  7.4 3.9 30 25 
+Slovakia  SVK High  28.7  15.7  12 3.9 27 18 24.7  20.3  9.9 7.7 34 30 
+Slovenia  SVN High  25.2  13.6  9.9 3.3 27 13 20.9  17.5  8.1 5.1 28 21 
+Sweden  SWE  High  60.3  44.4  42.9  11.6  24 10 33.8  22.3  11.8  6.5 50 32 
+Thailand  THA Mid 34.7  30.3  13.9  10.8  22 13 30.3  30.2  15 14.1  29 23 
+Trinidad and Tobago  TTO High  21.7  18.4  6.5 3 27 12 14 9 5.2 3.1 37 22 
+Tunisia  TUN  Mid 5.2 3.5 2.1 0.8 51 31 8.4 6.5 3.9 2.2 37 28 
+Turkey  TUR Mid 11.9  7 3.4 1.1 34 19 15.7  12.1  7.6 3.9 41 33 
+Tanzania  TZA Low 5.4 3.4 5.3 3 49 22 5.2 3.4 3.4 1.9 57 40 
+Uganda  UGA  Low 3.3 2.1 3 2 48 22 5.2 3.8 1.9 1.6 74 46 
+Ukraine  UKR  Mid 28.1  15.9  28.1  14.4  28 16 9.1 6.4 5 2.5 52 45 
+Uruguay  URY Mid 20.1  16 5 4.2 30 12 13.7  8.7 7.1 3 49 38 
+United States  USA High  46.2  33.3  16.7  6.2 34 19 33.9  17.2  15.8  6.3 69 29 
+Uzbekistan  UZB Mid 3.6 2.2 3.2 1 50 27 6.6 5.4 3 1.8 58 39 
+Venezuela  VEN Mid 2.7 1.8 0.9 0.6 93 62 3.5 2.8 1.4 1 100 75 Manchester Centre for Digital Development Working Paper 87  
+30 
+ ITU Country Name  ISO Income  fixdownavg  fixdownmed  fixupavg  fixupmed  fixavglat  fixmedlat  mobdownavg  mobdownmed  mobupavg  mobupmed  mobavglat  mobmedlat  
+Viet Nam  VNM  Mid 21.6  17.3  20.6  17.2  13 4 9.5 6.7 4.6 2.2 42 35 
+South Africa  ZAF Mid 7.7 4.6 4.6 0.9 44 25 23.2  17.8  9.6 5.5 37 26 
+Zimbabwe  ZWE  Low 4.9 2.5 4.1 1.5 42 23 6.7 5.4 2.7 1.1 68 46 
+ Manchester Centre for Digital Development Working Paper 87  
+31 
+ Appendix B . Broadband Indices Scores  
+ITU Country Name  ISO Region WB  Income Level  ifix imob  
+Afghanistan  AFG South Asia  Low 0.269928558  0.111865259  
+Albania  ALB Europe & Central Asia  Middle  0.238573938  0.345388979  
+United Arab 
+Emirates  ARE Middle East & North 
+Africa  High  0.413216793  0.487052137  
+Argentina  ARG  Latin America & 
+Caribbean  Middle  0.201597738  0.24518 7873  
+Armenia  ARM  Europe & Central Asia  Middle  0.281017344  0.303214124  
+Australia  AUS East Asia & Pacific  High  0.282310906  0.521629878  
+Austria  AUT  Europe & Central Asia  High  0.379706301  0.542819645  
+Azerbaijan  AZE Europe & Central Asia  Middle  0.184405479  0.273924478  
+Belgium  BEL Europe & Central Asia  High  0.460743019  0.585986887  
+Bangladesh  BGD  South Asia  Low 0.327068429  0.193595741  
+Bulgaria  BGR  Europe & Central Asia  Middle  0.540860219  0.495566861  
+Bahrain  BHR  Middle East & North 
+Africa  High  0.299343302  0.373658804  
+Bosnia and 
+Herzegovina  BIH Europe & Central Asia  Middle  0.282931534  0.27195591  
+Belarus  BLR Europe & Central Asia  Middle  0.332077911  0.381602494  
+Bolivia (Plurinational 
+State of)  BOL Latin America & 
+Caribbean  Middle  0.260092743  0.233144222  
+Brazil BRA Latin America & 
+Caribbean  Middle  0.277281864  0.145392552  
+Canada  CAN  North America  High  0.434779915  0.572318819  
+Switzerland  CHE Europe & Central Asia  High  0.535962313  0.547378092  
+Chile  CHL Latin America & 
+Caribbean  Middle  0.357740752  0.356547432  
+China  CHN  East Asia & Pacific  Middle  0.51874917  0.654458787  
+Colombia  COL Latin America & 
+Caribbean  Middle  0.192051157  0.165628852  
+Costa Rica  CRI Latin America & 
+Caribbean  Middle  0.306139906  0.202444409  
+Cyprus  CYP Europe & Central Asia  High  0.255098017  0.302178096  
+Czech Republic  CZE Europe & Central Asia  High  0.391730685  0.578846473  
+Germany  DEU  Europe & Central Asia  High  0.396505594  0.344823432  
+Denmark  DNK  Europe & Central Asia  High  0.645807658  0.692998165  
+Dominican Rep.  DO
+M Latin America & 
+Caribbean  Middle  0.30748955  0.25735058  
+Algeria  DZA Middle East & North 
+Africa  Middle  0.098674985  0.146043723  
+Ecuador  ECU Latin America & 
+Caribbean  Middle  0.257290508  0.220523029  
+Egypt  EGY Middle East & North 
+Africa  Middle  0.17003884  0.262796013  
+Spain  ESP Europe  & Central Asia  High  0.412642051  0.432392626  
+Estonia  EST Europe & Central Asia  High  0.407241122  0.470043105  
+Finland  FIN Europe & Central Asia  High  0.393247938  0.545246699  
+France  FRA Europe & Central Asia  High  0.264594693  0.420259779  
+United Kingdom  GBR  Europe & Central Asia  High  0.394826125  0.436018533  
+Georgia  GEO  Europe & Central Asia  Middle  0.345052747  0.371410142  
+Ghana  GHA  Sub-Saharan Africa  Middle  0.240265858  0.249625351  
+Greece  GRC  Europe & Central Asia  High  0.244030262  0.389476129  Manchester Centre for Digital Development Working Paper 87  
+32 
+ ITU Country Name  ISO Region WB  Income Level  ifix imob  
+Guatemala  GTM  Latin America & 
+Caribbean  Middle  0.243800247  0.292629768  
+Hong Kong, China  HKG  East Asia & Pacific  High  0.88073916  0.469264457  
+Honduras  HND  Latin America & 
+Caribbean  Middle  0.250071328  0.11997356  
+Croatia  HRV  Europe & Central Asia  High  0.292098385  0.44927 2905  
+Hungary  HUN  Europe & Central Asia  High  0.45655055  0.694031769  
+Indonesia  IDN East Asia & Pacific  Middle  0.303192662  0.265291336  
+India  IND South Asia  Middle  0.281564683  0.1806771  
+Ireland  IRL Europe & Central Asia  High  0.383985198  0.359122892  
+Iran ( Islamic 
+Republic of)  IRN Middle East & North 
+Africa  Middle  0.194401942  0.301770525  
+Iraq IRQ Middle East & North 
+Africa  Middle  0.279641964  0.162323745  
+Israel  ISR Middle East & North 
+Africa  High  0.409821285  0.403768442  
+Italy  ITA Europe & Central Asia  High  0.234909393  0.333143712  
+Jamaica  JAM  Latin America & 
+Caribbean  Middle  0.227885128  0.281448602  
+Jordan  JOR Middle East & North 
+Africa  Middle  0.279752706  0.401635901  
+Japan  JPN East Asia & Pacific  High  0.625713844  0.376265526  
+Kazakhstan  KAZ Europe & Centra l Asia  Middle  0.243256732  0.305704088  
+Kenya  KEN Sub-Saharan Africa  Low 0.298187004  0.341409988  
+Kyrgyzstan  KGZ Europe & Central Asia  Middle  0.271044266  0.277401342  
+Cambodia  KHM  East Asia & Pacific  Low 0.3594639  0.309739353  
+Korea (Rep. of)  KOR  East Asia & Pacific  High  0.982758621  0.605551089  
+Kuwait  KWT  Middle East & North 
+Africa  High  0.345636068  0.416089252  
+Lebanon  LBN Middle East & North 
+Africa  Middle  0.116439535  0.228803087  
+Sri Lanka  LKA South Asia  Middle  0.257519738  0.260920213  
+Lithuania  LTU Europe  & Central Asia  High  0.593575939  0.591561584  
+Luxembourg  LUX Europe & Central Asia  High  0.465088881  0.60700847  
+Latvia  LVA Europe & Central Asia  High  0.564579947  0.56991869  
+Macao, China  MAC  East Asia & Pacific  High  0.78186931  0.465131574  
+Morocco  MAR  Midd le East & North 
+Africa  Middle  0.102875201  0.329362764  
+Moldova  MD
+A Europe & Central Asia  Middle  0.50488516  0.338730913  
+Maldives  MD
+V South Asia  Middle  0.337064892  0.384342564  
+Mexico  MEX  Latin America & 
+Caribbean  Middle  0.252867288  0.273782708  
+The Former Yugoslav 
+Rep. of Macedonia  MKD  Europe & Central Asia  Middle  0.273763898  0.346638109  
+Malta  MLT  Middle East & North 
+Africa  High  0.439055135  0.625383773  
+Montenegro  MNE  Europe & Central Asia  Middle  0.287654135  0.372996787  
+Mongolia  MN
+G East Asia & Pacific  Middle  0.316548012  0.323606103  
+Mozambique  MOZ  Sub-Saharan Africa  Low 0.199940869  0.275800277  
+Malaysia  MYS  East Asia & Pacific  Middle  0.301137287  0.285105644  
+Nigeria  NGA  Sub-Saharan Africa  Middle  0.165674055  0.076447874  Manchester Centre for Digital Development Working Paper 87  
+33 
+ ITU Country Name  ISO Region WB  Income Level  ifix imob  
+Nicaragua  NIC Latin America & 
+Carib bean  Middle  0.257741958  0.233623636  
+Netherlands  NLD Europe & Central Asia  High  0.546442139  0.721433111  
+Norway  NOR  Europe & Central Asia  High  0.517012541  0.754132628  
+New Zealand  NZL East Asia & Pacific  High  0.428582123  0.475013973  
+Oman  OM
+N Middle East &  North 
+Africa  High  0.243726958  0.338041462  
+Pakistan  PAK South Asia  Middle  0.164814099  0.204222079  
+Panama  PAN  Latin America & 
+Caribbean  Middle  0.30972724  0.325200021  
+Peru  PER Latin America & 
+Caribbean  Middle  0.176137606  0.332795987  
+Philippines  PHL East Asia & Pacific  Middle  0.199199401  0.260808304  
+Poland  POL Europe & Central Asia  High  0.35481846  0.374828945  
+Portugal  PRT Europe & Central Asia  High  0.446434815  0.397714332  
+Paraguay  PRY Latin America & 
+Caribbean  Middle  0.288070484  0.244414585  
+Qatar  QAT  Middle East & North 
+Africa  High  0.396720019  0.550748406  
+Romania  ROU  Europe & Central Asia  Middle  0.76384445  0.446218032  
+Russian Federation  RUS Europe & Central Asia  Middle  0.513071852  0.244615691  
+Saudi Arabia  SAU Middle East & North 
+Africa  High  0.2087194 61 0.264355223  
+Singapore  SGP East Asia & Pacific  High  0.914527071  0.966666667  
+El Salvador  SLV Latin America & 
+Caribbean  Middle  0.209768938  0.172696276  
+Serbia  SRB Europe & Central Asia  Middle  0.328456311  0.432041201  
+Slovakia  SVK Europe & Central Asia  High 0.336340532  0.504760319  
+Slovenia  SVN Europe & Central Asia  High  0.352110643  0.489650948  
+Sweden  SWE  Europe & Central Asia  High  0.557018001  0.488427595  
+Thailand  THA East Asia & Pacific  Middle  0.468833038  0.726600873  
+Trinidad and Tobago  TTO Latin Ameri ca & 
+Caribbean  High  0.379152786  0.386151881  
+Tunisia  TUN  Middle East & North 
+Africa  Middle  0.188229102  0.318736426  
+Turkey  TUR Europe & Central Asia  Middle  0.275310809  0.361955731  
+Tanzania  TZA Sub-Saharan Africa  Low 0.25045645  0.223615035  
+Uganda  UGA  Sub-Saharan Africa  Low 0.239293591  0.188222151  
+Ukraine  UKR  Europe & Central Asia  Middle  0.401179662  0.228613976  
+Uruguay  URY Latin America & 
+Caribbean  Middle  0.373744798  0.293308501  
+United States  USA North America  High  0.425641202  0.463248629  
+Uzbekistan  UZB Europe & Central Asia  Middle  0.206042772  0.242561499  
+Venezuela  VEN  Latin America & 
+Caribbean  Middle  0.000998004  0.009417277  
+Viet Nam  VN
+M East Asia & Pacific  Middle  0.490764909  0.281355833  
+South Africa  ZAF Sub-Saharan Africa  Middle  0.228434035  0.4709038 03 
+Zimbabwe  ZWE  Sub-Saharan Africa  Low 0.23295079  0.191828279  
+ 

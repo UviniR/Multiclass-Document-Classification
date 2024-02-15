@@ -1,0 +1,1991 @@
+Search Costs and Relational Contracting: The Impact of
+a Digital Phonebook on Small Business Supply Chains
+Jess Rudder∗
+JOB MARKET PAPER
+Latest version available here.
+October 16, 2020
+Abstract
+Information frictions can be substantial in rural markets in developing countries and
+can raise the cost of searching for market information. This includes search frictions
+associated with learning about goods and services oered by numerous suppliers dis-
+persed along urban-to-rural supply chains. I investigate whether lowering search costs
+for small rms in rural Tanzania decreases information frictions and changes incentives
+to engage in relational contracting with suppliers and customers. Using a randomized
+experiment of 500 small rms, I study the impact of a digital phonebook that lowers
+the cost of accessing new business and customer networks. Participating rms are split
+into a control and treatment group with two variations: 1) a phonebook listing that is
+visible to upstream suppliers in urban areas, and 2) a phonebook listing that is visible
+to downstream customers in rural areas. I nd that treated rms increase relational
+contracting with their suppliers and decrease it with their customers. Yet, there is no
+strong evidence that the number of new customers or suppliers increases. It suggests
+that being listed in the directory caused rms to update their valuation of relational
+contracts and respond by negotiating better terms with suppliers and customers.
+∗PhD Candidate in Agricultural and Resource Economics, University of California Davis. Email: jrudder@ucdavis.edu. I
+thank Brian Dillon, Travis Lybbert, Arman Rezaee, and Rachael Goodhue for providing guidance and advising throughout this
+project. Galen Weld and Richard Anderson at the University of Washington provided computer programming support and were
+critical to making this research possible. I thank the leadership at the Institute for Rural Development Planning (IRDP) in
+Tanzania for their collaboration, especially Emmanuel Mwang'onda and Stanslaus Msuya. Editha Kokushubira, Adili Michael,
+Eden Luvinga, Neema Mkuna, and Felix Mbakile provided excellent research assistance. The project was supported by the
+Cornell Institute for Social Science at Cornell University and a Jastro Shields grant from the University of California Davis.
+This study was pre-registered at the AEA Social Science Registry (ID:AEARCTR-0004430) and has IRB approval in the US
+through UC Davis and Cornell University and in Tanzania through IRDP.
+1Contents
+1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2 Background: Urban-to-Rural Trade in Tanzania . . . . . . . . . . . . . . . 9
+2.1 Importance of Information Frictions . . . . . . . . . . . . . . . . . . . . . . . 9
+2.2 Relational Contracting Norms . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+2.3 Retail and Service Firms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+3 Predictions: Search Costs with Relational Contracts . . . . . . . . . . . . 14
+3.1 Upstream and Downstream Relational Contracting . . . . . . . . . . . . . . 14
+3.2 Urban-to-Rural Trade with Heterogeneous Firms . . . . . . . . . . . . . . . . 16
+4 Experimental Design . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+4.1 Description of Intervention . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+4.1.1 Search and Visibility by Treatment Group . . . . . . . . . . . . . . . 18
+4.1.2 Random Order of Listed Firms . . . . . . . . . . . . . . . . . . . . . 19
+4.1.3 Experimental Compliance . . . . . . . . . . . . . . . . . . . . . . . . 19
+4.1.4 Pre-Analysis Plan . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+4.2 Sampling Frame . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+4.2.1 Stratied Treatment Assignment . . . . . . . . . . . . . . . . . . . . 22
+4.2.2 Upstream Supplier and Downstream Customer Phone Numbers . . . 23
+4.3 Sample Characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+4.3.1 Rural Firm Characteristics . . . . . . . . . . . . . . . . . . . . . . . . 24
+4.3.2 Balance Checks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+5 Empirical Approach . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+5.1 Discrete Choice Experiment . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+5.2 Treatment Eects Estimation . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+5.3 Outcome Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+5.4 Empirical Tests . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+6 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+26.1 Willingness to Pay for Relational Contracting Attributes . . . . . . . . . . . 30
+6.2 Upstream, Downstream, and Productivity Treatment Eects . . . . . . . . . 31
+6.2.1 Relational Contracting Index Components . . . . . . . . . . . . . . . 37
+6.3 Heterogeneity by Firm Sector . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+6.4 Spillovers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+7 Anticipating General Equilibrium Eects . . . . . . . . . . . . . . . . . . . 43
+8 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+Additional Tables and Figures . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+Appendix . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+A Index Construction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+B Platform Engagement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+C Robustness Checks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+C.1 Attrition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+C.2 Randomization Inference . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+C.3 Inverse Covariance Weighted Index Construction . . . . . . . . . . . . . . . . 63
+D Discrete Choice Experiment Detail . . . . . . . . . . . . . . . . . . . . . . . 64
+D.1 Baseline Relational Contracting . . . . . . . . . . . . . . . . . . . . . . . . . 66
+31 Introduction
+High search costs along rms' supply chains raise barriers to acquiring new information about
+prices, quality, and availability of goods. These information frictions can constrain produc-
+tivity for small rms in rural areas of developing countries in both their input and output
+markets and prevent them from growing (Jensen and Miller, 2018). Small rms incur search
+costs when they source inputs from upstream suppliers located in urban centers. At the
+same time, downstream customers of rural rms in their output markets engage in search to
+locate goods and services from rural rms. Information frictions can substantially contribute
+to transaction costs (Allen, 2014; Startz, 2018; Aggarwal et al., 2018), and lowering search
+costs along a supply chain can improve rm productivity (Bernard et al., 2019) and increase
+aggregate output (Obereld, 2018).
+The presence of search costs can increase the value of relational contracting - where buyers
+leverage repeat transactions with sellers to access benets that are not readily provided with
+one-o purchases in the spot market - such as when sellers provide credit, price discounts,
+and arrange ordering and shipping of goods for buyers (Fafchamps, 2006). If it were costless
+to locate new sellers, buyers would have less incentive to repay deferred payments. Likewise,
+if it were costless to locate new buyers and if the pool of potential buyers was suciently
+large, sellers would have less incentive to sustain relational contracts with their customers.
+In practice, it is common for sellers to build-in incentives to ensure that trade relationships
+are sustained in agricultural and other settings with informal contracting (Sexton, 2013;
+Casaburi and Reed, 2019). Relational contracting helps resolve market failures that persist
+in developing country contexts - such as in the provision of credit.
+In this paper, I ask if lowering search costs in input and output markets improves rm
+productivity and changes incentives to engage in relational contracting with suppliers and
+customers. Using a randomized experiment of 500 rural rms, I study the impact of a digital
+phonebook connecting mobile phone users to a platform that lists rm contact information
+from a variety of sectors in urban and rural areas in central Tanzania. The experiment
+generates two sources of exogenous variation. First, rural rms are randomly listed in a
+digital phonebook that is searchable by mobile-phone users throughout Tanzania. Second,
+4listed rms are split into two treatment groups - 1) a phonebook listing that is visible to
+upstream suppliers in urban areas, and 2) a phonebook listing that is visible to downstream
+customers in rural areas. The design allows for analysis comparing the extent to which
+input or output search costs constrain business performance and whether lowering the cost
+of initial contact improves rm productivity.
+I dene relational contracting to include benets that rms provide to their customers and
+receive from their suppliers that are not readily provided through anonymous transactions
+in a spot market. Spot market purchases involve anonymous buyers and sellers that do
+not build trust over time. To show that rural rms prefer relational contracts with their
+suppliers, I present results from a discrete choice experiment demonstrating that rms value
+their suppliers, credit, and delivery, and are willing to pay higher input prices to access these
+benets with known suppliers. Firms engage in relational contracting with their suppliers
+by receiving credit on input purchases, arranging shipping of inputs, and receiving price
+discounts. For their customers, rms provide credit on goods or services purchased, arrange
+sourcing of goods, and give price discounts to frequent customers. I document substantial
+use of relational contracting and show descriptive evidence that rural rms provide benets
+of relational contracting to their customers more often than they receive them from their
+suppliers.
+Using an index of relational contracting activity, I nd that being listed in the phone
+directory causes rms in the upstream treatment group to increase relational contracting
+with their suppliers by 0.10 standard deviations compared to the control group. And they
+are 75% more likely to receive credit from their suppliers. Firms in both treatment arms
+also decrease their search activities and have fewer new suppliers compared to the control
+group. With respect to downstream relational contracting with customers, both treatment
+arms decrease provision of relational contracting benets by about 0.11 standard deviations
+compared to the control group. However, there is no strong evidence that the quantity of
+new customers increases compared to the control group. Empirical results do not provide
+evidence that sales revenue increased for treated rms. But, the upstream treatment arm
+increased output prices and downstream arm was also more likely to purchase inputs locally
+(instead of travelling to cities) and paid lower transport costs.
+5These ndings are motivated by theoretical predictions about how search costs change
+the information structure around how rms search and rely on relational contracting. Specif-
+ically, a change in search costs presents the possibility of an asymmetric response by rms
+with respect to upstream and downstream relational contracting. Since it becomes less costly
+to locate new suppliers, rms can leverage the credible threat of divesting from relationships
+with existing suppliers to gain new benets since it becomes less costly to meet new suppli-
+ers. But, the value of existing relationships remains high because rms have already formed
+relationships and have a history of transactions. Therefore, rms can arrange better benets
+from their existing suppliers. On the downstream side, if the rms have higher contact with
+new customers (or if they anticipate having more contact with customers), they will reduce
+their relational contracting benets. This occurs if rms assess the cost of maintaining re-
+lational contracts with customers as too high and are willing to reduce it once it is easier to
+connect with new customers.
+A nal prediction examines rm heterogeneity - specically whether a rm is in the retail
+or services sector. An important aspect of search costs for rural rms that source inputs from
+urban areas is the cost of transportation that are paid each time a rm sources inputs. I rst
+show descriptively that retail rms source larger orders of inputs and have lower per-unit
+transportation costs. The cost of maintaining supplier relationships in cities is less costly for
+retail rms than for services rms, since input prices are lower in urban areas and transport
+costs can be spread over larger order sizes. Empirical results show that the treatments cause
+retail rms to engage in substantially more search activities, pay lower input prices, pay
+higher transport costs, and purchase inputs in urban areas compared to service rms. It
+supports the idea that rms' per-unit transaction costs drive much of their input search
+behavior and determines, in part, the extent to which it is worthwhile it to search for inputs
+in urban areas, or if it is more worthwhile to pay higher input prices by searching locally.
+Policymakers and researchers have shown interest in investing in programs and policies
+that improve productivity for small rms and enable them to grow. Many small rms face
+barriers to expansion from both input and output sides of their supply chains. For inputs,
+incomplete markets for nance, labor, energy, and supplies create frictions that prevent
+enterprises from reliably meeting local demand for goods and services. For outputs, small
+6rms in rural areas may have few avenues for reaching new customers or accessing new
+markets (an exception is Anderson et al. (2018)). Prior research has examined the role of
+in relaxing input-related constraints to rm growth - such as access to capital and credit
+(De Mel et al., 2008), management and business training (Bloom et al., 2013; McKenzie
+and Woodru, 2014; Anderson et al., 2018), and has begun unpacking the role of networks
+to disseminate knowledge and improve business practices (Fafchamps and Quinn, 2016; Cai
+and Szeidl, 2018; Hardy and McCasland, 2018). Prior research has studied programs that
+relax input market constraints or output market constraints, but no study has been able to
+experimentally relax both in a single setting. This research addresses this gap by exploring
+how search frictions in input and output markets constrain rural rms' trading relationships
+in Tanzania.
+Much of the empirical evidence on relational contracting comes from international trade
+settings (Macchiavello and Morjaria, 2015; Startz, 2018), manufacturing (Mcmillan and
+Woodru, 1999; Fafchamps and Quinn, 2016) or focuses on agricultural supply chains
+(Fafchamps and Minten, 2002; Macchiavello and Morjaria, 2020; Casaburi and Reed, 2019)
+where buyers and sellers only transact during harvest season. In contrast, this setting en-
+compasses rural and urban areas in Tanzania to consider how upstream and downstream
+relational contracts are formed and sustained. Firms enrolled in this study are small or
+microenterprises with few employees - only 15% of rms have any paid employee - based in
+medium-sized rural towns in central Tanzania. Most rms source relatively homogeneous
+inputs from urban areas and re-sell them or process them into an value-added service in
+their rural communities. This includes basic food staples such as rice, beans, vegetables, and
+sugar, as well as household items like soap, and inputs for service providers such as thread,
+needles, bike tires, and cement. Despite having relatively competitive market conditions, I
+document substantial use of relational contracting by rural rms with upstream and down-
+stream trading partners. I examine both input and output market constraints at the same
+time and compare how relational contracting norms respond to changes in search costs.
+Other research oers examples of how rm welfare improves when new business contacts
+are introduced. Fafchamps and Quinn (2016) randomly link manufacturing rms in Kenya
+and nd that new business practices diuse rapidly across new links. Cai and Szeidl (2018)
+7nd that rm productivity increases when managers in small and medium Chinese rms are
+randomly assigned to participate in business networking groups with managers from other
+rms. Brooks et al. (2018) study microenterprise mentors and showed that an important
+mechanisms through which mentors inuenced mentee outcomes was by introducing them
+to higher quality input suppliers.
+A key dierence in this setting is that contacts generated by this intervention intend to
+introduce buyers and sellers, rather than promote general dissemination of business knowl-
+edge or practices through exposure to knowledgeable peers. In that sense, it is closer to the
+work by Macchiavello and Morjaria and Ghani and Reed, who examine how changes in cost
+structure cause relational contracting to change. Another dierence is this research targets
+rms from a range of sectors with attention on urban-to-rural supply chains. Most rms in
+this study are small or microenterprises, selling relatively homogeneous household commodi-
+ties or providing common services. For these types of rms with modestly sized and irregular
+orders, we still know little about how the number and quality of business relationships aect
+operations.
+The remainder of the paper is as follows: In Section 2, I provide background on informa-
+tion frictions and relational contracting in this setting. In Section 3, I use the background to
+motivate theoretical predictions that can be tested in data to understand how search costs
+change relational contracting. Section 4 describes the experimental design and sampling
+frame. Section 5 provides details on the empirical strategy. I describe how willingness-to-
+pay for relational contracting was elicited through a discrete choice experiment and details
+on how treatment eects are measured. Section 6 describes results from the discrete choice
+experiment and eld experiment. Results from the eld experiment highlight changes in 3
+groups of outcomes: upstream outcomes, downstream outcomes, and productivity. I also
+provide results for the primary heterogeneous treatment eect of interest: dierences be-
+tween retail and service rms. Section 7 provides a discussion of results. Finally, in Section
+8 I conclude by discussing the implications for rm productivity when a new technology
+facilitates a disruption to pre-existing marketing norms.
+82 Background: Urban-to-Rural Trade in Tanzania
+2.1 Importance of Information Frictions
+A rm's ability to mobilize resources and make adjustments that respond to changes in the
+market environment are important elements of its decision set. This includes the ability
+to choose among dierent goods and services oered by suppliers. Under excessive market
+fragmentation, which is more likely to occur in disconnected rural markets than in urban
+areas, excessive search costs limit rms' ability to engage in business transactions outside of
+their local market network. Jensen and Miller (2018) showed that mobile phone proliferation
+in southern India initially increased market integration in the sh market and subsequently
+lowered the cost of acquiring new information in complementary markets (boat-building)
+across geographically dispersed areas. It ultimately enabled high-productivity builders to
+grow and gain market share.
+Search costs are a type of information friction that contribute to total transaction costs.
+In addition to physical travel costs, North's canonical 1991 paper described transaction costs
+as including search, bargaining, time, and contract enforcement costs associated with making
+market transactions, and well as social norms and institutional constraints. As mobile phone
+networks proliferated throughout the 2000s, the cost of communication decreased and lowered
+price dispersion in agricultural markets (Jensen (2007); Aker (2010)). Yet, despite gains
+from cheaper communication, search and information frictions persist. In a recent paper,
+Startz (2018) estimates that information costs, including those required to search for and
+maintain supplier relationships, explain a substantial portion of overall transaction costs in
+Nigerian wholesaler supply chains. Similarly, Allen (2014) estimates that nearly half of price
+dispersion is explained by information frictions in agricultural markets in the Philippines.
+In the information frictions literature, it is common to point out that trade declines
+faster with distance than is explained by transportation costs alone. If this holds in the
+Tanzanian context, it implies that information frictions lower the total volume of trade in
+rural areas when substantial information costs are combined with remoteness and high travel
+costs. Aggarwal et al. (2018), in North-Central Tanzania, estimated that non-pecuniary
+costs of travel (including information frictions, opportunity costs, and concern of stock-outs)
+9accounted for 57% of total travel costs.
+In aggregate, information frictions and high search costs can lower productivity by in-
+creasing the likelihood of stock-outs, increasing transaction costs, and lowering rms' ability
+to adapt to changes in demand. For rural consumers that purchase from rural rms, wel-
+fare losses depend on whether there are many close substitutes in the market. In settings
+where consumers regularly purchase food staples from local markets, this can reduce food
+security through higher-than-necessary price variation, regular stock-outs in local rms, and
+high transportation costs to obtain preferred goods or services. Given that nearly half of
+rural household food budgets are spent in local markets, rural rms' supply chains are worth
+studying in detail to understand how local market institutions contribute to regional food
+security (Reardon et al., 2019). This research contributes to this literature by clarifying how
+input and output market business relationships contribute to small rms transaction costs
+and productivity.
+2.2 Relational Contracting Norms
+Once trading partners establish mutual trust, informal relational contracts are sustained by
+the value of future relationships (Baker et al., 2002). Relational contracting occurs both
+in markets where third parties have the capacity to enforce contracts and in settings where
+contract enforcement is weak. The key dierence is that in settings with more contract
+enforcement, some part of the contract is binding and enforceable while additional benets
+are contingent and result from a dynamic process where buyers and sellers transact over time
+to learn about each other (Michler and Wu, 2020; Sexton (2013). Market transactions with
+contingency benets can also arise in settings where little contract enforcement is provided
+by state institutions as long as the stream of future benets is suciently high to compensate
+for costs of managing the relationship.
+Instead externally enforced contracts, agents employ informal mechanisms to validate
+the quality of business partners or rely on repeat transactions as a commitment device to
+build trust. Informal mechanisms include asking social networks to recommend new business
+partners or sharing negative experiences to sanction business partners who have reneged on
+contract terms. Using a survey of manufacturing rms in Vietnam, Mcmillan and Woodru
+10(1999) found that downstream rms are more likely to obtain credit from their upstream
+supplier if they have fewer supplier options because the supplier benets from the credible
+threat of holding-up shipments if the downstream customer does not pay their debt. This
+arrangement also reduces the downstream rms' bargaining power relative to their suppliers
+and it was not clear how this asymmetric power aected rms ability to grow their businesses.
+Similarly, Macchiavello and Morjaria (2020) found that higher competition among coee mills
+in Rwanda lowers relational contracting with farmers by increasing incentives for farmers to
+default and decreasing coee mills prot margins. In contrast, Ghani and Reed (2020) nd
+that an increase in competition in input markets increased the provision of credit to repeat
+buyers in order to retain them as customers and deter entry of new rms.
+The fact that high search costs and information frictions co-exist with relational con-
+tracting points to a central tension in this setting. If markets were perfectly competitive,
+all agents could engage in ad-hoc search in spot markets and obtain goods with the same
+price and quality attributes (Fafchamps, 2006). But, relational contracting, such as provid-
+ing credit, arranging delivery, or ordering specialized goods, would not necessarily emerge
+because sellers must hold inventory and defer receipt of payment, or buyers must send pay-
+ments and defer receipt of goods. If there is no recourse for unpaid debts, agents are forced
+to rely on cash payments at the moment of trade. To overcome these missing markets, agents
+build trust with their suppliers and customers in order to bear the risk of potential losses
+from allowing deferred payments.
+In this context, some rms report repeat transactions with known suppliers, while others
+report engaging in ad-hoc search each time that they acquire inputs. I used baseline survey
+questions to characterize the typical `contract' attributes between rms and their suppliers
+and customers. The subsequent sections describe these relational contracting norms.
+Table 1 documents common benets at baseline of relational contracts for rural rms in
+their upstream (supplier) purchases and their downstream (customer) sales. When purchas-
+ing business inputs, only nine percent of rms report receiving any credit on goods purchased,
+19% sent payments using mobile money, 29% reported receiving a price discount, and 17%
+had goods shipped to their storefront. Most of these benets involve deferred payment and
+thus require buyers to build relationships with suppliers through repeat transactions. The
+11Table 1: Upstream and Downstream Relational Contracting
+Mean SD
+Upstream Relational Contracting
+Receives Goods on Credit 0.09 0.29
+Sends Mobile Money to Suppliers 0.19 0.39
+Receives Price Discount 0.29 0.45
+Has Preferred Suppliers 0.40 0.49
+Input Acquisition Location
+Purchased Locally 0.33 0.47
+Shipped from City 0.17 0.37
+Travelled to City 0.50 0.50
+Downstream Relational Contracting
+Sells Goods/Services on Credit 0.57 0.50
+Receives Mobile Money from Customers 0.16 0.36
+Gives Discount to Frequent Customers 0.53 0.50
+Makes orders for Customers 0.23 0.42
+Primary Customer Base
+Subvillage 0.30 0.46
+Village 0.52 0.50
+Other villages/cities 0.18 0.39
+All variables are categorical (0/1).
+exception is mobile money payments. Although mobile money payments are instantaneous
+and do not involve deferred payments, they represent a step toward formalizing a relationship
+because they require rms and their suppliers to exchange phone numbers, a pre-condition
+for repaying payments and arranging shipping. Not all rms rely on relational contracting
+with their suppliers and customers. Overall, only 40% of rms reported having preferred
+suppliers. The remaining 60% of rms may have suppliers that they recognize or are familiar
+with, but do not prioritize making purchases from them and are not consistently building
+the relationships required to obtain other benets.
+On the downstream side it is clear that, on average, rural rms oer benets associated
+with relational contracting to their customers more often than they receive them from their
+12suppliers. About 57% sold goods or services on credit, 53% gave a price discount to fre-
+quent customers, and 23% made special orders for their customers. Instead of asking about
+preferred or regular customers, the survey asked where most customers are from. The vast
+majority of rms (82%) report that most customers are from either their subvillage (similar
+to a neighborhood) or other areas in their village. Using mobile money with customers is
+equally infrequent as with suppliers - only 16% reported using it in the previous week.
+2.3 Retail and Service Firms
+As detailed above, rms report a mix of purchasing inputs locally and travelling or having
+inputs shipped from another location. The experiment dierentially lowers search costs for
+rural rms to learn information about urban rms in one treatment arm. Therefore, to learn
+about how changes to search costs aects rms, it is worth considering which types of rms
+are more likely to transact in urban areas and which are more likely to search locally.
+The natural division for examining rm heterogeneity is through rm sectors. The major
+sectoral demarcation is between retail rms and service rms. Retail rms are characterized
+by purchasing inputs and selling them at a mark-up to local customers. The most common
+retail rms are small dry-goods stores selling basic household commodities - rice, beans,
+sugar, tea, soap, etc. But the sample also include pharmacies, clothing retailers, and agro-
+input sellers. Service rms, on the other hand, purchase inputs and then engage in value-
+added production to provide a service to their customers. The most common service rms
+are tailors, bike mechanics, restaurants, and salon operators. All of these rms source inputs
+(thread, needles, bike tires, nails, raw food, shampoo, razors, etc.) that contribute to the
+service they provide.
+Table 2 shows dierences in input acquisition by rm sector. Over half of service rms
+purchased inputs locally, while only 20% of retail rms did. In contrast, 81% of retailers
+and 44% of service rms acquired inputs from a city, through travel or shipping. The
+average input purchase value was over four times as large for retail rms than services rms
+(about 370,000TSH for retailers compared to 73,000TSH for service rms, equivalent to
+approximately $30USD and $155USD). Yet, travel costs as a share of order size was twice
+as much for service rms than retailers, at 10% and 5%, respectively. The gap in share
+13Table 2: Baseline Input Acquisition by Firm Sector
+Service Firm Retail Firm
+Value of Inputs Purchased (Tsh) 73,187.11 369,618.30
+Transport Costs on Inputs (Tsh) 4,140.72 12,349.11
+Transport Costs Share of Inputs Purchased 0.10 0.05
+Transport Costs Share, if Purchased in City 0.24 0.07
+Inputs Acquisition
+Purchased Locally 0.56 0.20
+Shipped from City 0.09 0.25
+Travelled to City 0.35 0.56
+of transportation costs widens if the sample is constrained to include only those rms that
+purchased from a city. For service rms, the transport costs as a share of the order size
+jumps to 24%, while for retailers it only goes up to 7% of total order size.
+3 Predictions: Search Costs with Relational Contracts
+Thus far, I have presented information about rms participation in relational contracting
+with their suppliers and customers. Table 1 showed descriptive evidence that rms provide
+relational contracting benets to their customers more often than they receive them from
+their suppliers. This merits exploring in detail by asking what does economic theory predict
+will happen to relational contracting with suppliers and customers if search costs decrease?
+3.1 Upstream and Downstream Relational Contracting
+Suppliers have an incentive to oer relational contracts as long as they anticipate that the
+stream of future benets from having a repeat customer is higher than the cost of maintaining
+the relationship. If it is too easy for customers to switch, sellers would have less incentive
+to oer relational contracts (Fafchamps, 2006). On the other hand, if search costs are so
+high that there are eectively no other sellers (they are a monopoly), then they also might
+not have a strong enough incentive to provide relational contracts to their customers. The
+presence of relational contracts for a given regime of search costs exists in between those
+two ends of the spectrum. When search costs are high and markets are imperfect, relational
+14contracts can be a rational `second best.' As recipients, relational contracts allow rms to
+access benets that are not provided by other markets (credit, shipping) or lower input prices
+(discounts). As providers, relational contracting allows rms to build a loyal customer base.
+The question becomes how do relational contracts change when search costs decrease?
+First, consider the upstream case where rms arrange relational contracting with their
+input suppliers. Under a regime of high search costs, rural rms have fewer incentives to
+search for new suppliers because the cost of doing so could quickly exceed the benet of
+meeting a new supplier, including costs to conrm availability of goods, establish trading
+norms, and verify quality. When search costs decrease, the outside option becomes more
+valuable since it becomes less costly for rms to locate and initiate relationships with new
+suppliers.
+If upstream relational contracting increases after search costs decrease, it suggests that
+suppliers have bandwidth to provide relational contracts after the bargaining position of their
+clients improves. In fact, in a survey of rms in urban centers conducted as a part of this
+study, 40% of urban rms indicated that they provided credit to their customers and 80%
+said they provided price discounts to frequent customers. Recall from Table 1 that only 10%
+of rural rms received credit from their suppliers and only 40% received a price discount.
+It shows that upstream suppliers in this setting provide relational contracting benets, but
+rural rms were less likely to benet from them.
+Prediction 1: Decreasing search costs increases the value of an outside option
+for rms with respect to their suppliers. If rms initiate many new relationships,
+relational contracting would decrease because it requires repeat transactions. If,
+however, rms increase engagement with known suppliers, a decrease in search
+costs will lead rural rms to negotiate more favorable trades and increase the
+extent of relational contracting with known suppliers with whom they have a
+record of repeat transactions.
+Next, consider the downstream case of rural rms relational contracting with their cus-
+tomers. Rural rms provide relational contracts to their customers as long as gains from a
+future stream of transactions is suciently high. The intervention increases contact between
+15rural rms and rural customers by listing rural rms contact information in a digital phone-
+book. From the rural customers' perspective, it is now cheaper to search among potential
+sellers. From rural rms perspective, they expect to interact with a pool of new potential
+customers. We could expect these rural customers to demand better terms from rural rms
+as observed by Ghani and Reed 2020). But from the rural rms' perspective, they are more
+likely to interact with new customers and change their oer of relational contracts. This could
+occur through two channels. First, if rms reach many new customers, they are less likely
+to provide relational contracting benets to new customers with few transactions, bringing
+down their average provision of benets. Second, even if rms customer base doesn't change,
+they may still anticipate new customers and withdraw relational contracting benets from
+their pre-existing customer base. If that is the case, it provides evidence that the change in
+search costs increases rms bargaining power relative to their customers.
+Prediction 2: Decreasing search costs increases the value of an outside option
+for rms andtheir customers. If rms access a new customer base, a decrease in
+search costs will lead rural rms to reduce the extent of relational contracting with
+their customers. Or, if rms have to compete to retain their existing customers,
+they will increase their provision of relational contracting.
+3.2 Urban-to-Rural Trade with Heterogeneous Firms
+Because relational contracting relies on repeat transactions, it is important to consider how
+transaction costs vary with rm type. Retail rms have larger input orders than service
+rms and purchase from cities more often, shown in Table 3.2. One important component of
+transaction costs are transport costs - a variable cost of production that must be paid each
+time a rm sources inputs. For rms with large input order sizes, it is relatively cheaper to
+search over a wider geographic area because they have lower transportation costs per unit
+of goods acquired.
+In general, retail rms have larger orders, lower per-unit transaction costs, and are more
+likely to transact in cities. Paying transport costs to reach the city is worth it for some rms
+16so that they can access lower input prices that are available in cities. This insight provides
+another prediction about how a networking technology that connects urban and rural rms
+will inuence search behavior. Specically, retail rms are more likely to search in cities
+compared to service rms because they have smaller transportation costs per unit of goods
+purchased.
+Prediction 3: If per unit transaction costs are high, rms will prefer to search in
+their local area. If per unit transaction costs are low, rms will prefer to search
+in urban areas because higher travel costs are attenuated by gains from lower
+input prices.
+4 Experimental Design
+This research is part of an ongoing program in central Tanzania to develop and market
+digital telephone directories that operate on all types of phones. eKichabi is the name
+for the digital phonebook based in Central Tanzania.1The digital phonebook is accessible
+through a USSD short code and is organized through a menu system similar to those used
+for mobile phone top ups and and mobile money transactions commonly seen in developing
+countries. The phonebook platform organizes participating rms by location and sector
+and guides users through a set of menus to reach a screen that displays the rm's contact
+information, location, sector and product specialities (see Dillon et al. (2018) and Weld et al.
+(2018) for more details). Unlike a typical phonebook from a US setting, eKichabi only lists
+rm contact information and does not list contact information for households or individuals
+that do not operate rms.
+4.1 Description of Intervention
+The program targets 3 types of participants linked through urban-to-rural supply chains:
+upstream urban suppliers, rural rms, and downstream rural consumers. The intervention
+focuses on the middle link of the supply chain: rural rms. Rural rms from small to
+1The word eKichabi is a portmanteau for \electronic Business Book", or Kitabu cha Biashara in Swahili.
+17medium sized commercial centers were invited to list their rm in the digital phonebook
+and then were randomly assigned to treatment and control groups.2The rst feature of the
+intervention is that all treated rms are listed in the digital phonebook and they can search
+for other rms in the same treatment group. This means that they can search for their own
+business and search for other rural rms. Second, rural rms were split into two separate
+treatment variations - 1) a phonebook listing that targets upstream suppliers in urban areas,
+1) a phonebook listing that targets downstream consumers in rural areas.
+The objective of the upstream treatment is to lower the cost of contacting new potential
+suppliers in urban areas and the objective of the downstream treatment is to lower the cost
+of contacting new potential customers in rural areas. Random assignment at the rm level
+generates exogenous variation in the likelihood that rural rms communicate with either
+upstream and downstream contacts. This variation eectively lowers the cost of making
+contacts along the supply chain and can be used to identify the impact of lowering search
+costs on business outcomes.
+4.1.1 Search and Visibility by Treatment Group
+The phonebook aects rms in two ways. First, rms listed in the phonebook are visible
+to other users. Second, rms themselves can search within the platform. The phonebook
+permits constraining the visibility and search of specic users by assigning phone numbers
+to have viewing restrictions. Figure 1 summarizes the search and visibility constraints for
+each group. Each treatment group has a `search capacity,' which describes what treated
+rms can see when they search within the phonebook application. Each group also has a
+`listing visibility', which describes which users can view each treatment group. The upstream
+treatment group can search for rms in urban areas (the typical location of suppliers) and
+for other rms in their same treatment arm. The downstream treatment group can only
+search for other rms in their same treatment group and cannot search for urban rms.
+Their listing, however, is visible to customers in rural areas. Customers are not listed in the
+phonebook (it only lists businesses) and therefore the downstream treatment arm cannot
+search for customers in the phonebook.
+2For an example of the phonebook menu system, see Figure 4 at the end of the paper.
+18Since both upstream and downstream treatment groups can search for other rms in their
+treatment group, it is important to note that treatment eects capture search activity with
+nearby rms. Therefore, treatment assignment to the upstream group can be thought of as
+increasing the probability that the rm communicates with urban rms and assignment to
+the downstream treatment group increases the probability of communicating with customers.
+Treatment eects for the upstream group capture any additional eect that occurs due to
+having access to urban rms. And, treatment eects for the downstream group capture any
+additional eect due to being searchable by customers. When control rms dial into the
+phonebook, they are routed to see only rms that are located outside the relevant region
+and cannot search for any treated rms or urban rms.
+4.1.2 Random Order of Listed Firms
+The phonebook platform permits the research team to specify a listing order for rms based
+on string search queries, locations, and/or sectors. We assigned pre-specied phone numbers
+to view each list. Similar to searches in any online platform, we assume that search order
+corresponds to higher exposure for rms at the top of the search list (Varian, 2007; Athey and
+Ellison, 2011; de Corni ere, 2016). Given that higher exposure could inadvertently prioritize
+some listed rms over others, the rm listing order was randomized for each new user that
+accessed the platform. In expectation, no rm in either arm will appear at the top of all
+searches within their assigned treatment arm, regardless of whether users search through
+menus or enter search terms.
+4.1.3 Experimental Compliance
+This dual nature of the platform (treated rms can both search and be found) has conse-
+quences for interpreting the average treatment eect (ATE). An intent-to-treat (ITT) causal
+estimate is equivalent to the ATE under perfect compliance. Here, the research team man-
+ages the rm listing on the application platform so that treatment compliance is guaranteed
+and all rms and consumers only access the version of the platform that is assigned to them.
+But, not all rms were found in searches by consumers nor did all rms choose to search
+within the platform itself. The treatment assignments are designed to exogenously increase
+19the probability that a rm engages with either their upstream input market or their down-
+stream output market. Further, if rms changed their phone number and did not inform the
+research team, they could have inadvertently been assigned dierent application visibility
+and would not longer be experimentally compliant. Therefore, the treatment eect estimates
+are most consistent with an ITT interpretation.
+4.1.4 Pre-Analysis Plan
+This experiment was registered with the American Economic Association's Social Science
+Registry after completing the baseline survey in September 2019. A recent paper by Duo
+et al. (2020) encourages researchers to be cautious in pre-specifying every possible outcome
+in order to remain open to unanticipated knowledge generation. The primary registered
+outcomes for this study includes most of the main outcomes presented here, did not include
+a relational contracting index as a primary outcome. The pre-analysis plan emphasized new
+relationships that rms could make as a result of treatment but did not directly anticipate the
+impact on prior relationships, which is why I provide a conceptual framework and motivate
+new ndings using baseline outcomes. In service of increasing transparency of how a pre-
+analysis plan morphs into a paper, I report pre-registered outcomes that are not highlighted
+in the main paper in an online appendix. This includes the other pre-registered heterogeneous
+treatment eects - gender of rm owner, remoteness of village, and rm preferences for either
+a downstream or upstream listing.
+20Figure 1: Experimental Design and Treatment Descriptions
+4.2 Sampling Frame
+Two regions in central Tanzania were identied for the digital directory - Dodoma and
+Singida. Three urban centers- Singida City, Dodoma City, and Manyoni town- bound a
+trading area that encompasses the western half of Dodoma region and the southern half
+of Singida region. Villages located within wards connecting these three urban hubs were
+selected as the pool of sample villages. Focusing on geographically contiguous area increases
+the likelihood that rms in selected communities trade with the chosen urban areas and
+21ensures that the phonebook lists rms that are relevant to their local commercial area.
+Within this trading area, rms from villages with a population above 3,000 people were
+eligible to be drawn into the baseline sample of villages where the research team carried
+out phonebook enrollment. The population criteria ensures that there is sucient density
+of potential businesses to invite for enrollment. There were 54 eligible villages that t the
+population criteria within the study area. Of these eligible villages, 20 villages were randomly
+selected after stratifying on primary urban center, distance to urban center, and population.
+This stratication scheme ensures that villages are dispersed throughout the trading area
+such that there is variation in village remoteness and transportation costs. In addition,
+there were 5 pilot villages that were chosen for their relative proximity to Dodoma, where
+the research team was based. Although these villages were not randomly selected, enrolled
+rms were added to the pool of baseline rms in order to increase sample size and improve
+power for estimating eects. Firm-level random assignment followed the same procedure as
+that described below for baseline rms from randomly selected villages. Figure 1 shows the
+experimental design, sampling criteria, and pre-specied strata.
+4.2.1 Stratied Treatment Assignment
+Firms were randomly allocated to experimental arms after the baseline survey was imple-
+mented. Unit-level randomization was chosen to maximize power and because rm-to-rm
+spillovers are expected to be minimal. As suggested in Athey and Imbens (2017), strata
+contained 6 rms (two times the number of intervention arms). Enrolled rms were grouped
+into strata based on village, sector, gender, and a self-reported measure of whether the rm
+places greater weight on accessing upstream contacts or downstream contacts, all of which
+were pre-specied in the pre-analysis plan. The measure of rm treatment preferences is
+used to ensure that rms who have a strong preference for either treatment are dispersed
+across arms.3
+3Strata were assigned using the optimal greedy algorithm using R package blockTools , suggested by
+Moore (2012). This method is preferred in this setting because there is variation in the number and sector of
+rms per village. If strata were created by partitioning rms by village, sector, and gender, there would be
+too few rms per strata to optimally estimate sampling variance (Imbens and Rubin, 2015). The blockTools
+package assigns rms to strata by minimizing the maximum multivariate distance of rms within strata based
+on pre-selected variables.
+224.2.2 Upstream Supplier and Downstream Customer Phone Numbers
+Treatments intend to connect listed rural rms (the target of the intervention) that have their
+contact information in the phonebook platform with platform users , dened as other rms or
+consumers that dial into the phonebook platform to connect with listed rms. Figure XX at
+the end of the paper shows the timing of treatments, surveys, and communcation with urban
+rms and rural customers. After collecting baseline questionnaires with participating rms
+in the sample communities drawn from rural areas, the research team also visited three urban
+centers - Dodoma City, Singida City, and Manyoni Town. A total of 348 wholesale and retail
+rms consented to list their business contact information in the phonebook platform. This
+pool of rms is the `urban' rm group. Their phone contact information is only searchable
+by rms in the upstream treatment arm.
+The last stage of eldwork involved randomly selecting smaller communities in areas
+near to rural rms and requesting a community meeting to introduce the digital phonebook.
+These are communities with few local businesses and populations less than 3,000 people.
+Households in these small rural communities typically have to travel to neighboring towns
+to purchase goods and services. During community meetings, attendees were taught how to
+use the phonebook and provided with examples of use-cases. Our research team gathered
+540 phone numbers from attendees that are used as the pool of `downstream' consumers that
+can search for rms in the second treatment arm.
+Finally, the digital phonebook was live and accessible to any mobile phone in Tanzania.
+Therefore, new, unknown phone numbers were randomly assigned to view group 1 or group
+2, which could potentially add noise to nal outcomes.
+4.3 Sample Characteristics
+The sample area is located in the semi-arid central region of Tanzania. Table 9 in Appendix
+compares characteristics from the sample regions with the national average. All three regions
+are less urban than the national average, have lower rates of non-farm employment and have
+lower mobile phone ownership rates. For a phone based study like this one, access to a mobile
+phone is required to participate and is part of the selection criteria. However, the rst lter
+23for participation is business ownership, which tends to overlap with phone ownership. No
+businesses declined to participate due to a lack of access to a phone.
+Figure 2: Upstream Firms, Rural Firms, and Customers Locations
+Figure 2 shows the geographic distribution of upstream rms, rural rms, and down-
+stream customers in Singida and Dodoma regions in central Tanzania. The size of the
+bubble indicates the number of phone numbers that were gathered from each location. Up-
+stream rm contact information was obtained from urban centers denoted with blue dots,
+rural rms that were assigned to treatment and control are located in villages denoted with
+green dots, and villages where the digital phonebook was promoted to potential customers
+are represented by yellow dots.
+4.3.1 Rural Firm Characteristics
+Table 3 presents descriptive statistics for rms that were enrolled into the phonebook plat-
+form during the baseline survey. The average rm owner is 35 years old and has 7 years of
+schooling. The average rm is just over 5 years old and has 0.21 paid employees - indicating
+that the vase majority of rms did not report any paid employees. About 36% of rms
+enrolled were owned by women. The majority of rm sectors relate to retail activities, split
+24Table 3: Baseline Characteristics for Rural Firms
+Variable N Mean St. Dev.
+Age 507 35.45 11.06
+Woman-owned 507 0.36 0.48
+Yrs Education 507 7.41 3.43
+Firm Age 506 5.46 6.80
+Num. Paid Employees 503 0.21 0.59
+Owns Smartphone (0/1) 457 0.24 0.43
+Distance (km) to major market 507 65.26 31.32
+Num. of competitors in village 435 4.77 3.84
+Sector Share
+Food/Crop Retail 204 0.40
+Non-Food Retail 60 0.12
+Ag Services 42 0.08
+Non-Ag Services 124 0.25
+Skilled Trades 77 0.15
+between 40% that sell food and crops and 12% that sell non-food items like clothing and
+medicine. The rest of rms are service rms that provide agricultural services (8%) like trac-
+tor rentals and milling, non-agricultural services (25%) like barber shops and restaurants,
+and skilled trades (15%), which includes tailors, welders, carpenters, and builders. The sam-
+ple size varies slightly due to some instances of non-response and because some questions
+were dropped at dierent phases in piloting. As described below, regressions that measure
+treatment eects control for non-response in baseline outcomes.
+4.3.2 Balance Checks
+The balance table in Table 10 in Appendix compares the means for the treatment groups,
+control group, and t-tests for dierences between the groups. The balance table compares
+dierences across groups among 22 covariates, including baseline demographic characteristics
+and baseline outcomes. Out of 22 covariates, 4 exhibit imbalance - owner age, whether the
+rm has access to electricity, customer calls, and the output price index. But, an F-test
+of joint signicance across all covariates fails to reject the null of joint signicance. Rather
+than add imbalanced covariates as controls in treatment eects regressions, I use a machine
+learning procedure to produce a unit-level prediction index following Ludwig et al. (2019)
+25and Wager et al. (2016). The prediction index was constructed by regressing treatment
+on baseline outcomes and their interactions and selecting variables through random forest
+and lasso selection procedures. The idea is to select variables that explain any arbitrary
+correlation between experimental groups and baseline outcomes and add them as a regression
+adjustment.
+5 Empirical Approach
+5.1 Discrete Choice Experiment
+To understand how rms value relational contracting, I administered a discrete choice ex-
+periment designed to elicit willingness to pay for benets that are associated with relational
+contracting with suppliers following Train (2009). During the baseline survey, rms were
+asked to compare a series of `contracts' with four dierent attributes:
+•Input Price: The price of a recently-purchased input, varied by 5%, 10%, and 15%
+discount or cost increase.
+•Known Supplier: Preference for whether a supplier was known to them or completely
+new.
+•Transportation: Preference to pay for travel to purchase goods in an urban area, or
+pay shipping to have goods delivered.
+•Payment Terms: Preferences for using mobile money payments or being oered
+credit to defer payment on some of their balance.
+As described in the previous section, in practice these attributes are available to some
+rms but are not formalized in written contracts. For each contract attribute, one option is
+associated with building trust with a supplier. For example, suppliers must trust that credit
+will be repaid, or they must trust that payment for goods shipped will be received.
+Discrete choice experiments are eective for identifying which components of trading with
+suppliers are relatively more valuable to rms. They require participants to compare sets of
+contracts with variation in attribute levels and to state which contract they would prefer.4
+4Consistent with the literature on discrete choice experiments, the term attribute refers to components
+of informal trading contracts. In this case, price, known supplier, transportation, and payment terms. The
+term levels refers to variation within each attribute - such as the dierent prices shown to participants.
+26After completing a series of comparisons, each participant will have generated binary choice
+data with information on which attributes were available for each choice.
+Econometric analysis of discrete choice data draws from a random-utility model and uses
+a mixed logit model to estimate choice probabilities that represent the relative importance of
+each attribute level (McFadden and Train, 2000).5Coecients on terms in the mixed logit
+are interpreted as the group-level preferences for an attributes. Point estimates can also
+be converted into measures of willingness-to-pay (WTP) for certain attribute levels. While
+these WTP measures are not incentivized, we used the most recent per unit price for an
+input as the base price in the experiment. Econometric analysis uses the following model
+specication:
+Yijk 1Priceijk 2Supplier ijk 3Transport ijk 3Payment ijk k ijk
+Firmiselects alternative jamong choice sets k.Yijkis a binary variable which takes a
+value of 1 if the rm owner chose a certain contract. Mixed logit specications are robust to
+arbitrary correlation within alternatives and heterogeneous preferences of agents. In other
+words, each agent is assumed to have their own preference distribution of the various options.
+Coecients on terms in the mixed logit are interpreted as the group-level preferences for an
+attributes.
+5.2 Treatment Eects Estimation
+To estimate the causal eect of treatment on the outcome variables, I employ ANCOVA
+regressions.6Estimates of intent to treat (ITT) use the following ANCOVA specication:
+Yit 1TUS
+i 2TDS
+i Yi;t0 BLMiss i;t0 Xi t it (1)
+5For further detail on assumptions, see Section D in the appendix.
+6ANCOVA improves precision of estimates by including baseline values of outcome variables as con-
+trols in regressions. It is particularly useful in settings where outcome variables exhibit low and constant
+auto-correlation and are measured with noise. Presenting post-treatment data from numerous randomized
+evaluations with rms, McKenzie (2012) shows that auto-correlation of rm prots in Ghana and Sri Lanka
+are relatively constant, falling between 0.2 and 0.4. He nds that ANCOVA is preferred to dierences-in-
+dierences specications for constant auto-correlation below 0.5.
+27Yitrepresents the outcome variable of interest for rm iin survey round t.TUSand
+TDSare the treatment indicator variables that represent whether rms were assigned to the
+upstream or downstream treatment groups. The intent to treat estimates are identied by
+^1and ^2, and are interpreted as the eect of being assigned to either upstream ( ^1) or
+downstream ( ^2) treatments on the outcome of interest. The subscript tindexes event time
+and is set to zero for the baseline value. Yi;t0are the baseline values of the dependent variable
+andBLMiss i;t0denotes values that are missing at baseline due to rm non-response.7The
+vectorXiincludes strata dummies and the machine learning prediction index, which does
+not vary with time. The term tcaptures any survey-specic time shocks. As in conventional
+in unit-level random assignment, standard errors were clustered at the rm level.
+Multiple hypothesis testing follows Benjamini and Hochberg (1995) and Anderson (2008)
+by setting the false discovery rate to 5%. A FDR of 5% expects that at least one test out
+of twenty falsely rejects the null of no eect (a false positive or Type I error). Sharpened
+q-values are presented by each outcome grouping. Outcomes were grouped according to
+whether they pertain to primary upstream, downstream, or productivity outcomes.
+5.3 Outcome Variables
+Outcomes are grouped into three categories - upstream, downstream, and productivity out-
+comes. Within the upstream and downstream categories, there are three analogous out-
+comes: Relational contracting index, engagement with new suppliers and customers, and
+phone communication. For the upstream outcomes, there is a supplier search index whose
+components include a series of variables indicative of search intensity, including number of
+suppliers called for information, number of suppliers that a rm transacted with, number
+of dierent locations searched, and whether suppliers were non-local. Since rms search
+at irregular intervals, these questions reference the most recent time that a rm purchased
+inputs.
+On the downstream side, since it is not possible for rms to know the full search activities
+of their customers, the only variable that was asked is whether any customers came from
+7Including the `missing at baseline' variable allows the ITT estimate to keep any rms which do not
+provide answers to specic questions during baseline rather than dropping them.
+28outside the rms' village. This variable, called 'Non-local Customer', is a binary outcome
+that takes a value of 1 if the rm reported having a customer come from outside their village.
+As described in the set-up for this experiment, experimental rms are located in medium-
+sized towns that often serve as the primary purchasing locations for smaller, surrounding
+communities. It is common for rms to know whether one of their customers is from their
+same village or comes from nearby. This was a relevant outcome because the experiment pro-
+vided information about how to dial into the digital phonebook to surrounding communities,
+knowing that they usually purchase goods from rms in participating villages.
+Productivity outcomes include a sales revenue index, an output price index, an input price
+index, transport costs as a share of inputs purchased, and whether inputs were purchased
+locally. The sales revenue and output price indices provides information about whether
+treated rms experience a sustained increase in sales relative to control. The input price
+index, transport costs, and whether rms purchased inputs locally provide information about
+whether rms costs decreased, providing evidence that they became more ecient. Further
+detail on index construction is provided in Section A in the appendix.
+5.4 Empirical Tests
+Table 4 summarizes empirical tests that can be used to inform the theorized relationships
+introduced in Section 3. The rst panel summarizes how to interpret coecients for upstream
+outcomes related to contact with new suppliers and changes in relational contracting. The
+second panel summarizes how to interpret coecients for downstream outcomes related to
+contact with new customers and changes in relational contracting. As described in Section
+4, treated rms have two levels of treatment. First, all treated rms are listed in the digital
+phonebook and can search for their own treatment group. Second, rms were assigned
+to two arms designed to exogenously increase contact with either upstream suppliers or
+downstream customers. Therefore, an additional part in the analysis compares whether the
+upstream treatment led to larger eects in upstream outcomes and whether the downstream
+treatment led to larger eects on downstream outcomes. The magnitude of treatment eects
+provides evidence about whether rms more readily increase their bargaining power with
+suppliers or with their customers.
+29Table 4: Summary of Empirical Tests
+Rural Firm Upstream Treatment Eects
+Relational
+New Contracting Interpretation
+Suppliers Response
+¤0¡0 Increase relational contracting by increasing
+bargaining power with current suppliers
+¤0 0 Decrease relational contracting by decreasing
+bargaining power with current suppliers
+¡0 0 Adding new suppliers decreases average provision
+of relational contracting benets
+Rural Firm Downstream Treatment Eects
+Relational
+New Contracting Interpretation
+Customers Response
+¤0¡0 Increase relational contracting by decreasing
+bargaining power relative to current customers
+¤0 0 Decrease relational contracting by increasing
+bargaining power with current customer base
+¡0 0 Adding new customers decreases average provision
+of relational contracting benets
+6 Results
+6.1 Willingness to Pay for Relational Contracting Attributes
+Table 5 shows results from the discrete choice experiment. To make coecients economically
+meaningful, they were converted into a measure of WTP by dividing the point estimate of the
+mean of an attribute level by the price coecient.8The column `WTP (Percent)' reports the
+willingness to pay and condence interval for each contract level. Not all attribute levels were
+meaningful to participants (paying with Mpesa and paying 80% of their balance at once).
+It indicates that rms were indierent about some contract attribute levels and consistently
+preferred those with dierent features.
+8For example, the coecient on price is -6.11 and the coecient on purchasing from a known supplier
+is 0.33, so the WTP is obtained by computing 0.33/-6.11. Condence intervals were constructing following
+Hole, 2007.
+30Table 5: WTP for Contract Attribute Levels
+WTP (Percent) Reference Category
+[CI]
+Supplier Known 0.06 Supplier unknown
+[0.02, 0.10]
+Goods Delivered 0.33 Travel to city
+[0.25, 0.40]
+Mobile money payment -0.01 Other payment options
+[-0.06, 0.05]
+50% cash now 0.18 Other payment options
+[0.12, 0.25]
+80% cash now -0.01 Other payment options
+[-0.08, 0.06]
+Notes: The rst column lists contract attribute levels from a discrete choice experiment.
+The second column shows the coecients from a mixed logit specication converted.
+Coecients represent the percentage point increase or decrease that participants were
+willing to pay on average for a contract attribute level. 95% condence interval are
+in brackets. The reference category describes the other contract attribute level that
+participants compared against. `Other payment options' includes cash, mobile money,
+and credit.
+Firms expressed a WTP of a 6% premium for inputs from a known supplier relative to an
+unknown supplier, a 33% premium for goods to be delivered relative to travelling to a city,
+and 18% premium for provision of generous credit terms relative to paying cash at the time
+of purchase. This highlights the extent to which rms are willing to pay higher prices on
+inputs for contract attributes that benet rms. Although a 6% price premium to purchase
+from known suppliers is small compared to having goods delivered and obtaining credit, it is
+notable because only 40% of rms in the baseline survey reported having preferred suppliers.
+And, in practice, obtaining these benets requires forming relationships with known input
+suppliers.
+6.2 Upstream, Downstream, and Productivity Treatment Eects
+Table 6 reports results for each group of outcomes over three rounds of follow-up surveys.
+Coecients on indices can be interpreted as the number of standard deviations increase or
+decrease relative to the control group.
+First, Panel A reports treatment eects for the upstream outcome grouping. Firms in the
+upstream treatment arm signicantly increased relational contracting index with suppliers
+31(Column 1). Firms in both treatment arms engaged in fewer search activities (Column 2).
+Nearly 28% of rms in the control group reported buying inputs from a new supplier while
+both groups were about 4-5 percentage points less likely to have a new supplier, but the
+p-value on the upstream arms fails to reject the null of no eect (Column 3). Similarly, of
+all suppliers with whom control rms communicated, 12.6% were new, and both treatment
+groups signicantly decreased their new suppliers share by 2.6-2.8 percentage points when
+using unadjusted p-values (Column 4). Finally, downstream rms also signicantly decreased
+phone communication with suppliers.
+Earlier, I provided evidence from a discrete choice experiment that rms value relational
+contracting with their suppliers (or at least value the benets that are associated with re-
+lational contracting). These results provide consistent evidence that when search costs to
+locate new suppliers decrease, rms use the information to arm their pre-existing rela-
+tionships and bargain for better trading terms. It supports the prediction that the digital
+phonebook raises the value of the outside option for rural rms when they search in their
+upstream arm. And, they use the information to attain better terms from the suppliers
+whom they previously knew, consistent with theory on relational contracts.
+Second, Panel B reports treatment eects for the downstream outcomes grouping. Firms
+in both treatment arms decreased relational contracting with their customers at nearly the
+same magnitude (Column 1). Firms in downstream treatment had small but positive co-
+ecients on their likelihood of having any new customer and the share of new customers,
+but standard errors were too large to provide conclusive evidence that they had more new
+customers (Columns 3 and 4). These mixed results provide evidence that the phonebook
+increased the value of the outside option for rural rms, without substantially increasing
+their customer base. As highlighted in the conceptual framework, it provides evidence that
+the decrease in relational contracting comes from withdrawing contracting benets from
+customers whom they previously knew.
+Column 2 reports results for the variable 'Non-local Customer', a measure for whether
+rms reported having any customer come from outside their village. The point estimate
+on the downstream treatment arm is negative but not signicant, providing inconclusive
+evidence on whether the downstream arm had fewer non-local customers. Phonebook usage
+32data showed that downstream rms were looked-up nearly three times as much as those in
+the upstream treatment arm. Despite this, the downstream treatment arm had lower overall
+phone engagement with customers according to self-reported measures that were combined
+into the `Customer Phone Activity Index'. Firms in the downstream treatment arm had
+-0.183 standard deviation decrease in communication with customers via phone.
+This is surprising given that this group was by far the most likely to both search and
+be found by others in the phonebook platform (see usage data in Table 1 of the appendix).
+One potential explanation is that increased engagement with the platform crowded-out the
+rms typical engagement with their pre-existing customers relative to the control group. It
+is also possible that rural customers sought out new rms in face-to-face interactions that
+is not captured by the number of phone calls. Another possibility is that timing of phone
+surveys were too infrequent to pick up the timing of phone calls. For upstream outcomes,
+survey questions were oriented around the \most recent input purchase," an event that
+typically occurs 1-2 times per month. On customer questions, questions were oriented over
+the previous week or over the past two days because rms engage with customers on a daily
+basis. Therefore, it is more dicult to pick up net changes in composition of the customer
+base.
+Panel C displays the primary productivity outcomes. There are no signicant changes
+in business revenue or input prices. But, rms in both arms had higher output prices. This
+is consistent with evidence that rms pull back on downstream relational contracting by
+increasing their sales prices. Columns 4 and 5 in Panel C show that the downstream arm
+was more likely to purchase inputs locally in their village and paid lower per-unit transaction
+costs on their orders. Control rms paid on average 5% of the input order size on transport
+costs, and downstream rms paid 1.7% less.9
+The downstream treatment arm was also 9.5 percentage points more likely to purchase
+locally than the control group. These results reect the fact that downstream treatment arm
+could search for other rural rms in their same arm but were not able to search for urban
+rms. This is also consistent with behavior that values relational contracting. It may be
+9This is most likely due to purchasing locally and driving transport costs to zero. The transport cost
+share regression did not control for purchase location.
+33more dicult for rms to form relational contracting partnerships with input suppliers in
+cities for a number of reasons. Firms in urban centers supply hundreds of rms and it may
+be more dicult to keep track of relationships. In that sense, it is much more likely for rms
+to form trade relationships in their local area. Despite this, results in section ??below show
+that search behavior in cities increases for retail rms, likely due to having larger order sizes
+and thus lower per-unit transportation costs.
+34Table 6: Upstream, Downstream, and Productivity Intent-to-Treat Eects
+Panel A: Upstream Outcomes
+(1) (2) (3) (4) (5)
+Supplier Input Any New Supplier
+Relational Search New Supplier Phone
+Contracting Activity Supplier Share Activity
+Index Index (0/1) Index
+Upstream Treat 0.101*** -0.134*** -0.046 -0.028* -0.036
+(0.033) (0.043) (0.029) (0.015) (0.047)
+Downstream Treat 0.045 -0.136*** -0.048* -0.026* -0.081*
+(0.032) (0.041) (0.029) (0.016) (0.044)
+Control Mean 0.000 0.000 0.275 0.126 0.000
+Upstream p-value 0.0020 0.0018 0.1186 0.0639 0.4400
+Upstream q-value 0.0066 0.0066 0.1483 0.1356 0.4400
+Downstream p-value 0.1631 0.0010 0.0979 0.0975 0.0678
+Downstream q-value 0.1813 0.0066 0.1398 0.1398 0.1356
+Obs 1229 1229 1188 1184 1252
+Adj R-Squared 0.057 0.296 0.124 0.069 0.224
+Panel B: Downstream Outcomes
+(1) (2) (3) (4) (5)
+Customer Any Any New Customer
+Relational Non-local New Customer Phone
+Contracting Customer Customer Share Activity
+Index (0/1) (0/1) Index
+Upstream Treat -0.119*** -0.013 0.002 -0.005 -0.038
+(0.034) (0.035) (0.032) (0.015) (0.053)
+Downstream Treat -0.109*** -0.053 0.011 0.005 -0.183***
+(0.034) (0.034) (0.033) (0.014) (0.051)
+Control Mean 0.000 0.488 0.687 0.193 0.000
+Upstream p-value 0.0006 0.7041 0.9391 0.7288 0.4683
+Upstream q-value 0.0028 0.8108 0.9391 0.8108 0.8108
+Downstream p-value 0.0014 0.1143 0.7297 0.7277 0.0004
+Downstream q-value 0.0046 0.2857 0.8108 0.8108 0.0028
+Obs 1252 1252 1203 1191 1252
+Adj R-Squared 0.133 0.196 0.086 0.050 0.129
+Standard errors in parenthesis. * p 0:10, **p 0:05, ***p 0:01. Table shows results from
+ANCOVA regressions of main outcomes on the upstream and downstream treatment groups. Controls
+include strata indicators, the prediction index, survey round indicators, baseline outcomes, and an
+indicator if baseline outcome was missing. Q-values are multiple hypothesis testing corrections for
+each outcome grouping (upstream, downstream, and productivity outcomes).
+35Panel C: Productivity Outcomes
+(1) (2) (3) (4) (5)
+Sales Output Input Transport Inputs
+Revenue Price Price Costs Share Purchased
+Index Index Index of Inputs Locally
+Purchased (0/1)
+Upstream Treat -0.055 0.124** 0.070 -0.009 0.039
+(0.067) (0.054) (0.051) (0.006) (0.033)
+Downstream Treat 0.022 0.088* 0.033 -0.017*** 0.095***
+(0.070) (0.053) (0.053) (0.006) (0.033)
+Control Mean 0.000 -0.092 -0.023 0.052 0.314
+Upstream p-value 0.4117 0.0211 0.1703 0.1424 0.2459
+Upstream q-value 0.5146 0.0704 0.2838 0.2838 0.3513
+Downstream p-value 0.7538 0.0971 0.5329 0.0023 0.0043
+Downstream q-value 0.7538 0.2428 0.5921 0.0217 0.0217
+Obs 822 1081 1109 1197 1197
+Adj R-Squared 0.279 0.063 0.196 0.107 0.354
+Standard errors in parenthesis. * p 0:10, **p 0:05, ***p 0:01. Table shows results from
+ANCOVA regressions of main outcomes on the upstream and downstream treatment groups.
+Controls include strata indicators, the prediction index, survey round indicators, baseline out-
+comes, and an indicator if baseline outcome was missing. Q-values are multiple hypothesis
+testing corrections for each outcome grouping (upstream, downstream, and productivity out-
+comes).
+366.2.1 Relational Contracting Index Components
+Table 7 shows results for components of the relational contracting indices. Results for index
+components are presented to show how each component contributes toward the total eect
+that is picked up once aggregated into an index. On the upstream side, rms substantially
+increase receiving any credit on goods purchased - 14.1% received credit compared to 8%
+in the control group. On average, upstream rms were also slightly more likely to know all
+of their suppliers and receive a price discount, but were less likely to have goods shipped
+or use mobile money. On the downstream side, rms in both treatment arms reduced
+discounting, special orders, and mobile money use with customers. But, provision of credit
+was unchanged.10Firms were also slightly less likely to report knowing all of their customers,
+but it was not statistically dierent from zero.
+Not every component of the relational contracting indices moved in the expected di-
+rection. For example, despite an increase in total relational contracting compared to the
+control, upstream and downstream rms were less likely to have goods shipped from sup-
+pliers (although dierences were not signicant, standard errors are relatively narrow). In
+the discrete choice experiment, rms expressed a higher willingness to pay for having goods
+shipped over knowing their suppliers, receiving credit, and using mobile money. But, it is
+possible that having goods shipped is a more dicult benet to arrange than negotiating
+for credit. Thus, when search costs decrease at the margin, rms gain a better bargaining
+position to ask for credit, but not quite enough to identify an average change in arranging
+delivery. And, as shown in Panel C in Table 6 above, downstream rms were more likely
+to purchase locally and have lower transportation costs, suggested that they forwent more
+transactions in the city compared to the control and upstream groups.
+On the downstream side, rms reduced each component, but not signicantly until ag-
+gregated into an index that picks up net changes. This suggests that index aggregation is a
+necessary tool to understand changes in outcomes that are often bundled together - such as
+capturing how terms of trade change when rms and customers transact.
+10There are fewer observations for provision of credit and mobile money with customers because rms
+were not asked these questions in the rst follow-up survey round.
+37Table 7: Relational Contracting Index Components
+Panel A: Upstream Relational Contracting Index Components
+(1) (2) (3) (4) (5) (6)
+Supplier Receives Knows Receives Goods Sends
+Relational Goods All Price Shipped Mobile
+Contracting on Suppliers Discount from Money to
+Index Credit Supplier Suppliers
+Upstream Treat 0.101*** 0.061** 0.046 0.004 -0.017 -0.036
+(0.033) (0.024) (0.029) (0.033) (0.027) (0.040)
+Downstream Treat 0.045 -0.004 0.048* -0.008 -0.049* -0.044
+(0.032) (0.021) (0.029) (0.034) (0.026) (0.037)
+Control Mean 0.000 0.080 0.725 0.547 0.181 0.348
+Obs 1229 1186 1188 1248 1197 874
+Adj R-Squared 0.057 0.076 0.124 0.120 0.065 0.138
+Panel B: Downstream Relational Contracting Index Components
+(1) (2) (3) (4) (5) (6)
+Customer Provides Knows Gives Makes Receives
+Relational Goods/Services All Discount to Orders for Mobile
+Contracting on Customers Frequent Customers Money from
+Index Credit Customers Customers
+Upstream Treat -0.119*** 0.021 -0.002 -0.050 -0.033 -0.022
+(0.034) (0.040) (0.032) (0.034) (0.033) (0.038)
+Downstream Treat -0.109*** 0.000 -0.011 -0.045 -0.052 -0.062*
+(0.034) (0.044) (0.033) (0.035) (0.033) (0.035)
+Control Mean 0.000 0.480 0.313 0.642 0.341 0.255
+Obs 1252 821 1203 1252 1251 873
+Adj R-Squared 0.133 0.163 0.086 0.127 0.026 0.121
+Standard errors in parenthesis. * p 0:10, **p 0:05, ***p 0:01. Table shows results from ANCOVA regressions
+of components of a upstream relational contracting index and downstream relational contracting index on the upstream and
+downstream treatment groups. Controls include strata indicators, the prediction index, survey round indicators, baseline
+outcomes, and an indicator if baseline outcome was missing.
+386.3 Heterogeneity by Firm Sector
+As described in Section 3.2, search behavior by retail and service rms is likely to dier
+because retail rms search and purchase more in cities and have lower per unit transportation
+costs which, in turn, lower search costs in urban areas and make relationships with suppliers
+based in cities more valuable.
+Table 8 presents heterogeneous treatment eects for retail rms compared to service
+rms. Treatment arms are pooled to capture the net eect of being listed in the phonebook.
+The table highlights how retail and service rms have divergent search strategies that result
+in variation in their input acquisition costs and changes to relational contracting. Results
+conrm the prediction from the conceptual framework that service rms are more likely to
+search locally, pay higher input costs and pay lower transport costs. Panel A highlights
+search activities and price outcomes and Panel B compares relational contracting and new
+contacts for service and retail rms.
+In Panel A, columns 1-2 are search activity outcomes, and show that service rms de-
+creased total activity by 0.32 standard deviations compared to the control and searched 0.23
+fewer locations. The consequences of these divergent search decisions show up in input prices
+and transportation costs. Columns 3-4 are the output and input price indices. There was
+no sector-specic treatment eect in the output price index. But, service rms paid 0.37
+standard deviations higher input prices compared to retail rms. Service rms also decrease
+transport cost share by 2% and are 12.5 percentage points more likely to purchase locally.
+It provides evidence that service rms were willing to pay higher input costs to save on
+transport costs. At baseline, service rms paid nearly double the transport costs as a share
+of inputs purchased compared to retail rms, so this savings is potentially valuable for them.
+Columns 1-3 of Panel B report heterogeneous treatment eects for supplier relational
+contracting index and two measures of transacting with new suppliers. Analogously, columns
+4-6 report heterogeneous treatment eects for customer relational contracting index and
+measures of transacting with new customers. Retail rms increased relational contracting
+with suppliers by 0.07 standard deviations and service rms increased marginally more.
+But, only service rms were signicantly less likely to transact with a new supplier and had
+39fewer new suppliers as a share of the number of suppliers. Both retail and service rms
+decrease relational contracting with customers, although service rms decreased by about
+0.04 standard deviations more than retail rms. And, there were no dierences in customer
+composition - neither sector experienced signicantly more transactions with new customers,
+as measured through survey recall data.
+Results from the discrete choice experiment suggest that rms were willing to pay slightly
+higher input prices to retain familiar suppliers, access credit, and arrange delivery. Service
+rms revealed behavior reects this nding - they pay higher input prices, transact with
+known suppliers, pay lower transport costs, and increase relational contracting. It is con-
+sistent with a theoretical prediction that if per-unit transaction costs are high, rms will
+prefer to search in their local area - saving transport costs and lowering the variable cost of
+associated with establishing relational contracts.
+One of the key dierences between retail and service rms is that service rms purchase
+inputs and convert them into a value-added service, while retailers source goods and re-sell
+them at mark-up. While this distinction corresponded to dierent search patterns, both
+types of rms changed relational contracting in the same direction. For retail rms, the
+composition of suppliers and customers did not change. The customer composition did not
+change for service rms but they did decrease transactions with new suppliers. Returning to
+Table 4, these relationships conrm that being listed in the phonebook caused service and
+retail rms to change their valuation of relational contracts and increase bargaining power
+with pre-existing suppliers and customers. But, there is stronger evidence that service rms
+transacted with fewer new suppliers than retail rms.
+40Table 8: Heterogeneous Treatment Eects by Firm Sector
+Panel A: Search Outcomes
+(1) (2) (3) (4) (5) (6)
+Input Number Output Input Transport Inputs
+Search of Price Price Costs Share Purchased
+Activity Locations Index Index of Inputs Locally
+Index Searched Purchased (0/1)
+Treat 0.016 0.046 0.201 -0.034 -0.004 0.012
+(0.046) (0.047) (0.150) (0.072) (0.006) (0.034)
+Service Firm -0.127 0.295*** 0.037 0.395*** 0.015 0.314***
+(0.083) (0.072) (0.242) (0.147) (0.013) (0.068)
+TreatService -0.324*** -0.225*** -0.234 0.366** -0.020** 0.125**
+(0.073) (0.070) (0.221) (0.161) (0.010) (0.054)
+P-valueHo:1 30 [0.0000]*** [0.0004]*** [0.8473] [0.0325]** [0.0057]*** [0.0011]***
+Control Mean 0.001 1.268 -0.010 -0.019 0.052 0.314
+Obs 1230 1194 903 995 1198 1198
+Adj R-Squared 0.322 0.158 0.033 0.156 0.108 0.390
+Panel B: Relational Contracting Outcomes
+(1) (2) (3) (4) (5) (6)
+Supplier Any New Customer Any New
+Relational New Suppliers Relational New Customer
+Contracting Supplier Share Contracting Customer Share
+Index (0/1) Index (0/1)
+Treat 0.070* -0.015 -0.010 -0.097** 0.005 0.010
+(0.038) (0.038) (0.019) (0.039) (0.036) (0.014)
+Service Firm -0.020 0.011 0.025 0.011 -0.212*** -0.027
+(0.074) (0.056) (0.029) (0.073) (0.060) (0.025)
+TreatService 0.005 -0.066 -0.037 -0.039 0.000 -0.020
+(0.055) (0.051) (0.027) (0.060) (0.054) (0.025)
+P-valueHo:1 30 [0.0671]* [0.0134]** [0.0149]** [0.0026]*** [0.9019] [0.6124]
+Control Mean 0.001 0.275 0.126 -0.000 0.687 0.193
+Obs 1230 1189 1185 1253 1204 1192
+Adj R-Squared 0.054 0.126 0.070 0.132 0.096 0.051
+Standard errors in parenthesis. * p 0:10, **p 0:05, ***p 0:01. Table shows results from ANCOVA regressions of a
+subset of outcomes on pooled treatment groups interacted with a binary variable equalling 1 for service rms and 0 for retail
+rms. The treatment eect for retail rms is captured by the coecient for Treat ( 1) and the treatment eect for service rms
+is Treat plus Treat Service (1 3). The p-value for a t-test on service rm treatment eect is in brackets with stars to
+denote signicance levels. Controls include strata indicators, the prediction index, survey round indicators, baseline outcomes,
+and an indicator if baseline outcome was missing.
+416.4 Spillovers
+Randomization at the unit-level requires that the stable unit treatment value assumption
+(SUTVA) holds, implying that there are no spillovers between units in dierent exper-
+imental conditions. Extensive margin spillovers (externalities) may occur between rms
+within the same village. A negative externality would occur if being listed in the phonebook
+drives treated rms to deprive non-treated rms of market share.11Table 6 showed results
+for changes in rm revenue (Column 1 in Panel C) and changes in customer composition
+(Columns 3 and 4 in Panel B). Neither treatment arm experienced signicant changes in
+these outcomes, suggesting that rms did not gain market share or grow at the expense of
+control rms in their villages. Further, the attrition section below explains that dierential
+attrition by treatment group did not occur, again providing evidence that treated rms did
+not gain at the expense of non-treated rms.
+A positive externality on non-listed rms would occur if changes to the bargaining or
+demand structure of listed rms also improved bargaining or aggregate demand for non-
+listed rms. For example, if a rm's connection to upstream suppliers leads them to access
+lower prices, a positive spillover would occur if rms in their neighborhood also gain access to
+those lower prices or better market terms. Ruling out this type of spillover requires assuming
+that rms internalize benets of being listed in the phonebook. In other words, since rms
+operate in a competitive environment, their private gains are not shared with their neighbors.
+As a quick check, rms were asked if they source inputs in a group to provide evidence that
+rms do not engage in collective bargaining. In each survey round less than 1% of rms
+reported organizing with other rms in their village to source inputs. As another check,
+rms were asked in the endline survey if they discuss business activity with any other rm
+owners in their village. Only 10.5% of rms reported discussing any business activity with
+their neighbors, a relatively small share.
+11After the study ended, all rms were listed in the platform so that any potential gains driven by
+exclusivity in the phonebook platform were temporary and would be bid away once the full sample was
+listed.
+427 Anticipating General Equilibrium Eects
+An important question to consider is what would happen to the search cost structure in this
+market once all rms have their rm listed in the phonebook and can search for all rms in
+their region. One consequence of unit-level experimental design over a relatively short period
+of time (14 months) is that it is not possible to measure medium-to-long-term changes to
+the general equilibrium of the market. Despite this, economic theory oers insights on what
+changes can be anticipated in this setting.
+Previous research studying how search costs aect prices in commodity and labor markets
+found that price dispersion narrowed (Jensen 2007; Aker, 2010; Aker and Fafchamps, 2015;
+Jeong, 2019), but price levels did not change. This study found that output prices increased
+after search costs decreased. I argued that this is consistent with a relational contracting
+framework where the rural rms increase the average price charged to their customers because
+they anticipate having more customers as a result of being listed in the digital phonebook.
+Once control rms are added to the phonebook, it is not clear that rms will have more new
+customers relative to their peer competitors and it is possible that price levels will return to
+their previous equilibrium if competition bids them downward.
+Yet, it is also possible that prices remain at the higher level. Like many phone-based
+networking platforms, the digital phonebook studied here creates new opportunities for buy-
+ers and sellers to meet when they might not have met otherwise. These new contacts may
+cause buyers and sellers to decrease their reliance on ex-ante customer networks for sales
+and increase engagement with new customers. Since customers that benet from relational
+contracting receive lower prices, an aggregate change in customer composition where all rms
+increase contact with new customers could cause the average price level to remain above the
+previous equilibrium. Evidence that rms with higher downstream relational contracting
+have lower prices is seen in Panel B of Table 8 in the appendix. A one standard deviation in-
+crease downstream relational contracting index is associated with a 0.16 standard deviation
+decrease in the output price index.
+The upstream side could theoretically experience similar general equilibrium eects. Low-
+ering search costs enables rural rms to locate and contact new potential suppliers. But, it
+43does not change the costs required to invest in long-term relational contracting that unlocks
+access to credit, shipping, or price discounts. Again, as search costs lower for all rms, we
+would expect price dispersion in input markets to decrease. Unlike the downstream side,
+there was no signicant change in input price levels. But, rms in the upstream treatment
+arm were more likely to access credit. And, the discrete choice experiment showed that rms
+were willing to pay higher input prices if they were able to receive credit and purchase from
+familiar suppliers.
+The fact that experimental results showed that rms searched less and were less likely
+to have a new supplier is further evidence that investing in supplier relationships is valuable
+to rms, particularly for rms in the services sector - who have smaller, less frequent input
+orders. Retail rms searched more and were more likely to transact in urban areas. As a
+result, search costs are a more important factor for sourcing inputs for retail rms compared
+to service rms and they stand to benet more from technologies that increase connections
+between rural and urban areas.
+8 Conclusion
+New networking technologies have shifted how agents engage with their networks. Digital
+phonebooks that are accessible on any type of phone are a bridge technology that allows
+users in rural areas that do not own smartphones to access new contacts from outside their
+typical networks. Rural rms often face substantial information frictions that lower total
+productivity, ultimately constraining rm growth and their capacity to bear shocks. In-
+creasing access to contact information for suppliers and customers lowers search costs and
+changes incentives to provide and seek relational contracting. I show that when rural rms
+have access to new contacts, the value of their outside option increases and they succeed in
+increasing relational contracting with their suppliers at the same time as decreasing their
+relational contracting with their customers.
+I nd evidence that most changes in relational contracting were with existing suppliers
+and customers. On the customer side, rms did not report signicant increases in the number
+of transactions with new customers. It is possible that rms perceived their customer base
+44to increase but those increases did not translate into substantial changes to the number of
+transactions. This could be due to transactions being a relatively noisy measure. It is also
+possible that customers search was sporadic and did not translate into sustained increases
+in the number of customers.
+Likewise for upstream outcomes, on average rms decreased transactions with new suppli-
+ers and searched less. Relational contracting relies on repeat transactions with both suppliers
+and customers to build trust. Increasing relational contracting with suppliers required rms
+to increase investment in their existing relationships. The digital phonebook only decreased
+search costs to locate initial market information - sectors, locations, and contact details of
+upstream rms - but did not change costs for how long it takes to establish trust with sup-
+pliers. Yet, lowering search costs for rms increased the value of their outside option because
+it became easier to search for new trading partners.
+There is substantial variation by rm sector. Retail rms signicantly increase input
+search activity compared to service rms. I argue that this is driven by sectoral dierences
+in the cost structure for input search. Service rms make less frequent, smaller purchases
+and it is not as valuable for them to travel to cities to obtain inputs. Since the downstream
+treatment arm could only observe other rural rms in the same treatment arm, it suggests
+that learning information about other neighboring rms can encourage agents to thicken
+their local networking engagement. This is conrmed by the downstream treatment arm's
+lower transportation costs and higher likelihood of purchasing inputs locally rather than
+travelling to urban areas.
+In introducing a new technology that changes rm networks, this research project pro-
+vided rms with an opportunity to learn about the market in their area on a completely
+new format - a digital phonebook platform. Firms signicantly changed their search activ-
+ities and their engagement with their ex-ante suppliers and customers. It shows that small
+changes to the search cost structure have the power to re-shape the way that rms transact
+along their supply chain.
+45References
+Abadie, A., Athey, S., Imbens, G., and Wooldridge, J. (2017). When Should You Adjust
+Standard Errors for Clustering?
+Aggarwal, S., Giera, B., Jeong, D., Robinson, J., and Spearot, A. (2018). Market Access,
+Trade Costs, and Technology Adoption: Evidence from Northern Tanzania.
+Aker, J. C. (2010). Information from markets near and far: Mobile phones and agricultural
+markets in niger. American Economic Journal: Applied Economics , 2(3):46{59.
+Allen, T. (2014). Information Frictions in Trade. Econometrica , 82(6):2041{2083.
+Anderson, M. L. (2008). Multiple Inference and Gender Dierences in the Eects of Early
+Intervention: A Reevaluation of the Abecedarian, Perry Preschool, and Early Training
+Projects. Journal of the American Statistical Association , 103:1481{1495.
+Anderson, S. J., Chandy, R., and Zia, B. (2018). Pathways to Prots: The Impact of
+Marketing vs. Finance Skills on Business Performance. Management Science , 64(12):5559{
+5583.
+Athey, S. and Ellison, G. (2011). Position auctions with consumer search. Quarterly Journal
+of Economics , 126(3):1213{1270.
+Athey, S. and Imbens, G. (2017). The Econometrics of Randomized Experiments. Handbook
+of Economic Field Experiments , 1:73{140.
+Baker, G., Gibbons, R., and Murphy, K. J. (2002). Relational Contracts and the Theory of
+the Firm. Quarterly Journal of Economics , (February):39{84.
+Benjamini, Y. and Hochberg, Y. (1995). Controlling the False Discovery Rate: A Practical
+and Powerful Approach to Multiple Testing. Journal of the Royal Statistical Society:
+Series B (Methodological) , 57(1):289{300.
+Bernard, A. B., Moxnes, A., and Saito, Y. U. (2019). Production networks, geography, and
+rm performance. Journal of Political Economy , 127(2):639{688.
+46Bloom, N., Eifert, B., Mahajan, A., McKenzie, D., and Roberts, J. (2013). Does management
+matter? Evidence from india. Quarterly Journal of Economics , 128(1):1{51.
+Brooks, W., Donovan, K., and Johnson, T. R. (2018). Mentors or teachers? Microenterprise
+training in Kenya. American Economic Journal: Applied Economics , 10(4):196{221.
+Burlig, F., Preonas, L., and Woerman, M. (2017). Panel Data and Experimental Design.
+Technical report, Energy Institute at Haas.
+Cai, J. and Szeidl, A. (2018). Interrm Relationships and Firm Performance. Quarterly
+Journal of Economics , pages 1229{1282.
+Campos, F. and Gassier, M. (2017). Gender and enterprise development in sub-Saharan
+Africa: A review of constraints and eective interventions.
+Casaburi, L. and Reed, T. (2019). Interlinked Transactions and Competition: Experimental
+Evidence from Cocoa Markets. Mimeo , (August):1{47.
+de Corni ere, A. (2016). Search advertising. American Economic Journal: Microeconomics ,
+8(3):156{188.
+De Mel, S., McKenzie, D., and Woodru, C. (2008). Returns to capital in microenterprises:
+Evidence from a eld experiment. Quarterly Journal of Economics , 123(4):1329{1372.
+Dillon, B., Aker, J. C., and Blumenstock, J. (2018). Telephone Directories for Mobile Phone
+Networks .
+Fafchamps, M. (2006). Spontaneous Markets, Networks, and Social Capital : Lessons from
+Africa. Institutional Microeconomics of Development , 44(November):1{50.
+Fafchamps, M. and Minten, B. (1999). Relationships and traders in Madagascar. Journal of
+Development Studies , 35(6):1{35.
+Fafchamps, M. and Minten, B. (2002). Returns to social network capital among traders.
+Oxford Economic Papers , 54(2):173{206.
+47Fafchamps, M. and Quinn, S. (2016). Networks and Manufacturing Firms in Africa: Results
+from a Randomized Field Experiment.
+Ghanem, D., Hirshleifer, S., and Ortiz-Becerra, K. (2019). Testing Attrition Bias in Field
+Experiments.
+Ghani, T. and Reed, T. (2020). Relationships on the Rocks : Dynamic Contracts in a Market
+for Ice. pages 1{58.
+Hardy, M. and Kagy, G. (2018). Mind The (Prot) Gap: Why Are Female Enterprise Owners
+Earning Less Than Men? AEA Papers and Proceedings , 108(August 2016):252{55.
+Hardy, M. and McCasland, J. (2018). It Takes Two: Experimental Evidence on the Deter-
+minants of Technology Diusion.
+Imbens, G. W. and Rubin, D. (2015). Causal Inference in statistics, social, and biomedical
+sciences. Cambridge University Press.
+Jensen, R. (2007). The Digital Provide: Information (Technology), Market Performance,
+and Welfare in the South Indian Fisheries Sector. Quarterly Journal of Economics ,
+CXXII(August):879{924.
+Jensen, R. and Miller, N. H. (2018). Market Integration, Demand, and the Growth of
+Firms: Evidence From a Natural Experiment in India †.American Economic Review ,
+108(12):3583{3625.
+Jeong, D. D. J. (2019). Creating ( Digital ) Labor Markets in Rural.
+Kling, J. R., Liebman, J. B., and Katz, L. F. (2007). Experimental Analysis of Neighborhood
+Eects. Econometrica , 75(1):83{119.
+Ludwig, J., Mullainathan, S., and Spiess, J. (2019). Augmenting Pre-Analysis Plans with
+Machine Learning. AEA Papers and Proceedings , 109:71{76.
+Macchiavello, R. and Miquel-Florensa, J. (2017). Vertical Integration and Relational Con-
+tracts in the Costa.
+48Macchiavello, R. and Morjaria, A. (2015). The Value of Relationships: Evidence from a
+Supply Shock to Kenyan Rose Exports. American Economic Review , 105(9):2911{2945.
+Macchiavello, R. and Morjaria, A. (2020). Competition and Relational Contracts in the
+Rwanda Coee Chain.
+McFadden, D. and Train, K. (2000). Mixed mnl models for discrete response. Journal of
+applied Econometrics , 15(5):447{470.
+McKenzie, D. (2012). Beyond baseline and follow-up: The case for more T in experiments.
+Journal of Development Economics , 99(2):210{221.
+McKenzie, D. and Pahausen, A. L. (2017). Small Firm Death in Developing Countries.
+McKenzie, D. and Woodru, C. (2014). What are we learning from business training and en-
+trepreneurship evaluations around the developing world? World Bank Research Observer ,
+29(1):48{82.
+Mcmillan, J. and Woodru, C. (1999). Interrm Relationships and Informal Credit in Viet-
+nam. The Quarterly Journal of Economics , 114(4):1285{1320.
+Moore, R. T. (2012). Multivariate continuous blocking to improve political science experi-
+ments. Political Analysis , 20(4):460{479.
+Nix, E., Gamberoni, E., and Heath, R. (2016). Bridging the gender gap: Identifying what
+is holding self-employed women back in Ghana, Rwanda, Tanzania, and the Republic of
+Congo. World Bank Economic Review , 30(3):501{521.
+North, D. C. (1991). Institutions. Journal of Economic Perspectives , 5(1):97{112.
+Obereld, E. (2018). A Theory of Input-Output Architecture. Econometrica , 86(2):559{589.
+Reardon, T., Echeverria, R., Berdegu e, J., Minten, B., Liverpool-Tasie, S., Tschirley, D.,
+and Zilberman, D. (2019). Rapid transformation of food systems in developing regions:
+highlighting the role of agricultural research & innovations. Agricultural Systems , 172:47{
+59.
+49Sexton, R. J. (2013). Market power, misconceptions, and modern agricultural markets.
+American Journal of Agricultural Economics , 95(2):209{219.
+Startz, M. (2018). The Value of Face-to-Face: Search and Contracting Problems in Nigerian
+Trade.
+Train, K. E. (2009). Discrete choice methods with simulation . Cambridge university press.
+Varian, H. R. (2007). Position auctions. International Journal of Industrial Organization ,
+25(6):1163{1178.
+Wager, S., Du, W., Taylor, J., and Tibshirani, R. J. (2016). High-dimensional regression
+adjustments in randomized experiments. Proceedings of the National Academy of Sciences
+of the United States of America , 113(45):12673{12678.
+Weld, G., Perrier, T., Aker, J. C., Blumenstock, J., Dillon, B., Kamanzi, A., Kokushubira,
+E., Webster, J., and Anderson, R. (2018). eKichabi: Information Access through Basic
+Mobile Phones in Rural Tanzania. CHI Conference on Human Factors in Computing
+Systems , Montreal,.
+50Additional Tables and Figures
+Figure 3: Example of Feature Phone
+Image from Weld et al., 2017Figure 4: Phonebook Application Menus
+Image from Weld et al., 2017
+51Figure 5: Experimental Timeline
+Table 9: Characteristics of Sample Regions and National Average
+Dodoma Region Singida Region Tanzania
+Population (millions) 2.3 1.5 50.1
+Urban Population Share 16.2 14.7 29.6
+Average HH Size 4.6 5.3 4.9
+Literacy Rate 67.5 67.1 71.8
+Mobile Phone Ownership Rate 49.5 54.7 63.9
+Non-Farm Primary Employment 28.2 31.4 37.2
+Land Area (Sq. km) 41,000 49,300 883,300
+Population density (/sq km) 55.12 30.4 56.7
+Average Rainfall (mm/year) 495.7 732 1100
+52Table 10: Balance Table
+(1) (2) (3) T-test
+Upstream Downstream Control Dierence
+Variable N Mean/SE N Mean/SE N Mean/SE (3)-(1) (3)-(2)
+Woman-Owned (0/1) 169 0.38
+(0.04)168 0.36
+(0.04)170 0.35
+(0.04)-0.03* -0.02
+Owner Age 169 35.94
+(0.89)168 35.99
+(0.85)170 34.42
+(0.81)-1.52* -1.56*
+Years of Education 169 7.47
+(0.26)168 7.29
+(0.28)170 7.48
+(0.26)0.00 0.19
+Firm Age (Yrs) 169 5.71
+(0.56)168 5.49
+(0.55)170 5.14
+(0.46)-0.57 -0.36
+Firm Size (Incl. Owner) 169 1.33
+(0.04)168 1.36
+(0.05)170 1.37
+(0.06)0.04 0.01
+Retail Sector (0/1) 169 0.54
+(0.04)168 0.52
+(0.04)170 0.52
+(0.04)-0.01 -0.00
+No. Competitors 169 3.63
+(0.26)168 4.64
+(0.34)170 4.01
+(0.30)0.37 -0.64
+Distance to City (km) 169 67.36
+(2.45)168 66.60
+(2.42)170 61.84
+(2.35)-5.51 -4.76
+Firm has Electricity (0/1) 169 0.57
+(0.04)168 0.59
+(0.04)170 0.49
+(0.04)-0.07** -0.10**
+Owns Smart Phone (0/1) 169 0.22
+(0.03)168 0.21
+(0.03)170 0.21
+(0.03)-0.02 -0.00
+Mobile Top-ups (Tsh) 169 1899.41
+(150.70)168 1791.67
+(131.98)170 1812.65
+(127.19)-86.76 20.98
+Listing Priority Index 169 6.65
+(0.12)168 6.60
+(0.12)170 6.61
+(0.13)-0.05 0.01
+Customer Calls 169 1.41
+(0.16)168 1.58
+(0.20)170 1.98
+(0.26)0.57* 0.40
+Supplier Calls 169 0.29
+(0.09)168 0.30
+(0.10)170 0.49
+(0.13)0.20 0.19
+Non-local Customer (0/1) 169 0.50
+(0.04)168 0.46
+(0.04)170 0.51
+(0.04)0.01 0.04
+Non-local Supplier (0/1) 169 0.73
+(0.03)168 0.74
+(0.03)170 0.75
+(0.03)0.01 0.00
+Output Price Index 169 -0.01
+(0.04)168 0.06
+(0.05)170 -0.08
+(0.04)-0.07 -0.14*
+Input Price Index 169 0.03
+(0.05)168 0.02
+(0.04)170 -0.00
+(0.05)-0.04 -0.02
+Sales Revenue Index 169 -0.11
+(0.05)168 -0.12
+(0.05)170 -0.00
+(0.06)0.11 0.12
+Inventory Mgmt Score 169 0.47
+(0.03)168 0.45
+(0.03)170 0.50
+(0.02)0.03 0.05
+Marketing Mgmt Score 169 0.33
+(0.02)168 0.29
+(0.02)170 0.32
+(0.02)-0.01 0.03
+Inputs Purchased (Tsh) 169 240623.67
+(41373.10)168 203242.26
+(28973.69)170 225127.65
+(39916.59)-15496.02 21885.39
+F-test of joint signicance (F-stat) 1.21 0.91
+F-test, number of observations 339 338
+Notes : The value displayed for t-tests are the dierences in the means across the groups. The value displayed for F-tests are
+the F-statistics. F-stat regression includes strata dummies and dummies for any missing variables, as specied in the primary
+treatment eects specication. ***, **, and * indicate signicance at the 1, 5, and 10 percent critical level.
+53Appendix
+A Index Construction
+Analysis of primary outcomes involves 8 indices: upstream relational contracting, down-
+stream relational contracting, input search activities, upstream phone communication, down-
+stream phone communication, sales revenue index, and input and output price indices. Index
+aggregation improves statistical power by testing fewer outcomes. Indices were constructed
+following Kling et al. (2007) which employs a procedure that sums equally-weighted z-scores
+computed for each component of an index. The z-scores are calculated at the unit-level by
+subtracting the control group mean and dividing by the control group standard deviation.
+The index captures the net change for a given set of related outcomes and are interpreted
+as the number of standard deviations increase or decrease compared to the control. The
+authors also suggest an imputation procedure for outcomes with missing information. It lls
+in missing data with the experimental group mean (e.g. the treatment group 1 is assigned
+the mean of the rest of treatment group 1). Non-response for sensitive outcomes (anything
+relating to revenues and costs) is common by small business owners in Tanzania. Indices
+constructed by weighting by inverse covariance matrix of components following Anderson
+(2008) are provided as a robustness check.
+The components the upstream relational contracting index includes whether a rm re-
+ceives goods on credit, knows all of their suppliers, receives a price discount, arranges ship-
+ping of inputs, and sends mobile money to suppliers. The components of the downstream
+relational contracting are analogous: whether a rm provides credit to customers, knows all
+of their customers, gives a price discount to frequent customers, places orders for customers,
+and receives mobile money payments. The supplier search index includes the number of
+suppliers communicated with to ask information about inputs, number of suppliers trans-
+acted with, whether any supplier was new, the number of locations searched, and whether
+suppliers were local or from urban areas.
+The components of the sales revenue index included four survey questions that asked for
+daily sales revenue at four dierent time points in the previous month: The best sales day,
+the worst sales day, an average sales day, and the most recent full day. Extensive piloting
+revealed that rms were willing to report daily revenue gures and were more likely to refuse
+questions that asked about prots and weekly revenues. Dierences in sales revenue represent
+shifts in a rms' revenue distribution and reveals whether treatment reliably increases rm
+revenue at multiple points throughout the prior month.
+For customer and supplier phone activity indices, the components of the each index are
+whether any calls were received over the previous week, the exact number of calls received
+over the previous two days, calls made over the previous two days, and whether contacts were
+new. It captures the net change in phone activity and provides information about whether
+treatments increase phone engagement with supplier and customer contacts.
+To construct input and output price indices, rms were asked 4 input and 4 output prices
+on a common set of items according to their sector. For retail rms, input and output prices
+are the same good since they sell goods at a mark-up. For service rms, input prices were
+asked for typical inputs that a rm would need to operate and output prices were asked
+54for common items that are manufactured or services performed. For example, all bicycle
+mechanics were asked the price of 4 inputs: tires, tubes, spokes, and chain grease, and asked
+the output price for typical services rendered: changing a spoke, changing a tire, changing
+a tube, and greasing a chain. This was done to build a set of item prices that could be
+compared across rms.
+Item prices were winsorized at the top and bottom 1% of the distribution to reduce the
+inuence of outliers. Z-scores were constructed at the item-survey round level by subtracting
+the control group mean price and standard deviation. Unlike the other indices, there were
+sometimes too few items in the control group to subtract the control group mean. Price
+z-scores were averaged to create an index. Changes in sample sizes on regressions with
+input and output price indices as the dependent variable reect the fact that some rms did
+not source or sell the same items as other rms and therefore a comparison could not be
+constructed.
+B Platform Engagement
+Platform usage data includes phone number of callers, search activity within the platform,
+time and day of search, number of menu screens, and which rm was ultimately found.
+Phone numbers collected by the research team can be matched back to identify whether
+it came from a rural rm, rural customer, or urban rm. Table 1 reports results from an
+ANCOVA regression where all rms baseline outcome is zero, since no rm appeared in the
+phonebook platform during the baseline survey.
+Panel A shows the rural rms search behavior. Three types of rms are listed in the
+platform: urban rms, rural rms from this research project, and rural rms in a nearby
+region. Control rms could only access rural rms from the adjacent region. We could not
+assign a phone number to have zero access to the platform. Instead we assigned them to see
+rms that are outside of their geographic trading area.
+Outcome variables along the top row of each panel are binary variables. Column 1,
+\Used eKichabi Platform" denotes whether a rm ever dialled into the application during
+the survey period. The control mean in Column 1 shows that 29% of control rms dialed
+into the phonebook application at least once. Both treatment arms were signicantly more
+likely to dial into the platform, providing evidence that the rms available to them were
+more relevant than those visible to control rms.
+Columns 2-4 denote whether a rm searched an urban rm, rural rm in the same region,
+or the other non-experimental region. Not all rms that dial eKichabi reach a nal screen
+that lists a business phone number. Firms reported to the research team that sometimes
+they would use it to search for rm names, locations, and sectors, all of which can be found
+without going to the nal screen that features a rm phone number. In other cases, the cell
+network may have failed or the USSD shortcode host could have timed out.12Columns 2
+and 3 conrm that control rms could not search either urban or rural rms in their region.
+Likewise, the downstream treatment arm could not search urban rms. Both upstream and
+12The drop in control mean from Column 1 to Column 4 reects this tendency for users to stop searching
+before reaching a nal screen. The way to interpret the dierence is that 19% of control users dialled eKichabi
+and 5% reach a nal screen that featured a rm name and phone number.
+55downstream could search for rural rms in the same region and the other region. Again,
+the treatment assignments constrained the upstream arm to reach upstream suppliers and
+downstream rms to be reachable by rural customers, who are not listed in the application.
+Panel B shows whether the treated rms were found by users. The control mean for all
+four specications is zero since control rms are not listed in the eKichabi platform. Nearly
+all of the downstream rms (92%) were found by a user and 23% of upstream rms were
+found.13In both cases, search among rural rms in the same region accounts for a higher
+share of the search than by wholesalers and rural customers. However, downstream rms
+were far more likely to be found by a rural customer (27% were found each round) compared
+to the upstream arm, of which 4% were found by urban suppliers each round. It indicates
+that overall, the downstream treatment arm was more active on the application, both in
+terms of searching nearby rural rms and in terms of being found by customers.
+C Robustness Checks
+C.1 Attrition
+Two types of attrition rates are assessed, 1) by assigned groups, and 2) by baseline covariates.
+The rst compares dierential attrition by treatment status and tests whether the dierence
+is statistically dierent. If treatment groups have higher attrition rates, some foreseeable
+reasons might be if participants change their businesses in response to treatment, or perhaps
+learn new opportunities and migrate to another community. A related concern is if treatment-
+related attrition increases rm exit. For example, rms may increase their network and learn
+information that discourages them from investing further in their business and decide to close.
+Seasonal rm closures is common in this setting as some rms pop-up to take advantage
+of the busy agricultural season and temporarily close during periods that require a lot of
+agricultural labor. For better or worse, small rm entry and exit is a common element of
+small enterprise environment in developing countries (McKenzie and Pahausen, 2017).
+For the purposes of measuring attrition, rm closure and rm non-response are measured
+the same way. The research team conducted all follow-up surveys via phone. In cases where
+rms did not answer the phone after a few attempts, the team reached out to village leaders
+and asked to connect with rm owners. In cases where the owner was not found, village
+leaders were able to conrm whether the rm closed or connect the research team with the
+new rm operators. In cases where rms had new operators, we conducted the survey with
+the new operator and updated the phonebook to include the new phone number. It is worth
+noting that this rarely occurred - in most cases if a rm operator left a community, they
+shut down their business and the rm would be classied as `closed' and `attrited.'
+13Since regressions include strata xed eects, survey round indicators, and the prediction index, the
+coecients are not precisely equivalent to the unconditional group means, but they are close.
+56Table 1: eKichabi Phonebook Platform Usage
+Panel A: Firms Search Behavior
+(1) (2) (3) (4)
+Used Searched Searched Searched
+eKichabi Urban Rural Firms Other
+(0/1) Firm Firm Region
+Upstream Treat 0.10*** 0.04*** 0.11*** -0.04***
+(0.03) (0.01) (0.02) (0.01)
+Downstream Treat 0.15*** -0.00 0.20*** -0.04***
+(0.03) (0.00) (0.02) (0.01)
+Control Mean 0.19 0.00 0.02 0.05
+Observations 1521 1521 1521 1521
+Adj. R-squared 0.15 0.09 0.14 0.03
+Panel B: Firms Found in Application
+(1) (2) (3) (4)
+Found by Found by Found by Found by
+Any Rural Urban Rural
+User Customer Firm Firm
+Upstream Treat 0.23*** -0.00 0.04*** 0.20***
+(0.02) (0.01) (0.01) (0.02)
+Downstream Treat 0.92*** 0.27*** 0.02*** 0.36***
+(0.02) (0.02) (0.01) (0.02)
+Control Mean 0.00 0.00 0.00 0.00
+Observations 1521 1521 1521 1521
+Adj. R-squared 0.68 0.25 0.01 0.28
+Standard errors in parenthesis. * p 0:10, **p 0:05, ***p 0:01. Table shows treatment
+eects regressions using application usage data. Each column has an outcome variable regressed
+on the treatment group indicators. Controls include strata xed eects, the prediction index,
+and survey round dummies.
+57Table 2: Dierential Attrition by Treatment Group
+(1) (2) (3) (4) (5)
+Periodic Permanent Arrit Attrit Attrit
+Non-Response Attrition Follow-up 1 Follow-up 2 Follow-up 3
+Upstream Treat -0.058 0.006 -0.024 0.006 -0.046
+(0.051) (0.024) (0.038) (0.041) (0.043)
+Downstream Treat 0.011 -0.005 -0.017 0.004 0.009
+(0.051) (0.024) (0.038) (0.041) (0.043)
+Control Mean 0.353 0.053 0.165 0.182 0.206
+Obs 507 507 507 507 507
+Adj R-Squared 0.004 0.004 0.051 0.040 0.000
+Standard errors in parenthesis. * p 0:10, **p 0:05, ***p 0:01. This table reports
+results for a set of regressions where an attrition indicator is regressed on treatment
+status and strata indicators.
+Table 2 shows the dierential attrition rate by two denitions of attrition. First, columns
+1 and 2 show results for the variable `Periodic non-response', which takes a value of 1 in
+cases where a rm did not respond to at least one survey. About 35.3% of control rms did
+not respond to at least one survey round, but there were no dierences by treatment group.
+Second, the outcome variable `permanent attrition' takes a value of 1 in cases where there
+was no response after the baseline survey. The permanent attrition rate is much lower - only
+about 5.3% of control rms attrited after the baseline survey and there were no dierence by
+treatment group. Columns 3-5 report the attrition rates for each survey round, also nding
+no dierences by treatment group.
+To get a sense for drivers of rm closures and attrition, the third survey round asked
+rms why they closed and whether they planed to reopen. Nearly 40% of closed/attrited
+rms closed their business to work on agricultural activities and 20% reported moving to
+another city or village to look for wage work. The remainder closed due to household shocks
+(re, ood, and theft), childcare and family healthcare responsibilities, a lack of customers,
+lack of capital, or due to faulty equipment in need of repair. 75% of rms that closed stated
+that they planned to reopen their rm in the near future.
+The second type of attrition rate based on baseline covariates serves to rule out selective
+attrition on observables. Table 3 in the Table appendix reports two tests of selective attrition
+based on two dentions of attrition described above - ever attrit, and permanent attrit. A
+regression with the attrition status as the independent variable and the baseline balance
+covariates interacted with treatment status on the right-hand side was run along with an F-
+test of joint signicance of regressors. The F-stat for ever attrit regression was 1.63, too low to
+reject a null hypothesis of zero joint signicance at the 10% level (p-value is 0.1143). And the
+F-stat for permanent attrition group was 0.83, with a p-value of 0.5762, also failing to reject
+the null of a joint eect. Given that dierential attrition by assigned groups and selective
+attrition on observables do not appear problematic, making the additional assumption that
+unobservables do not drive dierences preserves identication of the average treatment eect
+58(ATE) for the study population (Ghanem et al., 2019). Here, the empirical strategy estimates
+an intent-to-treat (ITT), which equals the ATE under the assumption of perfect treatment
+compliance.
+59Table 3: Robustness: Selective Attrition Test
+(1) (2)
+Ever Attrit Permanent Attrit
+Upstream Treat Supplier Relational Contracting Index -0.013 0.050
+(0.106) (0.051)
+Downstream Treat Supplier Relational Contracting Index 0.186* 0.049
+(0.108) (0.052)
+Upstream Treat Input Search Activity Index -0.064 -0.090*
+(0.106) (0.051)
+Downstream Treat Input Search Activity Index -0.210** 0.010
+(0.094) (0.045)
+Upstream Treat Number of Suppliers -0.047 0.015
+(0.058) (0.028)
+Downstream Treat Number of Suppliers 0.142*** -0.007
+(0.054) (0.026)
+Upstream Treat Supplier Phone Activity Index 0.101 -0.047
+(0.087) (0.042)
+Downstream Treat Supplier Phone Activity Index -0.047 -0.030
+(0.093) (0.045)
+Upstream Treat Customer Relational Contracting Index 0.076 0.043
+(0.087) (0.042)
+Downstream Treat Customer Relational Contracting Index -0.208** -0.024
+(0.087) (0.042)
+Upstream Treat Non-local Customer=1 -0.159 -0.084
+(0.143) (0.069)
+Downstream Treat Non-local Customer=1 -0.349** -0.081
+(0.148) (0.071)
+Upstream Treat Number of Customers 0.001 0.001
+(0.002) (0.001)
+Downstream Treat Number of Customers -0.003 -0.000
+(0.002) (0.001)
+Upstream Treat Customer Phone Activity Index -0.118 -0.060
+(0.089) (0.043)
+Downstream Treat Customer Phone Activity Index -0.025 -0.018
+(0.077) (0.037)
+Upstream Treat Sales Revenue Index -0.014 0.007
+(0.080) (0.038)
+Downstream Treat Sales Revenue Index -0.088 0.010
+(0.084) (0.040)
+Upstream Treat Output Price Index 0.019 0.026
+(0.075) (0.036)
+Downstream Treat Output Price Index 0.081 0.031
+(0.060) (0.029)
+Upstream Treat Input Price Index 0.042 0.066*
+(0.075) (0.036)
+Downstream Treat Input Price Index -0.060 0.013
+(0.073) (0.035)
+Upstream Treat Transport Costs Share 0.253 0.151
+(0.242) (0.117)
+Downstream Treat Transport Costs Share -0.556* 0.180
+(0.330) (0.159)
+Upstream Treat Purchased Locally=1 0.144 0.059
+(0.120) (0.058)
+Downstream Treat Purchased Locally=1 -0.134 0.005
+(0.114) (0.055)
+F-Stat 1.6314 0.8305
+p-value 0.1143 0.5762
+Control Mean 0.353 0.053
+Obs 507 507
+Adj R-Squared .041 .011
+Standard errors in parenthesis. * p 0:10, **p 0:05, ***p 0:01. Controls include strata
+indicators and an indicator if variable was missing at baseline. F-stat reports the test statistic for an
+F-test of all the outcome by treatment interactions. The p-value the for both models fails to reject
+the null that coecients on the outcome by treatment interactions are zero.
+60C.2 Randomization Inference
+As a robustness check, p-values were computed by using randomization inference (Athey and
+Imbens, 2017). Randomization inference re-assigns treatment and re-estimates treatment ef-
+fects under the placebo assignment. The simplest version of randomization inference iterates
+through dierent placebo treatment assignments to generate a distribution of treatment es-
+timates. The probability that a value as large as the actual treatment eect is computed and
+becomes the p-value for that hypothesis. Randomization inference is especially useful to limit
+the presence of large outliers that may be present within treated groups. If however, data
+do not exhibit substantial outliers, then randomization p-values should be roughly similar to
+conventional asymptotic inference (Young, 2019). Here, randomization inference is useful as
+a placebo test to check whether treatment-driven heteroskedasticity drives results. Similar
+to nite sample inference, only p-values below 0.10 percent threshold support rejecting a
+null of zero.
+Table 4 reports randomization inference p-values for all of the primary outcomes using the
+Stata command randcmd . As suggested by Young (2019), I report randomization-t p-values
+which are based on re-sampling from a distribution of t-statistics and is more valid in cases
+with multiple treatment arms. The rst two columns report the individual randomization p-
+value for the upstream and downstream treatments, respectively. The third column reports
+randomization p-value of joint signicance testing a sharp null of whether both treatments
+had any eect. Finally, Young (2019) also oers a test of joint signicance based on outcome
+groupings. I report them for groupings of upstream, downstream, and productivity outcomes,
+similar to how multiple hypothesis testing was conducted.
+Individual treatment p-values in columns 1 and 2 roughly mirror those estimated us-
+ing standard asymptotic inference reported in the main body of the paper. This provides
+evidence that treatment driven heteroskedasticity or outliers did not bias treatment eects
+estimates.
+Columns 3 and 4 provide new information not presented in the results sections of the
+main paper. Column 3 lists p-values for a joint test of whether both treatments combined
+outcomes were statistically dierent than control. Out of 15 main outcomes, 7 were jointly
+signicant - upstream relational contracting, downstream relational contracting, customer
+phone activity index, output price index, transport costs share, and whether rms purchased
+inputs from a local vendor rather than in a city. It suggests that access to the directory and
+being listed in the directory signicantly changed outcomes in similar ways despite being
+sorted into treatment arms meant to `boost' either upstream or downstream contact.
+Finally, column 4 presents results from Westfall-Young joint signicance based the eect
+of both treatments on all outcomes in a particular group. In other words, it tests whether
+the experiment had any eect whatsoever on groups of treatment outcomes. This test also
+embeds multiple hypothesis test corrections within each group, but not across groups. For all
+three groupings - upstream, downstream, and productivity - p-values are below .05, thereby
+rejecting the null hypothesis of no eect whatsoever. And the last row of the table reports a
+p-value for a test of joint signicance on all outcomes and rejects the null of no experimental
+eects across all main outcomes below a .01 level. These tests further indicate that search
+and visibility in the phonebook changed outcomes for rms in the treatment groups.
+61Table 4: Robustness: Randomization Inference
+(1) (2) (3) (4) (5)
+Upstream Downstream Joint Test Joint Test
+Treatment Treatment Both Outcome
+Individual Individual Treatments Grouping
+Outcome p-value p-value p-value p-value Iterations
+Upstream Outcomes Grouping
+Supplier Relational Contracting Index .0036 .1975 .0159 .0131 2000
+Input Search Activity Index .0019 .0011 .0018 .0131 2000
+Any New Supplier .1118 .0891 .1625 .0131 2000
+New Supplier Share .0644 .1028 .1203 .0131 2000
+Supplier Phone Activity Index .7654 .1856 .3830 .0131 2000
+Downstream Outcomes Grouping
+Customer Relational Contracting Index .0001 .0006 .0009 .0006 2000
+Any Non-local Customer .6940 .1180 .2527 .0006 2000
+Any New Customer .9324 .7318 .9381 .0006 2000
+New Customer Share .7340 .7270 .7370 .0006 2000
+Customer Phone Activity Index .3631 .0002 .0012 .0006 2000
+Productivity Outcomes Grouping
+Sales Revenue Index .4083 .7612 .5611 .0426 2000
+Output Price Index .0244 .0996 .0598 .0426 2000
+Input Price Index .1708 .5414 .3969 .0426 2000
+Transport Costs Share Inputs Purchased .2168 .0049 .0209 .0426 2000
+Inputs Purchased Locally .2871 .0077 .0237 .0426 2000
+Joint Test - All Outcomes .0062 2000
+Notes : This table compares p-values for main outcomes using randomization inference. The rst two columns show individual
+p-values for each treatment for main outcomes that can be directly compared to asymptotic p-values and multiple hypothesis
+testing p-values presented in Table 6. Column 3 is a joint test of signicance for both treatments combined for each outcome.
+Column 4 is a joint test of signicance for both treatments for each group of outcomes. The last row reports the p-value of a
+joint test of signicance on all outcomes.
+62C.3 Inverse Covariance Weighted Index Construction
+A second approach to index construction proposed in Anderson (2008) utilizes a standard-
+ization procedure similar to Kling et al. (2007), but weights components by the inverse of
+the covariance matrix of outcomes. It has the eect of down-weighting components with
+little variation across units, and increasing weight on components that are relatively less
+correlated with other components. This index construction would penalize indices whose
+components are highly correlated. If between-component correlation were driving results,
+this index would result in larger standard errors. And if between-component correlation does
+not drive results, the weighting procedure is equivalent to ecient generalized least squares
+and can result in smaller standard errors.
+All indices that were presented in the main outcomes were constructed following Anderson
+(2008) and results are shown in Table 5 in the Table Appendix. Inverse covariance matrix
+weighted indices are not centered about zero for the control group, making direct comparisons
+of eect sizes between the two indices dicult. But, in most cases standard errors are about
+twice as large as unweighted indices in the preferred specication. And, eect sizes tend to
+be larger. Overall, signs and eect sizes are relatively similar across both types of indices.
+Table 5: Robustness: Inverse Covariance Matrix-Weighted Indices
+(1) (2) (3) (4) (5) (6)
+Supplier Customer Input Business Customer Supplier
+Relational Relational Search Revenue Phone Phone
+Contracting Contracting Activity Index Activity Activity
+Index Index Index Index Index
+Upstream Treat 0.187*** -0.209*** -0.183*** -0.019 -0.056 -0.099
+(0.069) (0.069) (0.066) (0.063) (0.073) (0.062)
+Downstream Treat 0.084 -0.215*** -0.201*** 0.007 -0.271*** -0.168***
+(0.071) (0.068) (0.063) (0.064) (0.071) (0.055)
+Control Mean 0.429 0.356 0.705 0.153 0.255 0.114
+Obs 1229 1252 1230 1252 1252 1252
+Adj R-Squared 0.053 0.119 0.235 0.141 0.130 0.188
+Standard errors in parenthesis. * p 0:10, **p 0:05, ***p 0:01. Controls include strata indicators,
+the prediction index, survey round indicators, baseline outcomes, and an indicator if baseline outcome was
+missing. This table shows a robustness check for index construction using a procedure that down-weights
+index components that are highly correlated.
+63D Discrete Choice Experiment Detail
+An discrete choice experiment was created for baseline rms. It was designed to elicit trade-
+os on four attributes of a typical sourcing contract: price, preference for new versus old
+suppliers, delivery terms, and provision of credit. Firms examine dierent pairs of contracts
+each with four attributes and indicate which contract they prefer. Pilot data showed that
+some rms have stronger attachment to their suppliers relative to others, picking a contract
+in which they pay a higher price in order to keep their existing supplier.
+For each contract attribute, one option is associated with having built trust with a
+supplier. For example, suppliers must trust that credit will be repaid, or they must trust
+that payment for goods shipped will be received. Table 6 below shows each contract attribute
+and the dierent levels. Each column heading represents a contract attribute , and rows denote
+thelevels for each attribute. In the course of the DCE, rms were shown 6 pairs of contracts
+and asked to specify which was preferred. Each contract listed one level from each attribute
+- price, whether a supplier was known or unknown, delivery terms, and terms of credit (see
+example contract pairing in Figure A.6).
+Table 6: Discrete Choice Experiment Contract Attributes and Levels
+Price Supplier Transport Payment
+.85 x Price Known Deliver, pay shipping Cash now
+.90 x Price Unknown Travel, pay bus fare M-Pesa Now
+.95 x Price 50% now,
+1.00 x Price 50% in one month
+1.05 x Price 80% now,
+1.10 x Price 20% in one month
+1.15 x Price
+DCE require participants to compare sets of contracts with variation in attribute levels.
+Attribute levels were randomly determined through an orthogonal array algorithm After
+completing a series of comparisons, a mixed logit model is used to estimate the relative
+importance of each level. Firms were shown 6 pairs of contracts and asked to specify which
+was preferred. Each contract listed one level from each attribute - price, whether a supplier
+was known or unknown, delivery terms, and terms of credit (Figure A.6 provides an example
+of a contract pairing).
+64Figure A.6: Example of Contract Pairing
+Econometric analysis of discrete choice data draws from a random-utility model and uses
+a mixed logit (also called random parameters logit) model to estimate choice probabilities
+that represent group-level preferences for certain attributes (McFadden and Train, 2000).
+Coecients on terms in the mixed logit are interpreted as the group-level preferences for an
+attributes. Econometric analysis uses the following model specication:
+Yijk 1Priceijk 2Supplier ijk 3Transport ijk 3Payment ijk k ijk
+Firmiselects alternative jamong choice sets k.Yijkis a binary variable which takes
+a value of 1 if the rm owner chose a certain contract. Unlike conditional logits, mixed
+logit specications are robust to arbitrary correlation within alternatives and heterogeneous
+preferences of agents. In other words, each agent is assumed to have their own preference
+distribution of the various options. Coecients on terms in the mixed logit are interpreted
+as the group-level preferences for an attributes. DCE are useful to identify strength of
+preferences for specic contract attributes relative to other attributes, rather than a precise
+measure of willingness-to-pay for a market good.
+Table 7 shows results from the discrete choice experiment.14The sample size comes
+from the 376 rms that completed the choice experiment multiplied by the 12 contracts
+they reviewed.15Coecients are the mean and standard deviation of a distribution of tastes
+in the population that participated in the discrete choice experiment. Price is treated as
+xed coecient, meaning that only a mean is estimated and assumed to be xed for the
+population.
+To make coecients economically meaningful, they can be converted into a measure of
+14For model specication and further detail on assumptions, see Appendix D.
+15The full sample of 507 rms did not complete the discrete choice experiment due to piloting and some
+cases of non-response. One rm only managed 10 contracts, thus 376 1224510:
+65Table 7: Mixed Logit Results of Discrete Choice Experiment
+Dependent Var: Contract Choice
+Mean SD WTP (Percent)
+(se) (se) [CI]
+Price -6.11
+(0.58)
+Supplier Known 0.330.720.06
+(0.12) (0.19) [0.02, 0.10]
+Goods Delivered 2.012.050.33
+(0.19) (0.18) [0.25, 0.40]
+Mpesa payment -0.05 -0.21 -0.01
+(0.18) (0.29) [-0.06, 0.05]
+50% cash now 1.13-0.51 0.18
+(0.18) (0.35) [0.12, 0.25]
+80% cash now -0.04 1.67-0.01
+(0.23) (0.25) [-0.08, 0.06]
+Observations 4510 4510
+Standard errors in parentheses
+p 0:10,p 0:05,p 0:01
+WTP by dividing the point estimate of the mean of an attribute level by the price coecient.
+The coecient on price is negative - meaning that participants were less likely to choose a
+contract as the price went up. The fact that the price coecient is negative and statistically
+signicant provides a check that the experiment was understood and taken seriously by
+participants since it suggests adherence to downward sloping demand. Likewise, not all
+attribute levels were meaningful to participants (paying with Mpesa and paying 80% of their
+balance at once). It indicates that rms were indierent about these contract attributes and
+consistently preferred those with better terms.
+D.1 Baseline Relational Contracting
+One question of interest is whether relational contracting makes a dierence to rms. Here,
+I present evidence from the baseline survey on how relational contracting associates with
+key rm outcomes, such as revenues, employees, transportation costs, and input and output
+prices. Using baseline information on revealed behavior, I construct indices of rm partici-
+pation in relational contracting with their upstream suppliers and downstream customers.
+I also construct an index of WTP relational contracting with upstream suppliers using
+estimates from the discrete choice experiment. Individual level measures of WTP were es-
+timated through simulation. Following Train (2009), this is only done for variables with
+signicant coecients on the estimated mean (e.g. Supplier known, Goods delivered, and
+payment of 50% cash now). The basic idea is that coecient means and standard deviations
+of attribute preferences estimated in the mixed logit model are parameters that dene an
+unconditional distribution of tastes in the population that can be used to estimate a con-
+66ditional distribution of an individual by using their past choices. Since each rm compared
+six sets of two contracts, each participant provided six data points from which to estimate a
+conditional distribution of their individual preferences.
+Results in Table 8 provide suggestive evidence on the importance of relational contracting,
+particularly with upstream input providers. Firms with higher index of upstream relational
+contracting tend to have higher sales revenue, more employees, lower output prices, lower
+transport costs and lower input prices (though the last two were not signicantly dierent
+from zero). These results control for a suite of pre-determined rm-level controls, including
+rm age, years of education, gender of owner, rm sector, and village xed eects. Despite
+adding controls, it is still likely that the relational contracting index is correlated with the
+error term and thus results are cautiously interpreted as correlations.
+Downstream relational contracting does not exhibit as much correlation with rm pro-
+ductivity as the upstream relational contracting. It is not associated with any outcomes
+aside from having a lower output price index, which might occur as a result of known cus-
+tomers bargaining for lower prices. Similarly, when the results of the DCE are aggregated
+into an index, there is no relationship with rm productivity outcomes, except for paying
+higher input prices.
+And nally, the bottom panel independent variable is constructed by taking the dierence
+between rms' stated WTP for relational contracting and their observed upstream relational
+contracting index. Here, there are some suggestive correlations. Firms with greater dif-
+ferences between their stated and observed relational contracting are associated with lower
+sales revenue, fewer employees, higher transport costs, higher output prices, and higher input
+prices. This highlights the importance of unlocking rm networks so that rms that aspire
+to have relational contracts can more easily meet new rms and build relationships required
+to attain benets from relational contracting.
+67Table 8: Baseline Outcomes Associated with Relational Contracting
+(1) (2) (3) (4) (5)
+Sales Total Share Output Input
+Revenue Employees Transport Price Price
+Index Costs Index Index
+Supplier Relational Contracting Index
+Supplier Index 0.16** 0.18* -0.02 -0.15* -0.10
+(0.08) (0.09) (0.01) (0.08) (0.09)
+Mean -0.08 0.60 0.08 -0.01 0.02
+Obs 506 501 418 393 343
+Adj R-Squared 0.12 0.07 0.07 -0.01 0.11
+Customer Relational Contracting Index
+Customer Index 0.04 0.02 -0.02 -0.16** -0.04
+(0.06) (0.06) (0.02) (0.07) (0.07)
+Mean -0.08 0.60 0.08 -0.01 0.02
+Obs 506 501 418 393 343
+Adj R-Squared 0.11 0.06 0.08 -0.00 0.11
+WTP Relational Contracting Index
+WTP Supplier Index -0.09 -0.09 0.02 0.10 0.10*
+(0.06) (0.08) (0.02) (0.07) (0.06)
+Mean -0.08 0.60 0.08 -0.01 0.02
+Obs 378 375 341 311 318
+Adj R-Squared 0.17 0.04 0.03 -0.02 0.13
+Dierence - WTP and Supplier Relational Contracting Index
+Dierence WTP -0.09** -0.11* 0.03** 0.17*** 0.11**
+(0.05) (0.06) (0.01) (0.06) (0.05)
+Mean -0.08 0.60 0.08 -0.01 0.02
+Obs 378 375 341 311 318
+Adj R-Squared 0.17 0.05 0.04 0.01 0.13
+Standard errors in parenthesis. * p 0:10, **p 0:05, ***p 0:01. Each regression
+controls include rm age, years of education of owner, gender of owner, rm sector,
+and village xed eects.
+68

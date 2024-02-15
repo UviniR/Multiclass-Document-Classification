@@ -1,0 +1,375 @@
+  1  
+ 
+ 
+Case Study  
+The Future of G2P Payments : 
+Toward s an integrated infrastructure in Bangladesh  
+Silvia Baur -Yazbeck and Joep Roest  
+March 2019  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  2  
+ 
+ 
+This work was funded in whole or in part by CGAP.  Unlike CGAP's official 
+publications, it has not been peer reviewed or edited by CGAP, and any 
+conclusions or viewpoints expressed are those of the authors, and they may 
+or may not reflect the views of CGAP staff.  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+DISCLAIMER  
+ 
+   3  
+Summary  
+By 2015 , Bangladesh already had begun to experiment with digitizing government -to-person payments. Several  
+social safety net programs, among the more than 100 in place , were experimenting with various digital payment 
+approaches —often through a customized arrangement with a single ven dor or  provider.  
+Access to Information ( A2i) is a cross -government agency that seeks to  improve  government service s to citizens . 
+Along with the digitization efforts that were already taking shape, A2i saw that more benefits  could be gained if 
+government programs  shared and used a  unified government payments platform that would consolidate and 
+simplify delivery  for both government programs and their citizens . In early 2016 , A2i partnered  with CGAP, the Bill 
+& Melinda Gates Foundation,  the Better Than Cash Alliance, and Price Waterhouse Coopers  to conduct a deep as-
+is context assessment . Based on this assessment, the partners  set out  to create a  detailed systems design process 
+that leveraged the existing payments infrastructure, identified trade -offs and reaffirmed  the core goals  of A2i’s 
+vision of building a more inclusive digital payments system . As implementation  progressed, A2i revisit ed the 
+design , made  adjustments , and brought in other government  departments , while  remain ing focused on  its 
+ambit ious long -term vision . By February 2019, A2i had connected key elements of the system and was well into 
+piloting different aspects of the overall architecture.      4 Introduction to the case  
+Bangladesh has around 11 0 government social safety net payment programs. In recent years, t he government  has 
+shown  an increased interest in modernizing payments b ecause , at nearly 13 percent of the annual budget, these 
+payments account for a significant part of the budget . This gr owing interest aligned with the efforts of “Digital 
+Bangladesh, ” a government -wide initiative championed by the Prime Minister’s son. By 2016 , many government 
+programs had begun to move their payments through digital channels  by seeking customized solution s, which 
+presented both a problem and an opportunity.  
+Access to Information (A2i) is a cross -government agency that seeks to improve government service. A2i is housed 
+at the Prime Minister’s Office  and focuses on advancing technology -led solutions for gove rnment services. Since 
+its creation in 2007, A2i has promoted digitizing and overhauling government services. It developed a 
+methodology for measuring, understanding, and communicating government service improvement , called TCV 
+(time, costs, and visits).  Despite considerable success in digitizing public services, the associated payments to and 
+from government were still processed manually and often incurred significant costs on citizens.  
+A2i saw an opportunity to establish a system -wide approach to channel ing multiple, if not all, government 
+payment flows. A2i believed that  a unified approach  could offer a range of benefits beyond what an individual 
+financial institution  could offer.  A2i began to articulate this vision by emphasizing that citizens could mak e choices  
+on how and where to receive and make payments to government . The vision promoted the idea that choice should 
+not be dictated to citizens by either government or providers and simultaneously  linked to a wider aspiration for 
+digital finance ; that government payments ought to reinforce wider goals of interoperability, competition among 
+providers, and more inclusive open systems. Their goal was to reinvent  both government -to-person ( G2P) and 
+person -to-government ( P2G) payments  though in the learn ing process they realized the need to tackle these 
+distinct payment types under separate initiatives . Their focus early on in 2017 was to begin with G2P payments.  
+Enabling environment  
+There was considerable room for improv ing the existing G2P payments syst em in Bangladesh . A 2016 review of  
+the volumes, management systems, and disbursement practices of Bangladesh’s highest volume government 
+schemes , includ ing social welfare schemes and government salary payments , revealed that payments were 
+predominantly mad e in cash . The m anual systems were vulnerable to  leakage and inefficien cy. Where some 
+digitization had occurred , government programs were procuring single vendor closed -loop solutions  that offered 
+little to no choice to citizen s.  
+For c itizens , the experiences with receiving G2P payments ranged from bad to terrible. The typical customer 
+journey was riddled with pain points, including unpredictable payments, high levels of fraud and financial loss, 
+and overall inconvenience and cost. Those few (less t han 1 percent) who were already receiving payments into an 
+account , frequently complained about account opening fees and cumbersome cash -out processes.  The 2016 study 
+also showed that c itizens were not well  equipped to take advantage of digitization.  With most G2P recipients 
+represent ing the poorest and most vulnerable , they  typically have low literacy levels and limited access to, and 
+familiarity with, digital devices and services. Despite the rapid uptake of mobile phones, including smartphones , 
+in Bangla desh over 80 percent of the G2P population did not own a mobile phone  in 2016 . Citizen s had diverse 
+realities and needs: An old person receiving an old age allowance would conceivably want disbursements 
+delivered directly to her home or as close as possibl e, whereas a citizen sending school fees to government, might 
+prefer to travel to the school and pay there for various reasons.    5 Key payments infrastructure was already in place . Bangladesh Bank’s National Payments Switch (NPSB) 
+connected with the four big  public banks and most of the roughly 50 commercial banks. However, NPSB did not 
+connect with a  majority of the mobile financial services  (MFS)  accounts , including  those of bKash —by far the 
+largest provider of mobile accounts and agent points of service. NPSB was also in  need of a technology  upgrade 
+that would, among other things, enable it to handle biometric authentication.  
+Existing distribution networks were reasonably well spread across the densely populated country.  The banks 
+that were delivering G2P payments at that time, and those connected to the existing switch, did not reach far 
+beyond urban and suburban areas. MFS providers had a much greater reach than these banks, with over 200,000 
+access points , but they  were not interoperable. Over 5,000 publ icly run Union Digital Centers (UDC) and over 8,500 
+e-centers of Bangladesh Post offered an additional network. While a  few UDCs had begun to also offer basic 
+banking and payments services , large portions of these nonbank delivery networks remained outside  the 
+payments system.  
+Bangladesh’s N ational ID  (NID)  system was in transition. The national biometric ID covered over 95 percent of 
+the adult population, including over 85 percent of G2P recipients. This meant that the NID database could be 
+leveraged for biometric customer verification  during enrollment and account opening, and for authenticati ng 
+customers performing transactions. NID offered customer verification services to a few banks on a single contract 
+basis. Only recently, mobile network operators had been given access to the NID database to biometrically verify 
+customers for SIM card  registration .  
+While the ID  infrastructure was in place , its full use for government or private  sector  services had not been well 
+developed yet. Since the NID had been designed for election purposes , it was within the domain of the Bangladesh 
+electoral commission. The commission was  not oriented towards offering the NID for regular use by multiple 
+institutions. The use  agreements  they did establish  were based on ad hoc technical and pricing arrangements 
+rather than well -established A pplication Programming Interface s (API) or terms.  
+There was a parallel effort to issue a large number of IDs via smartcards that would allow offline  customer  
+verification . While this held some potential , the card’s  deployment was running into significant delays  and its long -
+term  availability was in doubt.   
+The regulatory framework for digital financial services was conducive to digital government payments and a 
+wider outreach of access points  with some minor gaps.  Bangladesh Bank had allowed both agents for MFS and 
+agents for banking under two different regulations. However, the agent regulations were not specific about 
+whether interoperable off -us transactions1 would be possible. These types of transactions were n ot barred in the 
+regulation, but neither were they specifically permitted. Also, the  regulatory regime provided little clarity as to 
+whether Bangladesh Bank would allow electronic Know -Your -Customer (eKYC) processes for account opening.  
+A2i was uniquely p ositioned to take on the challenge of driving this kind of payments reform . It was housed in 
+the influential Prime Ministers’ Office and had access  into the senior echelons of the civil bureaucracy. A2i also 
+recognized its limitations: It was not a governm ent ministry that had direct control over government programs. 
+A2i would need to “sell” its ideas within government. On the other hand, because it did not run any programs, A2i 
+could take the role of a neutral party and work to establish cross -cutting gove rnment payments systems , with 
+fewer inter -ministerial “turf” constraints. Political considerations were a final and compelling reason to push 
+ahead . The government had set a priority of going digital by 2021 , in time for the country’s 50th anniversary.  
+                                                           
+1 In an off -us transaction, the bank or agent processing a cash -out is not the customer ’s financial service provider .   6 Design: Key choices  
+Confident and backed by  several partners, A2i took further steps in early 2016. With support from the Bill & 
+Melinda Gates Foundation, CGAP, and the Better than Cash Alliance ( BTCA ), A2i engaged a team from Price 
+Waterhouse Coopers ( PWC )2 to assist in an intensive design effort.   
+This began with  an As -Is context assessment to identify existing resources and gaps, followed by a design phase 
+that sought to optimize key choices to best meet A2i’s goals , and lastly involved the development of a  detailed 
+implementation roadmap .   
+Box 1. A crucial intervention by Nandan Nilekani . 
+A key event in the design stage was a security crackdown that followed a terrorist attack in July 2016 in Dhaka. 
+Enhanced security measures made it difficult for A2i and its partners to meet at a critical stage in the design 
+planning phase. This important two-day design meeting was moved to Bangalore from its original venue in Dhaka.  
+The meeting’s new location presented an opportunity for A2i to invite Nandan Nilekani, the former Minister of 
+the Unique Identification Authority of India (UIDAI) and a founde r of the software giant Infosys. Nilekani was a 
+key person behind the development of India’s identification and G2P architecture. He spent nearly a full day with 
+A2i and its partners learning about Bangladesh’s current landscape and its growing digitizatio n efforts.  
+He observed that several key elements in payments, national ID, and other systems were already present in 
+Bangladesh, and he advocated for a design that would best leverage the existing assets. In the weeks that 
+followed, A2i and PWC pressure -tested the design, vetted assumptions, and reviewed the design. Nilekani’s input 
+persuaded A2i to push for a design that best leveraged existing systems and to adopt a longer term and more 
+aspirational  vision. Critically , Nilekani’s credibility and backing gave A2i even greater reassurance that their vision 
+could be delivered.  
+A2i and its partners used the knowledge gleaned from the multi -pronged As-Is assessment to consolidate the 
+design  choices . The design process took s everal weeks and required verification of key factors and system 
+capabilities. The design was guided by a clearly articulated set of overarching principles, as shown in Figure 1.  
+Figure 1. Key design principles for Bangladesh's G2P payments architecture . 
+ 
+ 
+KEY CHOICE #1: A2I WOULD FOCUS ONLY ON SERVICING PAYMENTS, NOT G2P PROGRAM MANAGEMENT  
+A2i decided to focus solely on making payments easier  and leave program management to government 
+departments. This decision helped A2i to avoid conflict with government programs. A2i’s focus would be on 
+                                                           
+2 PWC is a global consulting firm that proposed a team of various expertise from government process re -engineering, national IDs, payment 
+systems, and strategy. The team, from PWC Asia, had worked on IDs and G2P in India.   
+  7 making payment s easier for the government programs . The design meant  government program s wou ld collect 
+citizens’ verified NIDs  and offer  these  basic  details at the time of payment.  
+This approach was not without risks. Without its own programs, A2i would need to persuade programs to deploy 
+the new payments approach. Some government programs had already created  their own customized solutions  
+and A2i would need to offer them a compelling reason to join.  
+KEY CHOICE #2: LONG -TERM VIEW TO PROMOTE INTEROPERABILITY  
+A2i chose to leverage the existing  payments switch , the NPSB , since it had many of the necessary capab ilities and 
+was the most widely available . This mean t, however , that payments could only be made to accounts at providers 
+who were  linked to NPSB. This decision left out bKash, which had the largest reach of accounts and access points. 
+By sacrificing its reach in the short run, A2i hoped that its patience would prove to be a strong incentive for bKash 
+and other providers outside the national payments system to come in later. This decision exhibits how A2i opt ed 
+for a large r, long -term pay -off over short -term smaller gains . 
+One key piece of infrastructure that did not exist and need ed to be built  was a “mapper ” that connect ed 
+individuals’ IDs to their bank account of choice. This function would allow government programs to c apture only 
+IDs (not account  information) and provide this information to the mapper in order to initiate a payment .  
+KEY CHOICE #3: SOUGHT TO LEVERAGE EXISTING NID  DATABASE  AND EASE AUTHENTICATION  
+Another key design choice was to focus on biometric account opening and payment authentication. This decision 
+was based on findings from  the As -Is assessment: Many citizen s did not have phones or the skills to navigate 
+complex registration processes. A  card-based system  was considered but de-emphasized due to high er costs and 
+complications inherent in card system management. An important related objective is that A2i also saw this as an 
+opportunity to promote government use of NIDs  and provide  further reaso ns for the Election Commission to 
+expand the utility of the ID system . 
+KEY CHOICE #4: PAY HEFTY FEES FOR PAYMENTS DELIVERY TO INCENTIVIZE PROVIDERS  
+One of the concerns with this new G2P payments approach was how to create incentives that would draw 
+provid ers into the system. The expectation , based on experience elsewhere, was that the target population would 
+immediately cash out the entirety of their payments. Payments directly to customer accounts meant less float for 
+the banks and so other incentives wou ld need to be developed.  
+The new approach also challenged perceptions citizen s had developed over time. For example, it was perceived 
+to be difficult to shift from cash delivery, which is perceived as “free” to citizen s, to making citizens pay a fee  to 
+cash out. Therefore, A2i determined that a fee would be needed to be paid to providers —one that is s ubstantial 
+enough  to give an incentive to pursue these customers . The acquiring networks (points of service where people 
+could cash out) would be compen sated by an interchange fee based on the interoperable payments system in 
+place.  
+A2i’s design encompassed a range of long -term goals. One was to bring providers into the interoperable system, 
+where the cash -out fees would give them the incentive to pursue  these accounts and increase the number of 
+access points. Rather than paying one firm in a single -vendor contract, A2i opted to stimulate a wider digital 
+financial  ecosystem. The keys to success, therefore, were whether the volumes, fees, interoperability,  and other 
+considerations would be sufficient to stimulate a positive and dynamic provider response.    8 KEY CHOICE #5: ASKING AS LITTLE AS POSSIBLE FROM OTHER ARMS OF GOVERNMENT  
+To limit interdependence and to avoid creating unnecessary complications, the design sought to rely as little as 
+possible on help from other parts of government. However, A2i needed to work with a few other arms of 
+government , including Bangladesh Bank , the Election Commission and the government schemes, as well as the 
+banks and the MFS providers  to make the design feasible. (See Table 2 in Annex .) 
+ 
+These five key choices significantly shaped the design of the payments model and defined the processes required 
+for making direct payments to citizens. (See Figure 2.)   9 Figure 2. Process flows for key steps in the  new G2P payments system . 
+ 
+  
+  10 Implementation thu s far 
+Following the design effort A2i created a Project Management Unit dedicated to  pursuing the goal of 
+implementing the new system .3 It was clear that implementation would not happen quickly and take  some  
+significant effort, including management expertise, resources, partnerships, and political navigation . It would need 
+to follow a phased strategy in which earlier steps create momentum for subsequent steps. This staged appro ach 
+comprised three broad phases, as illustrated in Figure 3.  
+Figure 3. Phased roadmap for Bangladesh's new payments architecture . 
+ 
+The first step was to identify a few government programs and banks  to kick off a pilot . By early 2018, two G2P 
+programs from the Ministry of Social Services and one program from the Ministry of Women’s Affairs agreed to 
+participate in the pilot. As the pilot efforts were launched in 2018 , some  significant shifts were needed in the 
+original design  in order to  get things moving  (see Figure 4 ). By early 2019 , the pilots had made payments to over 
+100,000 individuals across three programs. Of these at least a quarter had been done testing the mapper function.  
+The Ministry of Finance takes center stage . As implemen tation of the roadmap proceeded , A2i brought on board 
+the Finance Division of the Ministry of Finance, which is the Government’s key payments and treasury arm. The 
+Finance Division determined that it would disburse funds directly from Treasury instead of t hrough public banks 
+as was assumed in the original design. In addition, the Finance Division —as opposed to A2i —procured and 
+oversaw  the development of a shared scheme and payments management portal. Since the Finance Division will 
+own the portal, it will b e able to regularly monitor payments and schemes; such as identifying duplicate  G2P 
+recipients. This reflects both greater buy -in by government but also added effort to integrate with the Ministry’s 
+systems.  
+Interoperability through the electronic fund transfer network instead of the switch . NPSB, managed by 
+Bangladesh Bank, was going to take many months to  upgrad e the switch  to support biometric transactions. 
+Instead , A2i began to work with an alternative payment scheme called the Electronic Fund Transf er Network 
+(BEFTN), which connects 40 of the 58 banks in Bangladesh. Crucially, as with the NPSB, citizen s would be able to 
+choose from among several providers on where to keep an account . However, going with the BEFTN entailed 
+some  significant tradeoff s. For cash -outs, BEFTN is unable to allow off -us transactions and customers are limited 
+                                                           
+3 Roadmap implementation was funded by the Bill & Melinda Gates Foundation and technical assistance was provided by BTCA.  
+  11 in their options of cash -out points . Large providers that are not banks, such as bKash , do not participate directly 
+in BEFTN. Instead, bKash payments are routed to a bank  and then subsequently sent down to a specific account 
+at bKash . BEFTN is also not able to process  biometric authentication so this original element of design is not 
+available in the early piloting. So far, the BEFTN has held up well, breaking its record f or the number of daily 
+transactions during the pilot. A2i can still transition to the  NPSB after undergo ing the necessary  upgrade.  
+Mapper built and undergoing  testing . A2i procured a firm to develop the ID -account mapper  software and to 
+seed the information of citizens involved in th e early pilots .4 So far , the mapper  has been able to facilitate 
+payments to some 25,000 citizens. During  implementation, however, the programs have learned about challenges 
+with the NID itself that has curtailed wider use. 
+Figure 4: The original versus adjusted design of the G2P payments process.  
+ 
+By mid -2018, A2i and the partnering Ministries had onboarded  128,000 G2P recipients  in 11 subdistricts , trained 
+government  field staff and rolled out  their first  pilot with funds being routed into individuals’ accounts acr oss four 
+banks and three MFS providers .5 Key aspects of the design were tested such as customer choice, involvement of 
+multiple programs, the newly developed mapper and routing payments directly from Treasury. The pilot offered 
+A2i important learnings and uncovered a few  challenges  that will need further fine -tuning as A2i plans scal ing up:  
+Positive prospects for building a unified payment system across government.  Having different programs from 
+different Ministries successfully participate represents an important validation of the design. It also points to a 
+future process for onboarding more programs from across Government .  
+Customer choice was implemented and tested —but not in all cases , everywhere . A2i carried out training  and 
+introductory workshops  with local government officials and UDC agents to build their capacity for account 
+opening, account seeding  (i.e., linking a customer ’s account to her ID in the payments mapper) , and cash -out 
+services.  Whilst all participating recipient s’ information  had been  seeded in to the new payments mapper, the 
+degree of  choice offered differed across pilot locations. Depending on the G2P program and citizen s’ location , 
+citizen s were able to choose from either a fixed menu of  bank  options or, in some cases,  a single bank was selected 
+for them . In some  areas they were  even  able to choose from a menu of MFS  providers . Despite not testing full 
+choice for all citizen s in all locations, it was an important validation of the design that at least a subset of citizen s 
+had been enabled  to choose their preferred provider . 
+The business model for providers still needs to be figured out . The commissions and fees to be paid to 
+participating payment providers are yet to be settled. A2i commissioned PiStrategy, a Bangladesh based 
+                                                           
+4 The same firm had developed Bangladesh’s bankin g switch for ATM and POS interoperability.   
+5 The participating providers include Bank Asia, Mohtomuti Bank, NRB Commercial Bank, Sonali Bank, bKash, Rocket DBBL and Surec ash. 
+  12 consultancy, to study different compensation models. Their study will recommend a rate for endorsement by 
+Government, after which it can be applied.  
+The National ID has some drawbacks . The pilot uncovered that 5 -8 percent  of G2P recipients  do not possess a n 
+NID. In addition, the NID database against which citizen s are authenticating exhibited some data quality issues 
+leading to failed transactions.  These issues will need to be addressed before scaling up from the pilot.  
+Fees for authentication services need to be negotiated . A2i has held regular negotiations with the Election 
+Commission on the pricing of biometric authentication services and the iss uance of IDs for citizens under 18 years 
+of age. To reduce the costs of biometric authentication services through the NID database, A2i is considering a 
+model that applies a fee for authentication during enrollment and no fee for subsequent authentication for cash -
+in and cash -out transactions. The fee structure has not been settled yet and negotiations continue.  
+A second, more ambitious pilot  that includes more banks and programs,  is planned for 2019. The parameters are 
+still unclear but A2i envisions  to pilot the biometric authentication process with  the ID-account mapper. How they  
+will overcome the inability of the BEFTN to link with the biometric component of the NID is still unclear.  However,  
+some outstanding issues will need to be sorted out first , such as the quality issu es in the NID database , citizen s 
+without an NID  and the fees  to be paid to  participating payment providers . Beyond the second pilot, A2i has the 
+ambition to switch from the BEFTN to the NPSB an d integrate  bKash and Rocket  DBBL . Bangladesh Bank is also 
+contemplating regulator y adjustments for allowing eKYC beyond a pilot test.  
+ 
+    13 ANNEX  
+ 
+Table 1. Summary of Key Context Findings and Implications for Design Choices  
+As-Is Context Assessment  Design Implications  
+Citizens have wide -ranging and diverse 
+needs .  Enabling payments through multiple channels held out the 
+promise that customers could choose the delivery methods that 
+suited them.  
+G2P r ecipients largely do not have their 
+own mobile phones .  A fashionably mobile -only design would exclude precisely the 
+population being targeted.  
+There is limited literacy and numeracy 
+capabilities.  Enabling biometric authentication would alleviate the common 
+issues customers faced with remembering the PINs fo r cash out.  
+Government schemes pursue a myriad of 
+individual solutions. Each procure single -
+payment providers for a limited term. 
+Providers treat the government, rather 
+than G2P recipients, as the customer .  By opening payments delivery to a variety —if not all —players 
+would reduce vendor -lock and help create a more level playing 
+field that would spur innovation in services and infrastructure. It 
+would switch the providers’ focus from winning government 
+contracts to improving service for citizens .  
+Key pieces of payments infrastructure 
+were in place .  
+However, the largest distribution 
+networks, including bKash, were not 
+interoperable.  A focus on enhancing and linking the existing payment switching 
+would make it possible to focus on interoperable systems  and, 
+therefore, more choice. This choice also meant it might provide 
+additional incentives for large players like bKash to interoperate. 
+Or at least, to avoid establishing single provider systems that 
+create more reasons not to interoperate.  
+Distributio n was heavily dominated by 
+providers outside the payments system.  This would mean starting from a narrower set of access points 
+focusing on a few agent banking locations and the Union Digital 
+Centers. The goal would be to add more access points as more 
+providers join the payments system.  
+NID had good coverage but was mostly 
+used as a voter ID. The existing capabilities 
+were not extended to government or 
+private sector applications such as e -KYC 
+or authentication.  This was assessed to be 
+technically feasible.  Offering eKYC and authentication to financial services providers 
+would allow for simplified account opening and  customer  
+authentication.  
+Demonstrate a use case for government to extend NID beyond 
+its use excl usively as an election tool.  
+ 
+    14 Table 2. Areas of collaboration with other arms of government  
+Bangladesh Bank 
+(Central Bank)  • Allow small -value accounts to be opened through biometric identification.  
+• Allow eKYC verification through the NID database.  
+• Enable biometric authentication for each transaction on NPSB.  
+• Build and host an ID -account mapper.  
+ 
+Election Commission 
+(National Identification)  • Provide an open API to financial services providers for e -KYC verification for 
+account opening and an open API to NPSB for biometric authentication of 
+cash -out, cash -in, and payments transactions.  
+ 
+Government Schemes  • Use a management information system that can generate a standard 
+payments file or link with the ID account mapper to make payments.  
+• Collect and seed citizen s’ ID numbers.  
+• Generously cover fees (>3%) of cash payments to issuing banks.  
+ 
+Banks and MFS 
+Providers  • Provide small -value accounts  
+• Ensure data connectivity to link NID for biometric authentication.  
+• Establish biometric message format capability for biometric transactions.  
+ 
+A2i Implementation 
+Team  • Expand DFS coverage to all 5,000 UDCs —enabled as banking agents.  
+• Prepare guidelines for standardizing technical infrastructure at the UDC level.  
+• Negotiate with providers to make agent operation service -level agreements.  
+ 
+ 
+ 
+ 

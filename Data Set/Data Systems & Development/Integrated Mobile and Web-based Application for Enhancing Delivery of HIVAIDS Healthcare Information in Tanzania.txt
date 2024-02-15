@@ -1,0 +1,834 @@
+152Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019Vol. 38(2), pp.152-170,Dec.2019
+ISSN 1821 -536X (print)
+ISSN 2619 -8789 (electronic )Tanzania Journal of Engineering and Technology
+Copyright © 2019 College of Engineering and
+Technology, University of Dar es Salaam
+Full Length Research Paper
+Integrated Mobile and Web -based Application for Enhancing Delivery of
+HIV/AIDS Healthcare Information in Tanzania
+Ibrahim A. Mwammenywa1*, Michael H. Nkotagu2,3andShubi F. Kaijage2
+1University of Dar es Salaam , Dar es Salaam, Tanzania.
+2Nelson Mandela –African Institution of Science and Technology, Arusha, Tanzania.
+3Ardhi University, Dar es Salaam, Tanzania.
+*Corresponding Author: a.m.ibra90@gmail.com
+ABSTRACT
+This study aims to develop an integrated e -health platform for enhancing delivery of
+HIV/AIDS healthcare information in Tanzania , whichconsists of a mobile application and a
+web-based system. The study is based on the system's functional and non -functional
+requirements for an e -health system for del ivery of HIV/AIDS healthcare information. The
+Rapid Application Development (RAD) model was adopted during the system developmen t.
+The system requirements were modelled into Data Flow Diagram (DFD) in order to obtain
+the clear flow of the HIV/AIDS healthca re information between the clients and HIV/AIDS
+healthcare practitioners. With the use of different software development tools and
+environment such as Android studio and Symfony framework; both android application and
+web-based system were developed. Final ly, the developed system was tested for individual
+module functioning as well as the functioning of the fully integrated system. The user
+acceptance survey gave the mean score of above 4 on the scale of 5 for each tested aspect of
+the system. These scores show that the developed system was positively accepted by the
+users and commended the Ministry of Healthandto deploy the system for enhanced delivery
+of HIV/AIDS healthcare information.
+Keywords :Electronic Health (e -health), HIV/AIDS Healthcare Inform ation,Mobile
+Application, Mobile Health (m -Health),Web-based System .
+INTRODUCTION
+TheGovernment of Tanzanian has taken
+necessary socio -political and economic
+measures to fight against the HIV/AIDS
+pandemic. These measures include free
+provision of all HIV/AIDS healthcare
+services such as provision of free
+counselling, HIV testing services as well
+as Antiretroviral therapy (ART) in public
+hospitals (The Joint United Nations
+Programme on HIV/AIDS, 2016; Bor et
+al.,2013). However, most people are held
+back from freely accessing theseHIV/AIDS related services from
+HIV/AIDS Care and Treatment Centers
+(CTCs) due to fear of stigma (Saki et al.,
+2015; Feyissa et al.,2012; Mbonu et al.,
+2009).
+In an on-going war against stigma towards
+people in need of acces sing HIV/AIDS
+healthcare services; Lwoga et al.(2017)
+recommended that the HIV/AIDS public
+healthcare providers and the HIV/AIDS
+CTCs use an electronic platform to provide
+confidential access to relevant and formal
+HIV/AIDS healthcare information. TheIbrahim A. Mwammenywa, Michael H. Nkotagu andShubi F. Kaijage
+Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2), Dec. 201 9153Information and Communication
+Technologies (ICT), being an electronic
+platform, brings about a great potential in
+enhancing the delivery of healthcare
+services including those for HIV/AIDS.
+The increasing deployment of ICT
+solutions such as mobile communica tion
+technologies has opened the possibility of
+improving the delivery of so much
+important information to many people, at
+the same time without compromising their
+confidentiality. Mobile technology has
+been of different forms such as mobile
+money transact ions, mobile health (m -
+health), mobile security and control
+systems, and mobile banking and
+commerce. In particular, m -health
+applications have been growing fast
+recently, improving availability of
+healthcare services, health information,
+and influencing h ealthy user behaviour
+(van Genuchten et al.,2012). Thus, mobile
+health is expected to contribute in turning
+people’s behaviour to reinforce disease
+prevention at a low cost of acquiring a
+quality healthcare service (van Genuchten
+et al.,2012; Qiang et al., 2012; Cole -
+Lewis and Kershaw, 201 0; Mechael et al.,
+2010).
+This research implements the
+recommendation made by Lwoga et al.
+(2017) of developing an e -health platform
+for enhancing the delivery of HIV/AIDS
+healthcare information services. With this
+e-health platform, an easy, timely and
+secured access to relevant HIV/AIDS
+healthcare information can be achieved.
+People will access the HIV/AIDS
+healthcare services such as clinical
+counselling, healthcare recommendation
+and tips with an enhanced confidentia lity.
+The proper usage of the developed
+platform can significantly save the
+financial and time cost to clients. This is
+due to the fact that clients must not have to
+physically and frequently visit the
+HIV/AIDS CTCs for accessing the
+HIV/AIDS healthcare in formation such asHIV/AIDS health tips and clinical
+consultation which can also be accessible
+through the developed electronic platform
+(Mwammenywa and Kaijage, 2018a). This
+is so essential in enabling people to access
+HIV/AIDS healthcare counselling and
+recommendations without being disclosed,
+identified and subjected to the stigma and
+hence, saving their lives. However, with
+such kind of e -health system, the
+practitioners will not always have the
+physical observations on the clients;
+forcing them to give recommendations and
+counselling based on the information
+received from the client.
+METHOD S AND MATERIALS
+System Development Approach
+In developing the e -health platform for
+HIV/AIDS healthcare information
+delivery, Software Development Life
+Cycle (SDLC) framework was employed.
+SDLC is a software development
+framework that outlines the tasks
+performed at each step in the software
+development process (Ragunath et al.,
+2010). There are different system
+development models with different
+characteristics as por trayed in Table 1.
+The Rapid Application Development
+(RAD) model was adopted from the
+requirement acquisition to the system
+implementation and testing. It was adopted
+in order to hastily deliver the system
+within the given timeframe of 6 months, at
+a verylow cost. Moreover, RAD provides
+the frequent developer -to-customer
+communication during the system
+development phases, hence it maintains the
+customer’s satisfaction (Naz and Khan,
+2015; Hirschberg, 2015; Dawson et al.,
+2010). Figure 1 illustrates the RA D model
+used in this research study .
+System Requirements
+Requirements for system development of
+an integrated mobile and web -basedIntegrated Mobile and Web -based Application for Enhancing Delivery of HIV/AIDS Healthcare
+Information in Tanzania
+154Tanzania Journal o f Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019application for delivery of HIV/AIDS
+healthcare information are summarized
+into functional and non -functional
+requirements as was done in a previous
+study (Mwammenywa and Kaijage,
+2018b). The function requirements given
+included the registration and management
+of users’ accounts, provision of online
+HIV/AIDS clinical consultation, and
+online HIV/AIDS healthcare tips andrecommendations. These functional
+requirements have been summarized in
+Figure 2 showing all the processes which
+will be accommodated by the system.
+Furthermore, the non -function
+requirements were also given including the
+need of system security, as well as offer ing
+services in both Swahili and English
+languages .
+Table 1: Comparison between Different System Development Models
+ModelFeatures
+Financial Cost Time1Functionality2
+Waterfall High Long Static System
+Incremental High Short Static System
+Spiral High Long Dynamic System
+RAD Low Short Dynamic and Interactive System
+Agile Low Short Dynamic System
+Sources: Ismail (2018); Hanafiah and Kasirun (2007).
+Figure 1: The System's Rapid Application Development (RAD) Model (Daassnet, 2018).
+1Time –the total duration of time taken from the project initiation to its completion (all the stepes involved in
+the system development, from requirements gathering all -the-way to the system implementation and testing) .
+2Functionality –The i nteractivity of the system’s functionalities such as in static systems where they do not
+allow the interactivity with the users; unlike the dynamic system in which their functionalities depend on the
+users’ inputs .Ibrahim A. Mwammenywa, Michael H. Nkotagu andShubi F. Kaijage
+Tanzania Journal of Engine ering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2), Dec. 201 9155SystemDesigning
+The system design involved mapping of
+the system requirements into Data Flow
+Diagram (DFD). The following DFD
+diagram in Figure 3 shows how the
+information will be flowing from one
+actor/user to another.
+All users must be registered in the system
+anduse their correct credentials to access
+their profiles , whichare classified based
+on their roles such as a client, an
+HIV/AIDS practitioner and a system
+administrator. The registered client will
+usemobile application to make an online
+clinical appointmen t and/or participate in
+an online clinic session with a HIV/AIDS
+health practitioner. Moreover , a client can
+access the HIV/AIDS healthcare tips and
+recommendation. A HIV/AIDS health
+practitioner is not only offering the online
+clinical consultation but also,he/she can
+post some HIV/AIDS health tips,
+recommendations and reminders.  Figure 3
+also shows the roles of the system
+administrator in providing the technical
+support to all users as well as managing
+the documents gallery.
+SystemImplementation Tools
+During the implementation of this
+platform, different software development
+tools were employed. These tools vary
+from the computer programming
+languages, database, to integrated
+development environment. The following
+is the description of system
+implement ation tools used in this research
+study:
+PostgreSQL Database: is an open -
+source object -oriented relational
+database management system
+(ORDBMS) which supports most of
+the SQL standard with additional
+features. It supports features such as
+complex queries, f oreign keys,
+triggers, updatable views, transactional
+integrity, multi -version concurrencyand control. Furthermore, PostgreSQL
+allows developers to add some desired
+features such as adding new data -types,
+and functions, operators and
+procedural languages (Argyridis and
+Argialas, 2015). The PostgreSQL was
+employed in this study due to its ability
+to manage its internal security based on
+the user-roles, in additional to its
+support of external authentication
+mechanism such as password
+(supported by the HTTP authentication
+in Symfony framework).
+Android Studio: the client application
+is developed based on the android
+operating system. Android was
+selected due to its high user penetration
+with about 80% market share on the
+mobile operating system business
+(Statista, 2019). Android is an open -
+source mobile operating system for
+smart mobile gadgets such as smart
+mobile phones and tablets (Reto,
+2009). Android Studio was employed
+in the implementation of the mobile
+application part of this study as shown
+in Figure 4. It was used due to its built -
+in functionalities and libraries such as
+the mobile application web view, maps
+and locations which are essential
+requirements for this developed
+system.
+In this study, XML was mainly
+employed for developing the user
+interfaces in android mobile
+application. This was due to it being an
+open-source software (free), easier in
+offloading and reloading of data to and
+from database while maintaining the
+desired information and user interface
+appearance. With the desired user
+interface, the user experience on the
+mobile application is improved.
+Furthermore, Java was employed for
+its core libraries used in implementing
+the functionalities and some advanced
+User Interface (UI) features in
+implementing the android mobile
+application on the android studio. ItIntegrated Mobile and Web -based Application for Enhancing Delivery of HIV/AIDS Healthcare
+Information in Tanzania
+156Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019simplified the development of some
+complex features of the developed
+mobile application.
+Symfony Framework: is a free PHP
+web-application development
+framework with a set of PHP
+components and libraries (Porebski et
+al.,2011; Rades cuet al., 2011).
+Symfony framework was used in order
+to speed up the implementation of the
+web-application. It also helped in
+maintenance of the code by replacing
+the repeated coding tasks. Moreover,
+this framework provides the strong
+built-in security fu nctions which not
+only provide the HTTP basic
+authentication, interactive form login
+and/or X.509 certificate login, but alsoallow the implementation of other
+authentication features.
+JSON: JavaScript Object Notation
+(JSON) is an open -standard and a
+programing language independent file
+format that employs human -readable
+text to convey data -objects containing
+attribute –value pairs and/or array data
+types (Bray, 2017; Crockford, 2006). It
+supports basic data types such as
+number (integers, floats, double),
+string, Boolean, array and null. JSON
+was used in this system development
+for transmitting the array of data from
+the mobile application to the web
+application to the database. This
+simplifies the connection between the
+database and the mobile application.
+Figure 2: The Process Decomposition Diagram for a Secure e-Health Platform for
+HIV/AIDS Healthcare Information DeliveryIbrahim A. Mwammenywa, Michael H. Nkotagu andShubi F. Kaijage
+Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019157
+Figure 3: Data Flow Diagram for a Secure e -Health Platform for HIV/AIDS Healthcare
+Information Delivery
+WebSocket: is the comm unication
+protocol responsible for the full -duplex
+communication channels over a TCP
+connection. It enables the real -time
+interaction between a web -client and a
+web-server, doing so; it enables the
+real-time data transfer at low
+overheads. This is possible as
+WebSocket enables the streams of
+messages on top of TCP (Pimentel and
+Nickerson, 2012; Fette and Melnikov,
+2011). It is currently supported by
+majority of the browsers such as
+Google Chrome, Microsoft Internet
+Explorer and Opera for both computers
+andsmart mobile phones. The
+WebSocket was employed during the
+development of real -time
+communication module. This moduleis to enable the real -time chatting
+communication between the service
+client and the HIV/AIDS healthcare
+practitioners.
+Genymotion: Duringimplementation
+of the mobile application, the android
+simulated phone (Genymotion) was
+used. However, during the testing of
+the mobile application, different set of
+physical gadgets (both mobile phones
+and tablets) running Android OS were
+used. The mobile application
+development put a limit at the android
+version 5 (Lollipop) to accommodate
+those with lower version even though
+the least currently supported version is
+android version 7 (Nougat). The
+hardware specifications of mobile
+gadgets used were CPU: HisiliconIntegrated Mobile and Web -based Application for Enhancing Delivery of HIV/AIDS Healthcare
+Information in Tanzania
+158Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019Kirin 710F (Huawei), Exynos 9810
+(Samsung); Core: Dual -core and Quad -
+core; and RAM: 1GB –4GB.
+SYSTEM IMPLEMENTATION
+Database Implementation
+The mobile and web applications in this
+system are supported by the PostgreSQL
+database management system . A number
+of JSON and PHP scripts have been used
+in connecting the database with the client’s
+application to allow smooth and
+consistency data manipulation (including
+data insertion, updating, retrieval and
+deletion). The database schema contains
+14 tables and their relation is displayed in
+the Figure 5.
+Mobile Application Implementation
+The mobile application was developed
+based on android platform. It contains the
+simple and easy to use user -interfaces
+(UIs) to provide the interaction between
+user and application. This application is
+only for HIV/AIDS healthcare services
+clients. It is based on both English and
+Swahili languages; whereby a user can
+select the language of his/her preference
+before logging into the system as shown in
+Figure 6.
+Before lo gging into the system, user must
+have an activated and registered account.
+During registration, the client will have to
+submit personal particulars which are
+useful for HIV/AIDS healthcare
+practitioners in delivering healthcare
+services. Some of these part iculars are
+gender, age, weight and height.After successful registration, the client will
+berequired to use his/her unique display
+name (not a real name for the sake of
+maintaining anonymity) and password to
+log into the system. After successfully
+logging into the system, the client will be
+presented with the menu containing all the
+HIV/AIDS healthcare information services
+provided by this platform. Figure 7 shows
+the menu UI.
+To maintain the client’s confidentiality and
+anonymity, the mobile applicat ion
+provides the client with the logout option.
+This option will terminate the
+communication session between his/her
+profile and the system. Hence, none can be
+able to use his/her account.
+Web Application Implementation
+The web system was developed as a cross-
+platform of all web browsers (Figure 8) . It
+provides the interfaces for HIV/AIDS
+healthcare practitioners as well as the
+system administrators working in the
+CTCs. These web application interfaces
+help them in offering services such as
+uploading heal thcare tips and answering
+the frequently asked questions.
+Both the HIV/AIDS healthcare
+practitioners and system administrators
+must be registered into the system and
+have to log into the system with the unique
+username and password. Figure 9 shows
+the login page for HIV/AIDS practitioner
+and system administrator respectively. For
+each kind of user, his/her account is
+associated with some specific roles.Ibrahim A. Mwammenywa, Michael H. Nkotagu andShubi F. Kaijage
+Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019159
+Figure 4: The Code Snippet for Android Application Implementation on the Android
+StudioIntegrated Mobile and Web -based Application for Enhancing Delivery of HIV/AIDS Healthcare
+Information in Tanzania
+160Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), V ol.38(No.2),Dec.2019
+Figure 5: Entity Relational Schema
+Figure 6: Mobile Application's Login and User Registration UIsIbrahim A. Mwammenywa, Michael H. Nkotagu andShubi F. Kaijage
+Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019161
+Figure 7: Mobile Application's Main Menu UI
+Figure 8: Web Application's Welcome PageIntegrated Mobile and Web -based Application for Enhancing Delivery of HIV/AIDS Healthcare
+Information in Tanzania
+162Tanzania Journal of Engineering and Technology ( Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019
+Figure 9: Web Application 's Login Page
+Once the HIV/AIDS healthcare
+practitioner has logged into the system, he
+will be provided with the list of clients
+whohave logged into the system seeking
+for the consultation session. The
+practitioner will select one client and start
+the live chat consultation with him/her, as
+shown in Figure 10.
+Furthermore, the system administration
+web page provides the system
+administrators with different roles such as
+managing users, health tips, providing
+support and others. Figure 11 shows an
+exampl e of the system administrator’s web
+page when managing users.
+SYSTEM TESTING AND
+VALIDATION
+System Testing
+The system’s modules were tested to
+determine if they are working as per
+defined system’s requirements. Table 2
+shows the test results for different tested
+modules. Some of the tested modules have
+been shown below:HIV/AIDS Healthcare Tips: The client
+can view different HIV/AIDS healthcare
+tips as they are posted by the qualified
+and registered HIV/AIDS healthcare
+practitioners. These tips are arrange d in
+the order of time they are posted, with
+the newest at the top as shown by Figure
+12(a). Once the tip is clicked, it provides
+the client with more details on itself as
+shown in Figure 12(b).
+Consultation: This is the chat space for
+the mobile applicati on’s client to real -
+time interact to the HIV/AIDS healthcare
+practitioner. Figure 13 shows how the
+client can interact with the HIV/AIDS
+healthcare practitioner for counselling
+and healthcare recommendations.
+HIV/AIDS Health Centers: In order for
+the system to help the client who needs a
+physical healthcare from the physician,
+the mobile application provides the client
+with the map showing the route to the
+nearest HIV/AIDS CTC. Figure 14(a)
+shows the nearest CTC. With the help of
+the google map services, t he shortest
+route to the nearest CTC can be achieved
+either by car, or by f oot as depicted in
+Figure 14(b).Ibrahim A. Mwammenywa, Michael H. Nkotagu andShubi F. Kaijage
+Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019163
+Figure 10: Web Application's Consultation Live Chat Web Page for HIV/AIDS
+Healthcare Practitioner
+Figure 11: A Web Application’s Page for t he System Administrator Managing Users’
+AccountIntegrated Mobile and Web -based Application for Enhancing Delivery of HIV/AIDS Healthcare
+Information in Tanzania
+164Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019Table 2: System's Modules Testing Results
+System Requirement Test Result
+The web system should be compatible with all browsers and mobile
+application should work on the android OSPASS
+The mobile applicat ion should enable user to switch languages from
+English to SwahiliPASS
+The system must allow registered user to login and logout PASS
+The system must allow unregistered client to register himself/herself with a
+unique usernamePASS
+The system must allo w the system administrator to create, suspend or
+remove a user account for the HIV/AIDS healthcare practitionersPASS
+The system should allow the system administrator to upload and/or remove
+HIV/AIDS health tips and other healthcare informationPASS
+Thesystem should provide the live chat capability between the client and
+HIV/AIDS healthcare practitioner; the healthcare practitioners to use this
+module for provision of healthcare recommendationsPASS
+The system should allow all successfully logged users to view the
+HIV/AIDS health tips and other healthcare informationPASS
+The system should produce different reports as requested by the system
+administratorPASS
+(a) (b)
+Figure 12: Mobile Application's HIV/ AIDS Healthcare Tips UIIbrahim A. Mwammenywa, Michael H. Nkotagu andShubi F. Kaijage
+Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019165
+Figure 13: Mobile Application's HIV/AIDS Consultation Live Chat UI
+Frequently Asked Questions (FAQ):
+The mobile application also provides the
+answers for the frequently asked
+questions. These questions are answered
+by the system administrators with
+consultation to the HIV/AIDS healthcare
+practitioners. Figure 15(a) shows the
+questions, and when the question is
+clicked, it displays its answer as shown
+in Figure 15(b).
+Client Profile: The client is able to view
+his/her profile and even update his/her
+personal information as shown in Figure
+16. At this UI, the client can change
+his/her password to enforce his/her
+account’s security. During the password
+reset, the system will send the
+verification code to the client’s email for
+confirmation before allowing the
+password reset. Figure 16 shows how the
+particulars are displayed and how to
+update them.
+Users’ Acceptance Validation
+With the system fully developed, it was
+taken into the practical environment foruser’s acceptance validatio n.Fifteen (15)
+people participated in this system
+validation survey, among them, 10 clients
+who installed the mobile application in
+their mobile smart phones, 3 HIV/AIDS
+healthcare practitioners and 2 system
+administrators. All participants were given
+3 days to use the system and after then,
+they filled in the survey questionnaires.
+The survey results were computed on the
+mean score based on a five -point Likert
+scale (5 = Strongly Agree; 4 = Agree; 3 =
+Not Sure; 2 = Disagree and 1 Strongly
+Disagree) as dis played in the Table 3.
+From the study, the mean score for each
+validated aspect was above 4 in the scale
+of 5, showing that the majority of the
+sampled respondents strongly agreed with
+the quality and ability of the developed e -
+health system. The sampled users of the
+system even recommended that the
+Ministry of Health (and other related
+healthcare stakeholder) should employ this
+developed system for delivery of
+HIV/AIDS healthcare information.Integrated Mobile and Web -based Application for Enhancing Delive ry of HIV/AIDS Healthcare
+Information in Tanzania
+166Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019
+(a) (b)
+Figure 14: Mobile Application's nearest HIV/AIDS CTC Locator UI
+(a) (b)
+Figure 15: Mobile Application's FAQ UIIbrahim A. Mwammenywa, Michael H. Nkotagu andShubi F. Kaijage
+Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019167
+Figure16: Mobile Application's Client Profile UI
+Table 3: The System ’s User Acceptance Validation Response
+Validation AspectNumber of Respondents
+Mean ScoreStrongly
+Disagree
+Disagree
+Note
+Sure
+Agree
+Strongly
+Agree
+The system’s interfaces are attractive and
+interactive001594.53
+The system’s contents are easy to learn and
+understand0113104.47
+No compatibility problems between the
+system and your mobile phone and/or
+computer’s web -browser0003124.80
+I need further training and/or technical
+assistance for fully exploit this system842101.73
+Thesystem is useful and helpful in accessing
+the HIV/AIDS healthcare services003754.13
+The system provides an easy and confidential
+interactive between a client and HIV/AIDS
+healthcare practitioner003574.27
+I will use this system for accessing or
+delivering HIV/AIDS healthcare information0004114.73
+I am generally satisfied with this system 0014104.60
+I will recommend others to use this system 0005104.67Integrated Mobile and Web -based Application for Enhancing Delivery of HIV/AIDS Healthcare
+Information in Tanzania
+168Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019CONCLUSION SAND
+RECOMMENDATIONS
+With this developed integrated e -health
+platform, an easy, timely and secured
+access to relevant HIV/AIDS healthcare
+information can be achieved. This is due to
+the fact that clients must not have to
+physically and frequently visit the
+HIV/AIDS CTCs for accessing the
+HIV/AIDS healthcare infor mation which
+can also be accessible through this
+developed electronic platform. This is so
+essential in enabling people to access
+HIV/AIDS healthcare counselling and
+recommendations without being disclosed,
+identified and subjected to the stigma and
+hence,saving their lives.
+The developed e -health platform provides
+people with the electronic profile and the
+consultation history for future references.
+This electronic consultation reference can
+be frequently reviewed by the particular
+client without frequen tly visiting the
+HIV/AIDS CTCs for similar cases. It
+hence provides a client with his/her
+specific HIV/AIDS healthcare
+recommendations as close as to his/her
+mobile phone. Furthermore, the proper
+usage of the developed platform can
+significantly save the f inancial and time
+cost to clients. The clients will normally
+not have to spend the money to travel to
+the HIV/AIDS CTCs and/or spend their
+time in waiting queues at the CTCs
+becausethey can easily interact with the
+HIV/AIDS healthcare practitioners using a
+secure mobile application in their phones.
+Moreover, the developed platform will
+provide all other HIV/AIDS stakeholders
+such as the government, policy makers,
+HIV/AIDS related Non -Government
+Organizations (NGOs) and researcher with
+the instant HIV/AIDS statistical data.
+Using this computerized system, the real -
+time statistical data can be achieved,
+provided to the correct approved personfor proper usage, and also be useful to the
+government in policy development related
+to the HIV/AIDS matters.
+The improvements should focus on
+making this platform to be interoperable to
+other existing e -health platforms.
+Furthermore, the study can be expanded to
+also work on the USSD platform in order
+to help people who do not have
+smartphones and/or have access to
+internet.
+ACKNOWLEDGMENTS
+We would like to thank God almighty for
+giving us this wonderful opportunity to
+undertake this research study by providing
+us with the right people and resources at
+the right time. We would like to extend our
+acknowledgments to the German
+Academic Exchange Service (DAAD) for
+funding the preparation of this manuscript
+and the University of Dar es Salaam for
+granting an academic leave to the
+corresponding author.
+REFERENCES
+Argyridis A. and Argialas D.P. (2015). A
+fuzzy spatial reason er for multi -scale
+GEOBIA ontologies Photogrammetric
+Engineering and Remote Sensing,
+81(6): 491-498.
+DOI:10.14358/PERS.81.6.491
+Bor J., Herbst A.J., Newell, M.L. and
+Barnighausen T. (2013). Increases in
+adult life expect ancy in rural South
+Africa: Valuing the scale -up of HIV
+treatment. Science, 339(6122) :961–
+965.doi: 10.1126/science.1230413.
+Bray T. (2017). The javascript object
+notation (json) data interchange format
+(No. RFC 8259)
+Cole-Lewis H. and Kershaw T. (2010).
+Text messaging as a tool for behaviour
+change in disease prevention and
+management . Epidemiol Rev, 32(1) :
+56–69.doi: 10.1093/epirev/mxq004Ibrahim A. Mwammenywa, Michael H. Nkotagu andShubi F. Kaijage
+Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019169Crockford D. (2006). The application/json
+media type for JavaScript object
+notation (json) (No. RFC 4627).
+Daassnet. (2018). Available online at
+http://www.daassnet.com/new/index.ph
+p/en/professionalservices/d -d.html
+Retrieved on 24th August 2018.
+Dawson M., Burrell D.N., Rahim E. and
+Brewster S. (2010). Integrating
+software assurance into the software
+development lifec ycle (SDLC). Journal
+of Information Systems Technology
+and Planning ,3(6): 49-53.
+Fette I. and Melnikov A. (2011). The
+WebSocket protocol (No. RFC 6455)
+Feyissa G.T., Abebe L., Girma E. and
+Woldie, M. (2012). Stigma and
+discrimination against people living
+with HIV by healthcare providers,
+Southwest Ethiopia. BMC Public
+Health, 12 :522.doi: 10.1186/1471 -
+2458-12-522.
+Hanafiah M. and Kasirun Z.M. (2007).
+Using Rule -Based Technique in
+Developing the Tool for Finding
+Suitable Software Methodology.
+Malaysian Jo urnal of Computer
+Science, 20(2) :209-224.
+https://doi.org/10.22452/mjcs.vol20no2.
+8
+Hirschberg M.A. (2015). STN 2 -1 Topic:
+Rapid Application Development
+(RAD): A Brief Overview. Available
+online at
+https://www.mendeley.com/library/vie
+wer/?fileId=6f1c4f30 -d7da-50d9-67a7-
+2c02747d1f83 Retrieved on 24th
+August 2018
+Ismail N.N.S. (2018). Implementing Rapid
+Application Development (RAD)
+methodology in developing Online
+Laboratory and Room Booking System
+(eLABAS). E Proceeding National
+Innovation and Invention Competition
+Through Exhibition (ICompEx’17).
+Lwoga E.T., Nagu T. and Sife A.S .(2017).
+Online HIV Information Seeking
+Behaviour Among People Living with
+HIV in Selected Tanzanian Public
+Hospitals, Journ al of Systems andInformation Technology, 19 (1/2):94-
+115.DOI:10.1108/JSIT -06-2016-0038
+Mbonu N.C., van den Borne B. and De
+Vries N.K. (2009). Stigma of People
+with HIV/AIDS in Sub -Saharan Africa:
+A Literature Review . Journal of
+Tropical Medicine, 1 -14.doi:
+10.1155/2009/145891
+Mechael P., Batavia H., Kaonga N., Searle
+S., Kwan A., Goldberger A. and
+Ossman J. (2010). Barriers and Gaps
+Affecting mHealth in Low and Middle -
+Income Countries: Policy White Paper.
+Mwammenywa I. A. and Kaijage S.F.
+(2018a). Towards Enhancing Access of
+HIV/AIDS Healthcare Information in
+Tanzania: Is a Mobile Application
+Platform a Way Forward? International
+Journal of Information Technology and
+Computer Science (IJITCS), 10 (7):31-
+38.DOI:10.5815/ijitcs.2018.07.04
+Mwammenywa I.A. and Kaijage S.F.
+(2018b). HIV/AIDS Healthcare
+Information Delivery in Tanzania using
+Integrated Mobile Application and
+Web-based System: System’s
+Functional and Non -functional
+Requirements. International Journal of
+Information Technology and Computer
+Science (IJITCS), 10(11) :30-38.
+DOI:10.5815/ijitcs.2018.11.03
+Naz R. and Khan M.N.A. (2015). Rapid
+applications development techniques: A
+critical review. International Journal of
+Software Engineering and Its
+Applications ,9(11): 163 –176.
+http://dx.doi.org/10.14257/ijseia.2015.9
+.11.15
+Pimentel V. and Nickerson B.G. (2012).
+Communicating and displaying real -
+time data with WebSocket. IEEE
+Internet Co mputing, 16(4) :45-53.
+DOI:10.1109/MIC.2012.64
+Porebski, B., Przystalski, K. and Nowak,
+L. (2011). Building PHP Applications
+with Symfony, CakePHP, and Zend
+Framework. John Wiley and Sons.
+Qiang C.Z., Yamamichi M., Hausman V.,
+Miller R. and Altman D. (2012). Mobile
+Applications for the Health Sector.Integrated Mobile and Web -based Application for Enhancing Delivery of HIV/AIDS Healthcare
+Information in Tanzania
+170Tanzania Journal of Engineering and Technology (Tanz. J. Engrg. Technol.), Vol .38(No.2),Dec.2019Radescu R., Davidescu A. and Pupezescu
+V. (2011). New Database Manipulation
+Tools in the Easy -Learning On -Line
+Platform. Online Submission.
+Ragunath P.K., Velmourougan S.,
+Davachelvan P., Kayalvizhi S. and
+Ravimohan R. (2010). Evolving a new
+model (SDLC Model -2010) for
+Software Development Life Cycle
+(SDLC). International Journal of
+Computer Science and Network
+Security, 10(1) :112-119.
+Reto M. (20 09). Professional android
+application development. Word
+Programmer to Programmer, 6(7) :
+1794-1797.
+Saki M., Kermanshahi S.M.K.,
+Mohammadi E. and Mohraz M. (2015).
+Perception of Patients With HIV/AIDS
+from Stigma and Discrimination.Iranian Red Crescent Med ical Journal,
+17(6): e23638.
+doi:10.5812/ircmj.23638v2
+Statista (2019). Global Mobile OS Market
+Share in Sales to End Users from 1st
+quarter 2009 to 2nd quarter 2018.
+Available onlin e at
+https://www.statista.com/statistics/2661
+36/global -market-share-held-by-
+smartphone -operating -systems/.
+Retrieved on 17th July 2019
+TheJoint United Nations Programme on
+HIV/AIDS (2016). Global HIV
+statistics. Retrieved from
+www.unaids.org/sites/default/files/medi
+a_asset/global -AIDS-update-
+2016_en.pdf
+van Genuchten R., Haring W., van Kassel
+D. andYakubi K. (2012). Mobile phone
+use in Tanzania. TAN2012 Mark. Res.

@@ -1,0 +1,1125 @@
+UNITED NATIONS CONFERENCE ON TRADE AND DEVELOPMENT
+Digitalizing 
+the port call 
+process TRANSPORT AND 
+TRADE FACILITATION
+Series No 13UNITED NATIONS CONFERENCE ON TRADE AND DEVELOPMENT
+Digitalizing 
+the port call 
+process TRANSPORT AND 
+TRADE FACILIT ATION
+Series No 1 
+Geneva, 2020DIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ2   
+ 
+© 2020, United Nations 
+   
+ 
+ This work is available open access by complyin g with the Creative Commons licence created for 
+intergovernmental organizations, available at ht tp://creativecommons.org/licenses/by/3.0/igo/.  
+ The findings, interpretations and conclusions expressed herein are those of the authors and do not necessarily reflect the views of the United Na tions or its officials or Member States.  
+ The designation employed and the presentation of material on any map in this work do not imply 
+the expression of any opinion whatsoever on the part of the United Nations concerning the legal 
+status of any country, territory, city or area or of its authorities, or concerning the delimitation of its 
+frontiers or boundaries.   Photocopies and reproductions of excerpts are allowed with proper credits.     This publication has not been formally edited.   
+ United Nations publication issued by the United Nations Conference on Trade and Development.   
+ 
+UNCTAD/DTL/TLB/2019/2 
+ 
+eISBN: 978-92-1-004933-7 
+ 
+  DIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ3  Acknowledgements  
+This study has been compiled by Mikael Lind, Robert Ward, Michael Bergmann, Sandra Haraldson, and 
+Almir Zerem with the Research Institutes of Sweden (RISE), in cooperation with Jan Hoffmann, chief 
+of the Trade Logistics Branch, Division on Technology and Logistics, building upon related discussion 
+and presentations by Mikael Lind at the UNCTAD Multi-Year Expert Meeting on Transport, Trade 
+Logistics and Trade Facilitation in its sixth session on 21 to 23 November 2018.  
+The study reflects the insights gained by the PortCDM team at RISE during the last seven years of 
+applied research and innovation efforts on data sh aring and collaboration within the maritime sector. 
+Extensive and insightful comments were received from Rawle Baddaloo (Co-Leader Caribbean Marine Environment Protection Associatio n (CARIBMEPA), Trinidad & Tobago), Stefan Breitenbach (Head of 
+Project department, Port of Hamburg Marketing, Germany), Åsa Burman (Director, Lighthouse – 
+Swedish Maritime Competence Center, Sweden), Andreas Chrysostomou (CEO, MarineFields, Cyprus), Chye Poh Chua (Founder and CEO of ShipsFocus Group, Singapore), Juan Carlos Croston (Vice 
+President of Marketing and Corporate Affairs,  Manzanillo International Terminal–Panama and 
+President of Caribbean Shipping Association), Richard Doherty (Chief Technical Officer, Comité 
+International Radio-Maritime (CIRM), London), Xiuju Fu (Senior Scientist, Institute of High Performance Computing under A-STAR, Singapore), Corrado Lillelund Forcellati, Johan Gahnström 
+(Owner, CompetenSEA, Sweden), Jan Hoffmann (Chief, Trade Logistics Branch, Division on Technology 
+and Logistics, UNCTAD, Geneva), Henrik Hvid Je nsen (Digital Ecosystems Adviser, Trustworks, 
+Denmark), Chris Jones (CEO, Intelligent Cargo Syst ems, London), Jeppe Skovbakke Juhl (Manager, 
+Maritime Technology and Regulation, BIMCO), Dr Sanjay Chittarajan Kuttan (Executive Director, 
+Singapore Maritime Institute (SMI), Singapore), Kenneth Lim, Emma Mark (Head of Operations, 
+Intelligent Cargo Systems, London), Michalis Mich aelides (Assistant Professor, Department of 
+Electrical Engineering, Computer Engineering and Informatics, Cyprus University of Technology), 
+Turloch Mooney (Associate Director at IHS Markit, Netherlands), Rob O’Dwyer (Chief Network Officer, 
+Smart Maritime Network, Ireland), Professor Aykut Ölcer (Director of Research, World Maritime 
+University), José M Pagés Sánchez (External Strategic Adviser, AIVP, France), Jin Hyoung Park (Principal 
+Researcher and activity leader for SMART-Navigati on Project, Korea Research Institute of Ships & 
+Ocean Engineering (KRISO)), Henrik Sahlberg (Pro duction Engineer - loading/unloading, Preem AB, 
+Sweden), André Simha (Global Chief Digital and Information Officer, MSC Mediterranean Shipping 
+Company and Chairman of the Digital Container Association (DCSA)), Captain Sukhjit Singh (Deputy Director and Technical Head, Maritime Technolo gy Cooperation Centre – Caribbean and Senior 
+Lecturer at the University of Trinidad & Tobago),  and Jaco Voorspuij (Senior Manager, Transport and 
+Logistics at GS1 Global Office, The Netherlands). 
+   DIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ4  Table of Contents 
+Preface ....................................................................................................................... ................ 6  
+Acronyms ...................................................................................................................... ............. 8  
+1 Introduction .................................................................................................................. .... 10  
+2 The complexity of port  call operations ............................................................................. 10  
+One size does not fit all ..................................................................................................... ............ 11 
+3 Digital business and business ecosystems ....................................................................... 12  
+Digital business is  event-centric ............................................................................................. ....... 12 
+4 Different types of trade build upon different business logics .......................................... 13  
+Container traffic and liner  service to port ................................................................................... .. 13 
+The dry and liquid bulk industry and irregu lar, often short noti ce port calls ............................... 13 
+Ro-ro trade and the need for deta iled tracking and scheduling ................................................... 14 
+The cruise industry and its long-ter m planning of port visits ....................................................... 15 
+The need for collaboration and digital da ta sharing independen t of trade ................................. 15 
+5 The ports of the world ...................................................................................................... 1 6 
+6 Roles are likely to change and ev olve under digitalization .............................................. 17  
+7 The role of maritime authorities in  collaborative da ta sharing ....................................... 18  
+The national mariti me authorities ............................................................................................. ... 18 
+The port authorities .......................................................................................................... ............ 19 
+Who could be the Principal in port call collaboration? ................................................................. 19 
+8 Maritime governance structures an d the role of associations ........................................ 19  
+Who watches over the ports and infrastructure? ......................................................................... 20 
+Just-in time operations  and e-Navigation ..................................................................................... 20 
+Single-window data exchange ................................................................................................... .... 20 
+Tackling environmen tal concerns ............................................................................................... .. 21 
+Other complementary initiatives ............................................................................................... ... 21 
+9 Digital solutions of today and tomorrow ......................................................................... 22  
+Contemporary initia tives underway..............................................................................................  23 
+Today’s digital tools for port call / cargo flow coordination / optimization ................................. 24 
+Interoperability is important ................................................................................................. ........ 25 DIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ5  10 PortCDM ....................................................................................................................... .... 25  
+More predictable timings and operations .................................................................................... 26  
+Role of PortCDM ............................................................................................................... ............. 26 
+A common understanding of timings and plans ........................................................................... 26 
+Making existing processes more effective and e fficient ............................................................... 27 
+PortCDM validation ............................................................................................................ ........... 27 
+Benefits of PortCDM ........................................................................................................... .......... 27 
+PortCDM - incremental implementation ...................................................................................... 28 
+11 The importance of international standards ..................................................................... 28  
+Important new standards for the mari time transportation chain ................................................ 29 
+Resistance to standards ....................................................................................................... ......... 29 
+12 Connected maritime operations - a must for an efficient global transport chain ........... 30  
+Developments and experience in the non-maritime  sectors........................................................ 31 
+13 Conclusions and way forward .......................................................................................... 31  
+Take control or lo se control .................................................................................................. ........ 32 
+References .................................................................................................................... ........... 32  
+ 
+List of figures 
+Figure 1: Patterns of World Trade Sea Voya ges (Source: Marine Benchmark) .................................... 10 
+Figure 2: Core events and engaged actors in the port call process (Lind et al, 2016) .......................... 11 
+Figure 3: Different areas of application of PortCDM (Lind et al, 2019d) .............................................. 26 
+Figure 4: Enabling end-to-end visibility through a Gl obal Trade Identity (Hvid Jensen, 2019a) .......... 30 
+ 
+List of tables 
+Table 1 Port Call related initiatives ......................................................................................... .............. 25 
+Table 2 Benefits of PortCDM for different st akeholders (Lind et al 2018c) ......................................... 27 
+  DIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ6  PPreface 
+This document identifies the principal tensions and opportunities arising that are impacting the 
+inevitable and ongoing digitalization process that is underway in the maritime sector, particularly 
+through the authors’ experience in the development and subsequent validation of the Port Collaborative Decision Making (P ortCDM) concept. The document also identifies the trends of 
+development at large and those associated with the many stakeholders that are involved in global 
+maritime operations. 
+The digital trends emerging in ship ping companies, ports with its actors, authorities and associations, 
+and movements that are being made by diverse digi tal solution providers, within and outside the 
+maritime domain are also identified. The discussion is taken from the point of view of shipping as a 
+global phenomenon enabled by ship movements creati ng a global network of sea transport facilitated 
+by ports. In this global transport network, the ports are playing a key role by being nodes in the global 
+transport system. 
+During the last decade, various efforts have been made to enhance the coordination / synchronization 
+/ optimization of port call operations. One of thos e is PortCDM, an intern ational, independent and 
+product agnostic concept of mutually beneficial near real-time digital data sharing. PortCDM 
+acknowledges that a “one si ze fits all” solution is most inappropriate in a dynamic, flexible, digitally 
+enhanced business environment, so it concentrates on providing generic guidelines and standards that 
+can be adapted and applied at the regional and local level. PortCDM provides operational and 
+technical guidelines for supporting port call actors to pursue more predictable timings and operations 
+based on a common and shared understanding of timings and plans and by making existing processes 
+more effective and efficient. 
+The following developments are occurring now and are complementary and supportive towards 
+optimising port call operations: 
+x Substantial efforts are being put into reducing the administrative burden during ships’ visits 
+through the implementation of the single window initiative 
+x The IMO and other intergovernmental and inte rnational bodies are strongly encouraging 
+standardization and supporting the concept of just-in-time shipping 
+x There are now international requirements for governments to introduce electronic 
+information exchanges to make cross-border trade simpler and the logistics chain more 
+efficient 
+x Numerous digital solution providers are now developing tools to support enhanced port call 
+efficiency 
+In order to overcome the challenges that the maritime sector is now facing, the future must embody 
+better and more efficient levels of collaboration. This can best be achieved through digitalization. 
+Importantly, achieving better and more efficient leve ls of collaboration through digitalization requires 
+that the users’ tools and systems are interoperable. It would be naïve to think that there will be only one party providing the tools to all of the thousands of active ports in the world. It must be possible for a port to choose among the different solutions that best meet their needs, both in developed and 
+developing countries alike. Digitalized collaboration requires the use of standardized formats and 
+standardized interfaces for communication, building upon commonly agreed definitions of DIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ7  phenomena and processes associated to port call operations. Recently, this has been discussed in the 
+IMO, through two complementary and aligned initia tives, the S-211 messaging format within the 
+realm of e-navigation, and the IMO reference data model putting, among other things, efforts into 
+just-in-time (JIT) shipping by securing a universal set of definitions on data items associated to port 
+call operations. 
+The need for standardization and interoperability le ads associations such as the International Task 
+Force on Port Call Optimization (ITPCO),1 the International PortCDM Council (IPCDMC),2 the 
+International Port Community Systems Association (IPCSA),3 and The Baltic and International Maritime 
+Council (BIMCO) to collaborate and harmonize their va rious port call efficiency initiatives that are 
+focussing on different operational levels but are nevertheless complementing each other. In 
+collaboration and in aligning their work, these or ganizations will then satisfy maritime industry’s 
+tendency to adopt emerging initiatives only if th ey are aligned with each other as well as with 
+established processes and standards. UNCTAD supports these endeavours through its research and 
+capacity building activities, to ensure that developi ng countries will also be in a position to benefit 
+from the opportunities provided by digitalization. 
+The PortCDM concept, under the leadership of IPCDMC , as well as the port call optimization initiatives 
+developed by ITPCO, are now mature. It is now time to move towards large scale implementation thereby contributing to substantial efficiency an d environmental gains for sea transport berth-to-
+berth. Both operational models have much in common and seek to ensure that the concepts and the 
+standards upon which they are based are harmonized and therefore interoperable. 
+PortCDM is an initiative that is firmly based on  open standards and places an emphasis on using 
+independent and neutral bodies to support its implementation, further development and adaptation 
+of the concept in the real world. To support the global implementation of PortCDM, a network of regional applied research and innovation institut es is emerging where each of those institutes 
+becomes a support for regional and local implementations, also in developing countries. 
+Enhanced connectivity and the opportunity for improved situational awareness and better 
+coordination and cooperation in the port call process enabled by digitalization is growing fast. This 
+brief environmental scan on digitalization in the port  call process is intended to highlight the current 
+situation, the developments and various issues that those involved in the process may need to consider. 
+In the context of global initiatives towards the deca rbonization of shipping, port call optimization with 
+the help of digitalization is among the important short-term measures that can significantly reduce the CO
+2 emissions of maritime transport. Coordinating ship  and port calls activities so that ships arrive 
+just-in-time rather than too early will allow ships to optimise voyage speeds, which in turn will help to 
+avoid excessive use of fuel and thereby reduce greenhouse gas emissions. 
+ 
+ 
+ 
+ 
+1 https://portcalloptimization.org 
+2 www.ipcdmc.org 
+3 https://ipcsa.international DIGITALIZING THE PORT CALL PROCESS 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ8Acronyms
+A-CDM Airport Collaborative Decision Making
+AIS Automatic Identification System
+CIRM Comité International Radio-MaritimeCMDS IMO Common Maritime Data StructureDCSA Digital Shipping Container Association
+DTLF Digital Transport Logistic Forum
+EPCIS Electronic Product Code Information ServicesEU European Union
+FAL IMO Facilitation Committee
+GIA Global Industry AllianceGloMEEP 'ůŽďĂůŵĂƌŝƚŝŵĞĞŶĞƌŐǇĞīŝĐŝĞŶĐǇƉĂƌƚŶĞƌƐŚŝƉƐ
+GMN Global MTCC Network
+GS1
+The not-for-profit organization that develops and maintains global standards for 
+business communication
+IALA International Association of Marine Aids  to Navigation and Lighthouse Authorities
+IEC International Electrotechnical CommissionIHMA International Harbour Masters Association
+IHO International Hydrographic Organization
+IMO International Maritime OrganizationIPCDMC International PortCDM Council
+IPCSA International Port Community Systems Association
+ISO International Organization for StandardizationITPCO International Task Force on Port Call Optimization
+JIT Just-in-TimeDIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ9  MCP Maritime Connectivity Platform 
+MSC Mediterranean Shipping Company 
+MTCC Maritime Technology Cooperation Centres 
+PortCDM Port Collaborative Decision Making RFD EU Reporting Formalities Directive 
+RISE Research Institutes of Sweden 
+RORO roll-on-roll-off - Ship 
+STEAM Sea Traffic Management in the Eastern Mediterranean 
+STM Sea Traffic Management 
+UN-CEFACT United Nations Centre for Trade Facilitation and Electronic Business UNCTAD United Nations Conference on Trade and Development UNECE United Nations Econom ic Commission for Europe 
+VTS Vessel Traffic Services 
+WMO World Meteorological Organization 
+ 
+ 
+  DIGITALIZING THE PORT CALL PROCESS 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ10Digitalizing the port call pr ocess - an environmental scan
+Ships have been used for transporting people and goods for centuries and are responsible for moving 
+approximately 90% of the world’s tr ade (IMO, 2012). Different types of trade are undertaken by both 
+larger and less dominant actors steaming over the ocean, driven by the transport needs of passengers and goods owners. From a holistic point of view the trade follows the trade patterns of the world with 
+a mixture of short-sea shipping feeding larger vessels transiting the oceans. Reports have been made 
+that short-sea shipping (Lind et al, 2019a; Michaelid es et al, 2019) accounts for about 70% of sea 
+transport in the world through a network pattern of transhipment hubs
+4. The figure 1 show the 
+patterns of the world’s sea trade (short-sea and deep sea) revealed by AIS (automatic identification 
+system) tracking.
+Figure 1: Patterns of World Trade Sea Voyages (Source: Marine Benchmark5)
+Over the coming years, organizations involved in the maritime logistics chain will continue to look for 
+ways to innovate their business models. These will  inevitably involve digital technologies. So, for 
+most, the next wave of innovation will come from turning their attention outward into the business 
+ecosystem of digital communications and informatio n exchange with customers, partners, suppliers 
+and other actors to create new services, products and experiences.
+Port call operations involve a substantial number of actors. Upon reaching the coastal area, the maritime authority is involved; to enter the port, the port authority needs to give its approval; often
+there are pilots and tug operators and other supporti ng nautical services required to bring the ship 
+from the port area to berth; mooring personnel make fast the ship to the berth; terminal operators 
+4See e.g. https://ec.europa.eu/eurostat/st atistics-explained/index.php/Maritime_transport_statistics_-
+_short_sea_shipping_of_goods#Total_short_sea_shipping
+5www.marinebenchmark.com
+DIGITALIZING THE PORT CALL PROCESS 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ11and stevedores are engaged in loading and unloading; other providers deal with such things as waste 
+and security; and agents are there to ensure that everything goes according to plan. And the same 
+group of organizations are needed to get the ship ready to depart from berth, leaving the port area, 
+and back to the open sea. In the figure below the complexity of port call operations and the need for collaboration and synchronization can be seen in the generic PortCDM metromap (Lind et al, 2016).
+Figure 2: Core events and engaged actors in the port call process (Lind et al, 2016)
+This outline diagram of the port call process indicate s the wide variety of services for the ship, the 
+crew and the movement of cargo that all have to be in place during a port call and often must take place over a short period of time. Not shown in the diagram are such things as bunkering, 
+maintenance, repair, or customs, all of which only  serve to further complicate the overall goal of 
+effective coordination and synchronization. To ac hieve effective coordination and synchronization,
+more often than not requires complex levels of collaboration and communication between the crew, 
+owner, agent, the terminal and others, including administrative stakeholders such as border control, 
+customs, immigration or port authority.
+Even the simple metromap shown above indicates that nothing is going to be better than the weakest 
+link in the port call process, particularly if ev ery actor acts on their own behalf, pursuing only their 
+own interests. The risk of sub-optimization is high. Collaboration with others in the port call chain is 
+the key to enhanced operations and underpins the PortCDM concept and port call optimization.
+One size does not fit all
+Most ports are also logistical environments; in othe r words, logistical hubs in the larger transport 
+system, that manage different types of trade and modal changes built around different requirements. 
+Handling and other requirements in container transp ort are very different from those required for 
+DIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ12  liquid bulk transport. As a result, there are often distinct differences in a port ecosystem with the 
+concept of “ports within the port” being common. 
+Traditionally, ships are served on a first-come-fir st-served basis upon their arrival to a port, which 
+often leads to “hurry and wait” behaviour for ships steaming towards ports. It is also evident that 
+many ports base their organizing logic on serving one predominant type of trade, leaving ships engaged in other types of trade to depend upon the same traditional logic. For many, the logic of 
+container transport has become the dominating logic for arranging the schema within the port. Often 
+this does not respond optimally to the needs of liquid and dry bulk or passenger traffic such as ferries or cruise ships. It is also not desirable that port  call processes are completely different for each trade 
+(and potentially conflicting with each other) because vessels, regardless of their trade, also need to 
+share common infrastructure, such as fairways into the port. 
+33 DDigital business and business ecosystems 
+Digitalization and digital business are inevitably  shifting operational and management focus of 
+organizations towards being business ecosystems. Business ecosystems are the dynamic network of 
+entities (people, businesses and things) interacting with each other. Digital business is gaining 
+momentum in all commercial sectors - and mariti me transportation cannot be immune to these 
+changes - indeed the changes are happening already. 
+A business ecosystem enables various parties to expo se their capabilities and leverage the capabilities 
+of others to create new services, products and customer experiences, driving higher levels of business value. Some organizations will create and run powerful ecosystems; others will participate. Three 
+characteristics make business ecosystems particular ly unique in the age of digital business (Hvid 
+Jensen, 2019b): 
+x Business ecosystems will become significantly broader and dramatically more complex; the 
+number of actors and interconnections will in crease dramatically, as will the volume of 
+information. 
+x Business ecosystems are highly fluid and dyna mic; they are far more than just a web of 
+connections, and are self-organ izing, learning and adaptive. 
+x Information is what drives business ecosystems and is set to become an organization's 
+most valued asset as we move from an era of globalization based on things to one of digital 
+globalization. 
+Digital business is event-centric 
+A key distinction of a digital business is that it is ev ent-centric, which means it is always sensing, always 
+ready and always learning. Digital business is driven by business moments, which are derived from contextualized analysis of event streams, drawing on the resources of the business' ecosystem
+. 
+Sensing the business moments demands continuous real-time situational awareness; responding to 
+business moments depends on context-aware decisi on making. The real-time situational awareness 
+and context sensing are products of an organiza tion's competence in event processing. Thus, 
+excellence in event processing is essential to the su ccess of an agile digital business. This applies to 
+the port call process and the maritime logistic chain just as much as it does to any other business 
+environment. DIGITALIZING THE PORT CALL PROCESS 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ13PortCDM supports the real-time based common situational awareness and context sensitivity 
+required in digital business by taking an event-centric approach to understand port call operations 
+(Lind et al 2018abc).
+Container traffic and liner service to port
+Container traffic mostly follows a predefined pattern of scheduled and recurrent visits. Container 
+traffic is arranged as a liner service (like a bus service) where different stakeholders plan their 
+operations in relation to a fixed and repeating schedule. This schedule may be revised at intervals or 
+be seasonal. This follows a similar concept to passenger traffic in aviation - with a predictable and fixed schedule and travel plan covering the present and the medium-term future.
+This means that the port call actors can expect that a ship (or ships from a shipping company) will
+arrive at particular time intervals and can prepare for that accordingly. In reality though, maintaining 
+punctual ship arrivals in accord ance with the pre-set schedule is sometimes hard to achieve, not 
+because the ships have challenges in making the sea passage, but from delays in upstream ports 
+making it hard or impossible for the ship to make it s next port call on time. This is especially the case 
+in short sea shipping arrivals or when ships require repositioning in a port after cargo operations in 
+one terminal prior to further work in another.
+Associated with the container industry are some of  the largest shipping companies, such as Maersk, 
+MSC, CMA/CGM, and Hapag-Lloyd. Many of these companies have their own terminal facilities (for 
+example, the Maersk-owned APM te rminals) and may operate in different alliances. These alliances 
+can then have the effect of blocking others in making optimal or desired port calls if the relevant 
+shipping company is not part of the same allia nce as the terminal operator. Chinese shipping 
+companies, such as China Ocean Shipping Company (Cosco), are even involved in “purchasing” 
+complete ports as part of China’s Belt and Road Init iative, or more specifically the Maritime Silk Road 
+part of this initiative.
+6
+Recent years have seen the introduction of super large container ships carrying up to 24,000 
+containers. However, with changes in global tradin g patterns, the size may have reached a peak, as 
+reflected by the reduction in global order books for these super large vessels.
+The dry and liquid bulk industry and irregular, often short notice port calls
+The dry and liquid bulk sea transport sector operates most times as a tramp service (more like a taxithan a bus service) with fixed, semi-fixed or unfixed routes and without a pre-determined timetable. 
+Ships may be engaged on either a voyage or a time charter basis.
+A voyage charter means that the charterer pays a fi xed price for the carriage of specific goods from 
+one port to another, with the ship operator carrying the risks and expense for any delays or diversions caused by such things as weather, strikes, or variations in the cost of bunkers. In a time charter, the 
+charterer in effect takes a lease on the operation of a ship for a certain period and with it, the risk and 
+expense of any late-notice variations in a number of the operating expenses. In either case, this leads 
+6https://www.forbes.com/sites/wadeshepard/2017/09/06/chinas-sea port-shopping-spree-whats-happening-as-the-worlds-ports-keep-
+going-to-china/#1cfb78b14e9dDIGITALIZING THE PORT CALL PROCESS 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ14to unpredictable and short-notice port visits because at least one of the charter parties is always 
+seeking to minimise or avoid the impact of the most ly unpredictable and variable short notice changes 
+in voyage expenses.
+The tanker industry in particular is governed by freight contracts made by traders who often decide 
+the load date and destinations based on diverse fact ors and in particular fluctuating cargo-oil prices. 
+Due to the fluctuations in prices and availability, there are often very late changes of schedule, which 
+puts pressure on port-call actors and their resources to respond on time and still preserve the financial 
+and environmental benefits for all involved. Some of the liquid bulk cargoes are actually traded while 
+the ship is on passage and the new cargo owner may then reroute the ship to a new destination.
+For many ports there is limited anchorage space outside the port and the absence of a “port-line-up” 
+system in previous and next ports reduces the abilit y for terminals and carriers to increase efficiency 
+and deliver customer satisfaction. In some ports, ta nker terminals are operated by different operators, 
+which often cause low visibility, low flexibility and long er wait time, partially also due to the lack of 
+data sharing among them. Terminals, berths, and carriers tend to work in silos without either long-
+term, near-time or real-time sharing of scheduling data. This often is a cause of knock-on effect delays. 
+This inherently inefficient type of port call regime  leaves the port network in a very difficult and 
+unpredictable position to deliver its resources optimally.
+Enhanced collaboration and instant data sharing among stakeholders within and outside the port, 
+leading to synchronization, coordination, and harm onization of maritime operations associated with
+the tanker industry is now beginning to appear. The PortCDM concepts, as developed by RISE and validated in the Sea Traffic Management (STM) validation project (
+www.stmvalidation.eu )c a n  b r i n g  
+benefit to all types of trade - not just dry and liquid bulk cargo transport. Recent proposals presented 
+to IMO by BIMCO (BIMCO, 2019) related to the easier  exchange of data and just-in-time arrivals are 
+further examples.
+Ro-ro trade and the need for detailed tracking and scheduling
+The so-called RORO (roll-on, roll-off) trade is th e maritime part of the dual-modal transport 
+mechanism of road-ship-road. At the port of origin trucks drive on the ship (roll-on) and in the 
+destination they drive off the ship  again (roll-off). The RORO concept is intended to reduce cargo 
+handling as the cargo does not leave the truck and, as such, dismounting of containers for loading and 
+re-mounting at the port of arrival is not necessary.  This method also avoids individual storage and re-
+arrangement of cargo. RORO includes “unaccompanied trailer transport”. Here the trailers of a truck are positioned on a cargo vessel, but the tractor units and drivers do not travel with the ship. With unaccompanied trailer transport, another tractor unit  meets the ship on arrival, or the next modal 
+transport could be a train, where th e unaccompanied trailers are carried further on as part of a multi-
+modal transport chain. RORO vessels normally follow the same regime as container shipping by following a fixed liner schedule.
+7The complexity of this highly integrated dual or multi-modal 
+transport needs careful and detailed planning and coordination for optimal results to be achieved. 
+Within this sector there are numerous shipping companies including common names such as 
+7https://www.marineinsight.com/types-of-ships/what-are-ro-ro-ships/DIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ15  Wallenius-Willhemsen, Stena, Grimaldi and some very specialized ports used for managing and 
+synchronizing truck movements as well as for the import and export of new motor vehicles. 
+The cruise industry and its long-term planning of port visits 
+Presently there are about 390 cruise ships in oper ation globally, and there are 120 more on order 
+books with no plans for taking any of the existing ships out of service.8 There are several dominant 
+ship owners, such as Carnival Cruise Line and Roya l Caribbean International, together having up to 
+70% of the market passenger wise.9 
+Seen from a port’s point of view, a cruise (port) call is most often initiated two to three years in 
+advance to settle everything that is related to the po rt visit. The proposed timetable is then used by 
+the port to assign different locations within the port to enable possible parallel cruise calls at the same 
+time. In a popular cruise destination, there is a desire  to manage as many cruise calls as possible during 
+the season. A challenge, however, is coordinating a number of calls on the same day; any deviations 
+of a cruise ship’s arrival and departure times will influence excursion options as well as passengers 
+joining or leaving the ship. 
+As the cruise season approaches, contracts relate d to passenger excursions, linesmen, security and 
+third-party service providers are settled and then planned precisely by the port, agent, and cruise line. 
+The cruise lines do not want anything to go wrong and thereby fail to meet the expectations of their 
+passengers. Cruise excursions, for example, require high levels of coordination and understanding of the current situation to function well. This enables the cruise guests to schedule their excursions down 
+to the smallest detail. 
+Even though actors have an individual focus on delivering their services, there is a need for joint 
+delivery from all actors for a successful cruise call.  In order to provide a high-quality joint delivery, 
+actors must know and understand all involved parties’ plans and outcomes and their role in making a 
+cruise call a success for each passenger (Lind et al, 2018e). 
+Disruptions can happen, such as a local tour operator missing a return deadline for passengers 
+returning to their ship. In most cases, when tours are delayed then the departure of a cruise ship is delayed, which can then have consequences for other ships in the area, including other cruise ships. 
+There might be several cruise ship s arriving on the same day, havi ng the same types of needs for 
+services, physical infrastructure, and sea passag es. Unplanned changes can cause serious delays, 
+bottlenecks or cancellations, which then requires re-planning and execution. In the worst case, the 
+passenger experience is inferior or non-existent. 
+The need for collaboration and digital data sharing independent of trade 
+As many ports are using the container ship or other dominant trade scheduling models as their 
+foundational base for planning, other non-recurrent visits are then left to fit around the basic plan 
+settled for the predominating ships. There is an obvious need to provide a more flexible system that provides sufficient information to allow ports to plan, optimize and execute port visits, independent 
+ 
+8 https://www.cruiseindustrynews.com/crui se-news/cruise-ship-orderbook.html 
+9 https://en.wikipedia.org/wiki/List_of_largest_cruise_lines DIGITALIZING THE PORT CALL PROCESS 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ16of the type of trade. The PortCDM concepts (see sect ion 10), and the port call optimization principles 
+laid out by ITPCO have been developed specifically to address this problem.
+In future, there will be an enhanced data stream or iginating from many different sources, where ship 
+operator - port operator collaboration becomes increasingly more common. Upstream ports will be 
+enabled to provide information to  downstream ports, where many more physical objects (down to 
+the level of containers, bollards, etc.) are digitally twinned, allowing for remote data streams to be 
+generated and kept up to date with minimal human intervention. All of this requires agreed standards 
+for data sharing, such as the S-211 Port Call Message  standard or ECPIS for the sharing of time stamp 
+data that enables ship-to-port, port-to-ship, port-to-port, as well as port actor-to-port actor data 
+exchange. S-211 is part of the ISO-19100 based S-100 family of data exchange standards that 
+underpins the IMO Common Maritime Data Structure (CMDS).10EPCIS is a standard used for 
+exchanging event information among supply chain partners across all modes of transport and an 
+official ISO standard (ISO/IEC 19987)
+Enhanced information sharing, especially regarding the crucial parameter of estimated time of arrival
+and estimated time of departure, as well as estimated time of operations commencing and 
+completing, is necessary to enable an y optimization effort before a vessel visits a port. This is key to 
+satisfying all port actors, including terminal operat ors and shipping lines, and it is also relevant to 
+hinterland operators and the final recipient of the cargo (the consignee). 
+There are different types of challenges that need to be handled in relation to the different types of 
+trade and its shipping services, for example, liner versus tramp service. Independent of trade there is 
+also a need for enhanced collaboration and data sharing within the port and along the maritime 
+transport chain providing each of the participants with up-to-date real-time information.
+There are close to 100,000 commercial ships (> 100 GT) in the world.11The ones that are above 1000 
+GT are conducting about 4,1 million port visits (port calls) per year,12and the figure for the amount of 
+port calls made to several thousands of active ports in the world if all commercial ships are taken into 
+consideration is very much higher. These ports are arranged in structures of feeder ports and transhipment hubs (see figure 2). Some of the major ports of the world have a desire to become the
+gateway into their particular region (such as the Port of Rotterdam into Europe)13, which both drives 
+competition and also heavy investments into hinterland connectivity.
+As physical infrastructures are both costly and shou ld be considered as long-term investments, it is 
+highly essential for high frequency ports, being ports with high throughput, to secure enough port 
+visits conducted for the different types of trade. For ports, this is highly sensitive due to the fact that 
+the decision for a shipping company to alter the dest ination is relatively easy while relocating physical 
+infrastructure of a port is costly. This has driven  ports to specialize in di fferent segments, such as 
+establishing advanced capabilities for managing cont ainers, providing services that add value to the 
+incoming trade, offering storage facilities, or making the port an attractive cruise destination. As much 
+10https://www.ipcdmc.org/standards-and-guidelines
+11There are 96 295 commercial ships of 100 GT and above (c.f. http://stats.unctad.org/maritime ) and 51 684 commercial ships of 1000 GT 
+and above (c.f. https://unctad.org/en/Public ationsLibrary/rmt2019_en.pdf )
+12In 2018, there were 4 112 944 port calls made of ships of 1000 GT and above (c.f. http://stats.unctad.org/maritime )
+13https://www.esri.com/en-us/see/stories/port-of-rotterdam/port-digitalization-articleDIGITALIZING THE PORT CALL PROCESS 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ17of the world’s trade originates in Asia, it is no surp rise that the majority of the largest of these types 
+of specialised ports are situated in Asia. Out of th e ten largest ports in the world seven of them are in 
+China, two in South East and East Asia (Busan and Singapore), and one in Europe (Rotterdam).14
+It is also essential to acknowledge that ports can be seen as a conglomerate of actors having to work 
+together. Most often the port “company” or the port authority becomes the landlord providing space for others to perform operations. This provides opportunity for the larger shipping companies to 
+establish their own terminals, including locating  them at strategic places around the world.
+There exists strong competition between ports that carefully consider their own development, 
+promoting their local industry and access to the hinterland. As in other transport sectors, large 
+transhipment hubs are becoming the first line of interaction for the la rger ships to make port calls, 
+while numerous feeder ports follow the rules of operations stipulated by those transhipment hubs. 
+However, some ports in the world, such as the Port of Stavanger, take a stronger community approach, where the actors take a more regional approach , which builds upon the Norwegian collaborative 
+culture. These ports become the business environment for the local industry, including supporting 
+start-ups. PortXL
+15, which was initiated in Rotterdam and now has been brought also to Singapore and 
+Antwerp, provides examples of such an approach.
+Digitalization is changing the way that actors  associated with port operations operate.16For example, 
+the traditional role of a ship’s master has already begun to change with an increase in remote monitoring of a ships position leading to others providing advice or instructions on what speed to use 
+or what route to take to avoid such things as wea ther or traffic congestion  or to make an optimal 
+arrival time at a port.
+Digitalization will change some roles more than others. Overall, many activities should become easier 
+and be more efficient which could reduce the roles for some actors. At the same time digitalization 
+will provide opportunities for providin g new or enhanced services. The fu ture role of the ship agent is 
+one example.
+Ship agents provide two major types of “capital” (Watson, 2019) to their clients. First, because they 
+typically have personnel physically located in a port’s city, they provide social capital in the form of a network of connections with a port’s service provid ers. Their specialized local social capital means 
+they know whom to contact for routine and special services. Second, they have developed routines 
+and procedures (the organizational capital) to deal with the local laws and regulations and atypical 
+features of their port and its environment. They have created efficient procedures to weave together 
+the various local requirements and services needed for a successful port visit in their territory.
+17
+Traditionally, a ship agent, as a representative of th e owner, the charterer, or both, of a visiting ship, 
+ensures that the essential requirements for a ship visit are arranged and met. They also guarantee that involved port actors are paid. In the absence of other information, the port actors also rely heavily 
+14https://www.ship-technology.com/features/feature-the-worlds-10-biggest-ports/
+15PortXL.org
+16Digitalization in Maritime Transport: Ensuring Opportunitie s for Development, UNCTAD Policy Brief No. 75, Geneva, 2019. 
+https://unctad.org/en/pages/Publicat ionWebflyer.aspx?publicationid=2479
+17https://hansa-online.de/2019/11/schifffahrt/140080/DIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ18  on the information about the port call (arrival time, planned operations, etc.) coming from the ship 
+agent. People increasingly realis e that in the future when digita lization will generate multiple, 
+accessible information feeds that can enable all actors to have a shared and common situational 
+awareness they will not need to rely on a single so urce of information from the agent. Nevertheless, 
+the value of the ship agent will likely remain and co uld actually be enhanced by their own access to 
+those multiple, up-to-date data streams because it will enable them to be even better on-the-spot 
+coordinators than they are today. 
+Digital data sharing and greater visibility of plans and their modification could enhance this role for 
+ship agents willing to embrace digitization. They could go beyond organizing the delivery of local 
+services to ensure that they are delivered with full satisfaction and predictably as well as validating 
+invoices against real time data. The local agent can take on the important role of helping to ensure 
+the fastest possible turn-around where everything is aligned instead of simply sending morning and 
+afternoon reports to its client that may be inaccurate no sooner than they have been sent. 
+In the redefinition of the business model of the ship agent, the ship agent could also be the provider 
+of information and optimization services to transport buyers and cargo owners by becoming the 
+physical and informational integrator of maritime op erations in the global transport chain. With the 
+growing ability of the ship agents to collect and anal yze incoming data streams, their value proposition 
+for both the ships as well as the port actors open new opportunities to change and enhance their 
+business model. 
+Enhanced digitalization and collaboration in the maritime transportation sector will change the 
+“capital creation” recipe for many in the ecosyste m. The ship agent is but one example. Those who 
+want to continue to participate profitably in th e ecosystem will need to re-blend their social and 
+organizational capital to match the digital connectivity and standardized digital data exchange that will dominate the execution of the future port call. Th eir social capital will decline in value if they do 
+not accommodate digital data sharing for establishing the phasing of a port call and managing its 
+execution. A phone call or email will be a costly al ternative to a digital data exchange with service 
+providers to establish when, where, and what services  that will be provided for the given port call. It 
+also addresses the need for updating these as circumstances require. 
+77 TThe role of maritime authorities in collaborative data sharing 
+The national maritime authorities 
+Key shore side actors in shipping are the national  maritime authorities. The maritime authority is 
+usually responsible for maritime safety and a range of  navigational services within its waters. Maritime 
+authorities are often responsible for VTS (Vessel Traffic Services) where established, mostly following 
+the recommendations and standards of the Internationa l Association of Marine Aids to Navigation and 
+Lighthouse Authorities (IALA). Here they organize and guide the traffic through confined and 
+congested waters, through channels or for approaches and departures of the port limits and 
+associated sea areas. How these, and any other roles are coordinated and executed often differ from country to country, even from port to port within the same country. 
+Local legislation usually supplements or enacts the re levant international rules, covering such things 
+as border control, customs clearance, immigration control and others. Besides these state duties, the DIGITALIZING THE PORT CALL PROCESS 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ19maritime authority usually holds also the responsibilit y for Port State Control, en suring that ships meet 
+the requirements of International Maritime Organizati on (IMO) regulations as as signed by ships’ flag 
+state, as well as any specific re quirements of the Coastal State.
+The port authorities
+When it comes to ports and their detailed operation, the relevance and influence of the national 
+maritime authorities can vary greatly. There are ce ntralized ports, where th e maritime authority is 
+also responsible for the majority of activities in a port and has decision and ordering rights on port 
+operations. In other words, there is one centralized controlling authority. In other ports the maritime 
+authority focusses only on state activities and all operations are executed by individual actors, who 
+are free to organize their cooperation in serving a sh ip call as they deem appropriate. This gets more 
+complicated in some ports, where the “port in port” concept is in place. A classic example here are 
+the Scheldt Ports with Antwerp as a central port.
+Who could be the Principal in port call collaboration?
+Increased adoption of collaborative data sharin g in the air transport sector, such as with the 
+AirportCDM (A-CDM) concept in airports, has resulted in a different, and some might say unexpected role for the aviation authorities. In a self-organized eco-system lik e an airport the most neutral and 
+less biased actor in the consortium is, in most cases, seen as being the most appropriate to act as the 
+collaboration lead or Principal. And this is usually an  Authority, as its economic intentions are generally 
+not commercially driven.
+18
+This same thing happened in validating19PortCDM as part of the STM Validation project, where those 
+involved in implementing the PortCDM concept in ports sought to identify who would be an 
+acceptable leader for their collaboration. As in the aviation sector, this tended to be an authority - in 
+most cases, the port authority. It must be said that some private actors in the port sector hesitated to 
+hand over too much control to those authorities as this was seen as a potential reduction of their 
+ability to remain independent and self-organized. This  was particularly so in interactions between the 
+terminal operators and the port authority, where a terminal operator may be reluctant to share data 
+about its planned and conducted operations. However, as the benefits of collaborative data sharing 
+become clearer to participants, any in itial reluctance appears to diminish.
+Most of the world’s commercial ships and particul arly those engaged on international voyages are 
+subject to the regulations established by the IMO. These regulations are adopted by the flag states 
+who together with coastal and port states enforce them.
+Meanwhile, shore-based infrastructu re, such as the operation of ports, port services and logistical 
+activities is normally governed by the relevant na tional regulations. This, of course, can vary from 
+country to country.
+18http://www.cdm.frankfurt-airport.com/content/fraport-ag-
+cdm/en/implementation_project/acdm_implementation/project_structure.html
+19RISE was responsible for the definition and validation of the PortCDM concept, within the MONALISA and STM Validation projects,  using 
+nine European ports (c.f. Lind et al, 2018c; 2019c)DIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ20  Who watches over the ports and infrastructure? 
+Other than for the specific requirements to conform to IMO regulations and to meet any national 
+requirements in each country, the actors in the shipping industry have tended to operate mostly as a 
+self-organized ecosystem where each of the actors makes decisions independently, with only limited 
+consideration of how their decisions might affect other actors further up or down the maritime transportation chain. However, digitization as well as commercial and competitive pressure from 
+other forms of transportation, such as air and land bridges, is forcing key actors in the maritime 
+industry to acknowledge that better coordination and synchronization of activities is key to improving reliability, customer satisfaction and profitability. 
+The maritime transportation chain comprises a mult itude of actors, each performing often specific 
+and specialized tasks as part of transporting goods from consignor to consignee. Each may be subject 
+to different requirements, regulations and profit drivers. What tends not to be acknowledged is that many if not most of the actors in the transportation chain have at least some dependency on the activities and the actions of others in  the chain. This is particularly so  in terms of the timing of events 
+and ensuring the availability of ap propriate supporting resources. 
+Just-in time operations and e-Navigation 
+The IMO, while still considering the operation of ships as its primary focus, is now encouraging 
+initiatives for “just-in-time” operations together wi th other regulations such as emission controls to 
+combat environmental pollution and to promote sustainable development (IMO, 2018). One key 
+initiative in this regard is the IMO’s e-navigation  strategy, which seeks to enhance marine safety as 
+well as efficiency by establishing open (non-proprie tary) digital data exchange standards. E-navigation 
+is intended to provide digital information and infrastr ucture for the benefit of maritime safety, security 
+and protection of the marine environment, reducing the administrative burden and increasing the 
+efficiency of maritime trade and transport. To do this, a Common Maritime Data Structure (CMDS) has 
+been agreed, based on the international ISO-compliant S-100 Universal Hydrographic Data Model data 
+exchange standard managed by the International Hydr ographic Organization (IHO). E-navigation goes 
+hand in hand with PortCDM and other standardized digital data exchange arrangements that are now coming in to use. The IMO is also developing a reference data model where the data elements required 
+for ship reporting and associated activities are defi ned. Great care is being taken to ensure that the 
+definitions are harmonized and consistent with any similar terms being used in other data exchange regimes. The United Nations Centre  for Trade Facilitation and Electronic Business (UN-CEFACT) plays 
+an important role in these endeavours. 
+Single-window data exchange 
+Another digital information initiative that sits under the growing maritime digital data exchange 
+framework is the Single Window co ncept that allows parties involved  in trade and transport to lodge 
+standardized information and documents with a sing le entry point to fulfil all import, export, and 
+transit-related regulatory requirem ents. The EU Reporting Formalities Directive (RFD) in force since 
+2015 simplifies and harmonizes the administrative procedures applied to maritime transport through 
+National Single Windows for reporting formalities from ships arriving in and/or departing from ports. The RFD is planned to be superseded by the European Maritime Single Window environment (EMSWe) 
+that it is currently expected will apply from 2025. DIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ21  At the same time, the IMO member states have agreed a mandatory requirement20 for national 
+governments to introduce electronic information exchange from 8 April 2019 to make cross-border 
+trade simpler and the logistics chain more efficient for the more than 10 billion tons of goods which 
+are traded by sea annually across the globe between ships and ports. In support of this, the IMO Facilitation Committee (FAL) is ensuring that the digital data exchange process is supported by 
+appropriate and compatible international standards and definitions. In line with this, the EU VAT 
+eCommerce Regulations will co me into effect in 2021. 
+Taking their lead from the vision of intergov ernmental organizations such as the IMO and the 
+supranational organization of EU, other intergover nmental and international organizations are also 
+proceeding with detailed implementations to improve data sharing and effectiveness in the maritime 
+transportation chain. This includes the IHO, the World Meteorological Organization (WMO) and IALA. 
+ 
+Tackling environmental concerns 
+The IMO, co-financed by 10 M Euro from the Euro pean Union, has implemented the initiative of 
+bringing forward five Maritime Technology Cooper ation Centres (MTCCs), under the umbrella of the 
+Global MTCC Network (GMN) - formally titled “ Capacity Building for Climate Mitigation in the 
+Maritime Shipping Industry ” in targeted regions as part of a global network.21 Together, they are 
+promoting technologies and operations to improve energy efficiency in the maritime sector and help move shipping into a low-carbon future. 
+BIMCO is an example of an industry representative organization that is actively seeking to improve 
+the environmental performance of shipping and the port call process. As well as submitting proposals 
+to IMO on slow-steaming, it has also submitted prop osals to IMO related to port logistic operational 
+data (BIMCO, 2019) in support of the just-in-time concept. 
+Other complementary initiatives 
+More governmental focused organizations working on the topic, including the earlier mentioned 
+organizations like IHO or IALA, associations in the private sector as well as those with mixed 
+memberships are starting to get engaged in the aforementioned concepts. The International Harbour Masters Association (IHMA) has developed the definition for IMO Maritime Service 4 - Port Support 
+Service which, in effect, places PortCDM and port  call optimization within the IMO’s e-Navigation 
+initiative.
+22 
+The International PortCDM Council (IPCDMC)23 is an example of an association that has combined 
+both governmental as well as industry players to further de velop PortCDM and help in its 
+implementation. IPCDMC was initiated by RISE to prov ide global guidelines to be used for regional and 
+local implementations of PortCDM. 
+ 
+20Amendments to the Facilitation Convention were adopted in 2016  and entered into force on 1 January 2017. The FAL Convention 
+amendments make it mandatory for ships and ports to exchange FAL data electronically from 8 April 2019. 
+21 https://gmn.imo.org 
+22 NCSR 6/8/2, IMO, 2018 
+23 www.ipcdmc.org DIGITALIZING THE PORT CALL PROCESS 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ22The Port Call Message Standard S-211, which is the underpinning data exchange format for PortCDM 
+was created under the auspices of the IPCDMC, adop ted as an international standard by IALA and 
+registered in the IHO S-100 GI Registry.
+The principal international association for marine electronics companies24CIRM is another industrial 
+association supporting the development of e-Naviga tion services, and its members are engaged in the 
+work of the International Electrotechnical Commission (IEC) supporting the development of S-421 for 
+Route exchange to enable interoperability with S-211.
+ITPCO, the consortium consisting of a wide range of stakeholders has been working to establish 
+standards for port call optimization that improve collaboration during port calls. These efforts have resulted in functional definitions (common semantics) for terms used in the Mariners’ Handbook 
+NP100, agreed process descriptions, and manuals (guidelines) to help ports and port process 
+stakeholders to coordinate and synchronize their ac tivities through the availability of reliable master 
+data for vessels and port infrastructure. The ITPCO published its first guidance document in 2020 (ITPCO, 2019).
+These activities all show that the development of PortCDM and data sharing more generally is not only 
+driven by authorities or research institutes, but by  a fast growing community of industry players as 
+well.
+Work is also proceeding to optimize cargo flow from ports to the hinterland. Initiatives such as the EU 
+rules on electronic freight transport informatio n (eFTI), eCMR (electronic waybills) and the Digital 
+Transport Logistic Forum (DTLF) subgroup on “paper less transport” will establish uniform, predictable 
+and trusted environments for the electronic exchange  of information on goods transported within the 
+EU.
+The uptake of digitalization in th e maritime sector has been increasing steadily. In 2017, the theme 
+for the IMO’s World Maritime Day was … connecting ships, ports and people . The IMO’s e-Navigation 
+initiative is ongoing, as is its work on digital sh ip reporting. At the same time, Maersk and IBM have 
+been working on a significant collaboration to brin g blockchain technology into the maritime sector 
+to massively reduce the reliance on paper docume nts. In ships and ashore, increasing amounts of 
+relevant data are being transmitted digitally, includin g ship’s position and details via AIS transponders 
+every six seconds, remote engine and machinery monitoring, and data describing the loading and 
+details for ship’s cargo.
+Digitalization is increasingly playing a pivotal role in  environmental, social and governance (ESG) topics 
+by accelerating sustainable initiatives and help ing to monitor and mitigate emerging risks and 
+pressures, for example, in tackling environmental pollution and climate change. Digitalization and the 
+ability to connect different maritime transport actors  to enable greater efficien cy and to reduce their 
+collective carbon footprint is an obvious example of the benefits for the maritime sector.
+24http://cirm.org/DIGITALIZING THE PORT CALL PROCESS 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ23Contemporary initiatives underway
+In addition to the work being led by IMO, some other examples of various contemporary initiatives 
+are (inspired from IntelligentCargoSystems (2019) and Chrysostomou et al (2019)):
+xChainPort ( www.hamburg-port-authority.de/en/themenseiten/chainport/ ) providing a 
+platform for knowledge sharing among different ports
+xThe Digital Shipping Container Association (DCSA) ( www.dcsa.org ) gathering major shipping 
+companies by paving the way for interoperability in the container shipping industry through 
+digitalization and standardization.
+xThe Global Industry Alliance (GIA) ( www.glomeep.imo.org/global-industry-alliance/global-
+industry-alliance-gia/ ), under the framework of the GloMEEP Project, bringing together 
+maritime industry leaders to support an energy efficient and low carbon maritime transport 
+system.
+xThe Global Maritime Logistics Dialogue, init iated by the International Transport Forum 
+(https://2018.itf-oecd.org/global-maritime-logi stics-dialogue-towards-holistic-governance-
+maritime-logistics-chain ).
+xGloMEEP ( www.glomeep.imo.org ) an IMO initiative aimed at supporting the uptake and 
+implementation of energy efficiency measures for shipping for reduced greenhouse gas 
+emissions, 
+xThe International PortCDM Council (IPCDMC) ( www.ipcdmc.org ), with its global reach, 
+establishing the overarching guidelines, pr ocesses and procedures to make PortCDM a 
+successful international concept to improve mariti me transport as it relates to port operations
+and interaction with ships. IP CDMC maintains the S-211 time stamp data sharing standard.
+xThe International Port Community Systems Association (IPCSA) ( www.ipcsa.international ) 
+gathering port community system providers supporting smooth transport and logistics 
+operations at sea ports, airports and inland ports
+xThe Maritime Connectivity Platform Consortium ( www.maritimeconnectivity.net ), provision of 
+guidelines and standards for efficient, secure, reliable and seamless electronic information 
+exchange among maritime stakeholders using available communication systems
+xThe International Taskforce on  Port Call Optimization ( www.portcalloptimization.org ) where 
+shipping companies (of all trades), terminal op erators, agents and ports are working together 
+promoting “Port Call Optimization through improving quality and availability of master and event data which will deliver bene fits to ports, shipping lines, terminals, service provides and 
+society”. Endorsers of ITPCO results include BIMCO, IHO, IAPH, IHMA and IALA. Collaboration 
+with the International Association of Ports and Ha rbours (IAPH), the UK Hydrographic Office and 
+Lloyds Intelligence resulted in the publication of a Port Information Manual (ITPCO, 2019), 
+written for all parties with an interest in improv ing the data of ports, terminals and their berths.
+xThe Sea Traffic Management (STM) validation project (
+www.stmvalidation.eu ), conducted 
+between 2015 and 2019, a large-scale testbed connecting and updating the maritime world in 
+real time, with efficient information exchange . STM included PortCDM as one of its enabling 
+concepts.
+xThe SESAME Straits project ( www.straits-stms.com ), a large-scale testbed for the Secure, 
+Efficient, and Safe maritime traffic Management in the Straits of Malacca and Singapore by the DIGITALIZING THE PORT CALL PROCESS 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ24exchange of marine information onboard and asho re by electronic means, during the entire 
+voyage of a ship i.e. "berth to berth".
+xThe Smart Maritime Network ( www.smartmaritimenetwork.com ) providing a forum to promote 
+the benefits of enhanced integration and data sharing among stakeholders within the maritime 
+and transport logistics sectors.
+xThe SmartNav ( www.SmartNav.org ), providing additional services  for non-SOLAS ships such as 
+fishery boats, coastal vessels and ferries.
+xSTEAM, (Sea Traffic Management in the Eastern Mediterranean) is a three-year project that has 
+started in Jan. 2019 with a budget of approximately one million EUR funded by the Cyprus 
+Research Promotion Foundation and coordinated by the Cyprus University of Technology. The 
+primary goal of this research programme is to develop the Port of Limassol to become a world-
+class transhipment and information hub adopting modern digital technologies brought to the maritime sector, as well as a driver for short sea shipping in the Eastern Mediterranean.
+xUN-CEFACT (United Nations Centre for Trade Facilita tion and Electronic Business)) is a subsidiary, 
+intergovernmental body of the United Nations Economic Commission for Europe (UNECE) which 
+serves as a focal point within  the United Nations Economic and Social Council for trade 
+facilitation recommendations and electronic busi ness standards. UN-CEFACT recently delivered 
+the reference document Business Requirements Specifications for Smart Containers.
+25It 
+continues to work on the Reference Data Model and Master Message model.
+This list is by no means exhaustive.
+Today’s digital tools for port call / cargo flow coordination / optimization
+In parallel with the initiatives listed above, there are numerous digital tools emerging to enable data 
+sharing along the supply chain. However, many of these are or have been developed for a single port 
+with the notion of then engaging others along their particular transportation chain. This can lead to non-standardised or proprietary solutions emerging - which is not desirable nor in keeping with the 
+aims of the major intergovernmental and internatio nal organizations such as IMO, EU, IHO or IALA. 
+Nonetheless, and fortunately, the tools all strive to embrace a number of common assumptions and 
+principles and in particular that:
+xnothing substantial related to addressing environmental concerns will happen without engaging 
+a multitude of maritime transport producers;
+xthere will not be a single party providing a tool to all the thousands of ac tive ports in the world;
+xit must be possible for a port to choose among different solutions meeting their needs; and
+xthe different solutions need to be based on the established standard message formats (such as
+the use of the S-211 data exchange format) and communication protocols that enable seamless, 
+interoperable data sharing among the various different tools.
+25https://www.unece.org/file admin/DAM/cefact/brs/BRS -SmartContainer_v1.0.pdfDIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ25  A short list of some of the tools that are presently available are (inspired from 
+IntelligentCargoSystems (2019) and Chrysostomou et al (2019)): 
+Table 1 Port Call related initiatives 
+Initiative Source on web 
+CargoMate intelligentcargosystems.com 
+Integration products by YourEDI YourEDI.com 
+Multiple services by Teqplay Teqplay.nl 
+Navis N4 Navis.com 
+NxtPort nxtport.com 
+Perseus Marine-Fields.com 
+PitStop maersk.com/news/2018/06/29/ the-quest-for-the-perfect-pit-stop 
+Portcall.com portcall.com 
+PortChain portchain.com 
+PortView Shipsfocus.com 
+PortXchange portxchange.portofrotterdam.com 
+TradeLens tradelens.com 
+Traxens container tracking  www.traxens.com 
+ 
+Interoperability is important 
+By having various tools available, independent of the domain that they are addressing, and connected 
+by the use of standardized messaging mechanisms, a future with greater access to a variety of data 
+streams capable of being combined to provide more predictable and sustainable transport services 
+can be expected. This will require co mmon definitions of data sets used for the exchange of static and 
+dynamic information (c.f. International Taskforce Port Call Optimization, 2019). This will cater for both enhanced collaboration and inter-operability throug hout the maritime supply chain and also make 
+connected maritime operations part of the larger supp ly chain. Establishing and using logistic internets 
+means that information can be entered once and used by many - thereby avoiding the need for actors 
+operating in more than one port or those dealing with  multiple actors to rely on a number of dedicated 
+single point-to-point connections. 
+110 PPortCDM 
+The Port Collaborative Decision Making (PortCDM) co ncepts are a key part of the digital information 
+revolution impacting the port call process. PortCDM concepts were inspired by the aviation sector 
+where flights and airport operations are successfully and seamlessly coordinated. PortCDM concepts 
+seek to overcome the current inefficiencies in the port call process by providing a framework for data sharing, enhanced collaboration, an d common situational awareness. 
+The PortCDM concepts were developed by RISE since 2013 to support those engaged in, or associated 
+with, port call operations. RISE, because of its acknowledged independence and academic research 
+basis, with no allegiance to any ports, vendors or stakeholders, is now recognized as a thought leader 
+as well as an influencer without any conflict of intere st. As such, stakeholders view RISE as a kind of 
+moderator in terms of port call optimization and th e impact of digitalization in the maritime domain. 
+ DIGITALIZING THE PORT CALL PROCESS 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ26More predictable timings and operations
+PortCDM is an organizational concept aimed at enabling more predictable timings and operations in 
+sea transport by building on unified and standard ized data exchange protocols. PortCDM addresses 
+the need to ensure a continuous flow of data about intentions, outcomes, and possible disruptions 
+related to movements and service provision among al l those involved in the berth-to-berth maritime 
+transport process. It also aims at contributing to the operational aspects of a well-coordinated port as 
+a transport hub in the larger transportation ecosystem (Lind et al, 2018ab). This results in a high degree 
+of predictability in the planning and execution of all associated operations and activities thereby 
+contributing to just-in-time operations.
+Role of PortCDM
+PortCDM can support a range of different activities fo r port actors as shown in the figure below where 
+a number of the key decisions made by different po rt stakeholders are identified. These decisions vary 
+from the obvious, such as ‘Port and berth optimization’ to decisions that are more futuristic, such as
+‘e-berthing’. The latter is concerned with powering a ship with electrical power whilst in port to avoid 
+burning polluting hydrocarbon fuel.
+As such, PortCDM can provide the basis for both managing the 
+present, i.e. the port call of a ship and other episodic tight-
+coupled actors, and for planning the future capacities and capabilities of a port.
+At the core of PortCDM is the ability to build and provide access 
+to a common, shared situationa l awareness picture for all 
+authorized actors. The common si tuational awareness, which is 
+enabled by PortCDM through the transmission of data in the 
+standardized, internationally reco gnized message format, allows 
+all actors involved to access a common set of up-to-date, shared information concerning the different port call events that affect 
+them as well as the different actors’ intentions (Lind et al, 2018g).
+A common understanding of timings and plans
+Through its technical and operational guidelines, Port CDM establishes a solid foundation to enable all 
+the actors involved to access shared information relevant to their activities based on input from multiple sources of up-to-date spatial-temporal data. This enables a common understanding of what 
+is happening and what is expected to happen, which in turn fosters better collaboration and service 
+delivery that leads to efficient and successful coordination and synchronization, which benefits everyone, not least the end customer or recipient of the goods being transported.
+The PortCDM process is intended to be dynamic and visible through the use of standardized messaging 
+and interfaces that trigger and prompt the various actors to review exception alerts and take actions 
+based upon their physical capabilities, preferences,  and requirements. Provided everyone is kept 
+informed, multiple revisions or iterations to plans ca n take place during a single port call while at the 
+same time minimising the overall disruption to the final outcomes.
+Figure 3: Different areas of application 
+of PortCDM (Lind et al, 2019d)DIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ27  Making existing processes more effective and efficient 
+PortCDM does not necessarily call for process changes but focuses on a more dynamic and effective 
+delivery of the existing processes through greater collaboration and the availability of high quality, 
+near real-time data to all the relevant and authorised  actors in the maritime transportation ecosystem. 
+PortCDM must be underpinned by appropriate protocols to ensure robust data integrity and access control. PortCDM comes with a framework for maturity  levels supporting ports, with its actors, to 
+successively develop their PortCDM maturity on data  sharing and collaboration (c.f. www.ipcdmc.org). 
+PortCDM validation 
+PortCDM concepts and standards were successfully validated in nine European ports as one of the 
+four elements of the EU sponsored validation of th e Sea Traffic Management Validation (STM) project. 
+The concept was positively supported by the participants and has already led some of them to extend their validation set-up for use on a permanent basis.  During the validation there was scepticism and 
+reluctance from some participants concerning the sharing of data, based on their perception that their 
+data would be used by others for commercial adva ntage. As the validation progressed, this initial 
+resistance diminished as those participants rea lised that there was a common benefit from data 
+sharing that outweighed any shorter-term disadvantage - whether real or perceived. There was also 
+some concern that there must be losers as well as winners. While some in the maritime transportation chain stand to gain more than others, the general view seems to be that the inexorable growth in 
+digitalization and the availability of ever more us eful data streams means that those that are not 
+connected and sharing data on a mutual basis will be left behind. 
+Benefits of PortCDM 
+The significant beneficial effects for the different actors and stakeholders that were identified in the Nordic and Mediterranean testbeds include (Lind et al 2018c): 
+Table 2 Benefits of PortCDM for different stakeholders (Lind et al 2018c) 
+For shipping companies /ships 
+• saved bunker due to just-in-time arrivals 
+• saved bunker due to just-in-time departures 
+avoiding chasing the time window at the 
+next leg 
+• fleet optimisation and saved bunker due to 
+shorter turn-around-times For shipping agents 
+• enhanced basis for planning and easier 
+coordination of port call operations 
+• less time spent on chasing different actors, 
+more time for other services to the ships. 
+For terminals operators 
+• enhanced possibilities for berth 
+management 
+• enhanced capacity utilisation (resources and 
+infrastructure) 
+• better planning horizons for approaches to 
+be served For VTS operators 
+• possibilities to digitally log entrance and 
+departures. 
+• better coordination of ship movements. 
+• increased capability to synchronise the traffic 
+dependent on the status in the port 
+  DIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ28  For port authorities 
+• safe and efficient port approaches 
+• long- and short-term overview of port visits For port control / pilot planning, tug operators, 
+mooring companies, and service providers 
+• enhanced basis for planning 
+• optimised capacity utilisation  
+• enhanced capacity utilisation (resources and 
+infrastructure) 
+For hinterland operators 
+• enhanced capacity utilisation (resources and 
+infrastructure) 
+• better planning horizons for loading / 
+offloading at ports 
+• enhanced predictability For digital service providers 
+• low entry barriers to provide digital 
+innovations 
+• enhanced capabilities in existing systems by 
+being connected to the “outside” 
+ 
+Although these benefits were in itially identified for participat ing stakeholders in Europe, the 
+experiences are relevant for ports and maritime stakeh olders in other regions, including in developing 
+countries. In addition to benefits for specific stakeholders, the international community as a whole 
+will benefit from reduced emissions of green-hou se-gases resulting from speed and port call 
+optimization. 
+PortCDM - incremental implementation 
+The approach chosen in the PortCDM concept has be en to provide guidelines that allow for regional 
+and local implementations through an incremental, staged approach that also places emphasis on 
+ports being connected to the outside world (i.e. upstream ports, ships, and hinterland operators). For ports, it is then a balance between empowering thei r own environment as a local initiative and at the 
+same time being connected to and aligned with the outside world. Quite clearly, it is in the best 
+interest of ports to adopt international guidelines  and procedures for collaboration and standardized 
+messaging thereby creating the best possible conditions for enhanced coordination and 
+synchronization. 
+Although initially developed in Europe, the concept, and its benefits, apply globally, including for ports 
+in developing countries. As speeds and port calls are being optimized, the maritime sector will contribute to short term measures that not only im prove the efficiency of port and shipping services, 
+but also reduce the sector’s environmental impact by reducing their green-house-gas emissions. 
+111 TThe importance of international standards 
+The IMO and other relevant intergovernmental organizations wish to see globally adopted standards 
+prevail for key digital information in the maritime sector. As a contemporary example, the IMO is 
+pursuing the so-called single window  concept for the digital reporting via a single portal, without 
+duplication, of all information required by public au thorities in connection with the arrival, stay and 
+departure of ships, people and cargo. The single window concept joins other standardized processes 
+already in place covering such th ings as obligatory navigation routes, charting and safety related 
+information. DIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ29  However, the use of universal digital data standards is much less common in the other aspects of 
+maritime activities that are not under the jurisdicti on of the IMO or other relevant authorities, such 
+as detailed port call or cargo information. Naturally, in single windows efforts, the national trade and 
+customs organizations become highly involved. 
+As part of developing a standardized approach to digital data sharing in those areas not previously 
+being addressed at the intergovernmental level, several associations are seeking roles as leaders to 
+establish new practices for collaboration and data sh aring. One of them is the ITPCO others include 
+the International Port Community Systems Associatio n (IPCSA), and the International PortCDM Council 
+(IPCDMC).  
+Other groups have also established themselves, such as the Digital Container Shipping Association 
+(DCSA), which covers nine out of the 11 largest cont ainer shipping lines in the world. This alliance is 
+acting on behalf of its members to develop info rmation technology and security standards that 
+address the common challenges related to transmitting, receiving and exchanging data across their industry. 
+Important new standards for the maritime transportation chain 
+Several standards related to the transport of goods have been developed or enhanced recently for 
+application in maritime contexts. One example, the GS1 standard EPCIS (also known as ISO/IEC 19987) 
+was developed many years ago for the purpose of communicating the actual status of goods throughout the Supply Chain; in other words, by providing the answers to what, where, when and why 
+on the actual status of goods in transit. EPCIS has been implemented widely in the supply chain and is 
+continuously maintained and updated based on industry input. However, EPCIS does not currently support exchanging information about intentions (things that have not actually occurred yet), which 
+is necessary for the distributed coordination of movements and operations (Lind et al, 2018f). 
+The port call message format standard S-211 is a fundamentally important stan dard that provides the 
+ability to communicate time stamps in a standardized  way. S-211 is ISO 19100 compatible and has also 
+been aligned with GS1 EPCIS so as to enable communicating when particular goods items would arrive 
+to particular locations, which may be done by combining data streams from both standards. 
+Resistance to standards 
+However, a legacy of the relatively uncoordina ted adoption of digitalization and common data 
+standards within the maritime sector so far has meant that there are several different existing and 
+successful electronic data interchange (EDI) connect ions being used by the larger shipping lines and 
+their partners. It is also not a su rprise that there is some reluctan ce to make any dramatic changes 
+towards a standardized approach if there is a significant organizational or financial re-investment cost 
+involved. 
+The larger shipping companies have historically dominated how the adoption of digital technologies 
+should be done by others in the industry. A not too unrealistic assumption is that leading ports would 
+like to set the agenda for the smart and digitized port, but at the moment it seems that many of the 
+larger ports are trying to sit in the front seat of the development. In this respect, this seems to be a great opportunity for better standardization and adoption of the principles of collaboration and data DIGITALIZING THE PORT CALL PROCESS 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ30sharing in accordance with PortCDM and port call op timization to provide guidelines for the ports of 
+tomorrow without being bound to any particular port.
+There are important initiatives underway to achieve the “connect once, collaborate infinitely” infrastructure that the PortCDM and port call opti mization concepts require for port stakeholders 
+worldwide (also in the hinterland).
+The international discourse on supply chain integration is now placing a lot of attention on the 
+opportunities that a connected maritime sector can provide. Customs organizations in different countries now work closer with each other to fac ilitate the flow of goods when departing from one 
+country and coming into the next country. In the light of this, port call coordination becomes 
+substantially important among the different involved  actors. This has also been highlighted by the 
+World Economic Forum. The figure below, using the container trade as an example, depicts the need 
+for an integrated view on both the movements of goods between different transport hubs using 
+different means of transport, the paperless trade wh ich has a strong relationship to Single Window 
+initiatives, and collaborative decision making to derive situational awareness at the transport hubs to 
+enable integrated end-to-end performance (Hvid Jensen, 2019a). The Seaport is an important link in 
+this.
+Figure 4: Enabling end-to-end visibility through a Global Trade Identity (Hvid Jensen, 2019a)
+Another initiative is the Mariti me Connectivity Platform (MCP),26formerly known as the Maritime 
+Cloud. The MCP is a framework for enabling effi cient, secure, reliable and seamless electronic 
+information exchange between all authorized mariti me stakeholders across available communication 
+systems. The MCP has been created to enable maritime actors to use digital services to exchange 
+public as well as private information. The MCP brings common internet standards to maritime 
+navigation and transportation systems by applying open and vendor-neutral technologies. The MCP 
+26https://maritimeconnectivity.net
+DIGITALIZING THE PORT CALL PROCESS  
+ 
+ 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ31  was created initially to address the goals of the e-na vigation initiative of IMO but now has the potential 
+to support digitalization across a much wider mariti me domain because it is an open-source solution 
+that relies on the Internet concept of Web Services for identity management and service management 
+and, as such, can support much more than just the IMO’s Maritime Services in the context of e-
+navigation. 
+Developments and experience in the non-maritime sectors 
+The importance of improved and up-to-date situat ional awareness within transportation hubs has 
+been recognised in other industries,  such as in aviation where AirportCDM has been brought forward, 
+and in the railway sector where StationCDM is now su rfacing. RISE has been instrumental in bringing 
+forward a CDM concept that is generic and a continuing source of inspiration for the further 
+development of these domain specific CDM approaches. 
+Further, the European Commission, through the efforts of the Digital Transport Logistic Forum (DTLF) 
+has put a lot of emphasis on integrated corridor in formation systems and has recently launched two 
+projects to demonstrate a concept for a federated network of platforms called FEDERATED and FENIX. The integration between different modes of transport across borders is an important concern for 
+tomorrow’s transport of people and goods. 
+113 CConclusions and way forward 
+The operational landscape is constituted by actors being in coopetition. This study suggests that a 
+positive way forward is enhanced digital collaborati on to overcome the legacy of dis-connectivity 
+coming out of the legacy of shipping. 
+In this context, many ports aim at becoming smart ports . Expectations put upon these ports include 
+being: 
+x the driver for sustainability by enabling just-in-time operations; 
+x an information hub advising the use of the transport network of which the port is a hub; and 
+x providing enhanced predictability of operat ions and the timing of the port visit. 
+It becomes essential for the port of tomorrow to be co nnected to the global supply chain, in particular, 
+by being informed about upstream progress to ensure  its ability to plan its operations successfully and 
+optimally. Through the introduction of digitalizatio n and enhanced procedures of collaboration and 
+data sharing, this can be enabled. PortCDM and port call optimization promote the necessary cultural 
+development of collaboration necessary to achieve environmental and efficiency gains in port call 
+operations and to establish ports as an inte grated hub in the global transport chain. 
+Shipping companies are highly driven by enhanced ef ficiency and ports are driven to satisfy the needs 
+of their clients of which the shipping companies are the most important ones at the same time as a 
+lot of emphasis is placed upon the ports to deliver services of high quality and generate revenue for 
+the engaged port call actors. All of this requir es enhanced situational awareness empowered by 
+enhanced collaboration and data sharing.  
+Digitalization of safety of navigation and intern ational security arrangements are reasonably well 
+covered by internationally agreed global standards and directives under the auspices of the IMO, the DIGITALIZING THE PORT CALL PROCESS 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ32EU and other organizations. However, one of the dilemmas with digitalization, standardization and 
+data sharing in the port operations environment is the absence of over-arching bodies like the IMO 
+that can strongly influence standardization. There is also the tension between catering for local 
+requirements and sensitivities incl uding existing infrastructure to overcome, and at the same time 
+being able to enable those involved to connect and be connected to the world. The need to ensure 
+the close harmonization of PortCDM and port call optimization is an example of this.
+Take control or lose control
+The challenge is now on current stakeholders in the maritime sector to implement digitalization and 
+to adopt common, interoperable data standards or to  risk losing control in the logistic chain. A 
+question for those currently involved is whether pr ogress in standardized digitalization will be fast 
+enough or whether some of the major suppliers of goods or services, and others, or some countries 
+will impose their own arrangements, including, in-effe ct, the control of shipping companies and ports 
+at strategic places in the world using their own systems and procedures.
+BIMCO (2019), Input paper to IMO Expert Group on Data Harmonization: EGDH 1/7 - IMO Data Set 
+Related to "Port Logistic Operational Data Related to Just In Time Concept"
+Chrysostomou A., Lind M., Bergmann M. (2019) Ports of the Future: Bringing Emissions in Port Visits 
+to a Minimum by Collaboration and Data Sharing, Paper presented at International Conference on 
+Marine Engineering and Technology, 5-7thof November 2019, Military Technological College, Muscat, 
+Oman
+H v i d  J e n s e n  H .  ( 2 0 1 9 a )  G l o b a l  T r a d e  I d e n t i t y  c a n be the cornerstone of paperless trade, World 
+Economic Forum, Available at: (https://www.weforum.org/agenda/2019/05/global -trade-identity-can-be-the-cornerstone-of- paperless-trade/) 
+Hvid Jensen H. (2019b) Five digital trends impacti ng the future of shipping: Capitalizing on shipping’s 
+digital business ecosystems, Presented at Ship Tech conference, Copenhagen
+IMO (2012) Maritime Knowledge Centre, International shipping facts and figures – information 
+resources on trade, safety, security, environment 
+IMO (2018) Initial IMO Strategy on Reduction of GHG Emissions from ships, Resolution MEPC.304(72), 
+Adopted on 13 April 2018 
+IntelligentCargoSystems (2019) Portcall optimiza tion guide – join the port call revolution, 
+www.intelligentcargosystems.com
+ITPCO (2019) Port Information Manual, Version 1.4. 5, International Taskforce Port Call Optimization
+Lind M., Andersen T., Bergmann M., Watson R.T., Haraldson S., Rygh T., Karlsson M., Kinn M. (2018e) 
+Coordinated Value Creation in Cruise Call Operations – The case of the Port of Stavanger, Concept 
+Note #10, STM Validation Project (
+https://www.ipcdmc.org/galerie )
+Lind M., Bergmann M, Andersen N-B., Haraldson S., Watson R., Andersen T., Michaelides M., Evmides 
+N., Gerosavva N., Karlsson M., Holm H., Olsson E., Zerem A., Herodotou H., Ferrus G., Gimenez J., 
+Arjona J., Marquez M., Rygh T., Voskarides S. (2019d) Substantial value for shipping found in PortCDM testbeds, Concept Note #22, STM Validation Project (
+https://www.ipcdmc.org/galerie )DIGITALIZING THE PORT CALL PROCESS 
+UNCTAD Transport and Trade Facilitation Series No. 13 ൟ33Lind M., Bergmann M., Haraldson S. , Watson R.T., Park J., Gimenez J., Andersen T. (2018b) Port 
+Collaborative Decision Making (PortCDM): An enabler for Port Call Optimization empowered by 
+international harmonization, Concept Note #1, STM Validation Project 
+(https://www.ipcdmc.org/galerie )
+Lind M., Bergmann M., Watson R., Haraldson S., Karlss on F., Andersen T., Ward  R., Bjorn-Andersen N., 
+Sancricca M., Gerosavvas N., Heidecker A., Lane A.,  Gimenez J., Ferrús Clari G., Gonzales A., Márquez 
+Richarte M., Voskarides S., Pouros G., Deosdad I. (2018g) Extending the efficiency boundary from ports to hubs: A new role for container terminal operators, Concept Note #15, STM Validation Project
+Lind M., Bergmann M., Watson R.T., Haraldson S., Park J., Gimenez J., Andersen T., Voorspuij J. (2018f) 
+Towards Unified Port Communications - from a projec t format to a global standard, Concept Note #9, 
+STM Validation Project (
+https://www.ipcdmc.org/galerie )
+Lind M., Chua C.P., Bergmann M., Fu X. (2019b) Enabling Efficient Tanker Operation through 
+Collaboration and Data-sharing, Ed. 89, pp. 128-131, Port Technology Journal 
+(www.porttechnology.org )
+Lind M., Haraldson S., Karlsson M., Watson R.T. (2 016) Overcoming the inability to predict - a PortCDM 
+future, 10th IHMA Congress – Global Port & Marine Operations, 30th May – 2nd May 2016, 
+Vancouver, Canada
+Lind M., Haraldson S., Ward R., Bergmann M., Anders en N-B., Karlsson M., Zerem A., Olsson E., Watson 
+R., Holm H., Michaelides M., Evmides N., Gerosavva N. , Andersen T., Rygh T., Arjona Arcona J., Ferrus 
+Clari G., Gimenez Maldonado J., Marquez M., Gonzalez A. (2018c) Final PortCDM concept description incl. generic specification of identified servic es - Improving port operations using PortCDM , 
+STMVal_D1.3 (
+www.stmvalidation.eu/documents )
+Lind M., Michaelides M., Ward R., Herodotou H., Watson  R.T. (2019a) Boosting data-sharing to 
+improve Short Sea Shipping Performance: Evidence from Limassol port calls analysis, Article No. 35 
+[UNCTAD Transport and Trade Facilitation Newsletter N°82 – Second Quarter 2019] 
+(https://unctad.org/en/pages/newsdetails.aspx?OriginalVersionID=2102 )
+Lind M., Sancricca M., Lane A., Be rgmann M., Ward R., Wa tson R.T., Bjorn-Anders en N., Haraldson S., 
+Andersen T., Ballou P. (2018d) Making a fragmented and inefficient container industry more profitable 
+through PortCDM, Concept Note #17, STM Validation Project ( https://www.ipcdmc.org/galerie )
+Lind M., Ward R., Bergmann M., Ha raldson S. (2019c) How to boost po rt call operations, Insight no 10, 
+Global Maritime Forum
+Lind M., Watson  R.T., Ward R., Bergmann M., Bjørn-Andersen N., Rosemann M., Haraldson, S., 
+Andersen T.,  (2018a) Digital Data Sharing: The Ignored Opportunity for Making Global Maritime 
+Transport Chains More Efficient , Article No. 22 [UNCTAD Transport and Trade Facilitation Newsletter 
+N°79 - Third Quarter 2018] ( https://unctad.org/en/pages/newsdet ails.aspx?OriginalVersionID=1850 )
+Michaelides M., Herodotou H., Lind, M., and Watson R. T. (2019) Port-2-Port Communication 
+Enhancing Short Sea Shipping Performance: The Case  Study of Cyprus and the Eastern Mediterranean. 
+Sustainability Journal, Vol. 11, No. 7, pp. 1912-34
+Watson, R. T. (2019) Capital, Systems and Objects: The Foundation and Future of Organizations. 
+Athens, GA: eGreen Press.Printed at United Nations, Geneva – 2001692 (E)– February 2020 – 1,188 – UNCTAD/DTL/TLB/2019/2

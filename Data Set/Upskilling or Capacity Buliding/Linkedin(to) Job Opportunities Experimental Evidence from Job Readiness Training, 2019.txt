@@ -1,0 +1,1794 @@
+LinkedIn(to) Job Opportunities: Experimental Evidence from Job Readiness Training  Laurel Wheeler Robert Garlick Eric Johnson University of Alberta Duke University RTI International  Patrick Shaw Marissa Gargano RTI International RTI International  September 2019  ERID Working Paper Number 289  This paper can be downloaded without charge from the Social Science Research Network Electronic Paper Collection:  http://ssrn.com/abstract=3452609 
+LinkedIn(to) Job Opportunities: Experimental Evidence from Job
+Readiness Training*
+Laurel Wheeler†, Robert Garlick‡, Eric Johnson§, Patrick Shaw¶, Marissa Gargano||
+September 11, 2019
+Abstract
+Online professional networking platforms are widely used and offer the prospect of alleviating labor
+market frictions. We run the ﬁrst randomized evaluation of training workseekers to join one of these
+platforms. Training increases employment at the end of the program from 70 to 77% and this effect
+persists for at least twelve months. Treatment effects on platform use explain most of the treatment
+effect on employment. Administrative data suggest that platform use increases employment by providing
+information to prospective employers and to workseekers. It may also facilitate referrals but does not
+reduce job search costs or change self-beliefs.
+JEL codes: J22, J23, J24, J64, M51, O15
+*This paper would not be possible without exceptional work on curriculum development and intervention delivery by staff at
+the Harambee Youth Employment Accelerator (particularly Edwin Lehoahoa, Jenny Mamdoo, Gina Stoltz, and Rob Urquhart) and
+valuable assistance from staff at LinkedIn (particularly Meg Garlinghouse). We acknowledge funding from RTI’s Global Center for
+Youth Employment. We are grateful for helpful discussions with Luis Crouch, Rebecca Dizon-Ross, Andrea Kiss, Rachel Kranton,
+Kate Orkin, Seth Sanders, Anna Wetterberg, and particularly Peter Arcidiacono and Jeffrey Smith. This project was pre-registered
+on the AEA’s RCT Trial Registry at https://doi.org/10.1257/rct.1624-9.1 and approved by Institutional Review Boards at Duke
+University (#D0365) and RTI (#13900).
+†University of Alberta, lewheele@ualberta.ca
+‡Duke University, robert.garlick@duke.edu
+§RTI International, ericjohnson@rti.org
+¶RTI International, pshaw@rti.org
+||RTI International, mgargano@rti.org
+1
+1 Introduction
+Youths in many countries face substantially higher rates of unemployment, underemployment, and unstable
+employment than older cohorts (International Labour Organization, 2017). These patterns are consistent
+with many economic explanations, including growing evidence that labor market information frictions im-
+pede transitions into employment (Caria and Lessing, 2019). Information frictions may be particularly
+important for young workseekers, who may lack references from past employers, lack access to referral net-
+works, or lack experience with job search. Even if these frictions only delay transitions into employment,
+temporary distortions can have long-term labor market consequences in both developed and developing
+countries (Kahn, 2010; Oreopolous et al., 2012; Kuchibhotla et al., 2017). And, while information frictions
+alone may explain a small share of youth unemployment, they may be easier and quicker to address than
+factors such as aggregate skills mismatches.
+Online job search, networking, and hiring platforms may reduce information frictions. They may in-
+crease supply-side access to information about labor markets and speciﬁc ﬁrms, increase demand-side access
+to information about workers through public proﬁles, facilitate demand- and supply-side network connec-
+tions that can share information and referrals, and lower pecuniary costs of job posting and applications.
+They have become an increasingly important feature of many labor markets (Agrawal et al., 2015). How-
+ever, there is little evidence about the causal effect of using these platforms on employment outcomes.
+We run the ﬁrst randomized evaluation of training workseekers to join and use LinkedIn, the world’s
+largest online professional networking platform. We work with participants in existing job readiness pro-
+grams in large South African cities. We randomly assign some participants to four hours of LinkedIn training
+during their program. LinkedIn is widely used in South Africa, with 264,000 active job postings and 7.1
+million active proﬁles (roughly 40% of the workforce). We train participants to open accounts, build their
+proﬁles, make connections, and search and apply for jobs. We measure participants’ employment with inde-
+pendent survey data and their platform use with LinkedIn administrative data at the end of the job readiness
+program and six and twelve months later.
+Treatment substantially and persistently increases employment. Treatment increases the probability
+of end-of-program employment from 70 to 77%. Employment increases because treated participants are
+more likely to convert applications submitted as part of the job readiness program into job offers, not be-
+cause treatment changes job search outside the program. The employment effect persists for at least twelve
+2
+months after treatment. Under conservative assumptions, this implies a beneﬁt-cost ratio of 10 over the ﬁrst
+post-program year. There is some survey attrition but this is balanced over treatment assignments and all
+employment effects are robust across multiple methods of accounting for attrition.
+Treatment also increases the probability of having a LinkedIn account and increases multiple measures
+of platform use and on-platform networks. Treatment effects on observed LinkedIn use measures explain
+most of the treatment effect on employment. We demonstrate this with a reduced-form decomposition of
+the employment effect into a component explained by LinkedIn use effects and a residual (Imai et al., 2010;
+Heckman and Pinto, 2015).
+This shows that training increases LinkedIn use, which helps workseekers convert job applications to
+offers and retain these jobs. Our experiment is not designed to identify the economic mechanisms through
+which LinkedIn use increases employment. But we provide suggestive evidence that our pattern of re-
+sults are most consistent with LinkedIn use alleviating information frictions. LinkedIn use may provide
+demand-side information, which helps ﬁrms screen workseekers, and supply-side information, which helps
+workseekers target job search and succeed in interviews.1Some but not all of our results are consistent
+with a second mechanism: on-platform referral networks. Our results are not consistent with three other
+mechanisms. Treated participants rarely use LinkedIn’s on-platform job search and application functions.
+Treatment does not change workseekers’ engagement with the existing job readiness programs, nor does it
+change their self-beliefs.
+Our ﬁndings contribute to three literatures. First, we contribute to research on information technology in
+job search and hiring. IT interventions have been proposed for building workers’ skills, helping ﬁrms screen
+prospective workers, lowering job posting costs, and lowering search costs. However, few IT interventions
+have been rigorously evaluated. We provide the ﬁrst experimental evidence that training workseekers to
+use an existing job search and networking technology can increase employment. This complements recent
+non-experimental work showing that Facebook access can increase employment and earnings, potentially
+by facilitating referrals (Gee et al., 2017; Armona, 2019). Related work shows that algorithmic hiring
+recommendations can lower turnover, while algorithmic job search recommendations can generate more
+interviews (Hoffman et al., 2018; Horton, 2017; Belot et al., 2019). In contrast, Kroft and Pope (2014) ﬁnd
+that the advent of Craigslist lowered job posting costs without changing employment, potentially because
+1This is consistent with evidence that information frictions distort job search and hiring in South Africa (Abel et al., 2019;
+Carranza et al., 2019; Pugatch, 2019).
+3
+baseline employment was already high.
+Second, we contribute to research on labor market information frictions. On the demand side, employ-
+ers may lack information about prospective workers’ skills and productivity, distorting hiring decisions and
+wage offers (Farber and Gibbons, 1996; Altonji and Pierret, 2001; Lange, 2007). On the supply side, work-
+seekers may lack information about job attributes, application processes, or skills demanded. Improving
+ﬁrms’ information about workseekers’ skills or past performance can change search and employment out-
+comes (Pallais, 2014; Abebe et al., 2016; Bassi and Nansamba, 2017; Carranza et al., 2019). Similarly,
+improving workseekers’ information about job postings can change job search behavior (Belot et al., 2019;
+Altmann et al., 2018; Ahn et al., 2019).2We study a population where information frictions are likely to
+matter: workseekers from disadvantaged backgrounds with little formal work experience or post-secondary
+education. We show that a light-touch intervention using an existing platform can alleviate information
+frictions for this disadvantaged population, without heavier-touch interventions like centralized matching,
+personalized job search counseling, or productivity assessments.3However, both control and treated work-
+seekers have performed well on psychometric screening tests and receive some job readiness programming.
+Our ﬁndings may not generalize to unscreened workseekers without programming.
+Third, our work relates to research on active labor market programs (ALMPs). ALMPs are widespread
+in developed and developing countries, though systematic reviews show their effects are mixed (Card et al.,
+2017; McKenzie, 2017; Kluve et al., 2019). We show that a quick (4 hour) and cheap (US$48) addition
+to an existing ALMP can substantially increase participant employment. Given ALMPs’ popularity and
+persistence, the social value of rigorously testing speciﬁc design tweaks may be high.4
+In Section 2, we describe the LinkedIn platform, training course, economic context, sample, data col-
+lection, and research design. In Section 3, we report treatment effects on transitions into employment and
+job attributes. In Section 4, we report treatment effects on LinkedIn use and show that these explain at
+2Related work shows that ﬁrms and workseekers use referrals to overcome information frictions (Topa, 2001; Ioannides and
+Loury, 2004). Referral-based hiring can increase job performance but referrals may be driven by social ties, limiting performance
+gains and contributing to inequality (Beaman and Magruder, 2012; Pallais and Sands, 2016; Beaman et al., 2018; Heath, 2018;
+Witte, 2019).
+3Our intervention may facilitate ﬁrm-worker matching by increasing platform use. But any matching that takes place is decen-
+tralized, not managed centrally as part of the treatment. The literature on centralized matching has yielded mixed results, with few
+studies ﬁnding large positive effects on employment (Groh et al., 2015; Beam, 2016; Abebe et al., 2017).
+4Related research shows that labor market effects of ALMPs can be sensitive to design changes: publicly- versus privately-
+delivered job counseling, choice of medium to deliver information to workseekers, adding job counseling to ﬁnancial incentives
+for search, and varying ﬂexibility in training ﬁnancing (Friedlander et al., 1997; Perez-Johnson et al., 2011; Dammert et al., 2013;
+Behaghel et al., 2014). McCall et al. (2016) review related work on heterogeneous ALMP impacts across different providers,
+organizational features, and rules for selecting participants and assigning them to providers.
+4
+least half of the treatment effect on employment. In Section 5 we present suggestive evidence about the
+economic mechanisms through which LinkedIn use changes employment. We conclude in Section 6 and
+brieﬂy discuss what our results imply for online professional networking training outside of job readiness
+programs and for general equilibrium effects of large-scale increases in networking. In Appendices A - C,
+we report robustness checks and additional results mentioned in the paper. We describe the training, costing,
+and beneﬁt-cost calculations in detail in Appendix D.
+2 Setup
+2.1 The LinkedIn Platform and Training Course
+The intervention trains participants in existing job readiness training programs to open and use LinkedIn
+accounts. LinkedIn is a social media site geared toward professional networking and development. Users
+can create public proﬁles on the site with information about their educational and employment history, skills,
+and certiﬁcations. Proﬁles may also contain public recommendations written by supervisors or colleagues.
+Users engage with the platform in four main ways. They can connect with other users and join groups ,
+search and apply for jobs , learn about the labor market by reading articles, and complete online training
+courses . Employers can create accounts and use the platform to post vacancies , solicit applications,
+and screen applicants based on user proﬁles.
+The existing job readiness programs are run by the Harambee Youth Employment Accelerator, a social
+enterprise that builds solutions to address a mismatch of demand and supply in the South African youth
+labor market by connecting employers with ﬁrst-time workseekers. The programs last 6-8 weeks and cover
+workplace simulations, team building, and non-cognitive skill development. They are designed to help can-
+didates ﬁnd and retain jobs in sectors including ﬁnancial services, sales, logistics, and operations. Harambee
+helps candidates submit job applications during the programs, including to jobs at ﬁrms where Harambee
+has long-term, actively managed relationships. Harambee’s role in hiring ends at helping with applications
+and, at some ﬁrms, setting up interviews. Many active labor market programs offer similar job application
+support.
+We work with 30 cohorts trained by Harambee between May 2016 and January 2018 in four large cities
+in South Africa (Cape Town, Durban/eThekwini, Johannesburg, and Pretoria/Tshwane). We split the sample
+into 15 control and 15 treated cohorts. Control cohorts received Harambee’s standard job readiness program.
+Treated cohorts ﬁrst received a general ‘introduction to LinkedIn’ presentation and in subsequent weeks re-
+5
+ceived in-person coaching, discussion sessions, and emails with advice and encouragement. The initial
+presentation and subsequent sessions explained how to open an account, construct a proﬁle, join groups,
+make connections, view proﬁles of prospective employers, and ask for recommendations. Participants were
+encouraged to list the job readiness program on their proﬁle, get a recommendation from their program man-
+ager, and connect with program alumni. The intervention curriculum was jointly developed by Harambee
+and RTI. Appendix D.3 shows the guide used to train program managers to deliver the curriculum.
+Treatment displaced roughly 4 hours of Harambee’s standard job readiness program over 6-8 weeks and
+cost roughly US$48 per candidate. Appendix D.2 contains detailed cost calculations.
+2.2 Context and Sample
+We work with a sample of young, disadvantaged workseekers in four large South African cities. Youth
+unemployment in these cities at the time was 39-43%.5High unemployment has been attributed to factors
+such as slow economic growth, apartheid-era restrictions on informal ﬁrms and land seizures that constrained
+smallholder agriculture, a weak education system, labor market regulation, and spatial segregation that
+separates workers from jobs (Banerjee et al., 2008). In this context, transitions into employment are difﬁcult
+for young workseekers. Weak education leads to a low correlation of measured skills with grade progression
+and hence years of education, limiting their signal value (Lam et al., 2011; Taylor et al., 2011). Hiring and
+ﬁring are tightly regulated, ﬁrms report difﬁculty understanding regulations, and legal disputes over hiring
+are common (Bhorat and Cheadle, 2009; Rankin et al., 2012; Bertrand and Cr ´epon, 2019). Faced with
+downside risks of bad hires and noisy signals of young workers’ productivity, ﬁrms disproportionately hire
+experienced workers or hire through referrals (Magruder, 2010; Rankin and Roberts, 2011). These obstacles
+contribute to very low aggregate job entry rates (Donovan et al., 2012).
+We study 1638 workseekers from the 30 experimental cohorts, described in Table 1.6All candidates
+applied for Harambee’s programs, so all were active workseekers. Harambee only accepts candidates from
+‘disadvantaged backgrounds.’ Their deﬁnition is complex but, in practice, this excludes candidates from
+middle- and upper-income households. Only 6% of the sample have university education and 62% have
+no work experience. Candidates are negatively selected on employment prospects relative to the general
+5Authors’ calculations from data in Statistics South Africa (2017). Employment rates are for ages 18-29 in the provinces
+containing the four study cities, conditional on completing high school and classifying discouraged workseekers as unemployed.
+6The randomization successfully balanced treatment and control candidates. The means of candidate-level characteristics differ
+by at most 0.16 standard deviations. The means of cohort-level characteristics have slightly larger standardized differences. No
+mean differences are statistically signiﬁcant.
+6
+Table 1: Sample Characteristics
+Variable N Mean Std Dev 10th ptile 90th ptile p-value Std Diff
+Age 1636 23.7 3.0 19.9 27.7 0.11 -0.16
+Numeracy score 1547 -0.03 1 -1.48 1.32 0.59 -0.06
+Communications score 1610 0.08 0.96 -1.03 1.18 0.05 0.15
+Cognitive score 1617 0.04 0.98 -1.32 1.66 0.52 0.07
+Female 1633 0.61 0.49 0.49 -0.05
+High school education 1500 0.99 0.08 0.39 0.06
+Post-secondary education 1500 0.38 0.48 0.49 -0.07
+University education 1500 0.06 0.24 0.17 -0.1
+Previously employed 1571 0.38 0.49 0.47 -0.05
+Size of cohort 30 55 25 31 99 0.32 0.37
+Program completion rate 30 0.86 0.13 0.71 1 0.53 -0.23
+Table 1 shows summary statistics for the sample of 1,638 workseekers. Assessment scores are standardized to have mean zero
+and standard deviation one in the control group. The cognitive test administered by Harambee is similar to a Raven’s test.
+p-values are based on regressions that include stratiﬁcation block ﬁxed effects and heteroskedasticity-robust standard errors
+clustered by cohort. Standardized mean differences reported in the ﬁnal column are the differences between treatment and
+control group means divided by the sample standard deviation. The program completion rate refers to the share of participants
+completing the job readiness program, not the LinkedIn training.
+population. However, Harambee only invites candidates to job readiness programs if they perform well on
+Harambee’s cognitive, communication, and numeracy skill assessments.
+Online professional networking may be important in this setting and for this sample. Workseekers with-
+out work experience or successful job search experience can search for information about speciﬁc vacancies
+and the general labor market. Firms can use information on public proﬁles as a partial substitute for sig-
+nals from work experience or university education. On-platform connections can provide referrals, which
+are commonly used off-platform in hiring. On platform job applications will be cheaper than in-person
+applications given South Africa’s spatial segregation (Kerr, 2017).
+These features of online professional networking may be important in other settings as well. Education-
+skill relationships are noisy in many developing countries (Pritchett, 2013). Distortions due to limited
+information and search costs have been documented in developed- and developing-country labor markets
+(see citations in introduction).
+2.3 Measurement
+We combine four rounds of survey data with data on platform usage from LinkedIn and administrative data
+from Harambee.
+We conduct a baseline survey at the beginning of each job readiness program, before starting LinkedIn
+7
+training. This measures participants’ demographics, education, and prior work experience. We match these
+data to scores on Harambee’s communication, numeracy, and general cognitive assessments.7
+We conduct a second survey at the end of the job readiness training. This measures participants’ self-
+beliefs and engagement with the program. We match this to Harambee’s administrative data on end-of-
+program employment, program completion, and program performance.
+We conduct phone surveys six and twelve months after the job readiness program.8These surveys
+measure participants’ employment, job characteristics, and self-beliefs. There is some non-response, which
+is balanced across treatment and control cohorts and weakly related to baseline covariates. Out main ﬁndings
+are robust to accounting for non-response (Appendix A).
+We match participants to LinkedIn administrative data using email addresses and names. These data
+were extracted by LinkedIn at the end of the job readiness program and again six and twelve months later.
+For each participant with an account, the data show the account opening date, proﬁle completeness, number
+of network connections, attributes of network connections, and frequency and type of site usage.
+The data collection design limits the scope for strategic misreporting by data providers. LinkedIn col-
+lects outcome data but does not observe treatment assignments. Harambee observes treatment assignments
+but only provides outcome data at the end of the job readiness program. The phone surveys six and twelve
+months later are conducted by an independent survey ﬁrm, blinded to treatment assignment.
+2.4 Research Design
+We use a cohort-level randomized controlled trial. We split 30 cohorts into treatment and control groups
+using within-city, sequentially-paired randomization. Within each of the four cities, we randomly assign
+treatment/control status to each of cohorts 1;3;5;:::We then assign cohorts 2;4;6;:::to the opposite status.
+Harambee learned treatment assignments on the ﬁrst day of each program, too late to change participants or
+program managers.
+We estimate treatment effects using
+Yicr=Tcr+Scr+icr; (1)
+wherei,c, andrindex respectively individual participant, cohort, and city/region. Y,T, and Sdenote
+7The communication assessment covers verbal and written English comprehension. The numeracy assessment covers high
+school arithmetic. The general cognitive assessment is similar to a Raven’s matrix test. More information is available at
+https://www.assessmentreport.info/.
+8See Garlick et al. (2019) for an experimental validation of phone-based labor market surveys in this setting.
+8
+Table 2: Treatment Effects on Employment
+(1) (2) (3) (4)
+3 waves pooled End of program 6 months 12 months
+Treated cohort 0.073 0.070 0.081 0.069
+(0.022) (0.021) (0.039) (0.024)
+Control group mean 0.683 0.701 0.638 0.704
+# respondents 3733 1626 1119 988
+# cohorts 30 30 30 30
+Adjusted R2 0.044 0.050 0.073 0.041
+Coefﬁcients are from regressing an employment indicator in each of the three survey waves on a treatment indicator and
+stratiﬁcation block ﬁxed effects. Heteroskedasticity-robust standard errors are shown in parentheses, clustered by cohort.
+Column 1 reports estimates from pooling all three survey waves into a single dataset.
+respectively outcomes, treatment assignment, and stratiﬁcation block ﬁxed effects. The blocks are based
+on cohort-pairs deﬁned above and account for regional and temporal variation in outcomes. We estimate
+heteroskedasticity-robust standard errors, clustered by cohort. We winsorize left-skewed outcomes at the
+95thpercentile, though this does not change results. Five treated cohorts did not fully ﬁnish the LinkedIn
+curriculum. We report intention-to-treat effects throughout the paper and treatment-on-the-treated effects in
+Appendix B.
+3 Treatment Increases Employment
+Treatment increases end-of-program employment from 70 to 77% (Table 2, column 2). Treatment increases
+employment six and twelve months later by respectively 8.1 and 6.9 percentage points (columns 3-4). Treat-
+ment also increases weekly hours worked six and twelve months later by respectively 4.2 and 2.9 hours
+(Table 3, column 1). The hours effects are mostly explained by the extensive-margin employment effects.
+We do not observe earnings, but pricing the additional hours at the national minimum wage implies that
+treatment raises earnings per participant by at least US$480 over twelve months. This is ten times higher
+than the treatment cost per participant. See Appendix D.2 for details.
+The persistent effect on average employment reﬂects persistent individual-level employment. Treatment
+increases the probability of being employed at both end-of-program and six months later by 10.7 percent-
+age points and the probability of being employed at both end-of-program and twelve months later by 12.6
+percentage points (Table 3, column 2). Treatment has no effect on turnover during the ﬁrst six months and
+slightly reduces turnover during the next six months (Table 3, column 3). These estimates imply that almost
+9
+Table 3: Treatment Effects on Employment Type
+(1) (2) (3) (4) (5)
+Hours Employed at end of Multiple Permanent Promoted
+program & current wave employers contract
+Panel A: Six Months After Program Completion
+Treated cohort 4.200 0.107 0.001 0.026 0.007
+(1.701) (0.040) (0.021) (0.026) (0.010)
+Control group mean 25.523 0.585 0.123 0.129 0.038
+Control meanjemployment 40.211 0.916 0.140 0.204 0.053
+# respondents 1107 1117 1114 1113 1117
+# cohorts 30 30 30 30 30
+Adjusted R2 0.078 0.076 0.006 0.104 -0.000
+Panel B: Twelve Months After Program Completion
+Treated cohort 2.879 0.126 -0.044 0.034 -0.023
+(1.029) (0.027) (0.025) (0.025) (0.021)
+Control group mean 29.233 0.602 0.144 0.189 0.118
+Control meanjemployment 41.590 0.855 0.148 0.269 0.155
+# respondents 985 987 988 983 986
+# cohorts 30 30 30 30 30
+Adjusted R2 0.045 0.058 0.019 0.059 -0.002
+Coefﬁcients are from regressing each employment characteristic on a treatment indicator and stratiﬁcation block ﬁxed effects.
+Heteroskedasticity-robust standard errors are shown in parentheses, clustered by cohort. Column 2 indicates the probability
+of being employed at both the end of program and 6 month (Panel A) or end of program and 12 month (Panel B) points.
+‘Multiple employers’ indicates that the workseeker had more than one employer between end of the program and relevant
+survey. ‘Permanent’ indicates that the job is permanent, rather than temporary. ‘Promoted’ indicates that the workseeker was
+promoted between the end of the program and relevant survey, without changing employers. All outcomes are set equal to
+zero for non-employed workseekers.
+all treated participants who ﬁnd jobs at the end of the program retain them for the next twelve months.9As
+a benchmark, the median job tenure for young South Africans at the time was eleven months (Zizzamia and
+Ranchhod, 2019). Job security is an important dimension of match quality for South African workseekers,
+ranked ahead of earnings and promotion prospects (Mncwango, 2016).
+Treatment does not increase other match quality proxies. Treatment effects on the probability of having
+a permanent contract and promotion are small and not statistically signiﬁcant (Table 3, columns 4-5). We
+cannot reject that the mean value of each of these match quality proxies, conditional on employment, is
+equal across the treatment and control groups. This suggests that the marginal matches added by treatment
+have similar match quality to the inframarginal matches that candidates obtain without treatment.
+Our employment effects are larger than the mean effects of active labor market programs in a recent
+9Our tenure analysis has one important caveat. We observe how many employers each participant has between baseline and
+each survey. This does not distinguish between multiple jobs held sequentially or simultaneously. Hence the 12% of participants
+reporting 2 or more employers might have held these jobs sequentially (implying turnover) or simultaneously.
+10
+metastudy (Card et al., 2017). However, our results are comparable to the mean effects of ALMPs for long-
+term unemployed participants. Our sample of youths with little work experience is perhaps more similar to
+the long-term unemployed than recently displaced workers.10
+The employment effect results are robust to adjustments for non-response and to conditioning on base-
+line covariates. Non-response is under 1% for the end-of-program employment measures but rises to 32%
+and 40% in the six- and twelve-month surveys. Non-response does not differ by treatment status and is
+weakly related to baseline covariates and their interactions with treatment (Tables A.1 and A.2). The em-
+ployment effects are robust to reweighting the sample to account for the small differences between respon-
+ders and non-responders in baseline characteristics (Table A.3). Lee bounds on the employment effects
+are less than 2 percentage points wide (A.4). The employment effects are also robust to conditioning on
+baseline covariates using a Lasso estimator (Table A.5). The Lasso uses a data-driven rule to condition on
+covariates that predict either employment or treatment status in the sample of responders, which will include
+any covariates that differentially predict non-response by treatment status (Belloni et al., 2014). Given these
+results, it is unlikely that non-response explains the employment effects.
+4 Treatment Increases Employment by Increasing LinkedIn Use
+Treatment increases the share of participants with LinkedIn accounts from 48 to 80%, with almost all extra
+accounts opened during the job readiness program (Table 4, columns 1-2). This shows high compliance with
+the ﬁrst part of the LinkedIn curriculum. Treatment increases self-reported time spent on LinkedIn during
+the job readiness program from 0.6 to 1.7 hours per week. LinkedIn training involved only 4 contact hours,
+not all of which were spent using LinkedIn, so this demonstrates some use outside training.
+Treatment increases all eight other measures of LinkedIn use we observe.11Treatment signiﬁcantly
+increases average proﬁle ‘completeness’; proﬁle and job views in the preceding month; the total number
+of LinkedIn connections and numbers of connections with bachelors or higher degrees and with managerial
+jobs; average network ‘power’; and the number of job applications in the preceding month (Table 4, columns
+10Our standardized effect sizes are 0.15 - 0.17, obtained by dividing the employment effects in percentage points by the standard
+deviations of employment. Card et al. (2017) ﬁnd that the mean standardized effect sizes of ALMPs over the ﬁrst and second years
+are respectively 0.04 and 0.12. For the long-term unemployed, these effects are respectively 0.17 and 0.30. For job search assistance
+programs, which are arguably most similar to our intervention, the effects are respectively 0.04 and 0.04.
+11We observe snapshots of LinkedIn administrative data at the end of the program and roughly six and twelve months later.
+We average the three snapshots to increase power when estimating treatment effects. All point estimates are similar when we use
+only the end-of-program snapshot. We show snapshot-speciﬁc treatment effects in Figure A.1. We code all measures as zeros for
+candidates without LinkedIn accounts.
+11
+Table 4: Treatment Effects on LinkedIn Usage
+(1) (2) (3) (4) (5)
+LinkedIn Account Proﬁle Proﬁles Jobs
+account during training completion viewed viewed
+Treated cohort 0.314 0.422 0.243 0.584 0.058
+(0.049) (0.050) (0.036) (0.129) (0.023)
+Control mean 0.484 0.094 0.301 0.378 0.178
+Control meanjaccount 1.000 0.201 0.631 0.810 0.381
+# respondents 1638 1566 1599 1493 1493
+#cohorts 30 30 30 30 30
+Adjusted R2 0.140 0.281 0.115 0.085 0.028
+(6) (7) (8) (9) (10)
+# # bachelors # manager Average # job
+connections connections connections power apps
+Treated cohort 8.609 0.754 0.543 0.537 0.009
+(1.513) (0.130) (0.095) (0.092) (0.004)
+Control mean 6.145 0.503 0.365 0.844 0.014
+Control meanjaccount 12.807 1.048 0.761 1.829 0.030
+# respondents 1629 1629 1629 1579 1493
+#cohorts 30 30 30 30 30
+Adjusted R2 0.111 0.124 0.118 0.062 0.017
+Coefﬁcients are from regressing a measure of LinkedIn usage on a treatment indicator and stratiﬁcation block ﬁxed effects.
+Heteroskedasticity-robust standard errors are shown in parentheses, clustered by cohort. All variables are averages across
+the three waves of LinkedIn data: at the end of the training program and roughly six and 12 months later. Individuals
+without LinkedIn accounts are included as zeros in usage variables. Missing values therefore indicate that the individual
+has a LinkedIn account but is missing a value for the usage statistic. Number of connections, jobs viewed, and proﬁles
+viewed are winsorized at the 95th percentile. Account during training indicates that the account was created during the
+training program; proﬁle completion is a binary indicator of whether an individual scores above the median in terms of proﬁle
+completion; # connections is the number of network connections on the platform; # bachelors connections is the number
+of network connections with a bachelors or higher degree; # manager connections is the number of network connections in
+managerial positions; average power is a measure of the quality of the network connections; # job applications is the number
+of applications submitted through the LinkedIn platform only. The conditional control group mean is the average value for
+control respondents conditional on having a LinkedIn account.
+3-10).12The levels of active search and job applications on the platform are low: treated participants on
+average view 0.9 proﬁles and 0.3 jobs and apply for 0.02 jobs in the preceding month. Participants’ networks
+are small by LinkedIn standards but larger than ofﬂine job search networks in similar settings (Abebe et al.,
+2017; Caria et al., 2018; Carranza et al., 2019). However, we do not observe if workseekers in our sample
+actually use their connections for job search.
+Treatment increases LinkedIn use on every observed margin, but can this quantitatively explain the
+increase in employment? We answer this question using a reduced-form framework that decomposes the
+12Proﬁle ‘completeness’ is calculated by LinkedIn as a function of the proﬁle summary, education history, work history, skills,
+location, and use of a proﬁle photo. User-level network ‘power’ is calculated by LinkedIn as an average across each user’s network
+connections’ proﬁle completeness, job title, education, and network size.
+12
+Table 5: Relationship between Treatment, Initial Employment, and LinkedIn Use
+(1) (2)
+LinkedIn use measure Has account Use index
+Panel A: Parameter Estimates
+Treatment effect on employment 0.070 0.086
+(in equation 2) (0.020) (0.019)
+Treatment effect on LinkedIn use 0.326 0.694
+(in equation 3) (0.050) (0.109)
+Treatment effect on employment conditional on LinkedIn use 0.021 0.032
+(~in equation 4) (0.026) (0.025)
+Relationship between employment & LinkedIn use conditional on treatment 0.151 0.078
+(~in equation 4) (0.028) (0.013)
+Sample size 1626 1445
+Panel B: Share of Treatment Effect Explained by LinkedIn Use
+S=~= 0.705 0.632
+(0.304) (0.227)
+Panel A shows estimates of the parameters of equation system (2) - (4). Panel B shows the share of the treatment effect on
+employment explained by the treatment effect on LinkedIn use: S=~
+. Heteroskedasticity-robust standard errors are shown
+in parentheses, clustered by cohort. The equations are estimated as a system and the standard errors on Sare estimated using
+the Delta method. All models include stratiﬁcation block ﬁxed effects. The treatment effect on having a LinkedIn account is
+slightly different to that reported in Table 4 because 12 observations with missing employment data are excluded from this
+analysis.
+treatment effect on employment into a component explained by LinkedIn use and a residual component
+(Robins and Greenland, 1992; Imai et al., 2010; Heckman and Pinto, 2015). We estimate the system
+Employicr=Tcr+Scr+icr (2)
+LIicr=Tcr+Scr+icr (3)
+Employicr=Tcr~+LIicr~+Scr+"icr: (4)
+is the average effect of treatment on employment and is the average effect of treatment on LinkedIn use.
+~is deﬁned as the ‘indirect effect’ of treatment on employment via LinkedIn use (Robins and Greenland,
+1992; Heckman and Pinto, 2015). S=~
+is the share of the total treatment effect attributable to the
+indirect path through LinkedIn use. ~is the ‘direct effect’ of treatment on employment not explained by
+LinkedIn use. Given the persistence of the employment effect, we focus on explaining treatment effects on
+end-of-program employment rather than later employment.
+Using this approach, LinkedIn use explains at least half of the treatment effect on end-of-program em-
+ployment. Treatment increases employment by 7 percentage points and the probability of having a LinkedIn
+account by 33 percentage points (Table 5, panel A, rows 1-2, column 1). The indirect effect accounts for
+13
+71% of the treatment effect on initial employment with standard error 30% (panel B, column 1). The direct
+effect of treatment on employment, not explained by LinkedIn use, is only 2.1 percentage points and not
+statistically signiﬁcant (panel A, row 4, column 1). Having a LinkedIn account is not a perfect measure of
+LinkedIn use. We therefore repeat the exercise replacing this indicator with the ﬁrst principal component of
+six LinkedIn use measures: an indicator for having an account, the number of connections, average power,
+proﬁle completion, proﬁles viewed, and jobs viewed.13This shifts ^Sto 63% with standard error 23% (panel
+B, column 2).
+The indirect effect is identiﬁed under the assumption that there are no omitted variables correlated with
+both LinkedIn use and employment.14This is a strong assumption and we present three robustness checks.
+First, we estimate the system (2)-(4) conditional on age, gender, education, past employment, and psycho-
+metric assessment scores. This lowers the share of the employment effects explained by LinkedIn use by
+four percentage points.
+Second, we repeat the analysis using an indicator for opening a LinkedIn account during the job readi-
+ness training program. Relative to the indicator for having a LinkedIn account used above, this measure is
+less likely to be correlated with unobserved pre-treatment characteristics such as experience working in an
+environment where LinkedIn is widely used. This measure explains 65% (standard error 35%) of the treat-
+ment effect on employment. Even this measure may be correlated with unobserved characteristics such as
+candidates’ openness to new technology. But the scope for bias in from correlated unobserved characteristics
+is smaller than for other measures of LinkedIn use.
+Third, we repeat the analysis with a multidimensional measure of LinkedIn use to account for possible
+measurement error from collapsing use to a single measure. This addresses the possibility of measurement
+error violating the identifying assumption (Heckman and Pinto, 2015; VanderWeele, 2012). We replace
+the scalarLIicrwith a vector of all six components used to construct the LinkedIn index above. The six
+components jointly explain 61% of the employment effect (standard error 31%). This suggests that the
+greater precision from aggregating the six measures into a single index more than offsets any conceptual
+measurement error from the aggregation. Using the six measures separately also identiﬁes the share of
+the employment effect explained by each measure. The two most important measures are the indicator for
+13The ﬁrst principal component accounts for 60% of the variation in these six measures. The index is missing for 12% of the
+sample due to missing values in the administrative data from LinkedIn.
+14In the potential outcomes framework, this assumption is called ‘sequential ignorability.’ Vansteelandt (2009) and Acharya
+et al. (2016) propose a modiﬁed approach called ‘sequential g-estimation’ that is identiﬁed under a slightly weaker assumption. We
+obtain almost identical results using their approach.
+14
+having a LinkedIn proﬁle and the number of proﬁles viewed. The average number of proﬁles viewed is
+small but this might generate important information if candidates view proﬁles of their interviewers ahead
+of interviews.
+Treatment effects on observed LinkedIn use explain 60-70% of the treatment effect on employment.
+The remaining 30-40% may be explained by unobserved components of LinkedIn use (e.g. time spent
+on LinkedIn after the program ﬁnishes or speciﬁc information workseekers acquire from LinkedIn use) or
+entirely different mechanisms. As we do not observe all components, we interpret these results as evidence
+for a quantitatively important LinkedIn-to-employment relationship, rather than a precise estimate of this
+relationship.
+5 How Does LinkedIn Use Increase Employment?
+LinkedIn use might increase job offers through multiple economic mechanisms. Our experiment is not de-
+signed to separately identify these mechanisms. But in this section we present suggestive evidence favoring
+information provision and possibly referral mechanisms, rather than changes in job search cost, engagement
+with the job readiness program, or self-beliefs.
+LinkedIn could change job search by allowing users to cheaply and quickly search for vacancies and
+submit applications. Treatment does increase the number of on-platform job views and applications, but
+the levels are tiny (Table 4). Furthermore, the rise in end-of-program employment is driven entirely by
+job applications initiated as part of the job readiness program, rather than job applications independently
+initiated by candidates.15This suggests LinkedIn’s on-platform job search and application features do not
+drive the employment results.
+LinkedIn can alleviate information frictions on the supply side – by allowing workseekers to learn about
+general labor market conditions and speciﬁc employers – and on the demand side – by allowing ﬁrms to
+view information on public proﬁles. Firms may also interpret LinkedIn proﬁles as signals of proactivity
+or technological engagement. Three results are consistent with a role for information frictions. First, the
+treated employment rate rises by the end of the job readiness program, suggesting a quick mechanism such as
+LinkedIn proﬁles helping candidates to pass employer screening. Second, the treatment effects on employ-
+15Harambee helps candidates to apply for vacancies at the end of the program, including vacancies at ﬁrms where Harambee
+has long-term partnerships. By design, this process is identical for treated and control cohorts. There are no treatment-control
+differences in the probability that candidates complete programs and are hence eligible for application support, that candidates get
+jobs from an independent job application, or that candidates get jobs with long-term Harambee partners (Table A.10). The increase
+in employment is entirely from applications initiated during the program, sent to ﬁrms that are not long-term partners.
+15
+ment are substantially larger for candidates with low measured communication skills, suggesting LinkedIn
+proﬁles might offset weak writing in applications or performance in interviews.16Third, candidates might
+use LinkedIn to prepare applications by viewing proﬁles of interviewers or other staff at prospective em-
+ployers. This is consistent with the positive (but small) treatment effect on proﬁle views, particularly around
+the end of the program (Figure A.1), and the strength of the relationship between effects on employment
+and effects on proﬁle views shown in Section 4.
+LinkedIn can help build referral networks through on-platform communication with prior connections
+or forming new connections. This mechanism is consistent with the positive treatment effects on LinkedIn
+network size and attributes. But most initial placements persist for at least a year. So if candidates use
+referral networks, they use them only to transition into employment and not for subsequent on-the-job
+search.
+LinkedIn might change workseekers’ self-beliefs through some mechanism other than standard labor
+market information acquisition, such as exposure to role models through the platform (Beaman et al., 2012).
+We measure candidates’ locus of control, external trust, hope, reservation wages, and the wages they aspire
+to earn, following Lippman et al. (2014) and Orkin et al. (2019). We ﬁnd no treatment effects on the ﬁrst
+three measures and only small increases in reservation and aspirational wages (Table A.11). The latter
+effects occur after the rise in employment and may be an outcome of employment, rather than a cause of
+employment. While we measure only some of the universe of potential self-beliefs, these results do not
+suggest a central role for changes in self-beliefs.
+LinkedIn might change workseekers’ job readiness program engagement . For example, treatment may
+increase candidates’ enthusiasm for the program and hence increase their effort, or it may lead to distraction
+or complacency and hence decrease effort. We estimate treatment effects on self-reported measures of
+interest in the program as well as trainer reports of candidates’ energy and intellectual curiosity. Treatment
+has no effect on any of these measures or on program drop-out (Tables A.11 and A.10).
+6 Conclusion
+We present the ﬁrst experimental evidence that training participants in job readiness programs to join and
+use an online professional networking platform improves their labor market outcomes. Treatment increases
+16In contrast, we see no quantitatively important heterogeneity in the employment effects over candidates’ cognitive skill, nu-
+meracy skill, education, previous employment, age, or gender. The heterogeneity by communication scores remains statistically
+signiﬁcant when we adjust for testing across these seven dimensions of heterogeneity. See Table A.9 for point estimates.
+16
+employment by approximately 10% for at least one year. Jobs in the treatment and control groups have
+similar equal probabilities of retention, promotion, and obtaining a permanent contract. This suggests that
+match quality in the marginal matches added by treatment is not very different to the inframarginal matches
+that candidates obtain without treatment. Treatment effects on LinkedIn use explain more than half of the
+treatment effect on end-of-program employment.
+These ﬁndings suggest several directions for future research. First, what aspects of online professional
+networking drive the employment effects? Our results suggest an important role for information provision
+to ﬁrms about workseekers or to workseekers about the labor market. Our results are also consistent with
+some use of referrals. Future work could identify referral mechanisms using the identities of workseekers’
+on-platform connections and the exact dates of forming connections and applying for jobs.
+Second, what might large increases in online professional networking achieve in general equilibrium?17
+Our experiment is not designed to answer this question, but we offer some speculative ideas. Our experiment
+generates a tiny market-level increase in LinkedIn use: 285 extra users on a base of roughly 7.1 million. But
+this may generate substantial increases in LinkedIn use amongst applicants to speciﬁc ﬁrms, as Harambee
+helps multiple workseekers apply to the same ﬁrms. Even if treatment effects on employment are attenuated
+at scale, the 10-1 beneﬁt-cost ratio suggests that substantial increases in scale may still pass beneﬁt-cost
+tests. Even if treatment effects on employment are zero at scale, welfare gains are still possible through
+lower pecuniary and time costs of job search and posting.
+Third, how might workseekers use online professional networking outside the context of job readiness
+programs? Both treatment and control workseekers received 6-8 weeks of programming and job search
+assistance. These might complement online professional networking by giving workseekers content for
+proﬁles, connections to program alumni, and advice for on-platform search and job applications. On the
+other hand, online professional networking might have higher returns without job readiness training and job
+search assistance because they operate through overlapping mechanisms.
+These ﬁndings have important implications for policy design even if they apply only to job readiness
+program participants. Given the prevalence and cost of these programs, faster post-program transitions into
+employment are valuable. Our ﬁndings show that substantial gains are possible from small, low-cost design
+17Some but not all studies of large-scale active labor market programs ﬁnd smaller effects at larger scale (Blundell et al., 2004;
+Lise et al., 2004; Cr ´epon et al., 2013). We test for spillovers in our experiment by comparing outcomes across control cohorts whose
+programs did and did not overlap with treated cohorts. Control candidates who overlapped with treated cohorts might acquire some
+LinkedIn training via the treated candidates. We ﬁnd no evidence of spillovers on employment or LinkedIn use, though this test
+cannot rule out spillovers on the broader labor market.
+17
+changes that use new technology and are guided by research on labor market frictions.
+References
+ABEBE , G., S. C ARIA , M. F AFCHAMPS , P. F ALCO ,AND S. F RANKLIN (2016): “Anonymity or distance?
+Experimental evidence on obstacles to youth employment opportunities,” Stanford University .
+ABEBE , G., S. C ARIA , M. F AFCHAMPS , P. F ALCO , S. F RANKLIN , S. Q UINN ,AND F. S HILPI (2017):
+“Job fairs: Matching ﬁrms and workers in a ﬁeld experiment in Ethiopia,” Tech. rep., The World Bank.
+ABEL, M., R. B URGER ,AND P. P IRAINO (2019): “The value of reference letters: Experimental evidence
+from South Africa,” American Economic Journal: Applied Economics , forthcoming.
+ACHARYA , A., M. B LACKWELL ,AND M. S EN(2016): “Explaining causal ﬁndings without bias: Detecting
+and assessing direct effects,” American Political Science Review , 110, 512–529.
+AGRAWAL , A., J. H ORTON , N. L ACETERA ,AND E. L YONS (2015): “Digitization and the contract labor
+market: A research agenda,” in Economic analysis of the digital economy , ed. by A. Goldfarb, S. Green-
+stein, and C. Tucker, University of Chicago Press, 219–250.
+AHN, S. Y., R. D IZON -ROSS,AND B. F EIGENBERG (2019): “Improving job matching among youth,”
+Working paper, Columbia University.
+ALTMANN , S., A. F ALK, S. J ¨AGER ,AND F. Z IMMERMANN (2018): “Learning about job search: A ﬁeld
+experiment with job seekers in Germany,” Journal of Public Economics , 164, 33–49.
+ALTONJI , J. AND C. P IERRET (2001): “Employer learning and statistical discrimination,” Quarterly Jour-
+nal of Economics , 116, 313–335.
+ARMONA , L. (2019): “Online social networks in labor markets: Evidence from Facebook’s entry into
+college campuses,” Working paper, Department of Economics, Stanford University.
+BANERJEE , A., S. G ALIANI , J. L EVINSOHN , Z. M CLAREN ,AND I. W OOLARD (2008): “Why has unem-
+ployment risen in the new South Africa?” Economics of Transition , 16, 715–740.
+BASSI , V. AND A. N ANSAMBA (2017): “Information frictions in the labor market: Evidence from a ﬁeld
+experiment in Uganda,” GLM LIC Working Paper , 29.
+BEAM , E. A. (2016): “Do job fairs matter? Experimental evidence on the impact of job-fair attendance,”
+Journal of Development Economics , 120, 32–40.
+BEAMAN , L., E. D UFLO , R. P ANDE ,AND P. T OPALOVA (2012): “Female leadership raises aspirations and
+educational attainment for girls: A policy experiment in India,” Science , 335, 582–586.
+BEAMAN , L., N. K ELEHER ,AND J. M AGRUDER (2018): “Do job networks disadvantage women? Evi-
+dence from a recruitment experiment in Malawi,” Journal of Labor Economics , 36, 121–153.
+BEAMAN , L. AND J. M AGRUDER (2012): “Who gets the job referral? Evidence from a social networks
+experiment,” American Economic Review , 102, 3574–3593.
+BEHAGHEL , L., B. C REPON ,AND M. G URGAND (2014): “Private and public provision of counseling
+to job seekers: Evidence from a large controlled experiment,” American Economic Journal: Applied
+Economics , 6, 142–74.
+18
+BELLONI , A., V. C HERNOZHUKOV ,AND C. H ANSEN (2014): “Inference on treatment effects after selec-
+tion among high-dimensional controls,” The Review of Economic Studies , 81, 608–650.
+BELOT , M., P. K IRCHER ,AND P. M ULLER (2019): “Providing advice to job seekers at low cost: An
+experimental study on online advice,” Review of Economic Studies , 86, 14111447.
+BENJAMINI , Y., A. K RIEGER ,AND D. Y EKUTIELI (2006): “Adaptive linear step-Up procedures that con-
+trol the false discovery rate,” Biometrika , 93, 491–507.
+BERTRAND , M. AND B. C R´EPON (2019): “Teaching labor laws: Evidence from a randomized trial in South
+Africa,” Working paper, University of Chicago and CREST.
+BHORAT , H. AND H. C HEADLE (2009): “Labour reform in South Africa: Measuring regulation and a
+synthesis of policy suggestions,” Development Policy Research Unit Working Paper 09/139, University
+of Cape Town.
+BLUNDELL , R., M. C. D IAS, C. M EGHIR ,AND J. V ANREENEN (2004): “Evaluating the employment
+impact of a mandatory job search program,” Journal of the European Economic Association , 2, 569–606.
+CARD, D., J. K LUVE ,AND A. W EBER (2017): “What works? A meta analysis of recent active labor
+market program evaluations,” Journal of the European Economic Association , 16, 894–931.
+CARIA , A. S., S. F RANKLIN ,AND M. W ITTE (2018): “Searching with friends,” Working paper 14, Centre
+for the Study of African Economies.
+CARIA , S. AND T. L ESSING (2019): “Filling the gap: How information can help job-seekers,” IGC growth
+brief, International Growth Centre.
+CARRANZA , E., R. G ARLICK , K. O RKIN ,AND N. R ANKIN (2019): “Job search and hiring with two-sided
+limited information about workseekers’ skills,” Working paper, Duke University.
+CR´EPON , B., E. D UFLO , M. G URGAND , R. R ATHELOT ,AND P. Z AMORA (2013): “Do labor market
+policies have displacement effects? Evidence from a clustered randomized experiment,” The Quarterly
+Journal of Economics , 128, 531–580.
+DAMMERT , A. C., J. G ALDO ,AND V. G ALDO (2013): “Digital labor-market intermediation and job ex-
+pectations: Evidence from a ﬁeld experiment,” Economics Letters , 120, 112–116.
+DEE, T. (2005): “A teacher like me: Does race, ethnicity or gender matter?” American Economic Review ,
+95, 158–165.
+DONOVAN , K., W. J. L U,AND T. S CHOELLMAN (2012): “Labor market ﬂows and development,” Working
+paper, Yale University.
+FAIRLIE , R., F. H OFFMANN ,AND P. O REOPOULOS (2014): “A community college instructor like me:
+Race and ethnicity interactions in the classroom,” American Economic Review , 104, 2567–2591.
+FARBER , H. AND R. G IBBONS (1996): “Learning and wage dynamics,” Quarterly Journal of Economics ,
+111, 1007–1047.
+FINN, A. (2015): “A National Minimum Wage in the Context of the South African Labour Market,” Work-
+ing paper 153, SALDRU.
+19
+FRIEDLANDER , D., D. H. G REENBERG ,AND P. K. R OBINS (1997): “Evaluating government training
+programs for the economically disadvantaged,” Journal of Economic Literature , 35, 1809–1855.
+GARLICK , R., K. O RKIN ,AND S. Q UINN (2019): “Call me maybe: Experimental evidence on frequency
+and medium effects in microenterprise surveys,” World Bank Economic Review , forthcoming.
+GEE, L., J. J ONES ,AND M. B URKE (2017): “Social networks and labor markets: How strong ties relate to
+job ﬁnding on Facebooks social network,” Journal of Labor Economics , 35, 485–518.
+GREENE , A. L., H. J. S ULLIVAN ,AND K. B EYARD -TYLER (1982): “Attitudinal effects of the use of role
+models in information about sex-typed careers,” Journal of Educational Psychology , 74, 393.
+GROH, M., D. M CKENZIE , N. S HAMMOUT ,AND T. V ISHWANATH (2015): “Testing the importance
+of search frictions and matching through a randomized experiment in Jordan,” IZA Journal of Labor
+Economics , 4, 7.
+HEATH , R. (2018): “Why do ﬁrms hire using referrals? Evidence from Bangladeshi garment factories,”
+Journal of Political Economy , 126, 1691–1746.
+HECKMAN , J. AND R. P INTO (2015): “Econometric mediation analyses: Identifying the sources of treat-
+ment effects from experimentally estimated production technologies with unmeasured and mismeasured
+inputs,” Econometric Reviews , 34, 6–31.
+HOFFMAN , M., L. B. K AHN ,AND D. L I(2018): “Discretion in hiring,” The Quarterly Journal of Eco-
+nomics , 133, 765–800.
+HORTON , J. (2017): “The effects of algorithmic labor market recommendations: Evidence from a ﬁeld
+experiment,” Journal of Labor Economics , 35, 345–285.
+IMAI, K., L. K EELE ,AND T. Y AMAMOTO (2010): “Identiﬁcation, inference and sensitivity analysis for
+causal mediation effects,” Statistical Science , 25, 51–71.
+INTERNATIONAL LABOUR ORGANIZATION (2017): Global Employment Trends for Youth 2017: Paths to
+a better Working Future , Geneva: International Labour Ofﬁce.
+IOANNIDES , Y. M. AND L. D. L OURY (2004): “Job information networks, neighborhood effects, and
+inequality,” Journal of Economic Literature , 42, 1056–1093.
+KAHN , L. (2010): “The long-term labor market consequences of graduating from college in a bad economy,”
+Labour Economics , 17, 303–316.
+KERR, A. (2017): “Tax(i)ing the poor? Commuting costs in South African cities,” South African Journal of
+Economics , 85, 321–340.
+KLUVE , J., S. P UERTO , D. R OBALINO , J. M. R OMERO , F. R OTHER , J. S T¨OTERAU , F. W EIDENKAFF ,
+AND M. W ITTE (2019): “Do youth employment programs improve labor market outcomes? A quantita-
+tive review,” World Development , 114, 237–253.
+KROFT , C. AND D. P OPE (2014): “Does online search crowd out traditional search and improve matching
+efﬁciency? Evidence from Craigslist,” Journal of Labor Economics , 32, 259–303.
+KUCHIBHOTLA , M., P. O RAZEM ,AND S. R AVI(2017): “The scarring effects of youth joblessness in Sri
+Lanka,” Economics Working Paper 17029, Iowa State University.
+20
+LAM, D., C. A RDINGTON ,AND M. L EIBBRANDT (2011): “Schooling as a lottery: Racial differences in
+school advancement in urban South Africa,” Journal of Development Economics , 95, 121–136.
+LANGE , F. (2007): “The speed of employer learning,” Journal of Labor Economics , 25, 1–35.
+LEE, D. (2009): “Trimming, wages, and sample selection: Estimating sharp bounds on treatment effects,”
+Review of Economic Studies , 76, 1071–1102.
+LIPPMAN , L., K. A NDERSON MOORE , L. G UZMAN , R. R YBERG , H. M CINTOSH , M. R AMOS , S. C AAL,
+A. C ARLE ,AND M. K UHFELD (2014): Flourishing Children: Deﬁning and Testing Indicators of Positive
+Development , Springer.
+LISE, J., S. S EITZ ,AND J. S MITH (2004): “Equilibrium policy experiments and the evaluation of social
+programs,” Working paper 10283, National Bureau of Economic Research.
+MAGRUDER , J. (2010): “Intergenerational networks, unemployment, and persistent inequality in South
+Africa,” American Economic Journal: Applied Economics , 2, 62–85.
+MCCALL, B., J. S MITH ,AND C. W UNSCH (2016): “Government-sponsored vocational education for
+adults,” in Handbook of the Economics of Education , ed. by E. Hanushek, S. Machin, and L. Woessmann,
+Elsevier, vol. 5, 479–652.
+MCKENZIE , D. (2017): “How effective are active labor market policies in developing countries? A critical
+review of recent evidence,” The World Bank Research Observer , 32, 127–154.
+MNCWANGO , B. (2016): “Public attitudes to work in South Africa,” LIMP Report 16, Labour Market
+Intelligence Partnership.
+OREOPOLOUS , P., T. V ONWACHTER ,AND A. H EISZ (2012): “The short- and long-term career effects of
+graduating in a recession,” American Economic Journal: Applied Economics , 4, 1–29.
+ORKIN , K., R. G ARLICK , M. M AHMUD , R. S EDLMAYR , J. H AUSHOFER ,AND S. D ERCON (2019):
+“Direct and interaction effects of cash transfers and goal-setting interventions,” Working paper, University
+of Oxford.
+PALLAIS , A. (2014): “Inefﬁcient hiring in entry-level labor markets,” American Economic Review , 104,
+3565–99.
+PALLAIS , A. AND E. G. S ANDS (2016): “Why the referential Treatment? Evidence from ﬁeld experiments
+on referrals,” Journal of Political Economy , 124, 1793–1828.
+PEREZ -JOHNSON , I. L., Q. M OORE ,AND R. S ANTILLANO (2011): “Improving the effectiveness of in-
+dividual training accounts: Long-term ﬁndings from an experimental evaluation of three service delivery
+models,” Employment and training administration, U.S. Department of Labor.
+PRITCHETT , L. (2013): The Rebirth of Education: Schooling Ain’t Learning , Washington, DC: Center for
+Global Development.
+PUGATCH , T. (2019): “Bumpy rides: School-to-work transitions in South Africa,” Labour , forthcoming.
+RANKIN , N., C. D ARROLL ,AND T. C ORRIGAN (2012): “SMEs and employment in South Africa,” Small
+Business Project, Johannesburg.
+21
+RANKIN , N. AND G. R OBERTS (2011): “Youth unemployment, ﬁrm size and reservation wages in South
+Africa,” South African Journal of Economics , 79, 128–145.
+ROBINS , J. AND S. G REENLAND (1992): “Identiﬁability and exchangeability for direct and indirect ef-
+fects,” Epidemiology , 2, 143–155.
+STATISTICS SOUTH AFRICA (2017): “Quarterly Labour Force Survey Quarter 2: 2017,” Tech. rep., Statis-
+tics South Africa, Pretoria.
+STOUT , J. G., N. D ASGUPTA , M. H UNSINGER ,AND M. A. M CMANUS (2011): “STEMing the tide:
+Using ingroup experts to inoculate women’s self-concept in science, technology, engineering, and math-
+ematics (STEM),” Journal of Personality and Social Psychology , 100, 255.
+TANGUY , B., S. D ERCON , K. O RKIN ,AND A. S. T AFFESSE (2014): “The future in mind: Aspirations and
+forward-looking behaviour in rural ethiopia,” Working paper 429, The Bureau for Research and Economic
+Analysis of Development.
+TAYLOR , S., S. V ANDERBERG, V. R EDDY ,AND D. J ANSE VAN RENSBURG (2011): “How well do South
+African schools convert grade 8 achievement into matric outcomes?” Tech. Rep. 13/11, Stellenbosch
+Economic Working Papers.
+TOPA, G. (2001): “Social interactions, local spillovers, and unemployment,” The Review of Economic
+Studies , 68, 261–295.
+VANDER WEELE , T. (2012): “Mediation analysis with multiple versions of the mediator,” Epidemiology ,
+23, 454–463.
+VANSTEELANDT , S. (2009): “Estimating direct effects in cohort and case-control studies,” Epidemiology ,
+20, 851–860.
+WITTE , M. (2019): “Job referrals and strategic network formation: Experimental evidence from urban
+neighbourhoods in Ethiopia,” Manuscript, University of Oxford.
+ZIZZAMIA , R. AND V. R ANCHHOD (2019): “Measuring employment volatility in South Africa using NIDS:
+20082017,” Working paper 246, SALDRU.
+22
+A Robustness Checks for Employment Effects
+In this appendix we show that our employment results are robust to accounting for non-response and to
+conditioning on baseline covariates. We also provide more information on survey non-response.
+Non-response is unrelated to treatment and weakly related to baseline covariates. Tables A.1 and A.2
+demonstrate this by showing relationship between non-response, treatment, and baseline covariates in re-
+spectively the six-month and twelve-month surveys. Non-response is balanced across treatment and control
+candidates in both survey rounds (column 1). Non-response is decreasing in education in the six-month
+survey and is lower in Johannesburg/Pretoria than in Cape Town and Durban (the omitted region) in both
+surveys (column 2). The interaction between treatment and baseline work experience predicts lower non-
+response in both survey rounds (column 3). Both higher education and baseline work experience predict
+subsequent employment. So it is possible that non-response skews our survey data toward candidates with
+strong employment prospects, particularly in the treatment group. However, we show below that our results
+are robust to accounting for differential response rates by treatment assignment and baseline covariates.
+The treatment effects on employment are robust to reweighting the sample of responders to resem-
+ble the full sample on baseline covariates. Table A.3 demonstrates this by reporting inverse-probability-
+weighted treatment effect regressions. The weights account for any differences between responders and
+non-responders in the observed baseline covariates listed in Tables A.1 and A.2. The standard errors on the
+reweighted employment effects are slightly larger than the unweighted effects, reﬂecting the additional un-
+certainty from the estimated weights. But the sign and magnitude of effects is robust across unweighted and
+weighted estimates. We omit the end-of-program employment effects from this table because the response
+rate is above 99%.
+The treatment effects on employment are robust to accounting for differential non-response by treatment
+arm. Table A.4 demonstrates this. The table reports bounds on employment effects assuming that the small
+number of extra responders in the treatment group are all unemployed (row 1) or all employed (row 2),
+following Lee (2009). The bounds are never wider than 1.8 percentage points. This result is unsurprising, as
+the response rates in both rounds are less than 1 percentage point higher in the treatment than control group.
+The treatment effects on employment are also robust to conditioning on baseline covariates. To imple-
+ment this check, we run a post-double selection lasso on the observed baseline covariates listed in Tables A.1
+and A.2. The post-double-selection lasso selects any covariates that predict either treatment or employment
+23
+Table A.1: Predictors of Non-Response in 6-Month Follow-up Survey
+(1) (2) (3)
+Outcome Non-response
+Treatment -0.012 -0.395
+(0.049) (0.190)
+Age 0.002 -0.004
+(0.004) (0.006)
+Gender -0.023 -0.039
+(0.028) (0.035)
+Post-secondary education -0.041 -0.035
+(0.020) (0.032)
+University education -0.081 -0.039
+(0.052) (0.073)
+Previously employed -0.002 0.057
+(0.026) (0.047)
+Cape Town -0.014 -0.095
+(0.080) (0.052)
+Johannesburg and Pretoria -0.167 -0.276
+(0.065) (0.029)
+Numeracy score -0.014 -0.004
+(0.015) (0.025)
+Communications score -0.009 -0.009
+(0.014) (0.013)
+Cognitive score -0.014 -0.015
+(0.013) (0.019)
+Age X Treatment 0.009
+(0.008)
+Gender X Treatment 0.022
+(0.053)
+Post-secondary education X Treatment -0.012
+(0.042)
+University education X Treatment -0.100
+(0.097)
+Previously employed X Treatment -0.107
+(0.053)
+Cape Town X Treatment 0.164
+(0.116)
+Johannesburg and Pretoria X Treatment 0.219
+(0.075)
+Numeracy score X Treatment -0.021
+(0.031)
+Communications score X Treatment 0.007
+(0.027)
+Cognitive score X Treatment -0.001
+(0.026)
+# respondents 1638 1388 1388
+# cohorts 30 30 30
+Non-response mean 0.317
+p-value joint signiﬁcance 0.804 0.005 0.000
+F-stat joint signiﬁcance 0.063 3.372 46.866
+Coefﬁcients are from regressing a non-response indicator on a treatment indicator, baseline covariates, treatment interacted
+with covariates, and stratiﬁcation block ﬁxed effects. Sample excludes respondents with missing values for any baseline
+covariate. Heteroskedasticity-robust standard errors are shown in parentheses, clustered by cohort. The cognitive assessment
+is a test similar to Raven’s.
+24
+Table A.2: Predictors of Non-Response in 12-Month Follow-up Survey
+(1) (2) (3)
+Outcome Non-response
+Treatment 0.002 -0.520
+(0.051) (0.181)
+Age -0.008 -0.018
+(0.004) (0.007)
+Gender -0.038 -0.094
+(0.037) (0.030)
+Post-secondary education -0.035 -0.054
+(0.028) (0.029)
+University education -0.043 0.016
+(0.048) (0.067)
+Previously employed 0.046 0.126
+(0.028) (0.040)
+Cape Town 0.035 -0.008
+(0.056) (0.065)
+Johannesburg and Pretoria -0.189 -0.250
+(0.046) (0.058)
+Numeracy score -0.003 -0.003
+(0.014) (0.020)
+Communications score 0.011 0.015
+(0.013) (0.018)
+Cognitive score -0.005 -0.001
+(0.011) (0.014)
+Age X Treatment 0.018
+(0.008)
+Gender X Treatment 0.095
+(0.065)
+Post-secondary education X Treatment 0.034
+(0.050)
+University education X Treatment -0.123
+(0.093)
+Previously employed X Treatment -0.141
+(0.053)
+Cape Town X Treatment 0.095
+(0.101)
+Johannesburg and Pretoria X Treatment 0.113
+(0.077)
+Numeracy score X Treatment -0.001
+(0.029)
+Communications score X Treatment -0.005
+(0.028)
+Cognitive score X Treatment -0.009
+(0.024)
+# respondents 1638 1388 1388
+# cohorts 30 30 30
+Non-response mean 0.397
+p-value joint signiﬁcance 0.968 0.000 0.000
+F-stat joint signiﬁcance 0.002 5.053 13.032
+Coefﬁcients are from regressing a non-response indicator on a treatment indicator, baseline covariates, treatment interacted
+with covariates, and stratiﬁcation block ﬁxed effects. Sample excludes respondents with missing values for any baseline
+covariate. Heteroskedasticity-robust standard errors are shown in parentheses, clustered by cohort. The cognitive assessment
+is a test similar to Raven’s.
+25
+Table A.3: Treatment Effects on Employment Weighting by Inverse Probability of Nonresponse
+(1) (2) (3) (4)
+3 waves pooled End of program 6 months 12 months
+Treated cohort 0.073 - 0.077 0.066
+(0.052) - (0.066) (0.042)
+# respondents 3731 1624 1119 988
+# cohorts 30 30 30 30
+Coefﬁcients are from regressing an employment indicator in each of the three waves on a treatment indicator and stratiﬁcation
+block ﬁxed effects. Regressions are weighted by the inverse probability of nonresponse in each wave, estimated from a logit
+regression of nonresponse on the list of covariates in column 2 of Tables A.1 and A.2. Standard errors in parentheses are
+from 500 iterations of a bootstrap that resamples cohorts and estimates both the weights and employment regressions in each
+iteration.
+Table A.4: Upper and Lower Bounds for Employment Effects: Lee Bounds
+(1) (2) (3) (4)
+3 waves pooled End of program 6 months 12 months
+lower 0.075 0.070 0.081 0.057
+upper 0.076 0.084 0.099 0.061
+# respondents 4914 1638 1638 1638
+Lee bounds are tightened using region ﬁxed effects. Lee bounds trim the sample such that the number of observations is equal
+across treatment and control. Coefﬁcients are from regressing an employment indicator in each of the three survey waves on a
+treatment indicator and stratiﬁcation block ﬁxed effects. Standard errors are omitted because the analytical variance estimator
+for Lee bounds does not account for clustering. Column 1 reports estimates from pooling all three survey waves into a single
+dataset.
+in the sample of nonresponders (Belloni et al., 2014). Hence the lasso automatically selects and conditions
+on any covariates that differentially predict non-response by treatment status. The conditional employment
+effects are slightly smaller than the unconditional effects but the sign and rough magnitude of effects are the
+same (Table A.5).
+26
+Table A.5: Treatment Effects on Employment Conditional on Baseline Covariates
+(1) (2) (3) (4)
+3 waves pooled End of program 6 months 12 months
+Treated cohort 0.059 0.063 0.073 0.065
+(0.022) (0.020) (0.038) (0.023)
+# respondents 3731 1624 1119 988
+# cohort 30 30 30 30
+Coefﬁcients are from regressing an employment indicator in each of the three waves on a treatment indicator, stratiﬁcation
+block ﬁxed effects, and a vector of baseline covariates selected by the post double selection lasso estimator. The lasso estimator
+is allowed to select from the list of covariates in Table 1, missing data indicators, and pairwise interactions. In each regression
+it chooses only some of the skill and education measures. Heteroskedasticity-robust standard errors are shown in parentheses,
+clustered by cohort.
+27
+B Additional Results Discussed in Paper
+This appendix reports additional results discussed in the main paper text. Table A.6 reports average treatment-
+on-the-treated effects. The treatment was partly implemented for 14 of the 15 cohorts assigned to treatment
+and fully implemented for 10 cohorts. Incomplete implementation typically occurred because the program
+managers ran out of time for some scheduled LinkedIn discussion sections or missed sending some ad-
+vice/encouragement emails. We estimate these effects by regressing employment outcomes on a treatment
+implementation indicator, instrumented by treatment assignment, and stratiﬁcation block ﬁxed effects. The
+ﬁrst-stage coefﬁcient is 0.62, with standard error 0.10, so all employment effects on the treated candidates
+are roughly 60% larger than the corresponding intention-to-treat effects (Table A.6).
+We also estimate treatment effects of LinkedIn use on employment, instrumenting LinkedIn use by as-
+signment to treatment. As in Section 4, we deﬁne LinkedIn use as the standardized ﬁrst principal component
+of six measures: an indicator for having an account, the number of connections, average power, proﬁle com-
+pletion, proﬁles viewed, and jobs viewed. This approach identiﬁes local average causal effects of LinkedIn
+use if treatment affects employment only via LinkedIn use (i.e. treatment is excludable from the outcome
+equation), the single index captures all relevant dimensions of LinkedIn use (i.e. there is no measurement
+error on the index that would violate the exclusion restriction), and treatment weakly increases LinkedIn use
+for all candidates (i.e. the instrument has a monotonic effect). These are strong assumptions that are difﬁcult
+to test, so we interpret this as only suggestive evidence about the magnitude of the LinkedIn-employment
+relationship.
+Using this approach, a one standard deviation increase in LinkedIn use increases employment by 12-16
+percentage points (Tables A.7 and A.8). Hours also increase and there is some evidence of a positive effect
+on job quality at twelve months, with LinkedIn use raising the probability of having a permanent contract
+by 6 percentage points and lowering the probability of turnover by 7 percentage points. LinkedIn use effects
+on job quality measures at six months are smaller and never signiﬁcantly different to zero.
+Table A.9 reports treatment effects on employment outcomes for candidates with different levels of
+communication skill. These are estimated by regressing employment outcomes on a treatment assignment
+indicator, standardized communication score, the interaction between these two terms, and stratiﬁcation
+block ﬁxed effects. The results show that treatment effects are decreasing in communication scores. For
+example, candidates with one standard deviation higher communication scores are 6.8 percentage points
+28
+Table A.6: Employment Effects based on Instrumenting Compliance with Treatment
+(1) (2) 3) (4)
+3 waves pooled End of program 6 months 12 months
+Treatment compliance 0.121 0.113 0.135 0.118
+(0.048) (0.041) (0.076) (0.056)
+# respondents 3733 1626 1119 988
+# cohorts 30 30 30 30
+Treatment assignment instruments for an indicator of perfect compliance to treatment. Compliance is deﬁned as complete
+treatment programming implemented for the cohorts assigned to treatment. Coefﬁcients are from regressions that include
+stratiﬁcation block ﬁxed effects. Heteroskedasticity-robust standard errors are shown in parentheses, clustered by cohort.
+Column 2 reports estimates from pooling all three survey waves into a single dataset. The ﬁrst stage coefﬁcient is 0.62 with
+standard error 0.10 and F-statistic 35.2.
+Table A.7: Local Average Treatment Effects of LinkedIn Use on Employment
+(1) (2) (3)
+End of program 6 months 12 months
+LinkedIn use 0.123 0.159 0.119
+(0.032) (0.062) (0.035)
+Control mean 0.701 0.638 0.704
+# respondents 1445 1008 897
+#cohorts 30 30 30
+Adjusted R2 0.074 0.011 0.010
+Coefﬁcients are from regressing an employment indicator in each of the three waves on LinkedIn use, instrumented by treat-
+ment assignment, and stratiﬁcation block ﬁxed effects. LinkedIn use is deﬁned as the ﬁrst principal component of an indicator
+for having an account, the number of connections, average power, proﬁle completion, proﬁles viewed, and jobs viewed. This is
+standardized to have mean zero and standard deviation one in the control group. The ﬁrst stage coefﬁcient is 0.68 with standard
+error 0.11 and F-statistic 39.8. Heteroskedasticity-robust standard errors are shown in parentheses, clustered by cohort.
+more likely to be employed after the program, but treatment reduces this gap to 1.4 percentage points. The
+heterogeneous effects at the end of the program and 12 months later remain statistically signiﬁcant when
+we estimate q-values that control for the false discovery rate across tests based on all baseline heterogeneity
+measures, following Benjamini et al. (2006). The other baseline heterogeneity measures we consider are age,
+gender, education, previous employment, numeracy skill, and cognitive skill. None of these interactions is
+large and few are statistically signiﬁcant after adjusting for multiple testing.
+Table A.10 reports treatment effects on candidates end-of-program outcomes. Toward the end of each
+job readiness program, Harambee helps eligible candidates’ send applications to ﬁrms and, at some ﬁrms,
+helps to arrange interviews for short-listed candidates. 87% of candidates in our sample complete their job
+readiness program, making them eligible for this application support. Treatment has no effect on program
+completion (column 1). There is also no treatment-control difference in the share of candidates who obtain
+jobs through independent applications, i.e. outside of the placement assistance from Harambee (column 2).
+29
+Table A.8: Local Average Treatment Effects of LinkedIn Use on Job Attributes
+(1) (2) (3) (4)
+Hours Permanent Promoted >1 Employer
+Panel A: Six Months After Program Completion
+LinkedIn use 7.191 0.050 0.015 0.004
+(2.627) (0.040) (0.017) (0.032)
+Control mean 25.523 0.129 0.038 0.123
+# respondents 996 1002 1006 1003
+#cohorts 30 30 30 30
+Adjusted R2 -0.004 0.104 0.001 0.007
+Panel B: Twelve Months After Program Completion
+LinkedIn use 4.889 0.056 -0.023 -0.069
+(1.352) (0.030) (0.029) (0.037)
+Control mean 29.233 0.189 0.118 0.144
+# respondents 894 892 895 897
+#cohorts 30 30 30 30
+Adjusted R2 0.021 0.044 -0.008 -0.021
+Coefﬁcients are from regressing each employment-related outcome on LinkedIn use, instrumented by treatment assignment,
+and stratiﬁcation block ﬁxed effects. LinkedIn use is deﬁned as the ﬁrst principal component of an indicator for having an
+account, the number of connections, average power, proﬁle completion, proﬁles viewed, and jobs viewed. This is standardized
+to have mean zero and standard deviation one in the control group. The ﬁrst stage coefﬁcient is 0.68 with standard error 0.11
+and F-statistic 39.8. Heteroskedasticity-robust standard errors are shown in parentheses, clustered by cohort.
+Facilitating applications and interviews is not an unusual feature of active labor market programs. However,
+Harambee is arguably unusual in actively managing long-term relationships with selected private sector
+ﬁrms. While these ﬁrms account for 34 percentage points of the 70% post-program employment rate in the
+control group, treatment has no effect on the probability of securing a job with a long-term partner (column
+3). These results indicate that the effect of treatment on post-program employment is driven entirely by
+higher offer rates from job applications facilitated by Harambee, at ﬁrms that are not long-term partners.
+Figure A.1 reports control group levels of and treatment effects on selected measures of LinkedIn usage
+through time. This ﬁgure shows that the probability of having an account and multiple usage measures
+rise immediately after treatment. In particular, the treatment effect on the number of proﬁles viewed is
+particularly large during job readiness program, consistent with candidates using LinkedIn to prepare for
+applications or interviews. But for most measures there is not a general upward or downward trend over the
+following 12 months.
+Treatment effects on LinkedIn use appear to explain most of the treatment effects on employment, but
+other mechanisms may also be relevant. First, LinkedIn training may change the nature of the job readiness
+program in ways that are unrelated to LinkedIn usage. For instance, treatment may increase candidates’
+enthusiasm for the program and hence increase the effort they exert, or it may lead to complacency and
+30
+Table A.9: Heterogeneous Treatment Effects on Employment by Communication Skill
+(1) (2) (3)
+Employed end of program Employed 6 months Employed 12 months
+Treated cohort 0.068 0.078 0.068
+(0.021) (0.038) (0.022)
+Treatedcommunication score -0.054 -0.055 -0.096
+(0.020) (0.026) (0.028)
+Communication score 0.068 0.084 0.094
+(0.016) (0.018) (0.022)
+Control group mean 0.701 0.638 0.704
+# respondents 1626 1119 988
+# cohorts 30 30 30
+Adjusted R2 0.060 0.088 0.059
+p(interaction=0) 0.010 0.047 0.002
+q(interaction=0) 0.076 0.197 0.015
+Coefﬁcients are from regressing an employment indicator in each of the three survey waves on a treatment indicator, commu-
+nication assessment score, their interaction, and stratiﬁcation block ﬁxed effects. Heteroskedasticity-robust standard errors are
+shown in parentheses, clustered by cohort. The communication skill score is standardized to have mean zero and standard de-
+viation one in the control group. The q-values adjust for multiple testing across the seven dimensions of baseline heterogeneity
+discussed in the text.
+Table A.10: Job Placement Type
+(1) (2) (3)
+Completed training Obtained job through Obtained job through
+program independent application Harambee partner
+Treated cohort -0.023 -0.013 -0.024
+(0.030) (0.009) (0.059)
+Control group mean 0.882 0.056 0.342
+# respondents 1612 1626 1626
+# cohorts 30 30 30
+Adjusted R2 0.023 0.012 0.207
+Coefﬁcients are from regressing measures of program completion and job placement on a treatment indicator and stratiﬁcation
+block ﬁxed effects. Heteroskedasticity-robust standard errors are shown in parentheses, clustered by cohort. The remaining
+job placement categories are not employed and obtained job through a ﬁrm that is not a long-term Harambee partner. The
+adjusted R2 is high in the third column because the probability of placement with a long-term partner varies substantially by
+region and is hence correlated with the stratiﬁcation block ﬁxed effects.
+hence decrease the effort they exert. We estimate treatment effects on self-reported measures of interest
+in the program as well as trainer reports of candidates’ energy and intellectual curiosity. Treatment has
+no effect on any of these measures (Table A.11). The drop-out rate from the program is roughly 13% in
+both treatment and control cohorts ( p-value for test of equal means = 0.62). These results suggest that our
+intervention was a small curriculum change rather than a fundamental reorganization of the job readiness
+program.
+31
+Figure A.1: LinkedIn Usage by Treatment Status
+Note: This ﬁgure displays extensive- and intensive-margin measures of LinkedIn usage by treatment status
+over time: at the end of the job readiness program, 6 months after, and 12 months after. The red dashed
+line labeled ‘T’ reports averages for participants assigned to the treatment group; the blue solid line labeled
+‘C’ reports averages for participants assigned to the control group. The number of connections and connec-
+tions with bachelors ﬁgures represent total connections at that point in time, not new connections since the
+previous point.
+Second, LinkedIn training may change candidates’ beliefs about their labor market prospects through
+some mechanism other than information acquisition. For example, using LinkedIn might expose candidates
+to role models that change their ideas about what jobs are available to them and hence change their job
+search behavior or job performance (Beaman et al., 2012; Tanguy et al., 2014; Dee, 2005; Fairlie et al.,
+2014; Greene et al., 1982; Stout et al., 2011). This mechanism may be particularly important for this sample
+in this context, where there are large gaps in labor market outcomes by race and gender and most candidates
+are from disadvantaged backgrounds. This mechanism still attributes employment effects to LinkedIn use
+and training, but not to changes in conventional job search or hiring processes. We measure indices of
+32
+Table A.11: Treatment Effects on Alternative Mechanisms
+(1) (2) (3) (4) (5) (6)
+Aspiration wage Reservation wage
+Program end 6 month 12 month Program end 6 month 12 month
+Treated cohort 0.047 0.090 0.052 0.043 0.023 0.061
+(0.037) (0.043) (0.034) (0.039) (0.025) (0.032)
+Control mean 10.518 10.469 10.565 9.249 9.289 9.435
+# respondents 1247 1119 988 1233 1119 988
+# cohorts 29 30 30 29 30 30
+Adjusted R2 0.096 0.100 0.069 0.148 0.080 0.081
+(7) (8) (9) (10) (11) (12)
+Excitement about future Locus of control
+Program end 6 month 12 month Program end 6 month 12 month
+Treated cohort 0.036 -0.002 0.005 0.026 -0.023 0.022
+(0.021) (0.031) (0.026) (0.024) (0.023) (0.027)
+Control mean 0.646 0.706 0.708 0.535 0.723 0.695
+# respondents 1252 1119 988 1252 1119 988
+# cohorts 29 30 30 30 30 30
+Adjusted R2 -0.000 -0.007 0.013 0.007 0.002 -0.000
+(13) (14) (15) (16) (17) (18) (19)
+Trust in future Engagement Curiosity Enthusiasm Energy
+Program end 6 month 12 month
+Treated cohort -0.023 0.037 -0.007 -0.003 0.105 0.038 0.061
+(0.016) (0.020) (0.025) (0.029) (0.096) (0.093) (0.093)
+Control mean 0.680 0.680 0.715 4.829 0.062 0.066 0.075
+# respondents 1252 1119 988 1250 1602 1602 1602
+# cohorts 29 30 30 29 30 30 30
+Adjusted R2 0.019 0.003 0.003 0.008 0.095 0.048 0.062
+Coefﬁcients are from regressing the variable in each column on a treatment indicator and stratiﬁcation block ﬁxed effects.
+Heteroskedasticity-robust standard errors are shown in parentheses, clustered by cohort. Variables in columns 1-15 are self-
+reports collected in an end-of-training survey and follow-up phone surveys six and twelve months later. Reservation and
+aspiration wage have been transformed by the inverse hyperbolic sine function. Excitement about future is a binary indicator
+of whether a participant’s self-reported level of excitement about the future is greater than the median level of excitement.
+Locus of control and trust in future are also binary measures constructed in the same way. The engagement variable in column
+16 is a self-report collected in an end-of-training survey about how useful the candidate found the job readiness training
+program, on a scale from one to ﬁve. Columns 17 through 19 report treatment effects on subjective measures provided by the
+managers responsible for training the cohorts. The variables are the average of the standardized scores for the last three weeks
+of the training program.
+candidates’ sense of control over their lives (locus of control), excitement, and trust in others following
+Lippman et al. (2014). We also measure the wage candidates aspire to earn as a measure of their economic
+aspirations, following Orkin et al. (2019). Finally, we measure candidates’ reservation wages. The only
+treatment effects are small increases in reservation wages and the wages candidates aspire to earn (Table
+A.11). These increases only appear 6 to 12 months after the program, not during the program. So these may
+33
+be driven by the employment effects, rather than vice versa.
+Finally, there may be spillover effects of training on candidates in control cohorts. Five of the ﬁfteen
+control cohorts received at least one day of training while a treated cohort was being trained in the same loca-
+tion, so interaction is possible. Spillover effects might attenuate the treatment effects – if control candidates
+learn to use LinkedIn from treated cohorts – or overstate the treatment effect – if control candidates compete
+against treated candidates for the same jobs. The latter mechanism is particularly plausible in this setting.
+Harambee helps multiple candidates from the same cohort to apply for the same jobs at the same ﬁrms. They
+may also help candidates from adjacent cohorts to apply for different jobs at the same ﬁrms. We test for
+spillover effects by adding an indicator for overlapping cohorts to equation (1). Including this indicator does
+not substantially change the estimated treatment effects on employment or opening a LinkedIn account. The
+coefﬁcient on the indicator is small and not statistically signiﬁcant for all outcomes. This is not consistent
+with quantitatively important net spillover effects. However, we cannot rule out the possibility that control
+candidates learn something about using LinkedIn from treated candidates but that their gains from doing so
+are offset by competing against treated candidates with more comprehensive LinkedIn training.
+34
+C Alternative Approach to Explaining Treatment Effects
+In the paper we show that treatment effects on LinkedIn use explain more than half of the treatment effect
+on initial employment. In this appendix we show that the results are similar from an alternative econometric
+approach to explaining treatment effects. This approach is based on the system
+Employicr=Tcr+Scr+icr (5)
+LIicr=Tcr+Scr+icr (6)
+Employicr=LIicr+Scr+icr: (7)
+is the average effect of assignment to treatment on employment and is the average effect of assignment
+to treatment on LinkedIn use. is the non-experimental relationship between employment and LinkedIn
+use, estimated using only control group data. We deﬁne S2=
+as the share of the treatment effect on
+employment explained by LinkedIn use. This measures ‘how much’ of the employment effect can be
+explained by the LinkedIn use effect via the non-experimental relationship .
+Using this approach, LinkedIn use explain at least half of the treatment effect on initial employment.
+Table A.12 shows that treatment increases employment by 7 percentage points (row 1, column 1) and the
+probability of having a LinkedIn account by 33 percentage points (row 2, column 1). Candidates with
+LinkedIn accounts are 14 percentage points more likely to be employed (row 3, column 1). Hence ^S2=
+0:65, with standard error 0.22 (panel C, column 1). Measuring LinkedIn use with the principal component
+deﬁned in Section 5 instead of an indicator for having an account yields ^S2= 0:56with standard error 0.19
+(panel C, column 2).
+This approach assumes that an estimate of based on non-experimental variation captures the effect of
+an experimentally-induced shift in LinkedIn on employment. This assumption may be violated if marginal
+candidates induced to use LinkedIn by treatment use it differently for job search to inframarginal candidates
+who would use it anyway. This assumption may also be violated if there are omitted characteristics associ-
+ated with both LinkedIn use and employment or if LinkedIn use is measured with error. The direction of the
+bias from omitted variables and measurement error is theoretically ambiguous.18Given these concerns, we
+interpret this exercise as suggestive but not conclusive evidence that treatment effects on LinkedIn use can
+18Classical measurement error in LinkedIn use will lead to a downward-biased estimate of , though measurement error in
+this context is not necessarily classical. Omitted variables might be positively linked with both employment and LinkedIn (e.g.
+proactivity, digital proﬁciency) or negatively linked to one of them (e.g. selection into LinkedIn use due to unemployment).
+35
+Table A.12: Relationship between Treatment, Initial Employment, and LinkedIn Use
+(1) (2)
+LinkedIn use measure Has account Use index
+Panel A: Parameter Estimates
+Treatment effect on employment 0.070 0.086
+(in equations 2 and 5) (0.020) (0.019)
+Treatment effect on LinkedIn use 0.326 0.694
+(in equations 3 and 6) (0.050) (0.109)
+Treatment effect on employment conditional on LinkedIn use 0.021 0.032
+(~in equation 4) (0.026) (0.025)
+Relationship between employment & LinkedIn use conditional on treatment 0.151 0.078
+(~in equation 4) (0.028) (0.013)
+Relationship between employment & LinkedIn use in control group 0.139 0.069
+(in equation 7) (0.026) (0.012)
+Sample size 1626 1445
+Panel B: Share of Treatment Effect Explained by LinkedIn Use
+S=~= 0.705 0.632
+(0.304) (0.227)
+S2== 0.648 0.562
+(0.262) (0.185)
+This table reports the same results as Table 5 with results of the additional analysis described in Appendix C. Panel A shows
+estimates of the parameters of equation systems (2) - (4) and (5) - (7). Panel B row 1 shows the share of the treatment effect
+on employment explained by the treatment effect on LinkedIn use in the system (2) - (4): S=~
+. Panel B row 2 shows
+the share of the treatment effect on employment explained by the treatment effect on LinkedIn use, scaled by the relationship
+between employment and LinkedIn use in the control group in the system (5) - (7): S2=
+. Heteroskedasticity-robust
+standard errors are shown in parentheses, clustered by cohort. The equations are estimated as two systems and the standard
+errors onSandS2are estimated using the Delta method. All models include stratiﬁcation block ﬁxed effects.
+explain treatment effects on initial employment.
+36
+D Intervention Details
+D.1 The Default Job Readiness Training
+The job readiness training programs are run by the Harambee Youth Employment Accelerator, a social
+enterprise that builds solutions to address a mismatch of demand and supply in the youth labor market by
+connecting employers with ﬁrst-time workseekers.
+Candidates enter these job readiness training programs after a three-stage recruitment and selection
+process. First, candidates learn about Harambee from word-of-mouth, social media, or conventional adver-
+tising. They complete an application, typically online using a mobile device, that determines their eligibil-
+ity. Candidates are eligible to proceed if they are age 18-29, have completed secondary school, have legal
+permission to work in South Africa, have no criminal record, have less than 12 months of formal work ex-
+perience, and come from a ‘disadvantaged’ background. The deﬁnition of disadvantaged varied during the
+recruitment period but the goal is to exclude candidates from upper-income households with existing access
+to employment opportunities through referrals. The sample of eligibles is likely to be negatively selected on
+employment prospects relative to the general population.
+Eligible candidates complete psychometric assessments in communication, numeracy, and ‘concept for-
+mation’ (similar to a Raven’s matrix test), and a career matching assessment designed to assess how well
+their habits match to different job types. Candidates who perform well in the ﬁrst three assessments, match
+to white-collar jobs, and live near an area where Harambee anticipates demand for jobs are invited to job
+readiness training. The sample of training participants is likely to be positively selected on employment
+prospects relative to the sample of eligibles. We cannot characterize the employment prospects of the train-
+ing participants relative to the general population.
+The job readiness programs last 6 to 8 weeks and require full-time attendance. They cover cover simu-
+lations of workplace environments, team building, and non-cognitive skill development. The programs are
+explicitly designed for people with limited or no work experience, rather than retraining displaced workers.
+Their goal is to help candidates ﬁnd and retain jobs in sectors such as ﬁnancial services, logistics, operations,
+manufacturing, or construction.
+Harambee helps candidates apply to jobs at the end of training programs, including some jobs at ﬁrms
+where Harambee has long-term, actively managed relationships. Harambee has no role in ﬁrms’ hiring
+processes after helping to set up initial interviews. Many active labor market programs offer this type of
+37
+end-of-program application support, including many employment services funded by US federal and state
+governments.
+D.2 Intervention Cost and Beneﬁt-Cost Calculations
+The intervention costs US$48 per candidate at the purchasing power parity exchange rate, or US$20 at the
+nominal exchange rate.19We estimate this ﬁgure by multiplying Harambee’s average per-candidate cost
+of an 8-week job readiness program, US$3,833 PPP, by the share of the program time allocated to the
+intervention, 1.25%. Harambee allocated approximately 4 hours to the LinkedIn training per job readiness
+program: 1.5 hours in the ﬁrst week, and ﬁve 30-minute sessions later in the program. The job readiness
+program cost covers staff time for training, administration, and liaising with employers about interviews;
+facility rental; IT costs; and participant stipends (US$6 PPP).
+The intervention increases employment by 7.3 percentage points in the sample of 890 treated candidates
+(using the estimate in column 1 of Table 2). This implies 65 more employed candidates and hence a cost of
+US$656 PPP per additional candidate employed. This cost-per-placement is lower than almost any devel-
+oping country program reviewed by McKenzie (2017). This cost reﬂects the way the intervention built on
+an existing program and may not generalize to a stand-alone LinkedIn training program.
+We also calculate a pecuniary beneﬁt-cost ratio by valuing the extra hours worked at the national mini-
+mum wage. Treatment increases average weekly hours by 4.2 and 2.9 at respectively six and twelve months
+after the program. This mostly reﬂects the extensive margin increase in employment. If treated participants
+work an extra 2.9 hours in each of 50 weeks in the year after treatment and are paid the national minimum
+hourly wage of US$3.33 PPP, then treatment increases earnings by US$480 PPP over one year. This im-
+plies a beneﬁt-cost ratio of 10-1 over a one-year horizon. This is likely to be a lower bound on the true
+beneﬁt-cost ratio per participant if participants retain their jobs for more than one year or earn more than
+the minimum wage. Assuming participants earn the national minimum wage is very conservative, as the
+minimum wage is close to the 5thpercentile of the national distribution of earnings for the employed (Finn,
+2015).20The beneﬁt-cost ratio of a larger-scale increase in online professional networking training may
+obviously be lower.
+19We use purchasing power parity conversion factors from http://wdi.worldbank.org/table/4.16, averaged over the intervention
+period.
+20We use the national minimum wage purely as an illustrative benchmark. This was only introduced in January 2019, toward
+the end of our survey period. Minimum wages before this varied by sector and geographic location. Given the national earnings
+distribution reported above, it is extremely unlikely that participants in our study earned on average lower than the national minimum
+wage.
+38
+D.3 LinkedIn Training Curriculum
+The remainder of the appendix shows the curriculum given to Harambee job readiness training managers
+to help them train candidates to use LinkedIn. The training managers were trained by a senior Harambee
+staff member who co-developed the curriculum. The intervention curriculum was jointly developed by
+Harambee, LinkedIn, and the research team.
+The intervention started with a one-hour presentation on LinkedIn in the ﬁrst week of the job readiness
+program. Participants received additional in-person coaching, discussion sessions, and email tips in later
+weeks of the program. The initial presentation and subsequent sessions covered:
+• how to construct a proﬁle;
+• what information to include in a proﬁle (e.g. work experience, education, volunteering);
+• how to describe the job readiness training on a proﬁle;
+• how to join groups, including a group created for the members of each training cohort;
+• how to identify groups for people working in a target occupation;
+• how to make connections and what types of connections can be useful;
+• how to view proﬁles of companies that have previously hired graduates of the job readiness program;
+and
+• how to ask for recommendations on LinkedIn and get a recommendation from the manager of the job
+readiness program.
+39
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+Introducing LinkedIn  
+to Workforce Training Participants  
+A Curriculum  
+ 
+ 
+Developed in partnership by  
+Harambee Youth Employment Ac celerator and RTI International   
+A Global Center for Youth Employment Initiative  
+ 
+ 2 
+INTRODUCTION : This curriculum presents  an approach for introducing young people to LinkedIn 
+and other digital professional networks,  to help them  understand the multiple functions of the 
+sites (signaling, networking, labor market info rmation ) and develop the habit of using such 
+tools  throughout  their career s.  This curriculum was developed by  RTI International and  
+Harambee Youth Employment Accelerator  in South Africa  and  is calibrated for  a short training 
+course, such as  Harambee’s  8-week training programs , though it could be easily adapted for 
+short or longer training experiences.  
+The curriculum developers intentionally took a “light touch ” approach, with a recommended 
+one -hour introduction to LinkedIn in week 1, followed by seven weekly “nudge” emails that 
+contain short instruction  or motivat ion and  related article links  or videos . The m aterial spans  
+topics ranging from setting up an account, building  a profile, making connections, exploring 
+job opening s, and joining industry groups, to reading articles and opinions from one’s future 
+professional fie ld. Trainers also use  three 30-minute in -person check -ins, one in each of weeks 
+2, 5, and 7 , to answer q uestions, provide guidance, and test participants ’ knowledge. When the 
+training i s complete, the  trainers connect  with the ir participants on the site, wri te them a boiler 
+plate recommendati on, and invite  them to join a  LinkedIn alumni group.  
+The  Global Center for Youth Employment  (GCYE) offers this curriculum now as an open source 
+resource that can be used to introduce LinkedIn to program participants. LinkedIn maintains a 
+micro -site of high quality, profes sionally produced training materials , to be use d in concert 
+with this resource  that can be included as presentations or handouts within this structure.  An 
+example  of a  LinkedIn -produced profile “checklist” is provided in Annex A of this document .  
+More information on the LinkedIn materials is available on  this LinkedIn google drive . LinkedIn 
+plans  to develop  materials tailored for job seeking populations throughout the developing 
+world in the future.  
+BACKGROUND : This curriculum was developed and piloted as a part of an impact evaluation 
+conducted by RTI International, Duke University , and Harambee . The evaluation is a GCYE  
+initiative and seeks  to understand the education - and work -related impa cts among 
+marginalized  work seekers who used  LinkedIn vs. those among control group  populations  who 
+did not. LinkedIn supported  the study by providing  data on  (consenting)  user profiles, 
+networks, and site usage. Results were measured  at training baseline, end -line, and 6 and 12 
+months post -graduation. More information on the study can be found on the GCYE website: 
+www.employyouth.org   
+USAGE : This curriculum is intended to be used as an integrated part of larger training 
+programs, likely short -course programs. However, i t could easily be condensed and delivered 
+in a conce ntrated half day, or expanded and  used across a semester or year. The emph asis here 
+falls on developing the demand and interest among young people to use professional 
+networking sites , over time ––not through  force fe eding or required usage. If you use, adapt, or 
+improve the curriculum , please do let us know.  
+Thanks!    
+The Globa l Center for Youth Employment –– gcye@rti.org     
+ 3 
+Week  Instruction to Training Manager  Details  
+Week 1 : 
+Getting 
+Started   Present “Introducing LinkedIn”  to 
+candidates  
+ Elicit discussion with candidates  
+ Candidates spend  dedicated  time 
+to join Linked In and start 
+exploring it  for at least 30 minutes  Refer to Introducing LinkedIn  presentation  
+ Confirm email addresses before 
+sending LinkedIn invitation   
+ Email invit ation  from  Training 
+Manager  
+ EMAIL #1  
+Hello everyone!  
+You are about to embark on your journey to 
+securing a job and building your career. Are 
+you interested in becoming a true professional 
+and building your professional network?  
+If you are nodding away, click on  the link below 
+to join the be st online professional network : 
+https://www.linkedin.com/  
+It’s easy to sign up. All you need is:  
+ An email address, a picture of yourself , and 
+some thought about your work experience 
+and educational background.  
+ Follow the steps on LinkedIn to help you 
+build your profile.  
+If you want to know more about LinkedIn 
+before signing up, check out this video from 
+the link below:  
+https://www.youtube.com/watch?v=ZVlUwwg
+OfKw  
+Looking forward to inviting you to join our 
+cohort group once you have signed up!  
+Conduct s face-to-face check -in after 
+Email #1  
+ After checking to see who has 
+signed up, have a conversation to 
+find out why those who have not, 
+haven’ t   
+ Team pop quiz on LinkedIn #1  
+ Discuss why LinkedIn may be 
+useful for candidates    
+ 4 
+Week  Instruction to Training Manager  Details  
+Send out Email #2 before the end of 
+the week with tips for building a great 
+profile  EMAIL  #2 
+Hello everyone!  
+Now that you have signed up , you  may want to 
+know more about how to use LinkedIn to 
+develop your profile and help you build your 
+professional network . I strongly encourage you 
+to check out the links below:  
+THE POWER OF A GOOD PROFILE  
+https://blog.linkedin.com/2015/05/13/how -
+linkedin -connects -me-to-future -opportunities  
+https://www.linkedin.com/pulse/how -create -
+killer -linkedin -profile -get-you -noticed -
+bernard -marr  
+As you build your profile and create a great 
+network here are some things to think about…  
+ What would you want your first  
+manager/employer to see about you?  
+ What would you want your colleagues to 
+know about you if you connect with them, 
+when starting your first job?  
+ What should you include in your profile 
+summary?  
+ Once you have your profile, try to connect 
+with other people you know to build your 
+network.  
+ Please don’t worry if your profile is not 
+perfect, or very long – you can fill it in over 
+time, but you have to start somewhere!  
+Now that you have  a profile, connect with 
+other s in your training group and alumni by 
+joining y our training cohort group and the 
+training program  alumni groups on LinkedIn.  
+Leave a comment/inspirational quote to 
+motivate others in the group . 
+TOP TIP:  
+When describing your Harambee work 
+experience you should paste the following:  
+JOB TITLE :  
+Work Readiness Program candidate   
+ 5 
+Week  Instruction to Training Manager  Details  
+COMPANY :  
+Harambee Youth Employment Accelerator  
+TIME FRAME:   
+(Year of your  program)  
+DESCRIPTION : 
+The Harambee Youth Employment Accelerator 
+Bridging Program is an intensive 8-week, 
+unpaid work simulation experience that 
+accelerat es youth into first time job success 
+and career progression by instilling behaviors 
+and foundation skills needed for succeeding in 
+the world of work. These include attendance, 
+punctuality, positive attitude, energy , and 
+curiosity in combination with skills  
+development in business communications , call 
+cent er theory and simulation, computer skill s, 
+sales , and customer service ex perience.  
+Looking forward to sharing information with 
+you on our group!  
+ Regards,  
+ Your Training Manager  
+Week 2  
+Creating 
+Your 
+Profile &  
+Building 
+Your 
+Network  Face -to-Face check -in after Email #2  
+ Discuss what makes a great profile 
+– what parts of your profile can 
+help you now before you start 
+work ;  link to interview 
+preparation:  
+ What experience have you 
+had volunte ering, working in 
+your community that could 
+add value to your profile in 
+the absence of work 
+experience ? 
+ What is a professional network , 
+and how can you start to build a 
+good network ? 
+ Find out who has joined the 
+group/Why/Why not    
+ 6 
+Week  Instruction to Training Manager  Details  
+Hand out LinkedIn print out to each 
+team for further investigation – Profile 
+Checklist  and Profile Quick Tips and 
+Personal B rand  from the LinkedIn 
+micro -site 
+NUDGE:  
+ Email a series of links that share 
+useful information about LinkedIn 
+and interesting 
+articles/info/groups you can access 
+on LinkedIn  
+ Utilize this LinkedIn 
+presentation on building your 
+netw ork. 
+ Where possible, upload the link to 
+the cohort group on LinkedIn  
+ Encourage sharing of new 
+information with one another 
+both online and through the face -
+to-face sessions  The t raining manager should s end out 
+suggestions and links around building a 
+network and sharing information.  
+The material should be  relevant and engaging 
+for candidates  – something that captures their 
+interest.  
+EMAIL #3  
+Hello everyone!  
+Now that you’re on your way to building a 
+great profile, you can really get started on 
+building  your network! Connectin g with the 
+right people, group , and companies can help 
+you to build a great professional network.  
+TOP TIP : 
+A great place to start is by connecting with 
+everyone you already k now – old friends, 
+family connec tions , or old school conne ctions 
+and work colleagues. You never know what 
+opportunities you may find one day through 
+your personal network. BUT, when you plan to 
+connect with people you don’t know or haven’t 
+worked with before, you should first ask 
+yourself: will this person or gro up add value to 
+my career and can I offer them value in return?  
+Do some research on LinkedIn to find peopl e 
+you know, companies and groups that you 
+think may be useful or interesting to follow or 
+join considering the type of entry -level job 
+opportunities  you think you may in terview for 
+at the end of your program.  
+If you want to know more about why building 
+your network is important for your career and 
+how to grow your network, I suggest you check 
+out some of these links below!   
+ 7 
+Week  Instruction to Training Manager  Details  
+https://www.youtube.com/watch?v=JmvumZb
+paNI&feature=youtu.be  
+http://www.careerealism.com/linkedin -
+invitation -tips/  
+ Regards,  
+ Your Traini ng Manager  
+Week 3 : 
+Complete 
+Your 
+Profile  NUDGE  
+Email a message suggesting why 
+completing a profile as far as they can 
+while in training is worthw hile, and 
+then  provide  links for employers and 
+pulse channel to follow  
+ The t raining manager  should  send out an email 
+suggesting that candidates revise their profile 
+and providing some useful groups to think 
+about joining and companies to follow.  
+EMAIL #4  
+Hello everyone ! 
+Now that you have st arted connecting with 
+others , and you may have seen what other 
+people’s profiles look like, I suggest you visit 
+your own profile and add some stuff to make it 
+more interesting or more professional. Write 
+down what you have put down as your profile 
+summary to unpack in the next check i n 
+session so we can share and help everyone to 
+improve.  
+I also highly recommend that you check out 
+the following research done on what 
+completing your profile can do for you : 
+https://www.linkedinsights.com/why -you -
+should -complete -your -linkedin -profile/  
+Search on LinkedIn for professional  group s and 
+join them as you  continue to build your 
+network. Here are some examples:  
+ Contact Centre and Call Centre 
+community  
+ Customer Service Champions . 
+If you find anything interesting that you think is 
+worth sharing, post it to our group.  
+  
+ 8 
+Week  Instruction to Training Manager  Details  
+Week 4 : 
+Using 
+LinkedIn 
+for Job 
+Prep  Face-to-face check -in after Email s 
+#4 and  #5: 
+ Connect the interview prep 
+process  (at this stage in the 
+Harambee training)  to the 
+development of the candidates’ 
+profiles and their insights from 
+networking (joining 
+groups/following companies) . 
+What can they share that will add 
+value to their profile and how they 
+can use their LinkedIn p rofile to 
+help sell themselves in an 
+interview ? 
+ Connect to volunteering, 
+achievements, how one’s profile 
+can add value to one’s CV  
+ Have candidates share info or 
+articles/groups/companies they 
+have joined or have found 
+interesting  
+ Hand out LinkedIn print o ut of 
+writing, reading, sharing on 
+LinkedIn  
+ Team pop quiz on LinkedIn #2  
+  
+Week 5 : 
+Labor 
+Market 
+and 
+Industry 
+Info on 
+LinkedIn  NUDGE  
+Email a message suggesting why 
+completing a profile as far as they can 
+while in training is worthw hile, and 
+then provide links for employers and 
+pulse channel s to follow  The t raining manager should send out links to 
+relevant employers/companies/articles that 
+candidates can  follow and suggestion s to 
+follow the LinkedIn Pulse Career Channel (see 
+links in email – the t raining manager may add 
+one or two extra links for relevant companies)  
+EMAIL #5:  
+Hello everyone ! 
+Here  are a few links to follow some of our 
+employers on LinkedIn as you start to think 
+about new employer networks and what 
+employers expect from you. Also check and 
+see if you have any connections at these 
+companies!   
+ 9 
+Week  Instruction to Training Manager  Details  
+https://www.linkedin.com/company/standard -
+bank -south -africa?trk=affco  
+https://www.linkedin.com/company/4731?trk=
+vsrp_companies_hero_name&trkInfo=VSRPse
+archId%3A442519841446542856726%2CVSRP
+targetId%3A4731%2CVSRPcmpt%3Ahero  
+https://www.linkedin.com/company/614583?tr
+k=vsrp_companies_res_name&trkInfo=VSRPse
+archId%3A442519841446544243080%2CVSRP
+targetId%3A614583%2CVSRPcmpt%3Aprimar
+y 
+https://www.linkedin.com/company/17634?trk
+=vsrp_companies_cluster_name&t rkInfo=VSR
+PsearchId%3A442519841447136489971%2CVS
+RPtargetId%3A17634%2CVSRPcmpt%3Acomp
+anies_cluster  
+https://www.linkedin.com/company/12696?trk
+=vsrp_companies_res_name&trkInfo=VSRPsea
+rchId%3A442519841447136666271%2CVSRPta
+rgetId%3A12696%2CVSRPcmpt%3Aprimary  
+Week s 6 
+and 7 : 
+Become a 
+Strong 
+Life -Long 
+Learner 
+on 
+LinkedIn  NUDGE  
+Suggest that candidate  read articles 
+for insight into how to be a great 
+performer at work and invitation to 
+join the Harambee Alumni Group . 
+ Use this LinkedIn 
+presentation  on updating 
+one’s profile over time.  The t raining manager should s end out a n email 
+with links relevant to attitude , performa nce, 
+and work. There is also a link that goes out 
+here to join Harambee alumni group.  
+EMAIL #6  
+Hello everyone!  
+You now have a profile ; perhaps you’ve joined 
+a group or two , and you are following some 
+great companies.  Well done! You are starting 
+to build your network so keep at it!  But 
+remember a great profile and a powerful 
+network is only the first step. You also have to 
+perform at work to build and maintain your 
+professional reputation so people trust what 
+they see  on your LinkedIn profile.  
+Check out these articles about how to be a 
+great performer at work:   
+ 10 
+Week  Instruction to Training Manager  Details  
+https://www.linkedin.com/pulse/eight -tips -
+being -great -employee -curtis -rogers  
+https://www.linkedin.com/pulse/why -attitude -
+mor e-important -than -iq-dr-travis -bradberry  
+I also stro ngly encourage you to join the 
+training  Alumni Group – this group will be a 
+powerful professional support network to help 
+you stay focused and progress in your career.  
+ Regards,  
+ Your Training Manager  
+Wee k 6 Face -to-face check -in after Email 
+#6: 
+ Have a follow up conversation 
+about what candidates have found 
+regarding performance in the 
+work place – why is  it important to 
+match what you do with your 
+online brand ?  
+ Discuss  why being part of the 
+Harambee alumni group can help 
+build a career  
+ Team pop quiz on LinkedIn #3   
+Week 7  Final check -in week 7:   
+ Who will use LinkedIn? Why/Why 
+not?  
+ How can you use it to benefit your 
+career when you get to work?  
+ What have you enjoyed/found 
+challenging about using this social 
+media platform?   
+Post -
+Training  NUDGE  
+Send out final Email #7 with a link 
+about posting and publishing on 
+LinkedIn  and then some information 
+about asking for recommendations – 
+the ins and outs of asking for 
+recommendations  Email #7 ( week after end of training ) 
+Hello everyone ! 
+Now that you have completed your bridging 
+program and some of you may have started 
+work already,  you will continue to build a 
+powerful profile as you gain experience and 
+grow your network.  When you have settled in  
+ 11 
+Week  Instruction to Training Manager  Details  
+to your new work environment, you might 
+consider publishing  a post on LinkedIn  to share 
+your experience and advice for other people 
+who might be on a similar journey to you.  
+Remember: Anything you post says something 
+about your personal brand, so post wisely!  
+Chec k out these links to learn how to publish a 
+post and what’s worth writing about:  
+https://students.linkedin.com/student -
+publishing  (cut and paste this link ) 
+Look at monthly topics on the home page to 
+give you an idea of what’s worth writing about 
+at different times of the year!  
+http://blog.linkedin.com/2015/04/15/why -i-
+publish -on-linkedin -the-power -of-storytelling/  
+Also, once you have been working for a while , 
+you  may want to ask for recommendations 
+from your colleagues to enhance your profile . 
+BUT first check out this link with tips on asking 
+for recommendations:  
+http://www.likeable.com/blog/2014/10/how -
+and -when -to-ask-for-a-linkedin -
+recommendation  
+Wishing you the be st of luck on your career ! 
+ Regards,  
+ Your Training Manager  
+   
+ 12 
+Annex: Proposed Descriptions That Can Be Adapted per Training 
+Managers’ Needs  
+ 
+Generic recommendation comment that can be edited as per training manag er’s needs:  
+I am pleased to say that __________ completed the XYZ training  program successfully and has me t the 
+necessary criteria to succeed as a first -time employee. This candidate has shown the ability to deliver 
+work under pressure , work with and contribute to a team , and to manage his/her performance at work.  
+ 
+Proposed Summary for Harambee Alumni group  
+This group is an alumni group for all people who  have completed a bridging program. It is a professional 
+support group to help Harambee alumni  stay focused and progress in their  career s. 
+ 
+Description for cohort group purpose:  
+This group is your first profe ssional network. It is for sharing professional tips, interesting articles , and 
+information that you find or learn about. The group may also be used as a forum for feedback on 
+projects, presentations , and any work you may want to share that you feel will c ontribute to other 
+people’s learning.  

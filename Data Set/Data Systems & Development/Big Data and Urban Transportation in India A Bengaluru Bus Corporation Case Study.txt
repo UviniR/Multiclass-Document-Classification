@@ -1,0 +1,861 @@
+ 
+ Development Informatics  
+ 
+Working Paper Series  
+ 
+The Development Informatics working paper series discusses the broad issues 
+surrounding digital data, information, knowledge, information systems, and 
+information and communication technologies in the process of socio -economic 
+development  
+ 
+ 
+ 
+ 
+ Paper  No. 72  
+ 
+Big Data and Urban 
+Transportation in India: A 
+Bengaluru Bus Corporation 
+Case Study  
+ 
+VANYA RAKESH, RICHARD HEEKS , 
+SUMANDRO CHATTAPADHYAY & 
+CHRISTOPHER FOSTER  
+ 
+ 
+2018  
+ 
+ 
+ 
+ISBN:  978-1-905469 -73-4 
+ 
+Published 
+by: Centre for Development Informatics  
+Global Development Institute , SEED  
+University of Manchester, Arthur Lewis Building, Manchester, M13 9PL, UK  
+Email: cdi@manchester.ac.uk  Web: http://www.cdi.manchester.ac.uk  
+ 
+View/Download from:  
+http://www. gdi.manchester.ac.uk/research/publications/di/  
+ 
+Educators ’ Guide from : 
+http://www.gdi.manchester.ac.uk/research/publications/di/educators -guide/    
+ Table of Contents  
+ 
+ABSTRACT  ................................ ................................ ................................ ......................  1 
+ 
+A. Introduction  ................................ ................................ .............................  2 
+B. Background and Actors  ................................ ................................ .............  3 
+B1. BACKGROUND  ................................ ................................ ................................ ..........  3 
+B2. MAIN ACTORS  ................................ ................................ ................................ ..........  4 
+C. Components of the Big Data System  ................................ .........................  5 
+D. System Implementation  ................................ ................................ .........  11 
+E. System Value  ................................ ................................ ..........................  12 
+F. Conclusions  ................................ ................................ .............................  15 
+F1. BIG DATA A ND THE POLITICS OF TRANSPORTATION  ................................ ........................  17 
+F2. BIG DATA-ASSOCIATED CHANGES IN LOCUS OF POWER  ................................ ..................  18 
+ 
+REFERENCES  ................................ ................................ ................................ .................  19 
+ 
+ Manchester Centre for Development Inform atics Working Paper 72  
+1 
+ Big Data and Urban Transportation in India: 
+A Bengaluru Bus Corporation Case Study  
+ 
+ 
+Vanya Rakesh  
+Ex-Centre for Internet and Society, 
+Bengaluru, India  
+ Richard Heeks1 
+Centre for Development Informatics, 
+University of Manchester, UK  
+Sumandro Chattapadhyay  
+Centre for Internet and Society, Bengaluru, 
+India  Christopher Foster  
+Information School, University of Sheffield, 
+UK 
+ 
+2018  
+ 
+ 
+ 
+Abstract  
+ 
+As cities grow, urban transportation is becoming an issue of increasing salience.  
+Simultaneously, big data systems are being introduced into urban transport.  This paper 
+analyses the early days of the big data system introduced by India’s Bengaluru Metrop olitan 
+Transport Corporation , which runs the city’s 6,000 -plus buses.  This has three main 
+components: automated vehicle tracking and electronic ticketing machines which generate 
+gigabytes of data per day, and a linked passenger information system with mob ile app.  Field 
+interviews and document analysis were used to assess the system.  
+ 
+Only an early, partial and contingent assessment can be given because the system ha d only 
+been implemented for little over a year.  It does work in terms of gathering data and 
+informing both management and passengers, though there are some operational flaws still 
+to be ironed out.  Substantive contribution of tactical and strategic value has yet to be seen: 
+it seems easier to apply data -intensity to operational than higher -level managerial 
+processes.  However, there is already a sense in which big data is changing both the image 
+of the organisation, and the “imaginary” of politicians and m anagers: the new view of urban 
+transport systems that big data makes visible.  As a result of the latter, plans for removal of 
+bus conductors and of layers of middle management are well advanced.  
+ 
+We also see signs of big data enabling shifts in power: fro m labour to management, from 
+middle to top management, and potentially towards those with data -related capabilities.  
+There is some greater transparency of organisational activities to the general public, but 
+wider transparency awaits full and sustained op ening of transport data to other users.  
+ 
+ 
+                                                      
+1 Corresponding author : richard.heeks@manchester.ac.uk  Manchester Centre for Development Inform atics Working Paper 72  
+2 
+ A. Introduction  
+ 
+Bengaluru – capital of Karnataka state in India – is a city of ten million people, growing fast 
+and facing severe urban transport problems: since 2001 more than five million vehicles have 
+been added to the city’s road and average traffic speeds have droppe d from 33kph to less 
+than 5kph (ET 2017).  Buses are a key part of the urban transport architecture and 
+Bengaluru Metropolitan Transport Corporation (BMTC)  has more than 6,000 buses and 
+nearly 35,000 employees.  Every day it carries more than five million passenger journeys 
+over more than 2,000 routes and 8,000 bus stops, collects over US$500,000 in revenue, and 
+its buses travel more than 1.2 million kilometres (BMTC 2017a).  
+ 
+Such an operation requires a large number of operational, tactical and strategic d ecisions, 
+and generates huge amounts of data which could be used to guide that decision -making.  
+Historically, that data has not been captured or has been captured very inefficiently using 
+human -based or paper -based systems.  With growing size and complexi ty creating 
+increasing decision -related problems, in May 2016, BMTC launched its Intelligent Transport 
+System (ITS) ; a project initially conceived in 2012 and beginning implementation in 2013 .  
+The ITS project involves integrated implementation of over 10, 000 I nternet -enabled 
+electronic ticketing machines, and over 6,400 online vehicle tracking units , at an initial five -
+year cost of around US$1.2m (Akshatha 2015).  
+ 
+For the first time, this has enabled capture and use of very large amounts of daily data in 
+digital format.   The aim was to create a smart transport system  for real -time tracking of 
+buses as well as of passenger trips .  It had an internal purpose of helping BMTC managers 
+make more  data -intensive  decisions : e.g. operational decisions around cash fl ow, and more 
+tactical decisions  regarding planning of bus routes and schedules .  And it had an external 
+purpose of enabling passengers to make more data -intensive decisions about journey 
+planning.  Such applications also have wider economic and social valu e: 
+“For public bus services, dissemination of accurate information regarding current bus location, arrival 
+time at bus stops, etc. to the traveler will help to reduce the uncertainty and waiting time involved in 
+the use of bus service system and enhance ef ficiency. Improvements in service efficiency and 
+reduction of waiting time will attract more passengers to this means of public transport, thus easing 
+the traffic burden on the roads” (Vanajakshi et al. 2016:80).  
+ 
+To investigate in more detail, in 2016, au thor Vanya Rakesh undertook a field study of this 
+new big data system just a few months after implementation.  Alongside direct observation 
+of the system in action and analysis of available documentation, the study involved nine 
+interviews with staff at bo th strategic and operational levels in BMTC, with technical 
+contractors implementing ITS, and with external experts and advisers involved with 
+development of urban transportation in Bengaluru.  This was followed in mid -2017 by 
+analysis of additional docume ntation updating on performance of the system just over a 
+year since implementation.  
+ 
+In what follows, the main human actors and technical components of the system will be 
+outlined, its value at various levels of the organisation will be assessed, and conc lusions will 
+be drawn, particularly about the relationship between big data, politics and power.  
+  Manchester Centre for Development Inform atics Working Paper 72  
+3 
+ B. Background and Actors  
+ 
+B1. Background  
+ 
+Bengaluru has a long history of association with ICTs dating back to development of the 
+global South’s first analogue computers in the Indian Institute of Science in 1952 (Heeks 
+2009).  In transport, there were some internal administrative computing applic ations; for 
+example use of digital information systems for inventory control in the Karnataka State 
+Road Transport Corporation  from the early 1980s.  During the 1990s and stretching onwards 
+into the 2000s and 2010s, bus -related data was not collected in re al time.   Conductors used  
+paper tickets (see Figure 1) and paper  time sheets, where the arrival and departure time of 
+buses at major bus depots  were documented by the controller concerned .  They also 
+maintained daily trip -sheet data on ticket sales includi ng the temporal pattern of sales; 
+again on paper.  There was no data gathered on bus location and hence no way to inform 
+passengers about journeys other than the published timetables.  
+ 
+ 
+ 
+Figure 1: Paper -Based  Bus Ticketing  
+Source: Ramakrishnan (2015)  
+ 
+ 
+This situation was the current one in Bangalore up the advent of ITS.  However, there were 
+experiments with use of ICTs:  
+ A GPS -/satellite communications -based system was installed in Bengaluru in 1999 but 
+only for use on the 200 or so buses hired from priv ate operators.  The system did not 
+work well: it was offline so data had to be physically retrieved from each bus.  Reports 
+arrived two -three days after journeys had taken place, and were thus of no use for real-
+time tracking (Prakash 2008 ).  The system wa s abandoned, having cost around 
+US$120,000.  
+Manchester Centre for Development Inform atics Working Paper 72  
+4 
+  In the early 2000s, there  were similar GPS-based pilots which did not sustain in other 
+parts of Karnataka state.  
+ In 2004, BMTC issued a letter of intent to install online GPS -based tracking for its buses, 
+seeking  to overcome limitations of the earlier offline deployment.  However, the 
+satellite links often broke down within an urban environment due to line -of-sight 
+obstruction from trees, buildings, flyovers, etc; and the data provided was not linked to 
+bus schedu les (Prakash 2008, Vanajakshi et al. 2016) .  Again, no real -time tracking was 
+possible and this system was also abandoned, having cost around US$100,000.  
+ Electronic ticketing machines were introduced by BMTC on a number of routes in 2008 
+but were removed b y 2011 due to functionality problems (Ramakrishnan 2015).  
+ In 2007, Mapunity (see below) launched the Bengaluru Transport Information System 
+(BTIS)2, which aggregates video and mobile cell tower and other data to try to provide a 
+comprehensive urban traffic  information system for individual citizens and city agencies.  
+This system is still in operation.  
+ In 2010, Mysore began implementation of an Intelligent Transport System, with initial 
+implementation in 2012 and final completion only in late 2016 (Urs 2010 , Prasad 2012, 
+Indian Express 2017).  
+ 
+B2. Main Actors  
+ 
+The main  actors involved with the Bengaluru ITS  big data platform are described below, 
+indicating that this is a public -private partnership.  It was implemented on a build -operate -
+transfer basis.  
+ Bengaluru Metropolitan Transport Corporation3: a government agency that operates the 
+public transport bus service in Bengaluru  and which  initiated the ITS project.  Within 
+BMTC, there are different groupings, such as managerial staff; and also the bus driv ers 
+and conductors who operate the services which are the subject of big data capture.  
+ Trimax4: a private sector Indian company that provides a wide range of IT solutions and 
+services.  The company has a track record in providing systems for public transpo rt 
+operators across India in states including Maharashtra, Rajasthan and Uttar Pradesh.  It 
+is the main implementer of ITS, having been awarded the project through an open 
+tender process organised by BMTC in 2013.  
+ PricewaterhouseCoopers (PwC): a multinatio nal consulting firm that provides services 
+like audit and assurance.  They are consultants for BMTC for the ITS project, and look 
+after the deliverables from Trimax, to ensure they are in compliance with the 
+requirements of BMTC.  
+ Mapunity Information Servi ces5: a private sector Indian company that develops 
+geographic information systems and services primarily for public sector clients.  
+Mapunity is a consultant for BMTC on ITS with respect to its implementation, and has 
+also assisted in  drafting an open dat a policy for the project.  
+ Passengers: the commuters who use the bus services and are also one of the intended 
+beneficiaries of ITS.  
+                                                      
+2 See: http://www.btis.in/  
+3See: http://mybmtc.com/  
+4See: http://trimax.in/  
+5 See: http://mapunity.com/  Manchester Centre for Development Inform atics Working Paper 72  
+5 
+ C. Components of the Big Data System  
+ 
+ITS was custom -designed for BMTC to track buses and passenger ticketing , in order  to 
+inform not only real -time information -sharing and decision -making, but also medium - and 
+long -term planning of the public transport network. The ITS has fou r key technological 
+components and is operated from a central  Control Room:  
+ 
+Vehicle Tracking Sys tem (VTS):  comprises two further components : the vehicle tracking unit 
+(VTU) and the Voice Kit. The GP RS-enabled VTU  (see Figure 2)  was developed by Trimax, and 
+has been installed  near the driver’s seat  in every one of the more than 6,000 BMTC buses 
+operat ing in the city.  It  shares real -time location data  every 10 seconds, along with vehicle 
+number and shift number (of the driver and conductor of the bus concerned).  This short -
+interval collection of data allows for analysis of the driving pattern, includi ng issues like 
+skipping of bus stops and deviation from planned route, as well as indicating the traffic 
+situation at the buses’ current location . 
+ 
+ 
+ 
+Figure 2: Vehicle Tracking Units  
+Source: BMTC https://twitter.com/BMTC_Bangalore/status/842619833938329600  
+ 
+ 
+Manchester Centre for Development Inform atics Working Paper 72  
+6 
+ Examples of the dashboard displays available at the central Control Room are shown below 
+including an overview of alerts about all buses covered by the system (Figure 3); more  
+detailed drill -down to the level of individual crews (Figure 4); and more detailed drill -down 
+to track an individual bus (Figure 5).  
+ 
+ 
+ 
+Figure 3: Overview Dashboard of Alerts about Buses  
+Source: Vanya Rakesh  
+ 
+ 
+ 
+Figure 4: Drill -Down Data on Individual Bu s Crews  
+Source: Vanya Rakesh  
+ 
+Manchester Centre for Development Inform atics Working Paper 72  
+7 
+  
+ 
+Figure 5: Drill -Down Data on Individual Buses  
+Source: Vanya Rakesh  
+ 
+ 
+This tracking unit  transmits data via the mobile (GPRS) network  with an estimate that 
+around 20GB of data is received daily by the central servers from the VTUs.  The VTU can be 
+used by driver s to inform the Control Room in case of an emergency  but the Voice Kit – a 
+microphone and speaker (see Figure 6) – supports two -way communication between the 
+bus and the Control Room.  This enables the driver to speak with  the Control Room in case 
+of an emergency like an accident or breakdown.  It also enables the  Control Room as well as 
+the bus depot  (the major bus stations , of w hich there are just over 40 in the city)  to contact 
+the bus driver if an alert is triggered such as skipping a bus stop, unauthorised stoppages, 
+change in the route, speeding, etc.  
+ 
+ 
+ 
+Figure 6: Bus Voice Kit  
+Source: BMTC https://twitter.com/BMTC_Bangalore/status/842619833938329600  
+Manchester Centre for Development Inform atics Working Paper 72  
+8 
+ Electronic Ticketing System (ETS):  comprises two connected elements – the Electronic 
+Ticketing Machines (ETM) and the Depot Application.   The ETM  (see Figure 7)  is used by the 
+conductors to issue journey tickets to passengers, and it transmits thi s ticket data to the ITS 
+every five  minutes via the mobile (GPRS) network.  It is EMV -compliant6 and allows for card -
+based and other cashless transactions .  The data collected by the ETM includes the bus stop 
+at which a particular ticket was issued, the ticket amount (proxy for destination bus stop), 
+details of the bus, timestamp, etc.  The Depot Application is installed at al l bus depots  and it 
+gathers inf ormation from both the ETM and VTU as well as top -down sources.  It can then 
+generate information on the crew duty rota, the log sheet for the driver, kilometres 
+travelled  and details about fuel usage, ticketing, etc.  This information is sent to the deskt op 
+application at the ITS Control Room, which generates schedules and timetables.  This data is 
+also fed into the ETM, which is used by the bus conductors and is issued when they begin 
+their period of duty.  
+ 
+ 
+ 
+Figure 7: BMTC Electronic Ticketing Machine  
+Source: Ramakrishnan (2016b)  
+                                                      
+6EMV is a security framework and technical standard for  payment interaction between chip ped/smart 
+payment  cards and payment devices  (EMV  stands for Europay, MasterCard, and Visa, the three companies that 
+originally created the standard ). 
+Manchester Centre for Development Inform atics Working Paper 72  
+9 
+ Passenger Information System (PIS):  this is the bus location information system, powered 
+by real -time data from  the VTS.  It provides information  about buses going from a particular 
+stop/location:  the destination, the route via  which the bus will go, estimated time of arrival , 
+etc (see Figure 8) .   Basic  PIS output can be found on display screens at all major bus 
+stations.  It also feeds the mobile app (see next) and touch -screen kiosks which give bus 
+times as per the basic disp lay but also trip -planner functionality as per the mobile app.  
+ 
+ 
+ 
+Figure 8: Passenger Information System Display  
+Source: Bhattacharya (2016a)  
+ 
+BMTC Mobile Application7: this is an Android application available from the Google Play 
+store. It is said to have a simple user interface that allows tracking of buses in real -time, 
+including their estimated time of arrival at a specific bus stop  (see Figure 9).  The app also 
+provides bus timetables, route maps and a trip planner (see also Figure 9).  The current  
+number of downloads of the app is in the range 10 0,000 -500,000, with a 3.6 review average .  
+The comments threads and responses from BMTC suggest the corporation  has been taking 
+note of and responding to  some  feedback, with the ap p currently on version 2.8 .3. 
+ 
+  
+ 
+Figure 9: BMTC Mobile App  
+Source: https://play.google.com/store/apps/details?id=com.bmtc.mybmtc  
+                                                      
+7See: https://play.google.com/store/apps/details?id=com.bmtc.mybmtc  
+Manchester Centre for Development Inform atics Working Paper 72  
+10 
+ ITS Control Room:  data from vehicle tracking and ticket sales are transmitted to servers – 
+maintained by Trimax but owned by BMTC – located at the Karnataka State Data Centre .  
+From there, data can be accessed at a number of locations but primarily at the ITS Control 
+Room (see Figure 10).  T his is the 24/7 operations centre of the ITS, with a video wall 
+consisting of six large LCD screens showing location information and other key monitoring 
+and performance indicators  (see Figures 3 -5 above).  There is  space for up to twent y people 
+including operators, technicians, and BMTC officials  (see Figure 11) .  The Control Room also 
+has a two-way communication system with all buses, and thus functions as a point -of-
+contact for emergency incidents.  
+ 
+ 
+ 
+Figure 10: ITS Architecture8 
+Sour ce: Mishra (2016)  
+ 
+ 
+ 
+Figure 11: BMTC Control Room  
+Source: BMTC (2017e)  
+                                                      
+8 MPLS: multi -protocol label switching; ILL: Internet leased lines;; P2P: peer -to-peer; WAN: wide area network  
+Manchester Centre for Development Inform atics Working Paper 72  
+11 
+ D. System Implementation  
+ 
+There have been significant delays in ITS implementation – it was initially expected to go live 
+in mid -2014 – but much of this may well be down to technical issues (Akshatha 2015, 
+Bhattacharya 2016b)9.  One might have anticipated one cause of delays to be resistance 
+from bus crews, yet managers interviewed claimed the system was easily and readily 
+accepted by the workforce, who have undergone training sessions  on the new system (see 
+Figure 12) albeit after rather than before installation of the ICT in some cases (Akshatha 
+2016).  Lack of resistance is unexpected because BMTC staff strikes were a relatively regular 
+occurrence during 2016 (Chatterjeel 2016) and 2 017 (Reddy 2017, The Hindu 2017).  And 
+there has been reported concern from drivers and conductors about the surveillance that 
+tracking systems provide e.g. in the sister implementation of ITS in Mysore (NITI 2015).  
+ 
+ 
+ 
+Figure 12: ITS Bus Driver Training (Mysore)  
+Source: NITI (2015)  
+ 
+ 
+Direct interviews with bus crews and labour unions would be required to investigate this in 
+detail but in none of the BMTC strike reports are ITS or its component technologies 
+mentioned, and reports of bus crew interviews men tion complaints about malfunctioning of 
+equipment rather than surveillance (Ramakrishnan 2016a).  Relevant factors here may be:  
+a) Benefits to bus crews of the new system.  There is a saving of time and complexity at 
+least for bus conductors given they now ju st have a single machine instead of many 
+types of tickets, and they no longer need to complete trip -sheets (Ramakrishnan 2015).  
+b) Potential disbenefits as yet unrealised.  Some of the surveillance capacities of the system 
+may  not yet have been put into opera tion.  There is conflicting evidence here.  The 
+interviewed depot manager (see below) claimed the system had reduced “ticketing 
+pilferage” but it was unclear if this covered theft by bus crews.  And reports of 
+conductors “booked” for allowing ticketless tr avel in February 2017 (BMTC 2017d) and 
+report of a July 2017 strike relating to a conductor being suspended over not issuing 
+tickets (The Hindu 2017), indicated this happened through oversight of human ticket 
+inspectors rather than anything based on ITS/ET Ms. 
+c) Potential disbenefits as yet unrecognised.  It may be that bus crews do not recognise 
+that electronic ticketing is a first step towards driver -only buses: something which is 
+already part of BMTC’s plans (Philip 2017a).  
+                                                      
+9 Techn ical and project management (procurement, financing, requirements) challenges were the main issues 
+identified in the Mysore ITS implementation (Prasad 2012).  
+Manchester Centre for Development Inform atics Working Paper 72  
+12 
+  
+There has been an admission of “ a lot of resistance” to ITS within the Corporation 
+(Bhattacharya 2016b).  But this seems to have come more from the managerial level: 
+something which may well have impacted the limited progress in terms of changes to 
+managerial processes, as discussed next . 
+ 
+ 
+E. System Value  
+ 
+Value of ITS can be assessed at four levels:  
+ 
+i. Technical Operations . The main ITS components that either gather or utilise big data were 
+working but not yet fully working as intended:  
+ A discussion with a manager  at Yelahanka bus depot indicated problems with the 
+Vehicle Tracking System, but this was largely relating to the Voice Kit and poor sound 
+quality that made two -way communication hard or impossible in some cases.   There was 
+no direct evidence that VTUs themsel ves are not working following the switch from GPS 
+to GPRS communication, though lack of GPRS signal availability in some parts of the city 
+was identified as a problem in the Mysore ITS project (Prasad 2012).  
+ Though the ETM system is operational – hop on a BMTC bus and you will see them in 
+use – there are some problems.  Bus crew complain about short battery life, system 
+crashes and connectivity errors with the electronic ticketi ng machines (Ramakrishnan 
+2016a), and problems with the system have partly expla ined delays with introduction of 
+smart card payment (The Hindu 2016).  
+ The Passenger Information System public screen and kiosks  do operate in some 
+locations.  They were praised by interviewed passengers for the assistance they provide, 
+and comment in 2017 was seeking a roll -out of the system to individual bus stops rather 
+than complaining about non -operation (Philip 2017b).  However, they  are not universally 
+functional.  For example, in Domlur bus depot, three screen s and one kiosk had been 
+installed, but n one were working at the time of a visit in 2016.  Figure 1 3 shows at the 
+top the public display screens, and on the bottom the kiosk touch -screen which was 
+frozen on this image.  
+  Manchester Centre for Development Inform atics Working Paper 72  
+13 
+  
+ 
+ 
+ 
+Figure 13: Passenger Information System Display Examples  
+Source: Vanya  Rakesh  
+ 
+ The Mobile Application does in reality provide information about bus arrival times as per 
+Figure 8 but the interface and usability are problematic.  On testing in 2016, the app 
+begins by asking use rs which bus number they are interested in: not helpful for those 
+who don’t already know the bus network.  The app did not give details on specific bus 
+Manchester Centre for Development Inform atics Working Paper 72  
+14 
+ routes, making it difficult to identify which buses to take e.g. for commuting.   Other 
+reports indicate m issing buses and missing arrival time data (Akshatha 2016).   By mid -
+2017, the app had been improved but problems still remained (CM 2017): it took a 
+minute for the home screen to load; the Kannada language option leads back to English 
+text; and a test of t he route planner found no record of the bus stop on the system even 
+though it exists in reality, and that planning could only cope with a single bus linking two 
+stops, not with a multi -bus journey; overall, “this app is incredibly buggy and slow”.  
+Mid-2017 reviews of the app  (including a number of the four - and five -star reviews) also 
+complain about lack of accuracy in te rms of bus locations and timing, and a more 
+general review of such systems in India reports potential design -reality gaps:  
+“The accuracy of arrival time prediction is poor, perhaps because of deficiencies in algorithms used for 
+prediction.  In most cases, the details of the prediction algorithms are not available since they were 
+implemented by an external agency.  Many of these implementati ons used methodologies developed for 
+western countries that have homogenous traffic, which may not be suitable in the heterogeneous Indian 
+traffic conditions.” (Vanajakshi et al 2016:21)10 
+Operationally, then, the picture appears to be glass half -full, glas s half -empty.  A number of 
+these problems may be teething troubles which will be resolved, and that are not 
+unexpected in a system the size and complexity of ITS.  However, the persistence of some 
+problems a year since implementation and the sense that BMT C may be addressing smaller 
+issues but not larger ones (CM 2017) gives some cause for concern.  
+ 
+ii. Operational Management .  Operational management means, for example, management 
+at the level of individual bus depots.  The ITS dashboard is available to man agers here with 
+the intention that they are now able to monitor each and every bus in real -time, keep a 
+track of revenue generated each day via the ETM and conduct audits for verification , and 
+also keep a better record of duty schedules for all the employe es.  The first was not 
+previously possible and the latter two were previously done manually.  The manager at one 
+depot reported the following:  
+ Introduction of the ETM had made end-of-day audit and cash reconciliation  easier, and 
+had led to a reduction in r evenue discrepancies, and a reduction in the number of cases 
+of “ticketing pilferage” . 
+ Traffic police would previously issue fines – which the depot manager had to handle – 
+for claimed traffic violations  by bus drivers .  In a number of cases these were kno wn to 
+be fake but there was no mechanism e.g. to check whether a bus was in fact speeding, 
+or was stopped as a result of an accident.  Though imperfect and not providing all 
+necessary data (e.g. it cannot unequivocally tell if a bus has jumped a red light) , data 
+from the Vehicle Tracking System allowed some cross check.  As a result – perhaps the 
+perception as much as the reality of vehicle tracking – the number of fake fines issued 
+was said to have significantly reduced.  
+ There are problems with the ETM sys tem but it was claimed that bus crews would try to 
+refuse to work if the system is not available for use on a particular day.  
+This represents just one view at one moment in time, but it does suggest there have been 
+some changes at the level of front -line m anagement in BMTC.  
+ 
+                                                      
+10 The report goes on to note the complexity and challenges faced by a prototype application that s ought to 
+provide more accurate arrival time prediction based on those “heterogeneous Indian traffic conditions”.  Manchester Centre for Development Inform atics Working Paper 72  
+15 
+ iii. Tactical Management .  This means, for example, management of routing and 
+scheduling.  At the time of the 2016 field study, these other uses of the big data seemed to 
+be potential rather than reality.  For example, there were aspira tions among BMTC 
+interviewees to use the data to rationalise routes, schedules and bus operations in order to 
+better respond to daily and seasonal patterns of demand for public transport , and to 
+enhance efficiency in the operation and management of crews.  The potential is there.  It is 
+claimed that even by 2012, Mysore’s ITS application had cut 28 bus crew and seven buses 
+(from an application across 400 buses) from the schedule through route optimisation based 
+on ITS data (NITI 2015).  And it was claimed t hat by 2016 ITS -based route optimisation and 
+reduction of staffing and overtime in Mysore had cut annual operational costs by 
+US$900,000 (Indian Express 2017).  But this had not happened in Bengaluru in 2016 and 
+there have been no subsequent reports of thi s during 2017.  Indeed, only five schedules 
+were changed during 2016 -17 compared with an average of 176 being changed in previous 
+years suggesting, if anything, a negative relation between the arrival of big data and re -
+scheduling (BMTC 2017c).  
+ 
+iv. Strate gic Performance .  Finally, one may judge ITS at the level of strategic contribution.  
+ITS may have won several awards (BMTC 2017b) and is certainly providing additional 
+functionality to BMTC at lower levels.  But, as yet, this has not been seen in terms of  
+broader urban transportation goals.  We can judge on the basis of the four BMTC goals to 
+which ITS was intended to contribute (Mishra 2016, BMTC 2017c):  
+ Service reliability: 14% of services were cancelled in 2016 -17 compared to an average 
+6.5% in the prev ious five years . 
+ Citizen centricity: PIS and the mobile app have been steps forward but they are not fully 
+operational or effect ive as yet in providing information and journey planning support for 
+travellers.  Passenger -journey numbers were down by about 2 00,000 per day  in 2016 -17 
+compared to the previous year, so aspirations of helping to move more passengers onto 
+the buses were not yet realised.  
+ Revenue management: there is little internal data on this but overall passenger revenue 
+fell by 8% during 2016 -17 compared to an average 10% growth over the previous five 
+years, and as noted above there is a mixed picture of impact at the micro -level of 
+“ticketing pilferage” . 
+ Organisational capabilities: fleet utilisation fell below 90% for the first time in 2016 -17 
+while costs per km were at their highest -ever level.  
+There are of course many internal and external factors other than ITS that contribute 
+towards organisation -wide performance, but this does show a lack of any short -term impact 
+of ITS  on strategic performance indicators.  It also suggests a lack of contribution as yet to 
+even wider measures of urban transportation relating to journey times, pollution, etc.  
+ 
+ 
+F. Conclusion s 
+ 
+Any conclusions about this big data system must be contingent: field interviews were 
+conducted only a few months after the system went live in 2016, and later data was 
+analysed little more than a year after implementation.  Given the scale of investment and 
+operational functionality, it is highly unlikely that the sys tem will be abandoned – one 
+commentator notes “ITS has become too big a project to fail” (Bhattacharya 2016b) – and Manchester Centre for Development Inform atics Working Paper 72  
+16 
+ more likely that it will gather operational momentum and impact over coming years.  There 
+are a number of operational shortcomings identifie d but by, say, 2020 those could well be 
+just a distant memory.  
+ 
+There have been challenges with the technical implementation of this big data project, and 
+socio -technical change to administration and management has really barely begun: bus 
+crew, administra tive and managerial staff are in process of making the changeover from 
+decades of paper -based working to digital -/data -intensive processes.  One clear conclusion 
+is that big data systems take a long time to implement; perhaps particularly in the public 
+sector and certainly particularly for large and more complex systems involving thousands of 
+material objects and tens of thousands of people.  Pure technical implementation has taken 
+several years, and integration into – and revision of – BMTC business proces ses is going to 
+take several years more.  What is provided here can therefore only be seen as an early and 
+interim assessment.  
+ 
+In terms of value, ITS is largely potential rather than actuality.  Some operational benefits 
+have been seen though these unders hoot full value, and tactical and strategic value – at 
+least in overt terms – is yet to be seen.  But it will be at least a year or two before one can 
+assess the success or failure of big data in relation to these higher -level values.  At present, 
+then, mu ch of the data gathered is what Gartner (n.d.) call “dark data ... the information 
+assets organizations collect, process and store during regular business activities, but 
+generally  fail to use for other purposes”.  Put another way, the organisation in many  
+processes waits at the start of the information value chain (see Figure 14), waiting to turn 
+the data it has into meaningful information, decisions, actions and results.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 14: The Information Value Chain  
+Source: Heeks (201 8) 
+ 
+ 
+Notwithstanding the recency of the application, we can still try to make an assessment – 
+drawing on earlier work in India’s electricity sector (Sengupta et  al 2017) – of the relation 
+between big data, power and politics; looking at two aspects.  
+ 
+  
+ 
+Data  
+(capture, input, 
+process, store)  
+ 
+Information  
+(output)  
+ 
+Knowledge  
+ 
+Decision  
+ 
+Action  
+ 
+ 
+Result  Manchester Centre for Development Inform atics Working Paper 72  
+17 
+ F1. Big Data and the Politics of Transportation  
+ 
+First, looking at the broader politics of BMTC, it is regarded as a heavily -politicised 
+organisation: “ a corporate  entity only by name ” (Menezes 2017b) and one that is dogged by 
+claims and perceptions of corruption across all levels (e.g. Ramakrishnan  2016a, Fatima & 
+Natrajkumar 2017, Menezes 2017b).  In such circumstances, organisational image will be 
+seen as importa nt by senior officials and there is certainly a sense of the big data system 
+being applied as veneer.  
+ 
+The focus has been on the external interface of the organisation and public relations rather 
+than changes to internal decision -making: lots of media -related promotion about ITS and 
+attention to the (albeit still functionally -challenged) PIS and mobile app.  This is of a piece 
+with other changes such as free wi -fi or smart cards or better buses on routes used by 
+wealthier passengers which are seen as a) pla ying to the politically -vocal middle classes 
+rather than more marginalised groups; b) at most using big data to address petty front -line 
+corruption while doing nothing to address deeper -rooted and higher -level corruption.  Such 
+innovations are also aimed a t political decision -makers outside BMTC in the Karnataka State 
+legislature, seeking to present the image of a modern and progressive organisation.  ITS and 
+the image it helps create may thus have made some contribution to the decision in 2017 for 
+the firs t large -scale investment in new buses for at least three years: with 3,000 being 
+purchased (Fatima & Natrajkumar 2017, Menezes 2017b).  
+ 
+As well as the image, we can say that big data has also changed the “imaginary” within 
+BMTC: it changes what is “visible ” within the city, and to whom (Taylor & Broeders 2015).  In 
+particular we can see that the daily operations of the bus fleet and bus crews were largely 
+opaque to management prior to ITS, but they are becoming increasingly visible and thus 
+changing the per ceived picture of BMTC that managers hold in their heads.  Big data is thus 
+changing the landscape of what is seen to be possible within the organisation.  Alongside 
+the investment in new buses (which probably relates to the imaginary of politicians as muc h 
+as managers), signs of this are also reflected in:  
+ Revival of plans for driver -only buses – a change  trialled in the 1990s but then 
+abandoned – but now seen as possible  by managers; something they  specifically link to  
+the advent of ITS (Philip 2017a).  
+ Stripping out a management layer: removing the five divisional offices with 400 staff 
+that sit between the central office and the depots.  Although planned for early 2017 it 
+was unclear at the time of writing if this change had occurred.  However, the 
+restru cturing was seen to only be feasible with the arrival of ITS:  
+ “The transition to a two -tier administrative system will be smooth, thanks to the now -functional 
+Information [ sic] Transport System, says Ekroop Caur [ BMTC’s Managing Director ]. ‘While bus rout es and 
+schedule, procurement, accounts and labour welfare were discussed at the central office, BMTC's 
+divisional office was largely responsible for supervision and disciplinary enquiries. Now, we can track the 
+movement of buses and real -time data on ticke t fare collection through  technology,’ she explained” 
+(Menezes 2017a).  
+ 
+ 
+  Manchester Centre for Development Inform atics Working Paper 72  
+18 
+ F2. Big Data -Associated Changes in Locus of Power  
+ 
+Second, we can assess shifts in the locus of power in and around BMTC.  
+ 
+As seen in the Indian electricity case study (Sengupta et al. 2017), there are already signs of 
+an upward shift in power from labour to management which we can judge in relation to 
+three resource features of criticality, control and commutability ( ibid. ): 
+ Criticality: bus crews remain critical to BMTC operations so little has changed here.  
+ Control: the autonomy of bus crews has been significantly reduced with the advent of 
+big data.  Their location, bus speed, following of route and schedule are all now 
+trackable; and ticketing processes are similarly more control led via the ETM.  Of course, 
+some prior autonomy may have been used to meet their own self -interests, but there is 
+now significantly more management surveillance of bus crew activity.  
+ Commutability: automation of operations is steadily eroding the role of and necessity for 
+two-crew operations, and pressure for substitution of the conductor’s role with digital 
+technology will continue to grow.  
+ 
+There are also shifts in power from middle to central management.  Whether actually 
+restructured yet or not, the wr iting is on the wall for divisional offices.  Big data systems 
+enable central management to directly access performance data from the front -line of 
+operations, and to automatically undertake and communicate performance management; 
+obviating the need for in termediating management layers.  Within central management 
+there will also be a shift towards those who manage and use big data such as the senior 
+members of the central Control Room team, but only once big data starts to form a greater 
+part of the manager ial decision -making processes within BMTC.  
+ 
+In the electricity case study there was a clear shift in power from public to private sector; 
+the latter represented by the big data system operator, which was a multinational IT firm.  
+Such a shift is less clear  as yet in relation to ITS, where Trimax is less than 10% the size of 
+BMTC.  Certainly there will be big data system capabilities which Trimax holds and BMTC 
+does not, but ownership of data and systems is quite clearly in the hands of the 
+Corporation11. 
+ 
+Finally, we can consider power shifts between the Corporation and the general public and 
+civil society.  Notwithstanding their flaws, PIS and the associated mobile app have resulted 
+in some greater operational transparency: passengers can more readily unde rstand what 
+BMTC is supposed to deliver; these technologies provide a greater public engagement with 
+transport services; and there is at least the promise that passenger behaviour will be taken 
+into account more in future planning.  Publicly -available high er-level performance data 
+remains at an aggregated and annual level as it did in pre -ITS times, but this could change if 
+the ITS dataset was opened up to public use.   There have been plans for BMTC to open up 
+the real -time data, thus allowing individuals a nd organisations to make use of it (Akshatha 
+2016, Bhattacharya 2016c).  Release of data was promised for June 2017 (ET 2017) but at 
+the time of writing there was no visible sign of it.   
+                                                      
+11 There may be a wider story about shifting public/private sector boundaries, with BMTC being accused of 
+increasingly acting like a private fir m, and with half of the new buses ordered being run on contract by private 
+operators ( Fatima & Natrajkumar 2017).  Manchester Centre for Development Inform atics Working Paper 72  
+19 
+ References  
+ 
+Akshatha, M. (2015) BMTC’s new year gift to Bengaluru: In telligent Transport System , 
+Citizen Matters , 22 Dec  http://bengaluru.citizenmatters.in/bmtc -new -year -gift-to-
+bengaluru -intelligent -transpor t-system -7966  
+ 
+Akshatha, M. (2016) All you need to know about BMTC’s Intelligent Transport System , 
+Citizen Matters , 26 May http://bengaluru.citizenmatters.i n/intelligent -transport -system -
+bmtc -bangalore -8366  
+ 
+Bhattacharya, A. (2016a) BMTC to go intelligent, will introduce vehicle tracking, electronic 
+ticketing & passenger information systems , The Economic Times , 2 May 
+http://economictimes.indiatimes.com/news/politics -and-nation/bmtc -to-go-intelligent -will-
+introduce -vehicle -tracking -electronic -ticketing -passenger -information -
+systems/articleshow/52069334.cms  
+ 
+Bhattacharya, A. (2016b) BMTC flags off intelligent transport system in low -key manner , The 
+Economic Times , 25 May 
+http://tech.economictimes.indiatimes.com/news/technology/bmtc -flags -off-intelligent -
+transport -system -in-low-key-manner/52435841  
+ 
+Bhattacharya, A. (201 6c) BMTC plans an open data policy to boost its Intelligent Transport 
+System , The Economic Times , 2 Jun 
+http://tech.economictimes.indiatimes.com/news/internet/bmtc -plans -an-open -data -policy -
+to-boost -its-intelligent -transport -system/52547930  
+ 
+BMTC (2017a) BMTC at a Glance , BMTC, Bengaluru  http://www.mybmtc.co m/bmtc_glance  
+ 
+BMTC (2017b) Awards , BMTC, Bengaluru http://www.mybmtc.com/awards  
+ 
+BMTC (2017c) Performance Indicator , BMTC, Bengaluru 
+http://www.mybmtc .com/performance -indicator  
+ 
+BMTC (2017d) Ticketless passengers penalized during the Month of February -2017 , BMTC 
+News , 24 Mar http://www.mybmtc.com/news/t icketless -passengers -penalized -during -
+month -february -2017  
+ 
+BMTC (2017e) BMTC Intelligent Transport System , video, BMTC, Bengaluru 
+https://www.youtube.com/watch?v=sk2DdDjeSF8  
+ 
+Chatterjeel, S. (2016 ) KSRTC, BMTC workers to go on indefinite strike from Monday , Times 
+of India , 23 Jul http://timesofindia.in diatimes.com/city/bengaluru/KSRTC -BMTC -workers -to-
+go-on-indefinite -strike -from -Monday/articleshow/53356334.cms  
+ 
+CM (2017) One year later, BMTC’s updated ITS continues to disappoint , Citizen Matters , 24 
+May http://bengaluru.citizenmatters.in/one -year -later -bmtc -intelligent -transport -system -
+continues -to-be-unintelligent -9308  Manchester Centre for Development Inform atics Working Paper 72  
+20 
+  
+ET (2017) BMTC to open up transit data enabling entrepreneurs build mobility solutions , The 
+Economic Times , 9 Jun http://tech.economictimes.indiatimes.com/news/internet/bmtc -to-
+open -up-transit -data -enabling -entrepreneurs -build -mobility -solutions/59064430  
+ 
+Fatima, K. & Natrajkumar, N. (2017) Torn seats, failed brakes, broken windows, The News 
+Minute , 16 May http://www.thenewsminute.com/article/torn -seats -failed -brakes -broken -
+windows -what -ails-karnatakas -bmtc -buses -62100  
+ 
+Gartner (n.d.) Dark Data , Gartner, Stamford, CT http://www.gartner.com/it -glossary/dark -
+data/  
+ 
+Heeks, R. (2009) The godfather of ICT4D, and ICT4D’s first computer , ICT4D Blog , 1 Jan 
+https://ict4dblog.wordpress.com/2009/01/01/the -godfather -of-ict4d -and-ict4ds -first-
+computer/  
+ 
+Heeks, R. (2018 ) Information and Communication Technology for Dev elopment , Routledge, 
+Abingdon, UK  
+ 
+Indian Express (2017) Mysore's sustainable urban public transport shows the way , Indian 
+Express , 1 Mar 
+http://www.newindianexpress.com/states/karnataka/2017/mar/01/mysores -sustainable -
+urban -public -transport -shows -the-way-1576035.html  
+ 
+Menezes, N. (2017a) Tech to make BMTC a mean machine , The Economic Times , 24 Jan 
+http://tech.economictimes.indiatimes.com/news/technology/tech -to-make -bmtc -a-mean -
+machine -naveen -menezes -bengaluru/56746955  
+ 
+Menezes, N. (2017b) What ails BMTC and what it must do to drive Bengaluru's future, The 
+Economic Times , 24 Feb http://economictimes.indiatimes.com/news/politics -and-
+nation/what -ails-bmtc -and-what -it-must -do-to-drive -bengalurus -
+future/articleshow/57325264.cms  
+ 
+Mishra, B. (2016) Intelligent Transport System (ITS), presentation at workshop on Smart 
+Mobility for Bengaluru , Bengaluru, 10 Jun 
+https://www.slideshare.net/EMBARQNetwork/bmtc -intelligent -transport -system  
+ 
+NITI (2015) Good Practices Resource Book , Natio nal Institution for Transforming India , New 
+Delhi http://niti.gov.in/human -development/best -practices  
+ 
+Philip, C.M. (2017a) BMTC plans to trim manpower with conductor -less buses , Indian 
+Express , 13 Feb http://www.newindianexpress.com/cities/bengaluru/2017/feb/13/bmtc -
+plans -to-trim -manpower -with -cond uctor -less-buses -1570054.html  
+ 
+Philip, C.M. (2017b) Info system: only apathy on display, Indian Express , 13 Mar 
+http://www.newindi anexpress.com/cities/bengaluru/2017/mar/13/info -system -only --
+apathy -on-display -1580820.html  Manchester Centre for Development Inform atics Working Paper 72  
+21 
+  
+Prakash, R. (2008) BMTC`s satellite tracking system goes off -track , Business Standard , 18 
+Aug http://www.business -standard.com/article/economy -policy/bmtc -s-satellite -tracking -
+system -goes -off-track -108081801070_1.html  
+ 
+Prasad, N.M. (2012) Intelligent Transport System KSRTC, Mysore , Karnataka State Road 
+Transport Corporation, Bengaluru http://www.sutpindia.com/skin/pdf/event_22.pdf  
+ 
+Ramakrishnan, S. (2015) Electronic ticketing systems: Who got it right and how , BESTpedia , 
+21 Jul http://bestpedia.in/2015/07/electronic -ticketing -systems -1/ 
+ 
+Ramakrishnan, S. (2016a) [Unsung h eroes] A candid chat with a BMTC conductor , 
+BESTpedia , 16 Jun http://bestpedia.in/2016/06/unsung -heroes -a-candid -chat -with -a-bmtc -
+conductor/  
+ 
+Ramakrishnan, S. (2016b) A sneak peak at BMTC’s and MCTD’s ITS , BESTpedia , 18 Jun 
+http://bestpedia.in/2016/06/sneak -peak -bmtc -mctd -its/ 
+ 
+Reddy, R. (2017) Snap stir by BMTC women staffers disrupts services , Times of India , 2 Jun 
+http://timesofindia.indiatimes.com/city/bengaluru/snap -stir-by-bmtc -women -staffers -
+disrupts -services/articleshow/58955135.cms  
+ 
+Sengupta, R., Heeks, R., Chattapadhyay , S. & Foster, C. (2017) Exploring Big Data for 
+Development: An Electricity Sector Case Study from India , GDI Development Informatics 
+Working Paper no.66, University of Manchester, UK 
+http://www.gdi.manchester.ac.uk/research/publications/other -working -papers/di/  
+ 
+Taylor, L.  & Broeders, D. (2015) In the name of development: power, profit and the 
+datafication of the global South, Geoforum , 64, 229 -237 
+ 
+The Hindu (2016) BMTC smart card launch delayed, The Hindu , 19 Dec 
+http://www.thehindu.com/news/cities/bangalore/BMTC -smart -card -launch -
+delayed /article16906384.ece  
+ 
+The Hindu (2017) Flash strike by BMTC workers leaves commuters in the lurch , The Hindu , 4 
+Jul http://www.thehindu.com/news/cities/bangalore/flash -strike -by-bmtc -workers -leaves -
+commuters -in-the-lurch/article19205917.ece  
+ 
+Urs, A. (2010) KSRTC to roll out intelligent transport system in Mysore , The Hindu , 14 Sep 
+http://www.thehindubusinessline.com/todays -paper/tp -logistics/ksrtc -to-roll-out-
+intelligent -transport -system -in-mysore/article1003874.ece  
+ 
+Vanajakshi, L., Subramanian, S.C. et al. (2016) Development of a Real Time Bus Arrival Time 
+Prediction System under Indian Traffic Conditions , IIT Madras, Chennai 
+https://coeut.iitm.ac.in/AP TS_Finalreport_2016.pdf  
+ 

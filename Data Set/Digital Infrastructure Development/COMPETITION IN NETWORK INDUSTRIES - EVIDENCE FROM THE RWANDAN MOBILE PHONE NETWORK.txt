@@ -1,0 +1,1285 @@
+COMPETITION IN NETWORK INDUSTRIES:
+EVIDENCE FROM THE RWANDAN MOBILE PHONE NETWORK
+DANIEL BJÖRKEGREN∗
+This paper analyzes the potential for competition policy to aﬀect welfare and in-
+vestment in a network industry. When a network is split between competitors, each
+internalizes less network eﬀects, but may still invest to steal customers. I structurally
+estimate the utility of adopting a mobile phone from subsequent usage, using transac-
+tion data from nearly the entire Rwandan network. I simulate the equilibrium choices
+of consumers and network operators. Adding a competitor earlier could have reduced
+prices and increased incentives to invest in rural towers, increasing welfare by the
+equivalent of 1% of GDP.
+JEL Classification Codes : O33, L96, O180, L51
+Keywords : network eﬀects, infrastructure, information technology
+∗Brown University. E-mail: dan@bjorkegren.com, Web: http://dan.bjorkegren.com
+Revision December 20, 2020.
+Thank you to Nathan Eagle for initial access to data. Thank you also to Susan Athey, Michael
+Kremer, Greg Lewis, Ariel Pakes, Greg Rosston, and Jesse Shapiro for helpful conversations. In
+Rwanda, I thank the staﬀ of my telecom partner, RURA, NISR, and PSF for helpful conversations
+and access to data. Ella Ty Karambizi, Shunsuke Tsuda and Aaron Weisbrod provided excellent
+researchassistance. ThankyouforfeedbackfromaudiencesattheBerkeley-StanfordIOFest, Boston
+College, FCC, FTC, IIOC, Jinan University Workshop on Firms in Emerging Economies, Microsoft
+Research, NBER IO, NBER Development, NBER Digitization, NSF Conference on Network Science
+in Economics, PacDev, Princeton, RAND Corporation, Stanford, UC Berkeley, UCSD, University
+College London, University of Washington, World Bank ABCA, and Yale. This work was supported
+by Brown University SSRI and the NET Institute (http://www.netinst.org). The author gratefully
+acknowledgesthesupportoftheW.GlennCampbellandRitaRicardo-CampbellNationalFellowship
+at Stanford University and Microsoft Research during this project.
+12
+1.Introduction
+How should societies manage dominant networks? Governments commonly inter-
+vene to spur competition, in the hope that consumer choice will discipline ﬁrms.
+However, competition also splits consumers across networks. As a result, ﬁrms inter-
+nalize less network eﬀects. That could lower incentives to invest, unless it is oﬀset by
+a suﬃcient motive to steal customers from competitors.
+Despite extensive theory, there is little empirical work to guide policy for classical
+network goods, whose users value links with other users (such as communication, pay-
+ment, or social networks).1This paper focuses on emerging economies, where telecom
+networks have begun to play an outsized role. Although voice calls still account for
+the majority of revenues, in these societies mobile phone operators are emerging as
+gatekeepers to information services, the internet, and, increasingly, ﬁnancial transac-
+tions.2The details of how to manage competition have been ‘a main bottleneck’ to
+the sector’s development (World Bank, 2004), and regulators have little guidance on
+when to tilt favor, allow consolidation (Moody’s, 2015), or split ﬁrms (Reuters, 2017).
+ThispaperevaluatestheeﬀectsofcompetitiononinvestmentandwelfareinRwanda’s
+mobile phone network, using 5.3 billion transaction records from an incumbent op-
+erator that held over 88% of the market. I extend the network demand system of
+Björkegren (2019) to allow for competition, and model a tractable supply side to com-
+pute equilibria between ﬁrms and 1.5 million networked consumers. I evaluate how
+introducing competition earlier could aﬀect prices, investment, and welfare. I ﬁnd
+that adding a competitor could have increased incentives to invest, and increased
+1See Katz and Shapiro (1994) and Farrell and Klemperer (2007) for review articles. The theory on
+competition in developed country landline networks (Armstrong, 1998; Laﬀont et al., 1998; Laﬀont
+and Tirole, 2001) can be inconclusive (Vogelsang, 2013), and with few exceptions (e.g., Valletti and
+Cambini, 2005) omits factors important for growing networks such as investment and network eﬀects
+in adoption.
+2Voice accounts for 60% of the my telecom partner’s parent’s African revenue in 2017 (including two
+small operations outside of Africa).3
+welfare by the equivalent of 1% of GDP. This paper represents the ﬁrst empirical
+analysis of competing classical network goods using micro data.
+Like most African countries, Rwanda initially licensed a monopoly mobile phone
+operator and gradually allowed entry (Williams et al., 2011). Each ﬁrm was required
+to interoperate so consumers could call customers of other networks, but each oﬀered
+coverage exclusively to its own customers. I study a period during which the reg-
+ulator allowed entry of a second ﬁrm, which ended up being poorly run and never
+captured much market share. Despite this entrant’s weaknesses, within 4.5 years the
+incumbent lowered real calling prices by 76% and nearly quadrupled the number of
+towers, increasing coverage from 60% to a nearly complete 95% of land area. My data
+from the incumbent cover nearly the entire network of mobile phones at the time, and
+nearly every call over those 4.5 years.
+Immediately after this period, the regulator granted an additional license to a
+well managed competitor, which built coverage in lucrative urban markets, charged
+lower prices, and captured market share. Could the government have done better by
+granting this additional competitor a license at the beginning of the period?
+I answer these questions using an empirical approach that proceeds in three steps.
+First, the government chooses whether to grant a license to an additional com-
+petitor, and if so, the interconnection rate that each ﬁrm pays the other when its
+subscribers call in to their network.
+Second, ﬁrms choose from a menu of strategies. The entrant builds urban towers
+and selects a path of calling prices, anticipating the choices of the incumbent. Then,
+the incumbent selects calling prices and whether to build the nearly complete set of
+towers it actually built, or scale back low population rural towers. I use engineering
+cost data collected under mandate by the regulator. I require that ﬁrms charge users
+the same rate for on- and oﬀ-network calls, proportional to the incumbent’s baseline
+price path. Because these terms could have been implemented by the regulator, my4
+results represent a lower bound of the potential welfare beneﬁts of competition under
+more ﬂexible policies.
+Third, I model the utility of adopting and using a phone. Almost all phones in
+Rwanda were basic, prepaid mobile phones.3I infer the value of each voice connection
+fromsubsequentinteractionacrossthatconnection, usingthemethodandestimatesof
+Björkegren (2019). This approach bypasses most of the simultaneity issues that result
+from inferring the value of links from correlations in adoption.4Calls are billed by the
+second, so a subscriber must value a connection at least as much as the cost of calls
+placed across it.5Variation in prices and coverage identiﬁes the underlying demand
+curve for communication across each link. Consumers are forward looking, choosing
+when to adopt by weighing the increasing stream of utility from communicating with
+thenetworkagainstthedecliningcostofhandsets. IextendBjörkegren(2019)toallow
+consumers to select and switch between operators. I survey Rwandan consumers to
+estimate switching costs and idiosyncratic preferences with hypothetical questions.
+Equilibria are computed using an iterated best response algorithm. Firms com-
+mit to price and rollout plans, then consumers publicly announce adoption dates,
+operator choices, and usage. I index the multiple equilibria in demand by exploiting
+supermodularity (similar to Jia (2008) and Björkegren (2019)); ﬁrms anticipate the
+index of the equilibrium that consumers will play.
+In resulting equilibria, building a tower increases the adoption and usage of indi-
+viduals who call from that location, which increases the adoption of those they are
+connected to, which increases the adoption of others with no connections to that lo-
+cation, and so on. A monopolist will internalize these demand spillovers within the
+3In the period I study mobile money did not exist. As of this writing, only 9% of mobile phones in
+Rwanda are smartphones (ResearchICTAfrica, 2017).
+4One individual may adopt after a contact adopts because the contact provides network beneﬁts, or
+because connected individuals share similar traits or are exposed to similar environments.
+5In the ﬁrst 14 months of the data, calls are billed by the ﬁrst minute and every following 30 seconds.5
+entire network. Under competition, interoperability causes beneﬁts to spill over into
+competing networks, but each ﬁrm internalizes only spillovers within its own network.
+I simulate the industry through December 2008, and ﬁnd:
+Adding a competitor could have lowered prices by 30-50% and increased incentives
+to invest in rural towers, under an interconnection rate of $0:11/minute. This policy
+would have increased the net welfare provided by the mobile phone system by up
+to 60%, an amount equivalent to 1% of GDP or 3-5% of the oﬃcial development
+aid received by the country over this timespan. This suggests that the industrial
+organization of emerging networks can have profound welfare implications.
+I ﬁnd that tower investments induce limited spillovers across networks: when the
+network is split, the incumbent still internalizes 95-99% of incremental proﬁts from
+building rural towers (holding ﬁxed operator choices). But investing attracts con-
+sumers from the other operator, so overall, the incumbent can face a higher return
+from investment when it faces an additional competitor. The business stealing ef-
+fect accounts for 80-88% of the incumbent’s proﬁt from the investment, coming from
+semiurban consumers who partially value rural coverage.
+Overall outcomes depend on the competition policy used. While the return on
+investment (ROI) can be higher under competition, it declines as the networks are
+made more compatible through lower interconnection fees. But building the rural
+towers is still proﬁtable under all interconnection fees. Lower interconnection fees
+also lead to lower prices and higher welfare. A policy to reduce switching costs
+(number portability) increases the level of competition. Delaying entry results in
+smaller eﬀects during this time period.
+A limitation to my approach is that the network is illuminated by usage, so individ-
+uals who do not adopt under baseline conditions are omitted. I model the behavior
+of nodes in this ‘dark’ portion of the network, and the results I report are for shorter
+time horizons before these nodes would have adopted.6
+Altogether, this paper introduces an approach that could be applied by a regulator
+planning policy scenarios for a dominant monopoly network. I combine data from a
+dominant network with models of ﬁrm and consumer behavior, to anticipate how the
+industry would evolve under competition. The key to this exercise is ensuring those
+models are realistic. Some of the information I use to discipline these models would
+be available to such a regulator: choices made under the incumbent, and data from
+markets that were competitive at the time. However, I also beneﬁt from observing
+Rwanda after the market became competitive. Altogether, this approach can be used
+to evaluate the eﬀect of a wide class of policies; in addition to what I consider here:
+breaking up the incumbent, requiring networks to interconnect under heterogeneous
+rates, directlyregulatingcoverageorthepriceofcalls, andchangingtaxesonhandsets
+and airtime.
+Related Literature. This paper builds on the classical network demand system es-
+timated in Björkegren (2019), which has parallels to Ryan and Tucker (2012)’s model
+of videoconferencing adoption. Most empirical work on classical network goods sim-
+ply measures the extent of network eﬀects; see for example Saloner and Shepard
+(1995), Goolsbee and Klenow (2002), and Tucker (2008). Common demand system
+simpliﬁcations can provide misleading estimates in these industries. I ﬁnd that rev-
+enue estimates can be biased ranging from 52% too small to 86% too large in demand
+systems that do not model the full structure of the network (by omitting interde-
+pendence in consumer decisions, modeling network beneﬁts in aggregate, or treating
+links as random draws).
+There is a much larger literature on goods with indirectnetwork eﬀects, for which
+consumers beneﬁt from additional users not because they value links with those users,
+but because popular platforms are better served by sellers. These include platforms
+and video formats (Ohashi, 2003; Gowrisankaran et al., 2010). Lee (2013) considers7
+software compatibility (exclusivity) arrangements in video game platforms using a
+dynamic model of demand that holds ﬁxed prices and investments. In a natural
+experiment, Farronato et al. (2020) ﬁnd that service and usage outcomes change
+little when two competing pet sitting platforms merge.
+Much of the dynamic oligopoly literature focuses on settings with static demand
+(Ericson and Pakes, 1995). Gowrisankaran and Rysman (2012) model dynamic de-
+mandfordurables, withﬁrmsthatmakeper-periodpricingdecisions. Istudydynamic
+provision of service for a durable that has a ﬂow utility that changes depending on
+whether contacts have adopted, calling prices, and changing spatial coverage.6Since
+I can use regulator cost data, I skip estimating costs from dynamic decisions (Bajari
+et al., 2007; Pakes et al., 2008).
+Goettler and Gordon (2011) and Igami (2017) together suggest the eﬀect of com-
+petition on innovation can vary based on industry primitives. My setting diﬀers in
+that operators face network eﬀects, and earn revenue from ongoing service fees so do
+not compete with previous vintages of product.
+Myapproachcomplementscomparisonsbetweencountriesthatsetdiﬀerenttelecom
+policies. Faccio and Zingales (2017) and Genakos et al. (2018) ﬁnd that increases in
+a telecom competition index are associated with price reductions, and Grajek and
+Röller (2012) ﬁnd that a higher index of access to incumbents’ infrastructure reduces
+investment in EU ﬁxed line networks.7
+6The model has both classical network eﬀects in adoption (my utility depends on whether my
+particular contacts adopt) as well as indirect network eﬀects in coverage (if more customers adopt,
+even if I have no desire to talk with them, my operator may ﬁnd it more proﬁtable to build towers).
+7For reviews see Cambini and Jiang (2009) and Manganelli and Nicita (2020).8
+Figure 1. Mobile Telecom Competition in sub-Saharan Africa
+Percent of countries with diﬀerent industry structures. Source: Williams et al. (2011).
+2.Context
+Developingcountryphonesystems. Developingcountryregulatorstypicallystarted
+mobile phone industries by granting temporary monopolies, and then gradually li-
+censed additional competitors (see Figure 1). Licenses commonly require ﬁrms to
+submit business plans, describing tower investments and pricing strategies (World
+Bank, 2013), and required networks to be interoperable so that users could call across
+networks, with explicit terms of interconnection.8(Left to the market, incumbents
+typically demand prohibitively high fees for interconnection; but even when network
+sizes are balanced, ﬁrms can use interconnection rates as an instrument of collusion
+(Armstrong, 1998; Laﬀont et al., 1998).) It is common for regulators to telegraph
+future policy by announcing entry dates or glide paths for interconnection, though
+thereareoccasionalsurprises. Laterentrantstypicallychargedlowerpricesandserved
+densely populated areas, which are more lucrative.
+8Licenses include rights to use speciﬁc bands of electromagnetic spectrum. Availability of spectrum
+was not a major constraint for regulators in poorer countries in this era, as there were few competing
+uses. See Supplemental Appendix S4.1.9
+Table 1. Mobile Telecommunications in sub-Saharan Africa
+Mean SD
+Number of operators 3.27 1.48
+...top market share 0.58 0.19
+...second highest market share 0.32 0.09
+Market concentration (HHI) 0.49 0.21
+Interconnection charges are regulated 97%
+...based on costs (LRIC or FDC) 71%
+...based on benchmarks 43%
+Industry statistics from 2015 or latest year available, source: regulator reports and news articles.
+Regulation statistics from 2015, for all SSA countries with available regulatory data (ranges from
+21 to 41 countries depending on question), source: ITU.
+However, there is little consensus on the optimal ground rules for competition.
+Table 1 shows that sub-Saharan Africa has a wide diversity in levels of competition,
+and how interconnection rates are set.9
+Rwanda. In the aftermath of the genocide and civil war, the Rwandan government
+in 1998 granted a temporary exclusive license to a multinational operator to build and
+run a mobile phone system (Operator A). Rwanda’s licenses allow an operator to set
+consumer prices at its discretion, but require specifying towers to be constructed over
+a 5 year horizon, updated upon renewal.10Most tower investments were driven by
+market incentives, but the operator was required to cover a handful of rural priority
+areas (amounting to 11% of rural towers active by 2009; Björkegren (2019)).
+In 2003, the government announced it would provide a license to a second mobile
+operator, which entered in 2005 (Operator B). The second operator turned out to be
+poorly run and have quality issues. It was part of the former state landline company,
+but was purchased by an American satellite entrepreneur who was disconnected from
+9Additionally, most interconnection models are designed for mature developed country networks,
+and so do not account for network eﬀects in adoption.
+10These are enforced: when Operator B failed to comply with its rollout plan, it was ﬁned and its
+license was ultimately revoked.10
+realities on the ground (WSJ, 2006; IGIHE.com, 2011). After several changes in
+ownership, it reached a maximum of 20% market share for a brief period after the
+end of my data. In 2011, its license was revoked for failure to meet obligations.11
+In 2008 the Rwandan regulator asked for bids and rollout plans for a third license.
+It granted the license to a third multinational operator (Operator C), which entered
+at the end of 2009, and required the previous operators to renew their licenses. A
+consultant recommended lowering interconnection rates based on cost data (PwC,
+2011).
+In 2011, the assets and license of Operator B were absorbed into Operator D. In
+2018, Operator C and D merged, bringing the market back to a duopoly.
+See Figure 2 for the evolution of handset prices, accounts, calling prices, and cov-
+erage. This paper uses data from the period 2005-2009. Because the incumbent
+expected a ﬁrm to enter in 2005, starting conditions include dynamic eﬀects of an-
+ticipating a new entrant. The calling price plot shows the baseline calling price, and
+foreshadows a counterfactual where Operator C is granted a license in 2005 at an
+interconnection rate of $0.11 per minute.
+Consumerchoice. Table2showsstatisticsonphoneadoptionandusageinRwanda
+and several sub-Saharan African countries. Handsets are standard, imported models,
+with prices that track global trends. Most are purchased at retail price.12During
+this period, phones were used primarily for voice calls, and almost all phone plans are
+prepaid, withnomonthlyfeebutamarginalchargepersecond. Mobilemoneydidnot
+exist at this point, and I do not explicitly model utility from text messages, missed
+11WSJ (2006) reports that the operator “had no customer-service department and 12 employees
+whose sole job was to play on the company soccer team.” The Registrar General, Louise Kanyonga
+said, “The company was mismanaged and their liabilities far outweigh their assets... This has been
+a real learning experience for our government. We need to ask how this happened.”
+12In Rwanda most are purchased from independent sellers: operator handset sales records account
+for only 10% of total handsets activated during the period of my data.11
+Figure 2. Development of Telecommunications in Rwanda
+(a) Handset Price (real, quality adjusted index)
+$0$50$100$150
+20042005200620072008200920102011201220132014Handset Price
+(b) Accounts
+● ● ● ● 01,000,0002,000,0003,000,0004,000,000
+20042005200620072008200920102011201220132014Subscribers●●●●● ABCDLandline
+(c) Calling Price, On Network (30 second, nominal)
+$0.00$0.10$0.20
+20042005200620072008200920102011201220132014Price (30 sec peak)Baseline Counterfactual
+(d) Coverage (geographic)
+0%25%50%75%100%
+20042005200620072008200920102011201220132014Coverage
+Handset prices reported during the years I have data on prices and quantities. I report baseline
+calling prices and the prices from a counterfactual where Operator C enters in 2005 with an
+interconnection rate of $0.11 per minute. Sources: archived operator websites and regulator
+reports.12
+Table 2. Mobile Phone Usage among Owners in sub-Saharan Africa
+2007-8 2010-11
+Rwanda SSA** Rwanda SSA*
+Received phone with a contract 0% 3% 3% 11%
+Use phone for
+Voice calls 95% 98% 100% 99%
+Music or radio 6% 14% 35% 46%
+Taking photos or videos 5% 15% 24% 39%
+Email 2% 3% 13% 14%
+Sending or receiving money - - 18% 18%
+Browsing Internet - - 15% 17%
+Facebook or other social network - - 14% 16%
+Apps (downloaded) - - 6% 15%
+Source: RIA household surveys 2007-2008 and 2010-2011. *: Representative samples of mobile
+phone owners in Cameroon, Ethiopia, Ghana, Kenya, Mozambique, Namibia, Nigeria, Rwanda,
+South Africa, Tanzania, and Uganda; **: also Benin, Botswana, Burkina Faso, Cote d’Ivoire,
+Senegal, and Zambia. A dash indicates that question was not asked in that survey round.
+calls, international calls, and calls from payphones.13Any value these omissions
+provide is captured in a residual in the adoption decision.
+3.Data
+This project uses several data sources:14
+Call detail records: As a side eﬀect of providing service, mobile phone operators
+record data about each transaction, called Call Detail Records (CDRs). This project
+uses 4.5 years of anonymous call records from Operator A, which held above 88%
+of the market during this period. This data includes nearly every call between the
+operator’s mobile phone subscribers, numbering approximately 400,000 in January
+2005 and growing to 1.5 million in May 2009. It does not include the small number
+of calls to individuals who subscribed to Operator B. For each transaction, the data
+reports: anonymous identiﬁers for sender and receiver, corresponding to the phone
+13See Supplemental Appendix S1 for more details.
+14For more information see Supplemental Appendix S1-S3.13
+number and handset, time stamps, the location of the cell towers used, and call
+duration.15I aggregate durations to the monthly level.
+Operator costs: The Rwandan regulator collects cost data from operators in
+order to ensure interconnection rates are ‘derived from relevant costs’ (RURA, 2009).
+I use long run incremental costs from a consultant study (PwC, 2011), and the cost
+of operating towers from a public study commissioned to set the regulated prices of
+infrastructure sharing (RURA, 2011).
+Coverage: A rollout plan, z=f(tz;xz;yz)g, is deﬁned by tower build dates and
+geographical coordinates. z(r)represents the rollout that builds urban towers but
+only the proportion rof rural towers covering the highest populations, so that z(100%)
+represents the baseline rollout.16I create coverage maps by computing the areas
+within line of sight of the towers operational in each month, a method suggested by
+the operator’s network engineer. Elevation maps are derived from satellite imagery
+recorded by NASA (Jarvis et al., 2008; Farr et al., 2007).
+Individual locations and coverage: it(z)2[0;1]represents the coverage avail-
+ableatindividual i’smostusedlocationsunderrolloutplan z, computedinBjörkegren
+(2019) using a method analogous to triangulation.
+Handset prices: I create a monthly handset price index phandset
+tbased on 160
+popular models in Rwanda, adjusting for quality and weighting each model by the
+quantity activated on the network.
+Consumer survey: To estimate the costs of switching, and idiosyncratic pref-
+erences for the entrant, I posed hypothetical incremental switching exercises to 89
+mobile phone owners in Rwanda in the summer of 2017.
+15Data are missing for May 2005, February 2009, and part of March 2009.
+16Rankings determined based on population within a 10 km radius.14
+4.Model
+The incumbent arrives in month t= 0(January 2005) with an initial set of sub-
+scribers and towers. The government announces policy, each ﬁrm decides paths of
+callingpricesandcoverage, andeachconsumerdecideswhichmonthtoadoptaphone,
+with what operator, and how much to call each contact. I assess results under diﬀer-
+ent time horizons ~T. I consider Rwanda’s handset market as perfectly competitive,
+with exogenous prices unaﬀected by the market for service.
+4.1.Government. In montht= 0, the government announces its policy through
+~T: either it will not license an additional competitor (‘baseline’), or will additionally
+license Operator C (‘competition’) with interconnection fee f, a measure of compat-
+ibility. Counterfactuals will consider granting the license in t= 0, or after a delay so
+consumers can select the new operator starting in t= 42(July 2008).
+The government earns revenue from taxes on adoption ( handset
+it) and usage ( usage
+it);
+these rates are held ﬁxed and their path is announced in advance.17I do not take a
+stand on whether the government maximizes tax revenue, welfare, or another objec-
+tive.
+17The government earns tax revenue:
+R~T
+G(p;z;x;a) =X
+i2STandxi~T2
+4xihandset
+ixiphandset
+xi+~TX
+txi0
+@tusage
+itX
+j2Gi\Stpait
+tEdij(pt;t;a)1
+A3
+5
+whereStis the set of individuals with phones in month t,xirepresentsi’s adoption date, aiti’s
+operator,pait
+tis the calling price, Girepresents the contacts of i, and Edij(:::)represents the
+expected number of seconds of calls from itoj, and arepresents the matrix of ﬁrm choices for each
+individual and month.15
+4.2.Firms.The entrant ( F= 1), and then incumbent ( F= 0) select a tower rollout
+plan zFand a path of calling prices pF= (pF
+t)t, earning proﬁts through ~T:18
+~T
+F(p;z;x;a;f) =R~T
+F(p;z;x;a;f) C~T
+F(p;z;x;a)
+where p= [p0;p1],z= [z0;z1],x= [xi]the vector of adoption dates, and a= [ait]
+is the matrix of operator choices for each individual and month.
+The entrant builds only urban towers ( z1=z(0%)), following its parent company’s
+articulated strategy in Africa (and later initial plan in Rwanda).19The incumbent
+builds urban towers, and also selects the proportion of rural towers rto build, where
+towers are ranked by population covered ( z0=fz(100%);z(50%)g; see Figure 320).
+Firms may select calling prices as a multiple of the incumbent’s baseline price path:
+pF2 pbase,givenachoicefromthegrid  2f0:1;0:2;0:3;0:4;0:5;0:6;0:7;0:8;0:9;1g.
+Firms must charge subscribers the same price for calls placed within the same net-
+work (on-net) and to the other network (oﬀ-net), an assumption that can be thought
+of as a rule imposed by the regulator.21
+18This order of play is selected to more closely match what happened in Rwanda, where the entrant
+submitted its bid for the new phase of competition ﬁrst.
+19Operator C’s global Annual Report in 2010 said: ‘There is scope for further coverage growth in our
+African markets, but urban centers currently represent the signiﬁcant majority of the addressable
+population.’
+20The Supplemental Appendix considers a wider set of options.
+21While a rule to restrict oﬀ-net prices was not common in African markets at this time, it was
+proposed for Rwanda (Argent and Pogorelsky, 2011), and has been used in several countries to
+discipline competition (including Kenya, Singapore, Colombia, Turkey, Slovenia, and Portugal: see
+TMG, 2011). If instead operators charge diﬀerent prices for on- and oﬀ-net calls, the game admits
+too many equilibria to be useful, because all cliques of individuals may tip into one network or the
+other.16
+Figure 3. Rollout Plans
+Incumbent Plan z02 Entrant Plan z1=
+z(100%) z(50%) z(0%)
+All towers Do not build half of rural towers
+covering lowest populationOnly urban towers2005
+ 2009
+Rural
+100,000 200,000 300,000 400,0000.02.55.07.510.0
+Population (within 10 km)Towers
+Rural
+100,000 200,000 300,000 400,0000.02.55.07.510.0
+Population (within 10 km)Towers
+Rural
+100,000 200,000 300,000 400,0000.02.55.07.510.0
+Population (within 10 km)Towers
+Shows the coverage plans that operators may choose from. Starting from the its set of towers in
+2005, the incumbent may build all towers ( z(100%)) or skip the half of rural towers covering the
+lowest population ( z(50%)). The entrant may build urban towers ( z(0%)). Coverage shaded; points
+denote cities. National parks shaded in light green; Lake Kivu shaded in light blue.17
+FirmFearns net revenue from the calls of its own subscribers, and from intercon-
+nection payments: ﬁrms pay each other ffor each second their subscribers call in to
+the other network:
+R~T
+F(p;z;x;a;f) =X
+i2ST~TX
+txitX
+j2Gi\StEdij(pt;t(z);a)2
+64Subscribersz}|{
+(1 usage
+it )pF
+t1fait=Fg+
+fh
+1fait6=F\ajt=Fg 1fait=F\ajt6=Fgi
+| {z }
+Interconnection3
+75
+whereStis the set of individuals with phones in month t,Girepresents the contacts
+ofi,Edij(:::)represents the expected seconds that individual icallsj.22
+FirmFincurs costs:
+C~T
+F(p;z;x;a) =KruralX
+z2zF;zis oﬀ grid~TX
+txtowerzt+~TX
+tminfxtower
+zFgtfcF
++X
+i2ST~TX
+txitX
+j2Gi\StEdij(pt;t(z);a)(icout
+Li;onnetij1fait=Fg+icin
+Lj;onnetij1fajt=Fg)
+Firms act as though they rent rural towers, incurring an annualized cost of Krural
+for owning and operation. Operator Fincurs ﬁxed cost fcFeach month. icdirection
+Li;onnetij
+is the incremental cost of sending or receiving an additional second for direction2
+fin;outg. Costs vary by whether the two parties are on the same network, and
+between subscriber primary location ( Li2furban;ruralg).23
+4.3.Consumers. Given operator choices, each consumer decides when to adopt a
+phone (xi), and each month which operator to use ( ait2 f0;1g) and how many
+seconds to call each contact ( dijt0).24
+22STrepresents the set of individuals who adopted phones in the baseline scenario by the end of the
+data (T).
+23A tower is considered urban if it covers Kigali or one of Rwanda’s 5 largest towns; a subscriber is
+considered urban if his most used tower is urban.
+24Forsimplicity, consumersmayonlyuseoneoperatoreachmonth(singlehoming). Inmarketswhere
+diﬀerent operators have low on-net prices and high oﬀ-net prices, consumers may hold accounts with18
+I extend the network demand system from Björkegren (2019) to allow individuals
+to choose between operators. The primary unit of observation is an account, which
+corresponds to a phone number. For ease of exposition I refer to accounts as individu-
+als or nodes.25I observe the communication graph G0
+T, where a directed link ij2G0
+T
+indicates that ihas calledjby periodTwhile both subscribed to the incumbent.26
+DeﬁneGi=fjjij2G0
+Tgasi’s set of contacts, and StNas the set of individuals
+with phones in month t. (See Discussion section for more on the network deﬁnition.)
+Calling decision. Each period t, individual idraws a communication shock ijtiid
+Fijrepresenting a desire to call each contact j2Gi\Stthat subscribes to either
+operator. These shock distributions, fFijgij2GT, encode the intensities of the links
+of the communication graph. In each period that ihas a phone, he chooses a total
+durationdijt0for that month, earning utility:
+(1) uijt= max
+dijt01
+costvij(dijt;ijt) cijtdijt
+wherev(d;)is the beneﬁt of making calls of total duration of d,cijtthe per-second
+cost, andcosta coeﬃcient on cost (which converts between utils and money).
+I model the beneﬁt of making calls as:
+(2) vij(d;) =d 1
+d
++d
+multiple operators to connect with contacts on diﬀerent networks. Given that oﬀ-network pricing is
+restricted, there is less reason for consumers to hold multiple accounts.
+25I assume that each account is associated with a unitary entity such as an individual, ﬁrm, or
+household; see Supplemental Appendix S1 and Björkegren (2019).
+26G0
+Tis a subgraph of Gthe full communication graph of Rwanda (a directed social network), with
+Nnodes representing all individuals in the country. A directed link ij2Gindicates that iwould
+have a potential desire to call jvia phone. I assume that links are ﬁxed. Let StNbe the set of
+individuals with phones in month t. I observe only individuals who adopt the incumbent by the end
+of my data T, the setS0
+TN. This will miss any links between subscribers where there is a latent
+desire to communicate but no call has been placed by T(G0
+TG0
+T).19
+for > 0, where the ﬁrst term is a linear beneﬁt;  > 1controls how quickly
+marginal returns decline, and 0controls how the intercept of marginal utility
+varies with the shock, and thus the fraction of months for which no call is placed.
+The marginal cost of placing a call is aﬀected by the choice of operator:
+cijt=pait
+t+coverageait
+itajt
+jt
+The second term represents the hassle cost when the caller or receiver have imper-
+fect coverage, given by ait
+it=it(zait).
+The beneﬁt of an additional second of duration across a link is decreasing, so iwill
+calljuntil the marginal beneﬁt equals the marginal cost, at duration:
+(3) d(;pt;t;a) =
+ 
+1 cost(pait
+t+coverageait
+itajt
+jt)
+ 1
+ 1
+which increases with the desire to communicate ( ) and decreases with cost. If
+the desire to communicate is not strong enough, idoes not call: dijt= 0when
+ijtijt:=
+1 cost(pait
+t+coverageait
+itajt
+jt).
+Then, calls from itojin periodthave expected duration:
+(4) Edij(pt;t;a) =Z1
+ijtd(;pt;t;a)dFij()
+and provide expected utility:
+(5)
+Euij(pt;t;a) =Z1
+ijt
+d(;pt;t;a)1
+cost
+1 
+
+ pait
+t coverageait
+itajt
+jt
+ 1
+costd(;pt;t;a)
+
+dFij()
+Altogether, each month iuses operator ait, he receives actual expected utility from
+each contact who has also adopted:
+(6) Euit(pt;t;xGi;a) =X
+j2GiandxjtEuij(pt;t;a) s1fait6=ait 1g20
+wherexjrepresentsj’s adoption time and sthe cost of switching operators.27
+However, at the point of adoption, ianticipates that having a phone in month twill
+provide utility:
+E^uit(pt;t;xGi;a) =Euit(pt;t;xGi;a) +ait
+i(1 )
+whereanindividual’stype (0
+i;1
+i)representsheterogeneityintheanticipatedutility
+of using a phone on each operator that is unobserved to the econometrician. Types
+need not be mean zero, but each individual’s type is constant over time and across
+counterfactuals. Each month that idoes not have a phone he receives utility zero.
+Adoption decision. Each individual iadopts at the ﬁrst suﬃciently attractive date,
+based on the actual paths of contact adoptions ( xGi), call prices ( px), and coverage
+(x). He knows the current handset price ( phandset
+t, inclusive of any tax), and has
+beliefs about future handset prices and contact operator choices.
+Adoption proceeds in two steps:
+First, consumer idecides when to purchase a handset, expecting that adopting at
+timexwith operator sequence aiwill yield utility:
+(7) EtUx;ai
+i(p;;xGi;^aGi) =x"1X
+sxs xE^uis(ps;s;xGi;[ai;^aGi]) Etphandset
+x#
+under deterministic beliefs that in period x>t, the handset price will be Etphandset
+x,
+and that each contact jwill use operator ^aj, which will be deﬁned later. iadopts in
+the ﬁrst month xiwhere he expects adopting immediately to be more attractive than
+waiting:
+(8) minxis:t:
+max
+aiExiUxi;ai
+i(p;;xGi;^aGi)max
+s>xi;~ aiExiUs;~ ai
+i(p;;xGi;^aGi)
+27In this model, consumers receive utility from the calls they place (which they pay for). Björkegren
+(2019) also considers the possibility that consumers also earn corresponding utility from the calls
+they receive (which are free), but ﬁnds these double count utility relative to the utility implied by
+the adoption decision.21
+Second, uponpurchasingahandset, consumer ilearnshiscontacts’operatorchoices
+(updating ^aj=aj), and selects operator sequence ai(maximizing Equation 7).
+Consumer surplus. The net present value of consumer surplus through ~Tis:
+U~T
+net=X
+i2STandxi~T2
+4~TX
+txitEuit(pt;t;xGi;a) xiphandset
+xi+~Tphandset
+~T3
+5
+which is net of calling, hassle, and handset costs.28
+4.4.Expectations.
+Firms.Given ﬁrm actions, there are many potential adoption equilibria. I restrict
+consideration to equilibria in which ﬁrms anticipate a degree of continuity in the
+subgame played by consumers. Speciﬁcally, consider indexing adoption equilibria by
+some index e. If consumers play an equilibrium of index ein the subgame resulting
+from actions (p0;p1;z0;z1), ﬁrms believe that they will also play an equilibrium of
+indexein the subgame resulting from (p00;p10;z00;z10). Conditional on consumers
+adopting according to e, the overall equilibrium is unique.
+Consumers. I focus on families of consumer adoption equilibria eAandeAalong two
+dimensions. First, I index the speed of adoption, focusing on the earliest ( e) or latest
+(e) adoption equilibria. Second, I index whether operator choices favor the incumbent
+(A= 0) or entrant ( A= 1)(similar to Jia (2008)). Along these dimensions, adoption
+equilibria form a lattice.29
+28I assume that at the end of the horizon, handsets are valued at the prevailing price.
+29xhas a lattice structure because EtUai;xi
+i(p;;xGi;^aGi)is supermodular in x(Topkis, 1978;
+Milgrom and Shannon, 1994). i’s optimal adoption date xiis weakly monotonic in his type i,
+contact’s adoption date xj, and contact’s coverage aj
+j. Likewise, conditional on x,ahas a lattice
+structure because coverage choices are complementary. As long as coverage provided by the two
+ﬁrms is ordered (one weakly greater for all consumers), consumers weakly prefer to be on the same
+network as their contacts and EtUai;xi
+i(p;;xGi;aGi)is supermodular in aiandaj, conditional on
+xGi. Note that it may be possible to achieve lower or higher adoption, or more favor towards one
+operator, intheoverallgamebyliftingtherestrictionofcontinuityinconsumeradoptionequilibria, if
+ﬁrms had suﬃciently discontinuous oﬀ path beliefs. For example, if ﬁrms believe that when pF~p,
+consumers will adopt according to the fastest adoption equilibrium, but for pF6=~p, consumers will
+adopt according to the slowest, this ‘punishment’ could induce ﬁrms to set a lower price than if they22
+Eachmonth t, individualslearnthecurrenthandsetpriceandexpecthandsetprices
+in future periods to decline at an exponential rate consistent with the overall decline
+over this period: Etphandset
+x =!x tphandset
+tfor!=phandset
+T
+phandset
+01
+T. If an individual
+forecasts diﬀerently, the error will be captured in his type (0
+i;1
+i).30
+Prior to purchasing a handset, ibelieves that each contact jwill use the operator
+^aj(p;)that is optimal given prices and coverage at j’s location, for calls to the
+median individual at month T.31
+4.5.Equilibrium. Given the incumbent’s initial subscribers S0and towers, con-
+sumer types, interconnection fee f, and horizon ~T,
+An equilibrium of indexeis(p0;p1;z0;z1;x;a;d)such that:
+1. The entrant selects price sequence p1, and constructs urban towers z1=z(0%),
+anticipating the choices of the incumbent and consumers:
+p1= arg max
+p1~T
+1 
+p0(p1);p1;z0(p1);z1;
+x(p0(p1);p1;z0(p1);z1;;e);
+a(p0(p1);p1;z0(p1);z1;;e);
+d(p0(p1);p1;z0(p1);z1;;e);f!
+believed that consumers would adopt according to similarly optimistic or pessimistic equilibria in
+each subgame.
+30Note that this structure implies that individuals do not anticipate how later adopters will respond
+to their actions, because later adopters may not condition their strategy on actions in prior periods.
+It also introduces a slight inconsistency: when idecides whether to adopt in period xi, he does not
+know future handset prices, but does know the adoption dates of his future contacts, which will
+have incorporated future handset prices. I tolerate this inconsistency in order to have a computable
+notion of equilibrium.
+31That is, ^aj(p;) = arg min a
+pa
+T+coveragea
+jTam
+mT
+, for median individual m, who selects his
+operator analogously: am=^am(p;m). In the Supplemental Appendix, I also consider approximate
+equilibria where consumers correctly anticipate contacts’ operator choices; results are similar.23
+2. The incumbent selects price sequence p0=p0(p1)and tower construction
+plan z0=z0(p1), anticipating the choices of consumers:
+p0(p1);z0(p1) = arg max
+p0;z0~T
+0 
+p0;p1;z0;z1;
+x(p0;p1;z0;z1;;e);
+a(p0;p1;z0;z1;;e);
+d(p0;p1;z0;z1;;e);f!
+3. Consumers adopt at times x=x(p;z;;e), using operators a=a(p;z;;e)
+and placing calls d=d(p;z;;e)such that:
+Each initial adopter i2S0selects operator sequence ai2f0;1gToptimally,
+believing each contact jwill adopt at time xjusing operators aj
+Every other observed adopter i2STnS0believes each contact jwill adopt at
+timexj, and selects:
+–adoption date xi2f1;:::;Tgoptimally, believing jwill use predicted
+operator ^aj(p;j;median )
+–operator sequence ai2f0;1gT xioptimally, believing juses operators aj
+Each month tafter adopting, icalls contact jfordijt=Edij(pt;t;a)seconds
+4.6.Discussion.
+Dark network. In the transaction data I do not observe the ‘dark’ network of individ-
+ualsi2NnSTthat did not become customers of the incumbent by T, nor latent links
+ijwould have only become active had conditions been more favorable. This would
+cause me to underestimate demand if counterfactual calling prices were lower than
+what I observe in my data. Since prices were declining over this period, I limit the
+impact by computing counterfactuals through shorter horizons ~TTduring which24
+counterfactual prices would be no more favorable than observed conditions through
+T.32Main results use a horizon computed using variation in both handset and calling
+prices using the structural model and a representative survey covering part of the
+dark network (RIA, 2012); the Supplemental Appendix reports a conservative hori-
+zon limited to the observed variation in calling prices.33Additionally, I assume that
+subscribers of the poorly run competitor (Operator B) do not change their decisions
+in counterfactuals; this will tend to attenuate the eﬀects of competition.
+Firm action spaces. I restrict ﬁrm action spaces in three respects:
+I oﬀer ﬁrms only options that are reasonable in the long term, to limit the impact
+of observing a ﬁnite horizon. Firms neglect the value of their accumulated stock
+of subscribers after ~T. As a result, my results may underestimate incentives to in-
+vest. I assess results for a long horizon (4 years), and assess diﬀerent horizons in the
+Supplemental Appendix.
+I rule out the possibility that either ﬁrm would build towers in locations that were
+notservedunderthebaselinescenario, becauseitwouldbediﬃculttopredictdemand
+in those locations. These are few: the incumbent’s actual rollout plan ( z(100%)) was
+nearly complete (see Figure 3).
+I rule out strategies where ﬁrms divide up the country to serve diﬀerent rural areas,
+because adoption equilibria form a lattice only if coverage provided by the two ﬁrms
+are ordered (one weakly greater for all consumers). In other countries in the region it
+is common for ﬁrms to be ordered in terms of coverage, with the lowest quality ﬁrms
+oﬀering coverage only in cities.34
+32This is akin to speeding up a ﬁlm using fast forward, but pausing before it runs out of tape.
+33For more details and deﬁnitions of these horizons, see Supplemental Appendix S5.
+34See Supplemental Appendix for more evidence on this.25
+Table 3. Additional Parameters
+Parameter Value Source
+Consumer Preferences
+Switching Cost s $36.09 Hypothetical switching exercises
+Idiosyncratic operator preference
+:::Mean m(f0
+i 1
+ig)$2.45 Hypothetical switching exercises
+:::SD (f1
+i 0
+ig)$6.72 Hypothetical switching exercises
+Firm Costs
+Cost of operating a tower Krural $80,584/year Regulator study RURA (2011)
+Incremental cost icY
+Li;onnetij* Interconnection study PwC (2011)
+Fixed cost fcF* Interconnection study PwC (2011)
+See Appendix A for discussion and validation. *: The study was provided under the condition that
+it remain conﬁdential.
+5.Estimation
+The main demand parameters ( Fij,,,cost,coverage,0
+i;0
+i) are estimated in
+Björkegren (2019) under the baseline scenario. These elasticities will determine how
+subscribers trade oﬀ price and coverage oﬀerings (both at his own and contacts’
+locations).
+Switching costs ( s) and the distribution of idiosyncratic operator preferences ( f0
+i 
+1
+ig) were estimated from hypothetical switching exercises in a survey of 89 Rwandan
+phone owners. Firm costs ( Krural,icY
+Li;onnetij,fcF) were calibrated based on regulator
+studies. See Table 3 for parameter values and Appendix A for details.
+6.Simulation
+The incumbent’s initial subscribers and towers are taken as given. Given policy
+choicesf, equilibrium index e2 feA;eAg, and individual types , I compute an
+equilibrium in three nested steps:
+(1)Consumer choices
+For a grid of price choices (p0;p1)and rolloutsz0, I compute an adoption
+equilibrium using an iterated best response method that has two stages:26
+(a)Adoption dates x: Iinitializewithacandidateadoptionpathrepresenting
+a complete delay of adoption for eA(x=T), or immediate adoption for
+eA(x= 0). Each individual optimizes their adoption date xi, conditional
+on the adoption dates of others x iand beliefs about others’ operators
+^a i(p; i;median ), until xconverges.
+(b)Operators a:Conditional on equilibrium adoption dates x, I initialize
+with all individuals subscribing to operator A(aA). Each individual
+optimizes their operator choice ai, conditional on the operator choices of
+others ( ^a i=a i), until aconverges.
+(2)Incumbent choices
+The incumbent selects p0(p1)andz0(p1)to maximize proﬁts through ~T,
+anticipating consumer choices in equilibrium e.
+(3)Entrant choices
+The entrant selects p1to maximize proﬁts through ~T, anticipating incum-
+bent and consumer choices in equilibrium e.
+For the lower equilibrium eA, I set individuals’ types to their lower bound ( =),
+to recover a lower bound of the adoption equilibrium. For the upper equilibrium eA,
+I set individuals’ types to their upper bound ( =) to recover an upper bound.35
+For simplicity, I assume that consumers may switch operators at most once.
+Idiosyncratic preferences for the entrant are treated as random parameters: for
+each individual I draw iiidN[m(0
+i 1
+i);(1
+i 0
+i)], and compute [1
+i;1
+i] =
+[0
+i i;0
+i i]. I present results from a single random draw and assess the eﬀect
+of the random draw in the Supplemental Appendix.
+35See Supplemental Appendix S6 for pseudocode.27
+Table 4. Market Outcomes under Competition
+Outcomes (January 2005-December 2008)
+Call Prices Rollout Plan C. Proﬁt Gov.
+Surplus Incumbent Entrant Revenue
+p0
+pbasep1
+pbase z0
+$m $m $m $m
+Baseline Scenario 1.00, 1.00 - z(100%) 168, 194 108, 126 0, 0 58, 66
+Additional Competitor 0.70, 0.60 0.60, 0.50 z(100%) 281, 365 98, 104 5, 2 62, 68
+Each cell reports the low and high incumbent-favoring equilibrium. Competitor is introduced
+under interconnection f= $0:11/minute starting at t= 0(1/2005). Proﬁts omit ﬁxed costs of
+operation and license fees. Utility and revenue reported in 2005 U.S. Dollars, discounted at a rate
+of. Consumer surplus includes the surplus utility each individual receives from the call model
+through December 2008, minus the cost of holding a handset from the time of adoption until
+December 2008.
+7.The Effects of Competition
+Iconsidercounterfactualsthataddanadditionalcompetitor,investigateinvestment
+eﬀects, and then consider diﬀerent policies (interconnection rates, number portability,
+and delay). I report outcomes on prices, towers built, returns on investment (ROI),
+consumer surplus, proﬁts, government revenue, and total welfare. In the main text, I
+focus on incumbent-favoring equilibria and refer to the lowest equilibrium outcomes
+(e0) in text (and place the highest equilibrium e0outcomes in parentheses, or omit
+if identical). I present results from January 2005 to December 2008 (which under a
+model of the dark network would not be aﬀected by the omission of dark nodes for
+prices as low as 20% of the baseline price path).36
+I ﬁnd:
+36Results tables omit ﬁxed costs, which based on accounting I estimate to lie between $1-16m for
+the entrant and are included in welfare estimates in the text. Results also omit license fees, which
+represent additional transfers to the government. The government charged the entrant $4m per year
+to operate its network when it did enter. Normal form game boards are shown in the Supplemental
+Appendix.28
+7.1.Competition lowers prices and can increase incentives to invest. I com-
+pare outcomes under baseline, and if an additional competitor had been added with
+a focal interconnection rate of f= $0:11/minute (Table 4 rows 1 and 2; each cell re-
+ports the low and high equilibrium). Under this policy, the incumbent would reduce
+prices to 70% (60%) of the baseline price path, and the entrant to 60% (50%).37The
+incumbent would have still built all rural towers.
+This lowers proﬁts for the incumbent but has a large impact on consumer surplus:
+lower prices bring more users to the network, which also increases the value each user
+gets from the network. Altogether, the total welfare provided by the mobile phone
+systemwouldhaveincreasedby33%(38%; comparingrow1androw2). Thisincrease
+in welfare is an amount equivalent to 1% of GDP or 3-5% of oﬃcial development aid
+in Rwanda over the same period.38
+Incentives to invest are driven by business stealing. To more ﬁnely investigate invest-
+ment, I evaluate the eﬀects of building rural towers. Starting from equilibrium, I
+compute how consumers would adopt and use the network if the 50% of rural tow-
+ers in the lowest population areas were omitted ( z0=z(50%)). I then compute the
+returns to building the full set of towers ( z0=z(100%)), allowing consumers to change
+adoption dates, operators, and usage. Table 5 reports the incumbent’s incremental
+proﬁts and ROI from building these rural towers, in the baseline scenario and under
+an additional competitor. Under the baseline scenario the incumbent earns positive
+proﬁts and an ROI of 0.98 (1.00) from building these towers (ﬁrst row). But it earns
+morefrom building these towers when it faces an additional competitor: its incre-
+mental proﬁts are higher, and its ROI increases to 1.40 (1.26; second row). When the
+37The price series is shown in Figure 2.
+38Over the horizon from 2005-2008, in the baseline scenario the incumbent provided a social surplus
+of $334m ($386m), an amount equivalent to 2-3% of Rwanda’s GDP over the same time period.
+In this equilibrium, the entrant earns slightly negative proﬁts. This suggests that sustaining this
+market structure may require subsidizing the entrant on the order of $8m (4% of the total welfare
+generated), or the promise of an acquisition or additional future proﬁts as the network grows.29
+Table 5. Return on Tower Investment
+Equilibrium Eﬀect of
+Incumbent Building Low Population Towers
+Call Prices Proﬁt ROI
+p0
+pbasep1
+pbase Incumbent Entrant Incumbent Social
+$m $m
+Baseline Scenario 1.00, 1.00 - 1.27, 1.23 - 0.98, 1.00 6.64, 6.49
+Additional Competitor 0.70, 0.60 0.60, 0.50 1.99, 1.87 -1.27, -1.25 1.40, 1.26 7.74, 7.96
+...ﬁxing operator 0.39, 0.22 0.022, 0.002 0.43, 0.25 6.89, 6.92
+...add’l eﬀect of operator choice 1.60, 1.65 -1.30, -1.26 - -
+Each cell reports results in the low and high incumbent-favoring equilibrium. Eﬀect cells report the
+diﬀerence in outcomes between the adoption equilibrium that results when the lowest 50%
+population rural towers are built, and the one where the incumbent is constrained to not build
+them. Outcomes computed from January 2005 through horizon December 2008. ‘Fixed operator’
+allows consumers to change adoption dates and usage but holds operator choices ﬁxed; consumers
+who originally switch operators do so on the latest of the original switch date and the new
+adoption date. Social ROI represents consumer surplus, government revenue, and ﬁrm proﬁt,
+relative to ﬁrm costs. ROI is not relevant for the incremental eﬀect of operator choice since the
+cost of the towers has already been accounted for. Utility and revenue reported in 2005 U.S.
+Dollars, discounted at a rate of . Consumer surplus includes the surplus utility each individual
+receives from the call model through December 2008, minus the cost of holding a handset from the
+time of adoption until December 2008.
+incumbent builds these towers, it decreases the proﬁts of the entrant. Under either
+market structure, private ROI is far lower than the social ROI of as much as 7.74
+(7.96), suggesting this market may see underinvestment.
+To better understand this eﬀect, I decompose it. Starting from equilibria where the
+incumbent is forced to omit building the lowest population rural towers ( z0=z(50%)),
+I compute the returns to building the full set of towers ( z0=z(100%)) in two stages.
+First, I hold ﬁxed the choice of operator, but allow consumers to change adoption
+dates and usage. Then, I allow consumers full choice over usage, adoption, and
+operator.
+If operator choices were held ﬁxed (Table 5 row 3), the towers would earn the
+incumbent only a small amount of proﬁts and a lower ROI of 0.43 (0.25). The entrant
+beneﬁts from the incumbent’s tower construction in two ways:30
+(1) The entrant’s subscribers call contacts in the incumbent’s network more (due
+to better reception, and because that causes some of the incumbent’s sub-
+scribers to adopt earlier, which causes others to adopt earlier). These ad-
+ditional calls at the network border (entrant’s oﬀ-net calls) account for 89%
+(98%) of the additional revenue that accrues to the entrant. These spillovers
+can partially be recouped: 56% (76%) is paid back to the incumbent through
+interconnection fees.
+(2) Adoption spillovers lead to additional usage inside the entrant’s network as
+well. 11% (2%) of the revenue results from spillovers in the interior of the
+entrant’s network (entrant on-net calls). Interconnection fees do not adjust
+for these interior spillovers because they are incurred only at the boundaries of
+the two networks.39Altogether, only a small amount of beneﬁts spill over into
+the entrant’s network: the incumbent still captures 95% (99%) of the proﬁts
+from investing, when operator choices are held ﬁxed.
+When consumers are able to adjust all choices, including operator, urban consumers
+who spend a fraction of their time in rural areas switch networks to the incumbent
+to take advantage of its improved coverage (Table 5 row 4).40This business stealing
+eﬀectdominates: itaccountsfor80%(88%)oftheproﬁttheincumbentearnsfromthe
+investment, dwarﬁng the network eﬀects that the incumbent no longer internalizes.
+Altogether, although competition reduces the incumbent’s total proﬁt, it can in-
+creasethe marginal returns to an investment that retains customers who otherwise
+would switch. The eﬀect of competition on investment depends on the relative size of
+network and business stealing eﬀects; and, as we will see next, on the interconnection
+policy.
+39The magnitude of these internal spillovers will depend on the shape of the entrant’s network, as
+well as the degree of network spillovers: they require the entrant’s network to be both porous to
+adoption spillovers, and suﬃciently deep that spillovers reach beyond the border.
+40For a breakdown of switchers see Figure A1.31
+7.2.Compatibility introduces a tradeoﬀ between prices and incentives to
+invest.Next I consider selecting diﬀerent interconnection rate policies. Figure 4
+shows results as a function of the interconnection rate. The left column shows out-
+comes under the baseline scenario; and the right column when an additional competi-
+tor is granted a license at month t= 0under diﬀerent interconnection rates (shown
+decreasing with the x-axis).
+The focal interconnection rate of f= $0:11(shown in a dotted line) is slightly
+higher than recommendations at that time ( f= $0:07(RURA, 2006) or $0:09(PwC,
+2011)), and zero rating ( f= $0: ‘bill and keep,’ to which the U.S. is transitioning
+(FCC, 2019)).
+The interconnection rate acts like a tax on oﬀ-network calls; as the interconnection
+fee is lowered, ﬁrms lower their prices (top panel).
+However there is a tradeoﬀ: as the interconnection rate is lowered, the ROI of
+building low population rural towers declines (middle panel). This is because lower
+prices lead to lower revenues, and additionally the incumbent recoups less intercon-
+nection payments for the spillover beneﬁts it provides to the other network. The ROI
+is always above zero so it would still have been proﬁtable to build the towers.
+Finally, as the interconnection rate is lowered, welfare increases and incumbent
+proﬁts decline (bottom panel).
+If ﬁrms are allowed to select the interconnection rate (to maximize the proﬁts of ei-
+ther the incumbent, or the two ﬁrms jointly), they will set it high ( f= $0:33or$0:43,
+beyond the bounds of Figure 4). That would mute the eﬀect of competition on prices
+(80-90% of baseline scenario) and welfare.41This is reminiscent of many emerging
+networkgoods, whereinterconnectiondoesnotariseendogenously(KatzandShapiro,
+41I allow the incumbent to select the interconnection rate on a grid from $0.00 to $0.43. Note that
+results could diﬀer if ﬁrms were allowed to set separate prices for on- and oﬀ-net calls.32
+Figure 4. Market Outcomes as Function of Interconnection Rate
+Baseline Scenario Additional Competitor
+Price Entr ant Price Incumbent high low
+●
+0.000.250.500.751.00
+$0Call Price ( pFpbase)
+●● ● ●● ●● ●●
+●●●● ●● ●●●● ●●●
+●●● ●●
+●●● ●● ●● ●●
+●●
+●● ●● ●●●● ●●●
+●●● ●●
+$0.00 $0.05 $0.10 $0.15
+Interconnection Rate (per minute)
+□
+0%50%100%150%
+$0ROI
+□□
+□ □□ □□ □□
+□
+$0.00 $0.05 $0.10 $0.15
+Interconnection Rate (per min ute)Incumbent’s ROI of Building Rural Towers 
+●
+●●●
+●
+$0$200$400
+$0Value ($m)
+●●
+● ●
+● ●
+● ●
+●●
+●●
+●●
+●●
+●●●●●
+●●
+●
+●●
+●
+$0.00 $0.05 $0.10 $0.15
+Interconnection Rate (per minute)●●C Surplus Gov Revenue Profit Entrant Profit Incumbent ●high low
+The left column shows outcomes under the baseline scenario; and the right column when an
+additional competitor is granted a license at month t= 0under diﬀerent interconnection rates
+(shown decreasing with the x-axis). Outcomes computed from January 2005 through horizon
+December 2008. Dotted line denotes a focal interconnection rate that balances competitive
+pressure with incentives to invest. Filled marks denote high equilibrium and open marks denote
+low equilibrium. All equilibria shown have entrant moving ﬁrst, and consumers favoring
+incumbent. Outcomes reported in 2005 U.S. Dollars, discounted at a rate of . Consumer surplus
+includes the surplus utility each individual receives from the call model through December 2008,
+minus the cost of holding a handset from the time of adoption until December 2008.33
+1985), as well as theoretical results that ﬁrms may use the interconnection rate as an
+instrument of collusion (Armstrong, 1998; Laﬀont et al., 1998).
+7.3.Additional Policies. Table 6 repeats the baseline and focal competition policy,
+and considers two additional policies:
+7.3.1. Number portability. Policies that allow consumers to port their phone numbers
+between operators have been planned or implemented by 40% of developing country
+regulators (GSMA, 2013).42My consumer survey suggests that number portability
+would lower users’ hassle cost of switching operators from $36.09 to $18.51. Number
+portability lowers prices, incumbent proﬁts, and increases consumer surplus in the
+lower equilibrium but has muted eﬀects in the upper (Table 6 row 3).43Given the
+choice, the incumbent would elect to maintain high switching costs.
+7.3.2. Delayed entry. If entry of the competitor is delayed until July 2008 (5 months
+before the end of the horizon), the entrant sets lower prices (40% (30%) of baseline
+price path), the incumbent keeps prices weakly higher (70%), and the total impact
+on welfare is smaller (Table 4 row 4).
+7.4.Robustness. I assess several alternate speciﬁcations in the Supplemental Ap-
+pendix (S8-S14):
+ROIfortowerconstructionisweaklylargerunderthefocalcompetitionpolicyforan
+expandedsetofrolloutplans(incumbentselecting z02fz(100%);z(75%);z(50%);z(25%);z(0%)g
+versus entrant z1=z(0%)) in a partial equilibrium analysis that holds prices ﬁxed.
+The 10 towers built under government coverage obligation that were unproﬁtable
+under the baseline (Björkegren, 2019) are proﬁtable under this competition policy,
+suggesting that in some settings competition may substitute for access regulation.
+42Rwanda initially planned to introduce portability when mobile operators reached combined 60%
+market penetration, but as of this writing has yet to do so.
+43This distinction between the low and high equilibrium is likely due to the grid of choices.34
+Table 6. Additional Competition Policies
+Outcomes (January 2005-December 2008)
+Switch. Call Prices C. Incumbent Entrant Gov.
+Cost Surplus Proﬁt Proﬁt Revenue
+sp0
+pbasep1
+pbase
+$ $m $m $m $m
+Baseline Scenario - 1.00, 1.00 - 168, 194 108, 126 0, 0 58, 68
+Additional Competitor 36 0.70, 0.60 0.60, 0.50 281, 365 98, 104 5, 2 62, 68
+Number portability 19 0.50, 0.60 0.50, 0.50 384, 366 88, 101 -1, 5 61, 68
+Delayed entry (7/2008) 36 0.70, 0.70 0.40, 0.30 259, 284 98, 109 2, 2 59, 65
+Each row presents the outcomes under a given policy, in the low and high incumbent-favoring equilibria. All
+competitive results are under f= $0:11/minute; unless denoted, entry is 1/2005. Proﬁts omit ﬁxed costs of
+operation and license fees. Utility and revenue reported in 2005 U.S. Dollars, discounted at a rate of .
+Consumer surplus includes the surplus utility each individual receives from the call model through December
+2008, minus the cost of holding a handset from the time of adoption until December 2008.
+Results are similar under diﬀerent time horizons ( ~T). A conservative time horizon
+(through Dec 2005) sees analogous price reductions and welfare increases.44Under a
+longer horizon through period Tplus that ﬁnal month played repeatedly for 3 years,
+competition increases ROI even for lower interconnection rates. Results are similar to
+the main results under diﬀerent draws of the random preferences [1
+i;1
+i], and under
+entrant-favoring equilibria. If at the point of adoption, consumers exactly anticipate
+which operators their contacts will select ( ^ajaj), consumer decisions are no longer
+guaranteed to reach equilibrium, but outcomes are similar under an approximate
+notion of equilibrium. If the regulator has the incumbent move before the entrant, or
+the ﬁrms move simultaneously, are less stable for this grid of prices, but are similar for
+prices and welfare. The ROI eﬀects are less stable, but there still exist competition
+policies that would increase ROI for at least one adoption equilibria.
+Simpler demand systems can substantially mischaracterize results in a classical
+network industry. Ignoring the dependence between individuals’ decisions results in
+44The conservative time horizon covers the construction of few rural towers, so is not well suited to
+answering questions about investment.35
+underestimating the revenue from building towers by 52% (56%); considering links as
+stochastic draws (Ryan and Tucker, 2012) results in overestimating it by as much as
+86%.
+Iﬁndsimilarwelfareeﬀectsinthemonopolymodelif, ratherthanfacinganentrant,
+the incumbent were simply forced to lower its price to the later competitive level.
+However, this should be viewed mostly as a check on the model, as I do not consider
+the downsides to price regulation.
+8.Conclusion
+Societies are grappling with an increasing number of industries characterized by
+network eﬀects. This paper simulates the eﬀects of competition policy in a network
+industry of particular importance to developing societies, mobile phone networks.
+I demonstrate how data from a dominant incumbent can be used to estimate the
+eﬀects of a variety of competition policies. My method captures how changes ripple
+throughout networks and across network boundaries, and can thus assess how the
+policy environment aﬀects incentives to invest.
+I ﬁnd that competition in the Rwandan mobile phone industry has a large scope
+to aﬀect welfare. Policies to increase competition have mixed eﬀects on incentives
+to invest: they split the revenue generated by an investment, but for high enough
+interconnection rates this eﬀect is dominated by increased returns from diﬀerentiat-
+ing quality. It is an open question whether these results would be similar for mobile
+internet, which still has low penetration in much of Africa. While I focus on the
+primary investments in this network, in rural towers, network ﬁrms have a menu of
+potential investments which would be diﬀerentially aﬀected by competition. Compe-
+tition will tend to make investments that induce a marginal customer to switch more
+attractive, and investments that induce dispersed network spillovers less attractive.
+Competition is thus likely to aﬀect the nature of network products provided by the36
+market. Overall, this paper suggests that competition policy in emerging networks
+can have profound welfare implications.
+References
+Argent, J. and N. Pogorelsky (2011): “EnhancingPerformanceinTelecommunications
+to Improve Rwandan Competitiveness,” .
+Armstrong, M. (1998): “Network Interconnection in Telecommunications,” The Economic
+Journal, 108, 545–564.
+Bajari, P., C. L. Benkard, and J. Levin (2007): “Estimating Dynamic Models of
+Imperfect Competition,” Econometrica , 75, 1331–1370.
+Björkegren, D. (2014): “The Value and Spread of Information: Evidence from a Mobile
+Phone Discount,” .
+——— (2019): “The Adoption of Network Goods: Evidence from the Spread of Mobile
+Phones in Rwanda,” The Review of Economic Studies , 86, 1033–1060.
+Cambini, C. and Y. Jiang (2009): “Broadband investment and regulation: A literature
+review,” Telecommunications Policy , 33, 559–574.
+Ericson, R. and A. Pakes (1995): “Markov-Perfect Industry Dynamics: A Framework
+for Empirical Work,” The Review of Economic Studies , 62, 53–82.
+Faccio, M. and L. Zingales (2017): “Political Determinants of Competition in the Mo-
+bile Telecommunication Industry,” Working Paper 23041, National Bureau of Economic
+Research.
+Farr, T. G., P. A. Rosen, E. Caro, R. Crippen, R. Duren, S. Hensley, M. Ko-
+brick, M. Paller, E. Rodriguez, L. Roth, D. Seal, S. Shaffer, J. Shimada,
+J. Umland, M. Werner, M. Oskin, D. Burbank, and D. Alsdorf (2007): “The
+Shuttle Radar Topography Mission,” Reviews of Geophysics , 45.
+Farrell, J. and P. Klemperer (2007): “Chapter 31 Coordination and Lock-In: Compe-
+tition with Switching Costs and Network Eﬀects,” in Handbook of Industrial Organization ,
+ed. by M. Armstrong and R. Porter, Elsevier, vol. Volume 3, 1967–2072.
+Farronato, C., J. Fong, and A. Fradkin (2020): “Dog Eat Dog: Measuring Net-
+work Eﬀects Using a Digital Platform Merger,” Tech. Rep. w28047, National Bureau of
+Economic Research.
+FCC(2019): “Updating the Intercarrier Compensation Regime To Eliminate Access Arbi-
+trage,” .
+Genakos, C., T. Valletti, and F. Verboven (2018): “Evaluating market consolidation
+in mobile communications,” Economic Policy , 33, 45–100.
+Goettler, R. L. and B. R. Gordon (2011): “Does AMD Spur Intel to Innovate More?”
+Journal of Political Economy , 119, 1141–1200.
+Goolsbee, A. and P. J. Klenow (2002): “Evidence on Learning and Network External-
+ities in the Diﬀusion of Home Computers,” Journal of Law and Economics , 45, 317–343.
+Gowrisankaran, G. and M. Rysman (2012): “Dynamics of Consumer Demand for New
+Durable Goods,” Journal of Political Economy , 120, 1173–1219.
+Gowrisankaran, G., M. Rysman, and M. Park (2010): “Measuring Network Eﬀects
+in a Dynamic Environment,” Tech. rep., SSRN, Rochester, NY.37
+Grajek, M. and L.-H. Röller (2012): “RegulationandInvestmentinNetworkIndustries:
+Evidence from European Telecoms,” The Journal of Law and Economics , 55, 189–216,
+publisher: The University of Chicago Press.
+GSMA(2013): “Majority of developing world mobile markets have no plans for MNP,” .
+Handel, B. and J. Schwartzstein (2018): “FrictionsorMentalGaps: What’sBehindthe
+Information We (Don’t) Use and When Do We Care?” Journal of Economic Perspectives ,
+32, 155–178.
+Igami, M. (2017): “Estimating the Innovator’s Dilemma: Structural Analysis of Creative
+Destruction in the Hard Disk Drive Industry, 1981–1998,” Journal of Political Economy ,
+125, 798–847, publisher: The University of Chicago Press.
+IGIHE.com (2011): “The collapse of Rwandatel: What went wrong?” .
+Jarvis, A., H. Reuter, A. Nelson, and E. Guevara (2008): “Hole-ﬁlled seamless
+SRTM data V4,” CIAT.
+Jia, P.(2008): “What Happens When Wal-Mart Comes to Town: An Empirical Analysis
+of the Discount Retailing Industry,” Econometrica , 76, 1263–1316.
+Katz, M. L. and C. Shapiro (1985): “Network Externalities, Competition, and Compat-
+ibility,” The American Economic Review , 75, 424–440.
+——— (1994): “Systems Competition and Network Eﬀects,” The Journal of Economic Per-
+spectives, 8, 93–115.
+Laffont, J.-J., P. Rey, and J. Tirole (1998): “Network Competition: I. Overview and
+Nondiscriminatory Pricing,” The RAND Journal of Economics , 29, 1–37.
+Laffont, J.-J. and J. Tirole (2001): Competition in Telecommunications , MIT Press,
+google-Books-ID: ucS5F4lg6TkC.
+Lazauskaite, V. (2009): “Mobile Termination Rates: To Regulate or Not To Regulate,” .
+Lee, R. S. (2013): “Vertical Integration and Exclusivity in Platform and Two-Sided Mar-
+kets,” American Economic Review , 103, 2960–3000.
+Manganelli, A. and A. Nicita (2020): “Competition Enhancement and Investment
+Promotion,” in The Governance of Telecom Markets: Economics, Law and Institutions in
+Europe, ed. by A. Manganelli and A. Nicita, Cham: Springer International Publishing,
+Palgrave Studies in Institutions, Economics and Law, 89–109.
+Milgrom, P. and C. Shannon (1994): “Monotone Comparative Statics,” Econometrica ,
+62, 157–180.
+Moody’s (2015): “Africa’s maturing telecoms sector to see further M&A activ-
+ity,” Https://www.moodys.com/research/Moodys-Africas-maturing-telecoms-sector-to-
+see-further-MA-activity–PR_325275.
+Ohashi, H. (2003): “The Role of Network Eﬀects in the US VCR Market, 1978-1986,”
+Journal of Economics & Management Strategy , 12, 447–494.
+Pakes, A., M. Ostrovsky, and S. Berry (2008): “Simple estimators for the parameters
+ofdiscretedynamicgames(withentry/exitexamples),” The RAND Journal of Economics ,
+38, 373–399.
+PwC(2011): “Rwanda Interconnection Costing Model,” .
+ResearchICTAfrica (2017): “After Access Survey,” Tech. rep.
+Reuters (2017): “Report recommends Safaricom should be broken up: Business Daily,” .
+RIA(2012): “Household Survey,” Research ICT Africa .
+RURA(2006): “Annual Report,” .
+——— (2009): “Interconnection Guidelines,” .38
+——— (2011): “Guidelines for Siting and Sharing of Telecommunication Base Station In-
+frastructure,” Republic of Rwanda .
+Ryan, S. P. and C. Tucker (2012): “Heterogeneity and the dynamics of technology
+adoption,” Quantitative Marketing and Economics , 10, 63–109.
+Saloner, G. and A. Shepard (1995): “Adoption of Technologies with Network Eﬀects:
+An Empirical Examination of the Adoption of Automated Teller Machines,” The RAND
+Journal of Economics , 26, 479–501.
+TMG(2011): “On-net/Oﬀ-net Price Diﬀerentiation: Review of International Precedent,” .
+Topkis, D. M. (1978): “Minimizing a Submodular Function on a Lattice,” Operations
+Research , 26, 305–321.
+Tucker, C. (2008): “Identifying Formal and Informal Inﬂuence in Technology Adoption
+with Network Externalities,” Management Science , 54, 2024–2038.
+Valletti, T. M. and C. Cambini (2005): “Investments and Network Competition,” The
+RAND Journal of Economics , 36, 446–467.
+Vogelsang, I. (2013): “The Endgame of Telecommunications Policy? A Survey,” Jahrbuch
+fur Wirtschaftswissenschaften / Review of Economics , 64, 193–269.
+Williams, M. D. J., R. Mayer, and M. Minges (2011): Africa’s ICT Infrastructure :
+Building on the Mobile Revolution , World Bank.
+World Bank (2004): A Model for Calculating Interconnection Costs in Telecommunica-
+tions, World Bank Publications.
+——— (2013): “International Best Practices Report on Telecommunications Regulations,” .
+WSJ(2006): “An Entrepreneur Has Quixotic Goal Of Wiring Rwanda,” Wall Street Journal .39
+Appendix A.Additional Parameters
+Additional demand parameters. I estimate demand parameters using the survey
+of 89 mobile phone subscribers.
+Switching operators entails changing phone numbers, coverage, and learning new
+short code commands. The mean switching cost is s= $36:09(s.e. $6:03), cor-
+responding to 6.8 months of household average airtime spending in 2010 (EICV).
+Roughly half of that cost ( $17:58) arises from having to change phone numbers. High
+switching costs are commonly found in the literature (Handel and Schwartzstein,
+2018).
+Holding ﬁxed prices and coverage, consumers have a slight idiosyncratic preference
+for the incumbent, with a diﬀerence with mean m(0
+i 1
+i) = $2:45($0:01per month),
+and standard deviation (1
+i 0
+i) = $6:72. These preferences are not correlated with
+observables, and when asked to explain their choices, the most common response was
+a preference for one operator’s branding or color scheme.
+Validation. I validate the quality of hypothetical responses by comparing to an anal-
+ogous choice observed in the data. It is much less costly to switch between plans on
+the same operator; actions in the data are consistent with an intraoperator switching
+cost of $6.83. I ﬁnd that this does not diﬀer signiﬁcantly at the 1% level from the
+estimate formed from analogous hypothetical choices.45The survey estimated param-
+eters do not have a major eﬀect on results: idiosyncratic preferences are very close
+to zero, and in counterfactuals I ﬁnd that dropping the switching cost to $18.51 does
+not have a major eﬀect on results. Supplemental Appendix S4 assesses the extent to
+which the model matches behavior observed later in Rwanda, and in countries that
+were competitive at this time.
+45For part of this time, the operator oﬀered plans billed by the minute or the second, see Björkegren
+(2014). I model the introduction of per second billing in 2006 as a price decline.40
+Firm costs. I use ﬁrm costs from two Rwandan regulator studies.
+I use accounting ﬁxed costs fcFand the incremental costs of scaling the size of
+the network icY
+Li;onnetijfrom PwC (2011), a conﬁdential cost study commissioned to
+set interconnection rates. This study constructs an engineering breakdown of the
+network, using cost estimates obtained from operators, crosschecked against inter-
+national benchmarks.46It combines the costs of towers, switching equipment, staﬀ,
+central operations, and capital to compute the Long Run Incremental Cost (LRIC)
+of operating a network that can serve an additional second of voice.47I break down
+these costs to better match my setup, in three ways. First, the study inﬂates the
+incremental cost estimates with a proportional markup to cover ﬁxed costs of oper-
+ating the network. I report these ﬁxed costs separately, by multiplying each ﬁrm’s
+total incremental cost by the same proportional markup used in the study (50%) after
+identifying the size of the ﬁrm in equilibrium.48Second, I remove the license fee paid
+to the regulator, which is a pure transfer. Third, I separate out the cost of rural tower
+investments. For subscribers who primarily use urban towers ( Li=urban), I include
+thecostoftowersinincrementalcosts, asurbantowerconstructiontendstoscalewith
+call volumes. For subscribers who primarily use rural towers ( Li=rural), I compute
+the cost of towers separately, as rural tower construction scales with coverage.
+I use the annualized cost of building and operating a rural tower, Krural, from
+RURA (2011), a public study commissioned to set the regulated prices of infrastruc-
+ture sharing based on cost data from operators.49
+46PwC (2011) replaced cost items that did not seem consistent with average estimates the ﬁrm had
+collected from 7 other operators in Africa and the Middle East, omitting outliers.
+47While marginal costs are in many cases zero in telecom, LRIC is more representative of the shifts
+in costs that would be expected over the range of network scales I consider.
+48Although these accounting ﬁxed costs may diﬀer from economic ﬁxed costs, conditional on intro-
+ducing a competitor, ﬁxed cost estimates do not aﬀect ﬁrm behavior. The entrant’s ﬁxed cost does
+aﬀect the welfare gains of introducing a competitor.
+49The total annualized cost of owning and operating a tower is $51,000 per year, plus $29,584 for
+rural towers powered by generators. This includes operating expenses, depreciation, and a 15% cost
+of capital. Assumed lifespans are 15 years for towers, 8 for grid access, and 4 for generators.41
+Figure A1. Eﬀects of Investment
+Market Share and Marginal Users
+0%25%50%75%100%
+0% 25% 50% 75%
+Days Spent in Urban Areas (Percentile)Market ShareEntrant Marginal Incumbent
+The incumbent dominates market share among rural users; the entrant attracts away urban users.
+When the incumbent builds rural towers (changing the rollout plan from z(50%)toz(100%)), it
+induces the highlighted marginal group of users to switch from the entrant to the incumbent.
+These marginal users spend most but not all of their time in urban areas, with the remainder in
+rural areas. Interconnection rate $0.11/min, low equilibrium, incumbent-favoring (the high
+equilibrium is visually indistinguishable).
+Validation. BecauseRwanda’sregulatordoesnotinterveneinconsumertelecomprices,
+the monopolist’s price choices allow a consistency check. Under these cost estimates,
+the monopolist’s chosen prices are proﬁt maximizing.50Although the cost estimates
+behind most interconnection studies are conﬁdential, the resulting interconnection
+rates recommended by PwC (2011) are similar to those recommended on average in
+Africa ($0.07 vs. $0.08 per minute; Lazauskaite (2009)), suggesting costs are similar
+to other African markets.
+50See Supplemental Appendix S7.

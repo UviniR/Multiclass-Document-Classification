@@ -1,0 +1,2645 @@
+   
+ 
+ 
+ 
+ 
+      
+     
+     
+ 
+  USAID 
+FROM THE AMERICAN PEOPLE • 
+Aaternal and Child 
+/ Survival Program 
+HelloMama Implementation Road 
+Map 
+www.mcsprogram.org   
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+  
+  
+ 
+    
+ 
+ 
+ 
+     
+ 
+       
+ 
+ 
+  
+    
+   
+ 
+     
+  
+ 
+  
+    
+  
+   
+ 
+  
+ 
+ 
+ Document Contributors: 
+Erik Harding, Praekelt Chichi Aigbe, Praekelt Chima Chinda, Praekelt 
+Emeka Mba, Consultant 
+Paul Tuthill, Jhpiego Emmanuel Atuma, Jhpiego Joy Hadiza Marcus, Jhpiego 
+Joseph Enne, Jhpiego 
+Oluwatoyin Adewole, Jhpiego Geoff Prall, Jhpiego Alishea Galvin, Jhpiego 
+Yemisi Ojo, Pathfinder International 
+Ayomipo Edinger, Pathfinder International Irene Pam -Pathfinder International 
+MCSP is a global USAID initiative to introduce and support high -impact health interventions in 25 priority 
+countries to help prevent child and maternal deaths. MCSP supports programming in maternal, newborn, and 
+child health, immunization, family planning and reproductive health, nutrition, health systems strengthening, water/sanitation/hygiene, malaria, prevention of mother -to-child transmission of HIV, and pediatric HIV 
+care and treatment. MCSP will  tackle these issues through approaches that also focus on household and 
+community mobilization, gender integration, and digital health, among others. 
+This report is made possible by the generous support of the American people through the United States 
+Agency fo r International Development (USAID) under the terms of the Cooperative Agreement 
+AID-OAA-A- 14-00028. The contents are the responsibility of the Maternal and Child Survival Program and 
+do not necessarily reflect the views of USAID or the United States Gove rnment. 
+Cover photo credit: Karen Kasmauski/MCSP 
+March 2019  
+   
+   
+   
+   
+   
+     
+   
+   
+   
+   
+   
+    
+   
+     
+   
+   
+   
+   
+  
+   
+    
+  Table of Contents 
+Abbreviations ................................................................................................................................ iv 
+Acknowledgments ......................................................................................................................... v 
+Introduction ................................................................................................................................... 1 
+Program Description ................................................................................................................................................... 1 
+Introduction to the Road Map ................................................................................................................................... 1 
+Management Structure ................................................................................................................................................ 2 
+Content Management .................................................................................................................................................. 3 
+Training, Support, and Engagement .......................................................................................................................... 4 
+Promotion Support ...................................................................................................................................................... 6 
+Technology Managemen t ............................................................................................................................................ 8 
+Monitoring Evaluation and Research ...................................................................................................................... 17 
+Annex I. Monitoring, Evaluation, and Research Indicators ..................................................... 20 
+Annex II. Conceptual Overview and Documentation ............................................................. 22 
+HelloMama Stack ........................................................................................................................................................ 22 
+Postgres ......................................................................................................................................................................... 24 
+Puppet ............................................................................................................................................................................ 24 
+Infrastructure Overview ........................................................................................................................................... 25 
+Hosting Overview....................................................................................................................................................... 27 
+Annex III. Partnerships, Roles, and Responsibilities ................................................................ 30 
+Annex IV. HelloMama Brief ....................................................................................................... 31 
+HelloMama Implementation Road Map iii  
+   
+  
+  
+   
+  
+  
+   
+  
+  
+   
+  
+  
+   
+   
+  
+   
+  
+  
+   
+    
+   
+  
+     
+     
+   
+  
+  Abbreviations 
+ANC antenatal care 
+API application programming interface 
+CHE W community health extension worker 
+DHIS District Health Information System 
+FGD focus group discussion 
+FMOH Federal Ministry of Health 
+GON Government of Nigeria 
+HCW Health care worker 
+HTTP Hyper text Transfer Protocol 
+ICT Information and communication technology 
+IVR interactive voice response 
+MAMA Mobile Alliance for Maternal Action 
+MCSP Maternal and Child Survival Program 
+MNO mobile network operator 
+MNCH maternal, newborn , and child health 
+OBD Outbound dial 
+OS Operating System 
+SMOH State Ministry of Health 
+SMGL Saving Mothers , Giving Li fe 
+SMS short message service 
+SOML Saving One Million Lives 
+SURE -P Subsidy Reinvestment and Empowerment Program 
+USAID US Agency for International Development 
+USSD Unstructured supplementary service data 
+VM virtual machine 
+HelloMama Implementation Road Map iv  
+   
+  
+       
+  
+ 
+   
+        
+     
+     
+ 
+      
+       
+  
+    
+      
+  
+ 
+     
+      
+    
+ 
+         
+ 
+    
+ 
+     
+       
+         
+      
+    
+      
+       
+      
+   
+ 
+         
+        
+           
+       
+    
+     
+  
+                                                           
+          Acknowledgments 
+The Nigerian National Health Information and Communication Technology (ICT) Strategic Framework 
+positions health ICT within the current context of the health system, addressing universal h ealth coverage, 
+one of the main priorities of the Government of Nigeria (GON).1 
+The emergence and rapid proliferation of mobile phones in s ub-Saharan Africa presents an opportunity to 
+accelerate progress toward attain ing national health goals , especially for maternal , newborn, and child health. 
+Therefore , the opportunity to design and implement a medium- to large -scale digital health messaging 
+intervention for pregnant women and new mothers was anticipated and well received by the GON . 
+In 2015, the Mobile Alliance for Maternal Act ion in Nigeria , with funding support from USAID and Johnson 
+& Johnson, was launched by the GON and partners as a 3-year program (October 2015 –September 2018) 
+and branded as HelloMama for implementation in Cross River (South South) and Ebonyi (South East) states 
+in Nigeria. The tasks of m eeting the high expectations and anticipating what many expected to be a game 
+changer in the maternal and child health landscape w ere daunting , especially as the project ventur ed into an 
+uncharted terrain , navigating the nation’s unproven ICT infrastructure. 
+The team learned many lessons when implementing this program in Nigeria, including about partnerships , 
+role clarification , technology appropriateness and adoption, and the diverse socio cultural context that affect s 
+positive health -seeking behaviors for maternal and child health outcomes. 
+The federal and supported state ministries of health , in collaboration with the HelloMama consortium to 
+develop this document to serve as a road map for ongoing and future digital health implementation in Nigeria , drawing from lessons and experiences gathered during program implementation . 
+E
+mmanuel Atuma, HelloMama project director, would like to extend sincere appreciation to institutions, 
+including the federal and state ministries of health and of communication/ICT, development and 
+implementing partners , and those that participated in and contributed to program implementation and 
+development of this document. The team especially commend the support and cooperation of the program 
+implementing partners: Jhpiego, Pathfinder International, Praekel t, the family health and ICT departments in 
+the Federal Ministry of Health , and other key stakeholders , such as health care workers in the over 142 
+facilities in Ebo nyi and Cross River states, and over 64,000 subscribers (pregnant women, new mothers , and 
+their families), for whom this service was designed. HelloMama consortium, the team want to thank other 
+active players within the Nigeria digital health ecosystem , whom we learned from and shared with . 
+Special appreciation goes to Dr . Isaac F. Adewole , the Honorable Minister of Health; Dr. Inyang Asibong, 
+honorable commissioner for health in Cross River State ; Dr. Daniel Umezurike , honorable commissioner for 
+health in Ebonyi State ; Dr. Oniyire Adetiloye , country director for Jhpiego Nigeria; Dr . Farouk Jega, country 
+director for Pathfinder International; and Debbie Rogers , managing director of Praeke lt, for providing 
+leadership and unflinching commitment throughout the entire program implementation, making the 
+development of this national road map for digital health implementation in Nigeria a reality. 
+1 Federal Republic of Nigeria. 2016. National Health ICT Strategic Framework 2015 –2020. Abuja, Nigeria: Federal Republic of Nigeria; 12. 
+HelloMama Implementation Road Map v  
+   
+HelloMama Implementation Road Map vi  
+   
+ 
+   
+       
+    
+      
+      
+       
+    
+ 
+ 
+         
+     
+       
+    
+      
+ 
+    
+  
+     
+  
+  
+    
+   
+ 
+      
+     
+     
+     
+ 
+      
+      
+     
+       
+    
+    
+ 
+   
+   
+     
+       
+    
+   
+ 
+   
+      
+ 
+   
+ 
+ Introduction 
+Program Description 
+The Mobile Alliance for Maternal Action (MAMA), a global consortium with public -private funding, 
+delivered vital health information during its 5 years of operations (2010–2015) to pregnant women, new 
+mothers , and their families through mobile phones with messages specifically designed for behavior change. 
+Through an age- and stage- based model, the messages corresponded to what a woman was experiencing in 
+her pregnancy or in her c hild’s development, creat ing a trusting relationship between the recipient, or end 
+user, and the MAMA service. MAMA directly focused on and supported countries where high maternal and 
+newborn mortality rates intersect with an increasing proliferation of mobile phones —Bangladesh, India, and 
+South Africa. 
+In 2015, MAMA Nigeria was launched by the Government of Nigeria (GON) and other partners as a 3- year 
+program (October 2015 –September 2018) and branded as HelloMama for implementation in Cross River 
+(South S outh) and Ebonyi (South East) states in Nigeria. These states had US Agency for International 
+Development (USAID ) funding support for maternal and child health interventions through Saving M others , 
+Giving Life (SMGL) and the Maternal and Child Survival P rogram (MCSP). 
+The HelloMama program operate d in Nigeria with the goal “ to improve the health outcomes for pregnant 
+women, newborns, children, and families in Nigeria through age -and stage- based mobile messaging that 
+complements the efforts of frontline health workers .” It had two key specific objectives: 
+1. Establish an operational, nationally scalable platform for a dequate coverage that makes age -and stage-
+based mobile messages available to the target population and links to existing health information sy stems. 
+2. Complement supply -side maternal, newborn, and child health (MNCH ) interventions by improving 
+knowledge and adoption of healthy and safe MNCH practices. 
+The program was locally led, planned for scale- up, and complemented the national health care sys tem by aligning 
+with health priorities, policies, and systems. At inception, the program started with seven core partners : the 
+Subsidy Reinvestment and Empowerment Program (SURE -P), Pathfinder International, the Praeke lt Foundation, 
+Johnson & Johnson, USAID, MAMA global, and the Federal Ministry of Health (FMOH). 
+However, i n November 2015 , the GON dissolved SURE -P. In December 2015, the MAMA global secretariat 
+was dissolved. Though USAID Nigeria had envisioned that Ebonyi and Kogi states (supported by MCSP) 
+would be included in the HelloMama implementation phase, MCSP did not play a role at inception until the 
+second year , when the overall coordination of HelloMama shifted from SURE -P to MCSP via in -country 
+implementing partner Jhpiego, with Pathfinder and the Praeke lt Foundation remaining as subgrantees , while 
+Johnson & Johnson and USAID continued as funding agencies. 
+Introduction to the Road Map 
+This document leverages contemporary technology to strengthen health systems and attempts to chronicle 
+the technical approaches, management structures, and levels of stakeholder engagement in the initialization 
+and implementation of HelloMama in Nigeria. It serves as a guideline on the basic intricacies o f setting up 
+similar platforms in Nigeria and can be used by current and future implementers of digital messaging services 
+for maternal and child health in s ub-Saharan Africa. 
+The road map has two key objectives: 
+1. Provide clarity on resource requirements for executing a similar digital health messaging platform in 
+Nigeria . 
+2. Share methodology and documents that will drive the future deployment of a successful digital health 
+platform built on HelloMama’s approaches and lessons learned . 
+HelloMama Implementation Road Map 1  
+   
+ 
+      
+    
+         
+           
+        
+     
+       
+     
+ 
+     
+      
+        
+       
+         
+  
+ 
+ 
+   
+ 
+ 
+  
+ 
+ 
+  
+         
+      
+    
+          
+     
+    
+   
+    
+    
+  Program Manager 
+Technical 
+Manager Senior Program 
+Manager 
+Ebonyi Program 
+State-Level 
+Implementation Coordination/Management 
+Project Director 
+Digital Health 
+Advisor Digital Health 
+Advisor 
+Digital Health 
+Officer Monitoring, 
+Evaluation, and 
+Content 
+M&E Specialist 
+M&E Officer Management Structure 
+Programs 
+USAID designed HelloMama ’s program management structure to be lean and stream lined. At inception, the 
+HelloMama program had only three full -time staff recruited by MCSP : a project director, senior program 
+manager , and program assistant. The program aimed to mirror the structure of the relevant maternal and 
+child health department s in the FMOH and state ministr ies of health (SMOHs) by leverag ing core teams 
+within technical assistance organizations and teams within the FMOH (f amily health and, later, information 
+and communication technolog y [ICT] departments ) at the n ational level. At state levels , it leveraged 
+implementing partners ’ state teams that had counterparts within the SMOH , public health department, and 
+other relevant departments that oversee safe motherhood and reproductive health. 
+After the first year of operation , it became clear that HelloMama required more level of effort from partner 
+organizations and other personnel support, especially as state -level implementation required frequent 
+engagement of health care workers (HCWs) to promot e adoption and troubleshooting on the technology 
+platform. Also, the data and monitoring , through dashboard and facility data reconciliation , required more 
+time and personnel than the state offices could provide in addition to their existing monitoring and evaluation 
+support for MCSP and SMGL. 
+Structure 
+The in-country management structure of HelloMama across the implementing partners is represented in 
+Figure 1. 
+Figure 1. Country Management Structure 
+Scope and Technical Focus 
+Though a pilot was scheduled for the first year of program implementation, technology issues , including 
+acquiring a short code and integrating it with the mobile network operators (MNO s), hindered the rollout. 
+This pushed pilot impleme ntation to the second year (Oct ober–Dec ember 2016) across 47 health facilities in 
+Ebonyi and Cross River states (27 and 20, respectively) . The first phase of pilot implementation enable d the 
+program to assess the performance of its technology platform (Junebug) for interactive voice response (IVR ), 
+short message service  (SMS), and unstructured supplementary service data ( USSD ) message delivery. Praekelt 
+implemented system r efinements and operations processes. A second pilot phase, implemented from March – 
+June 2917, focused on stabilizing the technology platform and user experiences. The full program 
+implementation occurred in the third and final year of operation. 
+HelloMama Implementation Road Map 2  
+   
+   
+     
+    
+       
+  
+ 
+ 
+ 
+   
+      
+        
+       
+    
+ 
+ 
+    
+     
+      
+     
+        
+    
+ 
+      
+   
+    
+        
+       
+        
+  
+ 
+ 
+      
+        
+  
+     
+        
+      
+ # ' 
+I 
+I Content Management 
+This section describes the sequencing, methodology , and processes deplo yed in developing and adapting the 
+messages for HelloMama in compliance with the FMOH health program unit’s national guidelines. It explains 
+in detail the ideology, values, and intent of the content delivered through the HelloMama program and 
+outline s the background stages associated with message content. The process was government led and 
+engaged a wide variety of subject matter and technical experts. 
+Figure 2 . Content process 
+Sources of Content 
+The HelloMama content was one of the most important components of the program —it was the determinant 
+of the expected behavior change in beneficiaries. To ensure global standards and high quality of care were 
+maintained, the HelloMama consortium leveraged the repository of maternal and child health messages 
+developed by the global BabyCenter and MAMA program s. 
+Adaptation 
+Pregnancy and child development are influenced by cultural and local context . To design appropriate 
+behavior change communications , the HelloMama consortium conducted several field visits and focus groups 
+with representative populations from urban and rural settlements in Nigeria . This helped the program 
+understand key gaps and challenges facing pregnant women and new mothers. Based on these finding s, the 
+team developed an appropriate topical map (see Figure 3 above) and reviewed and filtered BabyCenter 
+messages to include content specific to identified barriers. 
+Next, a group of expert reviewers convened , including members of the FMOH , professional organizations, 
+and development partners , to localize the message content according to national guidelines based on cultural 
+and language context. The group designed the m essages to focus on vital health- seeking behaviors , such as 
+identificat ion of danger signs, preparation for delivery, and the need for antenatal care (ANC) and exclusive 
+breastfeeding. Local language experts then translated the messages , which were then recorded in English, 
+Pidgin , and Igbo. Overall, HelloMama developed 222 voice messages and 246 text messages for women and 
+their family members . 
+Testing and Development 
+The content development process included user acceptability testing of a subset of messages to determine 
+technical accuracy and cultural and literacy fit. As a result, it was determined that family members’ messages 
+should be changed from text to voice . Including a jingle in the messages would foster an emotional 
+connection with the messages , and using female- friendly voices for women and male- friendly voices for men 
+was preferred. Using feedback from these focus group sessions, the HelloMama consortium made necessary 
+revisions to the content translations and recording s and uploaded them to the HelloMama platform. 
+HelloMama Implementation Road Map 3  
+      
+   
+     
+      
+    
+   
+    
+ 
+  
+ 
+          
+          
+     
+ 
+      
+    
+ 
+ 
+  
+        
+       
+     
+  
+ 
+ 
+          
+        
+ 
+  
+    
+    
+    
+ • Building of backbone 
+elements and service design 
+• Advocacy visits and meetings 
+with Governments, 
+NCC,MNOs and other key 
+stakeholders 
+•Content creation and 
+localization, Integration with 
+clinic system 
+• M&E framework 
+• Formative research and 
+literature review 2017 
+• Final content recording and 
+localization 
+• Pilot implementation to 4 7 
+facilities across Ebonyi and 
+Cross River facilities 
+• Approva l of Hello Mama 
+branding elements 
+• Allocation of zero-rated 
+shortcode ( 1444) to 
+HelloMama for mobile 
+messaging and voice calls 
+• Network mapping of facilities 
+across Ebonyi and Cross 
+River 
+• Baseline assessment 2018 
+• Scale-up to reach 142 
+facilities for HelloMama 
+implementation across both 
+states 
+• Engagment at National and 
+State levels for government 
+adoption of Hellomama for 
+National scale 
+• End line assessment Content Review and Monitoring 
+During implementa tion, HelloMama continued to monitor message acceptance and accuracy among 
+beneficiaries. Based on feedback from women and health workers, the program observed some errors in 
+messages and confusion with certain content. It also realized that many of the HCWs registering women were 
+not familiar with the content of HelloMama messages. Therefore, the program organized another content 
+review meeting with relevant staff from state ministries and health facilities to review message content and 
+make recommendations for changes. These recommendations are being documented for future work. 
+Training, Support , and Engagement 
+The program sought to institutionalize capacities for technical and program management through a deliberate master training session that cascaded from the national level (FMOH and partners ) to the subnational level 
+(SMOH and partners ), and ultimately to frontline health workers at facilities. This helped to ensure that 
+capacities for scale -up and sustainability were available beyond the life of the program. 
+Strategic engagements and advocacy also played a major role in HelloMama program adoption and galvaniz ed 
+stakeholders ’ support in addressing implementation challenges and sustainability planning. 
+National Training 
+HelloMama facilitated a master training that equip ped federal -level implementing partners and SMOH s with 
+tools to introduce and train HCWs , community health workers (CHEWs), midwives , and nurse -midwives on 
+HelloMama enrollments and processes, including how to facilitate training sessions for users and support 
+other HCWs to use HelloMama messaging services . 
+Training Approach 
+The master training approach emphasized that all learners were HelloMama ambassadors , and it was their role to 
+ensure staff were comfortable using the service, underst ood its purpose, and were committed to its success. 
+To accomplish this, the trainer : 
+• Encouraged feedback and questions throughout the training . 
+• Answered questions, clarified issues , and gave constructive feedback . 
+• Clearly explained how the system can benefit mothers, families , and CHEWs. 
+HelloMama Implementation Road Map 4  
+    
+    
+    
+     
+       
+  
+    
+    
+      
+  
+ 
+   
+     
+     
+      
+ 
+     
+    
+     
+   
+   
+      
+ 
+     
+    
+     
+      
+ 
+ 
+   
+   
+ 
+ 
+    
+      
+ 
+ Training Objectives 
+By the end of the training, national -level learners were expected to: 
+• Have a clear understanding of the HelloMama service . 
+• Have a clear understanding of the benefits of HelloMama . 
+• Be able to use the USSD and IVR registration code to register the mother and family member s (father, 
+another family member, trusted friend ). 
+• Be able to explain this service to trainers . 
+• Understand the support material they will receive . 
+• Understand their role as HelloMama ambassadors and be able to provide feedback to ensure the system 
+is designed to work for them. 
+By the end of the training, those at the sub national level are expected to: 
+• Have a clear understanding of the HelloMama service . 
+• Understand the benefits of the HelloMama program. 
+• Have a clear understanding of the program’ s expectations , from HCWs to end users . 
+By the end of the training, HCWs are expected to: 
+• Have a clear understanding and b enefits of the HelloMama service . 
+• Have a clear understanding of the expectations from the program team . 
+• Understand the training resource materials designed to aid their work . 
+• Understand the program ’s registration flow . 
+• Understand their roles as frontline HCWs interacting with end users . 
+By the end of the training, end users are expected to: 
+• Have a clear understanding of the HelloMama service. 
+• Understand of the benefits of the program . 
+• Understand how the structure of the mobile messaging operates and how the messaging is designed for 
+them . 
+Training Session Structure 
+Introduction to the Hell oMama p rogram: Trainers provided a brief introduction on the HelloMama 
+program. 
+Demonstrations: Trainers showed pictorial demonstrations of the different aspects of the service, such as 
+how to register a woman through IVR and USSD, and how to carry out a sta ge change through IVR and 
+USSD. 
+HelloMama Implementation Road Map 5  
+          
+ 
+         
+  
+     
+  
+        
+  
+      
+     
+ 
+ 
+ 
+      
+            
+       
+ 
+        
+ 
+ 
+         
+ 
+        
+       
+  
+        
+ 
+ 
+        
+         
+  
+          
+ 
+ 
+  
+     
+        
+  
+       
+ Handouts: Trainers shared t he following handouts with learners to support and guide HCWs on using the 
+service: 
+• HelloMama booklet: This booklet contains a summary of the service, the numbers trainers can dial, and 
+a run -through of each registration process (IVR and USSD). 
+• Troubleshooting guide: This h elps trainers identify and solve problems they may experience when 
+using the service . 
+• FAQs: This provides examples of question the trainers may get when recruiting mothers and family 
+members to the service. 
+• Summary of service: This is a summary of the numbers the trainers can dial to access the HelloMama 
+system through USSD or IVR to eith er register or update message settings . 
+Promotion Support 
+Marketing and Branding 
+HelloMama brand development commenced with the creation of mood boards, names , and voice personas. 
+The program tested them with focus groups and used the feedback when develop ing the brand name , look, 
+and feel. The program developed a draft marketing plan a s part of the bigger communication plan. 
+HelloMama developed a diverse marketing strategy to acquire customer s using the following key approaches : 
+Clinic -Only Registrations 
+• Aim: Create service awareness and drive pregnant women to facilities to enroll in ANC and HelloMama 
+service s. 
+• How: Equip health workers with tools to educate pregnant women about the message service . 
+Awareness posters should be used within the fa cilities. Educational posters only showing how to interact 
+with the system should be used in facilities. 
+• Message: Creat e awareness of the program and education on how service works . 
+Inside and Outside Facilities: Printed Leaflets 
+• Aim: Create awareness abo ut service in facility and educate pregnant women on the service . 
+• How: Leaflets in facilities can be given out by CHEWs to pregnant and new mothers who are visiting 
+the facility . They can also be placed in the waiting area. 
+• Message: Creat e awareness of the program and education on how service works , including mobile 
+literacy . 
+Facility Only: Booklet 
+• Aim: Educat e pregnant women and enabl e HCWs . 
+• How: Booklet can be used as a training tool (read it yourself) but also can enable HCWs to explain to 
+others how the service works . 
+• Message: Outlines for HCWs how the service works . 
+HelloMama Implementation Road Map 6  
+       
+      
+   
+        
+ 
+ 
+   
+        
+        
+ 
+ 
+    
+      
+    
+    
+       
+    
+       
+    
+     
+ 
+ 
+        
+          
+          
+       
+   
+    
+              
+     
+ 
+       
+       
+     
+       
+      
+ 
+    
+    
+    
+      
+   
+  Advocating at the National and Subnational Level s 
+Advocacy is key to successful program development implementation, especially if the program involves using 
+new innovations and technology to improve health. It supports key stakeholders ’ understanding of program 
+goals and buy -in, as well as strategic partnerships in resolving anticipated and emergent challenges during the 
+life of the intervention. 
+Engagement with Key National Stakeholders 
+The program strategically engaged with the FMOH and the F ederal Ministry of Communication, resulting in 
+the approval and release of the national health short codes 1443/1444 for use by HelloMama to deliver voice 
+and SMS services to it s clients . 
+Other HelloMama advocacy efforts ensured the following was achieved at the national level: 
+• The FMOH’s health promotion unit approved HelloMama ’s content. 
+• The FMOH approved HelloMama’s branding . 
+• The FMOH reviewed and endorsed HelloMama’s researc h protocol . 
+• Cross River and Ebonyi states adopted the national model by appointing high-level SMOH staff as 
+HelloMama state government focal people. 
+• Key stakeholders , such as the National Primary Health Care Development Agency , the National 
+Information Technology Development Agency, the FMOH, SMOH s, National Health Insurance 
+Scheme, and other technology partners , participated in annual work planning meetings, workshops , and 
+document reviews . 
+At subnational levels, HelloMama advocated with key government civil servants and political office holders 
+on health and ICT, specifically the Office of the Wife of the Governor s, honorary commissioner s for health, 
+permanent secretar ies, directors of public health, safe motherhood unit s, the Saving One Million Lives 
+(SOML) project, and heads of targeted public and private health facilities . These efforts helped promote 
+adoption by facility HCWs , who have embraced HelloMama as a partner in maternal and child health service 
+delivery , and helped to mainstream HelloMama data requirements with their existing national registers , 
+enabl ing the program to have access to details of eligible women attending ANC who have access to a mobile 
+phone and are subscribed to HelloMama. 
+HelloMama identified bottlenecks and challenges from the field in Ebonyi and Cross River states via a 
+monthly review meeting with facility health workers , which were addressed through advocacy with the 
+SMOH s’ hospital management or the primary health care development agency. Positive results include d 
+retention of trained HCWs or transfer of HelloMama -trained HCWs to other HelloMama -supported facilities 
+where health workers can continue to use skill sets to inspire and motivate other peers and pregnant women. 
+Major key achievement s at the subnational level include d: 
+1. State adoption and sustainability of HelloMama through deployment of state SOML funding in the form 
+of $120,000 from Cross River for inventory of voice and SMS messaging to pregnant women 
+2. Sustain ed enthusiasm of health workers and facility management despite challenges with the network or 
+platforms , which occur occasionally 
+HelloMama Implementation Road Map 7  
+     
+  
+     
+     
+ 
+  
+       
+     
+      
+    
+         
+   
+     
+         
+ 
+      
+        
+     
+   
+          
+        
+ 
+      
+   
+     
+ 
+ 
+ 
+  
+     
+     
+       
+    
+ 
+ 
+    
+    
+  Partnerships for Scale -Up and Sustainability 
+Fostering stronger partnership to broaden the horizon and achieve sustainability in mHealth (mobile health) 
+is a mantra for HelloMama. The consortium believe s a single organization/ program cannot achieve much 
+without collaborating and partner ing with others w ithin the health systems . 
+To scale up and sustain HelloMama, several collaborations and partnerships are needed. At the national level, 
+identifying other key players through e -health technical working group platforms or other maternal and child 
+health programs through the Reproductive, Maternal, Newborn , and Child Health Core Technical 
+Committees , as well as other key inte rnational development partners , including bilateral health funding , is key 
+to wider adoption and sustainability . These collaborations may not always be successful due to organizational 
+and funders’ competiveness or alignments . In one such collaboration, HelloMama sought to scale up and 
+sustain SMS and IVR services for pregnant women with UNICEF , which was funding another organization 
+to provide similar services in the northern region of the country. The program team unsuccessfully sought to 
+get the donor to adopt the HelloMama age -and stage- based content rather than develop new content. 
+HelloMama worked with the SMOHs and primary health care agencies to explore including the program and 
+digital intervention in the strategic health plan ’s and ministries ’ budgets. HelloMama influenced the Cross 
+River State P rimary Health Care Development Agency 2017 –2022 strategic plan’s decision to include 
+delivering SMS m essages to pregnant women. Similarly, HelloMama provided technical assistance to S OML 
+in Cross River and Ebonyi states, resulting in the inclusion of age-and stage- based IVR and SMS messages to 
+pregnant women, mothers , and household family members in plans and budgets in the second half of 2018. 
+The HelloMama team also regularly attended d igital health network meeting s in Abuja and Lagos , learning 
+from startups and others within the digital health ecosystem, and fostering stronger relationships with 
+telecommunications and aggregator companies and other key technology partners needed for digital health 
+intervention . 
+Technology Management 
+This section describes the structure of the technology platform that supported the HelloMama program. The two main systems were the back -end hosting system (fir st supported by MainOne, then Internet Solutions ) 
+and the front -end SMS and call aggregator delivery platform , supported by V AS2Nets. Implementers can use 
+this information to construct a similar system in the future. Due to rapid advancement in technology, it is 
+possible that future implementations could find this configuration outdated and could choose to alter or even abandon this structure. This section is highly technical in nature and is meant for technology specialists. 
+System Design/Map 
+The Hello Mama cluster and all applications within it are hosted in- country and communicate with the 
+telecom companies through the aggregator to deliver voice and SMS messages to subscribers (see Figure 3 ). 
+HelloMama Implementation Road Map 8  
+   
+ 
+ 
+ 
+ 
+  
+ 
+      
+    
+    
+ 
+      
+    
+  Airtel 
+Vas2nets 
+Etisalat 
+GLO Praekelt Seed Stack 
+Public voice line 
+Public USSD line 
+HCW Voice line 
+HCW USSD line 
+Public SMS line 
+Public OBD line 
+Public Community 
+Voice line 
+Public Community 
+USSD line 
+In-country hosting Figure 3. HelloMama system design 
+OBD = outbound dialing 
+Initial HelloM ama Architecture 
+Hello Mama went live in September 2016. 
+Microservices , such as message sender, stage -based messaging , and registration , communicate with the 
+sandbox voice, SMS , and USSD applications to deliver messages to pregnant women and handle inbound 
+requests , such as a new registration or a state change of an existing registration. 
+There was no unified code at the start of the program, so the USSD line , for instance , was different from the 
+voice line , as can be seen in Figure 4. 
+HelloMama Implementation Road Map 9  
+    
+ 
+   
+ 
+  for all inbound Sandbox Application s 
+registration and OBD) 
+Public Voice app 
+I Public Voice line I 
+I I State Ch8Jl9e +2348039003036 I 
+Stores (micro-services) 
+Public USSD app 
+I Stale Change I 
+I I I I Public USSD line ---"366"8# I 
+HCW Voice app I I --......... I 
+I I I Reg1stratJOn lj I HCW Voice line 
+I --+2348039003038 I 
+HCWUSSDapp ---I 
+I I I I HCWUSSDline RegislratJOn 
+"366"6# 
+Public SMS app 
+I Public sms I ine I I s1a1echange I I 
+I I UnSOIIClled 
+I I I Public OBD line I I Ope Out 
+I HTTPAPI I 
+I I 
+I HTTP API I 
+I I Figure 4. Hello Mama architecture at start of program 
+API = application programming interface 
+OBD = outbound dialing 
+HelloMama Implementation Road Map 10  
+    
+  
+ 
+  
+ 
+ 
+     
+       
+          
+  
+     
+       
+         
+     
+     
+     
+   
+       
+  Applications 
+(Freeswitch for MTN and 9mobile Public Voice app 
+IVR registration) I State Change I 
+~ l All Voice lines 
+1444 I Public USSD app 
+I State Change I 
+Stores (micro-services) 
+HCW Voice app 
+H Public USSD line I I ReglStral!Oll I I Rog!--I •1444•1• I -
+Community Voice app I _._ .......... I H I I I HCWUSSDline Reg1Strat10n 
+•1444•2• I I ---I 
+H Community USSD line l HCW USSDapp I ---l 
+I I I 
+•1444•4# I h__ Registration 
+H Public sms line l Community USSD app 
+1444 I I I Registration 
+I Public OBD line Public SMS app 
+I I SlaleChange I 
+I UnsollClted I 
+I Opt OU1 I 
+I HTTPAPI I 
+I V2N OBOAPI I 
+I I Current HelloMama Architecture 
+Figure 5 . Hello Mama -updated architecture before handover 
+API = application programming interface 
+OBD = outbound dialing 
+The current architecture is similar to the original , except for these enhancements: 
+• Unified dialing code : The program now uses a single unified code (1444) across telecommunications 
+companies for voice, SMS, and USSD with the USSD having different iterations , such as *1444*1 and 
+*1444*2 for public and HCW registration , respectively. 
+• Community registration : The architecture a lso include s a community registration app that allow s 
+community extension workers to register women for short sets of messages (with a  4-week duration) . 
+• Aggregator outbound dials (OBD s) application program interface ( API): OBDs are now handled 
+by an aggregator through API calls to reduce network congestion through the legacy phone systems . 
+When a pregnant woman should receive a message, Praekelt sends an API call o VAS 2Nets with the 
+details of the message and receiver in a payload. The aggregator then unwraps the payload and sends a 
+message to the subscriber with that information. The aggregator also processes r egistration over Airtel 
+and pushe s it to the HelloMama back end through an API. 
+HelloMama Implementation Road Map 11  
+   
+ 
+   
+   
+ 
+ 
+  
+       
+     
+   
+ 
+   
+     
+       
+        
+ 
+ 
+ 
+     
+    
+   
+ 
+       
+  
+         
+    
+ 
+    
+        
+   
+ 
+  
+     
+   
+ 
+    
+  
+ 
+     
+ 
+ 
+     
+  
+  
+  
+  
+   Platform Features 
+Mobile Registry 
+The platform allows patients to be registered in a secure database through multiple mobile channels 
+(USSD/IVR), with each registration linked to a facility or HCW to support tracking and data analysis at 
+various administrative levels. 
+User Registration 
+HCW registration: The HelloMama registration service is used by HCWs to register women for voice or 
+text stage -based messaging. Registrat ion can be done by two channels: USSD or IVR. HCWs and end users 
+engage these public lines through a government- approved short code (1444 and 55500). 
+Community -oriented res earch person registration: Women who believe they may be pregnant are 
+encouraged by a com munity -oriented resource p erson to visit the health center to confirm their pregnancy. 
+The com munity -oriented resource person registers the woman to receive a short set of messages that informs 
+her of the HelloMama service and encourages her to confirm her pregnancy with a n HCW and register for 
+the full HelloMama message set. 
+Stage -Based Messaging 
+The platform stores, manages , and sends stage -based messages in multiple languages through multiple mobile 
+channels, providing guidance and support to subscribers at critical points in their health journey. This is d one 
+via the message sender and scheduler. 
+Messaging and message scheduler: To send staged -based text and voice messages, the system applies a 
+structured sch edule to its message scheduler. Message sets (pregnancy or baby messages) are sent per preset 
+frequency to the mobile recipient. In general, each week, three sets of SMS messages and two sets of 
+outbound calls are delivered to women . 
+Automated SMS response: Given there is currently no help desk functionality, an automated SMS response 
+is triggered to users from the API, which replies to the stage -based message. Invalid keywords trigger a 
+default error message. I nbound messages are saved in the messa ge store . 
+Seed Maternal Health Stack 
+Channel connectivity: One or more channels in the form of SMS, USSD, and IVR are managed via a 
+Junebug (Praekelt’s open -source messaging gateway) deployment. 
+Applications: JavaScrip t sandbox applications provide user interactions that guide the learner through a 
+registration, change management, or information dispersal flow. 
+Back -end services: REST -based APIs receive, store, process , and present data in a number of logically 
+grouped collections. 
+Control interfa ce: Web-based administration tools support the platform in: 
+• Identity management 
+• Registration management 
+• Change management  
+• Subscription management  
+• Send task failures identification (schedules, subscription, outbound) 
+HelloMama Implementation Road Map 12  
+    
+  
+ 
+    
+         
+    
+ 
+ 
+ 
+   
+    
+     
+    
+ 
+ 
+   
+  
+     
+   
+   
+    
+ 
+ 
+ 
+     
+  
+       
+  
+    
+         
+ 
+     
+           
+     
+  • Service status 
+• Report generation 
+Dashboard, analytics, and reporting : Set of open -source tools (e.g. , Redash) collects, monitors, queries, 
+and visualizes various data set. Praekelt compared historic data from the project. HelloMama was built using 
+microservices, each with their own database , so that scaling up is easier . 
+Flows 
+Registration Flow 
+• Use any device to dial into the USSD/IVR registration service . 
+• Input relevant patient and last menstrual period details . 
+• Upon completion, the r egistered number should receive a welcome SMS message. 
+• The registered number should receive voice messages . 
+Change State 
+• Change from pregnancy to baby messages . 
+• Change language preference . 
+• Change the message format (voice or text) . 
+• Update registered number . 
+• Opt out of receiving messages . 
+• Opt in for support messages . 
+Hosting 
+Hosting Infrastructure Overview 
+The four key components considered while provisioning servers, operating system (OS ), and network 
+equipment include : 
+• Elasticity: This is a key component, as HelloMama engineering staff need to have solid capability to 
+scale the computing environment up and down rapidly. This package also consists of supporting tools, 
+such as network secur ity, storage, and load balancing. 
+• Security: Provider must o ffer its own firewall and have the ability to accommodate implementing the 
+HelloMama platform firewall. 
+• Reliability: Uninterrupted uptime is key to running the service efficiently. 
+• Location: In some countries , it is critical that at least one or sometimes all machines required for hosting 
+are physically located within the borders of that country, due to government regulations around data. 
+HelloMama Implementation Road Map 13  
+   
+  
+  
+    
+  
+     
+    
+  
+   
+  
+   
+  
+   
+  
+     
+ 
+ 
+   
+ 
+   
+ 
+  1111 _, -
+1111 
+-...... 1111 -II 1111 111111 ---II 1111 
+---Private IPs 
+~1Q.C.IOQ.9 
+p~I w:t.:Aa011CULICIUI 
+prot--..wc.uluQ2 .10..0.100.t.2 ~·10.0..1011.13 ~ltOJl.!:xut 
+~ '.!OJUOCU2 ~U.O..l!IUS ~10.0.tt'C.37 ~ 10.0.10041 ~ 10.010043 ~IQ.01004S 
+SR·f•••, .......... ;n 10.0.tOll.4' 
+~110.0..100.SI fl'(,~ 10.AlOUl ~t0.4.10070 ~IO..C .Hlll.101 ~ 10.0--100.,ca ~I .O.OIOIUGJ Deployment 
+Infrastructure provision ing and application deployment with hosting partner include: 
+• Provision infrastructure with host: 
+• Test virtual machine setup . 
+• Configure firewall/networking. 
+• Prepare puppet environment and virtual machine (VM) node definitions . 
+• Create and launch all VMs (install OS). 
+• Apply puppet agent configurations . 
+• Launch cluster test applications . 
+• Configure monitoring/metrics . 
+• Test all cluster functions . 
+• Application deployment : 
+• Launch f ree switch server . 
+• Launch need to end application with test a ggregator (V AS2Nets) numbers . 
+• Perform t ests with aggregator (after transfer/sync databases/shared volume files to cluster in hosting 
+environment). 
+See an overview of all VMs in the cluster and connectivity between them in Figure 7. 
+Figure 7. Overview of Virtual machines in Cluster and their Connectivity 
+HelloMama Implementation Road Map 14  
+      
+      
+ 
+  
+    
+   
+    
+    
+   
+  
+  
+  
+   
+    
+     
+ 
+ 
+       
+   
+  
+   
+ 
+ 
+  
+  
+  
+  
+     
+   
+  
+   
+ 
+   
+   
+ Table 1. Praekelt ’s prescribed server specifications 
+Servers Three physical machines or a sufficiently flexible virtual machine 
+management solution 
+Processor 1 Between 8 and 16 cores 
+Random Access Memory Minimum of 64 gigabyte per server 
+Operating System Flexible. Ability to install own XenServer on the hosts. 
+Local Storage Minimum of 1 terabyte per host 
+Disk Type Solid -state drives in the hosts 
+Redundant Array of Independent 
+Disks Yes 
+Virtualization Yes 
+Firewall --
+Availability and Reliability Redundant system 
+Public IP Addresses At least two public IPs that can be allocated to virtual machines 
+VM Affinity/Anti -Affinity Affinity and anti -affinity rules allow Prekealt to spread a group of 
+virtual machines across different hosts or keep a group of virtual 
+machines on a particular host. 
+Private Network between Hosts Yes. Preferably an isolated physical network. Private virtual local 
+area network would be the second opti on. 
+Support 24/7 technical support 
+Time to Deploy Fast 
+Architecture: 
+• OS: Debian Jessie 8 
+• Web server (nginx) 
+• Application server running the open- source code   
+• Database server (PostgreSQL) 
+• File server to host images, PDFs, and assets shared by load balanced servers ( GlusterFS ) 
+• Caching and queueing—transient storage for performance optimization (Redis, RabbitMQ) 
+• Load balancer (haproxy) 
+• DC/OS used for container orchestration 
+The above systems are deployed in separate VMs that can be independently monitored and managed, 
+especially for high availability (resilience to single points of failure). 
+HelloMama Implementation Road Map 15  
+     
+        
+  
+ 
+  
+   
+     
+  
+    
+ 
+  
+ 
+   
+     
+ 
+   
+ 
+         
+   
+ 
+ 
+ 
+  
+   
+  
+ 
+   
+   
+ 
+  
+    
+  
+  
+   
+  
+ 
+ 
+    
+    
+   
+  Furthermore, logical separation of components limits access over the Internet. F or example, the load balancer 
+must be publicly acc essible, but the database server must be accessible only by the Web server. Firewalls are 
+used to enforce this for each virtual machine. 
+DC/OS Overview 
+DC/OS (the datacenter operating system) is an open- source, distributed OS. It manages multiple machines in 
+the cloud or on premises from a single interface; deploys containers, distributed services, and legacy 
+applications into those machines; and provides networking, service discovery , and resource management to 
+keep the services running and communicating with each other. 
+Monitoring Overview 
+The following systems are used for monitoring: 
+• Prometheus : An open- source monitoring system with a dimensional data model, flexible query language, 
+efficient time series database , and modern alerting approach. This is used to monitor server health and 
+service availability. 
+• Sentry : Real-time error tracking gives insight into production deployments and information to reproduce 
+and fix crashe s. 
+• Uptime Robot : Provides an external Hypertext Transfer Protocol (HTTP ) monitoring service that 
+provides external validation of system uptime and performance. 
+Aggregator 
+Setting Up 
+• IP network setup Public switch telephone network • Configuration of zero-rated 
+• SIP account setup voice data integration for carriage short code across MNOs 
+• Network address t ranslation and routing of outbound and (MTN, Airtel , and 9Mobile) 
+configuration and firewall inbound dials across MNOs (MTN, • Acquisition of inventory (SMS, 
+access Airtel , and 9Mobile) IVR, and USSD) 
+Reporting 
+SMS portal —logs and records of SMS messages sent with respective status report 
+Daily OBD portal —downloadable logs and record of daily and unique OBD calls 
+USSD logs and inventory usage logs 
+HelloMama Implementation Road Map 16  
+    
+ 
+ 
+  
+ 
+ 
+ 
+ 
+      
+       
+        
+     
+     
+ 
+ 
+  
+  ----- APt 
+--El 
+Inbound 
+',. ..... -.................... . 
+API Primary 080 Channel 
+Altemative Channel 
+Ptae PABX 
+Outbound Alternative Channel Figure 8. Inbound (via aggregator V AS2Nets) 
+Figure 9. Outbound (via Airtel API) 
+Monitoring Evaluation and Research 
+In a bid to scientifically assess the efficacy of digital messaging for improved maternal and child health 
+outcomes , HelloMama , at conceptualization , was designed to demonstrate the study  “The Feasibility of Using 
+Age-and Stage- Based Interactive SMS and Voice Messaging to Improve Maternal, Newborn, and Child 
+Health Knowledge ; Uptake of Services ; and Satisfaction in Cross River and Ebonyi States of Nigeria ” 
+through  a cluster randomized controlled trial conducted by the HelloMama consortium. Study participants 
+enrolled at intervention and control sites will be followed up with prospectively for 12 mo nths. 
+Indicators 
+Please see Annex I. 
+HelloMama Implementation Road Map 17  
+   
+  
+         
+    
+    
+    
+     
+       
+ 
+     
+   
+ 
+  
+ 
+ 
+    
+       
+        
+     
+    
+ 
+     
+    
+     
+      
+ 
+           
+    
+ 
+         
+  
+      
+   
+   
+        
+   
+     
+    
+ 
+     
+      
+     
+            
+ Research 
+The Hello Mama research study developed the following objectives : 
+• Assess the effect of HelloMama on increasing client uptake of ANC visits, skilled delivery at health 
+facilities, postnatal care visits for women within 42 days, and infant immunizations within the first 4 
+months of life in two states in Nigeria after a minimum of 9 months of implementation. 
+• Assess the effect of HelloMam a on increasing knowledge, particularly for pregnant women around 
+facility birth related to key maternal and newborn health perceptions, intentions, and behaviors among 
+pregnant women, new mothers , and family members in two states in Nigeria after a minimu m of 9 
+months of implementation. 
+• Assess HelloMama subscribers’ satisfaction with the quality, relevance , and interest in HelloMama 
+messages in two states in Nigeria after a minimum of 9 months of implementation. 
+The study used f our main data collection methods: 
+Structured client interviews with pregnant women at baseline and endline . This will use a quasi-
+experimental study design. The intervention group include d 30 SMGL/MCSP -supported facilities that 
+offer ed Hello Mama services . The control group includ ed 30 SMGL/MCSP -supported facilities that did not 
+offer Hello Mama services. The study team tried to ensure that the control and intervention sites were in 
+different wards or local government areas to reduce contamination. Study participants enrolled at intervention 
+and control sites will be followed up with for a minimum of 9 months. 
+At baseline, trained data collectors interviewed pregnant women at the facility using a structured client 
+interview questionnaire. The questionnaire focused on knowledge, intentions to seek services , other health -
+seeking behaviors, and services received at the health facility (e. g., delivery with a skilled birth attendant). 
+Similar questions will be asked of the same women after 9 months to capture any change in knowledge, 
+health behavior, intentions to seek services , and satisfaction with Hello Mama services. The questionnaires will 
+be available in English and Igbo, pre-tested , and accessible electronically via the CommCare app. D ata will be 
+collected using Android tablets. 
+Pregnant women at selected control and intervention facilities in Cross River and Ebonyi states were 
+recruited for the study based on the following criteria: 
+• Were attending ANC services for the first time in their current pregnancy. 
+• Were over age 18 . 
+• Had access to a mobile phone . 
+• Were p lanning to reside at their current residence for at least 9 months . 
+• Were willing to participate . 
+• Consented to follow -up after 9 months . 
+• Agreed to receive Hello Mama messages (at intervention sites). 
+Focus group discussions (FGDs) with clients and their family members at endline. The FGDs will assess 
+recall, intentions, health -seeking behavior, and satisfaction with the HelloMama service at end line (9 months 
+postbaseline ) in both states. The FGDs will be conducted by trained trainers and note takers using a 
+semistructured discussion guide. Each group will consist of six to eight learners and last approximately 1.5 hours. 
+HelloMama Implementation Road Map 18  
+     
+  
+       
+       
+  
+ 
+        
+       
+    
+       
+  
+  Interviews with service providers at endline . One service provider per intervention site (30) will be 
+selected based on his/her involvement in provi ding ANC, maternity, and postnatal care. An interview using a 
+structured questionnaire with open- ended questions will be administered to these providers at endline to 
+assess their perceived changes in service demand, knowledge , and client behaviors after they started rece iving 
+HelloMama messages. 
+Pathfinder developed a data generation tool and integrated it with the Control Interface for cohort study and 
+research in November 2017. The Control Interface user imports a random sample of registered users ’ phone 
+numbers . The application automatically fetches each user’s historical data (messages sent, registration 
+preferences, opt-out information , etc.) and populates them for the monitoring and evaluation team , which 
+uses the data to study user behavior and establish patterns. 
+HelloMama Implementation Road Map 19  
+    
+       
+     
+      
+      
+   
+  
+ 
+    
+   
+  
+ 
+ 
+ 
+ 
+ 
+  
+  
+   
+     
+  
+  
+  
+  
+ 
+  
+ 
+  
+  
+      
+   
+ 
+   
+ 
+  
+  
+ 
+     
+ 
+  
+   
+    
+  
+  
+ 
+  
+     
+ 
+   
+ 
+   
+    
+ 
+   
+ 
+   
+  
+ Annex I. Monitoring, Evaluation, and 
+Research Indicators 
+The pilot project collected these customized indicators, with a paral lel data collecting sources that could not 
+be linked or incorporated into the national health management information system and district health 
+information system (DHIS ). HelloMama therefore recommend s an API linkage of the DHIS with the 
+partner’s customized data collection so that even when partners ’ data are not able to fit into the national 
+systems due to the absence of national digital health indicators, the customized platform can draw from the 
+health services data for program impact r eviews . 
+Indicator Definition Source 
+Objective 1: Establish an operational, nationally scalable platform at adequate coverage that 
+makes age -and stage -based mobile messages available to the target population and link s to 
+existing health information systems . 
+1 Number of 
+subscribers 
+enrolled for 
+HelloMama messages This is the total number of subscribers that have 
+ever been enrolled to receive HelloMama 
+messages . It is disaggregated by people enrolled 
+(pregnant women, new mothers , and family 
+members, type of message ( outbound dialing 
+[OBD ] and short message service [ SMS] ), state, 
+and whether enrolled by health workers or 
+community volunteers . Control 
+Interface 
+2 Number of 
+Hello Mama clients 
+who are currently 
+registered to receive 
+Hello Mama 
+messages (active 
+users) This is the total number of active users on the 
+Hello Mama platform who are currently receiving 
+messages. (Pregnant women, new mothers , and 
+family members), type of message (OBD & SMS), 
+and state. Control 
+Interfa ce 
+3 Number of 
+subscribers who 
+opted out of the 
+Hello Mama 
+services This is the number of clients who unsubscribed 
+from the Hello Mama service. This is 
+disaggregated by the options available in the Hello Mama platform. It is d isaggregated by person 
+(pregnan t women, new mothers , and family 
+members and the reason for unsubscribing 
+(miscarriage/death, messages not relevant , and 
+others ). Control 
+Interface 
+4 Outcome of SMS 
+sent This is the outcome of the SMS messages sent to 
+the subscribers. The possible outcomes include: 
+• Not Sent: Aggregator fails to forward 
+messages to the MNO . 
+• Delivered: Mobile network operator 
+(MNO ) forwards message to user , who 
+receives it . 
+• Undelivered: MNO is unable to deliver 
+message to user. 
+• Sent: MNO may or may not have delivered 
+message but does not provide status . Praekelt SMS 
+portal 
+HelloMama Implementation Road Map 20  
+      
+  
+   
+ 
+    
+ 
+   
+  
+    
+ 
+    
+   
+ 
+  
+   
+   
+  
+     
+    
+    
+ 
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+   
+   
+ 
+  
+ 
+ 
+   
+  
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+  
+ 
+ 
+ 
+    
+   
+    
+ 
+  
+  
+ 
+  Indicator Definition Source 
+5 Outcome of OBD 
+sent This is the outcome of the OBDs sent to the 
+subscribers. The possible outcomes include : 
+• Network Failure : The MNO attempts to 
+call user but fails . 
+• Rejected: The MNO forwards the calls to 
+the user , who rejects the call . 
+• Successful: MNO forwards calls to user, 
+who answers . 
+• No Answer: MNO forwards to user, but 
+the user d oes not answer . Praekelt OBD 
+portal 
+6 Num ber of OBD 
+messages where at 
+least half of the 
+messages were listened to The number of OBD messages to subscribers 
+that were successful and where the duration of 
+call is half of the average duration of the messages. OBD messages to pregnant women are 
+about 120 seconds long, and calls to family 
+members are 90 seconds . Praekelt OBD 
+portal 
+Objective 2: Complement supply -side maternal, newborn, and child health (MNCH) interventions 
+by improving knowledge and adoption of healthy and safe MNCH practices. 
+7 Number of Saving 
+Mothers, Giving Life 
+(SMGL )/Maternal 
+and Child Survival Program ( MCSP )-
+supported facilities 
+registering clients 
+for HelloM ama This is the number of SMGL/MCSP facilities that 
+are currently registering women to receive HelloM ama messages. Disaggregated by state . Control 
+Interface 
+8 Number of health 
+workers trained 
+to register clients 
+for Hello Mama These are the number of people who are trained 
+by the Hello Mama team to register subscribers. Training report 
+9 Number of trained 
+health workers 
+who registered 
+women during the 
+reporting period The number of people trained to register 
+subscribers that registered subscribers during the reporting period . Control 
+Interface 
+10 Percentage of 
+women who were enrolled in 
+antenatal care 
+(ANC ) and 
+registered for 
+Hello Mama This is the percentage of women who enrolled in 
+ANC in the facility and were registered for 
+HelloM ama messages. This is calculated as: 
+Number of pregnant women registered for HelloM ama messages/Number of pregnant 
+women enrolled for ANC*100 Control 
+Interface/DHIS 
+HelloMama Implementation Road Map 21  
+   
+ 
+ 
+   
+     
+ 
+ 
+ 
+        
+ 
+ 
+   
+    
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
+   
+ 
+  
+ 
+       
+       
+ 
+    
+ 
+  Annex II. Conceptual Overview and 
+Documentation 
+HelloMama Stack 
+Below is a conceptual overview of the HelloMama system. This section is intended for a technologically -
+oriente d audience. For the most up -to-date system documentation, please visit 
+https://github.com/praekeltfoundation/seed- documentation . 
+Seed 
+Prekealt pushes new tags in each of the respective repos . Travis-ci.org then creates and deploys new releases 
+to PYPI. 
+Pyup will automatically generate a PR for new PYPI releases in the docker -seed repo . This can be merged 
+when the tests are successful. Once merged , travis -ci.org will build and deploy images to docker hub. 
+Docker -seed: 
+https://github.com/praekeltfoundation/docker -seed 
+Seed docker images : 
+https://hub.docker.com/r/praekeltfoundation/seed -identity -store/tags/ 
+https://hub.docker.com/r/praekeltfoundation/ seed-stage -based -messaging/tags/ 
+https://hub.docker.com/r/praekeltfoundation/seed -scheduler/tags/ 
+https://hub.docker.com/r/praekeltfoundation/seed -message -sender/tags/ 
+https://hub.docker.com/r/praekeltfoundation/seed -control -interface -service/tags/ 
+https://hub.docker.com/r/praekeltfoundation/seed -control -interface/tags/ 
+https://hub.docker.com/r/praekeltfoundation/seed -auth-api/tags/ 
+https://hub.docker.com/r/praekeltfoundation/hellomama -registration/tags/ 
+Jsbox apps and freeswitch transports: 
+New images are built automatically by Jenkins on the Hello Mama servers, triggered by changes to the mama -
+ng-dockerconfig repo , or it can be kicked off manually in Jenkins. 
+Message Sender Channels 
+Production 
+• V2N_VOICE : HTTP API channel to send voice calls via the VAS2N ets API 
+• JUNE_TEXT_SMPP : June bug channel to send text messages over 1444 
+USSD is setup using Junebug channels connected to VAS2N ets using the following vumi transport: 
+https://github.com/praekelt/vumi/blob/develop/vumi/transports/vas2nets/vas2nets.py 
+HelloMama Implementation Road Map 22  
+   
+       
+    
+     
+     
+  
+    
+        
+  
+    
+ 
+ 
+ 
+  
+ 
+ 
+    
+ 
+  
+    
+   
+  
+    
+     
+   
+    
+ 
+      
+       
+  
+ 
+  
+   
+ 
+ 
+ 
+ 
+    
+ 
+    
+  
+ 
+   
+ 
+   
+ Adding a N ew C hannel 
+The config folder contains some scripts that inter act with the Junebug rest API. They are used to manipulate 
+the channels. They use the details in junebug/prd/config.sh to connect to Junebug. 
+1. Create a new json file for the channel . The existing channels in the configs can be used as an example. 
+amqp_queue should match the queue that is used by the corresponding jsbox app. T he web_* items is used 
+by VAS2Nets to send messages to the channel. 
+2. Run connect -channel.sh prd/new -channel.json script in the config folder to create the channel in Junebug. 
+3. Create the channel in Seed: Message Sender using the new Junebug channel ID in the URL. Example: 
+http://junebug.prd -hub.hellomama.ng/jb/channels/<new_channel_id>/messages/ <new_channel_id>/messages/ 
+The username and password are in the config folder in junebug/prd/config.sh. U se an existing channel as 
+reference. 
+Mission Control 
+Docker containers are managed by MC2: 
+https://github.com/praekelt/mc2 
+Mission control allows Prekealt to configure, deploy , and scale docker containers. 
+June bug 
+Junebug is a messaging gateway that is intended to provide the means to connect to mobile network 
+infrastructure to enable the managing of text messages via a RESTful HTTP interface. Junebug supports: 
+• Creating , introspecting, updating and deleting transports 
+• Sending and receiving text messages 
+• Receiving status updates on text messages sent 
+• Monitoring transport health and performance 
+• Retrieving recent transport logs for debugging transport issues 
+Junebug relies on Redis for temporary storage, RabbitMQ for message queueing, and files on dis k for logs. 
+This setup was chosen so that Junebug would be easy to set up and start using , and because it did not require 
+a large, complicated, multisystem setup. 
+Junebug is a messaging gateway that is intended to provide the means to connect to mobile network 
+infrastructure to enable the managing of text messages via an HTTP interface: 
+https://github.com/praekelt/junebug 
+http://junebug.readthedocs.org/ 
+Redash 
+Prekealt hosts an instance of Redash for reporting purposes. 
+Redash is connected to replica databases that are read-only (prd-hm-db02) so that the reporting queries do 
+not impact production performance. 
+The open -source software being used as an operating system: https://redash.io 
+The project -specific Redash the project is using: http://redash.prd- hub.hellomama.ng/ 
+HelloMama Implementation Road Map 23  
+   
+    
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        
+       
+    
+ 
+   
+   
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+   
+   
+  
+    Postgres 
+One master PostgreSQL vm (hm -db01) with a second streaming replica vm (hm- db02). 
+The replica is used for redundancy and reporting purposes (Redash). 
+prd-hm-db01: 10.0.100.42 
+prd-hm-db02: 10.0.100.43 
+No auto- failover, the configuration is managed by a puppet module: 
+https://github.com/puppetlabs/puppetlabs -postgresql 
+Puppet 
+Puppet manages the setup and configuration life cycle of every virtual machine (VM) in the cluster . It is 
+responsible for the setup and configuration of the cluster as a whole. Installation of DC/OS (datacenter operating 
+system) 1.9 (https://dcos.io/ ) onto public/private agent and controlle r VMs is managed via puppet . 
+For more info on the nodes types: https://docs.mesosphere.com/1.10/overview/architecture/node -types/ 
+• 3 controllers : 
+• prd-hm-controller01: 10.0.100.11 
+• prd-hm-controller02: 10.0.100.12 
+• prd-hm-controller03: 10.0.100.13 
+• 2 public agents : 
+• prd-hm-public01: 10.0.100.51 
+• prd-hm-public02: 10.0.100.52 
+• prd-hm-public02: 10.0.100.53 
+• 3 private workers : 
+• prd-hm-worker01: 10.0.100.101 
+• prd-hm-worker02: 10.0.100.102 
+• prd-hm-worker03: 10.0.100.103 
+• Bootstrap ping node (used to bootstrap the rest of the DC/OS VMs): prd-hm-boot: 10.0.100.9 
+• Shared storage ( Gluster FS/Xylem) : 
+• prd-hm-xylem01: 10.0.100.31 
+• prd-hm-xylem02: 10.0.100.32 
+• Docker registry to cache images locally : prd-hm-registry: 10.0.100.35 
+• Build node ( to build and push docker images to the local registry) ( https://jenkins.io/ ) 
+• prd-hm-jenkins: 10.0.100.80 
+• Monitoring node (Prometheus/Grafana to keep track of cluster/VM metrics) 
+HelloMama Implementation Road Map 24  
+     
+  
+  
+  
+  
+ 
+  
+  
+ 
+    
+ 
+ 
+ 
+      
+      
+ 
+  1 2. Request 
+1 certificate 
+I 
+I 
+Let's Encrypt 
+I 
+I 3.ACME 
+1 challenge 
+I request marathon-acme 
+.. ...... 
+II) (II 
+G) en 
+::I C 
+(II er rl !'> f rl 
+o:J 
+G) .c -I 
+C) Cj .. 
+C I <e' 
+~ (II (C E (I) ai Cj .. o:J .s: ...... .. 
+() C (I) 
+w ;: 0 0 II) 
+~ C 
+.::t! C. 
+0 I < rl ,-I 
+"<t (II 
+~ ...... 
+marathon -lb 
+public internet   private network 5.Save 
+certificates 
+GlusterFS 
+7. Read 
+certificates 1. Watch 
+events 
+Marathon 
+Watch 
+events • https://prometheus.io/ , https://grafana.com/ 
+• prd-hm-mon: 10.0.100.37 
+• Redis/Rabbitmq nodes (Used by applications for caching/message queueing): 
+• prd-hm-redis01: 10.0.100.45 
+• prd-hm-rabbitmq01: 10.0.100.46 
+Infrastructure Overview 
+See Figure 10 below for an overview of all VMs in the cluster and connectivity between them. 
+Figure 10. Overview of Cluster’s Virtual Machines and Their Connectivity 
+Encryption 
+Figure 11 demonstrates how marathon -acme integrates with marathon- lb to issue Let’s Encrypt certificates 
+based on application labels. This is how Hypertext Transfer Protocol Secure  support is added to the 
+applications. 
+HelloMama Implementation Road Map 25  
+     
+ 
+ 
+      
+       
+  
+ 
+ 
+ 
+    
+    
+ 
+    
+ 
+      
+   
+      
+ 
+  should this request for 
+za.goodinternet.org go? 
+p 
+0 
+lb01 
+192.0.2.215 lb02 
+:443 / worker01 
+worker02 
+~~!iii] 
+10 . 1 . 1 . 23 ~ ljEJ 
+: 31 569 l.!E.I 
+workerN 
+[ii] [ii]lii] 
+[ii] [ii]lii] 
+public internet   private network Figure 11. M arathon Acme and Marathon in Integration 
+This is a n example of how traffic gets forwarded from client to the relevant worker. A user requests 
+https://za.goodinternet.org in his/her browser. This resolves to lb01’s IP addre ss. The load balancer receives 
+the request and forwards it on to one of the website’s containers on worker01. 
+Monitoring 
+The following systems are u sed for monitoring: 
+• Prometheus : An open- source monitoring system with a dimensional data model, flexible query language, 
+efficient time series database , and modern alerting approach. This is used to monitor server health and 
+service availability. 
+• Sentry : Real-time error trac king gives insight into production deployments and information to reproduce 
+and fix crashes. 
+• Uptime Robot : Provides an external HTTP monitoring service that provides external validation of 
+system uptime and performance. 
+• Jira: All incidents are tracked in Jira tickets that give a time-stamped history of escalation and actions 
+taken to resolve the incident. 
+HelloMama Implementation Road Map 26  
+    
+ 
+  
+  
+  
+  
+     
+  
+  
+     
+ 
+   
+   
+  
+      
+ 
+ 
+     
+ 
+ 
+    
+ 
+ 
+   
+ 
+ 
+ 
+    
+    DMZ 
+Private 
+Zone DC/OS Node Types 
+- - - - - - - - - - - - - -I I - - - - - - - - - I 
+I I I 
+I I 
+I I 
+Public Agent I I 
+Nodes I I 
+~ I I ~ 
+I I 
+I I I 
+~ - - - - - - - - - - - - -I I 
+I I I 
+I 
+Private Agent 
+Nodes Master Nodes 
+I ____________ _ I I_ - - - - - - - - -Protected 
+Zone Hosting Overview 
+Architecture 
+• OS: Debian Jessie 8 
+• Web server (nginx) 
+• Application server running the open- source code 
+• Database server (PostgreSQL) 
+• File server to host images, PDFs, assets shared by load balanced servers ( GlusterFS ) 
+• Caching and queueing—transient storage for performance optimi zation (Redis, RabbitMQ) 
+• Load balancer (haproxy) 
+• DC/OS is used for container orchestration. This is accessible from 10.0.100.11 using sshuttle. 
+The above systems are deployed in separate VMs that can be independently monitored and managed, 
+especially for high availability (resilience to single points of failure). Furthermore, logical separation of 
+components limits access over the Internet. F or example, the load balancer must be publicly accessible, but 
+the database server must only be accessible by the Web server. Firewalls are used to enforce this for each VM . 
+DC/OS Overview 
+A DC/OS node is a VM or physical machine on which DC/OS components run. DC/OS nodes are 
+networked together to form a DC/OS cluster. 
+A DC/OS cluster comprises three types of nodes: masters, private agents/workers, and public 
+agents/workers. 
+Figure 12. DC/OS Node Types 
+Master Nodes (Controllers) 
+A DC/OS master node is a node that works together with other master nodes to manage the r est of the 
+cluster. Master nodes contain the bulk of the DC/OS components, including a Mesos master process. 
+HelloMama Implementation Road Map 27  
+   
+  
+  
+      
+ 
+ 
+    
+    
+ 
+ 
+    
+      
+   
+ 
+ 
+       
+    
+     
+   
+ 
+   
+ 
+ 
+  
+    
+ 
+ 
+  
+ 
+   
+ 
+  
+        
+  
+      
+ 
+ 
+  
+  
+ 
+ 
+ 
+    
+ 
+ 
+   
+    
+ 
+     
+   
+  Protected Zone 
+Depending on distribution, deployment method, and infrastructure configuration, master nodes may be 
+publicly accessible or in a network zone that restricts access to improve security. Common strategies include 
+restricting master node access to the IP range of your offices and requiring virtual private network access. 
+High Availability 
+Multiple master nodes work together to provide high availability and fault tolerance. A cluster with only one 
+master node is usable for development but is not highly available and may not be able to recover from failure. 
+Leader Election 
+Mesos performs leader election and routes incoming traffic to the current leader to ensure consistency. Like 
+Mesos, several other DC/OS master node components perform independent leader election. This means that 
+the leaders for different components, such as Marathon and ZooKeeper, may be on different master nodes. 
+Quorum 
+To maintain consistency, a quorum (half plus one) of master nodes must be connected at all times. For example, 
+having three master nodes allows one to be down; having five master nodes allows two to be down, allowing for failure during a rolling update. Additional master nodes can be added f or additional risk tolerance. 
+The number of master nodes can only be specified during installation. This is primarily because of the complexity of changing the quorum and configuration of multiple components with leaders on different 
+nodes. This may change in the future. 
+Agent Nodes/Workers 
+A DC/OS agent node is a node on which user tasks are run. Agent nodes contain a few DC/OS 
+components, including a Mesos agent process. They can be public or private, depending on agent and 
+network configuration. 
+Public Agent Nodes/Workers 
+A public agent node is an agent node that is on a network that allows ingress from outside of the cluster via 
+the cluster’s load balancer. 
+The resources on public agent nodes are, by default, configured to only be allocated to tasks that specify the 
+slave_public role. The Mesos agents on public agent nodes also have the public_ip:true agent attribute to 
+assist in their discovery. Public agent nodes are used primarily for externally facing reverse proxy load 
+balancers, such as marathon -lb. This provides a demilitarized zone that decreases the surface area accessible 
+by malicious attackers. 
+Clusters generally have only a few public agent nodes because a few load balancers can usually handle 
+proxying to multiple services. 
+Private Agent N odes/Workers 
+A private agent node is an agent node that is on a network that does not have ingress access from outside of the cluster through the cluster’s infrastructure networking . 
+The resources on private agent nodes are, by default, configured to allow undifferentiated allocation. More 
+precisely, the resources are given the * role, allowing them to be allocated to any task that does not specify a 
+role. For more information, see Mesos resource roles . 
+Because these resources are undifferentiated, most tasks are scheduled on private agent nodes and are 
+inaccessible from outside the cluster, decreasing the surface area accessible by malicious attackers . 
+HelloMama Implementation Road Map 28  
+    
+  
+ 
+ 
+   
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+    
+     
+        
+ 
+        
+    
+ 
+    
+      
+     
+ C 0 10.0.252.11/#/dashboard?_k=3fzb9o 
+::: Apps For quick access, place your bookmarks here on the bookmarks bar. Import bookmarks now 
+seed-stack ,.. 
+i!J Dashboard 
+~ Services 
+(j Jobs 
+=~ Universe 
+= Nodes 
+.f. Networking 
+·'· System Overview 
+1: Components 
+* Settings 
+£ Organization Dashboard 
+Services Health 
+floral-fire -750 
+little-morn ing-411 
+marathon-lb 
+nameless-grass-213 
+VIEW ALL 28 SERVICES 
+Nodes 
+9 
+Connected Nodes Healthy 
+Healthy 
+Healthy 
+Healthy 
+Healthy 
+39 
+Tasks running 0 
+Tasks staging Component Health 
+Admin Router Agent 
+Admin Router Master 
+Admin Router Reloader 
+Admin Router Reloader 
+Admin Router Reloade r Timer 
+VIEW ALL 43 COMPON ENTS E:IOtherBookmark 
+Healthy 
+Healthy 
+Healthy 
+Healthy 
+Healthy Getting Started with DC /OS 
+Figure 13. Dashboard 
+VM Boot Order 
+In the event of a power failure : 
+1. prd-hm-boot 
+2. prd-hm-db01 
+3. prd-hm-db02 
+4. prd-hm-xylem01 
+5. prd-hm-xylem02 
+6. prd-hm-rabbitmq01 
+7. prd-hm-redis01 
+8. prd-hm-registry 
+9. prd-hm-controller[01 -03] 
+10. prd-hm-worker[01 -03] 
+11. prd-hm-public[01- 03] 
+Manually Checking Apps after Outage 
+After a network outage or a power failure , the apps should start running automatically when the 
+servers/network are up again. The system administrator usually double checks a few things to make sure 
+everything is up and running. 
+• Check the Seed and Redash front ends to make sure they are accessible through the url. 
+• Make sure that you can log in so connections to the database are successful. 
+The system administrator also look s at all the celery -related apps in MC2 to make sure tasks are being 
+processed ; this includes beat. If the last thing in the log is a n exception/error , the sys tem admin istrator 
+should restart the app. Most celery container logs will show the tasks being processed, and this indicates that 
+the worker is healthy. 
+HelloMama Implementation Road Map 29  
+   
+     
+      
+   
+      
+      
+     
+   
+       
+ 
+ 
+  
+         
+      
+    
+   
+   
+      
+     
+     
+    
+   
+ 
+      
+    
+      
+     
+     
+    
+      
+  
+    
+    
+     
+  Annex III . Partnerships, Roles, and 
+Responsibilities 
+At the onset of Mobile Alliance for Maternal Action ( MAMA ) entry into Nigeria in late 2014 and 2015, the 
+key partners were Pathfinder, Praekelt , and the Subsidy Reinvestment and Empowerment Program (SURE -
+P), with funding from the US Agency for Internationa l Development (USAID ) and Johnson & Johnson 
+through the UN Foundation. By 2015, the MAMA global s ecretariat , supported by USAID funds, 
+administered through the UN F oundation with funding from Johnson & Johnson, was dissolved. USAID 
+engaged the Jhpiego- led Maternal and Child Survival Program ( MCSP ) to manage and coordinate 
+HelloMama, with Pathfinder and Praekelt remaining as subgrantees . In November 2015, the Government of 
+Nigeria (GON) dissol ved SURE -P. Its role was shifted to the Federal Ministry of Health (FMOH)’s family 
+health department. 
+The core partners and stakeholders agreed to their following responsibilities: 
+• GON : Through the FMOH ’s family health department, the GON provide d overall program 
+management oversight and acces s to states and facilities, support ed state collaborations and 
+accountability, establish ed linkages between intergovernmental agencies and other partners in support of 
+HelloMama , and led government transition and sustainability efforts for HelloMama and ot her digital 
+health initiatives for maternal, newborn, and child health. 
+• MCSP : MCSP play ed a coordination role in leading HelloMama across all states for implementation and 
+brought on the HelloMama project director and other support staff in -country. MCSP a lso provide d 
+headquarters -level programmatic and technical support to HelloMama implementation and the platform 
+for implementing the pilot in Ebonyi State. In the third year , MCSP managed the relationships with 
+relevant contractors needed to host and aggregate services across mobile network operators in Nigeria 
+and managed the purchase of telecommunications “inventory” (airtime and messaging costs) needed to 
+operate the HelloMama platform. 
+• Pathfinder : Pathfinder , as HelloMama ’s in-country partner, receive d direct funding through E vidence to 
+Action to implement project activities. As part of the consortium, Pathfinder was responsible for content 
+development and localization, and monitoring, evaluation , and research. In addition, Pathfinder led and 
+provide d headquarters -based support to the project’ s implementation in Cross River State, where 
+HelloMama leverage d the Pathfinder -implemented Saving Mothers, Giving Life project. 
+• Praekelt : Praekelt implemented a MAMA program at scale in South Africa and is well positioned to 
+provide insights from its experience and lead on technology design, development, and testing. It led 
+specific activities in the development of personas and user journeys (to model the experience of different 
+types of users of the messages), wi reframes, prototyping, dashboards, and platforms for delivering mobile 
+messages through interactive voice response and short message service , training materials for health 
+workers to register women, and marketing plan s to raise awareness of the HelloMama b rand. 
+HelloMama Implementation Road Map 30  
+   
+ AID 
+FROM THE AMERICAN PEOPLE , 
+/tiaternal and Child 
+/ Survival Program 
+HelloMama-Using Digital Health 
+Platforms to Improve Health Outcomes 
+for Pregnant Women and New Mothers 
+in Nigeria 
+January 2019 www.mcsprogram .org 
+Key Messages 
+• As a result of USAID's investment in Nigeria's HelloMama program, for the first time, a nationally 
+recognized toll-free number (1444) dedicated to receiving maternal and newborn health messages was 
+approved by the Nigerian Commun ications Commissio n on behalf of the Federal Ministry of Health 
+(FMOH). This toll-free number has been integrate d on the platform of four of Nigeria's major 
+mobile networks operators (MNOs), increasing the opportunities for HelloMama health messages to 
+reach a larger segment of the population. By reaching more areas nationwide, access to maternal and 
+newborn care messages has been greatly expanded . 
+• In Nigeria, the Maternal and Child Survival Program (MCSP) reached 44,812 pregnant women and 
+18,203 spouses/fam ily members of these pregnant women with health information on pregnancy care 
+through the HelloMama messages delivered via voice calls and short messaging service (SMS) 
+messages. These women receive cellphone-based health information encouraging attendance at 
+antenatal care (ANg clinics and giving birth at one of 142 MCSP and Saving Mothers Giving Life­
+supporte d facilities in Ebonyi and Cross River states. 
+• The Cross River state government leveraged $110,000 from its Saving One Million Lives initiative to 
+sustain and scale up HelloMama messages . As a result, health messages will be sent to an additiona l 
+10,000 pregnant women and their influencers with further commitment from the government for full­
+scale inclusion of a digital health budget line in the 2019 budget. 
+The Mobile Alliance for Maternal Action, a global consortium founded by Johnson & Johnson, the US 
+Agency for International Development (USAID), BabyCenter, and the United Nations Foundation, delivers 
+vital health information to pregnant women, new mothers, and their influencers by leveraging SMS messages 
+and voice calls on mobile phones. It sends a global set of age-and stage-based messages that can be adapted 
+MCSP Nigeria - HelloMama Technical Brief Annex IV. HelloMama Brief 
+HelloMama Implementation Road Map 31  
+  local context via a mobile messaging platform called 
+HelloMama. The HelloMama work began in 2014--2015 
+with support from Johnson &Johnson and USAID. 
+In 2015-2016, the HelloMama partnership was 
+restructured. MCSP1 coordinated the efforts of 
+Pathfinder International and the Praekelt Foundation, in 
+collaboration with FMOH and state ministry of health 
+officials, to develop a locally led and planned-for-scale 
+mobile messaging platform aligned with national health 
+priorities, policies, and systems for pregnant women, 
+newborns, children under 1 year, and their families that 
+complements the efforts of frontline health workers. 
+The MCSP Nigeria HelloMama program had two broad 
+objectives: A new mother listens as her husband reads out her HelloMama 
+message outlining postnatal care for her newborn. 
+Photo: Karen Kasmauski/MCSP 
+1. Establish an operational, nationally scalable platform with adequate coverage that makes age-and stage­
+based mobile messages available to the target population and links to existing health information systems. 
+2. Complement supply-side maternal, newborn, and child health (MNCH) interventions by improving 
+knowledge and adoption of healthy and safe MNCH practices. 
+HelloMama was piloted in 47 selected facilities from October 2016 to May 2017 across Ebonyi and Cross 
+River states. 2 
+It then expanded the pilot to 142 facilities in March 2018. The platform reached 66% of all public facilities 
+across both states and over 63,000 pregnant women, new mothers, and influencers. 13,320 pregnant women 
+successfully graduated from pregnancy through 1 year of child life. 
+Program Approaches and Interventions 
+Pregnant women and new mothers were enrolled by HelloMama at the health facility level during routine 
+ANC visits and deliveries. Before enrollment, health care workers obtained consent from the woman. 
+Women were asked a series of questions to determine gestational age. Each health worker used a mobile 
+phone with a unique code for facility identification to register the woman's preference for timing of messages, 
+days for receiving messages, and language. The woman could also enroll a person that she finds influential to 
+her pregnancy outcome, such as a spouse or mother-in-law. 
+After enrollment, the pregnant or recently delivered woman receives three short text messages or two voice 
+messages weekly, depending on her stated preferences, which will continue for 1 year after childbirth. Under an 
+"age and stage" model,3 the messages are tailored to the local setting and correspond to what a woman is 
+experiencing in her pregnancy (stage) or in her child's development (age). This personalization creates a trusting 
+relationship between the end user and the HelloMama service, and can facilitate behavior change. The chosen 
+influential person also receives one weekly call or message with corresponding information to encourage better 
+appreciation and support for pregnant women or new mothers to engage in health care behaviors. 
+1 MCSP is a global, $560 million, 5-year cooperative agreement funded by USAID to introduce and support scale-up of high-impact health 
+interventions among USAID's 25 MNCH priority countries and other countries. 
+2 Ebonyi and Cross River were selected because they are USAI D priority states, have state buy-in, and have a high level of deliveries with 
+maternal and newborn mortality and morbidity. 
+3 The major stages of the human life cycle include pregnancy, infancy, toddler years, childhood, puberty, older adolescence, adulthood, middle 
+age, and senior years. 
+2 MCSP Nigeria -HelloMama Technical Brief 
+HelloMama Implementation Road Map 32  
+  introduced a callback feature in 2018 
+that allows registered users to trigger a callback 
+with their last scheduled message in the event that 
+they miss their call or the call is interrupted. This 
+has resulted in mothers, spouses, and families 
+receiving more HelloMama messages vital to 
+improving the health outcomes for pregnant 
+women, newborns, and families in Nigeria. 
+Program Interventions 
+• Baseline Assessment: A landscaping and 
+formative assessment was conducted in early 
+2015 to assess the needs; inform the design 
+and development of the content, branding 
+(HelloMama), and technological features; 
+understand the clinics and infrastructure A new mother shares her HelloMama message: "Visit the health center at 
+least 4 times during your pregnancy. The nurse will make sure all is well 
+and pick up any problem. Take some water." 
+Photo: Karen Kasmauski/MCSP 
+landscape; and better understand the experiences of rural women and families in accessing services, 
+including gaps in knowledge and understanding mobile phone access and use. About 60% of women 
+stated that they only made calls, while the other 40% only sent and received text messages. Only 30% of 
+women claim they use mobile phones to browse the Internet, use Facebook, and send each other 
+pictures. HelloMama also aimed to understand barriers to and facilitators of key behaviors (ANC seeking, 
+facility delivery, and home-based behaviors). Lack of transport, fear of biking while pregnant, costs, and 
+permission from their husband were some of the barriers elucidated. Interest in child well-being, 
+knowledge seeking, free ANC/delivery kits, receiving encouragement or money, service providers (SPs) 
+reaching out to them in the community, and educating family members were reported as facilitators. The 
+project further conducted a baseline assessment post-pilot in October 2017, with 1,166 respondents from 
+intervention facilities participating. 
+• Government Engagement: MCSP strategically engaged both federal and state government toward state 
+ownership of the intervention. MCSP influenced policies and resource mobilization through the adoption 
+of the eHealth policy and co-creation of a strategy for each state. The program continued to involve state 
+actors in the transition plans to reinforce the principles behind the interventions so that state 
+stakeholders will have management and technical knowledge and capacity to implement, advocate for, 
+and sustain digital health interventions in Nigeria. 
+• Engagement with MNOs: This function was conducted regularly through the aggregator. This 
+platform was used to address bandwidth requirements, discrepancies in call deliveries, platform 
+downtime, and timely message delivery, and to foster stronger relationships with telecommunications 
+companies with MCSP's key government partners. 
+• Network Mapping and Survey Assessment: MCSP completed network mapping and survey 
+assessment in 192 facilities across both states. The objective was to test the network strength within and 
+around the designated facilities, and review the performance of the mobile operators at the facilities for 
+full optimization of the deployed HelloMama services. This helped with facility selection for the 
+HelloMama interventions and guided the MNO partnerships for the program. 
+• Content Development: MCSP, in coordination with a content review committee and the FMOH, 
+developed content and adapted the HelloMama messages in English, Pidgin, and Igbo. HelloMama 
+messages raised awareness among women on danger signs in pregnancy, newborn, and infant care, as and 
+reinforced positive health-seeking behaviors, leading to increased ANC, skilled birth attendance, and 
+general well-being of pregnant women. 
+MCSP Nigeria -HelloMama Technical Brief 3 
+HelloMama Implementation Road Map 33  
+  Formative Research: Messages were tested on focus groups of women and men, and then adapted 
+further based on the findings and the beneficiari es' preferences. Of the 1,166 respondents, 80% of the 
+beneficiaries chose to review the HelloMama messages via text. Eighty-four percent chose to have the 
+messages in English, 14% in Ibgo, and 2% in Pidgin. The average age of the pregnant women 
+interviewed was 27 (SD=S.3) years. Ninety-nine percent of the women interviewed were Christians, and 
+55% were Igbo. Ninety-three percent were either married or living with a male partner, and only 62% of 
+respondents reported they worked. Although all respondents had access to a mobile phone, only 82% of 
+the respondents owned one. 
+• HelloMama Brand Development and Promotional Materials: The partnership worked with the 
+FMOH to develop a national brand that could be easily scaled nationall y. MCSP produced and provided 
+memorabilia and information, education , and communication materials (e.g., posters, leaflets, and job 
+aids) to 142 facilities across Ebonyi and Cross River to sensitize beneficiarie s to HelloMama services and 
+aid health workers in the registration process. These materials boosted health worker morale and 
+capacity, with some memorabilia incentivizing the health workers. 
+• Capacity-Building of Health Care Workers: MCSP trained 184 health workers in MCSP-and Saving 
+Mothers Giving Life-support ed facilities on registering women for HelloMama using a mobile device, 
+collecting data, and reporting data. HelloMama also supported the trained health workers to further 
+cascade the training to other health care workers through direct supportive supervision and mentoring. A 
+monthly meeting fostered peer mentorin g reviews and healthy competition among the health care 
+workers, with memorabilia for performance as incentives. 
+• Supportive Supervision: MCSP empowered the government to understand its role in leading routine 
+integrated supportive supervision to facilities, identifyin g and resolving issues affecting uptake and 
+delivery of HelloMama messages. 
+Key Achievements 
+• Hello Mama was fully integrated into the four major MN Os in Nigeria, which allowed the program and 
+partners to deliver vital health information to more than 63,000 women and their influencer s. 
+• Hello Mama also achieved government adoption by influencing national and subnational budgets for 
+digital health through building the confidence and capacity of state representatives on project 
+management for a digital platform. This included establishin g the messaging services at national and 
+subnational levels, including strategic engagement of stakeholders to influence governments' 2019 
+budgets. In September 2018, the Cross River State Ministry of Health committed over NGN 40 million 
+(USD 110,000) to sustain the cost of sending HelloMama SMS and voice messages once HelloMama 
+funding ended and to ensure the sustainability of HelloMama technology and program implementati on to 
+their constituents. 
+• HelloMama sent over 5.9 million messages via SMS and voice calls to 63,015 pregnant women, new 
+mothers, and influencers. 
+• Data from Nigeria's health informati on managem ent system, DHIS2, show increased uptake of essential 
+services, includingA NC attendance and deliveries by skilled birth attendants (Figure 1), and number of 
+children fully immunized (not shown) in selected HelloMama supported sites, with likely contribution to 
+HelloMama messages4 and other interventions in these sites. 
+4 The noticeable declines over the period of implementation are attributable to periods of health worker strikes and communal crashes, during 
+which enrollment decreased. 
+4 MCSP Nigeria -HelloMama Technical Brief 
+HelloMama Implementation Road Map 34  
+  u z Figure I: Increasing trend in total ANC attendance and deliveries by skilled 
+birth attendants in selected facilities in Cross River and Ebonyi states 
+Full implementation 
+<( 2000 Pilot 
+period .. 
+C ';; 
+C a t:: " C a E 
+0 ,: 
+~ 
+C " C .. 
+0 
+~ 
+Q. -0 
+~ a 
+~ ::, z 1500 
+1000 
+At",ndan e 
+500 
+0 
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -( ~-~' ,f' <f"~ ~o•· -( ~-~.,, ,f' 'l'<f ~o•· ~<f ~-~,., 
+Data source: Nige'ia OHIS2, n=10 facilities 450 
+<( 
+"' 400,c, 
+I!) 
+C 
+350 _g 
+C a t:: 
+300 " .s:; 
+!:'. 
+250 :0 
+" ~ 
+200 ~ 
+}; 
+150 ~ 
+t > 100 ~ 
+so 
+0 " 
+• HelloMama. developed da.;hboaods to foster progi::am management for dec;;~on-mak~ at project and 
+state level,. The dashboard, supportgovemment ownersh;p of d~tal health p,og,amm~ th,ough 
+tt:~~g and mentozsbp to help dec;;;on-maker:. ~plement ;nformed, ~pactful progwns. 
+• HelloMama. ;; now populaJy known a; the "'phone doctor" among health woi:kers and bene&c;a~e; a; a 
+result of the me;;~ng, wbch complement; counsel~ and ;e~ce; p ro~ded by health wodters du~g 
+ANC ,,;,;,. 
+Lessons Learned 
+• The use of local hosbng and aggregato r SPs to ~tegu.te ~th all major MN Os took longet: than expected 
+due to ~adequate teclmology U'l.fi:a.;tructure and ~,compab.bJ;ty.S It ;s ~po dant to underta1e an 
+assessment of local vendors and select the most appropz;;ate fur the technology. It ;s also ;mportant to 
+acknow.ledge that ;t may ta1e bgher-level conversa.bons, ~clucbg the FMOH; N~ez;;an 
+Commun;cabons Conun,;ss;on; ?vfu,,;stry of lnfoanabon, Commun;ca~on, and Technolog)'; and/ or the 
+donor, to d•velop relahombps ,.,;th vendors and MNO,. 
+• There were sevei::al downbmes, recon,gui::abons, and &:equent se~ce <:hswpbons due to bug; and 
+ghtches, wbch affected mess~g. Setbng real;sbc expectabons about the bme and coorchnat;on i::eq~i::ed 
+to get a p rog,am lJ.e Hello Mama up and run~ ,,,JI lead to smoothe< plann~ and ~plementahon. 
+s Adtquatt ttchnoloiywould bt mort consumer unttrtdand rtliath. Currtndy, ttltcoms infrastrutturt is unttrtd on urban and ptriurOO.n 
+artas, and dots not ~dtquattly cover tht tntirt country. 
+MCSP Nigeria .. HelloMama Technical Brief 
+HelloMama Implementation Road Map 35  
+   A lack of budgetary provision for digital health in state health budgets made it difficult for states to plan 
+for digital health innovations such as HelloMama . This was addressed through capacity-buildin g and 
+stakeholder engagement at the local level, developing a state digital health strategy, and advocatin g with 
+government on the need to effectively coordinate and provide resources for digital health initiatives for 
+universal health coverage. Moving forward, programs should advocate early on for budgetary provisions 
+at the state level, which can sustain initiative s. 
+• Digital health initiatives require onsite field support and continuous engagement of health workers, 
+technology partners, and beneficiaries for adoption within the broader health systems and to facilitate 
+positive user experience and desired outcomes. 
+• Multisector (health, technology ) partnerships and collaboration, aligned under a government strategic 
+digital health strategy, are critical to broaden the horizon for sustainable digital health and improve 
+reproductive , maternal, newborn, and child health outcomes. Government buy-in and a national 
+coordination mechanism to allocate and manage resource across partners are key to the sustainability of 
+HelloMama and future digital health initiatives. 
+• Policies or legislation that incentivi ze information and communication technology SPs to provide 
+discounted services for national public health message deployment can stimulate investment in digital 
+health, including improving the scale-up for government public health initiatives. 
+Next Steps 
+• Ebonyi and Cross River state governments pledged, in their 2019 state budgets, to continue providing 
+Hello Mama health messages to pregnant and recently delivered women, and to support other digital 
+health initiatives. This success will mean that women and their influencers can continue to opt in to 
+receive the age-and stage-based SMS messages and, in the future, the Ebonyi and Cross River state 
+governments will easily be able to allocate resources in the state budgets, as it is part of the health 
+strategy. 
+• National -and state-level ministries of health are developing a detailed implementation road map to guide 
+future programs on implementing interactive voice response and SMS messaging systems in Nigeria. 
+• The HelloMama team is developing a bot on a telegram messenger platform Qike Wb.atsApp). Mothers 
+with a smartphone and data will be able to subscribe through the bot to receive HelloMama text and 
+audio messages free on their telegram app. The bot is a third-party application interacting with users 
+while it runs inside the telegram mobile messaging app. As on over-the-top application delivering content 
+over the Internet and bypassing traditional telecommunication channels, HelloMama bot user costs are 
+lower than traditional platforms. Literate users will be able to use the service by following a simple, step­
+by-step command based in the menu. The bot will deliver both text and audio messages to recipients 
+with 99.9% guarantee of message delivery. Subscribers will have the option to opt out of the message 
+subscription or switch format and language. The platform is free to download and available on Android, 
+iPhone, the Web, and desktop applications. 
+6 This brief is made possible by the generous support of the American people through USAID under 
+the terms of the Cooperative Agreement Al D-OAA-A-14-00028 . The contents are the responsibility 
+of the Maternal and Child Survival Program and do not necessarily reflect the views of USAID or the 
+United States Government. 
+MCSP Nigeria -HelloMama Technical Brief 
+HelloMama Implementation Road Map 36 

@@ -1,0 +1,815 @@
+Digital Government and 
+Corruption
+The Impact of Citizen Oversight and 
+InfObras on the Efficiency of the 
+Execution of Public Works in Peru
+Authors:
+Gastón Pierri
+Mariano LafuenteInstitutions for 
+Development Sector
+Innovation in Citizen 
+Services Division
+Office of Strategic Planning and 
+Development Effectiveness
+DISCUSSION 
+PAPER Nº 
+IDB-DP-832
+November  2020Digital Government and Corruption
+The Impact of Citizen Oversight and InfObras on the 
+Efficiency of the Execution of Public Works in Peru
+Authors:
+Gastón Pierri
+Mariano Lafuente
+November  2020   Inter-American Development Bank. This work is licensed under a Creative Commons IGO 3.0 
+Attribution-NonCommercial-NoDerivatives (CC-IGO BY-NC-ND 3.0 IGO) license ( http://creativecommons.org/
+licenses/by-nc-nd/3.0/igo/legalcode) and may be reproduced with attribution to the IDB and for any non-
+commercial purpose. No derivative work is allowed. 
+Any dispute related to the use of the works of the IDB that cannot be settled amicably shall be submitted to 
+arbitration pursuant to the UNCITRAL rules. The use of the IDB's name for any purpose other than for attribution, 
+and the use of IDB's logo shall be subject to a separate written license agreement between the IDB and the user and 
+is not authorized as part of this CC-IGO license. 
+Note that the link provided above includes additional terms and conditions of the license. 
+The opinions expressed in this publication are those of the authors and do not necessarily reflect the views of the  
+Inter-American Development Bank, its Board of Directors, or the countries they represent.  http://www.iadb.org
+Copyright ©   2020Digital Government and Corruption: The Impact of
+Citizen Oversight and InfObras on the Eﬀiciency of
+the Execution of Public W orks in Peru
+Gastón Pierri∗Mariano Lafuente†
+Abstract
+Digital government and citizen oversight initiatives have increased in number
+in recent years. Governments have increased the numbers of virtual platforms that
+display data on public works, and citizens have increased their voluntary participa-
+tion in low-cost monitoring of these works. However, there is scarce literature on
+the effectiveness of these initiatives. This study aims to contribute to the limited
+evidence on the impact of citizen oversight in light of the above-mentioned digital
+government initiatives. The study uses a regression discontinuity analysis to evalu-
+ate the effect of the Citizen Oversight Monitors Program ( Programa de Monitores
+Ciudadanos de Control - MCC) of Peru’s Oﬀice of the Comptroller. Using public
+sources of administrative information and data from the InfObras platform of the
+Oﬀice of the Comptroller1and the Investment Consultation ( Consulta de Inver-
+sión) (Invierte.pe) application of the Ministry of Economy and Finance2, the study
+examines the effects of the MCC on the costs and execution times of public works
+in Peru. The findings suggest that although there is a significant impact in terms
+of reducing cost overruns for works outsourced to construction firms, there are no
+significant effects on results in terms of execution times of the works.
+JEL Codes: H41, H54, I28, O15
+Keywords: Monitoring, citizen, accountability, transparency, digital government, tech-
+nology, public information.3
+∗Gastón Pierri (gpierri@iadb.org) is an Economic Specialist with the Oﬀice of Strategic Planning
+and Development Effectiveness of the Inter-American Development Bank.
+†Mariano Lafuente (mlafuente@iadb.org) is a Modernization of the State Lead Specialist with the
+Innovation in Citizen Services Division of the Inter-American Development Bank.
+1For more information, see https://apps.contraloria.gob.pe/ciudadano/ .
+2For more information, see https://ofi5.mef.gob.pe/invierte/consultapublica/
+consultainversiones .
+3This study would not have been possible without the support and collaboration of the Comptroller
+General of the Republic of Peru, Nelson Shack Yalta. The authors are especially grateful for the support
+provided by oﬀicials in the Oﬀice of the General Comptroller of the Republic ( Contraloría General de
+la República - CGR), particularly Felipe Chacón, Prevention and Detection Manager; Fernando Ortega,
+11 Introduction
+Citizen oversight programs have gained popularity in recent years as a low-cost approach
+topreventingcorruptionandimprovingthedeliveryofpublicgoodsandservices. Theidea
+underlying such programs is that since members of the community are the beneficiaries
+of a successful program, they have more incentives to monitor it than do disinterested
+central government bureaucrats ( Stiglitz,2002). It is therefore relevant to evaluate the
+impact of those programs on improving the eﬀiciency of the State.
+ThisdocumentpresentsapreliminaryanalysisoftheimpactoftheCitizenOversightMon-
+itors ( Monitores Ciudadanos de Control - MCC) Program of the Oﬀice of the Comptroller
+of Peru ( Contraloría General de la República del Perú - CGR) on different findings of in-
+terest related to the execution of public works in Peru (cost overruns, delays, and changes
+in execution periods, among others). The document is based on data obtained from avail-
+able public sources of administrative information. The MCC intervention only involves
+works with a budget of less than PEN (Peruvian Soles) 10 million4, a threshold that allows
+for a quasi-experimental analysis using a regression discontinuity model. From there one
+will be able to understand the potential of the program to improve the results related to
+public works.
+This work also aims to contribute to closing the gap in the literature on the impact of
+citizen oversight (the MCC program) in light of digital technologies for public information
+(the InfObras platform, and the Invierte.pe application, also known as the Invest Con-
+sultation or Consulta de Inversión ). The most abundant evidence agrees that access to
+information reduces the costs of collective action for citizens. For example, Olken(2007)
+shows that corruption declines when citizens have more information on infrastructure
+expenditures.
+Accordingly, the dissemination of information that users clearly perceive as actionable, in
+coordination with measures that actively foster collective action, has an influence on the
+incentives of public oﬀicials and the providers of State services. In this way, strategies
+that combine the use of technologies with citizen participation mechanisms are promising,
+given that they succeed in amplifying the voice of collective action beyond the local
+setting and, at the same time, strengthen the capacity of the State to respond to citizens’
+demands ( Fox,2015). The MCC program combines both aspects by making the use of
+the information available on technology platforms such as InfObras and the Invierte.pe
+application actionable for citizen oversight through citizen monitoring visits to public
+works.
+The document is divided into seven sections, including this introduction. The second sec-
+tionreviewstheliteraturerelevanttocitizenoversightofpublicworksandinterventionsto
+detect corruption. The third section contextualizes and describes the MCC intervention.
+ManagerforSocialControlandComplaints; JenniferPérez,AdvisortotheCGR;PatriciaGuillénNolasco,
+Assistant Manager for Citizen Participation; and Lilian López Suárez, Assistant Manager for Project
+Management. The authors also thank Roberto de Michele, Principal Specialist on Modernization of the
+State and the leader of the Transparency and Integrity Group of the IDB; and Alexandre Veyrat-Pontet,
+Senior Specialist in Modernization of the State for the IDB in Peru. This study was made possible
+thanks to support from the IDB’s Transparency Fund (AAF) through the Institutional Strengthening of
+the Comptroller General of the Republic technical cooperation operation (PE-T1398) and the Project
+to Enhance Control Services for Effective, Preventive, and Enabling Control for Public Management
+(PE-L1240) of the CGR and the IDB.
+4Equivalent to US$3 million based on the exchange rate as of December 31, 2019.
+1The fourth section describes both the sample and the quasi-experimental methodology
+used. In the fifth section, an initial descriptive analysis is conducted and the selection of
+the variables of interest is justified. The sixth section presents the results of the design of
+the discontinuity regression in order to show the impact of the MCC program on those
+variables. The seventh and final section puts forth the conclusions from the study.
+2 Literature Review
+The branch of the empirical literature related to this evaluation analyzes whether citizen
+oversight of public oﬀicials or providers can improve their effectiveness. This body of
+researchgoesbackto Olken(2007), whoprovidesoneofthefirst experimentalestimatesof
+the effects of anti-corruption community-based monitoring (CBM) policies in the context
+of the construction of roads in villages in Indonesia. The author used a field experiment
+in which villages were randomly assigned to three treatments:
+1.Auditing: The risk of auditing for expenditures on roads increases to 100 percent
+from a baseline of 4 percent.
+2.Invitations: Villagers are invited to “accountability meetings” where the effective-
+ness of local public expenditure is discussed.
+3.Invitations plus anonymous comments: The previous treatment is conducted, but
+in addition the local population is permitted to make anonymous observations to
+the national government about local public expenditures.
+Olken(2007) observes that the first treatment reduced missing expenses by approximately
+30 percent. In contrast, it seems that the second and third treatments were not effective
+in this context. The author argues that the failure of community monitoring can be
+partiallyexplainedbyobstructionbylocalgovernments. Invillageswhereinvitationswere
+distributed without interference by those governments, the effects were not as reduced as
+much. In addition, the author shows that community monitoring reduced the proportion
+of funds assigned to the payment of salaries. This result suggests that the capture of
+local elites plays an important role in the failure of community monitoring. Policies are
+only effective when citizens have direct incentives to prevent the bad allocation of public
+funds. Inthepresentstudy, incontrastto Olken(2007), itisaStateentitythatdirectsand
+coordinates the citizen participation program, giving more credibility to the monitoring
+and avoiding its capture by local elites.
+In a different context, Bjorkman and Svensson (2009) find that a community-based mon-
+itoring program is indeed effective. These authors studied the provision of public health
+services in rural areas of Uganda and implemented a randomized controlled trial (RCT),
+which is very similar to the second treatment in Olken(2007). The effects of this treat-
+ment on health results and the measures for the use of resources by local public oﬀicials
+were positive. In particular, the mortality rates of children under age 5 declined sub-
+stantially in the treated areas. Bjorkman and Svensson (2009) maintain that, in contrast
+toOlken(2007), they were careful to avoid having elites obstruct the policy that was
+adopted. In addition, the rural inhabitants had direct incentives to prevent the waste of
+resources that could be used to improve their own health results.
+Bjorkman and Svensson (2010) conducted a follow-up to Bjorkman and Svensson (2009)
+with the aim of understanding why different studies produce contradictory findings on
+2the effectiveness of community monitoring interventions. They found that in ethnically
+fractionalized communities, the Bjorkman and Svensson (2009) intervention had not been
+effective. Therefore, their findings for that year seemed to be driven by the effect of the
+intervention on homogenous communities. The authors maintain that those findings un-
+derline the importance of adapting citizen monitoring interventions to the characteristics
+of each community. The MCC program evaluated in the present document overcomes the
+diﬀiculties detected by Bjorkman and Svensson (2010) regarding heterogeneous effects
+linked to characteristics of communities by systematizing citizen oversight via a technical
+survey to evaluate the quality of the public works.
+For their part, Banerjee, Banerji, Duflo, Glennerster, and Khemani (2010) evaluated an
+intervention related to community monitoring of public education in rural India. The
+intervention attempted to improve the local policies responsible for the operation of the
+schools studied (in this case, Village Education Committees - VECs). To do this, a local
+nongovernmental organization (NGO) sent representatives to meet with the citizenry and
+helped them carry out this supervision effectively. They implemented three different
+treatments and evaluated them through an experiment:
+1.Information: Representatives from the NGO organized meetings to disseminate in-
+formation about the role of the VECs in the manner of the information component
+of theBjorkman and Svensson (2009) treatment, though with some additional ele-
+ments in their participant component.
+2.Information and community audits: Identical to the first information treatment,
+but in this case the villagers also received scorecards on which they could evaluate
+the quality (perceived) of local education services. They were trained in how to
+correctly use these scorecards, and the results of the scores were disseminated at
+the information meetings of the VECs. This treatment was very similar to the
+intervention by Bjorkman and Svensson (2009).
+3.Information, community audits, and self-suﬀiciency: Identical to the second infor-
+mation and community audit treatment, but here the villagers received one week of
+basic training to enable them to train others. It was assumed that this had to be
+done in their village through “field lectures” that they conducted.
+Unfortunately, the first two interventions failed in all of the areas and none achieved the
+intermediate results that measure the intensity of the community monitoring. Finally,
+there was no significant effect at all on learning results. By contrast, the third intervention
+did improve educational results. Since the intensity of the community monitoring did not
+change in response to this intervention, the authors maintain that the intervention’s self-
+suﬀiciency component must account for all of its impact. In general, in this document,
+it is suggested that the community monitoring policies that depend on volunteers within
+the village can do better than those directed by persons from outside the community, in
+this case the representatives from the NGO. Accordingly, one of the major conclusions
+of this study resembles that of Olken(2007), who demonstrated that vertical audits –-
+those conducted byauditors from the government-–do better than communitymonitoring
+policies. Another conclusion is that, for this monitoring to work, citizens must be able
+sanction corrupt and evasive government providers. In Banerjee et al. (2010), parents
+could not do anything about the poor quality of education except complain. This could
+explain why the villagers were not interested in participating in the VEC systems, even
+aftertheinterventionsoccurred. Alongthosesamelines, theMCCprogramstudiedinthis
+3document overcomes the diﬀiculties of community monitoring of Banerjee et al. (2010) by
+making its findings actionable. In other words, those findings generate consequences, to
+wit, sanctions against the entities in charge of the public works.
+For their part, Berman et al. (2017) evaluate a community monitoring program carried
+out in Afghanistan that is very similar to the CGR’s MCC program analyzed here. The
+local NGO Integrity Watch Afghanistan (IWA) recruited citizens and assigned them the
+task of monitoring public works projects. The authors evaluated this program through
+a field experiment that centered on a sample of only 22 roads that connect a total of 77
+villages (the median road connected four villages). Berman et al. (2017) implemented a
+two-level random design: five roads and the villages connected by them were assigned to
+a control group and did not receive the IWA program, while the rest were assigned to a
+treatment group. The IWA program was implemented in approximately 80 percent of the
+villages connected by the treated roads, while in the rest it was not implemented. The
+authors contracted an engineering team to measure the quality of the roads, their main
+outcome of interest. They also surveyed the local population and asked them to evaluate
+the quality of the roads studied in the sections near their villages. Their intervention was
+carried out from 2011-2015 and the quality of the roads was measured in 2011, 2013, and
+2015.
+In general, the authors found that the IWA program had positive effects on the quality of
+the roads, according to the analysis carried out by the engineers it contracted. The effects
+of the intervention were scattered among the roads subject to treatment, as much near
+the treated villages as those not treated, although connected with the former. Berman et
+al.(2017) provided qualitative evidence that the informal disclosure of auditing reports
+in the villages played a crucial role in this process (because the findings by the monitors
+of corruption could set off protests, for example).
+One of many recent working papers that analyze interventions similar to those of Olken
+(2007) andBjorkman and Svensson (2009) is that of Sexton(2017), although in this
+case its relevance is even greater, since the intervention was carried out in Peru. In
+a field experiment, treated villages received training on accountability directed toward
+community leaders. All of the meetings were conducted by the Peruvian NGO Grupo
+Propuesta Ciudadana . At the meetings, the participants received high-level information
+about how local governments function. They were also trained in how to form part of pre-
+existing participation mechanisms. First, they learned about the participatory budgeting
+process, which consists of meetings between citizens and municipal bureaucrats from
+the district during which the local population can communicate its priorities regarding
+municipal expenditures. Second, they learned about the process known as “recall”, a
+mechanism that allows the local population to initiate a referendum to remove mayors
+prior to the completion of their mandate.
+Unlike what was expected, Sexton(2017) found that his intervention reduced citizen par-
+ticipation in the participatory budget meetings while at the same time increasing the
+prevalence of recalls and informal protests. Because the last two forms of citizen partic-
+ipation are generally considered the most damaging, the author presented those results
+as undesired and counter-productive. In terms of municipal eﬀiciency, the treatment had
+a negative effect: it reduced the proportion of municipal budgets that were actually ex-
+ecuted. Unfortunately, the fact that the evaluation only studied the short-term effects
+of his intervention impedes the identification of potential long-term effects. A difference
+between the MCC program evaluated in the present document and that of Sexton(2017)
+4is that here the monitoring is coordinated and implemented by a State entity (the CGR),
+which gives the program more institutionalization and seriousness. In addition, in the
+MCC the monitoring to assess the quality of the public work is conducted through a tech-
+nical survey, although a simple one, which is more objective and actionable than oversight
+through community meetings and subjection valuations.
+Another interesting study related to the present one is Lagunes (2019), who investigated
+the monitoring of public works in urban Peru with a focus on interventions that directly
+empower NGOs and not individual citizens. The intervention consisted of involving the
+Peruvian NGO Proética in the monitoring of certain local governments. This intervention
+was evaluated experimentally at the district level. According to its design, in the control
+group the CGR sends a message to municipalities in the district reminding them that
+they must enter information about execution of the projects on the InfObras platform.
+The treatment group receives the same message as that sent to the control group, but,
+in addition, Proética investigates the execution of the public works. In addition, during
+a period of two years the municipalities receive a total of four letters from Proética and
+from the CGR reminding them that these investigations are in progress and that the CGR
+will be notified of their main findings.
+Lagunes (2019) estimates the effects of the intervention on two elements -the costs and
+the delays of the infrastructure projects- using data from InfObras that are based on
+reports by municipalities in the district. The author estimates that the treatment had a
+very significant effect on project costs, which were substantially reduced. In accordance
+with the specification, these effects could achieve as much as a 50 reduction. This is the
+main finding, and it suggests that in general the intervention was extremely effective. A
+difference between the study by Lagunes (2019) and the MCC program is that the latter
+directly involves the citizens in social oversight, and they can have more incentives than
+NGOs to conduct more effective monitoring to the extent that they are the potential
+beneficiaries of the public works. On the other hand, as discussed earlier, there are some
+problems with the data used for this evaluation, problems that that MCC evaluation
+looks to resolve by complementing and improving the data. In addition, the evaluations
+conducted by the MCCs are more objective, since they consist of collecting technical
+information and presenting evidence (photos) of the status of the work visited.
+Another study of the evidence from citizen monitoring programs is Freire, Galdino, and
+Mignozzetti (2020), who analyze the effect of a cell phone application that enables citizens
+to monitor school construction projects in Brazilian municipalities. The application asks
+users to send information about construction sites, facilitates access to this information
+by independent engineers, and contacts the oﬀices of mayors to report delays in projects.
+The findings show that the application has no impact on school construction indicators.
+In addition, it is observed that the politicians do not respond to individual requests.
+The findings raise doubts about the impact of community monitoring of the performance
+of public services and suggest that the interventions directed towards other groups or
+focused on different topics can produce better policy results. One hypothesis derived
+from those findings is that the absence of sanctions against mayors when they ignore
+individual requests disincentivizes improvement in the execution of the works. Therefore,
+it is important that citizen monitoring programs be coordinated and supported by State
+entities with supervisory power and the power to act.
+From the research summarized in this section, it can be deduced that open government
+policies that promote citizen monitoring and access to public information are two types of
+5reforms that reduce the costs of collective actions by citizens, something which the studies
+agree upon. However, there is even more room to generate more rigorous evidence on
+citizen monitoring and to overcome the diﬀiculties exposed in the evaluations reviewed,
+which is precisely what is proposed on these pages, First, in contrast to the programs
+described previously, the MCC initiative is implemented and coordinated by a principal
+oversight entity of the Peruvian State, the CGR, which provides greater credibility and
+institutionality. Second, as previously indicated, the findings reported by the MCCs are
+actionable, since they can result in sanctions against the agencies executing the works in
+question. Third, the evaluation of the status of the public works by the MCCs is based
+on a technical questionnaire supported by evidence (photos). In this way, the reports by
+the MCCs are more objective than those of other citizen monitoring programs, which are
+usually based on community meetings that are more diﬀicult to evaluate. Fourth, the
+MCC program has less of a possibility of being captured by local elites, since recruitment
+is generally done virtually and the volunteers do not usually visit works in their own
+localities.
+Finally, this document contributes to generating evidence about the scarce number of
+“strategic social oversight interventions” ( Fox,2015), especially in the region. These
+interventions aim to establish the relevance of the institutional capacity of the State to
+respond to the voices of the citizenry. In other words, they combine the power of access
+to information, both to motivate collective action as well as to influence the State, with
+a State capacity strengthened to respond to that collective action. The combination of
+these strategies helps to mutually empower the “voice of the people” and the mechanisms
+for action through a synergy between the State and society.
+The MCC program evaluated in this document combines a mixed strategy that takes
+advantage of the information from the InfObras platform and the Invierte.pe application
+complemented by monitoring visits to the public works. In this way, the mutually em-
+powering coalitions of actors in support of accountability, both of the State as well as
+society, can break the vicious circles as needed to achieve effective monitoring ( Fox,2015).
+3 Context and Description of the Program
+3.1 Context
+The CGR is a high-level auditing entity of the Peruvian State, Its mission is to “direct,
+supervise, and execute the monitoring of public entities to contribute to the effective,
+eﬀiciency and transparent use of public resources”. This oversight includes supervision of
+all expenditures on public works throughout the country. Traditionally, the CGR’s work
+had consisted of conducting ex post monitoring of the correct use of public resources.
+But since 2017, as a result of regulatory changes, it has moved towards ensuring greater
+implementation of monitoring tools to prevent corruption. The oﬀice that audits public
+worksistheOﬀiceforManagementoftheMonitoringofBasicPublicServicesoftheCGR.
+In principle this could audit all public works, but as it has limited resources, the oﬀice
+only audits large projects. For their part, small projects, especially those in the interior
+of the country, have not been subject to auditing in recent years. The MCC program, led
+by the CGR’s Prevention and Detection Oﬀice, was designed to address this gap.
+The MCC is a low-cost auditing program carried out by volunteers from the areas of each
+project. Initially, it was assumed that it should monitor public works corresponding to
+6the Reconstruction with Changes ( Reconstrucción con Cambios - RCC) program, which
+refers to initiatives to rebuild infrastructure that had been destroyed by flooding from
+the coastal El Niño in 2017. However, given that the RCC suffered long delays, the CGR
+decided to use the MCC to monitor all of the small public works projects in the country,
+regardless of their purpose.
+This program recruits citizens (monitors) through campaigns in newspapers and on radio
+and social networks. Most monitors are recruited through social networks, which is why
+most are university students from large cities. Once a citizen asks to be a MCC volunteer,
+thatpersonmusttakeabrieftrainingcourseprovidedbytheCGR.Thosewhodonotpass
+an exam at the end of the course cannot participate. The CGR also conducts background
+checks of candidates to exclude those who might enter into the program with malicious
+intentions
+Once recruited, the monitors are grouped into pairs. Each pair of monitors is assigned a
+public works project and has the task of visiting it once a month. During these visits, it is
+assumed that the monitors will audit the progress of the project and produce reports for
+the Oﬀice for Management of the Monitoring of Basic Public Services, as well as for one of
+the 25 regional oﬀices in the country. On the basis of these reports, and with verification
+of the important information about execution the works provided by public sources such
+as InfObras and the Invierte.pe application, the oﬀices can decide whether to conduct a
+large-scale audit of a project, which at the end of the process can lead to the imposition of
+fines or imprisonment. In this way, the MCC program, together with the inputs provided
+by public information sources, contributes to the CGR’s governmental oversight actions.
+The overall objective of the program is to contribute to the improvement of governmental
+oversightservicesinordertopromoteeffectiveandeﬀicientuseofresourcesofthePeruvian
+StateAspartofthemeasuresdirectedtowardimprovingeffectiveandeﬀicientmonitoring,
+the project supported a series of key actions for conducting this study, including (1) an
+innovative and evidence-based implementation policy strategy, which included the design
+and creation of the laboratory for government oversight and the innovation of processes;
+(2) improvements to InfObras to strengthen social monitoring; and (3) improvements to
+the effectiveness and coverage of the Citizen Oversight Monitors (MCC) program. In
+addition, the program involved the design of an impact evaluation of the MCC.5
+3.2 Characterization of the Citizen Oversight Monitors
+This subsection presents some of the characteristics of the volunteers (candidates and
+certified)fortheMCCprogram. Theyarereachedthroughvirtualrecruitmentcampaigns,
+mainly social networks, which means that most of those attracted to the program are from
+urban areas and have advanced degrees, as seen in Table 1.
+5Notwithstanding that an experimentaldesign had been initially planned, this study decided to exploit
+the possibility of considering preliminary effects through a regression discontinuity design, as described
+in the document. Likewise, a knowledge generation strategy has been proposed on issues of digital
+government and control. For more information on three of the assessment initiatives currently being
+implemented, see: https://www.iadb.org/Document.cfm?id=EZSHARE-1392852158-75 .
+7T able 1. Descriptive Statistics on Citizen Oversight Monitors, 2019
+Candidates Certified Monitors
+Number of volunteers 11,706 2,184
+Percentage with post-secondary education 94% 96%
+Percentage from urban districts 84% 73%
+Percentage from provincial capitals 53% 46%
+Average age 30.78 28.01
+Sex (percentage of men) 65% 48%
+Percentage of engineers 29% 22%
+Average training score - 17.97
+Visits per monitor 0.11 0.87
+Source: Prepared by the authors based on MCC data.
+According to data provided by the CGR, relatively few of the works are located in urban
+areas or provincial capitals, even though that is where most of the volunteers come from.
+Among the works eligible for the MCC in 2019, 66 percent were located in rural districts
+and 73 percent outside provincial capitals. Because of this the program has a severe lack
+of volunteers in rural areas, where most of the works are located.
+AscanbeseeninDiagram1, alargenumberofcandidatessignedupfortheMCCprogram
+in 2019; however, only a certain number of candidates were certified as monitors.
+Diagram 1. Recruitment for MCC in 2019
+Source: Prepared by the authors based on data from the MCC program.
+84 Evaluation Methodology and Sample
+4.1 Regression Discontinuity Design
+This document will evaluate the impact of the MCC program on various quality indica-
+tors for public works through the use of regression discontinuity design (RDD). RDD is
+a rigorous quasi-experimental approach that can be used to estimate the effects of treat-
+ment in a non-experimental test environment where that treatment is determined by an
+observed “assignment” variable that exceeds a designated threshold or cut-off point.
+In terms of the design of the MCC program, it is possible to use an RDD to analyze
+its impact. Specifically, in this design one takes advantage of the program rule that
+works monitored by the MCC must have a maximum budget that does not exceed PEN
+(PeruvianSoles)10million. Inthisway, onewillbeabletoanalyzethedifferenceinresults
+between works that receive and do not receive MCC visits around the indicated budget
+threshold. This discontinuity is represented mathematically by the following equation:
+Xbudget={
+1ifBudget ≤PEN 10 M
+0ifBudget ≥PEN 10 M(1)
+In this case, the simplest model to apply is the following.
+Ywork=α+ρXbudget+ϵ (2)
+Where ρis the parameter of interest and Yworkrepresents the outcomes of interest at the
+level of the work, which will be discussed in more detail later.
+An important aspect of RDD is that the assignment of treatment is interpreted as random
+intheneighborhood ofthediscontinuity. Thismeansthat fora segmentofthe population,
+it is assumed that being marginally above or below the threshold is something that is
+beyond the control of the individual and that cannot be manipulated. In the case of
+the MCC program, it can be assumed that this condition is met, since the works in the
+sample determine their initial budget prior to the launch of the MCC program. Therefore,
+the oﬀicials responsible could not know that there would be volunteers from the MCC
+program who conducted visits to their works. In addition, the visits were coordinated by
+the CGR, without possibility that the responsible oﬀicials would have had knowledge of
+them.
+4.2 Description of the Sample
+As can be seen in Map 1, the sample and the distribution of the eligible works by district
+arebroad. Inanyevent, thevisitsconducteddependontheexistenceofmonitorsavailable
+to do so.
+9Map 1. Location of W orks Eligible for the Citizen Oversight Monitors
+Source: Prepared by the authors based on data from InfObras.
+Table 2 describes the sample used in the analysis according to the budget of the work
+by category (works eligible and not eligible for MCC visits). In total, only 905 works
+were visited during 2019. Of the works visited, 96.9 percent were eligible for the program
+as a result of having a budget of less than PEN (Peruvian Soles) 10 million; only 3.1
+percent were works with a higher budget that were thus ineligible for the program. Those
+latter works, because of their very high budget, do not pose a problem for the regression
+discontinuity design, as they are not considered in the analysis because they are not
+around the threshold of eligibility.
+T able 2. W orks of Local Governments in All the Districts of the Country
+Budget Intervals for W orks Visited Percentage of T otal
+MCC Eligibility by the MCC W orks Visited W orks
+Eligible 877 96.9% 324.773
+(Budget less than PEN 10 million)
+Not Eligible 28 3.1% 8.915
+(Budget more than PEN 10 million)
+T otal 905 100% 333.68
+Source: Prepared by the authors based on data from the Ministry of the Economy and
+Finance’s Investment Consultation (Invierte.pe) application.
+104.3 Data
+4.3.1 Description of the Databases Used
+The databases of interest for the study were generated by combining different information
+sources in order to assemble a complete database. The main source of information of the
+explanatory variable outlines the data on visits to works by the MCC in the first wave of
+theprogramin2019. Withrespecttothepublicworks, themainsourceofinformationhas
+been InfObras. However, given that InfObras did not have specific data important for the
+analysis, it was decided to incorporate additional information from the public application
+called “Consulta Inversiones - Invierte.pe” of the Ministry of the Economy and Finance
+(Ministerio de Economía y Finanzas -MEF).Finally,informationoncomplaintscontained
+in the Willay system6was also taken into account in order to create a corruption indicator
+at the district level. All of these databases were combined to obtain a complete panel of
+information about the works.
+4.3.2 Deployment of Citizen Oversight Monitors
+As mentioned earlier, an essential database for the study is that which was created with
+information on the deployment of monitors, which provides details about the visits by
+MCCstoworksduring2019. Thedatabasehasinformationbothaboutthework(variables
+found in InfObras) as well as the visits: type (initial, periodic, or final), date, national
+identity document ( Documento Nacional de Identidad - DNI) of the monitor in charge of
+the visit, and variables related to the report on situations of noncompliance detected by
+the monitors. For the RDD analysis, the treatment group is made up of the works eligible
+for visits by the MCCs (that is, those works with a budget of less than PEN (Peruvian
+Soles) 10 million). The control group is made up of works ineligible for visits by MCCs
+(that is, those works with a budget above PEN 10 million). Given the design of the RDD
+analysis, works with budgets higher or lower than but very near the threshold of PEN 10
+million are compared so that this resembles a local experimental design.
+4.3.3 Data from InfObras
+InfObras is the main source of information on public works in Peru. This analysis uses
+the InfObras database updated until July 2020. The outcome variables for the study
+obtained from InfObras are the following:
+1.Physical progress of the work: Real/programmed progress of the work in “concrete”
+terms (percentage).
+2.Stoppage of the work: binary variable that indicates if the work has been stopped.
+3.Extensions of the work: binary variable that indicates if those responsible for the
+work requested an extension of the deadline for execution of the work.
+4.3.4 Data from the Invierte.pe-Consulta de Inversión Application
+As mentioned previously, additional information was also extracted for the open-source
+application Consulta Inversión-Invierte.pe of the MEF.7This complements the InfObras
+6Willay is a system by which Reception and Admission Analysts record complaints from citizens
+electronically.
+7The National System for Multiannual Planning and Management of Investments, known as In-
+vierte.pe, allows for planning and selecting strategic portfolios of projects based on the needs of the
+11data in that it provides information about the viability of the work; the viable amount,
+that is, the budget approved by the MEF (useful for estimating an outcome of interest
+for the study, such as the cost overruns); the status of the investment; and the specific
+subcategories of the MEF to identify the typology of the works.
+The database is constructed using the stock of all the investment projects initiated in
+Peru since 2011. This includes 90 percent of the projects in InfObras as well as works
+that are subject to a viability diagnostic or which already have been deemed as viable but
+whose execution has not yet started. This information is provided in the public website
+of the MEF at the district level.
+Thisdatabaseindicatestheinitialbudgetandtheupdatedcostofeachinvestmentproject.
+Comparing these variables allows for obtaining a measure of the cost overruns that is used
+as an additional outcome of interest to conduct the quasi-experimental analysis. This
+indicator is computed as a percentage value in the following manner:
+Cost overruns =Updated cost - Viable amount
+Viable amount
+4.3.5 Willay
+InformationoncomplaintsprovidedbytheWillaydatabaseisalsoconsideredasavariable
+ofinterestforthedescriptiveanalysis. Thisinformationallowsforobtainingthenumberof
+complaints against the district municipality reported for each district. Citizen complaints
+are related to administrative deficiencies or acts of corruption by public oﬀicials. This
+variable provides an estimate of the incidence of corruption at the district level and will
+only be used for the descriptive analysis because, for the moment, this indicator is only
+available at the departmental level, since the most important information is in a text
+format.
+5 Descriptive analysis
+This section will provide a detailed descriptive analysis of the information and the vari-
+ables of interest for the study. The information comes from different administrative
+databases, which means that, when combining the observations, information can be lack-
+ing because of its absence in some of these databases. On the other hand, this analysis
+takes into account information about the works executed and approved from 2001 to 2020.
+5.1 Description of the W orks
+Table 3 shows the number of observations for which there is information in InfObras. In
+addition, the information in InfObras is complemented by additional information con-
+tained in Invierte.pe. This study uses observations that have information in both sources:
+Invierte.pe and InfObras.
+population and for facilitating the development and evaluation of projects. For more information, see
+https://idbg.sharepoint.com/:w:/r/teams/EZ-PE-LON/PE-
+12T able 3. Observations in InfObras
+Information in InfObras Number Percentage
+on the W ork?
+Has information 350,236 80.94
+Does not have information 82,490 19.06
+T otal 432,726 100.00
+Source: Prepared by the authors based on InfObras data.
+Table 4 shows the distribution of works by execution modality: direct administration or
+outsourced. Outsourced works are those executed by construction firms that win the
+bids. Works executed by direct administration are those executed by the State entity
+itself (for example, the municipality). Most of the works (61.91 percent) are outsourced
+and the rest (38.09 percent) are administered directly.
+T able 4. Modality of Execution of the W ork
+Modality Number Percentage
+Direct administration 31,419 38.09
+Outsourced 51,071 61.91
+T otal 82,490 100.00
+Source: Prepared by the authors based on InfObras data.
+Regardingthegeographicdistributionoftheseworksintheperiodfrom2012–2019, Figure
+1 shows that 13 of the 24 departments outsourced more than 50 percent of their works.
+Of those departments, Tumbes had the most, with more than 90 percent of its works
+outsourced, followed by Ica, with 90 percent, and Ucayali, with more than 80 percent.
+Of the 12 departments that did not mostly outsource out their works, Moquegua had the
+fewest with a little more than 10 percent of its works outsourced, followed by Cusco and
+Puno, both with less than 20 percent.
+13Figure 1. Percentage of W orks Outsourced by Department
+Source: Prepared by the authors based on InfObras data.
+Regarding the modality of execution of the works by level of government during the
+2012–2019 period, Figure 2 shows that outsourced works tend to dominate all levels, with
+more than 50 percent of the works of local and regional governments and the national
+government using this modality. Although 40 percent of the works have been executed
+through direct administration, these only account for 20 to 30 percent of expenditures on
+public works, since these works tend to be on a scale smaller (in terms of both budget
+and population) than outsourced works, as can be seen in Figure 3.
+Figure 2. Percentage of W orks Outsourced by Level of Government
+Source: Prepared by the authors based on InfObras data.
+14Figure 3. Percentage of W orks Outsourced by Budget
+Source: Prepared by the authors based on InfObras data.
+Information contained in the CGR’s Willay system allows for accessing information on
+complaints by citizens. This variable is useful to obtain outcomes of interest for the
+analysis. Figure 4 shows the number of complaints recorded by department. As would be
+expected, the largest departments have the most complaints.
+Figure 4. Complaints by department, 2018-19
+Source: Prepared by the authors based on Willay data.
+Althoughnumerouscomplaintsarefiled, notallofthemareacceptedandgeneratealarms.
+Figure 5 shows the number of complaints that generated alarms by department. It can be
+observed that the departments with the most alarms were Lambayeque and La Libertad,
+which were also the departments that had the largest number of complaints, behind Lima
+andArequipa. AndeventhoughLimaandArequipahadthelargestnumberofcomplaints,
+the proportion of alarms in those departments is lower than in the other departments.
+15Figure 5. Alarms Deriving from Complaints, by Department, 2018–2019
+Source: Prepared by the authors based on Willay data.
+6 Results
+This section describes the effects of the MCC program on the outcomes of interest men-
+tioned previously in relation to public works. Those effects have internal validity, specifi-
+cally within the budget threshold of PEN (Peruvian Soles) 10 million, and therefore must
+be considered to be “local”.
+6.1 V alidity of the Analysis
+One of the most important assumptions in using the regression discontinuity design is
+that there was no strategic change in the behavior of the works around the threshold.
+This means the assignment of treatment (in this case, visits by the MCC) is interpreted
+as random in the neighborhood of the discontinuity. For a segment of the population, it
+is assumed that being marginally above or below the threshold is something that is out
+of its control.
+In the context of this study, one of the advantages of the program is its implementation
+ex post to the design and approval of the monitored projects and, consequently, the
+availability of its budget. As a result of this, those responsible for the works have not
+been able to know prior to determination of the budget about the potential involvement
+of the MCC program, or that, depending on the budget, their works would or would not
+have been subject to monitoring visits. Under those circumstances, it is not feasible to
+manipulate the budget of the works in order to avoid monitoring by the MCCs.
+To rigorously prove that there indeed was no manipulation of the analysis, the density
+test of (McCrary ,2008) is used to test the density of the assignment variable before and
+after implementation of the program in order to demonstrate that there are no variations
+attributable to it. Here, the results show that there is no variation in the assignment
+variable before and after the start of the MCC program. The proportions of units below
+and above the threshold are maintained during the years prior to and after the program.
+16The results are shown in Figure 6.
+Figure 6. McCrary Density T est
+Source: Prepared by the authors based on InfObras data and Invierte.pe.
+6.2 Polynomial Regression with Visits
+Figure 7 shows the adjusted values of the regression of MCC visits over the threshold
+variable (budget = PEN 10 million) and the budget of the works of local governments in
+districts visited by the MCC (the x axis is on a logarithmic scale). This first figure uses
+as a sample all of the works in the database. It can be seen that the PEN 10 million
+threshold rule is complied with.
+Figure 7. MCC Visits, All W orks
+17Source: Prepared by the authors based on InfObras data and Invierte.pe.
+Note: The figure shows each work in universe x, according to its original recorded budget.
+The works to the left of the threshold line of PEN 10 million are those eligible for the MCC
+program. The figure shows that the works with a budget of less than PEN 10 million have
+received monitoring visits, which is why the line to the left of the threshold line is higher than
+the curve to the right of that line.
+The figure shows the discontinuity in the PEN 10 million threshold, which is used for
+the analysis because it maintains the relationship with the visits variable, which is the
+variable that the discontinuity aims to identify.
+Figure 8 uses the same variables as Figure 7 but filters the sample by reducing it to works
+executed by local governments and located in districts where MCC visits were conducted.
+Going forward, this reduced and more exact sample will be used to estimate the effects
+of the MCC program with the RDD model.
+Figure 8. MCC Visits, with W orks Filtered
+Source: Prepared by the authors based on InfObras data and Invierte.pe.
+Note: The figure shows each work in districts with MCC visits in universe x, according to its
+original recorded budget. The works to the left of the threshold line of PEN 10 million are those
+eligible for the MCC program. The figure shows that the works with a budget of less than PEN
+10 million have received monitoring visits, which is why the line at the left of the threshold line
+is higher than the line at the right of that line.
+6.3 Polynomial Regression with Cost Overruns
+Figure 9 presents the adjusted values of the regression of the MCC visits over the cost
+overruns variable and the budget of the works of local governments in districts visited
+by the MCC (the x axis is on a logarithmic scale). As mentioned previously, the figure
+filters the sample to reduce it to those works executed by local governments and located in
+districts where MCC visits were conducted. The figure shows that the works with MCC
+visits have less cost overruns than the others around the PEN 10 million threshold.
+18Figure 9. Cost Overruns, with W orks Filtered
+Source: Prepared by the authors based on InfObras data and Invierte.pe.
+Note: The figure shows that the works to the left of the PEN 10 million budget threshold have
+less cost overruns that the works with a budget above PEN 10 million.
+Along these lines, it is also interesting to analyze cost overruns in accordance with the
+work’s execution modality (direct administration versus outsourced). Figure 10 shows
+the cost overruns in outsourced works in the filtered samples. In this case, clearer and
+more interesting results can be seen between the works with and without MCC visits.
+This result could indicate that the MCC program is more effective for works that are
+outsourced.
+Figure 10. Cost Overruns in Outsourced W orks, with W orks Filtered
+19Source: Prepared by the authors based on InfObras data and Invierte.pe.
+Note: The figure shows that the outsourced works to the left of the budget threshold of PEN 10
+million (eligible for the MCC) have less cost overruns than outsourced works that have a budget
+above PEN 10 million.
+Figure 11 shows the cost overruns in works under direct administration in the sample
+with filters. In this case, one observes that there are no significant differences in cost
+overruns between works directly administered and with MCC visits and works directly
+administered but with no MCC visits.
+Figure 11. Cost Overruns in Directly Administered W orks
+Source: Prepared by the authors based on Invierte.pe data.
+6.4 Regressions on Cost Overruns
+Byvirtueofthediscrepanciesbetweentheresultsofthesamplesofoutsourcedanddirectly
+administered works observed in the figures analyzed in the previous section, it was decided
+to more robustly evaluate the treatment estimated by the RDD in the sample of works
+executed under the outsourcing modality, since it seems that the MCC program had a
+larger effect on those works. In total, 11,297 observations were considered, given that
+the RDD only takes into account observations around the eligibility threshold (budget of
+PEN 10 million); 1,540 of the observations are the ones near the threshold that are used
+to estimate the local impact of the program.
+Table 5 shows the coeﬀicients with standard errors of the RD Sharp estimator, using a
+polynomial regression on the cost overruns defined as a percentage of the initial approved
+budget. The effect of the program on the cost overruns was evaluated using a filtered
+sample of outsourced works. As mentioned previously, the filtered works only include
+works of local governments located in districts with MCC visits. The results show a
+positive and significant impact of the MCC program on the reduction of cost overruns of
+outsourced works.
+20T able 5. Discontinuity Regression Analysis on Cost Overruns
+W orks (with filters)
+Coeﬀicient 0,09**
+(0,05)
+Observations 11.297
+Note: Robust standard errors are in parentheses.
+Statistical significance: *** p <0.01, **p <0.05, *p <0.1
+6.5 State of Execution of the W ork
+Another result analyzed is the state of execution of the work, especially if the work has
+been stopped. Figure 12 shows that there is more stoppage of works visited by MCCs (to
+theleftofthePEN10millionthreshold). Theeffectsarenotsignificant, andthedifference
+is minimal, so the effects of the program on the state of execution are inconclusive. In
+this sense, it seems that MCC visits do not have a relationship with the state of execution
+of the works.
+Figure 12. W orks Stopped, with Application of Filter
+Source: Prepared by the authors based on InfObras data and Invierte.pe.
+Another outcome of interest if the percentage of physical progress on execution of the
+work. Figure 13 shows that works with MCC visits (to the left of the PEN 10 million
+threshold) have a slightly higher percentage of physical progress than works without visits
+(to the right of the threshold).
+21Figure 13. Physical Progress of the W ork, with Application of Filter
+(percent)
+Source: Prepared by the authors based on InfObras data.
+Finally, in terms of execution of the work, Figure 14 shows whether the work has had
+extensions of its execution deadline. In this case, no significant differences are observed
+between works with MCC visits (to the left of the PEN 10 million threshold) and works
+without MCC visits (to the right of the threshold).
+Figure 14. Expansion in Execution of the W ork
+Source: Prepared by the authors based on InfObras data.
+There are two reasons behind the effects found in cost overruns and not in the other
+22variables. First is the nature of the oversight program. The MCC program focuses more
+on monitoring cost overruns because they are more associated with corruption than are
+variables such as the work’s execution time. Second, many of the causes of delays of works
+are more associated with problems of technical analysis of preinvestment than with the
+behavior of the implementing firm.
+In general, the conditions linked to progress in execution of a work usually respond to
+many factors and are related to, for example, deficiencies in preinvestment studies and
+the development of technical standards – that is, prior to the start of execution – as well
+as other controversies that can arise during the process of executing the contract. In
+this way, it is possible to assume that those other factors could have direct effects on
+meeting the work’s execution deadlines, independent of the effect of the citizen oversight
+or monitoring of the work.
+For example, in the operational controls put in place for works within the framework of
+the Reconstruction with Changes (RCC) Program, the CGR identified delays in physical
+progress of slightly over 34 percent of works. On the other hand, with respect to the works
+that were stopped, the CGR noted that the stoppage (which at the same time extends the
+period of execution) in 51.6 percent of the cases corresponded to deficiencies in technical
+standards and 19.4 percent to cases of force majeure, such as natural disasters, social
+conflicts, etc.8
+7 Conclusion
+ThisdocumentanalyzedtheimpactoftheCGR’sMCCprogramontheeﬀiciencyofpublic
+works in Peru. Taking advantage of the program design – which establishes that only
+those works with an initial approved budget of less than PEN 10 million are eligible for
+MCC monitoring – a discontinuity regression analysis was conducted to evaluate the local
+effect of the program on works within the eligibility threshold. The findings of this study
+are statistically significant for citizen monitoring in the presence of digital government
+initiatives such as InfObras and Invierte.pe in terms of the eﬀiciency of public works.
+In particular, the analysis finds that the program’s monitoring visits had a significant
+impact of 9 percent in reducing cost overruns for the works executed by construction
+firms. No such effect was identified in works executed by direct administration. Nor
+were any impacts found in other variables of the analyzed results, such as the status of
+execution of the work, its physical progress, and its delays. A possible explanation for
+the findings is that, given the nature of the oversight program, it makes more sense for
+the monitoring to focus on cost overruns, which can be directly related to corruption. By
+contrast, variables such as the physical progress of the work and its period of execution
+are more related to external factors like deficiencies in the pre-investment studies and
+the preparation of technical standards, which are more diﬀicult to control. In this sense,
+the findings show that the MCC program is an effective strategy to detect cost overruns
+of works of up to PEN 10 million and in this way help to reduce corruption through
+cost-effective monitoring.
+This document contributes to closing the gaps in the literature related to the impact of
+citizen monitoring programs on the supply of public goods and services. This is possible
+8For more information on the reports of the CGR control operations and government control,
+see https://apps5.contraloria.gob.pe/sroc/wfrm/Inicio.aspx and https://appbp.contraloria
+.gob.pe/BuscadorCGR/Informes/Inicio.html .
+23because the document generates evidence on the effect of strategic social oversight inter-
+ventions that combine access to public information via digital government tools (InfObras
+and Invierte.pe) with citizen monitoring mechanisms (the MCC program) that make the
+use of the information actionable. In addition, the study shows that this type of program
+produces synergies between the governmental oversight exercised by the high-level audit-
+ing entity (the CGR) and society, since the above-mentioned oversight is complemented
+by a low-cost program that helps to expand coverage to public works that, in the absence
+of this program, could not be supervised.
+Finally, although this program has brought about promising results for social monitoring
+of the eﬀiciency of public works, there is still a need to produce rigorous evidence on its
+effectsonthequalityofworksaswellasevidencethatcontributestoimprovingthecurrent
+design of the initiative itself. Toward this end, it is proposed that steps going forward
+include advancing with an experimental evaluation of the MCC program that proposes
+improvements to its design and that extends to other results related to the quality of the
+works. This involves proposing the evaluation of three treatments: (1) the status quo of
+the MCC (the program in its current form); (2) local monitors (the recruitment of direct
+beneficiaries of the works to sign up as MCCs); and (3) improvements in the questionnaire
+used by the MCCs to evaluate the works. Each of these three treatments will be evaluated
+for two different stages during execution of the works: one group will evaluate during the
+bidding and assessment of the technical standards, and another will evaluate during the
+execution period itself (as is currently done). It is hoped that this experimental evaluation
+will provide evidence-based proposals to improve the MCC program with an eye towards
+promoting anti-corruption actions in the execution of public works in Peru.
+24References
+Banerjee, A. V., Banerji, R., Duflo, E., Glennerster, R., & Khemani, S. (2010). Pitfalls
+of participatory programs: Evidence from a randomized evaluation in education in
+india. American Economic Journal: Economic Policy ,2(1), 1–30.
+Berman, E., Callen, M., Condra, L. N., Downey, M., Ghani, T., & Isaqzadeh, M.
+(2017). Community Monitors vs. Leakage: Experimental Evidence from Afghanistan.
+(mimeo)
+Bjorkman, M., & Svensson, J. (2009). Power to the people: evidence from a randomized
+field experiment on community-based monitoring in uganda. The Quarterly Journal
+of Economics ,124(2), 735–769.
+Bjorkman, M., & Svensson, J. (2010). When is community-based monitoring effective?
+evidence from a randomized experiment in primary health in uganda. Journal of
+the European Economic Association ,8(2–3), 571–581.
+Fox, J. A. (2015). Social accountability: what does the evidence really say? W orld
+Development ,72(1), 346–361.
+Freire, D., Galdino, M., & Mignozzetti, U. (2020). Bottom-up accountability and public
+service provision: Evidence from a field experiment in brazil. Research Politics ,
+7(2).
+Lagunes, P. (2019). Guardians of Accountability: A Field Experiment on Corruption
+Ineﬀiciency in Local Public W orks. (Working Paper)
+McCrary, J. (2008). Manipulation of the running variable in the regression discontinuity
+design: A density test. Journal of econometrics ,142(2), 698–714.
+Olken, B.A. (2007). Monitoringcorruption: evidencefromafieldexperimentinindonesia.
+Journal of political Economy ,115(2), 200–249.
+Sexton, R. (2017). The Unintended Effects of Bottom-Up Accountability: Evidence from
+a Field Experiment in Peru. (Working Paper)
+Stiglitz, J. (2002). Participation and development: Perspectives from the comprehensive
+development paradigm. Rev. Development Econ. ,6(June), 163–182.
+25

@@ -1,0 +1,1485 @@
+Testing the Waters
+MARCH 2019
+WORKING PAPERDigital Payments for Water and Sanitation
+DANIEL WALDRON, CAROLINE FRANK,  
+AKANKSHA SHARMA, AND ALEXANDER SOTIRIOU1818 H Street NW, MSN IS7-700
+Washington DC 20433
+Internet: www.cgap.org
+Email: cgap@worldbank.org
+Telephone: +1 202 473 9594
+RIGHTS AND PERMISSIONS
+This work is available under the Creative Commons Attribution 4.0 International Public License (https://
+creativecommons.org/licenses/by/4.0/). Under the Creative Commons Attribution license, you are  
+free to copy, distribute, transmit, and adapt this work, including for commercial purposes, under the 
+following conditions:
+Attribution—Cite the work as follows: Waldron, Daniel, Caroline Frank, Akanksha Sharma, and Alexander 
+Sotiriou. 2019. “Testing the Waters: Digital Payments for Water and Sanitation.” Washington, D.C.: 
+CGAP .
+Translations—If you create a translation of this work, add the following disclaimer along with the 
+attribution: This translation was not created by CGAP and should not be considered an official transla-
+tion. CGAP shall not be liable for any content or error in this translation.
+Adaptations—If you create an adaptation of this work, please add the following disclaimer along with 
+the attribution: This is an adaptation of an original work by CGAP/World Bank. Views and opinions 
+expressed in the adaptation are the sole responsibility of the author or authors of the adaptation and are 
+not endorsed by CGAP/World Bank.
+All queries on rights and licenses should be addressed to CGAP Publications, 1818 H Street, NW, MSN 
+IS7-700, Washington, DC 20433 USA; e-mail: cgap@worldbank.orgExecutive Summary 1
+Introduction 3
+Cost and Revenue Benefits from Digital Payments 7
+Other Advantages of Going Digital 9
+Implementing Digital Payments 13
+Internal Barriers 17
+Conclusion 18
+References 19
+Annex 1: Methodology and List of Interviewees 21CONTENTS1When Dickson Marira of Wonderkid Ltd. visited the 
+home of a water utility customer in West Africa, he saw 
+a pile of unpaid water bills held down by the corre-
+sponding amount of cash. That family was willing and 
+able to pay their bills, but they had no idea how or 
+where to do so. It became immediately clear to Marira 
+why the water utility was collecting only 6 percent of 
+what it billed its customers every month: it was not 
+communicating with its customers, and it was not offer -
+ing them a convenient, secure channel to pay what 
+they owed.
+While this may be an extreme example, water and 
+sanitation providers in emerging markets often strug-
+gle to recoup their costs and become financially sus-
+tainable. As a result, many low-income customers are 
+at risk of losing access to safe water and sanitation 
+at a time when countries worldwide have committed 
+to universal access by 2030, under the Sustainable 
+Development Goals. Costly inefficiencies in providers’ 
+predominantly cash-based collection systems—of the 
+kind witnessed by Marira—are a major contributor to 
+their high operating costs. Cutting these costs is espe-
+cially important because governments restrict utilities’ 
+ability to increase prices to offset inefficiencies.
+A growing number of water providers are experi-
+menting with digital payments to reduce operational 
+expenses and streamline service delivery. To better 
+understand and document their experiences for other 
+water providers in emerging markets who may be 
+considering digital payments, CGAP and GSMA con-
+ducted a literature review and interviewed 25 organi-
+zations across Africa, Asia, and Latin America. These 
+organizations were a mix of urban utilities, small water 
+enterprises, container toilet companies, and suppliers 
+of hardware and software to the water and sanitation 
+sector. Two-thirds were accepting digital payments or 
+helping their clients to do so, motivated by four goals: 
+cost savings, greater transparency, better security, and 
+business model innovations.BENEFITS OF DIGITIZING PAYMENTS
+• Digital payments reduce collection costs. Before 
+digitization, the cost of cash collection ranged from 
+3 to 20 percent of revenue collected. Digital pay-
+ments reduced collection costs by 57–95 percent, 
+with most of the savings stemming from reduced 
+staff time and vendor commissions. In Haiti, eco-
+logical sanitation provider SOIL decreased col-
+lection costs from $1.10 to $0.05 by switching to 
+mobile payments.
+• Digital payments increase revenue and enable 
+new business models. Revenues increased from 
+15 to 37 percent for providers who reported data, 
+driven by improved billing, increased efficiency, 
+and a shift to prepaid models enabled by digital 
+payments. Safe Water Network in Ghana went from 
+a 30 percent net loss to 1 percent net surplus by 
+introducing digital payments tied to prepaid ser -
+vice.
+• Digital payments also increase customer reach. 
+Providers used cost savings and revenue growth to 
+expand their businesses or lower the cost of their 
+service. Container toilet company Loowatt did the 
+latter in Madagascar, offering a 15 percent discount 
+for customers that pay with mobile money.
+Digitizing payments also have benefits beyond finan-
+cial considerations: they create data trails that enable 
+providers to offer a higher level of service and improve 
+customers’ willingness to pay. They also facilitate the 
+digitization of other business functions like billing, 
+meter-reading, and customer service, all of which con-
+tribute to greater efficiency.EXECUTIVE SUMMARYOBSTACLES TO DIGITIZING PAYMENTS
+Respondents also reported the following obstacles to 
+adopting digital payments: 
+• Difficulty integrating mobile money provid-
+ers. Some providers reported integrations taking 
+months or even a year longer than expected. A 
+growing number of mobile money operators are 
+offering open APIs to streamline this process. 
+• Too few mobile money users. Nascent digital 
+payment ecosystems may lack the cash-in/cash-out 
+(CICO) service points, robust use cases, and user-
+friendly interfaces needed to attract sufficient num-
+bers of digital payments users.
+• Fees can deter customers. If regressively struc-
+tured (e.g., flat fees on payments within a certain 
+amount), mobile money transaction fees can make small-value payments prohibitively expensive com-
+pared to cash, a deterrent to customers.
+• Limited ability to analyze data. Providers often 
+have difficulty obtaining accurate data on opera-
+tions or revenue or may lack the analytical capacity 
+to get the most out of the data. 
+• Loss of jobs. Unfortunately, achieving cost savings 
+in the water and sanitation sector often means elim-
+inating staff positions. Reallocating staff to more 
+efficient roles will make digitization more effective. 
+Digitizing payments will not solve all the challenges 
+facing water providers as they struggle to become 
+sustainable. However, digitizing payments does 
+deliver clear benefits when it is based on careful anal-
+ysis and strategic decision making. Water providers in 
+emerging markets should give serious consideration 
+to going digital.2 • Testing the Waters3Despite a global commitment to achieving universal 
+access to water and sanitation by 2030, we are on 
+pace to fail (UN 2018). Today, 2.1 billion people do 
+not have access to a safely managed source of drink-
+ing water, and three out of every five people do not 
+have access to safe sanitation facilities (WHO and 
+UNICEF 2017). A key barrier to universal access is that 
+water supply and sanitation (WSS) providers often 
+lose money serving their current customers because 
+tariffs are too low, nonrevenue water levels are high, 
+and collection rates are poor. Before they can expand 
+their services to poorer households, WSS providers 
+need to adopt service models that allow them to cov-
+er operational expenses while reaching low-income 
+customers.
+Digitizing payments in WSS can help to bring 
+financial sustainability to these providers. It has 
+the potential to reduce the cost of collections by 
+eliminating cash handling, minimizing rent-seek-
+ing, and reducing fraud, while also increasing rev-
+enue through new, more efficient business models. 
+CGAP and GSMA reached out to a subset of WSS 
+providers to learn from their experiences in adopt-
+ing digital payments. In this paper, we share practical 
+experiences of adapting digital payments to WSS, 
+highlight common challenges to digitization and 
+successful approaches for overcoming them, and 
+offer recommendations for WSS providers that want 
+to digitize revenue collection.Our research found that digitizing payments in 
+the water sector can have a positive impact on the 
+financial sustainability of water service delivery mod-
+els for low-income populations. Specifically, digital 
+payments reduce operational expenses and enable 
+more efficient service delivery. These general findings 
+may come as little surprise to those familiar with the 
+literature on digital finance.1 But WSS has unique char -
+acteristics, including significant levels of nonpayment 
+and serious impediments to raising prices, that make 
+digital payments and digital payment-enabled innova-
+tions such as pay-as-you-go (PAY-Go) water especially 
+important to the sector.
+Major barriers to integration and adoption have 
+impeded large-scale implementation. Realizing the 
+potential impact of digital payments and ensuing cus-
+tomer data will require a greater emphasis on customer 
+service and financial sustainability from WSS providers.
+THE STATE OF GLOBAL ACCESS TO  
+WATER AND SANITATION
+Sustainable Development Goal No. 6 calls for univer -
+sal access to safely managed water and sanitation by 
+2030 (see Box 1). A baseline projection by the World 
+Bank estimated that this would require an investment 
+equivalent to 0.39 percent of global GDP—roughly INTRODUCTION
+“Safely managed water” is water that comes from an improved source (e.g., piped water, standposts, 
+borewells, protected dug wells, packaged, or delivered water), is available when needed, on premises, 
+and is free of contamination (WHO and UNICEF 2017). 
+An estimated 844 million people lack even a basic improved source of water that is within a 30-minute 
+walk and free of contamination. 
+More than 2 billion people use a drinking water source that has been faecally contaminated, and contam-
+inated drinking water is estimated to cause half a million deaths every year (WHO 2018). 
+“Safely managed sanitation” is an improved sanitation facility that is not shared and where excreta are 
+disposed of on site or transported or treated off-site. Sixty-one percent of the world’s population lacks 
+safely managed sanitation. (WHO and UNICEF 2017). BOX 1 
+DEFINING SUCCESS IN THE WSS SECTOR
+ 1. See Klapper and Singer (2014).4 • Testing the Waters
+three times the 0.12 percent that was spent annually 
+from 2000 to 2015 (Hutton and Verghese 2016). 
+These projections assume access will occur through a 
+variety of channels, including those that are individu-
+ally owned and managed. But a heavy burden will fall 
+on service providers (particularly on the water side) 
+who would need to shoulder a level of investment 
+that is difficult to reconcile with their historically low 
+efficiency. 
+In part because water is both a human right and 
+a commodity, providers are often prohibited from 
+charging cost-reflective tariffs. Instead, they rely on 
+public subsidies that are often insufficient. Danilenko 
+et al. (2014) reported that the median utility in devel-
+oping/emerging economies was barely covering its 
+operating costs and had “no capacity to replace its 
+assets once they wear out, let alone expand services 
+to larger groups of consumers.” 
+Suboptimal finances have led to suboptimal ser -
+vice. The World Bank estimates that 16 billion cubic 
+meters of water are lost to leaks every year, and 10 bil-
+lion cubic meters are delivered to customers but never 
+paid for, for a total economic loss of $5.8 billion. While 
+eliminating this loss is not realistic, just halving it would 
+free up enough water for 90 million people annually 
+(Kingdom et al. 2006).
+Rural and peri-urban providers are often worse off 
+than urban providers because informal or communi-
+ty-operated systems can be more expensive and/or 
+less sustainable, particularly if public sector commit-
+ments and revenue collection are insufficient to cover 
+inevitable capital maintenance. As the water sector 
+works to build a strategy that can lead to sustainable 
+universal access, new tools such as digital payments 
+can be deployed to lower costs and improve revenue 
+collection. 
+DEFINING DIGITAL FINANCE
+Digital finance is a term that encompasses two con-
+cepts: (i) financial services—payments, savings, credit, 
+insurance—that are offered using digital channels and 
+(ii) the digital technologies that deliver those financial 
+services to the end user. In this framing, mobile tele-
+phony is a digital channel, mobile money is a digital 
+finance technology, and the payment, credit, and sav-
+ings services accessed over mobile money are digital 
+financial services. 
+This classification is particularly relevant because 
+most of the digital payments discussed in this paper are 
+sent using “mobile money,” which is a technical term 
+that describes the use of a mobile phone to access 
+financial services. Mobile money transfers or payments 
+are made using an electronic money account or wallet. 
+In many cases involving rural or low-income customers, 
+this requires users to deposit cash with an agent, who credits their mobile wallet. The agent can then initi-
+ate a transfer to a person or organization. Sometimes 
+this money stays in electronic circulation, and some-
+times it is cashed out or transferred to a bank account. 
+Mobile money operators (MMOs) are typically mobile 
+network operators (MNOs), banks, or specialized third-
+party firms. Their services are particularly important for 
+people who do not have formal bank accounts, many 
+of whom are low-income customers who struggle to 
+access safe water and sanitation.2 
+SURVEYING THE LITERATURE ON DIGITAL 
+FINANCE FOR WATER AND SANITATION
+In the early days of mobile money, advocates specu-
+lated that digital finance could revolutionize the way 
+people accessed not only payments, savings, and 
+credit, but also material services such as energy and 
+water (Ehrbeck 2014). The assumption was that a  
+convenient, remote payment channel would remove 
+the inconvenience of cash for customers in rural or 
+informal areas, and that a secure channel for collecting 
+revenue would make those customers less of an oper -
+ational risk for providers. In many countries, the first 
+organizations to accept digital bill payments were 
+energy and water utilities, who were quick to see the 
+potential cost savings.
+In 2011, a group of Oxford researchers assessed 
+the use of mobile payments for WSS in four East Afri-
+can countries (Kenya, Uganda, Zambia, and Tanzania). 
+They found that the benefits of digitizing payments 
+were distributed between MNOs, utilities, and users, 
+based largely on the size of transaction costs and who 
+paid them (providers, customers, or both). In-depth 
+research in Kiamumbi, Kenya, revealed that customers 
+who were paying via mobile money were saving time, 
+but that they might not be saving money (Hope et al. 
+2011). User uptake of mobile payments was limited by 
+“delayed reconciliation of billing systems, limited cus-
+tomer awareness, lack of physical proof of payment, 
+high transaction tariffs, and convenience of alternative 
+pay points.”
+The same researchers found that no large-scale util-
+ities were collecting more than 10 percent of their reve-
+nue over digital channels, but that if barriers to uptake 
+were overcome, then digitizing payments could lead 
+to “timelier bill payments, higher collection efficiencies 
+and lower administrative costs” (Hope et al. 2011). 
+Supporting this hypothesis, Ndaw (2015) described 
+the implementation of an “E-Water” billing system by 
+the National Water and Sewage Corporation (NWSC) 
+of Uganda that allowed it to close its banking halls and 
+outsource collections to mobile money and partner 
+banks. This reduced NWSC’s collection costs by as 
+much as 75 percent and increased revenue by 15 per -
+cent. Similarly, in 2018 an analysis of container-based 
+ 2. This paper looks solely at the impact of digital payments in the WSS sector. For on the potential for digital credit and savings 
+to expand WSS access, see Waldron and Shabbir (2017) and Nique and Opala (2014).Testing the Waters • 5
+sanitation models3 showed that mobile payments 
+could increase a provider’s gross margin by 26 percent-
+age points (EY and WSUP 2018). And research by Kro-
+likowski (2014) in Dar es Salaam showed that mobile 
+water payments reduced the incidence of petty cor -
+ruption and rent-seeking. Yet, overall, there have been 
+few studies on the impact of digital payments on water 
+and sanitation access compared to that of other sec-
+tors such as energy or agriculture. 
+DIGITAL PAYMENTS FOR WATER  
+AND SANITATION IN 2018
+Mobile money has existed since at least 2007, and  
+several large-scale providers in East Africa—mobile 
+money began in Kenya—have been accepting mobile 
+bill payments since the beginning of the decade. Fig-
+ure 1 shows the percentage of the population in each 
+country that had made or received a payment using 
+mobile money, debit/credit cards, internet, and digi-
+tal finance applications. African countries show levels 
+of digital payment adoption that are higher than 
+countries with equal or greater incomes. Adults in 
+Tanzania are twice as likely to have made/received a 
+digital payment than those in Vietnam, despite the 
+latter having a per capita gross national income twice that of the former. This is necessity-mandated innova-
+tion: lower-density populations and shallower finan-
+cial systems in Africa spurred experimentation with 
+mobile money, which met a latent demand for remote 
+transfers.
+Following the literature review, researchers from 
+CGAP and GSMA spoke with representatives of 25 
+organizations with operations in 26 countries in Africa, 
+Asia, and Latin America to learn more about the state 
+of digital payments in the water sectors of emerging 
+economies. The research was qualitative and relied 
+heavily on in-depth conversations with leading WSS 
+providers, hardware manufacturers, software compa-
+nies, and donors, all working daily to improve access 
+to WSS. (See the Appendix for more on methodology 
+and a list of participants.)
+Two thirds of the customer-facing providers (includ-
+ing all the urban utilities) that we spoke to were accept-
+ing digital payments. The breakdown was largely 
+geographic: all the African providers accepted mobile 
+money, even at relatively low levels. Only one of the 
+Asian providers did so, with several respondents citing 
+constraints such as prohibitive fees and extremely low 
+penetration of payments platforms in rural areas. 
+One provider in India ran a full promotional cam-
+paign to encourage users to start paying with Bharat 
+Interface for Money on their USSD phones.4,5 The cam-90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+KenyaUgandaGhanaTanzania
+Burkina FasoSenega Rwanda Zambia
+MozambiqueTogo
+BangladeshLiberia MalawiBeninDRC Haiti
+Sierra LeoneNigerNigeria VietnamPeru India
+Africa Latin America AsiaFIGURE 1. Share of adults who made or received a digital payment in the last 12 months (2017 Findex)
+ 3. In container-based sanitation models, human waste is collected in a sealable, removable container that is regularly swapped 
+out by an operator, with full canisters transported to a nearby facility for safe treatment and disposal. 
+ 4. Bharat Interface for Money is an application developed by the National Payments Corporation of India. It allows users to 
+make payments from their linked bank accounts using either smart phones or USSD phones. 
+  5. Unstructured Supplementary Service Data (USSD) is a communications protocol used by basic and feature mobile phones 
+to communicate with the network operator’s computer systems.6 • Testing the Waters
+paign was ultimately unsuccessful and found that users 
+had no money in their linked bank accounts and no 
+desire to cash in for this specific purpose.
+For the 10 WSS providers in our study who are  
+accepting digital payments, revenue paid over those 
+channels ranged from close to 0 percent to 95 per -
+cent, with the latter representing a significant outlier 
+of Clean Team, a container-based toilet business with 2,000 clients in Kumasi, Ghana. The next highest was 
+Nairobi City Water and Sewage Company (NCWSC), 
+which reported that 38 percent of its revenue was 
+received over M-PESA. This had taken almost a decade 
+to achieve, and significant growth happened only after 
+real-time billing and integrated complaint solutions 
+were introduced.
+COST AND REVENUE BENEFITS FROM DIGITAL PAYMENTS
+CASH REPRESENTS A SIGNIFICANT COST 
+FOR WSS PROVIDERS
+This observation is perhaps obvious, but important: 
+cash is expensive. It requires paid or commissioned 
+staff to collect, trucks to transport, and bookkeepers 
+to manually reconcile. 
+• Ghana Water Company Limited (GWCL), the pro-
+vider of all municipal water in Ghana, estimated 
+that its total cash collection costs are 3.3 percent of 
+revenue (including staff, transport, printers, and all 
+other associated costs). 
+• Small water enterprises such as Water4 are cur -
+rently paying vendors commissions of 20 percent 
+or more of revenue collected. Vendors are gen-
+erally tasked with monitoring communal taps and 
+collecting payments; their jobs are directly linked 
+to the acceptance of physical cash.
+• Container toilet provider Loowatt reports that 
+collection costs make up 15 percent of its pricing 
+model.
+• Before closing most of its payment halls and shift-
+ing to a digital billing/collection model, NCWSC 
+incurred large cash management costs. Just post-
+age for paper bills used to cost the utility approxi-
+mately $600,000 annually. 
+DIGITIZING PAYMENTS DECREASES  
+OPERATIONAL COSTS
+Every provider in the study that had digitized payments 
+reported being motivated wholly or in part by saving 
+on the cost of cash. Lori Gonnu, from 1,001 Fontaines, 
+explained the dilemma that providers face, which 
+makes cost-saving measures such as digitization so 
+important: “Providers are not going to increase the 
+prices, so the only way to be sustainable is to sell more 
+or reduce costs.” Digital payments offer the opportu-
+nity to do both, and savings are the immediate benefit.
+On this front, as expected, 16 out of 24 respon-
+dents (67 percent, excluding the one donor) reported 
+that they spent less on collections when customers 
+paid with mobile money instead of cash. Another 13 
+percent reported that they were digitizing collections 
+in the hope of reducing costs. 
+• Ecological sanitation provider SOIL installs toilets 
+in homes in Port-au-Prince, Haiti, for a monthly fee. Door-to-door collections had a 35–40 percent suc-
+cess rate and required valuable staff time. Shifting 
+all collections to mobile money or in-office resulted 
+in immediate savings: SOIL estimated that each 
+cash payment collection costs $1.10 versus $0.05 
+for each mobile payment. And on-time payment 
+rates for mobile money payers are 12 percent 
+higher than for cash payers.
+• Drinkwell, which installs and manages water ATMs 
+in India and Bangladesh reported the cost of col-
+lections at 20 percent of revenue when collecting 
+cash at the point of sale. When it switched to pre-
+paid cards that users could top up at nearby shops 
+(a semi-digital payment, discussed below), cost of 
+collections dropped to 2 percent of revenue. 
+• Clean Team, a container-based toilet enterprise 
+in Ghana, estimates a shift from about 25 percent 
+mobile payments to about 95 percent resulted in a 
+2-percentage point increase in its gross margin.
+• After the Kisumu Water and Sanitation Company 
+worked with Wonderkid to introduce mobile ser -
+vices for billing, collections, and customer care, it 
+saw a 28 percent increase in revenue collected on 
+an 8 percent increase in revenue billed. Mobile pay-
+ment volumes increased by 71 percent.6 
+• In a pilot of prepaid household meters linked to 
+digital payments, Safe Water Network in Ghana 
+saw a 37 percent increase in realized revenue (see 
+Box 2 for more details).
+With tight (or negative) profit margins in the WSS sec-
+tor, collections expenses offer a rare opportunity to 
+reduce costs while improving service, by making it 
+more convenient for customers to pay. However, the 
+largest driver of cost savings is usually reduced staff 
+salaries or vendor costs. Achieving these cost savings 
+may require reallocating staff or making difficult deci-
+sions to reduce workforces.
+7“ Providers are not going to increase the prices, so the only 
+way to be sustainable is to sell more or reduce costs.”
+—LORI GONNU, 1,001 FONTAINES
+ 6. See GSMA (2017) for more detail.
+8 • Testing the Waters
+Safe Water Network is a nongovernment organization that 
+establishes small water enterprises in peri-urban and rural 
+areas throughout India and Ghana. In Ghana, its systems are 
+built using donor/government funds, and they are operated 
+by Safe Water. The organization’s financial goal is to cover all 
+operating expenses and capital maintenance expenses and 
+to eventually generate a small profit (of which a portion goes 
+to the local community) through user tariffs. While custom-
+ers are willing to pay for quality water, there is a strong 
+incentive to keep water affordable, which motivates Safe 
+Water to drive down costs. 
+The following breaks down Safe Water Network’s unit 
+economics for one cubic meter (m3) of water. Its tariff (and 
+expected revenue) is $1.16 per m3. Beyond the fixed costs 
+of Safe Water Network’s purification and distribution infra-
+structure ($0.13/m3), its main costs are:
+• Provision for under collection (nonrevenue water). 
+Water that is pumped but not paid for, either due to leak-
+ages or under-collection—$0.31/m3.
+• Capital maintenance expenses. Depreciation on capital 
+assets such as meters, standpipes, and purification tech-
+nology—$0.24/m3 in the baseline.
+• Variables costs related to station operation. Includes 
+operator travel, stationary costs, and fees—$0.31/m3 in 
+the baseline.BOX 2 
+MARGINAL COST STRUCTURE OF A WATER SERVICE PROVIDER
+0.5
+0
+–0.05
+–0.10
+–0.15
+–0.20
+–0.25
+–0.30
+–0.35
+–0.40Original
+net loss
+Increase in
+CapManExDecrease
+in vendor
+commission
+Increase in
+revenueNew net
+surplusNet Mar gin (%)FIGURE B2-1. Change in net surplus/loss due to digital payments (Hwang 2018)• Vendor commissions. Pay to local vendors stationed 
+at every communal tap to collect revenue. Vendors 
+are compensated at 20 percent of all revenue col-
+lected—$0.12/m3. 
+Combined with direct financial support to the station 
+($0.31/m3), the baseline scenario has the station losing 
+$0.26 for every m3 provided. 
+Figure B2-1 shows how digital payments, together 
+with prepaid service, change the financial viability of 
+Safe Water’s service. Adding prepaid hardware and 
+mobile systems increases its capital replacement costs 
+by 10 cents, bringing the deficit to $0.36/m3. Prepaid 
+systems also eliminate under-collection (a 31-cent sav-
+ings) by requiring users to pay before they consume 
+water, instead of chasing them for payment after. And 
+automated systems that rely on digital payments cost far 
+less per transaction than the 20 percent of revenue that 
+vendors were receiving (net savings of 7 cents). Safe 
+Water’s gross margin more than doubled, and it is now 
+breaking even or generating a small net profit. 
+Just by digitizing revenue, the net margin increases 
+by $0.07 (16.5 percent)—important, but not transforma-
+tive. Other savings on cash management are canceled 
+out on transaction fees, which Safe Water Network pays 
+on behalf of its customers. The combination of prepaid 
+water and digital payments makes the operation finan-
+cially viable. OTHER ADVANTAGES OF GOING DIGITAL
+Digital payments deliver clear cost benefits, but there 
+are other ways that digitizing transactions can improve 
+the overall business model for WSS, making it more 
+sustainable. Instant payments that leave permanent 
+data trails allow providers to offer a higher level of 
+service, which in turn can improve customers’ willing-
+ness to pay.
+AUTOMATIC PAYMENT RECONCILIATION 
+When a cash payment is received by a provider, it can 
+take days or weeks to be entered into its accounting 
+system. A lot can happen in that time. According to 
+Wonderkid, it is not uncommon for utility customers to 
+pay a bill (in cash) in the morning, then be discon-
+nected the same afternoon because of slow reconcili-
+ation. Longer reconciliation cycles also mean that the 
+business must wait before it can reinvest that revenue.
+With digital payments, cycles are shorter. When 
+customers with prepaid smart meters make a digital  
+payment, a backend system updates their balance 
+immediately to generate a token code. But to realize 
+the full value of digital payments, more complex soft-
+ware integration is needed with the payment proces-
+sor (who must also invest in its backend processing), 
+so that the WSS provider is notified about payment in 
+real time, and the payment is credited to the proper 
+user’s account in its billing system. Without this, man-
+ual account reconciliation done at the end of the day 
+can still lead to unintentional cut-offs. The GSMA 
+Instant Payment Notification Hub, which helps address 
+this challenge through a platform that eases integra-
+tions, is covered later in this paper.
+TRANSACTION RECORDS FROM DIGITAL 
+PAYMENTS CREATE TRANSPARENCY
+If cash changes hands and nobody records the trans-
+action, does a business make money? Often, the 
+answer is no. Digital payments create automatic, 
+indelible records of a financial transaction, and those 
+records create much-needed transparency. Several 
+business-to-business (B2B) companies told us stories 
+of providers uncovering significant levels of fraud, at 
+all levels in the organization, during the process of dig-itization. One small water enterprise reported that its 
+nonrevenue water had reached 22 percent, which it 
+believed to be almost entirely nontechnical losses (i.e., 
+under-billing or theft by vendors).7 Asking meter read-
+ers and sanitation agents to handle large amounts of 
+cash distracts from them from doing their core tasks 
+and poses a significant security risk and an unneces-
+sary temptation.
+Transparency is important for both providers and 
+customers. Water tariffs are established through long 
+processes, then posted. When customers use public 
+water or sanitation, they need to know that they are 
+paying the posted price for that service. This benefit is 
+best illustrated through its counter example: one East 
+African utility showed us a group of privately operated 
+kiosks, where operators were contracted to buy water 
+from the utility and to sell it at a 40 percent mark-up. 
+However, at the kiosks we visited, operators were sell-
+ing water at a mark-up that was anywhere from 185 
+percent to 700 percent, seeking payments that far 
+exceeded what was specified in their contracts. The 
+utility was in the process of moving to 100 percent 
+digital payments and automated dispensing, which 
+would cut out rent-seeking from vendors and give 
+customers confidence that they are paying the estab-
+lished price for water.
+MODELS LIKE PAYGO REQUIRE  
+DIGITAL PAYMENTS
+PAYGo solutions link payment and usage seamlessly. In 
+the water context, customers use their mobile phone 
+to send a payment, which is tagged with their unique 
+account number. This payment is recognized by the 
+backend system which triggers an automatic signal to 
+the water meter or sends an SMS code that users input 
+via keypad, either of which unlocks water service for 
+the purchased volume (or time). This can happen from 
+anywhere at any time, and the marginal cost to the 
+provider of collecting each payment is effectively zero 
+(although providers may pay to license software). 
+Just as digital payments can exist within post-
+paid service frameworks, prepaid meters/kiosks can 
+function with a network of cash-in points (see Box 
+3 for more on the differences between prepaid and 
+PAYGo). But several respondents (notably CityTaps, 
+9 7. Nonrevenue water is water that is pumped but never paid for because of technical (leakage) or nontechnical (theft or non-
+payment) issues.10 • Testing the Waters
+SEEN, and Safe Water Network) believed that the 
+two solutions (digital payments and prepaid meters/
+kiosks) are more powerful if they are deployed 
+together. Installing prepaid meters without digital 
+collections requires establishing systems for receiv-
+ing and managing cash (which may be some dis-
+tance from a customer’s house and not available at all 
+hours), as well as a system for vending credit tokens 
+to top-up meters. Both are expensive to maintain 
+because of commissions paid to middlemen. Simi-
+larly, there are fewer benefits to digital payments if 
+a staff member still must visit every customer every 
+month to read their meter.
+The landscape of PAYGo solutions for the water 
+sector is both limited and expensive, and significant 
+innovation will be needed to scale these products 
+and services. The sector will need to work closely 
+with digital payment systems to gain wider adop-
+tion. Grégoire Landel, the CEO and co-founder of 
+CityTaps, a smart meter company, was succinct when 
+describing the linkage: “There is no [CityTaps] meter 
+without mobile money.” 
+BENEFITS OF DIGITIZING NON-PAYMENT 
+FUNCTIONS 
+WSS providers need lots of capital to expand access, 
+even if they are not strictly for-profit entities, and so 
+digitizing revenue collection is often their top priority. 
+While this approach is understandable, several pro-
+viders noted the importance of digitizing other pro-
+cesses besides payments. PAYGo water is a good 
+example of this: the entire payment/use experience 
+happens seamlessly and digitally. But prepaid is by no 
+means the only service model, and there are other 
+processes that could benefit from digitization.
+Meter-reading
+Remotely monitoring postpaid consumption, through 
+machine-to-machine communication or applications that allow a user to read their own meter on the utili-
+ty’s behalf, makes the billing cycle more flexible and 
+lowers the cost of meter-reading, which is often ham-
+pered by low response rates. In Nairobi’s informal 
+Kayole Soweto neighborhood, water connections 
+were perceived as nonviable, partially because meter 
+readers did not feel safe visiting households. A digi-
+tal, self-reading mobile solution called Jisomee Mita 
+eliminated the need for physical reading and made 
+water connections possible (Ndaw and Mangi 2015).
+Billing
+GWCL emphasized the importance of digital billing for 
+customers. Digital invoices allowed customers to see 
+the volume they had consumed and the rate at which 
+they were being charged. They could then make a pay-
+ment on that bill and feel comfortable that they were 
+paying the right amount. Or if the amount was wrong, 
+they could act.
+Customer feedback and inquiries
+Dickson Marira of WonderKid tells a story about 
+going into the homes of one utility’s customers. The 
+utility was collecting only 6 percent of what it billed in 
+a given month, and it was immediately apparent why. 
+He met customers who had stacks of bills held down 
+by stacks of cash. These customers were ready and 
+eager to pay their water bills, but they did not know 
+how or where to pay. 
+While this obviously speaks to a broken collections 
+system, it also indicates something else: a lack of com-
+munication between customers and their providers. 
+This is a frequent problem with utilities. When custom-
+ers experience a breakdown, they do not think of call-
+ing their service provider because that has always been 
+an exercise in futility. In places such as Nairobi and 
+Kisumu, WonderKid (with support from the World 
+Bank) helped to solve this with MajiVoice—a digital 
+platform for lodging complaints from different chan-
+nels, including SMS, USSD, internet, and over the 
+counter. Once utilities enable easy communication, 
+they can address customer issues. Wonderkid sees a 
+digital complaint channel as the crucial first step for its 
+client utilities. A digital complaint channel has a posi-
+tive impact on consumer confidence, which can trans-
+late to uptake of revenue-generating or cost-saving 
+digital services.With prepaid service, payment is received before a service or product is delivered. The terms pay-as-
+you-go (PAYGo) and prepaid are often used interchangeably, but they are not technically the same. 
+Customers who pay cash to a vendor to fill their bucket are prepaying for their water.
+PAYGo in this paper refers to water or sanitation service that is automatically triggered or enabled by 
+a digital payment. In other words, all PAYGo services are prepaid, but not all prepaid services are PAYGo.BOX 3 
+PREPAID VS. PAYGO SERVICE
+“ There is no [CityTaps] meter without mobile money.”
+—GRÉGOIRE LANDEL, CITYTAPSTesting the Waters • 11
+DIGITIZING INTERNAL TRANSACTIONS 
+Digitization is a process that happens over time. 
+Because setting up a user-facing system for digital pay-
+ments is a long process, many manufacturers and ser -
+vicers of communal water points have opted to take a 
+quicker route. 
+Instead of users sending a remote payment directly 
+to the operator, they can use a water ATM, which often 
+accepts payments from prepaid smart cards or tokens 
+(see Figure 2). These prepaid instruments require users 
+to top-up their account through an agent or vendor 
+who loads credit using an application or point-of-sale 
+device. When users tap their card against a reader 
+in the water ATM, the reader pings the system (or a 
+recent backup if it is offline), verifies that the requested 
+amount will not exceed the user’s balance, and deb-
+its that account. This requires less integration with the 
+MNO and, therefore, is easier for most providers to 
+implement. 
+There are many upsides to using this system as oppos-  
+ed to using cash:
+• Users generally are able to access water 24 hours a 
+day, if they hold a balance. 
+• The system does not allow arrears to accumulate 
+and does not require regular supervision from a 
+water point operator (most providers we spoke with 
+have contracts with local entrepreneurs to serve as 
+token agents). 
+• Cash risk, although not eliminated, is transferred 
+from the organization to the token vendor. 
+• The system provides transparency for both provider 
+(revenue) and user (price), and it creates detailed 
+records of individual consumption. 
+The downside compared to a fully digitized system 
+that allows users to load credit independently includes 
+the following: 
+• The vendor still receives some commission (10 
+percent of revenue for Sarvajal) for performing top-
+ups, so costs remain.
+• Users can top-up their balances only when the 
+vendor is available, which may decrease sales and 
+inconvenience users if they need water at night. 
+• There is an added expense of purchasing physical 
+prepaid instruments, such as cards. 
+All in all, cash plus card is a significant improvement on 
+cash. It can exist in parallel with a fully digital top-up 
+option, and it serves as a useful bridge to fully digital 
+collections, particularly in places where users are unac-
+customed to initiating payments.DATA FROM DIGITAL TRANSACTIONS 
+Surprisingly, no providers reported using data from 
+customer payments to influence business decisions or 
+allocate resources, although many were planning to do 
+so. Hardware and software providers also say that their 
+clients are not using data to the fullest extent possible. 
+In some cases, systems were incompatible in their data 
+structures, but this could be fixed in future iterations. In 
+other cases, software and hardware providers sought 
+to protect their data, which they considered to be valu-
+able, thus limiting the scope of analysis for their part-
+ners and customers. 
+To increase the value clients receive from their hard-
+ware or software, B2B firms like Wonderkid or CityTaps 
+create monthly data analytics reports on the service for 
+their clients. This supports decision-making and helps 
+to build WSS providers’ analytical capacity. More B2B 
+providers can offer this service or enable their custom-
+ers to analyze their own data. And as a lack of analytical 
+capacity is also a key barrier to digitization, investing in 
+analysts and analytical tools should be an essential part 
+of any provider’s digital payment strategy.FIGURE 2: A Woman using a water ATM in rural Gambia (Courtesy of 
+eWaterPay)
+12 • Testing the Waters
+Grundfos (a Danish water pump manufacturer) and its partners World Vision (an international charity), 
+mobile operator Safaricom, and local communities have installed 32 self-service water kiosks for homes 
+and businesses in Kenya that lack water infrastructure. The kiosks (called LifeLink) are automated water 
+distribution points that are integrated with a mobile money payment facility (through Safaricom in Kenya) 
+and real-time GSM monitoring of water dispensed and payments made. 
+The GSMA Mobile for Development Utilities team contracted researchers  to conduct individual and 
+group interviews at 10 of these sites in Kenya to understand the level of mobile money awareness and 
+use of PAYGo water payments among users of the water ATMs. The research included questions around 
+frequency, mode (cash/mobile money), payment 
+experience, and limitations of using mobile money. 
+In six out of seven Grundfos locations sur -
+veyed, mobile money was the only mode of pay-
+ment for water. Even in Kenya, where M-PESA 
+is omnipresent and 73 percent of adults have a 
+mobile money account, WSS providers are driving 
+increased use. Thirty-five percent of interviewed 
+customers made their first mobile bill payment at 
+LifeLink ATMs; users who had previously used only 
+mobile money for remittances or airtime top-ups 
+are now paying for other services, such as school 
+fees, on their phones. Much of this was driven by 
+value: Lifelink water is cleaner and cheaper than 
+water sold by private sellers, and customers are 
+now tracking and optimizing their water spend in 
+ways they could not before digitization.BOX 4 
+MOBILE MONEY USE IN PAYGO WATER: SAFARICOM-GRUNDFOS  
+KIOSKS IN KENYA
+FIGURE B4-1: A Grundfos Lifelink kiosk in rural  
+Kenya (Courtesy of Grundfos)IMPLEMENTING DIGITAL PAYMENTS
+For users to adopt a digital payment solution, certain 
+basic elements must be in place. WSS providers can 
+take the following steps to build the foundation for a 
+digital payment solution. These recommendations are 
+based on experiences with mobile money, but they are 
+broadly applicable to other digital payment platforms:
+• Understand the costs of cash collections and how 
+they impact the unit economics for WSS. With-
+out this basic knowledge, it is not possible to 
+determine if there is a business case for digitizing  
+payments. 
+• Conduct research within a service area to deter -
+mine which, if any, payment operators have an 
+established cash-in/cash-out (CICO) infrastructure. 
+These CICO points (usually mobile money agents) 
+are essential—without them, users who currently 
+make most transactions in cash will be unable to 
+load electronic money to their wallets. 
+• Meet with customers to understand what payment 
+technologies they are familiar with, what their per -
+sonal experiences have been, the potential costs 
+and benefits for them of switching to digital pay-
+ments, and any requirements they would have 
+around a new payment/service model.
+• Negotiate commercial agreement(s) with the pay -
+ment systems operator(s). This is discussed in 
+detail in the next section. 
+• Receive a dedicated paybill account to which users 
+can direct mobile payments.
+• If necessary (e.g., if providing PAYGo services or 
+collecting a high volume of daily/weekly payments), 
+integrate the WSS billing system into the payments 
+platform so that the billing system receives instant 
+notification of payments and automatically credits 
+user accounts.
+• Develop tailored marketing and training materi-
+als that help users to understand the benefits of 
+mobile payments and empower them to initiate 
+transactions.
+• Implement, experiment, and iterate.INTEGRATION CHALLENGES WITH MMOS 
+In the past decade, MMOs have become the providers 
+and gatekeepers of complex payment platforms that 
+go beyond traditional banks. Although users benefit 
+from this, figuring out the right business model for 
+mobile money has been a process of experimentation. 
+There is consensus that, in the long run, open and 
+accessible platforms are more effective at generating 
+value and therefore use. Operators such as MTN and 
+Safaricom have taken the step of publishing their 
+application program interfaces (APIs) and creating a 
+virtual sandbox for application testing, allowing devel-
+opers to integrate with and innovate around the 
+M-PESA platform. 
+However, most other MMOs have yet to take this 
+step, which means that integration with a mobile 
+money service or an aggregator is done on a case-by-
+case basis and is constrained by human and technical 
+resources. In a few cases, mobile money integration 
+was handled quickly, but several WSS providers told 
+stories of waiting months or even years to integrate 
+with MMOs. Manobi, for example, spent more than 
+one year integrating with an operator in Benin. 
+NEGOTIATING COMMERCIAL  
+AGREEMENTS WITH MMOS 
+Municipal utilities that serve tens or hundreds of thou-
+sands of customers bring clear value to MMOs 
+through the sheer volume of their annual cash flows. 
+This allows them to enter negotiations from a position 
+of relative strength. But smaller and/or rural WSS pro-
+viders may need to convince MMOs of their value, 
+particularly if they are seeking more complex, sys-
+tems-level integration. 
+13“ Some of the challenges in implementing digital payments is 
+the integration and local nuances with each local payment 
+provider. Each country has a bit of their own standards and 
+APIs. For a company that works in multiple countries like 
+Susteq, it’s a barrier.” — MARTEN SUSEBEEK, SUSTEQ
+FIGURE B4-1: A Grundfos Lifelink kiosk in rural  
+Kenya (Courtesy of Grundfos)14 • Testing the Waters
+In theory, WSS providers are ideal partners for 
+MMOs. There is no commodity more essential than 
+water and, if mobile money is connected to its daily 
+procurement, that can be a powerful and sticky intro-
+duction to mobile bill payments. But smaller-scale 
+providers still need to offer realistic and defensible 
+projections of the number of customers and volume of 
+transactions that they will reach, and they must meet 
+those targets. Providers in more rural areas can also 
+emphasize that they will bring more active mobile 
+money users to the platform. For example, SOIL 
+reports that 60 percent of its customers are new to 
+mobile money, and 19 percent of them had opened an 
+account but never made a transaction before paying 
+for SOIL (see Box 4 for similar findings in Kenya). Rural 
+providers also help agents to balance liquidity by pro-
+viding a cash-in use case.8  
+Karim and Komu (2017) highlight six important con-
+siderations for commercial partnerships between utility 
+providers and MMOs:
+• Both parties protect customers’ privacy by keeping 
+customer data secure.9 
+• Resolution procedures are applied to resolve issues 
+between customers and either provider or between 
+the providers themselves.
+• The size of transaction charges and who pays them 
+are established: Are they paid by the customer, or 
+the service provider, or shared by both?
+• Minimum amount and frequency of settlement is 
+established, as well as the party that initiates settle-
+ments, or if they will be conducted automatically.
+• Service-level agreements clearly define each party’s 
+roles and responsibilities (e.g., the MMO commits 
+to sharing its API and providing timely notification 
+of system changes).
+• Tax obligations of both parties are noted.
+INSTANT PAYMENT NOTIFICATION  
+AND APIS
+Real-time, automated data sharing is essential for 
+PAYGo models. Service providers’ systems need to be 
+alerted immediately when a customer has 
+made a mobile payment so that the service 
+provider is able to reconcile the payments 
+(matching the payment to a unique ID num-
+ber) and unlock the PAYGo meter for the 
+corresponding volume or time (either 
+directly or by sending the user a code to input). Automated, rapid service delivery is the implicit 
+bargain that PAYGo providers make when they ask 
+their customers to prepay: you get what you pay for, on 
+time, and in full. 
+This functionality requires integrating the sys-
+tems of a WSS provider and an MMO. In the past, 
+systems-level integrations were done one on one or 
+through a payments aggregator who was integrated 
+with several MMOs. GSMA’s Instant Payment Notifica-
+tion (IPN) Hub aims to simplify this process by using a 
+single platform.10 The IPN Hub enables service provid-
+ers to receive real-time notification from several MMOs 
+that are connected to the platform. GSMA is scaling up 
+this service across Africa and is working with its mobile 
+operator members to connect them to providers in the 
+WSS and energy sectors.
+More complicated service offerings like automatic 
+debit payments from a mobile wallet require more 
+sophisticated APIs. These may not be publicly avail-
+able and can vary significantly from operator to opera-
+tor. CGAP and GSMA have been working with mobile 
+operators for years to help them make their APIs 
+accessible and harmonized, which will reduce com-
+plexity and enable innovation. 
+The IPN Hub and open, harmonized APIs can help 
+companies to quickly integrate with mobile payment 
+platforms and develop more specialized tools that 
+improve the user’s experience. 
+THE COST OF TRANSACTIONS
+Asking users to switch from cash to a new payment 
+modality becomes even more difficult if they must pay 
+to make a transaction. Yet that is the situation that 
+many service providers are forced into. Respondents 
+reported that mobile money fees for WSS payments 
+varied, in both size and structure. The latter is particu-
+larly problematic: block fee structures can disincentiv-
+ize micropayments because they can add 5 percent or 
+more to payments under $1. This effectively eliminates 
+the core value proposition of digital payments from the 
+customer’s perspective and should be a major concern 
+for any operator looking to digitize collections. 
+Different MMOs offer different pricing options—
+these disparities are a major issue to resolve when 
+“ The payment for water is very low, a micro-payment  
+even, and the transaction fee makes it prohibitive.”   
+ —JESPER LORENZEN, GRUNDFOS
+ 8. See Bayen et al. (2017). 
+ 9. See CGAP , “Data Protection Blog Series,” accessed February 14, 2019, https://www.cgap.org/blog/series/data-  
+privacy-and-protection and Maina (2018).
+ 10. GSMA, “The Instant Payment Notification (IPN) Hub,” accessed on October 15, 2018, https://www.gsma.com/  
+mobilefordevelopment/mobile-money/instant-payment-notification-ipn-hub/.Testing the Waters • 15
+negotiating a commercial agreement. In some cases, 
+WSS providers can pay a bulk fee to the MMO and 
+price it into their tariff (assuming it is less than what 
+they were paying for collections). In other cases, pro-
+viders pass the cost directly to the consumer. And 
+some MMOs allow the fee to be split between pro-
+vider and consumer. In any case, WSS providers need 
+to evaluate what the fee structure will mean to the 
+average customer and make sure that customers see 
+value in the long run. If providers can demonstrate 
+increased registrations and use, they may be able to 
+build a case for concessionary rate structures, which 
+will, in turn, accelerate adoption. 
+Sanitation providers have been passing savings 
+from digitization on to their customers to encourage 
+adoption. In Madagascar, Loowatt has made sanita-
+tion cheaper by offering a 15 percent discount for 
+customers who pay using mobile money. SOIL in Haiti 
+and Clean Team in Ghana have rolled out similar ini-
+tiatives, offering 8 percent and 12 percent discounts, 
+respectively. 
+ECOSYSTEMS FOR DIGITAL PAYMENTS
+Payment platforms are multisided: to function opti-
+mally they require many different types of users on 
+both sides. Without customers who are willing to pay 
+for goods digitally, why should merchants bother 
+accepting digital payments? And without a wide vari-
+ety of added-value use cases, why should customers 
+bother to adopt the technology in the first place? 
+In many markets, users of mobile money simply do 
+not have enough places to use it. Loowatt customers 
+in Madagascar can use mobile money to pay their 
+electric bill or cable TV subscription, but few of those 
+customers have electricity, let alone TVs. In the future, 
+other companies that accept digital payments stand to 
+gain from Loowatt’s work with its client base. MMOs 
+are already benefitting from the volume that water/
+sanitation providers drive onto their platforms. But for 
+WSS providers who need to educate their clients on 
+how to make a digital payment, much work remains.
+THE DISTRIBUTION ECOSYSTEM 
+In the future, poor rural water customers may keep a 
+balance on their digital wallet, stop carrying cash, and 
+make everyday purchases with mobile phones or con-
+tactless cards. But that scenario is still some ways away. 
+For now, it is safe to assume that most digital payments 
+will require physical money to be converted to elec-
+tronic money (and vice versa, for individuals receiving 
+payments). To do that, customers need CICO points, 
+which are usually mobile money agents.Agents are the backbone of any mobile money 
+deployment. Their proximity and reliability are crucial 
+factors in digitizing payments. In Sub-Saharan Africa, 
+cities and towns typically have no shortage of agents, 
+but smaller villages may have only few agents, or none 
+at all. In addition, agents in rural areas often face diffi-
+culties in balancing their cash and electronic liquidity. 
+WSS providers, particularly those that serve rural 
+segments, can bring substantial value to MMOs. Rural 
+agents are traditionally used as cash-out points for 
+villagers who receive domestic or international remit-
+tances. But small water enterprises or sanitation pro-
+viders can offer a use case for cashing-in or leaving 
+money in the wallet. MMOs that are eager for more 
+use cases may be willing to help WSS providers by 
+establishing agents in key locations and incentivizing 
+those agents to drive mobile bill payments. Alterna-
+tively, WSS providers may decide to register their 
+own staff or vendors as mobile money agents. Early 
+evidence shows that this approach can ease payment 
+restrictions for service providers while opening up new 
+markets for MMOs (Winiecki and Pillai 2018), but this 
+would require a separate business analysis and agree-
+ment with an MMO. 
+In non-African contexts, the rapid proliferation of 
+digital payment options makes this an interesting time 
+to pursue integration. Different WSS providers reported 
+both a lack of or too many digital payment options. In 
+Bangladesh, Drinkwell had to choose between Bkash, 
+Rocket, and traditional bank agents, with penetration 
+and cost being its main considerations.
+FIGURE 3: A flyer promoting mobile payment  
+for water in Ghana (Courtesty of Safe Water Network)
+16In Ghana, 85 percent of Safe Water Network’s customers had mobile money, but only 10 percent had 
+ever initiated a payment of any kind. When customers tried to use mobile money, they faced a range 
+of complications:
+• Menu was in an unfamiliar language.
+• Too many steps and numbers.
+• USSD session timed out if they took too long.
+• Lack of clarity around payment receipt.
+• Lag between payment and receipt of a prepaid token.
+Safe Water Network collaborated with the country’s leading MMO (MTN Ghana) to conduct work-
+shops for its customers on how to make mobile payments. In the months immediately following the 
+workshop, it saw a 20-percentage point jump in the share of revenue coming through mobile channels 
+(Waldron 2018).BOX 5 
+EXPERIENCE OF SAFE WATER NETWORK WITH INTRODUCING  
+MOBILE PAYMENTSDIGITAL ILLITERACY MEETS BAD  
+CUSTOMER INTERFACE
+Digital payment systems run the gamut from mobile 
+money to credit cards to messenger applications. 
+Some of these offer intuitive, user-friendly experiences. 
+However, many mobile money services—particularly in 
+Africa where smartphone penetration continues to 
+lag—still run on Unstructured Supplementary Service 
+Data (USSD) protocol. USSD is essentially a language 
+comprised of numbers, dashes, and asterisks that is 
+used to communicate between mobile phones and 
+the MNO’s computers (see Figure 3). 
+That such a rudimentary system can and is used 
+to channel billions of dollars across countries and 
+continents is nothing short of amazing. But that the 
+system is not particularly user friendly is an unfortu-
+nate reality. Also, USSD protocol is vulnerable to out-
+side interference, which makes vigilant monitoring 
+and user authentication through PINs crucial for bill 
+payees.11 In most cases, making a mobile payment requires 
+a user to read several menus; enter in a paybill num-
+ber, account number, and PIN code; and complete the 
+entire process within the allotted time for a USSD ses-
+sion (otherwise, they will be forced to start over). For 
+literate, numerate customers, this can be a challenge. 
+For illiterate, innumerate customers, it is basically 
+impossible without some level of one-on-one instruc-
+tion. And like it or not, it is often innovative service 
+providers that find themselves taking on the burden of 
+that training (see Box 5). 
+INCREASED MOBILE MONEY TAXATION 
+Politicians in Kenya, Uganda, and Zimbabwe have 
+recently levied or increased excise duties and taxes 
+on withdrawals from mobile wallets. This has led 
+many users to shy away from mobile money, whether 
+or not the tax affects bill payments, with PAYGo solar 
+providers in Uganda reporting a 10–15 percent 
+reduction in mobile money transactions per customer 
+(Ferracuti 2018).16 • Testing the Waters
+  11. For more on information, see Ilia Abramov, “Exploiting SS7 Vulnerabilities in Mobile Networks for Criminal Gain,”  
+Info Security, accessed on February 13, 2019, https://www.infosecurity-magazine.com/opinions/exploiting-ss7-  
+vulnerabilities-in/.INTERNAL BARRIERS
+THE NEED FOR ACCURATE DATA ON  
+BUSINESS OPERATIONS
+The decision to adopt digital payments should be 
+based on a careful analysis of the various costs and 
+benefits to all parties: the MNO, the customer, and 
+especially the water provider. However, we found 
+that many business managers at utilities and small 
+water enterprises do not know the baseline measure-
+ments of their business (cost of cash collections, non-
+revenue water, etc.), making it impossible for them to 
+quantify the return or impact of investing in digital 
+technology. Digital billing has helped NCWSC reach 
+an 85 percent collection rate, but it has no historical 
+data to use as a benchmark. One B2B company 
+described a utility client who had no clear view of its 
+overall monthly revenue. 
+To some degree, this reflects the analog state of 
+WSS providers—digitizing billing and collections 
+should shine light on the financial situation. But pro-
+viders need accurate data on the cost of these oper -
+ations to accurately measure the impact of digitizing 
+them. Collecting and analyzing operational data are 
+fundamental steps, and providers need to take these 
+on before they begin digitizing payments. 
+RE-ALLOCATING OR REDUCING STAFF MAY 
+BE NECESSARY TO SAVE COSTS
+A prominent obstacle to digitizing payments is its 
+impact on staff of water providers. Eliminating meter 
+reading and payment halls saves providers money and can lead to better service to more people. 
+Although the aggregate impact of digitizing pay-
+ments is both positive and significant, that impact is 
+diffused over time and across thousands or millions of 
+customers. For staff whose jobs are eliminated as 
+result of this shift, its effect can be negative and 
+immediate. 
+Providers reported that the effect on staff is a seri-
+ous downside when considering whether to digitize 
+payments. Managers of small water enterprises talked 
+about having to lay off vendors who had become like 
+family. The story is even more complex for managers 
+of larger utilities who have unionized workforces. In 
+their case, workers whose tasks have been digitized 
+must be given more productive work, and full cost 
+savings from digitization may not be realized for sev-
+eral years. 
+However, there are ways to reduce the impact on 
+staff. Growing organizations are usually able to reallo-
+cate staff and boost their efficiency. And as previous 
+examples have illustrated, there is an abundant need 
+for better customer service that could be fulfilled by 
+former collections staff. 
+Nevertheless, providers will need to make hard 
+decisions. They must focus on the business case when 
+they compare the benefits to their customers against 
+the disruption to their workforce. Decisions to reduce 
+staff need to be communicated and managed as com-
+passionately and carefully as possible. Policy makers 
+looking to eliminate cash—although they are wise to 
+do so overall—must ensure that policies are in place to 
+compensate and re-train workers whose jobs are lost 
+in the transition.
+17“ The organizations that run small decentralized water treat-
+ment and distribution systems, especially in rural areas and 
+remote locations in Africa, are part of the local communities. 
+These small water entrepreneurs don’t have the financial 
+means or organizational structure to evaluate, operate, or 
+control a new digital system.” — RUI BRAS GOMES, CUBO“ If we could move all payments to digital, we 
+would be happy. Staff could work on other tasks, 
+it would reduce transport and security costs, and 
+customers would have added convenience”—
+ELDAH ODHIAMBO, KISUMU WATER AND SANITATION 
+COMPANYCONCLUSION
+WSS providers need to increase revenue to achieve 
+universal access, but they are often unwilling or unable 
+to increase tariffs. A focus on reducing costs and 
+increasing efficiency will help providers achieve sus-
+tainability. Digitizing payments can lead to operational 
+savings, and adopting other digital technologies 
+(e-billing, meter reading, customer relationship man-
+agement tools etc.) can magnify these savings. There is 
+reason for optimism in the WSS sector, but the social, 
+institutional, and technological barriers highlighted in 
+this paper must be overcome, or they will limit the 
+potential scale of digital payments and other solutions. 
+RECOMMENDATIONS 
+Providers need to be clear about why they want to 
+shift to digital and what results they expect to have. 
+Explicitly defining their desired outcomes of digitiza-
+tion (cost savings, consumer data, business transpar -
+ency, etc.) and quantifying them wherever possible will 
+help providers to make informed decisions on when 
+and how to invest in digitizing payments.
+In many areas that want to expand access to WSS, 
+mobile money is the only digital payment system 
+available, and its reach may be limited to nonrural 
+areas. An enabling mobile ecosystem is needed for 
+digital payments to work in the WSS sector. MNOs, 
+regulators, and others need to work together to 
+deliver network coverage to the last-mile, build a 
+robust mobile money infrastructure with several 
+use cases for low-income populations, and reduce or eliminate fees for small, routine transactions. In 
+the short term, WSS providers need to be creative 
+in establishing CICO points and integrating their 
+systems with payment platforms. At the same time, 
+payment providers need to actively collaborate with 
+stakeholders in the WSS sector. 
+Providers need to prioritize overcoming internal 
+barriers to digitization—for example, lack of proper 
+financial data or a poor customer service culture. 
+They need to build a sound financial model that facil-
+itates strategic decision making. The business model 
+should reflect a customer-centric approach; WSS 
+providers need to understand why their consumers 
+choose to pay through other channels and how they 
+should go about addressing customers’ desires, con-
+cerns, or pain points. 
+A NOTE OF CAUTION AND OPTIMISM
+Digital payments are not a panacea. But with careful 
+analysis and a considered strategy, digitizing payments 
+can help WSS providers lower costs, improve service, 
+and unlock new business models. To reap these bene-
+fits, providers must pursue long-term financial sustain-
+ability. This means embracing data, analytics, and 
+customer service; eliminating waste and fraud; and 
+creating an organization that is well-governed and 
+financially sustainable. Digital payments are just a tech-
+nology. They are not a substitute for proper gover -
+nance and institutional controls. 
+18REFERENCES
+Bayen, Maxime, Sam Ajadi, Nicolai Schaettgen, Marek Paczkowski, and Tauseef Riaz. 2017. 
+“Opening Doors: A Start-Up’s Guide to Working with Mobile Operators in Emerging 
+Markets.” London: GSMA. https://www.gsma.com/mobilefordevelopment/wp-content/
+uploads/2017/05/Opening-Doors.pdf
+Danilenko, Alexander, Caroline van den Berg, Berta Macheve, and L. Joe Moffitt. 2014. The 
+IBNET Water Supply and Sanitation Blue Book 2014: The International Benchmarking 
+Network for Water and Sanitation Utilities Databook. Washington, D.C.: World Bank.  
+https://openknowledge.worldbank.org/handle/10986/19811
+Ehrbeck, Tilman. 2014. “Payment Innovations Improve Access to Solar Energy, Clean Water.” 
+CGAP blog post, 3 June. https://www.cgap.org/blog/payment-innovations-improve-  
+access-solar-energy-clean-water
+EY and WSUP (Water and Sanitation for the Urban Poor). 2018. “The World Can’t Wait for 
+Sewers: Advancing Container-Based Sanitation Businesses as a Viable Answer to the 
+Global Sanitation Crisis.” London: EY. https://www.ey.com/Publication/vwLUAssets/
+ey-the-world-cant-wait-for-sewers/$FILE/ey-the-world-cant-wait-for-sewers.pdf 
+Ferracuti, Anna. 2018. “Understanding the Consequences of Mobile Money Taxes in 
+Uganda.” New York: United Nations Capital Development Fund, 29 August. http://  
+www.uncdf.org/article/3892/understanding-the-consequences-of-mobile-money-taxes-  
+in-uganda
+GSMA. 2017. “Wonderkid Multimedia LTD.: Digitising Water Utilities in Kenya.” London: 
+GSMA. https://www.gsma.com/mobilefordevelopment/wp-content/uploads/2017/11/
+Wonderkid-Multimedia-LTD-Using-mobile-to-digitally-transform-water-utilities-in-  
+Kenya.pdf
+Hope, Robert. A., Tim Foster, Aaron Krolikowski, and Ilana Cohen. 2011. “Mobile Water 
+Payment Innovations in Urban Africa.” Oxford: School of Geography and the Environ-
+ment and Skoll Centre for Social Entrepreneurship at Saïd Business School, Oxford 
+University. https://www.smithschool.ox.ac.uk/research/water/publications/Mobile-  
+Water-Payment-Innovations.pdf
+Hutton, Guy, and Mili Varughese. 2016. “The Costs of Meeting the 2030 Sustainable 
+Development Goal Targets on Drinking Water, Sanitation, and Hygiene.” Washington, 
+D.C.: World Bank. https://openknowledge.worldbank.org/handle/10986/23681 
+Hwang, Sandy. 2018. “Financing Model for a Small Water Enterprise in Ghana.” New York: 
+Safe Water Network. 
+Karim, Salima Fazal, and Abigail Komu. 2017. “Mobile Money Payment Toolkit for Utility 
+Service Providers.” London: GSMA. https://www.gsma.com/mobilefordevelopment/
+wp-content/uploads/2017/06/Mobile-Money-Payment-Toolkit-for-Utility-Service-  
+Providers.pdf
+Kingdom, Bill, Roland Liemberger, and Philippe Marin. 2006. “The Challenge of Reducing 
+Non-Revenue Water (NRW) in Developing Countries—How the Private Sector Can Help.” 
+Water Supply and Sanitation Sector Board Discussion Paper Series, no. 8. Washington, 
+D.C.: World Bank. http://documents.worldbank.org/curated/en/385761468330326484/
+The-challenge-of-reducing-non-revenue-water-NRW-in-developing-countries-how-the-
+private-sector-can-help-a-look-at-performance-based-service-contracting
+1920 • Testing the Waters
+20Klapper, Leora, and Dorothe Singer. 2014. “The Opportunities of Digitizing Payments.” 
+Washington, D.C.: World Bank. http://documents.worldbank.org/curated/
+en/188451468336589650/The-opportunities-of-digitizing-payments
+Krolikowski, A. 2014. “Can Mobile-Enabled Payment Methods Reduce Petty Corruption in 
+Urban Water Provision?” Water Alternatives 7(1): 235-55. http://www.water-alternatives.
+org/index.php/all-abs/243-a7-1-14/file
+Maina, Juliet. 2018. “Guidelines on Mobile Money Data Protection.” London: GSMA. 
+https://www.gsma.com/mobilefordevelopment/wp-content/uploads/2018/09/
+GSMA-Guidelines-on-mobile-money-data-protection.pdf
+Ndaw, Mouhamed Fadel, and Patrick Nduati Mwangi. 2015. “Unlocking the Potential of 
+Information Communications Technology to Improve Water and Sanitation Services: 
+Kenya Case Study.” Washington, D.C.: World Bank. http://documents.worldbank.  
+org/curated/en/490581471506846151/Unlocking-the-potential-of-information-  
+communications-technology-to-improve-water-and-sanitation-services-Kenya-case-study
+Nique, Michael. 2013. “Sizing the Opportunity of Mobile to Support Energy and Water 
+Access.” London: GSMA Mobile Enabled Community Services. https://www.gsma.com/
+mobilefordevelopment/wp-content/uploads/2013/12/Sizing-the-Opportunity-of-Mobile_
+Nov-2013.pdf
+Pillai, Rashmi, and Jacob Winiecki. 2018. “The Case for Off-Grid Solar Companies as Mobile 
+Money Agents.” CGAP blog post, 17 July. https://www.cgap.org/blog/case-grid-solar-
+companies-mobile-money-agents
+UN (United Nations). 2018. “The Sustainable Development Goals Report.” New York:  
+United Nations. https://unstats.un.org/sdgs/files/report/2018/TheSustainable  
+DevelopmentGoalsReport2018-EN.pdf
+Waldron, Daniel, and Alexander Sotiriou. 2017. “Quenching a Thirst: Digital Finance and 
+Sustainable Water Service for All.” Washington, D.C.: CGAP . https://www.cgap.org/
+research/publication/digital-finance-and-sustainable-water-service-all
+Waldron, Daniel. 2018. “An Innovator’s Dilemma: Teaching Mobile Payments.” CGAP blog 
+post, 20 February. https://www.cgap.org/blog/innovators-dilemma-teaching-mobile-  
+payments
+WHO (World Health Organization) and UNCF (United Nations Children’s Fund). 2017. 
+“Progress on Drinking Water, Sanitation and Hygiene: 2017 Update and SDG Baselines.” 
+Geneva: WHO. https://www.who.int/mediacentre/news/releases/2017/launch-version-re-
+port-jmp-water-sanitation-hygiene.pdf
+WHO (World Health Organization). 2018. “Fact Sheets: Drinking-Water.” Geneva: WHO. 
+https://www.who.int/news-room/fact-sheets/detail/drinking-waterANNEX 1. METHODOLOGY AND LIST OF INTERVIEWEES
+RESEARCH METHODOLOGY
+GSMA and CGAP partnered to investigate the state of 
+digital payments in the water sectors of emerging 
+economies. The research was qualitative, relying heav-
+ily on in-depth conversations with leading WSS provid-
+ers, hardware manufacturers, software companies, and 
+donors, all working daily to improve access to WSS. 
+We spoke with 25 organizations with operations 
+in 26 countries in Latin America, Africa, and Asia. Of 
+our sample, 14 firms were directly providing customers 
+with water or sanitation through a variety of business 
+models, including water and sanitation utilities, small water enterprises, container sanitation firms, and oth-
+ers (customer-facing firms). 12 firms were supplying 
+WSS providers with hardware, software, and/or data 
+analytics (business-facing firms). Two firms straddled 
+the divide, operating as customer service providers in 
+some markets and as hardware/software/consultancy 
+providers in others. And one organization was a foun-
+dation that had rich expertise in the WSS sector. Our 
+sample is not exhaustive, and it skews toward markets 
+with established mobile money deployments.
+Those conversations with industry leaders form the 
+backbone of this paper, which is both a stock-taking 
+and an introduction to the topic.
+NAME TYPE REGION 
+CUSTOMER- 
+FACING WSS 
+PROVIDER?FACILITATES/ 
+ACCEPTS DIGITAL 
+PAYMENTS FROM  
+END USERS?
+1,001 fontaines Small Water Enterprise Asia Yes Noa
+CityTaps Hardware/Software Africa, Latin America No Yes
+Clean Team Container Sanitation Africa Yes Yes
+Cubo Rei Hardware Global No Yes
+Drinkwell Small Water Enterprise Asia Yes No
+eWaterPay Hard-ware/Software/Small  
+Water EnterpriseAfrica Yesb Yes
+Gates Foundation Donor Global No N/A
+Ghana Water Com-pany Limited 
+(GWCL)Hardware/Software Africa Yes Yes
+Grundfos Urban Utility Africa No Yes
+Jibu Small Water Enterprise Africa Yesc Noa
+Kisumu Water and Sanitation 
+Company (KIWASCO)Urban Utility Africa Yes Yes
+Loowatt Container Sanitation Africa Yes Yes
+Manobi Hardware/Software/  
+Small Water EnterpriseAfrica Yesb Yes
+Nairobi City Water and Sewage  
+Company (NCWSC)Urban Utility Africa Yes Yes
+NextDrop Hardware/Software Asia No No
+Safe Water Net-work Hardware/Software Africa, Asia Yes Yes 
+Sarvajal Small Water Enterprise Asia Yesc No
+SeeSaw Hardware/Software Africa, Asia No No
+Société d’Exploitation  
+des Eaux du Niger (SEEN)Small Water Enterprise Africa Yes Yes
+21continued22 • Testing the Waters
+NAME TYPE REGION 
+CUSTOMER- 
+FACING WSS 
+PROVIDER?FACILITATES/ 
+ACCEPTS DIGITAL 
+PAYMENTS FROM  
+END USERS?
+SOIL Urban Utility Latin America Yes Yes
+Susteq Sanitation Provider Global No Yes
+Water Forever Hardware/Software Africa No Yes
+Water4 Small Water Enterprise Africa, Latin America Yes Noa
+WellDone Hardware/Software Global No No
+Wonderkid Software Africa No Yes
+ENTITY TYPE INTERVIEWEECOUNTRIES WITH WATER 
+ENGAGEMENTS
+1,001 fontaines Small Water Enterprise Lori Gonnu Cambodia, Madagascar, India
+CityTaps Hardware/Software Grégoire Landel Niger
+Cubo Environmental Technolo-
+giesHardware Rui Bras Gomes Global
+Drinkwell Small Water Enterprise Ataur Rahman India, Bangladesh
+eWaterPay Hardware/Software Rob Hygate Gambia, Tanzania, Ghana
+Gates Foundation Donor Alyse Schrecongost Global
+Kisumu Water and Sanitation 
+Company (KIWASCO)Urban Utility Eldah Odhiambo Kenya
+Loowatt Container Sanitation Mary Roach Madagascar
+Manobi Hardware/Software Daniel Annerose Benin, Senegal
+NextDrop Hardware/Software Anu Sridharan India
+Safe Water Network Small Water Enterprise Charles Yeboah and Sandy Hwang India, Ghana
+Sarvajal Small Water Enterprise Anuj Sharma India
+SeeSaw Hardware/Software David Schaub-Jones Angola, DRC, South Africa, 
+Cambodia, Vietnam
+SOIL Sanitation Provider Erica Lloyd Haiti
+Susteq Hardware/Software Marten Susebeek Global
+Water Forever Hardware/Software Marcel Scheurs and Florence Ngore Kenya, Uganda
+WellDone Hardware/Software Addison Nuding Global
+Wonderkid Software Halima Murunga, Dickson Marira, 
+and Daniel KamiriKenya, Nigeria
+Nairobi City Water and Sewage 
+Company (NCWSC)Urban Utility Rachael Ngethe Kenya
+Ghana Water Company 
+Limited (GWCL)Urban Utility Richard Appiah Otoo and 
+ Faustina BoachieGhana
+Grundfos Hardware/Software Jesper Lorenzen Kenya, Tanzania, Ghana
+Société d'Exploitation des 
+Eaux du Niger (SEEN)Urban Utility Ibrahim Akine Atta II Niger
+Water4 Small Water Enterprise Matt Hangen and Dennis Ripley Burkina Faso, DRC, Ghana, 
+Kenya, Liberia, Malawi, Rwanda, 
+Sierra Leone, Tanzania, Togo, 
+Uganda, Zambia, Peru
+Clean Team Container Sanitation Kelvin Hughes Ghana
+Jibu Small Water Enterprise David Kawaida Kenya, Uganda, Rwanda, 
+Tanzania, ZimbabweCGAP
+CGAP is an independent global think tank that works to empower poor people to capture 
+opportunities and build resilience through financial services. We test, learn and develop innova-
+tive solutions through practical research and active engagement with our partners on building 
+responsible and inclusive financial systems that help move people out of poverty, protect their 
+gains and advance global development goals. Housed at the World Bank, CGAP is supported 
+by over 30 leading development agencies, foundations and national governments committed 
+to making financial services meet the needs of the poor. For more information, go to cgap.org 
+and findevgateway.org.
+GSMA
+The GSMA represents the interests of mobile operators worldwide, uniting more than 750 opera-
+tors with over 350 companies in the broader mobile ecosystem, including handset and device 
+makers, software companies, equipment providers and internet companies, as well as organisa-
+tions in adjacent industry sectors. The GSMA also produces the industry-leading MWC events 
+held annually in Barcelona, Los Angeles and Shanghai, as well as the Mobile 360 Series of regional 
+conferences. For more information, please visit the GSMA corporate website at www.gsma.com.
+The Mobile for Development Utilities programme improves access to basic energy, water and san-
+itation services in underserved communities using mobile technology and infrastructure. Our work 
+encompasses any energy, water and sanitation service provided to a community, which includes 
+a mobile component, whether it is voice, SMS, USSD, Machine-to-Machine, NFC, a mobile oper -
+ator’s agent network or tower infrastructure. We aim to seize the opportunity, leveraging mobile 
+technology and infrastructure to enhance access to affordable and reliable energy, clean and safe 
+water and sanitation services in underserved communities. The GSMA Mobile for Development 
+Utilities programme receives support from the UK Government and USAID as part of its commit-
+ment to Scaling Off-Grid Energy Grand Challenge for Development. For more information, please 
+contact us: (web) www.gsma.com/m4dutilities; (email) M4DUtilities@gsma.com.
+Acknowledgments
+CGAP and the GSMA would like to thank all the participants in this research. We are particularly 
+grateful to Sandy Hwang of Safe Water Network for her detailed financial modeling and multiple 
+reviews, as well as John Ikeda of the World Bank for his input. Special thanks go out to the Kisumu 
+Water and Sanitation Company and Société d’Exploitation des Eaux du Niger for hosting our 
+researchers and allowing us to visit their operations.Testing the Waters • 25

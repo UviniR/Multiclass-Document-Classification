@@ -1,0 +1,1383 @@
+ 
+ 
+ 
+ 
+WIDER Working Paper 201 8/123 
+ 
+ 
+ 
+Tax-motivated transfer mispricing in  
+South Africa  
+ 
+Direct evidence using transaction data  
+ 
+ 
+ 
+ 
+Ludvig Wier * 
+ 
+ 
+ 
+ 
+ 
+ 
+October  2018 
+ 
+ * Departmen t of Economics, University of Copenhagen, Copenhagen, Denmark, email: ludvig.wier@econ.ku.dk .
+This study has been prepared within the UNU-WI DER projec t on ‘Southe rn Africa —Towards inclusive economic development 
+(SA-TIED)’ .  
+Copyrigh t  ©  UNU-WI DER 2018 
+Information and requests: publications@wider.unu.edu 
+ISSN 1798-7237   ISBN 978-9 2-9256-5 65-7   https://doi.org/10.35188/UNU-WIDER/2018/565-7
+Typescrip t prepared by Lesley Ellen. 
+The United  Nations  University  World  Institute  for Development  Economics  Research  provides  economic  analysis  and policy 
+advice  with the aim of promoting  sustainable  and equitable  development.  The  Institute  began  operations  in 1985  in Helsinki, 
+Finland, as the first research and training centre of the United Nations University. Today it is a unique blend of think tank, research 
+institute,  and UN agency —providing  a range  of services  from  policy  advice  to governments  as well  as freely  available  original 
+resear ch. 
+The Institu te is funded through inco me from an endowmen t fund with additiona l contributions to its wo rk programme from 
+Finland, Sweden, and the United Kingdom as well as earmarked contributions fo r specific projects fro m a variety of donors. 
+Katajanokanla ituri 6 B, 00160 Helsinki, Finland 
+The views expressed in this pape r are those of the author(s), and do no t necessarily reflec t the views of the Institute or the United 
+Nations University, no r the programme/projec t donors. Abstract:  This paper  provides  the first  direct  systematic  evidence  of profit  shifting  through 
+transfer mispricing in a developing country. Using South African transaction-level customs data, I 
+directly test for transfer price deviations from arm’s -length pricing. I find that multinational firms 
+in South Africa  manipulate  transfer  prices  in order  to shift  taxable  profits  to low-tax  countries. 
+The estimated tax loss is 0.5 per cent of corporate tax payments . My estimates do not support the 
+common belief  that transfer  mispricing  in South  Africa  is more  severe  than in advanced 
+economies.  I find that  an OECD-recommended  reform  had no long-term  impact  on transfer 
+mispricing  but argue  that the method used  in this  paper  provides  a cost-efficient  way to curb 
+transfer mispricing. 
+Keywords:  tax, international taxation, profit shifting, multinational firms, developing countries 
+JEL classification: H25, H26, H87, O23 
+The underlying data used in the author’s literature review can be found in the online appendix 
+accessible here (https://www.wider.unu.edu/publication/tax-motivated-transfer-mispricing-
+south-africa ). 
+Acknowledgements:  I am grateful to the employees of the National Treasury of South Africa for 
+their collaboration.  I especially  wish  to thank  Hayley  Reynolds  from  the National  Treasury  for 
+continuous  feedback  on this  project.  I also  wish to thank Maya  Forstater,  Niels  Johannesen, 
+Katarina Helena Jensen, John Rand, Jan Luksic, Emmanuel Saez, Finn Tarp, Thomas Tørsløv, and 
+Gabriel  Zucman  for useful  comments  and Friedrich  Kreuser  and Wian  Boonzaaier  for their 
+technical inputs. Finally, I would like to thank seminar participants at UC Berkeley, University of 
+Copenhagen,  the UNU-WIDER  2017  conference  in Mozambique  and IIPF 2017  Congress  in 
+Japan. 1 1 Introduction  
+Multinational enterprises (MNEs) can lower their global tax bill by shifting their earnings from 
+affiliates in high -tax countries to those in low -tax countries —a phenomenon known as ‘profit 
+shifting ’. In a remarkable consensus, international organizations agree that profit shifting is a 
+particular problem in developing countries, which lack institutional capacity and rely heavily on 
+corporate tax revenue.1 However, credible profit -shifting  estimates for developing countries are in 
+short supply, leaving room for much speculation.2  
+Globally , policy makers are ready to act. Following a G20 -mandated report by the OECD, more 
+than 110 jurisdictions have embraced the OECD’s recommended ‘action points ’ on how to curb 
+profit shifting. While popular among governments, critics maintain that these act ion points are 
+insufficient and particularly insufficient in developing country settings.3 In this paper, I contribute 
+to the existing body of knowledge in two ways . First, I provide direct systematic evidence of profit 
+shifting in a developing country. Se cond, I evaluate the effect of an OECD -recommended reform 
+in a developing country.  
+One channel of profit shifting is transfer mispricing. That is, firms can reduce their tax bill by 
+applying a high price on items flowing from affiliates in low -tax countrie s to affiliates in high -tax 
+countries, and vice  versa. This erodes the profits in the high -tax affiliate, which is paying the high 
+price, but equally increases the profits in the low -tax affiliate, which is receiving the high price. 
+Legally firms are suppo sed to use ‘arm’s -length pricing ’ when transacting internally. That is, firms 
+should set prices internally ‘as if’ they were trading with an external party.  However, following the 
+standard Allingham –Sandmo model (1972), firms may choose to deviate from arm ’s-length pricing 
+absent frequent audits. Furthermore, even when audited , the OECD admits that ‘transfer pricing 
+is not an exact science ’ (OECD 2010 : 2) and this uncertainty leaves room for firms to produce 
+convincing arm’s -length price benchmarks in their  favour. All in all , the actual enforcement of 
+arm’s -length pricing requires substantial administrative resources and a common hypothesis is that 
+tax authorities in developing countries do not have these resources. The main contribution of this 
+paper is to  test this hypothesis by providing direct systematic evidence of transfer mispricing in a 
+developing country. This has not previously been possible due to data constraints.  
+Using transactional data, I can directly test for transfer mispricing. I obtain ac cess to a newly 
+constructed , confidential , administrative -level, customs data -set covering all imports of goods to 
+South Africa in the period from 2011  to 2015. The data is disaggregated at the country -firm-
+relationship -product -year level, which allows me to precisely estimate the arm’s -length price of 
+each transaction. I then compare the unit price on related (intra -firm) transactions to the estimated 
+arm’s -length price. I find that the estimated deviation from arm’s -length pricing systematically 
+moves in accordance with the tax incentives to manipulate transfer prices. This is interpreted as 
+strong evidence of firms engaging in tax -motivated transfer mispricing. Across all specifications , I 
+find evidence that related imports from low -tax countries are over priced by at least 8 per cent  
+                                                 
+1 See e.g. UNCTAD (2015)  and IMF (2015).  
+2 This lack of evidence has led to concerns among some economists who fear that the relevance of profit shifting in 
+the development agenda may be overrated ( Forstater  2015 ; Johannesen and Pirttilä 2016).  
+3 See e.g. The Independent Commission for the Ref orm of International Corpor ate Taxation  (ICRICT) : ‘by avoiding 
+any rethinking of the separate entity system and creating even more complexity within the current faulty framework, 
+the BEPS [Base Erosion and Profit Shifting ] initiative has amounted  to pour ing new wine into old wineski ns’ (ICRI CT 
+2015 : 10) 2 compared to the estimated arm’s -length price. This translates into a semi -elasticity with respect to 
+the tax differential of 0.5, implying that the price wedge to the arm’s -length price increases by 0.5 
+per cent  if the tax dif ferential to the partner country increases by 1 percentage point. The resulting 
+tax loss as a share of total corporate tax revenue is 0.5 per cent . 
+Using the same methodology, I then move on to investigate the effects of an OECD -
+recommended transfer -price reform. In April 2012, South Africa introduced a number of measures 
+aimed at limiting transfer mispricing through increased documentational requirements and audit 
+discretion. These legislative changes were based on OECD recommendations. I find that this 
+reform did seem to limit transfer mispricing in 2012 –14 but that transfer price manipulation 
+returned to its original level in 2015. One possible explanation of this pattern is that the immediate 
+effect of the reform was primarily an (unjustified) expectatio n of highly increased audit capabilities 
+in the tax administration. As firms experienced no actual change in enforcement efforts , the 
+transfer mispricing returned to its initial level.  This conclusion is not surprising: granting more 
+information and discre tion to the tax authority will not result in higher tax compliance if there is 
+no increase in tax enforcement resources and capabilities (see e.g. Pomeranz 2015 for a similar 
+discussion on VAT).  
+Contrary to common belief, I do not find that firms in South Africa are more aggressive in their 
+transfer mispricing compared to firms operating in developed countries. I do a systematic review 
+of the seven prior studies of transfer mispricing in Denmark (Cristea and Nguyen 2016); France 
+(Vicard 2014 ; Davies et al.  2018); the United States ( Clausing 2003 ; Bernard et al.  2006; Flaaen 
+2017) and the United Kingdom (Liu et al . 2017). I find that the estimated semi -elasticity of transfer 
+mispricing with respect to the tax differential varies significantly across and even within studies. 
+The mean estimated semi -elasticity across studies is 1.3 but drops to 0.4 when restricting the 
+sample of estimates to those accounting for firm and product fixed effects. The estimated semi -
+elasticity in South Africa is hence completely on par with what has been observed in advanced 
+economies. In Figure 1 , I plot the estimated tax loss of (one directional) transfer mispricing of 
+goods in prior studies. The average estimated tax loss is just below 1  per cent and the median tax 
+loss is 0.4  per cent, which is completely on par with the estimated tax loss in South Africa. I 
+conclude that transfer mispricing of goods in South Africa is not different from transfer mispricing 
+in developed countries, both in terms of the responsiveness to tax incenti ves and the resulting tax 
+loss.  3 Figure 1: Estimated tax loss of transfer mispricing of goods (% of corp orate  tax receipts)  
+  
+Note: The graph shows the estimated tax loss caused by transfer mispricing of goods in prior studies as a share 
+of total corpor ate tax receipts. The tax loss is based on one direction of trade (imports or exports) in all studies 
+but Vicard (2015) where the average across imports and exports is used. See section 7 for a full description.  
+Source:  Author’s own literature review (see online appendix ). 
+Tax authorities can use the econometric method applied in this paper as an automated digital 
+flagging system. Such a system would alert tax authorities when firms are systematically div ergent 
+in their external and internal price -setting behavio ur. For many governments, the data is already 
+there and used when firms are audited. The next natural development is to use the full data source 
+in an automated flagging model to guide the selectio n of firms for audits. This would be a feasible, 
+low-cost, and easily implemented digital intervention.4 The cost of doing this is in the thousands 
+of dollars while the potential tax gain is in the tens of millions of dollars. Such an intervention is 
+an ex ample of the potential for digital tax enforcement, which the OECD (2016 a) and the IMF 
+(2017) are promoting. To my knowledge, no tax authority has yet implemented such a system. 
+However, the fact that I (and others) find systematic mispricing using this me thodology implies 
+that there should be some scope to pursue this further.  
+The paper will proceed as follow s. In Section 2, I give an overview of the previous literature. In 
+Section 3, I describe the South African context and transfer pricing legislation. Section 4 gives a 
+brief theoretical motivation. Section 5 presents the data used, the identification strategy , and the 
+main empirical results. Section 6 evaluates the transfer pricing reform that took place in 2012. 
+Section 7 presents a systematic review o f prior transfer mispricing estimates and compare s these 
+estimates to the South African case. Finally, I conclude and discuss the findings in Section 7.   
+                                                 
+4 It took two weeks for me to set this up in South Africa.  
+4 2 Related literature on profit shifting  
+Most profit -shifting  studies rely on so -called ‘indirect evide nce’, which relates the taxable profits 
+of each subsidiary to its inputs of labour and capital and the tax incentive to shift profits.5 This 
+method is, however, also the subject of much criticism. The main criticism is that when simply 
+investigating patter ns in profitability, one might be capturing other ‘real’ responses to tax incentives 
+or tax avoidance not related to profit shifting.6 In a broader sense, the indirect evidence approach 
+can be unsatisfactory, as the method does not identify specific profit -shifting channels . This study 
+addresses such critique by directly comparing the prices that multinationals apply to internal and 
+external transactions.  
+A further critique of past profit -shifting  studies —especially relevant in developing country 
+settings —is the common use of low -coverage proprietary databases. In their G20 -mandated report 
+on profit -shifting  measurement , the OECD criticize s the use of proprietary databases where data 
+quality and coverage are often poor, particularly outside of the EU and in developing countries 
+(OECD 2015). The OECD thus advocates the use of tax -administrative micro -data in profit -
+shifting  studies, which has previously not been possible in developing countries. Unlike previous 
+work, this study follows the OECD recommendation by using tax -administrative data.  
+This paper contributes to the scarce literature on ‘direct ’ evidence of transfer mispricing.7 In fact, 
+this is the first study applying this direct identification strategy outside the context of the US, UK, 
+France , and Den mark . Swenson (2001) and Clausing (2003) introduced the method by estimating 
+the impact of corporate tax rates on US trade price indices aggregated at the industry and country 
+level. They both find very large estimates of transfer mispricing, but there is a concern that product 
+and firm compositional effects may drive the result. Bernard et al.  (2006)8 address this issue by 
+using customs data at the firm and product level, allowing them to accurately estimate arm’s -length 
+price deviations. Instead of  exploi ting the full sample of product prices at a country -by-country 
+level, Bernard et al. (2006) calculate price wedges between related and unrelated transactions for 
+each product group within each MNE. This makes their estimates less comparable to mine. Most 
+recently, Davies et al. (2018) investigate transfer mispricing in France using a method directly 
+comparable to the one used in this paper, which make s their results a good point of reference for 
+this study. Also relying on transaction -level customs data, Vi card (2014), Cristea and Nguyen 
+(2016) and Liu et al. (2017) find strong evidence of transfer mispricing in France, Denmark , and 
+the UK. They do not, however, observe whether transactions are in fact related but instead 
+approximate this using firm ownershi p data. In section 7 , I systematically compare the estimates 
+of my study to prior research. I find that transfer mispricing in South Africa is on par with what 
+has been observed in prior studies.  
+To my knowledge, this is the first paper that uses transacti on data to directly test for transfer 
+mispricing in a developing country.  
+                                                 
+5 Hines and Rice (1994) introduced this methodology and it has since been applied in a wealth of papers. See  
+Dharmapala  and Riedel  (2013) or Heckemeyer and Overesch (2013) fo r an overview of the literature. A handful of 
+studies have applied this technique in a developing -country setting, see e.g. Crivelli et al. (2015), UNCTAD (2015), 
+Reynolds and Wier (2016), Johannesen et al. (2017), and Tørsløv et al.  (2018).  
+6 See Hines (2 014) for a discussion  of this.  
+7 The notion of ‘direct ’ evidence was first coined  by Clausing (2003) . 
+8 Later replicated by Flaaen  (2017 ). 5 3 South African context  
+3.1 Economy  
+South Africa is an upper -middle -income emerging economy with a gross domestic product ( GDP ) 
+per capita of US$5,692 in 2015.9 As a BRICS member wit h a population of 56 million and Africa’s 
+second largest economy, South Africa is seen by many as the most influential economy in Africa. 
+Nonetheless, South Africa struggles with issues common to many developing countries in the form 
+of rampant inequality  (Greenwood 2018), slow growth  (Roux 2017) , and corruption  (Gebrekidan 
+and Onishi  2018) .  
+As is the case with most developing countries, South Africa is fiscally constrained and relies heavily 
+on corporate tax receipts. Total tax revenue constitute d 25.5 of GDP in 2014 –15, which is 
+substantially beneath the OECD average of 34 per cent  (National Treasury 2016).10 The corporate 
+income tax constitute d a significant share of 19 per cent  of total taxes i n 2014/2015, which places 
+South Africa on par with the developing country average  (UNCTAD 2015; National Treasury 
+2016) . In comparison, developed countries ’ corporate income tax share of total taxes was only 11 
+per cent  in 2014 (UNCTAD 2015). The South Afr ican statutory tax rate on business income is 28 
+per cent , which places it slightly above the world average of 24 per cent  and far above nearby tax 
+havens such as Mauritius and the Seychelles  (see KPMG  (n.d.) . The combination of low overall 
+tax receipts, h igh reliance on corporate tax revenue , and a moderately high corporate tax rate 
+warrants extra attention to the issue of profit shifting in South Africa.  
+3.2 Transfer price legislation  
+Transfer price legislation was first enacted in South Africa in 1995 a nd requires that tax payers 
+follow the arm’s -length principle in their transactions with affiliated foreign parties. This means  
+that firms operating in South Africa should set their transfer prices on internal transactions as if 
+they were transacting with an external party. Enforcing this principle is fraught  with difficulty. 
+Some economists have argued that the very idea of one true arm’s -length price is flawed (see e.g. 
+Devereux and Vella 2014 or Zucman 2014). The critique of the ‘arm’s -length ’ price, how ever, 
+mostly refers to service transactions (such as management fees), where comparable transactions 
+are hard to find. In the case of goods transactions, which  is the focus of this paper, we actually 
+have well -defined product categories (such as ‘bolts ’ or ‘carrots ’) and we have objective quantities 
+that allow us to compute unit prices (which is not the case when transacting in services). The arm’s -
+length principle should hence be easier to enforce in the case of goods transactions, where we can 
+actually co mpare the unit price that firms apply to external and internal transactions.  
+How is arm’s -length pricing enforced in practice? Following the WTO’s stance on transfer pricing, 
+South African tax authorities may require the importer to explain a chosen trans fer price whenever 
+the importer and exporter are ‘related ’ (e.g. through common ownership) and this relation is 
+suspected to have impacted the transaction value. In order to avoid a transfer price correction, the 
+importer must demonstrate that the chosen t ransfer price can be justified according to one of the 
+following methods:11 
+                                                 
+9 World Bank (2016) data.  
+10 OECD (2016b) data.  
+11 SARS (2014) Directive 2, Customs External Directive Method 1 Valuation of Imports  6 1) The transfer price corresponds to the price observed in external comparable unrelated 
+transactions  (according to article s 2, 3, or 4 of the Method of the WTO Valuation 
+Agreement) . 
+2) The transfer price is calculated by estimating the opportunity costs and gains to each party 
+in the transaction. This can be done through methods such as cost -plus pricing, profit split , 
+or most commonly the transactional net margin method ( according to art icle 5 of the 
+Method of the WTO Valuation Agreement) . 
+It is clear that the multitude of valuation methods gives the importer a negotiable room of 
+acceptable transfer prices —leaving room for tax avoidance. In the case of comparable unrelated  
+transactions, t he firm can selectively choose which products to include in the comparison. In the 
+case of cost -plus pricing both costs and required profit margin can be manipulated by the firm.12 
+Finally, the firm might choose to do outright tax evasion and deviate from a rm’s-length pricing 
+without having any documentation to support the deviation. As described in Allingham and 
+Sandmo (1972), a firm’s willingness to engage in tax evasion is a function of the likelihood of audits 
+and the penalties involved, both of which ar e small in the case of transfer pricing.  
+If a firm deviate s from the ‘objective ’ arm’s -length price to ensure a minimal tax bill, this is known 
+as ‘tax-motivated transfer mispricing ’. Tax -motivated transfer mispricing is the focus of this paper 
+and must no t be confused with ‘trade misinvoicing ’. Trade misinvoicing refers to situations where 
+firms commit fraud and falsif y information given to the tax authority. In such a case there may not 
+be a transfer price, as the firm s simply hide all or some of the tran saction. As this study exploits 
+the information given to tax authorities , for obvious reasons it does not attempt to estimate 
+misinvoicing. The following list clarifies the terminology: 13 
+• Trade misinvoicing: false documentation on actual price and/or affil iation of transacting 
+parties and/or quantities and/or product ; 
+• Arm’s length price deviation: deviation from arm’s -length pricing, but correct 
+documentation supplied on price, affiliation, quantities , and product ; 
+• Tax-motivated transfer mispricing: intenti onal deviation from arm’s -length pricing that is 
+motivated by tax savings (scope of this study) . 
+In this paper, I use the terms tax -motivated transfer mispricing and transfer mispricing 
+interchangeably.  
+  
+                                                 
+12 Some economists have argued that the very idea of one true arm’s -length price is flawed (see e.g. Zucman 2014). 
+Becker and Davies (2014) argue that transfer mispricing should instead be seen as a bargaining game between the tax 
+authority and the firm.  
+13 Forstater (2018) discusses the conceptual differences in detail. She also discusses the empirical evidence and find s 
+that estimates of trade misinvoicing are generally much larger than transfer mispricing, but that the estimates are also 
+less credibly identified.  7 4 Theoretical motivation  
+Following the broad liter ature of theoretical models describing the optimal price strategy within 
+intra-firm trade, I present an illustrative example that can produce the main predictions related to 
+tax-motivated transfer mispricing and tax enforcement.14  
+Consider a MNE consisting  of two affiliates located in a high -tax country denoted H with tax rate 
+τH and a low -tax country denoted L with a lower tax rate τL. Further assume that the low -tax 
+affiliate sells q units of goods to the high -tax affiliate at price p. Let ΠH and ΠL denote the 
+exogenous taxable income in countr ies H and L prior to p aying the transfer price. The taxable 
+profits in the high -tax country will in this case be ΠH-pq while the taxable profits in the low -tax 
+country will be ΠL+pq. Any transfer price increase will reduce the taxable profits in the high -tax 
+subsidiary bu t correspondingly increase the taxable profits of the subsidiary in the low -tax country.  
+As the after -tax value of profits is higher in the low -tax country, the MNE would absent any 
+additional constraints always choose the transfer price p=ΠH
+q, such that all profits would be shifted 
+from the high -tax subsidiary to the low -tax subsidiary. However, the MNE is by law required to 
+price the internal sale at the ‘true’ arm’s -length price pa , and any deviation from this is assumed 
+to come at a cost. Cost s may come in the form of additional documentational requirements, 
+potential legal costs, worsened public relations , etc. Efficiency costs may also occur; Nielsen and 
+Raimondos -Moller (2008) describe how transfer mispricing strategies may lead to inefficie ncies 
+within the MNE.  For simplicity, I assume that these costs can be approximated by the functional 
+form β
+2[(p-pa)q]2, such that the marginal cost of deviating from the arm’s -length price is increasing 
+in the size of the deviation, the quantity sold, and a parameter β. An increase in β will, for a given 
+arm’s -length price deviation, increase the costs of transfer mispricing and hence reflects 
+institutional factors such as the likelihood of audits and the fines related to transfer mispricing. 
+The MNE seeks to maximize the sum of after -tax profits across the two countries minus the costs 
+of transfer price deviation, which implies that the optimization problem becomes:  
+maxwrt p :(ΠH-pq)τH+(ΠL+pq )τL-β
+2[(p-pa)q]2 
+In an internal o ptimum, the MNE will choose a transfer price that satisfies the condition:  
+τH-τL
+β=(p-pa)q 
+As τH>τL the firm will always choose to price the item flowing from the low -tax affiliate to the 
+high-tax affiliate above the arm’s -length price p>pa. Intuitively, the transfer mispricing (p-pa) is 
+furthermore increasing in the size of the tax differential (τH-τL), which is the tax saving per dollar 
+shifted, and decreasing in the parameter β, which is proportional to the marginal cost of s hifting 
+one extra dollar. It is important to note that the cost parameter β is endogenous to the policies in 
+place in both countries: e.g. strict documentational requirements, advanced audit strategies , or a 
+high risk of audit will increase the cost of dev iating from the arm’s -length price. The common 
+hypothesis is that β is low in a developing country , such that for a given tax incentive arm’s -length 
+                                                 
+14 More elaborate theoretical discussions can be found in Riedel et al. (2015), Cristea and Nguyen (2016), Davies et al. 
+(2018), and Liu et al. (2017). 8 price deviations will be larger in a developing country. The hypothesis of transfer mispricing being 
+a larg er issue in developing countries is what I test in this paper.  
+5 Empirical analysis  
+5.1 Data  
+Confidential customs data on imported goods is obtained from the South African Revenue Service 
+(SARS) and covers the period from 2011  to 2015. The unit of observat ion is at the firm -product -
+relation -country -year level, such that each observation includes a firm identifier , product code, a 
+dummy indicating whether the transaction is intra -firm, the country of origin , and the year.  Product 
+categories are defined accor ding to the Harmonized System (HS) at the 8 -digit level. The fact that 
+the code is eight digits allows for incredible precision in the product description. One of the most 
+traded product categories is for example:  
+Product category 4016.95.20:15 
+‘Inflatabl e article of rubberised fabric, with hermetically 
+sealed ends, for use as moulds in the manufacture, 
+construction or maintenance of concrete pipes, voided 
+(cavity) blocks, beams, slabs and structures ’ 
+The data also includes information on the customs valu e and the number of units, which allows 
+me to calculate the unit price. To remove outliers , I censor observations with unit prices in the top 
+99 percentile within each year ; this does not, however, impact the results quantitatively nor 
+qualitatively. Table  1 shows the aggregate value of imports across years and partner relation. Two 
+immediate concerns come to mind when looking at these aggregate values. First, the share of 
+related (intra -firm) imports is always below 4 per cent . This share is markedly lower  than what has 
+been observed across French firms (9.2 per cent , Davies et al . 2018) and US firms (roughly 30 per 
+cent, Bernard et al.  2006). This raises the concern of whether related imports are correctly 
+registered. Each firm is required by law to denote  whether the import is coming from a related 
+party, but whether firms are actually filling out the forms correctly  is, of course , a question of 
+enforcement . I discussed this with tax officials working in the transfer -pricing unit at SARS —they 
+did not think  that misfiling of information was widespread. As discussed in Section 3.2, 
+misclassification of firm relations in internal transactions relates to trade misinvoicing and is 
+therefore outside the scope of transfer mispricing. The second concern Table 1 inv okes is that of 
+overall coverage. Whereas the aggregate value of imports in the years 2011, 2012, 2014 , and 2015 
+matches the aggregate customs statistics, coverage in 2013 is only 25 per cent . I replicate all results 
+censoring 2013. This does not impact th e results quantitatively nor qualitatively.   
+                                                 
+15 Full product codes can  be found in SARS (2018).  9 Table 1: Imports to South Africa by year and partner relation  
+Year  Unrelated imports 
+(Bn. Rnd.)  Related imports 
+(Bn. Rnd.)  Related imports  
+ (Share)  
+2011  1,005.8  7.2 0.70%  
+2012  1,169.6  26.4 2.30%  
+2013  238.6  7.5 3.20%  
+2014  1,432.1  39.5 2.80%  
+2015  1,199.5  38.8 3.20%  
+Note: The table shows the distribution of South African imports of goods. ’Related ’ denotes a transaction that is 
+intra-firm (controlled), i.e. trade between affiliates of the same MNE.  
+Source: Author’s calculations  using SARS (n.d.) data . 
+The customs data is merged with firm financials obtained from corporate tax returns, which are 
+also obtained from SARS. Finally, information on global statutory corporate tax rates and macro -
+economic variables is obtained from the KPMG (n.d.) C orporate Tax Table and the World 
+Development Indicators ( World Bank n.d. ).  
+Figure 1 shows the distribution of partner country corporate tax rates in the customs data. The 
+vertical line marks the South African tax rate of 28 per cent , and there is substantial variation on 
+both sides of the marker for both related and unrelated imports. Table 2 reports the summary 
+statistics, while Appendix Table A1 list s the top 40 import partner countries.  
+Figure 2: Distribution of import partner corporate tax rate  
+  Figure 2a: Related imports       Figure 2b: Unrelated Imports  
+ 
+  
+                   
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+Note: The figures show the distribution  of import partner corporate tax rates. ‘Related ’ denotes a transaction that 
+is intra -firm (controlled), i.e . trade between affiliates of the same MNE. The sample period is 2011  to 2015 . 
+Source: Author’s calculations  based on KPMG  (n.d.)  and SARS (n.d.).
+0.05
+.1.15
+.2Fraction
+0 .2 .4 .6
+Corporate tax rate
+0.1 .2 .3Fraction
+0 .2 .4 .6
+Corporate tax rate10 Table 2 : Descriptive  statistics  
+ Related imports   All imports  
+Variable  Obs Mean  Std. 
+Dev. Min Max  
+Obs Mean  Std. 
+Dev. Min Max 
+Panel A : Customs  
+Log (unit price)  120,301  5.9 1.7 -6.8 17.2  
+4,914,601  5.6 2.3 -12.1 22.5 
+Unit price (1 ,000 
+Rnd.)  120,301  7.2 176.0  0.0 29,700.0   
+4,914,602  20.2 4,577.0  0.0 6,190,000.0  
+Customs value 
+(1,000 Rnd.)  120,301  993.1  20,400.0  0.0 3,700,000.0   
+4,914,603  1,026.6  51,600.0  0.0 27,700,000.0  
+Statistical quantity 
+(1,000 Units)  120,301  79.5 10,800.0  0.0 2,530,000.0   
+4,914,604  55.3 5,281.2  0.0 2,930,000.0  
+Related party 
+dummy  120,301  1.0 0.0 1.0 1.0  
+4,914,603  0.0 0.2 0.0 1.0 
+Panel B : Financials – SA importer   
+Log (Sales)  71,507  20.6 2.0 10.2 25.8  
+2,459,574  18.5 2.4 6.4 25.8 
+Log (Wage)  71,690  17.9 1.8 9.4 22.3  
+2,477,314  16.3 2.3 0.0 24.0 
+Leverage  22,075  0.2 0.3 0.0 4.6  
+1,334,794  0.2 0.5 0.0 18.5 
+Loss making  106,504  0.2 0.4 0.0 1.0  
+4,234,601  0.1 0.3 0.0 1.0 
+Taxable income 
+(Mill. Rand)  72,998  182.0  748.0  -2,230.0  13,900.0   
+4,234,602  130.0  831.0  -1,7500.0  31,500.0  
+Panel C: Macro data – partner country   
+Low tax  120,301  0.5 0.5 0.0 1.0  
+4,914,603  0.5 0.5 0.0 1.0 
+Corporate tax  117,729  0.3 0.1 0.0 0.6  
+4,800,978  0.3 0.1 0.0 0.6 
+Log (GDP pr. cap.)  119,077  14.5 1.4 5.6 16.7  
+4,886,696  14.7 1.8 4.4 16.7 
+Log (Exchange rate)  105,890  1.6 2.3 -1.0 10.3  
+4,530,318  1.4 2.0 -1.3 10.3 
+Log (Distance)  119,280  9.1 0.3 5.5 9.6  
+4,827,748  9.1 0.6 5.5 9.7 
+Log (Population)  119,077  4.3 1.6 -2.9 7.2  
+4,886,696  4.7 1.9 -5.3 7.2 
+EU dummy  119,211  0.5 0.5 0.0 1.0  
+4,890,506  0.3 0.5 0.0 1.0 
+OECD dummy  119,211  0.7 0.5 0.0 1.0  
+4,890,506  0.5 0.5 0.0 1.0 
+Haven dummy  119,211  0.0 0.2 0.0 1.0  
+4,890,506  0.0 0.2 0.0 1.0 
+Note: The table shows descriptive statistics of the gross sample. The sample period is 2011  to 2015. All 
+observations are imports going to South Africa from a foreign country. The table is split across related imports 
+(between affiliates) an d unrelated. A unit of observation is a firm -relation -origin -product -time quintuble. Unit prices 
+are calculated as the transaction value divided by the statistical quantity.  Observations with unit prices in the 
+99th percentile are dropped from the sample.  Panel A  describes the customs data. ‘Customs value’ denote s the 
+registered value of the transaction in the customs data. ‘Statistical quantity ’ denote s the number of units. ‘Related 
+party ’ is a dummy variable indicating an internal (controlled) trade betw een affiliates of the same MNE. Panel B  
+describes the financials of the importing firm in South  Africa obtained from the South African C orporate Income 
+Tax database  (SARS n.d.) . ‘Sales ’ denotes turnover, ‘Wage ’ denotes the labour costs, ‘Leverage ’ is measu red as 
+total long -term debt over assets, and ‘Loss making ’ is a dummy variable indicating whether the firm incurred a 
+loss in the period in scope.  Panel C describes the macro data on the import country of origin. ‘Low tax ’ is a 
+dummy variable indicating w hether the trading partner (import origin) country's corporate tax rate is below the 
+South African corporate tax rate of 28 per  cent. ‘Corporate tax ’ is the corporate statutory tax rate of the import 
+country. ‘Haven ’ is a dummy indicating whether the the i mport origin country is a tax haven following the definition 
+used in Hines (2010)  
+Source: Author’s calculations  based on KPMG (n.d.), SARS (n.d.), and World Bank  (n.d.) . 
+5.2 Identification of transfer mispricing  
+The great detail in the customs data allows for a direct comparison of the unit price of related and 
+unrelated imports. This in turn allows me to estimate the arm’s -length prices and the resulting 
+transfer price deviations. If the estimated arm’s -length price deviations systematically move in 
+accord ance with the tax incentives to manipulate transfer prices, this is taken as evidence of firms 
+engaging in strategic transfer mispricing. Table 3 illustrates this approach. Here , I report the 
+aggregate averages of (log) unit prices by partner relation and tax level. Column 1 shows that the 
+average unit price of related imports is roughly on par (4 per cent  higher) with the unit price on 
+external imports when imports originate from a high -tax country (defined as a tax rate above the 11 South African tax of 28 per cent ). Contrary to this, column 2 shows that the unit price on related 
+imports is 57 per cent  higher when the import origin is a low -tax country. Based on these aggregate 
+numbers, the most plausible estimate of transfer mispricing is the ‘difference -in-difference ’ 
+estimate, i.e. 57 per cent  minus 4 per cent  = 53 per cent . This is a first indication that related 
+imports from low -tax countries may be overpriced (and by a lot), which is consistent with firms 
+manipulating transfer prices (a lot) in order to shift profits to low -tax countries.  
+Of course , I am, quite literally, comparing apples and oranges in this simple example. This concern 
+can be mitigated by looking at the same difference -in-difference estimate within product groups. 
+In Figure 2 , I therefor e calculate the difference -in-difference estimate within the ten largest 
+product groups. That is, the bottom dot in Figure 3 corresponds to the overall difference -in-
+difference estimate of 54 per cent , the dot above replicates this estimate but with a samp le only 
+consisting of plastic articles , and so on.  Albeit there is substantial variation in the estimates across 
+different product categories, seven out of ten products show significant estimates and all point 
+estimates are above 20 per cent . At the very h igh end, ‘static converters ’ imported from related 
+affiliates in low -tax countries are ‘overpriced ’ by more than 80 per cent .  
+Table 3: Related and unrelated average import prices across high - and low -tax partners  
+  Average log  (unit price)  
+  High-tax par tner (1)  Low-tax partner (2)  Difference: (1) -(2) 
+Unrelated partner  5.95***  5.26***  0.69***  
+  (0.17)  (0.33)  (0.18)  
+Related partner  5.99***  5.83***  0.16**  
+  (0.09)  (0.84)  (0.08)  
+Difference: related minus unrelated  0.04 0,57***  0,53***  
+  (0.04)  (0.13)  (0.14)  
+Note: The table explores the effect of the trading partner (import origin ) country's corporate tax rate on the import 
+price in related trades (between affiliates) relative to the effect on domestic and unaffiliated firms. The sample 
+period is 2011  to 2015.  A unit of observation is a firm -relation -origin -product -time quintuble. The dependent 
+variable is the Log (Unit Value). The product is defined by HS8 codes. ‘Low-tax partner ’ is a dummy variable 
+indicating whether the trading partner (import origi n) country's corporate tax rate is below the South African 
+corporate tax rate of 28 per  cent. ‘Related  partner ’ is a dummy variable indicating an internal (controlled) trade 
+between affiliates of the same MNE. *** p<0.01, ** p<0.05, * p<0.1. Standard error s clustered at the country –year 
+level.  
+Source: Author’s calculations  based on KPMG (n.d.)  and SARS (n.d.).  
+  12 Figure 3: ‘Overpricing ’ of related low -tax imports within 10 largest product groups  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+Note: The figure explores the effect of the trading  partner (import origin ) country's corporate tax rate on the import 
+price in related trades (between affiliates) relative to the effect on domestic and unaffiliated firms within t he 10 
+largest product groups. The pink dots reflect the coefficient value β1 obtained from estimating the regression:  
+Log(Unit price it )=β1 * Related it*Low tax it  + β2 Low tax it  +β3*Related it+ϵit.. The product category names are 
+simplified descriptions o f the longer detailed HS8 code descriptions. The corresponding HS8 codes are: ‘rubber 
+assembly ’ 40169390 , ‘Computer part ’ 84818090, ‘Taps/cocks ’  ‘Seal of rubber ’ 40169310, ‘Small electric 
+conductor ’ 85444290, ‘Bolt/screw ’ 73181590, ‘Steel article, other ’ 73269090, ‘Static converter ’ 85044000, ‘Book/ 
+brochure ’ 49019900, ‘Plastic article, other ’  39269090.  
+Source: Author’s calculations based on KPMG (n.d.)  and SARS (n.d.) . 
+Whereas Figure 3 supports the notion of strategic transfer mispricing, several concer ns still exist. 
+First, country -specific quality of goods may confound the results. Second, different firms may 
+demand different qualities and , even within firms, products may be imported at different levels of 
+quality. To ensure that compositional effects are not driving the results , I move on to estimate an 
+ordinary least squares ( OLS) regression of the form:  
+log(unit pric eit)=β1⋅related import ⋅I(τ-τit) + 
+β2⋅I(τ-τit>0) + β3⋅relate d import it+Xit'B+ϵit              (1) 
+log(unit pric eit)=β1⋅related import ⋅(τ-τit) + 
+β2⋅(τ-τit) +β3⋅relate d import it+Xit'B+ϵit (2) 
+The unit of observati on is at the firm -product -relation -country -year level.  Standard errors are 
+clustered at the country –year level. Xit is a vector of firm and country variables. relatedit is a dummy 
+indicator taking the value one whenever the import partner is a relat ed subsidiary and accounts for 
+any level differences in the price level of related and unrelated imports. The tax differential between 
+the South African tax rate τ (28 per cent  throughout the sample period) and the partner tax rate τit 
+approximates the incentive to shift profits. If firms shift profits through transfer mispricing the 
+price wedge between related and unrelated imports will increase as the tax rate  of the partner 
+country decreases, implying that β1>0. In equation (1) , I estimate β1 as a dummy coefficient, which 
+can be interpreted as the average percentage deviation from the arm’s -length price when importing 
+goods from affiliates in low -tax cou ntries (where τ>τ it). In equation (2) , I estimate  β1 as a semi -
+elasticity, such that β1 is the average percentage change in the deviation from the arm’s -length 
+All productsPlastic article, otherBook / brochureStatic converterSteel article, otherBolt / screwSmall electric conductorSeal of rubberTaps / cocksComputer partRubber assembly
+-.3 0 .3 .6 .9 1.2
+DD coefficient 95% confidence band13 price when the tax differential increase s by 1 percentage point. The rich detail of the  data allows 
+me to move further and include a series of fixed effects. In the highest dimensional model this 
+includes product –firm, firm –year, product –year, country –product , and country –year fixed effects. 
+In this case , country and firm variables are absor bed by the fixed effects and only the interaction 
+terms remain.  
+What is the appropriate dimension of fixed effects? While there is often an inclination to assume 
+that more fixed effects is better, there is in fact a trade -off. On one hand we want to avoid omitted 
+variable bias . In particular, it seems  crucial to account for firm, product, year , and country specific 
+effects , as different  products come at different prices and product quality will differ dramatically 
+across firms, years, and countries. On the other hand, we might have concerns about  overfitting, 
+attenuation bias , and suppress ing valuable information. In particular,  firms may be sufficiently 
+perceptive to not openly provoke tax authorities and avoid pricing the same good differently in 
+related a nd unrelated transactions. Instead, firms may focus their mispricing on goods that they 
+only transact internally. This implies that including firm –product fixed effects might lead to a 
+downward bias in the estimate of transfer mispricing. In practice, afte r controlling for firm  fixed 
+effects, I find a very stable estimate of transfer mispricing for a wide range of additional fixed 
+effects. This implies that, after controlling for firm  specificity, the exact level of fixed effects is 
+unimportant for the quan titative findings.  
+5.3 Basic results  
+In Figure 1a and Table 4 , Panel A , I report the estimated β1 coefficient from equation (1) —that 
+is, the average percentage deviation from the arm’s -length price deviation when importing goods 
+from affiliated firms in  low-tax countries (where τ>τ it). Throughout all specifications, the 
+interaction term between the related import dummy and the low -tax dummy is positive and highly 
+significant. This implies that transfer prices systematically deviate from the estimated arm’s -length 
+price in accordance with the tax incentive to do so. In column 1 of Table 4, the most basic results 
+are reported using just a set of control variables and yearly fixed effects. The estimated average 
+excess price on related imports from low -tax countries is 31 per cent . This estimate remains fairly 
+stable when including product fixed effects and product –year fixed effects but drops significantly 
+to 10 per cent  when firm fixed effects are included. This indeed indicates that firm compositional 
+effects may drive up the estimated magnitude of transfer mispricing when failing to account for 
+firm-specific characteristics. However, as seen in columns 4  to 12, after  controlling for firm fixed 
+effects the estimated transfer mispricing does not change dra stically when more fixed effects are 
+added to the model. In the most demanding model , which include s product –firm, firm –year, 
+product –year, country –product , and country –year fixed effects , the estimated excess price on 
+related imports from low -tax countrie s is 8.6 per cent .  
+In Figure 4b and Table 4 , Panel B , I report the β1 coefficients obtained from estimating equation 
+(2)—that is, the estimated semi -elasticity of the arm’s -length price deviation with respect to the 
+tax differential. Throughout all spe cifications, the interaction term between the related import 
+dummy and the low -tax dummy is positive and highly significant. In column 1  of Table 4  the most 
+basic results are reported using just a set of control variables and yearly fixed effects. The esti mated 
+semi-elasticity is 2.5 —implying that a 1 percentage point increase in the tax differential increases 
+the estimated deviation from the arm’s -length price by 2.5 per cent . Once again, this estimate drops 
+significantly to around 0.5 when firm fixed effe cts are included. After controlling for firm fixed 
+effects, the estimate does not change drastically when firm –product, country , and further fixed 
+effects are included. In the most demanding model , which includes product –firm, firm –year, 
+product –year, coun try–product , and country –year fixed effects , the estimated semi -elasticity is 
+0.51. 14 I report the full regression results in Appendix Table A 2a. I find, unsurprisingly , that country 
+characteristics influence unit prices. For example,  GDP p er capita of the country of origin 
+correlates positively with unit prices. This seems intuitive, as goods originating from high -income 
+countries are plausibly of higher quality. Furthermore, the unit price is generally higher in high -tax 
+countries. This suggests that, absen t any partner relation, firms shift part of the tax burden of 
+corporate taxation towards consumers. All these effects are , of course , absorbed when using 
+country –year fixed effects. I do  not find a robust relationship between firm  characteristics and 
+impor t unit prices and , again , whatever the relationship may be , this is absorbed by the firm –year 
+fixed effects.   
+I do a series of robustness checks of these results. First, using the re -weighting procedure by 
+DiNardo et al. (1996 ) and Boserup et al. (2016 ), I match observations based on transaction size 
+and then estimate the model on the matched sample. This does not change the results (see 
+Appendix Table  A2c). Finally, I confine the sample to MNE transactions only and control for 
+whether a subsidiary is locat ed in the country (following Cristea and Nguyen 2016) . This does not 
+change the results (see Appendix Table  A2d).15 Table 4: Basic results  
+Dependent variable: Log  (Unit Price)  (1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 
+Panel A : Impact of transactin g with related low -tax partner on deviation from arm's -length price  
+Related partner  × low -tax partner  0.307***  0.283***  0.281***  0.101***  0.0905***  0.0829***  0.0785***  0.0887***  0.0877***  0.0836***  0.0859***  0.0859***  
+  (0.0600)  (0.0502)  (0.0499)  (0.025 1) (0.0253)  (0.0203)  (0.0182)  (0.0237)  (0.0207)  (0.0189)  (0.0155)  (0.0155)  
+Related partner  -0.337  0.886  0.919  -0.473  -0.401  0.318  0.361  0.108  0.142  0.183  0.403  0.403  
+  (1.111)  (0.893)  (0.895)  (0.633)  (0.621)  (0.408)  (0.403)  (0.497)  (0.441)  (0.430)  (0.30 8) (0.308)  
+Observations  2,445,511  2,410,173  2,410,173  2,410,173  2,410,173  1,859,084  1,855,497  2,410,173  1,867,562  1,867,517  3,230,145  3,230,145  
+R-squared  0.083  0.477  0.482  0.338  0.361  0.804  0.807  0.853  0.800  0.802  0.825  0.825  
+Panel B : Impact of transact ing with related low -tax partner on deviation from arm's -length price  
+Related partner  × (τ -τit) 2.512***  2.110***  2.099***  0.717***  0.690***  0.393***  0.416**  0.546**  0.540**  0.441**  0.510***  0.510***  
+  (0.491)  (0.447)  (0.442)  (0.231)  (0.225)  (0.139)  (0.208) (0.248)  (0.218)  (0.222)  (0.178)  (0.178)  
+Related partner  -0.749  0.579  0.561  -0.802  -0.792  0.297  0.0135  0.0308  0.0563  -0.208  -0.0261  -0.0261  
+  (1.372)  (1.161)  (1.153)  (0.726)  (0.662)  (0.446)  (0.497)  (0.591)  (0.523)  (0.522)  (0.399)  (0.399)  
+Observatio ns 2,386,350  2,386,350  2,386,350  2,386,350  2,386,350  1,841,887  1,838,348  2,386,350  1,850,237  1,850,214  3,184,633  3,184,633  
+R-squared  0.082  0.475  0.48 0.338  0.361  0.803  0.807  0.853  0.8 0.802  0.825  0.825  
+Pricing to market controls  
+Macro controls in partne r country  Yes Yes Yes Yes Yes Yes Yes Yes Yes (absorbed)  (absorbed)  (absorbed)  
+Related partner x market conditions  Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes 
+Firm controls (Sales, wage bill)  Yes Yes Yes Yes (absorbed)  (absorbed)  (absorbed)  Yes Yes Yes (absorbed)  (absorbed)  
+Fixed effects  
+Year  Yes   
+Yes    
+Yes     
+Product   
+Yes           
+Product#Year    
+Yes    
+Yes  
+Yes Yes Yes Yes 
+Firm    
+Yes         
+Firm#Year          Yes Yes Yes    
+Yes Yes 
+Product#Country           
+Yes Yes     
+Yes 
+Country#Year            
+Yes   
+Yes Yes Yes 
+Firm#Product             
+Yes Yes Yes Yes Yes 
+Note: The table explores the effect of the trading partner (import origin ) country's corporate tax rate on the import price in related trades (between affiliates) relative to the effec t on domestic and unaffiliated firms. The sample 
+period is 2011  to 2015. A unit of observation is a firm -relation -origin -product -time quintuble. The dependent variable is the Log(Unit Value). The product is defined by HS8 codes. ‘low-tax partner ’ is a dumm y variable 
+indicating whether the trading partner (import origin) country's corporate tax rate is below the South African corporate tax rate of 28 per  cent. The tax differential ( τ-τit) is the difference between the South African corporate 
+tax rate and the  partner country tax rate. ‘Related part ner’ is a dummy variable indicating an internal (controlled) trade between affiliates of the same MNE. ‘Macro controls in partner country ’/‘Market conditions ’ include GDP 
+per capita, population, exchange rate and dis tance to partner. *** p<0.01, ** p<0.05, * p<0.1. Standard errors clustered at the country –year level.  
+Source: Author’s calculations based on KPMG (n.d.) , SARS (n.d.), and World Bank ( n.d.). 16 Figure 4: The impact of tax  incentives on deviations from arm’s -length pricing  
+  Figure 4a: %  difference to arm’s -length price when importing from a low -tax partner  
+ 
+  Figure 4b: Impact of tax differential to partner on %  difference to arm’s -length price  
+ 
+Note:  The figure explores the effect of the trading part ner (import origin ) country's corporate tax rate on the import 
+price in related trades (between affiliates) relative to the effect on unaffiliated transactions. Figure 4a plots the β1 
+coefficient estimate from eq uation  (1) reported as ‘low-tax partner x related’  in Table 4 Panel A . Figure 4b plots 
+the β1 coefficient estimate from eq uation  (2) reported as ‘Tax differential x related’  in Table 4 Panel B . The 
+horizontal axis indicates t he fixed -effect dimensions of the estimated model. All regressions control for firm and 
+country characteristics. See Appendix Table A 2a/b for full regression results.  
+Source:  Author’s calculations based on KPMG (n.d.) , SARS (n.d.),  and World Bank (n.d.).  
+17 Drivers of transfer mispricing responses  
+In Table 5 , I investigate whether specific subsamples of South African subsidiaries are more 
+responsive to tax incentives. In column 1, the baseline specification using the full sample is 
+reported , in which the esti mated semi -elasticity with respect to  the partner tax rate was -0.51. In 
+column 2 , the sample is restricted to firms with sales above the South African median —this does 
+not impact the semi -elasticity estimates. Column 3 shows that profitable subsidiaries r espond more 
+to tax incentives, which is intuitive, as they have profits to shift. Differentiated goods may be easier 
+to manipulate transfer price as there are less clear comparable prices. In column 4, I  restrict the 
+sample to differentiated goods using th e ‘naïve ’ classification from Bernard et al. (2006). Consistent 
+with theory, I observe an increase in the estimated tax response. Finally, high leverage may be an 
+indication of subsidiaries engaging in debt shifting, which could impact their transfer mispr icing. 
+The results reported in column 5, where the sample is restricted to firms with leverage in the top 
+median, do not seem to support this.  
+Table 5: Drivers of transfer price manipulation  
+Dependent variable: ln  (unit price)  
+  (1) (3) (4) (5) (6) 
+  Full sample  Big firms  Profitable  Differentiated  High leverage  
+Related partner  × (τ -τit) 0.510***  0.526***  0.654***  0.751***  0.518**  
+  (0.178)  (0.181)  (0.215)  (0.217)  (0.204)  
+Observations  3,184,633  2,616,580  2,463,077  1,675,410  1,868,665  
+R-squared  0.825  0.815  0.823  0.797  0.798  
+Note: This table replicates the prefered estimate in Table 4 , Panel B , column 12 across different samples to 
+identify the drivers of profit shifting. Column 1 uses the full sample. Column 2 restricts the sample to imports 
+originati ng from countries with a corporate tax rate below 28 per  cent. Column 3 restricts the sample to firms with 
+above median sales. Column 4 restricts the sample to profitable firms. Column 5 restricts the sample to 
+differentiated imports defined using  the Bern ard et al . (2006) naïve classification. Column 6 restricts the sample 
+to firms with above median sales.*** p<0.01, ** p<0.05, * p<0.1. Standard errors clustered at the country –year 
+level.  
+Source: Author’s calculations based on KPMG (n.d.) , SARS (n.d.),  and World Bank (n.d.).  
+Other tax incentives for transfer mispricing  
+There might be tax benefits other than a low statutory tax rate  in tax havens . Davies et al. (2018) 
+find that the bulk of transfer mispricing occurs through tax havens. In column s 1 and 2 of Table 
+6 the related dummy is interacted with a dummy variable taking the value one whenever the 
+country of origin is a tax haven. I use the tax haven definition from Hines (2010). Contrary to 
+Davies et al. (2018) , the results do not seem to support the vie w that tax havens are driving the 
+semi-elasticity from previous specifications. To some extent , this is  not surprising, as only 4 per 
+cent of related imports to South Africa originate from tax havens.  Hopland et al.  (2018) 
+hypothesize that loss -making subs idiaries may receive profits from foreign affiliates , the reasoning 
+being that the loss -making subsidiaries are effectively paying zero per cent  tax on additional 
+earnings. Loss -carry -forward rules complicate this reasoning as present losses can be convert ed 
+into future tax savings (Dharmapala and Riedel 201 3). I test the hypothesis of Hopland et al. (2018) 
+by interacting a loss dummy with the related dummy. If foreign affiliates are shifting profits to 
+South African subsidiaries , we would expect this inter action to be negative, as related imports to 
+loss-making subsidiaries would be under -priced. The results are reported  in column 3 of Table 6 . 
+There seems to be little support for the view that South African loss -making subsidiaries are 
+receiving foreign pr ofits, as the interaction term is insignificant.  
+  18 Table 6: Other tax incentives for transfer price manipulation  
+Dependent variable: ln  (unit price)  
+  (1) (2) (3) 
+     
+Related partner × haven partner  0.00765  0.0249   
+  (0.0504)  (0.0517)   
+Related partne r  × (τ -τit)  0.546***   
+   
+(0.183)   
+Related partner × loss -making    
+0.0296  
+    
+(0.0220)  
+Observations  3,242,222  3,195,595  2,960,756  
+R-squared  0.825  0.825  0.820  
+Note: This table explores whether tax incentives  other  than the tax differential to the par tner country may drive 
+arm's -length deviations. This is done by re -estimating Table 4 , Panel A , column 12 but replacing the tax incentive 
+by 1) ‘haven partner ’; a dummy variable taking the value 1 whenever the partner country is listed as a tax haven 
+in Hines (2010). 2) ‘Loss -making ’; a dummy variable taking the value one whenever the import firm is loss -
+making.  *** p<0.01, ** p<0.05, * p<0.1. Standard errors clustered at the country –year level.  
+Source: Author’s calculations based on KPMG (n.d.) , SARS (n.d .), and World Bank ( n.d.). 
+5.4 Quantifying the tax loss  
+In this section , I estimate the tax loss of tax -motivated transfer mispricing using the empirical 
+results in Section 5.3. I simply estimate the total tax loss by applying the estimated arm’s -length 
+price deviation from equation 1 to all transactions with countries that have a tax rate lower than 
+that of South Africa (i.e. lower than 28  per cent ). Following previous literature, this estimate 
+assumes that transactions would still occur in the situation w here no tax incentives were present, 
+but that systematic tax -motivated transfer mispricing would cease  to exist. I use my preferred 
+estimate in column 12 in Table 4,  Panel A , which is an average tax -motivated arm’s -length price 
+deviation of 8.59  per cent . In Table 7 , columns 2–4, I compute the resulting tax loss: using my 
+preferred estimate in row 1, the tax loss is less than 2  per cent  of foreign -owned firms ’ tax 
+payments, 0.5  per cent  of corporate tax receipts , and 0.1  per cent  of total tax receipts. This  tax loss 
+is, by my account , negligible. I do a sensitivity analysis of this estimate by increasing the arm’s -
+length deviation and find that even using the largest estimated arm’s -length deviation of 30  per 
+cent (column1, Table 4 , Panel A ), the tax loss is  still negligible.  
+Table 7: Tax loss of transfer mispricing  
+Transfer mispricing estimate  Share of tax base:   
+Foreign - owned firms  All corporations  Total tax revenue  
+(1) (2) (3) (4) 
+8.6%  1.7%  0.5%  0.10%  
+10.0%  2.0%  0.6%  0.1%  
+20.0%  4.0%  1.2%  0.2%  
+30.0%  6.0%  1.8%  0.3%  
+40.0%  8.0%  2.4%  0.5%  
+50.0%  10.0%  3.0%  0.6%  
+60.0%  12.0%  3.6%  0.7%  
+70.0%  14.0%  4.2%  0.8%  
+Note: The transfer mispricing estimate is the average tax induced difference to the arm’s -length price. This 
+estimate is multiplied by the customs va lue of related goods imports from low -tax countries to compute the tax 
+loss. The first row uses the preferred estimate from column 11 in Table 4. The subsequent rows show the 
+robustness of the results . 
+Source: Author’s calculations based on KPMG (n.d.) , SARS (n.d.),  and National Treasury (2018) . 19 6 Consequences of an OECD -recommended reform  
+On 1 April 2012 , South Africa revised their transfer pricing legislation to follow the standards of 
+the OECD and WTO. The practical consequences of this revision were unc ertain at first  
+(International Tax Review 2012) . The formal change  in the legislation related  largely to a change 
+of wording of a single paragraph:  
+• Prior to 1 April 2012 :16 ‘the Commissioner may … adjust the consideration in respect of the  
+transaction  to reflect the arm’s length price for the goods or services ’;  
+• After 1 April 2012 :17 ‘the taxable  income or tax payable by any person  … must be calculated  as if 
+that transaction, operation, scheme, agreement or understanding had been entered into  on 
+the terms an d conditions  that would have existed had those persons been independent 
+persons dealing at arm’s length ’.  
+Firstly, as marked in italic letters, the previous legislation only gave the tax authority the right to 
+intervene whenever they found that the arm’s -length principle had been  overstepped . However, 
+under the new legislation the firm was now obligated to prove that internal relations were 
+organized according to the arm’s -length principle. This shifted the onus of proof from the tax 
+authority to the tax  payer. In practice, the meaning of  this distinction was less clear,  as the previous 
+legislation had also required firms to present transfer pricing documentation in support of transfer 
+pricing decisions. In the end, a practical consequence of this distincti on was that the tax authority 
+would now require the same documentation with shorter notice (PWC 2013).  
+Secondly, as underlined in the above paragraphs, previous legislation focused on specific 
+transactions whereas the new legislation followed the OECD tax  model by applying a more holistic 
+view. This implied taking factors such as overall profitability into account when determining 
+whether chosen transfer prices were acceptable. The actual consequences of this broader definition 
+of audit strategy was at fir st unclear to firms but was widely regarded as an increase in audit risk.18  
+To test the impact of the legislation , I estimate the baseline specification on a year -by-year basis. 
+The results are striking. Table 8 shows that the tax -motivated arm’s -length pr ice deviation fell 
+dramatically from above 0.7 in 2011 to below 0.5 in 2012 and fell further to below 0.4 in 2013 and 
+2014. Furthermore, the tax -motivated deviation from the arm’s -length price was not significant 
+from 2012 to 2014.  
+To be clear, none of th ese differences are statistically significant, but they suggest that firms 
+responded to the reform by closing the gap to estimated arm’s -length pricing in the immediate 
+aftermath of the reform. Interestingly, however, in 2015 the estimated semi -elasticity not only 
+reached the 2011 level but  it was actually slightly above the initial level with a semi -elasticity of 
+0.85. This suggests that the immediate response to the transfer price legislation reform was based 
+on an unfounded expectation of increased audit  capacities and that firms returned to their original 
+transfer price manipulation practice after they obtained certainty about  the implication of the new 
+policy.  This conclusion is not surprising: granting more information and discretion to the tax 
+authori ty will not result in higher tax compliance if there is no increase in tax enforcement 
+                                                 
+16 SAICA ( 2010 ). 
+17 OECD (2013).  
+18 PWC (2013 ), for example,  informs tax payers that they have ‘seen increased audit activity by the specialist Transfer 
+Pricing unit within S ARS across all industries ’.  20 resources and capabilities (see e.g. Pomeranz 2015). As I will discuss in Section 8, data analytics 
+may solve the problem of how to process the abundance of information available to the tax 
+authority and hence credibly increase the audit risk of firms that engage in transfer mispricing.  
+Table 8: Evaluation of a transfer pricing reform in April 2012  
+Dependent variable: ln  (unit price)   
+(1) (2) (3) (4) (5) 
+Year  2011  2012  2013  2014  2015        
+Related partner  × (τ -τit) 0.721***  0.452  0.28 0.343  0.847***   
+(0.217)  (0.369)  (0.444)  (0.391)  (0.262)  
+Observations  475,611  520,669  177,803  545,567  295,619  
+R-squared  0.810  0.805  0.812  0.799  0.811  
+Note: The table explores the effect of a transfer pricin g reform occuring in April 2012. This is done by re -
+estimating col umn 12 in Table 4 , Panel B  on a year -to-year basis. *** p<0.01, ** p<0.05, * p<0.1. Standard errors 
+clustered at the country -year level.  
+Source: Author’s calculations based on KPMG (n.d.) , SARS (n.d.),  and World Bank ( n.d.). 
+7 Transfer mispricing in South Africa vs. developed countries  
+To understand how transfer mispricing in South Africa compares to that of other countries , I 
+collected all the semi -elasticities reported in prior studies. I n ormalize the coefficients such that 
+the coefficient is positive when it confirms profit -shifting  behavio ur. Clausing (2003) and Davies  
+et al.  (2018) report elasticities (not semi -elasticities) ; their estimates are transformed to semi -
+elasticities using the  average tax differential of the papers.19 In Figure 5a , I report the basic results ; 
+the full review is available in the online appendix . What is most striking is the enormous variation 
+in point estimates  across studies from 8.0 in Clausing  (2003) to -1.1 in Liu et al. (2017). The overall 
+average estimate (weighted by study) is 1.3, which is twice as large as the preferred estimate in this 
+paper of 0.51. In Figure 5b , I limit the sample of estimates to stu dies using firm and product fixed 
+effects. Clausing (2003 ) does not use firm fixed effects and is therefore not included in this graph. 
+Limiting the sample to estimates using firm and product fixed effects lowers the average (study 
+weighted) estimated semi -elasticity to 0.37, which is slightly lower than my preferred estimate. 
+Without exception, the estimated semi -elasticity fall s within studies when moving from no fixed 
+effects to firm and product fixed effects. This suggests that failing to account for fi rm and product 
+fixed effects will upward ly bias the results.  
+The conclusion from Figure s 5a and 5b is primarily that the accuracy of point estimates is not 
+overwhelming. However, in bundling all estimates, I disregard that some estimates are regarded as 
+less valid by the authors themselves. In Table 9 , I report the preferred estimate of each paper and 
+the resulting estimated tax loss. Strikingly, five out of six papers find that the preferred estimate of 
+the semi -elasticity is between 0.2 and 0.7 —the excep tion being Liu et al. (2017) with a preferred 
+estimate of 2.7. Despite the large semi -elasticity, Liu et al. (2018) still find that tax losses are small. 
+In fact , all papers but Vicard (201 5) find that transfer mispricing of goods results in a tax loss of 
+less than 1 per cent  of corporate tax receipts. This supports the argument in Tørsløv et al. (2018) 
+that the main vehicle of profit shifting is service transactions.    
+                                                 
+19 I do this using the identity that the  elasticity with respect to the tax differential Δp
+𝑝⋅𝜏
+Δ𝜏 can be rewritten as ϵ⋅1
+τ 21 It follows from Figure 5 and Table 9 that the estimated transfer mispricing in South Afr ica is 
+neither systematically higher nor lower than what is observed in previous studies from D enmark , 
+the UK, France,  and the US.  
+Figure 5: Reported semi -elasticities in prior research  
+  Figure 5a: All semi -elasticities  
+ 
+  Figure 5b: Semi -elasticities  in studies with firm and product fixed effects  
+ 
+Note: This figure shows the reported semi -elasticities of prior studies on transfer mispricing of goods. The semi -
+elasticity is defined as the percentage change in the distance to the arm’s -length price i n response to a 
+percentage point  change in the tax differential between related transacting parties.  
+Source:  Author’s own literature review ( see online appendix ). 
+22 Table 9: Micro  studies of transfer misp ricing of goods  
+  (1) (2) (3) (4) (5) (6) (7) (8) (9)  
+Bernard et al . 
+(2006 ) Cristea & 
+Nguyen (2016) Davies et 
+al. (2018) Flaaen 
+(2017 ) Liu et al . 
+(2017 ) Vicard 
+(2015 ) Vicard 
+(2015 ) All prior 
+papers  This 
+paper  
+Scope of study   
+Year of estimate  2004  2006  1999  2000  2010  2008  2008  1999 –2008  2014  
+Country  US DK FR US UK FR FR High 
+income  SA 
+Direction  Exports  Exports  Exports  Imports  Exports  Exports  Imports  Exp & Imp  Imports  
+Estimated semi -elasticity   
+Authors' prefered semi -elasticity  0.65***  0.57**  0.26**  0.60***  2.7**  0.22**  0.240**  0.84 0.510**  
+  (0.05)  (0.272)  (0.13)  (0.226)  (1.1) (0.08)  (0.12)   
+(0.27)  
+Overall mean point estimate  1.10 0.61 0.18 0.60 1.18 0.15 0.21 0.64 0.96 
+Mean point estimate with firm and product FE  N/A 0.62 0.21 0.60 0.49 0.15 0.21 0.42 0.48 
+Maximum point estimate  4.18 1.67 0.31 0.60 4.1 0.3 0.39 4.18 2.51 
+Minimum point estimate  0.39 0.01 0.06 0.60 -1.1 -0.13 0.05 -1.1 0.39 
+Estimated tax loss (according to study)   
+Tax loss in million Euro  666 32 340 N/A 196 1,546  1,250   
+78 
+Corpo rate income tax revenue in mill ion Euro  218,487  8,344  36,872  N/A 50,984  56,670  56,670   
+15,696  
+Tax loss in percent age of CIT  0.3%  0.4%  0.9%  N/A 0.4%  2.7%  2.2%  0.9%  0.5%  
+Note: This figure shows the reported semi -elasticities and estimated tax loss of prior  studies on transfer mispricing of goods. The semi -elasticity is defined as the percentage 
+change in the distance to the arm’s -length price in response to a percentage point  change in the tax differential between related transacting parties.  
+Source:  Author ’s own literature review ( see online appendix ).23 8 Conclusion and implications for digital tax enforcement  
+This paper provides the first direct evidence of transfer mispricing in a developing country. Us ing 
+highly detailed firm -level customs data , I found  that deviations from estimated arm’s -length prices 
+correlate with the tax incentive to shift profits, which is interpreted as strong evidence of tax -
+motivated transfer mispricing of goods.  
+I evaluate d a recent OECD -recommended reform that increased the documentational 
+requirements and audit discretion of the tax authority. I found  that transfer mispricing fell in the 
+immediate aftermath of the reform but later returned to its initial level. I argue d that an unjustified 
+fear of higher audit risk led to the initial response of firms. As soon as it became clear that the tax 
+authority did not increase its enforcement efforts, the effect of the reform disappeared.  
+I carried out  a systematic review of previous  literature on transfer mispricing in advanced 
+economies. Contrary to the common perception, I found  that transfer mispricing of goods in 
+South Africa is on par with transfer mispricing of goods in developed countries. Furthermore, 
+across these countries a nd South Africa , the tax losses were negligible as a share of total corporate 
+taxes paid. This suggests (perhaps unsurprisingly) that transfer mispricing of goods is not the most 
+important channel of profit shifting. Indeed, the OECD (2014, 2015a) and Tørs løv et al. (2018) 
+argue that service transactions and shifting of intellectual property rights are the main drivers of 
+profit shifting.  
+There might be a very cost -effective way to curb transfer mispricing of goods. Tax authorities 
+around the world find th emselves in a situation where information is in abundance but not 
+efficiently exploited. When a firm prices a product differently in related and unrelated transactions 
+should  this not lead to an automatic audit? Or , as a minimum , should a flag not be raise d and an 
+email sent to the firm cautioning them to stop this behavio ur? Academics and senior officials have 
+asked me these questions on numerous occasions. The short answer is no. To my knowledge, no 
+tax authority has set up an automated flagging system th at tests for deviations in the pricing of 
+related and unrelated transactions. This seem s to be a very low -hanging fruit for tax authorities 
+globally to pursue. In many cases, the data is already there, stored in a raw format on a server and 
+used in the cal culation of import statistics. Tax authorities in some countries will exploit this data 
+source after they have decided to audit a firm —after being the key word here. It took me two weeks 
+to set up the data in South Africa such that it could automatically f lag companies with systematic 
+deviations from estimated arm’s -length pricing.20 The costs of doing this is in the thousands of 
+dollars while the potential tax gain is in the tens of millions of dollars ; that is, despite the tax loss 
+being negligible compare d to total tax revenue, the tax loss is enormous compared to  the cost of 
+this digital intervention. Such an intervention is an example of the potential for digital tax 
+enforcement, which the OECD (2016) and the IMF (2017) is promoting. The fact that I (and  
+others) find systematic mispricing using this methodology implies that there should be some scope 
+to pursue this further.  
+  
+                                                 
+20 Friedrich Kreuser also deserves credit for the entire process of obtaining the data from SAR S. 24 References  
+Allingham,  M.G., and A. Sandmo  (1972 ). ‘Income Tax Evasion: A Theoretical Analysis ’. Journal of 
+Public Economics , 1: 323–38. 
+Becker, J., and R.  Davies (2014). ‘A Negotiation -based Model of Tax-induced Transfer Pricing ’. 
+CESifo Working Paper Series 4892 . Munich: CESifo.  
+Bernard, A.B., J.B. Jensen, and P.K.  Schott (2006) . ‘Transfer Pricing by U.S. -Based Multinational 
+Firms ’. NBER Working Paper 12493 . Cambridge, MA: National Bureau of Economic 
+Research  
+Boserup, S.H., W. Kopczuk, and C.T. Kreiner (2016) . ‘The Role of Bequests in Shaping Wealth 
+Inequality: Evidence from Danish Wealth Records’. American Economic Review: Papers and 
+Proceedings , 106(5): 656 –61. 
+Clausing, K.A. (2003). ‘Tax-motivated Transfer Pricing and US Intrafirm Trade Prices’. Journal of 
+Public Economics , 87(9) : 2207–23. 
+Cristea, A ., and D. Nguyen (201 6). ‘Transfer Pricing by Multinational Firms: New Evidence from 
+Foreign Firm Ownerships’. American Economic Journal: Economic Policy , 8(3):  170–202. 
+Crivelli, E., R. de Mooij, and M. Keen (2015). ‘Base Erosion, Profit Shifting and Deve loping 
+Countries’. IMF Working Paper 15/118. Washington, DC: IMF.  
+Davies, R.B., J. Martin, M. Parenti, and F.  Toubal (2018). ‘Knocking on Tax Haven’s Door: 
+Multinational Firms and Transfer Pricing ’. Review of Economics and Statistics , 100(1) : 120–34. 
+Dever eux, M.P., and J. Vella (2014). ‘Are we Heading towards a Corporate Tax System Fit for the 
+21st Century?’. Fiscal Studies , 35(4): 449 –75. 
+Dharmapala, D., and N. Riedel (2013). ‘Earnings Shocks and Tax -motivated Income -shifting: 
+Evidence from European Multi nationals’. Journal of Public Economics , 97(1): 95 –107. 
+DiNardo, J., N. Fortin, and T. Lemieux (1996). ‘Labor Market Institutions and the Distribution of 
+Wages, 1973 –1992: A Semiparametric Approach’. Econometrica , 64(5): 1001 –44.  
+Flaaen, A. (2017).  ‘The R ole of Transfer Prices in Pro fit-shifting by U.S. Multinational Firms: 
+Evidence from the 2004 Homeland Investment Act ’. Finance and Economics Discussion 
+Series 2017 -055. Washington , DC : Board of Governors of the Federal Reserve System, 
+Available at: https://doi.org/10.17016/FEDS.2017.055  (accessed on 1 January 2018) . 
+Forstater, M. (2015). ‘Can Stopping “Tax Dodging ” by Multinational Enterprises Close the Gap 
+in Development Finance?’. CGD Policy Paper 06 9. Washington, DC: Center for Global 
+Development.  
+Forstater, M. (2018). ‘Illicit Financial Flows, Trade Misinvoicing, and Multinational Tax 
+Avoidance: The Same or Different? ’. CGD Policy Paper  123. Washington, DC : Center for 
+Global Development.  
+Gebrekidan,  S., and N. Onishi  (2018). ‘Corruption Gutted South Africa’s Tax Agency. Now the 
+Nation Is Paying the Price’. The New York Times, 10 June. Available at: 
+https://www.nytimes.com/2018/06/10/world/africa/south -africa -corruption -taxes.html  
+(accessed on 1 January 2018). 
+Greenwood, X. (2018). ‘ South Africa is the Most Unequal Country in the World and its Pov erty is 
+the “Enduring Legacy of Apartheid”, says World Bank’. Independent, 4 April. Available at: 
+https://www.inde pendent.co.uk/news/world/africa/south -africa -unequal -country -poverty -
+legacy -apartheid -world -bank -a8288986.html  (accessed on 1 January 2 018). 25 Heckemayer, J., and M. Overesch (2013). ‘Multinationals’ Profit Response to Tax Differentials: 
+Effect Size and Shi fting Channels’. ZEW Working Paper 13 -045. Mannheim: Center for 
+European Economic Research.  
+Hines J., and E. Rice (1994). ‘Foreign Tax Havens and American Business’. Quarterly Journal of 
+Economics , 109(1) : 149–82. 
+Hines Jr, J.R. (2010). ‘Treasure Islands’.  Journal of Economic Perspectives , 24(4): 103 –26. 
+Hines Jr, J.R. (2014). ‘How Serious a Problem is Base Erosion and Profit Shifting?’ . Canadian Tax 
+Journal , 62(2): 443 –53. 
+Hopland, A.O., P. Lisowsky, M. Mardan, and D. Schindler (2018) . ‘Flexibility in Inco me Shifting 
+under Losses ’. The Accounting Review , 93(3): 163–83. 
+ICRICT (Independent Commission for the Reform of International Corporate Taxation ). 
+Declaration of the Independent Commission for the Reform of International Corporate 
+Taxation. 2015.  Availab le at: https://www.icrict.com/about -icrict  (accessed on 1 January 
+2018 ). 
+IMF (2015). ‘ Revenue Mobilization and International Taxation: Key Ingredients of 21st -Century 
+Economies by IMF Managing Director Ch ristine Lagarde ’. Available at: www.imf.org/  
+en/News/Articles/2015/09/28/04/53/sp022216  and www.oecd.org/g20/topics/taxation/  
+g20-finance -ministers -endorse -reforms -to-the-international -tax-system -for-curbing -
+avoidance -by-multinational -enterprises.htm  (accessed on 1 January 2018 ). 
+IMF (2017).  ‘Digital Revolutions in Public Finance ’. Available at: https://www.imf.org / 
+en/News/Articles/2017/09/07/sp090817 -digital -revolutions -in-public -finance -visionaries -
+plumbers -architects  (accessed on 1 January 2018 ). 
+International Tax Review (2012). ‘ South Africa: The New South African Transfer Pricing Rules 
+May Be Risky’. Internat ional Tax Review , 27 June. Available at: http://www.international  
+taxreview.com/Article/3052220/South -Africa -The-new-South -African -transfer -pricing -
+rules-may-be-risky.html  (accessed on 1 January 2018). 
+Johannesen, N., and J. Pirttilä (2016). ‘Capital Flight and Development’. WIDER Working Paper 
+2016/95. Helsinki: UNU -WIDER.  
+Johannesen, N., T. Tørsløv, and L. Wier (2017). ‘Are Less Developed Countries More Exposed to 
+Multinational Tax Avoidance? Method and Evidence from Micro -Data’ . WIDER  Working 
+Paper 2016/10. Helsinki: UNU -WIDER.  
+KPMG (n.d.). ‘ Corporate Tax Rates Table’. Available at: https://home.kpmg.com/xx/en/  
+home/services/tax/tax -tools -and-resources/tax -rates-online/corporate -tax-rates-table.html  
+(accessed on 1 January 2018). 
+Liu, L., T Schmidt -Eisenlohr, and D.  Guo (2017). ‘International Transfer Pricing and Tax 
+Avoidance: Evidence from the Linked Tax -Trade Statistics in the UK ’. Available at: 
+http://eureka.sbs.ox.ac.uk/6815/  (accessed on 1 January 2018).  
+National Treasury (2016). ‘Budget Review’. Available  at: www.treasury.gov.za/documents/  
+national%20budget/2016/review/chapter%204.pd f (accessed on 1 October 2016).  
+Nielsen, S., and P. Raimondos -Moller (2008). ‘Taxes and Decision Rights in Multinationals’. Journal 
+of Public Economic Theory , 10(2) : 245–58. 
+OECD (2010). ‘OECD Transfer Pricing Guidelines for Multinational Enterprises and Tax 
+Administrations ’. Available at: https://www.oecd -ilibrary.org/taxation/oecd -transfer -
+pricing -guidelines -for-multinational -enterprises -and-tax-administrations -2010_tpg -2010 -en 
+(accessed on 1 January 2018).  26 OECD (2013). ‘ Transfer Pricing Country Profile : South Africa’. Available at: 
+http://www.oecd.org /ctp/transfer -pricing/SouthAfrica_TPCountryProfile_Jan 2013.pdf  
+(accessed on 1 January 2018). 
+OECD (2014). Two-Part Report to G20 Development Working Group on the Impact of BEPS in Low Income 
+Countries . Paris: OECD Publishing.  
+OECD (2015). Measuring and Monitoring BEPS, Action 11: 2015 Final Report . Paris: OE CD 
+Publishing.  
+OECD (2016 a). Advanced Analytics for Better Tax Administration:  Putting Data to Work . Paris: OECD 
+Publishing . https://doi.org/10.1787/9789264256453 -en. 
+OECD (2016b). ‘Tax Revenue’. Ava ilable at: https://data.oecd.org/tax/tax -revenue.htm  
+(accessed on 1 January 2018). 
+Pomeranz, D. (2015). ‘No Taxation without Information: Deterrence and Self-enforcement in the 
+Value Added Tax. Amer ican Economic Review , 105(8) : 2539 –69. 
+PWC (2013). International Transfer Pricing 2013/14 . Available at: https://www.pwc.com/gx/en/  
+international -transfer -pricing/assets/itp -2013 -final.pdf  (accessed on 1 January 2018 ). 
+Reynolds, H., and L. Wier (2016).  ‘Estimating Profit Shifting in South Africa Using Firm-level Tax 
+Returns ’. WIDER Working Paper  2016/128 . Helsinki: UNU -WIDER.  
+Riedel, N., T. Zinn, and P. Hofman n (2015). ‘Do Transfer Pricing Laws Limit International 
+Income Shifting? Evidence from Europe’. Working Paper. Available at: 
+https://www.wiwi.ruhr -uni-bochum.de/fiwipo/mam/content/do_transfer_pricing_laws_  
+limit_international_income_shifting_evidence_from_europe.pdf  (accessed on 1 January 
+2018). 
+Roux, A. (2017). ‘ Economic Growth in SA: What Has Gone Wro ng?: How the Country’s Growth 
+Rate Is D eterring it away from Economic Success’. Business Day , 23 October. Available at: 
+https://www.businesslive. co.za/bd/opinion/2017 -10-23-economic -growth -in-sa-what -has-
+gone -wrong/  (accessed on  1 January 2018 ).  
+SAICA (South African Institute of Chartered Accountants) (2010). ‘Current South African 
+Transfer Pricing Rules’. Available at: https://www.saica.co.za/integritax/  
+2010/1901._Transfer_pricing.htm  (accessed on  1 January 2018 ). 
+SARS (South African Revenue Service) (2014). ‘Customs External Directive:  Method 1 Valuation 
+of Imp orts’. Available at: http://www.sars.gov.za/AllDocs/OpsDocs/Policies/SC -CR-A-
+05%20 -%20Method%201%20Valuatio n%20of%20Imports%20 -%20External%20  
+Directive.pdf  (accessed on  1 January 2018 ). 
+SARS (South African Revenue Service) (2018) . ‘Customs & Excise Tariff ’. Available at:  
+http://www.sars.gov.za/AllDocs/LegalDoclib/SCEA1964/LAPD -LPrim -Tariff -2012 -
+04%20 -%20Schedule%20No%201%20Part%201%20Chapters%201%20to%2099.pdf  
+(accessed on 1 January 2018).  
+SARS  (South African Revenue Service) (n.d.) . ‘Corporate Tax Data Base ’. Confidential (accessed 
+on 1 January 2018).  
+Swenson, D .L. (2001). ‘Tax Reforms and Evidence of Transfer Pricing ’. National Tax Journal , 
+LIV(1): 7–25. 
+Tørsløv, T.R., L.S. Wier, and G.  Zucman (2018).  ‘The Missing Profits of Nations . NBER Working 
+Paper 24701 .  Cambridge, MA: National Bureau of Economic Research.  
+UNCTAD (2015). World Investment Report 2015 . Geneva: UNCTAD.  27 Vicard, V. (201 5). ‘Transfer Pricing of Multinational Companies and Aggregate Trade’. Banque de 
+France Working Paper No. 555 . Available at:  file:///C:/Users/lesle/AppData/Local/  
+Packages/Microsoft.MicrosoftEdge_8wekyb3d8bbwe/TempState/Downloads/SSRN -
+id2614864%20(1).pdf  (accessed on 1 January 2018).  
+World Bank (n.d.). ‘World Development Indicators’. Available at: https://data.worldbank.org/  
+products/wdi  (accessed on 1 January 2018).  
+World Bank (2016). ‘ GDP Per Capita ( Current US$)’. Available at: http://data.worldbank.org/  
+indicator/NY.GDP.PCAP.CD  (accessed on 1 January 2018 ). 
+Zucman, G. (2014). ‘Taxing across Borders: Tracking Personal Wealth and Corporate 
+Profits ’. Journal of Economic Perspectives , 28(4): 121–48. 28 Appendix tables  
+Country Corp. tax rate Freq. Country Corp. tax rate Freq.
+Germany 0.30 16795 China 0.25 1054653
+China 0.25 11274 United States 0.40 551591
+United States 0.40 9138 Germany 0.30 487778
+France 0.33 6457 United Kingdom 0.23 308830
+United Kingdom 0.23 5942 Italy 0.31 248051
+Japan 0.36 5725 India 0.33 169529
+Italy 0.31 5275 Taiwan 0.17 161703
+India 0.34 4903 France 0.33 145291
+Korea Rep. 0.24 3749 Japan 0.37 142708
+Spain 0.29 3454 Netherlands 0.25 97658
+Thailand 0.21 3013 Thailand 0.23 77554
+Sweden 0.24 2701 Spain 0.30 73837
+Czech Republic 0.19 2698 Hong Kong 0.17 72342
+Poland 0.19 2347 Korea Rep. 0.24 72071
+Austria 0.25 2313 Switzerland 0.18 66111
+Brazil 0.34 2167 Turkey 0.20 62949
+Turkey 0.20 2117 Belgium 0.34 62172
+Taiwan 0.17 2017 Australia 0.30 53087
+Switzerland 0.18 1768 Sweden 0.24 50868
+Mexico 0.30 1718 Canada 0.27 48484
+Netherlands 0.25 1713 Austria 0.25 47200
+Hungary 0.19 1687 Namibia 0.33 47138
+Belgium 0.34 1594 Botswana 0.22 43945
+Australia 0.30 1529 Czech Republic 0.19 41414
+Finland 0.21 1235 Mexico 0.30 41313
+Romania 0.16 1235 Brazil 0.34 40388
+Canada 0.27 1206 Malaysia 0.25 39115
+Indonesia 0.25 1129 Denmark 0.25 36996
+Portugal 0.23 1085 Poland 0.19 36934
+Denmark 0.24 1048 Singapore 0.17 29200
+Slovakia 0.21 1036 UAE 0.55 28870
+Malaysia 0.25 1035 Indonesia 0.25 27217
+Vietnam 0.23 685 Hungary 0.19 24405
+Singapore 0.17 619 Israel 0.25 22478
+Ireland 0.13 518 Pakistan 0.34 21834
+United Arab Emirates 0.55 401 Portugal 0.24 21390
+Israel 0.26 393 Vietnam 0.23 20983
+Philippines 0.30 385 Finland 0.23 20786
+Hong Kong SAR China 0.17 339 Ireland 0.13 18943
+Slovenia 0.17 335 Romania 0.16 15854
+Source: Author's calculations using SARS (n.d), KPMG (n.d.) and World Bank (n.d.)Note: The table shows the distribution of South African imports of goods by origin countries for the years 
+2011-2015. Related denotes a transaction that is intra-firm (controlled), i.e. trade between affiliates of the 
+same MNE. Corp. tax rate denotes the average statutory corporate tax rate.Related imports Unrelated importsAppendix Table A1: Imports by country29 Table A2a: Basic results  (full regression results ) 
+Dependent variable: Log  (Unit Price)  (1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 
+Tax incentives in related transactions  
+Related partner  × low tax partner  0.307***  0.283***  0.281***  0.101***  0.0905***  0.0829 *** 0.0785***  0.0887***  0.0877***  0.0836***  0.0859***  0.0859***  
+  (0.0600)  (0.0502)  (0.0499)  (0.0251)  (0.0253)  (0.0203)  (0.0182)  (0.0237)  (0.0207)  (0.0189)  (0.0155)  (0.0155)  
+Related partner  -0.337  0.886  0.919  -0.473  -0.401  0.318  0.361  0.108  0.142  0.183  0.403  0.403  
+  (1.111)  (0.893)  (0.895)  (0.633)  (0.621)  (0.408)  (0.403)  (0.497)  (0.441)  (0.430)  (0.308)  (0.308)  
+Pricing to market controls  
+Related partner  × ln  (Population)  0.240***  0.152***  0.151***  0.0599**  0.0644**  0.0239  0.0567***  0.0146  0.0156  0.048 1*** 0.0538***  0.0538***  
+  (0.0569)  (0.0441)  (0.0441)  (0.0273)  (0.0260)  (0.0183)  (0.0169)  (0.0218)  (0.0193)  (0.0178)  (0.0136)  (0.0136)  
+Related partner  × ln  (Ex. Rate)  0.0201  0.00790  0.00816  0.0135  0.0110  0.00215  -0.00812*  0.00525  0.00522  -0.00545  -0.008 86** -0.00886**  
+  (0.0201)  (0.0159)  (0.0160)  (0.00875)  (0.00826)  (0.00542)  (0.00452)  (0.00663)  (0.00586)  (0.00482)  (0.00365)  (0.00365)  
+Related partner  × ln  (GDP p er cap ita) -0.176***  -0.0931*  -0.0921*  -0.0569*  -0.0627**  -0.0163  -0.0430**  -0.00519  -0.007 27 -0.0333  -0.0400**  -0.0400**  
+  (0.0658)  (0.0493)  (0.0491)  (0.0328)  (0.0309)  (0.0205)  (0.0194)  (0.0247)  (0.0218)  (0.0205)  (0.0160)  (0.0160)  
+Related partner  × ln  (Distance)  0.178  -0.0399  -0.0441  0.0954  0.0925  -0.0297  -0.00601  -0.0187  -0.0195  0.00365  -0.0137  -0.0137  
+  (0.135)  (0.105)  (0.106)  (0.0869)  (0.0845)  (0.0510)  (0.0514)  (0.0628)  (0.0556)  (0.0547)  (0.0411)  (0.0411)  
+Macro economic controls  
+Low tax partner ( τ-τit>0) -0.431***  -0.402***  -0.403***  -0.162***  -0.160***  -0.135***  41.01  -0.136***  -0.136***     
+  (0.0636)  (0.0549)  (0.0548)  (0.0290)  (0.0293)  (0.0217)  (530,812)  (0.0246)  (0.0217)     
+Log (GDP p er cap ita) 0.415***  0.271***  0.271***  0.200***  0.201***  0.112***  23.13  0.111***  0.112***     
+  (0.0554)  (0.0386)  (0.0387)  (0.0249)  (0.0242)  (0.0154)  (191,559)  (0.0180)  (0.0159)     
+Log (Population)  -0.519***  -0.377***  -0.377***  -0.234***  -0.234***  -0.158***  -2.929  -0.157***  -0.158***     
+  (0.0486)  (0.0391)  (0.039 0) (0.0221)  (0.0214)  (0.0153)  (143,162)  (0.0179)  (0.0158)     
+Log (Exchange rate)  -0.0466***  -0.0576***  -0.0574***  -0.0293***  -0.0278***  -0.0211***  -7.617  -0.0216***  -0.0216***     
+  (0.0169)  (0.0138)  (0.0138)  (0.00827)  (0.00816)  (0.00559)  (79,868)  (0.0063 9) (0.00566)     
+Log (Distance)  0.245***  0.285***  0.283***  0.158***  0.146***  0.165***  -163.0  0.166***  0.165***     
+  (0.0648)  (0.0451)  (0.0449)  (0.0362)  (0.0361)  (0.0250)  (607,844)  (0.0289)  (0.0253)     
+Firm controls  
+Log (Sales)  -0.140***  -0.0680***  -0.0682***  0.0195*     
+0.0170*  0.0177**  0.0159**    
+  (0.00780)  (0.00582)  (0.00584)  (0.0112)     
+(0.00941)  (0.00809)  (0.00765)    
+Log (Wage bill)  0.207***  0.121***  0.121***  -0.000382     
+-0.00297  -0.00210  -0.00206    
+  (0.0109)  (0.00912)  (0.00918)  (0.00668)     
+(0.00636)  (0.00565)  (0.00559)    30 Fixed effects  
+Product   
+Yes           
+Product#Year    
+Yes    
+Yes  
+Yes Yes Yes Yes 
+Firm    
+Yes         
+Firm#Year      
+Yes Yes Yes    
+Yes Yes 
+Product#Country       
+Yes Yes     
+Yes 
+Country#Year        
+Yes   
+Yes Yes Yes 
+Firm#Pro duct        
+Yes Yes Yes Yes Yes 
+Observations  2,445,511  2,410,173  2,410,173  2,410,173  2,410,173  1,859,084  1,855,497  2,410,173  1,867,562  1,867,517  3,230,145  3,230,145  
+R-squared  0.083  0.477  0.482  0.338  0.361  0.804  0.807  0.853  0.800  0.802  0.825  0.825  
+Note: The table explores the effect of the trading partner (import origin ) country's corporate tax rate on the import price in related trades (between affiliates) relative to the effect on domestic 
+and unaffiliated firms. The sample period is 2011  to 2015. A uni t of observation is a firm -relation -origin -product -time quintuble. The dependent variable is the Log  (Unit Value). The product is 
+defined by HS8 codes. ’Low tax partner is a dummy variable indicating whether the trading partner (import origin) country's co rporate tax rate is below the South African corporate tax rate of 
+28 per  cent. ’Related part ner’ is a dummy variable indicating an internal (controlled) trade between affiliates of the same MNE. *** p<0.01, ** p<0.05, * p< 0.1. Standard errors clustered at 
+the country –year level.  
+Source: Author’s calculations based  on KPMG (n.d.), SARS  (n.d.), and World Bank (n.d.).   
+ 
+  31 Table A2b: Basic  results (full regression results)  
+Dependent variable: Log(Unit Price)  
+(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 
+Tax incentives in related transactions  
+Related partner  × (τ -τit) 2.512***  2.110***  2.099***  0.717***  0.690***  0.393***  0.416**  0.546**  0.540**  0.441**  0.510***  0.510***  
+  (0.491)  (0.447)  (0.442)  (0.231)  (0.225)  (0.139)  (0.208)  (0.248)  (0.218)  (0.222)  (0.178)  (0.178)  
+Related partner  -0.749  0.579  0.561  -0.802  -0.792  0.297  0.0135  0.0308  0.0563  -0.208  -0.0261  -0.0261  
+  (1.372)  (1.161)  (1.153)  (0.726)  (0.662)  (0.446)  (0.497)  (0.591)  (0.523)  (0.522)  (0.399)  (0.399)  
+Pricing to market controls  
+Related partn er  × ln (Population)  0.255***  0.167***  0.165***  0.0666**  0.0705***  0.0511**  0.0593***  0.0198  0.0206  0.0514**  0.0572***  0.0572***  
+  (0.056)  (0.0476)  (0.0476)  (0.0286)  (0.0268)  (0.0245)  (0.0193)  (0.0231)  (0.0203)  (0.02)  (0.016)  (0.016)  
+Related partner  × ln (Ex. Rate)  0.0156  0.00805  0.0082  0.0115  0.00867  -0.0002  -0.0078  0.00517  0.00507  -0.00509  -0.00959**  -0.00959**  
+  (-0.0187)  (-0.0152)  (-0.0153)  (-0.00877)  (-0.00825)  (-0.00664)  (-0.00478)  (-0.00648)  (-0.00573)  (-0.00506)  (-0.00409)  (-0.00409)  
+Related p artner  × ln (GDP per capita)  -0.165**  -0.0818  -0.0806  -0.0553  -0.0599*  -0.0647***  -0.0478**  -0.0049  -0.0068  -0.0391*  -0.0444**  -0.0444**  
+  (0.0674)  (0.0562)  (0.0562)  (0.0353)  (0.0328)  (0.025)  (0.0227)  (0.027)  (0.0239)  (0.0237)  (0.0194)  (0.0194)  
+Related partner  × ln (Distance)  0.296*  0.0488  0.0494  0.153  0.154*  0.0289  0.055  0.00823  0.00794  0.0718  0.0587  0.0587  
+  (0.158)  (0.132)  (0.131)  (0.0936)  (0.0846)  (0.0573)  (0.0644)  (0.073)  (0.0647)  (0.0673)  (0.0547)  (0.0547)  
+Macro economic controls  
+Tax differenti al (τ -τit) -3.103***  -2.847***  -2.852***  -1.098***  -1.076***    
+-1.047***  -1.049***     
+  (0.579)  (0.505)  (0.505)  (0.274)  (0.275)    
+(0.224)  (0.198)     
+Log (GDP per capita)  0.404***  0.260***  0.260***  0.204***  0.206***  0.156***  14 0.100***  0.100***     
+  (0.0609)  (0.0497)  (0.0497)  (0.0289)  (0.0281)  (0.0226)  (72236)  (0.0215)  (0.019)     
+Log (Population)  -0.533***  -0.395***  -0.395***  -0.246***  -0.246***  -0.184***  -4.914  -0.159***  -0.159***     
+  (0.0509)  (0.0462)  (0.0461)  (0.0242)  (0.0236)  (0.0238)  (71291)  (0.0196)  (0.0173)     
+Log (Exchange rate)  -0.0467***  -0.0639***  -0.0638***  -0.0299***  -0.0283***  -0.0211***  -4.628  -0.0235***  -0.0235***     
+  (0.0146)  (0.0124)  (0.0124)  (0.0078)  (0.00771)  (0.00676)  (62606)  (0.00585)  (0.00518)     
+Log (Distance)  0.191***  0.257*** 0.255***  0.132***  0.119***  0.122***  -190.7  0.168***  0.167***     
+  (0.065)  (0.0537)  (0.0537)  (0.0349)  (0.0343)  (0.027)  (283208)  (0.0307)  (0.0269)     
+Firm controls  
+Log (Sales)  -0.134***  -0.0676***  -0.0678***  0.0189*     0.0164*  0.0175**  0.0160**    
+  (-0.00749)  (-0.00567)  (-0.00569)  (-0.0113)     (-0.0095)  (-0.00814)  (-0.00768)    
+Log (Wage bill)  0.197***  0.121***  0.121***  4.3E-05    -0.0018  -0.00086  -0.00119    
+ (-0.0112)  (-0.00928)  (-0.00933)  (-0.00681)    (-0.00652)  (-0.0058)  (-0.00562)     
+Fixed effe cts 
+Product   Yes           
+Product#Year    Yes    Yes  Yes Yes Yes Yes 
+Firm    Yes         
+Firm#Year      Yes Yes Yes    Yes Yes 
+Product#Country       Yes Yes     Yes 
+Country#Year        Yes   Yes Yes Yes 32 Firm#Product         Yes Yes Yes Yes Yes 
+Observa tions  2,445,511  2,410,173  2,410,173  2,410,173  2,410,173  1,859,084  1,855,497  2,410,173  1,867,562  1,867,517  3,230,145  3,230,145  
+R-squared  0.083  0.477  0.482  0.338  0.361  0.804  0.807  0.853  0.800  0.802  0.825  0.825  
+Note: The table explores the effect of the tra ding partner (import origin) country's corporate tax rate on the import price in related trades (between affiliates) relative  to the effect 
+on domestic and unaffiliated firms. The sample period is 2011 to 2015. A unit of observation is a firm -relation -origin-product -time quintuble. The dependent variable is the Log 
+(Unit Value). The product is defined by HS8 codes. ’Low tax partner’ is a dummy variable indicating whether the trading partn er (import origin) country's corporate tax rate is 
+below the South Afr ican corporate tax rate of 28 per cent. ’Related partner’ is a dummy variable indicating an internal (controlled) trade betwe en affiliates of the same MNE. *** 
+p<0.01, ** p<0.05, * p<0.1. Standard errors clustered at the country –year level.  
+Source: Author’ s calculations  based on KPMG  (n.d.), SARS (n.d.), and World Bank (n.d.).  
+ 
+  33 Table A2c: Basic results with matching  using the customs value  
+Dependent variable: Log  (Unit Price)  (1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 
+Tax incentives in related transactions  
+Related partner × low tax partner  0.259***  0.247***  0.241***  0.108***  0.0987  0.0753***  0.0746***  0.0785**  0.0794***  0.0787***  0.0764***  0.0764***  
+  0.0775  0.0616  0.0589  0.032  0 0.0261  0.0239  0.032  0.0271  0.0252  0.0222  0.0222  
+Related partner   -0.39 0.863  0.896  0.316  0.343  0.658  0.804  0.575  0.554  0.723  0.661  0.661  
+  1.346  1.092  1.057  0.647  0 0.547  0.536  0.686  0.583  0.579  0.461  0.461  
+Pricing to market controls  
+Related partner × ln  (Population)  0.229***  0.171***  0.172***  0.0856***  0.0886  0.0421* 0.0794***  0.0378  0.0377  0.0744***  0.0742***  0.0742***  
+  0.0625  0.0473  0.0465  0.0319  0 0.0238  0.0216  0.029  0.0245  0.0226  0.0189  0.0189  
+Related partner × ln  (Ex. Rate)  0.00762  -0.0002  0.00048  0.0107  0.00976  0.00234  -0.0054  0.00304  0.0036  -0.00424  -0.00597 -0.00597  
+  0.0193  0.015  0.0147  0.0094  0 0.00618  0.00516  0.00763  0.0066  0.00553  0.0047  0.0047  
+Related partner × ln  (GDP p er cap ita) -0.190***  -0.141***  -0.140***  -0.0732*  -0.0764  -0.0284  -0.0571**  -0.0245  -0.0243  -0.0519**  -0.0544**  -0.0544**  
+  0.073 5 0.0541  0.0524  0.0374  0 0.0253  0.0234  0.0303  0.0258  0.024  0.0214  0.0214  
+Related partner × ln  (Distance)  0.22 0.0346  0.0283  0.0235  0.0226  -0.056  -0.0424  -0.0497  -0.0479  -0.0383  -0.0289  -0.0289  
+  0.158  0.126  0.122  0.0818  0 0.0621  0.0614  0.076  0.0652  0.064 9 0.0552  0.0552  
+Macro economic controls  
+Low tax partner  -0.353***  -0.331***  -0.330***  -0.162***  -0.16 -0.124***  -4.764  -0.124***  -0.124***    
+  
+  0.06 0.0512  0.051  0.0314  0 0.0226  88386  0.0251  0.0223    
+  
+Log (GDP pr. cap.)  0.345***  0.242***  0.241***  0.205***  0.203  0.111***  -19.87  0.112***  0.112***    
+  
+  0.0559  0.0406  0.0403  0.0298  0 0.0189  47059  0.0218  0.0192    
+  
+Log (Population)  -0.431***  -0.328***  -0.327***  -0.237***  -0.234  -0.157***  7.776  -0.158***  -0.158***    
+  
+  0.0488  0.0391  0.0389  0.0264  0 0.0177 53487  0.0203  0.0179    
+  
+Log (Exchange rate)  -0.0365**  -0.0481***  -0.0478***  -0.0229**  -0.0221  -0.0174***  -0.996  -0.0177**  -0.0176***    
+  
+  0.0145  0.0119  0.0118  0.00887  0 0.00614  18595  0.00712  0.00626    
+  
+Log (Distance)  0.243***  0.268***  0.267***  0.153*** 0.149  0.161***  37.02  0.158***  0.159***    
+   
+0.0618  0.0428  0.0422  0.0352  0 0.0247  67000  0.029  0.0252    
+  
+ 
+ 
+  34 Firm controls  
+Log (Sales)  -0.175***  -0.0991***  -0.101***  0.0212  -0.0065    
+0.0440***  0.0459***  0.0415***    
+  0.0141  0.00994  0.00963  0.0224  0   
+0.0145  0.0121  0.0116    
+Log (Wage bill)  0.253***  0.155***  0.157***  -0.0462**  -0.006    
+-0.0831***  -0.0761***  -0.0769***    
+  0.0178  0.0126  0.0122  0.0192  0   
+0.0207  0.0171  0.0167    
+Fixed effects  
+Product   
+Yes           
+Product#Year    
+Yes    
+Yes  
+Yes Yes Yes Yes 
+Firm    
+Yes         
+Firm#Year      
+Yes Yes Yes    
+Yes Yes 
+Product#Country       
+Yes Yes     
+Yes 
+Country#Year        
+Yes   
+Yes Yes Yes 
+Firm#Product         
+Yes Yes Yes Yes Yes 
+Observations  2,420,470 2,385,387 2,385,387 2,385,387 2,385,387 1,835,213 1,831,631 2,385,387 1,843,038 1,842,993 3,210,254 3,210,254 
+R-squared  0.058  0.463  0.476  0.255  0.267  0.776  0.782  0.815  0.776  0.779  0.804  0.804  
+Note: The table explores the effect of the trading partner (import origin ) country's corporate tax rate on th e import price in related trades (between affiliates) relative to the effect on 
+domestic and unaffiliated  firms. The sample  period is 2011  to 2015. A unit of observation is a firm -relation -origin -product -time quintuble. The dependent variable is the Log(Un it 
+Value).  The product is defined by HS8 codes. ‘Low tax partner ’ is a dummy variable indicating whether the trading partner (import origin) country's corporate tax rate is below the 
+South African corporate tax rate of 28 per  cent. ‘Related party ’ is a dum my variable indicating an internal (controlled) trade between affiliates of the same MNE. *** p<0.01, ** 
+p<0.05, * p<0.1. Standard errors clustered at the country –year level.  
+Source: Author’s calculations based on KPMG (n.d.), SARS (n.d.), and World Bank  (n.d.).  
+ 
+  35 Table A2d: Basic results  with MNEs only & control for whether subsidiary is in country  
+Dependent variable: Log  (Unit Price)  (1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 
+Tax incentives in related transactions  
+Related partner × low tax par tner 0.287***  0.171***  0.167***  0.0232  0.013  0.0215  0.0722***  0.0707***  0.0685***  0.0757***  0.0814***  0.0814***  
+  0.0466  0.0395  0.0396  0.0255  0.0251  0.0173  0.0178  0.0244  0.0232  0.0207  0.0149  0.0149  
+Related partner  -0.337  0.0283  0.131  -0.468  -0.354  0.376  0.225  0.0953  0.184  0.0868  0.294  0.294  
+  1.111  0.835  0.845  0.605  0.592  0.356  0.385  0.439  0.419  0.419  0.287  0.287  
+Pricing to market controls  
+Related partner × ln  (Population)  0.239***  0.0624*  0.0631*  0.0465*  0.0496**  0.014  0.0304*  0.00285  0.00491  0.0222  0.0238*  0.0238*  
+  0.0566  0.0342  0.0341  0.0253  0.0243  0.0192  0.0161  0.0202  0.0191  0.0174  0.0128  0.0128  
+Related partner × ln  (Ex. Rate)  0.0202  0.00402  0.0043  0.00398  0.00178  0.00436  -0.00157  0.00518  0.00512  0.00134  -0.00253  -0.00253  
+  0.0201  0.0107  0.0106  0.00731  0.00672  0.0053  0.00447  0.00588  0.00551  0.00475  0.0035  0.0035  
+Related partner × ln  (GDP p er cap ita) -0.172***  -0.0449  -0.0461  -0.0529*  -0.0564**  -0.0155  -0.0241  0.00359  0.000631  -0.015  -0.0144  -0.0144  
+  0.0646  0.0406  0.0404  0.0301  0.0282  0.0209  0.019 0.0234  0.0219  0.0204  0.0157  0.0157  
+Related partner × ln  (Distance)  0.173  0.0468  0.0377  0.0978  0.0868  -0.00894  0.00174  -0.0118  -0.0177  0.00728  -0.0194  -0.0194  
+  0.134  0.0985  0.0993  0.0813  0.0788  0.0437  0.0479  0.0523  0.0495  0.0501  0.0383  0.0383  
+Non-related partner but subsidiary in 
+country  
+  -0.0000907  0.0000147  -0.000000861  -0.000181***  -0.000177***         
+0.0000832  0.000105  0.000105  0.0000638  0.0000539  
+       
+Subsidiary in country x low tax partner  0.0000911  -0.000490***  -0.000475***  0.000118  0.000123  -0.000292***  -0.000211***  -0.000197**  -0.000195**  -0.000205***  -0.000178***  -0.000178***  
+  0.000206  0.000146  0.000147  0.000112  0.0000949  0.000073  0.0000572  0.0000971  0.000092  0.0000758  0.0000477  0.0000477  
+Macro economic controls  
+Low tax partner  -0.433***  -0.189***  -0.190***  -0.105***  -0.105***    
+-0.0701***  -0.0705***        
+  0.0649  0.0421  0.0423  0.0287  0.0285    
+0.0197  0.0187        
+Log (GDP p er cap ita) 0.416***  0.257***  0.257***  0.210***  0.208***  0.131***  97.36  0.116***  0.115***        
+  0.0554  0.0275  0.0275  0.0217  0.0211  0.0163  464468  0.016  0.0149        
+Log (Population)  -0.520***  -0.314***  -0.315***  -0.226***  -0.224***  -0.158***  -50.76  -0.152***  -0.153***        
+  0.0486  0.0284  0.0284  0.0197  0.0191  0.0166  444072  0.0151  0.0142        
+Log (Exchange  rate)  -0.0465***  -0.0397***  -0.0392***  -0.0169**  -0.0164**  -0.0171***  66.62  -0.0167***  -0.0166***        
+  0.0169  0.01 0.0101  0.00762  0.00736  0.0053  456588  0.00555  0.00526        
+Log (Distance)  0.245***  0.194***  0.190***  0.135***  0.135***  0.139***  552.2  0.153***  0.153***        
+ 0.0648  0.0278  0.0277  0.0276  0.0271  0.017  1860000  0.0187  0.0174        
+  36 Firm controls  
+Log (Sales)  -0.140***  -0.0564***  -0.0580***  0.0261     0.0261*  0.0285*  0.0196    
+  0.0078  0.00805  0.00808  0.0263     0.0154  0.0154  0.0133    
+Log ( Wage bill)  0.207***  0.101***  0.103***  0.0113     -0.00507  0.000344  0.0000289    
+  0.0109  0.00739  0.00736  0.0202     0.0168  0.0172  0.0172    
+Fixed effects  
+Product   Yes           
+Product#Year    Yes    Yes  Yes Yes Yes Yes 
+Firm    Yes         
+Firm#Year      Yes Yes Yes    Yes Yes 
+Product#Country       Yes Yes     Yes 
+Country#Year        Yes   Yes Yes Yes 
+Firm#Product         Yes Yes Yes Yes Yes 
+Observations  2,445,511  631,291  631,291  631,291  631,291  564,400  560,334  631,291  560,527  560,451  819,905  819,905  
+R-squared  0.083  0.438  0.453  0.214  0.225  0.735  0.742  0.77 0.734  0.737  0.746  0.746  
+Note: The table explores the effect of the trading partner (import origin) country's corporate tax rate on the import price i n related trades (between affiliates) relative to th e effect 
+on domestic and unaffiliated firms. The sample period is 2011 to 2015. A unit of observation is a firm -relation -origin -product -time quintuble. The dependent variable is the Log 
+(Unit Value).  The product is defined by HS8 codes. ‘Low tax partner’ i s a dummy variable indicating whether the trading partner (import origin) country's corporate tax rate is 
+below the South African corporate tax rate of 28 per cent. ‘Related partner’ is a dummy variable indicating an internal (controlled) trade between aff iliates of the same MNE. *** 
+p<0.01, ** p<0.05, * p<0.1. Standard errors clustered at the country –year level.  
+Author’s calculations based on KPMG (n.d.), SARS (n.d.), and World Bank (n.d.).  
+ 

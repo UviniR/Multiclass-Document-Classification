@@ -1,0 +1,2174 @@
+Peer eﬀects and externalities in technology adoption: Evidence
+from community reporting in Uganda∗
+Romain Ferrali†Guy Grossman‡Melina Platas§Jonathan Rodden¶
+January 23, 2018
+Abstract
+Do social networks matter for the adoption of new political communication technologies?
+We collect complete social network data for sixteen Ugandan villages where an innovative re-
+porting mobile platform was recently introduced, and show robust evidence of peer eﬀects on
+technology adoption. However, peer eﬀects were not observed in all networks. We develop a
+formal model showing that while peer eﬀects facilitate adoption of technologies with minimal
+externalities (like agricultural practices), it can be more diﬃcult for innovations with signiﬁcant
+positive externalities to spread through a network. Early adopters might exaggerate beneﬁts,
+leading others to discount information about the technology’s value. Thus, peer eﬀects are
+likely to emerge only where informal institutions support truthful communication. We show
+that the observable implications of our model are borne out in the data. These impediments to
+social diﬀusion might help explain the slow and varied uptake of new political communication
+technologies around the world.
+∗We gratefully acknowledge the support and cooperation of members of the Arua district local government, as
+well as RTI, GAPP, UNICEF Uganda, USAID/Uganda, and the USAID Center of Excellence on Democracy, Human
+Rights, and Governance, without whom this study would not have been possible. We thank Innovations for Poverty
+Action Uganda for excellent research assistance and data collection. Jon Helfers, Maximillian Seunik, Areum Han
+and Zachary Tausanovich provided valuable research assistance at various stages of the project. We received helpful
+feedback from USAID Uganda, DFID Uganda, GAPP, and district oﬃcials at a stakeholder meeting in Arua in late
+2016, as well as from participants at seminars in Brigham Young University, the University of Pennsylvania and
+Princeton University. We are thankful to SEED at the Stanford GSB for ﬁnancial support. Finally, we are grateful to
+the thousands of Arua residents who so generously shared their time with us over multiple periods of data collection.
+We hope our ﬁndings can serve to make programs such as U-Bridge successful in improving communication and
+ultimately service delivery in Arua and beyond.
+†Department of Political Science, Princeton University. ferrali@princeton.edu
+‡Department of Political Science, University of Pennsylvania & EGAP. ggros@sas.upenn.edu
+§Division of Social Science, New York University Abu Dhabi. mplatas@nyu.edu
+¶Department of Political Science, Stanford University. jrodden@stanford.edu1 Introduction
+Novel political communication technologies (PCTs) are facilitating new forms of political partic-
+ipation around the world. From New York City’s NYC311 platform1to community monitoring
+text-messaging systems in Africa (Grossman, Platas and Rodden, 2017), new technologies are al-
+lowing for more frequent and cheaper forms of participation than traditional means of political
+engagement. These technologies have the potential to transform the relationship between citizens
+and their governments, oﬀering opportunities to address some of the most intractable governance
+challenges. The potential beneﬁts of PCTs are especially large when it comes to acute service
+delivery failures in the developing world. New programs allow citizens to report problems, such as
+teacher absenteeism, in a way that is immediate, inexpensive, and potentially anonymous (Peixoto
+and Sifry, 2017). However, recent studies have demonstrated that adoption of these promising new
+technologies has been variable from one context to another, and relatively disappointing overall in
+the developing world (Grossman, Humphreys and Sacramone-Lutz, 2016). These new technologies
+will not aﬀect governance, or will only beneﬁt a narrow group of users, if they are not broadly
+adopted. This paper asks a question of growing importance: what explains variation in the uptake
+of new political communication technologies?
+We examine the role social factors, speciﬁcally peer eﬀects , play in inﬂuencing the adoption of
+a new community reporting PCT platform in Uganda. Our starting point is past work on social
+diﬀusion, which explores how and why social learning from peers facilitates the adoption of new
+technologies (Golub and Sadler, 2017). In short, under conditions of uncertainty over the costs and
+beneﬁts of the usage of new technologies, information is crucial to adoption decisions. Network ties
+are generally consequential because friends, family, neighbors and colleagues are often viewed as
+convenient and trustworthy sources of information.
+Existing studies focus on the adoption of technologies that increase, for example, agriculture
+productivity (Bandiera and Rasul, 2006; Conley and Udry, 2010; Foster and Rosenzweig, 1995),
+health status (Kremer and Miguel, 2007; Dupas, 2014; Oster and Thornton, 2012), or access to
+ﬁnancial services (Banerjee et al., 2013). Unlike past work, we explore the impact of social ties
+on the adoption of a (political communication) technological innovation that involves substantial
+1http://www1.nyc.gov/311/index.page
+1positiveexternalities, andisthusmorelikelytoinvolvestrategicconsiderations. Existingtheoretical
+and empirical studies are generally silent about whether and how peer eﬀects might work in the
+presence of such externalities. An important concern is that diﬀusion of adoption of PCTs via peer
+eﬀects might be undermined because of these externalities.
+Exploring the eﬀects of peers on politicalbehavior is notoriously diﬃcult (Jackson and Yariv,
+2010). First, the set of neighbors that inﬂuence an individual’s political actions is hard to de-
+ﬁne (Pietryka and DeBats, 2017). Second, even when networks are well-deﬁned, data on inter-
+subject connectivity is typically unavailable to social scientists, causing them to rely heavily on
+simulation in social diﬀusion studies (Cranmer et al., 2017). We address these challenges by col-
+lecting original and complete social network data from sixteen Ugandan villages where a new po-
+litical communication technology, U-Bridge, was introduced to facilitate the anonymous reporting
+of service delivery problems to local government oﬃcials.
+We ﬁnd that, on average, peer eﬀects inﬂuence individuals’ adoption of this PCT. A villager’s
+decision to report a service delivery problem via U-Bridge is signiﬁcantly aﬀected by the adoption
+choices of social ties within the community’s social network. Speciﬁcally, every additional neighbor
+that uses U-Bridge increases the likelihood of adoption of an individual by about 2.7 percentage
+points—a 61 percent increase relative to the base adoption rate. We demonstrate that this result
+is not likely a simple reﬂection of homophily, and is robust to other possible inferential threats we
+document below.
+However, we also ﬁnd considerable variation in the extent of peer eﬀects across villages where
+the new political communication technology was introduced. While there is strong evidence of peer
+eﬀects in some villages, others show little signs of such inﬂuence. Why do social networks sometimes
+fail to support the adoption of a new PCT? Moving from the individual to the network (i.e., village)
+level, inthesecondpartofthepaperweturntoadjudicatebetweenseveralalternativeexplanations.
+We ﬁrst explore and reject the possibility that the variation in the uptake of U-Bridge is due to
+(a) diﬀerences in network structure (Centola, 2015), or to (b) diﬀerences in the characteristics
+(personal and relational) of the initial seeders of the information that is to be diﬀused across the
+social network (Banerjee et al., 2013; Larson, Lewis and Rodrıguez, 2017).
+We then turn to explain the puzzle of widely varying peer eﬀects by introducing a simple
+formal model, demonstrating that whether or not networks support technology diﬀusion depends
+2on the nature of the technology itself . Our model takes into account two features of PCTs. First,
+as with most new technologies, there is uncertainty about the costs and beneﬁts of adoption.
+For example, “whistle-blowers” may face signiﬁcant social costs if their identity is revealed, while
+potential beneﬁts – teachers showing up to class, for example – depend on the responsiveness of
+public oﬃcials, which is not guaranteed in the many low-income countries (Kosack and Fung, 2014).
+Second, the beneﬁts of this particular type of technology, like many crowdsourcing applications,
+are subjected to positive externalities –its eﬀectiveness is increasing with the number of people who
+use it. In other words, PCTs belong to a class of goods for which the payoﬀs of one agent depends
+on the actions of other agents.
+The model shows that while networks foster the diﬀusion of goods with minimal externalities,
+such as many consumer goods, they may play no role for goods that have signiﬁcant positive
+externalities. We argue that under these conditions, early adopters of the new technology have
+strong incentives to exaggerate the beneﬁts of adoption, in order to convince others to adopt.
+Recognizing this incentive, their neighbors have reason to discount information they receive from
+early adopters. Not all networks overcome the challenge of truthful communication about the new
+technology, without which social diﬀusion does not take place. Peer eﬀects only support diﬀusion
+of new technologies with large positive externalities in networks where truthful communication is
+supported. We test the observable implications of the theory using network data, survey data and
+behavioral experiments, and ﬁnd evidence consistent with the model’s propositions.
+Highlighting the importance of truthful communication for social learning situates our pa-
+per within a nascent literature that studies strategic communication in networks (Hagenbach and
+Koessler, 2010; Galeotti, Ghiglino and Squintani, 2013; Gieczewski, 2017). This literature considers
+situations where agents would like others to take an action that is close to the state of the world,
+but disagree on which action is optimal in a given state. Past studies focus on how these conﬂicts
+of interest hinder truthful communication. We consider situations that are somewhat diﬀerent, and
+more speciﬁcally relevant for technology adoption with externalities. Namely, we consider instances
+in which all agents agree on the action that needs to be taken in “high” states, where the technology
+is useful, and are indiﬀerent about the actions of other agents in low states, where the technology
+is useless. We show that such situations also hinder truthful communication.
+Our study also contributes to a growing body of work on political communication technolo-
+3gies. Existing work has examined the eﬃcacy of these technologies in improving service delivery
+(Grossman,PlatasandRodden,2017),accountability(Grossman,HumphreysandSacramone-Lutz,
+2016), the accuracy of granular conﬂict data (Van der Windt and Humphreys, 2016), and corrup-
+tion (Blair, Littman and Paluck, 2017). Recent work has also investigated determinants of PCT
+uptake. This work has focused on individual attributes (Grossman, Michelitch and Santamaria,
+2016), neighborhood characteristics (Feigenbaum and Hall, 2016), and perceptions of government
+responsiveness (Sjoberg, Mellon and Peixoto, 2017). We expand this work by focusing on the role
+social networks play in adoption decisions.
+Finally, we contribute to a literature exploring the eﬀects of social networks on political be-
+havior. Existing work focuses on traditional forms of political engagement (Rolfe, 2012). We
+investigate instead the role of social networks in the adoption of newforms of political engagement,
+where there is higher uncertainty over costs and beneﬁts of participation and thus peer eﬀects are
+potentially even more important. Further, with a few exceptions (Eubank et al., 2017), existing
+work on social networks and political behavior has relied almost exclusively on egocentric network
+data–reports by survey respondents on their friends, with no linking across respondents to create
+a full network (Abrams, Iversen and Soskice, 2011; Klofstad, Sokhey and McClurg, 2013). Though
+improving our understanding of the role social ties play in shaping political behavior, egocentric
+networks operate with incomplete network information, and are generally unable to correct for
+biases arising from homophily (Sinclair, 2012; Siegel, 2011). We address these concerns by con-
+structing a relatively large number of independent whole networks and by implementing a set of
+robustness checks designed to minimize bias stemming from homophily. By situating our study in
+a low-income country, we also move beyond a narrow focus on peer eﬀects on political behavior in
+a small number of industrial democracies.2
+2 Context
+Thecommunityreportingplatformwestudy, U-Bridge, wasimplementedinacollaborationbetween
+the local government in Arua, a relatively poor district located in North-Western Uganda, and the
+Governance, Accountability, Participation, andPerformance(GAPP)project, fundedbytheUnited
+2See also Larson and Lewis (2017) that undertake a full network census in two Ugandan villages to study variation
+in the spread of information (rumors) as a function of ethnic diversity.
+4States Agency for International Development (USAID). The demand for mobile-based political
+communication technologies such as U-Bridge stems from their potential for tackling persistent
+public service problems (Jahan et al., 2015), such as alarmingly high levels of absenteeism among
+government healthcare workers and teachers (Chaudhury et al., 2006). U-Bridge is one of many
+recent PCTs that are based on the simple idea that participatory grassroots programs need not
+circumvent government actors (Buntaine, Nielson and Skaggs, 2017). Instead, communities can be
+harnessed to better inform government oﬃcials of service delivery deﬁciencies (Grossman, Platas
+and Rodden, 2017).
+Through U-Bridge, anyone can contact district oﬃcials by sending a text-message to a short-
+code number (8500). Messages sent through the U-Bridge platform are both freeandanonymous ,
+lowering the monetary and social costs for bottom-up reporting about service delivery problems.
+The back-end is an open-source software package that runs on a variety of mobile devices, including
+tablets and smartphones. The program provided district oﬃcials in both technical and political
+positions with 3G tablets and free Internet access that enabled them to access and respond to
+incoming messages.
+U-Bridge was implemented using a ﬁeld experimental research design, encouraging usage in
+131 randomly selected villages across Arua district organized around 24 clusters.3Residents in
+treatment villages were invited to attend periodic community meetings, implemented and orga-
+nized by GAPP. In these meetings, attendees received information about national service delivery
+standards, and were informed about ways to communicate with local oﬃcials. In addition, public
+oﬃcials provided attendees with an overview of government eﬀorts in service delivery, especially in
+response to previous text messages. The ﬁrst round of community meetings was held by GAPP in
+the last quarter of 2014 as part of the launch of the U-Bridge service. Subsequent meetings were
+held quarterly.
+Usage of the new communication technology was further facilitated by registering a phone
+number, which involved texting “Join” to 8500, after which the sender would be asked to share
+basic demographic information, such as gender, age, and village of residence. Registration took
+3We constructed 48 village-clusters in Arua district, deﬁned as the group of nearby villages that are serviced by the
+same public health center. Half of Arua’s 48 clusters were randomly assigned to treatment (U-Bridge encouragement)
+and half to control. Villages within a cluster were all assigned to the same treatment. We study the eﬀects of
+encouraging the usage of the new platform on service delivery outcomes in a companion paper.
+5place at community inception meetings, in a door-to-door registration drive, and by individuals
+who heard about the service by word of mouth. Registration did not compromise the anonymity of
+incoming text-messages, which are assigned a unique case ID such that phone numbers are never
+displayed on the U-Bridge dashboard.
+Figure 1 shows the cumulative number of relevant and actionable incoming-messages between
+August 2014 and November 2015, demonstrating a relatively strong demand for a platform like
+U-Bridge, consistent with ﬁndings reported by Grossman, Humphreys and Sacramone-Lutz (2014).
+Nevertheless, it is evident that the vast majority of villagers have not used the platform, even
+as the quality of social services in Arua district is low compared to national benchmarks. Since
+the eﬀectiveness of PCT platforms hinges critically on grassroots participation, and since platform
+adoption reﬂects whose voices (i.e., interests and priorities) are heard, it is imperative to further
+explore the determinants of diﬀerential uptake.
+MonthlyCumulative
+Aug. 14 Oct. 14 Dec. 14 Feb. 15 Apr. 15 Jun. 15 Aug. 15 Oct. 150100020003000
+50100150200Number of messages
+Type of message Actionable Relevant
+Figure 1: Message intensity over time. The monthly (bottom-panel) and cumulative (top-
+panel) number of relevant and actionable messages over time. Lines are derived from locally
+weighted regression (lowess).
+63 Research design
+We ﬁrst discuss the process by which we selected villages to be included in the network survey,
+followed by a short description of how we constructed the social network data.
+Village Selection
+We collected complete network data in 16 villages—the number of villages determined by budget
+constraints. Half of the villages had a relatively high level of U-Bridge adoption given village
+characteristics, and half of which had low levels of adoption. In Table A.1 we report a set of OLS
+regressions in which two measures of adoption—the number of unique message senders and the
+number of messages sent via U-Bridge (normalized by village adult population)—are regressed on
+village predictors, derived from the 2014 census and from information assembled by the U-Bridge
+program. Using the regression model shown in column 6, we generate predicted values for the
+dependent variable ( ˆy). We then calculated the diﬀerence between the predicted value and the
+actual value of the dependent variable; i.e., ˆ/epsilon1= ˆy−y. Using these residuals, we selected the 8
+highest performing (largest positive ˆ/epsilon1) and the 8 lowest performing villages (largest negative ˆ/epsilon1).
+Figure A.1 maps the villages selected for data collection.
+This design selects on the dependent variable, which is advantageous for a research agenda in
+its early stages. We construct a sample whose outcome is least explained by standard models of
+political participation, and thus more likely to be explained by potential network factors. Since
+half of our villages are high-performers and half are low-performers, our design also increases the
+likelihood of ﬁnding heterogeneous eﬀects, allowing us to say more about when and why networks
+matter. Our design was also informed by the study’s sample size, which was limited by the high
+cost of collecting complete real-world network data.
+Data Collection
+Data collection took place in April and May, 2016. Prior to enumeration, research team represen-
+tatives met with the village chairperson to receive permission to undertake our activities and to
+conduct a listing exercise of all village households. On enumeration day, a short survey was con-
+ducted with every household in the village in which at least one adult was present, and with every
+7available individual present in the household. The survey included a set of questions about basic
+demographics, respondents’ social ties, and U-Bridge knowledge and usage. In total, we interviewed
+3,184 individuals, covering about 75 percent of the adults residing in the surveyed villages.4
+Network construction
+We measured individuals’ social networks using a standard name generator (Kolaczyk, 2009). We
+asked respondents to report four kinds of relationships in their village: (1) familyties, (2)friendship
+ties, (3) lenders: whom they would go to if they had to borrow money, and (4) problem solvers :
+whom they would go to in order to solve a problem regarding public services in the village. For
+each kind of relationship, respondents were asked to name up to ﬁve individuals. A common
+problem with network surveys is missing data. Since we were unable to interview every individual
+in the village, there are villagers for whom we only observe a fraction of their network: they were
+mentioned as ties by other respondents, but not interviewed in-person. About 30% of named
+individuals fall in this category. Following standard practice (e.g. Larson and Lewis, 2017), we
+exclude those nodes from the analysis.
+Using survey responses, we ﬁrst construct four diﬀerent “undirected” village networks for the
+four diﬀerent types of ties, by collapsing directed ties into undirected ones.5We further construct
+the union of those networks, by deﬁning a tie between iandjif there is at least one tie between
+them in any of the above four networks. Respondents who were knowledgeable about the U-Bridge
+platform were further asked to name the individuals from whom they heard about the platform.
+This allows tracking the diﬀusion process of knowledge about the new political communication
+system. Figure 2 provides a graphical representation of the union network of two of the 16 villages:
+one high uptake (village P), and one low uptake (village G).
+4In the Supplementary Information (SI), Table 1 we report the number of individuals we surveyed in each village,
+the number of individuals mentioned by at least one person (henceforth, “alters”), and the number of adults living
+in each village, according to 2014 census data. This information allows calculating the number of missing nodes.
+5In other words, we say that iis friends with jifimentioned jas a friend orjmentioned ias a friend. Our
+results are robust to treating constructing the family and friendship networks using reciprocated ties; that is, by
+saying that iis friends with jifimentioned jas a friend andjmentioned ias a friend. All network concepts are
+deﬁned informally in the main text. Formal deﬁnitions are available in the SI.
+8Figure 2: Graphical representation of the union network of two villages in the study area.
+Variable description
+Our core outcome measure is the adoption of U-Bridge, the new political communication platform.
+Adoptis a self-reported, binary variable that equals 1 if the respondent has used the platform at
+least once in the past 12 months. Similarly, hearis an indicator that gets the value of 1 if the
+respondent has heard about the U-Bridge service. By deﬁnition, U-Bridge adopters have a positive
+value for hear, but not vice versa. For those reporting that they have contacted Arua district local
+government via U-Bridge (i.e., “adopters”) we also measure satisfaction : a rescaled binary variable
+that equals 1 if the respondent is at least somewhat satisﬁed with the platform (derived from a
+ﬁve-point Likert scale).
+Our key explanatory variables are network characteristics that support diﬀusion. The empirical
+literature on social diﬀusion is large, and for tractability, we focus on two classes of diﬀusion models:
+(a)fractional threshold model, where an individual adopts a technological innovation if more than
+someshareof her neighbors have adopted it (e.g., Acemoglu, Ozdaglar and Yildiz, 2011), and (b)
+absolute threshold model, where an individual adopts if more than some numberof her neighbors
+have adopted (e.g., Centola and Macy, 2007). When examining absolute contagion processes, our
+key independent variable, # adopting neighbors counts, for each individual i, the number of social
+ties (‘neighbors’) in the union network that report using U-Bridge to contact district oﬃcials in
+9the past 12 months. In some speciﬁcations, we also consider the variable # hearing neighbors that
+counts instead the number neighbors that have heard about U-Bridge. We also construct equivalent
+count measures for the four network types that make up the union network (‘friends’, ‘family’,
+‘lenders’ and ‘problem solvers’). When examining fractional threshold models, these variables are
+measured as the share of hearing / adopting neighbors among i’s social ties.
+While network ties account for socialinﬂuence, we also account for spatialinﬂuence by using
+GIS information we collected on the location of each household. Speciﬁcally, the variable geography
+is a spatial lag that counts the number adopters within the village besides node i, and assigns less
+weight to those who reside farther away from that node.6
+We collect a set of individual-level control variables that likely aﬀect the usage of U-Bridge.
+These include the continuous measure of age; afemaleindicator variable; secondary education ,
+which is a binary variable that equals 1 if the respondent attained at least secondary education;
+andincome, a subjective wealth measure ranging from 1 (low) to 5 (high). The variable use
+phoneis a binary variable that equals 1 if the respondent has used a mobile phone in the past 12
+months to make a call or send a text message. Leaderis a binary variable that equals 1 if the
+respondent occupies one of several formal public leadership positions within the village. Political
+participation is a summary index aggregating across recent political actions.7Pro-sociality is a
+behavioral proxy-measure of care for the community; it is measured as the level of contribution
+(i.e., number of monetary units) in a standard dictator game. Finally, attend meeting indicates
+whether the respondent attended any of GAPP’s community meetings, in which the U-Bridge
+platform has been introduced or discussed.8
+At the village level, we report network measures associated with social diﬀusion process—such
+as density, mean path length and clustering—in addition to several other standard predictors of
+political participation derived from the Ugandan 2014 census. Table 1 shows selected descriptive
+statistics for our 16 villages, split between high- and low-uptake.
+6Letyi= 1ifiadopted, and yi= 0otherwise. Let dijthe distance between iandj. The spatial inﬂuence
+(geography ) is then calculated as geoi=/summationtext
+j/negationslash=iyj
+logdij.
+7Weconsiderattendingavillagemeeting, contributingmoneytoavillageprojectoravillagemember, contributing
+labor to a village project, reporting a problem to a village leader, and reporting a problem to the local government,
+in the past 12 months. The summary index is constructed following the method proposed by Anderson (2008), which
+gives more weight to more separating components of the index.
+8All villagers attending GAPP meetings have heard of U-Bridge; thus we use this variable only when modeling
+adoption conditional on hearing about the platform.
+10A. Individuals
+Variable Sample High uptake Low uptake ∆min max
+Outcome % adopters 0.04 0.07 0.02 0.05∗∗∗0.00 1.00
+% heard 0.31 0.38 0.23 0.14∗∗∗0.00 1.00
+% satisﬁed 0.39 0.44 0.22 0.22∗∗0.00 1.00
+Individual age 37.39 37.55 37.22 0.33 18.00 101.00
+% females 0.58 0.56 0.59 -0.03∗∗0.00 1.00
+income 2.55 2.64 2.46 0.19∗1.00 5.00
+secondary education 0.23 0.28 0.18 0.09∗∗0.00 1.00
+% use phone 0.62 0.66 0.58 0.08∗0.00 1.00
+% leaders 0.14 0.16 0.12 0.04∗∗0.00 1.00
+political participation index -0.00 0.06 -0.06 0.12∗∗∗-0.88 1.49
+% attend meeting 0.08 0.11 0.05 0.06∗∗∗0.00 1.00
+pro-sociality 0.20 0.20 0.20 0.01 0.00 1.00
+Network degree 16.07 16.77 15.36 1.42 1.00 227.00
+betweenness 143.86 150.79 136.91 13.89 0.00 16385.53
+clustering coeﬃcient 0.39 0.38 0.40 -0.02 0.00 1.00
+N 3184 1595 1589 6
+B. Villages
+Variable Sample High uptake Low uptake ∆min max
+Network density 0.10 0.12 0.08 0.04 0.05 0.40
+path length 2.12 2.08 2.16 -0.08 1.60 2.33
+global clustering 0.25 0.27 0.24 0.03 0.17 0.55
+Village adult population 269.38 274.50 264.25 10.25 32.00 429.00
+ethnic fractionalization 0.04 0.07 0.02 0.05 0.00 0.41
+% employed 0.86 0.84 0.89 -0.05 0.68 1.00
+% non-agriculture 0.22 0.25 0.19 0.06 0.00 0.57
+poverty score -0.07 -0.05 -0.09 0.03 -0.48 0.47
+N 16 8 8 0
+Table 1: Descriptive statistics. The table reports mean values for the full-sample, as well as for
+low- and high-uptake villages. Network characteristics are calculated from the union network. In
+panel A, diﬀerence in means are tested using a t-test, with standard errors clustered at the village
+level;∗p<0.1;∗∗p<0.05;∗∗∗p<0.01.
+We ﬁnd that villagers in high-uptake villages had somewhat higher socioeconomic status com-
+pared to individuals in low-uptake villages: they are slightly richer, more educated, more likely to
+use a phone, more likely to hold leadership positions, and more likely to attend GAPP meetings
+introducing U-Bridge. By contrast, small diﬀerences in individual-level networks characteristics –
+betweenness and degree centrality as well as clustering coeﬃcient – fall below conventional signif-
+icance levels. Similarly, high and low-uptake villages do not seem to diﬀer in terms of network
+structure or community-level characteristics as culled from the 2014 census, including mean assets-
+based poverty score, share employed, ethnic diversity, distance to Arua town, and population size.
+Altogether, Table 1 suggests that variation in technology adoption at the individual level may
+be better explained by diﬀerences in villagers’ characteristics and processes of social inﬂuence
+(i.e., peer eﬀects) than by diﬀerences in village characteristics commonly used in political economy
+11studies. Our empirical strategy is designed to estimate the relative importance of these plausible
+determinants of the adoption of political communication technologies.
+Estimation
+We estimate peer eﬀects using a standard Spatial Auto-Regressive (SAR) model, where the proba-
+bility of adoption depends on some function of the adoption of one’s neighbors. Consider individual
+ion network g, and letNi(g)be the set of her neighbors on g. Letyibei’s outcome, equal to 1 if
+iadopts, and 0 otherwise, yNi(g)be the vector of outcomes of her neighbors, xia vector of control
+variables, and /epsilon1igan error term. We estimate the following linear probability SAR model:
+yig=β0+f(yNi(g))β1+xT
+iβ2+/epsilon1ig
+In particular, we examine both absolute, and fractional threshold models with and without
+controls. In the ﬁrst case, f(yNi(g)) =/summationtext
+j∈Ni(g)yjis the number of adopting neighbors. In the
+second case, f(yNi(g)) =1
+|Ni(g)|/summationtext
+j∈Ni(g)yjis the percentage of adopting neighbors.9
+We use the most conservative approach: we account for village-level heterogeneity by adding
+village indicators, and use heteroskedastic robust standard errors. This is a conservative approach
+as we lumped into a village-level eﬀect all factors that could not be explained by any other channel.
+4 Results: Peer eﬀects
+In this section, we present our main results with respect to the role of peer eﬀects on the adoption of
+U-Bridge, followed by a set of robustness checks, including an instrumental variable approach. We
+ﬁnd that, whether using the numberof adopting neighbors (absolute threshold, Table 2, columns
+1-2), or the shareof adopting neighbors (fractional threshold, Table 2, columns 4-5), adoption
+of the U-Bridge platform increases with the adoption decisions of one’s social ties. Speciﬁcally,
+according to the baseline absolute threshold model (column 2), the likelihood of using U-Bridge
+increases by 2.7 percentage points for every adopting neighbor. Moving to the baseline ‘fractional’
+threshold (column 5), we note that 32% of respondents have no ties to an adopter, and among
+those connected to at least one adopting neighbor, the mean shareof adopting peers is 15%.
+9Our results are robust to using a logistic regression instead.
+12Since the model ﬁt for a absolute threshold contagion process (column 2) slightly outperforms
+modeling fractional threshold contagion (column 5)—using R2or the Akaike Information Criteria
+when ﬁtting a logistic regression—we use the absolute threshold model when calculating marginal
+eﬀects, reported below (Figure 3).
+Robustness Checks
+We report a host of robustness checks for our core ﬁnding on peer eﬀects, reported in Table 2. We
+ﬁrst test whether our results are sensitive to dropping village A, which has a smaller number of
+respondents (30) than other villages (mean number of respondents is 210). Results, reported in the
+SI, Table 5, show again a strong positive relationship between the number (or share) of adopting
+neighbors and one’s adoption choice.
+We next probe into mediating behavior: one can only adopt the innovation if she has heard
+about it. Building on recent work by Larson, Lewis and Rodrıguez (2017), we show that our results
+are robust to running a two-stage (logistic) selection model in which we model separately the social
+process of hearing about an innovation and that of adopting the new technology conditional on
+hearing about it. We ﬁnd that peers aﬀect both stages of the diﬀusion process (SI, Table 6).
+Figure 3 shows that the (total) average marginal eﬀect of an adopting peer estimated using our
+two-stage model is comparable in magnitude to our baseline, reduced-form speciﬁcation (Table 2,
+column 2) reestimated using a logistic regression.10
+10The controls in Table 6 in the SI also reveal an important insight: if women are less likely to be U-Bridge users,
+this is only because they are less likely to hear about the existence of the program; they are not less likely to adopt,
+conditional on hearing. This ﬁnding on a traditionally politically marginalized category of individuals suggests that
+the role of social ties in the process of hearing about a new technology may be diﬀerent than their role in the adoption
+phase (conditional on hearing).
+13Dependent variable: adopt
+Parsimonious Baseline Decomposition Parsimonious Baseline Decomposition
+(1) (2) (3) (4) (5) (6)
+# adopting neighbors 0.035∗∗∗0.027∗∗∗0.019∗∗∗
+(0.005) (0.005) (0.006)
+% adopting neighbors 0.325∗∗∗0.218∗∗∗0.157∗∗∗
+(0.052) (0.048) (0.057)
+degree 0.002∗∗∗0.001∗0.0002 0.004∗∗∗0.003∗∗∗0.003∗∗∗
+(0.001) (0.001) (0.001) (0.001) (0.001) (0.001)
+# neighbors who told me 0.062∗∗∗
+(0.012)
+% neighbors who told me 0.871∗∗∗
+(0.198)
+1+ satisﬁed neighbors 0.012 0.024∗∗
+(0.012) (0.011)
+Constant 0.061 0.125∗0.124∗0.052 0.109 0.093
+(0.073) (0.076) (0.075) (0.073) (0.075) (0.075)
+Controls _ X X _ X X
+Observations 3,184 3,019 3,019 3,184 3,019 3,019
+R20.139 0.247 0.273 0.116 0.233 0.251
+Note:∗p<0.1;∗∗p<0.05;∗∗∗p<0.01
+Table 2:Adoption of U-Bridge. OLS estimates with village-level ﬁxed eﬀects. Heteroskedastic standard errors in parentheses. Absolute threshold
+models (models 1-3) have weakly better ﬁt than fractional threshold models (models 4-6). 1+ satisﬁed neighbors is an indicator variable that equals
+1 if at least one neighbor is satisﬁed. Model 2 is our preferred speciﬁcation.
+14●
+●
+●
+● Adopt (reduced form)Adopt (total effect)Adopt (conditional on hearing)Hear
+0.00 0.01 0.02 0.03 0.04
+Average Marginal Effect of an additional adopting neighborEffectFigure 3: Selection model with hearing. Average marginal eﬀect (AME) of an adopting neighbor on
+hearing (ﬁrst stage) and of adopting conditional on hearing (second stage). The total eﬀect of the selection
+model matches the estimate from a reduced form logistic regression. Bars represent heteroskedastic 95
+percent conﬁdence intervals.
+Causally identifying peer eﬀects
+As with all social diﬀusion studies, the key empirical challenge we face is identifying peer eﬀects;
+that is, the impact of an exogenous shock to the outcome of an agent on the outcome of one of her
+neighbors. We face two main endogeneity problems that we address with a variety of robustness
+checks. First, the initial encouragements to adopt the technology might be endogenous. Even in
+the absence of social learning and inﬂuence, two connected individuals may adopt similar behavior
+as a result of similar characteristics, due to homophily (Jackson, 2008), or because they are subject
+to related unobservable shocks (Conley and Udry, 2010). Second, exposure to peer inﬂuence is
+endogenous to one’s network position (Aronow and Samii, n.d.). Indeed, individuals with more
+central network positions are more likely to be exposed to peer inﬂuence, since they have more
+neighbors, or neighbors who are themselves more central. In the limit, agents with no neighbors
+cannot be exposed to any inﬂuence.
+To address the issue of endogenous encouragements, we use a generalization of An (2016) in-
+strumental variable (IV) approach. To instrument for j’s inﬂuence on i, the approach leverages
+covariates that directly aﬀect j’s outcome, and only aﬀect ithroughj’s inﬂuence. Our instrument
+is the distance from one’s household to the location of the meeting introducing U-Bridge. Since
+meeting location was chosen as if randomly, being closer to the meeting represents an exogenous en-
+couragement to adopt the technology. Indeed, the shorter the distance to the venue, the more likely
+a villager is to adopt U-Bridge, simply by increasing the likelihood that she attends the meeting
+and learns about the new technology. For the instrument to be valid, the exclusion restriction must
+15be satisﬁed; i.e., we must assume that j’s distance to the location of the meeting does not aﬀect i’s
+adoption via alternative channels than j’s inﬂuence on i. This would be the case if contacts tended
+to cluster around locations that were more or less exposed to the meeting. Encouragingly, we ﬁnd
+little (-.04) correlation between physical distance and having a social tie.11The results of our IV
+models, reported in SI, Table 7, conﬁrms our basic adoption model.
+We address the issue of endogenous exposure to peer inﬂuence owing to one’s network position
+bycomparingindividualswhosharesimilarnetworkpositions. Whileourmainspeciﬁcationalready
+did so by controlling for one’s degree, we push such comparisons further by controlling for degree
+more ﬂexibly, and for other attributes of network position. Our results are robust to controlling
+for degree non-parametrically with generalized additive modeling, as well as using a large number
+(10) of degree strata (SI, Table 10).
+We further check the robustness of our core ﬁndings to endogenous exposure to peer inﬂuence
+by controlling for a host of other network centrality scores (SI, Table 11). Following recent contri-
+butions (Banerjee et al., 2013; Alatas et al., 2016), for each node i, we compute betweenness (the
+extent to which a node in the network needs to go through node iin order to reach some other
+network member), closeness (the mean distance between node iand any other node), eigenvector
+centrality (a measure that gives more weight to high degree nodes connected to other high degree
+nodes),Bonacich centrality (a measure that gives more weight to high degree nodes connected to
+low degree nodes), and clustering (the share of i’s friends that are also friends with each other).
+We bin the continuous centrality measures into three equally sized bins (low, medium and high-
+centrality), and run separate model for each centrality measure. While conﬁrming our main result,
+this robustness check also yields an insight that echoes previous ﬁndings from contagion studies:
+individuals in highly clustered neighborhoods are less likely to adopt (Centola and Macy, 2007).12
+Finally, we use matching to address both problems simultaneously. Building on Aral, Muchnik
+and Sundararajan (2009) who show that matching allows eliminating most of the bias common in
+observational studies of peer eﬀects, we match villagers that share similar individual and network
+11We conduct additional checks for potential violations of the exclusion restriction by conducting several placebo
+tests (SI, Table 9). As expected, mean peer distance to the meeting location positively correlates with adoption. It
+doesnotcorrelatewithothertheoreticallymeaningfulpredictorsofadoption, suchaspoliticalparticipation, leadership
+status, or phone ownership.
+12This is because nodes with lower clustering have ties to a more diverse set of contacts, and potentially exposed
+to more sources of contagion.
+16characteristics. Our matched sample alleviates the problem of endogenous encouragements to
+adopt the technology by comparing observations that are equally likely to be exposed to treatment,
+based on observable characteristics. We construct our matched sample using political participation,
+phone use, secondary education, and meeting attendance (individual-level covariates), as well as
+degree and eigenvector centrality (network covariates). Using network covariates alleviates the
+concern of endogenous exposure to treatment owing to network positions by explicitly matching
+on selected network covariates. Since centrality scores tend to be highly correlated, matching on
+those two network covariates constructs treatment and control groups that are also more likely to
+be comparable with respect to other centrality scores. We compared three matching procedures:
+nearest neighbor, coarsened exact, and full matching. We chose the latter matching because it
+achieved the highest distance reduction. We then estimated our main speciﬁcation on the matched
+sample. Table 12 in the SI shows that our main result on peer eﬀects is robust to such matching
+estimates.
+5 Village-level variation in peer eﬀects
+Thus far, we have focused on the adoption choices of individuals pooling data from our sixteen
+villages. However, Table 2 above and Figure A.2 in the appendix suggest that there is likely
+important heterogeneity across villages with respect to the size (and signiﬁcance) of peer eﬀects.
+Exploring this more systematically, we reestimate our preferred regression model (Table 2, column
+2) separately for each community. As shown in Figure 4, in about half of the villages in our sample,
+individuals’ choice of U-Bridge adoption is notpositively correlated with those of network peers.
+This ﬁnding suggests that the role that networks play in social diﬀusion processes is more nuanced
+than previously assumed.
+What explains variation in the magnitude of peer eﬀects across villages? Why are peer eﬀects
+not universal in the adoption of a new PCT? To answer this question, one approach is to compare
+villages with large peer eﬀects to villages with small peer eﬀects. We will compare instead high-
+and low-uptake villages for two reasons. First, our estimates of peer eﬀects come with uncertainty,
+which makes the makeup of high- and low-peer-eﬀect groups uncertain. Second, ﬁgure 4 shows that
+save for one pair of villages (M and F), high-peer eﬀect villages are also high-uptake villages.
+17●
+●
+●●
+●●●
+−0.050.000.050.10
+B
+(236)H
+(102)C
+(159)E
+(263)M
+(195)D
+(282)G
+(163)K
+(204)L
+(228)O
+(187)P
+(191)I
+(168)F
+(205)N
+(223)J
+(185)
+VillageAverage Marginal EffectUptake
+●High
+LowFigure 4: Average marginal eﬀect of one adopting neighbor on adoption by village. Estimates
+from our main speciﬁcation when run separately for each village; sample sizes in parenthesis. High uptake
+villageshavelarge, generallysigniﬁcantpeereﬀects. Lowuptakevillageshavesmall, statisticallyinsigniﬁcant
+peer eﬀects. Village A is omitted because its sample size is too small. Bars represent heteroskedastic 90 and
+95 percent conﬁdence intervals.
+Past work points toward two possible network-level explanations for which we ﬁnd little support
+in our data. First, it might be that some networks do not facilitate processes of social diﬀusion due
+to “inadequate” structure. For example, Centola (2015) argues that social diﬀusion processes are
+highly dependent of network properties—clustering, path length and bridge width.13Comparing
+core network-level properties, such as density, clustering, path length and size, we ﬁnd minuscule
+diﬀerences between high and low-uptake villages (Table 1).
+Second, past work has highlighted the importance – for diﬀusion of information across networks
+–oftheidentity(Banerjeeetal.,2013)andnetworkposition(Larson, LewisandRodrıguez,2017)of
+initial ‘seeders’. In Table 3, we compare the individual attributes as well as network characteristics
+of the those attending GAPP’s inception meetings and ﬁnd small and insigniﬁcant diﬀerences in
+seeders’ characteristics in high- and low-uptake villages.14
+Next, in order to better account for the observed variability in peer eﬀects, we present a new
+theory that is grounded in an intuition gleaned from focus group discussions and open-ended inter-
+views with villagers in the study area.
+13Similarly, network density is thought to support public goods provision in ethnically homogenous communities
+by allowing information on defectors’ behavior to spread fast and wide (Miguel and Gugerty, 2005).
+14Those villages diﬀer, however, in the number of seeders. While this may account for diﬀerences in uptake, it
+cannot explain diﬀerences in the magnitude of peer eﬀects, especially since our main speciﬁcation controls for meeting
+attendance.
+18Variable Sample High uptake Low uptake ∆min max
+Outcome % adopters 0.29 0.33 0.21 0.12*** 0.00 1.00
+% heard 1.00 1.00 1.00 0 1.00 1.00
+% satisﬁed 0.36 0.40 0.26 0.13 0.00 1.00
+Individual age 40.06 39.99 40.21 -0.22 18.00 88.00
+% females 0.28 0.30 0.24 0.06 0.00 1.00
+income 2.79 2.81 2.74 0.07 1.00 5.00
+secondary education 0.47 0.49 0.42 0.07 0.00 1.00
+% use phone 0.81 0.82 0.78 0.04 0.00 1.00
+% leaders 0.28 0.29 0.27 0.02 0.00 1.00
+political participation index 0.36 0.36 0.36 0 -0.88 1.49
+pro-sociality 0.20 0.19 0.21 -0.02 0.00 1.00
+Network degree 29.43 27.66 33.11 -5.44 3.00 227.00
+betweenness 666.04 596.48 810.88 -214.4 0.00 16385.53
+clustering coeﬃcient 0.33 0.34 0.32 0.02 0.05 0.84
+N 262.00 177.00 85.00 92
+Table 3: Descriptive statistics meeting of attendees in the 16 villages sampled. The table reports
+mean values for the sample, as well as for low- and high-uptake villages. Network characteristics
+are calculated from the union network. Diﬀerence in means are tested using a t-test, with standard
+errors clustered at the village level;∗p<0.1;∗∗p<0.05;∗∗∗p<0.01.
+6 Model: networks and (political) technology adoption
+In this section, we present a model of social networks and technology adoption. The starting
+point of our theory is a simple intuition: that the importance of peers (network ties) in supporting
+social learning and facilitating technology adoption depends crucially on the extent to which the
+newly introduced good produces positive externalities. Unlike new technologies examined by recent
+studies of diﬀusion, political communication technologies have signiﬁcant positive externalities.
+These externalities may aﬀect the extent to which communication, particularly by early adopters,
+conveys accurate information.
+In classic models of technology adoption, innovations spread through social ties (Coleman et al.,
+1966). Adopting an innovation is risky due to uncertainty over perceived costs and beneﬁts. Social
+ties facilitate diﬀusion because they allow agents to learn about the new innovation not only from
+their own experience, but also from the experience of their peers (Rogers, 1962). As such, agents
+with more neighbors (i.e. larger number of social ties) learn faster, because they beneﬁt from the
+experiences of a greater number of people. The adoption outcomes of neighbors also tend to be
+more correlated, as peers update their priors from the same events.
+Yet to date, models of social learning primarily consider goods that produce minimal external-
+ities; that is, goods for the payoﬀ derived from adoption does not depend on the adoption decision
+19of other agents. For example, the beneﬁts of adopting a new fertilizer depend almost exclusively
+on an individual farmer’s actions. A farmer can learn from her neighbor about how eﬀective a new
+fertilizer is, but the neighbor’s use of fertilizer on his crop does not aﬀect the farmer’s own crop
+yield.15Importantly, this leads past theories to implicitly assume that neighbors will share accurate
+information about their experience with the good. The assumption of truthful communication may
+be warranted for a good with no externalities, where the payoﬀ of an agent does not depend on the
+payoﬀ of other agents.
+New (political communication) technologies that feature positive externalities–i.e., goods for
+which the beneﬁts from adoption increase with the number of adopters—may hinder truthful com-
+munication which, in turn, may annihilate peer eﬀects. With positive externalities, early adopters
+must convince others to adopt, and therefore have an incentive to exaggerate beneﬁts. Their
+neighbors, recognizing this incentive, may discount information they receive from early adopters.
+Communities can address the problem of truthful communication by employing a variety of infor-
+mal institutions. For example, early adopters who are embedded in communities with high levels
+of social cohesion, or where local leaders can coordinate social sanctions for sharing inaccurate
+information, may be more likely to provide an honest assessment about the program’s eﬃcacy. In
+these cases, communication about the new technology is truthful. Being truthful, communication
+is most useful, and displays the same beneﬁts as for goods with no externalities. However, com-
+munities may vary in their ability to enforce truthful communication. Thus, compared to goods
+without externalities, goods with externalities will exhibit greater variation in the extent to which
+social networks facilitate adoption of the good. Some communities, perhaps due to pre-existing but
+largely unobservable informal institutions and norms, are able to enforce truthful communication
+while others are not. The role of peer eﬀects on adoption will be lower in communities where
+truthful communication is not enforced.
+Thus, we introduce a model to highlight the key role that externalities play in social learning
+processes, and especially how externalities condition the role social networks play in technology
+adoption. In our setting, agents decide whether to adopt a new technology (also referred to as a
+good). Adoption is costly, and their decision depends on an unobserved state of the world that
+15In practice, allgoods feature a minimalamount ofexternalities, for if noother agentinvests in thenew technology,
+then the company producing it may go bust, thereby aﬀecting the focal agent’s ability to invest in it. Yet, this sort
+of externality is negligible, compared to goods characterized by joint production and diﬀuse beneﬁts.
+20conditions how useful the technology is. Agents are connected on a network, and learn about the
+state of the world from their neighbor’s experience with the good.
+We depart from standard models (eg. DeGroot, 1974; Bala and Goyal, 1998) in two ways. First,
+we consider not only goods without externalities, but also goods that feature positive externalities.
+Second, we make communication strategic; instead of simply observing their neighbors, agents hear
+reports about their experience with the good. Using this simple setup, we show that the standard
+result that networks foster learning and adoption hinges on whether agents maintain truthful com-
+munication ; that is, they convey accurate information to their neighbors about their experience.
+We then show that goods without externalities support truthful communication, reproducing the
+main comparative statics of the canonical models. However, goods with externalities do not nec-
+essarily support truthful communication and thus do not necessarily enjoy the beneﬁts of social
+learning.
+Formally, consider a society of Nagents connected by the undirected graph g= (G,N ), where
+Gis a set of ties. Agents decide whether to adopt a technological innovation or not. There is an
+unobserved, binary state of the world: θ∈{H,L}. In the high state H, the technology is useful,
+while it is not in the low state L. Thinking of a good with positive externalities, this captures, for
+example, whether the government is responsive to or ignores incoming messages from constituents.
+Att= 0, nature randomly draws the state of the world θ. Agents have a prior belief πi= Pr(θ=H)
+of being in the high state, and each gets an independent signal about the state, si∈{H,L}.
+The signal is informative: it matches the true state with probability pi= Pr(si=θ)>1/2. The
+probability pidiﬀers across agents, to capture varying degrees of expertise : agents with a higher
+pihave more expertise in the sense that they observe correct signals more often. At t= 1, each
+agentisends a message mij∈{H,L}to each of their neighbors j∈Ni(g)to inform them about
+the signal they observed.16Att= 2, each agent decides whether to adopt the innovation ( yi= 1)
+or not (yi= 0) and her payoﬀ ui(.,θ)accrues.
+Using diﬀerent payoﬀ functions, we consider a good without externalities, and a good with
+externalities. In both cases, adopting incurs cost ci∈(0,1). In the high state, adopting generates a
+beneﬁtB(normalized to 1) with some probability. It generates a beneﬁt of 0 in the low state. The
+cases diﬀer in that without externalities, one’s payoﬀ depends only on her action; ui=ui(yi,θ).
+16Recall that Ni(g)is the set of neighbors of agent ion graphg.
+21Speciﬁcally:
+ui(yi,θ) =qθ(yi)−yici (1)
+whereqθ:{0,1}→[0,1]is the probability of reaping beneﬁt B= 1in stateθ. We assume that
+irrespective of the state, not adopting gives a beneﬁt of 0: qθ(0) = 0. Adopting allows reaping
+beneﬁtB= 1with positive probability in the high state, but with probability 0 in the low state:
+qH(1)>qL(1) = 0. If the technology is a good with signiﬁcant externalities, as is the case with
+political communication technologies, i’s payoﬀ crucially depends on the actions of other agents:
+ui=ui(yi,y−i,θ), wherey−i= (yj)j/negationslash=ithe vector of actions taken by all other agents. We use:
+ui(yi,y−i,θ) =qθ
+yi+/summationdisplay
+j/negationslash=iyj
+−yici (2)
+With positive externalities, the probability of reaping the beneﬁt also depends on the actions
+of others, with qθ:{0,...,N}→[0,1]. As is the case without externalities, if no one adopts there
+is a beneﬁt of 0 in all states, with qθ(0) = 0. In the high state, the probability of reaping beneﬁt
+Bincreases with the number of adoptions: qH(n)<qH(n+ 1). In the low state, adoption gives no
+beneﬁts:qL(n) = 0for anyn.
+The beneﬁts of truthful communication
+We start by examining what drives the adoption decision both with and without externalities, and
+then examine behavior under the assumption that agents enforce truthful communication, to show
+that our model reproduces a set of standard results.
+We ﬁrst show that in equilibrium, agents have threshold strategies: they adopt the new tech-
+nology if they are suﬃciently certain that they are in the high state. In equilibrium, agent i
+chooses the action that maximizes her expected payoﬀ, using her available information Sig∈Iig
+to update her prior about the state. This information is a vector containing her signal and mes-
+sages she received from her neighbors on network g; that is,Sig= (si,(mji)j∈Ni(g)). The set
+Iig={0,1}|Ni(g)|+1contains all possible realizations of such vector. In equilibrium, i’s action
+y∗
+ig(Sig)solves maxyiEθ[ui(yi,.,θ)|Sig]. She adopts and sets y∗
+ig(Sig) = 1ifSicontains enough evi-
+dence favoring the high state against the low state, as captured by a higher (log) likelihood ratio
+22l(Sig) = logPr(θ=H|Sig)
+Pr(θ=L|Sig). How much evidence is necessary depends on an individual threshold ai.
+Agents that have a higher cost of adoption, or were originally too pessimistic about the state have
+a higher threshold. Formally:
+Proposition 1 (Threshold strategy) In any perfect Bayesian equilibrium, agents have a thresh-
+old strategy such that y∗
+ig(Sig) = 1⇐⇒l(Sig)≥ai.
+Undertruthfulcommunication, agentssendmessagesthatmatchtheirobservedsignal: mij=si.
+Truthful communication is important, because this is when messages are most informative. The
+valueVigofi’s information on graph gunder truthful communication is her expected payoﬀ from all
+potential information she could receive Iig, given that neighbors communicate truthfully and that
+sherespondsoptimallytothatinformation. Formally, Vig=/summationtext
+Si∈IiEθ[ui(y∗
+i(Si),.,θ)|Si]Pr(Si). Ina
+perfect Bayesian equilibrium where communication is not truthful, agents lie with some probability
+about their signal. Intuitively, i’s information is most valuable under truthful communication, be-
+cause lies introduce additional noise that make her inferences about the state less precise. Formally:
+Proposition 2 (Truthful communication is most valuable) Let˜Vigbe the value of informa-
+tion in an equilibrium proﬁle where some j∈Ni(g)misrepresents her signal to iwith some proba-
+bility. We have
+˜Vig≤Vig
+Truthful communication has three important implications. First, agents with larger neighbor-
+hoods learn at a faster rate, because they observe more signals, allowing them to make better
+inferences about the state of the world. In other words, the value of i’s information increases with
+the size of her neighborhood. We show that i’s information is more valuable when she has an
+additional neighbor:
+Proposition 3 (Larger neighborhoods are conducive to better learning) Consider graphs
+gandg/prime, constructed by adding a tie between iandjong. We have
+Vig≤Vig/prime
+23Because neighbors share their experiences, they learn from the same sources of information and
+make more similar inferences. Note that such peer eﬀect gets stronger the more neighbors a dyad
+has in common, because the two neighbors acquire more similar information. Formally, this means
+that connecting two agents increases the correlation of their (log) likelihood ratios:
+Proposition 4 (With peer inﬂuence, the posteriors of neighbors are more correlated)
+Consider graphs gandg/prime, constructed by adding a tie between iandjtog. Letρ(x,y)the correlation
+coeﬃcient between xandy. Under truthful communication, we have
+ρ[l(Sig),l(Sjg)]≤ρ/bracketleftbigl(Sig/prime),l(Sjg/prime)/bracketrightbig
+Expertsare morelikely toobserve correctsignals.17As such, agents placea higherweighton the
+messages of experts when making inferences about the state. By the same reasoning, experts are
+less susceptible to peer inﬂuence, because they place a higher weight on their own signal. Formally,
+we show that the impact of jobserving the high versus low signal on i’s posterior grows with j’s
+expertise.
+Proposition 5 (Experts have more inﬂuence) Consider the vectors of messages SH
+igandSL
+ig
+that diﬀer only in that one message mki=HinSH
+igandmki=LinSH
+ig. Under truthful communi-
+cation, we have
+∂
+∂pj/bracketleftBig
+l(SH
+ig)−l(SL
+ig)/bracketrightBig
+>0.
+When communication is not truthful, agents put less weight on the messages sent by their
+neighbors to make their inferences about the state of the world. In the limit, the messages they
+receive are uninformative, and agents only use their own signal when deriving their posterior:
+Ii={si}. When this is the case, propositions 3, 4 and 5 do not hold anymore: agents with larger
+neighborhoods do not necessarily learn faster, the posteriors of neighbors are not more correlated
+than those that are not connected, and expert neighbors do not wield more inﬂuence.
+17By deﬁnition, expertise is having a higher pi, which is probability of observing correct signals.
+24Comparing goods with and without externalities
+While goods without externalities always support truthful communication, goods with externalities
+may not. To shed more light onto this, we introduce a cost of lying. This may represent a moral
+cost, or a reduced form for social sanctions enforced by the community to foster cooperation.
+Speciﬁcally, we assume that agent iincurs a cost κ≥0for every message mijdiﬀerent from the
+signalsishe observed. Payoﬀ functions become:18
+ui(yi,mi,θ) =qθ(yi)−yici−κ/summationdisplay
+j∈Ni(g)1{mij/negationslash=si}
+ui(yi,y−i,mi,θ) =qθ
+yi+/summationdisplay
+j/negationslash=iyj
+−yici−κ/summationdisplay
+j∈Ni(g)1{mij/negationslash=si},
+with 1{.}the indicator function.
+Without externalities, agents have no incentive to lie: lying brings no beneﬁts, and creates
+costs. In such case, we have the following proposition:
+Proposition 6 Without externalities, truthful communication is a perfect Bayesian equilibrium for
+anyκ≥0. It is the unique equilibrium for any κ>0.
+With externalities, however, truthful communication may not be an equilibrium, because ihas
+an incentive to announce state H, increasej’s posterior, to encourage jto adopt. A high enough
+cost of lying deters such behavior and establishes truthful communication. Formally:
+Proposition 7 With externalities, there are thresholds ¯κ1,¯κ2with0≤¯κ1≤¯κ2≤1such that truthful
+communication is a perfect Bayesian equilibrium if and only if κ≥¯κ1and is the unique perfect
+Bayseian equilibrium for any κ>¯κ2.
+7 Empirical implications of the model
+Our theoretical ﬁndings qualify the range of goods for which social networks facilitate diﬀusion.
+Speciﬁcally, for goods with no (or minimal) externalities, agents with larger neighborhoods learn
+18Note that under truthful communication, the cost κis never incurred, and payoﬀ functions reduce to the expres-
+sions in 1 and 2.
+25faster, and outcomes of neighbors are more highly correlated because such technological innova-
+tions are compatible with truthful communication. However, for goods with signiﬁcant externali-
+ties, truthful communication can break down, in which case social ties do not provide additional
+advantage.
+Yet, truthful communication need not always break down within communities. Truthful com-
+munication increases the more that agents are concerned about possible social costs of ‘defection’,
+κ(Habyarimana et al., 2009). Should a community manage to impose truthful communication
+(κ≥¯κ1), the diﬀusion process of goods with positive externalities with respect to peer eﬀects will
+behave as goods without externalities.
+There are several observable implications of the model.
+1.Variation across networks in the support of diﬀusion of goods with externalities, above and
+beyond what can be explained by variation in hearing rates.
+2.Discounting of positive signals (peers’ recommendations) when truthful communication is not
+enforced.
+3.Strong ties will be more eﬀective than weak ties in supporting truthful communication, and
+therefore, in supporting diﬀusion.
+4.Expertswill have a stronger peer eﬀect than novices when a network supports diﬀusion, as
+their signal carries greater weight.
+We test these implications in turn. First, as shown above, there is variation in our core result
+on peer eﬀects: these eﬀects do not necessarily hold when running the model separately for each
+community (Figure 4). The model shows why not all communities necessarily solve the problem
+of truthful communication (proposition 7). For goods that have large externalities, social networks
+may not support the process of technology diﬀusion if nodes do not trust the signal that their
+neighbors emit.
+Villages diﬀer in the extent to which peer eﬀects foster adoption above and beyond what can be
+explained by diﬀusion of information about the existence of the platform. The model emphasizes
+that diﬀerential eﬀects owe to agents processing diﬀerently the information they obtain from their
+peers about the technology. An important alternative explanation would be that agents simply
+vary in the extent to which they communicate about the technology, for which we ﬁnd little sup-
+port. First, our explanation and the alternative are not completely distinct, since hearing may
+be endogenous to the enforcement of truthful communication: seeds in low-uptake villages may
+26choose not to discuss the platform with neighbors, internalizing the fact that their input is likely
+to be down-weighted. Second, although high-uptake villages hear about and adopt the platform
+at higher rates, the magnitudes are very diﬀerent (Table 1). High-uptake villages hear about the
+U-Bridge platform 65% more than low-uptake villages, but adopt it 250% more, suggesting that
+other factors are at play.
+Since the dimensions explaining diﬀerences in hearing and uptake need not be related to so-
+cial inﬂuence (Larson, Lewis and Rodrıguez, 2017), we investigate inﬂuence more speciﬁcally by
+comparing peer eﬀects in adoption and peer eﬀects in hearing across villages. We estimate peer
+eﬀects in hearing for each village using the same procedure as for peer eﬀects in adoption: for each
+village, we regress hearing on the number of hearing neighbors, using a similar set of controls. We
+then compare high- and low-uptake villages. The eﬀect of a peer adopting is 3.2 percentage points
+higher in high-uptake villages than in low-uptake ones. The eﬀect of a peer hearing is only 1.0
+percentage point higher in high-uptake villages than in low-uptake ones.19
+Second, we ﬁnd evidence of discounting signals about the technology from peers. In villages that
+do not support the diﬀusion of technologies with externalities, agents should not trust the messages
+sent by their neighbors. We test this by decomposing peer eﬀects into three components: (1)
+whetheri’s neighbors adopted the technology, (2) whether they discussed the technology with agent
+i, and (3) whether at least one of them reports being satisﬁed with the technology (Table 2, columns
+3 and 6). Our theoretical expectation is that while neighbors’ satisfaction should signiﬁcantly
+increase the likelihood of adoption in high-uptake villages, it should have no discernible eﬀect in
+low-uptake villages.
+Figure 5 conﬁrms the model’s prediction. Reestimating the model reported in Table 2 (column
+3) separately for high- and low-uptake villages reveals that the marginal eﬀect of having at least
+one satisﬁed neighbor is 1.9 percentage points in high-uptake villages, it is eﬀectively zero in low-
+uptake villages. Figure 5 also underscores another important ﬁnding: social diﬀusion processes
+are a function of the nature of the information being communicated, above and beyond the mere
+existence of a social tie (Larson and Lewis, 2017). While the eﬀect of communication in high uptake
+19Regressing estimates from a model in an auxiliary model introduces heteroscedasticity (Lewis and Linzer, 2005).
+WethusfollowShalizi(2018),andestimateweightedleastsquareregressions,wherebytheweightsarecalculatedasthe
+inverse variance of the dependent variable. We account for any remaining heteroscedasticity by using heteroscedastic-
+robust standard errors. The diﬀerence in peer eﬀects on adoption is signiﬁcant at the 10 percent level (p-value =
+.053). The diﬀerence in peer eﬀects on hearing is not statistically signiﬁcant (p-value = .37).
+27High uptake
+villageLow uptake
+village
+0.00 0.03 0.06 0.09
+Average marginal effect of one adopting neighbor on adoptionEffect
+satisfaction
+communication
+contagionFigure 5: Components of social inﬂuence in high and low uptake villages. Marginal eﬀect of one
+adopting neighbor (contagion) on the probability of adoption, with the additional eﬀects of interpersonal
+communication with the neighbor (communication), and of that neighbor being satisﬁed (satisfaction). Com-
+munication most fosters adoption. High-uptake villages have larger eﬀect sizes. Satisfaction has almost no
+eﬀect in low uptake villages.
+villages is 7.1 percentage points, in low-uptake villages it is 3.2 percentage points.
+A third implication is that some types of networks are more likely to facilitate truthful com-
+munication than others. We have argued that strong ties are better positioned to enforce truthful
+communication, given the higher social cost of mischaracterizing the costs and beneﬁts of the new
+technology. To test this argument, we disaggregate all network relations into simple ties ( ishares a
+single type of relationship with j), and complex ties ( i’s relationship with jis based on more than
+one of four types of ties). We then reestimate our absolute threshold model, ﬁrst comparing the
+eﬀect of a complex tie to that of any simple tie, then to that of each kind of simple tie. Consistent
+with our expectation, we ﬁnd that peer eﬀects are stronger for complex ties than for simple ties
+(Table 4, column 1), and that, among simple ties, friendship and family ties are most inﬂuential
+(column 2).
+Finally, in our model, agents learn from their neighbors’ signal about the state of the world:
+θ∈{H,L}. Proposition 5 predicts that agents put more weight on the signals emitted from political
+experts(e.g., community leaders) who are knowledgeable abut the responsiveness of district oﬃcials
+ascomparedtotheaveragenon-elitevillager. Thisyieldsasimpletestableimplication: themarginal
+eﬀect of a neighboring leader on adoption should be higher than that of an “ordinary” neighbor.20
+To test this proposition, we modify our main speciﬁcation by disaggregating our core explanatory
+variable – the number of adopting neighbors – into two separate variables measuring the number
+20Being a leader is a binary variable that equals 1 for respondents who self-reported that they occupy one of several
+formal leadership positions within the village.
+28Dependent variable: adopt
+Simple vs. complex ties Types of relationships
+(1) (2)
+# adopting simple ties, βs 0.024∗∗∗
+(0.005)
+# adopting simple family 0.015∗
+(0.008)
+# adopting simple friends 0.032∗∗∗
+(0.011)
+# adopting simple lender 0.018
+(0.011)
+# adopting simple solver 0.010
+(0.010)
+# adopting complex ties, βc 0.039∗∗∗0.038∗∗∗
+(0.010) (0.010)
+degree 0.001∗0.001∗
+(0.001) (0.001)
+Constant 0.119 0.114
+(0.077) (0.079)
+βc−βs/negationslash= 0, F statistic 2.21 _
+Controls X X
+Observations 3,019 3,019
+R20.248 0.254
+Note:∗p<0.1;∗∗p<0.05;∗∗∗p<0.01
+Table 4: Network types. OLS estimates with village-level ﬁxed eﬀects. Heteroskedastic standard errors
+in parentheses. Model 1 reports the eﬀect of one adopting neighbor with whom ishares a single type of
+relationship (simple tie) and more than one type of relationship (complex tie). Models 2 breaks down simple
+ties into family, friends, leader, and solver. Complex ties are weakly more inﬂuential than simple ties (F-test
+not signiﬁcant). Friendship and family ties are the most inﬂuential simple ties.
+of adopting peersand the number of adopting leaders, and estimate this model on the set of
+peers. Results, reported in Table 5 suggest that the probability of adoption is somewhat higher
+for connections to leaders as compared to peers, whether using the entire pooled sample (column
+1), or subsetting to only high-uptake villages where networks support social diﬀusion (column 2).
+Note, however, that these diﬀerences are not statistically signiﬁcant.
+29Dependent variable: adopt
+Leader: all Leader: high Leader: low
+(1) (2) (3)
+# adopting peers, βp0.021∗∗∗0.020∗∗0.008
+(0.007) (0.009) (0.008)
+# adopting leaders, βl0.032∗∗∗0.029∗∗∗0.012
+(0.008) (0.010) (0.008)
+degree (peers) 0.003∗∗0.004∗∗0.003∗
+(0.001) (0.002) (0.002)
+degree (leaders) 0.002 0.003 0.002
+(0.003) (0.004) (0.004)
+Constant 0.094 0.076 0.152∗∗∗
+(0.081) (0.085) (0.047)
+βp−βl/negationslash= 0, F statistic 0.97 0.42 0.1
+Controls X X X
+Observations 2,585 1,202 1,383
+R20.233 0.251 0.180
+Note:∗p<0.1;∗∗p<0.05;∗∗∗p<0.01
+Table 5:Leader vs. peer eﬀects. OLS estimates with village-level ﬁxed eﬀects. Heteroskedastic standard
+errors in parentheses. Models 1-3 are estimated on the sample of citizens for all villages (model 1), then
+separately for high and low-uptake villages (models 2 and 3). Leader and peer eﬀects are signiﬁcant on
+average and in high-uptake villages. Leaders’ inﬂuence is weakly higher than peer’s inﬂuence (F statistic not
+signiﬁcant). Models 4: although not signiﬁcant, leaders are less sensitive to peer inﬂuence.
+30What kind of communities support peer eﬀects?
+Our model suggests that networks that support peer eﬀects do so because some (informal or formal)
+institutions manage to enforce truthful communication. While we are unable to identify what these
+institutions may be, we test three classes of explanations that past research has advanced as means
+to overcome collective action problems arising from externalities: (a) pro-sociality; (b) leadership
+structure, and especially leadership concentration; (c) and ethnic (and religious) homogeneity. In
+practice, we run separate models in which we regress our estimates of village-level peer eﬀects
+(Figure 4) on a range of proxy variables:21
+Pro-sociality : is measure as village mean contributions in two lab-in-ﬁeld experiments: (a) public
+goodgame and (b) dictator game . While dictator games measure the extent to which nodes in-
+ternalize the payoﬀs of other co-villagers, public goods game measure how villagers balance their
+private interests against the interests of their group. Both measures—which have been shown to be
+correlated with communities’ outcomes outside the laboratory setting (Grossman and Baldassarri,
+2012)—should support an equilibrium of truthful communication.22
+Leadership structure : is proxied by Leadership concentration , calculated as a Herﬁndahl con-
+centration index of ties to informal leaders in a village network.23Concentrated leadership allows
+coordinating communities around shared goals (Rojo, Jha and Wibbels, 2014), as well as coordinat-
+ingpunishmentof(potential)defectors(GrossmanandBaldassarri,2012)inthefaceofexternalities.
+Homogeneity : is measured using Herﬁndahl concentration indices for both (a) Ethnicity and (b)
+Religion derived from the 2014 Ugandan census. Homogeneity helps overcoming externalities due
+to potential defectors’ fear that information on their behavior would be transmitted widely (Hab-
+yarimana et al., 2009).
+Figure6showstheeﬀectofvillage-levelfeaturesonthevillage-levelpeereﬀect.24Bothmeasures
+21See footnote 19 for details about estimation.
+22A detailed description of the games can be found in the SI.
+23Survey respondents were asked to report whom they considered to be the most eﬀective leader in their community.
+We deﬁned as an informal leader any such individual that was named by at least ﬁve respondents.
+24Figure 3 in the SI shows scatter plots of the data used to construct this ﬁgure.
+31of pro-sociality have a large positive and signiﬁcant association with peer eﬀect. This ﬁnding
+is consistent with the idea that the more individuals care about the utility of their neighbors,
+the more likely it is that communication of information about new technology is accurate and
+truthful communication an equilibrium. In addition, we ﬁnd evidence that leadership concentration
+supports truthful communication in the face of externalities. These ﬁndings are consistent with
+our theoretical framework.
+●●
+●●
+●
+Ethnic concentration (12)Religious concentration (15)Pro−sociality − dictator (15)Pro−sociality − public good (15)Leadership concentration (14)
+−5.0 −2.5 0.0 2.5
+Standardized effect sizeVariable
+Figure 6: Determinants of village-level peer eﬀects . Each row reports separate weighted least square
+estimatesofvillage-levelpeereﬀect(ﬁgure4)ontherowcovariatecontrollingforvillagesatisfaction, weighted
+by inverse variance of the DV. Bars represent heteroskedastic 90 and 95 percent conﬁdence intervals. Outliers
+with high leverage excluded (sample sizes in parenthesis).
+8 Conclusion
+What explains variation in the uptake of new political communication technologies? In this paper,
+we have shown that the adoption of political communication technologies—an increasingly common
+form of political participation—is powerfully inﬂuenced by peer eﬀects. Across the sixteen Ugandan
+villages we studied, the likelihood of an individual adopting the new technology is a function of the
+number of her neighbors who had adopted the technology. This ﬁnding contributes to a growing
+body of work examining the determinants of uptake for PCT, looking beyond the role of individual
+attributes, neighborhood characteristics, and perceptions of government responsiveness to investi-
+gate the role of social networks in adoption choices. As such, it contributes to a literature that
+investigates the adoption of new technologies, particularly in the context of low income countries.
+However, while we ﬁnd robust evidence of peer eﬀects on technology adoption in the aggregate,
+this ﬁnding masks variation in the role of peer eﬀects across villages. Indeed, peer eﬀects were only
+observed in a subset of villages, suggesting that diﬀusion processes of PCT may diﬀer importantly
+from those of more commonly studied agricultural technologies. We develop a model motivated
+32by the intuition that the information sharing process within a network may diﬀer for goods that
+have minimal externalities, as in the case of a good like a fertilizer, or positive externalities, as in
+the case of PCT. The model serves to highlight diﬀerences in the diﬀusion process across these two
+types of technologies.
+There are several features of political communication technologies that are relevant to under-
+standing processes of diﬀusion. First, adoption of PCTs can involve personal risks and public
+beneﬁts. Second, the newness of the technology means that there is uncertainty about the extent
+and natures of the costs and beneﬁts of adoption. Third, there are externalities in adoption—the
+technology is only eﬀective if a substantial number of people use it. These factors give us reason to
+believe that peer eﬀects are likely to aﬀect adoption, but also that early adopters have incentives to
+exaggerate the beneﬁts of adoption. It then follows that individuals may discount the information
+they receive from initial adopters. When a community is able to enforce truthful communication—
+for example through informal institutions—the diﬀusion of innovations with externalities looks
+similar to the diﬀusion process of goods without externalities: individuals with larger networks
+learn faster and are more likely to adopt, and the adoption choices of network ‘neighbors’ are more
+correlated than the adoption choices of unconnected nodes. However, if a community is unable to
+enforce truthful communication, individuals do not learn from their neighbors and adoption rates
+of the new technology remain low.
+Our study qualiﬁes the long-standing argument that peer eﬀects are ubiquitous in the process
+of technology adoption. We show that while peer eﬀects do facilitate the adoption of goods where
+the beneﬁt one derives from using the good does not depend on others’ adoption, peer eﬀects may
+not facilitate adoption for goods where production of beneﬁts is joint. To understand whether
+and when peer eﬀects will facilitate adoption we must assess both whether or not externalities
+exist as well as whether communities have mechanisms for enforcing truthful information about
+the costs and beneﬁts of the good. The adoption of new forms of political participation follows a
+diﬀerent trajectory than the adoption of many agricultural practices, because political participation
+is subject to externalities. This insight may go a long way in explaining low rates of adoption of
+PCTs, but also the considerable variation in rates of adoption we observe across communities.
+We further ﬁnd that when villagers enforce truthful information sharing, adoption rates are
+signiﬁcantly higher as networks support a process of ‘social contagion.’ Our ﬁnding that peer
+33eﬀects, under certain conditions, supports technology diﬀusion is quite robust, and likely not simply
+a reﬂection of homophily. Speciﬁcally, our estimated peer eﬀects are robust to various matching
+estimators, to ﬂexibly controlling for the size of one’s network (degree), and to an innovative
+instrumental variable approach for dealing with endogenous treatment exposure.
+Though we are able to demonstrate that not all villages solve the problem of truthful com-
+munication, our sample size at the community level is too small to explore rigorously when and
+how villages overcome the incentive to misrepresent the state of the world to their neighbors. In
+addition, our model does not consider the case of signiﬁcant negative externalities. We leave these
+important questions for future work.
+34References
+Abrams, Samuel, Torben Iversen and David Soskice. 2011. “Informal social networks and rational
+voting.”British Journal of Political Science 41(02):229–257.
+Acemoglu, Daron, Asuman Ozdaglar and Ercan Yildiz. 2011. Diﬀusion of innovations in social
+networks. In Decision and control and European control conference (CDC-ECC), 2011 50th IEEE
+conference on . IEEE pp. 2329–2334.
+Alatas, Vivi, Abhijit Banerjee, Arun G Chandrasekhar, Rema Hanna and Benjamin A Olken. 2016.
+“Network structure and the aggregation of information: Theory and evidence from Indonesia.”
+The American Economic Review 106(7):1663–1704.
+An, Weihua. 2016. “On the Directionality Test of Peer Eﬀects in Social Networks.” Sociological
+Methods & Research 45(4):635–650.
+Anderson, Michael L. 2008. “Multiple Inference and Gender Diﬀerences in the Eﬀects of Early
+Intervention: A Reevaluation of the Abecedarian, Perry Preschool, and Early Training Projects.”
+Journal of the American Statistical Association 103(484):1481–1495.
+Aral, Sinan, Lev Muchnik and Arun Sundararajan. 2009. “Distinguishing inﬂuence-based contagion
+from homophily-driven diﬀusion in dynamic networks.” Proceedings of the National Academy of
+Sciences 106(51):21544–21549.
+Aronow, Peter M and Cyrus Samii. n.d. “Estimating Average Causal Eﬀects under General Inter-
+ference, with Application to a Social Network Experiment.” Annals of Applied Statistics .
+Bala, Venkatesh and Sanjeev Goyal. 1998. “Learning from neighbours.” The review of economic
+studies65(3):595–621.
+Bandiera, Oriana and Imran Rasul. 2006. “Social networks and technology adoption in northern
+Mozambique.” The Economic Journal 116(514):869–902.
+Banerjee, Abhijit, Arun G Chandrasekhar, Esther Duﬂo and Matthew O Jackson. 2013. “The
+Diﬀusion of Microﬁnance.” Science341(6144):1236498.
+35Blackwell, David et al. 1951. Comparison of Experiments. In Proceedings of the second Berkeley
+symposium on mathematical statistics and probability . TheRegentsoftheUniversityofCalifornia.
+Blair, Graeme, Rebecca Littman and Elizabeth Levy Paluck. 2017. “Motivating the adoption of
+new community-minded behaviors: An empirical test in Nigeria.” Unpublished manuscript .
+Buntaine, Mark T, Daniel L Nielson and Jacob T Skaggs. 2017. “Escaping the Valley of Disengage-
+ment: Two Field Experiments on Motivating Citizens to Monitor Public Goods.” Unpublished
+manuscript .
+Centola, Damon. 2015. “The Social Origins of Networks and Diﬀusion.” American Journal of
+Sociology 120(5):1295–1338.
+Centola, Damon and Michael Macy. 2007. “Complex contagions and the weakness of long ties.”
+American journal of Sociology 113(3):702–734.
+Chaudhury, Nazmul, Jeﬀrey Hammer, Michael Kremer, Karthik Muralidharan and F Halsey
+Rogers. 2006. “Missing in action: teacher and health worker absence in developing countries.”
+The Journal of Economic Perspectives 20(1):91–116.
+Coleman, James Samuel, Elihu Katz, Herbert Menzel et al. 1966. Medical innovation: A diﬀusion
+study. Bobbs-Merrill Indianapolis.
+Conley, Timothy G and Christopher R Udry. 2010. “Learning about a new technology: Pineapple
+in Ghana.” The American Economic Review 100(1):35–69.
+Cranmer, Skyler J, Philip Leifeld, Scott D McClurg and Meredith Rolfe. 2017. “Navigating the
+range of statistical tools for inferential network analysis.” American Journal of Political Science
+61(1):237–251.
+DeGroot, Morris H. 1974. “Reaching a consensus.” Journal of the American Statistical Association
+69(345):118–121.
+Dupas, Pascaline. 2014. “Short-run subsidies and long-run adoption of new health products: Evi-
+dence from a ﬁeld experiment.” Econometrica 82(1):197–228.
+36Eubank, Nicholas, Guy Grossman, Melina Platas and Jonathan Rodden. 2017. “Social Networks,
+Word of Mouth, and Turnout in Low Salience Elections.” Unpublished manuscript .
+Feigenbaum, James and Andrew B Hall. 2016. “How High-Income Areas Receive More Service from
+Municipal Government: Evidence from City Administrative Data.” Unpublished manuscript .
+Foster, Andrew D and Mark R Rosenzweig. 1995. “Learning by Doing and Learning from Others:
+Human Capital and Technical Change in Agriculture.” Journal of political Economy 103(6):1176–
+1209.
+Galeotti, Andrea, Christian Ghiglino and Francesco Squintani. 2013. “Strategic information trans-
+mission networks.” Journal of Economic Theory 148(5):1751–1769.
+Gieczewski, Germán. 2017. “Lying by Omission: Veriﬁable Communication on Networks.” Unpub-
+lished manuscript .
+Golub, Benjamin and Evan D Sadler. 2017. Learning in social networks. In The Oxford Handbook
+of the Economics of Networks . Oxford Handbooks Online.
+Grossman, Guy and Delia Baldassarri. 2012. “The impact of elections on cooperation: Evidence
+from a lab-in-the-ﬁeld experiment in Uganda.” American Journal of Political Science 56(4):964–
+985.
+Grossman,Guy,KristinMichelitchandMartaSantamaria.2016. “TextingComplaintstoPoliticians
+Name Personalization and Politicians’ Encouragement in Citizen Mobilization.” Comparative Po-
+litical Studies .
+Grossman, Guy, MacartanHumphreysandGabriellaSacramone-Lutz.2014. ““IwldlikeuWMPto
+extendelectricity2ourvillage”: OnInformationTechnologyandInterestArticulation.” American
+Political Science Review 108(03):688–705.
+Grossman, Guy, Macartan Humphreys and Gabriella Sacramone-Lutz. 2016. “Information tech-
+nology and political engagement: Mixed evidence from Uganda.” Unpublished manuscript .
+Grossman, Guy, Melina Platas and Jonathan Rodden. 2017. “Crowdsourcing Accountability: ICT
+for Service Delivery.” Unpublished manuscript .
+37Habyarimana, James, Macartan Humphreys, Daniel N Posner and Jeremy M Weinstein. 2009.
+Coethnicity: diversity and the dilemmas of collective action . New York: Russell Sage Foundation.
+Hagenbach, Jeanne and Frédéric Koessler. 2010. “Strategic Communication Networks.” The Review
+of Economic Studies 77(3):1072–1099.
+Jackson, Matthew O. 2008. Social and Economic Networks . Princeton, NJ: Princeton University
+Press.
+Jackson, Matthew O. and Leeat Yariv. 2010. Diﬀusion, Strategic Interaction, and Social Structure.
+InHandbook of Social Economics , ed. Jess Benhabib, Alberto Bisin and Matthew O. Jackson.
+Elsevier.
+Jahan, Selim, E Jespersen, S Mukherjee, M Kovacevic, A Bonini, C Calderon, C Cazabat, YC
+Hsu, C Lengfelder, S Lucic et al. 2015. Human Development Report 2015: Work for Human
+Development . New York, NY: UNDP.
+Klofstad, Casey A, Anand Edward Sokhey and Scott D McClurg. 2013. “Disagreeing about Dis-
+agreement: How Conﬂict in Social Networks aﬀects Political Behavior.” American Journal of
+Political Science 57(1):120–134.
+Kolaczyk, Eric D. 2009. Statistical Analysis of Network Data . Springer.
+Kosack, Stephen and Archon Fung. 2014. “Does Transparency Improve Governance?” Annual
+Review of Political Science 17:65–87.
+Kremer, Michael and Edward Miguel. 2007. “The illusion of sustainability.” The Quarterly Journal
+of Economics 122(3):1007–1065.
+Larson, Jennifer M and Janet I Lewis. 2017. “Ethnic networks.” American Journal of Political
+Science61(2):350–364.
+Larson, Jennifer M, Janet I Lewis and Pedro Rodrıguez. 2017. “From Chatter to Action: How
+Social Networks Inform and Motivate in Rural Uganda.” Unpublished manuscript .
+Lewis, Jeﬀrey B and Drew A Linzer. 2005. “Estimating regression models in which the dependent
+variable is based on estimates.” Political analysis 13(4):345–364.
+38Miguel, Edward and Mary Kay Gugerty. 2005. “Ethnic diversity, social sanctions, and public goods
+in Kenya.” Journal of public Economics 89(11):2325–2368.
+Oster, Emily and Rebecca Thornton. 2012. “Determinants Of Technology Adoption: Peer Eﬀects
+In Menstrual Cup Take-Up.” Journal of the European Economic Association 10(6):1263–1293.
+Peixoto, Tiago and Micah L Sifry, eds. 2017. Civic Tech in the Global South: Assessing Technology
+for the Public Good . The World Bank.
+Pietryka, Matthew T and Donald A DeBats. 2017. “It’s Not Just What You Have, but Who You
+Know: Networks, Social Proximity to Elites, and Voting in State and Local Elections.” American
+Political Science Review 111(2):360–378.
+Rogers, Everett M. 1962. Diﬀusion of Innovations . New York, NY: The Free Press.
+Rojo, Guadalupe, SubhashJhaandErikWibbels.2014. “PoliticalNetworks, ClientelismandPublic
+Goods: Evidence from Slums in Udaipur, India.” Working paper.
+Rolfe, Meredith. 2012. Voter turnout: A social theory of political participation . Cambridge Univer-
+sity Press.
+Shalizi, Cosma Rohilla. 2018. The Statistical Analysis of Complex Systems Models . Cambridge
+University Press.
+Siegel, David A. 2011. “Social networks in comparative perspective.” PS: Political Science &amp;
+Politics44(01):51–54.
+Sinclair, Betsy. 2012. The social citizen: Peer networks and political behavior . University of Chicago
+Press.
+Sjoberg, Fredrik M, Jonathan Mellon and Tiago Peixoto. 2017. “The Eﬀect of Bureaucratic Re-
+sponsiveness on Citizen Participation.” Public Administration Review .
+VanderWindt, PeterandMacartanHumphreys.2016. “CrowdseedinginEasternCongo: Usingcell
+phones to collect conﬂict events data in real time.” Journal of Conﬂict Resolution 60(4):748–781.
+39Data Appendix
+Esri, HERE, DeLorme, MapmyIndia, © OpenStreetMap
+contributors, and the GIS user communityJ
+IP
+OK
+NLFED
+G
+HA
+B
+CARUA DISTRICT
+Red:     High uptake villagesArua 
+Municipality
+Black:  Low uptake villagesM
+Figure A.1: High and low-uptake villages selected for complete network data collection
+40Figure A.2: Relevant message senders by village
+Proofs
+Proof of proposition 1. Consider a consistent strategy proﬁle σ. I show that if σis a perfect
+Bayesian equilibrium, then any agent ihas a threshold strategy. Let ˆπi(Sig) = Pr(θ=H|Sig)bei’s
+posterior on the state. Using Baye’s theorem,
+ˆπi(Sig) =Pr(Sig|θ=H)πi
+Pr(Sig|θ=H)πi+ Pr(Sig|θ=L)(1−πi)
+Sequential rationality implies that y∗(Sig) = 1⇐⇒Eθ[ui(1,.,θ)|Sig]−Eθ[ui(0,.,θ)|Sig]≥0.
+Consider ﬁrst the case without externalities. In this case, Eθ[ui(1,θ)|Sig]−Eθ[ui(0,θ)|Sig] =
+41ˆπi(Sig)qH(1)−ci. As such, the condition Eθ[ui(1,θ)|Sig]−Eθ[ui(0,θ)|Sig]≥0is equivalent to the
+following condition on ˆπi(Sig):
+ˆπi(Sig)≥ci
+qH(1)(3)
+Suppose thatci
+qH(1)<1. Then condition 3 is equivalent to l(Sig)≥log/bracketleftbigg ci
+qH(1)
+1−ci
+qH(1)1−πi
+πi/bracketrightbigg
+≡ai.
+Suppose thatci
+qH(1)≥1. Then condition 3 is equivalent to
+/parenleftbigg
+1−ci
+qH(1)/parenrightbigg
+L(Sig)≥ci
+qH(1)1−πi
+πi,
+withL(Sig) =Pr(Sig|θ=H)
+Pr(Sig|θ=L)the likelihood ratio. Since Li>0, condition 3 is never met, and we deﬁne
+ai≡maxSig∈Iigl(Sig) + 1.
+Consider now the case with externalities. In this case, we have:
+Eθ[ui(1,y−i,θ)|Sig]−Eθ[ui(0,y−i,θ)|Sig] = ˆπi
+Eθ
+qH
+1 +/summationdisplay
+j/negationslash=iyj
+/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingleSig
+−Eθ
+qH
+/summationdisplay
+j/negationslash=iyj
+/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingleSig
+
+−ci
+BecauseqHis strictly increasing, we have Eθ/parenleftBig
+qH/parenleftBig
+1 +/summationtext
+j/negationslash=iyj/parenrightBig
+|Sig/parenrightBig
+>Eθ/parenleftBig
+qH/parenleftBig/summationtext
+j/negationslash=iyj/parenrightBig
+|Sig/parenrightBig
+. As
+such, the condition Eθ[ui(1,y−i,θ)|Sig]−Eθ[ui(0,y−i,θ)|Sig]≥0is equivalent to the following con-
+dition on ˆπi:
+ˆπi(Sig)≥t=ci
+Eθ/parenleftBig
+qH/parenleftBig
+1 +/summationtext
+j/negationslash=iyj/parenrightBig/vextendsingle/vextendsingle/vextendsingleSig/parenrightBig
+−Eθ/parenleftBig
+qH/parenleftBig/summationtext
+j/negationslash=iyj/parenrightBig/vextendsingle/vextendsingle/vextendsingleSig/parenrightBig
+The rest of the proposition proves as in the case without externalities, with the exception that
+we consider the cases where t<1andt≥1.
+Proof of proposition 2. This is an immediate application of Blackwell et al. (1951) theorem. For
+any strategy proﬁle to satisfy sequential rationality, agent jsends the message mjithat maximizes
+her payoﬀ. When indiﬀerent, she may randomize. One may garblethe conditional distribution of
+mijunder truthful communication to recover the conditional distribution of mjiunder untruthful
+communication. Therefore, by Blackwell’s information theorem, ˜Vig≤Vig.
+Proof of proposition 3. Deﬁneϕ:Iig/prime→Iigthat associates to each Sig/prime∈Iig/primethe same
+Sig/primewithout its last message, which is an element of Iig. Deﬁney0
+ig/prime(Sig/prime) =y∗
+ig(ϕ(Sig/prime)). Re-
+42call thaty∗
+ig/primesolves maxyiEθ[ui(yi,.,θ)|Sig/prime]. As such, it must be that Eθ[ui(y∗
+ig/prime(Sig/prime),.,θ)|Sig/prime]≥
+Eθ[ui(y0
+ig/prime(Sig/prime),.,θ)|Sig/prime]. This implies
+Vig/prime=/summationdisplay
+Sig/prime∈Iig/primeEθ[ui(y∗
+ig/prime(Sig/prime),.,θ)|Sig/prime]≥/summationdisplay
+Sig/prime∈Iig/primeEθ[ui(y0
+ig/prime(Sig/prime),.,θ)|Sig/prime] =Vig
+Proof of proposition 4. Recall that ρ(x,y) =Cov(x,y)√
+V(x)V(y), with Cov (x,y) =E(xy)−E(x)E(y)the
+covariance of xandy. Supposeireceivesni=|Ii|signals ong. Analogously, jreceivesnjsignals.
+Note thatiandjhavenij=|Ii∩Ij|signals in common. On g/prime,iandjeach receive one additional
+signal:I/prime
+i=Ii∪{sj}andI/prime
+j=Ij∪{si}.
+The proof ﬁrst shows that the proposition holds given θ=H. Note that
+logli(g) =/summationdisplay
+k∈Ni(g)(2sk−1)logpk
+1−pk
+E[l(Sig)|H] =/summationdisplay
+k∈Ni(g)(2pk−1)logpk
+1−pk
+V[l(Sig)|H] =/summationdisplay
+k∈Ni(g)pk(1−pk)/parenleftbigg
+2logpk
+1−pk/parenrightbigg2
+Cov[l(Sig),l(Sjg)|H] =pk(1−pk)/summationdisplay
+k∈Ni(g)∩Nj(g)/parenleftbigg
+2logpk
+1−pk/parenrightbigg2
+Letλi=/parenleftBig
+2logpi
+1−pi/parenrightBig2pi(1−pi). We have
+V[l(Sig/prime)|H] =V[l(Sig)|H] +λj
+Cov[l(Sig/prime),l(Sjg/prime)|H] =Cov[l(Sig),l(Sjg)|H] +λi+λj
+For notational simplicity, let
+Vi=V[l(Sig)|H]
+C=Cov[l(Sig),l(Sjg)|H]
+C/prime=Cov[l(Sig/prime),l(Sjg/prime)|H]
+43These identities imply:
+C/prime−C=C+λi+λj/radicalBig
+(Vi+λj)(Vj+λi)−C/radicalbigViVj
+∝(C+λi+λj)/radicalBig
+ViVj−C/radicalBig
+(Vi+λj)(Vj+λi)
+∝(C+λi+λj)2ViVj−C2(Vi+λj)(Vj+λi)
+=C[Viλi(2Vj−C) +Vjλj(2Vi−C)] + 2λiλj[ViVj−C2] +ViVj[λ2
+i+λ2
+j]
+Note that Vi=Vi\j+C, with Vi\j=/summationtext
+k∈Ni(g)\Nj(g)/parenleftBig
+2logpk
+1−pk/parenrightBig2pk(1−pk). As such, we have
+2Vi−C≥0,2Vj−C≥0, andViVj−C2=Vi\jVj\i+C[Vi\j+Vj\i]≥0. Together, this shows that
+C/prime−C≥0.
+Consider the case where θ=L. We have E[l(Sig)|L] =/summationtext
+k∈Ni(g)logpk
+1−pk[2(1−pk)−1], which
+implies V[l(Sig)|L] =V[l(Sig)|H]and Cov [l(Sig),l(Sjg)|L] =Cov[l(Sig),l(Sjg)|H]. We show as when
+θ=Hthatρ/bracketleftbigl(Sig/prime),l(Sjg/prime)/vextendsingle/vextendsingleL]−ρ[l(Sig),l(Sjg)|L]≥0.
+Proof of proposition 5. Note that logli(g,sj=H)−logli(g,sj=L) = logpj
+1−pj. As such,
+∂logli(g,sj=H)−logli(g,sj=L)
+∂pj=1−pj
+pj>0
+Proof of proposition 6. Consider a strategy proﬁle σ, and compare i’s expected payoﬀ at t= 1
+when sending a vector of messages mn
+icontainingn≥1lies,EUi(mn
+i,si)to that of telling no lies,
+EUi(m0
+i,si), after having observed her signal si. We have
+EUi(mn
+i,si)−EUi(m0
+i,si) =−nκ
+Whenκ= 0,iis indiﬀerent between lying and telling the truth, so truthful communication is an
+equilibrium. When κ>0, telling the truth strictly dominates lying, so truthful communication is
+the unique equilibrium.
+Proof of proposition 7. Letˆπi(si) = Pr(θ=H|si)bei’s posterior on the state at t= 1. Consider
+a consistent strategy proﬁle σ, and compare i’s expected payoﬀ when sending a vector of messages
+mn
+icontaining n>0lies,EUi(mn
+i,si)to that of telling no lies, EUi(m0
+i,si)after having observed
+44her signalsi. We have
+EUi(mn
+i,si)−EUi(m0
+i,si) = ˆπi(si)∆Eσ−nκ,
+with ∆Eσ=E/bracketleftBig
+qH(/summationtext
+jyj)|si,mn
+i/bracketrightBig
+−E/bracketleftBig
+qH(/summationtext
+jyj)|si,m0
+i/bracketrightBig
+the diﬀerence in the expected reward be-
+tween telling those nlies and telling no lies in proﬁle σ.
+Note that truthful communication is an equilibrium if and only if EUi(mn
+i)−EUi(m0
+i)≤0
+for alli, which requires ∆Etruthful≥0. Under truthful communication, we have ∆Etruthful≥
+0⇐⇒si=L. Suppose this is true. Then for truthful communication to be an equilibrium,
+it must be that κ≥ˆπi(si)∆Etruthful
+nfor anyiand anynlies. LetMig={0,1}|Ni(g)|be the
+set of vectors of messages that ican send. Truthful communication is an equilibrium for any
+κ≥¯κ1≡maxi∈N,mn
+i∈Mi,si∈{H,L}ˆπi(si)∆Etruthful
+n.
+Consider a strategy proﬁle σwhere there is some lying, with Σthe set of such proﬁles.
+This proﬁle is not a PBE if EUi(mn
+i)−EUi(m0
+i)<0for alliand allmn
+i∈Mi. Deﬁne ¯κσ≡
+maxi∈N,mn
+i∈Mi,si∈{H,L}ˆπi(si)∆E
+n,andnotethat ¯κσ≤1. Ifthemaximumexists,deﬁne ¯κ2≡maxσ∈Σ¯κσ.
+Otherwise, deﬁne κ2≡1.
+45Table A.1: Determinants of Uptake at the Village-level
+Senders/adult pop Messages/adult pop
+(1) (2) (3) (4) (5) (6)
+GAPP activities
+Registration drive 2.357*** 2.327*** 10.296*** 9.768***
+(0.223) (0.362) (1.909) (2.398)
+Community meeting venue 0.572 0.436 0.521 3.851 3.307 3.638
+(0.496) (0.369) (0.409) (3.216) (2.838) (3.426)
+Service points (binary)
+Primary school 0.306 0.465 0.410 1.269 1.661 1.622
+(0.336) (0.295) (0.433) (2.321) (2.119) (3.309)
+Health center -0.622 -1.091** -1.046* -3.478 -6.095* -6.243
+(0.365) (0.428) (0.556) (2.417) (3.058) (3.975)
+Distance to district capital 0.511*** 0.538** 2.845*** 3.126**
+(0.162) (0.221) (0.909) (1.294)
+Distance to Health Center -0.384** -0.093 -2.013 -0.869
+(0.176) (0.197) (1.272) (1.213)
+Census data
+ELF 0.751 0.583 2.027 0.954
+(0.644) (0.502) (3.378) (3.208)
+% Secondary education 0.726* 1.336*** 3.861* 6.714***
+(0.408) (0.275) (1.949) (1.920)
+Village pop (log) -0.778** -1.122*** -2.892 -4.176**
+(0.354) (0.289) (1.883) (1.765)
+Constant 0.036 0.386 2.600*** -0.086 1.651 10.852***
+(0.213) (0.294) (0.246) (1.123) (1.404) (2.282)
+N 120 120 91 120 120 91
+R20.217 0.520 0.580 0.147 0.332 0.342
+Sample All villages All villages Registration villages All villages All villages Registration villages
+- Robust standard errors in parentheses.
+* p<0.10, ** p<0.05, *** p<0.01
+46Peer eﬀects and externalities in technology adoption: Evidence
+from community reporting in Uganda
+Supplementary Information
+January 23, 2018
+1Contents
+1 Glossary of network concepts 3
+2 Descriptive statistics 4
+3 Full regression models 6
+4 Robustness checks 10
+4.1 Exclude village A . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+4.2 Two-stage selection model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+4.3 Instrumental variable . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+4.4 Degree and other network characteristics . . . . . . . . . . . . . . . . . . . . . . . 18
+4.5 Matching . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+5 Heterogeneous eﬀects by village 23
+6 Lab-in-the-ﬁeld games 24
+List of Tables
+1 Network sampling . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+2 Main speciﬁcations, controls included . . . . . . . . . . . . . . . . . . . . . . . . . 7
+3 Network types, controls included . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+4 Leader vs. peer eﬀects, controls included . . . . . . . . . . . . . . . . . . . . . . . 9
+5 Main speciﬁcations, village A excluded . . . . . . . . . . . . . . . . . . . . . . . . 11
+6 Two-stage selection model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+7 Instrumental variable approach . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+8 Instrumental variable approach, ﬁrst stage . . . . . . . . . . . . . . . . . . . . . . 17
+9 Placebo tests for IV . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+10 Flexible controls for degree . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+11 Network covariates . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+12 Matching estimates . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+List of Figures
+1 Degree distribution by network type . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2 Matching, balance diagnostics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+3 Determinants of village-level peer eﬀect . . . . . . . . . . . . . . . . . . . . . . . 24
+21 Glossary of network concepts
+A network, often called a graph, is a collection of nodes and of ties between these nodes. We
+write the graph g= (G,N), whereNis the set of nodes, and Gis the set of ties, and a tie is a
+pair(i,j),i,j∈N. Networks can also be represented by an (N×N)adjacency matrixm, where
+mij= 1if there is a tie from itoj, andmij= 0otherwise. The size ofgis its amount of nodes.
+A graph can be directed or undirected. In the former case, there is a distinction between a
+tie fromitojand a tie from jtoi. That is, we do not require that mis symmetric. In the
+latter case, there is no distinction, and we require that mis symmetric. In what follows, we
+deﬁne the network concepts used in the paper in the case of an undirected network.
+•Neighbor:jis a neighbor of iif they are connected; that is, if (i,j)∈G. The neighborhood
+ofiis the set of i’s neighbors.
+•Degree: the degree diofiis the number of neighbors ihas. That is, di=/summationtext
+j/negationslash=imij.
+•Isolate:iis an isolate if it has a degree of 0.
+•Density: captures the amount of ties in g, relative to its size. A network of size nhas
+Tg=n(n−1)/2ties. Lettg=/summationtext
+i<jmijbe the amount of ties in g. The density of gis
+Dg=tg/Tg.
+•Clustering coeﬃcient: the extent to which the friends of iare friends with each other.
+Formally, it is the amount of triangles in i’s neighborhood normalized by the amount
+of triangles in i’s neighborhood. It writes ci=/summationtext
+j/summationtext
+kmijmikmjk//summationtext
+j/summationtext
+kmijmik, with
+i/negationslash=j,i/negationslash=k,j<k.
+•Path: apathbetween iandjisaroutefrom itojonthegraph g. Formally,itisasequence
+of ties (i1,i2),(i2,i3),...,(iK−1,iK)such that (ik,ik+1)∈Gfor eachk∈{1,...,K−1}, with
+i1=i,iK=j, and each node in the sequence i1,...,i Kis distinct.
+•Connected graph: a graph is connected if there is a path between any i,j∈N
+•Pathlength: the number of steps it takes to get from itojon some path. Formally, the
+length of path p= (i1,i2),(i2,i3),...,(iK−1,iK)isK−1.
+•Distance: the distance lijbetweeniandjis the length of the shortest path between iand
+j.
+•Closeness centrality: how close is node ifrom the rest of the graph? The closeness
+centrality of iis the mean distance between iand all other nodes of the graphs. It writes
+Li=/summationtext
+j/negationslash=ilij/(N−1). The concept is not well-deﬁned when the graph gis not connected.
+•Betweenness centrality: how much do people have to go through node i? Betweenness
+centrality is, for any j,k/negationslash=i, the amount of shortest paths that go through i. The concept
+is not well-deﬁned when the graph gis not connected.
+32 Descriptive statistics
+In this section, we discuss the construction of network ties (e.g., survey question verbatim; how
+we deal with missingness), and provide additional information on the distribution of ties across
+network types.
+First, we provide verbatim excerpt from our in-person survey used to construct adjacency
+matrices capturing within-village network ties.
+“In each of the following questions, we will ask you to think about people in your community
+and their relationships to you.”
+•Family: “Think about up to ﬁve family members in this village not living in your house-
+hold with whom you most frequently spend time. For instance, you might visit one
+another, eat meals together, or attend events together.”
+•Friends: “Think about up to ﬁve of your best friends in this village. By friends I mean
+someone who will help you when you have a problem or who spends much of his or her
+free time with you. If there are less than ﬁve, that is okay too.”
+•Lender: “Think about up to ﬁve people in this village that you would ask to borrow a
+signiﬁcant amount of money if you had a personal emergency.”
+•Problem solver : “Imagine there is a problem with public services in this village. For
+example, you might imagine that a teacher has not come to school for several days or
+that a borehole in your village needs to be repaired. Think about up to ﬁve people in this
+village whom you would be most likely to approach to help solve these kinds of problems.”
+Second, we report in Figure 1 the degree distribution across the four types of networks, as
+well as in the union network:
+0.00.10.20.3
+0 10 20 30 40
+DegreedensityNetwork
+Friend
+Family
+Lender
+Solver
+Union
+Figure 1: Degree distribution by network type.
+4Understandably, we were unable to interview every individual in the village. This means
+there are villagers for whom we only observe a fraction of their network: they were mentioned as
+ties by other respondents, but were not interviewed in-person. About 25% of named individuals
+fall in this category. Following standard practice, we exclude those nodes from the analysis.
+Table 1 reports the number of individuals we surveyed in each village, the number of individuals
+mentioned by at least one person (“alters”), and the number of adults living in each village,
+accordingto2014censusdata. Thisinformationallowscalculatingthenumberofmissingnodes.
+Village N respondents N alters Adult Pct. non-interviewed Pct. non-interviewed
+population alters population
+A 30 42 32 0.29 0.06
+B 237 335 320 0.29 0.26
+C 160 218 180 0.27 0.11
+D 283 374 355 0.24 0.20
+E 263 382 429 0.31 0.39
+F 205 298 292 0.31 0.30
+G 163 212 230 0.23 0.29
+H 254 322 358 0.21 0.29
+I 168 309 251 0.46 0.33
+J 185 267 313 0.31 0.41
+K 204 283 296 0.28 0.31
+L 229 308 269 0.26 0.15
+M 197 281 303 0.30 0.35
+N 225 291 226 0.23 0.00
+O 189 265 198 0.29 0.05
+P 192 276 258 0.30 0.26
+Total 3184 4463 4310 0.29 0.26
+Table 1:Network sampling. N alters reports the number of individuals mentioned as alters
+in the network survey. Adult population from 2014 census data.
+53 Full regression models
+This section reproduces the regression models in the main text, including control variables.
+6Dependent variable: adopt
+Parsimonious Baseline Decomposition Parsimonious Baseline Decomposition
+(1) (2) (3) (4) (5) (6)
+# adopting neighbors 0.035∗∗∗0.027∗∗∗0.019∗∗∗
+(0.005) (0.005) (0.006)
+% adopting neighbors 0.325∗∗∗0.218∗∗∗0.157∗∗∗
+(0.052) (0.048) (0.057)
+degree 0.002∗∗∗0.001∗0.0002 0.004∗∗∗0.003∗∗∗0.003∗∗∗
+(0.001) (0.001) (0.001) (0.001) (0.001) (0.001)
+# neighbors who told me 0.062∗∗∗
+(0.012)
+% neighbors who told me 0.871∗∗∗
+(0.198)
+1+ satisﬁed neighbors 0.012 0.024∗∗
+(0.012) (0.011)
+age −0.001∗∗∗−0.001∗∗∗−0.001∗∗∗−0.001∗∗∗
+(0.0002) (0.0002) (0.0002) (0.0002)
+female 0.006 0.007 0.002 0.005
+(0.007) (0.007) (0.007) (0.007)
+income −0.002−0.002 −0.002−0.002
+(0.003) (0.003) (0.003) (0.003)
+secondary education 0.072∗∗∗0.068∗∗∗0.078∗∗∗0.071∗∗∗
+(0.012) (0.012) (0.012) (0.012)
+use phone 0.004 0.002 0.004 0.002
+(0.005) (0.005) (0.005) (0.005)
+leader −0.008−0.006 −0.007−0.007
+(0.013) (0.012) (0.013) (0.012)
+political participation 0.025∗∗∗0.025∗∗∗0.027∗∗∗0.027∗∗∗
+(0.008) (0.008) (0.008) (0.008)
+meeting attendance 0.178∗∗∗0.163∗∗∗0.187∗∗∗0.175∗∗∗
+(0.026) (0.026) (0.027) (0.026)
+pro-sociality −0.056∗∗∗−0.056∗∗∗−0.059∗∗∗−0.062∗∗∗
+(0.018) (0.017) (0.018) (0.017)
+geography −0.118∗∗∗−0.123∗∗∗−0.103∗∗∗−0.114∗∗∗
+(0.023) (0.022) (0.023) (0.023)
+Constant 0.061 0.125∗0.124∗0.052 0.109 0.093
+(0.073) (0.076) (0.075) (0.073) (0.075) (0.075)
+Observations 3,184 3,019 3,019 3,184 3,019 3,019
+R20.139 0.247 0.273 0.116 0.233 0.251
+Note:∗p<0.1;∗∗p<0.05;∗∗∗p<0.01
+Table 2:Main speciﬁcations, controls included. This table reproduces Table ??in the main text, and reports control variables.
+7Dependent variable: adopt
+Simple vs. complex ties Types of relationships
+(1) (2)
+# adopting simple ties, βs 0.024∗∗∗
+(0.005)
+# adopting simple family 0.015∗
+(0.008)
+# adopting simple friends 0.032∗∗∗
+(0.011)
+# adopting simple lender 0.018
+(0.011)
+# adopting simple solver 0.010
+(0.010)
+# adopting complex ties, βc 0.039∗∗∗0.038∗∗∗
+(0.010) (0.010)
+degree 0.001∗0.001∗
+(0.001) (0.001)
+age −0.001∗∗∗−0.001∗∗∗
+(0.0002) (0.0002)
+female 0.006 0.010
+(0.007) (0.007)
+income −0.002 −0.002
+(0.003) (0.003)
+secondary education 0.072∗∗∗0.071∗∗∗
+(0.012) (0.012)
+use phone 0.004 0.002
+(0.005) (0.005)
+leader −0.009 −0.008
+(0.013) (0.013)
+political participation 0.025∗∗∗0.026∗∗∗
+(0.008) (0.008)
+meeting attendance 0.177∗∗∗0.173∗∗∗
+(0.026) (0.026)
+pro-sociality −0.056∗∗∗−0.054∗∗∗
+(0.018) (0.018)
+geography −0.118∗∗∗−0.116∗∗∗
+(0.023) (0.023)
+Constant 0.119 0.114
+(0.077) (0.079)
+βc−βs/negationslash= 0, F statistic 2.21 _
+Observations 3,019 3,019
+R20.248 0.254
+Note:∗p<0.1;∗∗p<0.05;∗∗∗p<0.01
+Table 3:Network types, controls included. This table reproduces Table ??in the main
+text, and reports control variables.
+8Dependent variable: adopt
+Leader: all Leader: high Leader: low
+(1) (2) (3)
+# adopting peers, βp0.021∗∗∗0.020∗∗0.008
+(0.007) (0.009) (0.008)
+# adopting leaders, βl0.032∗∗∗0.029∗∗∗0.012
+(0.008) (0.010) (0.008)
+degree (peers) 0.003∗∗0.004∗∗0.003∗
+(0.001) (0.002) (0.002)
+degree (leaders) 0.002 0.003 0.002
+(0.003) (0.004) (0.004)
+age −0.0005∗∗−0.001∗∗−0.0002
+(0.0002) (0.0004) (0.0003)
+female 0.012∗0.007 0.014∗∗
+(0.007) (0.014) (0.007)
+income −0.002−0.002−0.001
+(0.003) (0.005) (0.003)
+secondary education 0.067∗∗∗0.089∗∗∗0.046∗∗∗
+(0.012) (0.020) (0.014)
+use phone 0.003 0.010 −0.001
+(0.005) (0.009) (0.005)
+political participation 0.024∗∗∗0.029∗∗0.017∗∗
+(0.008) (0.015) (0.007)
+meeting attendance 0.184∗∗∗0.196∗∗∗0.153∗∗∗
+(0.030) (0.040) (0.048)
+pro-sociality −0.060∗∗∗−0.106∗∗∗−0.024
+(0.018) (0.035) (0.018)
+geography −0.097∗∗∗−0.086∗∗∗−0.157∗∗∗
+(0.023) (0.026) (0.041)
+Constant 0.094 0.076 0.152∗∗∗
+(0.081) (0.085) (0.047)
+βp−βl/negationslash= 0, F statistic 0.97 0.42 0.1
+Observations 2,585 1,202 1,383
+R20.233 0.251 0.180
+Note:∗p<0.1;∗∗p<0.05;∗∗∗p<0.01
+Table 4:Leader vs. peer eﬀects, controls included. This table reproduces Table ??in
+the main text, and reports control variables.
+94 Robustness checks
+4.1 Exclude village A
+We ﬁrst test whether our main results are sensitive to dropping village A, which has a sig-
+niﬁcantly smaller number of respondents (30) compared to the other villages (mean number
+of respondents is 210). Table 5 shows that results are virtually unchanged. We ﬁnd a strong
+positive relationship between the number (or share) of adopting neighbors and one’s adoption
+choice, with magnitudes almost identical to the main speciﬁcation.
+10Dependent variable: adopt
+Parsimonious Baseline Decomposition Parsimonious Baseline Decomposition
+(1) (2) (3) (4) (5) (6)
+# adopting neighbors 0.036∗∗∗0.028∗∗∗0.021∗∗∗
+(0.005) (0.005) (0.006)
+% adopting neighbors 0.342∗∗∗0.235∗∗∗0.173∗∗∗
+(0.052) (0.048) (0.057)
+degree 0.002∗∗∗0.001∗0.0002 0.004∗∗∗0.003∗∗∗0.003∗∗∗
+(0.001) (0.001) (0.001) (0.001) (0.001) (0.001)
+# neighbors who told me 0.062∗∗∗
+(0.012)
+% neighbors who told me 0.870∗∗∗
+(0.199)
+1+ satisﬁed neighbors 0.011 0.024∗∗
+(0.012) (0.011)
+age −0.001∗∗∗−0.001∗∗∗−0.001∗∗∗−0.001∗∗∗
+(0.0002) (0.0002) (0.0002) (0.0002)
+female 0.007 0.008 0.002 0.006
+(0.007) (0.007) (0.007) (0.007)
+income −0.002−0.002 −0.002−0.002
+(0.003) (0.003) (0.003) (0.003)
+secondary education 0.072∗∗∗0.068∗∗∗0.078∗∗∗0.071∗∗∗
+(0.012) (0.012) (0.012) (0.012)
+use phone 0.004 0.002 0.004 0.002
+(0.005) (0.005) (0.005) (0.005)
+leader −0.008−0.006 −0.007−0.008
+(0.012) (0.012) (0.013) (0.012)
+political participation 0.025∗∗∗0.025∗∗∗0.027∗∗∗0.027∗∗∗
+(0.008) (0.008) (0.008) (0.008)
+meeting attendance 0.174∗∗∗0.159∗∗∗0.183∗∗∗0.171∗∗∗
+(0.026) (0.026) (0.027) (0.026)
+pro-sociality −0.061∗∗∗−0.061∗∗∗−0.063∗∗∗−0.067∗∗∗
+(0.018) (0.017) (0.018) (0.017)
+geography −0.118∗∗∗−0.123∗∗∗−0.103∗∗∗−0.114∗∗∗
+(0.023) (0.022) (0.023) (0.022)
+Constant 0.008 0.439∗∗∗0.467∗∗∗−0.008 0.379∗∗∗0.414∗∗∗
+(0.018) (0.087) (0.083) (0.017) (0.087) (0.084)
+Observations 3,154 2,991 2,991 3,154 2,991 2,991
+R20.141 0.248 0.274 0.117 0.232 0.250
+Note:∗p<0.1;∗∗p<0.05;∗∗∗p<0.01
+Table 5:Main speciﬁcations, village A excluded. This table reproduces Table ??in the main text but excludes village A from the sample.
+114.2 Two-stage selection model
+We probe into the mechanism underlying neighbors’ inﬂuence. Do neighbors foster adoption by
+spreading news about the existence of the technology, or by pushing individuals who already
+know of the innovation to adopt it? We answer this question by estimating a type-2 Tobit
+model for binary outcomes (Cameron and Trivedi, 2005). This selection model separates the
+fact of having heard about the platform from the decision to adopt it. Our outcomes are:
+y1i=/braceleftBigg
+1,ifihears about the platform
+0,otherwise
+y2i=
+
+1,ifiadopts the platform and y1i= 1
+0,ifidoes not adopt the platform and y1i= 1
+_,ify1i= 0
+That is, deciding whether to adopt the platform ( y2i) is deﬁned if and only if one heard about it
+(y1i= 1). Letx1iandx2ibe column vectors of individual-level predictors for hearing about the
+platform and adopting it, respectively. We consider the following binary type-2 Tobit model:
+p(y2i|x1i,x2i)/bracehtipupleft/bracehtipdownright/bracehtipdownleft/bracehtipupright
+adopting=p(y2i|x2i,y1i)/bracehtipupleft/bracehtipdownright/bracehtipdownleft/bracehtipupright
+adopting conditional on hearingp(y1i|x1i)/bracehtipupleft/bracehtipdownright/bracehtipdownleft/bracehtipupright
+hearing(1)
+We estimate the model using logistic regression, and account for village-level eﬀects by adding
+village indicators. This model can easily be estimated using two logistic regressions: the ﬁrst
+regressesy1onX1forthewholesample, andthesecondregresses y2onX2forthoseobservations
+wherey1i= 1. In the ﬁrst stage, we regress hearing about the technology on the number of
+hearing neighbors. In the second stage, we regress adopting the technology on the number of
+adopting neighbors. We use the same set of controls as in the main text, with the exception
+that we exclude meeting attendance from the ﬁrst stage, because it perfectly predicts hearing
+about the platform. We also estimate a reduced-form speciﬁcation identical to our baseline
+speciﬁcation using logistic regression (Table ??, model 2) to compare eﬀect sizes in the second
+stage to a corresponding reduced-form speciﬁcation.
+Table 6 reports the results. Neighbors inﬂuence both hearing about the technology and
+adopting it. Controls reveal an additional interesting pattern: if females are less likely to adopt,
+it is only because they are less likely to hear about the technology, not because they are less
+likely to adopt it, conditional on having heard about it.
+12Dependent variable:
+heard adopt
+First stage Second stage Reduced form
+(1) (2) (3)
+# adopting neighbors 0.339∗∗∗0.364∗∗∗
+(0.096) (0.091)
+# hearing neighbors 0.150∗∗∗
+(0.021)
+degree −0.001 0.005 0.008
+(0.008) (0.008) (0.008)
+age −0.014∗∗∗−0.027∗∗−0.030∗∗∗
+(0.003) (0.012) (0.011)
+female −0.323∗∗∗−0.041−0.211
+(0.098) (0.303) (0.289)
+income 0.027 −0.084−0.064
+(0.039) (0.113) (0.106)
+secondary education 0.611∗∗∗1.386∗∗∗1.616∗∗∗
+(0.112) (0.281) (0.282)
+use phone 0.548∗∗∗1.296∗∗1.617∗∗∗
+(0.111) (0.530) (0.536)
+leader 0.190 −0.186−0.110
+(0.138) (0.348) (0.361)
+political participation 0.527∗∗∗0.733∗∗∗0.841∗∗∗
+(0.092) (0.217) (0.205)
+meeting attendance 1.112∗∗∗1.966∗∗∗
+(0.263) (0.266)
+pro-sociality −0.240−1.060−1.271∗
+(0.237) (0.691) (0.663)
+geography 0.097 −2.580∗∗∗−2.084∗∗∗
+(0.208) (0.636) (0.544)
+Constant −1.518∗∗∗−1.829−3.834∗∗∗
+(0.547) (1.373) (1.292)
+Observations 3,019 938 3,019
+Akaike Inf. Crit. 3,000.939 570.499 664.305
+Note:∗p<0.1;∗∗p<0.05;∗∗∗p<0.01
+Table 6: Two-stage selection model. Logistic regression estimates with village-level ﬁxed eﬀects.
+Coeﬃcients are log-odds ratios. Heteroskedastic robust standard errors in parentheses. Model (1) reports
+the ﬁrst stage (hearing about the platform), model (2) reports the second stage (adopting the platform
+conditional on hearing), and model (3) reports the corresponding reduced-form model.
+134.3 Instrumental variable
+As discussed in the main text, initial encouragements to adopt the technology might be en-
+dogenous. Patterns of social inﬂuence may be confounded by other eﬀects: two peers may
+adopt the technology due to similar unobservable characteristics, or because they have been
+exposed to related unobservable shocks. We address this issue using a generalization of An
+(2016) instrumental variable (IV) approach. Consider the following linear model of adoption:
+y=Xβ+λMy +/epsilon1 (2)
+withya vector of outcomes of length N, withyi= 1ifiadopts the platform, and 0 otherwise,
+XanN×Kmatrix of individual covariates, ManN×Nadjacency matrix, with diagonal
+entries set to 0, and /epsilon1an error term. Formally, the problem is that the autoregressive term My
+is quite possibly correlated with the error term /epsilon1.
+To address the issue of endogeneity, An (2016) recommends using an instrument zthat is
+correlated with y, but not with /epsilon1. Using the two stages least squares (2SLS) procedure, we
+estimate the following models with OLS:
+y=Xβ 0+λ0z+/epsilon10
+y=Xβ+λz+γMˆy+/epsilon1,
+with ˆy=Xˆβ0+ˆλ0z.1
+Our instrument is the distance from one’s household to the location of the venue that GAPP
+used to hold its U-Bridge inception meeting. The idea is that the shorter the distance to the
+meetingvenue,themorelikelyavillageristoadoptU-Bridge,simplybyincreasingthelikelihood
+that she attends the meeting and learns about the new political communication technology. For
+the instrument to be valid, the exclusion restriction must be satisﬁed; i.e., we must assume
+thatj’s distance to the location of GAPP’s inception meeting does not aﬀect i’s adoption
+via alternative channels than j’s inﬂuence on i. This would be the case if contacts tended
+to cluster around locations that were more or less exposed to the meeting. Encouragingly,
+we ﬁnd little (.15) correlation between physical distance and having a social tie. We also
+conduct several placebo tests to further explore potential violations of the exclusion restriction
+by conducting several placebo tests. If the exclusion restriction holds, mean peer distance from
+1Letˆθ2SLS= (ˆβ,ˆλ,ˆγ),H= (X,z,Wy ), and ˆH= (X,z,W ˆy). Thevariancecovariancematrixwrites V(ˆθ2SLS) =
+ˆσ2(ˆH|H)−1with ˆσ2=e|e/Nande=y−Hˆθ2SLS.
+14the meeting should aﬀect one’s adoption decision, but should not aﬀect other theoretically
+meaningful predictors of adoption, such as political participation, leadership status, or phone
+ownership. Table 9 shows that this is indeed the case.
+Note, furthermore, that our IV speciﬁcation matches imperfectly our main speciﬁcation
+(main text, Table ??). In particular, we omit our geographic control and meeting attendance.
+Indeed, because the instrument is the random choice of a meeting location, these controls are
+post-treatment covariates in this approach, and should therefore be excluded from the model.
+TheresultsofourIVmodels, reportedinTable7, conﬁrmsourbasicadoptionmodel. Again,
+results suggest a better model for for absolute threshold model (column 1) as compared to the
+fractional model (column 2). F-tests suggest, however, that our instrument is rather weak, with
+F statistics below 10. Note, furthermore, that our IV estimates are larger than comparable OLS
+estimates. We believe that using distance to the meeting as an instrument magniﬁes the eﬀect
+of meeting attendance, because it compounds the eﬀect of all neighbors attending the meeting,
+which is a very important predictor of adoption. Furthermore, given that our instrument is
+weak, results should be interpreted with care.
+15Dependent variable: adopt
+Parsimonious IV IV OLS Parsimonious IV IV OLS
+(1) (2) (3) (4) (5) (6)
+# adopting neighbors 0.043∗∗∗0.045∗∗∗0.029∗∗∗
+(0.014) (0.013) (0.006)
+% adopting neighbors 0.107 0.106 0.149∗∗∗
+(0.072) (0.070) (0.047)
+degree 0.002∗∗0.001 0.002∗∗∗0.004∗∗∗0.003∗∗∗0.003∗∗∗
+(0.001) (0.001) (0.001) (0.001) (0.001) (0.001)
+distance to meeting (km) −0.004−0.008∗∗−0.007∗−0.005−0.010∗∗−0.009∗∗
+(0.004) (0.004) (0.004) (0.004) (0.004) (0.004)
+age −0.001∗∗∗−0.001∗∗−0.001∗∗∗−0.001∗∗∗
+(0.0002) (0.0002) (0.0002) (0.0002)
+female −0.003−0.007 −0.012−0.012
+(0.008) (0.008) (0.008) (0.008)
+income −0.001−0.001 −0.001−0.0005
+(0.003) (0.003) (0.003) (0.003)
+secondary education 0.094∗∗∗0.092∗∗∗0.103∗∗∗0.100∗∗∗
+(0.014) (0.014) (0.014) (0.014)
+use phone 0.004 0.005 0.007 0.006
+(0.005) (0.005) (0.005) (0.005)
+leader −0.001−0.003 −0.002−0.002
+(0.013) (0.013) (0.013) (0.013)
+political participation 0.030∗∗∗0.029∗∗∗0.033∗∗∗0.032∗∗∗
+(0.009) (0.009) (0.009) (0.009)
+pro-sociality −0.050∗∗−0.047∗∗−0.050∗∗−0.050∗∗
+(0.020) (0.020) (0.020) (0.020)
+Constant 0.104 0.066 0.083 0.145∗0.106 0.092
+(0.084) (0.084) (0.085) (0.085) (0.085) (0.086)
+F statistic 1.28 5.92∗∗_ 1.28 5.92∗∗_
+Observations 2,832 2,832 2,832 2,832 2,832 2,832
+R20.103 0.174 0.182 0.092 0.160 0.164
+Note:∗p<0.1;∗∗p<0.05;∗∗∗p<0.01
+Table 7:Instrumental variable estimates. 2SLS estimates with village-level ﬁxed eﬀects (models 1,
+2, 4, 5), and corresponding OLS estimates (models 3, 6). We report F-statistics for instrument strength.
+Although the instrument is weak, there is evidence of peer eﬀects.
+16Dependent variable: adopt
+Parsimonious IV IV
+(1) (2)
+distance to meeting (km) −0.005−0.011∗∗
+(0.004) (0.004)
+degree 0.004∗∗∗0.003∗∗∗
+(0.001) (0.001)
+age −0.001∗∗∗
+(0.0002)
+female −0.013∗
+(0.008)
+income −0.001
+(0.003)
+secondary education 0.105∗∗∗
+(0.014)
+use phone 0.007
+(0.005)
+leader −0.002
+(0.013)
+political participation 0.034∗∗∗
+(0.009)
+pro-sociality −0.050∗∗
+(0.020)
+Constant 0.169∗∗0.131
+(0.083) (0.082)
+Observations 2,832 2,832
+R20.092 0.160
+Note:∗p<0.1;∗∗p<0.05;∗∗∗p<0.01
+Table 8:Instrumental variable approach, ﬁrst stage. OLS estimates of ﬁrst stage of 2SLS
+models in table 7 with village-level ﬁxed eﬀects. The instrument is weak.
+Dependent variable:
+adopt pol. participation leader phone
+(1) (2) (3) (4)
+mean peer distance to meeting (km) −0.021∗∗∗−0.015−0.007 0.009
+(0.008) (0.026) (0.013) (0.021)
+age 0.0001 0.004∗∗∗0.006∗∗∗−0.004∗∗∗
+(0.0002) (0.001) (0.0005) (0.001)
+female −0.041∗∗∗−0.231∗∗∗−0.094∗∗∗−0.132∗∗∗
+(0.008) (0.022) (0.013) (0.018)
+income 0.003 0.046∗∗∗0.016∗∗∗0.045∗∗∗
+(0.003) (0.009) (0.005) (0.007)
+secondary education 0.122∗∗∗0.174∗∗∗0.002 0.270∗∗∗
+(0.015) (0.028) (0.017) (0.018)
+pro-sociality −0.058∗∗∗0.042 −0.016 0.032
+(0.021) (0.058) (0.032) (0.043)
+Constant 0.154∗−0.014−0.089 0.784∗∗∗
+(0.082) (0.134) (0.067) (0.068)
+Observations 2,832 2,832 2,832 2,832
+R20.105 0.123 0.099 0.167
+Note:∗p<0.1;∗∗p<0.05;∗∗∗p<0.01
+Table 9:Placebo tests for IV. OLS estimates with village-level ﬁxed eﬀects. Heteroskedastic
+standard errors in parentheses. Mean peer distance to meeting location aﬀects adoption (model
+1), but does not aﬀect political participation (model 2), being a leader (model 3), or using a
+phone (model 4).
+174.4 Degree and other network characteristics
+As Aronow and Samii (n.d.) argue, exposure to peer inﬂuence is endogenous to one’s network
+position. If the technology diﬀuses through patterns of social inﬂuence, then individuals with
+more central network positions are more likely to be exposed to such inﬂuence. In the limit,
+agents with no neighbors cannot be exposed to any inﬂuence, while agents with many neighbors
+are subjected to much inﬂuence.
+To address this issue, we compare between individuals with similar network positions. Yet,
+network positions can only be described partially, using centrality scores that each capture
+diﬀerent aspects of one’s network position.
+We reestimate our baseline speciﬁcation but control very ﬂexibly for one major centrality
+score: degree centrality. Table 10 reports the results from two speciﬁcations. One uses degree
+strata that split the population into degree deciles. The second controls from degree non-
+parametrically using generalized additive modelling, with thin-plate splines. Peer inﬂuence is
+robust to such controls.
+Second, we reestimate our baseline by controlling for a host of standard centrality scores:
+degree, betweenness, closeness, eigenvector, Bonacich centralities, and clustering. Eigenvector
+and Bonacich centralities are recursive metrics where a node is more central to the extent that
+it is connected to more central node. Other concepts are deﬁned in section 1 of this SI. We
+estimate one model per centrality score, and divide the population in three strata based on
+which tercile they belong to. Again, peer inﬂuence is robust to such controls.
+18Dependent variable: adopt
+OLS GAM
+(continuous)
+degree strata GAM
+(1) (2)
+# adopting neighbors 0.029∗∗∗0.027∗∗∗
+(0.005) (0.003)
+degre∈[8,9] −0.001
+(0.010)
+degree = 10 −0.006
+(0.011)
+degre∈[11,12]−0.017∗
+(0.009)
+degree = 13 −0.021∗∗
+(0.010)
+degre∈[14,15]−0.013
+(0.011)
+degre∈[16,17]−0.022∗∗
+(0.011)
+degre∈[18,20]−0.001
+(0.014)
+degre∈[21,25]−0.006
+(0.015)
+degree > 25 0.049∗∗
+(0.022)
+age −0.001∗∗∗−0.001∗∗∗
+(0.0002) (0.0002)
+female 0.008 0.008
+(0.007) (0.007)
+income −0.002−0.002
+(0.003) (0.003)
+secondary education 0.072∗∗∗0.073∗∗∗
+(0.012) (0.009)
+use phone 0.003 0.002
+(0.005) (0.007)
+leader −0.007−0.008
+(0.013) (0.010)
+political participation 0.028∗∗∗0.027∗∗∗
+(0.008) (0.006)
+meeting attendance 0.178∗∗∗0.177∗∗∗
+(0.026) (0.013)
+pro-sociality −0.057∗∗∗−0.058∗∗∗
+(0.018) (0.017)
+geography −0.120∗∗∗−0.113∗∗∗
+(0.023) (0.015)
+Constant 0.140∗0.138∗∗∗
+(0.076) (0.041)
+Observations 3,019 3,019
+R20.250
+Note:∗p<0.1;∗∗p<0.05;∗∗∗p<0.01
+Table 10: Flexible controls for degree. OLS estimates with village-level ﬁxed eﬀects. Het-
+eroskedastic standard errors in parentheses. Model 1 controls for degree using degree strata
+based on sample deciles. Degree < 8 is the reference category. Model 2 uses a generalized
+additive model, and controls for degree using thin-plate regression splines. Peer inﬂuence is
+robust to such controls.
+19Dependent variable: adopt
+Degree Betweenness Closeness Eigenvector Bonacich Clustering
+(1) (2) (3) (4) (5) (6)
+# adopting neighbors 0.032∗∗∗0.033∗∗∗0.034∗∗∗0.032∗∗∗0.032∗∗∗0.032∗∗∗
+(0.005) (0.005) (0.006) (0.005) (0.005) (0.005)
+medium degree −0.013∗
+(0.007)
+high degree 0.005
+(0.009)
+medium betweenness −0.017∗∗
+(0.007)
+high betweenness −0.003
+(0.009)
+medium closeness −0.003
+(0.007)
+high closeness −0.015
+(0.010)
+medium eigenvector −0.002
+(0.007)
+high eigenvector 0.011
+(0.009)
+medium bonacich 0.006
+(0.008)
+high bonacich 0.001
+(0.008)
+medium clustering −0.021∗∗
+(0.009)
+high clustering −0.014∗
+(0.008)
+Constant 0.127∗0.126∗0.131∗0.117 0.121 0.141∗
+(0.076) (0.076) (0.076) (0.076) (0.077) (0.077)
+Observations 3,019 3,019 3,019 3,019 3,019 3,019
+R20.244 0.244 0.244 0.244 0.243 0.245
+Note:∗p<0.1;∗∗p<0.05;∗∗∗p<0.01
+Table 11: Network covariates. OLS estimates with village-level ﬁxed eﬀects. Heteroskedastic stan-
+dard errors in parentheses. Network controls use tercile strata, with the lowest tercile as the reference
+category. Peer eﬀects are robust to these network controls. Consistently with simple contagion, low
+clustering individuals adopt more. Controls not shown.
+204.5 Matching
+Following Aral, Muchnik and Sundararajan (2009), we use matching to address simultaneously
+the problems of endogenous initial encouragements to adopt the technology, and endogenous
+exposure to peer inﬂuence due to network position. Our matched sample matches both on indi-
+vidual and network characteristics. We selected individual characteristics that are substantially
+and theoretically meaningful predictors of uptake: phone ownership, secondary education, po-
+litical participation, and meeting attendance. Our network characteristics are degree and eigen-
+vector centrality. Matching alleviates bias by constructing a treatment and a control group that
+more are comparable on such observable characteristics. It has the additional beneﬁt of con-
+structing groups that are also presumably more comparable on other network characteristics,
+since centrality scores tend to be highly correlated.
+Matching requires using a binary treatment. As in Aral, Muchnik and Sundararajan (2009),
+we make our treatment binary by deﬁning cutoﬀs in the number of adopting neighbors above
+which we consider that an observation is treated. Speciﬁcally, we use cutoﬀs of one, two, and
+three neighbors. Having deﬁned these cutoﬀs, we compared, for each cutoﬀ, three diﬀerent
+matching procedures: neighbor, coarsened exact, and full matching. We chose full matching
+because it is the procedure that achieved the highest distance reduction for all three cutoﬀs.
+Figure 2 shows the results of our matching procedure for a cutoﬀ of one neighbor. Our
+matched sample is balanced on degree, eigenvector centrality, and political participation. It is
+not balanced on the other characteristics.
+We then reestimate our baseline speciﬁcation on each matched sample. Table 12 shows that
+our results are largely robust to using a matched sample. The magnitude of the treatment eﬀect
+increases with the strength of the treatment. While having at least one adopting neighbor does
+not signiﬁcantly foster adoption, having at least two, and at least three adopting neighbors
+signiﬁcantly fosters adoption.
+21Dependent variable: adopt
+Matched sample, t= 1Matched sample, t= 2Matched sample, t= 3
+(1) (2) (3)
+# adopting neighbors ≥t 0.027∗0.054∗∗∗0.091∗∗∗
+(0.017) (0.017) (0.026)
+degree 0.003∗∗∗0.004∗∗0.002
+(0.001) (0.002) (0.002)
+age −0.001∗∗∗−0.001∗∗−0.002∗
+(0.0003) (0.001) (0.001)
+female −0.004 0.003 0.002
+(0.008) (0.013) (0.018)
+income −0.005 −0.008 −0.015
+(0.003) (0.008) (0.010)
+secondary education 0.081∗∗∗0.091∗∗∗0.093∗∗∗
+(0.014) (0.026) (0.031)
+use phone 0.005 0.009 0.019
+(0.006) (0.011) (0.016)
+leader −0.010 −0.022 −0.030
+(0.018) (0.041) (0.041)
+political participation 0.026∗∗0.032 0.047∗∗
+(0.010) (0.024) (0.021)
+meeting attendance 0.179∗∗∗0.208∗∗∗0.163∗∗∗
+(0.029) (0.054) (0.045)
+pro-sociality −0.084∗∗∗−0.090∗∗−0.121∗∗
+(0.024) (0.043) (0.061)
+geography −0.114∗∗∗−0.156∗∗∗−0.241∗∗∗
+(0.028) (0.045) (0.065)
+Constant 0.277 0.187 0.498∗∗∗
+(0.170) (0.123) (0.190)
+Observations 3,019 3,019 3,019
+R20.231 0.306 0.221
+Note:∗p<0.1;∗∗p<0.05;∗∗∗p<0.01
+Table 12: Matching estimates. OLS estimates with village-level ﬁxed eﬀects on a matched sample using full matching (see ﬁgure 2 for details
+on matching procedure). Heteroskedastic standard errors in parentheses. Additional robustness checks. Standard errors in parentheses. Treatment
+is an indicator variable that equals 1 if ihas at least tadopting adopting neighbors. Peer inﬂuence is robust to using a matched sample.
+22●●
+●
+●
+●●
+degreeeigenvector centralitymeeting attendancepolitical participationsecondary educationuse phone
+0.0 0.2 0.4 0.6
+p value of difference (treatment − control)variable●
+●
+●
+●p < .01
+p < .05
+p < .10
+p > .10
+Sample
+●all
+matchedFigure 2: Covariate balance on dimensions used for matching, t= 1.We report the
+p-value of the diﬀerence in means in the treatment and control group in the full and matched
+sample, using full matching. Matching achieves balance in degree, eigenvector centrality, and
+political participation. It does not achieve balance in the remaining dimensions.
+5 Heterogeneous eﬀects by village
+Figure 3 shows scatter plots of the data used to construct ﬁgure ??in the main text.
+23●
+●●
+●●●
+●
+●
+●●
+●●●●
+●
+●●
+●●●
+●
+●
+●●
+●●●●
+●
+●●
+●●●
+●
+●
+●●
+●●●Pro−sociality − public good Religious concentration SatisfactionEthnic concentration Leadership concentration Pro−sociality − dictator
+−2 −1 0 1 2 −1 0 1 −1 0 1 2−0.6−0.5−0.4−0.3−0.2−0.1−1.0 −0.5 0.0 0.5 1.0 −2 −1 0 1−3−2−1012
+−3−2−10123−202
+−2−1012−2−101
+−2024
+Scaled independent variableScaled network effect
+Uptake ●High LowFigure 3:Determinants of village-level peer eﬀect. Scatter plots of selected scaled village-
+level characteristics and village level peer eﬀect. We report the linear trend line (red) and a
+loess ﬁt (blue).
+6 Lab-in-the-ﬁeld games
+Upon conclusion of the survey, each respondent was given 2,000 Ugandan Shillings (about 60
+cents in US dollars), half of which was used for a dictator game, and half of which was used in a
+public goods game. While 60 cents may seem like a trivial amount of money, it is a meaningful
+about to respondents in this context, where GDP per capita is just over US$600, and where
+24the district in question is among the poorest regions in the country, according to recent poverty
+estimates.
+In the dictator game the respondent decides how to divide the money between herself and
+another player. In practice, this second player was an anonymous individual who resided in the
+same district, but not in the same village. The respondent keeps whatever she has decided to
+allocate to herself, and the remainder stays with the enumerator who then gives it to the second
+player. Both players are anonymous; the respondent does not know the name of the recipient
+and the recipient does not know the name of the respondent.
+In the public goods game, respondents were asked to divide Ushs1000 between private and
+public accounts. The share of respondents’ initial endowment that they placed in the private
+account remained theirs and what they donated to the public account was doubled by the
+research team and delivered to local leaders to invest in a community project. By construction,
+the most proﬁtable outcome for the community occurs when all members contribute their entire
+endowment to the village project. However, the most proﬁtable strategy for each individual is
+to keep the entire endowment and beneﬁt from what everyone else contributes to the public
+account.
+Herein, we average across experimental conditions, analyzing the eﬀect of treatment assign-
+ment on contribution levels in a companion paper.
+25References
+An, Weihua. 2016. “On the Directionality Test of Peer Eﬀects in Social Networks.” Sociological
+Methods &Research 45(4):635–650.
+Aral, Sinan, Lev Muchnik and Arun Sundararajan. 2009. “Distinguishing inﬂuence-based con-
+tagion from homophily-driven diﬀusion in dynamic networks.” Proceedings oftheNational
+Academy ofSciences 106(51):21544–21549.
+Aronow, Peter M and Cyrus Samii. n.d. “Estimating Average Causal Eﬀects under General
+Interference, with Application to a Social Network Experiment.” AnnalsofAppliedStatistics
+.
+Cameron, Adrian Colin and Pravin K. Trivedi. 2005.
+Microeconometrics - Methods and Applications. Cambridge University Press.
+26
+View publication statsView publication stats

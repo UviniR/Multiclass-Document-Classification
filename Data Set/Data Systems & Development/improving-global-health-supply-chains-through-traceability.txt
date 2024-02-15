@@ -1,0 +1,944 @@
+CGD Policy Paper 139 
+February 2019Improving Global Health 
+Supply Chains through 
+Traceability
+In many low- and lower-middle-income countries (LMICs) where disease burdens are 
+highest, health supply chains function poorly, resulting in frequent stockouts and a high 
+prevalence of  substandard and even falsified medications. In response to these concerns, the 
+global health initiatives have stepped up their efforts to improve supply chain management. 
+At the same time, a growing number of  rich country pharmaceutical companies are investing 
+in digital technologies that help them “track and trace” the movement of  medicines through 
+the supply chain at the package-level. Drawing from interviews with over thirty experts, we 
+find that traceability offers a realistic solution to some of  the problems found in LMIC health 
+supply chains but that implementing the approach is a huge logistical endeavor that requires 
+a strong political commitment. We close by discussing how donors can support committed 
+governments, by taking an evidence-based approach to determine what traceability methods 
+work best.
+www.cgdev.org
+Center for Global Development
+2055 L Street NW
+Fifth Floor
+Washington DC  20036
+202-416-4000 
+www.cgdev.org
+This work is made available under 
+the terms of the Creative Commons 
+Attribution-NonCommercial  4.0 
+license.Abstract
+We are grateful to the following people who took the time to review earlier drafts and provide their 
+insights: Kalipso Chalkidou, Amanda Glassman, Janeen Madan Keller, Eric Marshall, Daniel Rosen, 
+Rachel Silverman, Jessica Vernon, and Tom Woods. Any errors are solely our responsibility.
+Michael Pisa and Denise McCurdy. 2019. “Improving Global Health Supply Chains through 
+Traceability” CGD Policy Paper. Washington, DC: Center for Global Development. https://www.
+cgdev.org/publication/improving-global-health-supply-chains-through-traceability
+CGD is grateful for contributions from the Bill & Melinda Gates Foundation in support of  this work.Michael Pisa and Denise McCurdyContents  
+Introduction  ................................ ................................ ................................ ................................ ...... 1 
+The State of LMIC Health Supply Chains  ................................ ................................ ...................  2 
+Digital Supply Chains and Traceability  ................................ ................................ .........................  7 
+Two Traceability Models  ................................ ................................ ................................ .................  9 
+Making Serialization Work for Health Supply Chains  ................................ ..............................  10 
+Identifying Products  ................................ ................................ ................................ ..................  10 
+Capturing Data  ................................ ................................ ................................ ...........................  11 
+Sharing Data  ................................ ................................ ................................ ...............................  11 
+Making Use of Data  ................................ ................................ ................................ ..................  13 
+Traceability Initiatives  ................................ ................................ ................................ ....................  14 
+Making Traceability Work in Low -Income Countries: Ongoing Initiatives  .........................  18 
+Hurdles to Implementation in LMICs  ................................ ................................ ...................  19 
+The Limits of Traceability  ................................ ................................ ................................ .............  20 
+The Next Frontier? Using Distributed Ledger Technology for Traceability  ........................  20 
+DLT’s Potential Benefits  ................................ ................................ ................................ ..........  23 
+DLT in Reality: Challenges and Limitations  ................................ ................................ .........  23 
+A Potentially Worthy but Distant Goal  ................................ ................................ .................  24 
+Recommendations  ................................ ................................ ................................ ..........................  24 
+Conclusion  ................................ ................................ ................................ ................................ ....... 26 
+Appendix. Expert Interviews  ................................ ................................ ................................ ....... 27 
+ 
+  1 Introduction  
+Providing patients with high -quality medicines in a timely and cost -effective manner requires 
+effective supply chains. However, in many low - and lower -middle -income countries (LMICs) 
+where disease burdens are highest, health supply chains function poorly, resulting in freque nt 
+stockouts and a high prevalence of substandard and even falsified medications. For this 
+reason, there is growing interest in the global health community about whether LMICs can 
+use digital technologies to help improve their supply chains and procurement processes.    
+Now is a good time to examine the issue for three reasons:  
+• First, over the next two decades LMICs will need to play a much larger role in 
+procuring health products. To date, these countries have been able to rely on global 
+health initiatives like GAVI, the Global Fund, and PEPFAR to procure many 
+essential medicines and health products on their behalf. However, over the next two 
+decades many of these countries will graduate from aid eligibility, which means they will need to procure  these commodities for themselves.
+1 This transition represents 
+both a challenge and an opportunity: a challenge because LMIC governments will have to take on greater responsibility, and an opportunity because the expectation of this change will force gover nments to act.  
+• Second, rich country pharmaceutical companies are investing heavily in digital 
+technologies in response to new regulations —including the US Drug Supply Chain 
+Security Act (DSCA) and the EU’s Falsified Medicines Directive —that require 
+produc ers and distributors to “track and trace” the movement of medicines through 
+the supply chain. With traceability now a reality in some supply chains in high -
+income countries, the question is whether LMICs can make use of the approach as 
+well.  
+• Third, over t he last several years the global health community has become 
+increasingly concerned about how dysfunctional supply chains can threaten the goal 
+of providing affordable and high- quality essential medicines to the neediest 
+populations. The high frequency of stockouts and widespread use of substandard 
+medicines undermine effective treatment and raise the risk of antimicrobial 
+resistance. In response, donors have begun to direct more resources towards 
+strengthening supply chain management.  
+With these trends as  backdrop, we explore the potential of digital technologies —focusing on 
+serialization and, to a lesser degree, blockchain —to improve how LMICs manage their 
+health supply chains and procurement processes. Drawing from interviews with over 30 
+experts, we aim  to show the potential of traceability to improve the integrity of health supply 
+chains, as well as highlight the work already underway by the global health community to 
+make traceability in LMICs a reality.  
+While the use of traceability in health supply chains holds great promise, there are also 
+significant challenges to implementation. Because many of these barriers are political rather 
+                                                      
+1 Silverman, Rachel. Projected Health Financing Transitions: Timeline and Magnitude - Working Paper 488 . Center for 
+Global Development. July 10, 2018.  2 than technical in nature, governments that have a strong commitment should be able to 
+overcome them. At the end of the paper, we discuss how donors can further support these 
+governments, by taking an evidence -based approach to determine what traceability methods 
+work best.  
+ 
+The State of LMIC Health Supply Chains  
+A supply chain is a system of organizations, people, and ac tivities that support the 
+movement of a product or service from supplier to customer by facilitating the flow of material, information, and financial resources.
+2 The core functions of a supply chain are 
+carried out in three phases: manufacturing, procureme nt, and distribution.3 This paper 
+focuses on the latter two, and particularly on how digital technology can improve the flow of 
+information between and within them.4 
+Unlike in rich countries, where health supply chains are managed almost entirely by the 
+private sector, in LMICs  “public, private, and nongovernmental organizations (NGOs) 
+coexist as channels of distribution for medicines, with various interconnected flows between 
+the three channels.”5 Of the three, the public sector —which here refers to domestic 
+governments working  in coordination with health initiatives like GAVI, the Global Fund, 
+and PEPFAR —plays the dominant role.6 However, the private sector is playing an 
+increasingly important role in LMICs and this trend will continue as incomes rise.7  
+While each LMIC government manages its health supply chains differently, the most common model involves a central medical store (CMS), which oversees the storage and 
+distribution of medicines once they arrive in country, a transport fleet, and a tiered network 
+of regional and di strict medical stores.
+8 In addition to the CMS -managed system, in many 
+countries, donors have established their own vertical supply chains to handle product 
+                                                      
+2 This definition draws from:  
+ Yadav, Prashant. Health Product Supply Chains in Developing Countries: Diagnosis of the Root Causes of Underperformance 
+and an Agenda for Reform . Health Systems and Reform. April 28, 2015 and Sullivan E, Goentzel J, Weintraub R. 
+Concept Note: The Global Health Supply Cha in. Harvard Business Publishing. 2012.  
+3Sullivan E, Goentzel J, Weintraub R. Concept Note: The Global Health Supply Chain . Harvard Busines s Publishing. 
+2012.  
+4 The description of LMIC health supply chains below draws heavily from Yadav, Prashant. Health Product Supply 
+Chains in Developing Countries: Diagnos is of the Root Causes of Underperformance and an Agenda for Reform . Health Systems 
+and Reform. April 28, 2015.  
+5 Babaley, Magali, Helen Lega Tata, and Prashant Yadav. The World Medicines Situation 2011: Storage and Supply 
+Chain Management . World Health Organization. 2011.  
+6 Chalkidou, Kalipso, Janeen Madan Keller, and Daniel Rosen. An Initial Estimation of the Size of Health Commodity 
+Markets in Low - and Middle -Income Countries . Center for Global Development. December 13, 2017.  
+7 For more on the role of start -ups in LMIC health supply chains, see: Chalkidou, Kalipso, Cassandra Nemzoff, 
+and Daniel Rosen. E ntrepreneurship on the Rise in the Medical Supply Chain in Africa: A Tale of Four Pharmacy Disruptors . 
+Center for Global Development. November 7, 2018 and Impact for Health. Landscaping Innovations in Health 
+Product Distribution in Sub -Saharan Africa . October 2018.  
+8 Babaley, Magali, Helen Lega Tata, and Prashant Yadav. The World Medicines Situation 2011: Storage and Supply 
+Chain Management . World Health Organization. 2011.    
+ 3 distribution (see figure 1). These independent and often disease - or program -specific chains 
+at tim es overlap with one another (e.g., when they use the same warehouse facilities) but 
+more frequently run “in parallel with other disease -specific programs and the national 
+essential drugs system.”9  
+Figure 1. Structure of the health supply chain in develop ing countries  
+ 
+This arrangement reflects earlier decisions made by the global health initiatives. Early on in 
+their existence, some of these initiatives decided to create their own parallel supply chains, or 
+work with external agents, rather than integrate  them into poorly -functioning domestic 
+systems in order to get high -quality essential medicines to as many people as quickly as 
+possible. The result is a convoluted tangle of relationships that national authorities struggle 
+to manage. Figure 2, which maps the medical supply system in the Democratic Republic of 
+Congo, illustrates just how complex these arrangements can be.10  
+                                                      
+9 Sullivan E, Goentzel J, Weintraub R. C oncept Note: The Global Health Supply Chain . Harvard Business Publishing. 
+2012.  
+10 Ministry of Health, Democratic Republic of Congo. Cartographie des systèmes d'approvisionnement et de 
+distribution des médicaments et autres produits de santé en RDC  January 2010.   
+4 Figure 2. Medical supply system in the Democratic Republic of Congo  
+ 
+5 The complexity and opacity of LMIC health supply systems creates inefficiencies and makes 
+them vulnerable to corruption and product diversion. Without effective monitoring, each 
+handoff on a supply chain represents an opportunity for diver sion, and there are often many 
+intermediaries on the path between a CMS and a local health center. For example, in Kenya 
+medicines can change hands “five to seven times” before reaching local clinics.11 There is 
+also a strong incentive for theft since medic ines are often expensive and willingness to pay is 
+high.12 A recent report on product diversion in Malawi highlights this difficulty. The 
+problem is exacerbated by a lack of accountability, as government responsibility over supervising supply chain practice s is often fragmented across different ministries and 
+administrative units, making it easier for the authorities to look the other way or reassign 
+blame when fraud takes place.
+13 
+Product diversion is a key driver of the high frequency of stock -outs in LMICs , along with 
+poor demand forecasting. In a recent WHO survey, 36 percent of surveyed antiretroviral therapy (ARV) clinics in 35 countries reported at least one ARV stock -out in a 12 -month 
+reporting period.
+ 14 The problem is even worse in Africa. For example , a recent survey in 
+South Africa found that one -fourth of facilities had at least one ARV/TB stock -out within a 
+three -month period and a similar survey in Tanzania found that 29 percent of participating 
+facilities were out of stock of ACT for the entire  15-month period under study.15 These 
+stock -outs can be deadly because they force patients to interrupt treatment (or prevent them 
+from beginning treatment in the first place), raising the likelihood of illness and the antimicrobial resistance.  
+Product diver sion also raises the risk that substandard medicines will enter the health system, 
+as wrongdoers try to cover their trail by substituting in substandard or (more rarely) falsified 
+medicines in their place. The WHO estimates that 1 in 10 medical products in low - and 
+middle -income countries is substandard or falsified.
+16 Again, the problem is most acute in 
+sub-Saharan Africa, where a meta -analysis by Webb (2014) found that roughly 39 percent of 
+anti-malarials in nine countries were found to be “sub -therapeutic ” after chemical analysis.17 
+                                                      
+11 This point was made to us by Jessica Vernon, Co -Founder/CEO of  MaishaMeds  
+12 For an overview of some of the tactics used in product diversion see: Chirwa W.C., Mwalyambwire T ., and 
+Mwaungulu E.E, 2017, A Rapid Assessment Study of Formal and Informal Networks Facilitating Leakage of 
+Health Commodities in Malawi, DFID  
+13 Yadav, Prashant. Health Product Supply Chains in Developing Countries: Diagnosis of the Root Causes of Underperformance 
+and an Agenda for Reform . Health Systems and Reform. April 28, 2015.   
+14 World Health Organization. Global Report on Early Warning Indicators of HIV Drug Resistance . July 2016.  
+15 Stop Stockouts Project. 2014 Stock Outs Survey . 2014.    
+Barrington, Jim, Don deSavigny, Inez Mikkelsen -Lopez, Winna Shango, Tom Smith, Rene Ziegler. The Challenge 
+to Avoid Anti -Malarial Medicine Stock -Outs in an Era of Funding Partners: The Case of Tanzania .  
+16 World Health Organization. Substandard and Falsified Medical Products. January 31, 2018. 
+http://www.who.int/news -room/fact -sheets/detail/substandard -and-falsified -medical -products  
+17 Webb, Silas. A Bitter Pill to Swallow: The Problem of, and Solutions to, Sub -Saharan Africa’s Counterfeit 
+Pharmaceutical Trade. Journal of Global Health. November 1, 2014. https://www.ghjournal.org/a -bitter -pill-to-
+swallow -the-problem -of-and-solutions -to-sub-saharan -africas -counterfeit -pharmaceutical -trade/  Breman, Joel, 
+James Herrington, Gaurvika Nayya r, and Paul Newton. Poor -Quality Antimalarial Drugs in Southeast Asia and 
+Sub-Saharan Africa. Lancet of Infectious Diseases. June 2012. 
+https://www.t helancet.com/journals/laninf/article/PIIS1473- 3099%2812%2970064 -6/abstract  found a similar 
+ 6 Because substandard medications may not be strong enough to effectively treat patients or 
+protect them from illness, their use increases the risk of mortality and antimicrobial 
+resistance.  
+The risks presented by dysfunctional supply chains have become mor e apparent as the 
+amount of medicines flowing through LMICs has increased: between 2000 and 2015, global 
+antibiotic consumption grew by 65 percent, driven largely by rising consumption in 
+LMICs.18 Much of this consumption was funded by the global health ini tiatives.  
+These initiatives have historically taken different approaches to working with in -country 
+supply chains. For example, PEPFAR has worked closely with local staff to strengthen 
+national supply chains since its inception. Contrarily, the Global Fun d took a largely hands -
+off approach through its first ten years of existence until it changed course in 2013 following 
+the publication of an internal report that flagged the procurement, storage, and distribution 
+of medicines as “significant vulnerabilitie s” that posed “larger risks to the Global Fund’s 
+finances, operations, and reputation than any other activity in its business model.”19  
+The Global Fund responded by focusing more on improving in- country supply chains, 
+which included spending $130 million f rom 2014 —16 to support the storage and 
+distribution of medicines to the last mile. Similarly, GAVI has made improving 
+immunization supply chains one of its six strategic focus areas for the period 2016 –2020 and 
+is providing guidance and technical assistanc e to recipient countries.20 
+The importance donors place on the issue was highlighted by the $9.5 billion contract that 
+USAID awarded to a consortium led by Chemonics International in 2015 to carry out a 
+Global Health Supply Chain Procurement and Supply Mana gement (GHSC -PSM) project — 
+the largest single contract that the agency has ever awarded. The project drew sharp criticism 
+in its first year of implementation as the number of health commodity shipments that 
+USAID delivered “on time and in full” dropped fro m 67 percent in the fourth quarter of 
+2016 to 7 percent half a year later.21 While the program’s performance has since improved, 
+its struggles illustrate the difficulty of getting global health supply chains “right.”  
+ 
+                                                      
+result: 35 percent of tested antimalarials from 21 countries in SSA and seven countries in southeast Asia failed 
+chemical analysis.  
+18 Original number from CDCC. Also : Cogan, Deirdre, Karrar Karrar, and Jayasree Iyer. Shortages, Stockouts, 
+and Scarcity. Access to Medicine Foundation. May 31, 2018. 
+https://accesstomedicinefoundation.org/media/uploads/downloads/5bf6bd722dea3_Antibiotic- Shortages -
+Stockouts -and-Scarcity_Access -to-Medicine -Foundation_31 -May-2018.pdf  
+19 Global Fund. Audit Repor t: The Global Fund’s In -Country Supply Chain Processes. April 28, 2017. 
+https://www.theglobalfund.org/media/6363/oig_gf -oig-17-008_report_en.pd f?u=636784021770000000   
+20 Gavi. Strategic Focus Areas. https://www.gavi.org/support/pef/strategic- focus -areas/  
+21 Igoe, Michael. Exclusive: Documents Reveal Largest USAID Health Proj ect in Trouble. Devex. August 25, 
+2017. https://www.devex.com/news/exclusive -documents -reveal -largest -usaid -health -project -in-trouble- 90933  
+ 7 Digital Supply Chains and Traceability   
+Throughout most of history, major advances in the reach of supply chains were driven by 
+inventions that made it easier to move goods over long distances (e.g., steam power, the 
+internal combustion engine, containerization). More recent advances, however,  have been 
+due to innovations that have made it easier to collect, store, and, most importantly, share information. The information and communications technology (ICT) revolution that took 
+hold in the 1980s made it easier to coordinate complexity at long d istances, enabling firms to 
+take advantage of cross -country wage differentials by outsourcing production. At the same 
+time, digitizing records made it easier to share data across the supply chain, automate recurrent tasks, and use analytics to improve busi ness processes.  
+Computer networking and digitization not only allowed firms to manage their own internal 
+supply chains more efficiently, it also made it easier for them to share data with their supply 
+chain partners. As early as 1992, Wal- Mart was transmi tting sale and inventory data from 
+their retail stores directly to vendors on an hourly basis through their Retail Link  system.
+22  
+Today, the state of the art in supply chain management is the concept of “track and trace” or 
+traceability. As the name sugges ts, track and trace initiatives allow actors on a supply chain to 
+determine where a product is at any given time (tracking) and where it came from (tracing).  
+The approach starts with the process of serialization, in which a manufacturer assigns a 
+unique identifier to each product that it ships using a two -dimensional (2 -D) barcode that 
+other supply chain actors can scan to obtain information about the product and record when 
+it changes hands. The result is a digital trail of information tied to each packag e that records 
+its origin, path through the supply chain, and other attributes. Track and trace is already 
+common in many sectors in advanced economies. For example, any time you go to a retail or 
+shipping company’s website to check on the status of a deli very, you are using a proprietary 
+version of the approach (the key difference between this example and those discussed below 
+is that in this case shipping companies use their own unique identifier and their own IT 
+system).  
+Two examples help to illustrate how traceability systems can improve the way supply chains 
+are managed:  
+• Verifying the origin of goods : Traceability can help vendors and customers verify the 
+origin of the products they use, which is valuable in industries where concerns about 
+sourcing pra ctices or counterfeiting are common. For instance, the diamond 
+industry has long sought ways to verify that traded gems have not been sourced in conflict zones and now faces the added challenge of preventing synthetic diamonds 
+from entering the market. In response, several start -ups have developed platforms 
+(in the proof -of-concept phase) intended to trace the provenance of gems from the 
+mine to the jewelry store.
+23 Similarly, in the fishing industry “boat to plate” 
+                                                      
+22 Wailgum, Thomas. 45 Years of Wal -Mart History: A Technology Time Line. CIO. October 17, 2017. 
+https://www.cio.com/article/2 437873/infrastructure/45- years -of-wal-mart-history-- a-technology -time-line.html  
+23 Kelley, Jason. Global Diamond and Jewelry Market Tracks Authenticity with IBM Blockchain. IBM. April 26, 
+2018. https://www.ibm.com/blogs/think/2018/04/global- jewelry -ibm-blockchain/   
+ 8 initiatives provide consumers with informa tion about whether fish has been caught 
+using sustainable methods.24 
+• Improving product safety and facilitating recalls : Tracing a product’s chain of custody back 
+to its origin makes it easier and quicker to conduct recalls. This is particularly 
+important fo r goods that can be contaminated. For example, it took the FDA two 
+weeks to locate the source of an E. coli outbreak in spinach in 2006, during which 
+time 199 people were hospitalized and three died in the United States.25 More 
+recently, it took the FDA fou r months to find the source of an E. coli outbreak in 
+romaine lettuce in 2018.26 As we discuss in more detail below, Walmart and IBM 
+collaborated on a blockchain- based proof of concept that reduced the time it took 
+to trace mangoes back to their origin from one week to several seconds.27   
+The case for using traceability in health supply chains rests mainly on its ability to improve 
+supply chain security. As noted above, counterfeiting and product diversion are significant 
+risks in LMIC health systems. The ab ility to trace a product back to its origin can help 
+retailers (and potentially even customers) verify that a product is what its label claims. And the ability to track the movement of individual products through a chain of custody can 
+make it easier to de tect when a product is diverted away from its intended destination.  
+Traceability could also improve the efficiency of health supply chain and procurement 
+processes in a variety of ways, including:    
+• Facilitating recalls : As with the food safety example a bove, having the ability to quickly 
+identify the source manufacturer of a contaminated medicine could make it easier to halt production and process recalls, reducing both costs and the risk of illness.    
+• Improving supply and demand forecasts for procurement : Aggregated and anonymized 
+traceability data could provide greater visibility over supply and demand patterns for 
+a given product and improve demand forecasting. Procurement agencies could use 
+this information to forecast their commodity needs,  anticipate stockouts, and 
+strengthen their negotiating power (since they could more confidently guarantee 
+volumes). In addition, the results of this quantification process “can be used to help 
+maximize the use of available resources for procurement; advoc ate for mobilization 
+of additional resources, when needed; and inform manufacturer production cycles 
+and supplier shipment schedules.”
+ 28 
+• Managing inventory : Improved visibility could also help actors on the supply chain 
+better manage stocks within their ow n facilities by reducing waste and streamlining 
+                                                      
+24 See Provenance.Org https://www.provenance.org/  
+25 Yiannas, Frank. Genius of Things: Blockchain and Food Safety w ith IBM and Walmart. February 16, 2017. 
+https://www.youtube.com/watch?v=MMOF0G_2H0A  
+26 The FDA knew within weeks that the lettuce came from the Yuma, Arizona region, but was unable to pinpoint 
+the exact source for four months. Belluz, Julia. The Romaine Lettuce E. coli Outbreak is Finally Over. Vox. July 
+1, 2018. https://www.vox.com/science -and-health/2018/6/29/17517906/romaine -lettuce -e-coli-outbreak -over  
+27 Yiannas, Frank. A New Era of Food Transparency Powered by Blockchain. MIT Innovations. July 10, 2018. 
+https://www.mitpressjournals.org/doi/pdf/10.1162/inov_a_00266  
+28 USAID,  Quantification of Health Commodities: A Guide to Forecasting and Supply Planning for 
+Procurement  June 2014.  9 inventory. For example, including unit -level product data in advanced shipping 
+notices could allow managers to know a product’s attributes, like its expiry date, 
+before it arrives. Greater visibility could also facilitate “just in time” delivery, 
+allowing managers to reduce the stock they hold in their warehouses.  
+It is worth noting that some of these benefits may be attainable using lot- level data in 
+combination with better inventory management and communica tions without incurring the 
+cost and complexity of unit- level serialization. More research is needed to determine when 
+the benefits of more granular data outweigh the costs of producing it.  
+ 
+Two Traceability Models  
+Governments that want to establish a tra ceability system can choose between two basic 
+approaches: point- of-dispense verification and full traceability.29  
+In its simplest form, a point- of-dispense verification model involves two stages – one at the 
+top of the supply chain and one at the bottom. I n the first stage, manufacturers affix a 
+serialized ID in barcode form to each of their outgoing packages and record information about the event in their databases. In the second, pharmacy and local clinic staff scan the 
+product and send a query to the manufacturer (or to a centralized hub where manufacturers 
+have uploaded data about their unique identifiers) to verify its authenticity before dispensing 
+it.
+30  
+While this approach reduces the likelihood that counterfeit products will be provided to 
+consumers,  it does not allow actors to track or trace the movement of products through the 
+supply chain. As a result, it does not offer some of the benefits that full supply chain 
+visibility can provide, such as easier product recall and the ability to pinpoint wher e certain 
+products enter or exit the supply chain.  
+A full traceability model can provide these benefits but only at the cost of greater 
+complexity. This model requires parties throughout the supply chain (including central 
+medical stores, distributors, an d warehouses) to scan, record, and share data each time a 
+product changes hands. This forces more companies to collect and manage data and requires 
+a more complex data architecture to enable sharing. It also produces significantly more data. For these reas ons, the industry group RxGPS has argued that the verification model is the 
+most cost -effective approach to improving supply chain security and that the adde d 
+“minimal benefit of a [full traceability] system is realized only at significant cost.”
+31 (See 
+figure 3.)  
+Determining whether the benefit of shifting from a verification to a full traceability model is indeed “minimal” will require more evidence and experimentation. It will also depend largely 
+on country context. While governments should implement the model that best aligns with 
+                                                      
+29 This section draws heavily from the industry group’s RxGPS’s “ Position Statement: Benefits and Complex ity 
+of Common Serialization Models”   
+30 For an example of a central hub approach, see the European Hub that is part of the European Medicines 
+Verification System (EMVS) . 
+31 RxGPS “ Position Statement: Benefits and Complexity of Common Serialization Models ”  10 their aims and capabilities, taking a phased approach that establishes point- of-dispense 
+verification first before considering using full traceability seems sensible.  
+Figure 3 . 
+ 
+Source: RxGPS Position Statement: Benefits and Complexity of Common Serialization Models  
+ 
+Making Serialization Work for Health Supply Chains  
+An effective traceability system must carry out four functions: identify  products down to the 
+unit level, capture data, share that data with supply chain partners, and use it to improve 
+outcomes.32 We consider each of these activities in turn, noting some o f the challenges that 
+LMICs may face.  
+Identifying Products  
+The first step towards establishing traceability is developing a system that assigns a unique 
+ID to every product moving through a supply chain. This requires a classification scheme, 
+often refer red to as a Product Master, that matches standard identifiers to products based on 
+their attributes.33  
+Because the healthcare industry is global in nature, having different countries use a common 
+standard for identifying products is important to ensure interoperability. Today, the biggest 
+actors in global health, including large manufacturers, distributors, governments, and the 
+global health initiatives, are converging behind traceability standards issued by the not -for-
+                                                      
+32 GS1. Standards .  
+33 GS1. How Traceability Standards Work .  
+11 profit organization GS1, which develops and maintains global standards for barcodes in 
+global business  (see figure 4) .  
+The GS1 standard assigns a unique ID called a Global Trade Item Number (GTIN) to each 
+good, which, when combined with a serial number, allows entities to uniquely identify each 
+individual unit of a product line.34 The resulting unique ID number is then incorporated into 
+a barcode along with information about other important attributes such as batch number, 
+expiry data, and the identity of a manufacturer.  
+For most pharmaceutical manufacturer s, the one -time cost of upgrading labelling systems to 
+produce barcodes that conform to GS1 standards is manageable. In fact, while large 
+manufacturers initially resisted regulatory efforts to require serialization, many now view it as a valuable tool for the efficiency -enhancing reasons cited above. However, the cost could be 
+more burdensome for small and niche manufacturers, particularly domestic LMIC manufacturers. Given the risk that these producers could be priced out of the market if GS1 standards become mandatory, the donor community may need to consider ways to subsidize this transition.   
+Capturing Data  
+Once a system to assign unique IDs is in place, the next step is to ensure that supply chain actors can capture the data linked to each product, usu ally by scanning a barcode. The rapid 
+uptake of smartphones, which can be equipped with apps that enable them to scan barcodes, 
+has drastically reduced the price of data capture. Evidence from pilot projects, however, 
+suggests that single -purpose handheld scanners are still more effective.
+35  
+Data capture will pose a greater challenge at lower levels of the supply chain in LMICs, 
+where many records are paper -based and local staff are often underpaid and overworked. 
+Unless local health workers believe there i s a clear benefit to scanning products, data capture 
+and entry will be inconsistent in the last mile, undermining the benefit of traceability. This is 
+a challenge for both point- of-dispense verification and full traceability solutions. Several 
+experts we s poke to cited a variety of mhealth initiatives that failed not because the 
+technology was ineffective but because health workers did not have an incentive to use it.   
+Sharing Data 
+The information captured at each stage in the supply chain is useful only to the extent that it 
+can be use and shared. For that reason, low levels of internet penetration in some LMICs could constrain their ability to implement a traceability approach. Whi le connectivity is 
+rapidly improving in sub -Saharan Africa and other low -income regions, it remains a barrier 
+in rural and remote areas.  
+                                                      
+34 GS1. Global Trade Item Number (GTIN) .  
+35 Guirguis, Ramy, Liuichi Hara, Ke ith Hummel, and Monica Villanueva. More Than Bar Codes: Integrating Global 
+Standards -Based Bar Code Technology Into National Health Information Systems in Ethiopia and Pakistan to Increase End- to-
+End Supply Chain Visibility . Global Health: Science and Practice. December 2017.  
+ 12 Sharing traceability data requires a “data architecture” that defines the rules, policies, and 
+standards that govern how data is collected, used, stored, and shared between 
+organizations.36 In a centralized architecture, trading partners provide data to a repository 
+that a single actor (usually a government agency) controls access to. In a distributed model, 
+trading partne rs either keep data in their own databases and share it with one another by 
+sending queries across a communication hub, or upload data to a shared ledger.  
+Unsurprisingly, industry actors generally prefer a decentralized system that gives them more 
+control  over how data is shared, while policymakers tend to favor a centralized one that 
+gives government agencies a larger role. For countries with lower levels of technical capacity, 
+however, creating and managing such a centralized system could be difficult. T hus, some 
+governments may be better off relying on the private sector to manage the data -sharing 
+network, while retaining the capacity to play an oversight role on the network.   
+Regardless of the model chosen, the sheer scale of data generated by traceabi lity systems 
+presents a challenge. Shifting from a system that tracks products at the batch level to one 
+that does so at the unit level will generate orders of magnitude more data. For instance, while 
+a pallet carrying five thousand units of a medicine fro m a single batch could be represented 
+by one data point in a batch system (i.e., “there are five thousand units from Batch X on 
+pallet X in this warehouse”), in a unit- level system the same pallet of goods would create 
+5,000 data points.37  
+System designers  must also ensure that data remains secure. Data security and privacy will be 
+especially critical in cases where traceability systems extend down to the patient level or any time patient health records are involved.  
+                                                      
+36 Food and Drug Administration. Drug Supply Chain Security Act (DSCSA) Public Meeting Series: Enha nced 
+Drug Distribution Security . December 5 -6. 2017. GS1 makes a more granular distinction between five different 
+models of sharing data, including “one step up, one step down,” centralized, networked, cumulative, and 
+decentralized.  
+GS1. GS1 Global Traceability Standard . August 2017.  
+37 This point was made to us by Clinton D’Souza, Director of Public Health at Imperial Health Sciences.  13 Figure 4. The GS1 System of Standards  
+Source: https://www.gs1.org/sites/default/files/docs/traceability/GS1_Global_Traceability_Standard_i2.pdf  
+Making Use of Data  
+Once traceability  data has been captured and shared, the final task is using it to achieve 
+better outcomes. In a point- of-dispense verification model, data is used solely to verify the 
+authenticity of medicine. In a full traceability model, data can be used for multiple pu rposes: 
+it could be used by supervisors to improve monitoring; by procurement agents to enable 
+better forecasting; and by distributors to facilitate inventory management. Since it will be 
+difficult for a single system to meet all these needs, governments w ill need to clearly define 
+the objectives they want to achieve.38 They will also need to consider how much data sharing 
+they will allow or mandate, as achieving the benefits described will depend on whether 
+companies can access data from other supply chain actors.    
+Putting data to use requires the technical capacity to use digital tools and the ability to 
+interpret the information provided. For example, local health workers must know what to do 
+when a product scan reveals that the information on a given la bel is incorrect, or when the 
+provenance of an item cannot be established. For that reason, training local health workers 
+will be an important component of any serialization effort.  
+                                                      
+38 Kreysa, Ulrike. Traceability - The Basics . African GS1 Healthcare Conference 2018. May 9, 2018.  
+ 
+14 Traceability Initiatives  
+More than 45 countries have already signed some  form of a traceability approach into law, 
+though few have reached an implementation stage.39 Early movers include Argentina, China, 
+India, Russia, Saudi Arabia, South Korea, and Turkey, whose long -standing system we 
+discuss in box 1. The European Union and  United States also merit special attention because 
+of the size of their markets. We examine their regulations in box 2.  
+Figure 5.  
+ 
+  
+                                                      
+39 Infosys. Pharmaceutical Serialization Track and Trace: Easy Guide to Country -Wise Mandates .  
+15 Box 1. The Case of Turkey  
+Turkey was the first country in the world to pass comprehensive legislation requiring full traceability 
+of all medicines sold in its territory. The country implemented the approach mainly to limit 
+widespread reimbursement fraud,  which was seen as a major (and costly) political problem, but used 
+the same tools to improve other aspe cts of its supply chain, including drug quality.40 A recent study 
+on the Turkish system by Koray Parmaksiz noted that it has resulted in “a clean regulated supply 
+chain, minimization of reimbursement fraud, facilitation of fast market recalls, and timely pr evention 
+of medicine shortages.”41  
+Due to its success, Turkey’s approach may be considered a model for governments that want to 
+introduce track and trace into their own supply chains. But the country has several factors in its favor 
+that will be difficult for most LMICs to recreate. This includes having a universal healthcare system in 
+which the government acts as a single buyer for 95 percent of the medicines in the market, which 
+gives it negotiating power. 42 Pharmaceutical manufacturers have complied with  the country’s 
+traceability requirements, often at significant cost, because they are unwilling to forego doing business 
+in its large market.  
+Having a single -payer system also removes the incentive for Turkish citizens to make purchases 
+outside the regula ted supply chain. This led to a positive feedback loop between the single -payer 
+system and traceability. As Elizabeth Pisani notes, “well-managed stocks and an adequate benefits 
+package reduce the likelihood that patients will step outside of the regular supply chain in Turkey, and 
+falsified products are now rare in the nation's regulated supply chain.”43 
+Parmaksiz emphasizes the importance of aligning stakeholders in support of the project, noting that 
+“although manufacturers, wholesalers and pharmacists ex pressed skepticism initially…both the size of 
+the domestic market and the political determination to prevent fraud provided the state the power to 
+align all stakeholders to implement [track and trace].”44  
+ 
+Most countries with traceability laws either requi re or allow the use of GS1 standards.45 
+Beyond that, however, governments have varied in their approach. Some key differences 
+include:  
+• Degree of visibility : Some countries, like Brazil and United States, will ultimately require 
+end-to-end visibility, in wh ich every movement of a product through the supply 
+chain must be recorded but most others mandate only point- of-dispense 
+verification. The European Union’s “book end” approach requires supply chain 
+actors to verify a medicine’s authenticity at the point of  origin and the point of 
+                                                      
+40 Pisani, Elizabeth. “ The political economy of substandard and falsified medicines: an evi dence -informed risk -
+assessment framework based on a multi -country study .” September 2018. Research Gate.  
+41 Parmaksiz, Koray. “Political and Economic Drivers of Medicine Quality: Main Drivers of Success of the 
+Pharmaceutical Track and Trace System in Turkey .” July 2018. Thesis, Vrije Universiteit Amsterdam.  
+42 ibid 
+43 Pisani, Elizabeth. “ The political economy of substandard and falsified medicines: an evidence -informed risk -
+assessment framework based on a multi -country study.”  September 2018. Research Gate.  
+44 Parmaksiz, Koray. “Political and Economic Drivers of Medicine Quality: Main Drivers of Success of the 
+Pharmaceutical Track and Trace System in Turkey.” July 2018. Thesis, Vrije Universiteit Amsterdam.  
+45 GS1. Recommendations on a Harmonized Implementation of Traceability System Using GS1 Standards in China . February 
+2017.  
+ 16 dispensation but allows Member State health regulators to decide the degree of 
+traceability required throughout the supply chain.  
+• Product scope : Many countries require all prescription drugs to be serialized, but others 
+require it  only for certain classes or types of drugs. For example, at present India 
+only requires unique IDs on pharmaceuticals exported from the country.46 Some 
+countries, such as Egypt, have included over -the-counter products, which 
+significantly expands the scope, cost, and complexity of the approach.47 Many 
+countries, including Argentina, China, Russia, and South Korea, have phased in a wider set of classe s and types of drugs overtime.
+48  
+• Packaging level : The European Union requires serialization at the unit level only while 
+some countries, like India, require primary, secondary, and tertiary packages to each have a unique ID.
+49 
+Each of these choices affects the cost, complexity, and effectiveness of the traceability 
+approach taken, and how governments make them reflects both the aims they want to 
+achieve and their capacity.  
+At present, deriving lessons for using track and trace in low income countries is dif ficult for 
+several reasons. First, most of the countries that have enacted traceability regulations are 
+high- or high- middle income economies. Not only do these countries have more human and 
+technical capacity to draw on, their health systems are also less  complex since they do not 
+rely on global health initiatives to provide medicines. Second, even among countries with 
+laws in place, most have only partially phased in their serialization requirements, which 
+means that a significant share of medicines remai n out of scope.  
+  
+                                                      
+46 Infosys. Pharmaceutical Serialization Track and Trace: Easy Guide to Country -Wise Mandates.   
+47 Industry interviews  
+48 ibid 
+49 Infosys. Pharmaceutical Serialization Track and Trace: Easy Guide to Country -Wise Mandates .  17 Box 2. Comparing the US and EU Approaches to Traceability  
+The US Digital Supply Chain Security Act (DSCSA)  
+The DSCSA, which was signed into law in 2013, calls on the health industry to create an electronic, 
+interoperable system to ident ify and trace the movement of prescription drugs distributed in the 
+United States by 2023. The act is intended to increase supply chain traceability and “protect 
+consumers from exposure to drugs that may be counterfeit, stolen, contaminated, or otherwise 
+harmful.” 50    
+The regulation requires companies to record information about each product hand -off in an 
+electronic “transaction history” and to provide this information to the FDA at request. It also requires 
+supply chain actors to verify that each product  is legitimate and unaltered in certain circumstances, 
+and to quarantine drugs identified as suspect (i.e., counterfeit, unapproved, or potentially dangerous) 
+and inform the FDA within 24 hours.  
+Notably, the DSCSA does not mandate how information exchange should take place and instead 
+leaves this up to the healthcare industry to decide. The US health industry has yet to converge around 
+a single solution that will provide an electronic, interoperable system to trace products at the package 
+level by 2023.  
+The EU Falsified Medicines Directive (FMD)  
+The FMD was passed in 2011 and comes fully into force in February 2019. An EU -wide regulation, 
+the FMD is intended to prevent counterfeit prescription dru gs from entering the pharmaceutical 
+supply chain. The regulation requires manufacturers to imprint a unique identifier on each pack of 
+medicine and send data about identifiers to the European Medicines Verification System (EMVS) and 
+member state verificati on systems, which dispensing agents must use to verify the authenticity of 
+medicines.51  
+The FMD also requires some form of an anti -tamper device, such as an imprinted seal. If the seal is 
+compromised, the medicine cannot be sold. The specifications of the anti -tampering devices are at the 
+discretion of the manufacturers. These safety features are intended to identify and verify the 
+authenticity of individual packs of medicine.  
+Comparing the approaches  
+Both the DSCA and the FMD allow for the use of GS1 standards, but do not mandate them. Both 
+systems also require manufacturers and re -packagers to label each lot (and eventually each package) 
+with a unique serial number in a barcoded format for event recording, verification, and recordkeeping. 
+In addition, both regulations leave most over -the-counter (OTC) drugs out of scope.  
+Beyond that, the regulations take different approaches. In the United States, the DSCSA requires full 
+traceability, with supply chain actors responsible for collecting  data on each change of ownership. 
+Conversely, the EU FMD implements a point -of-dispense verification model that requires supply 
+chain actors to verify a medicine’s authenticity only at the point of origin and point of dispensation. It 
+leaves the decision whether to require traceability in other parts of the supply chain up to Member 
+State health regulators.  
+ 
+                                                      
+50 See: Drug Supply Chain Security Act    
+51 European Medicines Verification Systems. Introduction to the European Medicines Verif ication System (EMVS).     18 Making Traceability Work in Low -Income Countries: 
+Ongoing Initiatives  
+The global health community has worked to expand the use of traceability in LMIC  health 
+systems by encouraging the use of GS1 standards by their suppliers and working with LMIC 
+governments to establish the foundation required for adopting serialization.  
+In 2017, the Interagency Supply Chain Group (ISG) —which includes among its member s 
+the Bill and Melinda Gates Foundation, DFID, the Global Fund, Gavi, World Bank, World 
+Food Programme (WFP), World Health Organization (WHO), and several UN agencies —
+endorsed GS1 standards. The same year, USAID notified it suppliers that they would have 
+to identify and label products using GS1 standards by end -2018.52 
+USAID has also played a lead role in developing a master product list for global health commodities. Using the GS1’s Global Data Synchronization Network (GDSN), which 
+allows manufacturers to s hare product master data in near -real-time, the project aims to 
+provide a “single source of truth” for product attributes that is accessible to all supply chain 
+actors.
+53 Other organizations, including the Global Fund and the United Nations Population 
+Fund (UNFPA) have already agreed to work off this list and USAID is encouraging its 
+partner countries to use the list as the basis for their own product directories. South Africa announced in 2017 that it would require its vendors to use global data standards a ligned with 
+USAID’s requirements.
+54 
+Finally, USAID is also taking the lead working with governments to improve in -country 
+supply chains. Through the GHSC -PSM project, the organization is currently working with 
+Ethiopia, Ghana, Lesotho, Malawi, Pakistan, Uga nda, and Tanzania.55  
+Other organizations working to encourage the use of traceability in LMICs include the Global Steering Committee (GSC) for Quality Assurance of Health Products, a voluntary 
+coalition of global health initiatives, national governments, NGOs, and drug companies 
+focused on improving supply chain integrity, and the industry group RxGPS, which works with national regulators to promote traceability.
+56  
+These advocacy efforts have made a difference. The growing interest of LMIC governments in traceability was on display at the first African GS1 Healthcare conference held in Addis 
+Ababa, Ethiopia in May 2018, which was attended by representatives from 38 countries, 45 
+                                                      
+52 USAID Global Health Supply Chain Program. Barcode Registration to GDSN Synchronization .  
+53 USAID Global Health Supply Chain Program. The GDSN Opportunity for Global Health . 
+54 Calvaresi Barr, Ann. Memorandum for the Acting Administrator: OIG Advisory Memorandums and Global Health 
+Advisory on Internal Control Concerns . USAID Office of the Inspector General. June 7, 2017.  
+55 USAID Global Health Supply Chain Program. Implementation of GS1 Global Standards for Product 
+Identification . February 21 -23, 2017.   
+56 Cinnamond, Martin and Tom Woods.  The Joint Interagency Task Force and the Global Steering Committee for the Quality 
+Assurance of Health Products: Two New and Proactive Approaches Promoting Access to Safe and Effective Medicines . American 
+Journal of Tropical Medicine and Hygiene. June 2015.  
+ RxGPS Website: http://www.rxgpsalliance.org/  
+ 19 regulatory bodies and 23 humanitarian organizations.57 The next African GS1 Healt hcare 
+conference will take place in Nigeria in September 2019.  
+Hurdles to Implementation in LMICs  
+Although the concepts behind traceability are relatively simple and the hardware 
+requirements not prohibitively expensive for most supply chain actors, develo ping the 
+systems needed to use traceability is a huge endeavor that requires significant upfront investment.  
+These start -up costs include the need by manufacturers to install new machinery and 
+software to label products according to agreed standards, deve lop databases to retain the 
+data, put systems in place to share data, and integrate the serialization process into their 
+existing systems. Downstream actors also face start -up costs, as they need to purchase 
+scanning equipment and train employees how to ac cess and use serialization data.  
+In addition, all parties must also have the necessary IT tools in place to allow data sharing 
+over the network. While connectivity may be a limiting factor in remote areas, from a purely 
+technical perspective, most of thes e requirements appear manageable. The specific IT 
+requirements will differ depending on the data -sharing model used. For example, it is 
+feasible that countries with Logistics Management and Information Systems (LMIS) in place could use them as a backbone f or a data- sharing network.   
+Achieving scale is another hurdle since, for a traceability system to be effective, participation 
+must be widespread. If too many of a country’s supply chain actors remain outside the 
+network, the visibility provided by a trace ability approach and its contribution to supply 
+chain integrity will both be undermined.  
+Political leadership is crucial to overcoming the challenge of coordination, particularly as 
+some companies may be reluctant to participate because of the start -up co sts involved. 
+Government officials can foster participation by convincing supply chain actors of the benefits of traceability or mandate participation by law. Government commitment is also 
+critical: in many instances implementation dates for laws have been delayed due to a 
+government’s inability to meet their own deadline.  
+There is also a need to build political consensus around the use of traceability within 
+governments. Several experts we spoke to noted instances in which senior health agency 
+officials had blocked efforts to improve supply chain visibility because they benefitted from 
+corrupt practices, like parallel importation.  
+Even with strong political leadership, laying the groundwork for traceability will take time. 
+The industry group RxGPS suggests that governments give companies at least four years to 
+comply with s erialization requirements. It is worthwhile to note that the United States and 
+European Union have both given their industries ten years to meet full traceability 
+requirements.
+58  
+                                                      
+57 GS1. Healthcare Conference Ethiopia 2018 . 2018.  
+58 RxGPS. Serialization Primer .   20 The complexity of the undertaking will depend largely on how well the approac h taken aligns 
+with the country’s human capacity and existing legal framework and market structure. Of 
+course, some countries are better positioned than others.  
+For example, Ethiopia has several conditions in its favor compared to other countries in 
+sub-Saharan Africa including its progress towards achieving universal health care by 2035 
+and the large role played by the government in its pharmaceutical market, where it buys an estimated 80 percent of all medicines.
+59 Conversely, in Kenya, where 50 percent o f 
+medicines in value terms are distributed through the private sector, with many passing 
+through the informal gray market, and where the country has made only limited progress 
+towards achieving universal health coverage, the path to establishing traceabili ty will likely be 
+more difficult.  
+ 
+The Limits of Traceability  
+While establishing serialization -based systems in LMICs is an important goal, they cannot 
+address concerns about drug quality on their own. For that reason, it is appropriate to consider tracea bility as just one element of a broader, holistic effort to enhance supply chain 
+integrity.   
+For instance, while traceability can make it easier to trace substandard products back to their source, quality assurance testing is needed to determine what medi cines are substandard in 
+the first place. Post -market surveillance is also needed to ensure that consumers are receiving 
+high-quality products. To date, quality assurance testing has not spread widely enough in 
+LMICs. For example, Kenya has only three qual ity testing labs in the entire country and it 
+costs the equivalent of $300 to test a single medicine packet.  
+An effective traceability system also requires a clear legal framework supported by a culture 
+of compliance and enforcement. If dispensing agents who identify substandard medicines do 
+not know how to report their findings, or have little confidence that those findings will be 
+acted on, the traceability system will not work. More broadly, it is a mistake to expect technology to solve for political and social problems, such as lack of leadership, limited 
+accountability, and inadequate human and financial resources.  
+   
+The Next Frontier? Using Distributed Ledger Technology 
+for Traceability  
+Although efforts to introduce serialization into health supply c hains are still at an early stage, 
+some in the global health community are already exploring how a more recent innovation, 
+distributed ledger technology (DLT), may help to further improve supply chain visibility.  
+                                                      
+59 This point and the next were made to us by Dan Rosen, Founder of AFRX Consulting.  
+ 
+ 21 At its core, DLT is a database structure in  which records are shared and synchronized across 
+different computers (often referred to as nodes) in a peer -to-peer network.60 Unlike most 
+databases, where a single entity has the authority to amend records and approve updates, 
+changes to a distributed led ger must be validated by a predetermined set of network 
+participants, each of which maintains an up- to-date copy of the ledger. Once an update to 
+the ledger is approved, it is synchronized across the entire network and protected against 
+tampering by crypto graphy.  
+DLT is a fast -evolving technology with a wide variety of models under its banner. One key 
+difference across these models is whether participation is open or restricted. In permissionless  
+systems, like Bitcoin and Ethereum, anyone can maintain a copy of the ledger and participate 
+in the consensus process without being pre -approved. This means that no single actor or 
+group of actors can independently approve or block updates.61 But this “cen sorship 
+resistance” comes at a cost, as it requires the use of a computationally difficult (and therefore 
+energy -intensive) consensus protocol that makes cheating nearly impossible.  
+Permissioned  ledgers function quite differently. In these systems, member ship is restricted to a 
+pre-selected group of participants and the authority to approve updates may be limited to an 
+even smaller set of actors, sometimes referred to as “trust anchors.” Because these systems 
+have pre -vetted membership, they can rely on le ss computationally intensive consensus 
+mechanisms to validate transactions.  
+Permissioned systems therefore forego the benefit of censorship resistance in exchange for 
+greater efficiency. Although this is at odds with the original decentralizing ethos that  gave 
+rise to DLT, it appeals to organizations that want to take advantage of the efficiency and 
+visibility gains that the technology offers while maintaining greater control over outcomes. 
+For that reason, most enterprise solutions - and all the supply chain proposals discussed 
+below -  use a permissioned approach.  
+Despite the excitement around DLT’s potential to tackle a broad variety of societal 
+problems, the number of its real -world applications remains small and many of the 
+technology’s proposed uses a re unlikely to take hold in the foreseeable future.62 But supply 
+chain management could be an exception and there is considerable momentum in the logistics industry on exploring its use, particularly in the food sector (see Box 3 for more details on DLT ini tiatives underway in the food and health sectors).  
+  
+                                                      
+60 Although the terms “blockchain” and DLT are often used synonymously, the former is a particular kind of 
+distributed ledger in which data are stored in “blocks” cryptographically linked to one another in a “chain.”  
+61 An important caveat is the possibility of a “51 percent attack,” in which “a party controlling the majority of the 
+hash power [on a permissionless ledger] can double- spend, reverse or censor transactions.”  
+B, Matt. Bitcoin’s Attack Vectors: 51% Attacks . Medium. November 27. 2018.  
+62 For example, in another paper, one of us argues that the hopes that DLT can serve as a basis for digital ID:  
+Pisa, Michael.  Reassessing Expectations for Blockchain and Development . Center for Global Development. May 17, 2018.  
+ 
+ 22 Box 3. Ongoing DLT Initiatives in the Food and Health Sectors  
+Many of the challenges found in health supply chains also exist in the food industry, including the 
+need to verify the safety and freshness o f products, ensure best production (or horticulture) practices, 
+and prevent the entry of fraudulent goods. In addition, supply chains in both sectors often have many 
+intermediaries and product handoffs.  
+Although actors in both sectors have expressed inter est in using DLT for supply chains, the food 
+industry has advanced further in its experiments with the technology. This may reflect the health 
+industry’s stricter data security standards, which can slow innovation. Another notable difference 
+between the industries is that the food sector’s traceability initiatives have been conducted at the batch 
+level, while the health sector has increasingly focused on item -level traceability (which produces more 
+data and is costlier to implement).  
+Food Sector  
+Walmart has been a leader in the use of DLT for supply chains since 2016 when it conducted a proof 
+of concept in collaboration with IBM that tracked the movement of mangoes from farmers in Mexico 
+to Walmart stores in the United States. The company reported  that using DLT  allowed them to 
+reduce the time it took to trace mangoes back to their origin from one week to several seconds.63 The 
+two companies then conducted a separate pilot using DLT to track pork from farms in China to 
+stores in the United States w ith similar positive results.  
+Since that time, IBM has established a DLT -based food supply chain network, IBM Food Trust, 
+which comprises some of the largest food retailers in the world, including Walmart, Carrefour, 
+Kroger, Wegmans, Tyson, Driscolls, Nes tle, Unilever, Danone, McCormick, and Dole.64 In 
+September 2018, Walmart announced that it would require all its leafy greens suppliers “to capture 
+digital, end -to-end traceability event information using the IBM Food Trust network” by September 
+2019.65  
+Health Sector  
+The US pharmaceutical industry is exploring DLT’s potential in response to the US Drug Supply 
+Chain Security Act (DSCA), which calls on the industry to develop an electronic and interoperable 
+system to trace the movement of prescription drugs in the country by 2023.  
+Over the last two years, several initiatives that aim to use DLT to meet DSCA requirements have been 
+announced, including The MediLedger  Project run by the company Chronicled, and a collaboration 
+between DHL and Accenture.66 Industry organizations like the Center for Supply Chain Studies are 
+also exploring how distributed ledger solutions might help meet DSCA requirements.67 Because these 
+projects are not nearly as advanced as those conducted in the food sector, data on their effectiveness 
+has not yet been published.   
+                                                      
+63 Yiannas, Frank. A New Era of Food Transparency Powered by Blockchain.  MIT Innovations. July 10, 2018.  
+64 IBM. IBM Food Trust: Tru st and Transparency in Our Food .  
+65 Mounce, Russell, Martin Mundo, Charles Redfield, and Frank Yiannas. Food Traceability Initiative Fresh Leafy 
+Greens.  Walmart. September 24, 2018.  
+66 Accenture. DHL and Accenture Unlock the Pow er of Blockchain in Logistics . March 12, 2018.  
+67 Center for Supply Chain Studies. https://www.c4scs.org/  23 DLT’s Potential Benefits  
+Many of the challenges facing supply chains across industries stem from a lack of 
+information flow. The biggest barrier to sharing information across the supply chain is the 
+need for data security, which is particularly acute in the pharmaceutical industry. For good 
+reason, companies are unwilling to share data that may be commercially valuable with thei r 
+supply chain partners. As a result, data that could be used to improve logistics remains siloed within individual organizations.  
+DLT provides a potential solution to this problem by providing a single, tamper -resistant 
+ledger that uses cryptography to e nsure that only authorized parties can access certain 
+records. For instance, a distributed ledger could be designed to allow regulators full visibility 
+of a supply chain, while limiting others to a “one -up, one -down” view that only provides 
+information about a good’s movement one step upstream and one step downstream in the 
+supply chain.  
+By allowing companies to share control over a ledger rather than send their data to a third 
+party that maintains a separate database, DLT could help overcome the “trust ga p” that 
+prevents them from sharing information. Having parties upload transaction data to the same 
+ledger could also reduce the time companies spend reconciling records by making it easier to detect errors and inconsistencies. And the near -real-time visibility that DLT provides could 
+make it easier to track product movement, conduct recalls, manage inventory, and monitor 
+regulatory compliance.  
+Another potential advantage of using DLT is the ability to use smart contracts —i.e., 
+computer programs that execute automatically when certain conditions are met —to 
+automate processes that were formerly done manually. This includes the possibility of 
+automating the steps involved with obtaining trade financing, a time -consuming and often 
+paper -intensive process that c an be a bottleneck in LMIC health supply chains.  
+DLT in Reality: Challenges and Limitations  
+Although DLT holds some promise, the health industry would need to overcome several obstacles before the technology can provide a viable framework for health suppl y chains.  
+As with serialization, the biggest challenges to using DLT are political rather than technical. Indeed, the technical necessities required by DLT are similar to other traceability systems. 
+Beyond the need for a network connection and a mobile de vice, uploading data should not 
+be a hurdle, if workers are well -trained and incentivized and the user interface is well -
+designed.  
+The bigger hurdles are achieving scale and regulatory uncertainty. As with any traceability 
+system, a DLT approach must achi eve enough scale (sometimes referred to as creating a 
+“minimally viable network”) to function effectively. This requires having a business model 
+that gives actors at every level of the supply chain an incentive to participate and a path to 
+onboarding.  
+The willingness of companies to join a DLT -based system will depend in part on how it is 
+managed. Almost by definition, distributed solutions are more difficult to govern than centralized approaches that give administrative authority to a single actor. Some o f the 24 governance issues that a DLT approach must address include who controls network 
+membership, who can access what pieces of information, and who owns data on the ledger.  
+Regulatory uncertainty makes answering these questions more difficult. Experts in  the highly 
+regulated health sector are just beginning to consider how decentralized models fit with 
+existing legal frameworks for data security and what reforms might be needed to enable a 
+DLT approach. At the same time, national standards for data privac y and security are 
+evolving quickly, with governments taking a variety of approaches that may raise 
+compatibility issues for cross -border DLT solutions.  
+Until companies have confidence that a DLT system can comply with these regulations, they 
+are unlikely  to invest enough to create one. At the same time, policymakers will only pursue 
+reforms once they have developed expertise around decentralized models. The risk is that 
+both groups will take a “wait and see” approach that stunts the development of the 
+technology.   
+A Potentially Worthy but Distant Goal  
+While most of the experts we spoke to believe that DLT -based supply chain solutions are a 
+distant goal in lower income countries (and, some would argue, in rich countries as well), the good news is that havi ng unique product IDs is an important prerequisite for any DLT 
+solution. Therefore, any steps that the global health community takes to further the use of 
+serialization today will also lay the groundwork for a DLT -based approach.  
+ 
+Recommendations  
+The global health community has made impressive strides in recent years raising awareness 
+of the benefits of traceability and working with LMIC governments to lay the groundwork. The recommendations below are intended to support those efforts going forward.  
+Identify the problem to be solved  
+The approach to traceability a government should take depends entirely on the objective it 
+wants to achieve. Countries whose primary aim is to improve supply chain visibility should 
+take different measu res than those focused on limiting reimbursement fraud or facilitating 
+recall management. While a traceability system may be able to meet multiple aims in the 
+long-run, over the short -run governments should focus only on their primary goal, given the 
+high level of political willingness and coordination that implementing traceability requires.   
+Develop an evidence base  
+Despite growing interest in traceability solutions, there is still a lack of information about 
+which approaches work best and in what conte xt. While it seems likely that a less resource -
+intensive approach like point -of-dispense verification will be the best fit for many LMICs, 
+determining the added cost and benefit of shifting to a full traceability approach is ultimately an empirical questio n. The donor community can help fill this gap by funding pilot projects 
+that use different traceability models to measure their impact.  25 For example, USAID/PEPFAR and the Global Fund could design a series of pilot projects 
+to assess the impact of introduci ng a specific traceability system on leakage, savings, the 
+share of products delivered on -time-in-full (OTIF), and inventory management, as well as 
+the operational and capacity requirements for implementation. An evaluation team would 
+measure a baseline of  metrics ahead of implementation and assess progress on those metrics 
+on a monthly basis.  
+The findings of such an evaluation would help USAID and the Global Fund assess the costs 
+and impact of introducing traceability and better understand the operational  requirements 
+needed for its introduction. Donors could also use this information to estimate the return on 
+investment (ROI) that governments face over the medium- term (when limited elements of 
+the system are in place) and long -term (after a full traceabil ity system is established) to make 
+a business case for investment.  
+Build technical capacity  
+Traceability systems generate a massive amount of data and their effectiveness depends on 
+the ability of supply chain actors to put that data to use and on the integrity of the data 
+collected and entered. For that reason, harnessing the full benefits of traceability will require 
+workers to have a high level of data literacy. Donors should work with LMIC governments to develop capacity building programs that emphasiz e training in digital skills, including basic 
+digital literacy as well more advanced analytics and data science skills.    
+Shift resources  
+With many LMICs set to graduate from aid eligibility over the next two decades, more should be done now to improve their procurement and in -country supply chain processes. 
+While the global health initiatives are taking supply chain integrity more seriously than in the 
+past, the amount of resources they direct towards strengthening supply chains is a small 
+fraction of the ir overall spending. Donors should shift more of their resources towards 
+activities that help LMICs lay the groundwork for serialization, including building capacity 
+and investing in data infrastructure.  
+Incentivize adoption and harmonization  
+The best way  to encourage LMIC adoption of traceability is to provide evidence of its 
+benefit, including through the evaluation process described above, but donors might also 
+consider ways to reward LMICs that take concrete steps to implement the approach or 
+harmonize  their national medicines list with USAID’s Product Master, including by offering 
+more aid or technical assistance. This could include having donors provide cash on delivery 
+for achieving measurable, verifiable outcomes tied to adoption and harmonization.
+68  
+Protect small manufacturers  
+Although the upfront investment required to use serialization is not prohibitive for most 
+supply chain actors, it may be for small manufacturers and those that produce for niche 
+                                                      
+68 Cash on Delivery . Center for Global Developm ent. 26 markets. For that reason, the donor community s hould consider subsidizing manufacturers 
+that are unable to afford the one -time cost and providing them with the necessary training.    
+Make room for the private sector  
+Private sector start -ups are playing an increasingly important role in LMIC health syst em, 
+including many that are focused on improving medicine distribution in areas where supply 
+chains are dysfunctional. Conversations about implementing traceability tend to be 
+dominated by big actors like governments, global health organizations, and large  
+manufacturers. But it is important to take the needs of these start -ups (and the lessons they 
+have learned) into account and to design a traceability system that promotes further 
+innovation. To that end, these companies should have a voice in policy discu ssions, and it 
+would be useful to have private sector actors participate in some of pilot evaluations.  
+ 
+Conclusio n 
+Traceability holds great promise for improving LMIC health supply chains. While the challenges to implementation are real, they are also sur mountable by governments who have 
+a strong political commitment. The donor community has helped to create momentum in 
+support of using traceability for health supply chains worldwide but these efforts are still in 
+the early stages. Today, donors can sustai n the momentum they have helped to create by 
+building evidence about what approaches work best and working with LMIC governments 
+committed to improving supply chain integrity to translate that knowledge into action.   
+  27 Appendix. Expert Interviews  
+• Anup Akk ihal.  Logistimo, CEO  
+• Azhee Akinrin, Global Health and Development Consultant 
+• John Bass.  Hashed Health, Founder and CEO  
+• Agustina Calatayud, Inter -American Development Bank.  Supply Chain and 
+Logistics Specialist  
+• Bob Celeste, Center for Supply Chain Studies.  Founder  
+• Iulian Circo, Proof of Impact.  Co -Founder  
+• Stuart Corby. Track.one for Pharma solutions.  Co -Founder  
+• Clinton  De Souza, Imperial Health Sciences, Director of Public HealthHealth  
+• Lindabeth Doby.  USAID.  Senior MIS Advisor  
+• Ramy Guirguis.  USAID, Senior IT Advisor  
+• Ramesh Gopinath.  IBM, Blockchain Solutions  
+• Aradhana Gurung.  Nepal Innovation Lab, Lead Manager  
+• April  Harding, Global Health advisor  
+• Hitesh Hurkchand, UNICEF, Principal Consultant  
+• Ulrike Kreysa .GS1 Healthcare, VP  
+• Jerry La Forgia.  Aceso Global, CTO  
+• Eric Marshall. Senior Director, Leavitt Partners  
+• Koray Parmaksiz. Researcher at Erasmus School of Health Po licy & Management  
+• Elizabeth Pisani.  Ternyata Ltd, Public Health Consultant  
+• Gregory Rockson.  mPharma, Co- Founder and CEO  
+• Kaitlyn Roche, IBM.  Global Standards Consultant for USAID  
+• Daniel Rosen. AFRX Consulting.  Founder  
+• Bright Simons.  mPedigree, Preside nt and Founder  
+• Natalie Smolenski.  The Learning Machine, SVP Business Development  
+• Anne Snowdon. World Health Innovation Network.  Chair and Professor  
+• Susanne Somerville, Chronicled.  CEO  
+• Jessica Vernon, Maisha Meds.  Co -Founder/CEO  
+• Tom Woods, Woods Interna tional. ChairChair of the Global Steering Committee 
+(GSC) for Quality Assurance of Medical Products  
+• Prashant Yadav, Bill and Melinda Gates Foundation.  Strategy Leader, Supply Chain  
+• Raul Zambrano, International Development in ICT  
+ 

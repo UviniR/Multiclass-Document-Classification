@@ -1,0 +1,835 @@
+Barriers and Incentives to Cybersecurity Threat Information
+Sharing in Developing Countries: A Case Study of Saudi Arabia
+Waleed A. Alkalabi
+Queensland University of Technology
+(QUT)
+w.alkalabi@qut.edu.auDr Leonie R. Simpson
+Queensland University of Technology
+(QUT)
+lr.simpson@qut.edu.auDr Hasmukh L. Morarji
+Queensland University of Technology
+(QUT)
+h.morarji@qut.edu.au
+ABSTRACT
+Threat information sharing practices have the potential to improve
+cyber security. However, participation in sharing communities is
+not widely adopted. The existing literature finds a variety of ben-
+efits and challenges that either promote or deter organisations
+from engaging in such practices. Many of these findings relate to
+developed countries. A gap exists between developed and develop-
+ing countries in terms of cyber threat information sharing. In this
+paper, we describe a case study to identify the barriers and incen-
+tives for implementing threat information sharing in a developing
+country: Saudi Arabia. Our results offer insight into the successful
+implementation of threat information sharing initiatives in Saudi
+Arabia, showing that socio-cultural barriers and technological in-
+centives for sharing threat information are important factors. Our
+survey tool can be applied in other countries both developed and
+developing.
+CCS CONCEPTS
+•Security and privacy →Human and societal aspects of security
+and privacy;
+KEYWORDS
+Cyber security, cyber threat information sharing, cyber threat in-
+telligence, barriers, incentives, developing countries
+ACM Reference Format:
+Waleed A. Alkalabi, Dr Leonie R. Simpson, and Dr Hasmukh L. Morarji.
+2021. Barriers and Incentives to Cybersecurity Threat Information Sharing
+in Developing Countries: A Case Study of Saudi Arabia. In 2021 Australasian
+Computer Science Week Multiconference (ACSW ’21), February 01–05, 2021,
+Dunedin, New Zealand. ACM, New York, NY, USA, 8 pages. https://doi.org/
+10.1145/3437378.3437391
+1 INTRODUCTION
+Globally, cyberattacks are increasing in frequency, complexity and
+sophistication, causing significant security threats to individuals,
+organisations and nations [ 1,2]. To increase resilience, organisa-
+tions must deal with a growing number of vulnerabilities, threat
+Permission to make digital or hard copies of all or part of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed
+for profit or commercial advantage and that copies bear this notice and the full citation
+on the first page. Copyrights for components of this work owned by others than ACM
+must be honored. Abstracting with credit is permitted. To copy otherwise, or republish,
+to post on servers or to redistribute to lists, requires prior specific permission and/or a
+fee. Request permissions from permissions@acm.org.
+ACSW ’21, February 01–05, 2021, Dunedin, New Zealand
+©2021 Association for Computing Machinery.
+ACM ISBN 978-1-4503-8956-3/21/02. . . $15.00
+https://doi.org/10.1145/3437378.3437391actors and attack techniques. Those threat actors vary from indi-
+viduals to well-resourced organisations that work as part of an
+organised criminal group, or on behalf of other nation-states [ 3].
+Cyber threats are potentially more harmful and adversaries may
+coordinate their attacks. Therefore, coordinated countermeasures
+by governments and public and private sectors organisations are
+needed to protect valuable national assets.
+Cyber threat information sharing is a proactive measure that can
+protect against cyberattacks [ 4]. Members of sharing communities
+can exchange information that may assist others to detect new at-
+tacks or proactively enhance their defences against various type of
+threats [5]. The shared information may include attack indicators,
+tactics, techniques, and procedures, security alerts, threat intelli-
+gence reports, and best practices [ 3]. Threat information sharing
+plays a vital role in organisational cyber security readiness [ 6]. It is
+one of five essential practices that organisations need to undertake
+to protect against cyberattacks; the others are governance, technolo-
+gies and techniques, standards and policies, and staff development
+[6]. A standard procedure to collect, store and distribute the appro-
+priate information between organisations on a homogeneous, rapid,
+and practical basis will enhance cyber security. This collaborative
+environment enables all members of the sharing community to
+act in a coordinated manner [ 7]. In contrast, a complete lack of
+threat information sharing will raise the cost of protection against
+cyberattacks. Each defender must work individually to identify and
+combat each threat [8].
+The success of threat information sharing practices relies on
+the active participation and commitment of all involved stakehold-
+ers: individuals, governments, policymakers, public and private
+organisations, and international peers [ 9]. The existing literature
+includes several challenges that deter stakeholders from engaging
+in threat information sharing practices, such as a lack of awareness
+of threat information sharing, concerns about the sort of threat
+information that should be shared, and fear of the consequences
+of sharing [ 10-13]. To address these challenges, threat information
+sharing must be considered within a broader framework covering
+multiple aspects affecting stakeholder decisions, including laws
+and regulations, social, organisational, technical, economic aspects,
+in addition to political and international influence. Understand-
+ing these aspects and the interactions are necessary for successful
+threat information sharing [14].
+Internationally, countries vary in their threat information shar-
+ing practices. Some have comprehensive systems in place, but many
+do not. Developed countries have often implemented cyber threat
+information sharing initiatives, with national frameworks to facili-
+tate threat information sharing and international alliances [ 15]. The
+Global Cyber security Index (GCI) 2018 report [ 16], published byACSW ’21, February 01–05, 2021, Dunedin, New Zealand Waleed Alkalabi et al.
+The International Telecommunication Union (ITU), states that de-
+veloped countries including the UK, the US, France, Lithuania, and
+Estonia have threat information sharing practices in place. Com-
+pared to developed countries, developing countries have a poor
+understanding of cyber security [17-19], both in their understand-
+ing of the risks posed by cyber threats and the capabilities required
+to address those risks [ 19,20]. The GCI 2018 report noted that
+half of the 193 ITU member states do not have a published cyber
+security strategy and have little or no cyber threat information
+sharing. Most of these member states are developing countries in
+regions such as Africa, the Americas, Asia-Pacific and Arab states
+countries, including Saudi Arabia [ 16]. Developing the capabilities
+to implement threat information sharing requires the identification
+of factors that limit such practices. Many developing countries de-
+pend on developed countries to assist with the developing of their
+cyber security technical capabilities [ 21]. However, the solutions
+and strategies successfully employed in a developed country may
+not be suitable for direct application in developing countries [ 22]. It
+is crucial to develop a national threat information sharing strategy
+that is relevant to the context of a particular country.
+Despite the growing interest in cyber security development and
+threat information cooperation in developed and developing coun-
+tries, there is a significant lack of studies into the factors affecting
+the implementation of cyber threat information sharing in develop-
+ing countries. The main purpose of this study is to identify barriers
+and incentives with the most significant influence on threat infor-
+mation sharing in a case study developing country: Saudi Arabia.
+This paper explores these barriers and incentives, as understanding
+these is necessary to enable participation in cyber threat informa-
+tion sharing practices. We first performed a literature survey to
+identify barriers and incentives noted in previous research. We cate-
+gorised these in a manner similar to Skopik [ 2], who used technical,
+legal, regulatory, and organisational dimensions. Our categorisation
+has adapted this to form five categories: legal and regulatory, fi-
+nancial, operational, socio-cultural and technological. Our research
+seeks to determine the most important factors inhibiting cyber
+threat information sharing, including barriers and incentives that
+limit or encourage participation in threat information sharing prac-
+tices. Understanding these factors will be used as a basis for the
+future development of a national cyber security framework for the
+successful implementation of threat information sharing for Saudi
+Arabia.
+The remainder of this paper is structured as follows. Section
+2 describes the methodology and instruments employed in this
+research to perform a literature review identifying the barriers and
+incentives to cyber threat information sharing, construct a survey
+to identify the most important barriers and incentives, and a case
+study where the survey is administered. Section 3 presents the
+results of the research. Section 4 discusses the case study findings
+and relates the identified important barriers and incentives in five
+categories to the context of a developing country: Saudi Arabia.
+Section 5 identifies the limitations of this study, and the final section
+concludes the paper.2 METHODOLOGY
+The study presented in this paper was carried out in three phases.
+The first phase was a literature review of barriers and incentives to
+cyber threat information sharing. A list of identified barriers and
+incentives was derived and categorised: legal and regulatory, fi-
+nancial, operational, socio-cultural, and technological. This formed
+the basis for an online survey, developed in the second phase, that
+will be applied to rate the importance of barriers and incentives in
+certain countries. In the third phase, this survey was administered
+in the case study country: Saudi Arabia.
+2.1 Multivocal Literature Review
+In this literature review, we identify barriers and incentives that
+influence participation in threat information sharing. The scope
+of this review is not limited to a particular country. Due to the
+limited number of academic papers on cyber threat sharing, we
+used a Multivocal Literature Review (MLR) as suggested in [ 23].
+This includes documents such as white papers from sources such
+as government, national authorities and industry in addition to the
+formal literature. This MLR forms the basis for a survey instrument
+to be developed in Phase 2.
+Many studies in the literature describe research performed in
+developed countries that already have a threat information sharing
+practice, including the US [ 12,13,24], the UK [ 25], Canada [ 26]
+and Europe [ 27]. Some of the findings of these papers may not
+be generalised or directly applied to other countries [ 28]. There
+may be differences between countries in terms of their laws and
+policies, government priorities, socio-economic status, national ICT
+infrastructure development level, cyber security maturity level and
+availability of technical experts. Therefore, the impact of barriers
+and incentives may vary from one country to another.
+In our MLR, we first reviewed available literature that addresses
+cyber security more broadly and then focused on sharing cyber
+threat information. We identified a list of barriers and incentives
+from relevant studies in the literature. These research papers were
+located by searching literature available on Lecture Notes in Com-
+puter Science (LNCS), IEEE Explore, the ACM Digital Library, In-
+spec, ProQuest, SpringerLink, and Google scholar as well as Google
+search engine. No systematic reviews on cyber threat information
+sharing were identified. To improve the quality of this MLR, we
+followed the steps of Preferred Reporting Items for Systematic Re-
+views and Meta-Analyses (PRISMA) [ 29].A list of 113 (84 barriers
+and 29 incentives) potential factors were identified. These were then
+grouped into five main categories: legal and regulatory, financial,
+operational, socio-cultural, and technological.
+A three-step search strategy was used in this MLR to locate
+related publications for both developing and developed countries.
+First, we searched for English language articles published since 2009
+in seven major online databases: LNCS, IEEE Explore, the ACM
+Digital Library, Inspec, ProQuest, SpringerLink, and ScienceDirect.
+Secondly, we searched for grey literature published by widespread
+international cyber security and threat information sharing agen-
+cies, such as the US Department of Homeland Security, the Euro-
+pean Union Agency for Cyber security (ENISA), the International
+Telecommunication Union (ITU), and the United States National
+Institute of Standards and Technology (including reports, workingBarriers and Incentives to Cybersecurity Threat Information Sharing in Developing Countries ACSW ’21, February 01–05, 2021, Dunedin, New Zealand
+papers, government documents, and white papers) [ 30]. Thirdly, we
+searched Google Scholar for international articles and conferences
+in cyber security and threat information sharing. All retrieved arti-
+cles were imported into Endnote software (Version X9, Bld 12062).
+Search keywords used were (“cyber security” OR cyber security OR
+threat) AND ("information sharing" OR intelligence) AND (factors
+OR barriers OR issues OR challenges OR obstacles). The search was
+conducted between September and December 2019.
+From the initial database and reference list search, we identified
+2,397 relevant documents. Of these documents, 2,363 were identified
+from academic databases, and 34 were identified from other sources
+(nine from international cyber security agencies, nine from cyber
+security focused research centres and 16 from international journals
+and conferences). A screening process was performed; all duplicate
+articles were removed, and documents that did not address factors,
+barriers, challenges, obstacles, issues, incentives, or benefits for
+cyber threat information sharing were excluded. We screened based
+on the article titles and abstracts. As a result of screening, 2,203
+documents were excluded from the study, leaving 194 documents
+to form the basis of this research.
+2.2 Survey development
+In the second phase of this study, the list of barriers and incentives
+from Phase 1 is used to develop a survey. The survey questions
+ask participants to rate the barriers and incentives according to
+their perceived importance to threat information sharing in their
+organisations on a 5-point Likert scale.
+A web-based self-administered survey consisting of two sections
+was developed. The first section contains general questions to ex-
+plore participants characteristics such as educational qualification,
+work experience, and the type of organisation and the sector where
+it belongs. The second section asked participants to rate the bar-
+riers and incentives from a list of 113 factors (84 barriers and 29
+incentives) they believed to be the most critical in the successful
+implementation of threat information sharing. Participants were
+asked to rate on a scale of one to five, where 1 is "not important"; 2
+is "slightly important"; 3 is "moderately important"; 4 is "important";
+and 5 is "very important" their opinions related to the importance
+of these barriers and incentives. This study received ethics approval
+from the QUT Human Research Ethics Committee.
+2.3 Case study: Administering the Survey
+In Phase 3, we administer the survey developed in Phase 2 in a
+developing country: Saudi Arabia. Invitation letters were sent to
+500 employees with cyber security roles in public and private sector
+organisations in Saudi Arabia. Email reminders were sent to non-
+respondents after 28 days. The invitation was accompanied by a
+cover letter stating the research aim and explaining how to complete
+the survey. This process for obtaining survey respondents may have
+introduced a bias, and we accept that as an unavoidable risk in this
+research.
+Survey data were analysed; statistical analysis was performed
+using frequency tables, means and standard deviations (SD) for
+key variables. One-way analysis of variance (ANOVA) and the
+Independent t-test was used to determine the differences in the
+mean value for barriers and incentives scores by demographics.Data were checked for normal distribution and homogeneity of
+variances using the Levene’s and Shapiro-Wilk’s tests [ 31,32]. All
+analyses were carried out using SPSS 18.0. A p-value of <0.05 was
+deemed significant.
+3 RESEARCH RESULTS
+In this section, we first present the barriers and incentives to cyber
+threat information sharing found in the literature review performed
+in Phase 1, followed by the survey results from Phase 3.
+3.1 Multivocal Literature Review (MLR)
+The barriers and incentives revealed in the literature review are
+grouped into five categories: legal and regulatory, financial, opera-
+tional, socio-cultural, and technological. The results are presented
+in Table 1
+3.2 Survey results
+The study involved 500 participants, of whom 137 completed the
+survey (response rate: 27.4%). The educational qualification shows
+that almost half (48.9%) had a bachelor’s degree or lower, 40.9% had
+a Master degree, and only 10.2% had a PhD. Nearly 61% were partici-
+pants from information/communication technologies and computer
+sciences background, 12.4% engineering, 11.3% business/economics
+and 15.3% from other backgrounds. Over one-third had work experi-
+ence of≥10 yrs (38.7%) and 6-10 yrs (35%), whereas 26.3% had work
+experience of 2-5 yrs. Participants who worked in public organisa-
+tions were higher than those who worked in private organisations
+(56.9% vs. 43.1%). The highest proportion comprised of those who
+worked in the Government/law enforcement sector (24.1%), fol-
+lowed by petrochemical manufacturing and oil/gas sector (22.6%).
+3.2.1 Ranking cyber threat information sharing categories. To de-
+termine which categories of barriers and incentives were most
+important, we analysed the data provided for all responses within
+each category. Table 2, shows that the all barriers and incentives
+categories had a mean value above 3.5, which means they con-
+sidered important. Socio-cultural barriers (M =3.90, SD =0.65) and
+technological incentives (M =3.93, SD =0.74) were the most impor-
+tant categories influencing threat information sharing in Saudi
+Arabia. On the other side, financial barriers (M =3.65, SD =0.88) and
+incentives (M =3.69, SD =0.86) were the least important categories.
+3.2.2 Barriers to cyber threat information sharing in Saudi Arabia.
+Table 3 presents the descriptive analyses and shows the top 27 bar-
+riers and incentives for sharing threat information in Saudi Arabia
+sorted by the mean value. The top three socio-cultural barriers were:
+“Lack of training and awareness programs”, “Privacy concerns” and
+“Political issues and international relations”. Furthermore, the most
+critical legal and regulatory barriers were: “Risk of violating na-
+tional security laws”, “Privacy and data protection compliance” and
+“Fear of legal and regulatory action”. Additionally, the top three
+operational barriers were: “Lack of skilled employees”, “Maintain-
+ing the anonymity of participants” and “Poor management within
+organisations”. Additionally, the top three technological barriers
+were: “Type of information that needs to be shared”, “Confidence
+that the information shared is accurate” and “Quality, value and theACSW ’21, February 01–05, 2021, Dunedin, New Zealand Waleed Alkalabi et al.
+Table 1: Barriers and Incentives to cyber threat information sharing as reported in the literature
+Category Barriers Incentives
+Legal and
+RegulatoryPrivacy and data protection compliance [12, 13, 27]
+Risk of violating national security laws [25, 33]
+Fear of legal and regulatory action [27]
+Lack of or outdated strategic cyber planning [12, 13]
+Lack of coordination between public, private
+organisations and policymakers [21, 34]
+Fear of providing sensitive information to a government
+[12]Receiving privileged information from government
+agencies [27]
+Punishing organisations that fail to share threat
+information [33, 35]
+Laws and regulations that force organisations to
+participate [27]
+Legal protection to shield organisations from liability
+[12, 25, 27]
+Financial Financial Commitments are unclear [13]
+Cost of technologies [12]
+Cost of participating in sharing communities [12, 13]
+Monetary issues [12, 13]
+Demand for high salary for security professionals[36]
+Fear of financial losses [37]Decrease cyber security expenditure costs [25]
+Economic benefits gained due to sharing [27]
+Cost savings when the organisation benefits from the
+information it receives [27]
+Operational Poor management within organisations [12, 27]
+Lack of skilled employees[34]
+Maintaining the anonymity of participants [2, 27]
+The format of threat information changes without prior
+notice [12, 27]
+Differences in operational procedures or continuous
+changes in operations [2, 27]Receiving the benefits of expert analysis advice and
+knowledge [12]
+Increasing the organisational situational- awareness [25,
+27]
+Creating an incentivising data exchange process by
+providing advanced analytical capabilities [27, 38]
+Using the analytical capability to generate collaboration
+between organisations [34, 39]
+Socio-cultural Privacy concerns [12, 13]
+Political issues and international relations [40, 41]
+Trust issues and necessity of confidence [13, 25, 27]
+Fear of reputational damage [12, 25, 27]
+Lack of cyber security knowledge [13, 26]
+Lack of training and awareness programs [26, 27]
+Lack of leadership within organisations [27]Increased social benefits when organisations share cyber
+threat information [27, 42]
+The exchange of knowledge and expertise[12]
+Reputational benefits of participating in threat
+information sharing [27]
+Incentives stemming from participants’ personal
+preferences, values and attitudes [27]
+Technological Confidence that the information shared is accurate
+[25, 27]
+Lack of a centralised system for exchanging threat
+information [2, 27]
+Type of information that needs to be shared [13, 27]
+Lack of secure communication channels [27, 39]
+Lack of standard formats, terminology, and taxonomy
+[13, 27]
+Timeliness of the information shared [2, 12]Automation [12, 27]
+Developing a data exchange platform that is trustworthy
+cooperative environment [27]
+Quality and pertinence of the information shared [ 2,13]
+Creates uniformity, and clarity of threat information [27,
+39]
+Quality, value and usefulness of the information shared
+[27, 39]
+usefulness of the information shared”. Finally, the financial barrier
+was “Cost of technologies”.
+3.2.3 Incentives to cyber threat information sharing in Saudi Ara-
+bia.Table 3 shows the top 27 barriers and incentives for sharing
+threat information in Saudi Arabia. "Quality, value and usefulness
+of the information shared " and "Increasing the organisation’s sit-
+uational awareness" were the most important technological and
+operational incentives, respectively. Participants rated “The govern-
+ment role is unclear” and "Legal protection to shield organisations
+from liability" as the most critical legal and regulatory incentives.
+"The exchange of knowledge and expertise" regarded as being the
+most critical socio-cultural incentives. At the same time "Decreasedcyber security costs and expert security analysts" was ranked as
+the highest financial incentive.
+4 DISCUSSION
+This survey identified the barriers and incentives that may influence
+cyber threat information sharing from the perspective of Saudi
+Arabian participants.
+4.1 Socio-cultural aspects
+The ranking of categories of barriers and incentives shows that
+socio-cultural barriers were the most significant deterrent to threat
+information sharing, as shown in Table 2. This ranking shows
+that challenges related to the organisations and the environmentBarriers and Incentives to Cybersecurity Threat Information Sharing in Developing Countries ACSW ’21, February 01–05, 2021, Dunedin, New Zealand
+Table 2: Categories ranking according to the importance of studied barrier and incentives
+Barrier factors Rank Mean SD
+Socio-cultural 1 3.90 0.65
+Technological 2 3.87 0.72
+Legal and regulatory 3 3.84 0.69
+Operational 4 3.83 0.61
+Financial 5 3.65 0.88
+Incentive factors
+Technological 1 3.93 0.74
+Operational 2 3.84 0.66
+Legal and regulatory 3 3.77 0.87
+Socio-cultural 4 3.74 0.75
+Financial 5 3.69 0.86
+Table 3: Descriptive analysis for the top 27 threat information sharing barriers and incentives
+Factors Category Type Mean SD
+Risk of violating national security laws Legal and Regulatory Barrier 4.24 1.03
+Lack of skilled employees Operational Barrier 4.16 0.92
+Privacy and data protection compliance Legal and Regulatory Barrier 4.15 1.08
+Maintaining the anonymity of participants Operational Barrier 4.10 0.96
+Lack of training and awareness programs Socio-cultural Barrier 4.10 0.93
+Type of information that needs to be shared Technological Barrier 4.10 1.02
+Fear of legal and regulatory action Legal and Regulatory Barrier 4.08 0.97
+Poor management within organisations Operational Barrier 4.08 0.96
+Confidence that the information shared is accurate Technological Barrier 4.08 0.88
+Quality, value, and usefulness of the information shared Technological Incentive 4.08 0.92
+Privacy concerns Socio-cultural Barrier 4.06 0.98
+Political issues and international relations Socio-cultural Barrier 4.06 1.02
+Fear of reputational damage Socio-cultural Barrier 4.05 0.92
+Increasing the organisation’s situational awareness Operational Incentive 4.04 0.96
+Timeliness of the information shared Technological Barrier 4.03 0.96
+Lack of cyber security knowledge Socio-cultural Barrier 4.02 1.02
+Lack of a centralised system for exchanging threat
+informationTechnological Barrier 4.00 1.02
+The government role is unclear Legal and Regulatory Barrier 3.98 1.1
+Trust issues and necessity of confidence Socio-cultural Barrier 3.98 1.02
+Lack of standard formats, terminology and taxonomy Technological Barrier 3.97 1.09
+Receiving the benefits of expert analysis advice and
+knowledgeOperational Incentive 3.96 0.9
+Lack of secure communication channels Technological Barrier 3.96 1.05
+Developing a data exchange platform that is trustworthy
+and offers a cooperative environmentTechnological Incentive 3.93 0.9
+Legal protection to shield organisations from liability Legal and Regulatory Incentive 3.87 1.08
+Decreased cyber security costs and expert security analysts Financial Incentive 3.86 1.07
+Cost of technologies Financial Barrier 3.83 1.06
+The exchange of knowledge and expertise Socio-cultural Incentive 3.83 0.97
+surrounding the organisations have the most significant impact on
+threat information sharing practices in Saudi Arabia. The survey
+results showed that the most significant barriers within the socio-
+cultural category are insufficient awareness, training, education
+and knowledge of cyber security, and these barriers are consideredas the main socio-cultural barriers to threat information sharing,
+followed by privacy concerns and confidentiality, then political
+problems and international relations.
+The survey participants chose the lack of organisational training
+and awareness programs to be one of the most critical barriers toACSW ’21, February 01–05, 2021, Dunedin, New Zealand Waleed Alkalabi et al.
+threat information sharing. This result is consistent with research
+findings in the literature for developing countries in Ecuador [ 34]
+and Israel [ 43]. It is present but not to the same extent in developed
+countries such as the UK [ 2], Estonia [ 44] and the US [ 45]. Training
+and education can improve employees’ skills and capabilities and
+raises the organisations competency level. A fail in the organisa-
+tional training could lead to a failure of threat information sharing
+practices.
+Respondents acknowledged the lack of cyber security knowledge
+in their organisations, in addition to insufficient understanding of
+cyber security demands. This result is consistent with previous
+studies in Estonia [ 44] and Israel [ 43]. It is therefore important
+to take opportunities to increase awareness of cyber security and
+threat information sharing. This can be achieved through training
+for employees on the importance of threat information sharing as
+a cyber security measure.
+4.2 Technological aspects
+Technology provides some tools to assist the threat information
+sharing process by offering structured and secure communications.
+These tools help to automate and speed up the exchange, docu-
+mentation, analysis, or remediation of threat information between
+sharing partners [ 46]. Sharing threat information is of great benefit,
+as long as it includes valuable content and is spread in a secure and
+structured manner [ 27]. However, there are concerns that may deter
+organisations from participating. Threat information can include
+sensitive contextual information that could pose a risk to individual
+privacy or expose organisational vulnerabilities [ 47]. Sharing part-
+ners need assurance that participating in the threat information
+sharing process does not increase their cyber risks. To successfully
+establish trust between sharing partners, all communications need
+to be authenticated and encrypted while in transit and at rest [ 48].
+Survey participants acknowledge that the lack of a centralised
+system for exchanging threat information is a barrier for threat
+information sharing as shown in Table 3. This result is similar
+to research findings in the literature in Europe [ 40], the US
+[12,49,50] and Vietnam [ 51]. With the expected large amount of
+threat information shared, such a system is essential to manage
+and share threat information and coordinate response activities
+[52]. Therefore, a platform that shares and automate the threat
+information exchange process is needed to increase trust between
+sharing partners and to encourage organisations to participate in
+threat information sharing. Consequently, it will help to provide
+means solution to existing critical technological barriers such as
+the lack of standard format for sharing, lack of terminology and
+taxonomy and lack of technical tools that assist organisations to
+choose the best type of shared threat information. Moreover, it
+helps to distribute threat information to a large number of sharing
+partners in a timely and secure manner.
+4.3 Legal and Regulatory aspects
+As shown in Table 2, the legal and regulatory aspects were the third
+the most important category according to our survey results. Legal
+and regulatory aspects are considered to be critical external influ-
+ences on the organisations decision to participate in cyber threat
+information sharing [ 53]. According to the survey participants, thefear of legal and regulatory actions was the most critical legal and
+regulatory barrier. This result is similar to research findings in the
+literature for developed countries such as the US who adopted the
+Cybersecurity Act of 2015 [ 27], Europe who adopted the Directive
+on security of Network and Information Systems (NIS Directive) [ 2].
+The absence of cyber security laws, guidelines and regulations could
+discourage organisations from participating in threat information
+sharing practices as organisations fear that sharing threat infor-
+mation might expose them to legal liability and potential lawsuits.
+Another significant challenge is compliance with privacy and data
+protection laws; the survey respondents find this a significant con-
+cern in cyber threat information sharing. This is similar to concerns
+expressed in Europe [ 53,54], the UK [ 55] and the US [ 49]. Shared
+threat information may include organisations sensitive information
+such as intellectual property, trade secrets, or even employee and
+customer data. Therefore, there are specific requirements needed
+before sharing threat information, all personally identifiable in-
+formation such as names, emails, IPs need to be removed [ 49,53].
+Similarly, all other enterprises sensitive information that can cause
+if leaked financial losses, legal actions, or reputation damage should
+be removed before sharing [49].
+Our research findings indicate an essential incentive strategy to
+overcome legal and regulatory barriers, as shown in Table 3. Legal
+protection is required to shield sharing organisations from liability,
+similar to the US legislation, where the Cybersecurity Act of 2015
+provides protections for organisations that share threat information
+[50]. For threat information sharing to be effective, public and
+private organisations, academia and cyber security experts should
+work jointly with the government to develop cyber security laws,
+strategies and guidelines to facilitate threat information sharing and
+provide the necessary protection from liability for organisations
+that participate in the threat information sharing.
+4.4 Operational aspects
+Threat information sharing relies on the efficiency of the imple-
+mentation of threat information sharing from n operational point
+of view [ 13]. This efficiency can vary based on organisations size
+and the capability of the available resources to meet the required
+cyber security demands. Operational aspects of threat information
+sharing include filtering various sources of threat information, ver-
+ifying and prioritizing for action. This may be a challenging and
+very time-consuming task [13, 56].
+Survey respondents acknowledged that one of the most signifi-
+cant operational barriers is the lack of skilled employees to handle
+threat information sharing tasks. It is a prominent global issue,
+most countries suffer including Europe [ 57], the US [ 46,58] and
+Saudi Arabia [ 46]. Another significant operational barrier is es-
+tablishing a standard format for exchanging threat information
+between participants. Standard formats provide a data structure
+that solves interoperability issues and has the potential to speed up
+the exchange process [ 11]. Examples of available standards include
+CybOX [ 59], STIX [ 60], and TAXII [ 61]. The lack of a standard
+format for threat information can cause inconsistency and qual-
+ity issues. This issue was also noted in the literature for Europe
+[27] and the UK [ 62]. The lack of consistency may have negative
+impacts on the trust level between sharing participants [ 63]. ThisBarriers and Incentives to Cybersecurity Threat Information Sharing in Developing Countries ACSW ’21, February 01–05, 2021, Dunedin, New Zealand
+issue can be resolved by using a platform for threat information
+sharing that ensures that information shared is consistent. Besides,
+providing specialised training for threat information handlers in
+the appropriate use of the platform must be provided.
+Results from this study also identified three potential incentive
+strategies that may be effective for overcoming operational bar-
+riers. The most crucial incentive is creating a shared situational
+awareness within public and private sectors organisations. It is es-
+sential to inform employees on how to best deal with cyber threats.
+Situational awareness helps users in making risk-informed deci-
+sions and therefore increases the cyber security resilience against
+cyberattacks [ 64]. Moreover, the effectiveness of threat informa-
+tion sharing depends on input from experts and collaborations to
+represent different cyber security needs. Therefore, threat informa-
+tion sharing communities provides the ability for organisations to
+receive advanced, trusted advice from various sources [65].
+4.5 Financial aspects
+As shown in Table 2, survey participants consider financial aspects
+of threat information sharing as an essential aspect, but not as im-
+portant as the other aspects of threat information sharing that we
+discussed in this study. This result could be due to Saudi Arabia’s
+strong financial position enabling the country to invest in cyber se-
+curity development. This might not be the case in other developing
+countries.
+Organisations are going to participate in threat information shar-
+ing practices if the expected benefits exceeds the costs [ 8,27]. Given
+that incidents recovery costs are considered a challenging task and
+hard to measure [ 66], it is difficult to determine the intangible costs
+of recovery to the organisations as it can include the reputation
+damage to the organisation, loss of intellectual property, exposures
+of sensitive information that can jeopardise organisation’s privacy
+and integrity [ 66]. Threat information sharing is considered to be
+a cost-effective solution because it enables organisations to share
+the outcome of their resources by sharing knowledge and expert
+talents with other organisations. Enabling organisations to work
+together in a mutually beneficial way.
+The survey participants consider the cost of cyber security tech-
+nologies as the main barrier to threat information sharing as shown
+in Table 3. The cost can include building information sharing in-
+frastructure, buying a data feed, receiving and analysing the data
+and hiring cyber security experts [ 13]. Therefore, it is possible to
+predict that, by joining an information sharing network, companies
+can reduce some of their cyber security costs and strengthen their
+cyber security resilience [67, 68].
+5 LIMITATIONS OF THE STUDY
+There are some limitations to this study, including the mode of dis-
+tribution. Due to Covid-19 pandemic travel restrictions, potential
+participants were approached to complete an online survey using
+QUT Key survey online surveying system. We did not employ spe-
+cific recruitment strategies that focused on increasing the number
+of potential participants. Offering two modes to participants may
+increase a survey response rate. Another limitation was that the
+validity test of a survey development not conducted. However, in
+a second phase of the study, we aim to assess the face validityof a survey, particularly barriers and incentives to sharing threat
+information, using structured interviews.
+6 CONCLUSION
+Cyber threat information sharing is considered as a proactive mea-
+sure to improve resilience against emerging cyber threats and at-
+tacks. Developed countries have established threat information
+sharing programs to protect themselves from emerging cyber
+threats and attacks. However, developing countries are still to form
+such systems. In this study, we attempted to find the most important
+factors affecting organisations decisions to participate in threat in-
+formation sharing practices in the case study country: Saudi Arabia.
+Understanding these barriers and incentives are crucial move for-
+ward into understanding how to best balance between challenges
+and benefits to encourage organisations in developing countries to
+participate in threat information sharing practices, thus helping in
+obtaining the essential factors that decision and policymakers in
+Saudi Arabia must pay attention in order to develop an effective
+national threat information sharing initiatives.
+This paper is the first study to identify contributing barriers and
+potential incentives for sharing cyber security threat information
+sharing in the Middle East, and Saudi Arabia in particular. The study
+presented in this research paper was carried out in three phases.
+In this first phase, we performed a literature review to identify
+cyber threat information barriers and incentives. In this second
+phase, we developed a survey based on the identified barriers and
+incentives. In the third phase, we administered the online survey
+in the developing country: Saudi Arabia to find the most important
+barriers and incentives. Socio-cultural barriers and technological
+incentives for sharing cyber threat information sharing were the
+most important categories.
+REFERENCES
+[1]Oosthoek, Kris and Doerr, Christian, 2020. Cyber Threat Intelligence: A Product
+Without a Process? International Journal of Intelligence Counter Intelligence , 1-16.
+[2]Skopik, Florian, 2017. Collaborative Cyber Threat Intelligence : Detecting and
+Responding to Advanced Cyber Attacks at the National Level. Auerbach Publica-
+tions, Milton.
+[3]Johnson, Chris, Badger, Lee, Waltermire, David, Snyder, Julie, and Skorupka,
+Clem, 2016. NIST Special Publication 800-150: Guide to Cyber Threat Information
+Sharing. NIST .
+[4]Tosh, Deepak K., Shetty, Sachin, Sengupta, Shamik, Kesan, Jay P., and Kamhoua,
+Charles A., 2017. Risk Management Using Cyber-Threat Information Sharing
+and Cyber-Insurance Springer International Publishing, Cham, 154-164.
+[5]Bakis, Bruce and Wang, Edward, 2017. Building a National Cyber Information-
+Sharing Ecosystem. MITRE .
+[6] Ring, Tim, 2014. Threat intelligence: why people don’t share 2014, 3, 5-9.
+[7] Eichensehr, Kristen E, 2016. Public-private cybersecurity 95, 467.
+[8]Gilbert, Connor, Hellman, Martin E, and Berson, Thomas A, 2014. Scalable secu-
+rity: Cyber threat information sharing.
+[9]Bossong, Raphael and Wagner, Ben, 2017. A typology of cybersecurity and public-
+private partnerships in the context of the EU. Crime, Law and Social Change 67 ,
+3, 265-288.
+[10] Hulme, George V., 2017. Tackling cybersecurity threat information sharing chal-
+lenges CSO.
+[11] Abu, Md Sahrom, Selamat, Siti Rahayu, Ariffin, Aswami, and Yusof, Robiah, 2018.
+Cyber threat intelligence–issue and challenges 10, 1, 371-379.
+[12] Koepke, Priscilla, 2017. Cybersecurity Information Sharing Incentives and Barri-
+ers. In Cybersecurity Interdisciplinary Systems Laboratory (CISL) Massachusetts
+Institute of Technology (MIT), Cambridge, MA (USA).
+[13] CSRIC, 2016. Reliability and Interoperability Council V Cybersecurity Informa-
+tion Sharing Working Group Barriers Report The Communications Security,
+Reliability and Interoperability Council V.
+[14] Maisikeli, Sayyed, 2020. UAE Cybersecurity Perception and Risk Assessments
+Compared to Other Developed Nations. In 2020 3rd International Conference onACSW ’21, February 01–05, 2021, Dunedin, New Zealand Waleed Alkalabi et al.
+Information and Computer Technologies (ICICT) IEEE, 432-439.
+[15] Mutemwa, Muyowa, Mtsweni, Jabu, and Mkhonto, Njabulo, 2017. Developing a
+cyber threat intelligence sharing platform for South African organisations. In
+2017 Conference on Information Communication Technology and Society (ICTAS)
+IEEE, 1-6.
+[16] ITU, 2018. Global Cybersecurity Index (GCI) 2018. ITU Publications .
+[17] Kshetri, Nir, 2019. Cybercrime and Cybersecurity in Africa. Journal of Global
+Information Technology Management 22 , 2 (Apr 3), 77-81. DOI =http://dx.doi.org/
+10.1080/1097198X.2019.1603527.
+[18] Pawlak, Patryk and Barmpaliou, Panagiota-Nayia, 2017. Politics of cybersecurity
+capacity building: conundrum and opportunity. Journal of Cyber Policy 2 , 1,
+123-144. DOI =http://dx.doi.org/10.1080/23738871.2017.1294610.
+[19] Kabanda, Salah, Tanner, Maureen, and Kent, Cameron, 2018. Exploring SME
+cybersecurity practices in developing countries. Journal of Organizational Com-
+puting and Electronic Commerce 28 , 3, 269-282. DOI =http://dx.doi.org/10.1080/
+10919392.2018.1484598.
+[20] Bada, Maria and Nurse, Jason, 2019. Developing cybersecurity education and
+awareness programmes for small-and medium-sized enterprises (SMEs). Infor-
+mation and Computer Security 27 , 3 (Jul 8), 393-410. DOI =http://dx.doi.org/10.
+1108/Ics-07-2018-0080.
+[21] Muller, Lilly Pijnenburg, 2015. Cyber security capacity building in developing
+countries: challenges and opportunities.
+[22] Wanglai, Gao, 2018. BRICS cybersecurity cooperation: Achievements and deep-
+ening paths 68, 124.
+[23] Garousi, Vahid, Felderer, Michael, and Mäntylä, Mika, 2019. Guidelines for in-
+cluding grey literature and conducting multivocal literature reviews in soft-
+ware engineering. Information and Software Technology 106 (Feb), 101-121. DOI =
+http://dx.doi.org/10.1016/j.infsof.2018.09.006.
+[24] Gong, Nicole, 2019. Barriers to Adopting Interoperability Standards for Cyber
+Threat Intelligence Sharing: An Exploratory Study Springer International Pub-
+lishing, Cham, 666-684.
+[25] Zibak, Adam and Simpson, Andrew, 2019. Cyber threat information sharing:
+Perceived benefits and barriers. In Proceedings of the 14th International Conference
+on Availability, Reliability and Security , 1-9.
+[26] Duguay, Raphael, 2020. Challenges and Opportunities for Sharing Threat Infor-
+mation with Radioactive Materials Operators 6, 1, 8.
+[27] ENISA, 2015. Incentives and Challenges for Information Sharing in the Context
+of Network and Information Security. In ENISA .
+[28] Waqas, Muhammad, Dong, Qian-li, Ahmad, Naveed, Zhu, Yuming, and Nadeem,
+Muhammad, 2018. Critical barriers to implementation of reverse logistics in the
+manufacturing industry: a case study of a developing country. Sustainability 10 ,
+11 (Nov), 4202. DOI =http://dx.doi.org/ARTN 4202
+[29] Moher, David, Liberati, Alessandro, Tetzlaff, Jennifer, and Altman, Douglas G,
+2009. Preferred reporting items for systematic reviews and meta-analyses: the
+PRISMA statement. PLoS medicine 6 , 7, e1000097.
+[30] Auger, Peter, 2017. Information sources in grey literature . Walter de Gruyter GmbH
+& co KG.
+[31] Levene, Howard, 1960. Contributions to probability and statistics, 278-292.
+[32] Shapiro, Samuel Sanford and Wilk, Martin B, 1965. An analysis of variance
+test for normality (complete samples). Biometrika 52 , 3/4, 591-611. DOI =http:
+//dx.doi.org/Doi 10.2307/2333709.
+[33] Mermoud, Alain, Keupp, Marcus Matthias, Ghernaouti, Solange, and Percia David,
+Dimitri, 2017. Using Incentives to Foster Security Information Sharing and Coop-
+eration: A General Theory and Application to Critical Infrastructure Protection.
+InCritical Information Infrastructures Security , G. HAVARNEANU, R. SETOLA,
+H. NASSOPOULOS and S. WOLTHUSEN Eds. Springer International Publishing,
+Cham, 150-162.
+[34] Quintana, Frankie, 2016. Cybersecurity Capabilities in a Critical Infrastructure
+Sector of a Developing Nation, G. MORGAN, D. SICKER, L. CRANOR and D.
+THOMPSON Eds. ProQuest Dissertations Publishing.
+[35] Vigliarolo, Brandon, 2017. NIST Cybersecurity Framework: A cheat sheet for
+professionals.
+[36] Skopik, Florian, Settanni, Giuseppe, and Fiedler, Roman, 2016. A problem shared is
+a problem halved: A survey on the dimensions of collective cyber defense through
+security information sharing. COMPUTERS & SECURITY 60 (Jul), 154-176. DOI =
+http://dx.doi.org/10.1016/j.cose.2016.04.003.
+[37] Laube, Stefan, B, Rainer, #246, and hme, 2017. Strategic Aspects of Cyber Risk
+Information Sharing. ACM Comput. Surv. 50 , 5, 1-36. DOI =http://dx.doi.org/10.
+1145/3124398.
+[38] Christou, George, 2017. The EU’s Approach to Cybersecurity.
+[39] Skopik, F., Wurzenberger, M., Settanni, G., and Fiedler, R., 2015. Establishing
+national cyber situational awareness through incident information clustering.
+In2015 International Conference on Cyber Situational Awareness, Data Analytics
+and Assessment (CyberSA) , 1-8. DOI =http://dx.doi.org/10.1109/CyberSA.2015.
+7166126.
+[40] ENISA, 2013. Solutions for Improving Threat Data Exchange among CERTs.[41] Fedorowicz, Jane, Gogan, Janis L., and Culnan, Mary J., 2010. Barriers to Interor-
+ganizational Information Sharing in e-Government: A Stakeholder Analysis. The
+Information Society 26 , 5, 315-329. DOI =http://dx.doi.org/10.1080/01972243.2010.
+511556.
+[42] Harwood, Deanne, 2014. Barriers to cyber information sharing Naval Postgradu-
+ate School, California.
+[43] Zwilling, Moti, Klien, Galit, Lesjak, Dušan, Wiechetek, Łukasz, Cetin, Fatih,
+and Basim, Hamdullah Nejat, 2020. Cyber Security Awareness, Knowledge and
+Behavior: A Comparative Study. Journal of Computer Information Systems (Feb
+16), 1-16. DOI =http://dx.doi.org/10.1080/08874417.2020.1712269.
+[44] Lewis, James, 2016. Advanced Experiences in Cybersecurity Policies and Practices:
+An Overview of Estonia, Israel, South Korea, and the United States. Inter-American
+Devlopment Bank .
+[45] Kapellmann, Daniel and Washburn, Rhyner, 2019. Call to action: Mobilizing
+community discussion to improve information-sharing about vulnerabilities in
+industrial control systems and critical infrastructure. In 2019 11th International
+Conference on Cyber Conflict (CyCon) IEEE, 1-23.
+[46] Kampanakis, Panos, 2014. Security automation and threat information-sharing
+options. IEEE Security & Privacy 12 , 5 (Sep-Oct), 42-51. DOI =http://dx.doi.org/Doi
+10.1109/Msp.2014.99.
+[47] Zheng, Denise and Lewis, James, 2015. Cyber threat information sharing Rec-
+ommendations for Congress and the Administration. In Center for Strategic and
+International Studies (CSIS) Center for Strategic and International Studies (CSIS),
+USA.
+[48] Hendry, Justin, 2019. ACSC to replace cyber threat sharing platform. IT NEWS .
+[49] Jasper, Scott, 2017. US cyber threat intelligence sharing frameworks. International
+Journal of Intelligence and CounterIntelligence 30 , 1, 53-65.
+[50] Alsmadi, Izzat, 2019. The NICE Cyber Security Framework Cyber Security Intelli-
+gence and Analytics . Springer International Publishing, Cham.
+[51] Pham, Hiep Cong, Nguyen, Thanh-Thuy, Mcdonald, Scott, and Tran-Kieu, Nhu
+Quynh, 2019. Information Sharing in Logistics Firms: An Exploratory Study of
+theVietnamese Logistics Sector. The Asian Journal of Shipping Logistics 35, 2,
+87-95.
+[52] ENISA, 2017. Exploring the opportunities and limitations of current Threat
+Intelligence Platforms.
+[53] Nweke, Livinus Obiora and Wolthusen, Stephen, 2020. Legal Issues Related to
+Cyber Threat Information Sharing Among Private Entities for Critical Infrastruc-
+ture Protection. In 2020 12th International Conference on Cyber Conflict (CyCon)
+IEEE, 63-78.
+[54] ENISA, 2015. Cyber Security Information Sharing: An Overview of Regulatory
+and Non-regulatory Approaches, ENISA Ed. ENISA.
+[55] Albakri, Adham, Boiten, Eerke, and De Lemos, Rogério, 2019. Sharing Cyber
+Threat Intelligence Under the General Data Protection Regulation. In Annual
+Privacy Forum Springer, 28-41.
+[56] Jasper, Scott E., 2017. U.S. Cyber Threat Intelligence Sharing Frameworks. In-
+ternational Journal of Intelligence and CounterIntelligence 30 , 1, 53-65. DOI =
+http://dx.doi.org/10.1080/08850607.2016.1230701.
+[57] Enisa, 2016. NCSS Good Practice Guide.
+[58] Rosenzweig, Paul Rosenzweig and Inserra, David, 2014. Cybersecurity Infor-
+mation Sharing: One Step Toward U.S. Security, Prosperity, and Freedom in
+Cyberspace The Heritage Foundation.
+[59] Barnum, Sean, Martin, Robert, Worrell, Bryan, and Kirillov, Ivan, 2012. The cybox
+language specification. The MITRE Corporation .
+[60] Barnum, Sean, 2012. Standardizing cyber threat intelligence information with
+the Structured Threat Information eXpression (STIX). The MITRE Corporation 11 ,
+1-22.
+[61] Connolly, Julie, Davidson, Mark, and Schmidt, Charles, 2014. The trusted auto-
+mated exchange of indicator information (taxii). The MITRE Corporation , 1-20.
+[62] Mallinder, Jason and Drabwell, Peter, 2014. Cyber security: A critical examination
+of information sharing versus data sensitivity issues for organisations at risk
+of cyber attack. Journal of Business Continuity & Emergency Planning 7 , 2 (//),
+103-111.
+[63] QGCIO, 2018. Information sharing authorising framework.
+[64] Homeland Security, 2016. Critical Infrastructure Threat Information Sharing
+Framework, H. SECURITY Ed. Homeland Security, USA.
+[65] Shouse, Kurt, 2015. Actionability of cyber threat intelligence, C. RIDDELL and L.
+SNYDER Eds. ProQuest Dissertations Publishing.
+[66] Roccetti, Paolo, 2019. HERMENEUT-Enterprises intangible Risks Management
+via Economic models based on simulation of modern cyber-attacks 2019, 5, 26-28.
+[67] Pala, Ali and Zhuang, Jun, 2019. Information Sharing in Cybersecurity: A Review.
+Decision Analysis 16 , 3 (08/06), 172-196. DOI =http://dx.doi.org/10.1287/deca.2018.
+0387.
+[68] Gordon, Lawrence A., Loeb, Martin P., Lucyshyn, William, and Zhou, Lei, 2015.
+The impact of information sharing on cybersecurity underinvestment. Journal of
+Accounting and Public Policy 34 , 5 (01/09/2015), 509-519. DOI =http://dx.doi.org/
+10.1016/j.jaccpubpol.2015.05.001.

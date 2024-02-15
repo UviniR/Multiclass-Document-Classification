@@ -1,0 +1,571 @@
+DOI: 10.4018/IJSITA.2018070104International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+﻿
+Copyright﻿©﻿2018,﻿IGI﻿Global.﻿Copying﻿or﻿distributing﻿in﻿print﻿or﻿electronic﻿forms﻿without﻿written﻿permission﻿of﻿IGI﻿Global﻿is﻿prohibited.
+﻿
+59The Contribution of ICTs to 
+Sustainable Urbanization and Health 
+in Urban Areas in Cameroon
+Adolphe Ayissi Eteme, University of Ngaoundéré, Ngaoundéré, Cameroon
+Justin Moskolai Ngossaha, University of Ngaoundéré, Ngaoundéré, Cameroon
+ https://orcid.org/0000-0002-9228-4543
+ABSTRACT
+The﻿uncontrolled﻿ urbanization﻿ in﻿African﻿ cities﻿ with﻿ inadequate﻿ access﻿ to﻿urban﻿ domestic﻿ waste,﻿
+housing﻿ and﻿sanitation﻿ management﻿ services(﻿ DWHSMS)﻿ generates﻿ landscapes﻿ that﻿become﻿ places﻿
+of﻿the﻿spread﻿ of﻿many﻿ pathologies﻿ leading﻿ to﻿many﻿ public﻿ health﻿ problems.﻿ The﻿city﻿of﻿Yaoundé﻿
+(Cameroon)﻿ is﻿not﻿an﻿exception﻿ in﻿this﻿situation﻿ which﻿ exposes﻿ an﻿urban﻿ population﻿ to﻿the﻿most﻿
+recurrent﻿ diseases.﻿ The﻿situation﻿ become﻿ more﻿ complex﻿ in﻿the﻿fact﻿that,﻿ the﻿performance﻿ of﻿the﻿
+policies﻿ and﻿the﻿actions﻿ undertaken﻿ implied﻿ in﻿developing﻿ countries,﻿ is﻿not﻿known﻿ in﻿a﻿precisely.﻿ The﻿
+information﻿ sources ﻿are﻿dispersed, ﻿old﻿and﻿not﻿coordinated.﻿ ICT﻿can,﻿at﻿the﻿service ﻿of﻿the﻿great﻿ causes﻿
+like﻿the﻿sustainable﻿ urbanization﻿ and/or﻿ environmental﻿ health,﻿ constitute﻿ the﻿irreplaceable﻿ ones﻿ and﻿
+essential﻿ decision-making﻿ tools.﻿ For﻿this﻿purpose,﻿ integrated﻿ and﻿interoperable﻿ YUSIIP﻿ platform﻿ has﻿
+proposed﻿ and﻿deployed.﻿ The﻿objective﻿ of﻿this﻿article﻿ is﻿to﻿present﻿ this﻿Domestic﻿ platform﻿ and﻿to﻿show﻿
+its﻿contribution﻿in(﻿DWHSMS).
+Keywo RdS
+Information System, Interoperability, Strategic Decision Making, Sustainable Urbanization, Urban Area Health
+1. INTR odUCTI oN
+Bad﻿Domestic﻿ Waste,﻿ Housing,﻿ Sanitation﻿ Management﻿ Services(﻿ DWHSMS),﻿ and﻿the﻿absence﻿ of﻿
+the﻿application﻿ of﻿law﻿on﻿the﻿matter﻿ presents﻿ enormous﻿ consequences﻿ on﻿health,﻿ the﻿environment﻿ and﻿
+the﻿individuals﻿ living﻿ environment,﻿ particularly﻿ in﻿the﻿African﻿ cities,﻿ notably﻿ the﻿town﻿ of﻿Yaoundé,﻿
+capital﻿ of﻿Cameroon,﻿ concerned﻿ with﻿ our﻿research﻿ tasks(﻿ Wéthé﻿ et﻿al.,﻿2002).﻿ The﻿population﻿ of﻿the﻿
+city﻿increases ﻿each﻿year﻿by﻿6%﻿on﻿average ﻿since ﻿2001. ﻿This﻿population ﻿growth ﻿appears ﻿by﻿the﻿increase﻿
+in﻿the﻿domestic﻿ waste﻿ production,﻿ the﻿proliferation﻿ of﻿the﻿shantytowns﻿ and﻿the﻿weakening﻿ safety﻿
+systems,﻿ hygiene﻿ and﻿sanitation.﻿ Each﻿ one﻿of﻿these﻿ factors﻿ can﻿largely﻿ improve﻿ or﻿degrade﻿ health﻿ in﻿
+urban ﻿area﻿and﻿the﻿city﻿environment (﻿economic ﻿and﻿social ﻿situation, ﻿security ﻿and﻿food﻿quality, ﻿service﻿
+of﻿sanitary﻿ emergencies﻿ management,﻿ urban﻿ governance,﻿ etc.).﻿ According﻿ to﻿the﻿cases,﻿ they﻿can﻿also﻿International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+60involve﻿ the﻿proliferation﻿ of﻿several﻿ fatal﻿ diseases﻿ as﻿well﻿ as﻿imbalances﻿ in﻿ecosystems(﻿ Manegabe﻿ et﻿
+al.,﻿2017).﻿ The﻿consequences﻿ of﻿the﻿dysfunction﻿ of﻿their﻿ management﻿ systems﻿ on﻿living﻿ environment﻿
+and﻿the﻿natural ﻿ecosystem ﻿gain﻿more ﻿and﻿more ﻿in﻿importance. ﻿They ﻿challenge ﻿all﻿the﻿actors ﻿implied ﻿to﻿
+make﻿ suitable﻿ decisions﻿ and﻿the﻿proper﻿ authorities﻿ to﻿make﻿ management﻿ of﻿these﻿ factors﻿ the﻿priority﻿
+of﻿their﻿action.
+Since﻿ about﻿ ten﻿years,﻿ initiatives﻿ of﻿the﻿public﻿ authorities,﻿ private﻿ and﻿public﻿ organizations,﻿
+regional﻿ and﻿local﻿ authorities﻿ and﻿universities(﻿ Ngnikam﻿ et﻿al.,﻿2002;﻿ Fonkou﻿ et﻿al.,﻿2002)﻿ are﻿being﻿
+multiplied ﻿in﻿Cameroon ﻿faced ﻿with﻿the﻿environmental ﻿degradation ﻿and﻿urban ﻿area﻿health. ﻿The﻿informal﻿
+sector,﻿NGOs﻿and﻿associations﻿joined﻿the﻿movement﻿which﻿aims﻿at:
+•﻿Domestic waste management: ﻿The﻿treatment ﻿and﻿the﻿valorization ﻿of﻿domestic ﻿waste ﻿play﻿
+a﻿key﻿role﻿in﻿the﻿fight ﻿against ﻿the﻿environmental ﻿pollution ﻿and﻿the﻿conservation ﻿of﻿natural﻿
+resources (﻿Aloueimine ﻿et﻿al.,﻿2006);
+•﻿The housing management:﻿ The﻿spontaneous﻿ and﻿precarious﻿ shantytowns﻿ very﻿ populated﻿ cover﻿
+more﻿ than﻿ 70%﻿ of﻿urban﻿ space﻿ where﻿ the﻿lack﻿ of﻿basic﻿ services﻿ such﻿ water﻿ and﻿the﻿cleaning﻿
+constitutes﻿ a﻿vector﻿ of﻿propagation﻿ of﻿many﻿ pathologies﻿ which﻿ are﻿posing﻿ multiple﻿ public﻿ health﻿
+problems(﻿ the﻿complication﻿ of﻿paludism,﻿ respiratory﻿ infections﻿ acute,﻿ infections﻿ of﻿the﻿digestive﻿
+system,﻿ etc.),﻿ as﻿well﻿ as﻿the﻿environmental﻿ factors﻿ exposure﻿ to﻿the﻿health﻿ risks(﻿ Sy﻿et﻿al.,﻿2011);
+•﻿The sanitation management:﻿ This﻿ management﻿ falls﻿ on﻿the﻿municipalities﻿ which﻿ must﻿ build﻿
+and﻿manage﻿ the﻿autonomous﻿ drainage﻿ systems,﻿ main﻿ sources﻿ of﻿diffuse﻿ pollution,﻿ not﻿easily﻿
+controllable(﻿Wéthé﻿et﻿al.,﻿2002),﻿etc.However, ﻿these ﻿initiatives ﻿of﻿the﻿public ﻿authorities, ﻿municipalities, ﻿private ﻿and﻿public﻿
+organizations,﻿ and﻿NGOs﻿ and﻿associations﻿ implied,﻿ faced﻿ with﻿ the﻿degradation﻿ of﻿the﻿socio-sanitary﻿
+and﻿environmental ﻿conditions, ﻿encounter ﻿some ﻿problems ﻿related, ﻿on﻿the﻿one﻿hand, ﻿on﻿the﻿organizational﻿
+level,﻿ with﻿ the﻿accelerated﻿ urbanization,﻿ the﻿impoverishment﻿ of﻿an﻿important﻿ frank﻿ of﻿the﻿population,﻿
+with﻿ a﻿deficit﻿ in﻿means﻿ and﻿an﻿insufficient﻿ dialogue﻿ between﻿ the﻿various﻿ speakers,﻿ on﻿the﻿other﻿ hand,﻿
+on﻿the﻿technical﻿ plan,﻿ public﻿ information﻿ on﻿the﻿influential﻿ factors﻿ on﻿urban﻿ health﻿ and﻿the﻿academic﻿
+research﻿ results,﻿ are﻿very﻿ scattered﻿ and﻿not﻿always﻿ reliable,﻿ heterogeneous﻿ and﻿difficult﻿ of﻿access.﻿
+The﻿various﻿ methodological﻿ approaches﻿ and﻿the﻿development﻿ models﻿ of﻿these﻿ systems﻿ were﻿ often﻿
+unaware﻿ of﻿the﻿transverse﻿ dimension﻿ of﻿the﻿various﻿ processes,﻿ being﻿ limited﻿ to﻿the﻿computerization﻿
+of﻿some﻿ functions﻿ of﻿the﻿factors(﻿ Bagayoko﻿ et﻿al.,﻿2010).﻿ The﻿risks﻿ related﻿ to﻿these﻿ factors﻿ could﻿
+wellness﻿ avoided﻿ if﻿the﻿data﻿ and﻿knowledge﻿ were﻿ available(﻿ Ayissi﻿&﻿ Moskolai,﻿ 2017).﻿ The﻿lack﻿of﻿
+data﻿ exposes﻿ the﻿population﻿ and﻿the﻿environment﻿ to﻿the﻿proliferation﻿ of﻿several﻿ fatal﻿ diseases,﻿ the﻿
+contamination﻿ by﻿the﻿pathogen﻿ and﻿chemical﻿ substances(﻿ Corcoran﻿ et﻿al.,﻿2010).﻿ Moreover,﻿ urban﻿
+area﻿health﻿ would﻿ not﻿be﻿truly﻿ assured﻿ as﻿a﻿long﻿ time﻿ as﻿the﻿population﻿ will﻿be﻿kept﻿out﻿of﻿urban﻿ waste﻿
+management﻿ and.﻿ This﻿ population﻿ will﻿continue﻿ to﻿throw﻿ heterogeneous﻿ waste﻿ in﻿the﻿streets,﻿ drains,﻿
+waterways,﻿ etc.,﻿and﻿related﻿ risks﻿ to﻿this﻿waste﻿ could﻿ involve﻿ a﻿delay﻿ on﻿the﻿economic﻿ plan﻿ through﻿
+high﻿mortality﻿and﻿morbidity﻿rates﻿which﻿would﻿be﻿followed﻿in﻿the﻿cities(﻿UN-﻿DESA,﻿2014).
+It’s﻿to﻿contribute﻿ to﻿the﻿general﻿ problems﻿ of﻿urban﻿ data﻿ control﻿ for﻿a﻿sustainable﻿ urbanization﻿
+that﻿we﻿started, ﻿since ﻿2002, ﻿research ﻿on﻿the﻿integration ﻿and﻿interoperability ﻿mechanisms ﻿of﻿the﻿
+heterogeneous﻿ and﻿incomplete﻿ information﻿ systems﻿ for﻿decision-making﻿ in﻿urban﻿ area﻿in﻿Cameroon.﻿
+The﻿setup﻿ of﻿a﻿Distributed﻿ Data﻿ warehouse(﻿ DDW),﻿ urban﻿ memory﻿ in﻿Yaoundé,﻿ which﻿ is﻿pressed﻿ on﻿
+the﻿technology ﻿of﻿the﻿data﻿warehouses, ﻿Services ﻿Oriented ﻿Architectures (﻿SOA), ﻿the﻿urbanization ﻿of﻿the﻿
+information﻿ systems﻿ and﻿Master﻿ Data﻿ Management(﻿ MDM)﻿ through﻿ the﻿design﻿ and﻿the﻿development﻿
+of﻿Yaoundé﻿ Urban﻿ Systems﻿ Integrated﻿ and﻿Interoperability﻿ Platform(﻿ in﻿abbreviated﻿ form﻿ YUSIIP).﻿
+The﻿effectiveness﻿ of﻿this﻿mixed﻿ approach﻿ and﻿the﻿results﻿ of﻿the﻿capitalization﻿ of﻿knowledge﻿ on﻿urban﻿
+environment﻿ through﻿ a﻿unifying﻿ platform﻿ of﻿multi-source﻿ data﻿ YUSIIP,﻿ from﻿ the﻿point﻿ of﻿view﻿ of﻿
+the﻿decision-making ﻿aid﻿as﻿regards ﻿management ﻿and﻿the﻿urban ﻿planning ﻿are﻿already ﻿convincing﻿International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+61(Ayissi﻿&﻿ Moskolai,﻿ 2017;﻿ Kouamou﻿ al.,﻿2008).﻿ The﻿aim﻿of﻿this﻿paper﻿ is﻿to﻿show﻿ the﻿contribution﻿
+of﻿the﻿DDW﻿ of﻿YUSIIP﻿ in﻿the﻿problem﻿ of﻿Domestic﻿ Waste,﻿ Housing﻿ and﻿Sanitation﻿ Management﻿
+Services(﻿ DWHSMS)﻿ in﻿the﻿particular﻿ case﻿ of﻿Yaoundé﻿ town,﻿ the﻿political﻿ Capital﻿ of﻿the﻿Republic﻿
+of﻿Cameroon.﻿ The﻿multiple﻿ and﻿varied﻿ health﻿ risks﻿ related﻿ to﻿domestic﻿ waste,﻿ housing﻿ and﻿sanitation﻿
+management﻿ services﻿ in﻿urban﻿ areas﻿ could﻿ be﻿avoided﻿ if﻿the﻿data﻿ of﻿different﻿ factors﻿ enumerated﻿
+above﻿would﻿be﻿available.
+In﻿the﻿rest﻿of﻿this﻿article,﻿ a﻿state﻿ of﻿the﻿art﻿relative﻿ on﻿integration﻿ techniques﻿ of﻿information﻿
+systems﻿ and﻿urban﻿ waste﻿ management﻿ systems﻿ is﻿proposed﻿ in﻿section﻿ 2,﻿section﻿ 3﻿presents﻿ the﻿general﻿
+architecture﻿ of﻿the﻿YUSIIP﻿ platform.﻿ Then,﻿ in﻿Section﻿ 4﻿a﻿model﻿ of﻿production﻿ of﻿urban﻿ indicators﻿
+is﻿proposed, ﻿section ﻿5﻿presents ﻿the﻿results ﻿and﻿discussions ﻿and﻿finally ﻿a﻿general ﻿conclusion ﻿and﻿
+perspectives﻿to﻿finish﻿the﻿paper.
+2. INT eGRATI oN oF INF oRMATI oN SySTeMS AN d 
+THe wAST e MANAG eMeNT S ySTeMS
+2.1. Integration Systems, data w arehouse, enterprise Architecture, Multi-
+Source Information Systems and the Master data Management
+The﻿needs﻿ for﻿urban﻿ stakeholders﻿ in﻿the﻿processes﻿ management﻿ of﻿sustainable﻿ urbanization﻿ are﻿varied﻿
+(environment﻿ management,﻿ demography﻿ management,﻿ transport﻿ management,﻿ living﻿ environment﻿
+management,﻿ etc.).﻿ They﻿ relate﻿ at﻿the﻿same﻿ time﻿ to﻿the﻿data,﻿ the﻿figures﻿ which﻿ they﻿seek﻿ to﻿understand﻿
+and﻿the﻿realization ﻿of﻿the﻿statistics ﻿and﻿other ﻿exploitable ﻿relevant ﻿information, ﻿within ﻿the﻿framework ﻿of﻿
+decision-making, ﻿which ﻿it’s﻿operational ﻿nature, ﻿occasional ﻿or﻿strategic. ﻿To﻿solve ﻿these ﻿problems, ﻿several﻿
+approaches﻿ are﻿proposed﻿ that﻿it’s﻿the﻿integration﻿ of﻿information﻿ systems,﻿ Enterprise﻿ Architecture,﻿ the﻿
+construction﻿of﻿multi-source﻿information﻿systems﻿and﻿Master﻿Data﻿Management(﻿MDM).
+Integration﻿ is﻿operation﻿ which﻿ consists﻿ of﻿assembling﻿ the﻿various﻿ parts﻿ of﻿a﻿system﻿ and﻿to﻿ensure﻿
+their﻿compatibility ﻿as﻿well﻿as﻿the﻿efficient ﻿operation ﻿of﻿the﻿complete ﻿system. ﻿The﻿concept ﻿of﻿integration﻿
+can﻿apply ﻿to﻿various ﻿levels ﻿or﻿objects: ﻿at﻿the﻿organizational ﻿unit﻿level, ﻿processes, ﻿computer ﻿applications,﻿
+software﻿ base﻿ and﻿material.﻿ On﻿the﻿computer﻿ applications﻿ level﻿ which﻿ relates﻿ to﻿the﻿problems﻿ of﻿the﻿
+DWHSMS﻿ particularly(﻿ Reix,﻿ et﻿al.,﻿2016)﻿ one﻿distinguishes﻿ two﻿possible﻿ approaches﻿ to﻿the﻿problem.﻿
+The﻿priory﻿ integration﻿ which﻿ is﻿matching﻿ to﻿systems﻿ thought﻿ at﻿the﻿beginning﻿ of﻿the﻿construction﻿ of﻿
+a﻿single﻿ integrated﻿ information﻿ system﻿ or﻿Management﻿ Information﻿ System(﻿ MIS),﻿ recovering﻿ the﻿
+whole﻿ functional﻿ fields﻿ and﻿various﻿ levels﻿ of﻿piloting.﻿ The﻿posterior﻿ integration﻿ which﻿ consists﻿ in﻿
+arranging﻿ the﻿relations﻿ between﻿ conceived﻿ systems﻿ in﻿an﻿independent﻿ way,﻿ to﻿constitute﻿ a“﻿unified”﻿
+system﻿or﻿meta-system.
+Compared﻿to﻿a﻿posterior﻿integration,﻿the﻿recent﻿solutions﻿concern:
+•﻿EAI(﻿Enterprise ﻿Application ﻿Integration) ﻿which ﻿consist ﻿of﻿replacing ﻿the﻿multiple ﻿links﻿
+(footbridges) ﻿between ﻿applications ﻿by﻿the﻿construction ﻿of﻿a﻿platform ﻿centralized ﻿exchange﻿
+ensuring ﻿the﻿communication ﻿and﻿the﻿exchanges ﻿between ﻿these ﻿applications ﻿by﻿diffusion ﻿messages﻿
+(Avignon,﻿Joguet,﻿&﻿Pezziardi,﻿2000);
+•﻿DW(﻿Data﻿ warehouse)﻿ which﻿ are﻿systems﻿ managing﻿ the﻿data﻿resulting﻿ from﻿ various﻿ applications﻿
+and﻿ensuring ﻿they﻿are﻿making ﻿up﻿in﻿accordance ﻿with﻿common ﻿formats. ﻿These ﻿systems ﻿are﻿
+especially﻿used﻿in﻿the﻿field﻿of﻿Decision﻿Support﻿Systems;
+•﻿The﻿ERP(﻿Enterprise ﻿Resource ﻿Planning) ﻿which ﻿are﻿integrated ﻿information ﻿systems ﻿composed ﻿of﻿
+modules, ﻿conceived ﻿in﻿a﻿coherent ﻿way﻿and﻿sharing ﻿a﻿common ﻿database. ﻿The﻿ERP﻿are﻿standardized,﻿
+but﻿adaptable﻿ systems﻿ which﻿ correspond﻿ to﻿a﻿logic﻿ of﻿brutal﻿ urbanization,﻿ standard﻿ big﻿bang﻿
+consisting ﻿of﻿replacing “﻿small ﻿islands ﻿disparate ﻿and﻿badly ﻿built” (﻿old﻿applications) ﻿by﻿harmonized﻿
+units,﻿ carefully﻿ connected﻿ to﻿each﻿ other(﻿ modules).﻿ The﻿harmonization﻿ concerns﻿ not﻿only﻿ on﻿the﻿
+definition﻿ of﻿the﻿data,﻿ but﻿also,﻿ in﻿a﻿major﻿ way,﻿ to﻿a﻿new﻿design﻿ of﻿the﻿processes﻿ management.﻿International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+62It’s﻿a﻿unified﻿ and﻿coherent﻿ information﻿ system﻿ making﻿ it﻿possible﻿ to﻿manage﻿ the﻿various﻿ fields﻿
+of﻿the﻿undertaking,﻿and﻿whose﻿realization﻿can﻿combine﻿several﻿approaches(﻿EAI,﻿DDW,﻿etc.);
+•﻿YUSIIP﻿ Project(﻿ Kouamou,﻿ Eteme,﻿&﻿ Pettang,﻿ 2008)﻿ which﻿ the﻿ambition﻿ is﻿to﻿contribute﻿ to﻿the﻿
+reach﻿ of﻿the﻿objectives﻿ for﻿a﻿sustainable﻿ urbanization﻿ in﻿Cameroon﻿ implements﻿ the﻿approach﻿
+Data﻿ warehouse﻿ and﻿identifies﻿ all﻿the﻿principal﻿ data﻿ which﻿ need﻿ urban﻿ managers﻿ and﻿decision﻿
+makers.﻿ First﻿ of﻿all,﻿the﻿idea﻿is﻿to﻿create﻿ an﻿ideal﻿ model﻿ of﻿data﻿of﻿which﻿ must﻿ lay﻿out﻿these﻿ urban﻿
+stakeholders.﻿ It﻿has﻿been﻿ elaborated﻿ based﻿ on﻿the﻿principal﻿ processes﻿ suitable﻿ for﻿environment﻿
+management,﻿ demography,﻿ living﻿ environmental;﻿ such﻿ processes﻿ of﻿Domestic﻿ waste,﻿ Housing,﻿
+Sanitation﻿ and﻿the﻿pollution﻿ management﻿ Services,﻿ etc.﻿This﻿ model﻿ is﻿according﻿ to﻿Bolognigni﻿
+(2002)﻿which﻿allows﻿the﻿integration﻿of﻿data﻿of﻿the﻿various﻿information﻿systems.
+For﻿the﻿approach﻿ Enterprise﻿ Architecture“﻿ the﻿ metaphor﻿ of﻿the﻿city﻿has﻿been﻿ largely﻿ used﻿ in﻿
+the﻿field﻿ of﻿information﻿ systems﻿ because﻿ of﻿the﻿similarity﻿ of﻿the﻿starting﻿ problems:﻿ How﻿ to﻿remake,﻿
+modernize?﻿ How﻿ to﻿benefit﻿ from﻿ advanced﻿ technologies,﻿ without﻿ wiping﻿ the﻿slate﻿ clean﻿ of﻿the﻿past,﻿
+within﻿ limits﻿ of﻿controlled﻿ costs﻿ while﻿ maintaining﻿ the﻿life﻿of﻿the﻿city﻿during﻿ works?(“﻿ Longépé,﻿
+2003).﻿ It﻿proposes﻿ to﻿pass﻿ from﻿ a﻿system﻿ existing﻿ to﻿a﻿new﻿solution,﻿ the﻿target﻿ system,﻿ by﻿successive﻿
+evolution (﻿by﻿definition ﻿of﻿projects). ﻿It’s﻿a﻿question ﻿of﻿ensuring ﻿the﻿evolution ﻿of﻿the﻿system ﻿for﻿
+answering﻿ the﻿evolution﻿ of﻿requirements﻿ while﻿ improving﻿ its﻿coherence﻿ and﻿its﻿effectiveness.﻿ In﻿the﻿
+framework﻿ of﻿YUSIIP﻿ project,﻿ the﻿setup﻿ objective﻿ of﻿an﻿operational﻿ platform﻿ starting﻿ from﻿ existing﻿
+YUSIIP ﻿prototype ﻿is﻿reached. ﻿Technological ﻿choices ﻿for﻿the﻿implementation ﻿of﻿its﻿architecture ﻿has﻿been﻿
+operated. ﻿Application ﻿architecture ﻿of﻿the﻿prototype ﻿has﻿been﻿described, ﻿by﻿showing ﻿the﻿various ﻿levels:﻿
+the﻿application ﻿zones (﻿great ﻿functional ﻿units), ﻿the﻿application ﻿quarter, ﻿the﻿application ﻿block (﻿programs,﻿
+modules),﻿ then﻿ to﻿guide﻿ the﻿evolution﻿ of﻿a﻿situation﻿ where﻿ each﻿ block﻿ thus﻿defined,﻿ according﻿ to﻿the﻿
+degree﻿ of﻿accuracy(﻿ zone,﻿ quarter,﻿ block)﻿ corresponds﻿ to﻿a﻿unit﻿within﻿ which﻿ data﻿ and﻿treatments﻿
+are﻿strongly ﻿connected ﻿and﻿having ﻿a﻿coupling ﻿or﻿weak ﻿connection ﻿with﻿the﻿other ﻿blocks. ﻿What﻿
+constitutes“﻿ land﻿ use﻿plan”﻿ or﻿the﻿YUSIIP﻿ guiding﻿ diagram﻿ and﻿which﻿ organizes﻿ the﻿platform﻿ while﻿
+specifying:﻿-﻿ the﻿mission﻿ of﻿each﻿ application,﻿ each﻿ block;﻿-﻿ the﻿regrouping﻿ of﻿the﻿blocks﻿ in﻿coherent﻿
+units;﻿-﻿ the﻿perimeter﻿ booked﻿ with﻿ the﻿future﻿ applications﻿ to﻿build;﻿-﻿ the﻿rules﻿ which﻿ the﻿originators﻿
+for﻿the﻿realization﻿ of﻿the﻿future﻿ applications﻿ must﻿ comply﻿ with.﻿ The﻿urbanization﻿ of﻿information﻿
+systems﻿ thus﻿seems﻿ a﻿permanent﻿ concern﻿ aiming﻿ improving﻿ coherence﻿ of﻿cuttings﻿ in﻿applications,﻿ at﻿
+increasing﻿ the﻿effectiveness﻿ and﻿the﻿efficiency﻿ of﻿the﻿information﻿ system﻿ and,﻿ to﻿limit﻿ the﻿effects﻿ of﻿
+technological﻿ proliferation.﻿ Thus,﻿ the﻿urbanization﻿ and﻿the﻿integration﻿ of﻿information﻿ systems﻿ pursue﻿
+the﻿same﻿ goal﻿ and﻿seen﻿ two﻿different﻿ moments﻿ from﻿ the﻿same﻿ process﻿ of﻿consistency﻿ and﻿piloting﻿ of﻿
+evolution﻿of﻿the﻿information﻿system(﻿Reix,﻿et﻿al.,﻿2016).
+The﻿construction﻿ of﻿Multi-Source﻿ Information﻿ Systems(﻿ MSIS)﻿ addresses﻿ the﻿problems:“﻿ how﻿ to﻿
+optimize﻿ the﻿city﻿by﻿the﻿data﻿and﻿the﻿uses?”.﻿ Indeed,﻿ the﻿urban﻿ planners﻿ and﻿managers﻿ are﻿working﻿ for﻿
+several﻿ years﻿ to﻿control﻿ the﻿organization﻿ of﻿territory,﻿ to﻿improve﻿ coherence﻿ of﻿interventions﻿ of﻿many﻿
+local﻿and﻿external ﻿actors (﻿ministries, ﻿private ﻿and﻿public ﻿organizations, ﻿Regional ﻿and﻿Local ﻿Authorities,﻿
+NGO﻿ and﻿development﻿ assistance﻿ organizations,﻿ etc.),﻿ to﻿ensure﻿ the﻿well-being﻿ of﻿populations﻿ and﻿
+to﻿coordinate﻿ development﻿ projects,﻿ made﻿ difficult﻿ because﻿ of﻿multiplication﻿ of﻿planning(﻿ Repetti﻿&﻿ 
+Prélaz-Droux,﻿ 2003).﻿ The﻿recourse﻿ to﻿communication﻿ and﻿information﻿ technologies﻿ does﻿ not﻿make﻿
+it﻿possible﻿ yet﻿to﻿completely﻿ apprehend﻿ the﻿complexity﻿ of﻿the﻿processes﻿ of﻿urban﻿ management﻿ and﻿to﻿
+improve﻿ the﻿effectiveness﻿ of﻿territorial﻿ management(﻿ computers,﻿ data﻿bases,﻿ computer﻿ applications,﻿
+ISDMA,﻿ GIS,﻿ SIRS,﻿ observatories,﻿ etc.)(﻿ Pettang﻿ et﻿al.,﻿1997;﻿ Prélaz-Droux﻿&﻿ Musy,﻿ 1994).﻿ These﻿
+monolithic﻿ tools﻿ are﻿disparate﻿ and﻿under﻿ exploited﻿ because﻿ of﻿difficulties﻿ of﻿insertion﻿ in﻿institutional﻿
+organizations,﻿ as﻿well﻿ as﻿the﻿weak﻿ taking﻿ control﻿ by﻿the﻿stakeholders﻿ of﻿urban﻿ management﻿ who﻿ are﻿
+independent﻿ and﻿have﻿ each﻿ one﻿own﻿destiny.﻿ With﻿ the﻿optimization﻿ objectives﻿ of﻿the﻿city﻿by﻿the﻿urban﻿
+data(﻿reuse,﻿ shares,﻿ coproduction,﻿ publications,﻿ analyzes﻿ great﻿ volumes﻿ of﻿data),﻿ of﻿generations﻿ of﻿a﻿
+common﻿ strategic﻿ vision﻿ of﻿the﻿city﻿which﻿ directly﻿ influences﻿ the﻿actions﻿ of﻿the﻿actor’s﻿ management﻿International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+63and﻿the﻿co-operation﻿ with﻿ various﻿ partners,﻿ the﻿urban﻿ reflection﻿ was﻿then﻿ extended﻿ to﻿the﻿analysis﻿ of﻿
+the﻿management﻿ processes﻿ and﻿the﻿decision,﻿ with﻿ a﻿partnership﻿ approach﻿ of﻿Co-construction,﻿ as﻿the﻿
+technic﻿resulting﻿from﻿company﻿management.
+The﻿implementation﻿ of﻿the﻿platform﻿ YUSIIP﻿ identified﻿ two﻿major﻿ challenges:﻿ firstly,﻿ SOA﻿ and﻿
+the﻿development﻿ of﻿generic﻿ services﻿ do﻿not﻿solve﻿ the﻿problems﻿ of﻿surface﻿ heterogeneity﻿ and﻿secondly﻿
+the﻿lack﻿ of﻿a﻿common﻿ data﻿ model﻿ for﻿the﻿data﻿ warehouse﻿ does﻿ not﻿allow﻿ the﻿normalization﻿ of﻿the﻿
+structure ﻿of﻿semantic ﻿data﻿models. ﻿Heterogeneity ﻿remains ﻿for﻿the﻿two﻿cases, ﻿at﻿the﻿data﻿level. (﻿Ayissi, ﻿&﻿
+Moskolai,﻿ 2017)﻿ propose﻿ to﻿associate﻿ the﻿approach﻿ of﻿Master﻿ Data﻿ Management(﻿ MDM)﻿ by﻿the﻿setup﻿
+of﻿data﻿ repositories﻿ which﻿ will﻿be﻿coupled﻿ with﻿ the﻿data﻿ warehouse,﻿ thus﻿ constituting﻿ a﻿Distributed﻿
+Data﻿ Warehouse(﻿ DDW).﻿ MDM﻿ is﻿focusing﻿ on﻿the﻿rationalization﻿ management﻿ of﻿data﻿shared﻿ within﻿
+an﻿organization﻿ or﻿between﻿ several﻿ organizations﻿ while﻿ managing﻿ in﻿a﻿unified﻿ and﻿transverse﻿ way﻿of﻿
+heterogeneous﻿data﻿and﻿dispersed﻿in﻿several﻿not﻿synchronized﻿application﻿systems.
+2.2. w aste Management Systems
+According﻿ to﻿BRUNET﻿ Roger,﻿ waste﻿ is﻿an“﻿inevitable﻿ product﻿ of﻿human﻿ activity,﻿ whose﻿ treatment﻿ is﻿
+expensive﻿ and﻿difficult,﻿ although﻿ it﻿is﻿useful﻿.”)...(﻿ Jean﻿ GOUHIER﻿ retorts﻿ that:“﻿ the﻿study﻿ of﻿waste﻿
+makes﻿ it﻿possible﻿ to﻿understand﻿ the﻿way﻿ in﻿which﻿ people﻿ live﻿and﻿discharge﻿ their﻿ vital﻿ functions﻿
+(consumption, ﻿food, ﻿health) ﻿and﻿cultural (﻿leisure, ﻿various ﻿activities), ﻿or﻿professional. ﻿It’s﻿not﻿divination:﻿
+by﻿studying﻿ dust﻿bins,﻿ one﻿can﻿establish﻿ trends﻿ of﻿behavior,﻿ based﻿ on﻿the﻿typologies﻿ carried﻿ out﻿on﻿the﻿
+basis﻿ of﻿content﻿ analysis﻿ of﻿dust﻿bins﻿carried﻿ out﻿over﻿ several﻿ years”.﻿ In﻿the﻿literature,﻿ there﻿ does﻿ not﻿
+exist﻿ a﻿single﻿ definition.﻿ Researchers﻿ and﻿professionals﻿ mobilize﻿ themselves﻿ and﻿organize﻿ themselves﻿
+more ﻿and﻿more ﻿to﻿take﻿part﻿directly ﻿in﻿the﻿management ﻿of﻿the﻿city﻿and﻿this﻿since ﻿the﻿economic ﻿transfers,﻿
+policies﻿ and﻿social﻿ which﻿ knew﻿ the﻿urban﻿ companies﻿ in﻿particular,﻿ in﻿Africa﻿ at﻿the﻿beginning﻿ of﻿the﻿
+Nineties.﻿Several﻿works﻿testify﻿some.
+In﻿their﻿work, ﻿Morrissey ﻿and﻿Browne (﻿2004) ﻿examined ﻿the﻿types ﻿of﻿model ﻿systems ﻿currently ﻿used﻿
+in﻿the﻿field﻿ of﻿municipal﻿ waste﻿ management﻿ and﻿highlighted﻿ some﻿ important﻿ gaps﻿ in﻿these﻿ models.﻿
+Based﻿ on﻿their﻿ analyses,﻿ most﻿ of﻿the﻿municipal﻿ waste﻿ models﻿ identified﻿ in﻿the﻿literature﻿ are﻿decision﻿
+support﻿ models﻿ and﻿seem﻿ to﻿fit﻿the﻿objectives﻿ of﻿this﻿work.﻿ These﻿ models﻿ are﻿mainly﻿ divided﻿ into﻿
+three﻿ categories:﻿ those﻿ based﻿ on﻿cost-benefit﻿ analysis,﻿ those﻿ based﻿ on﻿life-cycle﻿ assessment﻿ and﻿those﻿
+based﻿ on﻿multicriteria﻿ decision-making.﻿ Much﻿ of﻿their﻿ work﻿ has﻿focused﻿ on﻿examining﻿ the﻿models﻿
+used﻿to﻿support ﻿decision-making ﻿in﻿the﻿area﻿of﻿waste ﻿management ﻿in﻿an﻿urban ﻿setting ﻿and﻿highlighting﻿
+some﻿of﻿the﻿important﻿gaps﻿in﻿these﻿models.
+In﻿order ﻿to﻿assess ﻿these ﻿systems ﻿on﻿the﻿point ﻿of﻿view﻿of﻿sustainability, ﻿it’s﻿important ﻿to﻿be﻿
+based﻿ on﻿reliable﻿ and﻿relevant﻿ indicators.(﻿ Rigamonti﻿ et﻿al.,﻿2016)﻿ proposes﻿ thus﻿ the﻿definition﻿ of﻿a﻿
+set﻿of﻿indicators﻿ for﻿evaluation﻿ of﻿the﻿environmental﻿ and﻿economic﻿ sustainability﻿ of﻿the﻿integrated﻿
+management﻿ systems﻿ of﻿domestic﻿ waste.﻿ The﻿challenge﻿ consists﻿ to﻿define﻿ simple﻿ but﻿understanding﻿
+indicators﻿ which﻿ can﻿also﻿be﻿calculated﻿ by﻿the﻿administrators﻿ and﻿the﻿local﻿ managers﻿ of﻿the﻿waste﻿
+management﻿system﻿and﻿not﻿only﻿by﻿the﻿scientists﻿or﻿the﻿experts.
+In﻿the﻿literature,﻿ many﻿ studies﻿ have﻿ also﻿concerned﻿ the﻿behavioral﻿ study﻿ of﻿recipients﻿ of﻿waste﻿
+management ﻿systems. ﻿The﻿objective ﻿of﻿the﻿work ﻿of(﻿Guerrero ﻿et﻿al.,﻿2013) ﻿was﻿to﻿determine ﻿the﻿action﻿
+and﻿behavior﻿ of﻿the﻿recipients﻿ who﻿ play﻿ an﻿important﻿ role﻿in﻿the﻿waste﻿ management﻿ process﻿ and﻿to﻿
+analyze﻿ the﻿influencing﻿ factors﻿ on﻿the﻿system.﻿ a﻿period﻿ of﻿more﻿ than﻿ thirty﻿ years.﻿ This﻿ study﻿ was﻿
+conducted﻿ in﻿urban﻿ areas﻿ in﻿22﻿developing﻿ countries﻿ on﻿four﻿continents.﻿ To﻿evaluate﻿ the﻿recipients,﻿
+the﻿authors﻿ used﻿ a﻿combination﻿ of﻿methods.﻿ Other﻿ works﻿ such﻿ as﻿those﻿ of(﻿Shekdar,﻿ 2009)﻿ have﻿ also﻿
+worked﻿ on﻿the﻿subject﻿ and﻿have﻿ identified﻿ the﻿main﻿ stakeholders(﻿ people﻿ or﻿organizations)﻿ who﻿ may﻿
+be﻿interested﻿in﻿waste﻿management.
+The﻿heterogeneity ﻿of﻿the﻿cities ﻿and﻿the﻿recipients ﻿lead﻿to﻿requirements ﻿for﻿the﻿ICT﻿systems﻿
+deployed﻿ in﻿waste﻿ management﻿ to﻿collaborate,﻿ while﻿ being﻿ able﻿to﻿work﻿ autonomously,﻿ autonomous﻿
+and﻿resilient﻿ way.﻿ Moreover,﻿ it﻿requires﻿ systems﻿ able﻿to﻿integrate﻿ the﻿existing﻿ infrastructures﻿ and﻿ICT.﻿International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+64(Soto,﻿ et﻿al.,﻿2016)﻿ proposes﻿ a﻿platform﻿ of﻿intelligent﻿ city﻿which﻿ should﻿ be﻿an﻿integration﻿ platform﻿
+able﻿to﻿adapt﻿to﻿the﻿regulations﻿and﻿policies﻿of﻿the﻿cities﻿which﻿quickly﻿change.
+The﻿result ﻿of﻿these ﻿many ﻿research ﻿works ﻿and﻿project ﻿that﻿the﻿problems ﻿related ﻿to﻿the﻿
+interoperability ﻿and﻿the﻿integration ﻿of﻿urban ﻿waste ﻿management ﻿systems ﻿in﻿the﻿developing﻿
+countries ﻿is﻿not﻿largely ﻿dealt. ﻿However, ﻿to﻿have﻿reliable ﻿and﻿relevant ﻿indicators ﻿for﻿strategic﻿
+decision-making, ﻿it’s﻿important ﻿to﻿federate ﻿the﻿urban ﻿data﻿in﻿order ﻿to﻿make ﻿them ﻿single. ﻿YUSIIP﻿
+brings ﻿a﻿solution ﻿to﻿this﻿problem.
+3. GeNeRAL AN d FUNCTI oNAL ARCHIT eCTUR eS oF yUSIIP
+In﻿this﻿section,﻿ general﻿ architecture﻿ and﻿YUSIIP﻿ operations﻿ are﻿presented﻿ and﻿described.﻿ The﻿general﻿
+architecture﻿ of﻿YUSIIP﻿ listed﻿ in﻿the﻿Figure﻿ 1(﻿a)﻿shows﻿ that﻿YUSIIP﻿ are﻿a﻿Multi-source﻿ Information﻿
+System (﻿MSIS), ﻿a﻿platform ﻿of﻿information ﻿exchanges ﻿between ﻿various ﻿organizations ﻿implied ﻿in﻿urban﻿
+management﻿and﻿a﻿support﻿of﻿decision-making﻿aid.
+The﻿YUSIIP﻿ platform﻿ is﻿based﻿ primarily﻿ on﻿a﻿SOA(﻿ Services﻿ Oriented﻿ Architecture)﻿ architecture﻿
+that﻿promotes﻿ the﻿use﻿of﻿standards﻿ in﻿data﻿exchange﻿ between﻿ heterogeneous﻿ information﻿ systems.﻿ It﻿
+thus﻿contributes﻿ to﻿the﻿development﻿ of﻿an﻿integrated﻿ system﻿ giving﻿ access﻿ generically﻿ to﻿data﻿coming﻿
+from﻿the﻿different ﻿actors ﻿of﻿urban ﻿management (﻿individuals, ﻿organizations, ﻿municipalities, ﻿etc.). ﻿SOA﻿
+streamlines﻿ service﻿ management,﻿ supports﻿ the﻿division﻿ and﻿distribution﻿ of﻿consolidated﻿ data﻿between﻿
+heterogeneous﻿ applications﻿ via﻿Data﻿ Services.﻿ Data﻿ from﻿ urban﻿ actors﻿ provides﻿ factual﻿ data﻿ or﻿the﻿
+characteristics﻿ of﻿their﻿ data﻿in﻿the﻿form﻿ of﻿web﻿services﻿ through(﻿ WSDL﻿/﻿ XML﻿/﻿ UDDI)﻿ complying﻿
+with﻿specific ﻿standard ﻿formats (﻿1-thirds). ﻿These ﻿data﻿formats ﻿ensure ﻿interoperability ﻿for﻿the﻿exchange ﻿of﻿
+information﻿ between﻿ data﻿providers﻿ and﻿consumers(﻿ data﻿ users).﻿ Web﻿ services(﻿ 2-tiers)﻿ that﻿query﻿ the﻿
+platform﻿ through﻿ its﻿central﻿ repository(﻿ 3-tiers).﻿ The﻿YUSIIP﻿ platform﻿ implements﻿ a﻿computer-aided﻿
+software﻿ engineering(﻿ CASE)﻿ which﻿ builds﻿ the﻿interactive﻿ system﻿ of﻿decision-making﻿ aid(﻿ISDMA),﻿
+the﻿data﻿ warehouse,﻿ and﻿the﻿relevant﻿ urban﻿ indicators﻿ progressively.﻿ Principle﻿ contributions﻿ within﻿
+the﻿choice﻿ of﻿the﻿CASE﻿ relates﻿ to﻿the﻿technical﻿ sides﻿ such﻿ as﻿processes﻿ ETL“(﻿ Extract﻿–﻿ Transform﻿
+﻿–Load”),﻿ OLAP﻿ technology(﻿ One﻿ Line﻿ Analytical﻿ Processing),﻿ the﻿production﻿ of﻿data﻿ bases﻿ of﻿the﻿
+concepts﻿and﻿the﻿interfaces﻿of﻿visualization﻿brute﻿or﻿incorporated﻿data.
+A﻿data﻿warehouse ﻿beginning ﻿from﻿several ﻿disparate ﻿and﻿heterogeneous ﻿data﻿sources, ﻿which ﻿makes﻿
+it﻿possible﻿ to﻿memorize﻿ perennially﻿ urban﻿ information﻿ and﻿to﻿refer﻿ to﻿the﻿sources﻿ existing﻿ data﻿ in﻿
+order﻿ to﻿facilitate﻿ their﻿ access﻿ and﻿their﻿ reuse.﻿ According﻿ to(﻿Inmon,﻿ 1994),﻿ data﻿ warehouse﻿ can﻿be﻿
+defined ﻿as“﻿a﻿collection ﻿of﻿oriented ﻿subject ﻿data,﻿integrated, ﻿not﻿birds ﻿and﻿historized, ﻿organized ﻿for﻿the﻿
+support ﻿of﻿a﻿process ﻿of﻿decision-making ﻿aid”.﻿For﻿decision-making ﻿applications ﻿that﻿use﻿heterogeneous﻿
+data﻿ from﻿ a﻿variety﻿ of﻿sources,﻿ data﻿ warehouses﻿ are﻿an﻿interesting﻿ solution.﻿ Two﻿ storage﻿ spaces﻿ are﻿
+distinguished:﻿ the﻿data﻿warehouse﻿ and﻿the﻿data﻿smarts.﻿ The﻿warehouse﻿ is﻿perceived﻿ as﻿a﻿homogenous﻿
+centralized﻿ storage﻿ space﻿ gathering﻿ useful﻿ data﻿ for﻿analysis﻿ and﻿decision-making,﻿ extracted﻿ from﻿
+sources﻿ and﻿able﻿to﻿be﻿the﻿subject﻿ of﻿historical﻿ data.﻿ Smart﻿ is﻿an﻿extract﻿ from﻿ the﻿warehouse,﻿ where﻿
+the﻿data﻿is﻿specifically﻿ prepared﻿ to﻿facilitate﻿ their﻿ analysis﻿ and﻿exploitation﻿ by﻿users(﻿ decision-makers﻿
+or﻿managers).﻿ In﻿order﻿ to﻿provide﻿ an﻿effective﻿ means﻿ for﻿urban﻿ managers﻿ in﻿their﻿ process﻿ of﻿analyzing﻿
+urban ﻿waste, ﻿housing ﻿and﻿sanitation ﻿data,﻿data﻿from﻿multiple ﻿and﻿heterogeneous ﻿sources ﻿are﻿integrated﻿
+into﻿a﻿data﻿warehouse.
+To﻿collect﻿ the﻿needs﻿ of﻿users﻿ of﻿the﻿YUSIIP﻿ platform,﻿ two﻿main﻿ approaches﻿ have﻿ been﻿ proposed﻿
+in﻿this﻿study:
+1.﻿﻿The﻿first﻿approach﻿ concerns﻿ source-oriented﻿ collection.﻿ It﻿is﻿limited﻿ to﻿identifying﻿ the﻿needs﻿ of﻿
+the﻿data﻿warehouse﻿ from﻿ all﻿available﻿ data﻿at﻿the﻿level﻿ of﻿urban﻿ managers﻿ such﻿ as﻿CIPRE,﻿ which﻿
+since﻿ 1996﻿ had﻿been﻿ the﻿statistical﻿ data﻿on﻿the﻿direct﻿ recycling﻿ and﻿recycling﻿ of﻿plastic﻿ waste﻿ in﻿
+Yaoundé. ﻿These ﻿data﻿mainly ﻿concern ﻿statistics ﻿on:﻿the﻿amount ﻿of﻿waste ﻿recovered, ﻿the﻿geographical﻿
+location﻿ of﻿waste﻿ deposits,﻿ income,﻿ etc.﻿For﻿the﻿management﻿ and﻿production﻿ of﻿these﻿ statistical﻿International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+65data,﻿CIPRE ﻿uses﻿traditional ﻿calculation ﻿software (﻿spreadsheets). ﻿Other ﻿urban ﻿managers ﻿also﻿feed﻿
+the﻿data﻿warehouse,﻿ such﻿ as﻿HYSACAM,﻿ which﻿ specializes﻿ in﻿the﻿collection﻿ of﻿household﻿ waste﻿
+and﻿dry﻿and﻿inert﻿ materials(﻿ glasses,﻿ metals,﻿ plastics,﻿ etc.).﻿ LAU﻿ undertakes﻿ studies﻿ and﻿research﻿
+on﻿slums﻿ and﻿sanitation,﻿ the﻿INS(﻿National﻿ Institute﻿ of﻿Statistics)﻿ which﻿ produces﻿ general﻿ survey﻿
+data﻿on﻿the﻿living﻿ environment(﻿ information﻿ about﻿ neighborhoods,﻿ waste﻿ management,﻿ garbage﻿
+cans,﻿evacuations,﻿etc.);Figure 1. General architecture of YUSIIP platform
+International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+662.﻿﻿The﻿second ﻿approach ﻿is﻿a﻿needs-driven ﻿collection ﻿that﻿identifies ﻿the﻿needs ﻿of﻿users ﻿and﻿
+stakeholders. ﻿Data﻿are﻿analyzed ﻿according ﻿to﻿the﻿relevance ﻿of﻿user﻿demand. ﻿These ﻿data﻿come ﻿from﻿
+information﻿ provided﻿ by﻿urban﻿ managers﻿ such﻿ as﻿CIPRE,﻿ HYSACAM,﻿ LAU﻿ and﻿INS﻿as﻿well﻿as﻿
+the﻿documents﻿ provided.﻿ The﻿conceptual﻿ model﻿ for﻿intelligent﻿ data﻿retrieval﻿ in﻿the﻿warehouse﻿ in﻿
+relation﻿ to﻿the﻿DWHSMS﻿ is﻿shown﻿ in﻿Figure﻿ 2.﻿The﻿model﻿ is﻿composed﻿ of﻿six﻿tables:﻿ a“﻿Waste﻿
+Collect”﻿ and﻿a﻿set﻿of﻿tables(﻿ Organization,﻿ Waste,﻿ Quarter,﻿ City,﻿ and﻿Time)﻿ connected﻿ by﻿foreign﻿
+keys.﻿ The﻿Waste﻿ collection﻿ table﻿ contains﻿ information﻿ or﻿measures﻿ relating﻿ to﻿the﻿description﻿ of﻿
+the﻿regular﻿collection﻿of﻿solid﻿waste,﻿such﻿as“﻿Total﻿quantity”﻿and“﻿Percentage﻿of﻿waste.”
+Our﻿work ﻿has﻿helped ﻿develop ﻿a﻿solution ﻿for﻿data﻿management ﻿for﻿the﻿benefit ﻿of﻿urban ﻿stakeholders﻿
+to﻿improve﻿ the﻿quality﻿ of﻿life﻿in﻿cities.﻿ Following﻿ the﻿proposed﻿ Entities-Relations﻿ modeling(﻿ Figure﻿
+2),﻿the﻿multidimensional﻿ model﻿ consists﻿ of﻿several﻿ tables,﻿ a“﻿Waste﻿ Collect”﻿ and﻿a﻿set﻿of﻿size﻿tables﻿
+(Organism,﻿ Waste,﻿ Neighborhood,﻿ City,﻿ Time)﻿ each﻿ containing﻿ a﻿primary﻿ key,﻿and﻿a﻿set﻿of﻿entities.﻿
+These﻿ size﻿tables﻿ are﻿interconnected﻿ by﻿foreign﻿ keys.﻿ This﻿ type﻿of﻿dimension﻿ is﻿particularly﻿ important﻿
+for﻿building﻿ a﻿data﻿ warehouse﻿ based﻿ on﻿a﻿set﻿of﻿inter-linked﻿ data﻿ stores.﻿ For﻿example,﻿ the﻿Waste﻿
+Collection﻿ table﻿ contains﻿ information﻿ or﻿measures﻿ related﻿ to﻿the﻿description﻿ of﻿regular﻿ solid﻿ waste﻿
+collection,﻿ such﻿ as“﻿Total﻿ Quantity”﻿ and“﻿Percentage﻿ of﻿Waste”.﻿ It﻿also﻿contains﻿ information﻿ about﻿
+the﻿types﻿ of﻿waste,﻿ the﻿time,﻿ and﻿code﻿ of﻿the﻿organization﻿ in﻿charge﻿ of﻿its﻿management.﻿ Indeed,﻿ these﻿
+conformal﻿ dimensions(﻿ multiplicity﻿ of﻿foreign﻿ keys)﻿ have﻿ the﻿same﻿ meaning﻿ in﻿all﻿the﻿tables﻿ of﻿facts﻿
+with﻿ which﻿ they﻿are﻿related.﻿ Thus,﻿ these﻿ dimensions﻿ will﻿ensure﻿ the﻿consistency﻿ of﻿all﻿data﻿warehouse﻿
+by﻿building﻿ a﻿kind﻿ of﻿link﻿between﻿ data﻿ stores.﻿ This﻿ set﻿of﻿interrelated﻿ data﻿ is﻿sometimes﻿ called﻿
+decision﻿ bus.﻿The﻿above﻿ approach﻿ is﻿a﻿warehouse﻿ building﻿ approach﻿ for﻿non-complex﻿ attribute﻿ data.
+To﻿provide﻿ semantic﻿ consistency﻿ of﻿the﻿data﻿ exchanged﻿ with﻿ the﻿data﻿ warehouse﻿ solution,﻿ an﻿
+integration ﻿of﻿a﻿Master ﻿Data﻿Management (﻿MDM) ﻿module ﻿has﻿been﻿proposed. ﻿This﻿solution ﻿also﻿makes﻿
+Figure 2. Conceptual model of data smart relating to urban waste
+International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+67it﻿possible﻿ to﻿set﻿up﻿a﻿data﻿repository﻿ as﻿well﻿ as﻿an﻿adapted﻿ organization﻿ that﻿will﻿make﻿ it﻿possible﻿ to﻿
+manage ﻿the﻿data﻿in﻿a﻿transversal ﻿manner ﻿with﻿the﻿various ﻿sources ﻿of﻿applications ﻿professions (﻿Trigaux,﻿
+2009). ﻿The﻿MDM ﻿solution ﻿centralizes ﻿data﻿in﻿a﻿reference ﻿frame ﻿and﻿propagates ﻿it﻿between ﻿applications﻿
+deployed﻿ within﻿ a﻿single﻿ information﻿ system.﻿ It﻿is﻿therefore﻿ possible﻿ to﻿apply﻿ a﻿strategy﻿ for﻿sharing﻿
+information.﻿ The﻿MDM﻿ integration﻿ provides﻿ the﻿YUSIIP﻿ platform﻿ a﻿better﻿ user﻿interface(﻿ HIM)﻿ for﻿
+data﻿administration﻿ and﻿all﻿related﻿ governance﻿ functions:﻿ versioning,﻿ rights﻿ management,﻿ querying,﻿
+validation, ﻿approval ﻿process ﻿up﻿to﻿date﻿and﻿interfaces ﻿with﻿the﻿integration ﻿data﻿middleware. ﻿It﻿is﻿also﻿an﻿
+ideal﻿ solution﻿ considered﻿ as﻿a﻿repository﻿ of﻿storage(﻿ Ayissi﻿&﻿ Moskolai,﻿ 2017)﻿ and﻿is﻿complementary﻿
+to﻿the﻿other﻿ two﻿approaches(﻿ SOA,﻿ DW).﻿ MDM﻿ will﻿enrich﻿ the﻿data﻿ warehouse﻿ of﻿a﻿new﻿ layer﻿ by﻿
+providing ﻿a﻿unified, ﻿personalized ﻿and﻿secure ﻿data﻿retrieval ﻿environment ﻿in﻿a﻿meaningful ﻿way.﻿In﻿relation﻿
+to﻿the﻿DW﻿approach,﻿ MDM﻿ also﻿focuses﻿ on﻿unifying﻿ models﻿ and﻿tools﻿ within﻿ the﻿information﻿ system.﻿
+To﻿build﻿ a﻿truly﻿ distributed﻿ data﻿ warehouse﻿ that﻿takes﻿ heterogeneous﻿ data﻿ into﻿account,﻿ SOA﻿ needs﻿
+MDM﻿ to﻿structure,﻿ standardize,﻿ and﻿consolidate﻿ data﻿from﻿ different﻿ sources.﻿ Similarly,﻿ MDM﻿ needs﻿
+SOA ﻿to﻿share ﻿and﻿distribute ﻿consolidated ﻿data﻿across ﻿heterogeneous ﻿applications. ﻿A﻿sequencing ﻿of﻿the﻿
+various﻿ activities﻿ and﻿functionalities﻿ of﻿the﻿YUSIIP﻿ platform﻿ for﻿strategic﻿ management﻿ and﻿decision﻿
+making﻿has﻿also﻿been﻿presented﻿in﻿Figure﻿1(b).
+Figure﻿ 1(﻿b)﻿describes﻿ the﻿operation﻿ of﻿YUSIIP﻿ platform﻿ as﻿it﻿follows:(﻿ A)﻿Various﻿ Equipment﻿
+of﻿connection(﻿ PDA,﻿ Smartphone,﻿ computers,﻿ etc.),(﻿ B)﻿Average﻿ of﻿network﻿ Internet﻿ connection,﻿
+(C)﻿Interfaces﻿ Web﻿ services﻿ which﻿ the﻿users﻿ are﻿reaching,(﻿ D)﻿Waiter﻿ in﻿which﻿ YUSIIP﻿ platforms﻿
+are﻿lodging,(﻿ E)﻿Organizations﻿ being﻿ able﻿to﻿be﻿in﻿the﻿private﻿ sector,﻿ public﻿ or﻿even﻿ individuals,(﻿ F)﻿
+Directory﻿ of﻿Web﻿ services,(﻿ 1)﻿Once﻿ the﻿Web﻿ service﻿ implemented,﻿ the﻿provider﻿ service﻿ must﻿ publish﻿
+the﻿service﻿ in﻿the﻿register.﻿ This﻿ publication﻿ is﻿done﻿ through﻿ the﻿WSDL﻿ and﻿the﻿attribution﻿ of﻿a﻿UUID﻿
+(Universal﻿ Unique﻿ ID)﻿which﻿ makes﻿ it﻿possible﻿ to﻿identify﻿ each﻿ service﻿ in﻿a﻿single﻿ way,(﻿ 2)﻿When﻿
+a﻿user﻿ reaches﻿ the﻿platform,﻿ it﻿reaches﻿ the﻿interface﻿ and﻿a﻿request﻿ is﻿sent﻿to﻿the﻿Web﻿ server﻿ where﻿
+YUSIIP﻿ is﻿lodging,(﻿ 3)﻿The﻿research﻿ of﻿the﻿Web﻿ service﻿ will﻿be﻿done﻿ in﻿our﻿UUID﻿ register﻿ within﻿ the﻿
+framework﻿ of﻿a﻿private﻿ register,(﻿ 4)﻿If﻿it﻿happens﻿ that﻿the﻿required﻿ service﻿ is﻿not﻿being﻿ present﻿ in﻿our﻿
+deprived﻿ directory﻿ then﻿ he﻿will﻿be﻿researched﻿ in﻿the﻿public﻿ directories,﻿ service﻿ corresponding﻿ to﻿the﻿
+formulated﻿ request,(﻿ 5)﻿The﻿answer(﻿ result)﻿ of﻿the﻿formulated﻿ request﻿ is﻿returned﻿ to﻿the﻿Web﻿ server.﻿
+This﻿answer ﻿can﻿be﻿positive ﻿or﻿negative; ﻿if﻿it’s﻿positive, ﻿it﻿will﻿send﻿the﻿characteristics ﻿necessary ﻿to﻿the﻿
+use﻿of﻿the﻿found ﻿services ﻿corresponding ﻿to﻿request (﻿details ﻿on﻿the﻿supplier, ﻿type﻿of﻿connection, ﻿address﻿
+of﻿the﻿service,﻿ etc.),﻿ if﻿it’s﻿negative﻿ then﻿ the﻿service﻿ is﻿not﻿found﻿ and﻿end﻿of﻿the﻿process﻿ one﻿passes﻿
+directly﻿ to(﻿8).(﻿6)﻿The﻿Web﻿ server﻿ will﻿thus﻿establish﻿ a﻿connection﻿ with﻿ the﻿service﻿ in﻿question.(﻿ 7)﻿
+If﻿the﻿service﻿ is﻿available﻿ the﻿exchange﻿ of﻿messages(﻿ based﻿ on﻿XML)﻿ can﻿then﻿ start.(﻿ 8)﻿The﻿answer﻿
+is﻿thus﻿transmitted﻿to﻿the﻿interface﻿of﻿the﻿user.
+4. SUGG eSTIoN FoR A M ode L oF INdICAT oRS PR odUCTI oN
+In﻿this﻿section,﻿ the﻿data﻿ models(﻿ warehouse,﻿ stores)﻿ are﻿supplemented﻿ by﻿a﻿necessary﻿ modeling﻿ of﻿
+the﻿treatments﻿ for﻿the﻿calculation﻿ of﻿the﻿indicators.﻿ In﻿general,﻿ evaluation﻿ based﻿ on﻿indicator﻿ systems﻿
+extends﻿to﻿all﻿domains(﻿economy,﻿urban﻿development,﻿etc.)﻿by﻿considering﻿the﻿recommendations﻿of﻿
+sustainable﻿ development.﻿ Indicators﻿ are﻿used﻿ to﻿show,﻿ measure﻿ or﻿appreciate﻿ a﻿given﻿ phenomenon.﻿
+In﻿the﻿DWHSMS﻿ case,﻿ Figure﻿ 3﻿presents﻿ the﻿model﻿ of﻿production﻿ of﻿the﻿relevant﻿ indicators﻿ starting﻿
+from﻿urban﻿phenomenon﻿to﻿appreciate.
+The﻿proposed ﻿model ﻿is﻿articulated ﻿around ﻿several ﻿major ﻿axes﻿namely: ﻿themes ﻿or﻿subjects﻿
+(examples:﻿ urban﻿ management,﻿ economic﻿ and﻿social﻿ governance,﻿ environmental﻿ governance,﻿ etc.),﻿
+factors﻿ or﻿fields(﻿ examples:﻿ urban﻿ waste,﻿ housing,﻿ sanitation,﻿ pollution,﻿ etc.),﻿ problems﻿ relating﻿ to﻿
+each﻿field, ﻿observation ﻿variable ﻿ones﻿and﻿descriptive ﻿cards ﻿of﻿relevant ﻿indicators. ﻿Its﻿application ﻿to﻿the﻿
+DWHSMS(﻿ urban﻿ waste﻿ case)﻿ has﻿structured﻿ information﻿ into﻿a﻿dashboard﻿ of﻿indicators﻿ and﻿statistics﻿
+to﻿understand﻿ certain﻿ areas﻿ and﻿underlying﻿ issues.﻿ This﻿ availability﻿ of﻿data﻿makes﻿ it﻿possible﻿ to﻿solve﻿International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+68existing﻿ problems﻿ and﻿to﻿anticipate﻿ others.﻿ The﻿dashboard﻿ allows﻿ for﻿the﻿collection﻿ of﻿generally﻿
+dispersed﻿data,﻿providing﻿a﻿global﻿view﻿and﻿better﻿management﻿of﻿urban﻿data.
+5. ReSULTS AN d dISCUSSI oNS
+YUSIIP ﻿project ﻿contributes ﻿to﻿building ﻿an﻿overall ﻿vision ﻿of﻿management ﻿and﻿city﻿planning ﻿in﻿Yaoundé﻿
+via﻿the﻿installation﻿ of﻿a﻿multi-source﻿ information﻿ system,﻿ making﻿ it﻿possible﻿ to﻿produce﻿ knowledge﻿
+at﻿the﻿same﻿ time﻿ global(﻿ consolidated)﻿ and﻿detailed.﻿ In﻿this﻿section,﻿ the﻿YUSIIP﻿ contributions﻿ to﻿the﻿
+DWHSMS﻿are﻿presented﻿and﻿hold﻿an﻿overall﻿discussion﻿on﻿the﻿study﻿of﻿YUSIIP.
+5.1. Contribution of yUSIIP data w arehouse to the dwHSMS
+The﻿need﻿ for﻿DWHSMS,﻿ sanitation,﻿ pollution,﻿ waste﻿ waters﻿ and﻿the﻿waterways﻿ is﻿dictated﻿ by﻿the﻿
+sanitary﻿ and﻿environmental﻿ imperatives﻿ in﻿urban﻿ area.﻿ From﻿ this﻿prospect,﻿ the﻿exploitation﻿ of﻿the﻿
+YUSIIP ﻿Data﻿Warehouse ﻿presents ﻿a﻿real﻿issue. ﻿According ﻿to﻿the﻿United ﻿Nations ﻿criteria ﻿for﻿Sustainable﻿
+Development﻿ Goals(﻿ SDGs),﻿ information﻿ on﻿household﻿ waste﻿ management,﻿ housing﻿ and﻿sanitation﻿
+or﻿the﻿environment﻿ would﻿ contribute﻿ to﻿the﻿production﻿ of﻿statistics,﻿ indicators﻿ that﻿would﻿ make﻿ it﻿
+possible﻿to﻿evaluate﻿the﻿city.
+In﻿other﻿ to﻿help﻿ urban﻿ managers﻿ in﻿decision-making﻿ to﻿improve﻿ the﻿quality﻿ of﻿life﻿in﻿the﻿urban﻿
+area,﻿some﻿statistics﻿and﻿indicators﻿of﻿decision﻿support﻿are﻿produced﻿by﻿the﻿YUSIIP﻿platform:
+•﻿Urban Waste: ﻿YUSIIP ﻿allows ﻿the﻿data﻿collect ﻿the﻿characterization ﻿of﻿domestic ﻿waste ﻿in﻿
+the﻿Yaoundé ﻿City﻿and﻿ensures ﻿the﻿provision ﻿of﻿this﻿data﻿for﻿information ﻿and﻿decision-
+making ﻿aid﻿purpose;
+•﻿Production of waste: ﻿Waste ﻿is﻿continuously ﻿generated, ﻿in﻿increasing ﻿quantity ﻿with﻿the﻿
+development﻿ of﻿lifestyles.﻿ They﻿ are﻿heterogeneous﻿ and﻿their﻿ quantitative﻿ composition﻿ varies﻿Figure 3. Generic model of production of the urban indicators, the DWHSMS case
+International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+69according﻿ to﻿space(﻿ city,﻿ quarter,﻿ household)﻿ and﻿from﻿ time(﻿ year,﻿ month,﻿ week,﻿ day,﻿and﻿season/
+climate).﻿ For﻿example,﻿ in﻿Yaoundé(﻿ Cameroon),﻿ in﻿2005,﻿ the﻿quantity﻿ of﻿produced﻿ waste﻿ per﻿
+habitant ﻿and﻿per﻿day﻿was﻿0.85﻿Kg/hab/day. ﻿The﻿average ﻿production ﻿of﻿domestic ﻿waste ﻿was﻿0.6﻿Kg/
+hab/day﻿ in﻿dry﻿season﻿ whereas﻿ it﻿was﻿0.98﻿ Kg/hab/day﻿ in﻿rain﻿season.﻿ The﻿production﻿ of﻿waste﻿
+also﻿varies﻿ according﻿ to﻿the﻿living﻿ standard﻿ and﻿the﻿migration﻿ of﻿the﻿population(﻿ for﻿example﻿ the﻿
+tourist﻿ period).﻿ The﻿geographical,﻿ climatic,﻿ economic﻿ and﻿demographic﻿ factors﻿ are﻿determining﻿
+in﻿the﻿quantification﻿ of﻿the﻿generated﻿ waste﻿ in﻿a﻿city.﻿ Table﻿ of﻿Figure﻿ 4﻿gives﻿ the﻿evolution﻿ of﻿
+quantity﻿ of﻿collected﻿ waste﻿ to﻿Yaoundé﻿ since﻿ 1996.﻿ Knowledge﻿ of﻿the﻿waste﻿ quantity﻿ produced﻿
+in﻿a﻿given﻿ area﻿is﻿essential﻿ for﻿the﻿planning﻿ of﻿a﻿management﻿ system﻿ in﻿order﻿ to﻿envisage﻿ at﻿the﻿
+best﻿dimension﻿ of﻿the﻿collect,﻿ installations﻿ of﻿treatment﻿ and﻿the﻿storage﻿ center﻿ of﻿waste(﻿ Aina﻿
+et﻿al.,﻿2012).﻿ Moreover,﻿ the﻿knowledge﻿ of﻿quantity﻿ of﻿produced﻿ waste﻿ could﻿ make﻿ it﻿possible﻿
+to﻿predict﻿ the﻿adequate﻿ strategies﻿ for﻿a﻿sustainable﻿ management﻿ of﻿waste﻿ and﻿environmental﻿
+protection﻿in﻿urban﻿area;
+•﻿Physical Composition of waste: ﻿Domestic ﻿waste ﻿constitutes ﻿a﻿heterogeneous ﻿mixture ﻿of﻿materials﻿
+having﻿ very﻿ different﻿ chemical﻿ and﻿physical﻿ properties.﻿ Table﻿ of﻿Figure﻿ 5﻿gives﻿ the﻿physical﻿
+composition﻿of﻿waste﻿in﻿Yaoundé﻿urban﻿area.
+The﻿knowledge﻿ of﻿this﻿composition﻿ is﻿essential﻿ because﻿ it﻿makes﻿ it﻿possible﻿ to﻿determine﻿ the﻿
+management﻿ mode﻿ of﻿waste﻿ and﻿to﻿possibly﻿ promote﻿ the﻿creation﻿ of﻿the﻿treatment﻿ and﻿valorization﻿
+channels.﻿ As﻿indicated,﻿ the﻿treatment﻿ and﻿the﻿valorization﻿ of﻿domestic﻿ waste﻿ play﻿ a﻿key﻿role﻿in﻿the﻿
+fight﻿ against﻿ pollution﻿ of﻿the﻿environment,﻿ the﻿conservation﻿ of﻿natural﻿ resources﻿ and﻿energy﻿ saving.﻿
+They﻿ can﻿also﻿slow﻿ down﻿ the﻿global﻿ change﻿ of﻿climate,﻿ caused﻿ by﻿the﻿emissions﻿ of﻿greenhouse﻿ gases,﻿
+which﻿ are﻿responsible﻿ for﻿the﻿progressive﻿ warming﻿ of﻿ground﻿ and﻿which﻿ involves﻿ a﻿global﻿ imbalance﻿
+of﻿natural﻿ecosystems.•﻿Chemical and Biological Composition of Waste:﻿ Chemical﻿ and﻿biological﻿ characterization﻿ of﻿
+waste﻿ can﻿contribute﻿ to﻿highlighting﻿ the﻿existence﻿ of﻿harmful﻿ effects﻿ of﻿pollutants﻿ recorded﻿ on﻿
+human﻿ health﻿ and﻿the﻿environment﻿ of﻿untreated﻿ waste,﻿ especially﻿ in﻿urban﻿ area.﻿ The﻿studies﻿ of﻿
+WHO-Habitat(﻿ 2010),﻿ Rajaganapathy﻿ et﻿al.(﻿2011)﻿ show﻿ for﻿example﻿ that﻿cadmium﻿ and﻿lead﻿are﻿
+carcinogenic ﻿substances, ﻿the﻿manganese ﻿excess ﻿causes ﻿the﻿cirrhosis ﻿of﻿the﻿liver, ﻿zinc﻿is﻿phytotoxic﻿
+and﻿is﻿suspected﻿ of﻿being﻿ carcinogenic﻿ for﻿the﻿man.﻿ In﻿addition,﻿ in﻿a﻿Cameroonian﻿ society﻿ where﻿
+the﻿self-medication﻿ phenomenon﻿ is﻿strongly﻿ widespread,﻿ the﻿antibiotics﻿ used﻿ by﻿the﻿population﻿
+Figure 4. Collected waste to Yaoundé since 1996
+International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+70against﻿ the﻿bacterial﻿ infections,﻿ constitute﻿ another﻿ category﻿ of﻿pollutants﻿ available﻿ in﻿domestic﻿
+waste.﻿ Indeed,﻿ these﻿ chemical﻿ substances﻿ are﻿not﻿absorbed﻿ in﻿the﻿host﻿organism.﻿ Most﻿ of﻿them﻿
+turn﻿ over﻿ in﻿the﻿environment﻿ through﻿ the﻿urine﻿ and﻿the﻿fecal﻿ matter(﻿ Czekalski﻿ et﻿al.,﻿2014;﻿
+Samanta﻿ et﻿al.,﻿2012).﻿ The﻿presence﻿ of﻿these﻿ antimicrobials﻿ in﻿the﻿environment﻿ could﻿ lead﻿to﻿the﻿
+dissemination﻿ of﻿resistant﻿ bacteria﻿ in﻿the﻿ecosystems﻿ and﻿would﻿ pose﻿ enormous﻿ problems﻿ on﻿the﻿
+man﻿and﻿the﻿biodiversity﻿in﻿the﻿cities.
+5.2. Providing data, Results of Studies on dwHSMS, a Real Issue
+Domestic ﻿waste, ﻿planned ﻿and﻿shantytowns, ﻿sanitation, ﻿waterways, ﻿groundwater, ﻿waste ﻿waters,﻿
+etc.,﻿the﻿studies ﻿in﻿these ﻿fields ﻿are﻿multiplied ﻿and﻿it﻿data﻿collect ﻿is﻿much ﻿developed. ﻿However,﻿
+the﻿data﻿banks ﻿as﻿well﻿as﻿the﻿treatments ﻿and﻿analysis ﻿results ﻿relating ﻿to﻿it﻿carried ﻿out﻿by﻿the﻿
+researchers ﻿are﻿not﻿known ﻿from ﻿proper ﻿authorities. ﻿They ﻿also﻿are﻿not﻿put﻿at﻿the﻿disposal ﻿of﻿
+managers, ﻿other ﻿researchers, ﻿expert ﻿trade ﻿or﻿populations. ﻿YUSIIP ﻿can﻿contribute ﻿to﻿curing ﻿the﻿
+lack﻿of﻿legibility ﻿and﻿information ﻿pedagogy ﻿which ﻿can﻿lay﻿out﻿the﻿DWHSMS ﻿researchers. ﻿It﻿
+collects, ﻿cleans ﻿and﻿crosses ﻿supplements ﻿the﻿existing ﻿data﻿thanks ﻿to﻿its﻿CASE (﻿computer-aided﻿
+software ﻿engineering) ﻿set﻿up.﻿The﻿data﻿thus﻿developed ﻿are﻿diffused ﻿in﻿the﻿form ﻿of﻿tables ﻿or﻿of﻿
+interactive ﻿cards, ﻿which ﻿gives ﻿accurate ﻿information ﻿about ﻿each﻿Regional ﻿and﻿Local ﻿Authorities﻿
+(RLA) ﻿and﻿by﻿types ﻿of﻿quarters (﻿Figure ﻿6).
+Public ﻿education ﻿on﻿the﻿socio-sanitary ﻿and﻿environmental ﻿risks ﻿on﻿the﻿DWHSMS ﻿in﻿
+urban ﻿area:
+•﻿To﻿conduct﻿ public﻿ awareness﻿ campaigns﻿ in﻿keeping﻿ with﻿ waste﻿ and﻿environment﻿ management.﻿
+Thus﻿ the﻿population﻿ which﻿ lives﻿ in﻿the﻿insalubrity﻿ and﻿pollution﻿ of﻿its﻿environment﻿ would﻿ then﻿
+be﻿protected﻿from﻿pollutants﻿coming﻿from﻿domestic﻿waste;
+•﻿To﻿educate﻿ populations﻿ on﻿the﻿dangers﻿ which﻿ waste﻿ would﻿ represent﻿ on﻿health﻿ and﻿environment.Figure 5. The physical composition of waste in Yaoundé urban area
+International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+715.3. discussions
+YUSIIP﻿ Project﻿ implements﻿ a﻿strategy﻿ of﻿the﻿setting﻿ up﻿of﻿an﻿efficient﻿ model﻿ of﻿information﻿ systems﻿
+oriented﻿ towards﻿ the﻿decision-making﻿ aid﻿and﻿with﻿ the﻿diagnostic,﻿ in﻿order﻿ to﻿promote﻿ a﻿sustainable﻿
+urbanization﻿ in﻿Yaoundé(﻿ Cameroon).﻿ The﻿platform﻿ can﻿contribute﻿ to﻿the﻿piloting﻿ of﻿management﻿
+and﻿urban﻿ planning﻿ in﻿Yaoundé,﻿ i.e.,﻿to﻿better﻿ concentrate﻿ efforts﻿ and﻿resources﻿ towards﻿ the﻿relevant﻿
+urban ﻿problems ﻿thanks ﻿to﻿reliable ﻿indicators; ﻿to﻿contribute ﻿to﻿the﻿elaboration ﻿of﻿the﻿urban ﻿development﻿
+models﻿ and﻿the﻿implementation﻿ of﻿an﻿information﻿ system﻿ adapted﻿ to﻿the﻿city﻿is﻿one﻿of﻿the﻿objectives﻿
+of﻿our﻿research﻿project.﻿This﻿contribution﻿aims﻿to:
+•﻿Improve﻿the﻿processes﻿of﻿the﻿factors﻿influencing﻿the﻿urban﻿development;
+•﻿Set﻿up﻿the﻿means﻿of﻿improvement﻿of﻿the﻿practices﻿of﻿urban﻿development;
+•﻿Have﻿indicators﻿of﻿piloting﻿management﻿and﻿urban﻿planning;
+•﻿Introduce﻿the﻿tools﻿of﻿the﻿approach﻿quality;
+•﻿Integrate﻿the﻿individuals﻿and﻿the﻿populations﻿into﻿the﻿process﻿of﻿the﻿city﻿management.Being﻿ particularly﻿ the﻿DWHSMS,﻿ YUSIIP﻿ platform﻿ can﻿contribute﻿ so﻿that﻿proper﻿ authorities﻿ in﻿
+charge﻿ of﻿domestic﻿ waste,﻿ housing﻿ and﻿sanitation﻿ make﻿ to﻿these﻿ factors,﻿ the﻿priority﻿ of﻿their﻿ action.﻿
+Data﻿control﻿and﻿knowledge﻿goes:•﻿To﻿contribute﻿ to﻿controlling﻿ the﻿urban﻿ waste﻿ management,﻿ without﻿ which﻿ there﻿ will﻿be﻿more﻿ loss﻿
+in﻿human﻿ lives,﻿ imbalances﻿ in﻿the﻿economy﻿ and﻿the﻿ecosystems,﻿ poverty﻿ and﻿the﻿delay﻿ in﻿the﻿
+development﻿of﻿Yaoundé﻿compared﻿with﻿others﻿of﻿the﻿same﻿size﻿cities;
+•﻿To﻿contribute﻿to﻿the﻿awareness﻿of﻿populations﻿on﻿the﻿dangers﻿which﻿would﻿present﻿for﻿example﻿
+urban﻿ waste﻿ in﻿health﻿ and﻿environment.﻿ This﻿ awareness﻿ must﻿ pass﻿obligatorily﻿ by﻿the﻿availability﻿Figure 6. Results of studies on DWHSMS
+International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+72of﻿data﻿and﻿knowledge﻿ on﻿these﻿ influential﻿ factors﻿ in﻿urban﻿ health,﻿ which﻿ constitute﻿ the﻿required﻿
+passage﻿for﻿sustainable﻿management﻿of﻿urban﻿areas.
+However,﻿ YUSIIP﻿ data﻿ are﻿still﻿incomplete﻿ and﻿the﻿various﻿ cases﻿ of﻿studies﻿ are﻿not﻿carried﻿ out﻿
+in﻿a﻿systematic﻿ way.﻿ The﻿task﻿which﻿ consists﻿ in﻿making﻿ available﻿ the﻿produced﻿ data﻿ by﻿the﻿whole﻿
+stakeholders, ﻿public ﻿and﻿private ﻿organizations, ﻿social ﻿networks, ﻿connected ﻿objects ﻿imply ﻿that﻿YUSIIP﻿
+is﻿integrated﻿in﻿a﻿project﻿of﻿the﻿city.
+5.4. Prospects for Master data Management
+With ﻿technological ﻿advanced, ﻿and﻿the﻿view ﻿of﻿computerization “﻿proprietary”, ﻿methodological﻿
+approaches﻿ and﻿models﻿ of﻿different﻿ systems﻿ have﻿ often﻿ ignored﻿ the﻿transverse﻿ dimension﻿ of﻿urban﻿
+processes.﻿ Today,﻿ with﻿ the﻿need﻿ for﻿interoperability﻿ of﻿different﻿ systems﻿ for﻿information﻿ exchange,﻿
+enterprise﻿ architecture﻿ solutions﻿ alone﻿ have﻿ found﻿ their﻿ limits.﻿ Therefore,﻿ an﻿enrichment﻿ of﻿these﻿
+solutions ﻿with﻿the﻿implementation ﻿of﻿Service ﻿Oriented ﻿Architecture (﻿SOA) ﻿and﻿Reference ﻿Data﻿
+Management(﻿ MDM)﻿ contributed﻿ to﻿the﻿integration﻿ of﻿heterogeneous﻿ and﻿sparse﻿ data.﻿ It﻿is﻿in﻿this﻿
+sense﻿that﻿the﻿perspectives﻿of﻿the﻿YUSIIP﻿project﻿to﻿develop﻿the﻿data﻿referential﻿relate﻿to:
+•﻿Produce ﻿continuously ﻿data﻿which ﻿the﻿availability ﻿will﻿not﻿be﻿anachronistic ﻿any﻿more ﻿in﻿the﻿absence﻿
+of﻿method﻿and﻿adapted﻿means;
+•﻿Produce﻿continuously﻿data﻿and﻿reliable﻿statistics.
+6. CoNCLUSI oN
+African﻿ cities﻿ in﻿general﻿ and﻿those﻿ of﻿Cameroon﻿ in﻿particular﻿ face﻿a﻿waste﻿ management﻿ problem﻿ due﻿
+on﻿the﻿one﻿hand﻿to﻿the﻿high﻿population ﻿density ﻿in﻿urban ﻿areas ﻿and﻿on﻿the﻿other ﻿hand﻿to﻿the﻿development﻿
+of﻿spontaneously﻿ inhabited﻿ neighborhoods.﻿ This﻿ situation﻿ is﻿at﻿the﻿origin﻿ of﻿the﻿development﻿ of﻿
+diseases﻿ such﻿ as﻿cholera,﻿ malaria,﻿ typhoid,﻿ asthma,﻿ etc.,﻿ which﻿ emanate﻿ from﻿ the﻿pollution﻿ of﻿the﻿
+environment ﻿by﻿waste ﻿of﻿various ﻿kinds. ﻿It﻿is﻿therefore ﻿becoming ﻿important ﻿for﻿cities ﻿and﻿decentralized﻿
+local﻿ authorities﻿ to﻿take﻿ an﻿interest﻿ in﻿controlling﻿ urbanization﻿ and﻿all﻿that﻿goes﻿ with﻿ it,﻿in﻿order﻿ to﻿
+ensure﻿ the﻿well-being﻿ of﻿populations.﻿ Thus,﻿ this﻿control﻿ of﻿urbanization﻿ will﻿integrate﻿ good﻿ waste﻿
+management.﻿ However,﻿ the﻿lack﻿of﻿DWHSMS﻿ data﻿ on﻿the﻿level﻿ of﻿knowledge﻿ of﻿the﻿population﻿ of﻿
+African﻿ cities,﻿ urban﻿ waste﻿ and﻿its﻿composition(﻿ physical,﻿ chemical,﻿ microbiological,﻿ etc.)﻿ expose﻿
+the﻿population﻿ and﻿the﻿environment﻿ to﻿the﻿proliferation﻿ of﻿several﻿ deadly﻿ diseases,﻿ contamination﻿ by﻿
+the﻿pathogen﻿ and﻿chemical﻿ substances.﻿ The﻿multiple﻿ and﻿varied﻿ risks﻿ associated﻿ with﻿ urban﻿ waste,﻿ in﻿
+particular﻿ household﻿ waste﻿ in﻿urban﻿ areas,﻿ could﻿ be﻿avoided﻿ if﻿the﻿data﻿ listed﻿ above﻿ were﻿ available.﻿
+Our﻿previous ﻿work, ﻿which ﻿focused ﻿on﻿the﻿study ﻿of﻿mechanisms ﻿for﻿the﻿integration ﻿and﻿interoperability﻿
+of﻿heterogeneous﻿ and﻿multi-source﻿ information﻿ systems,﻿ in﻿a﻿context﻿ of﻿African﻿ cities,﻿ particularly﻿
+Cameroonian ﻿cities, ﻿marked ﻿by﻿a﻿lack﻿of﻿resources (﻿financial, ﻿personal, ﻿technical), ﻿insufficient ﻿dialogue﻿
+between﻿ the﻿various﻿ actors﻿ and﻿scattered﻿ and﻿not﻿always﻿ reliable﻿ information,﻿ enabled﻿ the﻿YUSIIP﻿
+to﻿be﻿implemented.﻿ These﻿ results﻿ call﻿for﻿an﻿integrated﻿ approach﻿ to﻿sustainable﻿ organization,﻿ urban﻿
+health,﻿environment﻿and﻿poverty﻿in﻿urban﻿development﻿policies.﻿The﻿basic﻿functions﻿of﻿the﻿YUSIIP﻿
+are﻿to﻿produce﻿ global﻿ knowledge﻿ about﻿ the﻿city,﻿ to﻿make﻿ available﻿ the﻿data﻿ produced﻿ by﻿all﻿actors,﻿
+public﻿ and﻿private﻿ organizations,﻿ social﻿ networks,﻿ connected﻿ objects.﻿ In﻿the﻿case﻿ of﻿DWHSMS,﻿ the﻿
+YUSIIP’s﻿ distributed﻿ data﻿ warehouse﻿ produces﻿ information﻿ on﻿urban﻿ waste﻿ management,﻿ housing,﻿
+sanitation﻿ and﻿indicators,﻿ which﻿ would﻿ reduce﻿ the﻿social,﻿ health﻿ and﻿environmental﻿ risks﻿ of﻿these﻿
+factors.﻿ The﻿distributed﻿ data﻿ warehouse﻿ could﻿ provide﻿ a﻿basis﻿ for﻿public﻿ education﻿ in﻿urban﻿ waste﻿
+management﻿ and﻿environmental﻿ protection.﻿ The﻿characterization﻿ of﻿urban﻿ waste﻿ can﻿help﻿ authorities﻿
+to﻿make﻿ waste﻿ management﻿ a﻿priority﻿ for﻿their﻿ action﻿ and﻿to﻿remove﻿ the﻿dangers﻿ that﻿waste﻿ would﻿
+pose﻿ to﻿health﻿ and﻿the﻿urban﻿ environment.﻿ In﻿terms﻿ of﻿DWHSMS﻿ research,﻿ our﻿work﻿ is﻿an﻿opening﻿International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+73for﻿the﻿implementation﻿ of﻿an﻿integrated﻿ and﻿participatory﻿ waste﻿ management﻿ plan﻿ in﻿Yaoundé.﻿ As﻿a﻿
+perspective﻿we﻿count:
+•﻿Intensify﻿ the﻿collection﻿ of﻿information﻿ on﻿household﻿ waste,﻿ housing﻿ and﻿sanitation﻿ through﻿ the﻿
+promotion﻿ and/or﻿ strengthening﻿ of﻿public-private-civil﻿ society﻿ partnerships﻿ for﻿the﻿enhancement﻿
+of﻿databases﻿and﻿the﻿refreshing﻿of﻿the﻿YUSIIP﻿data﻿warehouse;
+•﻿Integrate﻿ data﻿ on﻿the﻿behavior,﻿ practices﻿ and﻿attitudes﻿ of﻿the﻿population﻿ of﻿Yaoundé﻿ regarding﻿
+household﻿waste;
+•﻿Transform ﻿YUSIIP ﻿into﻿a﻿true﻿open ﻿platform ﻿and﻿services (﻿OpenPaas) ﻿and﻿application ﻿on﻿
+DWHSMS﻿management.All﻿this﻿will﻿help﻿ to﻿reinvent﻿ the﻿way﻿urbanization﻿ is﻿thought﻿ and﻿urban﻿ waste﻿ is﻿managed﻿ by﻿
+national﻿authorities,﻿the﻿city﻿and﻿local﻿communities.International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+74ReFeReNCeS
+Aina, ﻿M.﻿P.,﻿Kpondjo, ﻿N.﻿M.,﻿Adounkpe, ﻿J.,﻿Chougourou, ﻿D.,﻿&﻿Moudachirou, ﻿M.(﻿2012). ﻿Study ﻿of﻿the﻿
+purification﻿ efficiencies﻿ of﻿three﻿ floating﻿ macrophytes﻿ in﻿wastewater﻿ treatment.﻿ International Research Journal 
+of Environmental Sciences,﻿1(3),﻿37–43.
+Aloueimine,﻿ S.﻿O.,﻿Matejka,﻿ G.,﻿Zurbrugg,﻿ C.,﻿&﻿Sidi,﻿ M.(﻿2006).﻿ Characterization﻿ of﻿waste﻿ in﻿Nouakchott-part﻿
+2:﻿Results﻿in﻿the﻿dry﻿season﻿and﻿wet﻿season.﻿Revue Francophone Waste-Industrial Ecology,﻿44.Avignon, ﻿L.,﻿Joguet, ﻿D.,﻿&﻿Pezziardi, ﻿P.(﻿2000). ﻿Intégration d’applications: l’EAI au coeur du e-business .﻿Eyrolles.
+Ayissi, ﻿E.,﻿&﻿Moskolai, ﻿N.(﻿2017). ﻿Urban ﻿Master ﻿Data﻿Management: ﻿Case ﻿of﻿the﻿YUSIIP ﻿Platform. ﻿In﻿Handbook﻿
+of﻿Research﻿on﻿Geographic﻿Information﻿Systems﻿Applications﻿and﻿Advancements.Bagayoko,﻿ C.﻿O.,﻿Dufour,﻿ J.﻿C.,﻿Chaacho,﻿ S.,﻿Bouhaddou,﻿ O.,﻿&﻿Fieschi,﻿ M.(﻿2010).﻿ Open﻿ source﻿ challenges﻿ for﻿
+hospital﻿ information﻿ system(﻿ HIS)﻿ in﻿developing﻿ countries:﻿ A﻿pilot﻿ project﻿ in﻿Mali.﻿ BMC Medical Informatics 
+and Decision Making,﻿10(1),﻿22.﻿doi:10.1186/1472-6947-10-22﻿PMID:20398366Corcoran,﻿ E.,﻿Nellemann,﻿ C.,﻿Baker,﻿ E.,﻿Bos,﻿ R.,﻿Osborn,﻿ D.,﻿&﻿H.,﻿S.(﻿2010).﻿ Sick﻿ water,﻿ The﻿central﻿ role﻿of﻿
+wastewater﻿ management﻿ in﻿sustainable﻿ development,﻿ Rapid﻿ response﻿ assessment.﻿ Norway (Birkeland Trykkeri) 
+UNEP/UN-Habitat,﻿23-49.
+Fonkou,﻿ T.,﻿Agendia,﻿ P.,﻿Kengne,﻿ I.,﻿Akoa,﻿ A.,﻿&﻿Nya,﻿ J.(﻿2002).﻿ Potentials﻿ of﻿water﻿ lettuce(﻿ Pistia﻿ stratiotes)﻿
+in﻿domestic﻿ sewage﻿ treatment﻿ with﻿ macrophytic﻿ lagoon﻿ systems﻿ in﻿Cameroon.﻿ In﻿Proceedings of International 
+Symposium on Environmental Pollution Control and Waste management, EPCOWM’2002(﻿pp.﻿709-714).
+Guerrero,﻿ L.﻿A.,﻿Maas,﻿ G.,﻿&﻿Hogland,﻿ W.(﻿2013).﻿ Solid﻿ waste﻿ management﻿ challenges﻿ for﻿cities﻿ in﻿developing﻿
+countries.﻿Waste Management,﻿33(1),﻿220–232.﻿doi:10.1016/j.wasman.2012.09.008﻿PMID:23098815Inmon﻿Bill,﻿W.-H.(﻿1994).﻿Building the data warehouse.﻿New﻿York.Jarke,﻿ M.,﻿Lenzerini,﻿ M.,﻿Vassiliadis,﻿ P.,﻿&﻿Vassiliou,﻿ Y.(﻿2000).﻿ Fundamentals of Data Warehouses. Vernon 
+Hoffner.﻿Lawrence﻿Technological﻿University.﻿doi:10.1007/978-3-662-04138-3Kouamou,﻿ G.﻿E.,﻿Eteme,﻿ A.﻿A.,﻿&﻿Pettang,﻿ C.(﻿2008).﻿ Capitalisation﻿ des﻿connaissances﻿ sur﻿le﻿milieu﻿ urbain﻿ à﻿
+travers﻿ une﻿plate-forme﻿ fédératrice﻿ des﻿données.﻿ Journal of Decision Systems,﻿ 17(4),﻿ 487–499.﻿ doi:10.3166/
+jds.17.487-499Longépé,﻿C.(﻿2003).﻿The enterprise architecture IT project: the urbanisation paradigm.﻿Elsevier.Manegabe,﻿ B.﻿J.,﻿Marie-Médiatrice,﻿ N.﻿K.,﻿Barr﻿ Dewar,﻿ J.,﻿&﻿Christian,﻿ S.﻿B.(﻿2017).﻿ Antibiotic﻿ resistance﻿ and﻿
+tolerance﻿ to﻿heavy﻿ metals﻿ demonstrated﻿ by﻿environmental﻿ pathogenic﻿ bacteria﻿ isolated﻿ from﻿ the﻿Kahwa﻿ River,﻿
+Bukavu﻿ Town,﻿ Democratic﻿ Republic﻿ of﻿the﻿Congo.﻿ The International Journal of Environmental Studies,﻿ 74(2),﻿
+290–302.﻿doi:10.1080/00207233.2017.1284461Morrissey,﻿ A.﻿J.,﻿&﻿Browne,﻿ J.(﻿2004).﻿ Waste﻿ management﻿ models﻿ and﻿their﻿ application﻿ to﻿sustainable﻿ waste﻿
+management. ﻿Waste Management (New York, N.Y.) ,﻿24(3),﻿297–308. ﻿doi:10.1016/j.wasman.2003.09.005﻿
+PMID:15016418Ngnikam,﻿ E.,﻿Tanawa,﻿ E.,﻿Rousseaux,﻿ P.,﻿Riedacker,﻿ A.,﻿&﻿Gourdon,﻿ R.(﻿2002).﻿ Evaluation﻿ of﻿the﻿potentialities﻿
+to﻿reduce ﻿greenhouse ﻿gases (﻿GHG) ﻿emissions ﻿resulting ﻿from ﻿various ﻿treatments ﻿of﻿municipal ﻿solid ﻿wastes﻿
+(MSW)﻿ in﻿moist﻿ tropical﻿ climates:﻿ Application﻿ to﻿Yaounde.﻿ Waste Management & Research,﻿ 20(6),﻿ 501–513.﻿
+doi:10.1177/0734242X0202000604﻿PMID:12549662Pettang, ﻿C.,﻿Mbumbia, ﻿L.,﻿&﻿Foudjet, ﻿A.(﻿1997). ﻿Estimating ﻿building ﻿materials ﻿cost﻿in﻿urban ﻿housing ﻿construction﻿
+projects,﻿ based﻿ on﻿matrix﻿ calculation:﻿ The﻿case﻿of﻿Cameroon.﻿ Construction & Building Materials,﻿ 11(1),﻿ 47–55.﻿
+doi:10.1016/S0950-0618(96)00030-X
+Prélaz-Droux,﻿ R.,﻿&﻿Musy,﻿ A.(﻿1994).﻿ A﻿systemic﻿ approach﻿ to﻿land﻿ information﻿ systems﻿ for﻿sustainable﻿ land﻿
+use﻿planning.﻿In XII world congress of the International Commission of Agricultural Engineering,﻿206-213.
+Rajaganapathy ﻿V.,﻿Xavier ﻿F.,﻿Sreekuma ﻿D.,﻿Mandal ﻿P.K.,﻿Heavy ﻿metal ﻿contamination ﻿in﻿soil,﻿water ﻿and﻿fodder ﻿and﻿
+their﻿presence ﻿in﻿livestock ﻿and﻿products ﻿[Review]. ﻿Journal of Environmental Science and Technology ,﻿4,﻿234–249.
+Reix,﻿R.,﻿Fallery,﻿B.,﻿Kalika,﻿M.,﻿&﻿Rowe,﻿F.(﻿2016).﻿Systèmes d’information et management.﻿Vuibert.International Journal of Strategic Information Technology and Applications
+Volume 9 • Issue 3 • July-September 2018
+75Adolphe Ayissi Eteme has a Ph.D. in Computer Science and Engineering from Polytechnic National School of 
+the University of Yaounde I (UYI) in Cameroon in joint supervision with the Lorraine Laboratory for Computer Science and its Applications (LORIA) in Nancy, France. He is a permanent Senior Lecturer of Cameroonian Universities affected at University Institute of Technology (IUT), University of Ngaoundere in Cameroon where he teaches computer science and applied mathematics. He teaches in various universities and colleges: Computer African Institute (IAI) Cameroon representation in Yaoundé (2000-2007), Advanced School of Mass Communication (ASMAC) in 2004, Higher Teacher Training College (HTTC) of Yaoundé, Jerome Polytechnic Institute at the Catholic University of Douala and introduction to computers and the pursuit of scientific and technical information to the Department of sociology, Faculty of Arts, Letters and Human Sciences (FALSH) of UYI. He graduated from Belgian universities (UCL, FUNDP): Master’s in computer science, Specialized Studies Diploma (DESS) in International Economics and Development and an Aggregation Higher Secondary Education (AESS) computer, after graduating side in Cameroon. His research fields include: information systems and information systems in the public sector, databases and data warehouses, heterogeneous data, urban data, multi-source information systems, Oriented Systems Services (SOA), urbanization information systems, MDM (Master Data Management). He developed a prototype platform called Yaounde Urban Integrated Systems and Interoperability Platform (YUSIIP), capital of the Republic of Cameroon. He is also since 2003, Chief Information Officer (CIO) at the Presidency of the Republic of Cameroon.
+Justin Moskolai Ngossaha. He is a PhD of the National Polytechnic Institute of Toulouse in France and the University 
+of Ngaoundere in Cameroon. He is affiliated to two units of research namely the Doctoral Unit in the Applied Mathematics and Computer Science at the Faculty of Science of Ngaoundere and the Production Engineering Laboratory (LGP) of National Engineering School of Tarbes (ENIT). He is an Assistant Lecturer in Saint Jerome Polytechnic Institute at the Catholic University of Douala. His research activities deal with engineering systems, heterogeneous databases, management knowledge, distributed systems, decision support systems, knowledge engineering and services oriented architectures.Repetti, ﻿A.,﻿&﻿Prélaz-Droux, ﻿R.(﻿2003). ﻿An﻿Urban ﻿Monitor ﻿as﻿support ﻿for﻿a﻿participative ﻿management ﻿of﻿developing﻿
+cities.﻿Habitat International,﻿27(4),﻿653–667.﻿doi:10.1016/S0197-3975(03)00010-9
+Rigamonti,﻿ L.,﻿Sterpi,﻿ I.,﻿&﻿Grosso,﻿ M.(﻿2016).﻿ Integrated﻿ municipal﻿ waste﻿ management﻿ systems:﻿ An﻿indicator﻿
+to﻿assess ﻿their﻿environmental ﻿and﻿economic ﻿sustainability. ﻿Ecological Indicators ,﻿60,﻿1–7.﻿doi:10.1016/j.
+ecolind.2015.06.022Ryser, ﻿B.(﻿2002). ﻿Etude pour la création d’un entrepôt de données dans le cadre de l’assurance vie et 
+transformation des données en informations utiles en vue d’une prise de décision, Mémoire pour diplôme 
+postgrade en informatique et organisation.﻿Suisse:﻿HEC,﻿Université﻿de﻿Lausanne.
+Samanta,﻿ A.,﻿Bera,﻿ P.,﻿Khatun,﻿ M.,﻿Sinha,﻿ C.,﻿Pal,﻿P.,﻿Lalee,﻿ A.,﻿&﻿Mandal,﻿ A.(﻿2012).﻿ An﻿investigation﻿ on﻿heavy﻿
+metal ﻿tolerance ﻿and﻿antibiotic ﻿resistance ﻿properties ﻿of﻿bacterial ﻿strain ﻿Bacillus ﻿sp.﻿isolated ﻿from﻿municipal ﻿waste.﻿
+J. Microbiol. Biotech. Res,﻿2(1),﻿178–189.Shekdar,﻿ A.(﻿2009).﻿ Sustainable﻿ solid﻿ waste﻿ management:﻿ An﻿integrated﻿ approach﻿ for﻿Asian﻿ countries.﻿ Journal 
+of Waste Management,﻿29(4),﻿1438–1448.﻿doi:10.1016/j.wasman.2008.08.025﻿PMID:19081236Shekdar,﻿ A.,﻿2009.﻿ Sustainable﻿ solid﻿ waste﻿ management:﻿ An﻿integrated﻿ approach﻿ for﻿Asian﻿ countries.﻿ Journal 
+of Waste Management,﻿29,﻿1438–1448.Soto, ﻿J.﻿Á.,﻿Werner, ﻿Jahn, ﻿M.,﻿Pullmann, ﻿J.,﻿Bonino, ﻿D.,﻿Pastrone, ﻿C.,﻿&﻿Spirito, ﻿M.(﻿2016). ﻿Towards ﻿a﻿Federation﻿
+of﻿Smart﻿City﻿Services.﻿In﻿Proceeding of International Conference on Recent Advances in Computer Systems.Sy,﻿I.,﻿Koita,﻿ M.,﻿Traoré,﻿ D.,﻿Keita,﻿ M.,﻿Lo,﻿B.,﻿Tanner,﻿ M.,﻿&﻿Cisse,﻿ G.(﻿2011).﻿ Vulnérabilité﻿ sanitaire﻿ et﻿
+environnementale ﻿dans﻿les﻿quartiers ﻿défavorisés ﻿de﻿Nouakchott (﻿Mauritanie): ﻿analyse ﻿des﻿conditions ﻿d’émergence﻿
+et﻿de﻿développement ﻿de﻿maladies ﻿en﻿milieu ﻿urbain ﻿sahélien. ﻿VertigO-la revue électronique en sciences de 
+l’environnement, 11(2).UN-DESA.(﻿2014).﻿World﻿Urbanization﻿Prospects.Wéthé, ﻿J.,﻿Maïga, ﻿A.﻿H.,﻿Radoux, ﻿M.,﻿Tanawa, ﻿E.,﻿&﻿Seidl, ﻿M.(﻿2002). ﻿Use﻿of﻿macrophytes ﻿for﻿domestic ﻿wastewater﻿
+treatment﻿in﻿developing﻿countries.﻿Discharged urban waters: Resource or Risk?, 27.

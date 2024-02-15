@@ -1,0 +1,1675 @@
+OPEN BANKING: 
+HOW TO DESIGN 
+FOR FINANCIAL 
+INCLUSION
+Ariadne Plaitakis and Stefan Staschen October 2020Consultative Group to Assist the Poor
+1818 H Street, NW, MSN F3K-306
+Washington, DC 20433 USA
+Internet: www.cgap.org
+Email: cgap@worldbank.org
+Telephone: +1 202 473 9594
+Cover photo by Rabin Chakrabarti, 2013 CGAP Photo Contest.
+© CGAP/World Bank, 2020.
+RIGHTS AND PERMISSIONS
+This work is available under the Creative Commons Attribution 4.0 International Public License 
+(https://creativecommons.org/licenses/by/4.0/ ). Under the Creative Commons Attribution 
+license, you are free to copy, distribute, transmit, and adapt this work, including for commercial 
+purposes, under the terms of this license.
+Attribution—Cite the work as follows: Plaitakis, Ariadne, and Stefan Staschen. 2020. “Open 
+Banking: How to Design for Financial Inclusion.” Working Paper. Washington, D.C.: CGAP. 
+All queries on rights and licenses should be addressed to CGAP Publications, 1818 H Street, NW, 
+MSN F3K-306, Washington, DC 20433 USA; e-mail: cgap@worldbank.org .CONTENTS
+Executive Summary 1
+Section 1:  Introduction  2
+Section 2:  Why Open Banking Matters for Poor People 6
+ Open banking and financial inclusion 6
+ Product innovation  7
+ Emerging business models 10
+Section 3:  12 Design Components 14
+ Components that determine scope  14
+ Components related to implementation 19
+Section 4: Implications for Regime Design 29
+Appendix A:  Glossary of Terms 32
+Appendix B:  Brazilian Open Banking—A Case Study 34
+Appendix C:  Mexican Open Banking—A Case Study 37
+References  40Acknowledgments
+The authors of this Working Paper are Ariadne Plaitakis, senior policy consultant, and Stefan 
+Staschen, CGAP senior financial sector specialist. Gregory Chen, CGAP policy lead, oversaw 
+this effort. Peer reviews were provided by Michel Hanouch, CGAP senior financial sector 
+specialist, and Xavier Faz, CGAP business models lead. Feedback also was provided by 
+Denise Dias, CGAP senior policy consultant, and Gabriela Zapata Alvarez. CGAP. The authors 
+thank many other experts who have contributed to the paper, provided feedback, shared their 
+experience, or cooperated with CGAP on in-country projects, including: 
+• Thiago Alvarez (Guiabolso)
+• Caron Beaton-Wells (Melbourne Business School and Melbourne Law School)
+• Matt Homer (New York State Department of Financial Service)
+• Gavin Littlejohn (FDATA Global) 
+• David O’Brian (Meerkat)
+• Diogo Silva (Central Bank of Brazil)    
+• Toshio Taki (Money Forward) 
+• Joy Wann (BIS)
+Thanks also go to the Central Bank of Brazil, the Central Bank of Mexico, the Reserve Bank 
+of India, the National Banking and Securities Commission of Mexico, the Superintenance of 
+Private Insurance of Brazil, the Securities and Exchange Commission of Brazil, Sahamati, and 
+many other stakeholders—including numerous fintech firms—for invaluable insights.
+Disclaimer
+Any conclusions or viewpoints expressed in this paper are solely those of the authors. The 
+findings, interpretations, and conclusions expressed in this product do not necessarily reflect the 
+views of CGAP/World Bank, the Executive Directors of the World Bank, or the governments they 
+represent. The World Bank does not guarantee the accuracy of the data included in this work.1
+EXECUTIVE SUMMARYEXECUTIVE SUMMARY
+OPEN BANKING IS TRANSFORMING THE FINANCIAL SERVICES 
+industry in advanced economies. By breaking open the data silos of traditional banks, 
+open banking regimes allow fintechs and other innovators to access customer data, 
+including transaction data, and use these data to develop new products and services that are 
+better suited to the needs of consumers. For emerging and developing economies (EMDEs), 
+open banking holds out the promise to foster innovation and lower costs in ways that will make 
+it more economical to serve the underserved and unbanked and offer products and services 
+better suited to their needs. 
+However, open banking regimes as a means for furthering financial inclusion are largely untested 
+in EMDEs. To better understand the opportunities and risks, CGAP has conducted a landscaping 
+review of 12 open banking regimes, including deep dives into seven regimes and two case 
+studies, to learn how they can be designed to enable products and business models that could be 
+beneficial for financial inclusion, and how these may alleviate pain points of low-income individuals. 
+Based on this review, CGAP has identified 12 design components that policy makers need to 
+consider when developing a framework for an open banking regime. Five of these components 
+are critical to expanding financial services for poor people, or what we call “financial inclusion 
+by design.” These five design components address: 
+1. Who is required to share data and who can access the data.
+2. What types of data are shared.
+3. Which industries are covered (e.g., banking only or utilities and telecoms). 
+4. Whether payment initiation is enabled in the regime.
+5. Who bears the cost of the regime (including for each data exchange and the set-up of the 
+relevant infrastructure).
+How these questions are addressed will have a significant impact on a regime’s potential to achieve 
+financial inclusion objectives. For example, the greater the number of participants required or 
+permitted to share the data and access them, the greater the diversity of new services that can be 
+enabled, and the more competition that could result. Similarly, the greater the breadth in the types of 
+eligible data, the more likely that products relevant for low-income individuals can be developed.
+Since it is still early days for open banking regimes, in particular in EMDEs, these early findings need 
+to be tested further and substantiated through more in-depth research in a range of countries. In the 
+meantime, this paper is intended to catalyze policy makers to consider how they can design open 
+banking and other data-sharing frameworks from the perspective of financial inclusion. 2
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+SECTION 1
+1 We use the term “open banking” in this report because it is widely used in the industry. Although the term 
+“data sharing” technically may be more suitable, in certain instances the data shared do not relate to banking 
+but to other financial services. Also, the data are not “open,” per se, but rather shared only with certain 
+authorized third parties.INTRODUCTION
+OPEN BANKING IS TRANSFORMING FINANCIAL SERVICES FOR 
+consumers, banks, fintechs , regulators, and other financial sector stakeholders.1 
+Traditionally, banks have held a monopoly on consumer transaction data but have 
+made scant use of this treasure trove of proprietary information. Since its adoption in advanced 
+economies in 2018, open banking has begun to create significant changes in the marketplace 
+by breaking down data silos within the financial sector and opening up access to data to 
+a wider range of users. The rise of fintechs and other innovative business models, such as 
+platforms, has shown that new market players often are better positioned or have stronger 
+incentives to leverage data and, based on that data, can offer consumers a range of new 
+products and services at a lower cost. Middle- and low-income countries are now starting to 
+explore the promise of open banking. 
+Open banking may offer many advantages for people with low incomes. If properly structured 
+and with the right market conditions, the exchange of data that results from open banking can 
+support financial resilience and financial inclusion in several ways. First, when fintechs and 
+financial institutions are able to access customer financial data held by incumbent banks and 
+other financial institutions, these new entrants can create new products. Compared to current 
+products offered by existing institutions, these new savings, credit, and financial management 
+products would provide improved value for those who are banked but underserved. 
+The unbanked may benefit if data held by nonfinancial institutions such as utility companies 
+and telecommunications (telecoms) providers also can be accessed. Second, market entry 
+by new types of entities facilitated by open banking—such as account information service 
+providers  (AISPs) and payment initiation service providers  (PISPs)—can increase competition 
+in financial services markets. This can lead to lower prices and increased product diversity, 
+which would render financial services more affordable to low-income populations. Further, due 
+to their lower cost structures, entities based on these new business models may now view as 
+profitable previously unprofitable segments of the population such as the unbanked and the 
+underbanked. This results in an increase in the size of the customer pie, with other financial 
+sector stakeholders incentivized to innovate and reach low-income populations as well. 3
+InTRodUCTIonNot all emerging and developing economies (EMDEs) are in a position to introduce an open 
+banking regime, given capacity and resource constraints as well as legal and institutional 
+requirements. Open banking regimes , in particular, raise supervisory and enforcement 
+challenges, especially on tech-intensive issues such as quality of service, denial of service, 
+cybersecurity, and so forth. Further, with open banking schemes nascent worldwide, it is too 
+soon to know whether the introduction of open banking regimes would benefit EMDEs in every 
+context or whether certain market contexts would benefit more than others. 
+Open banking is just one of several initiatives that support financial inclusion and innovation, 
+and policy makers may decide to prioritize policy changes such as opening basic accounts 
+or creating innovation facilitators like regulatory sandboxes. However, for regulators in EMDEs 
+that prioritize open banking implementation and want to ensure that it supports low-income 
+populations, we submit that a sound open banking regime’s design should deliberately support 
+financial inclusion as a central objective. We call the concept “financial inclusion by design.”
+This paper is based on a landscape review of 12 open banking regimes. It provides our early 
+findings on the types of open banking-enabled products and business models we believe 
+would be beneficial to financial inclusion, and how they may alleviate relevant pain points for 
+low-income individuals. We next examine the design implications the findings have on open 
+banking regulatory frameworks. To conclude, we identify the 12 design components critical 
+to any open banking regime and the five specific considerations EMDEs should contemplate 
+if they want their regime to support financial inclusion as a policy objective (i.e., financial 
+inclusion by design). As it is still early days for most countries, EMDEs in particular, that 
+have introduced an open banking regime, our initial findings need to be further tested and 
+substantiated through in-depth research in a range of countries. Finally, Appendix A provides 
+a glossary of industry terms found in the paper, while Appendix B and Appendix C provide 
+in-depth case studies on two front-runner open banking regimes in Latin America (Brazil and 
+Mexico, respectively).
+What is an open banking regime? 
+The term “open banking” is loosely used by the media and the financial services industry to 
+designate a range of data-sharing practices—from bilateral data-sharing contracts and financial 
+services providers  (FSPs) individually opening application programming interfaces (APIs)  (e.g., 
+Paytm)2 to voluntary private sector initiatives of collective data sharing (e.g., the open banking 
+initiative in Nigeria3 and The Clearing House4 in the United States) and mandatory data sharing 
+regimes  (e.g., Open Banking in the United Kingdom and PSD2  in the European Union). Open 
+banking-enabled products include consumer products and services that use data obtained 
+through open banking to inform product design, for example, personal financial management, 
+budgeting applications, and credit score monitoring services, among others.
+2 See the Paytm website:  https://paytm.com
+3 See the Open Banking Nigeria website: https://openbanking.ng  
+4 See The Clearing House website: https://www.theclearinghouse.org4
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+Since the primary audience for this paper 
+is financial services and competition 
+regulators, we focus on open banking 
+regimes. We define an “open banking 
+regime” as a consent-based data-sharing 
+scheme mandated or supported by 
+regulators toward the goal of creating 
+competition and fostering innovation in 
+financial services. Although many regimes 
+include payment initiation (a third-party 
+service that facilitates payment initiation for 
+the customer), it is not an open banking 
+regime requirement, and therefore it is not 
+included in our definition. Within an open 
+banking regime, banks and FSPs (i.e., data 
+holders ) exchange consumer data with 
+other FSPs and/or third-party providers  
+(TPPs) (i.e., data users ) on the basis of 
+customer consent. Data sharing usually 
+does not require a contractual relationship 
+between data holders and data users. 
+In addition, data users often are subject 
+to a licensing/authorization framework or 
+technical and security standards at the 
+very least. Purely voluntary private sector 
+schemes and unilateral open APIs , are excluded from our definition because these schemes 
+and API initiatives do not include regulatory involvement. See Box 1 for key definitions used 
+throughout this paper.
+We also distinguish open banking regimes from “ data portability .” Often expressed as a 
+consumer right, data portability is the ability of an individual to obtain, upon request, their 
+own personal data from current data holders in a structured, commonly used, and machine-
+readable format. Consumers are entitled to use these data for their own purposes—across 
+services and with a variety of data users. Where technically feasible, it may allow individuals 
+to request that the data holder transmit data directly to a nominated data user. Data 
+portability is often a right found in data protection laws (e.g., GDPR  in the European Union) 
+that applies to all personal data held by data holders. It differs from open banking not only 
+in its much wider scope, covering all personal data (vs. financial data), but in the fact that it 
+focuses on a right given to individuals. Open banking regimes usually create a data-sharing 
+framework with rights and obligations imposed on legal entities (data holders and data users) 
+upon individual consent. BOX 1.  Key definitions 
+Open banking
+The exchange of consumer data between banks 
+and other FSPs (i.e., data holders), on the basis of 
+customer consent, with other FSPs and/or TPPs 
+such as fintechs (i.e., AISPs and PISPs—both known 
+as data users). Although payment initiation is an 
+important element of open banking from a financial 
+inclusion perspective (as discussed in Section 3), it is 
+not essential to the functioning of open banking, and 
+therefore it is not included in its definition.
+Open data
+The exchange of consumer data between private 
+sector institutions, including financial institutions and 
+nonbank financial institutions such as mobile money 
+issuers, utility providers, and telecoms, with other 
+such institutions on the basis of customer consent. 
+Open APIs
+Proprietary APIs that an FSP makes widely 
+available for other companies to consume, allowing 
+these other companies to seamlessly plug into the 
+FSP’s system.5
+InTRodUCTIonOn this basis CGAP has undertaken a landscape review of 12 open banking regimes,5 with 
+a deep dive into seven of those regimes.6 In choosing which countries to study we aimed 
+for diversity in geography and regime type (e.g., mandatory vs. voluntary, standardized vs. 
+nonstandardized APIs).7 We reviewed only regimes that had sufficient public documentation 
+available to determine, at a minimum, the regime’s main elements and the rationale 
+and objectives behind it. For deep dive jurisdictions, we looked for early lessons from 
+implementation. Where possible, we supplemented desk-based research with interviews with 
+the relevant regulators and other stakeholders.
+5 The 12 regimes are Australia, Bahrain, Brazil, the European Union, Hong Kong, India, Indonesia, Japan, 
+Malaysia, Mexico, Singapore, and the United Kingdom.
+6 The seven deep-dive regimes are Australia, Brazil, the European Union, Hong Kong, Japan, Mexico, and the 
+United Kingdom—the more advanced open banking regimes among the 12.
+7 Regime distinctions are set out in Chaib (2018).6
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+SECTION 2
+WHY OPEN BANKING 
+MATTERS FoR POOR PEOPLE
+Open banking and financial inclusion
+Open banking regimes premised on access to bank account data are not primary drivers of 
+financial inclusion in terms of account openings. However, open banking can help increase 
+the number of relevant services and improve the quality of those services for people who 
+already have a bank account but are underbanked. Further, if the data in scope for these 
+regimes go beyond bank accounts and accounts with other FSPs—such as mobile money 
+accounts—and include data from sectors such as utilities and telecoms (what we call “open 
+data” ), then these regimes may even support access to accounts and other services for the 
+financially excluded. It is therefore critical that regimes wishing to support financial inclusion 
+and to go beyond improving the value of financial services for the underbanked must focus on 
+open data and embrace a broad scope of data exchange. Aside from bank account data, they 
+must encompass mobile money account data and data from the utilities and telecoms sectors, 
+among others.
+Our review found three countries—Brazil, Mexico, and Indonesia—with explicit financial 
+inclusion objectives in their open banking regimes. Also, in certain first mover countries, 
+including the United Kingdom and Australia, vulnerable populations have been identified as 
+a specific subset of the population with needs that can be met with open banking-enabled 
+products (HM Government 2019; Consumer Data Standards 2019). The United Kingdom’s 
+experience with open banking is particularly encouraging from a financial inclusion standpoint. 
+A recent U.K. report found that those “on the margins” of financial inclusion (with no account 
+or only a basic account) are likely to pay less in fees with open banking—saving the equivalent 
+of 0.8 percent of their income. Open banking would save those who are “overstretched” (with 
+account(s) and heavily indebted) the equivalent of 2.5 percent of their income (Reynolds and 
+Chidley 2019). The report concludes that open banking could improve financial inclusion and 
+resilience and drive value for these segments by helping them control their finances, obtain 
+better deals, and manage debt. 
+The United Kingdom already has several open banking products on the market that target 
+those who are financially underbanked or vulnerable. Mojo Mortgages combines open banking 7
+WhY opEn B AnkIng M ATTERS  FoR pooR  pEopl Edata with more widely used scoring methods to accurately assess what a customer can 
+afford.8 Canopy uses consumer rent payments to improve credit scores.9 Tully provides debt 
+rehabilitation  services based on open banking data.10 Touco and Kalgera help those with mental 
+health issues and older individuals better manage their money by building features on top of the 
+basic aggregation proposition, such as the ability to send a notification to a trusted person if 
+daily spending falls outside of normal patterns.11
+How does this experience translate to EMDEs? We are starting to see fintechs in EMDEs 
+provide services based on consumer data analysis that could improve the financial resilience of 
+low-income populations. To reduce reliance on high interest overdrafts, for example, in Brazil, 
+Rebel’s Tapa Buraco service alerts customers of overdrafts so they can access a prequalified 
+30-day interest-free loan on the balance and benefit from a reduced interest rate thereafter.12 In 
+Argentina, Afluenta helps consumers find optimal interest rates and loan fees that fit their 
+circumstances.13 Meerkat in South Africa provides a saving tracker/sweeper, as well as a debt 
+rehabilitation service based on consumer data and robo-advice.14 
+However, as these services have been developed outside of open banking regimes,15 their 
+ability to access customer data is limited. They often rely on sharing login details, combined 
+with screen scraping  (customers sharing online log-in details with third parties, a practice 
+considered not secure because of the possibility of unauthorized account access), public 
+databases, or customers directly providing data via interviews. For example, Meerkat is required 
+to conduct interviews to identify areas where clients can save money by switching financial 
+providers. It also is required to obtain customer consent for savings sweeping every month.16 
+An open banking scheme would give Meerkat access to customer transaction data, allowing 
+it to create a personalized budget based on expenditures. This would facilitate repurposing 
+expenditures toward savings and allow Meerkat to undertake real-time payment initiation for the 
+purpose of savings sweeping. Box 2 offers an in-depth look at how Brazil’s new open banking 
+regime can help Guiabolso provide personal financial management services.
+Product innovation
+Low-income individuals face a variety of issues that may render them financially unstable and 
+vulnerable to financial shocks, including volatile, irregular income; a lack of liquidity; and paying 
+a disproportionate amount of income on essential household expenses. They also experience 
+more difficulty in accessing financial services, which limits their ability to address vulnerability. 
+8 See the Mojo Mortgage website: https://mojomortgages.com
+9 See the Canopy website: https://www.canopy.rent  
+10 See the Tully website: https://www.tully.co.uk  
+11 See the Touco website: https://usetouco.com , and the Kalgera website: https://kalgera.com
+12 See the Rebel website: https://www.rebel.com.br
+13 See the Afluenta website: https://www.afluenta.com/monitor
+14 See the Meerkat website: https://www.meerkat.co.za/savings  
+15 Neither South Africa nor Argentina currently have an open banking regime. A resolution setting out Brazil’s 
+open banking regime was published on 4  May 2020 and will be implemented later in the year. See https://
+www.bcb.gov.br/content/config/Documents/Open_Banking_CMN_BCB_Joint_Resolution_1_2020.pdf
+16 Interview with David O’Brian, founder of Meerkat, 28 May 2020.8
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+They may lack the necessary identification, address, or other documentation that would allow 
+access to formal financial services. Additionally, especially for women, social norms may limit 
+their control over their personal finances. Low-income individuals also may not have access to 
+credit, and if they do, they may be susceptible to taking on inappropriate and/or excessively 
+priced credit products.
+The global evidence we reviewed suggests that, by responsibly using shared customer 
+transaction data , fintechs and other types of financial institutions in EMDEs may be able to do a 
+better job than traditional banks have done with such data. Third parties can use data to create 
+value for potentially excluded and lower-income customers in three main ways: (i) improving 
+access to credit and/or conditions of access, (ii) improving financial management, and (iii) 
+facilitating access to accounts if collaborative customer due diligence  (CCDD) is allowed.17 The 
+specific value propositions fintechs and third parties can offer to address these value creation 
+opportunities follows.
+17 CCDD approaches seek to address the shortcomings of current CDD processes. Examples include creation 
+of a public utility that FSPs can use to identify clients and verify identities on an ongoing basis; access 
+to know your customer (KYC) as a service, a centralized database where banks can share and access 
+KYC information on corporate clients; and self-sovereign IDs—a new ID category that promises to work 
+across borders, allows individuals to prove their identity based on alternative data sources. It also provides 
+customers with more control over who accesses their data. See Lyman et al. (2018).BOX 2.   The utility of open banking regimes: Spotlight on Brazil’s Guiabolso
+In Brazil, Guiabolsoa offers a personal financial 
+management tool that allows customers to view 
+all their accounts on one dashboard. The tool 
+recommends suitable financial products based on 
+the customer’s profile and transaction history. Since 
+Brazil’s open banking regime is not yet operational, 
+Guiabolso frequently must access customer data 
+via screen scraping rather than open banking APIs. 
+The process has raised a variety of issues. First, it is 
+technically difficult, because each bank has different 
+security layers and the technological infrastructure of 
+banks is often suboptimal. This creates difficulties for 
+consumers as they try to connect in real time (e.g., 
+a change in web display format can lead to a login 
+process that is unusable).b Screen scraping is also not secure. Because of the lack of regulation, login details 
+captured by the process are not necessarily protected 
+and could lead to unauthorized account access. The 
+new Brazilian regime, which would require banks to 
+provide Guiabolso access to this information through 
+API connections, can alleviate these issues.
+The lack of a fully operational open banking regime also 
+means that Guiabolso is limited to using the information 
+that appears on an internet banking site, which is often 
+restricted to three months’ prior history. Under the new 
+Brazilian open banking regime, Guiabolso will have 
+access to up to 12 months of transaction history, which 
+would provide a better understanding of a customer’s 
+income stability and allow the company to more 
+effectively underwrite loans.
+a. See the Guiabolso website: https://www.guiabolso.com.br
+b. Interview with Thiago Alvarez, founder and CEO of Guiabolso, 5 March 2020.9
+WhY opEn B AnkIng M ATTERS  FoR pooR  pEopl EImproving access to credit and/or conditions of access 
+• Responsibly expanding access to credit.  Low-income individuals often have difficultly 
+accessing credit. High cost, short-term credit easily can lead to financial vulnerability. 
+Properly designed open banking products—especially open data products—can expand 
+access to credit that helps, rather than harms, consumers by using alternative financial data 
+(e.g., Mojo Mortgages and Canopy in the United Kingdom).
+• Supporting debt rehabilitation services.  Providers such as Tully in the United Kingdom 
+and Meerkat may use open banking data to build a customer’s budget, identify loans that 
+can be refinanced or consolidated, and negotiate affordable repayment schedules on the 
+customer’s behalf. When these services are coupled with payment initiation, “ smart loan 
+repayment ” may be introduced. These debt repayment plans can account for fluctuations 
+in customer income during repayment periods, which allows customers to pay based on 
+available liquidity without triggering default provisions.
+• Reducing reliance on overdrafts and other excessively priced credit products.  
+Open banking services can alert customers before they go into overdraft and offer less 
+pricey credit alternatives (e.g., Rebel’s Tapa Buraco service in Brazil). Consumers also can 
+find optimal interest rates and loan fees that fit their circumstances by using apps such 
+as Afluenta in Argentina or Credit Karma18 in the United States.
+Improving financial management
+• Improving savings behavior.  Low-income individuals with volatile or irregular income may 
+have difficulties weathering financial shocks. Open banking can enable products that advise 
+customers on when and how much to save. They include savings trackers (like Meerkat’s, 
+which repurposes expenditure on highly priced financial services toward savings) and 
+automatic savings sweepers that calculate what a consumer can save, and when, based 
+on their financial history, then automatically transfer funds to a dedicated savings account (a 
+product provided by the U.S. fintech, Digit).19
+• Lowering tariffs on household bills.  Many families in emerging markets pay a “poverty 
+premium” for essential goods and services, such as telephone communications, gas, 
+electricity, and broadband (Davies, Finney, and Hartfree 2016). For certain strata of this 
+population, open banking products that analyze spending patterns, identify opportunities 
+for saving money, negotiate new contracts on a consumer’s behalf, and cancel their old 
+subscriptions can tackle both demand- and supply-side factors that create a premium in the 
+first place. Trim20 is an example in the United States.
+• Encouraging healthy financial behaviors.  Low-income individuals often perceive a 
+lack of control over their financial lives. Personal finance and budgeting applications can 
+empower individuals with data insights generated from transaction data—for example, 
+highlighting ways to save or sending reminders on due dates for a regular payment or bill. As 
+long as the relevant consumer protections are in place, when applications are permitted to 
+18 See the Credit Karma website: https://www.creditkarma.com
+19 See the Digit website: https://digit.co  
+20 See the Trim website: https://www.asktrim.com10
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+initiate transactions on behalf of the customer, consumers can put insights into practice in a 
+seamless and user-friendly manner. In the European Union, Yolt Pay21 allows Yolt budgeting 
+app users to initiate money transfers through open banking APIs; in Brazil, Guiabolso allows 
+customers to obtain a suitable loan directly from its application.
+Facilitating access to account if CCDD is allowed
+• Overcoming a lack of documentation.  Onerous customer due diligence (CDD) 
+procedures can result in high costs for low-income customers or prevent them from 
+accessing financial services because they often lack official identity documentation. Brazil’s 
+open banking regime foresees a collaborative approach to CDD (CCDD) by allowing FSPs 
+to share registration data, which would reduce the paperwork and hassle as consumers 
+gain expanded access to a variety of financial services. If open banking regimes expand 
+to include sharing of telecoms, social media, and other types of data (i.e., open data), SIM 
+card registration or other CDD methods could help individuals overcome issues with formal 
+identification—as long as a simplified CDD approach is permitted.
+Many of these solutions are predicated on smartphone access, especially those that rely on 
+data visualization. Although smartphone ownership is on the rise because of price decreases, 
+smartphone users are still the exception rather than the rule among poor people in EMDEs. For 
+example, only 45 percent of phone owners in Sub-Saharan Africa had adopted smartphones in 
+2018 (GSMA Intelligence 2020). However, owners of feature phones still can take advantage of 
+some open banking-enabled services. Many products, such as automatic savings sweeping, 
+smart loan repayment, and decentralized CDD, use data only on the back end and do not 
+require smartphone technology. Other services, such as switching utilities or personal financial 
+management, work on SMS or USSD menus (i.e., two-way flash messages integrated into a 
+user menu on a feature phone) with modest loss of functionality. Fintechs that aim to target 
+nonsmartphone users would have to adapt the user experience to such constraints, but most 
+open banking-enabled services should be adaptable.
+Yet there are limits to the applicability of open banking in EMDEs. Many low-income customers 
+currently do not have a digital financial data trail to analyze. For this reason, it is important 
+to consider how open data regimes ultimately could leverage other types of digital data—
+whether social media activity, airtime use, or location data—to extend their benefits to those 
+not financially included via digital payments. Since the players that hold these types of digital 
+data usually are not under the jurisdiction of the financial sector regulator, regulators should 
+collaborate with their respective counterparts in other domains to determine how a cross-sector 
+open data regime can be established. See Section 3 for additional details.
+Emerging business models
+Open banking regimes define who can or should participate in data sharing. Often, it is not only 
+existing players such as banks and payment service providers (PSPs), but new types of entities 
+as well. In addition, new activities that until recently were outside the regulatory perimeter 
+21 See the Yolt website: https://www.yolt.com/faqs  11
+WhY opEn B AnkIng M ATTERS  FoR pooR  pEopl Emay be incorporated in order to avoid regulatory arbitrage and to level the playing field. These 
+activities include the amalgamation and analysis of data to propose tailored financial products 
+and the ability of customers to directly pay merchants without the intermediary of a credit card 
+scheme—also known as payment initiation.22
+A good example is the European Union’s Revised Payment Services Directive.23 This law 
+created a proportional regulation to incorporate two types of TPPs that conducted previously 
+unregulated activities under PSD1 and are now considered PSPs: AISPs and PISPs. AISPs 
+(e.g., Yolt and Moneyhub), which provide customers with consolidated information about 
+their financial accounts with other PSPs, have only a registration requirement and no capital 
+requirements.24 PISPs, which allow consumers to make payments from accounts that are 
+initiated by a party other than their account issuer,25 must be authorized but have a reduced 
+initial capital requirement of 50,000 euros (vs. 125,000 euros for PSPs that offer other payment 
+services, such as execution of payment transactions, issuance of payment instruments, 
+and money remittance).26 In return for being regulated and to permit them to effectively offer 
+services, TPPs are an essential part of the European Union open banking regime—also known 
+as X2A or access to account. 
+As part of its voluntary open banking regime, the Japanese Government similarly advanced a 
+series of legislative amendments in June 2018. These included amendments to the Banking 
+Act. The amendments provide a new regulatory framework for electronic payment service 
+providers  (EPSPs)—covering both PISPs and AISPs—along with a registry of EPSPs managed by 
+the Financial Services Agency. Registration requirements for EPSPs are minimal; entities simply 
+require a non-negative capital ratio.27 
+Specifically, AISPs’ ability to regroup diverse sets of information and provide individual 
+customers with real-time analytics also provides customers with new insights that can influence 
+their behavior. It also permits AISPs to become the customer-facing provider of choice without 
+actually providing financial services (thus avoiding certain onerous regulatory requirements, 
+which are borne by the product underwriters). As trust increases between AISPs and 
+customers, AISPs will be in a privileged position to curate distribution channels. 
+PISPs offer new business model opportunities for digital payments by allowing third parties 
+to initiate transactions on the customer’s behalf from an account the customer holds with 
+another institution. This allows the customer to separate the experience of performing a 
+22 When elaborating their open banking schemes, other jurisdictions have authorized alternative types of entities 
+rather than AISPs and PISPs. In India, the Reserve Bank of India (RBI) created a new category of “ account 
+aggregators ” whose sole role is to securely transfer financial data from data holders to data users, based on 
+customer consent. These aggregators can exercise the business of managing consent only and must be 
+registered with RBI. See Sections 4 and 5(f) of RBI’s Master Direction—Non-Banking Financial Company—
+Account Aggregator (Reserve Bank) Directions, 2016, https://www.rbi.org.in/Scripts/BS_ViewMasDirections.
+aspx?id=10598 , and Datwani and Raman (2020). It remains to be seen whether these account aggregators 
+can offer information services to customers, given that they are not currently allowed to see the data.
+23 For more on PSD2, see https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32015L2366&from=EN
+24 See Article 33 of PSD2 2016. 
+25 This typically occurs by establishing an electronic payment link between the payer and the online merchant 
+via the payer’s online banking module (e.g., CashFlows, Trustly, Adyen, Transferwise). 
+26 See Article 7 of PSD2 2016.
+27 Interview with Toshio Taki, co-founder of Money Forward, 11 December 2019.12
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+payment (online or in-person) from the provider that holds their account. In India, payment 
+initiation functionality has allowed fintech services such as Google Pay to quickly scale, 
+absent a license to hold customer funds. In other markets, the service is providing new ways 
+for nonbanks to introduce payments into customer products. In each of these cases, funds 
+transfer (clearing and settlement) between accounts continues to be managed through existing 
+payment systems with appropriate regulatory oversight (e.g., UPI in India and Faster Payments 
+in the United Kingdom). 
+In many countries, B2B service providers also facilitate data sharing and payment initiation 
+services as a product for licensed financial institutions and third parties. Service providers such as 
+Plaid in the United States provide the “plumbing” where it is too complicated or costly for TPPs to 
+negotiate individual contracts.28 This model also can benefit data holders themselves (i.e., banks), 
+allowing them to build new services leveraged on their own accounts.29 That said, if overall 
+costs to consumers do not increase, the added time and costs of transactions by these service 
+providers (in comparison to transactions under an open banking regime) must be offset by gains 
+in efficiency.
+Some incumbents are adapting by acquiring or developing in-house solutions (e.g., 22seven, 
+an AISP run on Yodlee rails bought by Old Mutual bank in South Africa30 and Visa’s recent 
+acquisition of Plaid), or by unilaterally exposing their APIs to allow third-party developers to 
+create innovative products in partnership (e.g., South Africa’s Nedbank31 and the Co-operative 
+Bank of Kenya32). Credit card companies also are positioning themselves as value-add 
+intermediaries in open banking. One example is Mastercard’s centralized enquiry and dispute 
+resolution service for banks and TPPs.33 However, incumbents still retain advantages with 
+certain types of information and access to low-cost funding (see Box 3).
+28 See the Plaid website: https://plaid.com/company
+29 See, for example, Plaid Exchange, a new universal API that connects with thousands of financial institutions 
+and allows banks to manage their own APIs: https://blog.plaid.com/introducing-plaid-exchange
+30 See the 22seven website: https://www.22seven.com
+31 See the Nedbank website: https://apim.nedbank.co.za/static/opendata
+32 See the Co-operative Bank of Kenya website: https://developer.co-opbank.co.ke:9443/store/apis/home
+33 See the Mastercard website: https://www.mastercard.us/en-us/business/issuers/grow-your-business/open-
+banking-solutions/resolve.html13
+WhY opEn B AnkIng M ATTERS  FoR pooR  pEopl EBOX 3.  Addressing informational asymmetry
+The main benefits of open banking regimes stem 
+from the increased competition generated by third-
+party data access in the financial services markets. 
+Two types of financial information can help providers 
+target offers and evaluate risk: (i) hard information, 
+which includes an individual’s credit history and default 
+history, and (ii) soft information, such as consumer 
+preferences, level of income, and behavior (Beaton-
+Wells 2019; Padilla and de la Mano 2018). 
+Traditional banks have significant advantages with 
+soft information,a which is one of the reasons fintech 
+firms have found it difficult to compete with banks 
+beyond initial successes.b According to Padilla and de la Mano (2018), although banking has been 
+liberalized in recent years, the reason we have not 
+seen positive consumer outcomes is mainly because 
+of the informational advantages banks have. On the 
+other hand, social media firms, utility providers, and 
+telecoms also have a significant advantage with soft 
+information, but they lack access to lender-specific 
+hard financial information.c An open banking scheme, 
+which requires both hard and soft information sharing 
+and includes data reciprocity, is one remedy that 
+addresses informational asymmetry and may even 
+swing the power balance toward BigTech  and other 
+new entrants.
+a. Banks have other advantages that are not related to data, but they fall outside the scope of this research. For example, they have a 
+“too big to fail” advantage, which gives them access to funding at a lower cost than competitors. See Beaton-Wells (2019) and Padilla 
+and de la Mano (2018).
+b. Other reasons include the absence of an installed and loyal customer base, lack of reputation and brand recognition, and a relatively 
+high capital cost. See Padilla and de la Mano (2018).
+c. Certain TPPs, such as BigTech, have additional advantages, such as large installed customer bases; established reputations; powerful 
+brands; considerable earnings; and unfettered access to capital markets. They require scheme reciprocity to maintain an even playing 
+field. See Beaton-Wells (2019) and Section 3 of this paper.14
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+SECTION 3
+12 DESIGN COMPONENTS
+FROM OUR LANDSCAPE RESEARCH OF 12 COUNTRIES, WE IDENTIFIED 
+12 design components of open banking regimes: four determine regime scope and eight 
+affect implementation. First, we look at the implications of each design component for 
+the EMDEs that may wish to support financial inclusion, given market conditions and potential 
+resource and capacity constraints. Regulators that may be considering the design of an open 
+banking regime should address these components, as each can have far-reaching implications. 
+Components that determine scope
+TYPES OF SERVICES  
+Which financial products and services are included in an open banking regime varies across 
+regimes. In cases where the scope is clear, there are two approaches: 
+1. Broad scope, covering many types of financial services, including credit and insurance 
+(e.g., Australia, Brazil, India, Japan, Malaysia, Mexico, and Singapore).
+2. Targeted scope, focused on banking and/or payments (e.g., Bahrain, Hong Kong, the 
+European Union, and the United Kingdom). 
+In certain jurisdictions there is a clear correlation between the regime rationale and the 
+types of products that are in scope. The open banking regime In the United Kingdom was a 
+Competition and Markets Authority (CMA) remedy imposed on the nine largest banks accused 
+of anti-competitive behavior and thus the United Kingdom’s regime focuses only on banking 
+products. X2A in the European Union is part of a payment regulatory framework and is thus 
+focused on payments. We observed a trend toward broader scopes in the other regimes, 
+especially in newer regimes such as those in Brazil and Mexico. This may be because the 
+regulator, with its focus on innovation, has decided that there is no reason to restrict the scope 
+to banking and/or payments—in contrast with the first open banking regimes in the European 
+Union and the United Kingdom. 
+Two regimes go beyond financial services data and in subsequent phases plan to encompass 
+other services from economic sectors such as energy, telecoms, and utilities (i.e., open data). 
+This includes Australia, which is implementing a consumer data right  (CDR) in the energy 15
+12 dESIgn CoM pon EnTSand telecoms sectors after the banking sector, and the United Kingdom, which has followed 
+Australia’s lead with the recent introduction of a Smart Data regime that will extend data 
+sharing to energy, pensions, telecoms, and other utilities (HM Government 2019). Australia is 
+considering data sharing across sectors as part of CDR.34 In addition, the account aggregator 
+ecosystem led by Sahamati35 in India expects to expand use cases to sectors such as health, 
+telecoms, and education.36
+Implications for EMDEs
+In order for individuals with thin digital financial data trails to benefit from open banking regimes, 
+the regimes should include as many types of financial services as possible. The potential is 
+greatest, however, in open data regimes where data from telecoms and utilities transactions are 
+critical for bolstering thin trails. Including these sectors may expand an individual’s access to 
+services. Further, data from other digital services such as social media, messaging platforms, 
+web searches, and e-commerce could help to bolster trails if they are included in the scope 
+of open data regimes. Finally, cross-sectoral products can provide clear benefits, such as 
+responsible credit and shared CDD, for all consumers. 
+Note that an increased number of covered services clearly requires greater resources for 
+supervision and enforcement. A broader scope also implicates more than one regulator—
+financial (e.g., insurance, investments regulators) and, for open data regimes, nonfinancial (e.g., 
+telecoms, energy regulators). This often makes orchestration more complex.
+PARTICIPANTS
+There are two main types of participants: (i) entities that share data, by mandate or voluntarily—
+data holders—and (ii) entities that either have a right to access data or are permitted to access 
+data—data users. 
+There are three general approaches to defining data holders: 
+1. Name specific institutions.  For example, the nine largest banks in the United Kingdom 
+or the banks categorized as Segment 1 and Segment 2 institutions, as well as all 
+authorized payment institutions in Brazil. 
+2. Use entity categories.  For example, account servicing payment service providers  
+(ASPSPs) in the European Union, financial institutions in Japan and Malaysia, banks in 
+Australia and Hong Kong, and “providers” in Singapore.37 
+3. Cover a broad range of financial sector entities.  In Mexico, this includes fintech 
+institutions, clearinghouses, traditional financial institutions, and credit bureaus. In India it 
+includes banks, banking companies, NBFCs, asset management companies, depositories, 
+depository participants, insurance companies, insurance repositories, and pension funds. 
+34 Interview with Caron Beaton-Wells, deputy dean at the Melbourne Business School and professorial fellow at 
+the Melbourne Law School, 19 June 2019.
+35 Sahamati is a nonprofit entity tasked with growing the account aggregator ecosystem and running an 
+umbrella entity for account aggregators.
+36 Account Aggregator workshop held by Sahamati on 30 August  2019. See the Sahamati website: https://
+sahamati.org.in .
+37 Providers are defined in Singapore’s “Finance-as-a-Service API Playbook” as organizations that expose data 
+through APIs; this includes regulators, insurers, and banks.16
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+Data users, which often are TPPs, generally are different from data holders. TPPs are either 
+allowed access—as a right if licensed or authorized (as in Australia, the European Union, 
+Hong Kong, Japan, the United Kingdom) or simply upon request (with no rights as in Bahrain, 
+Malaysia, and Singapore). Data users are subject to a licensing or an authorization framework 
+or, at the very least, some mandatory technical and security standards. The main rationale 
+for differentiation between data users and data holders is that open banking regimes level the 
+playing field by allowing parties that lack bargaining power, such as fintechs and other TPPs 
+(but possibly not BigTech—see discussion that follows), data access they normally would not 
+have. 
+In Mexico,38 India,39 and Brazil, most participants are, to a certain extent, considered both data 
+holders and data users, and thus “data reciprocity” exists between participants—they can 
+request access to data held by fellow participants but must then share their own data with 
+those participants upon request. 
+Lack of data reciprocity has long-term repercussions on competition. Although open banking 
+regimes effectively allow third parties access to customer data from traditional incumbents such 
+as banks, solving one type of data asymmetry, they inadvertently may create a different type 
+of data asymmetry. A lack of reciprocity in the open banking scheme may greatly increase the 
+power of BigTech platforms (e.g., Amazon, Facebook, Google), that can tap into this data by 
+becoming accredited TPPs in order to enter and strengthen their financial services offerings. 
+However, they are not required to give others reciprocal access to their financial services 
+databases under that regime (Beaton-Wells 2019).
+Note that BigTech already has a data advantage, not only due to the sheer amount of data it 
+has collected over time, but because of its superior information about consumer preferences, 
+habits, and conduct, particular information at a certain point in time at a specific location in 
+real time.40 If BigTech combines its data advantage with the data it can obtain through open 
+banking, it effectively would be in a position to create “super profiles” that other players 
+cannot easily replicate (Beaton-Wells 2019; Padilla and de la Mano 2018). For example, a bank 
+trying to achieve data parity with Google would need to successfully enter markets for online 
+advertising, mobile operating systems, mobile app distribution, browsers, email, and online 
+video distribution (Padilla and de la Mano 2018). Data sharing reciprocity, although not a silver 
+bullet, is one mitigation strategy to consider for reducing data asymmetries. 
+Implications for EMDEs
+As Section 2 states, the greater the number of participants in an open banking regime, the 
+greater the scale and diversity of new services that could be enabled and the more competition 
+would advance. Bringing fintechs, other TPPs, and other FSPs (e.g., e-money issuers [EMIs]) 
+into a regime’s scope would ensure there are more actors in place that would have the ability to 
+38 In Mexico, reciprocity does not cover third parties specializing in IT, such as BigTech; they can obtain data but 
+are not required to share their data.
+39 It is unclear whether India’s regime allows reciprocity as there is no reciprocity in RBI’s Master Direction. 
+However, members of the Sahamati cooperative are expected to abide by a rule of reciprocity, and certain 
+data holders, such as tax authorities, are not expected to request access to data.
+40 Other advantages include large installed customer bases, established reputations, powerful brands, 
+considerable earnings, and unfettered access to capital markets. See Padilla and de la Mano (2018).17
+12 dESIgn CoM pon EnTSoffer products and/or provide data that can assist poor people in EMDEs, which, in turn, would 
+render financial services more affordable. For financial inclusion, EMIs may be one of the best 
+sources of data for underbanked people, depending on the market—for example, in Africa, 
+EMIs often are sole account issuers to low-income individuals.
+Further, EMDEs can leapfrog by incorporating reciprocity from the start to avoid pitfalls with 
+BigTech later on. Lastly, under an open data regime, reciprocity is even more important in 
+ensuring that the entire regime is balanced, especially since entrants such as telecoms, utilities, 
+and social media companies are an important source of alternative data (Waldron and Hacker 
+2020). It should be noted that in an open data regime, the relevant institutions in these sectors 
+also must be designated as data holders. 
+TYPES OF DATA
+Although customer transaction data sharing is at the heart of our definition of open banking 
+schemes, the majority regulate access to three main types of data: 
+1. Generic services data—publicly available information on specific financial services, such as 
+product pricing and locations of ATMs, agents, and branches. 
+2. Customer data—personally identifiable data of a customer required for account opening 
+and administrative purposes, including registration)/ know your customer  (KYC) data.
+3. Transaction data.41 
+For regimes in our review that had a clear data scope, all but two explicitly require sharing 
+customer account data and transaction data with customer consent.42 A majority of regimes 
+also require generic services data sharing, but since it is market-level public data, sharing often 
+is not related to a user request. Customer data sharing allows individual customers to obtain 
+personalized offers and/or other assistance, while transparency is the main function of generic 
+services data sharing.
+Implications for EMDEs
+Generic services data sharing would create greater transparency on pricing, terms, and 
+conditions in financial service markets and other economic sectors, if included. In addition 
+to inciting more competition because consumers are allowed to easily compare product and 
+service offerings, ultimately these data may reduce unjustified price discrimination between 
+segments of the population, a goal that is often important to EMDEs.
+Sharing customer transaction data is key to ensuring that appropriate products are developed 
+for low-income individuals and sharing KYC/customer registration data is necessary to enable 
+CCDD for new entrants and incumbents alike. The latter is particularly useful for overcoming 
+41 Other data types not listed in the three categories include aggregated statistical data (e.g., Mexico) and 
+customer acquisition data (e.g., Hong Kong).
+42 As part of a staged implementation process, Malaysia expressly authorizes only generic services data sharing. 
+It is highly likely this will be expanded to include customer data. Currently, Indonesia is solely considering 
+the introduction of payment initiation in its open banking framework, see “Latest Info,” Bank of Indonesia, 
+4 January 2020, https://www.bi.go.id/en/ruang-media/info-terbaru/Pages/BI-Dorong-Peran-Industri-dalam-
+Mengembangkan-Open-Banking-di-Indonesia.aspx18
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+identification issues if a regulatory framework permits digital copies of identification and/or 
+alternative identification. 
+PAYMENT INITIATION43
+The open banking regimes of Bahrain, Brazil, the European Union, Japan, Singapore, and 
+the United Kingdom go beyond data sharing to outline requirements for financial institutions 
+to allow third-party payment initiation.44 This allows third parties to initiate transactions on a 
+customer’s behalf from an account the customer holds with another institution. 
+Payment initiation gives consumers greater control over their finances by allowing them to 
+perform payments from a wider variety of service providers. For example, when a customer 
+receives a personalized mortgage offer from a third party that has collated their data, the 
+customer can initiate payment without leaving the mortgage site. Payment initiation allows the 
+customer to act on the data by initiating payment for a new transaction. The firm Plaid argues 
+that access and acting are complementary and essential to encouraging innovation and solving 
+consumer pain points. Taken together, they reduce the information and power asymmetries 
+between consumers and data holders (Pitts 2019).
+Including payment initiation in an open banking scheme is important for ensuring its successful 
+adoption. Moving money within the financial sector is typically expensive, especially in markets 
+that use card infrastructure. Adding payment initiation to data sharing can open up cheaper 
+rails to move money. Beyond cost, payment initiation can democratize access to the payment 
+system. A TPP may offer customers a highly useful application because of the data open 
+banking provides, but it may not be able to provide basic payment features if it must contract 
+with a sponsor bank to enable payments. Including payment initiation in the open banking 
+scheme can remove this barrier.
+Implications for EMDEs
+Regulators in EMDEs should consider incorporating payment initiation  into their open 
+banking regimes because it provides the greatest benefit to inclusive finance. However, 
+real-time transactions between accounts held with different providers still require a payment 
+infrastructure that supports instant payments. Examples of this include Mexico’s interbank 
+electronic payment system (SPEI) and Brazil’s PIX instant payment system. 
+43 Payment initiation is distinct from other types of automatic referral services, such as Hong Kong’s customer 
+acquisition data  and Brazil’s loan forwarding services. Referral services allow third parties to assist a 
+principal in obtaining new clients through customer referrals and loyalty programs (e.g., Hong Kong) or allow 
+customers to directly contract with TPPs for loans through a digital interface (e.g., Brazil). 
+44 Jurisdictions such as India, whose payment initiation infrastructure is separate from its open banking regime, are 
+not included in this section, because in such situations the open banking regime is not driving this functionality.19
+12 dESIgn CoM pon EnTSComponents related to implementation
+MANDATORY VS. VOLUNTARY PARTICIPATION
+One of the main distinctions between open banking regimes is whether participation is 
+mandated by regulation/legislation or is voluntary. A voluntary regime implies that participation 
+is voluntary, but its rules are usually mandatory once an entity has decided to join. 
+Of the 12 regimes reviewed, six are mandatory in some sense—for the entire industry (Australia, 
+Bahrain, the European Union, and Mexico) or for specific actors in the industry (Brazil and 
+the United Kingdom). When a scheme is mandatory, its details can be set out either through 
+legislation (PSD2 for the European Union, amendments to the Australian Treasury Act, and 
+Mexico’s fintech law); sector-specific regulation (the Resolution of the Central Bank of Brazil 
+and Rulebook additions issued by the Central Bank of Bahrain); or as a remedy imposed by a 
+competition authority (the CMA order in the United Kingdom). From a geographic perspective, 
+all regimes reviewed in Europe, Latin America, and the Middle East were mandatory, while all 
+the voluntary schemes introduced by regulators were found in regimes in Asia (India, Indonesia, 
+Hong Kong, Japan, Malaysia, and Singapore).
+Voluntary schemes entail various levels of public sector involvement. They can be introduced 
+by the regulator to kick-start data sharing (as in India, Indonesia, Hong Kong, and Malaysia) 
+or to give structure to current industry initiatives (as in Japan and Singapore). The level of 
+specification the government sets out in voluntary regimes also varies—from highly detailed 
+frameworks (in Hong Kong and Singapore) and a specific licensing regime (for account 
+aggregators in India) to high-level guiding principles (in Indonesia, Japan, and Malaysia). 
+Although we differentiate between voluntary and mandatory regimes, some voluntary regimes 
+are highly prescriptive—bordering on mandatory—in their manner of implementation. For 
+example, although technically Hong Kong is a voluntary regime, as its policy documentation 
+articulates, when read in conjunction with other policy statements and levels of specification 
+for the framework, it appears to be mandatory. Equally, some voluntary regimes are not highly 
+prescriptive but de facto mandatory because of expectations set by the regulator (e.g., Japan). 
+Implications for EMDEs
+Each regulator must determine the amount of control that is right for its jurisdiction based on 
+the dynamics of its market ecosystem and whether there is a need to sanction anticompetitive 
+behavior. A mandatory regime may not be necessary if the market already is moving in that 
+direction. Further, some of the burden on the regulator may be removed with upfront industry 
+buy-in on the need for an open banking regime or by allowing industry participation in the 
+regime’s design. This may permit a regulator to limit intervention to specific shortcomings that 
+result from an industry-led approach, rather than to impose a mandatory regime. 
+If a regulator decides to impose open banking, it should have the ability to enforce it 
+and sanction noncompliance. EMDEs with low enforcement capabilities and/or a lack of 
+resources should keep in mind that a mandatory regime with little enforcement may be more 
+counterproductive than a voluntary approach. 20
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+TECHNICAL SPECIFICATIONS FOR DATA SHARING (API s)
+A second major distinction is whether a regime requires data sharing through standardized 
+APIs or whether it allows/requires the industry to set data sharing standards (Chaib 2018). Six of 
+the reviewed regimes stipulate use of standardized APIs (Australia, Indonesia, Malaysia, Mexico, 
+Singapore, and the United Kingdom) while the remaining six (Bahrain, Brazil, the European 
+Union, Hong Kong, India, and Japan) allow (or require, as is the case for Brazil and India) the 
+industry to determine data sharing standards.
+There does not appear to be a correlation between the mandatory character of a regime 
+and whether API standardization is required.45 Similarly, for voluntary regimes, there is 
+no correlation between level of specification and imposition of standardized APIs—a high 
+degree of specification by the regime does not mean APIs would be standardized.46 These 
+observations support the conclusion that standardization of data sharing protocols is primarily 
+a technical decision. It is not related to the amount of control a regulator wishes to exercise 
+over the regime. 
+There is ongoing debate on whether standardized APIs are the best practice. This is based on 
+anecdotal evidence from early implementations in the European Union, which does not stipulate 
+API standards,47 and the United Kingdom’s Open Banking regime, which does.48 The United 
+Kingdom has seen, by far, the largest number of open banking services to date.49 According 
+to some industry stakeholders, the lack of standardized APIs has hampered progress in the 
+European Union; yet industry alternatives being put in place, such as the Berlin Group,50 
+cannot ensure a harmonized approach because they are piecemeal and voluntary.51 The lack 
+of standardized APIs also has created challenges for TPPs in Japan because they need to 
+consume APIs tailored for each financial institution. In addition, they must individually negotiate 
+with each institution, which is a function of the regime framework that imposes contracts 
+between TPPs and data holders.52,53
+On the other hand, arguments against API standardization center on (i) a legal framework’s 
+ability to adapt to technological change and (ii) the IT infrastructure of financial institutions 
+45 Of mandatory regimes, three require that specific standardized APIs be issued by the regulator (Australia, 
+Mexico, and the United Kingdom) and three do not (Bahrain, Brazil, and the European Union), although Brazil 
+requires that participants follow the standardized APIs that the industry stipulates through a convention.
+46 Voluntary regimes may (Indonesia, Malaysia, and Singapore) or may not (Hong Kong, India, and Japan) 
+require industry standardized open APIs of its voluntary participants.
+47 According to an 18 May 2020 interview with Gavin Littlejohn, chairman of FDATA Global, the PSD2 did not 
+specify API standards as PSD2 was drafted in 2013 when screen scraping was the norm.
+48 Standard APIs in the United Kingdom were part of its open banking initiative since 2015, when it became 
+clear that APIs would overtake screen scraping (interview with Gavin Littlejohn, 2020).
+49 As of August 2020, the United Kingdom’s Open Banking Implementation Entity (OBIE) reported 273 regulated 
+providers, made up of 196 TPPs and 77 account providers, of which 88 regulated providers have at least 
+one proposition “live” with customers. See the OBIE website: https://www.openbanking.org.uk/wp-content/
+uploads/OBIE-Infographic-August-2020.pdf .
+50 See the Berlin Group website: https://www.berlin-group.org/psd2-access-to-bank-accounts .
+51 Interview with Gavin Littlejohn, 2020. 
+52 The imposition of contracts in the Japanese regime is at odds with most open banking regimes. Most remove 
+the requirement for a contractual relationship between data users and data holders because the rights and 
+obligations of each are dictated by regime provisions.
+53 Interview with Toshio Taki, co-founder of Money Forward, 11 December 2019.21
+12 dESIgn CoM pon EnTSlocated in rural or poor areas. As laws, and often implementing regulations, are difficult to 
+quickly modify and given the rapid pace of technological change, regulators tend to avoid 
+including technological standards within laws. Another argument against standard APIs is 
+that they may be a disadvantage to data holders that may be technically unable to integrate. 
+For example, credit unions in Canada, which are small and tend to serve rural, geographically 
+isolated, and marginalized people, have voiced concerns with standardized API integration. 
+They see it as complicated and prefer to implement data sharing through less sophisticated 
+solutions like sanctioned screen scraping.54 
+In light of these concerns, the industry may be best placed to agree to standards that can be 
+quickly adapted as technology changes, even though standards may be subject to regulatory 
+approval. APIs also can be standardized without technical specifications inserted. For example, 
+they can include nontechnology-dependent API elements, such as standardized protocols to 
+access data (messaging, sync or async, authentication); exchanged content (in which specific 
+calls are valid); and data format.
+An interesting development is the hybrid approach taken in Brazil, where API standard 
+development has been delegated to scheme participants. However, the regulator oversees 
+delegation and must approve the final standards. This is in contrast with the United Kingdom’s 
+Open Banking Implementation Entity (OBIE), a U.K. company set up and governed by CMA55 
+that is tasked with implementing open banking, including the development of API standards. 
+Brazil’s open banking regime foresees a convention drafted by regime participants that sets out 
+agreed-on API standards, among other implementation issues, with oversight from its central 
+bank. (See the Brazil case study in Appendix B for details.)
+Implications for EMDEs
+Many regulators in EMDEs are unable to foster dialog on technical standards with market 
+players. On the other hand, a lack of standardization or allowing data holders, who are often 
+not interested in quality, to determine standards is unlikely to produce an optimal outcome. 
+Standardization of open banking APIs should be a priority in all cases, even if it is not a launch 
+requirement, and there are many ways to achieve standardization. Regulators in EMDEs, 
+in particular, may wish to consider a layered API standardization approach that is similar 
+to the Brazilian approach. This would include allowing the industry, as a body with equal 
+representation for each type of stakeholder, to determine standards under the regulator’s 
+oversight. It is important for regulators in this scenario to outline processes in the event the 
+industry is unable to agree on standards—whether it be giving the regulator the final decision or 
+allowing a majority vote. 
+54 Interview with Matt Homer, former lead of Consumer Data Access, Control and Portability of Plaid, current 
+executive deputy superintendent, Research & Innovation Division, New York State Department of Financial 
+Services, 27 June 2019.
+55 CMA determines OBIE’s governance, composition, and budget. Funding is provided by the nine mandated 
+banks under the CMA order.22
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+STAGED IMPLEMENTATION
+Six of the reviewed regimes are implementing open banking in stages.56 The main criteria for 
+staged implementation include the following: 
+1. Sensitivity of the data—public information is released first, then confidential customer data 
+is shared (Brazil, Hong Kong, Malaysia, Mexico, and United Kingdom). 
+2. Types of services, with data related to simpler services, such as personal loans, credit and 
+debit cards, deposit accounts, and transaction accounts, released first (Australia, Brazil, 
+Hong Kong, and Malaysia). 
+3. Type of entity that must release, with larger entities releasing earlier (Australia and Brazil).
+Staged implementation allows both stakeholders and regulators to take small steps and to learn 
+about pitfalls and master best practices before committing to widespread data sharing. Open 
+banking regimes are new, and staged implementation allows measured risk-taking with data 
+that, if mishandled, could cause substantial consumer harm. The approach also is viable when 
+a regulator transitions to open data, as is the case with Australia and the United Kingdom. 
+The assumption is that larger entities with the biggest customer data sets would be the first to 
+implement and so should bear the early burden and pave the way for the rest of the industry.
+Implications for EMDEs
+EMDEs may face technical and resource capacity issues or they may lack relevant legal 
+frameworks, especially on data protection, competition regulation, and consumer protection. 
+Certain categories of consumers, such as illiterate, rural, or disabled individuals, also may be 
+perceived as facing high data protection risk. Staged implementation would help regulators 
+increase technical capacity while they minimize customer risk. Regulators may consider staging 
+based on data confidentiality (public vs. confidential customer data), service type (simple vs. 
+complex financial products), and player size (large vs. small).
+LEAD REGULATOR/POLICY MANDATE
+Most of the open banking regimes reviewed have a designated “lead” regulator, which usually 
+is the central bank or the financial sector regulator. Australia, India, Mexico, and the United 
+Kingdom are exceptions, mainly because of the broad sectoral scope of regimes that go 
+beyond banking and payments.
+In Australia, the regime implicates several sectors, including banking, securities, and 
+investments, and several regulators, including the Office of the Australian Information 
+Commissioner, the Australian Securities and Investment Commission, the Australian Prudential 
+Regulation Authority, the Reserve Bank of Australia, and other applicable sector-focused 
+regulators. Given the regime’s competition rationale, the country’s competition regulator—the 
+Australian Competition and Consumer Commission (ACCC)—acts as lead regulator. 
+Since fintechs and financial institutions in Mexico fall under the jurisdiction of the banking and 
+payments supervisor, Comisión Nacional Bancaria y de Valores (CNBV), and clearinghouses 
+56 Many open banking regimes do not foresee staged implementation, including Bahrain, the European Union, 
+Japan, and Singapore.23
+12 dESIgn CoM pon EnTSand credit bureaus fall under the purview of the Central Bank, both regulators are mandated 
+to supervise the open banking regime. Similarly, in India, because the regime is envisioned 
+to cover banking, securities, insurance, and pensions, regulation is divided between RBI (as 
+lead regulator), the Securities and Exchange Board of India (SEBI), the Insurance Regulatory 
+and Development Authority (IRDA), and the Pension Fund Regulatory and Development 
+Authority (PFRDA).
+Although CMA in the United Kingdom imposed the open banking regime as a remedy and 
+remains responsible for the regime, the Financial Conduct Authority (FCA) is responsible for 
+X2A under PSD2. Further, with the possible expansion to sectors such as energy, pensions, 
+and telecoms, regulators of these other sectors also would be implicated in the regulation of the 
+data sharing regime.
+Implications for EMDEs
+As noted, the broader the sectoral and data scope of an open banking regime, the more 
+potential benefits regimes have for financial inclusion. However, depending on the financial 
+regulator’s mandate, expanding a scheme’s scope beyond banking and payments may 
+require the main banking regulator to share jurisdiction with other financial regulators. Equally, 
+extending to an open data regime in nonfinancial sectors requires bringing nonfinancial sector 
+regulators into the mix. 
+Increasing the number of implicated regulators in a regime creates coordination challenges 
+that may be difficult to surmount if resources are scarce or priorities diverge. It also may 
+lead to delays in implementation, as is currently the case in Kenya where discussions are 
+ongoing about which authority should be the open banking lead. An open data regime may 
+present even greater challenges to collaboration because of the increased number of potential 
+regulators and the need for cross-sectoral collaboration.
+To avoid such drawbacks, EMDEs should identify a lead regulator early on. A variety of 
+criteria need to be considered to determine which regulator should act as lead. These may 
+include the following:
+• The regulatory body with the greatest interest in achieving the rationale, such as 
+competition, innovation, and inclusion, for open banking in their market.
+• The regulatory body with the most power for enforcement.
+• The regulator with the most suitable purview. 
+• The regulator with the most convening power. 
+Once a lead regulator is identified, staged implementation enables additional financial and 
+nonfinancial regulators to be added as (and when) they are ready to participate. One example is 
+Brazil, whose Central Bank-led open banking regime includes access to consumer transaction 
+data from banks, but also to consumer transaction data concerning securities, insurance, 
+and pensions. The country’s securities and investment and pension and insurance regulators 
+currently are not implementing open banking in their sectors because of other priorities. 
+However, this does not preclude the issuance of supplementary resolutions by these authorities 
+in the future, when they may be ready and willing to implement data sharing for institutions 24
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+within their purview. Importantly, current communication between Brazil’s Central Bank and the 
+other regulators is key to transmitting early learnings and coordinating approaches.
+GOVERNANCE
+The way an open banking regime is governed may include setting security and API standards, 
+determining future changes in scope, provisions for liability and dispute settlement, and the 
+cost of data calls (if any). All of these elements can be part and parcel of the implementing 
+regulations (as is the case in Mexico and the European Union); decided by a separate entity or 
+group set up or convened to make such decisions (e.g., the United Kingdom’s OBIE, the regime 
+participants’ convention in Brazil, and India’s Sahamati); or a hybrid of the two. 
+As noted, OBIE in the United Kingdom is tasked with implementing open banking, including 
+the development of API standards. CMA determines OBIE’s governance, composition, and 
+budget, while funding is provided by the nine mandated banks under the CMA order. Under 
+the Central Bank’s oversight, Brazil’s open banking regime foresees a convention drafted by 
+regime participants that agrees to API standards, the cost of data calls, dispute resolution 
+mechanisms, and the eventual future expansion of scope, among other implementation issues. 
+In India, the nonprofit entity Sahamati currently is tasked with growing the account aggregator 
+ecosystem and running an “umbrella” entity for account aggregators (Datwani and Raman 
+2020). In the latter role, Sahamati is undertaking part of the regime’s governance, including 
+developing certification guidelines on software and issuing technical standards. 
+Implications for EMDEs
+Whether a separate governing body is required for the proper functioning of an open banking 
+regime is a function of how the initial regime framework is set out, which is itself often dictated 
+by a country’s legal framework and law tradition. In all cases, if a regime’s framework does not 
+provide guidance on key elements such as technical standards for data sharing (if applicable), 
+liability, dispute resolution, and the cost of data calls, it should be assumed that these elements 
+are articulated elsewhere—either in secondary regulation or by a governance entity. If the 
+governance entity is led by the regulator, resources would need to be allocated, which may be 
+a challenge for some EMDEs. 
+COST DISTRIBUTION
+Implementation of open banking regimes (i.e., putting in place sharing infrastructure such as 
+APIs) and their ongoing maintenance (i.e., communication costs for individual requests for, and 
+sharing of, data and continuous updates to the sharing infrastructure) entails significant costs. 
+Who bears these costs varies greatly across the regimes reviewed, if this is even dealt with in 
+the regime framework.57 
+In Australia, the European Union, and the United Kingdom, the regulator placed most of the 
+cost burden on the entities mandated to share data. In Australia and the United Kingdom, the 
+burden was part of the “sanctions” imposed on incumbents for prior anti-competitive market 
+57 So far, three regimes—Japan, Indonesia, and Malaysia—have not dealt with the issue of the cost burden of 
+data sharing in their legislation and regulations.25
+12 dESIgn CoM pon EnTSpractices. In all three jurisdictions, the cost burden reduces barriers to data sharing for TPPs 
+and consumers. On the other hand, Brazil, Hong Kong, Mexico, and Singapore explicitly 
+authorize data holders to charge data users fees for each individual data request, while TPPs in 
+Bahrain are permitted to charge consumers. In Bahrain and Hong Kong, fees must be bilaterally 
+agreed on, while in Mexico they must be approved by the regulator. In Brazil, beyond a certain 
+number of free data API calls, fees must be agreed on by the regime participants’ convention, 
+which is overseen by the regulator. 
+Whether a regulator imposes the cost burden on a certain party or allows parties to bilaterally 
+negotiate appears to depend on a variety of factors, including rationale for the regime and 
+relative strength of the regulator compared with industry incumbents. It should be noted that 
+in jurisdictions where the regulator imposed the cost burden on incumbents, incumbents 
+expressed sharp criticism that the burden may render the open banking regime “commercially 
+unsustainable” in the long term. It remains to be seen whether this is the case, or whether those 
+bearing the costs can cross-subsidize from other parts of their businesses.
+Implications for EMDEs
+The inclusion of fees charged by data holders for individual data requests in an open banking 
+regime increases costs for data users. It can result in increasing the price and affordability of 
+some services, although data users need to absorb other cost elements as well, such as the 
+cost of their IT infrastructure. A price increase could disincentivize adoption by the low-income 
+population, act as a barrier to access, and help data holders retain competitive power. 
+Depending on the level of fees, it also may undermine the ability of open banking-enabled 
+service providers to use reduced costs and efficiencies gained from APIs to target low-income 
+and unbanked individuals. These fees are separate from initial set-up costs, which are not 
+directly passed on to data users and consumers, although data holders may try to recoup 
+costs over time. 
+Not all services that assist low-income individuals require the same quantity of data calls (see 
+Box 4). For example, savings trackers and sweepers require a large number of data calls, while 
+utility switching services require only a limited number. Regulators can use this knowledge to 
+design a tiered pricing regime that provides for certain free data API calls and certain premium 
+calls. Tiered pricing would place the relevant services that assist low-income individuals and 
+their corresponding number of average data calls into the “free data API bucket.” (See the Brazil 
+case study in Appendix B for details on this approach.) 
+Regulators could go further and explicitly prohibit passing along data sharing fees to 
+customers. It is not clear whether this would effectively support TPPs to offer more services 
+to low-income customers because in each case, they would have to cover costs somewhere 
+in their business model. In all cases, regulators should ensure that end-customer pricing is 
+transparent—customers typically do not know that they are triggering a data API call. For 
+example, it would be problematic if customers were not aware in advance that they are being 
+charged for opening a personal financial management app, which then automatically updates 
+by calling various third-party data APIs. 
+Regime set-up costs could be financed by a state subsidy, by incumbents as a “one off” 
+penalty for existing data asymmetry (i.e., the United Kingdom model), or by a cross-section of 26
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+all industry players in proportion to their market presence (e.g., the Brazilian model). Regulators 
+should consider the market structure and its resources when making such decisions.
+DATA PRIVACY AND PORTABILITY
+At least 10 of the reviewed regimes provide for some type of customer consent before customer 
+data are shared.58 Jurisdictions that allow the sharing of generic services data or other 
+nonconfidential data such as aggregated data  do not require customer consent for this type of 
+data. This is logical because the data are usually public and, in all cases, not customer specific.
+Since customer consent is a cornerstone of data sharing regimes, we would expect regimes 
+to have comprehensive data protection regulatory frameworks as well. This assumption bears 
+out in almost all jurisdictions except India and Indonesia. India and Indonesia regulate data only 
+on a sectoral basis; however, both have a pending national data protection legislation and India 
+has incorporated key data protection measures into the Master Direction governing its account 
+aggregator ecosystem.59
+Most of the reviewed regimes do not have separate data portability provisions. Although data 
+portability is not required for data sharing, it is the other side of the data sharing coin. It gives 
+consumers the right to port whatever data they wish instead of solely agreeing to requests 
+initiated by TPPs (albeit the customer usually takes the first step in initiating a TPP relationship). 
+Data portability can help regulators expand data sharing into sectors beyond open banking, 
+such as open data (e.g., Brazil).
+Implications for EMDEs
+EMDEs often have data provisions in sectoral legislation rather than a general data protection 
+law. They also may have a large percentage of the population categorized as “vulnerable.”60 It is 
+legitimate to ask whether it is appropriate to implement such an open banking regime without 
+a general data protection law or comprehensive data provisions in sectoral legislation. The 
+answer revolves around how robust data protection is in the country in question. It is possible 
+that sectoral legislation is sufficient or that the introduction of an open banking regime could 
+concurrently introduce the necessary level of protection in the relevant sectoral legislation, as is 
+arguably the case in India. An assessment of what makes a data protection regime sufficiently 
+robust for data sharing is outside the scope of this paper, but it would be an important element 
+in any analysis of the appropriateness of open banking regimes in EMDEs. Further research on 
+this aspect is recommended.
+58 Since the necessary documentation is not available in English we were unable to ascertain whether customer 
+consent is required in Indonesia.
+59 For banking data in Indonesia, data protection is covered by Law No. 7 of 1992 on Banking, as amended by 
+Law No. 10 of 1998 and Bank of Indonesia Regulation No. 16/1/PBI/2014 on Protection of Consumers of 
+Payment Systems. The Information Technology Act of 2000, as amended in India, contains provisions for the 
+protection of electronic data. RBI issues periodic guidelines and circulars to maintain the confidentiality and 
+privacy of client information. However, a draft national data protection bill is in the process of being adopted in 
+both countries.
+60 The Australia Data 61 survey reported that barriers to adoption of such regimes for “vulnerable” populations 
+lie with the lack of understanding of data recipient value propositions and low consumer trust, highlighting the 
+importance of data protection for this stratum of the population. See Consumer Data Standards (2019).27
+12 dESIgn CoM pon EnTSEven if the data protection regulatory framework is or can become sufficiently robust, the 
+question remains whether vulnerable populations, such as those who are illiterate, can even 
+“consent” to such a regime or if a different type of data protection framework that goes beyond 
+consent would be more appropriate—for example, one that establishes a fiduciary relationship 
+between providers and customers (Medine and Murthy 2019).  This also is outside the scope of 
+this paper but is worthy of further exploration as part of an analysis of the appropriate elements 
+of a data protection framework that are required for EMDEs to adopt open banking regimes.
+LIABILITY AND CONSUMER PROTECTION
+The risk of fraud, scams, and customer error can be exacerbated in complex payment initiation 
+processes and the enhanced data sharing fostered by open banking regimes. First, all types 
+of data access conditioned on screen scraping increase the risk of a data breach. In many 
+countries, data access via login details sharing happens even without an open banking regime 
+set up. In fact, some open banking regimes, such as in the European Union, explicitly prohibit 
+screen scraping and support the use of APIs to minimize these risks. Yet even APIs are not risk 
+proof; security and data protection requirements are highly recommended.
+Second, the provision of payment initiation services poses greater risk than data aggregation 
+or account information services. PISPs not only retrieve customer data, but they also transmit 
+payment orders. The addition of third parties such as PISPs in a payment order can increase 
+the risk of an incorrectly transmitted or delayed order, which creates further issues if the 
+customer wishes to reverse an initial transaction (Carr et al. 2018). Determining ultimate liability 
+in fraudulent or erroneous transactions may be challenging in jurisdictions where national 
+liability frameworks are not adjusted to account for open banking and data sharing between 
+multiple parties (BIS 2019). 
+To mitigate the risks introduced by open banking, regimes should consider rules dealing with:
+1. Liability for fraud, theft, and technical and customer error.
+2. Consumer recourse, including dispute resolution.
+Regimes could consider the implications of TPP licensing and accreditation and allow for a 
+certain amount of reliance on it by data holders. 
+In terms of consumer recourse, many more jurisdictions have existing or planned mechanisms 
+to cover open banking issues. OBIE in the United Kingdom has created a dispute management 
+system (DMS) to handle requests, enquiries, complaints, and disputes between ASPSPs and 
+TPPs on open banking (Carr et al. 2018).
+DMS is a voluntary mechanism where participants adhere to a code of best practices, 
+including how to handle cases at first instance and how such cases can be taken to mediation, 
+adjudication, or arbitration. In Hong Kong, provisions addressing complaints-handling 
+mechanisms are included in third-party contracts. Customers should not be responsible for 
+direct loss resulting from unauthorized transactions unless the customer acted fraudulently or 
+with gross negligence. In Japan, the Association for Electronic Payment Services, a private 
+body, is responsible for handling customer complaints related to open banking. In Singapore, 28
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+the Personal Data Protection Commission facilitates complaints between customers and 
+providers. India has an Ombudsman Scheme for Digital Transactions (BIS 2019).
+Most of the open banking regimes reviewed, however, do not make specific provisions for 
+liability rules. The main exception is the European Union. PSD2 sets out a strong customer 
+authentication (SCA) requirement for most types of payment initiation as well as liability 
+conditions. The requirement places the liability on banks to reimburse customers in the first 
+place, even if unauthorized transactions originate from the relationship between the user and a 
+third party. 
+There are issues with the provisions made under PSD2/SCA rules, which have been criticized 
+as being inflexible and too prescriptive to accommodate future developments.61 Technical 
+difficulties have resulted in delays in implementing SCA.62 Further, it seems disproportionate 
+to place initial liability on ASPSPs, regardless of fault. Commentators have suggested that the 
+responsibility should first lie with the bank or third party where the transaction originated (Carr 
+et al. 2018). However, all open banking regimes should include rules on liability and security.
+Implications for EMDEs
+Given the risks at hand, EMDEs should determine the robustness of their current consumer 
+protection framework. If the framework is not sufficient, introducing an open banking regime 
+could bring the necessary level of protection for new entities entering into the process. An open 
+banking regime should set out liability provisions in case of data transmission errors or data 
+breach and, if the latter is in scope, the specific risks of payment initiation. Finally, cross-sectoral 
+dispute resolution processes should be considered.
+61 Various financial services trade associations based in the United Kingdom, such as Payments UK, Financial 
+Fraud Action UK, and the UK Cards Association, have raised concerns that SCA does not cater to 
+technologies such as wearable payments or internet of things-based devices. This could potentially “quash 
+this sort of innovation and other moves toward ‘invisible’ payments.” See the joint response from Payments 
+UK, Financial Fraud Action UK, and the UK Cards Association to the EBA Consultation on RTS: https://eba.
+europa.eu/node/81948/submission/368 . 
+62 See the EBA’s opinion on the deadline for migration to SCA for card-based ecommerce payments: https://
+eba.europa.eu/eba-publishes-opinion-on-the-deadline-and-process-for-completing-the-migration-to-strong-
+customer-authentication-sca-for-e-commerce-card-based-payment .29
+IMplICATIon S FoR  REgIME  dESIgnSECTION 4
+63 This report focuses on open banking and financial services since only these types of regimes presently exist. 
+If economic sectors extend beyond financial services, they also would become open data regimes. The 
+possibility presents the greatest potential for financial inclusion.IMPLICATIONS FoR  
+REGIME DESIGN
+THE POLICY OR REGULATORY FRAMEWORK OF AN OPEN BANKING 
+regime determines which types of services can be provided and which types of business 
+models are feasible. A regulator in an EMDE may wish to ensure the possibility of offering 
+open banking-enabled products and services—and corresponding business models—that 
+alleviate friction for low-income populations. If open banking supports social goals such as 
+financial inclusion, then those goals must be considered in the design of the open banking 
+regime. Keeping these considerations in mind when designing a regime is what we call 
+“financial inclusion by design.” 
+Earlier in the paper we identified 12 design components for regulators to consider in general 
+when implementing an open banking regime (see Section 3). Of the 12 components, early 
+evidence suggests that the four related to scope and the one related to cost would, to a 
+large extent, determine whether a regime achieves financial inclusion by design. The choices 
+specifically concern (i) regime participants and data reciprocity, (ii) which types of data are 
+shared, (iii) which services fall within the regime’s ambit,63 (iv) whether payment initiation is 
+enabled, and (v) the cost of data exchange requests.
+The wider an entity’s ambit, the greater the number and diversity of new services that could be 
+enabled and the greater potential for competition. In this context, bringing fintechs and other 
+licensed or accredited TPPs into the regime’s purview would go a long way toward ensuring 
+that sufficient actors are in place to support the creation of inclusive open banking products. 
+Similarly, the greater the breadth of eligible data types, the more likely that relevant products 
+could be developed for low-income individuals. Customer transaction data would be key in all 
+instances, and personally identifiable information/customer registration data are necessary in 
+the case of CCDD functionality. 
+To ensure that even those without a digital financial data trail can benefit, regulators should 
+consider going beyond open banking to open data. To that end, telecoms and utilities often 30
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+are a top priority for financial inclusion in many EMDEs. However, they may add a layer of 
+complexity given the need for cross-sectoral coordination and increased data security risks. 
+If an appropriate payment infrastructure is in place, payment initiation should be enabled to 
+ensure that customers can act on the analytics and recommendations their data generate. 
+Finally, given the many barriers to adopting digital financial services and the lack of resources 
+that low-income populations experience, open banking regimes are likely to have the biggest 
+impact on these individuals—if they are not required to pay for the service. As discussed in 
+Section 3, another policy question is: Who in the ecosystem picks up the bill?
+Table 1 shows how design components can have a practical effect on a regime’s design. It 
+maps components to the open banking-enabled products and services we have identified 
+for low-income individuals. These products and services include savings trackers and 
+sweepers, utility switching, CCDD, budgeting applications with payment initiation, and 
+responsible digital credit.
+In EMDEs in particular, open banking regimes have been introduced fairly recently. Early 
+findings need to be further tested and substantiated through in-depth research in a range of 
+countries. Additional research is required particularly on the feasibility of implementing open 
+data regimes and the effect regimes have on poor people. More work should be undertaken on 
+the implementation staging of open banking and open data and their affect on various scheme 
+participants (rural and remote entities, in particular). Customer segmentation work also should 
+be considered—the types of data customers possess and how they match with the types of 
+services they need. To better understand the role of industry, another area of further study is 
+the current and potential governance structures of open banking regimes. Finally, more work 
+on data protection is a prerequisite to understanding what makes a data protection regime 
+sufficiently robust to ensure a safe data sharing regime—and how these elements can be 
+introduced in countries that lack robust data protection regimes. 31
+IMplICATIon S FoR REgIME  dESIgn  TABLE 1.  Open banking paves the way for inclusive financial services
+Regime architects should consider the following elements for specific inclusive services.
+ProductRequired
+Data HolderRequired Data 
+ScopeRequired
+Service ScopeRequired  
+FunctionalityRequired  
+Data Request 
+Frequency
+Savings trackers/ 
+automatic sweepersBanks, EMIs, PSPs, 
+other FSPsCustomer 
+transaction dataBanking, payments Recurring payment 
+initiationRequires real time, 
+continuous data 
+calls
+Utility switching Utilities, banks, 
+EMIs, PSPs, other 
+FSPsCustomer 
+transaction data, 
+customer utility dataBanking, payments, 
+utilitiesPayment initiation Requires a limited 
+number of real time 
+data calls
+Collaborative 
+customer due 
+diligenceaBanks, EMIs, 
+PSPs, other FSPs 
+(pensions, insurance, 
+investments), mobile 
+network operators, 
+utilities, other 
+alternative providers 
+that can identify an 
+individualCustomer 
+registration 
+data, including 
+identificationBanking, utilities, 
+telecoms, pensions, 
+insurance, 
+investmentLegal framework 
+to allow digital 
+copies of ID to be 
+used for KYCRequires a limited 
+number of real time 
+data calls
+Budgeting apps with 
+payment initiationBanks, EMIs, 
+PSPs, other FSPs 
+(pensions, insurance, 
+investments), utilities, 
+credit providersCustomer 
+transaction data, 
+customer data 
+concerning other 
+financial services 
+(credit, pensions, 
+insurance, 
+investments)Banking, payments, 
+credit, pensions, 
+insurance, 
+investmentAccount information 
+services, payment 
+initiation, other 
+types of transaction 
+initiation/customer 
+acquisition, e.g., 
+ability to enter into 
+credit agreementsRequires real time, 
+continuous data 
+calls
+Credit Banks, EMIs, 
+PSPs, other FSPs, 
+credit providers, 
+other providers of 
+alternative data 
+(utilities, telecoms, 
+etc.)Customer 
+transaction data, 
+customer credit 
+data, access to 
+alternative dataBanking, payments, 
+credit, further 
+sectors that provide 
+alternative data 
+(utilities, telecoms, 
+etc.)Recurrent payment 
+initiation, other 
+types of transaction 
+initiation/customer 
+acquisition, e.g., 
+ability to enter into 
+credit agreements 
+on behalf of 
+customer, ability 
+to undertake debt 
+rehabilitationService dependent: 
+for a one-time credit 
+switch, limited 
+data calls; for pre-
+approved credit to 
+reduce reliance on 
+overdraft, requires 
+real-time continuous 
+data calls
+a. CCDD approaches seek to address the shortcomings of current CDD processes. Examples include creating a public utility that FSPs can 
+use to identify clients and verify identities on an ongoing basis; access to KYC as a service; a private centralized database where banks can 
+share and access KYC information on corporate clients; and self-sovereign IDs (a new category of ID that promises to work across borders, 
+which allows individuals to prove their identity based on alternative sources of data and provides customers with more control over who 
+accesses their data). See Lyman et al. (2018).32
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+APPENDIX A
+GLOSSARY oF TERMS
+Term Definition
+Account aggregator A category of nonbanking financial company, created by the Reserve Bank of 
+India in 2016. Account aggregators securely transfer financial data from data 
+holders to data users based on customer consent.
+Account information 
+service provider (AISP)A third-party AISP provides customers with consolidated online information 
+about their financial accounts with other payment service providers.
+Account servicing 
+payment service 
+provider (ASPSP)A financial institution that provides customers with accounts for payment 
+services. ASPSPs include banks, payment institutions, and e-money 
+institutions.
+Aggregated data Data concerning financial services, such as service quality and customer use, 
+that are collected on an aggregate basis.
+Application 
+programming interface 
+(API)A set of routines, protocols, and tools for building software applications. In the 
+context of this report, APIs are the conduit for data transmission between two 
+parties.
+BigTech A large company whose primary role is to provide digital services rather than 
+financial services. Examples include Amazon, Facebook, and Google.
+Collaborative customer 
+due diligence (CCDD)Customer due diligence (CDD) on its own comprises customer information 
+that enables an organization to assess the extent to which the customer 
+exposes the organization to a range of risk. Collaborative CDD (CCDD) is a 
+new approach to CDD that seeks to address the shortcomings of current 
+CDD processes. Examples include creating a public utility that FSPs can use 
+to identify clients and verify identities on an ongoing basis, access to KYC as 
+a service (a centralized database where banks can share and access KYC 
+information on corporate clients), and self-sovereign IDs.
+Consumer data right 
+(CDR)Under Australian law, the right of a consumer to access his or her own data or 
+to share it with an accredited data recipient to whom the consumer has given 
+permission to access.
+Customer acquisition 
+servicesServices, including customer referrals and loyalty programs, provided by third 
+parties that help the principal obtain new clients.
+Customer data Personally identifiable customer information that can be used for data on 
+account opening and use, including registration, KYC, and CDD data.
+Customer transaction 
+dataData from a customer’s bank or payment account(s) that show the customer’s 
+transaction history.
+Data holders Entities that hold or possess customer data.
+Data portability The ability of data subjects to download a full set of their data and “port” or 
+share it with whomever they choose.33
+gloSSARY o F TERMSTerm Definition
+Data sharing regime Another term for open banking.
+Data subject An individual or company that creates data.
+Data user An entity that uses the data belonging to data subjects to propose a service.
+Debt rehabilitation A process whereby an individual’s debt is restructured and reduced to a debt 
+level that is compatible with the individual’s capacity to repay creditors.
+Electronic payment 
+service provider (EPSP)A term used by Japan’s Financial Services Agency to identify which entities 
+can access customer data under its open banking regime. EPSPs include 
+payment initiation service providers (PISPs) and account information service 
+providers (AISPs).
+Financial services 
+provider (FSP)An entity that provides financial services to consumers and other businesses.
+Fintech A technologically enabled innovation in financial services that could result 
+in new business models, applications, processes, or products, with an 
+associated material effect on financial markets and institutions and the 
+provision of financial services.
+General Data Protection 
+Regulation (GDPR)The European Union’s General Data Protection Regulation can be reviewed at 
+https://eur-lex.europa.eu/eli/reg/2016/679/oj.
+Know your customer 
+(KYC)The process banks and other FSPs undertake to verify the identity of clients, 
+either before client account opening or before the start of doing business to -
+gether. KYC often includes the provision and verification of client identification.
+Open API An open API (also referred to as a public API) is a publicly available applica- 
+tion programming interface (API) that provides developers with programmatic 
+access to a proprietary software application or web service.
+Open banking regime A public sector-driven framework in which certain financial sector players 
+share financial product data and/or certain customer-specific data with other 
+financial sector stakeholders. The sharing of customer-specific data is based 
+on request by, and consent of, the consumer.
+Open data regime A public sector-driven framework for data sharing that goes beyond financial 
+services to include the sharing of telecoms, utilities, health, social media, and/ 
+or other types of data.
+Payment initiation A third-party service that facilitates the initiation of customer payments.
+Payment initiation 
+service provider (PISP)A third-party service provider that allows a consumer to make a payment 
+from their bank account directly to the merchant, typically by establishing an 
+electronic payment link between payer and online merchant via the payer’s 
+online banking module.
+PSD2 The European Union’s Second Payments Services Directive (PSD2) can be 
+reviewed at https://ec.europa.eu/info/law/payment-services-psd-2-directive- 
+eu-2015-2366_en
+Screen scraping The action of using a computer program to copy data from a website.
+Services data Data concerning specific financial services and products, including pricing and 
+product description.
+Smart loan repayment A debt repayment plan that accounts for fluctuations in a customer’s income 
+during the repayment period, allowing the customer to pay more (or less) 
+based on their available liquidity—without triggering default provisions.
+Third-party provider 
+(TPP)A non-account-servicing payment service provider that is licensed or 
+registered to provide a service to ASPSP customers, such as payment/ 
+transaction initiation, account aggregation, and customer acquisition services.
+X2A Also known as “access to account,” X2A is another term for the data-sharing 
+component of PSD2.34
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+APPENDIX B
+64 Communicado DC/BACEN No. 33455 of  4 April 2019: https://www.normasbrasil.com.br/norma/
+comunicado-33455-2019_376986.html .
+65 Joint Resolution No. 1 of 4 May 2020, providing for the implementation of Open Banking: https://www.bcb.
+gov.br/content/config/Documents/Open_Banking_CMN_BCB_Joint_Resolution_1_2020.pdf .
+66 Communicado DC/BACEN No. 33455 of 24 April 2019: https://www.normasbrasil.com.br/norma/
+comunicado-33455-2019_376986.html .BRAZILIAN OPEN  
+BANKING—A CASE STUDY
+IN APRIL 2019, THE CENTRAL BANK OF BRAZIL ISSUED A HIGH-LEVEL 
+communiqué that set out the main elements of the country’s open banking regime.64 The 
+formal issuance of a Resolution to implement open banking followed on 4 May 2020,65 after 
+several months of public consultation with industry stakeholders. The regime’s rationale was to 
+“increase efficiency in the credit and payment market in Brazil by promoting a more inclusive 
+and competitive business environment while preserving the security of the financial system and 
+the protection of consumers.”66 
+Open banking in Brazil comes on the heels of recent regulatory reforms that promote 
+competition in the financial services sector, including the following regulations:
+• Regulation establishing peer-to-peer (P2P) and platform lending.
+• Tiered prudential regulation imposing lighter requirements on smaller firms with a narrow 
+range of products and low complexity (Cohen Freue 2019).
+• Establishment of an instant payments scheme (the PIX instant payment system).
+• Regulations to facilitate merchant credit based on merchants’ receivables (without being 
+locked into a particular bank).
+The open banking regime, which came into force on 1 June 2020 and will be implemented in 
+stages between November 2020 and October 2021, has addressed the 12 design components 
+previously laid out:
+1. Types of services.  As set out in the Resolution, the regime covers all services regulated 
+by the Central Bank of Brazil, including banking, payments, credit, and foreign exchange 
+operations. Note that data on products and services related to investment, insurance, and 35
+BRAzIlIAn opEn BAnkIng—A C ASE S TUdY open pensions are in scope, but institutions in these sectors technically are not under the 
+jurisdiction of the Central Bank. There are, however, ongoing discussions on whether these 
+sectors will participate in open banking in their own right.
+2. Participants.  The regime covers financial institutions, payment institutions, and other 
+institutions authorized to operate by the Central Bank. There is data sharing reciprocity for 
+all scheme participants.
+3. Types of data.  The regime requires the sharing of the following data: (i) public product/
+services data, including location of service points, product characteristics, contractual 
+terms and conditions, and financial costs; (ii) customer registration data, including name, 
+affiliation, and address, that can be used for CCDD; (iii) transactional customer data, 
+including data related to deposit accounts, credit operations, and other products and 
+services contracted by customers; and (iv) data required for the implementation of payment 
+services, including initiation of payments, transfers of funds, payments of products and 
+services, among others, and the forwarding of loan proposals. Participants in the regime 
+convention can extend the scope to other types of data and services. Prior customer 
+consent is required for all data sharing except public product data sharing.
+4. Payment initiation. In addition to data exchange, the regime supports payment initiation 
+and loan proposal forwarding, which allows customers to directly contract with TPPs for 
+loans through a digital interface.
+5. Mandatory vs. voluntary.  The regime is mandatory for banks categorized as Segment 1 
+and Segment 2 institutions (except those that do not provide any of the services in scope), 
+as well as all authorized payment institutions in Brazil. Participation by all other financial 
+institutions in scope is voluntary, as long as they meet the technical requirements for data 
+transmission via an API and are register in the participant repository. 
+6. Technical specifications for data sharing.  The regime foresees participants required 
+to make APIs available for data transmission. A convention drafted by participants will 
+decide on the development of technological standardization, operational procedures, safety 
+standards, and API implementation. The convention also will decide other issues, such as a 
+dispute settlement mechanism and fees participants must pay for premium data calls. The 
+Central Bank will oversee the drafting of the convention.
+7. Staged implementation.  The regime foresees staged implementation by data 
+sensitivity, data type, and data holder type. In the first phase, public data on service 
+channels and basic bank products, such as deposit and savings accounts and credit, 
+must be shared. In the second phase, customer registration data and customer 
+transaction data on basic bank products must be shared. In the third phase, payment 
+initiation and loan forwarding must be shared. In the fourth phase, public data and 
+customer transaction data on more complex financial products, such as foreign 
+exchange, investments, and insurance, require disclosure.
+8. Lead regulator/policy mandate.  Although the lead regulator is the Central Bank, the 
+regime includes access to consumer transaction data on securities, open pensions, and 
+insurance. The Central Bank does not have jurisdiction over these products, and currently, 36
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+insurance and pensions and securities and investment regulators are not implementing 
+open banking in their sectors because they have other priorities. Thus, the open banking 
+regime may trigger issuance of supplementary resolutions by these authorities in the future.
+9. Governance.  The Resolution envisages the drafting of a convention by regime 
+participants, which will set out the agreed on rules on developing technological 
+standardization, operational procedures, safety standards, implementation of APIs, a 
+dispute settlement mechanism, and fees participants must pay for premium data calls. The 
+Central Bank will oversee the drafting.
+10. Cost distribution.  The regime incorporates a tiered pricing regime that provides for 
+certain free API calls per service/product. Specifically, the following API calls are free: all 
+calls concerning all payment initiation; two calls per month per participating institution 
+per customer (concerning registration data); and 120 calls per month, per participating 
+institution and per customer, concerning customer transaction data. For remaining API 
+calls, the data recipient may be required to reimburse the data holder at a cost to be 
+determined by the convention.
+11. Data privacy and portability.  The regime requires participants to adhere to data privacy 
+regulations, including the Brazilian General Data Protection Law (LGPD),67 published in 
+August 2018 and in effect as of August 2020. LGPD includes both data ownership and data 
+portability provisions, which opens the door to expanding the data sharing regime beyond 
+open banking to sectors such as telecoms and utilities.
+12. Liability and consumer protection.  The regime does not set out liability provisions or 
+other consumer protection elements. However, the convention will develop them, including 
+establishment of channels for consumer complaints and creation of procedures and 
+mechanisms for handling and settling disputes among regime participants.
+67 See LGPD: https://www.lgpdbrasil.com.br/wp-content/uploads/2019/06/LGPD-english-version.pdf .37
+MEXICA n opEn B AnkIng— A C ASE  STUdYAPPENDIX C
+68 See Ley Para Regular Las Instituciones de Tecnología Financiera: https://www.cnbv.gob.mx/Normatividad/
+Ley%20para%20Regular%20las%20Instituciones%20de%20Tecnolog%C3%ADa%20Financiera.pdf.
+69 See CNBV’s secondary regulation: https://www.cnbv.gob.mx/Normatividad/Disposiciones%20de%20
+car%C3%A1cter%20general%20aplicables%20a%20las%20instituciones%20de%20cr%C3%A9dito.pdf .
+70 See the Bank of Mexico’s secondary regulations: https://www.dof.gob.mx/nota_detalle.
+php?codigo=5588824&fecha=10/03/2020 .MEXICAN OPEN BANKING—  
+A CASE STUDY
+MEXICO’S “FINTECH LAW, PASSED ON 9 MARCH 2018, INCLUDES 
+high-level open banking provisions in Articles 76 and 77.68 Details about the regime 
+were set out by secondary regulation issued in March 2020 by CNBV, one of the 
+country’s financial sector regulators.69 The secondary regulation sets technical and security 
+standards for APIs, plus other open banking regime details on public data, for example, 
+products and services offered and locations of ATMs and branches. After its summer 2020 
+pilot, CNBV expects to issue similar regulations on customer transaction data and aggregated 
+data in 2021 (Deloitte 2020). The Bank of Mexico issued secondary regulation in March 2020 
+as well, setting technical and security standards for APIs plus other open banking regime 
+details for clearinghouses and credit bureaus.70 The Ministry of Finance, co-author of the 
+Fintech Law, chose to develop the main details of open banking in secondary regulation to 
+retain legislative flexibility.
+Open banking provisions are a minor part of the Fintech Law. Its main provisions focus on 
+regulating new players (crowdfunding and e-money institutions) and setting up a regulatory 
+sandbox. One of the primary reasons for issuing the Fintech Law was to deal with the growing 
+number of crowdfunding and P2P lending platforms in operation, as well as the e-wallet and 
+cryptocurrency providers and exchanges that had, until recently, operated in a grey area. 
+Another rationale was to support financial inclusion. In the context of financial inclusion, open 
+banking is expected to render the marketplace more transparent and ensure that products best 
+suited to the unbanked will be developed.38
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+The main contours of the open banking regime are as follows:
+1. Types of services. The regime covers a broad range and numerous types of financial 
+services, including investments and insurance. Pensions are part of a separate scheme.71 
+2. Participants.  All financial institutions, fintechs, clearinghouses, and credit bureaus fall 
+within scope. Reciprocity exists between most data sharers and receivers because a 
+majority of the same institutions can receive—and must share—data. The sole exception is 
+the third parties that specialize in IT, such as BigTech, that may access data but may not 
+be required to share in return.72 Sectoral scope is broad; CNBV has jurisdiction over 21 
+different types of entities, including credit institutions, brokerage houses, stock exchanges, 
+and investment fund operators, among others.
+3. Types of data.  Article 76 of the Fintech Law identifies three types of data: (i) 
+nonconfidential financial data on financial products and services, plus location of access 
+points, (ii) aggregated statistical data on transactions that cannot be disaggregated, and 
+(iii) consumer transaction data for products or services. This last category requires explicit 
+client consent. 
+4. Payment initiation.  Payment initiation is not part of Mexico’s open banking regime. 
+However, this type of functionality is possible through the Cobros Digitales (CoDi) overlay 
+service to Mexico’s instant payment system (SPEI). Banks are required to adopt the CoDi 
+solution, while nonbanks may choose to register through a process established by the 
+Central Bank.
+5. Mandatory vs. voluntary.  The Fintech Law establishes a mandatory regime for all 
+entities in scope.
+6. Technical specifications for data sharing.  The Fintech Law foresees API standardization, 
+with secondary regulation setting out the technical details. Fintechs and financial institutions 
+do not carry special obligations ,73 nor do they require accreditation to share or receive data 
+over APIs—beyond compliance with API technical and security standards.
+7. Staged implementation.  The Fintech Law does not set out staged implementation but 
+is de facto  due to the issuing process of secondary legislation. Public data are released 
+before customer transaction data are.
+8. Lead regulator/policy mandate.  CNBV oversees how the open banking regime is 
+applied to fintechs and financial institutions; the Bank of Mexico has jurisdiction over 
+clearinghouses and credit bureaus in this regard. The split follows specific mandates for 
+71 The pensions regulator, la Comisión Nacional del Sistema de Ahorro para el Retiro (CONSAR), issued 
+voluntary API rules in November 2018, which are separate from the open banking scheme set out in 
+the Fintech Law. See https://www.gob.mx/cms/uploads/attachment/file/527504/dispos_operaciones__
+compila_29_11_19.pdf .
+72 This practice has been criticized by industry stakeholders because it allows BigTech to access data without 
+requiring such entities to provide access to their databases—arguably creating an uneven playing field. See 
+Section 1, for details. 
+73 Only clearinghouses and credit bureaus need to be authorized to access relevant data, as set out 
+in the secondary regulations of the Bank of Mexico. See https://www.dof.gob.mx/nota_detalle.
+php?codigo=5588824&fecha=10/03/2020 .39
+MEXICA n opEn BAnkIng—A C ASE S TUdY each regulator. The pensions regulator separately oversees voluntary API rules for pension 
+fund administrators.
+9. Governance.  No separate entity determines governance issues. They are dealt with by the 
+relevant regulator in secondary regulation.
+10. Cost distribution. All institutions can charge fees for data exchange, but fees must be 
+authorized in advance by the relevant regulator. To prevent barriers to access, fees must be 
+fair, transparent, and nondiscriminatory.
+11. Data privacy and portability.  Mexico has a general data protection law, but no data 
+portability provisions. Although data portability provisions are not required for open 
+banking, they do allow for the potential extension of data sharing regimes to other sectors.
+12. Liability and consumer protection.  Neither the Fintech Law nor its implementing 
+regulations have addressed liability and consumer protection.40
+OPEN BANKING: HOW TO DESIGN FOR FINANCIAL INCLUSION
+REFERENCES
+Beaton-Wells, Caron. 2019. Podcast Competition Lore: Interview with 
+Dr Jorge Padilla, head of Compass Lexecon Europe. Episode 28. 
+Melbourne: Competition Lore, 22 May. https://competitionlore.com/
+podcasts/banking/
+BIS (Bank for International Settlements). 2019. “Report on Open 
+Banking and Application Programming Interfaces.” Basel: BIS, 
+November. https://www.bis.org/bcbs/publ/d486.pdf
+Carr, Brad, et al. 2018. “Liability and Consumer Protection in Open 
+Banking.” Washington, D.C.: Institute of International Finance. 
+https://www.iif.com/Publications/ID/1418/Liability-and-Consumer-
+Protection-in-Open-Banking
+Chaib, Ismail. 2018. “Regulating Open Banking.” Report. 
+Berlin: TESOBE. https://www.openbankproject.com/reports/
+regulatingopenbanking/
+Cohen Freue, Cynthia. 2019. “Fintechs Step on the Gas as Brazil 
+Unveils Open Banking.” Buenos Aires:  S&P Global, 8 May. https://
+www.capitaliq.com/CIQDotNet/CreditResearch/RenderArticle.
+aspx?articleId=2228990&SctArtId=470780&from=CM&nsl_
+code=LIME&sourceObjectId=10976734&sourceRevId=11&fee_
+ind=N&exp_date=20290508-19:32:36
+Consumer Data Standards. 2019. “Phase 1 CX Report.” Eveleigh, 
+Australia: Data61, 20 February. https://consumerdatastandards.gov.
+au/wp-content/uploads/2019/02/Consumer-Data-Standards-Phase-
+1_-CX-Report.pdf
+Datwani, Leena, and Anand Raman. 2020. “India’s New Approach to 
+Personal Data Sharing.” Working paper. Washington, D.C.: CGAP, July. 
+https://www.cgap.org/research/publication/indias-new-approach-
+personal-data-sharing
+Davies, Sara, Andrea Finney, and Yvette Hartfree. 2016. “The Poverty 
+Premium—When Low-income Households Pay More for Essential Goods 
+and Services.” Bristol: University of Bristol, November. http://www.bristol.
+ac.uk/geography/research/pfrc/themes/finexc/poverty-premium/
+Deloitte. 2020. “Open Banking—A Distant Reality for Mexico?” Mexico 
+City: Deloitte, 18 March. https://www2.deloitte.com/mx/es/pages/
+dnoticias/articles/open-banking-realidad-lejana-para-mexico.html
+GSMA Intelligence. 2020. “The Mobile Economy 2020.” London: 
+GSMA. https://www.gsma.com/mobileeconomy/wp-content/
+uploads/2020/03/GSMA_MobileEconomy2020_Global.pdfHM Government. 2019. “Smart Data: Putting Consumers in Control 
+of Their Data and Enabling Innovation.” London: Information Policy 
+Team, June. https://assets.publishing.service.gov.uk/government/
+uploads/system/uploads/attachment_data/file/808272/Smart-Data-
+Consultation.pdf
+Lyman, Timothy, Louis de Koker, Chrissy Martin Meier, and Mehmet 
+Kerse. 2019. “Beyond KYC Utilities: Collaborative Customer Due 
+Diligence for Financial Inclusion.” Working Paper. Washington, 
+D.C.: CGAP, August. https://www.cgap.org/sites/default/files/
+publications/2019_08_28_Working_Paper_Beyond_KYC_Utilities_0.
+pdf
+Lyman, Timothy, Matthew Soursourian, Louis De Koker, and Chrissy 
+Martin Meier. 2018. “Collaborative Customer Due Diligence: New 
+Ways Forward.” Blog series. Washington, D.C.: CGAP, October. 
+https://www.cgap.org/blog/collaborative-customer-due-diligence-
+new-ways-forward#:~:text=CDD%20involves%20identifying%20
+a%20client,background%20and%20beneficial%20ownership -
+%20checks.&text=If%20FSPs%20are%20willing%20to,terrible%20
+and%20slow%20customer%20experience
+Medine, David, and Gayatri Murthy. 2019. “3 Data Protection 
+Approaches That Go Beyond Consent.” CGAP blog post, 7 January. 
+https://www.cgap.org/blog/3-data-protection-approaches-go-
+beyond-consent
+Padilla, Jorge, and Miguel de la Mano. 2018. “Big Tech Banking.” 
+Washington, D.C.: Compass Lexecon, 4 December. https://papers.
+ssrn.com/sol3/papers.cfm?abstract_id=3294723
+Pitts, John. 2019. “Plaid’s Response to Finance Canada’s Consultation 
+on Open Banking.” Washington, D.C.: Plaid, 11 February. https://plaid.
+com/documents/Plaid-Response-to-Finance-Canada-Consultation-
+on-Open-Banking.pdf
+Reynolds, Faith, and Mark Chidley. 2019. “Consumer Priorities for 
+Open Banking.” London: Manifesto Growth Architects. https://www.
+openbanking.org.uk/wp-content/uploads/Consumer-Priorities-for-
+Open-Banking-report-June-2019.pdf
+Waldron, Daniel, and Siena Hacker. 2020. “Electric Bankers: Utility-
+Enabled Finance in Sub-Saharan Africa.” Working Paper. Washington, 
+D.C.: CGAP, May. https://www.cgap.org/research/publication/electric-
+bankers-utility-enabled-finance-sub-saharan-africacgap.org

@@ -1,0 +1,609 @@
+Policy Research Working Paper 9135
+Cyber Resilience of Autonomous Mobility Systems
+Cyber Attacks and Resilience-Enhancing Strategies
+Bo Zou
+Pooria Choobchian
+Julie Rozenberg
+Sustainable Development
+Office of Chief Economist 
+January 2020
+Public Disclosure Authorized Public Disclosure Authorized Public Disclosure Authorized Public Disclosure AuthorizedProduced by the Research Support TeamAbstract
+The Policy Research Working Paper Series disseminates the findings of work in progress to encourage the exchange of ideas about development 
+issues. An objective of the series is to get the findings out quickly, even if the presentations are less than fully polished. The papers carry the 
+names of the authors and should be cited accordingly. The findings, interpretations, and conclusions expressed in this paper are entirely those 
+of the authors. They do not necessarily represent the views of the International Bank for Reconstruction and Development/World Bank and 
+its affiliated organizations, or those of the Executive Directors of the World Bank or the governments they represent.Policy Research Working Paper 9135
+The increasing cyber connectivity of vehicles and between 
+vehicles and infrastructure will drastically reshape mobility 
+in the coming decades. Although the advent of connected 
+mobility is expected to benefit travelers and society by 
+smoothing traffic, improving rider convenience, and 
+reducing accidents, the augmented cyber components in 
+connected and autonomous vehicles and related infrastruc -
+ture also give rise to cyber attacks on the transportation 
+system. Yet, little attention has been paid to transportation 
+cyber resilience. This paper thus proposes an investigation 
+on this topic with a comprehensive literature review. Cyber 
+components and plausible autonomous mobility systems 
+operation scenarios are discussed, before identifying possible cyber attacks to autonomous mobility systems at the vehicle 
+and system levels. The discussion then moves to existing 
+practices to enhance cybersecurity, and several strategies 
+are investigated toward enhancing autonomous mobility 
+system cyber resilience. At the vehicle level, creating layers 
+and separation to reduce cyber component connectivity 
+and deploying an independent procedure for data collec -
+tion and processing are important in vehicle design and 
+manufacturing. At the system level, recommended strate -
+gies include keeping redundancy in transportation capacity, 
+maintaining a separate road network, and deploying differ -
+ent sub-autonomous mobility systems. 
+This paper is a product of the Office of the Chief Economist, Sustainable Development, and was funded by the Korean 
+Green Growth T rust Fund. It is part of a larger effort by the World Bank to provide open access to its research and make 
+a contribution to development policy discussions around the world. Policy Research Working Papers are also posted on 
+the Web at http://www.worldbank.org/prwp. The authors may be contacted at jrozenberg@worldbank.org. Cyber Resilience of Autonomous Mobility Systems:  
+Cyber Attacks and Resilien ce-Enhancing Strategies 
+Bo Zou(1), Pooria Choobchian(1), Julie Rozenberg(2) 
+(1)University of Illinois at Chicago, (2)World Bank
+JEL: R42 R
+48 
+Keywords: autonomous mobility systems; cyber resilience; cyber attacks; vehicle- and system-level 
+strategies  2 
+ 1 Introduction 
+The objective of this paper is to understand the cy ber resilience of transportation systems, with a 
+focus on future autonomous mobility. Cyber resilience is becoming a prominent issue in transportation 
+as an increasing number of vehicles are Internet—and more generally cyber—connected. Taking the 
+United States as an example, currently about 50 million vehicles or 20% of all vehicles on the road 
+have Internet connectivity. All major car manufacturers have been committed to adding more 
+connectivity features to their upcoming models. As  a result, it is estimated that about 17 million new 
+“connected cars” will be added to the US roads each year (Consumer Watchdog, 2019). These vehicles 
+will be interconnected through not only cyber components in the vehicles, but also the associated 
+infrastructure.  
+While the increased cyber connectivity is expected to enhance vehicle control, communication, 
+and diagnostic functions, which contribute to improved vehicle- and system-level functioning and mobility management, cyber connectivity also exposes vehicles and the mobility system to significant 
+risks of cyber attacks. Yet, little is known about what can be done to prepare the increasingly cyber 
+connected vehicles and the mobility system for poten tial cyber attacks. Anticipating the growing trend 
+of vehicle cyber connectivity and the eventual dom inance of autonomous vehicles—which will be even 
+more cyber connected—in the future mobility environment, this paper takes a forward-looking view by focusing on ways to enhance the cyber resilience of autonomous mobility systems (AMS). Various 
+types of cyber attacks on AMS will be investigated and strategies to enhance AMS cyber resilience 
+will be explored. Given the interdisciplinary nature of transportation cyber resilience, our investigation 
+and exploration are based on a comprehensive, multifaceted literature review through journal articles 
+and technical reports from disciplines including transportation engineering, computer science, electrical engineering, systems engineering, urban planning, and public policy. The review and 
+subsequent analysis provide the building blocks for understanding the current practices and prospective 
+strategies for AMS cyber resilience enhancement.  
+It is worth highlighting that although the focus of the paper is on AMS, many of the findings can 
+inform enhancing the cyber resilience of today’s transportation systems given the common feature of cyber connectivity. In fact, as AMS is yet to be deployed, many discussions in the paper draw insights 
+from research and experimentation on today’s connected vehicles and transportation systems. In the 
+ensuing section, we first discuss the cyber compone nts in AMS and plausible AMS operation scenarios. 
+Understanding the AMS operation scenarios is a prem ise besides understanding cyber attacks to design 
+effective measures to enhance AMS cyber resilience. A variety of plausible types of cyber attacks, at 3 
+ both the vehicle and system levels, are explored in the context of AMS in Section 3. In view of the 
+AMS cyber components, operations scenarios, and cyber attack types, Section 4 is dedicated to the 
+concept of cyber resilience in the context of AMS, a nd practices and possible strategies to enhance 
+AMS resilience. A summary is given in Section 5. 
+ 
+2 Future autonomous mobility systems 
+2.1 Cyber components in an  autonomous vehicle 
+In autonomous mobility systems, self-driving vehicles are smart enough to constantly make 
+routing and navigating decisions in a physical road network given existing/predicted vehicular traffic 
+streams. The routing and navigating capability of AVs depends critically on the cyber components and 
+their interactions with the physical parts of AVs and associated infrastructure. Indeed, it is the cyber 
+components and the cyber-physical interactions, which are much more complex than in today’s 
+vehicles and transportation systems, that disti nguish AMS from today’s transportation systems.  
+The cyber components and functions are embedded in the sensors and network connectivities of 
+AVs. Fig. 1 illustrates the different sensing technol ogies that will be essential for information collection 
+and the sense-and-avoidance capability of an AV. Dedicated short-range communication further 
+enables vehicle-to-vehicle and vehicle-to-infrast ructure communications for sending and receiving 
+critical data such as road condition, congestion, cr ashes, and possible rerouting. Dedicated short-range 
+communication also enables platooning, i.e., a train of AVs that travel together collectively. The information collected will be processed through a cen tral onboard computing unit that outputs routing 
+and navigating decisions. However, all these cybe r components and functions are subject to cyber 
+attacks. 
+ 
+ 
+4 
+ Fig. 1.  Sensors and other technologies in a future AV  
+(source: Center for Sustainable Systems, 2018). 
+ 
+2.2 Plausible AMS operation scenarios 
+Since AVs in an AMS do not rely on human drivers, future mobility would look quite differently 
+from what it is today. While research on future transportation with AVs has been booming, a consensus 
+has not been achieved on the exact operation scenario of future transportation systems. Three plausible 
+scenarios have attracted most attention: 
+ Autonomous mobility with private ownership:  In this scenario, most vehicles running on the 
+street will be driverless and owned by indi vidual households. The possibility of household 
+members coordinating schedules so that a single AV can accommodate their daily activities 
+has been investigated. Relevant research has been further extended to looking into AVs co-
+ownership by residents in a neighborhood or a community, which can reduce the ownership 
+cost of each individual and increase use flexibility. 
+ Shared autonomous mobility:  The second scenario also conceives a world dominated by AVs. 
+However, these AVs will be assets of large fl eet operators such as a driverless version of 
+future transportation network companies such as Uber and Lyft. Given that all major auto manufacturers nowadays are partnering with AV technology companies and/or developing 
+AVs independently, it is possible that auto manufacturers may also become AV mobility 
+service providers.  
+ A mixed private and shared autonomous mobility  with coexistence of human-driven vehicles:  
+This may be the most plausible scenario considering the long transition time from today to a 
+complete self-driving environment, which may take at least a few decades (Fig. 2). A mix of 
+traffic will persist on the road, including priv ately owned human-driven vehicles, shared 
+human-driven vehicles, privately owned AVs, and shared AVs (see Fig. 3, which forecasts 
+the total miles driven in the United States). The coexistence of the four types of vehicles would 
+make traffic control very complex and  challenging for modeling and analysis (Noruzoliaee 
+and Zou, 2019). 
+Note that most transportation systems of today have car and non-car modes. The coexistence of 
+different modes is also expected to persist in th e foreseeable future. Public transportation is an 
+important non-car mode in helping mitigate traffic congestion, energy use, and emissions. In a future 
+AMS, alternative modes other than AVs, especially those that could be immune to cyber attacks, would 5 
+ be necessary to offer transportation capacity when the AMS is affected by cyber attacks. Joint 
+considerations of AMS and alternative modes will therefore have important implications for enhancing 
+AMS cyber resilience. This will be discussed in Section 4.  
+ 
+ 
+ 
+Fig. 2.  AV sales, travel, and fleet projections (source: Litman, 2018). 
+ 
+ 
+ 
+Fig. 3.  Projection of annual vehicle miles traveled by different vehicle types: 2015-2040 
+(source: Deloitte, 2016). 
+6 
+  
+3 Cyber attacks in the context of AMS 
+A cyber attack is a malicious and deliberate attempt by an individual or organization to breach the 
+information system of another individual or organiza tion (Cisco, 2019). In the context of AMS, the 
+breaching of the information system of AMS, which in cludes individual cyber devices, infrastructure, 
+and networks for sensing, computing, and communication, is usually aimed at compromising key 
+functions of the system for the benefits of the attackers. Cyber attacks will cause harmful consequences to jeopardize the operational efficiency, safety, and privacy of AMS.  
+Breaching of the AMS information system is real ized by cyber attackers successfully exploiting 
+cyber vulnerabilities of AMS, which exist at both individual vehicle and system levels. At the vehicle 
+level, cyber vulnerabilities arise due to a signifi cant number of interfaces a nd communication networks 
+in AVs as compared to conventional vehicles, whic h allow for greater exposure of AVs to the external 
+environment. At the system level, cyber vulnerabilities can result from: 1) inadequate schemes for data 
+access control between AMS and the external environment as well as within AMS; 2) lack of 
+coordination among cyber component providers and AV manufacturers; and 3) AMS developers and 
+mobility service providers not paying enough atten tion to cybersecurity issues. The relationship 
+between cyber attacks, cyber vulnerabilities, and th e harmful consequences of the cyber attacks is 
+shown in Fig. 4.   
+ 
+ 
+Fig. 4.  Cyber attacks, vulnerabilities, and harmful consequences of cyber attacks. 
+ 
+7 
+ Many types of cyber attacks are relevant to AMS. We classify a range of plausible cyber-attacks 
+on AMS based on two criteria. The first criterion is wh ether an attack is more likely for a single AV 
+or for a system. Vehicle-level attacks target functions and devices such as the camera, radar 
+instruments, and internal communication within an AV. By contrast, system-level attacks aim at the 
+sensing, control, and communication infrastructure (e .g., road sensors, traffic lights, and wireless 
+Internet servers) that serves AVs in an area or a type(s) of AVs. Note that aggregating vehicle-level 
+attacks does not necessarily make up a system-level threat because the points of vehicle-level attacks 
+are individual AVs, whereas the points of syst em-level attacks are not individual AVs but the 
+infrastructure that supports operations and communications of AVs.  
+The second criterion for cyber attack classification is whether an attack is active or passive. An 
+active cyber attack is highly malicious, aggressive, and blatant, attempting to negatively alter the communications and/or operations of AVs. AMS operat or(s) will be able to detect once the attack is 
+successful and react immediately. By contrast, a passive cyber attack employs non-disruptive and 
+covert methods. As a result, there is no immediate harmful consequence in altering AMS 
+communications and operations. Passive cyber attacks are often about gathering AV 
+operation/communication data and less likely to draw attention from AMS operators.  
+Below we provide brief descriptions of different plausible cyber attacks to AMS. 
+3.1 Vehicle-level attacks 
+Gaining steering control of an AV (active attack):  Under this attack, an a ttacker will fully control 
+the motion of an AV toward damaging consequences, for example, by stroking the brake-pedal 
+suddenly or turning the steering wheel of the vehicle to cause crashes. Such malicious attacks, aiming 
+at passenger injury or death, impose very serious sa fety concerns for AMS. Gaining steering control 
+of an AV can be realized through masquerade attacks (Yagdereli et al., 2015). 
+Deactivating sensors of an AV (active attack):  This type of attack compromises only the sensor 
+components of a vehicle. Nonetheless, the potentia l harm could still be considerable. For example, 
+deactivating sensors responsible for detecti ng surrounding objects (e.g., other AVs, human-driven 
+vehicles, and pedestrians) and lights in the environm ent will cause traffic accidents. Alternatively, the 
+risks will trigger vehicle safety warnings th at result in unexpected stopping of the AV.  
+Exfiltrating data (active attack):  Data exfiltration is a security breach in which data stored in an 
+AV are illegally copied, retrieved, and transferred by attackers. The breach could be through a remote 
+application or a physical access point on the AV. Exfiltr ated data can be subsequently used to influence 8 
+ human interactions with AVs and even fool AV users and/or AMS operators to take actions towards 
+nefarious activities (Axelrod, 2017).  
+Rebroadcasting message (active attack):  A cyber attacker can replay a previous message (e.g., an 
+accident alert) to elicit a wanted reaction of an AV (e.g., stroke of a brake pedal). This reaction could 
+force an AV into a vulnerable state (e.g., system reset) or allow the attacker to store information for 
+future attacks. With message rebroadcasting, not only the information integrity but also message authentication and access control of an AV can be compromised.  
+Introducing incorrect input signals (active attack):  If an attacker has access to the vehicle-to-
+vehicle and/or vehicle-to-infrastructure communicati on networks of an AV, the attacker can trick the 
+AV into an incorrect action by generating erroneous process information. For example, an accident 
+alert can be sent by an attacker to an AV to activate the braking-pedal action, creating traffic disruptions in the surrounding area (Yagdereli et al., 2015). 
+Modifying message (active attack):  A cyber attacker can modify messages either between AVs or 
+between AVs and the AMS operator. The most common means of message modification is through 
+“man-in-the-middle” attacks (Yagdereli et al., 2015). The modification can be delaying the 
+sending/receiving time; inserting/deleting contents; and reordering the sequence that messages are sent. As such, modified messages can direct AVs to take actions wanted by the attacker. 
+Eavesdropping (passive attack):  In eavesdropping, an attacker acquires vehicle movement and 
+communications information by intercepting data tr affic to and from an AV. The acquired data are 
+used to plan future active attacks. Data interception often takes place at devices in the middle of data 
+transmission between AVs and AMS servers. In general, eavesdropping is difficult to detect since it does not cause abnormal data transmissions (Dobran, 2019). 
+Traffic analysis (passive attack):  Similar to eavesdropping, traffic analysis does not affect the 
+normal functioning of AV(s). An attacker deducts certain properties of information transactions 
+including duration, timing, and bandwidth that are di fficult to disguise in communications. With the 
+deducted information, traffic analysis can be performed to allow an attacker to examine the AV network for other malicious purposes (Yagdereli et al., 2015). 
+3.2 System-level attacks 
+Denial-of-Service (active attack):  A common issue for cybersecurity of communication networks, 
+denial-of-service refers to prevention of authorized  user access to AMS. A denial-of-service attack can 
+involve malicious coding and message spamming that absorb all available bandwidth, making 
+communications between AVs and infrastructure un available. The AMS communications network will 9 
+ be infected by malicious software or by the attacker constantly sending packets to AMS server ports 
+to jam needed communications for normal AV functions such as routing, warning, and spatial sensing.  
+Interrupting communications (active attack):  A cyber attacker interferes with communications 
+between the control components of an AMS. By issuing a data request that causes the control systems 
+to obstruct the normal processing sequence of the systems to respond to the request, this interference 
+undermines the stability of routine communications and therefore operations of AMS (Kisner et al., 2010; Kisner, 2009). Such disruptions, once detected, will prompt the AMS operator to reduce or even 
+cease provisions of mobility service in order to r ecover or switch to backup communication networks.  
+Generating incorrect output values or commands (active attack):  This type of attacks generates 
+erroneous output values or commands and sends them to devices in AMS that enable interaction 
+between cyber and physical components. Consequently, an AMS operator can be misled to take AV routing and dispatching decisions that are not the best  for the current operational status, or even disrupt 
+AMS operations and traffic on the roads. 
+Collecting AMS operational information (passive attack):  This type of attack attempts to gain 
+access to AMS operation data through eavesdro pping AMS servers. Although not disrupting normal 
+functioning of AMS, the information collected can be  used to estimate the operational parameters and 
+states of AMS such as distribution, speed, and fueli ng of AVs, and to help forge more targeted active 
+cyber attacks in the future.  
+ 
+4 Enhancing the cyber resilience of AMS 
+Given the variety of plausible cy ber attacks, making AMS resilient to cyber attacks is critically 
+important. The premise of doing so is to understand  what cyber resilience means for AMS. Answering 
+this question will build on the understanding of cyber resilience and resilience in general, as is in 
+subsection 4.1. In subsection 4.2, we will examine current practices in strengthening AV cybersecurity, 
+a closely related issue to AMS cyber resilience. Furthe r strategies at both vehicle and system levels to 
+enhance AMS cyber resilience are proposed in subsection 4.3.  
+4.1 Resilience and cyber resilience 
+4.1.1 Resilience 
+We start our discussion with the most general definition of resilience. Following the 2019 version 
+of the Merriam-Webster dictionary, resilience is described as the “ability to recover from or adjust easily to misfortune or change”. In  the academic literature, the concep t of resilience is initialized in the 10 
+ context of ecological systems by Holling (1973), who refers to resilience as a system’s ability to persist 
+without eventually moving to a different state of behavior when exposed to changes or shocks (Zou et 
+al., 2018). Later, Bruneau et al. (2003) adapt the resilience concept in earthquake engineering, as the 
+ability of a system to resist and absorb the impact of disruptions. Focusing on infrastructure systems, 
+the definition of resilience is enriched by Faturech i and Miller-Hooks (2014) who argue that resilience 
+accounts for possible interventions that help return system performance to near pre-disruption  levels. The authors stress the importance of resilience meas ures in quantifying the potential benefits of pre-
+disruption mitigation actions for increasing the system’s ability to cope with disaster impact, as well 
+as post-disaster adaptive actions that aim to restore system functionality. Another widely-used 
+definition of resilience is from the US National Academy of Science (2012), which relates resilience 
+to the ability of a system to plan for, absorb, recover from, and more successfully adapt to adverse events.  
+While the definitions/descriptions of resilience vary in emphasis depending on the application 
+context, resilience covers two essential aspects: 1) preparing a system before disruptions; and 2) 
+recovering the system after disruptions occur. The preparation aspect can be alternatively interpreted 
+as enhancing the resistance of a system to attacks. The aim of implementing a comprehensive resilience plan, therefore, is to reduce the potential damages caused by attacks through resistance and enhance 
+fast recovery (Linkov et al., 2013). This two-aspect view is echoed by Zhou et al. (2019), who focus 
+on transportation systems resilience and conclude th at all resilience definitions for transportation 
+systems take the following two perspectives: i) th e ability to maintain the system functionality under 
+disruptions; and ii) the time and resources required to restore performance after disruptions. As shown in Fig. 5, the first perspective is related to a disruption phase, beginning from the occurrence of a 
+disruption and ending when the system performance reaches the minimum level. In this phase, 
+robustness and redundancy of system functionalitie s are key to minimize the consequence of 
+disruptions. The second perspective is associated  with a recovery phase. When it starts, system 
+performance is expected to improve, till return to the original performance level which means full recovery. This phase usually takes a longer time than the disruption phase. The abundance and optimal 
+and speedy use of resources are critical to recovery.  
+ 11 
+  
+Fig. 5.  Decomposing resilience into disruption and recovery phases,  
+where P denotes performance (Source: Zhou et al., 2019). 
+ 
+4.1.2 Cyber resilience 
+The general definition of resilience needs to be  adapted when resilience specifically addresses 
+cyber attacks. However, very limited definitions exist for cyber resilience. Linkov and Kott (2019) 
+adapt the resilience definition by the US National A cademy of Sciences and define cyber resilience as 
+the ability of a cyber-physical system to prepare, abs orb, recover, and adapt to adverse effects of events 
+associated with cyber attacks. One can replace “cyber-physical system” by “AMS” if AMS cyber 
+resilience is to be specifically defined.  
+Compared to other types of resilience, cyber resilience exhibits three particularities. First, the 
+cyber-physical system performance is likely to plummet to a low value shortly after a cyber attack 
+begins. This is due to the fact that cyber a ttacks will be realized through communication networks, 
+often very fast compared to natural processes (e.g., a wildfire or a flood). On the other hand, it may 
+take some time for the consequences of a cyber attack on the physical system to appear and grow. For 
+instance, when an attack introduces incorrect input signals to prompt a few AVs to brake, the resulting 
+traffic jam will gradually grow from the locales of the attacked AVs to larger networks.  
+The second particularity of cyber resilience lies on the greater uncertainty of cyber attacks in 
+attacking forms and techniques which are constantly evolving. Consequently, the traditional approach 
+to predict future attacks based on past experience of similar situations becomes less effective. Collier 
+et al. (2014) highlight that the dynamic and fast deve lopment of different types of cyber attacks makes 
+it impossible to maintain an exhaustive library of possible attack surfaces in the cyber domain. 
+12 
+ Moreover, the evolving possible surfaces of cyber attacks adds to the difficulty in ranking and 
+prioritizing the importance of each attack and corresponding mitigation strategies.  
+ The third particularity is about strategies to e nhance cyber resilience. Cyber resilience deals with 
+connected complex systems involving hardware, software, and sensing components. In comparison to 
+natural disasters, the smart nature of cyber attackers places another layer of complexity for cyber 
+resilience enhancement. Cyber attackers have the flexibility to attack either part of a system or use more sophisticated attacking methods to cause deeper and broader consequences. Not surprisingly,  
+strategies for resilience enhancement in the cyber world are more varied than strategies dealing with 
+physical system resilience.  
+Any enhancement of cyber resilience must be bu ilt on solid assessment of cyber resilience, which 
+is still at an infant stage. Linkov and Kott (2019) ar gue that the assessment should draw ideas from the 
+general resilience literature in which two primary approaches have been developed: metric-based and 
+model-based (Fig. 6). The metric-based approach us es metrics of individual properties of system 
+functions to assess the overall performance of a system. For instance, one metric for AMS cyber 
+resilience, following the idea of Hallegatte et al. (2019) , can be the ratio of unfulfilled rider trips to the 
+number of malfunctioning AVs for a period starting from the outset of a cyber attack. For this metric, the number of unfulfilled rider trips represents the loss of system functionality. The number of 
+malfunctioning AVs captures the loss of assets. Intuitively, a lower metric value corresponds to greater 
+cyber resilience.  
+The model-based approach employs system configuration models and performs scenario analysis 
+to predict system evolution before, during, and after an attack. This approach requires knowledge of the critical functions of the system, temporal patter ns of the system, thresholds, and system memory 
+and its learning process (Linkov and Kott, 2019). As an example, the interactions between a cyber 
+attacker and the AMS operator can be modeled as a sequential attack-defend game. Resilience will be 
+measured based on the expected costs of Nash equilibrium between the attacker and the defender. A 
+lower expected cost means higher AMS cyber resilience.  
+ 13 
+  
+Fig. 6.  Metric- and model-based approaches for cyber resilience risk assessment  
+(source: Linkov and Kott, 2019). 
+ 
+Both metric-based and model-based approaches have their limitations, however. For the metric-
+based approach, despite a myriad of research efforts (Eisenberg et al., 2014; Park et al, 2013; Fischer 
+et al., 2010), there remains a lack of universally a ccepted metrics for cyber resilience. The limitation 
+is further compounded in the AMS context by the d earth of knowledge on the type, probability, and 
+consequence of cyber attacks on AMS. For the model-based approach, it would be difficult for 
+researchers to acquire all the knowledge about the critical functions of a cyber-physical system, the normal operation patterns of the system, and system ad aption after cyber attacks. Overall, assessment 
+of cyber resilience remains an underexplored area for future research.  
+4.2 Practices related to e nhancing cyber resilience 
+As AMS does not exist, no practice exists for enha ncing AMS cyber resilience. On the other hand, 
+cybersecurity as a closely related concept has garnered growing attention. The close relationship 
+between cybersecurity and cyber resilience is not difficult to perceive: a system that is highly 
+cybersecure will not be vulnerable to cyber attacks. On the other hand, cyber resilience is not just about cybersecurity in that cybersecurity focuses on the pre-attack preparation, whereas cyber resilience 
+involves further post-attack recovery. For example, a system may be highly cybersecure but is not able 
+to recover strongly and quickly once a cyber attack succeeds. Thus, the system is not cyber resilient.  
+This subsection focuses on reviewing practices towards enhancing AV cybersecurity from two 
+perspectives: 1) developing cybersecurity algorithms, and 2) establishing legislation and guidelines. We note that most practices are undertaken at the ve hicle level. The practices involve a wide range of 
+14 
+ stakeholders including computer scientists/electri cal engineers, transportation systems modelers/ 
+analysts, mobility business executives/engineer s, urban planners, policy makers, etc. 
+4.2.1 Cybersecurity algorithm development 
+The auto industry has put tremendous efforts in developing algorithms to enhance vehicle 
+cybersecurity (Tuncali et al., 2018; Zhang et al., 2018), to enable vehicles to respond to abnormal 
+situations not experienced before (Pei et al., 2017; Tian et al., 2018). These situations could well be 
+signals of cyber attacks. By training cybersecurity algorithms to recognize and respond to the situations, the ability of AVs to with stand cyber attacks will be enhanced. 
+Artificial intelligence, particularly deep neural networks, has been the prevalent technique for 
+developing cybersecurity algorithms. However, at this  moment data for algorithm training is limited, 
+which suggests that failures to cope with unrecognized cyber attacks can occur. This is because 
+traditional, manual collection of data from tests or unguided simulations to identify cyber attacks would be prohibitively expensive (Karapathy, 2017; Sculley et al, 2014). Instead, machine-based testing 
+methodologies are being developed toward automatica lly detecting erroneous behaviors of AVs (Tian 
+et al., 2018). Given that the attacking forms and techniques are constantly evolving, detecting all 
+abnormal situations tied with cyber attacks is still a daunting if not impossible task even with the 
+machine-based testing methodologies. 
+The research and development efforts for cybersecurity algorithm development goes beyond the 
+auto industry. In the United States, the National Highway Traffic Safety Administration has established 
+a department for research on safety, security, and reliability of connected and electronic vehicle 
+systems. An Electronic Council is set up in the agency to enhance collaboration on and alignment of 
+research related to vehicles and cybersecurity (McCarthy et al., 2014). Besides algorithm development, government agencies are also making endeavors in cybersecurity standard development, cyber risk 
+assessment, cybersecurity test, and enforcement efforts.  
+4.2.2 Legislation and guidelines 
+National and subnational governments are playing active roles in enacting legislation and 
+introducing guidelines to address cybersecurity issu es arising from future AVs as well as today’s 
+vehicles. In the United States, the federal government has recently passed the SPY Car Act (2017) to address vehicle cybersecurity risks. The Act includes considerations to guard against the hacking of 
+vehicles, such as requiring penetration testing to evaluate vehicle resilience to hacking and separating 
+critical and non-critical software systems. In addition, the Act provides specifications to ensure security 
+of collected information in vehicle electronic systems while the data are on the vehicle, in transit from 15 
+ the vehicle to a different location, or in any offboard storage. This Act requires vehicles to have the 
+capability to detect, prevent, and report attempts to  hijack the control of the vehicle and capture the 
+stored data (Lim and Taeihagh, 2018; Taeihagh and Lim, 2019).  
+Specific for AVs, the U.S. National Highway Traffic Safety Administration has published a non-
+mandatory document to facilitate integration of automated driving technologies that encourage the 
+“development of systems that guard against cyber attacks” (NHTSA, 2017). The document provides recommendations for planning cyber incident responses, developing cyber vulnerability disclosure and 
+reporting policies, and publishing Voluntary Safety Assessment letters. One purpose of this guideline 
+is for standardization, i.e., encouraging entities to  design AV systems in compliance with standards 
+established by stakeholder organizations such as the Automotive Information Sharing and Analysis 
+Center, the Society of Automotive Engineers, and auto manufacturer associations (NHTSA, 2017). 
+At the subnational level, a rule is drafted by the California Department of Motor Vehicles that 
+requires auto manufacturers to certify the ability of th eir manufactured AVs to detect and react to cyber 
+attacks according to industry standards (Cal DMV, 2018). The state of Massachusetts has introduced 
+a state bill authorizing the state Department of  Consumer Affairs and Business Regulation to 
+implement regulations consistent with federal regul ations to protect personal information and data 
+collected by an Internet-of-Things device, which includes AVs (Senate Bill 179, 2017). Pennsylvania’s 
+bill makes recommendations for AV testers to provide proof that cybersecurity precautions are taken. 
+Immediate notification of cybersecurity intrusion attempts is required between AV testers and the 
+Pennsylvania Department of Transportation (P ennDOT, 2016; Senate Bill 427, 2017). Many other 
+states in the United States, such as Georgia, Mich igan, and Texas, have also enacted legislation to 
+address cybersecurity for larger systems inclus ive of AVs (Senate Bill 315, 2018; Senate Bill 632, 
+2017; Texas Cybersecurity Act, 2017). 
+4.3 Plausible strategies to enhance AMS cyber resilience 
+Consistent with the discussions on cyber attacks and cyber resilience, we argue that plausible 
+strategies to enhance AMS cyber resilience should consider both vehicle and system levels. Vehicle-
+level strategies are expected to be implemented during AV design and manufacturing, while system-
+level strategies will focus on the planning and operation of AMS.  
+4.3.1 Vehicle-level strategies 
+Auto manufacturers can mitigate the negative impact of cyber attacks on AVs by adopting a 
+layered approach (GAO, 2016). In vehicle design, cyber-physical networks in a vehicle can be 
+separated by artificial layers. For instance, one can create an engine control unit layer, an in-vehicle 16 
+ communication network layer, and an external in terfaces layer. The layer creation will involve 
+technologies such as gateways, firewall, message authentication and encryption, and intrusion 
+detection and prevention systems (Fig. 7). During vehicle manufacturing, several practices can be 
+further considered to identify and mitigate AV c yber vulnerabilities, including: 1) developing over-
+the-air update capabilities for AV software and firmware; 2) conducting risk assessment and attack 
+testing; and 3) creating domain separation for in-vehicle networks. For the last one, mission- and safety-critical components in an AV can be sepa rated from non-critical components, with limited 
+connectivity to external networks through a few specific communication channels (GAO, 2016; ITF, 
+2018). 
+ 
+ 
+Fig. 7.  Illustration of a layered approach to e nhance AV cyber resilience (source: GAO, 2016). 
+ 
+Another vehicle-level strategy is to equip an AV with the ability to continuously monitor its 
+conditions and potential attacks independent of exte rnal communications. This ability will reduce the 
+reliance of a vehicle on vehicle-to-vehicle and vehicle-to-infrastructure networks and ensure prompt 
+triggering of emergency response as soon as a failure is detected. The strategy can include devising an 
+independent procedure for data collection and proce ssing and activating self-sustained vehicle control 
+whenever external communications are disrupted. For instance, an AV can be designed such that it 
+always compares the information received from the surrounding environment with the information 
+collected and processed from its sensing instruments.  If a significant inconsistency is detected, an 
+appropriate protocol will be triggered to let the AV rely on its own data for future maneuvering.  
+4.3.2 System-level strategies 
+From the perspective of transportation systems planning and operations, three strategies that entail 
+the fundamental concepts for resilience enhancement can be considered: 1) maintaining redundancy, 
+17 
+ 2) providing diversity, and 3) controlling propagation (Linkov and Kott, 2019). The first strategy 
+pertains to maintaining redundancy in transportation capacity, which can be realized by: 1) operating 
+an AV fleet size larger than the minimum necessary to meet day-to-day travel demand; 2) coordinating 
+the operations of AVs with other modes, especially public transportation. The question of how much 
+redundancy is important. A larger fleet contributes to greater AMS cyber resilience by mitigating the 
+potential loss when a cyber attack disables the operations of a given number of AVs in the system. However, a larger AV fleet means greater capital and operating cost. To determine the optimal fleet 
+size, careful economic analysis must be performed to quantify the trade-off between increased capital 
+and operating cost due to redundancy under normal conditions and cyber resilience benefits under 
+cyber attacks.  
+It should be noted that some cyber attacks such as denial-of-service can be immune to an increase 
+in AV fleet size, because the whole AMS will be affected. In such cases, providing alternative 
+transportation modes independent of AMS will be particularly important. An obvious candidate is 
+public transportation. While some argue that AMS would ultimately eliminate today’s human-
+operating transit systems, the claim may be less valid under attack situations. Transit can provide 
+valuable backup capacity to move disrupted AV travelers under cyber attacks. As such, the possibility of cyber attacks provides a valid argument for preserving an independent public transportation system 
+in the future even after AMS takes place.  
+For the second strategy, diversity is realized by ma intaining a separate road network for AVs that 
+is free of connectivity. When AVs are using this network, they can only use their automation capability, 
+with no communications between vehicles or between  vehicles and infrastructure. AVs would operate 
+like conventional vehicles except that the movement of each AV will rely only on information collected 
+by the AV’s own sensing instruments. This strategy aims to make AMS resilient to cyber attacks on 
+communication networks. For example, if a distributed  denial-of-service attack occurs which can affect 
+communications between AVs and the infrastructure serving the AVs, the AMS operator can divert 
+AVs from the normal road network to this separate network. 
+Maintaining a separate network, however, begs careful planning of the network. This network 
+may be a newly built one but will be costly. Alterna tively, one can dedicate part of the existing road 
+system to only conventional vehicles under normal conditions, and to both conventional vehicles and 
+AVs when a cyber attack occurs. The size and connectivity of this separate network must be judiciously 
+chosen by accounting for many factors such as travel demand, overall road network intensity and capacity, and mode share between AVs and conventional vehicles. Similar to the strategy of 
+maintaining redundancy, this strategy should strike  a balance between the cost of preserving the 18 
+ network under normal conditions and the benefits of the network in serving travel demand under cyber 
+attacks. 
+The third strategy is deploying different sub-autonomous mobility systems rather than a single 
+homogeneous AMS. Among these subsystems, only limited data exchange and connections would be 
+allowed so that when a cyber attack incurs to one  subsystem, its negative consequences are contained 
+in the subsystem while other subsystems have high probability of retaining normal functionality. The idea is in fact analogous to the vehicle-level strategy of creating artificial layers and separation in 
+subsection 4.3.1. One way to create subsystems is to have an AMS operator run independent sub-fleets, 
+or mandate competing AMS operators. While market competition is known to benefit AMS users by 
+reducing service price, introducing competing subsys tems in AMS brings the additional benefit of 
+enhancing cyber resilience of the overall AMS. The disruption and recovery efforts would be smaller than if the attack spreads over the entire AMS.  
+ 
+5 Conclusion and future research 
+The increasing cyber connectivity of vehicles and between vehicles and infrastructure will 
+drastically reshape the way humans move in the coming decades. While the advent of connected 
+mobility—along with the coupled trend of vehicle automation—is expected to benefit travelers and the society by smoothing traffic, improving rider convenience, and reducing accidents, the augmented 
+cyber components in connected and autonomous vehicles and related infrastructure also give rise to 
+the issue of cyber attacks to the transportation system and how the system can be more resilient to such 
+attacks. It is believed that malicious acts to exploit connected and autonomous vehicles are only a 
+matter of time and will increasingly become a prominent issue in the future of our society.  
+In view that little attention has been paid to transportation cyber resilience and autonomous 
+vehicles are likely to dominate in the future mobility system, this paper takes a forward-looking 
+approach looking into cyber resilience of AMS. A fi rst-of-its-kind investigation on this topic with a 
+comprehensive literature review is offered. In th e investigation, we start by discussing the cyber 
+components and plausible AMS operation scenarios. Then a considerable amount of effort is devoted to identifying possible cyber attacks to AMS at both vehicle and system levels. Building upon the 
+literature of resilience and cyber resilience, the discussion moves to the concept of AMS cyber 
+resilience and exploring existing practices to enhance AV cybersecurity, a concept intimately related 
+to AMS cyber resilience. A number of strategies ar e subsequently investigated toward enhancing AMS 
+cyber resilience. At the vehicle level, creating layers and separation to reduce cyber component 19 
+ connectivity and deploying an independent procedure for data collection and processing are important 
+in vehicle design and manufacturing. At the system level, recommended strategies include keeping 
+redundancy in transportation capacity, maintaining a separate road network, and deploying different 
+sub-autonomous mobility systems. To quantitatively as sess the benefits of these strategies, more 
+elaborate, modeling-based research is needed.  
+As AMS differs from today’s transportation system only by the extent of connectivity and 
+automation and the shift from human-driven to autonomous mobility is going to be gradual, today’s 
+transportation can also be informed by the findings, insights, and recommendations obtained in this 
+paper. We hope that the effort presented in the paper makes a start toward greater understanding cyber 
+resilience of AMS and connected transportation in general. More in-depth investigations can be 
+stimulated in this important but still underappreciated area for a better future of human mobility.  
+ 
+  20 
+ References 
+1. Axelrod, C. W. (2017, May). Cybersecurity in the age of autonomous vehicles, intelligent traffic 
+controls and pervasive transportation networks. In Systems, Applications and Technology 
+Conference (LISAT), 2017 IEEE Long Island (pp. 1-6). IEEE. 
+2. Center for Sustainable Systems (2018). Autonomous  Vehicles Factsheet. Center for Sustainable 
+Systems, University of Michigan. Pub. No. CSS16-18. 
+3. Cisco (2019). What Are the Most Common Cyberattacks? Available at:  
+https://www.cisco.com/c/en/us/products /security/common-cyberattacks.html . (accessed on 
+22.05.2019). 
+4. Collier, Z. A., DiMase, D., Walters, S., Tehrani poor, M. M., Lambert, J. H., & Linkov, I. (2014). 
+Cybersecurity standards: Managing risk and creating resilience. Computer, 47(9), 70-76. 
+5. Consumer Watchdog (2019). Kill switch: Why connected cars can be killing machines and how 
+to turn them off. Available at: https://www.consumerwatchdog.org/report/kill-switch-why-
+connected-cars-can-be-killing-machines-and-how-turn-them  (accessed 10.29.2019). 
+6. Deloitte (2016). The future of mobility: what’s next? Available at: 
+https://www2.deloitte.com/content/dam/insights/ us/articles/3367_Future-of-mobility-whats-
+next/DUP_Future-of-mobility-whats-next.pdf  (accessed 02.02.2019).  
+7. Department of Motor vehicles (2018). Modified  Express Terms Title 13, Division 1, Chapter 1 
+Article 3.8—Deployment of Autonomous Vehicles—Deployment of Autonomous Vehicles; 
+State of California Department of Motor Vehicles: Sacramento, CA, USA, 2018. 
+8. Dobran, J. (2019). 17 Types of cyber-attacks to secure your company from in 2019. Phoenixnap. 
+Available online at: https://phoenixnap.com/blog/cyber-security-attack-types  (accessed on 
+05.23.2019). 
+9. Eisenberg, D. A., Linkov, I., Park, J., Bates, M. E., Fox-Lent, C., & Seager, T. P. (2014). 
+Resilience metrics: lessons from military doctrines. Solutions, 5(5), 76-87. 
+10. Faturechi, R., Levenberg, E., & Miller-Hooks, E.  (2014). Evaluating and optimizing resilience of 
+airport pavement networks. Computers & Operations Research, 43, 335-348. 
+11. Faturechi, R., & Miller-Hooks, E. (2014). M easuring the performance of transportation 
+infrastructure systems in disasters: A comprehens ive review. Journal of infrastructure systems, 
+21(1), 04014025. 
+12. Government Accountability Office (GAO) (2016). Vehicle cybersecurity: DOT and industry 
+have efforts under way, but DOT needs to define its role in responding to a real-world attack. 
+Available at: https://www.gao.gov/as sets/680/676064.pdf (accessed 01.29.2019). 
+13. Hallegatte, S, Rentschler, J., & Rozenberg, J. (2019). Lifelines: The Resilient Infrastructure 
+Opportunity. World Bank Report.  
+14. Holling, C. S. (1973). Resilience and stability of ecological systems. Annual review of ecology 
+and systematics, 4(1), 1-23. 
+15. International Transportation Forum (ITF) (2018). Corporate partnership board report. Safer 
+Roads with Automated Vehicles. ITF/OECD. 
+16. Karapathy, A. Software 2.0. Available online at: https://medium.com/@karpathy/software-2-0-
+a64152b37c35. Accessed on: 2019-05-13. 
+17. Kisner, R. A. (2009). Design practices for communications and workstations in highly integrated 
+control rooms. US Nuclear Regulatory Commi ssion, Office of Nuclear Regulatory Research. 21 
+ 18. Kisner, R. A., Manges, W. W., MacIntyre, L. P., Nutaro, J. J., Munro, J. K., Ewing, P. D., ... & 
+Olama, M. M. (2010). Cybersecurity through real-time distributed control systems. Oak Ridge 
+National Laboratory, Technical Report ORNL/TM-2010/30. 
+19. Kott, A., & Linkov, I. (Eds.). (2019). Cyber resilience of systems and networks. Ch. 1. Springer 
+International Publishing. 
+20. Lim, H., & Taeihagh, A. (2018). Autonomous vehicl es for smart and sustainable cities: An in-
+depth exploration of privacy and cybersecurity implications. Energies, 11(5), 1062. 
+21. Linkov, I., Eisenberg, D. A., Plourde, K., Seager, T. P., Allen, J., & Kott, A. (2013). Resilience 
+metrics for cyber systems. Environment Systems and Decisions, 33(4), 471-476. 
+22. Litman, T. (2018). Autonomous vehicle implementation predictions: implication for transport 
+planning. Victoria Transport Institute, available at: https://www.vtpi.org/avip.pdf (accessed 02.05.2019). 
+23. McCarthy, C., Harnett, K., & Carter, A. (2014). A summary of cybersecurity best practices (No. 
+DOT HS 812 075). United States. National Highway Traffic Safety Administration. 
+24. Miller-Hooks, E., Zhang, X., & Faturechi, R. ( 2012). Measuring and maximizing resilience of 
+freight transportation networks. Computers & Operations Research, 39(7), 1633-1643. 
+25. National Academy of Sciences (2012). Disaster resilience: a national imperative. Available at: 
+http://www.nap.edu/catalog.php?record_id=13457  (accessed 01.31. 2019). 
+26. National Highway Traffic Safety Administration. (2017). Automated driving systems 2.0: A 
+vision for safety. Washington, DC: US Department of Transportation, DOT HS, 812, 442. 
+27. Noruzoliaee, M., & Zou, B. (2019). One-to-many matching and section-based formulation of 
+autonomous ridesharing equilibrium. Working Paper, University of Illinois at Chicago. 
+28. Park, J., Seager, T. P., Rao, P. S. C., Convertino, M., & Linkov, I. (2013). Integrating risk and 
+resilience approaches to catastrophe management in engineering systems. Risk Analysis, 33(3), 
+356-367. 
+29. Pei, K., Cao, Y., Yang, J., & Jana, S. (2017, October). Deepxplore: Automated whitebox testing 
+of deep learning systems. In proceedings of the 26th Symposium on Operating Systems 
+Principles (pp. 1-18). ACM. 
+30. Pennsylvania Department of Transportation. (2016) Pennsylvania autonomous vehicle testing 
+policy: Final draft report of the autonomous vehicle policy task force. Available at: 
+https://www.penndot.gov/ProjectAndPrograms/Res earchandTesting/Documents/AV%20Testing
+%20Policy%20DRAFT%20FINAL%20REPORT.pdf  (accessed 12 June 2019).  
+31. Resilience. Merriam-Webster.com. Merriam-Webster, n.d. Available at: http://www.merriam-
+webster.com/dictionary/resilience  (accessed 31 January 2019). 
+32. Sculley, D., Holt, G., Golovin, D., Davydov, E., Phillips, T., Ebner, D., ... & Young, M. (2014). 
+Machine learning: The high interest credit card of technical debt. 
+33. Senate Bill 179. Regular Session. Massachusetts, U.S., 2017. Available online: 
+https://legiscan.com/MA/text/S179/2017  (accessed on 12 April 2019). 
+34. Senate Bill 315. 2018. General Georgia Assembly. Available online: http://www.legis.ga.gov/ 
+legislation/en-US/Display/20172018/SB/315  (accessed on 12 June 12, 2019). 
+35. Senate Bill 427. Regular Session. Pennsylvania, U.S., 2017. Available online: 
+https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=20
+17&sessInd=0&billBody=S&billTyp=B&billNbr=0427&pn=0396  (accessed on 12 June 2019). 22 
+ 36. Senate Bill 632. Michigan Legislature. Available online: http://www.legislature.mi.gov/ 
+(S(vmn1lcsk4itpxnklnvktpazb))/mileg.aspx?page=GetObject&objectname=2017-SB-0632  
+(accessed on 12 June 2019). 
+37. SPY Car Act (2017). 115th Congress. United States of America, 2017. Available online: 
+https://www.congress.gov/bill/115th-congress/senate-bill/680/text (accessed on 12 April 2019). 
+38. Taeihagh, A., & Lim, H. S. M. (2019). Governin g autonomous vehicles: emerging responses for 
+safety, liability, privacy, cybersecurity, and industry risks. Transport Reviews, 39(1), 103-128. 
+39. Texas Cybersecurity Act. 2017. Available online: https://capitol.texas.gov/tlodocs/85R/billtext/pdf 
+/HB00008F.pdf#navpanes=0  (accessed 12 June 2019) 
+40. Tian, Y., Pei, K., Jana, S., & Ray, B. (2018, May). Deeptest: Automated testing of deep-neural-
+network-driven autonomous cars. In Proceedings of the 40th international conference on software engineering (pp. 303-314). ACM. 
+41. Tuncali, C. E., Fainekos, G., Ito, H., & Kapins ki, J. (2018, June). Simulation-based adversarial 
+test generation for autonomous vehicles with machine learning components. In 2018 IEEE 
+Intelligent Vehicles Symposium (IV) (pp. 1555-1562). IEEE. 
+42. Yagdereli, E., Gemci, C., & Akta ş, A. Z. (2015). A study on cyber-security of autonomous and 
+unmanned vehicles. The Journal of Defense Modeling and Simulation, 12(4), 369-381. 
+43. Zhang, M., Zhang, Y., Zhang, L., Liu, C., & Khurshid, S. (2018). Deeproad: Gan-based 
+metamorphic autonomous driving system testing. arXiv preprint arXiv:1802.02295. 
+44. Zhou, Y., Wang, J., & Yang, H. (2019). Resilience of Transportation Systems: Concepts and 
+Comprehensive Review. IEEE Transactions on Intelligent Transportation Systems. 
+45. Zou, B., Rockne, K. J., Vitousek, S., & Noruzoliaee, M. (2018). Ecosystem and Transportation 
+Infrastructure Resilience in the Great Lakes. E nvironment: Science and Policy for Sustainable 
+Development, 60(5), 18-31. 

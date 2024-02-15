@@ -1,0 +1,827 @@
+INFORMATION AND COMMUNICATION
+TECHNOLOGIES TO PROVIDE AGRICULTURAL
+ADVICE TO SMALLHOLDER FARMERS :
+EXPERIMENTAL EVIDENCE FROM UGANDA
+BJORN VANCAMPENHOUT ,DAVID J. SPIELMAN ,AND ELSLECOUTERE
+Agricultural advisory services generally rely on interpersonal knowledge transfers by agricultural exten-
+sion agents who visit farmers to provide information. This approach is not always effective and has proved
+hard to scale sustainably, particularly in highly dispersed smallholder farming systems. Information andcommunication technologies (ICTs) have been advanced as a promising way to overcome many of the
+problems associated with conventional agricultural extension. We evaluate the effectiveness of an ICT-
+mediated approach to deliver agricultural information in a ﬁeld experiment conducted among small-scale
+maize farmers in eastern Uganda. Three complementary technologies designed to address both informa-
+tional and behavioral constraints to technical change are considered. First, we investigate the effectivenessof audiovisual messages (video) as a means of delivering information on input use and improved maize
+management practices to farmers. Second, we quantify the additional impact of complementing video
+with an interactive voice response (IVR) service. Third, we estimate the incremental effect of time-
+sensitive short message services (SMS) messages designed to remind farmers about applying key practices
+at speci ﬁc points during the season. We ﬁnd that households that were shown a short video on how to
+become better maize farmers were performing signi ﬁcantly better on a knowledge test, more likely to
+apply recommended practices, and more likely to use fertilizer than households that did not view the
+video. These same households also reported maize yields about 10.5% higher than those that did not view
+the video. We ﬁnd little evidence of an incremental effect of the IVR service or SMS reminders.
+Key words : Agricultural extension, information and communication technology, interactive voice
+response, maize, short message services, Uganda, video.
+JEL codes : O13, Q12, Q16.
+Conventional approaches to agricultural exten-
+sion, such as the training and visit system or
+farmer ﬁeld schools, have met with mixedsuccess in many developing countries
+(Bindlish and Evenson 1997; Anderson, Feder
+and Fanguly, 2006; Waddington et al. 2014).
+Bjorn Van Campenhout is a research fellow in the Development Strategy and Governance Division of the International Food Policy
+Research Institute, and an associate researcher at LICOS - Centre for Institutions and Economic Performance, KULeuven, Waaistraat6 bus 3511, 3000 Leuven, Belgium. David J. Spielman is a senior research fellow in the Development Strategy and Governance Division
+of the International Food Policy Research Institute 1201 Eye St NW, Washington, DC 20005 USA. Els Lecoutere is a post doctoral fellow,
+Development Economics Group, Wageningen University and Research, Hollandseweg 1, The Netherlands. This research was funded bythe U.S. Agency for International Development under the Feed the Future Developing Local Extension Capacity (DLEC) project, led byDigital Green, and the Feed the Future Digital Development Lab; and by the CGIAR Research Program on Policies, Institutions, andMarkets (PIM), led by the International Food Policy Research Institute (IFPRI) and carried out with support from the CGIAR Fund con-tributors (https://www.cgiar.org/funders/). We thank Jamie Arkin, Kristin Davis, Rikin Gandhi, Suprita Kudesia, and Karin Lion for theirsupport for this research; and Fiona Nattembo, Wilberforce Walukano, and Marc Charles Wanume for excellent ﬁeld support. The anal-
+ysis contained here is the sole responsibility of the authors and does not re ﬂect the views of any funding agency or organization mentioned
+here. The research was cleared by IFPRI ’s IRB (IRB #00007490 FWA #00005121) and was preregistered at the American Economists
+Association ’s RCT registry (AEARCTR-0002153). All code and data are under revision control and are publicly available at [https://
+github.com/bjvca/maizeUG||GitHub].Correspondence to be sent to: b.vancampenhout@cgiar.org
+Amer. J. Agr. Econ. 103(1): 317 –337; doi:10.1002/ajae.12089
+Published online March 26, 2020
+© 2020 The Authors. American Journal of Agricultural Economics published by Wiley Periodicals, Inc. on behalf of Agri-
+cultural & Applied Economics Association.This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribu-tion and reproduction in any medium, provided the original work is properly cited.
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Information and communication technologies
+(ICTs) have been advanced as a promisingmeans to overcome many of the problems asso-ciated with these approaches, such as low costeffectiveness and limited scalability (Aker2011). An emerging literature explores theapplication of different ICTs to agriculturalextension provision in smallholder production
+systems in developing countries. For instance,
+various studies investig ate the potential for
+audiovisual messages as a medium to transferagricultural extension information (eg. Gandhiet al. 2009; Van Campenhout et al. 2017; Mare-dia et al. 2018). Cole and Fernando (2016) eval-uate the impact of a toll-free hotline amongcotton farmers in Gujarat, India. Casaburi et al.(2014) test the effectiveness of short message
+services (SMS) messages with agricultural
+advice among sugarcane farmers in Kenya, andLarochelle et al. (2019) consider the use ofSMS messages to promote integrated pest man-agement among potato farmers in Ecuador.
+This article investigates the effectiveness of
+an ICT-mediated extension approach designedto provide information about improved maizecultivation practices to smallholder farmers inUganda. The approach consists of three com-plementary information technologies, testedin an incremental design. First, we look at theeffectiveness of short video messages that pro-vide detailed information on how to improvemaize cultivation and were shown to farmerson tablet computers. The strength of video isthat it can combine audio and visual informa-tion in an attractive way that is accessible tothe potentially illiterate farmer. However,video screenings can be a passive exercise forviewers, which may increase the likelihood thatfarmers will forget some of the details, particu-larly if the lag between screening and imple-
+mentation is long. Second, to address this
+concern, we add an IVR service that providesa follow-up with the same information. Withan IVR system, a farmer calls a phone number,navigates through a menu to select a topic, andthen listens to a prerecorded message withinformation on the selected topic. Third, weadd SMS messages that remind farmers at spe-ciﬁc points during the maize growing season
+about key recommendations on farming prac-tices shown in the video and available ondemand through the IVR system. Addition ofthe SMS reminders is motivated by the growingrecognition that information alone is ofteninsufﬁcient to change behavior, but timely
+reminders have been found very effective inovercoming inertia, procrastination, competingobligations, or simple forgetfulness (Sunstein
+2014), and repetition can make informationmore salient (Du ﬂo, Keniston, and Suri 2014).
+The outcomes used to assess the effectivenessof this approach and its components includeincreases in knowledge about improved maizecultivation, changes in the use of improvedinputs and recommended agronomic practices,and production-related changes.
+We draw on a ﬁeld experiment involving
+approximately 4,000 farm households sampledfrom the population of households cultivatingmaize across ﬁve districts of eastern Uganda.
+Weﬁnd that providing information to farmers
+through a short video signi ﬁcantly increased
+their knowledge about improved agriculturalinput use and recommended managementpractices. In addition, farmers who were shownthe video were also more likely to adopt arange of inputs and practices that were pro-moted in the video. We also ﬁnd maize yields
+were 10.5% higher among treatment house-holds than among control households. How-ever, we did not ﬁnd strong evidence that the
+IVR service generated much additional impacton knowledge, on the use of inputs or practices.
+Weﬁn dap o s i t i v ee f f e c to ft h eI V Ro n l yo nt h e
+use of one input: hybrid maize seed. However,with less than 10% of farmers who were invitedto use the IVR actually calling in, we acknowl-edge concerns with statistical power. In thecontext of our nested design, we also ﬁnd no
+additional effects of the SMS reminders.
+We contribute to the literature on how ICTs
+can increase the adoption of improved inputsand management practices amongsmallholders —a topic that has received con-
+siderable attention in recent years (Aker2011; Nakasone and Torero 2016). Severalstudies, many of which are still ongoing, havehinted at positive impacts of ICTs applied toextension services. Notable examples includeCole and Fernando (2016), who found thatthe introduction of a toll-free hotline, throughwhich farmers can ask questions to agricul-tural experts, signi ﬁcantly increased cumin
+and cotton yields among farmers in Gujarat,India. Similarly, Casaburi et al. (2014) foundthat in Kenya, sending SMS messages withagricultural advice to smallholder sugarcanefarmers increased yields by 11.5% relative toa control group with no messages (but only intheﬁrst season). Fabregas et al. (2019) report
+positive results from six randomized con-trolled trials (RCTs) in Kenya and Rwandathat used SMS messages to increase the useof agricultural lime to reduce soil acidity and
+318 January 2021 Amer. J. Agr. Econ.
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+increase yields. Fu and Akter (2016) found
+that a multimedia mobile phone-based prod-uct linked to expert advisory servicesincreased farmers ’awareness and knowledge
+about speci ﬁc solutions to their production
+constraints in Madhya Pradesh, India. Mare-dia et al. (2018), on the other hand, found thatalthough mobile phone-based animatedvideos shown to farmers in Burkina Fasoinduced learning and understanding, thevideos were no more effective in encouragingadoption than conventional approaches to infor-mation provision. In Uganda —t h es i t eo fo u r
+study —Grameen Foundation had some success
+using smartphones to provide agriculture-related information to farmers throughICT-empowered community knowledgeworkers (Van Campenhout 2017).
+The remainder of the article is organized as
+follows. In the next section, we brie ﬂy contex-
+tualize the study. We then present the experi-mental design and models that are used toassess impact. Next, the intervention and itscomponents are described in detail. We thenturn to the results, assessing the impact onknowledge, adoption, and production. This is
+followed by a section with additional analysis
+and robustness tests that examines demandfor the IVR component, experimenterdemand effects, heterogeneity in treatmenteffects, and attrition. We then re ﬂect on cost
+effectiveness of the intervention and drawconclusions in a ﬁnal section.
+Context
+The study was conducted among smallholder
+maize farmers in Uganda, a population that issimilar to many others in eastern and southernAfrica in terms of its dependence on rainfedmaize cultivation and on the consumption ofmaize as a key dietary staple. In our study con-text, as in much of the wider region, maize isalso an important traded commodity becauseof its relatively high value-to-weight ratio.Therefore, efforts to increase maize productiv-ity at the farm-household level are an impor-tant dimension of Uganda ’s strategy to
+increase food security and reduce povertythrough both consumption and income chan-nels. Yet maize yields in Uganda are low whencompared with neighboring countries andglobal averages. While research station trialsconducted in Uganda report potential yieldsof about 1.6 metric tons per acre (using onlyimproved varieties without fertilizer applica-
+tion), data from the Uganda National House-hold Survey (UNHS) 2005/06 indicate thataverage maize yields are much lower, at about618 kg per acre for the main growing season.
+The use of modern inputs such as inorganic
+fertilizer is extremely low in Uganda, evenwhen compared to other countries in the region(Sheahan and Barrett 2017). Bold et al. (2017)report that only 9% of maize cultivating house-holds use inorganic fertilizer. In Tanzania, thisrate is almost 20%, while in Malawi, the gov-ernment ’s input subsidy program drove it to
+80%. Yet for other inputs, such as improvedmaize seed, there is some ambiguity as towhether use rates —between 27% and 37% of
+households report using improved maizeseed—are lower than comparison countries
+such as Tanzania and Malawi, where use ratesare reportedly between 30% and 50% (Boldet al. 2017; Sheahan and Barrett 2017). Maizemanagement practices —the water, soil, and
+natural resource management practices thatoften accompany the use of these inputs —also
+vary considerably, driven both by changes inpolicy and market signals as well as changes in
+demographic trends, land use choices, soil
+health, livestock keeping, and other factors(Nkonya, Kaizzi, and Pender 2005; Ebanyatet al. 2010). At best, available data suggest thatthere is considerable within-country variationin input use and management practices, as wellas variation in the extent to which key inputsand management practices are being used inproductive combinations. Such variation is sim-ilarly observed in many of the maize-cultivationsystems found in the region (Sheahan and Bar-rett 2017).
+Yet despite the importance of these issues
+to the country ’s economic growth strategy,
+Uganda has struggled to maintain a functioningagricultural extension service for the last twodecades. In 2000, the National AgriculturalAdvisory Services (NAADS) was establi-shed as an ambitious and innovative public-private partnership wi th support from various
+donors. After what seemed to be a successfulstart, NAADS became a victim of politicalcapture and governance problems, culminat-ing in its demise and replacement by Opera-tion Wealth Creation (Joughin and Kjaer2010; Benin et al. 2011; Rwamigisa et al.2018). Operation Wealth Creation is managedby the army and primarily focused on the dis-tribution of inputs. As a result, this publicextension service currently provides little inthe way of information to smallholders. The
+Van Campenhout, Spielman and Lecoutere ICT for Agricultural Advice 319
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+last available data obtained from the Uganda
+National Panel Survey (wave 2013/2014) sug-gest that only 20% of households receivedextension in the past twelve months. Recently,private initiatives and international socialenterprises have started to ﬁll the void. Exam-
+ples include Viamo ’s3–2-1 service, which pro-
+vides agricultural information through IVR;the Market-led, User-owned ICT4Ag-enabledInformation Service (MUIIS) project, whichuses ICTs to facilitate farmer-to-farmer exten-sion; and the m-Omulimisa platform, throughwhich farmers send SMS messages with ques-tions to agricultural extension of ﬁcers. Yet it
+remains to be seen whether these initiativesand enterprises are a substitute for publicextension or just provide a complementaryfunction.
+In our study site in eastern Uganda, where
+maize is a critically important crop, there aretwo maize cropping seasons. We concen-trated on the second maize-growing seasonof the year 2017, which ran from approxi-mately August 2017 to January 2018. Thesecond growing season is characterized by ashorter period of rainfall than the ﬁrst,
+allowing only 3 –3.5 months for the complete
+cycle from planting to harvest. As a result,farmers tend to cultivate early-maturing butlower yielding maize varieties. Fields areprepared in August, planted in September,and harvested beginning in mid to lateDecember and, at higher elevations, throughmid January.
+Experimental Design and Estimation of
+Treatment Effects
+We evaluate the effectiveness of ICT-
+mediated agricultural extension using a ﬁeld
+experiment (de Janvry, Sadoulet, and Suri2017).
+1The experiment has four treatment
+arms, and the IVR and SMS treatments areincremental in design. The experimental units
+are the households, which were randomlyassigned to one of these four arms. A total of3,703 households were shown an agriculturalextension video, while 256 households (ourcontrol group) were shown a placebo video.From the 3,703 households that were shownthe extension video, 2,414 also received anIVR starter kit: a ﬂyer containing a toll-free
+phone number and instructions on how touse it. From the 2,414 households that wereshown the video and received the IVR encour-agement, 1,113 households were also allocatedto the SMS treatment.
+2
+We sampled from ﬁve districts in eastern
+Uganda known for their maize production:Bugiri, Mayuge, Iganga, Namayingo, and Namu-tumba. From these districts, we removed towncouncils and also two subcounties that consistedof islands in Lake Victoria. We used two-stagecluster sampling to obtain a representative sam-ple of this population, as follows. From the ﬁve
+districts, we ﬁrst selected ﬁfty parishes randomly
+and in proportion to the number of villageswithin each parish. Within each village in theselected parishes, we then listed all households,
+from which we randomly selected ten house-
+holds to participate in the study. In each village,one of the ten households was randomly allo-cated to the control gro up. The remaining nine
+households were all shown the interventionvideo (detailed below). We then added theIVR treatment randomly to two-thirds of thehouseholds that were allocated to the videointervention and further randomly allocated halfof the households assigned to the IVR encour-agement to the SMS treatment.
+3The resulting
+1This study is part of a larger study that also examined the role
+of gender in video-mediated agricultural extension. The overallstudy took the form of a 33factorial design (plus a separate pure
+control group), where one factor corresponds to the informationtechnology and the other two factors varied the gender of the per-son to whom the video was shown within the household and thegender of the person providing the information in the video. In this
+study, we restrict attention to the ﬁrst factor; for an analysis of the
+other factors, we refer to Lecoutere, Spielman, and Van Cam-penhout (2019). More information on the overall study can alsobe found in the pre-analysis plan, which was preregistered andpublicly available from the American Economic Association ’s reg-
+istry for randomized controlled trials (AEARCTR-0002153).2Ex ante, we expected the largest effect size for the video inter-
+vention, and power calculations indicated that we only neededabout 250 observations in each group to detect this. Much smallereffects were expected from adding the other two technologies(as essentially no new information was given, see section 3), so alarger sample was needed to retain statistical power. Power calcu-lations were based on an elaborate set of comparisons using differ-ent outcomes to power the complete 3
+3factorial design. We used
+simulation techniques that allowed us to sample from actual data
+on outcome variables instead of from a theoretical distribution
+with an assumed mean and standard deviation. Apart from thesample size in the control group, sample size in other treatmentarms are the result of binding constraints for minimal sample sizeneeded to test differences in two other factors of the design.Detailed information on the power calculations can be found inthe pre-analysis.
+3Following on from footnote 1, we also experimentally varied
+who provided the information in the video (a man alone, a woman
+alone, or a couple [man+woman]) as well as to whom the video
+was shown within the household (a man alone, a woman alone,or a couple [man+woman]). In the context of a factorial designwith two factors with each three levels, this corresponded to ninetreatment combinations. We thus used villages as blocs and ran-domly assigned the nine potential treatment combinations to the320 January 2021 Amer. J. Agr. Econ.
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+sample is representative of maize-cultivating
+households in these ﬁve districts of eastern
+Uganda. The sample is also potentially relevantto similar populations in the eastern and south-ern Africa region where we observe rainfedmaize cultivation systems, consumption ofmaize as the primary staple food, and sharedconstraints to both the production and market-ing of maize. Of course, signi ﬁcant policy and
+institutional differences exist between andamong countries in this region, such that thesample cannot be strictly representative ofthese otherwise similar populations.
+To evaluate the effectiveness of these different
+ICT treatments, we star t by comparing average
+household-level outcomes among householdsthat were shown the extension video to averageoutcomes of households in the control group.This gives us the average treatment effect forthe video intervention. To obtain the additionaleffect of the IVR treatm ent, we compare average
+outcomes of households that were shown thevideo and were also allocated to the IVR treat-ment with households that were only shownvideos. Finally, the additional effect of the SMScampaign is obtained by comparing outcomes
+of households that were shown the video, were
+encouraged to use IVR, and also received eightSMS reminders with outcomes of householdsthat were shown the video and received theIVR system information but did not receivethe SMS reminders. In practice, this is esti-mated using an ordinary least squares (OLS)regression of the form:
+ð1Þy
+i=α+β1video i+β2:IVR i+β3:SMS i+εi
+with yithe outcome used to assess impact as
+reported by household i;video iad u m m yv a r i a b l e
+that is one if household iwas shown a video and
+zero otherwise; IV R ia dummy variable that is
+one if household iwas given an IVR starter kit
+a n dz e r oo t h e r w i s e ; SMS iis a dummy variable
+that is one if household iwas allocated to the
+S M St r e a t m e n ta n dz e r oo t h e r w i s e .I nt h i sr e g r e s -sion, αis then the average outcome in the control
+group, β
+1provides an estimate of the effect of
+having been shown a video, β2provides anestimate of the incremental effect of also having
+been allocated to the IVR intervention, and β3
+provides an estimate of the incremental effect
+of also having been allocated to the SMSintervention.
+We collected some information prior to the
+experiment ’s rollout to investigate balance.
+The choice of variables was based on thoseused by similar studies in their orthogonalitytests. In particular, we looked at variables usedin studies that investigate the adoption ofyield-improving technologies and practicesusing RCTs, including Du ﬂo, Kremer, and
+Robinson (2011); Karlan et al. (2014); Ashraf,Gine, and Karlan (2009) and Bulte et al.(2014). We collected household characteristicssuch as household size, age, education level ofhousehold head, and housing conditions(number of bedrooms), as well as more spe-ciﬁc information related to maize farming,
+such as acreage and quantities produced inthe last season, and distance to the nearestagro-input shop. In addition, we collected dataon whether the household had received agri-cultural extension services, used improvedmaize varieties, and applied inorganic fertil-
+izer to maize. As mobile phone ownership is
+directly relevant to the IVR and SMS inter-ventions, we also collected data on householdaccess to and ownership of a mobile phone.
+In table 1, we provide descriptive statistics
+and balance tests for the comparisons amongthe three components of the intervention.Averages for the control group are reportedin the ﬁrst column. We observe that few house-
+holds included in our study had access to agri-cultural extension in the previous year (about11%). We also observe that only about 17%of households reported using any fertilizer inthe previous season, and about 34% reportedusing improved seed bought from a shop oragro-input dealer during the most recent crop-ping season. This suggests ample scope toincrease intensi ﬁcation investments through
+the provision of information and extension.We also ﬁnd that farmers produced on average
+only 268 kg of maize per acre in the ﬁrst crop-
+ping season of 2017. This is substantially lowerthan the average yield of 618 kg per acre weﬁnd in data from the 2005/06 Uganda National
+Household Survey. It is worth noting that theselow yield ﬁgures from our sample may re ﬂect
+the devastating impact of the fall armywormoutbreak and adverse weather conditions thatplagued East Africa in 2017 (Stokstad 2017).
+Balance is tested by assessing the signi ﬁ-
+cance of coef ﬁcient estimates in a regression
+remaining nine households in each village. We then added the
+IVR treatment randomly to two-thirds of the households in eachtreatment cell. Among those that were allocated the IVR in each
+treatment cell, we then randomly allocated half of the households
+to the SMS treatment. As such, the treatment cells created by theinteraction of the two other factors were used as blocs in the ran-domization of IVR and SMS treatments. Exactly the same sam-pling procedure was used in the permutation algorithm that wasused to judge signi ﬁcance through randomization inference.Van Campenhout, Spielman and Lecoutere ICT for Agricultural Advice 321
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+(equation (1)) and with a joint signi ﬁcance test
+(F-test). The second column in table 1,denoted “Video, ”compares baseline charac-
+teristics between households that were shownthe placebo video (control group) and house-holds that were shown the intervention video(β
+1in equation (1)). For example, we see that
+yields prior to the intervention were about17 kg per acre higher in the group that wasshown the intervention video than in thegroup that was shown the placebo video. How-ever, this difference is not signi ﬁcantly differ-
+ent from zero. In fact, for the placebo videoversus intervention video comparison, noneof the differences in base line characteristics are
+signiﬁcant at the 10% signi ﬁcance level, and
+the F-statistic cannot be rejected. The third col-umn shows differences in baseline characteris-tics between households that received theintervention video and households that received
+the IVR starter kit in addition to the video
+(denoted “+IVR ”; corresponding to β
+2in equa-
+tion (1)). Here, we see t hat, at baseline, house-
+holds in the latter group were signi ﬁcantly
+larger than households that only saw the video.They also had signi ﬁcantly more bedrooms and
+the household head was slightly older. However,we cannot reject the null hypothesis that jointly,baseline characteristics were unrelated to thetreatment group for this comparison. For theﬁnal comparison (comparing households that
+received video and IVR to those that addition-ally received SMS messages; reported in column4 and denoted “+SMS ”and corresponding to β
+3
+in equation (1)), we ﬁnd that treatment house-
+holds had slightly fewer bedrooms, but the ﬁgure
+is only signi ﬁcant at the 10% level, and the joint
+test does not reject overall balance.Weﬁnd that about 84% of households had
+access to a mobile phone prior to the interven-tion. This is encouraging, as the usefulness ofIVR depends on access to a mobile phone. Fur-ther, we ﬁnd that there was no difference in this
+percentage between the various treatmentgroups. The incidence of mobile phone owner-ship was also high, with about three-quarters ofhouseholds reporting they own a mobile phone.Again, this is important as the potential effectof the SMS intervention depends on being ableto receive the messages.
+ICT Intervention
+Our ICT-mediated extension approach con-
+sisted of three ICT interventions: a shortvideo, an encouragement to use an IVR sys-tem, and a series of eight SMS messages. Thevideos were shown on 10-inch Android tabletcomputers and screened by a trained ﬁeld enu-
+merator during one-to-one meetings witheither an individual farmer or the male andfemale co-heads of household.
+4The control
+group received a placebo treatment, whichwas a music video of traditional dancing thatcontained no information related to farmingTable 1. Balance Tests
+Mean Video +IVR +SMS N
+Maize yield (kg/ac) 267.93 (230.20) 17.41 (18.97) 7.57 (11.30) −9.15 (11.93) 3,959
+Age of HH head (years) 40.50 (14.33) −1.05 (0.88) 0.87 *(0.52) −0.73 (0.55) 3,910
+HH head ﬁnished primary school 0.37 (0.48) −0.01 (0.03) 0.02 (0.02) 0.00 (0.02) 3,959
+HH size 7.72 (3.17) −0.30 (0.22) 0.42 ***(0.13) −0.21 (0.14) 3,959
+Number of bedrooms 2.32 (1.21) −0.12 (0.08) 0.10 **(0.05) −0.09*(0.05) 3,959
+Access to extension last year 0.11 (0.31) 0.00 (0.02) 0.00 (0.01) 0.01 (0.01) 3,959
+Has used fertilizer last season 0.17 (0.37) 0.04 (0.03) 0.01 (0.02) −0.01 (0.02) 3,959
+Has used improved seed last season 0.34 (0.47) 0.04 (0.03) 0.01 (0.02) −0.01 (0.02) 3,959
+Distance nearest agro input shop (km) 5.18 (4.89) 0.17 (0.36) 0.13 (0.22) 0.34 (0.23) 3,959
+HH owns mobile phone 0.76 (0.43) 0.01 (0.03) 0.01 (0.02) 0.01 (0.02) 3,959
+HH has access to a mobile phone 0.84 (0.36) −0.01 (0.02) 0.02 (0.01) −0.01 (0.02) 3,959
+F-test 0.820 1.186 1.143P-value 0.621 0.291 0.323
+Note: First column reports control group means (and standard deviations below); Column 2 reports differences between placebo (control) and video tr eatment
+(and standard error below), column 3 between video only and video+ivr, column 4 between video+ivr and video+ivr + SMS; the last column is sample size; ***,
+**and*denote that the difference is sign ﬁcantly different from zero at the 1%, 5% and 10% level, respectively.
+4In particular, the person or persons within the household to
+whom the video was shown was dictated by one of the other factorsin the factorial design, and were either the man co-head within the
+household alone, the woman co-head within the household alone,
+or the man and woman co-heads as a couple together. As this fac-tor was orthogonal to the factor corresponding to the informationtechnologies in the factorial design, it does not matter who withinthe household the video is shown to, and the treatment effect cor-responds to the average impact at the household level.322 January 2021 Amer. J. Agr. Econ.
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+or maize (Bernard et al. 2015). Videos (treat-
+ment or placebo) were screened twice withthe households in the sample, once prior tomaize planting (August 2017) and once atplanting time (September 2017).
+The information contained in the treatment
+groups ’video is expected to in ﬂuence maize
+yields positively by encouraging the adoptionof several improved technologies and practices.The topics included in the video script wereobtained from qualitative interviews with keyinformants —experts from Uganda ’s agricul-
+tural research and extension community —that
+were conducted in May 2017. The key infor-mants included maize farmers, traders, maizebreeders, extension workers, district agricul-tural of ﬁcers, and other government staff and
+experts.
+A signi ﬁcant portion of the videos focuses
+on technical information regarding seedchoice, soil nutrient management (includingthe promotion of both organic and inorganicfertilizer application), weeding (with particu-lar attention paid to ﬁghting striga, a parasitic
+weed that feeds off the roots of the maizeplant), timely planting, and plant spacing,
+which were ranked by our key informants as
+the top challenges facing farmers. We madesure to include information that was likely tobe unknown to the farmer, because informa-tion is likely to be most valuable when individ-uals learn about a new technology orinstitutional innovation. However, other stud-ies also provide evidence of behavioral changeoccurring through the compounding or re-emphasis of common knowledge that, throughrepetition, becomes more salient to the indi-vidual (Du ﬂo, Keniston, and Suri 2014;
+Hanna, Mullainathan, and Schwartzstein2014). Therefore, the video also containsinformation that farmers likely know but donot seem to act upon.
+That said, not all constraints to maize pro-
+ductivity improvement are associated withinformation de ﬁciencies directly related to
+the use of inputs, technologies, and crop man-agement practices. Often, missing informationproblems manifest indirectly, as uncertaintyabout a range of variables affecting the farmhousehold ’s pro ﬁt function, which farmers
+may simply be unable to conceptualize ormeasure. This includes uncertainty about thecorrelations between expected and actualreturns, the intertemporality of incomestreams, estimates of ﬁxed and variable costs,
+hidden transactions costs, and probabilities ofadverse events. Thus, a signi ﬁcant portion ofthe video also focuses on evaluating the costs
+and bene ﬁts of the different technologies and
+practices being promoted. In addition, thevideos encourage long-term thinking, advisingfarmers to (a) start small and grow their farmenterprise over time, and (b) combine technol-ogies and practices rather than investing alltheir money and effort into one single input,practice, or technology.
+We also pay attention to how the informa-
+tion is packaged. For instance, prior studieshave found that farmers ﬁnd communicators
+who face agricultural conditions and con-straints most comparable to their own to bemore persuasive than other communicators(BenYishay and Mobarak 2018). Several stud-ies point out the importance of role models inshaping aspirations and future-orientedbehavior (Bernard et al. 2015). A growingstrand of the literature investigates how non-cognitive farmer characteristics such as aspira-tions, locus of control, and self-esteem canlead to behavioral change such as technologyadoption (Abay, Blalock, and Berhane 2017).Therefore, in our video, the message is con-veyed by individuals who are readily recog-
+nized as “peer farmers ”and who provide
+information that is framed as a success story.Note that these peer farmers featured in thevideo represent the key source of information,while the enumerator charged with screeningthe video is neither an extension agent norrepresenting him or herself as an extensionagent. However, the enumerators ’level of
+education, training on the intervention, andunderstanding of the content make them areasonable stand-in for extension agents inthat they provide a consistent and complemen-tary signal to the messaging in the video.
+For the additional treatments —the IVR sys-
+tem and the SMS reminders —we collaborated
+with Viamo, a social enterprise. We set up anIVR system that provided the same informa-tion as was presented in the video. Farmhouseholds that were allocated the IVR treat-ment were encouraged to call a toll-free num-ber that explained the IVR system. The callerwas invited to select the number correspond-ing to a topic on which he or she wanted moreinformation (e.g., “Press 1 for seed selection,
+2 for spacing and seed rate, 3 for soil nutrientmanagement, 4 for advice on weeding ”).
+Depending on the number selected, the IVRthen played an audio message of a conversa-tion between two farmers, in which one farmerexplains the recommended practice to theother farmer.
+Van Campenhout, Spielman and Lecoutere ICT for Agricultural Advice 323
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+We set up the SMS system by ﬁrst recording
+telephone numbers for the mobile phonesowned by the household head at the time ofthe experiment ’s rollout. Households that
+were allocated to the SMS treatment were senteight SMS messages to the phone number inour records over the course of the two monthsfollowing the ﬁrst video screening. The mes-
+sages all followed a similar structure: farmerswere ﬁrst reminded about an important tech-
+nology or practice that was relevant at the par-ticular time that the message was sent and thenreminded about the IVR service. Thereminders were related to technologies andpractices that were promoted in the videoand IVR recommendations. For example, theﬁrst message, which was sent out around plant-
+ing time, read “You will get much more maize
+if you use hybrid seed instead of recycled seed.Call the maize hotline on 0200522420 free formore advice! ”About one month into the
+growing season, the following message wassent: “When your maize is knee high, apply
+one water bottle cap of urea around eachplant. Call the maize hotline on 0200522420free for more advice! ”All content was pro-
+duced in the local language (Lusoga).
+Following implementation of the ﬁeld
+experiment, 342 households (or 8.63% of thesample) could not be tracked or could not bepersuaded to complete the endline survey.Given the relatively short time between base-line and endline, this is quite a large loss. Attri-tion was 7.03% in the control group; 8.74% inthe group that was shown the video; 8.90% inthe group that was shown the video andreceived the IVR encouragement; and 7.45%in the group that also received SMS messagesin addition to the IVR encouragement andthe video. We examine this attrition and ﬁnd
+no differences between and among our vari-ous treatment and control groups to suggestbias. A complete analysis including balancetests and Manski bounds is presented in a sep-arate section in the online supplementaryappendix. Although we do ﬁnd that the lower
+and upper bounds do change signs for someoutcomes, Manski bounds are conservative.Overall, results suggest that attrition isunlikely to drive results reported below.
+Results
+We now turn to the results. We estimate intent-
+to-treat (ITT) effects for the (incremental)impact of the three information technologies
+on a range of outcomes related to knowledge,adoption of improved inputs and recom-mended practices, and production.
+Impact on Knowledge
+Knowledge outcomes were measured with a
+short quiz (Feder, Murgai, and Quizon 2004a,2004b; Masset and Haddad 2015) consistingof four multiple-choice questions that wereasked during the endline survey to each ofthe two spouses in the farm household sepa-rately. For each question, three possibleanswers were read out to the respondent,
+who was then asked to indicate which answer
+he or she thought was correct (which may dif-fer from what he or she recalled from thevideo). The respondent was also allowed toindicate if he or she did not know the correctanswer. The household was considered knowl-edgeable on a particular topic if at least one ofthe spouses could indicate the correct answer.
+The ﬁrst question was related to technical
+knowledge about planting. In our video, werecommended a spacing of 75 cm ×30 cm
+with one seed per hill, and this was the correctoption. Other possible answers included aspacing of 75 cm ×60 cm with two seeds per
+hill, which is standard for many farmers andrecommended by many extension agents inUganda, and an intermediate alternative of75 cm ×30 cm with two seeds per hill.
+Because our video recommended a techniquethat deviates from what is considered to bestandard spacing, we assumed that the recom-mended practice was new to most of thefarmers. This question thus tests a traditionaltheory of change, which holds that extensiongenerates knowledge, which leads to increasedadoption and subsequently boosts yields.
+The second question was related to viewing
+farming as a business enterprise. In the video,we paid ample attention to promoting anapproach where farmers start small and growover time by reinvesting, and we emphasizedthe bene ﬁts of combining inputs rather than
+investing only in one input, for example,improved seed. To examine whether farmers
+internalize the advice provided, we asked
+them what a successful farmer would do if heor she had only UGX 40,000 (Ugandan shil-lings).
+5The correct answer was to “use this
+5At the time this study was conducted, the exchange rate was
+approximately UGX 3,628 per USD.324 January 2021 Amer. J. Agr. Econ.
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+amount to purchase improved seed and fertil-
+izer and start intensi ﬁed farming on a small
+area. ”Alternative options were to “use all
+the money to buy hybrid seeds, because with-out good seeds, yields will be low ”and“use
+all the money to buy fertilizer, because withpoor soils, yields will be low. ”
+For the third question, we asked if farmers
+knew when weeding is most important. Thevideo showed that weeding is most importantduring the ﬁrst four weeks after planting, as
+maize is a poor competitor for light and nutri-ents. We assumed that most farmers wouldknow the correct answer to this question giventhat weeding is part of well-established man-agement practices in the study area. Alterna-tive answers were: “when the maize is knee
+high”and “when the maize is at tasseling
+stage. ”This question suggests a theory of
+change directly related to the saliency effectof ICT-mediated information provision(Duﬂo, Keniston, and Suri 2014; Hanna, Mul-
+lainathan, and Schwartzstein 2014).
+Finally, we asked if farmers knew when spray-
+ing against fall armyworm is most effective. Noinformation was given about combating fall
+armyworm in the intervention video, so
+unless our intervention unexpectedly encour-aged farmers to search for additional infor-mation, we do not expect any impact. Forthis question, the correct option was “during the
+evening, as fall armyworm eats during night, ”
+while the other options were: “early in the morn-
+ing when it is still cool ”and“at noon because
+sunlight increases che mical performance. ”
+To guard against over-rejection of the null
+hypothesis due to multiple inference, out-comes of the knowledge questions werecombined into an index, constructed as theweighted mean of the individual standard-ized outcomes, using as weights the inverseof the covariance matrix of the transformedoutcomes (Anderson 2008). However, we
+also see value in examining the impact onthe questions individually, as they attemptto measure different aspects of the informa-tion intervention. To control the family-wiseerror rate (FWER) when examining resultsfor each question individually, we use re-randomization to construct the joint null dis-tribution for the family of outcomes we aretesting. From this family-wise sharp null, wecan obtain the corresponding FWER-consistent signi ﬁcance thresholds by deter-
+mining which cut offs yield 10%, 5%, and1% signi ﬁcant hypothesis tests across all
+tests and simulations.Table 2 shows results for the three incre-
+mental levels of ICT-mediated informationdelivery using different information technol-ogies.
+6Theﬁrst column reports mean scores
+in the control group (with standard deviationsreported below in parentheses). For the fourindividual questions, this is simply the pro-portion of households in the control groupthat answered the parti cular question cor-
+rectly. For instance, we ﬁnd that in almost
+16% of the households in the control group,at least one of the spouses indicated the cor-rect option among the response alternativesto the question on optimal maize seed spac-ing. This relatively low rate of correctresponses is likely due to the fact that this isa fairly new recommendation that deviatesfrom what farmers were taught in the pastand have been doing for decades. We ﬁnd
+that in about 91% of control households, atleast one spouse knew inputs were best com-bined, and in more than 95% of controlhouseholds it was known that weeding is mostimportant during the ﬁrst four weeks. In
+about one-third of households, at least onespouse knew how to ﬁght fall armyworm.
+For the knowledge index, the mean is harder
+to interpret, as it is the result of a weightedmean after standardization of the individualcomponents of the index.
+In the second column, we report the impact
+of having been shown the video (with standarderrors of the estimated coef ﬁcients reported
+below in parentheses). We ﬁnd that having
+viewed the video increases the likelihood thatat least one spouse knows the recommendedspacing by 13.2% points. This difference is sig-niﬁcantly different from zero at the 1%
+FWER-adjusted signi ﬁcance level (randomi-
+zation inference-based p-values are shown inthe third column; asterisks denote signi ﬁcance
+as compared to FWER-adjusted thresholds).We also ﬁnd that the video increases the likeli-
+hood that at least one spouse knows thatinputs are best combined for optimal resultsby 4.5% points. This difference is statisticallysigniﬁcant at the 5% FWER-adjusted signi ﬁ-
+cance level. For the question on weeding, thevideo does not seem to have had a signi ﬁcant
+effect. However, this result should be inter-preted with care due to limited variation in
+6As we found only limited imbalance in baseline covariates in
+table 1, we do not include baseline variables as control here. How-ever, we also did the analysis with controls, results of which can befound in the Online Appendix Tables 6 through 9. Results are notsensitive to inclusion of baseline variables.Van Campenhout, Spielman and Lecoutere ICT for Agricultural Advice 325
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+the outcome.7Finally, on the fall armyworm
+question, we ﬁnd that households that were
+shown the video are no more likely than con-trol households to know when one shouldspray to control the pest. This suggests thatthe videos did not encourage farmers toactively search for information on topics thatwere not explicitly covered. Overall, and asconﬁrmed by the knowledge index, we con-
+clude that the agricultural extension videosincreased knowledge at the household leveland that this increase seems especially pro-nounced for novel information provided inthe videos.
+The fourth column (+IVR) shows the incre-
+mental effect of IVR (with standard errors ofthe estimated coef ﬁcients reported below in
+parentheses and corresponding randomiza-tion inference-based p-values in the ﬁfth col-
+umn). We see that the IVR encouragementdoes not additionally affect knowledge aboutthe new recommended spacing. Similarly,there is no additional effect on knowledgerelated to the optimal time for weeding noron combating fall armyworm. The fact thatthere is no supplementary effect of the IVR
+encouragement on knowledge is con ﬁrmed
+by the nonsigni ﬁcant difference in the knowl-
+edge index. The sixth column (+SMS) reportsthe additional effect of the SMS reminders onthe various questions and the index (with ran-domization inference-based p-values reportedin the seventh column). Similar to the impactof IVR, we do not ﬁnd an additional effect of
+the SMS campaign on any of the questions.We also do not ﬁnd an effect of the SMS cam-
+paign as judged by the knowledge index. Thefact that the IVR and SMS components haveno additional knowledge effects is perhapsnot surprising, as they did not provide newinformation.
+Adoption Effects
+Next, we consider changes in household-level
+adoption of recommended farming practicesas a result of the intervention. In the endlinesurvey, we collected detailed information onpractices employed on household maize plots.Mean adoption rates in the control group fordifferent practices are reported in the ﬁrst col-
+umn of table 3. For instance, the videoTable 2. Impact of ICT Treatments on Knowledge Outcomes
+Mean Video P-value +IVR P-value +SMS P-value N
+Knows optimal spacing (yes = 1) 0.155 (0.363) 0.132 ***(0.030) 0.000 −0.020 (0.018) 0.227 0.010 (0.019) 0.571 3,629
+Knows inputs best combined (yes = 1) 0.908 (0.290) 0.045 **(0.018) 0.011 −0.016 (0.011) 0.114 0.009 (0.011) 0.416 3,629
+Knows optimal time for weeding (yes = 1) 0.954 (0.210) −0.017 (0.017) 0.323 0.009 (0.010) 0.357 −0.002 (0.011) 0.811 3,629
+Knows how to ﬁght armyworm (yes = 1) 0.336 (0.473) −0.018 (0.031) 0.590 −0.017 (0.019) 0.503 0.019 (0.020) 0.310 3,629
+Knowledge index −0.075 (0.565) 0.089 ***(0.041) 0.002 −0.021 (0.025) 0.335 0.056 (0.026) 0.561 3,629
+Note: In the ﬁrst column, means (and standard deviations) in the control group are presented for each variable. Column 2 reports differences between placebo and vi deo treatment (and standard error) with its corresponding p-value in column 3;
+column 4 reports differences between video only and video+ivr (and standard error) with its corresponding p-value in column 5; column 6 reports diffe rences between video+ivr and video+ivr + SMS (and standard error) with its corresponding
+p-value in column 7; sample size is reported in column 8. Reported p-values are based on randomization inference (10,000 permutations); ***,**and*denote that the difference is sign ﬁcant at the 1%, 5% and 10% level, respectively, after
+correcting for multiple hypothesis testing using a family-wise sharp null (10,000 permutations). All speci ﬁcations control for the other orthogonal factors in the factorial design. The knowledge index is based on the ﬁrst three knowledge questions
+only, as the hypothesis was that there would be no effect on the fourth knowledge question.7In fact, our pre-analysis plan speci ﬁes that we would drop
+from the analysis variables where 95% of outcomes are the samevalue.326 January 2021 Amer. J. Agr. Econ.
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+recommends that farmers start planting maize
+immediately after the start of the rains. Weﬁnd that 37% of households in the control
+group reported that they started plantingwithin one day after the start of the rains onat least one plot —a relatively high rate of
+adoption for this practice that indicates theextent to which it is likely known amongfarmers. We also ﬁnd that only 2.6% of house-
+holds in the control group applied the recom-mended plant spacing of 75 cm ×30 cm with
+a reduced seed rate of one seed per hill. Thislow rate in the control group is not surprisinggiven that this was a new recommendation.Almost 69% of control households reportedremoving striga before it ﬂowered to reduce
+damage early on and prevent the weed fromspreading. Finally, about 43% of controlhouseholds reported ﬁrst weeding after
+eighteen –to twenty days, a practice that was
+also recommended in the video.
+The second column in table 3 again reports
+the difference in the adoption of practicesbetween households that were shown theintervention video and households that weregiven the placebo treatment (with standard
+errors of the estimated coef ﬁcients in paren-
+thesis below and corresponding randomiza-tion inference-based p-values in column 3).Weﬁnd that for the ﬁrst recommended prac-
+tice, timely planting, there is no impact fromthe video treatment. However, the likelihoodthat households adopt the recommended75 cm ×30 cm spacing with a reduced seed
+rate increases signi ﬁcantly after having viewed
+the video: while only 2.6% of households inthe control group reported adopting this prac-tice on at least one plot, this ﬁgure increases to
+8.8% among households that were shown thevideo. This difference is signi ﬁcant at the 1%
+FWER-adjusted signi ﬁcance level. Similarly,
+weﬁnd that the proportion of households that
+removed striga early on increased from 68.9%to 74.6% as a result of viewing the video (witha randomization inference-based p-value of0.030, signi ﬁcant at the 10% FWER-adjusted
+signiﬁcance level). Finally, while the propor-
+tion of households that reported havingstarted weeding after eighteen to twenty daysis higher among households that were shownthe video than those in the control group, thedifference is not signi ﬁcantly different from
+zero. Estimation results for the index that sum-marizes the different practices con ﬁrms that
+overall, we can conclude that the videos signif-icantly increased the adoption of recom-mended practices.Table 3. Impact of ICT Treatments on Adoption of Recommended Practices
+Mean Video P-value +IVR P-value +SMS P-value N
+Planted immediately after start rains (yes = 1) 0.366 (0.483) −0.001 (0.033) 0.966 0.008 (0.020) 0.673 −0.002 (0.021) 0.919 3,509
+Used recommended seed spacing/rate (yes = 1) 0.026 (0.158) 0.062 ***(0.019) 0.001 −0.003 (0.011) 0.776 0.013 (0.012) 0.236 3,572
+Removed striga early on (yes = 1) 0.689 (0.464) 0.057 *(0.030) 0.030 −0.005 (0.018) 0.819 0.020 (0.019) 0.240 3,572
+First weeding after eighteen –twenty days (yes = 1) 0.430 (0.496) 0.015 (0.034) 0.682 0.012 (0.021) 0.560 −0.006 (0.022) 0.789 3,572
+Recommended practices index −0.083 (0.473) 0.077 ***(0.036) 0.006 0.009 (0.022) 0.670 0.039 (0.023) 0.378 3,509
+Note: In the ﬁrst column, means (and standard deviations) in the control group are presented for each variable. Column 2 reports differences between placebo and vi deo treatment (and standard error) with its corresponding p-value in column 3;
+column 4 reports differences between video only and video+ivr (and standard error) with its corresponding p-value in column 5; column 6 reports diffe rences between video+ivr and video+ivr + SMS (and standard error) with its corresponding
+p-value in column 7; sample size is reported in column 8. Reported p-values are based on randomization inference (10,000 permutations); ***,**and*denote that the difference is sign ﬁcant at the 1%, 5% and 10% level, respectively, after
+correcting for multiple hypothesis testing using a family-wise sharp null (10,000 permutations). All speci ﬁcations control for the other orthogonal factors in the factorial design.Van Campenhout, Spielman and Lecoutere ICT for Agricultural Advice 327
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+The fourth and ﬁfth columns of table 3
+report results for the additional effect of theIVR encouragement, with estimates reportedin column 4 (and the corresponding randomi-zation inference-based p-values in column 5).We do not ﬁnd any signi ﬁcant additional effect
+of the IVR treatment on any of the recom-mended practices. The sixth column reportsestimates for the additional effect of the SMScampaign (with the corresponding randomiza-tion inference-based p-values in column 7).Although we do ﬁnd that the proportion of
+households that reported having removedstriga before ﬂowering is 20% points higher
+in the treatment group, and we also ﬁnd a
+small positive effect on seed spacing and seedrate, the differences are not signi ﬁcant. The
+fact that both the IVR encouragement andthe SMS campaign have no additional impacton adoption of practices is con ﬁrmed by the
+indices.
+Next, we examine results related to the use
+of agricultural inputs. Results are reported intable 4. In the top panel, we examine resultsseparately for the three types of fertilizer thatwere recommended in the video and again
+use an index to assess changes in overall fertil-
+izer use. The ﬁrst column in table 4 reports
+mean adoption rates in the control group. Weﬁnd that 26% of control households reported
+that they used DAP or NPK on at least oneof their maize plots, while the use of urea wasless widespread with only 5.1% of controlhouseholds reporting urea use on at least oneplot. Among control households, 16.2%reported using organic fertilizer on at leastone plot.
+The impact of showing the video on fertil-
+izer use is reported in column 2 and 3 of table 4.We see that the video treatment increased theuse of urea by 5% points (with a randomiza-tion inference-based p-value of 0.011, and sig-niﬁcance at the 5% FWER-adjusted
+signiﬁcance level). We also ﬁnd that the use
+of organic fertilizer increased by about 7.3%points as a result of the video treatment. Sum-marizing the three types of fertilizer in anindex shows a positive difference betweentreatment and control, with the difference sig-niﬁcant at the 5% level.
+The incremental impact of the IVR encour-
+agement is reported in columns 4 and 5 oftable 4. While the difference between treat-ment and control is positive for both types ofinorganic fertilizer, the effects are not signi ﬁ-
+cant. However, we do ﬁnd that the IVR
+encouragement reduced the proportion ofhouseholds that reported using organic fertil-
+izer by 3.8% points. The opposing effectsresult in an insigni ﬁcant index. The additive
+effect of the SMS campaign is reported in col-umns 6 and 7 of table 4, and it suggests noeffect of the SMS campaign on fertilizer use.
+In the lower panel of table 4, we report
+results for the use of improved seed. We differ-entiate between maize hybrids and open-pollinated maize varieties. Use rates are aboutthe same for both types. We ﬁnd that the video
+treatment does not change these percentages(columns 2 and 3). However, we do ﬁnd an
+effect from the IVR encouragement: the per-centage of households that reported havingused hybrid seed on a least one plot was4.1% points higher in the treatment group.Apparently, providing farmers with a tool thatallows them to actively seek out informationabout a new input or technology increasesthe likelihood that they also adopt hybridmaize seed.
+8The impact of the IVR treatment
+on improved seed use is con ﬁrmed by the seed
+index. The SMS campaign appears to counter-act the effect of the IVR on hybrid seed use.This is somewhat surprising and may indicate
+that the effect of IVR on seed is driven by
+noise.
+Production Effects
+Finally, we turn to the intervention ’s effects on
+production-related outcomes. We ﬁrst exam-
+ine household-level maize production. In theendline survey, we asked both spouses sepa-rately to estimate how much maize was har-vested from each maize plot. These quantitieswere then summed over the different maizeplots assessed by each spouse and the averagebetween the two spouses was taken as the ﬁnal
+estimate of household-level maize production.
+The ﬁrst column in table 5 shows mean
+values for the production indicators for thecontrol group. On average, control householdsproduce (log[kg]) 5.825 or about 440 kg ofmaize. This was cultivated on (log[acre])0.019 or about 1.19 acres on average. It alsoshows that for the average household in thecontrol, maize yields (log[kg/acre]) equal5.846 or about 430 kg/acre. This is muchhigher than yields recorded at baseline
+8Consistent with this interpretation, we ﬁnd that among
+farmers that called the IVR service and selected the topic on seedselection, 38% reported that they used hybrid seed. This rate isonly 35% among those that called but did not select this topic.However, the difference is not statistically signi ﬁcant.328 January 2021 Amer. J. Agr. Econ.
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+(290 kg/acre) for the previous season, possibly
+because rainfall patterns were better duringthe season of our intervention and farmersmay have given greater attention to combat-ing fall armyworm. Still, compared to ﬁgures
+recorded in FAOSTAT (1,000 kg/acre) or ﬁg-
+ures from other household survey data (typi-cally around 600 kg/acre), yields in oursample were below what might be considered“normal ”in Uganda. This low yield level is
+also con ﬁrmed by the fact that in less than
+40% of households at least one spousereported that yields were better than a typicalyear on at least one plot. We also look at laboruse. The average household spent aboutseventy-two person-days on maize farming,which includes labor that was hired in. Thistranslates to a labor productivity of 6.73 kgof maize per hour worked.
+In the second column of table 5, we report the
+impact of the video treatment (with correspond-ing randomization inference-based p-values incolumn 3) for the various production-relatedoutcomes. We see that there is no impact on(log) maize production. However, we do seethat households in the video treatment pro-
+duced this same amount of maize on an area
+that is about 10.5% smaller than the area usedfor maize production by control households.As a result, we also ﬁnd that among households
+in the video treatment, yields are about 10.5%higher than among the control group. This dif-ference is signi ﬁcant at the 10% FWER-
+adjusted signi ﬁcance level. The fact that the
+video intervention has a clear effect onproduction-related outcomes is also re ﬂected
+in the signi ﬁcant difference in the production
+index (aggregating amount produced, area cul-tivated, labor used, and a subjective assessmentof maize yield) between treatment and control.That said, we do not ﬁnd that households in the
+video treatment were more inclined to feel thatyields were better than normal than werehouseholds in the control group.
+9
+Results are again consistent with the con-
+tent provided in the video. In particular, thevideo advised that farmers experiment on asmall part of their ﬁeld with modern inputs,
+following recommended practices, andadvised against using improved seed on theirTable 4. Impact of ICT Treatments on Fertilizer and Improved Seed Use
+Mean Video P-value +IVR P-value +SMS P-value N
+Fertilizer use
+Used DAP/NPK? (yes = 1) 0.260 (0.439) −0.043 (0.029) 0.119 0.022 (0.017) 0.159 −0.007 (0.018) 0.699 3,572
+Used urea? (yes = 1) 0.051 (0.221) 0.050 **(0.020) 0.011 0.013 (0.012) 0.277 −0.023 (0.013) 0.071 3,572
+Used organic fertilizer? (yes = 1) 0.162 (0.369) 0.073 **(0.028) 0.007 −0.038 *(0.017) 0.024 0.030 (0.018) 0.070 3,572
+Fertilizer index −0.056 (0.548) 0.065 **(0.040) 0.038 −0.003 (0.024) 0.887 0.016 (0.025) 0.953 3,572
+Improved seed use
+Used hybrid maize seed? (yes = 1) 0.294 (0.456) 0.003 (0.031) 0.925 0.041 **(0.019) 0.028 −0.049 *(0.020) 0.009 3,572
+Used open pollinated varieties? (yes = 1) 0.298 (0.458) −0.027 (0.031) 0.410 0.012 (0.019) 0.493 0.025 (0.020) 0.393 3,572
+Seed index 0.032 (0.693) −0.068 (0.046) 0.551 0.059 **(0.028) 0.025 0.016 (0.029) 0.429 3,572
+Note: In the ﬁrst column, means (and standard deviations) in the control group are presented for each variable. Column 2 reports differences between placebo and vi deo treatment (and standard error) with its corresponding p-value in column 3;
+column 4 reports differences between video only and video+ivr (and standard error) with its corresponding p-value in column 5; column 6 reports diffe rences between video+ivr and video+ivr + SMS (and standard error) with its corresponding
+p-value in column 7; sample size is reported in column 8. Reported p-values are based on randomization inference (10,000 permutations); ***,**and*denote that the difference is sign ﬁcant at the 1%, 5% and 10% level, respectively, after
+correcting for multiple hypothesis testing using a family-wise sharp null (10,000 permutations). All speci ﬁcations control for the other orthogonal factors in the factorial design.
+9Farmers may have confused yields with production. Consis-
+tent with our recommendation to start small and combine technol-ogies, and the results that yield effects are due to producing thesame amounts on smaller plots, farmers may indicate that on theplot the same amount of maize was produced when part was leftfallow or planted with another crop.Van Campenhout, Spielman and Lecoutere ICT for Agricultural Advice 329
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+entire ﬁeld if this does not leave suf ﬁcient
+money for complementary inputs such as fer-tilizer. Further, the video advised farmers tocultivate a more commercial mindset, payingample attention to the idea of starting smalland growing over time through re-investing.Columns 4 and 5 report the additive effect ofthe IVR treatment on production-related out-comes. As with previous outcomes, thereseems to be little impact from this treatment.Similarly, we do not ﬁnd additional effects on
+production-related outcomes from the SMStreatment.
+Additional Analysis and Robustness Tests
+Although we ﬁnd signi ﬁcant effects from the
+video intervention, we ﬁnd limited additional
+effects from the IVR and SMS treatments. Inthis section, we explore potential reasons forthis. We further show that experimenterdemand effects are unlikely to drive ourresults. In the online supplementary appendix,we also explore heterogeneity in treatmenteffects.
+Demand for IVR and Local Average
+Treatment Effects
+In an encouragement design such as the IVR
+treatment, households self-select into thetreatment. Based on the call log generated bythe IVR system, we ﬁnd that only a small num-
+ber of households that were encouraged to use
+the IVR system actually called in (8.9% or
+214 households). It may be instructive to lookat differences in baseline characteristicsbetween households that ultimately decidedto make use of the IVR system and those thatdid not. Online supplementary appendixtable 10 shows results from an OLS regressionof an indicator that takes the value of one if theIVR system log showed that a householdcalled in at least once using the householdhead ’s phone number that was recorded dur-
+ing baseline data collection, and zero other-wise, on various baseline variables (and theSMS treatment allocation). Results indicatethat none of the baseline characteristics pre-dict demand for the IVR service, except foraccess to a mobile phone. We also ﬁnd that
+the SMS reminders seem to have increasedthe likelihood that farmers called the IVR hot-line, as was intended.Table 5. Impact of ICT Treatments on Production Outcomes
+Mean Video P-value +IVR P-value +SMS P-value N
+Maize production (log(kg)) 5.825 (0.754) −0.017 (0.059) 0.747 0.045 (0.034) 0.316 0.042 (0.036) 0.351 3,347
+Maize area (log(acre)) 0.019 (0.579) −0.100 *(0.045) 0.020 −0.010 (0.026) 0.683 0.023 (0.028) 0.390 3,339
+Maize yield (log(kg/acre)) 5.846 (0.658) 0.100 *(0.049) 0.025 0.039 (0.028) 0.292 −0.002 (0.030) 0.935 3,301
+Yield better than normal (yes = 1) 0.387 (0.488) 0.023 (0.034) 0.496 0.001 (0.020) 0.971 0.035 (0.021) 0.133 3,572Labor (log(mandays)) 4.134 (0.580) −0.010 (0.042) 0.786 −0.010 (0.024) 0.706 0.036 (0.026) 0.122 3,381
+Labor productivity (log(kg/mandays)) 1.650 (0.719) 0.024 (0.056) 0.649 0.073 (0.033) 0.062 −0.009 (0.035) 0.750 3,346
+Production index −0.050 (0.364) 0.043 **(0.025) 0.024 0.007 (0.015) 0.607 0.026 (0.016) 0.565 3,297
+Note: In the ﬁrst column, means (and standard deviations) in the control group are presented for each variable. Column 2 reports differences between placebo and vi deo treatment (and standard error) with its corresponding p-value in column 3;
+column 4 reports differences between video only and video+ivr (and standard error) with its corresponding p-value in column 5; column 6 reports diffe rences between video+ivr and video+ivr + SMS (and standard error) with its corresponding
+p-value in column 7; sample size is reported in column 8. Reported p-values are based on randomization inference (10,000 permutations); ***,**and*denote that the difference is sign ﬁcant at the 1%, 5% and 10% level, respectively, after
+correcting for multiple hypothesis testing using a family-wise sharp null (10,000 permutations). All speci ﬁcations control for the other orthogonal factors in the factorial design.330 January 2021 Amer. J. Agr. Econ.
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Because demand for the IVR service is
+endogenous, we cannot simply compare out-comes of households that called into the sys-tem to those that did not. Furthermore, itmay be that farmers who were provided withinformation about the IVR service passed thison to households that were shown the videobut were not allocated to the IVR treatment.Noncompliance by the control group may leadto a downward bias of the treatment effectsestimated in the previous section.
+10However,
+with two-sided noncompliance, local averagetreatment effects (LATE) can be estimated,where the random allocation to the IVRencouragement is used as an instrument forthe variable that measures calling into theIVR system (Imbens and Angrist 1994).
+Tables 11 to 14 in the online supplementary
+appendix correspond to tables 2 –5 to show
+LATE estimates for the IVR intervention ’s
+additional effects. In all of these tables, meansand standard deviations in the control groupare repeated for reference in the ﬁrst column.
+In the second column, we report the resultsof a two-stage least squares (2SLS) regressionwhere we instrument a dummy variable that a
+household called the IVR with the random
+allocation to the IVR encouragement. Wereport point estimates together with standarderrors in parentheses below; correspondingp-values are reported in the third column.
+Results do not change much from those
+reported in the previous section. Forknowledge-related outcomes and the use ofrecommended practices (online supplemen-tary appendix Tables 11 and 12), point esti-mates for the IVR impact are generally muchhigher in absolute value but remain insigni ﬁ-
+cant. Online supplementary appendix table 13conﬁrms the previous ﬁnding that the likeli-
+hood of using organic fertilizer reduces amonghouseholds that called into the IVR system.For improved seed use, we ﬁnd results that
+are again similar to the previous section, withIVR increasing the likelihood of using hybridseed among households that called into theIVR system, although the seed index is no lon-ger signi ﬁcant. Finally, few effects show up
+as signi ﬁcant when production-related out-
+comes are considered (online supplementaryappendix table 14).Thus, even after accounting for noncompli-
+ance, we ﬁnd that additional effects from the
+IVR treatment are limited, particularly whenassessed with outcome indices. A possible rea-son why we fail to ﬁnd signi ﬁcant effects that
+are consistent with the effects from the videofor the additional treatment may be that thepartial compliance greatly reduces the powerof the design. Again, only 8.9% of householdsthat were selected for the IVR treatment alsoactually called in from the phone number werecorded at baseline.
+11
+This low compliance rate may re ﬂect low
+demand for the service.12However, we suspect
+that our indicator of take-up of the interventionis likely to signi ﬁcantly underestimate true
+compliance. In particular, our indicator of com-pliance is taken from the IVR system log,where recorded phone numbers are matchedto phone numbers that were recorded duringbaseline data collection. This indicator is likelyto severely underreport true compliance, asencouraged farmers may have used differentphones to call the IVR.
+13Using our measure of
+compliance, we cannot maintain that theexclusion restriction holds, as some of the
+potential outcomes are directly determined by
+the instrument. The problem becomes appar-ent when we think about LATE as the Waldestimator that scales the ITT by compliance(Angrist and Pischke 2008). In our case, theITT will be estimated on the basis of all farmersencouraged to call into the IVR system. Ourmeasure of compliance forces the LATE esti-mation to work with the 214 households thatshow up in the IVR log and could be identi ﬁed
+in the baseline, rather than through the430 farmers who called in, which in the case ofa positive impact would lead to an overestimateof the impact of the treatment among com-pliers. It is well known that especially in the
+10However, we ﬁnd that only 1% of farmers who were allo-
+cated to the control group called the IVR system. At the sametime, there were also many numbers in the call log that could notbe identi ﬁed, see also Footnote 13.11A back-of-the-envelope calculation shows that the minimum
+detectable effect (MDE) size for maize yields in the original IVRdesign would be about 6.4%. With only 8.9% compliance, theMDE increases to 71.6%.
+12Fabregas et al. (2019) also ﬁnd very low uptake of similar
+demand driven extension technologies in their analysis of differentICT enabled extension programs in Kenya and Rwanda. In oneexperiment where farmers were offered a phone call from anextension agent, only 8% of farmers requested a call during plant-ing season. In another project, farmers also had access to a toll-freenumber, but only about 1% of treated farmers (thirty- ﬁve callers)
+used it. Cole and Fernando (2016) ﬁnd 88% of farmers called a
+hotline, but this use rate was attained only after two years of inten-
+sive exposure to the system using bi-weekly reminders and for a
+study population of cotton farmers that expressed willingness toparticipate and owned a mobile phone.
+13The fact that 430 unique calls to the system were recorded,
+representing about 18% of encouraged households, con ﬁrms this
+suspicion.Van Campenhout, Spielman and Lecoutere ICT for Agricultural Advice 331
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+context of a weak ﬁrst stage, the bias can
+become extremely large (Du ﬂo, Glennerster,
+and Kremer 2007).14The above explanation
+may make interpretation of the LATE effectsdifﬁcult, and we thus recommend focusing on
+ITT effects.
+Experimenter Demand Effects
+A key concern with this study is the use of self-
+reported survey data on key outcomes, asopposed to outcomes that are measured by athird party in a more objective way. Study par-ticipants may report what they feel is desiredin that context (social desirability bias). In anRCT, social desirability bias becomes a con-cern if it is correlated to the treatment, whichis sometimes referred to as experimenterdemand effects (Zizzo 2010). Although recentresearch suggests that experimenter demandeffects may be less problematic than initiallythought (eg. De Quidt, Haushofer, and Roth2018; Mummolo and Peterson 2019), we offerthe following thoughts on why experimenterdemand effects are unlikely to drive ourresults.
+First, during the design of the endline ques-
+tionnaire, we tried to minimize potentialexperimenter demand effects by careful for-mulation of the questions. Experimenterdemand effects are more likely to be a concernfor simple yes/no questions than for moreopen-ended questions. For instance, in ourendline survey, we did not ask if farmers used“plant spacing of 75cm x 30cm with a reduced
+seed rate of one seed per hill ”as recom-
+mended. Rather, we asked farmers to describethe planting process, and the enumerator wasthen required to select an appropriate
+response from a list of options that was not
+revealed to the farmer. For input adoption,we started from broad questions(e.g., whether fertilizer was used on a particu-lar plot) and then asked farmers to providefurther details (e.g., about fertilizer type, tim-ing of application, quantities, and price),thereby allowing enumerators to detectinconsistencies that might signal experimenter
+demand effects.
+Second, in our endline survey, not all out-
+comes are equally likely to be affected byexperimenter demand effects. For instance,experimenter demand effects are probablyless likely to be an issue for the multiple choicequestions used to measure knowledge than forquestions about implementation of recom-mended practices or the use of inputs such asinorganic fertilizer or improved seed. It is reas-suring that there is consistency between effectsfound on questions that are more and lessprone to experimenter demand effect.
+Third, as reported in the online supplemen-
+tary appendix, fertilizer adoption seemed toincrease particularly for treated householdsthat live close to an agro-input dealer. Thisﬁnding reduces the possibility that results are
+driven by misreporting related to experi-menter demand effects, as this would meanthat households that have better access toimproved inputs strategically decided toreport their answers differently than house-holds that have less access to inputs.
+Cost Effectiveness
+Cost effectiveness and scalability are often
+major selling points for ICT-mediated inter-ventions such as ours. Although we did notcollect detailed information on prices paid forinputs or the cost of labor, we can use the esti-mates above together with aggregate pricedata and some reasonable assumptions to for-
+mulate cost and bene ﬁt calculations. We ﬁrst
+check if the video intervention affected pro ﬁt-
+ability of the average farmer and then com-pare the total cost of the intervention to thetotal bene ﬁt derived by the farmers in our
+study.
+In our sample, a bag of 100-kg of maize was
+sold at a median price of UGX 60,000. Withcontrol household reporting yields of 430 kgper acre, the corresponding value per acre isUGX 258,000. In the subsample that receivedthe video treatment, yields increased to475 kg per acre, corresponding to UGX285,000. This means a difference in income ofUGX 27,000 per acre, or about USD 7.7.
+From this, we subtract the cost of inputs. In
+the intervention, we recommended two hybridseed types, Longe 10H and UH5354 (com-monly known as Bazooka). At the time ofthe experiment, Longe 10H sold for UGX
+14A similar concern applies to our indicator of take-up of the
+SMS treatment. Here, however, we fear that compliance is overes-timated and so the instrumental variable (IV) estimates will resultin a downward bias of the impact of the treatment on compliers.
+That is, our indicator of compliance is again derived from the sys-
+tem logs and simply looks at message delivery to the intendedphone. Probably not all farmers also opened the messages andread them. But the problem is likely to be less severe here, givena stronger ﬁrst stage and a likely smaller difference between mea-
+sured compliance and real compliance.332 January 2021 Amer. J. Agr. Econ.
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+6,000 per kg, while Bazooka sold for UGX
+8,500 per kg. However, our data show thatthe use of Bazooka was marginal and not cor-related to the treatment. Thus, we only use theprice of Longe 10H in the cost calculations.We further recommended two open-pollinated varieties, Longe 5 and Longe 4, ofwhich Longe 5 is the more common variety.Both types cost about UGX 3,000 per kg. Afarmer needs about 8 kg of seed to plant oneacre. Inorganic fertilizers are probably thelargest expense. The retail price of urea wasabout UGX 2,500 per kg, while DAP costUGX 3,000 per kg. We recommended using60 kg each of both DAP and urea per acre.We assume that organic fertilizer is free butmay increase labor costs (see below). Thespacing and seed rate we recommended inthe intervention is unlikely to increase thecosts of seed. We recommended a spacing of75 cm ×30 cm with one seed per hill. Most
+farmers use 75 cm ×60 cm spacing with two
+seeds per hill, which requires the same amountof seed per unit of land. We thus simply multi-ply the cost of these inputs by the likelihoodthat they were applied in both control and
+treatment group (table 4), and subtract this
+from the income obtained from maize. Doingso actually increases the difference in incomebetween treatment and control somewhat, asthe likelihood that farmers use the moreexpensive fertilizer DAP reduces somewhat,while the likelihood that farmers use ureaincreases.
+Changes in the cost of labor are harder to
+value. Table 3 shows an increase in the practiceof removing striga early on, which is likely toincrease labor. The new spacing recommenda-tion also means more hills are needed, whichmay also have an impact on labor, as does theincreased use of organic fertilizer. At the sametime, in our endline data, we do not ﬁnd that
+the video treatment is signi ﬁcantly correlated
+to the time spent on preparing the land (whichincludes application of inorganic fertilizer), totime spent on weeding, or to the likelihood thatlabor is hired in. In addition, labor is relativelylow in cost at UGX 6,000 per day. Valuing workrelated to organic fertilizer adoption at three -days, the adoption of the new planting methodat two days, and the work for weeding at ten -days (which is the time needed to weed oneacre), the difference in pro ﬁt between treat-
+ment and control reduces to UGX 22,464 orabout USD 6.4.
+The entire intervention cost close to USD
+37,000. Almost 40% of this was ﬁxed costssuch as the production of the video (USD
+6,300) and the cost of procuring twenty tabletcomputers (together totaling USD 5,600). Wealso trained the enumerators at a total cost ofUSD 2,224. Variable costs are estimated tobe about USD 5.54 for the two video screen-ings for an average farmer in the area. Thisincludes time for the enumerator to show thevideo, time for enumerator supervision, carhire with driver, and fuel needed to reach thehouseholds. We thus ﬁnd that the variable cost
+is lower than the expected return per farmer(which is USD 6.9 as the average farmer hasa plot of 1.08 acres). Including the ﬁxed cost
+implies that the video intervention would onlybreak even at about 10,000 households. If theintervention were rolled out to all 360,000households in the ﬁve districts where it was
+piloted, the internal rate of return would beabout 23%.
+15
+Conclusion
+In this study, we evaluated a comprehensive
+ICT-mediated agricultural extension approachconsisting of three components —video, IVR,
+and SMS —introduced as incremental treat-
+ments to small-scale maize farmers in easternUganda. These components combine severaldistinct characteristics designed to lift bothinformation and behavioral constraints to tech-nical change. The video component combinesinformation provision with packaging in amedium that relies on farmer-actors speakingin the local language in a manner relatable tothe farmers viewing the video. However, thevideo medium tends to be passive in nature,potentially limiting information retention byviewers, especially where there is a lag betweenviewing and use of the information. To addressthis shortcoming, we introduce an IVR service,which allows the farmer to play a more active
+15It may be possible to reduce variable costs considerably. The
+largest component of the variable cost was the cost of the personshowing the videos to individual households. Currently, an exten-sion worker with a bachelor ’s degree costs about the same as what
+we paid our enumerators (UGX 100,000 per day). One may arguethat one does not need to have a university degree to show a video,in which case extension workers with only a diploma could be usedat roughly UGX 77,000 per day. This would bring the variable cost
+down to about USD 2.36 for a single screening to the average
+farmer. Other cost savings may be obtained by showing videos togroups of farmers instead of individually, or direct streaming ofvideos to devices of farmers. However, this touches upon poten-tially important design features of the intervention than may alteroutcomes and as such requires additional testing.Van Campenhout, Spielman and Lecoutere ICT for Agricultural Advice 333
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+role in information acquisition through the
+navigation of menu-based choices leading toprerecorded messages containing the samei n f o r m a t i o na sp r o v i d e di nt h ev i d e o .F i n a l l y ,given that farmers ’decision making may be
+less related to information inef ﬁciencies and
+more behavioral in nature, we introduce aseries of SMS messages to remind farmers touse key inputs or apply key practices at relevantpoints during the season. We test this approachwith nearly 4,000 smallholder maize farmers.
+To assess the effectiveness of the video com-
+ponent, we compare outcomes for a randomsubset of farmers who were shown an informa-tional video to a random subset of farmerswho were shown a placebo video. From thisinitial treatment group, two-thirds of thefarmers who were shown the video were ran-domly assigned to receive an IVR starter kitthat encouraged them call into the IVR ser-vice. From this second treatment group, halfof the farmers were then randomly assignedto receive a series of eight time-sensitive SMSreminders related to the recommended prac-tices and technologies, along with a reminderto use the IVR service to obtain additional
+information. The design of this experiment
+allows us to estimate the effect of the videotreatment as well as the additional effects ofthe IVR encouragement and SMS treat-ments. Effectiveness was measured in termsof gains in content knowledge, adoption ofrecommended practices, use of recom-mended inputs, and increases in production-related measures.
+Findings indicate that in our study site and
+context, the video-enabled extension approachsigniﬁcantly affected a range of outcomes.
+Weﬁnd evidence of increases in knowledge
+outcomes, particularly for new practices andtechnologies; increases in the adoption ofrecommended practices, particularly thosethat were new and otherwise unknown tofarmers; and increases in the use of certaintypes of fertilizers (urea and organic). Impor-tantly, we also ﬁnd evidence of increases in
+maize yields on the order of 10.5%. Althoughwe do not ﬁnd effects of the additional IVR
+treatment on knowledge-, adoption-, orproduction-related outcomes, there is someevidence to suggest that farmers who receivedthe IVR encouragement were more likely touse hybrid maize seed, which is one of severalimportant inputs to improving on-farm produc-tivity. Finally, we do not ﬁnd effects of the addi-
+tional SMS treatment on any outcomes ofinterest.The signi ﬁcant and positive effects of the
+video-enabled approach found in our ﬁeld
+experiment are encouraging for several rea-sons. First, they are potentially relevant notjust to our study population but also to a widerpopulation of small-scale farmers who dependon maize for both production and consump-tion in eastern and southern Africa. Second,they are generally consistent with other stud-ies that make use of video. Third, they extendthe body of evidence on ICT-enabled exten-sion to a new country, context, and design,deepening the literature on this topic. It is lessclear what we can learn from the null resultsfor the additional treatments. In other studies,IVR or similar hotlines have been shown tohave impact (eg. Cole and Fernando 2016),and SMS messaging has similarly been shownto be successful in a variety of contexts(eg. Fabregas et al. 2019). Therefore, the lackof evidence of impact may be speci ﬁc to the
+nature of the incremental design and resultsmay be quite different in, for instance, a paral-lel design. But even in the narrow context ofour experiment, where an effort was made tostudy particular characteristics of the interven-
+tions such as the demand-driven nature of
+IVR or the ability of SMS to make informationmore salient, it is not clear if the lack of impactshould be interpreted as signi ﬁcant for future
+work on this topic in either the same or othercontexts or designs. For instance, in sub-section 5.1 we argue that the low take-up ofthe IVR —a common characteristic of most
+commercial IVR services, for which low take-up is offset by the low cost of reaching largepopulations —is likely to reduce statistical
+power to such extent that any reasonableeffect cannot be detected. It is possible thatadditional promotion of the IVR service ortraining of farmers on how to use the IVR ser-vice could have generated a positive effect,although it is also possible that additional pro-motion would have defeated the low-costnature of the IVR system itself. Similarly, withrespect to the SMS messaging, it is possiblethat a more comprehensive design might havegenerated measurable effects if we sampledonly from the population of farmers whoowned a mobile phone and actively usedit. Even then, the assumption that everyonewith a mobile phone also reads, internalizes,and acts upon the messages may be toooptimistic.
+In summary, we do not think that extension
+approaches relying on IVR or SMS should bedismissed solely on the basis of this study.
+334 January 2021 Amer. J. Agr. Econ.
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Rather, we encourage continued empirical
+study of the role that ICTs can play in increas-ing the effectiveness and decreasing the costsof information delivery to small-scale farmers,the effects that alternative design featureshave on behavioral dimensions of technicalchange, and the relevance of ICT-enabledapproaches to agricultural extension systemsand rural advisory services. Most importantly,we encourage replication of similar studies —
+alongside variations in the choice of ICTsand the experimental designs in which theyare introduced to farmers —across multiple
+agroecological, social, and economic contexts.
+Supplementary Material
+Supplementary material are available at
+American Journal of Agricultural Economicsonline.
+References
+Abay, Kibrom A, Garrick Blalock, and Guush
+Berhane. 2017. Locus of Control andTechnology Adoption in DevelopingCountry Agriculture: Evidence from Ethi-opia. Journal of Economic Behavior &
+Organization 143: 98 –115.
+Aker, Jenny C. 2011. Dial “A”for Agricul-
+ture: A Review of Information and Com-munication Technologies for AgriculturalExtension in Developing Countries. Agri-
+cultural Economics 42: 631 –47.
+Anderson, Jock R, Feder Gershon, and
+Sushma Ganguly. 2006. The Rise and Fall
+of Training and Visit Extension: AnAsian Mini-Drama with an African Epi-logue . Washington, DC: World Bank.
+http://documents.worldbank.org/curated/en/190121468140386154/The-rise-and-fall-of-training-and-visit- extension-an-Asian-
+mini-drama-with-an-African-epilogue.
+Anderson, Michael L. 2008. Multiple Infer-
+ence and Gender Differences in theEffects of Early Intervention: A Reeva-luation of the Abecedarian, Perry Pre-school, and Early Training Projects.Journal of the American Statistical Associ-ation 103: 1481 –95.
+Angrist, Joshua D, and Jörn-Steffen S Pischke.
+2008. Mostly Harmless Econometrics: An
+Empiricist ’s Companion . Princeton, NJ:
+Princeton University Press.Ashraf, Nava, Xavier Gine, and Dean Karlan.
+2009. Finding Missing Markets (and a Dis-turbing Epilogue): Evidence from anExport Crop Adoption and MarketingIntervention in Kenya. American Journal
+of Agricultural Economics 91: 973 –90.
+Benin, Samuel, Ephraim Nkonya, Geresom
+Okecho, Joseé Randriamamonjy, EdwardKato, Geofrey Lubade, and MiriamKyotalimye. 2011. Returns to Spendingon Agricultural Extension: The Case ofthe National Agricultural Advisory Ser-vices (NAADS) Program of Uganda. Agri-
+cultural Economics 42: 249 –67.
+BenYishay, Ariel, and Mush ﬁq M Mobarak.
+2018. Social Learning and Incentives forExperimentation and Communication.Review of Economic Studies 86: 976 –1009.
+Bernard, Tanguy, Stefan Dercon, Kate Orkin,
+and Alemayehu Seyoum Taffesse. 2015.Will Video Kill the Radio Star? Assessingthe Potential of Targeted Exposure toRole Models through Video. World Bank
+Economic Review 29: S226 –37.
+Bindlish, Vishva, and Robert E Evenson.
+1997. The Impact of T&V Extension in
+Africa: The Experience of Kenya and
+Burkina Faso. World Bank Research
+Observer 6: 183 –201.
+Bold, Tessa, Kayuki C Kaizzi, Jakob
+Svensson, and David Yanagizawa-Drott.2017. Lemon Technologies and Adoption:Measurement, Theory and Evidence fromAgricultural Markets in Uganda. Quar-
+terly Journal of Economics 132: 1055 –100.
+Bulte, Erwin, Gonne Beekman, Salvatore Di
+Falco, Joseph Hella, and Pan Lei. 2014.Behavioral Responses and the Impact ofNew Agricultural Technologies: Evidencefrom a Double-Blind Field Experiment inTanzania. American Journal of Agricul-
+tural Economics 96: 813 –30.
+Casaburi, Lorenzo, Michael Kremer, Sendhil
+Mullainathan, and Ravindra Ramrattan.2014. “Harnessing ICT to Increase Agri-
+cultural Production: Evidence fromKenya. ”Unpublished.
+Cole, Shawn A, and Nilesh A Fernando. 2016.
+Mobilizing Agricultural Advice: Technol-ogy Adoption, Diffusion and Sustainabil-ity. In Harvard Business School Working
+Paper No. 13 –047. Cambridge, MA.: Har-
+vard Business School.
+de Janvry, Alain, Elisabeth Sadoulet, and
+Tavneet Suri. 2017. Field Experiments inDeveloping Country Agriculture. InHandbook of Economic FieldVan Campenhout, Spielman and Lecoutere ICT for Agricultural Advice 335
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Experiments , Vol 2, ed. A Banerjee,
+427–66. Amsterdam, Netherlands:
+Elsevier.
+De Quidt, Jonathan, Johannes Haushofer, and
+Christopher Roth. 2018. Measuring andBounding Experimenter Demand. Ameri-
+can Economic Review 108: 3266 –302.
+Duﬂo, Esther, Rachel Glennerster, and
+Michael Kremer. 2007. Using Randomiza-tion in Development Economics Research:A Toolkit. In Handbook of Development
+Economics , Vol 4, ed. T Paul Schultz and
+John Strauss, 3895 –3962, Amsterdam,
+Netherlands: Elsevier.
+Duﬂo, Esther, Daniel Keniston, and Tavneet
+Suri. 2014. Diffusion of Technologieswithin Social Networks: Evidence from aCoffee Training Program in Rwanda. InIGC Working Paper No. F-4001-RWA-1 .
+International Growth Centre. https://www.theigc.org/wp-content/uploads/2010/03/Du ﬂo-Suri-2010-Working-Paper-1.pdf.
+Duﬂo, Esther, Michael Kremer, and Jonathan
+Robinson. 2011. Nudging Farmers to UseFertilizer: Theory and Experimental Evi-dence from Kenya. American Economic
+Review 101: 2350 –90.
+Ebanyat, Peter, Nico de Ridder, Andre de
+Jager, Robert J Delve, Mateete ABekunda, and Ken E Giller. 2010. Driversof Land Use Change and HouseholdDeterminants of Sustainability in Small-holder Farming Systems of EasternUganda. Population and Environment
+31: 474 –506.
+Fabregas, Raissa, Michael Kremer, Matthew
+Lowes, Robert On, and Giulia Zane.2019. “Can SMS-Extension Increase
+Farmer Experimentation? Evidence fromSix RCTs in East Africa. ”Unpublished.
+Feder, Gershon, Rinku Murgai, and Jaime B
+Quizon. 2004a. The Acquisition and Dif-fusion of Knowledge: The Case of PestManagement Training in Farmer FieldSchools, Indonesia. Journal of Agricul-
+tural Economics 55: 221 –43.
+. 2004b. Sending Farmers Back to
+School: The Impact of Farmer FieldSchools in Indonesia. Applied Economic
+Perspectives and Policy 26: 45 –62.
+Fu, Xiaolan, and Shaheen Akter. 2016. The
+Impact of Mobile Phone Technology onAgricultural Extension Services Delivery:Evidence from India. Journal of Develop-
+ment Studies 52: 1561 –76.
+Gandhi, Rikin, Rajesh Veeraraghavan, Kentaro
+Toyama, and Vanaja Ramprasad. 2009.Digital Green: Participatory Video and
+Mediated Instruction for AgriculturalExtension. Information Technologies &
+International Development 5: 1–15.
+Hanna, Rema, Sendhil Mullainathan, and
+Joshua Schwartzstein. 2014. LearningThrough Noticing: Theory and Evidencefrom a Field Experiment. Quarterly Jour-
+nal of Economics 129: 1311 –53.
+Imbens, Guido W, and Joshua D Angrist.
+1994. Identi ﬁcation and Estimation of
+Local Average Treatment Effects. Econo-
+metrica 62: 467 –75.
+Joughin, James, and Anne M Kjaer. 2010. The
+Politics of Agricultural Policy Reform:The Case of Uganda. Forum for Develop-
+ment Studies 37: 61 –78.
+Karlan, Dean, Robert Osei, Isaac Osei-Akoto,
+and Christopher Udry. 2014. AgriculturalDecisions after Relaxing Credit and RiskConstraints. Quarterly Journal of Eco-
+nomics 129: 597 –652.
+Larochelle, Catherine, Jeffrey Alwang, Elli
+Travis, Victor H Barrerea, and Juan MDominguez Andrade. 2019. Did YouReally get the Message? Using Text
+Reminders to Stimulate Adoption of
+Agricultural Technologies. Journal of
+Development Studies 55: 548 –64.
+Lecoutere, Els, David J. Spielman, and Bjorn
+Van Campenhout. 2019. “Women ’s
+Empowerment, Agricultural Extension,and Digitalization: Disentangling Infor-mation and Role Model Effects in RuralUganda .”Working paper. http://ebrary.
+ifpri.org/utils/get ﬁle/collection/p15738coll2/
+id/133523/ ﬁlename/133733.pdf.
+Maredia, Mywish K, Byron Reyes, Malick N
+Ba, Clementine L Dabire, BarryPittendrigh, and Julia Bello-Bravo. 2018.Can Mobile Phone-Based AnimatedVideos Induce Learning and TechnologyAdoption among Low-Literate Farmers?A Field Experiment in Burkina Faso.Information Technology for Development24: 429 –60.
+Masset, Edoardo, and Lawrence Haddad.
+2015. Does Bene ﬁciary Farmer Feedback
+Improve Project Performance? AnImpact Study of a Participatory Monitor-ing Intervention in Mindanao, Philip-pines. Journal of Development Studies 51:
+287–304.
+Mummolo, Jonathan, and Erik Peterson.
+2019. Demand Effects in Survey Experi-ments: An Empirical Assessment. Ameri-
+can Political Science Review 113: 517 –29.336 January 2021 Amer. J. Agr. Econ.
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Nakasone, Eduardo, and Maximo Torero.
+2016. A Text Message Away: ICTs as aTool to Improve Food Security. Agricul-
+tural Economics 47: 49 –59.
+Nkonya, Ephraim, Crammer Kaizzi, and John
+Pender. 2005. Determinants of NutrientBalances in a Maize Farming System inEastern Uganda. Agricultural Systems 85:
+155–82.
+Rwamigisa, Patience B, Regina Birner,
+Margaret N Mangheni, and ArseniSemana. 2018. How to Promote Institu-tional Reforms in the Agricultural Sector?A Case Study of Uganda ’sN a t i o n a lA g r i -
+cultural Advisory Services (NAADS).Development Policy Review 36: 607 –27.
+Sheahan, Megan, and Christopher B Barrett.
+2017. Ten Striking Facts about Agricul-tural Input Use in Sub-Saharan Africa.Food Policy 67: 12 –25.
+Stokstad, Erik. 2017. New Crop Pest Takes Africa
+at Lightning Speed. Science 356: 473 –4.
+Sunstein, Cass R. 2014. Nudging: A Very
+Short Guide. Journal of Consumer Policy
+37: 583 –8.Van Campenhout, Bjorn. 2017. There is an
+App for That? The Impact of Commu-nity Knowledge Workers in Uganda.Information, Communication & Society20: 530 –50.
+Van Campenhout, Bjorn, S Vandevelde, W
+Walukano, and P Van Asten. 2017. Agri-cultural Extension Messages using Videoon Portable Devices Increased Knowl-edge about Seed Selection, Storage andHandling among Smallholder PotatoFarmers in Southwestern Uganda. PLoS
+One12: 1–17.
+Waddington, Hugh, Birte Snilstveit, Jorge
+Hombrados, Martina Vojtkova, DanielPhillips, Philip Davies, and HowardWhite. 2014. Farmer Field Schools forImproving Farming Practices and FarmerOutcomes: A Systematic Review. Camp-
+bell Systematic Reviews 6. https://
+onlinelibrary.wiley.com/doi/epdf/10.4073/CSR.2014.6.
+Zizzo, Daniel J. 2010. Experimenter Demand
+Effects In Economic Experiments. Exper-
+imental Economics 13: 75 –98.Van Campenhout, Spielman and Lecoutere ICT for Agricultural Advice 337
+ 14678276, 2021, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/ajae.12089 by Sri Lanka National Access, Wiley Online Library on [10/12/2022]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

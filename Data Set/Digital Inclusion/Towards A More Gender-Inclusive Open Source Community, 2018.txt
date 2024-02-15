@@ -1,0 +1,885 @@
+Towards a More Gender-inclusive 
+Open Source Community
+NOVEMBER 2018Contents
+Authors and Editors ...............................................................................................................  3
+Foreword  ...............................................................................................................................4
+Executive summary  ..............................................................................................................  5
+2 Recommendations for Action .........................................................................................  6
+2.1 Organizations supporting women in coding  ..............................................................  6
+2.2 Open Source Communities  .......................................................................................  6
+2.3 Open Source Employers ............................................................................................  6
+2.4 Open Source Conferences ........................................................................................  7
+2.5 Government and Funders ......................................................................................... 7
+3 Introduction  ......................................................................................................................  8
+4 Our research  ....................................................................................................................  9
+4.1 Questions  ..................................................................................................................  9
+4.2 Data collection ...........................................................................................................  9
+4.3 Conceptual framework: what needs to happen for women to be empowered  .........1 1
+5 Resources: what women need to participate equally in open source  .....................  12
+5.1 Skills: beyond programming proficiency ..................................................................  12
+5.2 The challenges of cross-cultural communication  ....................................................  13
+5.3 Time as luxury and privilege ....................................................................................  13
+5.4 Money and volunteer labor: striking a balance  .......................................................  14
+5.5 Mapping diversity: knowing what numbers to fix  .....................................................  15
+5.6 Safe spaces and networks matter: building confidence through peer support and 
+role models ....................................................................................................................  15
+6 Institutions: established ways of thinking and doing  ................................................  17
+6.1 Family and motherhood  ..........................................................................................  17
+6.2 Pathways and barriers in education  ........................................................................  18
+6.3 Meritocracy and hiring procedures  ..........................................................................  18
+6.4 Building healthy open source communities’ codes of conduct ................................ 19
+6.5 Global dynamics of open source projects  ...............................................................  20
+7 Agency: what is working?  ............................................................................................  22
+7.1 Gender norms  .........................................................................................................  22
+7.2 Emotional labor: working in hostile environments  ...................................................  23
+7.3 Identifying and tackling root causes  ........................................................................  24
+8 Conclusions and Key Findings   ....................................................................................  26
+8.1 Future research  .......................................................................................................  28Towards a More Gender-inclusive 
+Open Source Community
+2 digitalimpactalliance.org3 Towards a More Gender-inclusive Open Source CommunityAuthors and Editors 
+The Digital Impact Alliance (DIAL)  aims to realize a more inclusive digital society in emerging markets, 
+in which all women, men and children benefit from life-enhancing, mobile-based digital services. A 
+partnership among USAID, the Bill & Melinda Gates Foundation, the Swedish government and the 
+United Nations Foundation, DIAL’s efforts help accelerate the collective efforts of government, industry 
+and development organizations to realize this vision. 
+DIAL Editors: 
+Maurice Sayinzoga, Michael Downey, Melissa Johns, Matt Haikin, Nicole Brand, Grace Elliott 
+The Institute of Development Studies (IDS)  at the University of Sussex is a global research and learning 
+organisation for equitable and sustainable change with the goal to accelerate sustainability and build 
+more inclusive and secure societies through delivering and mobilising high quality research and 
+knowledge that informs policy and practice, and through its world-recognised postgraduate degrees, 
+PhD research and professional development services.
+Authors: 
+Becky Faith, PhD, Tony Roberts, PhD, Evangelia Berdou, PhD
+4 digitalimpactalliance.orgForeword
+We hope you enjoy reading this report “Towards a More Gender-inclusive Open Source Community”, 
+published by our team at the Digital Impact Alliance (DIAL) at the United Nations Foundation.
+At DIAL, we’re the current stewards of the Principles for Digital Development, which help people deploying 
+technology for international development to do so ethically and sustainably. One of those principles which we obviously believe strongly in, is “Use Open Standards, Open Data, Open Source, and Open Innovation”. For over two decades, the methods of the free and open source software movement have given us a technological “gift” that empowers quite literally anyone on the planet to become collective owners of impactful technology -- with the freedom to study, change, and share solutions that they can use to build society.
+But open source alone, while critical in its promise to communities of their freedom to control their 
+technological destinies, is not a panacea. Some of the other Principles our industry has adopted for example, “Design With the User”, “Build for Sustainability”, and “Be Collaborative”, call us to open wide the doors to our work, to gain the insight and knowledge of people of all experiences, backgrounds, and perspectives. Building inclusive technology projects and communities is a critical practice to achieve this diversity that is so critical to the long-term success of our work.
+Unfortunately, over the past several decades, we’ve seen the technology industry as a whole -- including 
+even open source, with its collaborative reputation -- evolve into a place that is not always welcoming to underrepresented groups. 
+This research report is the culmination of a thorough review of the literature, hundreds of hours in 
+dialogue with leaders of, active participants in, and people who have turned away from open source communities, particularly focused at the “triple nexus” of international development, humanitarian assistance, and peace-making technology.
+As people positioned to affect change in these communities, whether you are donor, a project maintainer, a contributor, or simply a supporter, you have the power to join us in evolving this space into a series of communities around the world that build bridges, embrace common bonds, and collaborate to work with people to design and build technology that helps them build better lives for themselves and for their families.
+On behalf of all of our team at the Digital Impact Alliance, we hope you find this research insightful and 
+share it with others.
+Kate Wilson 
+CEO, Digital Impact Alliance
+5 Towards a More Gender-inclusive Open Source CommunityExecutive summary
+Creating an inclusive and enabling environment 
+for gender diversity within open source ¹  
+communities, particularly those working towards humanitarian and development outcomes, can contribute to two key outcomes. First, gender equality is a key tenet of Sustainable Development Goal 5, committing countries to work towards equal opportunities and empowerment for all women and girls.²  Second, gender diversity can contribute to the development of open source technologies that better serve, and more closely meet the needs of, the communities for which they are designed.³  Yet the gender imbalance in open source remains profound. ⁴ 
+DIAL conducted this research to explore the experiences of women working in open source communities that create software for the humanitarian and international development sectors. It wanted to better understand why women are underrepresented and do not always feel welcome or supported in these communities.The findings of this research point to ways that different stakeholders – organizations supporting women in coding as well as open source communities, employers, conference organizers, governments and funders – can work together to build more vibrant and inclusive open source communities. Ideally, these communities would reflect the needs of women; provide them with the support they need to be successful; and ultimately, enable them to contribute to the development of more effective, equitable, and inclusive open source products. 
+This paper uses the framework presented in 
+Bill and Melinda Gates Foundation’s paper, “Conceptual Model of Women and Girl’s Empowerment,” ⁵  which details three types of 
+transformational shifts that need to occur for meaningful change to take place. These include:In terms of resources, women face many barriers in productively engaging in open source communities, such as navigating the cross-cultural intricacies of online communication, having enough time to contribute effectively, finding safe spaces to learn, and accessing support networks. The institutional structures that impact women working in open source communities include the established ways of thinking and acting that are perpetuated by family, schools, and employers, such as expectations around motherhood, barriers to accessing education, meritocracy and hiring procedures, and codes of conduct within open source communities. With regards to agency, there are challenges for women in navigating gender norms and expectations, working in unwelcome or hostile environments, and deeply rooted discrimination.
+Ultimately, this research underscores the need 
+for increasing the number of women in open source communities, and illustrates a series of recommendations, alongside examples of programs that provide the mentorship, training, and support required to do so. 
+Resources: what women need to 
+participate equally in open source communities
+Institutional structures: the social 
+arrangements and values that influence what women can achieve
+Agency: what women are able to do in 
+terms of decision making, leadership and collective actionTypes of Transformational Shifts
+¹  “Open source software refers to software that can be freely used and modified which is developed collaboratively over the Internet by teams of globally distributed and predominantly vol -
+unteer programmers. The open source movement is a continuation of a long tradition of sharing and cooperation that dates back to the early days of the Internet. OSS is protected under 
+copyright licenses aiming to ensure the availability and free (re)distribution of the source code, the set of instructions written by developers that make up a program.” Berdou, E. (2008). 
+Open Source. In W. Donsbach (Ed.) International Encyclopedia of Communication. London: Wiley-Blackwell, doi:10.1002/9781405186407.wbieco011
+²  https://sustainabledevelopment.un.org/sdg5
+³  Barker, L.; Mancha, C. and Ashcraft, C. (2014) What is the impact of gender diversity on technology business performance, National Center for Women and Information Technology. 
+Available at: https://www.ncwit.org/resources/what-impact-gender-diversity-technology-business-performance-research-summary
+⁴ A survey of contributors carried out in 2017 showed that only 3% were women. See: Zlonick, F. (2017). GitHub Open Source Survey 2017. Available at: http://opensourcesurvey.org/2017/   
+⁵ Eerdewijk, A.H.J.M. van; Wong, F.; Vaast, C.; Newton, J.; Tyszler, M. and Pennington, A. (2017) White paper: A conceptual model on women and girls’ empowerment, Amsterdam: 
+Royal Tropical Institute (KIT). Available at:  https://www.kit.nl/wp-content/uploads/2018/10/BMGF_KIT_WhitePaper_web-1.pdf6digitalimpactalliance.org2.Recommendations for Action
+2.1 Organisations supporting women in coding
+Build women’s agency by building structures of support, inspiration and encouragement such as 
+mentoring, online forums, meet-ups, and vocational training that make women feel more able to pursue their interests in open source work. 
+Work with schools, families and employers to change gendered expectations and prejudices about 
+what constitutes women’s and men’s work. 
+Secure and support internships and paid employment for women in open source projects and work 
+with local media to raise the profile of women trailblazers. 
+2.2 Open Source Communitie s 
+Build online peer-support networks for women in open source and moderate online forums to raise awareness among men and women about the benefits of diversity and inclusion in software development. 
+Organise proactive measures to attract diverse talent to the community and to make them feel 
+welcome and supported. 
+Carry out research to understand what aspects of your community might be alien and uncomfortable 
+for women or people from other ethnic or linguistic groups. 
+Secure buy-in among community members for a code of conduct for online speech and behaviour 
+and activities to make new hires feel welcomed and appreciated. 
+Agree on escalating sanctions for anyone who abuses another community member. End all abuse and gender-based discrimination in your community through GBV or anti-harassment 
+training and awareness raising.  
+2.3 Open Source Employers 
+Build welcoming workplaces in which women are effectively supported and rewarded with equal recognition, pay and seniority. 
+Involve all staff in awareness-raising about the value of diversity in teams and how to build a safe 
+and respectful workplace. 
+Involve staff in identifying opportunities for achieving those goals and codify staff suggestions into a 
+code of conduct with sanctions. 7 Towards a More Gender-inclusive Open Source CommunityTrack and make public the organisation’s progress against diversity targets and achieving gender 
+equity in engineering and senior roles. 
+Embrace place of work and working hour flexibility in recognition of employees’ diverse responsibilities. Valorise quality of work output in place of all-night working sessions. Achieve gender pay and 
+representation parity in all senior levels of management and board. 
+2.4 Open Source Conferences 
+Change men’s values and behaviour. Equity can never be achieved without changing men’s behaviour. The paucity of work in this space represents a massive missed opportunity. Open Source conferences are an ideal place to raise men’s level of consciousness about the consequences of discrimination and to engage them in identifying and championing initiatives to change the situation. 
+Conferences should provide women-only sessions as well as spaces for women and men to discuss 
+together the consequences of discrimination and abuse; the benefits of inclusion and diversity; and how to work together to achieve it. 
+Conference organisers can also help to ensure diversity of conference speakers and panels to 
+provide role models for women and other under-represented groups. 
+2.5 Government and Funders 
+Require diversity audits from companies bidding for tenders or funding and make annual progress against audit indicators a condition of future work. 
+Require the same process and progress from your own internal departments. Use your convening 
+power and financial leverage to bring together existing but disparate initiatives to learn from each other and to establish global networks that are able to drive an agenda for change at the highest levels. 
+Piggyback on the many existing open source and women in tech conferences rather than reinventing 
+the wheel. 
+Provide bursaries to enable women and other under-represented groups to attend and build their 
+social capital and agency. 
+Sponsor sessions at existing open source conferences to influence the diversity of speakers, panels 
+and topics. 
+Sponsor women-only sessions as well as mixed women and men sessions to raise awareness of 
+diversity issues within these large male-dominated gatherings as well as critical consciousness about the root-causes and possible solutions. 8 digitalimpactalliance.org
+supportive environment for women and new 
+contributors. For example, a South African contributor to a large donor-supported open source software project noted the importance of being her authentic self in these spaces: 
+Unfortunately, open source communities do not 
+always live up to this ideal. GitHub’s 2017 survey⁶  found that in open source communities, women are more likely than men to encounter language or content that makes them feel unwelcome. 
+Open source projects are built around an 
+architecture of participation that invites and supports different perspectives. This means that, in principle, they can offer more opportunities for a whole range of understandings to be incorporated into their design, including gender-specific issues. As a space that is open to all capable contributors, open source communities can also offer a learning platform for women volunteer developers to extend and refine their skills and gain confidence in their abilities. This could make a positive impact on their professional and personal lives. Research shows, however, that bias permeates open source communities. For example, a study on GitHub reviewed “pull requests,” a process that occurs when someone identifies a way to improve a given project’s code, and lead programmers approve or deny the submission. Results showed that programmers accept women’s contributions more often than men’s – but only when their gender is not identifiable. ⁷  This suggests that although women 
+on GitHub may be more competent overall, implicit bias against them still exists.
+This issue is important not just because we want 
+the open source communities to build better 3. Introduction
+DIAL’s work focuses on unlocking markets and accelerating the rate at which digital development services can reach global scale. Our vision is a world in which the underserved benefit from digital technology.
+The potential value of open source for 
+development outcomes is reflected in the Principles for Digital Development , “Use Open 
+Standards, Open Data, Open Source, and Open Innovation,” which encourages organisations to developing new software code as open source.As a product it is cost-effective and sustainable; if someone has the necessary expertise they can adopt it, translate and adapt it to their own needs without needing to pay for expensive licences. Their adaptations, in the form of a new side project, or as additions to the existing code base can also be of benefit to others, saving them time and money. This potential is reflected in the mission of the DIAL Open Source Center:
+The lack of women in the open source software 
+sector is an important missed opportunity. The absence of a diverse range of voices in helping define what problems digital services should address and how undermines the efficacy of services and limits the possibilities for impactful innovation. DIAL’s goal of building an inclusive digital society will not be realised without the contribution of women. 
+Collaboration among strangers is one of open 
+source’s most remarkable benefits, so it’s vital to build communities where everyone feels welcome to participate. Many open source communities already provide a friendly and 
+ “Convene a vibrant and inclusive community for builders of free and open source software, promoting knowledge sharing, collaboration and co-investment in technology and human capacity to support positive social change in communities around the world.”“... being welcomed in a space goes hand in hand with me feeling as if I can bring my whole self to this space. I don’t have to “context switch”, to become an open source version of myself to be not just welcomed but appreciated and feel like I’m needed in that space.”
+⁶  Zlonick, F. (2017). GitHub Open Source Survey 2017. Available at: http://opensourcesurvey.org/2017/⁷  Terrell, J., Kofink, A., Middleton, J., Rainear, C., Murphy-Hill, E., Parnin, C., & Stallings, J. (2017). Gender differences and bias in open source: pull request acceptance of women versus men. PeerJ Computer Science, 3. Chicago. Available at:  https://peerj.com/articles/cs-111/9
+Towards a More Gender-inclusive Open Source CommunityHow do women’s career pathways in open 
+source compare to those of men across different sociocultural contexts, especially when considering these contexts’ gender norms?
+What type(s) of women’s involvement in open 
+source communities are likely to incorporate their voice and priorities and result in projects that are better informed by a gender perspective? Are there, for example, possibilities for contributions associated with program design?
+What kind(s) of arrangements, formal and 
+informal structures of support, and changes in established norms and behaviours are needed to support the meaningful participation of women in open source projects in different socio-economic contexts? 4.1 Questions
+We set out to answer the following questions:software. In the words of Melinda Gates, when 
+we don’t intentionally put women and girls at 
+the centre of global development, we have “lost 
+opportunities 
+to maximize our impact across 
+all of the arenas in which we work.” The Gates 
+Foundation conceptual model of empowerment 
+of women and girls, which we have adopted in 
+this stud y, shows that to give women power, 
+relations need to be transformed at the level of 
+resources, institutions and agency. 
+Achieving gender-balance on open source 
+teams can deliver benefits such as software 
+that is non gender biased, uses both male and 
+female prono
+uns, excludes images that objectify 
+women, and encourages gender positive 
+projects that promote social change, as well as 
+being a valuable endeavour in and of itself. It is 
+not just about the number of women 
+on a team, 
+however, but also about enhancing the critical 
+consciousness of FLOSS developers, improving 
+their understanding of gender equality, and 
+impacting their intention to produce software 
+products that can deliver a range of better 
+development outcomes. 
+4.Our Research
+Although there is a growing 
+body of research on 
+gender in open source, very few investigations 
+seek to understand the opportunities and 
+challenges that participation poses to women 
+from different socio-cultural backgrounds. This 
+research addresses this gap by considering the 
+experiences and views of women contributors 
+from India, Kenya, Zambia, and African 
+Francophone countries in addition to Europe, 
+the US, and the UK. We interviewed 
+programmers but also contributors, who write 
+documentation, create artwork, translate 
+(localize) programs and content, and maintain 
+websites.⁸4.2 Data Collection 
+We combined background research on gender 
+in open source with interviews. The research 
+covered both academic and policy literature, 
+as well as online practitioners’  reflections 
+and testimonies. The main study involved 44 
+individual, semi-structured interviews with two 
+groups. 
+The first group was comprised of key individuals 
+representing organizations aiming to promote, 
+or with a capacity to promote, women’s 
+engagement in open source. The organizations 
+fell into three categories: those that directly 
+employ programmers working on open source 
+projects; those that focus on philanthropic 
+endeavors such as the Mozilla and Praekelt 
+foundations; and those that are intermediary, 
+such as the tech innovation incubator, iHub. 
+We sought to recruit interviewees who were 
+catalysers, consumers or producers of open 
+source software. Most performed more than one 
+of these roles. Interviews with this group focused 
+on the women’s perceived understanding of 
+the challenges and opportunities they face 
+⁸  This is important as several studies indicate that women undertake more frequently non-programming tasks than their male colleagues (see e.g. Robles, G., 
+Reina Arjona, L., González-Barahona, J. M., & Dueñas Domínguez, S. (2016). Women in Free/Libre/Open Source Software: The Situation in the 2010s. In K. Crowston, L. Hammouda, B., Robles, G., J. Gamalielssn, & J. Lindman (Eds.), Open Source Systems: Integrating Communities. OSS 2016. IFIP  Advances in 
+Information and Communication 
+Technology, vol 472, pp. 163-173).10 digitalimpactalliance.orgwhen they become engaged in open source 
+development and the benefits and drawbacks of existing solutions aimed at increasing gender diversity in this space. 
+The second group was comprised of 24 interviews 
+with women, primarily from developing countries, who are involved in open source as coders or non-coders (e.g., documenters, translators, etc), and volunteers or paid contributors (e.g., people who participate in open source as part of their regular job). These interviews sought to understand the nature of women’s open source experience and the influence (or lack thereof) of the gender norms of their culture in their career trajectory. We also sought to capture their suggestions on what is needed to increase both the breadth, in terms of pure numbers, of women, as well as the depth of their influence and perspectives in open source. 
+Nationality and gender break-down of all interviewees
+Table 1 below shows the open source communities and organizations in which 
+our women contributors were active at the time of the interview .
+Open Street Map (7) Asikana Network (1)Google Summer 
+of Code (1)INSTEDD (1) Spiceworks (1)
+Random Hacks of 
+Kindness (1)Eclipse (1) Mojaloop (1) OpenMRS (1) Praekelt (1)
+iHub (1) IUSA (1) Bahmni (1) Sygmah (1) M-Pesa (1)
+Kenya
+Zambia
+South Africa
+Mali
+Rwanda
+Cote d’Ivoire
+Madagascar
+AfricaIndia
+Cambodia
+Vietnam
+Asia
+US-Kenya
+US-Uganda
+United States
+North AmericaFrance
+Spain
+United Kingdom
+Europe
+= Female Interviewee
+= Male Interviewee11
+Towards a More Gender-inclusive Open Source CommunityThe character of the projects we examined 
+influenced the nature of our findings. We sought to include projects considered challenging in terms of promoting gender inclusion, as well as “women-friendly.”⁹  Many of the software projects in which our interviewees were engaged also differ from mainstream open source projects in that they usually benefit from, and sometimes are initiated through, funding from donors and other organizations. 
+We analysed interview transcripts thematically,¹⁰  
+focusing on identifying issues that we knew were important from our background research and also ones that emerged through the process of analysis. This method of analysis consisted of identifying themes and subthemes in the interviews related to a specific topic of interest for the research. For example, references to gender norms were grouped together and compared across interviews. A priori codes or themes were those that we had identified as important at the beginning of the research. Negative and positive aspects of participation were two such codes. Emerging themes included the idea of time as a precious resource and emotional labor as a part of participation. 
+From its inception to the final stages of analysis, 
+our investigation benefited from relevant insights from studies on open source. We looked at those that explored open source more broadly as well as those that focused specifically on gender.  Our background research examined the evolution of women’s participation in open source over the last fifteen years, patterns of exclusion and inclusion, values and norms underlying open source development, and systems of support. 
+4.3 Conceptual framework: what needs to happen for women to be 
+empowered
+The underrepresentation of women in open 
+source communities presents a challenge to their commitment to social good. Digital technologies and the codes and algorithms that underpin them inherently reflect the values and backgrounds of those who build them. Consequently, it is critical that the technology sector reflects diversity and inclusivity and ensures that women are welcomed and their perspectives incorporated and supported.
+We explored the ideas presented in a paper 
+by the Bill and Melinda Gates Foundation, entitled “Conceptual Model of Women and Girl’s empowerment,” (2017) to understand what needs to happen to achieve greater gender equality in open source. In this framework, shifts need to happen across three areas for meaningful change to take place.
+1.Resources : These refer to the “tangible
+and intangible capital and sources of powerthat women and girls own or use individuallyand collectively in the exercise of agency.” Wefound that time, skills, safe spaces, networksand funding are key assets for supportingmore meaningful engagement of women inopen source.
+2.Institutional structures: These are
+the social arrangements and values that
+influence what women can achieve. We foundthat family, school, meritocracy and codesof conduct are among the most importantstructures that can inhibit or sustain women’sparticipation in open source.
+3.Agency: This captures what women can
+do in terms of decision making, leadership
+and collective action. With respect to women’sparticipation in open source, we foundthat agency is limited by traditional gendernorms, the strain of having to operate in ahostile environment, and an underdevelopedcritical consciousness among communityparticipants, for example the ability of womenand men to grasp and address the root causesof injustice.
+⁹  These are projects that actively facilitate the involvement of women by upholding, for example, high standards of behaviour and valuing 
+equally different forms of contribution (see, e.g. Moon, E. (2013). Gendered Patterns of Politeness in Free/Libre Open Source Software 
+Development. Proceedings from 2013 46th Hawaii International Conference on System Sciences.)
+¹⁰  Guest, G., MacQueen, K. M., & Emily, N. E. (2011). Applied Thematic Analysis. London: Sage.12 digitalimpactalliance.org
+Women face additional challenges related to 
+traditional gender roles, particularly in resource-
+poor environments. In the Gates Foundation’s framework, resources are what enable people to feel they can pursue their goals. These resources are not available to many women, who face barriers in productively engaging in open source communities, such as navigating the cross-cultural intricacies of online communication, having enough time to contribute effectively, finding safe spaces to learn and accessing networks of support.
+5.1 Skills: beyond programming proficiency
+Learning and honing new programming skills is a key motivator for people to contribute to open source projects. To take advantage of these opportunities, you need to be able to learn and problem-solve independently; unfortunately, these are skills that many public-school systems, especially in sub-Saharan Africa, do not cultivate. Twenty of our women contributors agreed that soft skills, such as critical thinking, confidence, resilience and self-learning are equally, if not more, important than technical proficiency for successful participation in open source communities. When talking about confidence issues young female trainees in Kenya face, a senior female developer, reflected on the topic as follows:
+In open source development, a high level of 
+technical expertise is often expected, even from new contributors. Some interviewees feel like others were belittling them for asking basic 5. Resources: what women need to participate equally in open source
+“it’s never a skills problem. When women with poorer backgrounds progress through training programs designed to help them, they can get stuck at junior level positions, despite being qualified to apply for more senior roles. This is because they do not believe they have the necessary skills to succeed.” 13 Towards a More Gender-inclusive Open Source CommunityFinding ways to help women developers 
+feel comfortable with and adapt to different 
+communication styles is key ¹³. One female open 
+source community leader talked about how she 
+made a point of welcoming all new members on board – male and female:
+5.3 Time as luxury and privilege
+Women’s participation in open source is profoundly impacted by constraints on and control of their time as well as the necessity to work much more than men. 
+Some interviewees commented directly on how 
+open source community members thought about time. K., a leading OS developer for a mapping platform, pointed out that misconceptions around free time are still pervasive in the OS community despite mounting evidence to the contrary:
+For women from the Global South, the concept 
+of time was often discussed in the context of 
+traditional gender roles and responsibilities 
+around housework and child rearing, which 
+we will explore in more detail in a subsequent section. The following reflects a common sentiment we heard:questions. One interviewee from India had studied computer science but never contributed to open source projects as she felt unsure of how to begin. Navigating male-dominated spaces such as hackathons, especially in the Global South, can be particularly challenging for women from lower socio-economic backgrounds who may not know how to “speak” or “behave” in these environments. Some women felt that they had to ”leave their gender behind” to fit in.
+5.2 The challenges of cross-cultural 
+communication
+Open source communities have often been 
+characterised as communities of practice,¹¹  that is, social networks of practitioners that are bound together by common ideals and procedures seeking to promote sharing, learning and professional development. In the case of open source, this includes an emphasis on the free flow of information, versioning, and technical excellence. At the heart of the community of practice lies the assumption that communication among members is made easier by established norms and processes. It appears, however, that this shared framework of ideas and practices is not enough to transcend the difficulties of cross-cultural communication. 
+To better understand this, it’s important to 
+point out first that software development communities are characterised by a combative style of communications, which can be off-putting.¹²  Communication was a source of misunderstanding and tension for interviewees, especially among individuals from different cultures. The more direct style of communication adopted by many Americans and Europeans can come across as offensive in many other cultures. Learning to negotiate different styles of communication found among diverse cultures  is an important skill that our interviewees felt they had to master to succeed. This was the case for one Indian woman, quoted below: “…for me it’s more about race than gender. I find it easier to talk to an Indian man over say, an American woman.”
+“Any time a new community member comes 
+on board I start by introducing myself and establishing a personal connection. I’ll look at their pull requests to see if something needs feedback.  I’ll give it to them right away but also make sure I’m appreciative.” 
+“There is an expectation that OS contributors 
+are working in their free time. A lot of people, however, are doing it as work. It really is a myth that coders are working in their basement in their free time.”
+¹¹ For example, see O’Mahony, S., & Ferraro, F. (2007) The emergence of governance in an open source community . Academy of Management Journal, 50(5), 
+1079-1106 and von Krogh, G., Spaeth, S., & Lakhani, K. R. (2003) Community, Joining and Specialization in Open Source Software Innovation: a Case Study. 
+Research Policy,32(7), 1217-1241.  Available at: https://www.jstor.org/stable/20159914?seq=1#metadata_info_tab_contents
+¹² For example, see Ortu, M., Destefanis, G., Counsell, S., Swift, S., Tonelli, R., & Marchesi, M. (2017). How diverse is your team? Investigating gender and nation-
+ality diversity in GitHub teams. Journal of Software Engineering Research and Development, 5(1). https://link.springer.com/article/10.1186/s40411-017-0044-y
+¹³ Ibid.14 digitalimpactalliance.org
+Mothers, especially those with newborns had 
+to contend with misperceptions associated with 
+their availability, productivity and ability to work 
+overtime. Many women, such as this female 
+programmer, reported having to put in extra 
+effort to achieve the same level of recognition as 
+their male counterparts:
+Contributors to open source communities often 
+need to make an upfront investment of time and 
+energy to develop their skills before they start 
+earning money. Young female developers in 
+the Global South often encountered significant 
+opposition from their parents, who could not 
+understand why their daughters would work 
+such long hours without getting paid. Those with 
+conservative families also found participation 
+in evening meet-ups problematic since it 
+involved spending unsupervised time with men. 
+Interviewees’ parents were unfamiliar with these 
+career requirements. This was particularly 
+challenging for women from the South who were 
+expected to start earning an income immediately 
+upon graduating from university.
+5.4 Money and volunteer labor: 
+striking a balance
+Access to basic resources such as functioning 
+computers and connectivity, which people in 
+more affluent countries take for granted, is a 
+critical barrier to women’s participation in open 
+source, as this founding member of a women’s 
+coding project in Africa notes:“What we need is a support network for new 
+mums in technology. They’ve got two jobs and 
+coming back after maternity leave is so hard.”
+“It makes me depressed that a man will do five 
+hours work and get appreciation and I have 
+to do ten hours to get the same appreciation. 
+I have to work more hours than my male 
+counterparts”Women from Francophone countries faced 
+financial challenges, which compounded 
+the language barriers they encountered as 
+participants in a predominantly English-speaking 
+global community. One interviewee shared:
+Voluntarism ¹⁴  is unsustainable for many low-
+income women. Many interviewees were 
+working two jobs: the first, their unpaid passion 
+project; and the second, their paid employment 
+to subsidize it. When asked to reflect on what 
+solutions they regard as particularly promising for 
+ramping up women’s engagement, interviewees 
+often highlighted economic incentives from 
+companies and funders that support open 
+source development. For some interviewees, 
+remuneration for their contribution to open 
+source projects was a basic precondition for their 
+long-term engagement and empowerment. An 
+income gives women the freedom to leave hostile 
+environments and a degree of power, since paid 
+employees are more accountable to norms 
+and standards of behavior than volunteers. An 
+American OSS contributor reported:“Someone donated a bus and we used to load 
+the computers on it and drive it to one of the 
+slums so the girls could come in and learn. 
+But it was really hectic because the roads are 
+really bad and by the time we got there half the 
+computers were not working.”
+“I am the only woman in the community since 
+it began. It is difficult to stay in it because you 
+have no financial help and you must use your 
+own money for training and making meals for 
+the men. We conduct crowdfunding, but we still 
+have to pay for room and internet connectivity.” 
+“If you look at it from a social standpoint, a lot 
+of the problems that arise within open source 
+communities - especially as they become 
+successful and scale – are related to balancing 
+the needs of individuals and small developers 
+who provide cutting edge, innovative thinking. 
+But you also need these great companies to 
+actually fund this stuff.” 
+¹⁴  ”Volunteerism” and contributions to the ”information commons”, of which open source software forms a part, is often created through the 
+efforts of contributors working in their spare time, without remuneration. See, Berdou, E. (2017). Open Development in Poor Communities: 
+Opportunities, Tensions and Dilemmas. Information Technologies & International Development, 13, 18-32. http://itidjournal.org/index.php/itid/
+article/viewFile/1429/56815
+Towards a More Gender-inclusive Open Source CommunityInvolvement of companies and organizations in 
+open source also creates more accountability 
+because they can make engaging women a 
+condition of their agreement to fund projects.  
+Many interviewees said that donors could 
+use their “purchase power” to influence the 
+ecosystem by adding indicators for gender 
+equity into the Principles for Digital Development 
+and ensuring that the open source projects they 
+support include women.
+5.5 Mapping diversity: knowing what 
+numbers to fix
+How do we know who participates in open 
+source? Which communities and groups have 
+the best and worst records for involving women 
+and individuals from other under-represented 
+groups? Which organizations have  improved 
+the most with respect to inclusion? If we are to 
+change the gender imbalance in open source, 
+we must know what numbers we are trying to 
+fix. As one male leader in the open source 
+development space stated,  “Only things that are 
+measured are counted.” 
+While some men demonstrated high levels of 
+commitment to and awareness of gender equity, 
+others struggled to understand what actions they 
+might take to address these issues. For example, 
+while tracking diversity was an organizational 
+goal, one male leader bemoaned the fact that 
+he simply did not have the time, resources or 
+skills to measure gender balance in his project. 
+He explained that participants did not have to 
+declare their gender when creating accounts 
+in large online communities, presenting a key 
+barrier to tracking gender inclusion. If he were 
+required to track this data to receive funding for a 
+project, he thought he could do it if funders were 
+to provide a “best practice guide”, that included 
+instructions for the right tools to use and the right 
+numbers to track. He was reluctant to take this 
+on, however, without receiving any additional 
+funds to support the change in process. His 
+reluctance demonstrates the importance of donors taking a leading role on this issue, both 
+in issuing guidance and providing the necessary 
+resources to track and improve diversity in 
+projects they fund.
+There is some progress in this area: most 
+notably, Mozilla launched a survey to map 
+Diversity & Inclusion in Open Source, which 
+attracted 489 responses from  open source 
+contributors. Those surveyed indicated they 
+were collecting data in different formats 
+and in diverse ways. Mozilla’s Emma Irwin 
+recommended the implementation of “metrics 
+that matter with standards and best practices 
+that we can share across the ecosystem.” 
+These best practices included using a range of 
+methodologies such as text-based chat to ensure 
+“the introverts turned up” as well as people who 
+spoke English as a second language. Mozilla 
+also made a point of interviewing people in their 
+local language when asking personal questions 
+about diversity. It recognized that people would 
+be more comfortable speaking in the their native 
+tongue when discussing sensitive topics and the 
+company would be less likely to lose important 
+feedback. ¹⁵
+5.6 Safe spaces and networks matter: 
+building confidence through peer 
+support and role models
+There are many examples of women-only or 
+women-friendly spaces and communities that 
+play a vital role in attracting women to open 
+source. Some of these include networks such 
+as Kenya’s AkiraChix; geographically defined 
+spaces such as Latin America’s OpenChicas, 
+the association for female OpenStreetMap 
+contributors; networks for women who “love 
+working on Python” with different local chapters; 
+women’s conferences like Adacamps; and 
+women-only hackathons.
+Interviewees considered these spaces and 
+networks important for numerous reasons. 
+First, they regarded them as safe incubators 
+¹⁵ Read more reflections on barriers faced by non-English speakers in open communities at; http://tiptoes.ca/celebrating-mother-language-
+day-in-open-source/16 digitalimpactalliance.orgfor women to develop the appropriate skills and 
+mindsets outside male dominated and intense development environments, where they felt undermined. Second, these spaces provided opportunities for connection, mutual support, solidarity, and comradery in a male dominated world. This was particularly important for women who sought to openly discuss and seek advice on issues ranging from discrimination and harassment to work life balance and the demands of growing families. 
+N., a senior male developer, observed that 
+women who were introduced to open source via these protected spaces appear to have a fundamentally different, more positive experience compared to women who did not have the benefit of such support. M., a male Indian coder, noted that participating in women-only events, such as the Grace Hopper conference, gave women an amazing source of energy and empowerment as they were able to meet and connect with other successful women. He also observed that women were able to learn from others with similar backgrounds and problems about how to manage their careers, family demands, and other issues. 
+Although many interviewees emphasized the 
+importance of protected, positive environments, they also reflected on the need to go beyond them. For K., a Kenyan developer, this was achieved by ensuring that AkiraChix trainees took part in mixed gender hackathons. For G., a leading member of FOSSAsia, and other interviewees, this was achieved by engaging with more senior developer male allies.17 Towards a More Gender-inclusive Open Source Community6. Institutions: established ways of thinking and doing
+Some of the established ways of thinking and 
+acting perpetuated by family, schools, and employers undermine diversity in open source. Therefore, addressing these should be part of any solution. 
+6.1 Family and motherhood  
+The domestic division of labor and perceptions of the women’s role in family and society were important topics for interviewees from sub-Saharan Africa, Southeast Asia and India. D., from Zambia, took a systemic view of the root causes, looking first at the immediate and practical issues women face and then at the institutions that need to change norms, values and policies and support women’s right to equal treatment and pay. One interviewee noted the importance of raising boys and girls as equals:A married, 28-year-old Indian programmer worried that her family might pressure her to stay home when she decides to have children. Her perception was that it is hard to come back to work after having a baby. She benefits from her encounters at work with colleagues who are successfully managing careers, motherhood and family life.  Unfortunately, her family has not had the same exposure, and so she was anxious about what might happen down the road. In Cambodia, one woman contrasted her responsibilities with women in the US who have supportive spouses, noting that one of her American counterparts had a husband who 
+“…I think it would really help if parents would 
+raise their kids to do equal tasks and go get what they are after equally. [Girls should be given] equal opportunities for education and equal time to do their homework.”18 digitalimpactalliance.org
+stayed home to look after their children. This 
+woman had acknowledged she would not have been able to rise to the level she did without that support.
+For M., a senior Kenyan developer, societal 
+expectations on appropriate career paths were a barrier for women, with many young people studying subjects in which they were not really interested. She describes the trajectory of one young woman who had to go against her parents’ wishes to study computer science rather than medicine. The right family support, however, can be hugely beneficial. D, a Zambian developer, said her parents intervened to let her be allowed to study math at school. 
+6.2 Pathways and barriers in 
+education
+D.’s experience shows the importance of early 
+intervention in institutions such as schools, which tend to reproduce unequal gender norms. This is indicative of the challenges for women globally in science and technology fields. In higher education, women represent only 35% of all students enrolled in STEM-related fields of study. They leave STEM disciplines in disproportionate numbers while still studying in institutions of higher learning, transitioning to their first job and during the lifecycle of their careers. ¹⁶
+People we interviewed showed a range of strategies to tackle this issue. AkiraChix is addressing this challenge by offering coding classes and STEM clubs at girls’ secondary schools in Nairobi. One open source leader in Cambodia was building a “supply chain” of young women by opening up her office space to female students to learn more about their work and cultivate their interest and excitement in pursuing careers in technology. This led to a higher likelihood of women applying to be interns in technology-focused roles. She also encouraged her team to volunteer as mentors and teach young girls about technology. One interviewee saw a role for donors in funding coding workshops to help schools build a critical mass of women programmers, especially in developing countries. 
+Given the current constraints, the interviewees 
+widely contested the idea that new programmers would easily be able to pick up the know-how necessary for contributing to open source projects. One interviewee pointed out that in Kenya there is little software development outsourcing so there are fewer opportunities for young programmers to get involved in complex projects and develop their programming skills. Interviewees also highlighted the lack of open source tools, processes, resources and guidance available at many universities. 
+6.3 Meritocracy and hiring 
+procedures 
+Positive discrimination and the debate it 
+engenders have a long history in development and social change.  Does supporting women’s participation justify tilting the scales, for a while, in their favour, even when it may create feelings of resentment among male colleagues who may be better qualified? What effect would this have on women themselves, especially in cases where they were hired specifically to meet gender guidelines and improve the image of an organization or group?
+Open source communities claim they are based 
+on a culture of meritocracy, yet many women with whom we spoke reported feeling that they had to work twice as hard as men to have their accomplishments recognized. In a system of meritocracy, the most capable and prolific contributors garner the most influence on how a project develops, including the new features it incorporates and what policies it follows. As new contributors gain more experience and prove their mettle, they rise in the ranks of the community. As such, open source is meant to be gender, race, class and culture agnostic. This 
+¹⁶ Chavatzia, T. (2017) Cracking the code: girls’ and women’s education in science, technology, engineering and mathematics (STEM), Paris, France: UNESCO, http://unesdoc.unesco.org/images/0025/002534/253479E.pdf19
+Towards a More Gender-inclusive Open Source Communityview would be at odds with introducing positive 
+discrimination policies. 
+Male leaders in open source were committed to 
+the principles of gender equality in theory but 
+were sometimes unwilling to change existing 
+hiring practices. One man we interviewed 
+claimed it was important to look at capacity and 
+technical qualities, not gender, in hiring because 
+positive discrimination could have unintended 
+negative consequences, such as strengthening 
+the impression among men that women were 
+only getting hired because of a community’s 
+affirmative action policies. He noted the following:
+A Kenyan woman felt that this perception of a 
+meritocracy, however, was false, “I know that 
+people think it [the tech sector] is a meritocracy, 
+but I think it’s ego driven.” 
+Mozilla has made a strong commitment to 
+removing meritocracy as a governing principle 
+on the grounds that it served as a barrier to 
+increasing diversity in open source communities. 
+A blog from Ashe Dryden posted on the Ada 
+Initiative ¹⁷ site describes meritocracy in open 
+source software as a “romanticized ideal:”
+A representative from a company that develops 
+software for the healthcare and development 
+sectors discussed how they are actively 
+pursuing diverse hires and taking a structured, intersectional approach to addressing under-
+representation:
+Many objections expressed about positive 
+discrimination policies are that it can be a form 
+of “gender washing,” a public relations process 
+whereby women are given jobs to improve an 
+organization’s image. In Kenya, B., a senior 
+developer, talked about companies hiring women 
+as a way to secure contracts more easily. She 
+also described how companies are hiring women 
+without first testing their skills. They then restrict 
+them from actively contributing to projects.
+Another Kenyan woman found it easier to get 
+jobs in coding than her male partner, but she 
+also was uncomfortable being “wheeled out” 
+at events as the lone female developer. The 
+resentment her partner felt at the preferential 
+treatment prospective employers were providing 
+women coders, at least at the hiring stage, 
+should not be underestimated. Most of our 
+Kenyan interviewees confirmed that feelings of 
+resentment are common in the IT job market. 
+Without genuine institutional commitment, follow 
+through, and thoughtful action, women’s agency 
+can be limited by the very procedures aimed at 
+increasing gender equality. 
+6.4 Building healthy open source 
+communities’ codes of conduct 
+Our research found that having a code of conduct 
+is becoming more important rhetorically, and 
+practical palliative measures are being put in 
+place. Interviewees supported these findings but 
+questions remain. Who is putting them in place 
+and is it enough? Who enforces them and how? 
+What if the perpetrator, as one senior developer “It sours the community in a different way. You 
+should try to find a middle ground that allows 
+a healthy work environment for both men and 
+women. That’s what I am trying to do.”
+“As the people who exist within this supposed 
+meritocracy don’t exist within a vacuum, we 
+also have to realize how our actions affect 
+others… It’s a romanticized ideal – a belief 
+which at best ignores and at worst outright 
+dismisses the experiences of everyone outside 
+the group with the most access to these things. 
+A certain demographic of people has three or 
+four steps above other people, so the playing 
+field is not even.”“On the engineering team, we are looking 
+for more female candidates of color. On the 
+service design team, we have a significant 
+number of white women so we will not be 
+looking to hire any more onto that team at this 
+time.” 
+¹⁷  Ashe Dryden  What's wrong with "meritocracy" in open source software? https://adainitiative.org/2014/01/24/guest-post-whats-wrong-
+with-meritocracy-in-open-source-software/20 digitalimpactalliance.org
+put it, is a core developer for your project? 
+There is a need to ensure a path for reporting 
+and accountability in codes of conduct, with 
+individuals named and empowered to sanction 
+transgressors if necessary.
+Mozilla is undertaking significant work on the 
+issue of codes of conduct, and those on a recent 
+community call examined the issue of dealing with 
+“toxic” members. One open source male leader 
+discussed the success of introducing official 
+moderators who do not have responsibilities 
+on the core team. Another contributor cited the 
+need for such moderators to be remunerated 
+especially since the positions carry a significant 
+burden. A blog post ¹⁸ shares Mozilla’s work on 
+building a framework of processes, standards 
+and best practices for response to code of 
+conduct incident reports.
+6.5 Global dynamics of open source 
+projects
+Women’s participation in open source is not 
+defined solely by gender. Geography, race, and 
+class are some of the additional factors shaping 
+how women across the world experience 
+inclusion and exclusion in this space. A self-
+taught Kenyan programmer will likely encounter 
+different challenges when participating in open 
+source than a white, relatively affluent computer 
+graduate from the UK. The majority of open 
+source projects originating in the north will also 
+shape the women’s experiences. ¹⁹
+The “North-South” dynamic, coupled with 
+unrealistic donor and NGO expectations about 
+what it takes for an open source project to thrive, 
+pose significant challenges to open source 
+leaders, especially those in the south. By making 
+software available at a public software repository 
+like GitHub and placing it under an open source 
+software license, many assume a diverse 
+community of developers will automatically 
+emerge to support it. This is an unrealistic 
+expectation in resource-poor environments, where free time is a luxury and local capacity is 
+not guaranteed. 
+The experiences of women working in Zambia 
+and Southeast Asia show that open source 
+projects focused on the Global South can help 
+address development challenges and build 
+skills in local development communities.  Open 
+source also provides opportunities for people 
+to travel and collaborate with those they would 
+not otherwise meet. For one Zambian woman, 
+working in open source was a springboard to 
+setting up her own IT company; another member 
+of a mapping community in Madagascar was 
+motivated to contribute because of the value of 
+free software tools and platforms, like GIS, to 
+low-income countries.
+Several interviewees felt that funding local 
+ecosystems around software projects could 
+also benefit those working in non-technical 
+roles such as project managers, sales people, 
+designers, and requirement gatherers and 
+increase  diversity in the overall community. 
+This was proving difficult, however, because of 
+a lack of core funding for their projects. This led 
+one male leader of an international open source 
+project to recommend direct funding support for 
+developers:
+As part of the North-South dynamic, it’s important 
+to acknowledge which countries and regions are 
+progressing outside the norm, where women 
+are engaging in software development at higher 
+levels than in the US and Western Europe. For 
+example, one male interviewee observed that in 
+Palestine, software development is seen as a 
+place where women can pursue a professional, 
+well-paid position and work with men on an equal 
+basis without having to interact with them outside “Direct financial support to software developers 
+in target countries would have a strong impact 
+and provide the fastest pathway to success. 
+It would allow us to talk about a story that 
+pushes back both on gender norms and donor 
+recipient mindset.”
+¹⁸  https://medium.com/mozilla-open-innovation/how-were-making-code-of-conduct-enforcement-real-and-scaling-it-3e382cf94415
+¹⁹  Mombach, T., Tulio Valente, M., Chen, C., Bruntink, M., & Pinto, G. (2018). Open Source Development Around the World: A Comparative 
+Study. arXiv preprint arXiv:1805.01342.  https://arxiv.org/pdf/1805.01342.pdf21
+Towards a More Gender-inclusive Open Source Communityoffice hours. He saw the same occurrence in 
+Tunisia and Morocco, where he thought the 
+number of women software developers was 
+higher than in the rest of the world. According 
+to a 2015 UNESCO report on the gender gap in 
+science and engineering, Tunisia’s percentage 
+of female graduates in technology in 2013 
+(41.1%) appears to be higher than in many other 
+countries. ²⁰
+When looking at the North-South dynamics 
+of open source projects, it is also important to 
+consider the special character of many of the 
+projects underway for development purposes 
+such as health or humanitarian software. Many 
+of the projects examined in this study were 
+initiated with core funding from large multilateral 
+agencies and other donors, which dramatically 
+changes the character of participation. Having a 
+funded core team from the start gives momentum 
+to a project but sometimes makes it difficult to 
+attract volunteer contributors as the emphasis is 
+often on delivering results rather than creating 
+²⁰  Huyer, Sophia. "Is the gender gap narrowing in science and engineering." UNESCO science report: towards 2030 (2015): 85. https://
+en.unesco.org/sites/default/files/usr15_is_the_gender_gap_narrowing_in_science_and_engineering.pdf
+²¹  Angola, Benin, Burkina Faso, Cameroon, Chad, Congo DRC, Cote d’Ivoire, Djibouti, Egypt, Gabon, Guinea, Kenya, Mali, Niger, Rwanda, 
+Sao Tome & Principe, Senegal, South Africa, South Sudan, Togo, Tunisia and Ugandaan extended community. This scenario requires 
+a different approach to ensure that local users 
+and external developers are involved from the 
+beginning. 
+National and local governments have an 
+important role to play in bridging the gender 
+divide in the tech sector. Rwandan government 
+policies on digital development and gender 
+equity, for example, demonstrate that an enabling 
+environment can transform the opportunity 
+landscape for women in open source. Girls in 
+ICT Rwanda mentor other Rwandan girls and 
+convene a MissGeek competition, which is now 
+open to females between 13 and 25 years old in 
+Smart Africa member states. ²¹  The government 
+also formalized and integrated the many 
+mentorship programs running in the country. 
+One Rwandan interviewee cited how she had 
+benefited from this positive environment. She 
+has already been active in open source for eight 
+years and is now passing on her expertise to 
+girls through mentoring and training. 22 digitalimpactalliance.org
+7. Agency: what is working?
+Agency is a person’s ability to act in pursuit 
+of what they have reason to value. A person’s actions are shaped both by subjective and objective factors. Subjectively, a woman may have low self-belief with respect to her own capabilities. Objectively, her ability to act may be restricted by resources such as money or skills; institutional structures such as pervasive gender norms; or  organizations with their own unique recruitment and promotion practices. We asked interviewees what experiences they had had that enabled them to flourish in open source environments.
+7.1 Gender Norms
+Many pioneers in computer programming were women, and it was originally a female-dominated profession. ²² Coding today, however, has become socially constructed as men’s work in most countries. ²³ This construction of 
+programming as a male preserve discourages women from studying software engineering and becoming coders. The overwhelming majority of those whom we interviewed reported that, in their experience, they were under-represented in coding positions, especially senior roles. This was true for both open-source communities as well as other programming environments. Most interviewees with experience in both open source and closed source coding environments reported that issues of unequal gender representation were equally prevalent in both. While coding in general is perceived as male and geeky, open source is perceived as even geekier with one [male] interviewee characterising it as a boy’s club replete with misogyny. His account resonates with several [female] coders who reported that they were 
+²²  Hicks, M. (2017). Programmed inequality: How Britain discarded women technologists and lost its edge in computing. MIT Press.²³  Chavatzia, T. (2017) Cracking the code: girls’ and women’s education in science, technology, engineering and mathematics (STEM), Paris, France: UNESCO, http://unesdoc.unesco.org/images/0025/002534/253479E.pdf
+23
+Towards a More Gender-inclusive Open Source Communitymultiplicity of ways that organizations can support 
+women and address negative socialisation. For example, a UNESCO report²⁴ recommends that governments undertake targeted measures to promote gender equality, such as gender mainstreaming legislation, policies to increase women in specific industries (e.g., quotas), financial incentives, and other actions to increase girls’ and women’s participation in STEM education and careers.
+7.2 Emotional labor: working in hostile environments
+Interviewees reported a wide variety of both positive and negative experiences in open source communities. Some felt welcomed and supported in organizations that had in place institutional structures of support and care. One woman reported her positive experiences:
+Others we interviewed found open source spaces 
+to be unwelcoming or even hostile; an experience which is backed up by research²⁵. Women interviewees experienced discrimination and described feelings of loneliness and alienation stemming from a lack of support. Continuing to work in this context required increased mental and psychological effort, or “emotional labor” among women. Below is a quote reflecting the experience of an open source contributor from West Africa:demeaned in open source communities, and in order to fit in at all, they had to endure a sub-culture of sexist language. According to many of our interviewees, the perception of coding as a male preserve made them feel less able to enter the profession, and among those who had experienced abuse, it reduced their agency to pursue their interest and aspiration in open source.
+When we asked interviewees about where 
+these gender norms and values originated, they suggested that they are reflections of wider social mores and prejudices. Most interviewees told us that family and teachers steered women away from science, technology, engineering and math (STEM subjects) and encouraged them to pursue subjects such as home economics. In open source workplaces, they told us that leadership pushed women contributors away from coding work and into “house-keeping” roles, in which they were expected to provide support to male coders. 
+One female interviewee with a degree in computer 
+engineering told us that she had repeatedly reminded line managers of her advanced coding skills to avoid being side-lined. Several women told us that in their experience, the default assumption of managers and clients was that women had little if any coding skills.  From these interviews, we learned that women’s agency is negatively affected by pervasive gender norms. These norms are formed from early socialisation experiences, become reinforced through unequal household and childcare responsibilities, and are reproduced in the workplace. Early socialisation by family and teachers deters women from studying computer engineering, and in the workplace, they struggle to deal with the sexist expectations of their male colleagues. In many countries, women come home from a full day’s work only to begin their “second shift” of domestic and childcare responsibilities. The net effect of this discrimination and disadvantage is to sap the agency of women working in open source. Despite this negative picture, research shows a 
+“Everyone in the community is very welcoming and friendly. Sometimes it is advantage to be a woman as there aren’t very many of us and as everyone is helpful and wants you to engage.”
+“I am the only woman and it is not very good. 
+I feel lonely. Women can do what men do but they need encouragement and men are not friendly with women. They say that women should stay at home to cook and care for children. It is discouraging when they think we can’t do this and should stay at home. Sometimes I start to think that what the men are saying is true, but I know it isn’t and I can help others.”
+²⁴  Ibid, p. 22.
+²⁵  Reagle, J. M. (2013). “Free as in sexist” Free Culture and the gender gap. First Monday, 18(1). Available at: https://firstmonday.org/
+article/view/4291/338124 digitalimpactalliance.orgOne interviewee described feeling sad and 
+angry in the face of systematic discouragement. A senior contributor from South Africa described the pressure to abandon her identity to be accepted:
+A black South African woman contributor to a 
+large open source community explained how the color of her skin added a racial dimension to her feelings of alienation. She felt that she had to “morph” and “code switch” to relate to the white male sub-culture of coders. An open source contributor from Cote d’Ivoire perceived her hostile environment as ultimately driven by men’s fear that they might lose their privilege and hierarchical position. Like other women we interviewed, she was able to channel her sense of injustice to fuel her agency and continue fighting:
+Given the levels of loneliness, alienation and 
+sexist abuse women experience in open source communities, it is not surprising that many leave or avoid it altogether. In environments where men are literally telling women to “go home,” the issue is clear, but even in those that are free of such open hostility, our interviewees reported that a macho culture among open source coders means that women often still feel alienated. The emotional work of having to participate in a “bro culture” to “It is very different to join an all-male team versus one that is diverse. It goes back to the stereotype of male developers having a very masculine, ‘bro’ culture. It can be uncomfortable for women because of the jokes. It is hard to explain, but it is very different environment where you are not entirely able to be yourself as a woman. One of our other female coders wears trousers and acts a bit more masculine to blend in.” 
+“They say go home and cook with your mother. 
+I say cooking is not just for women. I am a qualified engineer in telecommunication and informatics like you. It makes me angry. But I don’t shut up and I keep speaking. I want the job. I can’t be behind a man.”  be accepted means that women contributors are 
+still experiencing open source communities as hostile environments. Interviewees told us that many are not taken seriously and those in online communities often experience aggression and derogatory comments. As a result, they feel they must disguise their gender and adopt gender-neutral names online to avoid the hostility and abuse. 
+Advocates of women’s rights within this space 
+are frequently a target of abuse. An Indian programmer who also fights for the rights of women and minorities in the peer production space explained how at times, the pressure and hostility she faced led her to take time off to restore her health. The creation of safe and welcoming spaces for new-entrant women coders is one popular intervention from which many of our interviewee had benefited. Google Summer of Code and similar initiatives provide institutional structures for new women coders that positively build their agency and skills in ways that stand in stark contrast to the “welcome” an inexperienced female coder might encounter in the Linux kernel open source community. 
+These findings drive home the point that 
+“fixing the numbers” of women in open source is necessary but insufficient. It will not end discrimination and disadvantage, nor will it address the abuse they experience due to ethnicity, sexuality or disability. An intersectional approach is necessary to go beyond “counting women” to create safe workplaces.  
+7.3 Identifying and tackling root causes
+This research has identified a range of initiatives that women are successfully using to cope with the discrimination they experience in open source communities. This shows the need for a multifaceted approach which not only provides women with safe spaces, but also engages men as allies and addresses the root causes.25 Towards a More Gender-inclusive Open Source CommunitySome women we interviewed wanted to include 
+men in such change initiatives. Recognising that 
+men’s attitudes and behaviour were the primary 
+obstacle to progress, interviewees sought to 
+go beyond women-only initiatives. Below is a 
+comment from a Zambian programmer reflecting 
+on the need to work with men as well with women 
+to bring about change: 
+Without addressing the structural issues, there is 
+a danger that in ten years’ time, we will be having 
+the same conversation about why women are 
+still a minority group in open source despite the 
+expansion of support programs. Mentorship, role models and skills training are 
+effective ways to build the agency of women 
+coders. Those who participated in these 
+programs highly valued them. At the same time, 
+it is true that there is no amount of skills training 
+and mentoring of women that will resolve the 
+gender socialisation of young girls and boys, the 
+pervasive gender norms and values it produces, 
+or the toxic masculinity ²⁶ of some online open 
+source communities. The initiatives presented 
+are essential to enabling women to cope with 
+adverse circumstances, however, they do not 
+aim to change gender norms and values. They 
+treat the symptoms rather than the cause.
+Increasing women’s agency is not enough to 
+bring about equality in open source communities. 
+Several gender empowerment approaches go 
+beyond agency to critical agency or what, in the 
+Gates Foundation Framework, is called “critical 
+consciousness.” ²⁷ In other words, it enables 
+people to analyse social problems and act 
+together to transform them. 
+From this perspective, removing gender 
+discrimination in open source communities 
+requires stakeholders to identify the deep-
+seated root-causes and act on them in addition 
+to the symptoms. Programs seeking to transform 
+the situation of women in open source should 
+include safe spaces for women to speak openly 
+about their gender experiences, their causes 
+and solutions. This may require going beyond 
+gender to understand its intersection with 
+other dimensions of exclusion. A South African 
+programmer made an observation about her 
+country and race below:
+“South Africa has a very specific history with 
+regard to race relations and that has kept a 
+lot of people out of [the software] industry, not 
+only from an educational standpoint but from 
+the economic means to get that education  
+especially from a class and racial perspective. 
+There are also people [in rural] areas who are 
+not exposed to these types of careers.”“We have to work with men to ensure they are 
+ready for the next generation of empowered 
+women. A group of us are meeting to work on 
+this. We need to make women equal partners 
+and prepare men for the new breed of women. 
+²⁶  Toxic masculinity refers to the socially-constructed attitudes that describe the masculine gender role as violent, unemotional, sexually 
+aggressive, and so forth.
+²⁷  In the Gates Framework critical consciousness is foundational to women and girls exercising collective and individual agency. Critical 
+consciousness refers to women and girls identifying and questioning how inequalities in power operate in their lives, and asserting and 
+affirming their sense of self and their entitlements.26 digitalimpactalliance.org
+8. Conclusions and key findings
+Our research underscored the importance of 
+increasing the number of women working in open source. We learned about various ways to do this, such as implementing support programs that provide mentoring, female role models, and vocational skills training. Women also highly value taking part in online networks and attending conferences. One interviewee described these types of opportunities, where she was able to meet other women facing the same challenges, share experiences, and exchange advice as exhilarating and kept her going for months. Many stated that they helped them feel less isolated in their male dominated work spaces. Developing a sense of comradery, through group work, to build collective solutions reduced women’s sense of isolation and powerlessness.
+Some interviewees had experienced initiatives 
+that went one step further and aimed to change the problematic gender norms that shaped the inequity they saw. The desire to expand work in schools to change perceptions about what constitutes women’s versus men’s work was a common theme among interviewees, and two organizations had already begun this work. Women also highlighted the need to address the gender norms of male employers, coders, trainers, husbands and family members as a part of removing barriers to women who code. 
+We developed a typology in Table 2 below to 
+frame the different initiatives promoting women in open source. It combines the Agency-Structure-Resource approach from the Gates Foundation’s Gender Empowerment Framework with Roberts’ (2015) Conformist-Reformist-Transformist approach. ²⁸ The table is intended 
+as a schematic tool only; in practice, activities will straddle boundaries or move among categories over time. 
+²⁸  Roberts, Tony. "Critical Intent and Practice in ICT4D: A Typology of ICT4D Initiatives." In Proceedings of the 13th International Conference on the Social Implications of Computers in Developing Countries, Negombo, Sri Lanka. 2015.27 Towards a More Gender-inclusive Open Source Community
+Conformist  initiatives help women to better cope with or accommodate themselves to existing 
+unequal gender relations (without challenging them). Technical skills training for women and 
+some kinds of mentoring fit this category. 
+Transformist initiatives aim to identify and transform the unequal power structures that are 
+among the root-causes of gender injustice. Critical consciousness work and initiatives that result in women with equal power and control fit this category.    Reformist initiatives aim to change existing unequal gendered social relations (but without 
+tackling the underlying power structures that give rise to and sustain them). Codes of conduct and initiatives to increase women speakers fit this category. 
+Resources  Institutional 
+StructuresAgency
+Conformist•Skills training
+•Paid coding work
+•Conference
+bursaries•Voluntary data
+collection countingwomen•Mentoring
+•Role models
+•Learning the history ofwomen in computer science
+Reformist•Build social capitalthrough onlinenetworks andconference sessionsfor women in opensource (particularly)in the Global South•Codes of conduct
+•Diversityawareness
+•Diversity audits•Women coders in schools
+•Workplace visits forstudents to socialise them
+•Paid internships
+Transformist•Make the OpenAccess Publishingof annual pay anddiversity audits acondition of fundingand contractingcriteria. Donorfunding conditionalto gender parityand tracking genderindicators/data.
+•Achieve genderparity in seniorpositions of powerand control•Mandatory GBV or anti-harassment training
+•Critical consciousnessprogrammes for women andmen
+•Enacting policies whichchange gendered socialnorms such as coding bootcamps initiatives for childrenTable 2: Initiatives promoting women in open source28 digitalimpactalliance.orgThe goal of this matrix is not to argue that any 
+one activity is more important than another; all are valuable. The aim is to stimulate discussion about what additional activities your organization might want to promote to complement your existing work. It could be used to help organizations consider which activities will allow them to achieve more ambitious goals or move in more strategic directions. 
+We have used the matrix to think through our 
+recommendations for action that each group of actors can take to translate the lessons of this research into practical action. 
+8.1 Future research
+The research identified a number of exciting areas outside the scope of this study that would be productive for future research:
+Positive Deviants:  There are countries where it 
+is not unusual or “unwomanly” to study software engineering or work as a coder. What factors distinguish the patterns of socialisation and institutional structures in these countries to make it possible for women to pursue coding careers in such favourable circumstances? What lessons are there for the rest of us? It is also the case that in countries where coding is gendered as male there are positive deviants: women who escape or overcome the construction of programming as masculine to become proficient and successful coders. What are the factors that make this possible and what can we learn from them to improve the experiences of other women?
+Intersectionality:  This study has focused on 
+the challenges of women in open source, but 
+due to its international scope, it quickly became clear that not all women are equal. Gender was only one dimension of women’s disadvantage from the Global South who wished to contribute to open source communities. In South Africa, discrimination on the basis of race and class was fundamental to women’s inclusion and in Francophone Africa, language and funding patterns added to their exclusion. Further research that recognizes overlapping forms of women’s exclusion in open source is necessary to a comprehensive understanding of their obstacles in open source.
+Methods & Tools:  Some employers told us 
+that they did not have the practical skills or knowledge to effectively monitor diversity in their organizations or bring about change. Some women told us that there was a need to move beyond single workshops that benefit individuals in the short-term to ongoing programs that generate systemic change. There is certainly a need to raise levels of awareness of, commitment to and action for more structural change. Some open source organizations are currently leading others on this journey. Further research needs to be done with those organizations that have secured  commitment and achieved significant progress to capture their learnings and make them available to others  in the form of a toolkit of methods and approaches. Carrying out some additional research with women and men at open source conferences to raise critical consciousness and document what works and what does not would be a valuable contribution in moving this agenda forward. It would also be valuable to carry out research and activities targeted directly at men.

@@ -1,0 +1,648 @@
+ 
+126 
+ Design and deployment of relational geodatabase on mobile GIS 
+platform for real -time COVID -19 contact tracing in Ghana  
+ 
+Seth Kwaku Afagbedzi1, Alex Barimah Owusu2*, Isaac Newton Kissiedu2, Mary Amoako - Coleman3, 
+Delia Akosua Bandoh4, Charles Lwanga Noora4, Ben Emunah Aikins2, Richmond Takyi Hinneh2, 
+Benedict Calys -Tagoe5, Keziah Laurencia Malm6, Ernest Kenu4 
+Abstract   
+This study reviewed the design and deployment of relational geodatabase on mobile GIS 
+application, using collector for ArcGIS and survey 123 for ArcGIS platforms for COVID -19 
+contact tracing in Ghana during the lockdown. The study assessed whether cases sp read by 
+physical neighborhood contacts, defined by a 2km buffer of initial known 60 cases location. 
+The application was deployed on the android tablet, which was used by field workers. 
+Application Post -deployment  review shows that from 30th March to 4th April 2020, 828 samples 
+were collected with 34 confirmed cases, of which 61% occurred outside the 2km buffer. From 
+1-30 April 2020, 8,748 individuals with 16,087 contacts were tested within the physical 
+neighbourhoods, 2.4% turned positive. Similarly, 7,501 individuals with 17,071 contacts were 
+tested outside the physical neighbourhoods with 4.3% positives.  Results suggest that more 
+infections occurred outside the case’s physical neighbourhoods possibly due to; (1) existence 
+of unknown cases prior to lockdow n; (2) cases were moving outside their physical 
+neighborhood and infecting others; (3) panic movements of cases within the 3 days window 
+between announcement and enforcement of lockdown; (4) movement of cases into the country 
+through unapproved routes.  Ne w cases were identified outside the lockdown areas, which 
+could not be explained. This study raises questions about (1) the understanding of the mode of 
+spread of the virus (2) the implementation of the lockdown, including the geographic coverage 
+and timin g. It is recommended that future decisions on contact tracing and lockdown should 
+be guided by an understanding of the disease geography.   
+ 
+Keywords: Mobile geospatial technology, Novel Coronavirus 2019, Contact Tracing, COVID -19 in 
+Ghana, Relational Geodatabase, GIS  
+1University of Ghana, Department of Biostatistics  2University of Ghana, Department of Geography and Resource Development  
+*Corresponding Author. Email: owusuba@yahoo.com  3Department of Epidemiology, N MIMR,  University of Ghana  
+4Department of Epidemiology and Disease Control, School of Public Health, University of Ghana  5Department of Community 
+Health, University of Ghana Medical School  6National Malaria Control Programme, Gh ana Health Service, Accra, Ghana  
+ 
+Ghana Journal of Geography Vol. 13 (1), 2021 pages 1 26-146 
+https://dx.doi.org/10.4314/gjg.v13i1.7  
+ Ghana Journal of Geography Vol. 13 (1), 2021 pages 126 -146 
+127 
+ Background  
+The Novel Coronavirus 2019 (COVID -19) also known as severe acute respiratory syndrome 
+coronavirus 2 (SARS -CoV -2) has become the biggest pandemic the world has witnessed since 
+the 1918 Flu (Spanish Flu) pandemic which infected approximately a quarter of the  world’s 
+population and left between 17 and 50 million dead ( AS, 2020 ). The disease has devastated the 
+whole world by killing over 500,000 people as at the end of June 2020 ( WHO, 2020 ), disrupted 
+supply chains, caused lockdown of countries and cites, groun ded many flights the world over 
+and brought the global economy to a halt (Ritchie e. al., 2020).  All over the world, governments 
+are implementing various fiscal measures to mitigate the adverse effect and provide relief for 
+businesses and households (ILO,  2020). The pandemic is expected to have a significant adverse 
+impact on the global economy, which is estimated to be over $3 trillion (Chaturvedi, 2020). 
+Countries are in dilemma to re -open their economies amid soaring new infections and deaths.  
+Due to l imited knowledge and understanding of COVID -19, the global approach was organized 
+in two ways; (a) medium to long term efforts which were geared toward developing vaccines 
+since COVID -19 has no known cure (Chatham House, 2020); (b) the short -term strategie s, 
+which were focused on prevention of the spread through early detection, diagnosis, prompt 
+contact tracing and isolation to extinguish the spread of infections. The short -term effort 
+requires answering questions relating to the location of infected perso ns; i.e. where is the virus? 
+Where is it spreading to, and where is one likely to contract the virus? Identifying the exact 
+location of COVID -19 patients and contacts, monitoring and tracking their movements, and 
+isolating them,  minimizes the need to impos e lockdowns involving mobility restrictions or 
+business closures (Torhonen et. al, 2020). The short -term effort required timely and accurate 
+data, which is spatially referenced and temporally current.  
+The need for spatially referenced and temporally curre nt data to manage and control the spread 
+of the COVID -19 pandemic highlighted the necessity for the geospatial community to support 
+the national response efforts to curb the imminent public health threat brought about by this 
+disease (Malgorzata and Pomfre t, 2020). In the past, the geospatial industry has assisted during 
+times of crises and disasters by improving relief and reintegration efforts (Herold and Sawada, 
+2012; Nkansah, 2020). With the advent of the coronavirus, the geospatial community is in the 
+frontline providing data for monitoring and tracking the spread of the virus, continually 
+bringing up -to-date data on the number of people infected and providing real -time information 
+(Torhonen et. al., 2020). The geospatial community in Korea made use of Big Data, including Design and deployment of relational geodatabase on mobile GIS platform for real -time COVID -19 
+ 128 GPS tracking data from cars and phones, transactions and credit card, CCTV footage, travel 
+histories, and artificial intelligence to identify high -priority cases and track the routes of 
+infected individuals (Chung and Hoon, 2020). Cente r for Systems Science and Engineering 
+(CSSE) at Johns Hopkins University (JHU) with support from ESRI and other partners 
+developed COVID -19 dashboard which monitors the ongoing COVID -19 globally by reporting 
+on key indicators such as; the number of confirm ed cases, deaths, recoveries and active cases 
+by countries and globally (GHS, 2020). China has adopted several technologies including the 
+COVID -19 status rating and monitoring app that present a QR code on the user’s mobile 
+phones. The app requires users t o register with basic information - name, national identity card 
+number, phone number, and home address.  Other information on the app quizzes users on 
+health status and travel history, and asks them to identify any close contacts diagnosed with the 
+virus.  A green QR code grants unrestricted movement, a yellow code required seven days of 
+quarantine and a red meant 14 days of quarantine (Xu and Chandler, 2020).  
+As the pandemic surges on, governments and health authorities all over the world are relying 
+on me asures that are characteristically spatial such as quarantining, contact tracing, isolating 
+and social distancing.  While people are working and studying at home, decision -makers were 
+exploring ways to circumnavigate the burdens of needing to prevent more infection, while also 
+looking to relax restrictions and reopen the economy. Geospatial technologies are needed to 
+enhance these processes promptly. Ghana’s geospatial industry has equally contributed to the 
+development and deployment of location -based mobi le geospatial applications in combating 
+the COVID -19 pandemic.  
+Ghana’s fight against the pandemic, including control and management, has been directed from 
+the presidency due to the seriousness of the disease and the urgent attention that it needed. 
+Figur e 1 shows Ghana’s COVID -19 Governance Structure. The all -embracing governance and 
+coordination of the National Covid -19 response start from the President of the Republic of 
+Ghana. The Minister for Health chairs the National Technical Coordinating Committee  
+(NTCC) at the ministerial level, which comprises representatives from all stakeholder 
+ministries and relevant agencies to ensure a multi -sectoral approach and response. The NTCC 
+provides the Technical policy direction and implementation of decisions made by the Inter -
+Ministerial group. The Ministry of Health and Ghana Health Service collaborate with other 
+COVID -19 related task teams including the Operation COVID -19 Safety Taskforce. A 
+decentralized approach to implementation from the National to Regional, District and 
+Subdistrict levels is adopted to combat the pandemic.  Ghana Journal of Geography Vol. 13 (1), 2021 pages 126 -146 
+129 
+  
+ 
+Figure 1: Ghana’s COVID -19 Governance Structure  
+Source: National Strategic COVID -19 response plan, 2020 -2021 – Ghana  
+ 
+The surveillance task team included monitors, contact tracers, epidemiologist, data managers 
+and geospatial scientists. The geospatial team from the School of Public Health and the Remote 
+Sensing and Geographic Information Systems Laboratory (RSGIS Lab) of  the Department of 
+Geography and Resource Development, – University of Ghana developed an  integrated 
+multiple geospatial application to support both the contact tracing and the enhanced contact 
+tracing strategies adopted by Ghana during the early stages of the pandemic.  With the enhanced 
+contact tracing, a 2 km radius buffer zone (referred to  as physical neighbourhood) was created 
+around each of the initial COVID -19 cases and all household that fell within the buffered zone 
+were screened for COVID -19 including the actual contacts to cases. This buffer was to make 
+sure that every possible case that might be missed by the main contact -tracing list was captured 
+to prevent the community spread of the virus.  This mobile geospatial technology was one of 
+the technologies used in the early stages in monitoring and tracking the spread of the disease 
+in Ghana. Additionally, using collector for ArcGIS and survey 123 for  ArcGIS platforms, a 
+relational geodatabase was designed and deployed on mobile phones and tablets for contact 
+tracing and enhanced contact tracing to provide spatially reference data in re al-time to address 
+Design and deployment of relational geodatabase on mobile GIS platform for real -time COVID -19 
+ 130 the question of the whereabouts of the virus. The above two applications provided backend 
+relational geodatabase and frontend customization that allowed data collection, storage, data 
+query, and manipulation and visualization on dashboar ds to support field operations, laboratory 
+testing of samples and official decision making on COVID -19 in Ghana ( Guitierrez et al. , 
+2007) .  
+The primary aim of this paper is to review and demonstrate the relational geodatabase design 
+and deployment for proa ctive spatial tracking of the spread of the virus and provision of real -
+time information  for timeous decision making by the managers of the pandemic in Ghana.  The 
+propositions that guided the relational geodatabase design and deployment are:  
+Null Hypothes is 1: that Covid -19 will spread only by physical neighbourhood contacts during 
+the lockdown period.  
+Alternate Hypothesis 2: that Covid -19 will not spread only by physical neighbourhood contacts 
+during the lockdown period.  
+These hypotheses were made at the  time of designing and deploying the integrated multiple 
+geospatial application  when there were 60 known cases of COVID -19 in Ghana, which was on 
+the 27th day of March 2020 (GHS, 2020). In addition, four (4) days after the government of 
+Ghana announced COV ID-19 restriction measures, which included the closure of the country’s 
+external borders and lockdown of the two main metropolitan areas: The Greater Accra 
+Metropolitan Area (GAMA), the Greater Kumasi Metropolitan Area (GKMA), and the 
+contiguous districts.  With the lockdown, the country instituted limited mobility within the 
+lockdown zone (Nkansah, 2020). Also, international borders of the country were closed and 
+given that the cases in Ghana were all imported, the expectation was that cases will spread fro m 
+the detected cases in their neighbourhoods (defined by 2km Euclidean distance from case point 
+location i.e. house or residence) and grow spatially outward (Nkansah, 2020). The 2km distance 
+was based on the standard routine activity range of an average Gh anaian in residential 
+neighbourhoods. In addition, within the 2km walking neighbourhoods, lockdown enforcing 
+agencies were not questioning people. However, people who moved outside the walking 
+neighbourhoods and start driving were questioned by COVID -19 re strictions enforcing 
+agencies on their movement.  The null hypothesis was tested against the alternative that the 
+spread may not necessarily be physical neighbourhood contact. There may be other physical 
+contacts engineered by socio -economic and political movements, even under the lockdown. 
+Similarly, there may be other cases that were not detected, that could spread the virus. Also, it Ghana Journal of Geography Vol. 13 (1), 2021 pages 126 -146 
+131 
+ was likely that some importation may have occurred through illegal border crossing during the 
+lockdown which might have no t been detected.  
+ 
+Methods  
+Study Setting  
+This study is based on Ghana’s initial approach to managing the COVID -19 pandemic. On 12th 
+March 2020, Ghana recorded the first two COVID -19 cases.  The two index cases of COVID -
+19 were confirmed in Accra on the same day and by 27th of March 2020, there were 60 
+confirmed cases and 3 deaths  (GHS, 2020). These cases were concentrated in GAMA and 
+GKMA, which were referred to as COVID -19 hotspots. Figure 2 is the map of Ghana showing 
+GKMA and GAMA inset. GAMA and GKMA  cover several municipalities and metropolis 
+including AMA and KMA respectively. On 27th March 2020, the Government of Ghana (GoG) 
+decided to partially lockdown the two metropolitan areas. AMA is the National capital and 
+largest city in the Greater Accra R egion, with a population of more than 2 million people ( ILO, 
+2020 ). It houses the only international airport in Ghana, the Kotoka International Airport. As a 
+result, AMA is the first and last point of call for all visitors and residents who travel in and o ut 
+of Ghana. AMA is the administrative, economic, and educational capital of Ghana. The city 
+contains the head offices of all the large banks and trading firms, the insurance agencies, the 
+utility corporations, the general post office, the large open marke ts to which most of the food 
+supply comes, and the Accra Central Library. AMA is a modern city with some of the best 
+hotels, beaches and public places that attract many tourists making it most likely a COVID -19 
+transit city.  
+GKMA is the second metropolita n area identified with the initial COVID -19 cases and was 
+therefore, affected by the lockdown. KMA (Kumasi) is the second -largest city in Ghana and is 
+the most populous city in GKMA. The metropolis is the most populous in Ghana with an 
+estimated population  of over 2 million residents. The city of Kumasi is the hub of Ghanaian 
+cultural heritage, which attract thousands of both domestic and foreign tourists yearly. The city 
+has the most vibrant domestic travel activities by both air and road, hence its positi on as a high 
+COVID -19 risk city.  Design and deployment of relational geodatabase on mobile GIS platform for real -time COVID -19 
+ 132  
+ 
+Figure 2: Map of Ghana with GAMA and GKMA Insets and location of the initial 60 COVID 
+19 Cases Source: Author 2020  
+ 
+Design and deployment of the relational geodatabase on the mobile GIS 
+system  
+The design and deployment of the mobile GIS with its relational tables were supported by the 
+ArcGIS online platform. The ArcGIS online platform is part of the ESRI geospatial cloud 
+system, which enables mobile and remote connection to people, groups, locations, and data 
+using interactive maps (ESRI, 2020a). The system is embedded with smart, data -driven and 
+analytical tools that support the delivery of real -time and near real -time location intelligence. 
+The basic required resources included human expertise, geographically  referenced data, and 
+organization including operational protocols, hardware and software. COVID -19 data capture 
+and management were under the surveillance task per the governance structure. The 
+development and deployment of the geodatabase for COVID -19 ma nagement involved GIS 
+and application, development experts. The GIS and application development experts developed 
+the backend and relational databases. The team customized the interface of the application and 
+set up the connectivity. Twenty Field Epidemiol ogists were trained on the use of the 
+application. The Field Epidemiologists served as field coordinators and supervisors during the 
+Ghana Journal of Geography Vol. 13 (1), 2021 pages 126 -146 
+133 
+ contact tracing and enhanced contact tracing. These coordinators play a supervisory role and 
+liaise between the application  development team, Senior Field Epidemiologist and the 
+fieldworkers. The direct users of the application (fieldworkers) included selected Disease 
+Control Officers, Public Health Officers, Field Technical Officers, Community Health Nurses, 
+Laboratory Scient ists and Lab Technicians. In all, over 200 field workers were deployed. The 
+fieldworkers collected samples and location information from cases and contacts, to populate 
+the database and map the absolute location of the patient. The Application Development Team 
+(GIS Team) provided training for the coordinators and the coordinators trained the 
+fieldworkers. The fieldworkers also report feedbacks through the coordinators. The GIS Team 
+also trained the Laboratory Staff who test the samples and record the result s into the 
+application. The test results were visualized on Regional Directors Dashboard and Decision 
+Makers Dashboard. The Decision Makers Dashboard is solely a decision -making platform 
+headed by the National Coordinator of the COVID -19 Programme appointe d by the president.  
+The spatially referenced data used included google map and google image that provided the 
+spatial reference including building footprints to help capture the absolute location of the 
+patient. Similarly, the design and deployment followed COVID -19 protocols developed by 
+Ghana Health Services (GHS) and the Ghana COVID -19 Monitoring Team. The protocol 
+involved the use of case -based investigation form, protection of an individual’s identity and 
+protection of privacy and wor kers safety. The hardware required included laptops, cloud 
+storage space, connectivity and workspace, which were provided by the University of Ghana, 
+and tablets provided by the Malaria Control Program. Finally, the software used included 
+ArcGIS Pro Deskto p, ArcGIS Online, and Collector for ArcGIS and Survey 123 for ArcGIS, 
+provided by the Remote Sensing and GIS Applications Laboratory, Department of Geography 
+and Resource Development, University of Ghana, Legon. These hardware and software 
+provided the com plete mobile GIS system with intelligence that supported Ghana’s COVID -
+19 monitoring. The resultant ArcGIS geodatabase is a collection of geographic datasets as well 
+as attribute information of various types held in a common file system (ESRI, 2020b; ESRI,  
+2020a). The geodatabase can be accessed using ArcGIS online, ArcMap and ArcCatalog as 
+well as ArcGIS Pro . 
+ 
+ 
+ Design and deployment of relational geodatabase on mobile GIS platform for real -time COVID -19 
+ 134 Development of the backend relational geodatabase  
+The development of the backend geodatabase (the geodatabase and related tables that form the 
+basis of this application) was informed by the need to identify individual cases and their 
+contacts through contact tracing and enhanced contact tracing. The backend development was 
+also to enhance automation, visualization and analytics of  test results. It i s against this 
+background that the principle of a relational database was used in customizing and 
+standardizing the backend geodatabase, which made data accessibility and management 
+relatively easier. The design utilized two database principles: relate and  relationship classes. 
+The related principle as created in the layer file provided a system in which when a case or 
+household is selected in a layer, its related cases or individuals (contacts) are easily identified 
+in the layer or related records in a non -spatial table ( Boden, 2018 ). Practically, the principle 
+means that when a case is identified, using the ID field, the contacts are captured as related 
+tables (case and related contact). The system also used a relationship class where COVID -19 
+cases were c aptured as objects in the geodatabase. This relationship class design enables smart 
+behaviour in visualizing test results on the output side, which is the decision -makers and 
+regional directors’ dashboard, in Ghana’s context. Both the relate and relationsh ip classes rely 
+on the principle of cardinality. Cardinality in GIS describes how records in a table or two 
+different tables are related to one another. Cardinality  builds one -to-one, one -to-many, many -
+to-one, or many -to-many relationships in the database (Boden, 2018). The database contained 
+COVID -19 cases locations and a non -spatial table (attribute) that stores the attribute data about 
+the COVID -19 cases based on a case -based investigation form from GHS. A relate was created 
+between the layer and the non -spatial table, which has a many -to-one (contacts to the patient) 
+cardinality because every case has multiple persons serving as contacts. Relate is based on the 
+ID field (EPI ID). The system did not focus on many -to-many (case to contact and contact to 
+contact) because not all contacts become cases. Again, most people do not remember others 
+they meet daily unless something remarkable happens that day. Relationship classes gave the 
+ability to visualize data easily. With relationship class, design rules were  set up to link field 
+samples to testing labs, dashboards and analytics. When field workers go to the field and they 
+take a sample for testing, the samples are tagged with QR codes and recorded into the online 
+geodatabase.  These samples were taken from ca ses, contacts of cases and individuals. The 
+testing laboratories assess the database online after receiving the samples by scanning the QR 
+code on the sample bottle to identify and authenticate the sample before testing is done. When 
+test result fields in the database are populated with values, the system automatically colour -Ghana Journal of Geography Vol. 13 (1), 2021 pages 126 -146 
+135 
+ codes those fields, changes the symbology of the map and update the dashboards. The 
+dashboards are the outputs for decision -makers by providing up to date data on the pandemic 
+with bet ter data visualization. The colour -coding was classified as; red (positive), blue 
+(negative), green (sample yet to be tested) and black as inconclusive (which means the sample 
+needs to be retaken). The embedded analytics then recalculates and updates the n umber of 
+positives from regions and districts and displays the results numerically. Similarly, the sample 
+count is also updated when a new record is taken from the field to monitor the activities of field 
+workers.  
+For the Covid -19 enhanced contact tracing, field teams were required to sample residents who 
+can be located within a 2 km radius of an existing case. The absolute location of the house is 
+recorded using the collector for ArcGIS, which works and submits data directly into the 
+geodatabase. S ince a house may host more than one person, a related database table was created 
+to contain all other information from the members of that particular household. To avoid each 
+household individual having a spatial representation (point), a relationship was created between 
+a table that represented household individuals and the spatial data that represented the 
+household itself. A foreign key was used to initiate many -to-one relations to make it possible 
+for the spatial and attribute information to communicate  effectively in such a way that a click 
+on the spatial data points to all other members (individuals) belonging to the spatial data 
+(Household) from the relation table.  
+The Use of the system for an enhanced contact tracing on the field  
+The application was deployed on android tablets, which were carried by the fieldworkers to the 
+field to map cases and their contacts. Besides, using the ArcGIS collector application, 
+fieldworkers were able to see the initial 60 cases shown as red points with 2 km buffer rings  
+around them. With the current location on the ground showing on the application interface, 
+fieldworkers have a fair idea of where they were standing on the map and were able to move 
+within the target zone. Due to internet instability, fieldworks were able  to download and work 
+offline and once data collection is done, all information was synced to the database.  
+Evaluation of the database output  
+The design and deployment of relational geodatabase on mobile geospatial technology, as used 
+in Ghana’s COVID -19 management, is seen as a system designed to capture, store, manipulate, 
+analyze, manage, and present all types of geographical data. Geographic  data consist of both Design and deployment of relational geodatabase on mobile GIS platform for real -time COVID -19 
+ 136 spatial and attribute data. The completed system had two sides: the data capture (which includes 
+the sample taking activities in the field) and the laboratory testing activities on one side, and 
+the output side (which consists of two dashboards i.e., one for the regional and district directors 
+of health and the other for the National COVID -19 Management Center).  
+At the onset, Ghana identified the need for contact tracing and surveillance for tracking the 
+virus in real -time or near rea l-time. The contact tracing was later upgraded to enhanced contact 
+tracing. Enhanced contact tracing was defined by the COVID -19 management team and was 
+employed in this study as part of the Ghana COVID -19 management protocol as  ‘an advanced 
+form of contac t tracing, which deals with the testing of samples from residents within a certain 
+specified area of an already confirmed case, to get ahead of the spread of the virus and also 
+aid in containing the spread of the virus.’  While contact tracing focuses on in dividuals who 
+have had contacts with COVID -19 patients, enhanced contact tracing focuses on individuals 
+who live within a defined physical contact space of 2km from a known COVID -19 patient 
+location. The contact tracing and enhanced contact tracing activit ies, as implemented in Ghana 
+called for the usage of GIS -based technology to map all cases, their contacts and their 
+residential location as well as households within some distance of identified cases. This was 
+essential to allow a n immediate visualization  of the extent and magnitude of the public health 
+problem and plan national scale intervention strategies (Hay, et. al. 2013 ; Fortunati , 2016 ). 
+The advantage of using the relational geodatabase is that it is publishable and could be used on 
+other ArcGIS re lated platform for data collection, which in this case was the Collector for 
+ArcGIS and survey 123 for ArcGIS. The geodatabase, which was created within ArcGIS Pro 
+was then published onto ArcGIS online for further configuration to suit the need of the proj ect.  
+The structure of the relational database that allowed contact tracing is shown in Figure 2. The 
+use of multiple ID fields allowed individuals identified in the database as Head of Household 
+(HH), linked to their respective contacts. From Figure 3, Mr  John Johnson is captured as HH 
+and he will still appear in the related records, he may not necessarily be a case. In contact 
+tracing, he is a contact to a case. He has his contacts, which were captured as related records. 
+When contacts become positive, th ey also generate new contacts, yet they keep their link with 
+their primary contact. The use of multiple ID fields and linkage of HH to contacts and case 
+contacts to related contacts becomes relevant to case decision -makers and field technicians for 
+testing  of contacts, monitoring of contacts and their related contacts, for follow -ups and early 
+detection and isolation.  Ghana Journal of Geography Vol. 13 (1), 2021 pages 126 -146 
+137 
+  
+Figure 3: Overview of the Collector for ArcGIS and the backend related database  
+Source: Author 2020  
+ 
+Since the application was used for two main purposes, namely: contact tracing and enhanced 
+contact tracing, it is important to clarify that HH may be a case or contact for a case for contact 
+tracing purposes. However, HH may or may not be a case nor a contact of a c ase if the 
+application is being used for enhanced contact tracing. The use of contact tracing and enhanced 
+contact tracing were premised on the objective of being ahead of the spread of the virus. 
+Individual’s location and attributes were captured irrespec tive of what the possible outcome 
+may be (conversion to the case or not). In addition, when individuals are sampled and mapped 
+as HH, they are identified in the database as a related table and therefore become individual 
+contacts themselves since a set is a subset of itself. Mapping samples such as HH means that 
+when counting samples taken with the app, HH is not counted to avoid double counting. This 
+approach was useful in the identification of cases and contacts to cases within the database. 
+The approach also allowed add -ons when new contacts are identified. Within the database, a 
+search is done based on Case -based ID and connected individual ID and these two help in 
+identifying all contacts to HH. Figure 4 depicts contact tracing using a contact tree as 
+implemented in the relational database model.  
+Mr. John Johnson  Design and deployment of relational geodatabase on mobile GIS platform for real -time COVID -19 
+ 138  
+Figure 4: Contact Tracing and Community Case Tracking Relational Tables  
+Source: Author 2020  
+ 
+Before the launching of the application, fieldworkers had taken samples within some selected 
+communities. Each metropolitan and municipality developed their Epi ID, which uses 15 
+alphanumeric characters beginning with three (3) letter country code (GHA), t hree (3) letter 
+region code (GAR), three -letter Municipality of Metropolitan code (AMA) and six (6) digit 
+case unique number.  
+A review of the relational geodatabase application shows that by 4th April 2020, barely four (4) 
+days after deployment, 828 sampl es had been collected using the application. The test results 
+indicated that 34 new cases were found. Out of the 34 cases, 61% occurred outside the 2km 
+buffer, which shows the spread of infections beyond physical neighbourhood contact, i.e. 
+rejection of th e Null hypothesis: that Covid -19 will spread only by physical neighbourhood 
+contacts during the lockdown period. The above results suggest that cases did not necessarily 
+spread through physical community contact only. Several reasons may have contributed t o this 
+result. It is possible, that there were more cases than the original known 60 cases within the 
+country, which were not known as of the time of the lockdown. Besides, infected individuals 
+might have travelled outside their communities.  Figure 5 show s the 60 initial cases in red dots 
+with its 2km buffer, defining the physical neighbourhood contact space. Cases during the first 
+Ghana Journal of Geography Vol. 13 (1), 2021 pages 126 -146 
+139 
+ few days of the lockdown are green and occurred either within or outside physical contact 
+space.  
+ 
+Figure 5: COVID -19 Cases in GAMA 5 days after lockdown  
+Source: Author 2020  
+ 
+The contact tracing was then augmented with the enhanced contact tracing activity using both 
+the Collector for ArcGIS and Survey 123 for ArcGIS applications. By April 30th 2020, a  total 
+number of 8,748 individuals identified and mapped as head of households (HH) in the database 
+were sampled as possible community contacts. These heads of households had 16,087 contacts 
+linked to them as related individuals. It is important to note th at these HH and their related 
+contacts were not necessarily cases from the start. This was Ghana’s approach, which sought 
+to move ahead of the spread of the virus, by providing important baseline estimates of the 
+pandemic, detecting and isolating infected individuals before the virus spreads to others and 
+targeting resource allocation ( GHS, 2020; Pigott  et. al., 2015 ). After testing the 8,748 
+individuals, 388 (2.4%) turned out to be positive. From the initial observation that 61% of 
+infections occurred outside physical neighbourhood contacts, attention was shifted from 
+sampling within the 2km buffer, which is then defined as physical neighbourhood contacts to 
+locations outside the case community and around the new cases outside the community. Th is 
+spatial attention shift was informed by the suspicion that interactions are probably taking place 
+at a wider GAMA community than the neighbourhood. In total 7,501 HH were sampled and 
+they had 17,071 individuals as contacts, among which 741 (4.3%) came o ut positive. This result 
+Design and deployment of relational geodatabase on mobile GIS platform for real -time COVID -19 
+ 140 means that while attention was being drawn to within community spread at the initial stage, 
+more infections were taking place between communities. The above finding underscores  the 
+direction of transmission, outbreak tracking and r isk mapping  as some of the key importance 
+of geospatial technology application in infectious disease surveillance such as COVID 19 
+(Pigott  et. al., 2015; Saran et. al.,2020 ).  
+Figure 6 is the map of Ghana showing the lockdown areas and location of COVID -19 cases as 
+of 30th April, 2020 when the lockdown was lifted. It was observed that even with the enhanced 
+contact tracing at lockdown areas, cases were reported outside the areas. The purpose of the 
+lockdown was to prevent cases from spreading to other regio ns and keep the cases within the 
+infected communities in the lockdown area. The data from the enhanced contact tracing found 
+that over 60% of new infections occurred within the lockdown areas but outside the initially 
+infected communities.  The distribution  of cases before and after the lockdown in GAMA is shown in 
+Table 1.  
+Table 1: COVID -19 Cases before and at the end of Lockdown (Source: Author 2020 ) 
+Metropolitan /Municipality  Areas  Cases Before 
+Lockdown  Cases at the end 
+of lockdown  Area in 
+Square KM  
+Adenta Municipal  5 17 79 
+Ledzokuku Municipal  1 16 30 
+La Dade -Kotopon  5 29 37 
+La-Nkwantanang -Madina  3 26 72 
+Ga East  2 54 87 
+Ayawaso West  10 61 33 
+Ga South Municipal  0 2 181 
+Ga West Municipal  0 13 178 
+Ga Central Municipal  0 31 50 
+Tema West Municipal  4 15 46 
+Ashaiman Municipal  2 15 19 
+Kpone Katamanso  1 18 244 
+Ablekuma Central Municipal  1 191 14 
+Korle Klottey Municipal  3 14 10 
+Ablekuma North Municipal  1 71 30 
+Ayawaso North Municipal  0 128 5 
+Ayawaso East Municipal  3 113 6 
+Okaikwei North Municipal  0 34 23 
+Ga North Municipal  3 25 127 
+Weija Gbawe Municipal  3 38 166 
+Krowor Municipal  0 19 19 
+Tema Metropolitan  0 26 43 
+Ablekuma West Municipal  1 85 13 
+Ayawaso Central Municipal  0 112 2 
+Accra Metropolis  0 91 6 
+ Ghana Journal of Geography Vol. 13 (1), 2021 pages 126 -146 
+141 
+ At the beginning of the lockdown, Ayawaso West, a typical high -class residential 
+neighbourhood, had the highest number of cases (10 people were positive) followed by La 
+Dadekotopon and Adenta (5 each) and Tema West (4). Interestingly all these metropolitan areas 
+are high -income residential areas. At the end of the lockdown, Ablekuma Central, Ayawaso 
+Central, Ayawaso North and Ayawaso East were the leading metropolitan areas. Surprisingly 
+all these four (4) Metro areas are low -income residential areas where people must work daily 
+to feed themselves and their families. In addition, the new leading areas were areas where 
+police had challenges enforcing lockdown and social distancing. Figure 6 visualizes the spatial 
+distribution of cases in Ghana with an inset of the t wo-lockdown areas: GAMA and GKMA.  
+The study found that whiles GAMA and GKMA were locked down resulting in control of the 
+spread of the virus; infections were taking place in other areas, which were not locked down. 
+Again, with the enhanced contact tracing,  efforts were made to track the virus and be ahead of 
+the virus by looking for local community (physical contact space) contacts, yet infections were 
+beyond the local community contacts defined. This finding suggests that the nature of the virus 
+and the ob served large number of asymptomatic cases in the country made it impossible to 
+track cases before the lockdown when the geospatial technology was not in use. Perhaps the 
+limited mobility allowed during the lockdown may have played a role in why cases sprea d to 
+other places without known cases before the lockdown.  
+On the output side of the application, we realized the value of the design and deployment of 
+the relational geodatabase on mobile geospatial applications for contact tracing activities in 
+terms of  the testing laboratories communication with fieldworkers and decision -makers in real -
+time. The laboratories accessed the database and used the application for planning staff 
+schedule before samples were received. The samples were scanned and recorded usin g the 
+application. Upon completion of the test, the database is updated with test results, which 
+automatically updates and symbolizes the visualization dashboard with the test results. The 
+dashboard is an interactive map that locates and tallies confirmed cases, recoveries and deaths. 
+The virus infection progress details were shown by graphs. Viewers can see the day and time 
+of the most recent data update and data sources ( Boulos and Geraghty, 2020 ). This approach 
+was very useful in improving contact tracin g, community targeting, communication and 
+decision -making.  Design and deployment of relational geodatabase on mobile GIS platform for real -time COVID -19 
+ 142  
+Figure 6: Map of Ghana showing the lockdown areas and location of cases as of 30th April, 2020  
+Source: Author 2020  
+ 
+The applications allowed rapid response to communities with new outbreaks. The applications 
+also helped in understanding and monitoring the geographic spread and modification of 
+approach to responding to COVID -19 pandemic more appropriately than would have been 
+traditionally ( Boulos and Geraghty, 2020 ; ESRI, 2020c ). Th e application provided real -time 
+reporting and communication between field workers, testing laboratories, regional health 
+directorates and national -level decision -makers.  
+ 
+Conclusion and Recommendation  
+Ghana’s approach in managing COVID -19 was motivated by  the desire to be ahead of the 
+spread of the virus through early detection, effective contact tracing and case isolation to stop 
+the spread of the virus to other locations in the country. This approach formed the basis of the 
+lockdown, the contact and enha nced contact tracing activities. However, these approaches were 
+initiated without a clearer understanding of the country’s COVID -19 status in terms of 
+geographically referenced data on cases, case characteristics and spread. The development of 
+the relation al geodatabase, which runs on mobile geospatial applications, was to help 
+implement the planned strategy. The mobile geospatial applications, which were developed 
+Ghana Journal of Geography Vol. 13 (1), 2021 pages 126 -146 
+143 
+ included the collector for ArcGIS and Survey 123 for ArcGIS to enable field workers to collec t 
+samples and to map the location of the cases and samples taken for real -time reporting. These 
+applications also allowed the integration of bar code systems for easy access and entry of data. 
+The relational geodatabase on geospatial applications also allo wed the development of a 
+Laboratory portal for the testing labs to access field records, enter test results, and communicate 
+results to regional directors for case management. Two dashboards, the decision -makers 
+dashboard and regional directors’ dashboard were created. Regional directors were able to 
+show the location of cases within their respective regions on daily bases for quick action. The 
+Decision Makers’ dashboard on the other hand allowed decision -makers, e.g., to 
+comprehensively have a national vie w of cases. The dashboard for Decision Makers shows the 
+district and regional breakdown of cases, the spatial pattern of cases and the temporal pattern 
+of spread.  
+In addition, the design of the relational database for contact tracing and surveillance supp orted 
+the early understanding that cases were not spreading necessarily from the location of the 
+known case outward. This observation meant that the alternative proposition might better 
+explain the COVD -19 situation. Many reasons could have possibly contri buted to this 
+observation; that: 1) some unknown cases existed in the country before the lockdown; 2) some 
+individuals were positive and were moving and spreading infections to other locations in the 
+country where there were no known cases; 3) It is also p ossible that several positive individuals 
+entered the country through unapproved routes. This third argument is being made against the 
+background that the lockdown occurred in areas with known cases and that importation of cases 
+ceased with the closure of the country’s international borders. This conclusion is supported by 
+the fact that new cases were reported in regions not known to have reported COVID -19 cases 
+such as; the Upper East Region, the Upper West region, Eastern region, Savannah region, Oti 
+and Volta regions and the Central region. The COVID -19 monitoring team used this mobile 
+GIS application to map 10 reported cases in the northern region of Ghana and they were 
+identified as imported cases that used unapproved routes in entering the country. Ano ther 
+possible argument was that the time lag between the announcement and enforcement of the 
+lockdown led to ‘panic’ travel outside the lockdown area. This panic travel could have spread 
+the virus to places, hitherto, were not considered COVID -19 endemic.  
+The study observed that COVID -19 cases started from high -income residential areas and 
+spread to low -income neighbourhoods. Interestingly, cases from low -income neighbourhoods Design and deployment of relational geodatabase on mobile GIS platform for real -time COVID -19 
+ 144 could not be linked to specific case (s) from high -income neighbourhood, as peopl e could not 
+remember their contacts and sources of infection. This made it difficult to explain the infection 
+sources, types and patterns for specific action to either reduce or stop the spread. It was 
+therefore not surprising that experts explained the re asons for ending the lockdown as 
+economically motivated. In low -income neighbourhoods, social distancing was not observed; 
+masks were in limited use and above all people worked daily for survival even under lockdown 
+conditions.  
+Based on these findings from a relational geodatabase, this study makes the following 
+observations that Ghana’s approach to managing COVID -19 would have slowed the spread of 
+the virus at the onset if the lockdown were instituted nationwide. There should have been a 
+total lockdown with no movement allowed. Stringent measures were needed to prevent the 
+importation into the country through unapproved routes. However, the counter -arguments 
+raised against the total lockdown of the entire country with a complete restriction on 
+movements were that the economic and social cost would have been unbearable given the 
+economic situation and the spatial organization of the country.  
+The study has demonstrated the usefulness of relational geodatabase for contact tracing, real -
+time Spatio -temporal monitoring of COVID -19 and communication between field workers, 
+testing labs and regional and national level decision -makers. Future works may focus on 1) the 
+design and deployment of relational geodatabase that assesses many to many relations as this 
+work focused entirely on many -to-one relations. 2) Design and deployment of an integration 
+case and logistics management information in the relational geodatabase for a comprehensive 
+one-stop-shop geospatial system for disease control.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Ghana Journal of Geography Vol. 13 (1), 2021 pages 126 -146 
+145 
+ References  
+AS. (2020). Coronavirus: what have been the worst pandemics and epidemics in history? 
+Available at: ttps://en.as.com/en/2020/04/18/other_sports/1587167182_422066.html. 
+Accessed: July 9, 2020.  
+Boden, S.  (2018). Relates and Relationship Classes Ex plained. Available at: 
+https://www.esri.com/about/newsroom/wp -content/uploads/2018/11/relates -
+relationship -classes -explained.pdf . Acce ssed: July 17, 2020.  
+Boulos, M.N.K., & Geraghty, E.M. (2020). Geographical tracking and mapping of coronavirus 
+disease COVID -19/severe acute respiratory syndrome coronavirus 2 (SARS -CoV -2) 
+epidemic and associated events around the world: how 21st century G IS technologies 
+are supporting the global fight against outbreaks and epidemics.  Int J Health 
+Geography . 2020 Mar 11;19(1):8.  doi: 10.1186/s12942 -020-00202 -8. 
+Chatham House. (2020). The Hurdles to Developing a COVID -19 Vaccine: Why International 
+Cooperation is Needed.  Available 
+at:https://www.chathamhouse.org/expert/comment/hurdles -developing -covid -19-
+vaccine -why-international -cooperation -
+needed?gclid=Cj0KCQjwo6D4BRDgARIsAA6uN1 -
+tCU6fRdeamg49mma9ai2RZ_zQwbon_gYyzeSp -
+iK16rQ_LvbtMbEaAlUrEALw_wcB .  Accessed: J uly 10, 2020.  
+Chaturvedi, A.  (2020).  Coronavirus: Geospatial industry pitches in to help combat pandemic . 
+Available at:  https://www.geospatialworld.net/blogs/initiatives -by-geospatial -
+companies -to-curb-coronavirus/. Accessed: July 03, 2020.  
+Chung, D., & Hoon, S. S. (2020). Korea’s response to COVID -19: Early lessons in tackling 
+the pandemic. Available at: https://blogs.worldbank.org/eastasiapacific/koreas -
+response -covid -19-early -lessons -tackling -pandemic. Accessed: July 04, 2020.  
+ESRI. (2020a). ArcGIS  Pr o. Available at: https://pro.arcgis.com/en/pro -
+app/help/data/geodatabases/overview/what -is-a-geodatabase -
+.htm#:~:text=At%20its%20most%20basic%20level,%2C%20PostgreSQL%2C%20or
+%20IBM%20DB2.&text=But%20a%20geodatabase%20is%20more%20than%20a%2
+0collection%20of%20datasets.  Accessed: July 17, 2020.  
+ESRI. (2020b). COVID -19. Maps, solutions, and resources for response and reopening. 
+Available at: https://www.esri.com/en -us/covid -19/overview . Accessed: July 17, 2020.  
+ESRI. (2020c). COVID -19 CDC Supports State Dashboard to Better Monitor cases and 
+capacity.  https://www.esri.com/about/newsroom/blog/covid -19-cdc-supports -state-
+dashboards -to-better -monitor -cases -and-capacity/  Access ed: July 19, 2020.  
+Fortunati , R. (2016). Mapping Ebola to prepare for future outbreaks. IHME Measuringwhat 
+matters . Retrieved from http://www.health data.org/acti ng-data/mapping -ebola -
+prepare -future -outbreaks . Accessed: July 19, 2020.  
+GHS. (2020). Situation Update, Confirmed COVID -19 Cases In Ghana As At 27 March 2020, 
+19:00 Hr. Available at: https://ghanahealthservice.org/covid19/archive.php. Accessed: 
+July 15, 20 20. Design and deployment of relational geodatabase on mobile GIS platform for real -time COVID -19 
+ 146 Hay, S.I., Battle, K.E., Pigott, D.M., Smith, D.L., Moyes, C.L., Bhatt, S., Brownstein, J.S., 
+Collier, N., Myers, M.F., George, D.B., & Gething, P.W. (2013). Global mapping of 
+infectious disease.  Philosophical Transactions of the Royal Society B: Biolo gical 
+Sciences , 368(1614), p.20120250.  
+Herold, S., & Sawada, M. C. (2012). A review of geospatial information technology for natural 
+disaster management in developing countries.  International Journal of Applied 
+Geospatial Research (IJAGR) , 3(2), 24-62. 
+ILO. (2020). COVID -19 and the world of work - Country policy responses. Available at: 
+https://www.ilo.org/global/topics/coronavirus/country -responses/lang --en/index.htm. 
+Accessed: July 9, 2020.  
+Malgorzata, D., & Pomfret, D. K.  (2020). Geospatial in formation management in the time of 
+COVID -19. Available at https://www.geospatialworld.net/blogs/geospatial -
+information -management -in-the-time-of-covid -19/. Accessed: July 03, 2020.  
+Nkansah, M. A. (2020). [Case Study] Ghana’s multifarious response to COVID -19: Through 
+a citizen’s lens. Available at: https://www.ingsa.org/covidtag/covid -19-
+commentary/asantewah -nkansah -ghana/.  Accessed: July 15, 2020.  
+Pigott, D.M., Howes, R.E., Wiebe, A., Battle, K.E., Golding, N., Gething, P.W., Dowell, S.F., 
+Farag, T.H., G arcia, A.J., Kimball, A.M., & Krause, L.K. (2015). Prioritising infectious 
+disease mapping.  PLoS Neglected Tropical Diseases , 9(6), p.e0003756  
+Ritchie, H., Ortiz -Ospina, E., Beltekian, D., Mathieu, E., Hasell, J., Macdonald, B.,  Giattino, 
+C., Roser, M., Yunits, van Woerden, E., Gavrilov, D.,  Bergel, M., Ahmad, S., &  
+Crawford, J. (2020). Policy Responses to the Coronavirus Pandemic. Available a t: 
+https://ourworldindata.org/policy -responses -covid . Accessed: July 9, 2020.  
+Saran, S., Singh, P., Kumar, V., & Chauhan, P. (2020). Review of Geospatial Technology for 
+Infectious Disease Su rveillance: Use Case on COVID -19. Journal of the Indian Society 
+of Remote Sensing , pp.1 -18. 
+Torhonen, M. K., Antos, E. S, Dongkyu, K., & Alvaro B. F. (2020). The role of geospatial 
+information in confronting COVID -19 – Learning from Korea. Available 
+at:htt ps://blogs.worldbank.org/eastasiapacific/role -geospatial -information -
+confronting -covid -19-learning -korea. Accesses: July 04, 2020.  
+US Census Bureau, (2015). Basics on Geodatabases. Available at: 
+http://ggim.un.org/meetings/2015 -ISGI -Jordan/documents/Sessio n%203 -
+Geodatabases.pdf. Accessed: July 15, 2020.  
+WHO. (2020). Coronavirus Disease (COVID -19) Dashboard. Available at 
+https://covid19.who.int/?gclid=CjwKCAjwi_b3BRAGEiwAemPNU389V27iQ9nbQ1
+bGjRge8qW1sBBhDYGrZO1UbKltTSHoMXdH0Ke35RoCWngQAvD_BwE  July 
+02, 2020. Accessed: July 2020.  
+Xu, E. N., & Chandler, C. (2020). When red is unlucky: What we can learn from China’scolour -
+coded apps for tracking the coronavirus outbr eak. Available at: 
+https://fortune.com/2020/04/20/china -coronavirus -tracking -apps-color -codes -covid -
+19-alibaba -tencent -baidu/ . Access ed: July 04, 2020.
